@@ -151,10 +151,10 @@ const network = new vis.Network(container, { nodes: nodesData, edges: edgesData 
     shadow: { enabled: true, color: 'rgba(0,0,0,0.3)', size: 8, x: 0, y: 3 }
   },
   edges: {
-    color: { color: '#2a2740', highlight: '#ffc857', hover: '#ffc857', opacity: 0.4 },
+    color: { color: '#6b6590', highlight: '#ffc857', hover: '#ffc857', opacity: 0.7 },
     arrows: { to: { enabled: true, scaleFactor: 0.5 } },
     smooth: { enabled: true, type: 'continuous', roundness: 0.15 },
-    width: 0.8,
+    width: 1.2,
     hoverWidth: 2,
     selectionWidth: 2
   },
@@ -186,7 +186,7 @@ network.on('click', function(params) {
     nodesData.update(allNodes.map(n => ({
       id: n.id,
       opacity: highlightNodes.has(n.id) ? 1.0 : 0.08,
-      font: { ...n.font, color: highlightNodes.has(n.id) ? '#fff' : '#2a2740' }
+      font: { ...n.font, color: highlightNodes.has(n.id) ? '#fff' : '#1a1830' }
     })));
 
     edgesData.update(allEdges.map(e => ({
@@ -198,7 +198,7 @@ network.on('click', function(params) {
     const allNodes = nodesData.get();
     const allEdges = edgesData.get();
     nodesData.update(allNodes.map(n => ({ id: n.id, opacity: 1.0, font: { ...n.font, color: '#c8c4bc' } })));
-    edgesData.update(allEdges.map(e => ({ id: e.id, color: { color: '#2a2740', highlight: '#ffc857', hover: '#ffc857', opacity: 0.4 } })));
+    edgesData.update(allEdges.map(e => ({ id: e.id, color: { color: '#6b6590', highlight: '#ffc857', hover: '#ffc857', opacity: 0.7 } })));
   }
 });
 
