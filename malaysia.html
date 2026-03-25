@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduGraph — Knowledge Constellation</title>
+<title>EduGraph — Malaysia Mathematics Curriculum</title>
 <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
@@ -603,21 +603,21 @@ body::after {
 
 <div class="loading-overlay" id="loading">
   <div class="loading-spinner"></div>
-  <div class="loading-text">EduGraph</div>
-  <div class="loading-sub">Mapping the constellation of knowledge</div>
+  <div class="loading-text">EduGraph — Malaysia</div>
+  <div class="loading-sub">Mapping the mathematics curriculum</div>
 </div>
 
 <header class="topbar">
   <div class="topbar-title">
     <h1>EduGraph</h1>
-    <span class="subtitle">Interactive Knowledge Graph for Education</span>
+    <span class="subtitle">Malaysia Mathematics Curriculum — Year 1 to STPM</span>
   </div>
   <div class="topbar-stats">
     <div class="stat"><span class="stat-num" id="stat-nodes">0</span><span class="stat-label">Nodes</span></div>
     <div class="stat"><span class="stat-num" id="stat-edges">0</span><span class="stat-label">Edges</span></div>
   </div>
   <div class="layout-btns">
-    <a href="malaysia.html" class="layout-btn" style="text-decoration:none">Malaysia</a>
+    <a href="index.html" class="layout-btn" style="text-decoration:none">General</a>
     <button class="layout-btn active" data-layout="cose">Force</button>
     <button class="layout-btn" data-layout="breadthfirst">Tree</button>
     <button class="layout-btn" data-layout="circle">Circle</button>
@@ -641,22 +641,18 @@ body::after {
     <div class="section-title">Grade Level</div>
     <select class="grade-select" id="grade-filter">
       <option value="all">All Levels</option>
-      <option value="K">Kindergarten</option>
-      <option value="1">Grade 1</option>
-      <option value="2">Grade 2</option>
-      <option value="3">Grade 3</option>
-      <option value="4">Grade 4</option>
-      <option value="5">Grade 5</option>
-      <option value="6">Grade 6</option>
-      <option value="7">Grade 7</option>
-      <option value="8">Grade 8</option>
-      <option value="9">Grade 9</option>
-      <option value="10">Grade 10</option>
-      <option value="11">Grade 11</option>
-      <option value="12">Grade 12</option>
-      <option value="undergraduate">Undergraduate</option>
-      <option value="graduate">Graduate</option>
-      <option value="PhD">PhD</option>
+      <option value="Year 1">Year 1</option>
+      <option value="Year 2">Year 2</option>
+      <option value="Year 3">Year 3</option>
+      <option value="Year 4">Year 4</option>
+      <option value="Year 5">Year 5</option>
+      <option value="Year 6">Year 6</option>
+      <option value="Form 1">Form 1</option>
+      <option value="Form 2">Form 2</option>
+      <option value="Form 3">Form 3</option>
+      <option value="Form 4">Form 4</option>
+      <option value="Form 5">Form 5</option>
+      <option value="STPM">STPM</option>
     </select>
   </div>
 
@@ -730,13 +726,13 @@ const EDGE_STYLES = {
   equivalent_to: 'solid',
 };
 
-const GRADE_ORDER = ['K','1','2','3','4','5','6','7','8','9','10','11','12','undergraduate','graduate','PhD'];
+const GRADE_ORDER = ['Year 1','Year 2','Year 3','Year 4','Year 5','Year 6','Form 1','Form 2','Form 3','Form 4','Form 5','STPM'];
 
 let cy;
 let graphData;
 
 async function init() {
-  const res = await fetch('data/mathematics.json');
+  const res = await fetch('data/malaysia-math.json');
   graphData = await res.json();
 
   const elements = [];
@@ -989,10 +985,8 @@ function clearHighlight() {
 
 function formatGradeRange(range) {
   if (!range.length) return '';
-  if (range.length === 1) return range[0] === 'K' ? 'Kindergarten' : `Grade ${range[0]}`;
-  const first = range[0] === 'K' ? 'Kindergarten' : (['undergraduate','graduate','PhD'].includes(range[0]) ? range[0].charAt(0).toUpperCase() + range[0].slice(1) : `Grade ${range[0]}`);
-  const last = ['undergraduate','graduate','PhD'].includes(range[range.length-1]) ? range[range.length-1].charAt(0).toUpperCase() + range[range.length-1].slice(1) : `Grade ${range[range.length-1]}`;
-  return `${first} — ${last}`;
+  if (range.length === 1) return range[0];
+  return `${range[0]} — ${range[range.length - 1]}`;
 }
 
 function buildTypeFilters() {
