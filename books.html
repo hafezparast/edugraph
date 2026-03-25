@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduGraph — Malaysia Mathematics Curriculum</title>
+<title>EduGraph — Malaysia Math Books</title>
 <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
@@ -603,14 +603,14 @@ body::after {
 
 <div class="loading-overlay" id="loading">
   <div class="loading-spinner"></div>
-  <div class="loading-text">EduGraph — Malaysia</div>
-  <div class="loading-sub">Mapping the mathematics curriculum</div>
+  <div class="loading-text">EduGraph — Books</div>
+  <div class="loading-sub">Textbook chapters and subtopics with page numbers</div>
 </div>
 
 <header class="topbar">
   <div class="topbar-title">
     <h1>EduGraph</h1>
-    <span class="subtitle">Malaysia Mathematics Curriculum — Year 1 to STPM</span>
+    <span class="subtitle">Malaysia Math Books — Chapters &amp; Subtopics with Page Numbers</span>
   </div>
   <div class="topbar-stats">
     <div class="stat"><span class="stat-num" id="stat-nodes">0</span><span class="stat-label">Nodes</span></div>
@@ -618,9 +618,9 @@ body::after {
   </div>
   <div class="layout-btns">
     <a href="index.html" class="layout-btn" style="text-decoration:none">General</a>
-    <a href="books.html" class="layout-btn" style="text-decoration:none">Books</a>
-    <button class="layout-btn active" data-layout="cose">Force</button>
-    <button class="layout-btn" data-layout="breadthfirst">Tree</button>
+    <a href="malaysia.html" class="layout-btn" style="text-decoration:none">Curriculum</a>
+    <button class="layout-btn" data-layout="cose">Force</button>
+    <button class="layout-btn active" data-layout="breadthfirst">Tree</button>
     <button class="layout-btn" data-layout="circle">Circle</button>
   </div>
 </header>
@@ -733,7 +733,7 @@ let cy;
 let graphData;
 
 async function init() {
-  const res = await fetch('data/malaysia-math.json');
+  const res = await fetch('data/malaysia-books.json');
   graphData = await res.json();
 
   const elements = [];
@@ -742,12 +742,14 @@ async function init() {
     elements.push({
       data: {
         id: n.id,
-        label: n.label,
+        label: n.pages ? `${n.label} (p.${n.pages})` : n.label,
+        rawLabel: n.label,
         nodeType: n.type,
         description: n.description || '',
         grade_range: n.grade_range || [],
         tags: n.tags || [],
         sources: n.sources || [],
+        pages: n.pages || '',
         color: TYPE_COLORS[n.type] || '#666',
         size: TYPE_SIZES[n.type] || 20,
       }
@@ -857,17 +859,10 @@ async function init() {
       },
     ],
     layout: {
-      name: 'cose',
-      idealEdgeLength: 100,
-      nodeOverlap: 20,
-      refresh: 20,
-      randomize: false,
-      componentSpacing: 60,
-      nodeRepulsion: 6000,
-      edgeElasticity: 80,
-      nestingFactor: 1.2,
-      gravity: 0.3,
-      numIter: 1500,
+      name: 'breadthfirst',
+      directed: true,
+      spacingFactor: 0.75,
+      roots: elements.filter(e => e.data && e.data.nodeType === 'domain').map(e => e.data.id),
       animate: false,
     },
     minZoom: 0.15,
@@ -917,11 +912,15 @@ function showDetail(node) {
 
   content.innerHTML = `
     <div class="detail-type-badge" style="background:${d.color}22;color:${d.color};border:1px solid ${d.color}33">${d.nodeType}</div>
-    <div class="detail-label">${d.label}</div>
+    <div class="detail-label">${d.rawLabel || d.label}</div>
     <div class="detail-desc">${d.description}</div>
     <div class="detail-meta">
+      ${d.pages ? `<div class="detail-meta-row">
+        <span class="detail-meta-key">Pages</span>
+        <span class="detail-meta-val" style="font-size:16px;font-family:'Instrument Serif',serif;color:var(--accent-gold)">p. ${d.pages}</span>
+      </div>` : ''}
       ${d.grade_range.length ? `<div class="detail-meta-row">
-        <span class="detail-meta-key">Grade Range</span>
+        <span class="detail-meta-key">Level</span>
         <span class="detail-meta-val">${formatGradeRange(d.grade_range)}</span>
       </div>` : ''}
       ${d.tags.length ? `<div class="detail-meta-row">
