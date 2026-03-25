@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduGraph — Malaysia K-12 Math Prerequisites</title>
+<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg-deep: #0a0b10;
+  --bg-surface: rgba(14, 16, 26, 0.85);
+  --bg-glass: rgba(18, 20, 35, 0.72);
+  --border-dim: rgba(255, 255, 255, 0.06);
+  --border-glow: rgba(255, 200, 87, 0.15);
+  --text-primary: #e8e4dc;
+  --text-secondary: #8a8697;
+  --text-muted: #55516a;
+  --accent-gold: #ffc857;
+  --sidebar-w: 240px;
+  --detail-w: 320px;
+  --topbar-h: 64px;
+  --radius: 10px;
+}
+
+html, body { height: 100%; background: var(--bg-deep); color: var(--text-primary); font-family: 'DM Sans', sans-serif; font-size: 13px; overflow: hidden; }
+body::after { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9999; }
+
+.topbar { position: fixed; top: 0; left: 0; right: 0; height: var(--topbar-h); display: flex; align-items: center; justify-content: space-between; padding: 0 24px; background: linear-gradient(180deg, rgba(10,11,16,0.95) 0%, rgba(10,11,16,0.6) 100%); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border-dim); z-index: 100; }
+.topbar-title { display: flex; align-items: baseline; gap: 14px; }
+.topbar h1 { font-family: 'Instrument Serif', serif; font-size: 26px; font-weight: 400; color: var(--accent-gold); letter-spacing: -0.5px; }
+.topbar .subtitle { font-size: 12px; color: var(--text-secondary); font-weight: 300; letter-spacing: 0.5px; text-transform: uppercase; }
+.topbar-stats { display: flex; gap: 20px; align-items: center; }
+.stat { display: flex; align-items: baseline; gap: 5px; }
+.stat-num { font-family: 'Instrument Serif', serif; font-size: 20px; color: var(--accent-gold); }
+.stat-label { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+.layout-btns { display: flex; gap: 4px; }
+.layout-btn { background: var(--bg-glass); border: 1px solid var(--border-dim); color: var(--text-secondary); padding: 6px 12px; border-radius: 6px; font-size: 11px; font-family: 'DM Sans', sans-serif; cursor: pointer; transition: all 0.2s; text-transform: uppercase; letter-spacing: 0.5px; }
+.layout-btn:hover, .layout-btn.active { background: rgba(255, 200, 87, 0.1); border-color: var(--border-glow); color: var(--accent-gold); }
+
+.sidebar { position: fixed; top: var(--topbar-h); left: 0; bottom: 0; width: var(--sidebar-w); background: var(--bg-surface); backdrop-filter: blur(20px); border-right: 1px solid var(--border-dim); overflow-y: auto; z-index: 50; padding: 16px; display: flex; flex-direction: column; gap: 16px; }
+.sidebar::-webkit-scrollbar { width: 4px; }
+.sidebar::-webkit-scrollbar-track { background: transparent; }
+.sidebar::-webkit-scrollbar-thumb { background: var(--border-dim); border-radius: 2px; }
+
+.section-title { font-family: 'Instrument Serif', serif; font-size: 15px; color: var(--text-primary); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+.section-title::before { content: ''; width: 3px; height: 14px; background: var(--accent-gold); border-radius: 2px; }
+
+.search-wrap { position: relative; }
+.search-input { width: 100%; padding: 10px 12px 10px 34px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-dim); border-radius: var(--radius); color: var(--text-primary); font-family: 'DM Sans', sans-serif; font-size: 13px; outline: none; transition: border-color 0.2s; }
+.search-input::placeholder { color: var(--text-muted); }
+.search-input:focus { border-color: rgba(255, 200, 87, 0.3); }
+.search-icon { position: absolute; left: 11px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 14px; }
+
+.book-list { display: flex; flex-direction: column; gap: 2px; }
+.book-item { display: flex; align-items: center; gap: 8px; padding: 7px 8px; border-radius: 6px; cursor: pointer; transition: all 0.15s; user-select: none; border: 1px solid transparent; }
+.book-item:hover { background: rgba(255,255,255,0.03); }
+.book-item.active { background: rgba(255,255,255,0.06); border-color: var(--border-dim); }
+.book-item.dimmed-book { opacity: 0.3; }
+.book-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; border: 2px solid transparent; transition: all 0.15s; }
+.book-item.active .book-dot { border-color: white; transform: scale(1.2); }
+.book-label { font-size: 12px; color: var(--text-secondary); flex: 1; }
+.book-item.active .book-label { color: var(--text-primary); font-weight: 500; }
+.book-count { font-size: 10px; color: var(--text-muted); font-variant-numeric: tabular-nums; }
+
+.book-actions { display: flex; gap: 4px; margin-top: 4px; }
+.book-action-btn { flex: 1; background: rgba(255,255,255,0.04); border: 1px solid var(--border-dim); color: var(--text-muted); padding: 5px; border-radius: 5px; font-size: 10px; font-family: 'DM Sans', sans-serif; cursor: pointer; transition: all 0.15s; text-transform: uppercase; letter-spacing: 0.5px; }
+.book-action-btn:hover { background: rgba(255,255,255,0.08); color: var(--text-primary); }
+
+#cy { position: fixed; top: var(--topbar-h); left: var(--sidebar-w); right: 0; bottom: 0; background: var(--bg-deep); transition: right 0.3s ease; }
+#cy.detail-open { right: var(--detail-w); }
+
+.detail-panel { position: fixed; top: var(--topbar-h); right: calc(-1 * var(--detail-w)); bottom: 0; width: var(--detail-w); background: var(--bg-surface); backdrop-filter: blur(20px); border-left: 1px solid var(--border-dim); z-index: 50; overflow-y: auto; padding: 24px 20px; transition: right 0.3s ease; }
+.detail-panel.open { right: 0; }
+.detail-panel::-webkit-scrollbar { width: 4px; }
+.detail-panel::-webkit-scrollbar-track { background: transparent; }
+.detail-panel::-webkit-scrollbar-thumb { background: var(--border-dim); border-radius: 2px; }
+.detail-close { position: absolute; top: 16px; right: 16px; width: 28px; height: 28px; border-radius: 6px; background: rgba(255,255,255,0.04); border: 1px solid var(--border-dim); color: var(--text-muted); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; transition: all 0.15s; }
+.detail-close:hover { background: rgba(255,255,255,0.08); color: var(--text-primary); }
+.detail-book-badge { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 20px; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; font-weight: 500; margin-bottom: 6px; }
+.detail-pages-badge { display: inline-block; padding: 4px 12px; border-radius: 6px; font-family: 'Instrument Serif', serif; font-size: 18px; margin-bottom: 12px; background: rgba(255,200,87,0.08); color: var(--accent-gold); border: 1px solid rgba(255,200,87,0.15); }
+.detail-label { font-family: 'Instrument Serif', serif; font-size: 22px; color: var(--text-primary); line-height: 1.2; margin-bottom: 10px; }
+.detail-desc { font-size: 13px; line-height: 1.6; color: var(--text-secondary); margin-bottom: 16px; }
+.detail-connections { border-top: 1px solid var(--border-dim); padding-top: 14px; }
+.conn-section-title { font-size: 10px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin: 10px 0 6px; }
+.connection-list { display: flex; flex-direction: column; gap: 2px; }
+.connection-item { display: flex; align-items: center; gap: 8px; padding: 5px 8px; border-radius: 6px; cursor: pointer; transition: background 0.15s; }
+.connection-item:hover { background: rgba(255,255,255,0.04); }
+.connection-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; }
+.connection-name { font-size: 11px; color: var(--text-secondary); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.connection-book { font-size: 9px; color: var(--text-muted); flex-shrink: 0; }
+
+.loading-overlay { position: fixed; inset: 0; background: var(--bg-deep); display: flex; flex-direction: column; align-items: center; justify-content: center; z-index: 1000; transition: opacity 0.5s; }
+.loading-overlay.hidden { opacity: 0; pointer-events: none; }
+.loading-text { font-family: 'Instrument Serif', serif; font-size: 28px; color: var(--accent-gold); margin-bottom: 12px; }
+.loading-sub { font-size: 12px; color: var(--text-muted); letter-spacing: 2px; text-transform: uppercase; }
+.loading-spinner { width: 32px; height: 32px; border: 2px solid var(--border-dim); border-top-color: var(--accent-gold); border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 20px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 900px) {
+  .sidebar { width: 200px; } :root { --sidebar-w: 200px; }
+  .topbar .subtitle { display: none; } .topbar-stats { display: none; }
+}
+@media (max-width: 640px) {
+  .sidebar { width: 100%; height: auto; max-height: 35vh; top: auto; bottom: 0; border-right: none; border-top: 1px solid var(--border-dim); }
+  :root { --sidebar-w: 0px; } #cy { left: 0; bottom: 35vh; }
+  .detail-panel { width: 100%; right: -100%; }
+}
+</style>
+</head>
+<body>
+
+<div class="loading-overlay" id="loading">
+  <div class="loading-spinner"></div>
+  <div class="loading-text">EduGraph — K-12</div>
+  <div class="loading-sub">Building prerequisite chains</div>
+</div>
+
+<header class="topbar">
+  <div class="topbar-title">
+    <h1>EduGraph</h1>
+    <span class="subtitle">Malaysia K-12 Math — Prerequisite Flow</span>
+  </div>
+  <div class="topbar-stats">
+    <div class="stat"><span class="stat-num" id="stat-nodes">0</span><span class="stat-label">Topics</span></div>
+    <div class="stat"><span class="stat-num" id="stat-edges">0</span><span class="stat-label">Prerequisites</span></div>
+  </div>
+  <div class="layout-btns">
+    <a href="index.html" class="layout-btn" style="text-decoration:none">General</a>
+    <a href="malaysia.html" class="layout-btn" style="text-decoration:none">Curriculum</a>
+    <a href="books.html" class="layout-btn" style="text-decoration:none">Books</a>
+    <button class="layout-btn active" data-layout="cose">Force</button>
+    <button class="layout-btn" data-layout="breadthfirst">Tree</button>
+    <button class="layout-btn" data-layout="circle">Circle</button>
+  </div>
+</header>
+
+<aside class="sidebar">
+  <div>
+    <div class="search-wrap">
+      <span class="search-icon">⌕</span>
+      <input type="text" class="search-input" id="search" placeholder="Search topics…" autocomplete="off">
+    </div>
+  </div>
+  <div>
+    <div class="section-title">Textbooks</div>
+    <div class="book-actions">
+      <button class="book-action-btn" id="btn-all">Show All</button>
+      <button class="book-action-btn" id="btn-none">Hide All</button>
+    </div>
+    <div class="book-list" id="book-list"></div>
+  </div>
+</aside>
+
+<div id="cy"></div>
+
+<div class="detail-panel" id="detail">
+  <button class="detail-close" id="detail-close">✕</button>
+  <div id="detail-content"></div>
+</div>
+
+<script>
+let cy, graphData;
+let activeBooks = new Set();
+
+async function init() {
+  const res = await fetch('data/malaysia-k12.json');
+  graphData = await res.json();
+
+  // Initialize all books as active
+  graphData.books.forEach(b => activeBooks.add(b.id));
+
+  const elements = [];
+  graphData.nodes.forEach(n => {
+    elements.push({
+      data: {
+        id: n.id,
+        label: n.label,
+        description: n.description || '',
+        grade_range: n.grade_range || [],
+        tags: n.tags || [],
+        pages: n.pages || '',
+        book: n.book,
+        bookName: n.bookName,
+        bookColor: n.bookColor,
+        bookOrder: n.bookOrder,
+        color: n.bookColor,
+        size: 18,
+      }
+    });
+  });
+
+  graphData.edges.forEach((e, i) => {
+    elements.push({
+      data: {
+        id: 'e' + i,
+        source: e.source,
+        target: e.target,
+        relation: e.relation,
+      }
+    });
+  });
+
+  cy = cytoscape({
+    container: document.getElementById('cy'),
+    elements,
+    style: [
+      {
+        selector: 'node',
+        style: {
+          'background-color': 'data(color)',
+          'label': 'data(label)',
+          'width': 'data(size)',
+          'height': 'data(size)',
+          'font-size': 8,
+          'font-family': "'DM Sans', sans-serif",
+          'color': '#c8c4bc',
+          'text-valign': 'bottom',
+          'text-margin-y': 5,
+          'text-outline-color': '#0a0b10',
+          'text-outline-width': 2,
+          'border-width': 0,
+          'overlay-padding': 3,
+          'background-opacity': 0.85,
+          'text-max-width': 80,
+          'text-wrap': 'ellipsis',
+          'min-zoomed-font-size': 6,
+        }
+      },
+      {
+        selector: 'edge',
+        style: {
+          'line-color': '#3a3650',
+          'target-arrow-color': '#3a3650',
+          'target-arrow-shape': 'triangle',
+          'arrow-scale': 0.6,
+          'width': 0.8,
+          'curve-style': 'bezier',
+          'opacity': 0.3,
+        }
+      },
+      {
+        selector: '.highlighted',
+        style: {
+          'background-opacity': 1,
+          'border-width': 3,
+          'border-color': '#ffc857',
+          'text-outline-width': 3,
+          'font-size': 11,
+          'font-weight': 600,
+          'color': '#fff',
+          'z-index': 999,
+          'width': 24,
+          'height': 24,
+        }
+      },
+      {
+        selector: '.highlighted-edge',
+        style: {
+          'line-color': '#ffc857',
+          'target-arrow-color': '#ffc857',
+          'opacity': 0.8,
+          'width': 2,
+          'z-index': 998,
+        }
+      },
+      {
+        selector: '.prereq-edge',
+        style: {
+          'line-color': '#e07a5f',
+          'target-arrow-color': '#e07a5f',
+          'opacity': 0.7,
+          'width': 1.5,
+          'z-index': 997,
+        }
+      },
+      {
+        selector: '.postreq-edge',
+        style: {
+          'line-color': '#81b29a',
+          'target-arrow-color': '#81b29a',
+          'opacity': 0.7,
+          'width': 1.5,
+          'z-index': 997,
+        }
+      },
+      {
+        selector: '.dimmed',
+        style: { 'opacity': 0.08 }
+      },
+      {
+        selector: '.search-match',
+        style: { 'border-width': 3, 'border-color': '#ffc857', 'background-opacity': 1, 'z-index': 999 }
+      },
+      {
+        selector: '.hidden-filter',
+        style: { 'display': 'none' }
+      },
+    ],
+    layout: {
+      name: 'cose',
+      idealEdgeLength: 60,
+      nodeOverlap: 15,
+      nodeRepulsion: 5000,
+      edgeElasticity: 50,
+      gravity: 0.4,
+      numIter: 2000,
+      animate: false,
+      randomize: false,
+    },
+    minZoom: 0.08,
+    maxZoom: 4,
+    wheelSensitivity: 0.3,
+  });
+
+  cy.on('tap', 'node', e => {
+    showDetail(e.target);
+    highlightNeighborhood(e.target);
+  });
+  cy.on('tap', e => {
+    if (e.target === cy) { clearHighlight(); closeDetail(); }
+  });
+
+  buildBookList();
+  updateStats();
+  document.getElementById('loading').classList.add('hidden');
+}
+
+function buildBookList() {
+  const container = document.getElementById('book-list');
+  const counts = {};
+  cy.nodes().forEach(n => {
+    const b = n.data('book');
+    counts[b] = (counts[b] || 0) + 1;
+  });
+
+  graphData.books.forEach(book => {
+    const el = document.createElement('div');
+    el.className = 'book-item active';
+    el.dataset.bookId = book.id;
+    el.innerHTML = `
+      <span class="book-dot" style="background:${book.color}"></span>
+      <span class="book-label">${book.name}</span>
+      <span class="book-count">${counts[book.id] || 0}</span>
+    `;
+    el.addEventListener('click', () => toggleBook(book.id, el));
+    container.appendChild(el);
+  });
+}
+
+function toggleBook(bookId, el) {
+  if (activeBooks.has(bookId)) {
+    activeBooks.delete(bookId);
+    el.classList.remove('active');
+    el.classList.add('dimmed-book');
+  } else {
+    activeBooks.add(bookId);
+    el.classList.add('active');
+    el.classList.remove('dimmed-book');
+  }
+  applyBookFilter();
+}
+
+function applyBookFilter() {
+  cy.nodes().forEach(node => {
+    if (activeBooks.has(node.data('book'))) {
+      node.removeClass('hidden-filter');
+    } else {
+      node.addClass('hidden-filter');
+    }
+  });
+  cy.edges().forEach(edge => {
+    if (edge.source().hasClass('hidden-filter') || edge.target().hasClass('hidden-filter')) {
+      edge.addClass('hidden-filter');
+    } else {
+      edge.removeClass('hidden-filter');
+    }
+  });
+  updateStats();
+}
+
+document.getElementById('btn-all').addEventListener('click', () => {
+  activeBooks = new Set(graphData.books.map(b => b.id));
+  document.querySelectorAll('.book-item').forEach(el => { el.classList.add('active'); el.classList.remove('dimmed-book'); });
+  applyBookFilter();
+});
+
+document.getElementById('btn-none').addEventListener('click', () => {
+  activeBooks.clear();
+  document.querySelectorAll('.book-item').forEach(el => { el.classList.remove('active'); el.classList.add('dimmed-book'); });
+  applyBookFilter();
+});
+
+function showDetail(node) {
+  const d = node.data();
+  const panel = document.getElementById('detail');
+  const content = document.getElementById('detail-content');
+  document.getElementById('cy').classList.add('detail-open');
+
+  // Get prerequisites (incoming edges) and postrequisites (outgoing edges)
+  const prereqs = [];
+  const postreqs = [];
+  node.connectedEdges().forEach(edge => {
+    if (edge.target().id() === node.id()) {
+      const src = edge.source();
+      prereqs.push({ id: src.id(), label: src.data('label'), color: src.data('bookColor'), bookName: src.data('bookName') });
+    } else {
+      const tgt = edge.target();
+      postreqs.push({ id: tgt.id(), label: tgt.data('label'), color: tgt.data('bookColor'), bookName: tgt.data('bookName') });
+    }
+  });
+
+  content.innerHTML = `
+    <div class="detail-book-badge" style="background:${d.bookColor}22;color:${d.bookColor};border:1px solid ${d.bookColor}33">
+      <span style="width:6px;height:6px;border-radius:50%;background:${d.bookColor};display:inline-block"></span>
+      ${d.bookName}
+    </div>
+    ${d.pages ? `<div class="detail-pages-badge">p. ${d.pages}</div>` : ''}
+    <div class="detail-label">${d.label}</div>
+    <div class="detail-desc">${d.description}</div>
+    <div class="detail-connections">
+      ${prereqs.length ? `
+        <div class="conn-section-title">Prerequisites (${prereqs.length}) — must learn first</div>
+        <div class="connection-list">
+          ${prereqs.map(c => `
+            <div class="connection-item" data-node-id="${c.id}">
+              <span class="connection-dot" style="background:${c.color}"></span>
+              <span class="connection-name">${c.label}</span>
+              <span class="connection-book">${c.bookName}</span>
+            </div>
+          `).join('')}
+        </div>
+      ` : '<div class="conn-section-title" style="color:var(--accent-gold)">Starting point — no prerequisites</div>'}
+      ${postreqs.length ? `
+        <div class="conn-section-title" style="margin-top:14px">Leads to (${postreqs.length})</div>
+        <div class="connection-list">
+          ${postreqs.map(c => `
+            <div class="connection-item" data-node-id="${c.id}">
+              <span class="connection-dot" style="background:${c.color}"></span>
+              <span class="connection-name">${c.label}</span>
+              <span class="connection-book">${c.bookName}</span>
+            </div>
+          `).join('')}
+        </div>
+      ` : ''}
+    </div>
+  `;
+
+  content.querySelectorAll('.connection-item').forEach(item => {
+    item.addEventListener('click', () => {
+      const targetNode = cy.getElementById(item.dataset.nodeId);
+      if (targetNode.length) {
+        showDetail(targetNode);
+        highlightNeighborhood(targetNode);
+        cy.animate({ center: { eles: targetNode }, duration: 300 });
+      }
+    });
+  });
+
+  panel.classList.add('open');
+}
+
+function closeDetail() {
+  document.getElementById('detail').classList.remove('open');
+  document.getElementById('cy').classList.remove('detail-open');
+}
+
+function highlightNeighborhood(node) {
+  cy.elements().removeClass('highlighted highlighted-edge prereq-edge postreq-edge dimmed');
+  cy.elements().addClass('dimmed');
+
+  const neighborhood = node.neighborhood().add(node);
+  neighborhood.removeClass('dimmed');
+  node.addClass('highlighted');
+  node.neighborhood('node').addClass('highlighted');
+
+  // Color edges by direction
+  node.connectedEdges().forEach(edge => {
+    edge.removeClass('dimmed');
+    if (edge.target().id() === node.id()) {
+      edge.addClass('prereq-edge');
+    } else {
+      edge.addClass('postreq-edge');
+    }
+  });
+}
+
+function clearHighlight() {
+  cy.elements().removeClass('highlighted highlighted-edge prereq-edge postreq-edge dimmed');
+}
+
+function updateStats() {
+  const vn = cy.nodes().filter(n => !n.hasClass('hidden-filter'));
+  const ve = cy.edges().filter(e => !e.hasClass('hidden-filter'));
+  document.getElementById('stat-nodes').textContent = vn.length;
+  document.getElementById('stat-edges').textContent = ve.length;
+}
+
+// Search
+let searchTimeout;
+document.getElementById('search').addEventListener('input', e => {
+  clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(() => {
+    const q = e.target.value.trim().toLowerCase();
+    cy.nodes().removeClass('search-match');
+    clearHighlight();
+    if (!q) return;
+    const matches = cy.nodes().filter(n =>
+      n.data('label').toLowerCase().includes(q) ||
+      n.data('description').toLowerCase().includes(q)
+    );
+    if (matches.length) {
+      matches.addClass('search-match');
+      cy.animate({ fit: { eles: matches, padding: 60 }, duration: 400 });
+    }
+  }, 200);
+});
+
+// Layout buttons
+document.querySelectorAll('.layout-btn[data-layout]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.layout-btn[data-layout]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const name = btn.dataset.layout;
+    const opts = { name, animate: true, animationDuration: 600 };
+    if (name === 'cose') Object.assign(opts, { idealEdgeLength: 60, nodeRepulsion: 5000, gravity: 0.4, numIter: 2000 });
+    else if (name === 'breadthfirst') Object.assign(opts, { spacingFactor: 0.6, directed: true });
+    else if (name === 'circle') Object.assign(opts, { spacingFactor: 1 });
+    cy.layout(opts).run();
+  });
+});
+
+document.getElementById('detail-close').addEventListener('click', () => { closeDetail(); clearHighlight(); });
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { closeDetail(); clearHighlight(); document.getElementById('search').value = ''; cy.nodes().removeClass('search-match'); }
+  if (e.key === '/' && document.activeElement !== document.getElementById('search')) { e.preventDefault(); document.getElementById('search').focus(); }
+});
+
+init();
+</script>
+</body>
+</html>
