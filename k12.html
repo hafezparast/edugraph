@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EduGraph — Malaysia K-12 Math Prerequisites</title>
 <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
 <style>
@@ -132,7 +135,8 @@ body::after { content: ''; position: fixed; inset: 0; background-image: url("dat
     <a href="index.html" class="layout-btn" style="text-decoration:none">General</a>
     <a href="malaysia.html" class="layout-btn" style="text-decoration:none">Curriculum</a>
     <a href="books.html" class="layout-btn" style="text-decoration:none">Books</a>
-    <button class="layout-btn active" data-layout="cose">Force</button>
+    <button class="layout-btn active" data-layout="fcose">Force</button>
+    <button class="layout-btn" data-layout="cose">Cose</button>
     <button class="layout-btn" data-layout="breadthfirst">Tree</button>
     <button class="layout-btn" data-layout="circle">Circle</button>
   </div>
@@ -300,21 +304,14 @@ async function init() {
         style: { 'display': 'none' }
       },
     ],
-    layout: {
-      name: 'cose',
-      idealEdgeLength: 60,
-      nodeOverlap: 15,
-      nodeRepulsion: 5000,
-      edgeElasticity: 50,
-      gravity: 0.4,
-      numIter: 2000,
-      animate: false,
-      randomize: false,
-    },
+    layout: { name: 'preset' }, // we run layout after init
     minZoom: 0.08,
     maxZoom: 4,
     wheelSensitivity: 0.3,
   });
+
+  // Run initial layout
+  runLayout('fcose', false);
 
   cy.on('tap', 'node', e => {
     showDetail(e.target);
@@ -324,9 +321,74 @@ async function init() {
     if (e.target === cy) { clearHighlight(); closeDetail(); }
   });
 
+  // Interactive drag physics: when a node is dragged, gently pull its neighbors
+  let dragLayout = null;
+  cy.on('drag', 'node', function(e) {
+    const node = e.target;
+    // Cancel any running drag layout
+    if (dragLayout) { dragLayout.stop(); }
+    // Get neighborhood (excluding the dragged node)
+    const neighborhood = node.neighborhood().nodes().not(node);
+    if (neighborhood.length === 0) return;
+    // Run a quick layout on just the connected nodes
+    dragLayout = neighborhood.layout({
+      name: 'fcose',
+      animate: true,
+      animationDuration: 150,
+      randomize: false,
+      fit: false,
+      nodeRepulsion: 8000,
+      idealEdgeLength: 80,
+      numIter: 50,
+      fixedNodeConstraint: [{ nodeId: node.id(), position: node.position() }],
+    });
+    dragLayout.run();
+  });
+
+  cy.on('free', 'node', function() {
+    if (dragLayout) { dragLayout.stop(); dragLayout = null; }
+  });
+
   buildBookList();
   updateStats();
   document.getElementById('loading').classList.add('hidden');
+}
+
+function runLayout(name, animate) {
+  const opts = { name, animate, fit: true };
+  if (name === 'fcose') {
+    Object.assign(opts, {
+      quality: 'default',
+      randomize: true,
+      animationDuration: animate ? 800 : 0,
+      animationEasing: 'ease-out',
+      nodeRepulsion: 6500,
+      idealEdgeLength: 70,
+      edgeElasticity: 0.45,
+      nestingFactor: 0.1,
+      gravity: 0.25,
+      gravityRange: 3.8,
+      numIter: 2500,
+      tile: true,
+      tilingPaddingVertical: 10,
+      tilingPaddingHorizontal: 10,
+      nodeSeparation: 50,
+    });
+  } else if (name === 'cose') {
+    Object.assign(opts, {
+      idealEdgeLength: 70,
+      nodeRepulsion: 6000,
+      edgeElasticity: 80,
+      gravity: 0.3,
+      numIter: 2000,
+      animate: animate,
+    });
+  } else if (name === 'breadthfirst') {
+    Object.assign(opts, { spacingFactor: 0.6, directed: true, animate });
+  } else if (name === 'circle') {
+    Object.assign(opts, { spacingFactor: 1, animate });
+  }
+  cy.layout(opts).run();
 }
 
 function buildBookList() {
@@ -524,12 +586,7 @@ document.querySelectorAll('.layout-btn[data-layout]').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.layout-btn[data-layout]').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    const name = btn.dataset.layout;
-    const opts = { name, animate: true, animationDuration: 600 };
-    if (name === 'cose') Object.assign(opts, { idealEdgeLength: 60, nodeRepulsion: 5000, gravity: 0.4, numIter: 2000 });
-    else if (name === 'breadthfirst') Object.assign(opts, { spacingFactor: 0.6, directed: true });
-    else if (name === 'circle') Object.assign(opts, { spacingFactor: 1 });
-    cy.layout(opts).run();
+    runLayout(btn.dataset.layout, true);
   });
 });
 
