@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "EduGraph Data Schema",
+  "description": "Schema for educational knowledge graph data files",
+  "type": "object",
+  "required": ["metadata", "nodes", "edges"],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["domain", "version"],
+      "properties": {
+        "domain": { "type": "string", "description": "Subject area, e.g. 'mathematics'" },
+        "version": { "type": "string" },
+        "description": { "type": "string" },
+        "sources": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "last_updated": { "type": "string", "format": "date" }
+      }
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "type"],
+        "properties": {
+          "id": { "type": "string", "description": "Unique identifier, e.g. 'math.algebra.quadratic_formula'" },
+          "label": { "type": "string", "description": "Human-readable name" },
+          "type": {
+            "type": "string",
+            "enum": ["domain", "branch", "topic", "concept", "axiom", "theorem", "definition", "formula", "technique", "question", "example"],
+            "description": "Node category"
+          },
+          "description": { "type": "string" },
+          "grade_range": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "Grade levels, e.g. ['K','1','2'] or ['undergraduate','graduate']"
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "sources": {
+            "type": "array",
+            "items": { "type": "string" },
+            "description": "URLs or references where this was sourced from"
+          }
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["source", "target", "relation"],
+        "properties": {
+          "source": { "type": "string", "description": "Source node id" },
+          "target": { "type": "string", "description": "Target node id" },
+          "relation": {
+            "type": "string",
+            "enum": [
+              "contains",
+              "prerequisite_for",
+              "builds_on",
+              "related_to",
+              "generalizes",
+              "specializes",
+              "proves",
+              "applies",
+              "example_of",
+              "formalized_by",
+              "equivalent_to"
+            ],
+            "description": "Type of relationship"
+          },
+          "description": { "type": "string" }
+        }
+      }
+    }
+  }
+}
