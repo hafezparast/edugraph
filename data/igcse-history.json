@@ -1,0 +1,389 @@
+{
+  "metadata": {
+    "domain": "history",
+    "curriculum": "Cambridge IGCSE History (0470)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "IGCSE History topics with prerequisite ordering, colored by section",
+    "sources": [
+      "Cambridge IGCSE History 0470 Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "hist.s1",
+      "name": "19th Century (1848–1918)",
+      "color": "#d97706",
+      "order": 1
+    },
+    {
+      "id": "hist.s2",
+      "name": "Interwar Period",
+      "color": "#b45309",
+      "order": 2
+    },
+    {
+      "id": "hist.s3",
+      "name": "WWII & Cold War",
+      "color": "#92400e",
+      "order": 3
+    },
+    {
+      "id": "hist.s4",
+      "name": "Decolonisation & Modern World",
+      "color": "#7c2d12",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "hist.t1.unification_italy",
+      "label": "Unification of Italy",
+      "type": "concept",
+      "description": "Unification of Italy — Risorgimento, Cavour, Garibaldi, and the creation of the Italian state",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s1",
+      "bookName": "19th Century (1848–1918)",
+      "bookColor": "#d97706",
+      "bookOrder": 1
+    },
+    {
+      "id": "hist.t2.unification_germany",
+      "label": "Unification of Germany",
+      "type": "concept",
+      "description": "Unification of Germany — Bismarck's realpolitik, wars of unification, creation of the German Empire",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s1",
+      "bookName": "19th Century (1848–1918)",
+      "bookColor": "#d97706",
+      "bookOrder": 1
+    },
+    {
+      "id": "hist.t3.wwi_causes",
+      "label": "Causes of World War I",
+      "type": "concept",
+      "description": "Causes of World War I — alliance systems, imperialism, militarism, nationalism, assassination of Franz Ferdinand",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s1",
+      "bookName": "19th Century (1848–1918)",
+      "bookColor": "#d97706",
+      "bookOrder": 1
+    },
+    {
+      "id": "hist.t4.wwi_events",
+      "label": "Events of World War I",
+      "type": "concept",
+      "description": "Events of World War I — trench warfare, key battles, new technology, and the course of the war",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s1",
+      "bookName": "19th Century (1848–1918)",
+      "bookColor": "#d97706",
+      "bookOrder": 1
+    },
+    {
+      "id": "hist.t5.wwi_consequences",
+      "label": "Consequences of World War I",
+      "type": "concept",
+      "description": "Consequences of World War I — social, economic and political impact of the war on Europe and the world",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s1",
+      "bookName": "19th Century (1848–1918)",
+      "bookColor": "#d97706",
+      "bookOrder": 1
+    },
+    {
+      "id": "hist.t6.treaty_versailles",
+      "label": "Treaty of Versailles",
+      "type": "concept",
+      "description": "Treaty of Versailles — terms of the treaty, war guilt, reparations, territorial changes, impact on Germany",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s2",
+      "bookName": "Interwar Period",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "hist.t7.league_of_nations",
+      "label": "League of Nations",
+      "type": "concept",
+      "description": "League of Nations — aims, structure, successes and failures in maintaining peace",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s2",
+      "bookName": "Interwar Period",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "hist.t8.rise_hitler",
+      "label": "Rise of Hitler",
+      "type": "concept",
+      "description": "Rise of Hitler — Weimar Republic, economic crisis, Nazi ideology, rise to power and consolidation",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s2",
+      "bookName": "Interwar Period",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "hist.t9.rise_mussolini",
+      "label": "Rise of Mussolini",
+      "type": "concept",
+      "description": "Rise of Mussolini — post-war Italy, fascist ideology, March on Rome and the fascist state",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s2",
+      "bookName": "Interwar Period",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "hist.t10.rise_stalin",
+      "label": "Rise of Stalin",
+      "type": "concept",
+      "description": "Rise of Stalin — power struggle after Lenin, collectivisation, industrialisation, purges and terror",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s2",
+      "bookName": "Interwar Period",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "hist.t11.wwii",
+      "label": "World War II",
+      "type": "concept",
+      "description": "World War II — causes, key events, turning points, the Holocaust, and the end of the war",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s3",
+      "bookName": "WWII & Cold War",
+      "bookColor": "#92400e",
+      "bookOrder": 3
+    },
+    {
+      "id": "hist.t12.cold_war_origins",
+      "label": "Cold War Origins",
+      "type": "concept",
+      "description": "Cold War Origins — ideological differences, Yalta and Potsdam, Truman Doctrine, Marshall Plan, NATO and Warsaw Pact",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s3",
+      "bookName": "WWII & Cold War",
+      "bookColor": "#92400e",
+      "bookOrder": 3
+    },
+    {
+      "id": "hist.t13.cuban_missile_crisis",
+      "label": "Cuban Missile Crisis",
+      "type": "concept",
+      "description": "Cuban Missile Crisis — the 1962 confrontation, brinkmanship, resolution and significance",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s3",
+      "bookName": "WWII & Cold War",
+      "bookColor": "#92400e",
+      "bookOrder": 3
+    },
+    {
+      "id": "hist.t14.vietnam_war",
+      "label": "Vietnam War",
+      "type": "concept",
+      "description": "Vietnam War — US involvement, tactics, opposition, withdrawal and consequences",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s3",
+      "bookName": "WWII & Cold War",
+      "bookColor": "#92400e",
+      "bookOrder": 3
+    },
+    {
+      "id": "hist.t15.collapse_soviet_union",
+      "label": "Collapse of the Soviet Union",
+      "type": "concept",
+      "description": "Collapse of the Soviet Union — Gorbachev's reforms, fall of the Berlin Wall, end of the Cold War",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s4",
+      "bookName": "Decolonisation & Modern World",
+      "bookColor": "#7c2d12",
+      "bookOrder": 4
+    },
+    {
+      "id": "hist.t16.arab_israeli_conflict",
+      "label": "Arab-Israeli Conflict",
+      "type": "concept",
+      "description": "Arab-Israeli Conflict — creation of Israel, wars, peace processes, and ongoing tensions",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s4",
+      "bookName": "Decolonisation & Modern World",
+      "bookColor": "#7c2d12",
+      "bookOrder": 4
+    },
+    {
+      "id": "hist.t17.decolonisation",
+      "label": "Decolonisation",
+      "type": "concept",
+      "description": "Decolonisation — end of European empires, independence movements in Africa and Asia, neocolonialism",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "hist.s4",
+      "bookName": "Decolonisation & Modern World",
+      "bookColor": "#7c2d12",
+      "bookOrder": 4
+    }
+  ],
+  "edges": [
+    {
+      "source": "hist.t1.unification_italy",
+      "target": "hist.t3.wwi_causes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t2.unification_germany",
+      "target": "hist.t3.wwi_causes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t1.unification_italy",
+      "target": "hist.t9.rise_mussolini",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t2.unification_germany",
+      "target": "hist.t8.rise_hitler",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t3.wwi_causes",
+      "target": "hist.t4.wwi_events",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t4.wwi_events",
+      "target": "hist.t5.wwi_consequences",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t5.wwi_consequences",
+      "target": "hist.t6.treaty_versailles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t6.treaty_versailles",
+      "target": "hist.t7.league_of_nations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t6.treaty_versailles",
+      "target": "hist.t8.rise_hitler",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t5.wwi_consequences",
+      "target": "hist.t9.rise_mussolini",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t5.wwi_consequences",
+      "target": "hist.t10.rise_stalin",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t7.league_of_nations",
+      "target": "hist.t11.wwii",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t8.rise_hitler",
+      "target": "hist.t11.wwii",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t9.rise_mussolini",
+      "target": "hist.t11.wwii",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t10.rise_stalin",
+      "target": "hist.t11.wwii",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t11.wwii",
+      "target": "hist.t12.cold_war_origins",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t12.cold_war_origins",
+      "target": "hist.t13.cuban_missile_crisis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t12.cold_war_origins",
+      "target": "hist.t14.vietnam_war",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t13.cuban_missile_crisis",
+      "target": "hist.t15.collapse_soviet_union",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t14.vietnam_war",
+      "target": "hist.t15.collapse_soviet_union",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t11.wwii",
+      "target": "hist.t16.arab_israeli_conflict",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t12.cold_war_origins",
+      "target": "hist.t16.arab_israeli_conflict",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t11.wwii",
+      "target": "hist.t17.decolonisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t12.cold_war_origins",
+      "target": "hist.t17.decolonisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "hist.t15.collapse_soviet_union",
+      "target": "hist.t17.decolonisation",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

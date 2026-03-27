@@ -1,0 +1,606 @@
+{
+  "metadata": {
+    "domain": "economics",
+    "curriculum": "Cambridge IGCSE Economics (0455)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "IGCSE Economics topics with prerequisite ordering, colored by section",
+    "sources": [
+      "Cambridge IGCSE Economics 0455 Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "econ.s1",
+      "name": "Basic Economic Problem",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "econ.s2",
+      "name": "Allocation of Resources",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "econ.s3",
+      "name": "Microeconomics",
+      "color": "#eab308",
+      "order": 3
+    },
+    {
+      "id": "econ.s4",
+      "name": "Government & Macroeconomy",
+      "color": "#22c55e",
+      "order": 4
+    },
+    {
+      "id": "econ.s5",
+      "name": "Economic Development",
+      "color": "#3b82f6",
+      "order": 5
+    },
+    {
+      "id": "econ.s6",
+      "name": "International Trade",
+      "color": "#8b5cf6",
+      "order": 6
+    }
+  ],
+  "nodes": [
+    {
+      "id": "econ.t1.economic_problem",
+      "label": "The Economic Problem",
+      "type": "concept",
+      "description": "The Economic Problem — scarcity, unlimited wants vs limited resources, and the need to make choices",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s1",
+      "bookName": "Basic Economic Problem",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "econ.t2.opportunity_cost",
+      "label": "Opportunity Cost",
+      "type": "concept",
+      "description": "Opportunity Cost — the next best alternative forgone when a choice is made",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s1",
+      "bookName": "Basic Economic Problem",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "econ.t3.ppc",
+      "label": "Production Possibility Curve",
+      "type": "concept",
+      "description": "Production Possibility Curve — illustrating opportunity cost, efficiency, and economic growth graphically",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s1",
+      "bookName": "Basic Economic Problem",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "econ.t4.price_mechanism",
+      "label": "The Price Mechanism",
+      "type": "concept",
+      "description": "The Price Mechanism — how prices allocate scarce resources through the interaction of demand and supply",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s2",
+      "bookName": "Allocation of Resources",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "econ.t5.demand",
+      "label": "Demand",
+      "type": "concept",
+      "description": "Demand — the relationship between price and quantity demanded, and factors causing demand shifts",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s2",
+      "bookName": "Allocation of Resources",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "econ.t6.supply",
+      "label": "Supply",
+      "type": "concept",
+      "description": "Supply — the relationship between price and quantity supplied, and factors causing supply shifts",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s2",
+      "bookName": "Allocation of Resources",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "econ.t7.market_equilibrium",
+      "label": "Market Equilibrium",
+      "type": "concept",
+      "description": "Market Equilibrium — where demand equals supply, determining equilibrium price and quantity",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s2",
+      "bookName": "Allocation of Resources",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "econ.t8.elasticity",
+      "label": "Elasticity",
+      "type": "concept",
+      "description": "Elasticity — price elasticity of demand and supply, income and cross elasticity of demand",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s2",
+      "bookName": "Allocation of Resources",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "econ.t9.types_of_business",
+      "label": "Types of Business Organisation",
+      "type": "concept",
+      "description": "Types of Business Organisation — sole traders, partnerships, companies, public corporations",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s3",
+      "bookName": "Microeconomics",
+      "bookColor": "#eab308",
+      "bookOrder": 3
+    },
+    {
+      "id": "econ.t10.costs_revenue_profit",
+      "label": "Business Costs, Revenue and Profit",
+      "type": "concept",
+      "description": "Business Costs, Revenue and Profit — fixed/variable costs, total/average revenue, profit calculation",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s3",
+      "bookName": "Microeconomics",
+      "bookColor": "#eab308",
+      "bookOrder": 3
+    },
+    {
+      "id": "econ.t11.market_structure",
+      "label": "Market Structure",
+      "type": "concept",
+      "description": "Market Structure — perfect competition, monopoly, oligopoly and their effects on price and output",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s3",
+      "bookName": "Microeconomics",
+      "bookColor": "#eab308",
+      "bookOrder": 3
+    },
+    {
+      "id": "econ.t12.labour_market",
+      "label": "The Labour Market",
+      "type": "concept",
+      "description": "The Labour Market — wage determination, trade unions, demand and supply of labour",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s3",
+      "bookName": "Microeconomics",
+      "bookColor": "#eab308",
+      "bookOrder": 3
+    },
+    {
+      "id": "econ.t13.government_objectives",
+      "label": "Government Economic Objectives",
+      "type": "concept",
+      "description": "Government Economic Objectives — economic growth, low unemployment, price stability, balance of payments equilibrium",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s4",
+      "bookName": "Government & Macroeconomy",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "econ.t14.fiscal_policy",
+      "label": "Fiscal Policy",
+      "type": "concept",
+      "description": "Fiscal Policy — government taxation and spending to influence the economy",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s4",
+      "bookName": "Government & Macroeconomy",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "econ.t15.monetary_policy",
+      "label": "Monetary Policy",
+      "type": "concept",
+      "description": "Monetary Policy — central bank control of interest rates and money supply",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s4",
+      "bookName": "Government & Macroeconomy",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "econ.t16.supply_side_policy",
+      "label": "Supply-side Policy",
+      "type": "concept",
+      "description": "Supply-side Policy — policies to increase the productive capacity of the economy",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s4",
+      "bookName": "Government & Macroeconomy",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "econ.t17.gdp",
+      "label": "Gross Domestic Product",
+      "type": "concept",
+      "description": "Gross Domestic Product — measuring national output and economic growth",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s4",
+      "bookName": "Government & Macroeconomy",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "econ.t18.inflation",
+      "label": "Inflation",
+      "type": "concept",
+      "description": "Inflation — causes (demand-pull, cost-push), consequences and measurement of inflation",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s4",
+      "bookName": "Government & Macroeconomy",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "econ.t19.unemployment",
+      "label": "Unemployment",
+      "type": "concept",
+      "description": "Unemployment — types, causes, consequences and policies to reduce unemployment",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s4",
+      "bookName": "Government & Macroeconomy",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "econ.t20.development_indicators",
+      "label": "Indicators of Development",
+      "type": "concept",
+      "description": "Indicators of Development — GDP per capita, HDI, literacy, life expectancy as measures of living standards",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s5",
+      "bookName": "Economic Development",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5
+    },
+    {
+      "id": "econ.t21.factors_affecting_development",
+      "label": "Factors Affecting Development",
+      "type": "concept",
+      "description": "Factors Affecting Development — education, healthcare, infrastructure, political stability, aid and trade",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s5",
+      "bookName": "Economic Development",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5
+    },
+    {
+      "id": "econ.t22.consequences_of_growth",
+      "label": "Consequences of Economic Growth",
+      "type": "concept",
+      "description": "Consequences of Economic Growth — benefits and costs of growth including environmental impact",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s5",
+      "bookName": "Economic Development",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5
+    },
+    {
+      "id": "econ.t23.specialisation",
+      "label": "Specialisation and Trade",
+      "type": "concept",
+      "description": "Specialisation and Trade — comparative advantage, benefits and risks of specialisation",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s6",
+      "bookName": "International Trade",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6
+    },
+    {
+      "id": "econ.t24.free_trade_protection",
+      "label": "Free Trade vs Protection",
+      "type": "concept",
+      "description": "Free Trade vs Protection — arguments for and against free trade, tariffs, quotas, subsidies",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s6",
+      "bookName": "International Trade",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6
+    },
+    {
+      "id": "econ.t25.exchange_rates",
+      "label": "Exchange Rates",
+      "type": "concept",
+      "description": "Exchange Rates — determination, floating vs fixed systems, effects of exchange rate changes",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s6",
+      "bookName": "International Trade",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6
+    },
+    {
+      "id": "econ.t26.balance_of_payments",
+      "label": "Balance of Payments",
+      "type": "concept",
+      "description": "Balance of Payments — current account, causes and consequences of deficits and surpluses",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s6",
+      "bookName": "International Trade",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6
+    },
+    {
+      "id": "econ.t27.globalisation",
+      "label": "Globalisation",
+      "type": "concept",
+      "description": "Globalisation — causes, consequences, multinational corporations and their impact on economies",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "econ.s6",
+      "bookName": "International Trade",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6
+    }
+  ],
+  "edges": [
+    {
+      "source": "econ.t1.economic_problem",
+      "target": "econ.t2.opportunity_cost",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t2.opportunity_cost",
+      "target": "econ.t3.ppc",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t1.economic_problem",
+      "target": "econ.t4.price_mechanism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t4.price_mechanism",
+      "target": "econ.t5.demand",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t4.price_mechanism",
+      "target": "econ.t6.supply",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t5.demand",
+      "target": "econ.t7.market_equilibrium",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t6.supply",
+      "target": "econ.t7.market_equilibrium",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t5.demand",
+      "target": "econ.t8.elasticity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t6.supply",
+      "target": "econ.t8.elasticity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t7.market_equilibrium",
+      "target": "econ.t11.market_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t1.economic_problem",
+      "target": "econ.t9.types_of_business",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t9.types_of_business",
+      "target": "econ.t10.costs_revenue_profit",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t10.costs_revenue_profit",
+      "target": "econ.t11.market_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t5.demand",
+      "target": "econ.t12.labour_market",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t6.supply",
+      "target": "econ.t12.labour_market",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t3.ppc",
+      "target": "econ.t13.government_objectives",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t7.market_equilibrium",
+      "target": "econ.t13.government_objectives",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t13.government_objectives",
+      "target": "econ.t14.fiscal_policy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t13.government_objectives",
+      "target": "econ.t15.monetary_policy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t13.government_objectives",
+      "target": "econ.t16.supply_side_policy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t3.ppc",
+      "target": "econ.t17.gdp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t13.government_objectives",
+      "target": "econ.t17.gdp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t7.market_equilibrium",
+      "target": "econ.t18.inflation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t14.fiscal_policy",
+      "target": "econ.t18.inflation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t15.monetary_policy",
+      "target": "econ.t18.inflation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t12.labour_market",
+      "target": "econ.t19.unemployment",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t13.government_objectives",
+      "target": "econ.t19.unemployment",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t17.gdp",
+      "target": "econ.t20.development_indicators",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t20.development_indicators",
+      "target": "econ.t21.factors_affecting_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t17.gdp",
+      "target": "econ.t22.consequences_of_growth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t21.factors_affecting_development",
+      "target": "econ.t22.consequences_of_growth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t2.opportunity_cost",
+      "target": "econ.t23.specialisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t23.specialisation",
+      "target": "econ.t24.free_trade_protection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t5.demand",
+      "target": "econ.t25.exchange_rates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t6.supply",
+      "target": "econ.t25.exchange_rates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t24.free_trade_protection",
+      "target": "econ.t26.balance_of_payments",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t25.exchange_rates",
+      "target": "econ.t26.balance_of_payments",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t23.specialisation",
+      "target": "econ.t27.globalisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t26.balance_of_payments",
+      "target": "econ.t27.globalisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "econ.t21.factors_affecting_development",
+      "target": "econ.t27.globalisation",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "metadata": {
+    "domain": "global_perspectives",
+    "curriculum": "Cambridge IGCSE Global Perspectives (0457)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "IGCSE Global Perspectives topics with prerequisite ordering, colored by skill area",
+    "sources": [
+      "Cambridge IGCSE Global Perspectives 0457 Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "gp.s1",
+      "name": "Research Skills",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "gp.s2",
+      "name": "Global Issues",
+      "color": "#22c55e",
+      "order": 2
+    },
+    {
+      "id": "gp.s3",
+      "name": "Communication",
+      "color": "#f59e0b",
+      "order": 3
+    }
+  ],
+  "nodes": [
+    {
+      "id": "gp.t1.research_methodology",
+      "label": "Research Methodology",
+      "type": "concept",
+      "description": "Research Methodology — planning research, formulating questions, selecting appropriate methods of investigation",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "gp.s1",
+      "bookName": "Research Skills",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "gp.t2.source_evaluation",
+      "label": "Source Evaluation",
+      "type": "concept",
+      "description": "Source Evaluation — assessing reliability, bias, provenance and usefulness of sources",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "gp.s1",
+      "bookName": "Research Skills",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "gp.t3.critical_thinking",
+      "label": "Critical Thinking",
+      "type": "concept",
+      "description": "Critical Thinking — reasoning, identifying assumptions, evaluating arguments and drawing conclusions",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "gp.s1",
+      "bookName": "Research Skills",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "gp.t4.perspective_analysis",
+      "label": "Perspective Analysis",
+      "type": "concept",
+      "description": "Perspective Analysis — understanding personal, national and global perspectives on issues",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "gp.s1",
+      "bookName": "Research Skills",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "gp.t5.cause_consequence",
+      "label": "Cause and Consequence",
+      "type": "concept",
+      "description": "Cause and Consequence — analysing root causes and short/long-term consequences of global issues",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "gp.s1",
+      "bookName": "Research Skills",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "gp.t6.global_citizenship",
+      "label": "Global Citizenship",
+      "type": "concept",
+      "description": "Global Citizenship — rights and responsibilities, ethical awareness and active engagement in global issues",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "gp.s2",
+      "bookName": "Global Issues",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "gp.t7.demographic_change",
+      "label": "Demographic Change",
+      "type": "concept",
+      "description": "Demographic Change — population growth, ageing, urbanisation and their impact on societies",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "gp.s2",
+      "bookName": "Global Issues",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "gp.t8.climate_change",
+      "label": "Climate Change",
+      "type": "concept",
+      "description": "Climate Change — causes, evidence, impacts and responses at local, national and international levels",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "gp.s2",
+      "bookName": "Global Issues",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "gp.t9.conflict_resolution",
+      "label": "Conflict Resolution",
+      "type": "concept",
+      "description": "Conflict Resolution — causes of conflict, peacekeeping, diplomacy and methods of conflict resolution",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "gp.s2",
+      "bookName": "Global Issues",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "gp.t10.digital_world",
+      "label": "Digital World",
+      "type": "concept",
+      "description": "Digital World — impact of technology on communication, privacy, work and society",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "gp.s2",
+      "bookName": "Global Issues",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "gp.t11.poverty_inequality",
+      "label": "Poverty and Inequality",
+      "type": "concept",
+      "description": "Poverty and Inequality — causes of poverty, wealth distribution, strategies for reducing inequality",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "gp.s2",
+      "bookName": "Global Issues",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "gp.t12.human_rights",
+      "label": "Human Rights",
+      "type": "concept",
+      "description": "Human Rights — UDHR, children's rights, discrimination, and challenges to human rights globally",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "gp.s2",
+      "bookName": "Global Issues",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "gp.t13.presentation_skills",
+      "label": "Presentation Skills",
+      "type": "concept",
+      "description": "Presentation Skills — planning, structuring and delivering effective oral and visual presentations",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "gp.s3",
+      "bookName": "Communication",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3
+    },
+    {
+      "id": "gp.t14.collaborative_project",
+      "label": "Collaborative Project",
+      "type": "concept",
+      "description": "Collaborative Project — working in teams to research a global issue, plan action and reflect on outcomes",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "gp.s3",
+      "bookName": "Communication",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3
+    },
+    {
+      "id": "gp.t15.individual_research_report",
+      "label": "Individual Research Report",
+      "type": "concept",
+      "description": "Individual Research Report — independently researching a global issue, writing a structured report with evidence",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "gp.s3",
+      "bookName": "Communication",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3
+    }
+  ],
+  "edges": [
+    {
+      "source": "gp.t1.research_methodology",
+      "target": "gp.t2.source_evaluation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t2.source_evaluation",
+      "target": "gp.t3.critical_thinking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t3.critical_thinking",
+      "target": "gp.t4.perspective_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t3.critical_thinking",
+      "target": "gp.t5.cause_consequence",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t4.perspective_analysis",
+      "target": "gp.t6.global_citizenship",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t5.cause_consequence",
+      "target": "gp.t7.demographic_change",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t5.cause_consequence",
+      "target": "gp.t8.climate_change",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t4.perspective_analysis",
+      "target": "gp.t9.conflict_resolution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t5.cause_consequence",
+      "target": "gp.t9.conflict_resolution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t1.research_methodology",
+      "target": "gp.t10.digital_world",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t2.source_evaluation",
+      "target": "gp.t10.digital_world",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t7.demographic_change",
+      "target": "gp.t11.poverty_inequality",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t6.global_citizenship",
+      "target": "gp.t11.poverty_inequality",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t6.global_citizenship",
+      "target": "gp.t12.human_rights",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t9.conflict_resolution",
+      "target": "gp.t12.human_rights",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t11.poverty_inequality",
+      "target": "gp.t12.human_rights",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t1.research_methodology",
+      "target": "gp.t13.presentation_skills",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t10.digital_world",
+      "target": "gp.t13.presentation_skills",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t13.presentation_skills",
+      "target": "gp.t14.collaborative_project",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t4.perspective_analysis",
+      "target": "gp.t14.collaborative_project",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t8.climate_change",
+      "target": "gp.t14.collaborative_project",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t14.collaborative_project",
+      "target": "gp.t15.individual_research_report",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t2.source_evaluation",
+      "target": "gp.t15.individual_research_report",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gp.t12.human_rights",
+      "target": "gp.t15.individual_research_report",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

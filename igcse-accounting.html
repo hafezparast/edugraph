@@ -1,274 +1,9 @@
-#!/usr/bin/env python3
-"""
-Generate self-contained D3.js force-directed graph visualizations.
-
-Usage:
-    python visualize.py                    # generate all graphs
-    python visualize.py malaysia-k12       # generate one graph
-    python visualize.py igcse-math         # generate one graph
-"""
-
-import json
-import os
-import sys
-
-BASE_DIR = os.path.join(os.path.dirname(__file__), "..")
-
-GRAPHS = {
-    "malaysia-k12": {
-        "data": "data/malaysia-k12.json",
-        "output": "malaysia-math.html",
-        "title": "Malaysia Mathematics",
-        "subtitle": "Year 1 to STPM",
-    },
-    "malaysia-sejarah": {
-        "data": "data/malaysia-sejarah.json",
-        "output": "malaysia-sejarah.html",
-        "title": "Malaysia History (Sejarah)",
-        "subtitle": "Year 4 to STPM",
-    },
-    "malaysia-cs": {
-        "data": "data/malaysia-cs.json",
-        "output": "malaysia-cs.html",
-        "title": "Malaysia Computer Science",
-        "subtitle": "ASK (Form 1-3) + Sains Komputer (Form 4-5)",
-    },
-    "malaysia-science": {
-        "data": "data/malaysia-science.json",
-        "output": "malaysia-science.html",
-        "title": "Malaysia Science",
-        "subtitle": "Year 1 to Form 3",
-    },
-    "malaysia-physics": {
-        "data": "data/malaysia-physics.json",
-        "output": "malaysia-physics.html",
-        "title": "Malaysia Physics",
-        "subtitle": "Form 4-5 + STPM",
-    },
-    "malaysia-chemistry": {
-        "data": "data/malaysia-chemistry.json",
-        "output": "malaysia-chemistry.html",
-        "title": "Malaysia Chemistry",
-        "subtitle": "Form 4-5 + STPM",
-    },
-    "malaysia-biology": {
-        "data": "data/malaysia-biology.json",
-        "output": "malaysia-biology.html",
-        "title": "Malaysia Biology",
-        "subtitle": "Form 4-5 + STPM",
-    },
-    "malaysia-economics": {
-        "data": "data/malaysia-economics.json",
-        "output": "malaysia-economics.html",
-        "title": "Malaysia Economics",
-        "subtitle": "STPM (944)",
-    },
-    "malaysia-accounting": {
-        "data": "data/malaysia-accounting.json",
-        "output": "malaysia-accounting.html",
-        "title": "Malaysia Accounting",
-        "subtitle": "STPM (948)",
-    },
-    "igcse-math": {
-        "data": "data/igcse-math.json",
-        "output": "igcse-math.html",
-        "title": "IGCSE Mathematics",
-        "subtitle": "Cambridge 0580 — Core & Extended + Add Math 0606",
-    },
-    "igcse-physics": {
-        "data": "data/igcse-physics.json",
-        "output": "igcse-physics.html",
-        "title": "IGCSE Physics",
-        "subtitle": "Cambridge 0625",
-    },
-    "igcse-chemistry": {
-        "data": "data/igcse-chemistry.json",
-        "output": "igcse-chemistry.html",
-        "title": "IGCSE Chemistry",
-        "subtitle": "Cambridge 0620",
-    },
-    "igcse-biology": {
-        "data": "data/igcse-biology.json",
-        "output": "igcse-biology.html",
-        "title": "IGCSE Biology",
-        "subtitle": "Cambridge 0610",
-    },
-    "igcse-compsci": {
-        "data": "data/igcse-compsci.json",
-        "output": "igcse-compsci.html",
-        "title": "IGCSE Computer Science & ICT",
-        "subtitle": "Cambridge 0478 + 0417",
-    },
-    "igcse-business": {"data": "data/igcse-business.json", "output": "igcse-business.html", "title": "IGCSE Business Studies", "subtitle": "Cambridge 0450"},
-    "igcse-economics": {"data": "data/igcse-economics.json", "output": "igcse-economics.html", "title": "IGCSE Economics", "subtitle": "Cambridge 0455"},
-    "igcse-accounting": {"data": "data/igcse-accounting.json", "output": "igcse-accounting.html", "title": "IGCSE Accounting", "subtitle": "Cambridge 0452"},
-    "igcse-geography": {"data": "data/igcse-geography.json", "output": "igcse-geography.html", "title": "IGCSE Geography", "subtitle": "Cambridge 0460"},
-    "igcse-history": {"data": "data/igcse-history.json", "output": "igcse-history.html", "title": "IGCSE History", "subtitle": "Cambridge 0470"},
-    "igcse-esl": {"data": "data/igcse-esl.json", "output": "igcse-esl.html", "title": "IGCSE English (ESL)", "subtitle": "Cambridge 0510"},
-    "igcse-eng-lit": {"data": "data/igcse-eng-lit.json", "output": "igcse-eng-lit.html", "title": "IGCSE English Literature", "subtitle": "Cambridge 0475"},
-    "igcse-global": {"data": "data/igcse-global.json", "output": "igcse-global.html", "title": "IGCSE Global Perspectives", "subtitle": "Cambridge 0457"},
-    "lang-en": {"data": "data/lang-en.json", "output": "lang-en.html", "title": "English", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-ms": {"data": "data/lang-ms.json", "output": "lang-ms.html", "title": "Bahasa Malaysia", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-de": {"data": "data/lang-de.json", "output": "lang-de.html", "title": "German (Deutsch)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-fa": {"data": "data/lang-fa.json", "output": "lang-fa.html", "title": "Farsi (فارسی)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-ar": {"data": "data/lang-ar.json", "output": "lang-ar.html", "title": "Arabic (العربية)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-es": {"data": "data/lang-es.json", "output": "lang-es.html", "title": "Spanish (Español)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-fr": {"data": "data/lang-fr.json", "output": "lang-fr.html", "title": "French (Français)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-ru": {"data": "data/lang-ru.json", "output": "lang-ru.html", "title": "Russian (Русский)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-ja": {"data": "data/lang-ja.json", "output": "lang-ja.html", "title": "Japanese (日本語)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-ko": {"data": "data/lang-ko.json", "output": "lang-ko.html", "title": "Korean (한국어)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-tr": {"data": "data/lang-tr.json", "output": "lang-tr.html", "title": "Turkish (Türkçe)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-zh": {"data": "data/lang-zh.json", "output": "lang-zh.html", "title": "Mandarin Chinese (中文)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-ta": {"data": "data/lang-ta.json", "output": "lang-ta.html", "title": "Tamil (தமிழ்)", "subtitle": "CEFR A1.1 — C2.2"},
-    "malaysia-geography": {"data": "data/malaysia-geography.json", "output": "malaysia-geography.html", "title": "Malaysia Geography", "subtitle": "Form 1-5 (KSSM)"},
-    "malaysia-pengajian-am": {"data": "data/malaysia-pengajian-am.json", "output": "malaysia-pengajian-am.html", "title": "Pengajian Am (General Studies)", "subtitle": "STPM (900)"},
-    "malaysia-sport-science": {"data": "data/malaysia-sport-science.json", "output": "malaysia-sport-science.html", "title": "Malaysia Sport Science", "subtitle": "STPM"},
-    "malaysia-islamic": {"data": "data/malaysia-islamic.json", "output": "malaysia-islamic.html", "title": "Islamic Studies", "subtitle": "Pendidikan Islam + STPM Syariah/Usuluddin"},
-    "malaysia-malay-lit": {"data": "data/malaysia-malay-lit.json", "output": "malaysia-malay-lit.html", "title": "Kesusasteraan Melayu Komunikatif", "subtitle": "STPM (922)"},
-}
-
-
-def generate(name, config):
-    data_path = os.path.join(BASE_DIR, config["data"])
-    output_path = os.path.join(BASE_DIR, config["output"])
-
-    with open(data_path) as f:
-        data = json.load(f)
-
-    books = {b["id"]: b for b in data["books"]}
-    d3_nodes = []
-    for n in data["nodes"]:
-        b = books.get(n["book"], {})
-        d3_nodes.append({
-            "id": n["id"],
-            "label": n["label"],
-            "color": b.get("color", "#666"),
-            "book": n["book"],
-            "bookName": b.get("name", ""),
-            "bookOrder": b.get("order", 0),
-            "r": 4 + min(b.get("order", 0), 20) * 0.8,
-            "pages": n.get("pages", ""),
-            "description": n.get("description", ""),
-        })
-
-    d3_edges = [{"source": e["source"], "target": e["target"]} for e in data["edges"]]
-
-    # Auto-detect topic strands from node labels
-    STRAND_KEYWORDS = [
-        ("Numbers & Counting", ["number", "counting", "integer", "digit", "place value"]),
-        ("Arithmetic", ["addition", "subtraction", "multiplication", "division", "operation"]),
-        ("Fractions", ["fraction", "improper", "mixed number"]),
-        ("Decimals", ["decimal", "hundredths"]),
-        ("Percentages", ["percent"]),
-        ("Algebra", ["algebra", "expression", "variable", "unknown", "substitution", "bracket", "expansion", "factoris"]),
-        ("Equations", ["equation", "simultaneous", "linear eq", "quadratic eq", "formula"]),
-        ("Inequalities", ["inequalit", "region"]),
-        ("Functions & Graphs", ["function", "graph", "gradient", "curve", "parabola", "reciprocal", "hyperbola"]),
-        ("Indices & Logarithms", ["indices", "index", "logarithm", "exponential", "surd", "power", "root"]),
-        ("Sequences & Series", ["sequence", "pattern", "progression", "series", "binomial"]),
-        ("Ratio & Proportion", ["ratio", "proportion", "rate", "variation", "scale"]),
-        ("Money & Finance", ["money", "currency", "profit", "loss", "discount", "interest", "dividend", "invoice", "tax", "insurance", "invest", "credit", "debt", "financial"]),
-        ("Time", ["time", "duration", "calendar", "clock", "hour", "minute", "day", "week", "month", "year", "century", "decade", "time zone"]),
-        ("Measurement", ["length", "mass", "volume", "weight", "litre", "gram", "metre", "kilometre", "centimetre", "millimetre", "unit"]),
-        ("Geometry", ["angle", "line", "triangle", "quadrilateral", "polygon", "circle", "shape", "prism", "construction", "congruence", "loci"]),
-        ("Symmetry & Transformations", ["symmetry", "reflection", "rotation", "translation", "transformation", "enlargement", "tessellation", "isometr"]),
-        ("Perimeter, Area & Volume", ["perimeter", "area", "surface", "volume", "sector", "arc"]),
-        ("Trigonometry", ["trigonometric", "sine", "cosine", "tangent", "bearing", "circular measure", "radian"]),
-        ("Pythagoras & Similarity", ["pythagoras", "similar", "congruence"]),
-        ("Coordinate Geometry", ["coordinate", "midpoint", "distance", "cartesian"]),
-        ("Vectors & Matrices", ["vector", "matri"]),
-        ("Statistics", ["data", "average", "mean", "median", "mode", "range", "frequency", "histogram", "pie chart", "bar chart", "pictograph", "scatter", "dispersion", "quartile", "cumulative"]),
-        ("Probability", ["probability", "likelihood", "certain", "impossible", "likely", "tree diagram", "venn", "conditional", "combined event", "permutation", "combination", "factorial"]),
-        ("Calculus", ["derivative", "differentiation", "integration", "integral", "limit", "continuity", "maclaurin", "differential equation", "gradient function", "chain rule", "product rule", "quotient rule", "stationary"]),
-        ("Kinematics", ["kinematic", "velocity", "acceleration", "displacement"]),
-        ("Sets & Logic", ["set", "venn diagram", "universal", "complement", "union", "intersection", "statement", "argument", "logical"]),
-        ("Number Bases", ["number base", "binary"]),
-        ("Graph Theory", ["network", "graph theory"]),
-        ("Mathematical Modeling", ["model"]),
-    ]
-
-    STRAND_COLORS = [
-        "#ef4444", "#f97316", "#f59e0b", "#eab308", "#84cc16",
-        "#22c55e", "#10b981", "#14b8a6", "#06b6d4", "#0ea5e9",
-        "#3b82f6", "#6366f1", "#8b5cf6", "#a855f7", "#d946ef",
-        "#ec4899", "#f43f5e", "#fb923c", "#facc15", "#a78bfa",
-        "#34d399", "#22d3ee", "#c084fc", "#fbbf24", "#4ade80",
-        "#f472b6", "#818cf8", "#2dd4bf", "#fb7185", "#d97706",
-    ]
-
-    def classify_node(n):
-        label = n["label"].lower()
-        desc = n.get("description", "").lower()
-        text = label + " " + desc
-        for strand_name, keywords in STRAND_KEYWORDS:
-            for kw in keywords:
-                if kw in text:
-                    return strand_name
-        return "Other"
-
-    # Build strand groups
-    from collections import OrderedDict
-    strand_nodes = OrderedDict()
-    for n in d3_nodes:
-        orig = next((x for x in data["nodes"] if x["id"] == n["id"]), n)
-        strand = classify_node(orig)
-        strand_nodes.setdefault(strand, []).append(n["id"])
-        n["strand"] = strand
-
-    # Assign strand colors
-    strand_color_map = {}
-    for i, strand_name in enumerate(strand_nodes.keys()):
-        strand_color_map[strand_name] = STRAND_COLORS[i % len(STRAND_COLORS)]
-
-    strands_list = [
-        {"name": name, "color": strand_color_map[name], "nodeIds": ids}
-        for name, ids in strand_nodes.items()
-        if len(ids) > 0
-    ]
-
-    # Group books by education level for collapsible groups
-    book_groups = OrderedDict()
-    for b in data["books"]:
-        name = b["name"]
-        if any(x in name for x in ["Y1", "Y2", "Y3", "Y4", "Y5", "Y6", "Year"]):
-            group = "Primary (Year 1-6)"
-        elif any(x in name for x in ["Form 1", "Form 2", "Form 3"]):
-            group = "Lower Secondary (Form 1-3)"
-        elif any(x in name for x in ["Form 4", "Form 5"]):
-            group = "Upper Secondary (Form 4-5)"
-        elif any(x in name for x in ["Add Math", "AM"]):
-            group = "Additional Mathematics"
-        elif "STPM" in name:
-            group = "Pre-University (STPM)"
-        elif any(x in name for x in ["Number", "Algebra", "Geometry", "Data", "Fraction", "Equation",
-                                       "Mensuration", "Probability", "Sequence", "Line", "Quadratic"]):
-            group = "IGCSE Math Core+Extended"
-        elif any(x in name for x in ["Pythagoras", "Average", "Further", "Trigonometry", "Ratio",
-                                       "Scatter", "Money", "Curved", "Symmetry", "Histogram",
-                                       "More Equation", "Transform", "Advanced"]):
-            group = "IGCSE Math Core+Extended"
-        elif any(x in name for x in ["(AM)", "Calculus", "Kinematics", "Vectors (AM)", "Polynomials",
-                                       "Logarithm", "Circle Coord", "Circular Measure", "Permutation",
-                                       "Series", "Differentiation", "Integration"]):
-            group = "IGCSE Additional Mathematics"
-        else:
-            group = "Other"
-        book_groups.setdefault(group, []).append(b)
-
-    nodes_json = json.dumps(d3_nodes)
-    edges_json = json.dumps(d3_edges)
-    books_json = json.dumps(data["books"])
-    strands_json = json.dumps(strands_list)
-    book_groups_json = json.dumps(book_groups)
-    page_title = config["title"]
-    page_subtitle = config["subtitle"]
-
-    html = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduGraph — """ + page_title + """</title>
+<title>EduGraph — IGCSE Accounting</title>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
@@ -403,7 +138,7 @@ svg { width: 100%; height: 100%; display: block; }
 <header class="topbar">
   <div class="topbar-left">
     <h1>EduGraph</h1>
-    <span class="sub">""" + page_subtitle + """</span>
+    <span class="sub">Cambridge 0452</span>
   </div>
   <div class="topbar-right">
     <div class="stats">
@@ -483,11 +218,11 @@ svg { width: 100%; height: 100%; display: block; }
 </div>
 
 <script>
-const rawNodes = """ + nodes_json + """;
-const rawEdges = """ + edges_json + """;
-const booksData = """ + books_json + """;
-const strandsData = """ + strands_json + """;
-const bookGroupsData = """ + book_groups_json + """;
+const rawNodes = [{"id": "acc.t1.double_entry", "label": "Double-Entry Bookkeeping", "color": "#8b5cf6", "book": "acc.s1", "bookName": "Accounting Basics", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Double-Entry Bookkeeping \u2014 the principle that every transaction has two equal and opposite entries", "strand": "Other"}, {"id": "acc.t2.source_documents", "label": "Source Documents", "color": "#8b5cf6", "book": "acc.s1", "bookName": "Accounting Basics", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Source Documents \u2014 invoices, credit notes, receipts, cheques and their role in recording transactions", "strand": "Money & Finance"}, {"id": "acc.t3.accounting_equation", "label": "The Accounting Equation", "color": "#8b5cf6", "book": "acc.s1", "bookName": "Accounting Basics", "bookOrder": 1, "r": 4.8, "pages": "", "description": "The Accounting Equation \u2014 assets = liabilities + capital, and the effect of transactions", "strand": "Numbers & Counting"}, {"id": "acc.t4.journals", "label": "Journals and Day Books", "color": "#6366f1", "book": "acc.s2", "bookName": "Books of Original Entry", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Journals and Day Books \u2014 sales journal, purchases journal, returns journals, general journal", "strand": "Time"}, {"id": "acc.t5.cash_book", "label": "Cash Book", "color": "#6366f1", "book": "acc.s2", "bookName": "Books of Original Entry", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Cash Book \u2014 two-column and three-column cash books, recording cash and bank transactions", "strand": "Other"}, {"id": "acc.t6.petty_cash", "label": "Petty Cash Book", "color": "#6366f1", "book": "acc.s2", "bookName": "Books of Original Entry", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Petty Cash Book \u2014 the imprest system and recording small payments", "strand": "Other"}, {"id": "acc.t7.ledger_accounts", "label": "Ledger Accounts", "color": "#a855f7", "book": "acc.s3", "bookName": "Ledger & Trial Balance", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Ledger Accounts \u2014 posting from books of original entry to the general, sales and purchases ledgers", "strand": "Other"}, {"id": "acc.t8.trial_balance", "label": "Trial Balance", "color": "#a855f7", "book": "acc.s3", "bookName": "Ledger & Trial Balance", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Trial Balance \u2014 preparing a trial balance, identifying and correcting errors", "strand": "Other"}, {"id": "acc.t9.bank_reconciliation", "label": "Bank Reconciliation", "color": "#a855f7", "book": "acc.s3", "bookName": "Ledger & Trial Balance", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Bank Reconciliation \u2014 comparing cash book to bank statement and reconciling differences", "strand": "Sets & Logic"}, {"id": "acc.t10.trading_account", "label": "Trading Account", "color": "#ec4899", "book": "acc.s4", "bookName": "Financial Statements", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Trading Account \u2014 calculating cost of goods sold and gross profit", "strand": "Money & Finance"}, {"id": "acc.t11.profit_and_loss", "label": "Profit and Loss Account", "color": "#ec4899", "book": "acc.s4", "bookName": "Financial Statements", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Profit and Loss Account \u2014 calculating net profit by deducting expenses from gross profit", "strand": "Money & Finance"}, {"id": "acc.t12.balance_sheet", "label": "Balance Sheet", "color": "#ec4899", "book": "acc.s4", "bookName": "Financial Statements", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Balance Sheet \u2014 presenting assets, liabilities and capital at a point in time", "strand": "Time"}, {"id": "acc.t13.depreciation", "label": "Depreciation", "color": "#ec4899", "book": "acc.s4", "bookName": "Financial Statements", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Depreciation \u2014 straight-line and reducing-balance methods, provision for depreciation", "strand": "Geometry"}, {"id": "acc.t14.bad_debts", "label": "Bad Debts and Provision for Doubtful Debts", "color": "#ec4899", "book": "acc.s4", "bookName": "Financial Statements", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Bad Debts and Provision for Doubtful Debts \u2014 writing off bad debts and creating provisions", "strand": "Money & Finance"}, {"id": "acc.t15.partnerships", "label": "Partnership Accounts", "color": "#f43f5e", "book": "acc.s5", "bookName": "Analysis & Interpretation", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Partnership Accounts \u2014 appropriation accounts, current accounts, capital accounts", "strand": "Other"}, {"id": "acc.t16.clubs_societies", "label": "Clubs and Societies", "color": "#f43f5e", "book": "acc.s5", "bookName": "Analysis & Interpretation", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Clubs and Societies \u2014 receipts and payments accounts, income and expenditure accounts", "strand": "Other"}, {"id": "acc.t17.ratio_analysis", "label": "Ratio Analysis", "color": "#f43f5e", "book": "acc.s5", "bookName": "Analysis & Interpretation", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Ratio Analysis \u2014 profitability, liquidity and efficiency ratios for interpreting financial statements", "strand": "Ratio & Proportion"}];
+const rawEdges = [{"source": "acc.t1.double_entry", "target": "acc.t3.accounting_equation"}, {"source": "acc.t2.source_documents", "target": "acc.t4.journals"}, {"source": "acc.t1.double_entry", "target": "acc.t4.journals"}, {"source": "acc.t2.source_documents", "target": "acc.t5.cash_book"}, {"source": "acc.t1.double_entry", "target": "acc.t5.cash_book"}, {"source": "acc.t5.cash_book", "target": "acc.t6.petty_cash"}, {"source": "acc.t4.journals", "target": "acc.t7.ledger_accounts"}, {"source": "acc.t5.cash_book", "target": "acc.t7.ledger_accounts"}, {"source": "acc.t3.accounting_equation", "target": "acc.t7.ledger_accounts"}, {"source": "acc.t7.ledger_accounts", "target": "acc.t8.trial_balance"}, {"source": "acc.t5.cash_book", "target": "acc.t9.bank_reconciliation"}, {"source": "acc.t7.ledger_accounts", "target": "acc.t9.bank_reconciliation"}, {"source": "acc.t8.trial_balance", "target": "acc.t10.trading_account"}, {"source": "acc.t10.trading_account", "target": "acc.t11.profit_and_loss"}, {"source": "acc.t3.accounting_equation", "target": "acc.t12.balance_sheet"}, {"source": "acc.t11.profit_and_loss", "target": "acc.t12.balance_sheet"}, {"source": "acc.t12.balance_sheet", "target": "acc.t13.depreciation"}, {"source": "acc.t7.ledger_accounts", "target": "acc.t14.bad_debts"}, {"source": "acc.t11.profit_and_loss", "target": "acc.t14.bad_debts"}, {"source": "acc.t11.profit_and_loss", "target": "acc.t15.partnerships"}, {"source": "acc.t12.balance_sheet", "target": "acc.t15.partnerships"}, {"source": "acc.t11.profit_and_loss", "target": "acc.t16.clubs_societies"}, {"source": "acc.t5.cash_book", "target": "acc.t16.clubs_societies"}, {"source": "acc.t12.balance_sheet", "target": "acc.t17.ratio_analysis"}, {"source": "acc.t11.profit_and_loss", "target": "acc.t17.ratio_analysis"}, {"source": "acc.t13.depreciation", "target": "acc.t17.ratio_analysis"}, {"source": "acc.t14.bad_debts", "target": "acc.t17.ratio_analysis"}];
+const booksData = [{"id": "acc.s1", "name": "Accounting Basics", "color": "#8b5cf6", "order": 1}, {"id": "acc.s2", "name": "Books of Original Entry", "color": "#6366f1", "order": 2}, {"id": "acc.s3", "name": "Ledger & Trial Balance", "color": "#a855f7", "order": 3}, {"id": "acc.s4", "name": "Financial Statements", "color": "#ec4899", "order": 4}, {"id": "acc.s5", "name": "Analysis & Interpretation", "color": "#f43f5e", "order": 5}];
+const strandsData = [{"name": "Other", "color": "#ef4444", "nodeIds": ["acc.t1.double_entry", "acc.t5.cash_book", "acc.t6.petty_cash", "acc.t7.ledger_accounts", "acc.t8.trial_balance", "acc.t15.partnerships", "acc.t16.clubs_societies"]}, {"name": "Money & Finance", "color": "#f97316", "nodeIds": ["acc.t2.source_documents", "acc.t10.trading_account", "acc.t11.profit_and_loss", "acc.t14.bad_debts"]}, {"name": "Numbers & Counting", "color": "#f59e0b", "nodeIds": ["acc.t3.accounting_equation"]}, {"name": "Time", "color": "#eab308", "nodeIds": ["acc.t4.journals", "acc.t12.balance_sheet"]}, {"name": "Sets & Logic", "color": "#84cc16", "nodeIds": ["acc.t9.bank_reconciliation"]}, {"name": "Geometry", "color": "#22c55e", "nodeIds": ["acc.t13.depreciation"]}, {"name": "Ratio & Proportion", "color": "#10b981", "nodeIds": ["acc.t17.ratio_analysis"]}];
+const bookGroupsData = {"Other": [{"id": "acc.s1", "name": "Accounting Basics", "color": "#8b5cf6", "order": 1}, {"id": "acc.s2", "name": "Books of Original Entry", "color": "#6366f1", "order": 2}, {"id": "acc.s3", "name": "Ledger & Trial Balance", "color": "#a855f7", "order": 3}, {"id": "acc.s4", "name": "Financial Statements", "color": "#ec4899", "order": 4}, {"id": "acc.s5", "name": "Analysis & Interpretation", "color": "#f43f5e", "order": 5}]};
 
 // State
 const activeBooks = new Set(booksData.map(b => b.id));
@@ -977,18 +712,4 @@ document.addEventListener('keydown', e => {
 renderGraph();
 </script>
 </body>
-</html>"""
-
-    with open(output_path, "w") as f:
-        f.write(html)
-
-    print(f"  {name}: {len(d3_nodes)} nodes, {len(d3_edges)} edges → {config['output']}")
-
-
-if __name__ == "__main__":
-    targets = sys.argv[1:] if len(sys.argv) > 1 else list(GRAPHS.keys())
-    for name in targets:
-        if name not in GRAPHS:
-            print(f"Unknown graph: {name}. Available: {', '.join(GRAPHS.keys())}")
-            continue
-        generate(name, GRAPHS[name])
+</html>

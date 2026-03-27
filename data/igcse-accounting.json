@@ -1,0 +1,405 @@
+{
+  "metadata": {
+    "domain": "accounting",
+    "curriculum": "Cambridge IGCSE Accounting (0452)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "IGCSE Accounting topics with prerequisite ordering, colored by section",
+    "sources": [
+      "Cambridge IGCSE Accounting 0452 Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "acc.s1",
+      "name": "Accounting Basics",
+      "color": "#8b5cf6",
+      "order": 1
+    },
+    {
+      "id": "acc.s2",
+      "name": "Books of Original Entry",
+      "color": "#6366f1",
+      "order": 2
+    },
+    {
+      "id": "acc.s3",
+      "name": "Ledger & Trial Balance",
+      "color": "#a855f7",
+      "order": 3
+    },
+    {
+      "id": "acc.s4",
+      "name": "Financial Statements",
+      "color": "#ec4899",
+      "order": 4
+    },
+    {
+      "id": "acc.s5",
+      "name": "Analysis & Interpretation",
+      "color": "#f43f5e",
+      "order": 5
+    }
+  ],
+  "nodes": [
+    {
+      "id": "acc.t1.double_entry",
+      "label": "Double-Entry Bookkeeping",
+      "type": "concept",
+      "description": "Double-Entry Bookkeeping — the principle that every transaction has two equal and opposite entries",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s1",
+      "bookName": "Accounting Basics",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "acc.t2.source_documents",
+      "label": "Source Documents",
+      "type": "concept",
+      "description": "Source Documents — invoices, credit notes, receipts, cheques and their role in recording transactions",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s1",
+      "bookName": "Accounting Basics",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "acc.t3.accounting_equation",
+      "label": "The Accounting Equation",
+      "type": "concept",
+      "description": "The Accounting Equation — assets = liabilities + capital, and the effect of transactions",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s1",
+      "bookName": "Accounting Basics",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "acc.t4.journals",
+      "label": "Journals and Day Books",
+      "type": "concept",
+      "description": "Journals and Day Books — sales journal, purchases journal, returns journals, general journal",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s2",
+      "bookName": "Books of Original Entry",
+      "bookColor": "#6366f1",
+      "bookOrder": 2
+    },
+    {
+      "id": "acc.t5.cash_book",
+      "label": "Cash Book",
+      "type": "concept",
+      "description": "Cash Book — two-column and three-column cash books, recording cash and bank transactions",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s2",
+      "bookName": "Books of Original Entry",
+      "bookColor": "#6366f1",
+      "bookOrder": 2
+    },
+    {
+      "id": "acc.t6.petty_cash",
+      "label": "Petty Cash Book",
+      "type": "concept",
+      "description": "Petty Cash Book — the imprest system and recording small payments",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s2",
+      "bookName": "Books of Original Entry",
+      "bookColor": "#6366f1",
+      "bookOrder": 2
+    },
+    {
+      "id": "acc.t7.ledger_accounts",
+      "label": "Ledger Accounts",
+      "type": "concept",
+      "description": "Ledger Accounts — posting from books of original entry to the general, sales and purchases ledgers",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s3",
+      "bookName": "Ledger & Trial Balance",
+      "bookColor": "#a855f7",
+      "bookOrder": 3
+    },
+    {
+      "id": "acc.t8.trial_balance",
+      "label": "Trial Balance",
+      "type": "concept",
+      "description": "Trial Balance — preparing a trial balance, identifying and correcting errors",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s3",
+      "bookName": "Ledger & Trial Balance",
+      "bookColor": "#a855f7",
+      "bookOrder": 3
+    },
+    {
+      "id": "acc.t9.bank_reconciliation",
+      "label": "Bank Reconciliation",
+      "type": "concept",
+      "description": "Bank Reconciliation — comparing cash book to bank statement and reconciling differences",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s3",
+      "bookName": "Ledger & Trial Balance",
+      "bookColor": "#a855f7",
+      "bookOrder": 3
+    },
+    {
+      "id": "acc.t10.trading_account",
+      "label": "Trading Account",
+      "type": "concept",
+      "description": "Trading Account — calculating cost of goods sold and gross profit",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s4",
+      "bookName": "Financial Statements",
+      "bookColor": "#ec4899",
+      "bookOrder": 4
+    },
+    {
+      "id": "acc.t11.profit_and_loss",
+      "label": "Profit and Loss Account",
+      "type": "concept",
+      "description": "Profit and Loss Account — calculating net profit by deducting expenses from gross profit",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s4",
+      "bookName": "Financial Statements",
+      "bookColor": "#ec4899",
+      "bookOrder": 4
+    },
+    {
+      "id": "acc.t12.balance_sheet",
+      "label": "Balance Sheet",
+      "type": "concept",
+      "description": "Balance Sheet — presenting assets, liabilities and capital at a point in time",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s4",
+      "bookName": "Financial Statements",
+      "bookColor": "#ec4899",
+      "bookOrder": 4
+    },
+    {
+      "id": "acc.t13.depreciation",
+      "label": "Depreciation",
+      "type": "concept",
+      "description": "Depreciation — straight-line and reducing-balance methods, provision for depreciation",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s4",
+      "bookName": "Financial Statements",
+      "bookColor": "#ec4899",
+      "bookOrder": 4
+    },
+    {
+      "id": "acc.t14.bad_debts",
+      "label": "Bad Debts and Provision for Doubtful Debts",
+      "type": "concept",
+      "description": "Bad Debts and Provision for Doubtful Debts — writing off bad debts and creating provisions",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s4",
+      "bookName": "Financial Statements",
+      "bookColor": "#ec4899",
+      "bookOrder": 4
+    },
+    {
+      "id": "acc.t15.partnerships",
+      "label": "Partnership Accounts",
+      "type": "concept",
+      "description": "Partnership Accounts — appropriation accounts, current accounts, capital accounts",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s5",
+      "bookName": "Analysis & Interpretation",
+      "bookColor": "#f43f5e",
+      "bookOrder": 5
+    },
+    {
+      "id": "acc.t16.clubs_societies",
+      "label": "Clubs and Societies",
+      "type": "concept",
+      "description": "Clubs and Societies — receipts and payments accounts, income and expenditure accounts",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s5",
+      "bookName": "Analysis & Interpretation",
+      "bookColor": "#f43f5e",
+      "bookOrder": 5
+    },
+    {
+      "id": "acc.t17.ratio_analysis",
+      "label": "Ratio Analysis",
+      "type": "concept",
+      "description": "Ratio Analysis — profitability, liquidity and efficiency ratios for interpreting financial statements",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "acc.s5",
+      "bookName": "Analysis & Interpretation",
+      "bookColor": "#f43f5e",
+      "bookOrder": 5
+    }
+  ],
+  "edges": [
+    {
+      "source": "acc.t1.double_entry",
+      "target": "acc.t3.accounting_equation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t2.source_documents",
+      "target": "acc.t4.journals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t1.double_entry",
+      "target": "acc.t4.journals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t2.source_documents",
+      "target": "acc.t5.cash_book",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t1.double_entry",
+      "target": "acc.t5.cash_book",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t5.cash_book",
+      "target": "acc.t6.petty_cash",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t4.journals",
+      "target": "acc.t7.ledger_accounts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t5.cash_book",
+      "target": "acc.t7.ledger_accounts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t3.accounting_equation",
+      "target": "acc.t7.ledger_accounts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t7.ledger_accounts",
+      "target": "acc.t8.trial_balance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t5.cash_book",
+      "target": "acc.t9.bank_reconciliation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t7.ledger_accounts",
+      "target": "acc.t9.bank_reconciliation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t8.trial_balance",
+      "target": "acc.t10.trading_account",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t10.trading_account",
+      "target": "acc.t11.profit_and_loss",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t3.accounting_equation",
+      "target": "acc.t12.balance_sheet",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t11.profit_and_loss",
+      "target": "acc.t12.balance_sheet",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t12.balance_sheet",
+      "target": "acc.t13.depreciation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t7.ledger_accounts",
+      "target": "acc.t14.bad_debts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t11.profit_and_loss",
+      "target": "acc.t14.bad_debts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t11.profit_and_loss",
+      "target": "acc.t15.partnerships",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t12.balance_sheet",
+      "target": "acc.t15.partnerships",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t11.profit_and_loss",
+      "target": "acc.t16.clubs_societies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t5.cash_book",
+      "target": "acc.t16.clubs_societies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t12.balance_sheet",
+      "target": "acc.t17.ratio_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t11.profit_and_loss",
+      "target": "acc.t17.ratio_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t13.depreciation",
+      "target": "acc.t17.ratio_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "acc.t14.bad_debts",
+      "target": "acc.t17.ratio_analysis",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

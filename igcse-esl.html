@@ -1,274 +1,9 @@
-#!/usr/bin/env python3
-"""
-Generate self-contained D3.js force-directed graph visualizations.
-
-Usage:
-    python visualize.py                    # generate all graphs
-    python visualize.py malaysia-k12       # generate one graph
-    python visualize.py igcse-math         # generate one graph
-"""
-
-import json
-import os
-import sys
-
-BASE_DIR = os.path.join(os.path.dirname(__file__), "..")
-
-GRAPHS = {
-    "malaysia-k12": {
-        "data": "data/malaysia-k12.json",
-        "output": "malaysia-math.html",
-        "title": "Malaysia Mathematics",
-        "subtitle": "Year 1 to STPM",
-    },
-    "malaysia-sejarah": {
-        "data": "data/malaysia-sejarah.json",
-        "output": "malaysia-sejarah.html",
-        "title": "Malaysia History (Sejarah)",
-        "subtitle": "Year 4 to STPM",
-    },
-    "malaysia-cs": {
-        "data": "data/malaysia-cs.json",
-        "output": "malaysia-cs.html",
-        "title": "Malaysia Computer Science",
-        "subtitle": "ASK (Form 1-3) + Sains Komputer (Form 4-5)",
-    },
-    "malaysia-science": {
-        "data": "data/malaysia-science.json",
-        "output": "malaysia-science.html",
-        "title": "Malaysia Science",
-        "subtitle": "Year 1 to Form 3",
-    },
-    "malaysia-physics": {
-        "data": "data/malaysia-physics.json",
-        "output": "malaysia-physics.html",
-        "title": "Malaysia Physics",
-        "subtitle": "Form 4-5 + STPM",
-    },
-    "malaysia-chemistry": {
-        "data": "data/malaysia-chemistry.json",
-        "output": "malaysia-chemistry.html",
-        "title": "Malaysia Chemistry",
-        "subtitle": "Form 4-5 + STPM",
-    },
-    "malaysia-biology": {
-        "data": "data/malaysia-biology.json",
-        "output": "malaysia-biology.html",
-        "title": "Malaysia Biology",
-        "subtitle": "Form 4-5 + STPM",
-    },
-    "malaysia-economics": {
-        "data": "data/malaysia-economics.json",
-        "output": "malaysia-economics.html",
-        "title": "Malaysia Economics",
-        "subtitle": "STPM (944)",
-    },
-    "malaysia-accounting": {
-        "data": "data/malaysia-accounting.json",
-        "output": "malaysia-accounting.html",
-        "title": "Malaysia Accounting",
-        "subtitle": "STPM (948)",
-    },
-    "igcse-math": {
-        "data": "data/igcse-math.json",
-        "output": "igcse-math.html",
-        "title": "IGCSE Mathematics",
-        "subtitle": "Cambridge 0580 — Core & Extended + Add Math 0606",
-    },
-    "igcse-physics": {
-        "data": "data/igcse-physics.json",
-        "output": "igcse-physics.html",
-        "title": "IGCSE Physics",
-        "subtitle": "Cambridge 0625",
-    },
-    "igcse-chemistry": {
-        "data": "data/igcse-chemistry.json",
-        "output": "igcse-chemistry.html",
-        "title": "IGCSE Chemistry",
-        "subtitle": "Cambridge 0620",
-    },
-    "igcse-biology": {
-        "data": "data/igcse-biology.json",
-        "output": "igcse-biology.html",
-        "title": "IGCSE Biology",
-        "subtitle": "Cambridge 0610",
-    },
-    "igcse-compsci": {
-        "data": "data/igcse-compsci.json",
-        "output": "igcse-compsci.html",
-        "title": "IGCSE Computer Science & ICT",
-        "subtitle": "Cambridge 0478 + 0417",
-    },
-    "igcse-business": {"data": "data/igcse-business.json", "output": "igcse-business.html", "title": "IGCSE Business Studies", "subtitle": "Cambridge 0450"},
-    "igcse-economics": {"data": "data/igcse-economics.json", "output": "igcse-economics.html", "title": "IGCSE Economics", "subtitle": "Cambridge 0455"},
-    "igcse-accounting": {"data": "data/igcse-accounting.json", "output": "igcse-accounting.html", "title": "IGCSE Accounting", "subtitle": "Cambridge 0452"},
-    "igcse-geography": {"data": "data/igcse-geography.json", "output": "igcse-geography.html", "title": "IGCSE Geography", "subtitle": "Cambridge 0460"},
-    "igcse-history": {"data": "data/igcse-history.json", "output": "igcse-history.html", "title": "IGCSE History", "subtitle": "Cambridge 0470"},
-    "igcse-esl": {"data": "data/igcse-esl.json", "output": "igcse-esl.html", "title": "IGCSE English (ESL)", "subtitle": "Cambridge 0510"},
-    "igcse-eng-lit": {"data": "data/igcse-eng-lit.json", "output": "igcse-eng-lit.html", "title": "IGCSE English Literature", "subtitle": "Cambridge 0475"},
-    "igcse-global": {"data": "data/igcse-global.json", "output": "igcse-global.html", "title": "IGCSE Global Perspectives", "subtitle": "Cambridge 0457"},
-    "lang-en": {"data": "data/lang-en.json", "output": "lang-en.html", "title": "English", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-ms": {"data": "data/lang-ms.json", "output": "lang-ms.html", "title": "Bahasa Malaysia", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-de": {"data": "data/lang-de.json", "output": "lang-de.html", "title": "German (Deutsch)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-fa": {"data": "data/lang-fa.json", "output": "lang-fa.html", "title": "Farsi (فارسی)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-ar": {"data": "data/lang-ar.json", "output": "lang-ar.html", "title": "Arabic (العربية)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-es": {"data": "data/lang-es.json", "output": "lang-es.html", "title": "Spanish (Español)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-fr": {"data": "data/lang-fr.json", "output": "lang-fr.html", "title": "French (Français)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-ru": {"data": "data/lang-ru.json", "output": "lang-ru.html", "title": "Russian (Русский)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-ja": {"data": "data/lang-ja.json", "output": "lang-ja.html", "title": "Japanese (日本語)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-ko": {"data": "data/lang-ko.json", "output": "lang-ko.html", "title": "Korean (한국어)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-tr": {"data": "data/lang-tr.json", "output": "lang-tr.html", "title": "Turkish (Türkçe)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-zh": {"data": "data/lang-zh.json", "output": "lang-zh.html", "title": "Mandarin Chinese (中文)", "subtitle": "CEFR A1.1 — C2.2"},
-    "lang-ta": {"data": "data/lang-ta.json", "output": "lang-ta.html", "title": "Tamil (தமிழ்)", "subtitle": "CEFR A1.1 — C2.2"},
-    "malaysia-geography": {"data": "data/malaysia-geography.json", "output": "malaysia-geography.html", "title": "Malaysia Geography", "subtitle": "Form 1-5 (KSSM)"},
-    "malaysia-pengajian-am": {"data": "data/malaysia-pengajian-am.json", "output": "malaysia-pengajian-am.html", "title": "Pengajian Am (General Studies)", "subtitle": "STPM (900)"},
-    "malaysia-sport-science": {"data": "data/malaysia-sport-science.json", "output": "malaysia-sport-science.html", "title": "Malaysia Sport Science", "subtitle": "STPM"},
-    "malaysia-islamic": {"data": "data/malaysia-islamic.json", "output": "malaysia-islamic.html", "title": "Islamic Studies", "subtitle": "Pendidikan Islam + STPM Syariah/Usuluddin"},
-    "malaysia-malay-lit": {"data": "data/malaysia-malay-lit.json", "output": "malaysia-malay-lit.html", "title": "Kesusasteraan Melayu Komunikatif", "subtitle": "STPM (922)"},
-}
-
-
-def generate(name, config):
-    data_path = os.path.join(BASE_DIR, config["data"])
-    output_path = os.path.join(BASE_DIR, config["output"])
-
-    with open(data_path) as f:
-        data = json.load(f)
-
-    books = {b["id"]: b for b in data["books"]}
-    d3_nodes = []
-    for n in data["nodes"]:
-        b = books.get(n["book"], {})
-        d3_nodes.append({
-            "id": n["id"],
-            "label": n["label"],
-            "color": b.get("color", "#666"),
-            "book": n["book"],
-            "bookName": b.get("name", ""),
-            "bookOrder": b.get("order", 0),
-            "r": 4 + min(b.get("order", 0), 20) * 0.8,
-            "pages": n.get("pages", ""),
-            "description": n.get("description", ""),
-        })
-
-    d3_edges = [{"source": e["source"], "target": e["target"]} for e in data["edges"]]
-
-    # Auto-detect topic strands from node labels
-    STRAND_KEYWORDS = [
-        ("Numbers & Counting", ["number", "counting", "integer", "digit", "place value"]),
-        ("Arithmetic", ["addition", "subtraction", "multiplication", "division", "operation"]),
-        ("Fractions", ["fraction", "improper", "mixed number"]),
-        ("Decimals", ["decimal", "hundredths"]),
-        ("Percentages", ["percent"]),
-        ("Algebra", ["algebra", "expression", "variable", "unknown", "substitution", "bracket", "expansion", "factoris"]),
-        ("Equations", ["equation", "simultaneous", "linear eq", "quadratic eq", "formula"]),
-        ("Inequalities", ["inequalit", "region"]),
-        ("Functions & Graphs", ["function", "graph", "gradient", "curve", "parabola", "reciprocal", "hyperbola"]),
-        ("Indices & Logarithms", ["indices", "index", "logarithm", "exponential", "surd", "power", "root"]),
-        ("Sequences & Series", ["sequence", "pattern", "progression", "series", "binomial"]),
-        ("Ratio & Proportion", ["ratio", "proportion", "rate", "variation", "scale"]),
-        ("Money & Finance", ["money", "currency", "profit", "loss", "discount", "interest", "dividend", "invoice", "tax", "insurance", "invest", "credit", "debt", "financial"]),
-        ("Time", ["time", "duration", "calendar", "clock", "hour", "minute", "day", "week", "month", "year", "century", "decade", "time zone"]),
-        ("Measurement", ["length", "mass", "volume", "weight", "litre", "gram", "metre", "kilometre", "centimetre", "millimetre", "unit"]),
-        ("Geometry", ["angle", "line", "triangle", "quadrilateral", "polygon", "circle", "shape", "prism", "construction", "congruence", "loci"]),
-        ("Symmetry & Transformations", ["symmetry", "reflection", "rotation", "translation", "transformation", "enlargement", "tessellation", "isometr"]),
-        ("Perimeter, Area & Volume", ["perimeter", "area", "surface", "volume", "sector", "arc"]),
-        ("Trigonometry", ["trigonometric", "sine", "cosine", "tangent", "bearing", "circular measure", "radian"]),
-        ("Pythagoras & Similarity", ["pythagoras", "similar", "congruence"]),
-        ("Coordinate Geometry", ["coordinate", "midpoint", "distance", "cartesian"]),
-        ("Vectors & Matrices", ["vector", "matri"]),
-        ("Statistics", ["data", "average", "mean", "median", "mode", "range", "frequency", "histogram", "pie chart", "bar chart", "pictograph", "scatter", "dispersion", "quartile", "cumulative"]),
-        ("Probability", ["probability", "likelihood", "certain", "impossible", "likely", "tree diagram", "venn", "conditional", "combined event", "permutation", "combination", "factorial"]),
-        ("Calculus", ["derivative", "differentiation", "integration", "integral", "limit", "continuity", "maclaurin", "differential equation", "gradient function", "chain rule", "product rule", "quotient rule", "stationary"]),
-        ("Kinematics", ["kinematic", "velocity", "acceleration", "displacement"]),
-        ("Sets & Logic", ["set", "venn diagram", "universal", "complement", "union", "intersection", "statement", "argument", "logical"]),
-        ("Number Bases", ["number base", "binary"]),
-        ("Graph Theory", ["network", "graph theory"]),
-        ("Mathematical Modeling", ["model"]),
-    ]
-
-    STRAND_COLORS = [
-        "#ef4444", "#f97316", "#f59e0b", "#eab308", "#84cc16",
-        "#22c55e", "#10b981", "#14b8a6", "#06b6d4", "#0ea5e9",
-        "#3b82f6", "#6366f1", "#8b5cf6", "#a855f7", "#d946ef",
-        "#ec4899", "#f43f5e", "#fb923c", "#facc15", "#a78bfa",
-        "#34d399", "#22d3ee", "#c084fc", "#fbbf24", "#4ade80",
-        "#f472b6", "#818cf8", "#2dd4bf", "#fb7185", "#d97706",
-    ]
-
-    def classify_node(n):
-        label = n["label"].lower()
-        desc = n.get("description", "").lower()
-        text = label + " " + desc
-        for strand_name, keywords in STRAND_KEYWORDS:
-            for kw in keywords:
-                if kw in text:
-                    return strand_name
-        return "Other"
-
-    # Build strand groups
-    from collections import OrderedDict
-    strand_nodes = OrderedDict()
-    for n in d3_nodes:
-        orig = next((x for x in data["nodes"] if x["id"] == n["id"]), n)
-        strand = classify_node(orig)
-        strand_nodes.setdefault(strand, []).append(n["id"])
-        n["strand"] = strand
-
-    # Assign strand colors
-    strand_color_map = {}
-    for i, strand_name in enumerate(strand_nodes.keys()):
-        strand_color_map[strand_name] = STRAND_COLORS[i % len(STRAND_COLORS)]
-
-    strands_list = [
-        {"name": name, "color": strand_color_map[name], "nodeIds": ids}
-        for name, ids in strand_nodes.items()
-        if len(ids) > 0
-    ]
-
-    # Group books by education level for collapsible groups
-    book_groups = OrderedDict()
-    for b in data["books"]:
-        name = b["name"]
-        if any(x in name for x in ["Y1", "Y2", "Y3", "Y4", "Y5", "Y6", "Year"]):
-            group = "Primary (Year 1-6)"
-        elif any(x in name for x in ["Form 1", "Form 2", "Form 3"]):
-            group = "Lower Secondary (Form 1-3)"
-        elif any(x in name for x in ["Form 4", "Form 5"]):
-            group = "Upper Secondary (Form 4-5)"
-        elif any(x in name for x in ["Add Math", "AM"]):
-            group = "Additional Mathematics"
-        elif "STPM" in name:
-            group = "Pre-University (STPM)"
-        elif any(x in name for x in ["Number", "Algebra", "Geometry", "Data", "Fraction", "Equation",
-                                       "Mensuration", "Probability", "Sequence", "Line", "Quadratic"]):
-            group = "IGCSE Math Core+Extended"
-        elif any(x in name for x in ["Pythagoras", "Average", "Further", "Trigonometry", "Ratio",
-                                       "Scatter", "Money", "Curved", "Symmetry", "Histogram",
-                                       "More Equation", "Transform", "Advanced"]):
-            group = "IGCSE Math Core+Extended"
-        elif any(x in name for x in ["(AM)", "Calculus", "Kinematics", "Vectors (AM)", "Polynomials",
-                                       "Logarithm", "Circle Coord", "Circular Measure", "Permutation",
-                                       "Series", "Differentiation", "Integration"]):
-            group = "IGCSE Additional Mathematics"
-        else:
-            group = "Other"
-        book_groups.setdefault(group, []).append(b)
-
-    nodes_json = json.dumps(d3_nodes)
-    edges_json = json.dumps(d3_edges)
-    books_json = json.dumps(data["books"])
-    strands_json = json.dumps(strands_list)
-    book_groups_json = json.dumps(book_groups)
-    page_title = config["title"]
-    page_subtitle = config["subtitle"]
-
-    html = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduGraph — """ + page_title + """</title>
+<title>EduGraph — IGCSE English (ESL)</title>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
@@ -403,7 +138,7 @@ svg { width: 100%; height: 100%; display: block; }
 <header class="topbar">
   <div class="topbar-left">
     <h1>EduGraph</h1>
-    <span class="sub">""" + page_subtitle + """</span>
+    <span class="sub">Cambridge 0510</span>
   </div>
   <div class="topbar-right">
     <div class="stats">
@@ -483,11 +218,11 @@ svg { width: 100%; height: 100%; display: block; }
 </div>
 
 <script>
-const rawNodes = """ + nodes_json + """;
-const rawEdges = """ + edges_json + """;
-const booksData = """ + books_json + """;
-const strandsData = """ + strands_json + """;
-const bookGroupsData = """ + book_groups_json + """;
+const rawNodes = [{"id": "esl.t1.skimming_scanning", "label": "Skimming and Scanning", "color": "#3b82f6", "book": "esl.s1", "bookName": "Reading Skills", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Skimming and Scanning \u2014 reading quickly for gist and locating specific information in texts", "strand": "Other"}, {"id": "esl.t2.detail_extraction", "label": "Detail Extraction", "color": "#3b82f6", "book": "esl.s1", "bookName": "Reading Skills", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Detail Extraction \u2014 identifying explicit and implicit information, understanding inference and implication", "strand": "Other"}, {"id": "esl.t3.summary_writing", "label": "Summary Writing", "color": "#3b82f6", "book": "esl.s1", "bookName": "Reading Skills", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Summary Writing \u2014 selecting key points from a text and presenting them concisely in own words", "strand": "Other"}, {"id": "esl.t4.note_taking", "label": "Note-taking", "color": "#3b82f6", "book": "esl.s1", "bookName": "Reading Skills", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Note-taking \u2014 extracting and organising information from reading and listening into structured notes", "strand": "Other"}, {"id": "esl.t5.informal_writing", "label": "Informal Writing", "color": "#22c55e", "book": "esl.s2", "bookName": "Writing Skills", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Informal Writing \u2014 emails, letters, diary entries using appropriate register and tone", "strand": "Other"}, {"id": "esl.t6.formal_writing", "label": "Formal Writing", "color": "#22c55e", "book": "esl.s2", "bookName": "Writing Skills", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Formal Writing \u2014 formal letters, reports, articles using appropriate conventions and register", "strand": "Other"}, {"id": "esl.t7.argumentative_writing", "label": "Argumentative Writing", "color": "#22c55e", "book": "esl.s2", "bookName": "Writing Skills", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Argumentative Writing \u2014 presenting arguments for and against, using evidence and persuasive techniques", "strand": "Sets & Logic"}, {"id": "esl.t8.descriptive_writing", "label": "Descriptive Writing", "color": "#22c55e", "book": "esl.s2", "bookName": "Writing Skills", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Descriptive Writing \u2014 using sensory language, imagery and detail to describe people, places and events", "strand": "Other"}, {"id": "esl.t9.narrative_writing", "label": "Narrative Writing", "color": "#22c55e", "book": "esl.s2", "bookName": "Writing Skills", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Narrative Writing \u2014 crafting stories with structure, character, dialogue and effective openings/endings", "strand": "Other"}, {"id": "esl.t10.listening_gist", "label": "Listening for Gist", "color": "#f59e0b", "book": "esl.s3", "bookName": "Listening Skills", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Listening for Gist \u2014 understanding the main idea and overall meaning of spoken passages", "strand": "Statistics"}, {"id": "esl.t11.listening_detail", "label": "Listening for Detail", "color": "#f59e0b", "book": "esl.s3", "bookName": "Listening Skills", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Listening for Detail \u2014 identifying specific information, numbers, names and facts from spoken texts", "strand": "Numbers & Counting"}, {"id": "esl.t12.pronunciation", "label": "Pronunciation and Intonation", "color": "#ec4899", "book": "esl.s4", "bookName": "Speaking Skills", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Pronunciation and Intonation \u2014 accurate sounds, stress patterns, rhythm and intonation for clear communication", "strand": "Sequences & Series"}, {"id": "esl.t13.discussion", "label": "Discussion", "color": "#ec4899", "book": "esl.s4", "bookName": "Speaking Skills", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Discussion \u2014 expressing and justifying opinions, agreeing and disagreeing, turn-taking in group talk", "strand": "Other"}, {"id": "esl.t14.role_play", "label": "Role Play", "color": "#ec4899", "book": "esl.s4", "bookName": "Speaking Skills", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Role Play \u2014 communicating in simulated real-life situations with appropriate language and register", "strand": "Other"}, {"id": "esl.t15.picture_description", "label": "Picture Description", "color": "#ec4899", "book": "esl.s4", "bookName": "Speaking Skills", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Picture Description \u2014 describing, comparing and responding to visual prompts in spoken English", "strand": "Other"}];
+const rawEdges = [{"source": "esl.t1.skimming_scanning", "target": "esl.t2.detail_extraction"}, {"source": "esl.t2.detail_extraction", "target": "esl.t3.summary_writing"}, {"source": "esl.t1.skimming_scanning", "target": "esl.t4.note_taking"}, {"source": "esl.t2.detail_extraction", "target": "esl.t4.note_taking"}, {"source": "esl.t3.summary_writing", "target": "esl.t6.formal_writing"}, {"source": "esl.t5.informal_writing", "target": "esl.t6.formal_writing"}, {"source": "esl.t6.formal_writing", "target": "esl.t7.argumentative_writing"}, {"source": "esl.t2.detail_extraction", "target": "esl.t7.argumentative_writing"}, {"source": "esl.t5.informal_writing", "target": "esl.t8.descriptive_writing"}, {"source": "esl.t8.descriptive_writing", "target": "esl.t9.narrative_writing"}, {"source": "esl.t1.skimming_scanning", "target": "esl.t10.listening_gist"}, {"source": "esl.t10.listening_gist", "target": "esl.t11.listening_detail"}, {"source": "esl.t11.listening_detail", "target": "esl.t4.note_taking"}, {"source": "esl.t10.listening_gist", "target": "esl.t12.pronunciation"}, {"source": "esl.t12.pronunciation", "target": "esl.t13.discussion"}, {"source": "esl.t7.argumentative_writing", "target": "esl.t13.discussion"}, {"source": "esl.t13.discussion", "target": "esl.t14.role_play"}, {"source": "esl.t12.pronunciation", "target": "esl.t15.picture_description"}, {"source": "esl.t8.descriptive_writing", "target": "esl.t15.picture_description"}, {"source": "esl.t9.narrative_writing", "target": "esl.t14.role_play"}];
+const booksData = [{"id": "esl.s1", "name": "Reading Skills", "color": "#3b82f6", "order": 1}, {"id": "esl.s2", "name": "Writing Skills", "color": "#22c55e", "order": 2}, {"id": "esl.s3", "name": "Listening Skills", "color": "#f59e0b", "order": 3}, {"id": "esl.s4", "name": "Speaking Skills", "color": "#ec4899", "order": 4}];
+const strandsData = [{"name": "Other", "color": "#ef4444", "nodeIds": ["esl.t1.skimming_scanning", "esl.t2.detail_extraction", "esl.t3.summary_writing", "esl.t4.note_taking", "esl.t5.informal_writing", "esl.t6.formal_writing", "esl.t8.descriptive_writing", "esl.t9.narrative_writing", "esl.t13.discussion", "esl.t14.role_play", "esl.t15.picture_description"]}, {"name": "Sets & Logic", "color": "#f97316", "nodeIds": ["esl.t7.argumentative_writing"]}, {"name": "Statistics", "color": "#f59e0b", "nodeIds": ["esl.t10.listening_gist"]}, {"name": "Numbers & Counting", "color": "#eab308", "nodeIds": ["esl.t11.listening_detail"]}, {"name": "Sequences & Series", "color": "#84cc16", "nodeIds": ["esl.t12.pronunciation"]}];
+const bookGroupsData = {"Other": [{"id": "esl.s1", "name": "Reading Skills", "color": "#3b82f6", "order": 1}, {"id": "esl.s2", "name": "Writing Skills", "color": "#22c55e", "order": 2}, {"id": "esl.s3", "name": "Listening Skills", "color": "#f59e0b", "order": 3}, {"id": "esl.s4", "name": "Speaking Skills", "color": "#ec4899", "order": 4}]};
 
 // State
 const activeBooks = new Set(booksData.map(b => b.id));
@@ -977,18 +712,4 @@ document.addEventListener('keydown', e => {
 renderGraph();
 </script>
 </body>
-</html>"""
-
-    with open(output_path, "w") as f:
-        f.write(html)
-
-    print(f"  {name}: {len(d3_nodes)} nodes, {len(d3_edges)} edges → {config['output']}")
-
-
-if __name__ == "__main__":
-    targets = sys.argv[1:] if len(sys.argv) > 1 else list(GRAPHS.keys())
-    for name in targets:
-        if name not in GRAPHS:
-            print(f"Unknown graph: {name}. Available: {', '.join(GRAPHS.keys())}")
-            continue
-        generate(name, GRAPHS[name])
+</html>

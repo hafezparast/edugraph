@@ -1,0 +1,384 @@
+{
+  "metadata": {
+    "domain": "geography",
+    "curriculum": "Cambridge IGCSE Geography (0460)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "IGCSE Geography topics with prerequisite ordering, colored by section",
+    "sources": [
+      "Cambridge IGCSE Geography 0460 Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "geo.s1",
+      "name": "Population & Settlement",
+      "color": "#22c55e",
+      "order": 1
+    },
+    {
+      "id": "geo.s2",
+      "name": "Natural Environment",
+      "color": "#3b82f6",
+      "order": 2
+    },
+    {
+      "id": "geo.s3",
+      "name": "Economic Development",
+      "color": "#f59e0b",
+      "order": 3
+    },
+    {
+      "id": "geo.s4",
+      "name": "Geographical Skills",
+      "color": "#ef4444",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "geo.t1.population_dynamics",
+      "label": "Population Dynamics",
+      "type": "concept",
+      "description": "Population Dynamics — birth rates, death rates, natural increase, population pyramids and demographic transition model",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s1",
+      "bookName": "Population & Settlement",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "geo.t2.migration",
+      "label": "Migration",
+      "type": "concept",
+      "description": "Migration — types of migration, push/pull factors, causes and consequences of migration",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s1",
+      "bookName": "Population & Settlement",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "geo.t3.settlement_types",
+      "label": "Settlement Types",
+      "type": "concept",
+      "description": "Settlement Types — rural and urban settlements, site, situation, hierarchy and sphere of influence",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s1",
+      "bookName": "Population & Settlement",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "geo.t4.urbanisation",
+      "label": "Urbanisation",
+      "type": "concept",
+      "description": "Urbanisation — causes and effects of urban growth, problems and solutions in urban areas",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s1",
+      "bookName": "Population & Settlement",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "geo.t5.plate_tectonics",
+      "label": "Plate Tectonics",
+      "type": "concept",
+      "description": "Plate Tectonics — structure of the Earth, types of plate boundaries, and tectonic processes",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s2",
+      "bookName": "Natural Environment",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2
+    },
+    {
+      "id": "geo.t6.earthquakes_volcanoes",
+      "label": "Earthquakes and Volcanoes",
+      "type": "concept",
+      "description": "Earthquakes and Volcanoes — causes, effects and responses to seismic and volcanic events",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s2",
+      "bookName": "Natural Environment",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2
+    },
+    {
+      "id": "geo.t7.rivers",
+      "label": "Rivers",
+      "type": "concept",
+      "description": "Rivers — drainage basins, fluvial processes (erosion, transport, deposition), landforms and flooding",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s2",
+      "bookName": "Natural Environment",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2
+    },
+    {
+      "id": "geo.t8.coasts",
+      "label": "Coasts",
+      "type": "concept",
+      "description": "Coasts — wave processes, coastal erosion and deposition, landforms and coastal management",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s2",
+      "bookName": "Natural Environment",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2
+    },
+    {
+      "id": "geo.t9.weather_climate",
+      "label": "Weather and Climate",
+      "type": "concept",
+      "description": "Weather and Climate — elements of weather, climate types, factors affecting climate, and climate change",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s2",
+      "bookName": "Natural Environment",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2
+    },
+    {
+      "id": "geo.t10.natural_hazards",
+      "label": "Natural Hazards",
+      "type": "concept",
+      "description": "Natural Hazards — tropical storms, droughts, floods, risk assessment and hazard management",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s2",
+      "bookName": "Natural Environment",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2
+    },
+    {
+      "id": "geo.t11.farming",
+      "label": "Farming",
+      "type": "concept",
+      "description": "Farming — types of farming, factors affecting farming, food production and sustainability",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s3",
+      "bookName": "Economic Development",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3
+    },
+    {
+      "id": "geo.t12.industry",
+      "label": "Industry",
+      "type": "concept",
+      "description": "Industry — types of industry, industrial location factors, globalisation of industry",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s3",
+      "bookName": "Economic Development",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3
+    },
+    {
+      "id": "geo.t13.tourism",
+      "label": "Tourism",
+      "type": "concept",
+      "description": "Tourism — growth of tourism, impacts on the economy and environment, ecotourism",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s3",
+      "bookName": "Economic Development",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3
+    },
+    {
+      "id": "geo.t14.energy",
+      "label": "Energy",
+      "type": "concept",
+      "description": "Energy — renewable and non-renewable energy sources, energy supply and demand",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s3",
+      "bookName": "Economic Development",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3
+    },
+    {
+      "id": "geo.t15.water_management",
+      "label": "Water Management",
+      "type": "concept",
+      "description": "Water Management — water supply and demand, water pollution, sustainable water management",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s3",
+      "bookName": "Economic Development",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3
+    },
+    {
+      "id": "geo.t16.map_skills",
+      "label": "Map Skills",
+      "type": "concept",
+      "description": "Map Skills — grid references, scale, direction, contour patterns, cross-sections, OS map interpretation",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s4",
+      "bookName": "Geographical Skills",
+      "bookColor": "#ef4444",
+      "bookOrder": 4
+    },
+    {
+      "id": "geo.t17.data_interpretation",
+      "label": "Data Interpretation",
+      "type": "concept",
+      "description": "Data Interpretation — graphs, charts, photographs, statistics and fieldwork techniques",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "geo.s4",
+      "bookName": "Geographical Skills",
+      "bookColor": "#ef4444",
+      "bookOrder": 4
+    }
+  ],
+  "edges": [
+    {
+      "source": "geo.t1.population_dynamics",
+      "target": "geo.t2.migration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t1.population_dynamics",
+      "target": "geo.t3.settlement_types",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t2.migration",
+      "target": "geo.t4.urbanisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t3.settlement_types",
+      "target": "geo.t4.urbanisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t5.plate_tectonics",
+      "target": "geo.t6.earthquakes_volcanoes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t9.weather_climate",
+      "target": "geo.t7.rivers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t7.rivers",
+      "target": "geo.t8.coasts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t9.weather_climate",
+      "target": "geo.t10.natural_hazards",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t6.earthquakes_volcanoes",
+      "target": "geo.t10.natural_hazards",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t9.weather_climate",
+      "target": "geo.t11.farming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t1.population_dynamics",
+      "target": "geo.t11.farming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t11.farming",
+      "target": "geo.t12.industry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t4.urbanisation",
+      "target": "geo.t12.industry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t8.coasts",
+      "target": "geo.t13.tourism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t12.industry",
+      "target": "geo.t13.tourism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t12.industry",
+      "target": "geo.t14.energy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t9.weather_climate",
+      "target": "geo.t14.energy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t7.rivers",
+      "target": "geo.t15.water_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t1.population_dynamics",
+      "target": "geo.t15.water_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t14.energy",
+      "target": "geo.t15.water_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t16.map_skills",
+      "target": "geo.t17.data_interpretation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t16.map_skills",
+      "target": "geo.t5.plate_tectonics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t17.data_interpretation",
+      "target": "geo.t1.population_dynamics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.t17.data_interpretation",
+      "target": "geo.t9.weather_climate",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

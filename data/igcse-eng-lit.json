@@ -1,0 +1,335 @@
+{
+  "metadata": {
+    "domain": "english_literature",
+    "curriculum": "Cambridge IGCSE English Literature (0475)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "IGCSE English Literature topics with prerequisite ordering, colored by genre/skill area",
+    "sources": [
+      "Cambridge IGCSE English Literature 0475 Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "lit.s1",
+      "name": "Poetry",
+      "color": "#ec4899",
+      "order": 1
+    },
+    {
+      "id": "lit.s2",
+      "name": "Prose",
+      "color": "#8b5cf6",
+      "order": 2
+    },
+    {
+      "id": "lit.s3",
+      "name": "Drama",
+      "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "lit.s4",
+      "name": "Critical Skills",
+      "color": "#f59e0b",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lit.t1.poetic_techniques",
+      "label": "Poetic Techniques",
+      "type": "concept",
+      "description": "Poetic Techniques — simile, metaphor, personification, alliteration, enjambment, caesura and their effects",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "lit.s1",
+      "bookName": "Poetry",
+      "bookColor": "#ec4899",
+      "bookOrder": 1
+    },
+    {
+      "id": "lit.t2.imagery",
+      "label": "Imagery",
+      "type": "concept",
+      "description": "Imagery — visual, auditory, tactile and other sensory images in poetry and prose",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "lit.s1",
+      "bookName": "Poetry",
+      "bookColor": "#ec4899",
+      "bookOrder": 1
+    },
+    {
+      "id": "lit.t3.rhythm_meter",
+      "label": "Rhythm and Meter",
+      "type": "concept",
+      "description": "Rhythm and Meter — iambic pentameter, free verse, rhyme schemes and their contribution to meaning",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "lit.s1",
+      "bookName": "Poetry",
+      "bookColor": "#ec4899",
+      "bookOrder": 1
+    },
+    {
+      "id": "lit.t4.theme_analysis",
+      "label": "Theme Analysis",
+      "type": "concept",
+      "description": "Theme Analysis — identifying and exploring central themes such as love, death, power, conflict and identity",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "lit.s2",
+      "bookName": "Prose",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2
+    },
+    {
+      "id": "lit.t5.character_analysis",
+      "label": "Character Analysis",
+      "type": "concept",
+      "description": "Character Analysis — methods of characterisation, character development, motivation and relationships",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "lit.s2",
+      "bookName": "Prose",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2
+    },
+    {
+      "id": "lit.t6.narrative_voice",
+      "label": "Narrative Voice",
+      "type": "concept",
+      "description": "Narrative Voice — first person, third person, omniscient narration, reliability and perspective",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "lit.s2",
+      "bookName": "Prose",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2
+    },
+    {
+      "id": "lit.t7.plot_structure",
+      "label": "Plot Structure",
+      "type": "concept",
+      "description": "Plot Structure — exposition, rising action, climax, falling action, resolution, and narrative arc",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "lit.s2",
+      "bookName": "Prose",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2
+    },
+    {
+      "id": "lit.t8.setting_atmosphere",
+      "label": "Setting and Atmosphere",
+      "type": "concept",
+      "description": "Setting and Atmosphere — how writers create mood, place and time, and their effect on the reader",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "lit.s2",
+      "bookName": "Prose",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2
+    },
+    {
+      "id": "lit.t9.shakespeare",
+      "label": "Shakespeare",
+      "type": "concept",
+      "description": "Shakespeare — studying a Shakespeare play: language, themes, characters, dramatic techniques and context",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "lit.s3",
+      "bookName": "Drama",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "lit.t10.modern_drama",
+      "label": "Modern Drama",
+      "type": "concept",
+      "description": "Modern Drama — studying a modern play: stage directions, dialogue, dramatic irony and social commentary",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "lit.s3",
+      "bookName": "Drama",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "lit.t11.literary_comparison",
+      "label": "Literary Comparison",
+      "type": "concept",
+      "description": "Literary Comparison — comparing texts across genres, themes, styles and historical periods",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "lit.s4",
+      "bookName": "Critical Skills",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4
+    },
+    {
+      "id": "lit.t12.essay_writing",
+      "label": "Essay Writing",
+      "type": "concept",
+      "description": "Essay Writing — structuring literary essays with thesis, evidence, analysis and evaluation",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "lit.s4",
+      "bookName": "Critical Skills",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4
+    },
+    {
+      "id": "lit.t13.unseen_text_analysis",
+      "label": "Unseen Text Analysis",
+      "type": "concept",
+      "description": "Unseen Text Analysis — approaching unfamiliar poetry and prose passages with analytical skills",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "lit.s4",
+      "bookName": "Critical Skills",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4
+    },
+    {
+      "id": "lit.t14.context_interpretation",
+      "label": "Context and Interpretation",
+      "type": "concept",
+      "description": "Context and Interpretation — understanding historical, social and cultural context and its influence on texts",
+      "grade_range": ["IGCSE"],
+      "tags": ["subtopic"],
+      "pages": "",
+      "book": "lit.s4",
+      "bookName": "Critical Skills",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4
+    }
+  ],
+  "edges": [
+    {
+      "source": "lit.t1.poetic_techniques",
+      "target": "lit.t2.imagery",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t1.poetic_techniques",
+      "target": "lit.t3.rhythm_meter",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t2.imagery",
+      "target": "lit.t8.setting_atmosphere",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t4.theme_analysis",
+      "target": "lit.t5.character_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t5.character_analysis",
+      "target": "lit.t6.narrative_voice",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t4.theme_analysis",
+      "target": "lit.t7.plot_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t6.narrative_voice",
+      "target": "lit.t7.plot_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t7.plot_structure",
+      "target": "lit.t8.setting_atmosphere",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t5.character_analysis",
+      "target": "lit.t9.shakespeare",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t3.rhythm_meter",
+      "target": "lit.t9.shakespeare",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t8.setting_atmosphere",
+      "target": "lit.t9.shakespeare",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t5.character_analysis",
+      "target": "lit.t10.modern_drama",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t7.plot_structure",
+      "target": "lit.t10.modern_drama",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t9.shakespeare",
+      "target": "lit.t11.literary_comparison",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t10.modern_drama",
+      "target": "lit.t11.literary_comparison",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t4.theme_analysis",
+      "target": "lit.t12.essay_writing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t11.literary_comparison",
+      "target": "lit.t12.essay_writing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t1.poetic_techniques",
+      "target": "lit.t13.unseen_text_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t2.imagery",
+      "target": "lit.t13.unseen_text_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t12.essay_writing",
+      "target": "lit.t13.unseen_text_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t8.setting_atmosphere",
+      "target": "lit.t14.context_interpretation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.t12.essay_writing",
+      "target": "lit.t14.context_interpretation",
+      "relation": "prerequisite_for"
+    }
+  ]
+}
