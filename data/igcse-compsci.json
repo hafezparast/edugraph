@@ -216,6 +216,43 @@
       "order": 34
     }
   ],
+  "strands": [
+    {
+      "id": "data_rep",
+      "name": "Data Representation",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "systems",
+      "name": "Computer Systems & Architecture",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "networks",
+      "name": "Networks & Communication",
+      "color": "#06b6d4"
+    },
+    {
+      "id": "programming",
+      "name": "Programming & Algorithms",
+      "color": "#22c55e"
+    },
+    {
+      "id": "security",
+      "name": "Security, Ethics & Society",
+      "color": "#ef4444"
+    },
+    {
+      "id": "ict_practical",
+      "name": "ICT Practical Skills",
+      "color": "#f97316"
+    },
+    {
+      "id": "ict_theory",
+      "name": "ICT Theory & Applications",
+      "color": "#eab308"
+    }
+  ],
   "nodes": [
     {
       "id": "cs.ch1.the_binary_system",
@@ -228,7 +265,8 @@
       "comprehended": false,
       "bookName": "CS: Binary Systems and Hexadecimal",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "data_rep"
     },
     {
       "id": "cs.ch1.measurement_of_the_size_of_computer_memories",
@@ -241,7 +279,8 @@
       "comprehended": false,
       "bookName": "CS: Binary Systems and Hexadecimal",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "data_rep"
     },
     {
       "id": "cs.ch1.example_use_of_binary",
@@ -254,7 +293,8 @@
       "comprehended": false,
       "bookName": "CS: Binary Systems and Hexadecimal",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "data_rep"
     },
     {
       "id": "cs.ch1.the_hexadecimal_system",
@@ -267,7 +307,8 @@
       "comprehended": false,
       "bookName": "CS: Binary Systems and Hexadecimal",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "data_rep"
     },
     {
       "id": "cs.ch1.use_of_the_hexadecimal_system",
@@ -280,7 +321,8 @@
       "comprehended": false,
       "bookName": "CS: Binary Systems and Hexadecimal",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "data_rep"
     },
     {
       "id": "cs.ch2.data_transmission",
@@ -293,7 +335,8 @@
       "comprehended": false,
       "bookName": "CS: Communication and Internet Technologies",
       "bookColor": "#6366f1",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "networks"
     },
     {
       "id": "cs.ch2.error_checking_methods",
@@ -306,7 +349,8 @@
       "comprehended": false,
       "bookName": "CS: Communication and Internet Technologies",
       "bookColor": "#6366f1",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "networks"
     },
     {
       "id": "cs.ch2.internet_technologies",
@@ -319,7 +363,8 @@
       "comprehended": false,
       "bookName": "CS: Communication and Internet Technologies",
       "bookColor": "#6366f1",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "networks"
     },
     {
       "id": "cs.ch3.logic_gates",
@@ -332,7 +377,8 @@
       "comprehended": false,
       "bookName": "CS: Logic Gates and Logic Circuits",
       "bookColor": "#8b5cf6",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "systems"
     },
     {
       "id": "cs.ch3.truth_tables",
@@ -345,7 +391,8 @@
       "comprehended": false,
       "bookName": "CS: Logic Gates and Logic Circuits",
       "bookColor": "#8b5cf6",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "systems"
     },
     {
       "id": "cs.ch3.the_function_of_the_six_logic_gates",
@@ -358,7 +405,8 @@
       "comprehended": false,
       "bookName": "CS: Logic Gates and Logic Circuits",
       "bookColor": "#8b5cf6",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "systems"
     },
     {
       "id": "cs.ch3.logic_circuits",
@@ -371,7 +419,8 @@
       "comprehended": false,
       "bookName": "CS: Logic Gates and Logic Circuits",
       "bookColor": "#8b5cf6",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "systems"
     },
     {
       "id": "cs.ch3.logic_circuits_in_the_real_world",
@@ -384,7 +433,8 @@
       "comprehended": false,
       "bookName": "CS: Logic Gates and Logic Circuits",
       "bookColor": "#8b5cf6",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "systems"
     },
     {
       "id": "cs.ch4.operating_systems",
@@ -397,7 +447,8 @@
       "comprehended": false,
       "bookName": "CS: Operating Systems and Computer Architecture",
       "bookColor": "#7c3aed",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "systems"
     },
     {
       "id": "cs.ch4.interrupts",
@@ -410,7 +461,8 @@
       "comprehended": false,
       "bookName": "CS: Operating Systems and Computer Architecture",
       "bookColor": "#7c3aed",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "systems"
     },
     {
       "id": "cs.ch4.computer_architecture",
@@ -423,7 +475,8 @@
       "comprehended": false,
       "bookName": "CS: Operating Systems and Computer Architecture",
       "bookColor": "#7c3aed",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "systems"
     },
     {
       "id": "cs.ch4.the_fetch_execute_cycle",
@@ -436,7 +489,8 @@
       "comprehended": false,
       "bookName": "CS: Operating Systems and Computer Architecture",
       "bookColor": "#7c3aed",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "systems"
     },
     {
       "id": "cs.ch5.input_devices",
@@ -449,7 +503,8 @@
       "comprehended": false,
       "bookName": "CS: Input and Output Devices",
       "bookColor": "#2563eb",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "systems"
     },
     {
       "id": "cs.ch5.output_devices",
@@ -462,7 +517,8 @@
       "comprehended": false,
       "bookName": "CS: Input and Output Devices",
       "bookColor": "#2563eb",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "systems"
     },
     {
       "id": "cs.ch6.file_formats",
@@ -475,7 +531,8 @@
       "comprehended": false,
       "bookName": "CS: Memory and Data Storage",
       "bookColor": "#4f46e5",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "data_rep"
     },
     {
       "id": "cs.ch6.lossless_and_lossy_file_compression",
@@ -488,7 +545,8 @@
       "comprehended": false,
       "bookName": "CS: Memory and Data Storage",
       "bookColor": "#4f46e5",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "data_rep"
     },
     {
       "id": "cs.ch6.memory_and_storage",
@@ -501,7 +559,8 @@
       "comprehended": false,
       "bookName": "CS: Memory and Data Storage",
       "bookColor": "#4f46e5",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "data_rep"
     },
     {
       "id": "cs.ch6.how_to_estimate_the_size_of_a_file",
@@ -514,7 +573,8 @@
       "comprehended": false,
       "bookName": "CS: Memory and Data Storage",
       "bookColor": "#4f46e5",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "data_rep"
     },
     {
       "id": "cs.ch7.programming_languages",
@@ -527,7 +587,8 @@
       "comprehended": false,
       "bookName": "CS: High- and Low-level Languages",
       "bookColor": "#7e22ce",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "systems"
     },
     {
       "id": "cs.ch7.translators",
@@ -540,7 +601,8 @@
       "comprehended": false,
       "bookName": "CS: High- and Low-level Languages",
       "bookColor": "#7e22ce",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "systems"
     },
     {
       "id": "cs.ch7.what_happens_when_things_go_wrong",
@@ -553,7 +615,8 @@
       "comprehended": false,
       "bookName": "CS: High- and Low-level Languages",
       "bookColor": "#7e22ce",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "systems"
     },
     {
       "id": "cs.ch8.security_and_data_integrity",
@@ -566,7 +629,8 @@
       "comprehended": false,
       "bookName": "CS: Security and Ethics",
       "bookColor": "#6d28d9",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "security"
     },
     {
       "id": "cs.ch8.cookies",
@@ -579,7 +643,8 @@
       "comprehended": false,
       "bookName": "CS: Security and Ethics",
       "bookColor": "#6d28d9",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "security"
     },
     {
       "id": "cs.ch8.loss_of_data_and_data_corruption",
@@ -592,7 +657,8 @@
       "comprehended": false,
       "bookName": "CS: Security and Ethics",
       "bookColor": "#6d28d9",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "security"
     },
     {
       "id": "cs.ch8.firewalls_and_proxy_servers",
@@ -605,7 +671,8 @@
       "comprehended": false,
       "bookName": "CS: Security and Ethics",
       "bookColor": "#6d28d9",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "security"
     },
     {
       "id": "cs.ch8.security_protocols",
@@ -618,7 +685,8 @@
       "comprehended": false,
       "bookName": "CS: Security and Ethics",
       "bookColor": "#6d28d9",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "security"
     },
     {
       "id": "cs.ch8.encryption",
@@ -631,7 +699,8 @@
       "comprehended": false,
       "bookName": "CS: Security and Ethics",
       "bookColor": "#6d28d9",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "security"
     },
     {
       "id": "cs.ch8.applications",
@@ -644,7 +713,8 @@
       "comprehended": false,
       "bookName": "CS: Security and Ethics",
       "bookColor": "#6d28d9",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "security"
     },
     {
       "id": "cs.ch8.computer_ethics",
@@ -657,7 +727,8 @@
       "comprehended": false,
       "bookName": "CS: Security and Ethics",
       "bookColor": "#6d28d9",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "security"
     },
     {
       "id": "cs.ch8.free_software_freeware_and_shareware",
@@ -670,7 +741,8 @@
       "comprehended": false,
       "bookName": "CS: Security and Ethics",
       "bookColor": "#6d28d9",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "security"
     },
     {
       "id": "cs.ch9.algorithms",
@@ -683,7 +755,8 @@
       "comprehended": false,
       "bookName": "CS: Problem-solving and Design",
       "bookColor": "#1d4ed8",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "programming"
     },
     {
       "id": "cs.ch9.test_data",
@@ -696,7 +769,8 @@
       "comprehended": false,
       "bookName": "CS: Problem-solving and Design",
       "bookColor": "#1d4ed8",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "programming"
     },
     {
       "id": "cs.ch9.validation_and_verification",
@@ -709,7 +783,8 @@
       "comprehended": false,
       "bookName": "CS: Problem-solving and Design",
       "bookColor": "#1d4ed8",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "programming"
     },
     {
       "id": "cs.ch9.using_trace_tables",
@@ -722,7 +797,8 @@
       "comprehended": false,
       "bookName": "CS: Problem-solving and Design",
       "bookColor": "#1d4ed8",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "programming"
     },
     {
       "id": "cs.ch9.identifying_and_correcting_errors",
@@ -735,7 +811,8 @@
       "comprehended": false,
       "bookName": "CS: Problem-solving and Design",
       "bookColor": "#1d4ed8",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "programming"
     },
     {
       "id": "cs.ch9.producing_algorithms",
@@ -748,7 +825,8 @@
       "comprehended": false,
       "bookName": "CS: Problem-solving and Design",
       "bookColor": "#1d4ed8",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "programming"
     },
     {
       "id": "cs.ch10.assignment",
@@ -761,7 +839,8 @@
       "comprehended": false,
       "bookName": "CS: Pseudocode and Flowcharts",
       "bookColor": "#4338ca",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "programming"
     },
     {
       "id": "cs.ch10.conditional_statements",
@@ -774,7 +853,8 @@
       "comprehended": false,
       "bookName": "CS: Pseudocode and Flowcharts",
       "bookColor": "#4338ca",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "programming"
     },
     {
       "id": "cs.ch10.loop_structures",
@@ -787,7 +867,8 @@
       "comprehended": false,
       "bookName": "CS: Pseudocode and Flowcharts",
       "bookColor": "#4338ca",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "programming"
     },
     {
       "id": "cs.ch10.input_and_output_statements",
@@ -800,7 +881,8 @@
       "comprehended": false,
       "bookName": "CS: Pseudocode and Flowcharts",
       "bookColor": "#4338ca",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "programming"
     },
     {
       "id": "cs.ch10.standard_actions",
@@ -813,7 +895,8 @@
       "comprehended": false,
       "bookName": "CS: Pseudocode and Flowcharts",
       "bookColor": "#4338ca",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "programming"
     },
     {
       "id": "cs.ch10.examples_of_algorithms_in_pseudocode",
@@ -826,7 +909,8 @@
       "comprehended": false,
       "bookName": "CS: Pseudocode and Flowcharts",
       "bookColor": "#4338ca",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "programming"
     },
     {
       "id": "cs.ch10.standard_flowchart_symbols",
@@ -839,7 +923,8 @@
       "comprehended": false,
       "bookName": "CS: Pseudocode and Flowcharts",
       "bookColor": "#4338ca",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "programming"
     },
     {
       "id": "cs.ch11.programming",
@@ -852,7 +937,8 @@
       "comprehended": false,
       "bookName": "CS: Programming Concepts",
       "bookColor": "#5b21b6",
-      "bookOrder": 11
+      "bookOrder": 11,
+      "strand": "programming"
     },
     {
       "id": "cs.ch11.declaration_and_use_of_variables_and_constants",
@@ -865,7 +951,8 @@
       "comprehended": false,
       "bookName": "CS: Programming Concepts",
       "bookColor": "#5b21b6",
-      "bookOrder": 11
+      "bookOrder": 11,
+      "strand": "programming"
     },
     {
       "id": "cs.ch11.basic_data_types",
@@ -878,7 +965,8 @@
       "comprehended": false,
       "bookName": "CS: Programming Concepts",
       "bookColor": "#5b21b6",
-      "bookOrder": 11
+      "bookOrder": 11,
+      "strand": "programming"
     },
     {
       "id": "cs.ch11.how_to_make_your_program_work",
@@ -891,7 +979,8 @@
       "comprehended": false,
       "bookName": "CS: Programming Concepts",
       "bookColor": "#5b21b6",
-      "bookOrder": 11
+      "bookOrder": 11,
+      "strand": "programming"
     },
     {
       "id": "cs.ch12.arrays",
@@ -904,7 +993,8 @@
       "comprehended": false,
       "bookName": "CS: Data Structures: Arrays and Using Pre-release Material",
       "bookColor": "#3730a3",
-      "bookOrder": 12
+      "bookOrder": 12,
+      "strand": "programming"
     },
     {
       "id": "cs.ch12.using_pre_release_material",
@@ -917,7 +1007,8 @@
       "comprehended": false,
       "bookName": "CS: Data Structures: Arrays and Using Pre-release Material",
       "bookColor": "#3730a3",
-      "bookOrder": 12
+      "bookOrder": 12,
+      "strand": "programming"
     },
     {
       "id": "cs.ch13.what_are_databases_used_for",
@@ -930,7 +1021,8 @@
       "comprehended": false,
       "bookName": "CS: Databases",
       "bookColor": "#1e3a8a",
-      "bookOrder": 13
+      "bookOrder": 13,
+      "strand": "programming"
     },
     {
       "id": "cs.ch13.the_structure_of_a_database",
@@ -943,7 +1035,8 @@
       "comprehended": false,
       "bookName": "CS: Databases",
       "bookColor": "#1e3a8a",
-      "bookOrder": 13
+      "bookOrder": 13,
+      "strand": "programming"
     },
     {
       "id": "cs.ch13.practical_use_of_a_database",
@@ -956,7 +1049,8 @@
       "comprehended": false,
       "bookName": "CS: Databases",
       "bookColor": "#1e3a8a",
-      "bookOrder": 13
+      "bookOrder": 13,
+      "strand": "programming"
     },
     {
       "id": "ict.ch1.hardware_and_software",
@@ -969,7 +1063,8 @@
       "comprehended": false,
       "bookName": "ICT: Types and Components of a Computer System",
       "bookColor": "#ea580c",
-      "bookOrder": 14
+      "bookOrder": 14,
+      "strand": "systems"
     },
     {
       "id": "ict.ch1.main_components_of_a_computer_system",
@@ -982,7 +1077,8 @@
       "comprehended": false,
       "bookName": "ICT: Types and Components of a Computer System",
       "bookColor": "#ea580c",
-      "bookOrder": 14
+      "bookOrder": 14,
+      "strand": "systems"
     },
     {
       "id": "ict.ch1.operating_systems",
@@ -995,7 +1091,8 @@
       "comprehended": false,
       "bookName": "ICT: Types and Components of a Computer System",
       "bookColor": "#ea580c",
-      "bookOrder": 14
+      "bookOrder": 14,
+      "strand": "systems"
     },
     {
       "id": "ict.ch1.types_of_computer",
@@ -1008,7 +1105,8 @@
       "comprehended": false,
       "bookName": "ICT: Types and Components of a Computer System",
       "bookColor": "#ea580c",
-      "bookOrder": 14
+      "bookOrder": 14,
+      "strand": "systems"
     },
     {
       "id": "ict.ch1.impact_of_emerging_technologies",
@@ -1021,7 +1119,8 @@
       "comprehended": false,
       "bookName": "ICT: Types and Components of a Computer System",
       "bookColor": "#ea580c",
-      "bookOrder": 14
+      "bookOrder": 14,
+      "strand": "systems"
     },
     {
       "id": "ict.ch2.input_devices_and_their_uses",
@@ -1034,7 +1133,8 @@
       "comprehended": false,
       "bookName": "ICT: Input and Output Devices",
       "bookColor": "#d97706",
-      "bookOrder": 15
+      "bookOrder": 15,
+      "strand": "systems"
     },
     {
       "id": "ict.ch2.direct_data_entry_devices",
@@ -1047,7 +1147,8 @@
       "comprehended": false,
       "bookName": "ICT: Input and Output Devices",
       "bookColor": "#d97706",
-      "bookOrder": 15
+      "bookOrder": 15,
+      "strand": "systems"
     },
     {
       "id": "ict.ch2.output_devices_and_their_uses",
@@ -1060,7 +1161,8 @@
       "comprehended": false,
       "bookName": "ICT: Input and Output Devices",
       "bookColor": "#d97706",
-      "bookOrder": 15
+      "bookOrder": 15,
+      "strand": "systems"
     },
     {
       "id": "ict.ch3.backing_up_of_data",
@@ -1073,7 +1175,8 @@
       "comprehended": false,
       "bookName": "ICT: Storage Devices and Media",
       "bookColor": "#ca8a04",
-      "bookOrder": 16
+      "bookOrder": 16,
+      "strand": "systems"
     },
     {
       "id": "ict.ch3.types_of_access",
@@ -1086,7 +1189,8 @@
       "comprehended": false,
       "bookName": "ICT: Storage Devices and Media",
       "bookColor": "#ca8a04",
-      "bookOrder": 16
+      "bookOrder": 16,
+      "strand": "systems"
     },
     {
       "id": "ict.ch3.secondary_storage_media",
@@ -1099,7 +1203,8 @@
       "comprehended": false,
       "bookName": "ICT: Storage Devices and Media",
       "bookColor": "#ca8a04",
-      "bookOrder": 16
+      "bookOrder": 16,
+      "strand": "systems"
     },
     {
       "id": "ict.ch4.networks",
@@ -1112,7 +1217,8 @@
       "comprehended": false,
       "bookName": "ICT: Networks and the Effects of Using Them",
       "bookColor": "#c2410c",
-      "bookOrder": 17
+      "bookOrder": 17,
+      "strand": "networks"
     },
     {
       "id": "ict.ch4.network_issues_and_communication",
@@ -1125,7 +1231,8 @@
       "comprehended": false,
       "bookName": "ICT: Networks and the Effects of Using Them",
       "bookColor": "#c2410c",
-      "bookOrder": 17
+      "bookOrder": 17,
+      "strand": "networks"
     },
     {
       "id": "ict.ch5.effects_of_ict_on_employment",
@@ -1138,7 +1245,8 @@
       "comprehended": false,
       "bookName": "ICT: The Effects of Using ICT",
       "bookColor": "#b45309",
-      "bookOrder": 18
+      "bookOrder": 18,
+      "strand": "security"
     },
     {
       "id": "ict.ch5.effects_of_ict_on_working_patterns",
@@ -1151,7 +1259,8 @@
       "comprehended": false,
       "bookName": "ICT: The Effects of Using ICT",
       "bookColor": "#b45309",
-      "bookOrder": 18
+      "bookOrder": 18,
+      "strand": "security"
     },
     {
       "id": "ict.ch5.microprocessor_controlled_devices_in_the_home",
@@ -1164,7 +1273,8 @@
       "comprehended": false,
       "bookName": "ICT: The Effects of Using ICT",
       "bookColor": "#b45309",
-      "bookOrder": 18
+      "bookOrder": 18,
+      "strand": "security"
     },
     {
       "id": "ict.ch5.health_problems_related_to_ict_use",
@@ -1177,7 +1287,8 @@
       "comprehended": false,
       "bookName": "ICT: The Effects of Using ICT",
       "bookColor": "#b45309",
-      "bookOrder": 18
+      "bookOrder": 18,
+      "strand": "security"
     },
     {
       "id": "ict.ch6.communication_applications",
@@ -1190,7 +1301,8 @@
       "comprehended": false,
       "bookName": "ICT: ICT Applications",
       "bookColor": "#a16207",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch6.data_handling_applications",
@@ -1203,7 +1315,8 @@
       "comprehended": false,
       "bookName": "ICT: ICT Applications",
       "bookColor": "#a16207",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch6.measurement_applications",
@@ -1216,7 +1329,8 @@
       "comprehended": false,
       "bookName": "ICT: ICT Applications",
       "bookColor": "#a16207",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch6.microprocessors_in_control_applications",
@@ -1229,7 +1343,8 @@
       "comprehended": false,
       "bookName": "ICT: ICT Applications",
       "bookColor": "#a16207",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch6.modelling_applications",
@@ -1242,7 +1357,8 @@
       "comprehended": false,
       "bookName": "ICT: ICT Applications",
       "bookColor": "#a16207",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch6.manufacturing_applications",
@@ -1255,7 +1371,8 @@
       "comprehended": false,
       "bookName": "ICT: ICT Applications",
       "bookColor": "#a16207",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch6.school_management_systems",
@@ -1268,7 +1385,8 @@
       "comprehended": false,
       "bookName": "ICT: ICT Applications",
       "bookColor": "#a16207",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch6.booking_systems",
@@ -1281,7 +1399,8 @@
       "comprehended": false,
       "bookName": "ICT: ICT Applications",
       "bookColor": "#a16207",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch6.banking_applications",
@@ -1294,7 +1413,8 @@
       "comprehended": false,
       "bookName": "ICT: ICT Applications",
       "bookColor": "#a16207",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch6.expert_systems",
@@ -1307,7 +1427,8 @@
       "comprehended": false,
       "bookName": "ICT: ICT Applications",
       "bookColor": "#a16207",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch6.computers_in_medicine",
@@ -1320,7 +1441,8 @@
       "comprehended": false,
       "bookName": "ICT: ICT Applications",
       "bookColor": "#a16207",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch6.computers_in_libraries",
@@ -1333,7 +1455,8 @@
       "comprehended": false,
       "bookName": "ICT: ICT Applications",
       "bookColor": "#a16207",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch6.computers_in_retail",
@@ -1346,7 +1469,8 @@
       "comprehended": false,
       "bookName": "ICT: ICT Applications",
       "bookColor": "#a16207",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch6.recognition_systems",
@@ -1359,7 +1483,8 @@
       "comprehended": false,
       "bookName": "ICT: ICT Applications",
       "bookColor": "#a16207",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch6.monitoring_and_tracking_systems",
@@ -1372,7 +1497,8 @@
       "comprehended": false,
       "bookName": "ICT: ICT Applications",
       "bookColor": "#a16207",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch6.satellite_systems",
@@ -1385,7 +1511,8 @@
       "comprehended": false,
       "bookName": "ICT: ICT Applications",
       "bookColor": "#a16207",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch7.analysis",
@@ -1398,7 +1525,8 @@
       "comprehended": false,
       "bookName": "ICT: Systems Life Cycle",
       "bookColor": "#9a3412",
-      "bookOrder": 20
+      "bookOrder": 20,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch7.design",
@@ -1411,7 +1539,8 @@
       "comprehended": false,
       "bookName": "ICT: Systems Life Cycle",
       "bookColor": "#9a3412",
-      "bookOrder": 20
+      "bookOrder": 20,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch7.development_and_testing",
@@ -1424,7 +1553,8 @@
       "comprehended": false,
       "bookName": "ICT: Systems Life Cycle",
       "bookColor": "#9a3412",
-      "bookOrder": 20
+      "bookOrder": 20,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch7.implementation",
@@ -1437,7 +1567,8 @@
       "comprehended": false,
       "bookName": "ICT: Systems Life Cycle",
       "bookColor": "#9a3412",
-      "bookOrder": 20
+      "bookOrder": 20,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch7.documentation",
@@ -1450,7 +1581,8 @@
       "comprehended": false,
       "bookName": "ICT: Systems Life Cycle",
       "bookColor": "#9a3412",
-      "bookOrder": 20
+      "bookOrder": 20,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch7.evaluation",
@@ -1463,7 +1595,8 @@
       "comprehended": false,
       "bookName": "ICT: Systems Life Cycle",
       "bookColor": "#9a3412",
-      "bookOrder": 20
+      "bookOrder": 20,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch8.physical_security",
@@ -1476,7 +1609,8 @@
       "comprehended": false,
       "bookName": "ICT: Safety and Security",
       "bookColor": "#92400e",
-      "bookOrder": 21
+      "bookOrder": 21,
+      "strand": "security"
     },
     {
       "id": "ict.ch8.e_safety",
@@ -1489,7 +1623,8 @@
       "comprehended": false,
       "bookName": "ICT: Safety and Security",
       "bookColor": "#92400e",
-      "bookOrder": 21
+      "bookOrder": 21,
+      "strand": "security"
     },
     {
       "id": "ict.ch8.security_of_data",
@@ -1502,7 +1637,8 @@
       "comprehended": false,
       "bookName": "ICT: Safety and Security",
       "bookColor": "#92400e",
-      "bookOrder": 21
+      "bookOrder": 21,
+      "strand": "security"
     },
     {
       "id": "ict.ch8.additional_security_of_data_online",
@@ -1515,7 +1651,8 @@
       "comprehended": false,
       "bookName": "ICT: Safety and Security",
       "bookColor": "#92400e",
-      "bookOrder": 21
+      "bookOrder": 21,
+      "strand": "security"
     },
     {
       "id": "ict.ch9.audience_appreciation",
@@ -1528,7 +1665,8 @@
       "comprehended": false,
       "bookName": "ICT: Audiences",
       "bookColor": "#854d0e",
-      "bookOrder": 22
+      "bookOrder": 22,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch9.legal_moral_ethical_and_cultural_appreciation",
@@ -1541,7 +1679,8 @@
       "comprehended": false,
       "bookName": "ICT: Audiences",
       "bookColor": "#854d0e",
-      "bookOrder": 22
+      "bookOrder": 22,
+      "strand": "ict_theory"
     },
     {
       "id": "ict.ch10.communication_with_other_ict_users_using_email",
@@ -1554,7 +1693,8 @@
       "comprehended": false,
       "bookName": "ICT: Communication",
       "bookColor": "#7c2d12",
-      "bookOrder": 23
+      "bookOrder": 23,
+      "strand": "networks"
     },
     {
       "id": "ict.ch10.effective_use_of_the_internet",
@@ -1567,7 +1707,8 @@
       "comprehended": false,
       "bookName": "ICT: Communication",
       "bookColor": "#7c2d12",
-      "bookOrder": 23
+      "bookOrder": 23,
+      "strand": "networks"
     },
     {
       "id": "ict.ch11.generic_file_types",
@@ -1580,7 +1721,8 @@
       "comprehended": false,
       "bookName": "ICT: File Management",
       "bookColor": "#f97316",
-      "bookOrder": 24
+      "bookOrder": 24,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch11.manage_files_effectively",
@@ -1593,7 +1735,8 @@
       "comprehended": false,
       "bookName": "ICT: File Management",
       "bookColor": "#f97316",
-      "bookOrder": 24
+      "bookOrder": 24,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch11.reduce_file_sizes",
@@ -1606,7 +1749,8 @@
       "comprehended": false,
       "bookName": "ICT: File Management",
       "bookColor": "#f97316",
-      "bookOrder": 24
+      "bookOrder": 24,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch12.software_tools",
@@ -1619,7 +1763,8 @@
       "comprehended": false,
       "bookName": "ICT: Images",
       "bookColor": "#f59e0b",
-      "bookOrder": 25
+      "bookOrder": 25,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch12.edit_an_image",
@@ -1632,7 +1777,8 @@
       "comprehended": false,
       "bookName": "ICT: Images",
       "bookColor": "#f59e0b",
-      "bookOrder": 25
+      "bookOrder": 25,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch13.basic_documents",
@@ -1645,7 +1791,8 @@
       "comprehended": false,
       "bookName": "ICT: Layout",
       "bookColor": "#eab308",
-      "bookOrder": 26
+      "bookOrder": 26,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch13.place_objects_into_a_document",
@@ -1658,7 +1805,8 @@
       "comprehended": false,
       "bookName": "ICT: Layout",
       "bookColor": "#eab308",
-      "bookOrder": 26
+      "bookOrder": 26,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch13.headers_and_footers",
@@ -1671,7 +1819,8 @@
       "comprehended": false,
       "bookName": "ICT: Layout",
       "bookColor": "#eab308",
-      "bookOrder": 26
+      "bookOrder": 26,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch14.corporate_house_styles",
@@ -1684,7 +1833,8 @@
       "comprehended": false,
       "bookName": "ICT: Styles",
       "bookColor": "#fb923c",
-      "bookOrder": 27
+      "bookOrder": 27,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch14.create_styles_in_a_document",
@@ -1697,7 +1847,8 @@
       "comprehended": false,
       "bookName": "ICT: Styles",
       "bookColor": "#fb923c",
-      "bookOrder": 27
+      "bookOrder": 27,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch15.software_tools_for_proofing",
@@ -1710,7 +1861,8 @@
       "comprehended": false,
       "bookName": "ICT: Proofing",
       "bookColor": "#fbbf24",
-      "bookOrder": 28
+      "bookOrder": 28,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch15.proofing_techniques",
@@ -1723,7 +1875,8 @@
       "comprehended": false,
       "bookName": "ICT: Proofing",
       "bookColor": "#fbbf24",
-      "bookOrder": 28
+      "bookOrder": 28,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch16.chart_types",
@@ -1736,7 +1889,8 @@
       "comprehended": false,
       "bookName": "ICT: Graphs and Charts",
       "bookColor": "#f59e0b",
-      "bookOrder": 29
+      "bookOrder": 29,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch16.create_a_chart",
@@ -1749,7 +1903,8 @@
       "comprehended": false,
       "bookName": "ICT: Graphs and Charts",
       "bookColor": "#f59e0b",
-      "bookOrder": 29
+      "bookOrder": 29,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch16.label_a_chart",
@@ -1762,7 +1917,8 @@
       "comprehended": false,
       "bookName": "ICT: Graphs and Charts",
       "bookColor": "#f59e0b",
-      "bookOrder": 29
+      "bookOrder": 29,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch16.use_secondary_axes",
@@ -1775,7 +1931,8 @@
       "comprehended": false,
       "bookName": "ICT: Graphs and Charts",
       "bookColor": "#f59e0b",
-      "bookOrder": 29
+      "bookOrder": 29,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch17.format_text_and_page_layout",
@@ -1788,7 +1945,8 @@
       "comprehended": false,
       "bookName": "ICT: Document Production",
       "bookColor": "#e67e22",
-      "bookOrder": 30
+      "bookOrder": 30,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch17.edit_a_table",
@@ -1801,7 +1959,8 @@
       "comprehended": false,
       "bookName": "ICT: Document Production",
       "bookColor": "#e67e22",
-      "bookOrder": 30
+      "bookOrder": 30,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch17.mail_merge",
@@ -1814,7 +1973,8 @@
       "comprehended": false,
       "bookName": "ICT: Document Production",
       "bookColor": "#e67e22",
-      "bookOrder": 30
+      "bookOrder": 30,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch18.create_a_database_structure",
@@ -1827,7 +1987,8 @@
       "comprehended": false,
       "bookName": "ICT: Data Manipulation",
       "bookColor": "#dc7633",
-      "bookOrder": 31
+      "bookOrder": 31,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch18.manipulate_data",
@@ -1840,7 +2001,8 @@
       "comprehended": false,
       "bookName": "ICT: Data Manipulation",
       "bookColor": "#dc7633",
-      "bookOrder": 31
+      "bookOrder": 31,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch18.present_data",
@@ -1853,7 +2015,8 @@
       "comprehended": false,
       "bookName": "ICT: Data Manipulation",
       "bookColor": "#dc7633",
-      "bookOrder": 31
+      "bookOrder": 31,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch19.what_is_a_presentation",
@@ -1866,7 +2029,8 @@
       "comprehended": false,
       "bookName": "ICT: Presentations",
       "bookColor": "#d4a017",
-      "bookOrder": 32
+      "bookOrder": 32,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch19.use_a_master_slide",
@@ -1879,7 +2043,8 @@
       "comprehended": false,
       "bookName": "ICT: Presentations",
       "bookColor": "#d4a017",
-      "bookOrder": 32
+      "bookOrder": 32,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch19.create_presentation_slides",
@@ -1892,7 +2057,8 @@
       "comprehended": false,
       "bookName": "ICT: Presentations",
       "bookColor": "#d4a017",
-      "bookOrder": 32
+      "bookOrder": 32,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch19.display_a_presentation",
@@ -1905,7 +2071,8 @@
       "comprehended": false,
       "bookName": "ICT: Presentations",
       "bookColor": "#d4a017",
-      "bookOrder": 32
+      "bookOrder": 32,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch20.what_is_a_data_model",
@@ -1918,7 +2085,8 @@
       "comprehended": false,
       "bookName": "ICT: Data Analysis",
       "bookColor": "#cc7722",
-      "bookOrder": 33
+      "bookOrder": 33,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch20.create_a_data_model",
@@ -1931,7 +2099,8 @@
       "comprehended": false,
       "bookName": "ICT: Data Analysis",
       "bookColor": "#cc7722",
-      "bookOrder": 33
+      "bookOrder": 33,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch20.test_the_data_model",
@@ -1944,7 +2113,8 @@
       "comprehended": false,
       "bookName": "ICT: Data Analysis",
       "bookColor": "#cc7722",
-      "bookOrder": 33
+      "bookOrder": 33,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch20.manipulate_data_in_models",
@@ -1957,7 +2127,8 @@
       "comprehended": false,
       "bookName": "ICT: Data Analysis",
       "bookColor": "#cc7722",
-      "bookOrder": 33
+      "bookOrder": 33,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch20.present_data_from_models",
@@ -1970,7 +2141,8 @@
       "comprehended": false,
       "bookName": "ICT: Data Analysis",
       "bookColor": "#cc7722",
-      "bookOrder": 33
+      "bookOrder": 33,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch21.web_development_layers",
@@ -1983,7 +2155,8 @@
       "comprehended": false,
       "bookName": "ICT: Website Authoring",
       "bookColor": "#b8860b",
-      "bookOrder": 34
+      "bookOrder": 34,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch21.create_a_web_page",
@@ -1996,7 +2169,8 @@
       "comprehended": false,
       "bookName": "ICT: Website Authoring",
       "bookColor": "#b8860b",
-      "bookOrder": 34
+      "bookOrder": 34,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch21.use_stylesheets",
@@ -2009,7 +2183,8 @@
       "comprehended": false,
       "bookName": "ICT: Website Authoring",
       "bookColor": "#b8860b",
-      "bookOrder": 34
+      "bookOrder": 34,
+      "strand": "ict_practical"
     },
     {
       "id": "ict.ch21.test_and_publish_a_website",
@@ -2022,7 +2197,8 @@
       "comprehended": false,
       "bookName": "ICT: Website Authoring",
       "bookColor": "#b8860b",
-      "bookOrder": 34
+      "bookOrder": 34,
+      "strand": "ict_practical"
     }
   ],
   "edges": [

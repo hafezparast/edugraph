@@ -10,6 +10,48 @@
     ],
     "last_updated": "2026-03-25"
   },
+  "strands": [
+    {
+      "id": "num_arith",
+      "name": "Number & Arithmetic",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "algebra",
+      "name": "Algebra & Functions",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "geometry",
+      "name": "Geometry & Measurement",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics & Probability",
+      "color": "#10b981"
+    },
+    {
+      "id": "calculus",
+      "name": "Calculus & Analysis",
+      "color": "#ef4444"
+    },
+    {
+      "id": "financial",
+      "name": "Financial & Consumer Mathematics",
+      "color": "#ec4899"
+    },
+    {
+      "id": "discrete",
+      "name": "Discrete Mathematics",
+      "color": "#06b6d4"
+    },
+    {
+      "id": "structure",
+      "name": "Book & Chapter Structure",
+      "color": "#6b7280"
+    }
+  ],
   "nodes": [
     {
       "id": "book.y1p1",
@@ -23,7 +65,8 @@
         "book"
       ],
       "external_id": "f377d787d6d772a7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y1p1.ch1",
@@ -38,7 +81,8 @@
       ],
       "pages": "1-54",
       "external_id": "9bdbae667b2cfaf5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y1p1.ch1.many_and_few",
@@ -53,7 +97,8 @@
       ],
       "pages": "2-4",
       "external_id": "13c77891a49935ff",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch1.recognise_1_to_10",
@@ -68,7 +113,8 @@
       ],
       "pages": "5-6",
       "external_id": "a4cc40a103d581fc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch1.recognise_zero",
@@ -83,7 +129,8 @@
       ],
       "pages": "7-7",
       "external_id": "3ffbd41ef08bf780",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch1.write_0_to_10",
@@ -98,7 +145,8 @@
       ],
       "pages": "8-11",
       "external_id": "ad718ca2b40bf633",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch1.combination_of_numbers",
@@ -113,7 +161,8 @@
       ],
       "pages": "12-16",
       "external_id": "2413ab3afc485d79",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y1p1.ch1.recognise_11_to_20",
@@ -128,7 +177,8 @@
       ],
       "pages": "17-19",
       "external_id": "bc6265d8b82f9358",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch1.write_11_to_20",
@@ -143,7 +193,8 @@
       ],
       "pages": "20-20",
       "external_id": "3002204f06068eca",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch1.recognise_21_to_100",
@@ -158,7 +209,8 @@
       ],
       "pages": "21-24",
       "external_id": "eefce572db42396a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch1.place_value_and_digit_value",
@@ -173,7 +225,8 @@
       ],
       "pages": "25-27",
       "external_id": "65c8fd1de89aa46a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch1.more_or_less",
@@ -188,7 +241,8 @@
       ],
       "pages": "28-31",
       "external_id": "ac1c1fea49d2e8f8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch1.numbers_arrangement",
@@ -203,7 +257,8 @@
       ],
       "pages": "32-38",
       "external_id": "37d23d67e141c3c5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.y1p1.ch1.number_patterns",
@@ -218,7 +273,8 @@
       ],
       "pages": "39-42",
       "external_id": "4d3a814fafbb744f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.y1p1.ch1.recognise_estimation",
@@ -233,7 +289,8 @@
       ],
       "pages": "43-44",
       "external_id": "391994ab59f9978c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch1.recognise_round_off",
@@ -248,7 +305,8 @@
       ],
       "pages": "45",
       "external_id": "ee1e70209b59567c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch2",
@@ -263,7 +321,8 @@
       ],
       "pages": "55",
       "external_id": "0dd12b318ca02ce0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y1p1.ch2.recognise_addition",
@@ -278,7 +337,8 @@
       ],
       "pages": "56-59",
       "external_id": "6795331d95ecf24e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch2.quick_addition",
@@ -293,7 +353,8 @@
       ],
       "pages": "60-62",
       "external_id": "1221e725635931a1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch2.easy_addition",
@@ -308,7 +369,8 @@
       ],
       "pages": "63-67",
       "external_id": "3cd8aba1be760f83",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch2.more_addition",
@@ -323,7 +385,8 @@
       ],
       "pages": "68-73",
       "external_id": "3ca0a3b992faaee0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch2.recognise_subtraction",
@@ -338,7 +401,8 @@
       ],
       "pages": "74-79",
       "external_id": "f4d0e7e653b7b002",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch2.quick_subtraction",
@@ -353,7 +417,8 @@
       ],
       "pages": "80-81",
       "external_id": "7cc3e17696bc47f3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch2.easy_subtraction",
@@ -368,7 +433,8 @@
       ],
       "pages": "82-87",
       "external_id": "2445f9d562f66b76",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch2.more_subtraction",
@@ -383,7 +449,8 @@
       ],
       "pages": "88-92",
       "external_id": "4e08c87ab7fda5e2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch2.addition_and_subtraction_story",
@@ -398,7 +465,8 @@
       ],
       "pages": "93-107",
       "external_id": "d957dddf7102ecc3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch2.repeated_addition",
@@ -413,7 +481,8 @@
       ],
       "pages": "108-110",
       "external_id": "cee7b8e8d0d67dd8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p1.ch2.repeated_subtraction",
@@ -428,7 +497,8 @@
       ],
       "pages": "111",
       "external_id": "aec2a19c34741ad3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p2",
@@ -442,7 +512,8 @@
         "book"
       ],
       "external_id": "3e73ac32f95968e5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y1p2.ch1",
@@ -457,7 +528,8 @@
       ],
       "pages": "1-10",
       "external_id": "4e3c4398b0f3c36f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y1p2.ch1.recognise_fractions",
@@ -472,7 +544,8 @@
       ],
       "pages": "2",
       "external_id": "dd7524164f781647",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y1p2.ch2",
@@ -487,7 +560,8 @@
       ],
       "pages": "11-30",
       "external_id": "90fc2da08567e82a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y1p2.ch2.recognise_money",
@@ -502,7 +576,8 @@
       ],
       "pages": "12-13",
       "external_id": "de0a30b6e570ab0a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y1p2.ch2.value_of_money",
@@ -517,7 +592,8 @@
       ],
       "pages": "14-15",
       "external_id": "89bc43c36f03cf58",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y1p2.ch2.conversion_of_money",
@@ -532,7 +608,8 @@
       ],
       "pages": "16-19",
       "external_id": "1004bdc048a84c4b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y1p2.ch2.get_money_and_record_money",
@@ -547,7 +624,8 @@
       ],
       "pages": "20",
       "external_id": "e9a6f5e2d6e11a11",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y1p2.ch3",
@@ -562,7 +640,8 @@
       ],
       "pages": "31-44",
       "external_id": "675d482fc67776cd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y1p2.ch3.recognise_time_of_the_day",
@@ -577,7 +656,8 @@
       ],
       "pages": "32-32",
       "external_id": "00f5764f89af566d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch3.recognise_the_clock_and_time",
@@ -592,7 +672,8 @@
       ],
       "pages": "33-34",
       "external_id": "9472b3705eb6363b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch3.say_and_write_the_time",
@@ -607,7 +688,8 @@
       ],
       "pages": "35-37",
       "external_id": "11e76dc0b749b7d1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch3.recognise_days_weeks_and_months",
@@ -622,7 +704,8 @@
       ],
       "pages": "38",
       "external_id": "a30824ee4c6e5dd6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch4",
@@ -637,7 +720,8 @@
       ],
       "pages": "45-60",
       "external_id": "5dc3f52fe9c1211b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y1p2.ch4.recognise_length_of_objects",
@@ -652,7 +736,8 @@
       ],
       "pages": "46-47",
       "external_id": "96cdc065d7048aa0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch4.measure_and_compare_length",
@@ -667,7 +752,8 @@
       ],
       "pages": "48-50",
       "external_id": "22401f1a27c5e5d8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch4.recognise_mass_of_objects",
@@ -682,7 +768,8 @@
       ],
       "pages": "51-51",
       "external_id": "171a3a55cece4dd7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch4.weigh_and_compare_mass",
@@ -697,7 +784,8 @@
       ],
       "pages": "52-53",
       "external_id": "e2bfecf59ec6b801",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch4.recognise_volume_of_liquids",
@@ -712,7 +800,8 @@
       ],
       "pages": "54-54",
       "external_id": "bff17ad1246aa14a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch4.measure_and_compare_volume",
@@ -727,7 +816,8 @@
       ],
       "pages": "55",
       "external_id": "e343067a9e51be8f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch5",
@@ -742,7 +832,8 @@
       ],
       "pages": "61-74",
       "external_id": "1a0613111e15cbf5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y1p2.ch5.3-d_shapes",
@@ -757,7 +848,8 @@
       ],
       "pages": "62-63",
       "external_id": "491325023b5fb979",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch5.recognise_3-d_shapes",
@@ -772,7 +864,8 @@
       ],
       "pages": "64-65",
       "external_id": "1668cb0ee59ede05",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch5.3-d_shapes_patterns",
@@ -787,7 +880,8 @@
       ],
       "pages": "66-66",
       "external_id": "625ead64db18e8c6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch5.build_models",
@@ -802,7 +896,8 @@
       ],
       "pages": "67-67",
       "external_id": "b8a31a8123835faa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch5.2-d_shapes",
@@ -817,7 +912,8 @@
       ],
       "pages": "68-68",
       "external_id": "2450f52ae136f9cc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch5.recognise_2-d_shapes",
@@ -832,7 +928,8 @@
       ],
       "pages": "69-69",
       "external_id": "14b618f1f4b938ba",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch5.2-d_shapes_patterns",
@@ -847,7 +944,8 @@
       ],
       "pages": "70-70",
       "external_id": "32a8aa61ae3c1461",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch5.create_patterns",
@@ -862,7 +960,8 @@
       ],
       "pages": "71",
       "external_id": "459dea1a476845c2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y1p2.ch6",
@@ -877,7 +976,8 @@
       ],
       "pages": "75",
       "external_id": "7cb0781125b3156b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y1p2.ch6.collect_data",
@@ -892,7 +992,8 @@
       ],
       "pages": "76-77",
       "external_id": "3d4614b4099ee2b3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y1p2.ch6.recognise_pictograph",
@@ -907,7 +1008,8 @@
       ],
       "pages": "78",
       "external_id": "7416307968dbc453",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y2p1",
@@ -921,7 +1023,8 @@
         "book"
       ],
       "external_id": "4bb476c047a8c34f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y2p1.ch1",
@@ -936,7 +1039,8 @@
       ],
       "pages": "1-44",
       "external_id": "094adab63d566206",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y2p1.ch1.recognise_numbers",
@@ -951,7 +1055,8 @@
       ],
       "pages": "2-5",
       "external_id": "8691999af729708d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch1.write_numbers",
@@ -966,7 +1071,8 @@
       ],
       "pages": "6-7",
       "external_id": "393135b47f22f6bc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch1.number_value",
@@ -981,7 +1087,8 @@
       ],
       "pages": "8-12",
       "external_id": "a24c4119e475fa93",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch1.place_value_and_digit_value",
@@ -996,7 +1103,8 @@
       ],
       "pages": "13-15",
       "external_id": "9dafa412243114bb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch1.partition_numbers",
@@ -1011,7 +1119,8 @@
       ],
       "pages": "16-17",
       "external_id": "a7c4afbe1b8439c6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch1.compare_numbers",
@@ -1026,7 +1135,8 @@
       ],
       "pages": "18-21",
       "external_id": "96581a20de85ecf4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p1.ch1.arrange_numbers",
@@ -1041,7 +1151,8 @@
       ],
       "pages": "22-23",
       "external_id": "78d9500ee22f15cd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.y2p1.ch1.count_numbers",
@@ -1056,7 +1167,8 @@
       ],
       "pages": "24-26",
       "external_id": "08ea0818023a7e1e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch1.estimate_numbers",
@@ -1071,7 +1183,8 @@
       ],
       "pages": "27-31",
       "external_id": "66e5d48e0f447fde",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch1.round_off_numbers",
@@ -1086,7 +1199,8 @@
       ],
       "pages": "32-35",
       "external_id": "4f4fba063203ca4e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch1.number_patterns",
@@ -1101,7 +1215,8 @@
       ],
       "pages": "36",
       "external_id": "558e0d51ea43b560",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.y2p1.ch2",
@@ -1116,7 +1231,8 @@
       ],
       "pages": "45",
       "external_id": "06e363877cecc7d5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y2p1.ch2.add_two_numbers",
@@ -1131,7 +1247,8 @@
       ],
       "pages": "46-50",
       "external_id": "87e896a1a7c85746",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch2.more_addition",
@@ -1146,7 +1263,8 @@
       ],
       "pages": "51-57",
       "external_id": "c550d0ff46cacc54",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch2.add_three_numbers",
@@ -1161,7 +1279,8 @@
       ],
       "pages": "58-61",
       "external_id": "5a2dc4aa319f6676",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch2.subtraction",
@@ -1176,7 +1295,8 @@
       ],
       "pages": "62-65",
       "external_id": "0115e2a21225f44b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch2.more_subtraction",
@@ -1191,7 +1311,8 @@
       ],
       "pages": "66-72",
       "external_id": "445ade9a3447e071",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch2.subtract_successively",
@@ -1206,7 +1327,8 @@
       ],
       "pages": "73-80",
       "external_id": "49e645820f808c98",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch2.multiplication",
@@ -1221,7 +1343,8 @@
       ],
       "pages": "81-83",
       "external_id": "a252dfbf27d8333d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch2.build_up_times_tables",
@@ -1236,7 +1359,8 @@
       ],
       "pages": "84-90",
       "external_id": "9456dcdae4b088a5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p1.ch2.build_up_1_0_and_10_times_tables",
@@ -1251,7 +1375,8 @@
       ],
       "pages": "91-94",
       "external_id": "1ae1663ca0f35f3b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p1.ch2.division",
@@ -1266,7 +1391,8 @@
       ],
       "pages": "95-96",
       "external_id": "cf9497cda1b72dbe",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch2.build_up_division_tables",
@@ -1281,7 +1407,8 @@
       ],
       "pages": "97-103",
       "external_id": "1bf22e5868a33e6e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch2.division_involving_1_10_and_0",
@@ -1296,7 +1423,8 @@
       ],
       "pages": "104-108",
       "external_id": "2b401d4059714d60",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p1.ch2.more_division",
@@ -1311,7 +1439,8 @@
       ],
       "pages": "109",
       "external_id": "0bdca98580b8a147",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p2",
@@ -1325,7 +1454,8 @@
         "book"
       ],
       "external_id": "ee2b7921469bb0fc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y2p2.ch1",
@@ -1340,7 +1470,8 @@
       ],
       "pages": "1-18",
       "external_id": "0ec89bc800db065b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y2p2.ch1.recognise_fractions",
@@ -1355,7 +1486,8 @@
       ],
       "pages": "2-3",
       "external_id": "e915c3faadaedf98",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p2.ch1.write_fractions",
@@ -1370,7 +1502,8 @@
       ],
       "pages": "4-6",
       "external_id": "de055ef51c52a452",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p2.ch1.compare_fractions",
@@ -1385,7 +1518,8 @@
       ],
       "pages": "7-9",
       "external_id": "c348ed37178f5639",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch1.convert_fractions_to_decimals",
@@ -1400,7 +1534,8 @@
       ],
       "pages": "10-12",
       "external_id": "05ab6db2fddb8d37",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y2p2.ch1.compare_decimals",
@@ -1415,7 +1550,8 @@
       ],
       "pages": "13-13",
       "external_id": "9a4f1a8d02458031",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch1.compare_fractions_and_decimals",
@@ -1430,7 +1566,8 @@
       ],
       "pages": "14",
       "external_id": "1e9babda0a18c771",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch2",
@@ -1445,7 +1582,8 @@
       ],
       "pages": "19-38",
       "external_id": "e2d717cb79acd1c4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y2p2.ch2.recognise_money",
@@ -1460,7 +1598,8 @@
       ],
       "pages": "20-20",
       "external_id": "c034a6f7944d567d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y2p2.ch2.value_of_money",
@@ -1475,7 +1614,8 @@
       ],
       "pages": "21-22",
       "external_id": "859cd8d6745d5e7d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y2p2.ch2.addition_of_money",
@@ -1490,7 +1630,8 @@
       ],
       "pages": "23-25",
       "external_id": "a51fb061b8484177",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y2p2.ch2.subtraction_of_money",
@@ -1505,7 +1646,8 @@
       ],
       "pages": "26-28",
       "external_id": "297cc265ee5211b4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y2p2.ch2.multiplication_of_money",
@@ -1520,7 +1662,8 @@
       ],
       "pages": "29-30",
       "external_id": "57990d2c06390180",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y2p2.ch2.division_of_money",
@@ -1535,7 +1678,8 @@
       ],
       "pages": "31-32",
       "external_id": "7f333e5d079b75ae",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y2p2.ch2.money_literacy",
@@ -1550,7 +1694,8 @@
       ],
       "pages": "33",
       "external_id": "39ad56e9c99024f5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y2p2.ch3",
@@ -1565,7 +1710,8 @@
       ],
       "pages": "39-52",
       "external_id": "54d2bf3a4833ea0e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y2p2.ch3.recognise_minutes",
@@ -1580,7 +1726,8 @@
       ],
       "pages": "40-41",
       "external_id": "fd89f36dc1019219",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch3.say_and_write_the_time",
@@ -1595,7 +1742,8 @@
       ],
       "pages": "42-44",
       "external_id": "83a012077e8599cf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch3.record_the_time",
@@ -1610,7 +1758,8 @@
       ],
       "pages": "45-46",
       "external_id": "6b7a75377fcb34b7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch3.relationship_in_time",
@@ -1625,7 +1774,8 @@
       ],
       "pages": "47",
       "external_id": "4235ce160d6493de",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch4",
@@ -1640,7 +1790,8 @@
       ],
       "pages": "53-76",
       "external_id": "7b972c4ce6217e07",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y2p2.ch4.recognise_units_of_cm_and_m",
@@ -1655,7 +1806,8 @@
       ],
       "pages": "54-55",
       "external_id": "acafb660f61035c7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch4.measure_length_and_draw_lines",
@@ -1670,7 +1822,8 @@
       ],
       "pages": "56-58",
       "external_id": "42298f64aa5f4625",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch4.estimate_length",
@@ -1685,7 +1838,8 @@
       ],
       "pages": "59-60",
       "external_id": "392d96aae0b16721",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch4.recognise_units_of_g_and_kg",
@@ -1700,7 +1854,8 @@
       ],
       "pages": "61-62",
       "external_id": "9ac583161aa71f44",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch4.weigh_the_mass",
@@ -1715,7 +1870,8 @@
       ],
       "pages": "63-63",
       "external_id": "6bd7f4cc5d2b827d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch4.estimate_mass",
@@ -1730,7 +1886,8 @@
       ],
       "pages": "64-65",
       "external_id": "0f196c7625ccf5e4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch4.recognise_units_of_ml_and_l",
@@ -1745,7 +1902,8 @@
       ],
       "pages": "66-67",
       "external_id": "2e74bc4a7eb85419",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch4.measure_volume_of_liquid",
@@ -1760,7 +1918,8 @@
       ],
       "pages": "68-69",
       "external_id": "00e020d2c3ee6948",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch4.estimate_volume_of_liquid",
@@ -1775,7 +1934,8 @@
       ],
       "pages": "70",
       "external_id": "da765250488a1189",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch5",
@@ -1790,7 +1950,8 @@
       ],
       "pages": "77-90",
       "external_id": "f273400554de0419",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y2p2.ch5.identify_3-d_shapes",
@@ -1805,7 +1966,8 @@
       ],
       "pages": "78-79",
       "external_id": "9298844ae536754d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch5.identify_basic_shapes",
@@ -1820,7 +1982,8 @@
       ],
       "pages": "80-80",
       "external_id": "27d39990a7651323",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch5.recognise_nets_of_3-d_shapes",
@@ -1835,7 +1998,8 @@
       ],
       "pages": "81-83",
       "external_id": "b639220ecf0fc84f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch5.identify_2-d_shapes",
@@ -1850,7 +2014,8 @@
       ],
       "pages": "84-85",
       "external_id": "623e1fad730eda49",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch5.draw_2-d_shapes",
@@ -1865,7 +2030,8 @@
       ],
       "pages": "86",
       "external_id": "d292000dcb4ba695",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y2p2.ch6",
@@ -1880,7 +2046,8 @@
       ],
       "pages": "91",
       "external_id": "4474717921bdbe37",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y2p2.ch6.collect_data",
@@ -1895,7 +2062,8 @@
       ],
       "pages": "92-93",
       "external_id": "e41d2cdaebcdd1e1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y2p2.ch6.recognise_bar_charts",
@@ -1910,7 +2078,8 @@
       ],
       "pages": "94",
       "external_id": "35b4bfb42a47c78c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y3p1",
@@ -1924,7 +2093,8 @@
         "book"
       ],
       "external_id": "256c9623080b1766",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y3p1.ch1",
@@ -1939,7 +2109,8 @@
       ],
       "pages": "1-26",
       "external_id": "6996e47ba85e5f42",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y3p1.ch1.recognise_and_write_numbers",
@@ -1954,7 +2125,8 @@
       ],
       "pages": "2-4",
       "external_id": "0b7f777a5c7370ca",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch1.explore_numbers",
@@ -1969,7 +2141,8 @@
       ],
       "pages": "5-8",
       "external_id": "99128074bae192dd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch1.compare_numbers",
@@ -1984,7 +2157,8 @@
       ],
       "pages": "9-10",
       "external_id": "0a7d6ef77ee3a5c8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p1.ch1.arrange_and_count_numbers",
@@ -1999,7 +2173,8 @@
       ],
       "pages": "11-14",
       "external_id": "a3640d06d4f1d559",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.y3p1.ch1.estimate_more_or_less",
@@ -2014,7 +2189,8 @@
       ],
       "pages": "15-16",
       "external_id": "1cfca2ab1dff8fe2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch1.round_off_numbers",
@@ -2029,7 +2205,8 @@
       ],
       "pages": "17-19",
       "external_id": "2089bf4c50f773a9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch1.number_patterns",
@@ -2044,7 +2221,8 @@
       ],
       "pages": "20",
       "external_id": "eae275247114652e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.y3p1.ch2",
@@ -2059,7 +2237,8 @@
       ],
       "pages": "27-80",
       "external_id": "de13b6f3606f41e4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y3p1.ch2.addition",
@@ -2074,7 +2253,8 @@
       ],
       "pages": "28-31",
       "external_id": "8b05f7570fc96d83",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch2.more_addition",
@@ -2089,7 +2269,8 @@
       ],
       "pages": "32-35",
       "external_id": "bf325049341fb8c8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch2.add_three_numbers",
@@ -2104,7 +2285,8 @@
       ],
       "pages": "36-38",
       "external_id": "5c1ef882d28ae585",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch2.subtraction",
@@ -2119,7 +2301,8 @@
       ],
       "pages": "39-42",
       "external_id": "c7b6a975d8cca9cc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch2.more_subtraction",
@@ -2134,7 +2317,8 @@
       ],
       "pages": "43-47",
       "external_id": "d0829d0a5ae58493",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch2.subtract_successively",
@@ -2149,7 +2333,8 @@
       ],
       "pages": "48-50",
       "external_id": "80f085aa5a875c0f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch2.addition_and_subtraction",
@@ -2164,7 +2349,8 @@
       ],
       "pages": "51-56",
       "external_id": "e9529510977afb57",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch2.recognise_unknown",
@@ -2179,7 +2365,8 @@
       ],
       "pages": "57-59",
       "external_id": "f6f282b783e5378d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.y3p1.ch2.multiplication",
@@ -2194,7 +2381,8 @@
       ],
       "pages": "60-62",
       "external_id": "f19ad574bd8b6195",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch2.more_multiplication",
@@ -2209,7 +2397,8 @@
       ],
       "pages": "63-65",
       "external_id": "a20dc134cc09c920",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch2.division",
@@ -2224,7 +2413,8 @@
       ],
       "pages": "66-69",
       "external_id": "ab7ef9d4b258646e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch2.more_division",
@@ -2239,7 +2429,8 @@
       ],
       "pages": "70-76",
       "external_id": "626e396e661f7783",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch2.recognise_more_unknown",
@@ -2254,7 +2445,8 @@
       ],
       "pages": "77",
       "external_id": "881f4ddce8399df3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.y3p1.ch3",
@@ -2269,7 +2461,8 @@
       ],
       "pages": "81",
       "external_id": "57382b25bd9387bb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y3p1.ch3.proper_fractions",
@@ -2284,7 +2477,8 @@
       ],
       "pages": "82-82",
       "external_id": "df84477538dd5178",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch3.equivalent_fractions",
@@ -2299,7 +2493,8 @@
       ],
       "pages": "83-84",
       "external_id": "ba44b81ef1079a08",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch3.fractions_in_the_simplest_form",
@@ -2314,7 +2509,8 @@
       ],
       "pages": "85-86",
       "external_id": "7eae6ae5d9de9831",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch3.improper_fractions_and_mixed_numbers",
@@ -2329,7 +2525,8 @@
       ],
       "pages": "87-89",
       "external_id": "07daefa11a28a6b3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch3.addition_of_fractions",
@@ -2344,7 +2541,8 @@
       ],
       "pages": "90-92",
       "external_id": "f1b2c000d93b157b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch3.subtraction_of_fractions",
@@ -2359,7 +2557,8 @@
       ],
       "pages": "93-95",
       "external_id": "4843f95345e4d46f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch3.hundredths_and_decimals",
@@ -2374,7 +2573,8 @@
       ],
       "pages": "96-98",
       "external_id": "8cd0191b919c3e7f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch3.compare_decimals",
@@ -2389,7 +2589,8 @@
       ],
       "pages": "99-99",
       "external_id": "cc62f0d49c5b8c2b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p1.ch3.addition_of_decimals",
@@ -2404,7 +2605,8 @@
       ],
       "pages": "100-101",
       "external_id": "71f12acddad5af05",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch3.subtraction_of_decimals",
@@ -2419,7 +2621,8 @@
       ],
       "pages": "102-103",
       "external_id": "ef7beb0fa0678bcc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p1.ch3.recognise_percentages",
@@ -2434,7 +2637,8 @@
       ],
       "pages": "104",
       "external_id": "d6737d4e8ba9a50e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y3p2",
@@ -2448,7 +2652,8 @@
         "book"
       ],
       "external_id": "af7acdb93fc893f6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y3p2.ch1",
@@ -2463,7 +2668,8 @@
       ],
       "pages": "1-24",
       "external_id": "2adfc45dfd2f069a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y3p2.ch1.addition_of_money",
@@ -2478,7 +2684,8 @@
       ],
       "pages": "2-3",
       "external_id": "0129c37e6a95c0a1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y3p2.ch1.subtraction_of_money",
@@ -2493,7 +2700,8 @@
       ],
       "pages": "4-6",
       "external_id": "e722468cdf9827c3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y3p2.ch1.addition_and_subtraction_of_money",
@@ -2508,7 +2716,8 @@
       ],
       "pages": "7-8",
       "external_id": "498d3d689a0f6151",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y3p2.ch1.multiplication_of_money",
@@ -2523,7 +2732,8 @@
       ],
       "pages": "9-10",
       "external_id": "cad94ef13d4a6c98",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y3p2.ch1.division_of_money",
@@ -2538,7 +2748,8 @@
       ],
       "pages": "11-13",
       "external_id": "988dcb2388548eea",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y3p2.ch1.recognise_currencies",
@@ -2553,7 +2764,8 @@
       ],
       "pages": "14-15",
       "external_id": "1939343c75ebcc8f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y3p2.ch1.value_of_currencies",
@@ -2568,7 +2780,8 @@
       ],
       "pages": "16-16",
       "external_id": "3f09926760105e70",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y3p2.ch1.money_literacy",
@@ -2583,7 +2796,8 @@
       ],
       "pages": "17",
       "external_id": "d605168d3dd14e97",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y3p2.ch2",
@@ -2598,7 +2812,8 @@
       ],
       "pages": "25-48",
       "external_id": "6533200bb418660c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y3p2.ch2.say_and_record_time",
@@ -2613,7 +2828,8 @@
       ],
       "pages": "26-27",
       "external_id": "5c73fb4801591b66",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch2.recognise_calendar",
@@ -2628,7 +2844,8 @@
       ],
       "pages": "28-29",
       "external_id": "3c6cf6ca20bd0af9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch2.relationship_in_time",
@@ -2643,7 +2860,8 @@
       ],
       "pages": "30-33",
       "external_id": "1272af13e7fc70c5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch2.addition_of_time",
@@ -2658,7 +2876,8 @@
       ],
       "pages": "34-35",
       "external_id": "c9d5830a43bafc28",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch2.subtraction_of_time",
@@ -2673,7 +2892,8 @@
       ],
       "pages": "36-37",
       "external_id": "a16bdefede4abb79",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch2.addition_and_subtraction_of_time",
@@ -2688,7 +2908,8 @@
       ],
       "pages": "38-39",
       "external_id": "0a3d8111a7f74189",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch2.multiplication_of_time",
@@ -2703,7 +2924,8 @@
       ],
       "pages": "40-41",
       "external_id": "1fe2f8498813e6bf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch2.division_of_time",
@@ -2718,7 +2940,8 @@
       ],
       "pages": "42",
       "external_id": "39d830fcad93e3da",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch3",
@@ -2733,7 +2956,8 @@
       ],
       "pages": "49-84",
       "external_id": "3011e968240f4395",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y3p2.ch3.convert_units_of_length",
@@ -2748,7 +2972,8 @@
       ],
       "pages": "50-51",
       "external_id": "a15c7444f9b9d27e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch3.addition_of_length",
@@ -2763,7 +2988,8 @@
       ],
       "pages": "52-53",
       "external_id": "19df27e9ee5b7784",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch3.subtraction_of_length",
@@ -2778,7 +3004,8 @@
       ],
       "pages": "54-55",
       "external_id": "d6c23e95de51b7b1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch3.multiplication_of_length",
@@ -2793,7 +3020,8 @@
       ],
       "pages": "56-57",
       "external_id": "6713bc8db6df4f9c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch3.division_of_length",
@@ -2808,7 +3036,8 @@
       ],
       "pages": "58-59",
       "external_id": "c4947e8868553321",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch3.convert_units_of_mass",
@@ -2823,7 +3052,8 @@
       ],
       "pages": "60-61",
       "external_id": "c9e8442eda9d973f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch3.addition_of_mass",
@@ -2838,7 +3068,8 @@
       ],
       "pages": "62-63",
       "external_id": "c5dbff6d4e41eeb2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch3.subtraction_of_mass",
@@ -2853,7 +3084,8 @@
       ],
       "pages": "64-65",
       "external_id": "ffd8c8d3c46371e2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch3.multiplication_of_mass",
@@ -2868,7 +3100,8 @@
       ],
       "pages": "66-67",
       "external_id": "e6bd90bcf93ad65e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch3.division_of_mass",
@@ -2883,7 +3116,8 @@
       ],
       "pages": "68-69",
       "external_id": "ac287ce4b5e691aa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch3.convert_units_of_volume",
@@ -2898,7 +3132,8 @@
       ],
       "pages": "70-71",
       "external_id": "5acf25e65d1afcd2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch3.addition_of_volume",
@@ -2913,7 +3148,8 @@
       ],
       "pages": "72-73",
       "external_id": "04713b463f5ecf66",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch3.subtraction_of_volume",
@@ -2928,7 +3164,8 @@
       ],
       "pages": "74-75",
       "external_id": "70ac1d5576eb5269",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch3.multiplication_of_volume",
@@ -2943,7 +3180,8 @@
       ],
       "pages": "76-77",
       "external_id": "b69b24ab1c129a01",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch3.division_of_volume",
@@ -2958,7 +3196,8 @@
       ],
       "pages": "78",
       "external_id": "181cabd5ca8aab72",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch4",
@@ -2973,7 +3212,8 @@
       ],
       "pages": "85-96",
       "external_id": "7d789348a3715e2c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y3p2.ch4.recognise_prisms_and_non-prisms",
@@ -2988,7 +3228,8 @@
       ],
       "pages": "85-88",
       "external_id": "77b113ee19096752",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch4.recognise_regular_polygons",
@@ -3003,7 +3244,8 @@
       ],
       "pages": "89-90",
       "external_id": "522af3dbaceed872",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch4.create_patterns",
@@ -3018,7 +3260,8 @@
       ],
       "pages": "91-91",
       "external_id": "b362f457e5c495aa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch4.axis_of_symmetry",
@@ -3033,7 +3276,8 @@
       ],
       "pages": "92",
       "external_id": "5f305585ffd6e599",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch5",
@@ -3048,7 +3292,8 @@
       ],
       "pages": "97-106",
       "external_id": "8ac4a215170254ce",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y3p2.ch5.recognise_location",
@@ -3063,7 +3308,8 @@
       ],
       "pages": "97-100",
       "external_id": "24b630512683abc1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch5.determine_location",
@@ -3078,7 +3324,8 @@
       ],
       "pages": "101",
       "external_id": "c54a72f1b8ce9359",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y3p2.ch6",
@@ -3093,7 +3340,8 @@
       ],
       "pages": "107",
       "external_id": "8dd9c69f8ed33e91",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y3p2.ch6.collect_classify_and_sort_data",
@@ -3108,7 +3356,8 @@
       ],
       "pages": "107-108",
       "external_id": "719861c9dd4456c5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y3p2.ch6.recognise_pie_chart",
@@ -3123,7 +3372,8 @@
       ],
       "pages": "109-109",
       "external_id": "72e1ae3f565d5c52",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y3p2.ch6.pictograph_bar_chart_and_pie_chart_relat",
@@ -3138,7 +3388,8 @@
       ],
       "pages": "110",
       "external_id": "641117dba7127b3a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y4",
@@ -3152,7 +3403,8 @@
         "book"
       ],
       "external_id": "d815e3669736657e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch1",
@@ -3167,7 +3419,8 @@
       ],
       "pages": "1-16",
       "external_id": "b50a9cae1a06e7d7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch1.recognise_number",
@@ -3182,7 +3435,8 @@
       ],
       "pages": "1-3",
       "external_id": "3be340df435fbae3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch1.numbers_explore",
@@ -3197,7 +3451,8 @@
       ],
       "pages": "4-4",
       "external_id": "9166d991b573a185",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch1.place_value_and_digit_value",
@@ -3212,7 +3467,8 @@
       ],
       "pages": "4-4",
       "external_id": "849a7527182cd838",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch1.partition_numbers",
@@ -3227,7 +3483,8 @@
       ],
       "pages": "5-6",
       "external_id": "0171fbbe2dbc7d41",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch1.numbers_value",
@@ -3242,7 +3499,8 @@
       ],
       "pages": "7-9",
       "external_id": "30d6376676f19d16",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch1.estimate_quantity",
@@ -3257,7 +3515,8 @@
       ],
       "pages": "10-11",
       "external_id": "b0c3c4f0ea3d3d5b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch1.number_patterns",
@@ -3272,7 +3531,8 @@
       ],
       "pages": "12-13",
       "external_id": "6b22028c47317232",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.y4.ch1.round_off_numbers",
@@ -3287,7 +3547,8 @@
       ],
       "pages": "14",
       "external_id": "6f61a5cdbbbe5a5e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch2",
@@ -3302,7 +3563,8 @@
       ],
       "pages": "17-28",
       "external_id": "7e6cd640c686dc49",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch2.addition",
@@ -3317,7 +3579,8 @@
       ],
       "pages": "17-24",
       "external_id": "b6a686b620465f17",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch2.unknown_in_addition",
@@ -3332,7 +3595,8 @@
       ],
       "pages": "25",
       "external_id": "247230c6bb5c1d4e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.y4.ch3",
@@ -3347,7 +3611,8 @@
       ],
       "pages": "29-40",
       "external_id": "3ae077c808910a0e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch3.subtraction",
@@ -3362,7 +3627,8 @@
       ],
       "pages": "29-30",
       "external_id": "cfe078ab26e1ca8b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch3.subtract_consecutively",
@@ -3377,7 +3643,8 @@
       ],
       "pages": "31-36",
       "external_id": "ee1f6932d7b791a4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch3.unknown_in_subtraction",
@@ -3392,7 +3659,8 @@
       ],
       "pages": "37",
       "external_id": "ffc139740e36aba6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.y4.ch4",
@@ -3407,7 +3675,8 @@
       ],
       "pages": "41-50",
       "external_id": "89d5a87eaeb51571",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch4.simple_multiplication",
@@ -3422,7 +3691,8 @@
       ],
       "pages": "41-43",
       "external_id": "c91e7f74e557a6c3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch4.lets_multiply",
@@ -3437,7 +3707,8 @@
       ],
       "pages": "44",
       "external_id": "027bb48c06a206f6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch5",
@@ -3452,7 +3723,8 @@
       ],
       "pages": "51-60",
       "external_id": "a7a4181b90e5c7ea",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch5.simple_division",
@@ -3467,7 +3739,8 @@
       ],
       "pages": "51-52",
       "external_id": "14627ae520f980ae",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch5.lets_divide",
@@ -3482,7 +3755,8 @@
       ],
       "pages": "53",
       "external_id": "61f3d95a033f71a3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch6",
@@ -3497,7 +3771,8 @@
       ],
       "pages": "61-68",
       "external_id": "f30345a2ec8cd489",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch6.addition_and_subtraction",
@@ -3512,7 +3787,8 @@
       ],
       "pages": "61-62",
       "external_id": "ee8d1724ec548a00",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch6.multiplication_and_division",
@@ -3527,7 +3803,8 @@
       ],
       "pages": "63",
       "external_id": "6cc65b5e10ad287c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch7",
@@ -3542,7 +3819,8 @@
       ],
       "pages": "69-88",
       "external_id": "a8500a49f0d97096",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch7.mixed_numbers_and_improper_fractions",
@@ -3557,7 +3835,8 @@
       ],
       "pages": "69-72",
       "external_id": "49020978b11aab80",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch7.relationship:_improper_fractions_and_mix",
@@ -3572,7 +3851,8 @@
       ],
       "pages": "73-76",
       "external_id": "c5ee0a2c18763c37",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch7.addition_of_fractions",
@@ -3587,7 +3867,8 @@
       ],
       "pages": "77-79",
       "external_id": "f2fbb120c05e9601",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch7.subtraction_of_fractions",
@@ -3602,7 +3883,8 @@
       ],
       "pages": "80-82",
       "external_id": "e32e88099768c1ee",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch7.addition_and_subtraction_of_fractions",
@@ -3617,7 +3899,8 @@
       ],
       "pages": "83",
       "external_id": "1c570ee6dae8b7d4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch8",
@@ -3632,7 +3915,8 @@
       ],
       "pages": "89-108",
       "external_id": "5155d99379be5f28",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch8.recognise_decimals",
@@ -3647,7 +3931,8 @@
       ],
       "pages": "89-91",
       "external_id": "15cf76a730cb905d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch8.fractions_and_decimals_relationship",
@@ -3662,7 +3947,8 @@
       ],
       "pages": "92-93",
       "external_id": "b2e1a5a2dac55490",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch8.compare_decimals",
@@ -3677,7 +3963,8 @@
       ],
       "pages": "94-95",
       "external_id": "1a2d85cf03710f08",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch8.addition_of_decimals",
@@ -3692,7 +3979,8 @@
       ],
       "pages": "96-97",
       "external_id": "fb2a7d00b22d470e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch8.subtraction_of_decimals",
@@ -3707,7 +3995,8 @@
       ],
       "pages": "98-99",
       "external_id": "add74eec6a388809",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch8.multiplication_of_decimals",
@@ -3722,7 +4011,8 @@
       ],
       "pages": "100-101",
       "external_id": "8cf2155cbb7a5688",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch8.division_of_decimals",
@@ -3737,7 +4027,8 @@
       ],
       "pages": "102",
       "external_id": "bf2980d6cbaca186",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch9",
@@ -3752,7 +4043,8 @@
       ],
       "pages": "109-116",
       "external_id": "f0e9e492061f4fab",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch9.percentages_and_decimals_relationship",
@@ -3767,7 +4059,8 @@
       ],
       "pages": "109",
       "external_id": "1235d87bc1b82019",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch10",
@@ -3782,7 +4075,8 @@
       ],
       "pages": "117-144",
       "external_id": "a5481d588acb931f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch10.combination_of_money",
@@ -3797,7 +4091,8 @@
       ],
       "pages": "117-118",
       "external_id": "9c185c564e5486be",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y4.ch10.round_off_values_of_money",
@@ -3812,7 +4107,8 @@
       ],
       "pages": "119-120",
       "external_id": "7155fd8663b38a47",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y4.ch10.addition_of_money",
@@ -3827,7 +4123,8 @@
       ],
       "pages": "121-122",
       "external_id": "2e0a417d7909c781",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y4.ch10.subtraction_of_money",
@@ -3842,7 +4139,8 @@
       ],
       "pages": "123-124",
       "external_id": "3ca1d4a1bcf70baf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y4.ch10.addition_and_subtraction_of_money",
@@ -3857,7 +4155,8 @@
       ],
       "pages": "125-126",
       "external_id": "c48fa5aa3345857d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y4.ch10.multiplication_of_money",
@@ -3872,7 +4171,8 @@
       ],
       "pages": "127-128",
       "external_id": "63267664c7bfdbe8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y4.ch10.division_of_money",
@@ -3887,7 +4187,8 @@
       ],
       "pages": "129-136",
       "external_id": "ad8b3ab83e24034c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y4.ch10.recognise_foreign_currency",
@@ -3902,7 +4203,8 @@
       ],
       "pages": "137-139",
       "external_id": "2a198e5fb1cf9f41",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y4.ch10.value_of_foreign_currency",
@@ -3917,7 +4219,8 @@
       ],
       "pages": "140-140",
       "external_id": "fe3cd709ab25d856",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y4.ch10.payment_instruments",
@@ -3932,7 +4235,8 @@
       ],
       "pages": "141",
       "external_id": "cd432f2415c53df3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y4.ch11",
@@ -3947,7 +4251,8 @@
       ],
       "pages": "145-164",
       "external_id": "3fe71aa6a4eb1738",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch11.recognise_time",
@@ -3962,7 +4267,8 @@
       ],
       "pages": "145-145",
       "external_id": "3f8522500efb696e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch11.day_and_hour",
@@ -3977,7 +4283,8 @@
       ],
       "pages": "145-146",
       "external_id": "40d389b459d36a8f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch11.week_and_day",
@@ -3992,7 +4299,8 @@
       ],
       "pages": "147-147",
       "external_id": "a89e8ef5fab043d9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch11.year_and_month",
@@ -4007,7 +4315,8 @@
       ],
       "pages": "148-149",
       "external_id": "ceb5d2e32e24cc55",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch11.addition_of_time",
@@ -4022,7 +4331,8 @@
       ],
       "pages": "150-152",
       "external_id": "3d73225d1e974741",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch11.subtraction_of_time",
@@ -4037,7 +4347,8 @@
       ],
       "pages": "153-155",
       "external_id": "5ba48e33ac495429",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch11.multiplication_of_time",
@@ -4052,7 +4363,8 @@
       ],
       "pages": "156-158",
       "external_id": "b34673e23597d703",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch11.division_of_time",
@@ -4067,7 +4379,8 @@
       ],
       "pages": "159",
       "external_id": "087aba08ae0417e9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch12",
@@ -4082,7 +4395,8 @@
       ],
       "pages": "165-186",
       "external_id": "6dec34cf5c159537",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch12.recognise_units_of_length",
@@ -4097,7 +4411,8 @@
       ],
       "pages": "165-165",
       "external_id": "dd61d8f0c37fde66",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch12.centimetres_and_millimetres",
@@ -4112,7 +4427,8 @@
       ],
       "pages": "166-166",
       "external_id": "85ff1b660b0d94f0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch12.kilometres_and_metres",
@@ -4127,7 +4443,8 @@
       ],
       "pages": "167-167",
       "external_id": "8bb3409a48157395",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch12.measure_length_of_objects",
@@ -4142,7 +4459,8 @@
       ],
       "pages": "168-168",
       "external_id": "36e8081b713ba590",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch12.estimate_distance",
@@ -4157,7 +4475,8 @@
       ],
       "pages": "169-170",
       "external_id": "213921aea3cd6b32",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch12.addition_of_length",
@@ -4172,7 +4491,8 @@
       ],
       "pages": "171-173",
       "external_id": "514470bf06e055cb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch12.subtraction_of_length",
@@ -4187,7 +4507,8 @@
       ],
       "pages": "174-175",
       "external_id": "0fe5fda4b7c777be",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch12.multiplication_of_length",
@@ -4202,7 +4523,8 @@
       ],
       "pages": "176-177",
       "external_id": "d32a2107b8fc2627",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch12.division_of_length",
@@ -4217,7 +4539,8 @@
       ],
       "pages": "178",
       "external_id": "108f4fb76e1b94d1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch13",
@@ -4232,7 +4555,8 @@
       ],
       "pages": "187-196",
       "external_id": "7f04f79d45625977",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch13.addition_and_subtraction_of_mass",
@@ -4247,7 +4571,8 @@
       ],
       "pages": "187-189",
       "external_id": "db8e04ebacd1cb8b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch13.multiplication_and_division_of_mass",
@@ -4262,7 +4587,8 @@
       ],
       "pages": "190",
       "external_id": "98eceb9a73ee9f33",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch14",
@@ -4277,7 +4603,8 @@
       ],
       "pages": "197-206",
       "external_id": "5f10463d743aebc3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch14.addition_and_subtraction_of_volume",
@@ -4292,7 +4619,8 @@
       ],
       "pages": "197-199",
       "external_id": "c5ebbb64b8de133d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch14.multiplication_and_division_of_volume",
@@ -4307,7 +4635,8 @@
       ],
       "pages": "200",
       "external_id": "c035ee0fe57cc113",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch15",
@@ -4322,7 +4651,8 @@
       ],
       "pages": "207-220",
       "external_id": "581b44d2cdf2f1cb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch15.recognise_angles",
@@ -4337,7 +4667,8 @@
       ],
       "pages": "207-208",
       "external_id": "0fc5a79166dc02e6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch15.recognise_lines",
@@ -4352,7 +4683,8 @@
       ],
       "pages": "209-209",
       "external_id": "9a2f041f282d5c89",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch15.parallel_lines",
@@ -4367,7 +4699,8 @@
       ],
       "pages": "209-209",
       "external_id": "e3dc86e964e6bd14",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch15.perpendicular_lines",
@@ -4382,7 +4715,8 @@
       ],
       "pages": "210-211",
       "external_id": "ae56520895118346",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch15.perimeter",
@@ -4397,7 +4731,8 @@
       ],
       "pages": "212-213",
       "external_id": "d44fc4d1dee8bb93",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch15.area",
@@ -4412,7 +4747,8 @@
       ],
       "pages": "214-216",
       "external_id": "689f2d57fdfce880",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch15.volume",
@@ -4427,7 +4763,8 @@
       ],
       "pages": "217",
       "external_id": "e931076a568124c8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch16",
@@ -4442,7 +4779,8 @@
       ],
       "pages": "221-228",
       "external_id": "f37514202e03da5c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch16.recognise_position",
@@ -4457,7 +4795,8 @@
       ],
       "pages": "221-225",
       "external_id": "e13869c679aea0b6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch16.determine_the_position",
@@ -4472,7 +4811,8 @@
       ],
       "pages": "226",
       "external_id": "137f1c8baa0bac26",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y4.ch17",
@@ -4487,7 +4827,8 @@
       ],
       "pages": "229-234",
       "external_id": "5d9109945a5e8837",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch17.rates",
@@ -4502,7 +4843,8 @@
       ],
       "pages": "229",
       "external_id": "de9d05fbd3a9c2b5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y4.ch18",
@@ -4517,7 +4859,8 @@
       ],
       "pages": "235",
       "external_id": "7fe219c59692790d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y4.ch18.pictograph",
@@ -4532,7 +4875,8 @@
       ],
       "pages": "235-236",
       "external_id": "58d228f978ea0df5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y4.ch18.bar_chart",
@@ -4547,7 +4891,8 @@
       ],
       "pages": "237-238",
       "external_id": "91da6a3191ab132a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y4.ch18.pie_chart",
@@ -4562,7 +4907,8 @@
       ],
       "pages": "239",
       "external_id": "bfc8fc1e86c09d1a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y5",
@@ -4576,7 +4922,8 @@
         "book"
       ],
       "external_id": "e82b3baa16cfd8e6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y5.ch1",
@@ -4591,7 +4938,8 @@
       ],
       "pages": "1-64",
       "external_id": "91e56e5b690f7597",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y5.ch1.recognise_and_write_numbers",
@@ -4606,7 +4954,8 @@
       ],
       "pages": "1-2",
       "external_id": "0facbab65b1b59f1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch1.explore_numbers",
@@ -4621,7 +4970,8 @@
       ],
       "pages": "3-6",
       "external_id": "426a10deea2a7039",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch1.compare_and_arrange_numbers",
@@ -4636,7 +4986,8 @@
       ],
       "pages": "7-9",
       "external_id": "60ca0a5d6ed87ed8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch1.prime_numbers",
@@ -4651,7 +5002,8 @@
       ],
       "pages": "10-11",
       "external_id": "e618b7ffe9ae1474",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch1.number_patterns",
@@ -4666,7 +5018,8 @@
       ],
       "pages": "12-13",
       "external_id": "80eac273a8014770",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.y5.ch1.estimate_quantities",
@@ -4681,7 +5034,8 @@
       ],
       "pages": "14-15",
       "external_id": "d8f4f6f5d8b92fd3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch1.rounding_off_numbers",
@@ -4696,7 +5050,8 @@
       ],
       "pages": "16-20",
       "external_id": "454251f9fa6331c4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch1.addition",
@@ -4711,7 +5066,8 @@
       ],
       "pages": "21-21",
       "external_id": "629ecc0bfecdfa8e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch1.subtraction",
@@ -4726,7 +5082,8 @@
       ],
       "pages": "22-25",
       "external_id": "4972bfbf53980165",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch1.multiplication",
@@ -4741,7 +5098,8 @@
       ],
       "pages": "26-32",
       "external_id": "8c5912e24b7c973a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch1.unknown_in_multiplication",
@@ -4756,7 +5114,8 @@
       ],
       "pages": "33-38",
       "external_id": "86308b0131609228",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.y5.ch1.unknown_in_division",
@@ -4771,7 +5130,8 @@
       ],
       "pages": "39-40",
       "external_id": "332e644f03cbfe53",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.y5.ch1.addition_and_multiplication",
@@ -4786,7 +5146,8 @@
       ],
       "pages": "41-42",
       "external_id": "2f6d3d295a4a8c2a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch1.subtraction_and_multiplication",
@@ -4801,7 +5162,8 @@
       ],
       "pages": "43-44",
       "external_id": "926f0205c287ff72",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch1.addition_and_division",
@@ -4816,7 +5178,8 @@
       ],
       "pages": "45-47",
       "external_id": "513b786cd9c5c4ed",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch1.subtraction_and_division",
@@ -4831,7 +5194,8 @@
       ],
       "pages": "48",
       "external_id": "bed4ff23d7ed2ecc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch2",
@@ -4846,7 +5210,8 @@
       ],
       "pages": "65-90",
       "external_id": "c5386aaeb08de838",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y5.ch2.multiplication_of_fractions",
@@ -4861,7 +5226,8 @@
       ],
       "pages": "65-69",
       "external_id": "19798f5248a312e8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch2.rounding_off_decimals",
@@ -4876,7 +5242,8 @@
       ],
       "pages": "70-72",
       "external_id": "1c8b425707acad0a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch2.addition_and_subtraction_of_decimals",
@@ -4891,7 +5258,8 @@
       ],
       "pages": "73-75",
       "external_id": "4c4aa30a025332ac",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch2.multiplication_of_decimals",
@@ -4906,7 +5274,8 @@
       ],
       "pages": "76-77",
       "external_id": "ccd19d06a7083ddd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch2.division_of_decimals",
@@ -4921,7 +5290,8 @@
       ],
       "pages": "78-79",
       "external_id": "8f4cb69b1bb156a8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch2.convert_mixed_numbers_and_percentages",
@@ -4936,7 +5306,8 @@
       ],
       "pages": "80-81",
       "external_id": "c5ab81e7594940e3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch2.what_is_the_quantity?",
@@ -4951,7 +5322,8 @@
       ],
       "pages": "82-82",
       "external_id": "e3e51a808a0ce012",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch2.what_is_the_percentage?",
@@ -4966,7 +5338,8 @@
       ],
       "pages": "82",
       "external_id": "065a5e9e4f90e641",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y5.ch3",
@@ -4981,7 +5354,8 @@
       ],
       "pages": "91-122",
       "external_id": "7039b2e3fd9fe6b2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y5.ch3.addition_of_money",
@@ -4996,7 +5370,8 @@
       ],
       "pages": "91-92",
       "external_id": "72bccbd10cdacbba",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y5.ch3.subtraction_of_money",
@@ -5011,7 +5386,8 @@
       ],
       "pages": "93-94",
       "external_id": "5323a7e2840d0f5e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y5.ch3.multiplication_of_money",
@@ -5026,7 +5402,8 @@
       ],
       "pages": "95-96",
       "external_id": "ab6885e363d97ed9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y5.ch3.division_of_money",
@@ -5041,7 +5418,8 @@
       ],
       "pages": "97-98",
       "external_id": "e6e4542f43ba8589",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y5.ch3.mixed_operations_involving_money",
@@ -5056,7 +5434,8 @@
       ],
       "pages": "99-103",
       "external_id": "2d9171339617c295",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y5.ch3.financial_literacy",
@@ -5071,7 +5450,8 @@
       ],
       "pages": "104-104",
       "external_id": "234929c0f792011f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y5.ch3.save_and_invest",
@@ -5086,7 +5466,8 @@
       ],
       "pages": "104-105",
       "external_id": "a6a19cc1c18f7e3b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y5.ch3.simple_interest_and_compound_interest",
@@ -5101,7 +5482,8 @@
       ],
       "pages": "106-106",
       "external_id": "7ad5b3a0cce4e383",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y5.ch3.credit_and_debt",
@@ -5116,7 +5498,8 @@
       ],
       "pages": "107-107",
       "external_id": "71f90b50b927df02",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y5.ch3.purchasing_via_credit_and_cash",
@@ -5131,7 +5514,8 @@
       ],
       "pages": "108",
       "external_id": "3409815a4cd82a4c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y5.ch4",
@@ -5146,7 +5530,8 @@
       ],
       "pages": "123-176",
       "external_id": "bf2d83e6507fbb1d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y5.ch4.duration",
@@ -5161,7 +5546,8 @@
       ],
       "pages": "123-126",
       "external_id": "d5eba32b4d590e91",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch4.convert_units_of_time",
@@ -5176,7 +5562,8 @@
       ],
       "pages": "127-139",
       "external_id": "5c7a80ce48b7dc03",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch4.addition_of_time",
@@ -5191,7 +5578,8 @@
       ],
       "pages": "140-153",
       "external_id": "4cf7c13566082551",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch4.subtraction_of_time",
@@ -5206,7 +5594,8 @@
       ],
       "pages": "154",
       "external_id": "6fd2a401167785e1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch5",
@@ -5221,7 +5610,8 @@
       ],
       "pages": "177-216",
       "external_id": "3ccac0f6f3f6c7de",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y5.ch5.convert_units_of_length",
@@ -5236,7 +5626,8 @@
       ],
       "pages": "177-180",
       "external_id": "50c94bb678aaf5a9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch5.addition_of_length",
@@ -5251,7 +5642,8 @@
       ],
       "pages": "181-182",
       "external_id": "d70b980c9efaa1a5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch5.subtraction_of_length",
@@ -5266,7 +5658,8 @@
       ],
       "pages": "183-184",
       "external_id": "842e2c6db034f782",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch5.multiplication_of_length",
@@ -5281,7 +5674,8 @@
       ],
       "pages": "185-186",
       "external_id": "00f52c36fb06dfbb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch5.division_of_length",
@@ -5296,7 +5690,8 @@
       ],
       "pages": "187-188",
       "external_id": "ac7b8a0966217fb6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch5.convert_units_of_mass",
@@ -5311,7 +5706,8 @@
       ],
       "pages": "189-190",
       "external_id": "feac2d6e048456d9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch5.addition_of_mass",
@@ -5326,7 +5722,8 @@
       ],
       "pages": "191-192",
       "external_id": "11f5a8acb95184be",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch5.subtraction_of_mass",
@@ -5341,7 +5738,8 @@
       ],
       "pages": "193-194",
       "external_id": "b9c6f6fb3266ff9b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch5.multiplication_of_mass",
@@ -5356,7 +5754,8 @@
       ],
       "pages": "195-196",
       "external_id": "eba7af05a0d6276a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch5.division_of_mass",
@@ -5371,7 +5770,8 @@
       ],
       "pages": "197-198",
       "external_id": "e5e382a81510348d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch5.convert_units_of_volume",
@@ -5386,7 +5786,8 @@
       ],
       "pages": "199-200",
       "external_id": "8bf3f3c96d94b51a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch5.addition_of_volume",
@@ -5401,7 +5802,8 @@
       ],
       "pages": "201-202",
       "external_id": "d0bb12738163e85b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch5.subtraction_of_volume",
@@ -5416,7 +5818,8 @@
       ],
       "pages": "203-204",
       "external_id": "3a08f7961f26bc65",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch5.multiplication_of_volume",
@@ -5431,7 +5834,8 @@
       ],
       "pages": "205-206",
       "external_id": "db69ab236afcde00",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch5.division_of_volume",
@@ -5446,7 +5850,8 @@
       ],
       "pages": "207",
       "external_id": "5a311e778d867da5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch6",
@@ -5461,7 +5866,8 @@
       ],
       "pages": "217-234",
       "external_id": "f83f1982312d6971",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y5.ch6.regular_polygons",
@@ -5476,7 +5882,8 @@
       ],
       "pages": "217-218",
       "external_id": "0fb7fa83928e2aa4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch6.measuring_interior_angles",
@@ -5491,7 +5898,8 @@
       ],
       "pages": "219-220",
       "external_id": "1b85e62e4448ebdc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch6.perimeter_of_composite_shapes",
@@ -5506,7 +5914,8 @@
       ],
       "pages": "221-224",
       "external_id": "1763536b4cc1f973",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch6.area_of_composite_shapes",
@@ -5521,7 +5930,8 @@
       ],
       "pages": "225-225",
       "external_id": "83f315ff448ba4d1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch6.volume_of_composite_shapes",
@@ -5536,7 +5946,8 @@
       ],
       "pages": "226",
       "external_id": "1fa1991d074e22f4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch7",
@@ -5551,7 +5962,8 @@
       ],
       "pages": "235-250",
       "external_id": "ac7c3285e399506b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y5.ch7.distance_between_two_coordinates",
@@ -5566,7 +5978,8 @@
       ],
       "pages": "235-236",
       "external_id": "c9a6e0775ca777b7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch7.horizontal_and_vertical_distance",
@@ -5581,7 +5994,8 @@
       ],
       "pages": "237-237",
       "external_id": "c93ba7a0eaf94e55",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch7.ratio_between_two_quantities",
@@ -5596,7 +6010,8 @@
       ],
       "pages": "238-240",
       "external_id": "af917de000675063",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch7.proportion_to_find_a_value",
@@ -5611,7 +6026,8 @@
       ],
       "pages": "241",
       "external_id": "d9a08835687c6e70",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y5.ch8",
@@ -5626,7 +6042,8 @@
       ],
       "pages": "251",
       "external_id": "38343d0f49d94942",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y5.ch8.interpreting_pie_charts",
@@ -5641,7 +6058,8 @@
       ],
       "pages": "251-252",
       "external_id": "1adbfd93ab5d9a8e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y5.ch8.mode_range_median_and_mean",
@@ -5656,7 +6074,8 @@
       ],
       "pages": "253",
       "external_id": "0703ad75f1d055af",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y6",
@@ -5670,7 +6089,8 @@
         "book"
       ],
       "external_id": "65f756a935c21145",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y6.ch1",
@@ -5685,7 +6105,8 @@
       ],
       "pages": "1-60",
       "external_id": "3d153aeb9776f18f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y6.ch1.read_and_say_numbers",
@@ -5700,7 +6121,8 @@
       ],
       "pages": "1-3",
       "external_id": "ffbe6edaadbb8d69",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch1.number_patterns",
@@ -5715,7 +6137,8 @@
       ],
       "pages": "4-8",
       "external_id": "d113ec7036ac0b9f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.y6.ch1.fraction_of_a_million_and_decimal_of_a_m",
@@ -5730,7 +6153,8 @@
       ],
       "pages": "9-10",
       "external_id": "facaad32a6c36b22",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch1.convert_numbers",
@@ -5745,7 +6169,8 @@
       ],
       "pages": "11-14",
       "external_id": "26101e2eeb2d688f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch1.addition",
@@ -5760,7 +6185,8 @@
       ],
       "pages": "15-20",
       "external_id": "1bb818a01ec5ca28",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch1.subtraction",
@@ -5775,7 +6201,8 @@
       ],
       "pages": "21-21",
       "external_id": "e90df3c0a20833dd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch1.multiplication",
@@ -5790,7 +6217,8 @@
       ],
       "pages": "22-24",
       "external_id": "79a2b5f96cfeeba8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch1.division",
@@ -5805,7 +6233,8 @@
       ],
       "pages": "25-27",
       "external_id": "52522aa9c036660e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch1.mixed_operations",
@@ -5820,7 +6249,8 @@
       ],
       "pages": "28-34",
       "external_id": "386ecc80853e8606",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch1.operations_involving_unknown",
@@ -5835,7 +6265,8 @@
       ],
       "pages": "35-41",
       "external_id": "1d67624b8061ea1d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.y6.ch1.prime_numbers_and_composite_numbers",
@@ -5850,7 +6281,8 @@
       ],
       "pages": "42",
       "external_id": "14fdb6c461c83739",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch2",
@@ -5865,7 +6297,8 @@
       ],
       "pages": "61-102",
       "external_id": "95494c7ec2eb4963",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y6.ch2.division_of_fractions",
@@ -5880,7 +6313,8 @@
       ],
       "pages": "61-61",
       "external_id": "641b93ea2adae9b5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch2.dividing_proper_fractions_with_whole_num",
@@ -5895,7 +6329,8 @@
       ],
       "pages": "61-62",
       "external_id": "68759239cd492771",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch2.dividing_mixed_numbers_with_whole_number",
@@ -5910,7 +6345,8 @@
       ],
       "pages": "63-63",
       "external_id": "c8b5d49068e698ac",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch2.dividing_proper_fractions_with_proper_fr",
@@ -5925,7 +6361,8 @@
       ],
       "pages": "64-64",
       "external_id": "d0ea60e333ce4af5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch2.dividing_mixed_numbers_with_proper_fract",
@@ -5940,7 +6377,8 @@
       ],
       "pages": "65-67",
       "external_id": "a852d10ab83e82e2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch2.multiplication_of_decimals",
@@ -5955,7 +6393,8 @@
       ],
       "pages": "68-69",
       "external_id": "cc51774a9c23e59d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch2.division_of_decimals",
@@ -5970,7 +6409,8 @@
       ],
       "pages": "70-72",
       "external_id": "478588519c192092",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch2.convert_decimals_to_percentages",
@@ -5985,7 +6425,8 @@
       ],
       "pages": "73-74",
       "external_id": "7cf70d3dc5ad6f17",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch2.addition_and_subtraction_of_percentages",
@@ -6000,7 +6441,8 @@
       ],
       "pages": "75-76",
       "external_id": "0150d7728de093f4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch2.value_of_quantity_and_percentages",
@@ -6015,7 +6457,8 @@
       ],
       "pages": "77-77",
       "external_id": "36e118b4b8e92e3d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch2.mixed_operations_with_decimals",
@@ -6030,7 +6473,8 @@
       ],
       "pages": "78",
       "external_id": "d0345139b203e6a5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch3",
@@ -6045,7 +6489,8 @@
       ],
       "pages": "103-138",
       "external_id": "b9dd4fff519776e3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y6.ch3.cost_price_selling_price_profit_and_loss",
@@ -6060,7 +6505,8 @@
       ],
       "pages": "103-104",
       "external_id": "d90b8959083b2501",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y6.ch3.discount_rebate_and_voucher",
@@ -6075,7 +6521,8 @@
       ],
       "pages": "105-106",
       "external_id": "cd62063964ad913f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y6.ch3.discount",
@@ -6090,7 +6537,8 @@
       ],
       "pages": "107-107",
       "external_id": "5e6affd476301e54",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y6.ch3.rebate",
@@ -6105,7 +6553,8 @@
       ],
       "pages": "108-109",
       "external_id": "e94dec1d8a161b73",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y6.ch3.voucher",
@@ -6120,7 +6569,8 @@
       ],
       "pages": "110-111",
       "external_id": "1ec54e2dc059e6a1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y6.ch3.invoice_bill_receipt_and_service_tax",
@@ -6135,7 +6585,8 @@
       ],
       "pages": "112-115",
       "external_id": "9a7fbcdabd73e3ec",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y6.ch3.interest_and_dividend",
@@ -6150,7 +6601,8 @@
       ],
       "pages": "116-119",
       "external_id": "9536cf9b9744cef4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y6.ch3.asset_liability_insurance_and_takaful",
@@ -6165,7 +6617,8 @@
       ],
       "pages": "120",
       "external_id": "304d4905ef4ec64f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.y6.ch4",
@@ -6180,7 +6633,8 @@
       ],
       "pages": "139-154",
       "external_id": "eade9508e03b73d8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y6.ch4.recognise_time_zone",
@@ -6195,7 +6649,8 @@
       ],
       "pages": "141",
       "external_id": "6b9c41405a342046",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y6.ch5",
@@ -6210,7 +6665,8 @@
       ],
       "pages": "155-164",
       "external_id": "ae28140716a29f81",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y6.ch5.length_and_mass",
@@ -6225,7 +6681,8 @@
       ],
       "pages": "155-157",
       "external_id": "5ea9359feb9fd22e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y6.ch5.length_and_volume_of_liquid",
@@ -6240,7 +6697,8 @@
       ],
       "pages": "158-159",
       "external_id": "caf2867a218a2b55",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y6.ch5.mass_and_volume_of_liquid",
@@ -6255,7 +6713,8 @@
       ],
       "pages": "160",
       "external_id": "5cf0999114de5f6a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y6.ch6",
@@ -6270,7 +6729,8 @@
       ],
       "pages": "165-186",
       "external_id": "6c2b5a65b988cb90",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y6.ch6.form_angles",
@@ -6285,7 +6745,8 @@
       ],
       "pages": "165-167",
       "external_id": "6ed09bfa3559ed96",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y6.ch6.draw_and_measure_interior_angles_of_regu",
@@ -6300,7 +6761,8 @@
       ],
       "pages": "168-168",
       "external_id": "bf338ea967838690",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y6.ch6.equilateral_triangle",
@@ -6315,7 +6777,8 @@
       ],
       "pages": "169-170",
       "external_id": "b1a520fbbfb748b7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y6.ch6.square",
@@ -6330,7 +6793,8 @@
       ],
       "pages": "171-171",
       "external_id": "1147bfaf5ed229f7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch6.regular_pentagon",
@@ -6345,7 +6809,8 @@
       ],
       "pages": "172-173",
       "external_id": "c09e0211408618dd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch6.regular_hexagon",
@@ -6360,7 +6825,8 @@
       ],
       "pages": "174-174",
       "external_id": "4eedd64f3c0f370b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch6.regular_heptagon",
@@ -6375,7 +6841,8 @@
       ],
       "pages": "175-175",
       "external_id": "11a9a020b395c4bd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch6.regular_octagon",
@@ -6390,7 +6857,8 @@
       ],
       "pages": "176-177",
       "external_id": "afb8ed0f6e3d9c3f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch6.recognise_circles",
@@ -6405,7 +6873,8 @@
       ],
       "pages": "178-178",
       "external_id": "303e7da7e315352a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y6.ch6.centre_diameter_and_radius",
@@ -6420,7 +6889,8 @@
       ],
       "pages": "178-179",
       "external_id": "076ce7ba357fbe8a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.y6.ch6.draw_circles",
@@ -6435,7 +6905,8 @@
       ],
       "pages": "180",
       "external_id": "6a665e1bf9415d5d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y6.ch7",
@@ -6450,7 +6921,8 @@
       ],
       "pages": "187-206",
       "external_id": "e229ed444d735fde",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y6.ch7.distance_between_two_coordinates",
@@ -6465,7 +6937,8 @@
       ],
       "pages": "187-190",
       "external_id": "c7312f9cc7c315e5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y6.ch7.ratio_between_two_quantities",
@@ -6480,7 +6953,8 @@
       ],
       "pages": "191-196",
       "external_id": "46298c653dc17adb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y6.ch7.determine_the_proportionate_quantity",
@@ -6495,7 +6969,8 @@
       ],
       "pages": "197",
       "external_id": "0269ffe37d31506a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.y6.ch8",
@@ -6510,7 +6985,8 @@
       ],
       "pages": "207",
       "external_id": "d8ac44faf73682c8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.y6.ch8.complete_the_chart_and_interpret_data",
@@ -6525,7 +7001,8 @@
       ],
       "pages": "207-212",
       "external_id": "92f690e1b2da6340",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y6.ch8.likelihood",
@@ -6540,7 +7017,8 @@
       ],
       "pages": "213-214",
       "external_id": "52325303b93f91eb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y6.ch8.certain_or_impossible",
@@ -6555,7 +7033,8 @@
       ],
       "pages": "215-216",
       "external_id": "0e28ddf75febfbb5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y6.ch8.equally_likely",
@@ -6570,7 +7049,8 @@
       ],
       "pages": "217-217",
       "external_id": "3f6c252c4bbcfe0f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.y6.ch8.more_likely_or_less_likely",
@@ -6585,7 +7065,8 @@
       ],
       "pages": "217",
       "external_id": "549e688bb1cb9d74",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.f1",
@@ -6599,7 +7080,8 @@
         "book"
       ],
       "external_id": "381c7a86e9c656f4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f1.ch1",
@@ -6614,7 +7096,8 @@
       ],
       "pages": "1-29",
       "external_id": "a3fa27c1b6748231",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f1.ch1.1.1_integers",
@@ -6629,7 +7112,8 @@
       ],
       "pages": "2-6",
       "external_id": "386f255faa0af3ab",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f1.ch1.1.2_basic_arithmetic_operations_involvin",
@@ -6644,7 +7128,8 @@
       ],
       "pages": "7-13",
       "external_id": "cd748401fb020345",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f1.ch1.1.3_positive_and_negative_fractions",
@@ -6659,7 +7144,8 @@
       ],
       "pages": "14-18",
       "external_id": "90970cb931a6d068",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f1.ch1.1.4_positive_and_negative_decimals",
@@ -6674,7 +7160,8 @@
       ],
       "pages": "19-22",
       "external_id": "3fc1ce60dec72c36",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f1.ch1.1.5_rational_numbers",
@@ -6689,7 +7176,8 @@
       ],
       "pages": "23",
       "external_id": "411139d2e01a2658",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f1.ch2",
@@ -6704,7 +7192,8 @@
       ],
       "pages": "30-45",
       "external_id": "656cd8f45b111d55",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f1.ch2.2.1_factors_prime_factors_and_hcf",
@@ -6719,7 +7208,8 @@
       ],
       "pages": "32-37",
       "external_id": "49364fba728c451a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f1.ch2.2.2_multiples_common_multiples_and_lcm",
@@ -6734,7 +7224,8 @@
       ],
       "pages": "38",
       "external_id": "c84e362a8b973951",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f1.ch3",
@@ -6749,7 +7240,8 @@
       ],
       "pages": "46-73",
       "external_id": "51bbfa48b4f029db",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f1.ch3.3.1_squares_and_square_roots",
@@ -6764,7 +7256,8 @@
       ],
       "pages": "48-57",
       "external_id": "303f63dbaa01b626",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f1.ch3.3.2_cubes_and_cube_roots",
@@ -6779,7 +7272,8 @@
       ],
       "pages": "58",
       "external_id": "e344b2a261b328f6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f1.ch4",
@@ -6794,7 +7288,8 @@
       ],
       "pages": "74-103",
       "external_id": "981a43febd1340aa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f1.ch4.4.1_ratios",
@@ -6809,7 +7304,8 @@
       ],
       "pages": "76-80",
       "external_id": "8b2a4c0a61c2ddd4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f1.ch4.4.2_rates",
@@ -6824,7 +7320,8 @@
       ],
       "pages": "81-83",
       "external_id": "14dcf8739658ab92",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f1.ch4.4.3_proportions",
@@ -6839,7 +7336,8 @@
       ],
       "pages": "84-86",
       "external_id": "f9bae94251de633a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f1.ch4.4.4_ratios_rates_and_proportions",
@@ -6854,7 +7352,8 @@
       ],
       "pages": "87-92",
       "external_id": "bf30eaaa0a533918",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f1.ch4.4.5_relationship_with_percentages_fracti",
@@ -6869,7 +7368,8 @@
       ],
       "pages": "93",
       "external_id": "15ee0a20e073e23b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f1.ch5",
@@ -6884,7 +7384,8 @@
       ],
       "pages": "104-121",
       "external_id": "113ff8958b423388",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f1.ch5.5.1_variables_and_algebraic_expression",
@@ -6899,7 +7400,8 @@
       ],
       "pages": "106-112",
       "external_id": "1182f5f83940fff4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f1.ch5.5.2_algebraic_expressions_involving_basi",
@@ -6914,7 +7416,8 @@
       ],
       "pages": "113",
       "external_id": "b3df3268e1922761",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f1.ch6",
@@ -6929,7 +7432,8 @@
       ],
       "pages": "122-147",
       "external_id": "6678c76c36ea8755",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f1.ch6.6.1_linear_equations_in_one_variable",
@@ -6944,7 +7448,8 @@
       ],
       "pages": "124-131",
       "external_id": "2a360859e98b73b9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f1.ch6.6.2_linear_equations_in_two_variables",
@@ -6959,7 +7464,8 @@
       ],
       "pages": "132-136",
       "external_id": "723bd669414cf060",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f1.ch6.6.3_simultaneous_linear_equations_in_two",
@@ -6974,7 +7480,8 @@
       ],
       "pages": "137",
       "external_id": "fa7efe74865b3f82",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f1.ch7",
@@ -6989,7 +7496,8 @@
       ],
       "pages": "148-167",
       "external_id": "8d686a82074123a0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f1.ch7.7.1_inequalities",
@@ -7004,7 +7512,8 @@
       ],
       "pages": "150-157",
       "external_id": "bea442be2875f7a3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f1.ch7.7.2_linear_inequalities_in_one_variable",
@@ -7019,7 +7528,8 @@
       ],
       "pages": "158",
       "external_id": "fa81e7db69d9afd8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f1.ch8",
@@ -7034,7 +7544,8 @@
       ],
       "pages": "168-199",
       "external_id": "5daa11f87a295693",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f1.ch8.8.1_lines_and_angles",
@@ -7049,7 +7560,8 @@
       ],
       "pages": "170-184",
       "external_id": "adb5e252da1945c5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f1.ch8.8.2_angles_related_to_intersecting_lines",
@@ -7064,7 +7576,8 @@
       ],
       "pages": "185-187",
       "external_id": "7ab5890cd70225d3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f1.ch8.8.3_angles_related_to_parallel_lines_and",
@@ -7079,7 +7592,8 @@
       ],
       "pages": "188",
       "external_id": "45a89766c3f5524d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f1.ch9",
@@ -7094,7 +7608,8 @@
       ],
       "pages": "200-223",
       "external_id": "9c36ff2cacaa11d8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f1.ch9.9.1_polygons",
@@ -7109,7 +7624,8 @@
       ],
       "pages": "202-204",
       "external_id": "1f1a9ea8cba399a1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f1.ch9.9.2_properties_of_triangles",
@@ -7124,7 +7640,8 @@
       ],
       "pages": "205-211",
       "external_id": "be41470f61f1faa3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f1.ch9.9.3_properties_of_quadrilaterals",
@@ -7139,7 +7656,8 @@
       ],
       "pages": "212",
       "external_id": "167b64d63dd853cf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f1.ch10",
@@ -7154,7 +7672,8 @@
       ],
       "pages": "224-245",
       "external_id": "5cddd543c44e1022",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f1.ch10.10.1_perimeter",
@@ -7169,7 +7688,8 @@
       ],
       "pages": "226-230",
       "external_id": "4cbaaad5ec63c96a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f1.ch10.10.2_area_of_triangles_parallelograms_ki",
@@ -7184,7 +7704,8 @@
       ],
       "pages": "231-237",
       "external_id": "340685813a78f731",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f1.ch10.10.3_relationship_between_perimeter_and",
@@ -7199,7 +7720,8 @@
       ],
       "pages": "238",
       "external_id": "e94963779c458e70",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f1.ch11",
@@ -7214,7 +7736,8 @@
       ],
       "pages": "246-263",
       "external_id": "496b7cd8c88d27fb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f1.ch11.11.1_set",
@@ -7229,7 +7752,8 @@
       ],
       "pages": "248-253",
       "external_id": "f1a412ad9f587b29",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "book.f1.ch11.11.2_venn_diagrams_universal_sets_comple",
@@ -7244,7 +7768,8 @@
       ],
       "pages": "254",
       "external_id": "381d64e45ae59211",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "book.f1.ch12",
@@ -7259,7 +7784,8 @@
       ],
       "pages": "264-291",
       "external_id": "de72c484384adf15",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f1.ch12.12.1_data_collection_organisation_and_in",
@@ -7274,7 +7800,8 @@
       ],
       "pages": "266",
       "external_id": "268dc833d6191aaf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.f1.ch13",
@@ -7289,7 +7816,8 @@
       ],
       "pages": "292",
       "external_id": "4dbb5e84f449652c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f1.ch13.13.1_the_pythagoras_theorem",
@@ -7304,7 +7832,8 @@
       ],
       "pages": "294-299",
       "external_id": "fc9bd0edc2a56582",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f1.ch13.13.2_the_converse_of_pythagoras_theorem",
@@ -7319,7 +7848,8 @@
       ],
       "pages": "300",
       "external_id": "88fb840b3f36b0f9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2",
@@ -7333,7 +7863,8 @@
         "book"
       ],
       "external_id": "82903e40f7033dba",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f2.ch1",
@@ -7348,7 +7879,8 @@
       ],
       "pages": "1-17",
       "external_id": "80d0aec6a8b8e988",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f2.ch1.1.1_patterns",
@@ -7363,7 +7895,8 @@
       ],
       "pages": "2-6",
       "external_id": "350b27320eac008a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f2.ch1.1.2_sequences",
@@ -7378,7 +7911,8 @@
       ],
       "pages": "7-9",
       "external_id": "cbc466d39c9ad2ed",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f2.ch1.1.3_patterns_and_sequences",
@@ -7393,7 +7927,8 @@
       ],
       "pages": "10",
       "external_id": "9f09ce2787910bef",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f2.ch2",
@@ -7408,7 +7943,8 @@
       ],
       "pages": "18-41",
       "external_id": "51681ff596a0e772",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f2.ch2.2.1_expansion",
@@ -7423,7 +7959,8 @@
       ],
       "pages": "21-26",
       "external_id": "5bd8d68dc148de52",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f2.ch2.2.2_factorisation",
@@ -7438,7 +7975,8 @@
       ],
       "pages": "27-33",
       "external_id": "432b4af15427811f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f2.ch2.2.3_algebraic_expressions_and_laws_of_ba",
@@ -7453,7 +7991,8 @@
       ],
       "pages": "34",
       "external_id": "0a5408fa6a1b9280",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f2.ch3",
@@ -7468,7 +8007,8 @@
       ],
       "pages": "42-53",
       "external_id": "bf603c35d1fb894b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f2.ch3.3.1_algebraic_formulae",
@@ -7483,7 +8023,8 @@
       ],
       "pages": "44",
       "external_id": "fc057ece22399dfb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f2.ch4",
@@ -7498,7 +8039,8 @@
       ],
       "pages": "54-73",
       "external_id": "efef8406d6818cec",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f2.ch4.4.1_regular_polygon",
@@ -7513,7 +8055,8 @@
       ],
       "pages": "56-61",
       "external_id": "b05be6a89a9f2e12",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch4.4.2_interior_angles_and_exterior_angles",
@@ -7528,7 +8071,8 @@
       ],
       "pages": "62",
       "external_id": "b1f1938248c169f1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch5",
@@ -7543,7 +8087,8 @@
       ],
       "pages": "74-97",
       "external_id": "cf0529aced75c993",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f2.ch5.5.1_properties_of_circles",
@@ -7558,7 +8103,8 @@
       ],
       "pages": "76-80",
       "external_id": "93679b9964675dae",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch5.5.2_symmetry_and_chords",
@@ -7573,7 +8119,8 @@
       ],
       "pages": "81-85",
       "external_id": "25f2ba714ec075a0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch5.5.3_circumference_and_area_of_a_circle",
@@ -7588,7 +8135,8 @@
       ],
       "pages": "86",
       "external_id": "1e7e9d1b5561e60f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch6",
@@ -7603,7 +8151,8 @@
       ],
       "pages": "98-119",
       "external_id": "3d387b668ca7fdaa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f2.ch6.6.1_geometric_properties_of_3d_shapes",
@@ -7618,7 +8167,8 @@
       ],
       "pages": "100-101",
       "external_id": "67bbd3dc54647a89",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch6.6.2_nets_of_3d_shapes",
@@ -7633,7 +8183,8 @@
       ],
       "pages": "102-103",
       "external_id": "cdfcabe8dfbd1281",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch6.6.3_surface_area_of_3d_shapes",
@@ -7648,7 +8199,8 @@
       ],
       "pages": "104-109",
       "external_id": "418a1fe18ab50e43",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch6.6.4_volume_of_3d_shapes",
@@ -7663,7 +8215,8 @@
       ],
       "pages": "110",
       "external_id": "494074bc70dc981f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch7",
@@ -7678,7 +8231,8 @@
       ],
       "pages": "120-143",
       "external_id": "3decfc3f353d5465",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f2.ch7.7.1_distance_in_cartesian_coordinate_sys",
@@ -7693,7 +8247,8 @@
       ],
       "pages": "122-131",
       "external_id": "7c55813941c28a75",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch7.7.2_midpoint_in_cartesian_coordinate_sys",
@@ -7708,7 +8263,8 @@
       ],
       "pages": "132-139",
       "external_id": "3e89745d4d1023e0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch7.7.3_the_cartesian_coordinate_system",
@@ -7723,7 +8279,8 @@
       ],
       "pages": "140",
       "external_id": "7756ccb03e3fec6d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch8",
@@ -7738,7 +8295,8 @@
       ],
       "pages": "144-167",
       "external_id": "beae7481f9412fa8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f2.ch8.8.1_functions",
@@ -7753,7 +8311,8 @@
       ],
       "pages": "146-150",
       "external_id": "94d8aa048b1aabca",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f2.ch8.8.2_graphs_of_functions",
@@ -7768,7 +8327,8 @@
       ],
       "pages": "151",
       "external_id": "aedeeb541c50c86d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f2.ch9",
@@ -7783,7 +8343,8 @@
       ],
       "pages": "168-187",
       "external_id": "99093ed543159d98",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f2.ch9.9.1_speed",
@@ -7798,7 +8359,8 @@
       ],
       "pages": "170-178",
       "external_id": "63df8d738764514b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f2.ch9.9.2_acceleration",
@@ -7813,7 +8375,8 @@
       ],
       "pages": "179",
       "external_id": "fa77aaa0640845c0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f2.ch10",
@@ -7828,7 +8391,8 @@
       ],
       "pages": "188-205",
       "external_id": "44f9f89c069300a7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f2.ch10.10.1_gradient",
@@ -7843,7 +8407,8 @@
       ],
       "pages": "190",
       "external_id": "a1d9b1574461c9f3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch11",
@@ -7858,7 +8423,8 @@
       ],
       "pages": "206-243",
       "external_id": "be34f1f1cc35dca0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f2.ch11.11.1_transformations",
@@ -7873,7 +8439,8 @@
       ],
       "pages": "208-211",
       "external_id": "9751325715033436",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch11.11.2_translation",
@@ -7888,7 +8455,8 @@
       ],
       "pages": "212-217",
       "external_id": "ab6bdfb448957617",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch11.11.3_reflection",
@@ -7903,7 +8471,8 @@
       ],
       "pages": "218-222",
       "external_id": "567330044e443b66",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch11.11.4_rotation",
@@ -7918,7 +8487,8 @@
       ],
       "pages": "223-229",
       "external_id": "3551cf892f17fe92",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch11.11.5_isometry",
@@ -7933,7 +8503,8 @@
       ],
       "pages": "230-233",
       "external_id": "006107bfd9ad4236",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch11.11.6_rotational_symmetry",
@@ -7948,7 +8519,8 @@
       ],
       "pages": "234",
       "external_id": "78f8b3d10993126b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f2.ch12",
@@ -7963,7 +8535,8 @@
       ],
       "pages": "244-275",
       "external_id": "37e91ff4b37c63d6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f2.ch12.12.1_measures_of_central_tendencies",
@@ -7978,7 +8551,8 @@
       ],
       "pages": "246",
       "external_id": "659f8bff6cb5fe37",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f2.ch13",
@@ -7993,7 +8567,8 @@
       ],
       "pages": "276",
       "external_id": "a90cdc923bec40a5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f2.ch13.13.1_experimental_probability",
@@ -8008,7 +8583,8 @@
       ],
       "pages": "278-279",
       "external_id": "aa2d7beb4742ea63",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.f2.ch13.13.2_equally_likely_outcomes",
@@ -8023,7 +8599,8 @@
       ],
       "pages": "280-286",
       "external_id": "ea8f50d1b826cd67",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.f2.ch13.13.3_complement_of_an_event",
@@ -8038,7 +8615,8 @@
       ],
       "pages": "287-289",
       "external_id": "0b6e289263b00fcc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.f2.ch13.13.4_simple_probability",
@@ -8053,7 +8631,8 @@
       ],
       "pages": "290",
       "external_id": "5c78482858cf9ee4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.f3",
@@ -8067,7 +8646,8 @@
         "book"
       ],
       "external_id": "8dd677b764b3f288",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f3.ch1",
@@ -8082,7 +8662,8 @@
       ],
       "pages": "1-29",
       "external_id": "c984ae7008078917",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f3.ch1.1.1_index_notation",
@@ -8097,7 +8678,8 @@
       ],
       "pages": "2-5",
       "external_id": "e59d1b359fac59ab",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f3.ch1.1.2_law_of_indices",
@@ -8112,7 +8694,8 @@
       ],
       "pages": "6",
       "external_id": "94cd742c4c215ebb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f3.ch2",
@@ -8127,7 +8710,8 @@
       ],
       "pages": "30-49",
       "external_id": "3366f728735c0981",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f3.ch2.2.1_significant_figures",
@@ -8142,7 +8726,8 @@
       ],
       "pages": "32-36",
       "external_id": "653415977ea318ae",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f3.ch2.2.2_standard_form",
@@ -8157,7 +8742,8 @@
       ],
       "pages": "37",
       "external_id": "282bedaa32ae6b02",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f3.ch3",
@@ -8172,7 +8758,8 @@
       ],
       "pages": "50-85",
       "external_id": "9e5e968c7bc504a6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f3.ch3.3.1_savings_and_investments",
@@ -8187,7 +8774,8 @@
       ],
       "pages": "52-72",
       "external_id": "b0e0303076a882e4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.f3.ch3.3.2_credit_and_debt_management",
@@ -8202,7 +8790,8 @@
       ],
       "pages": "73",
       "external_id": "5b75b77afcfb6f59",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.f3.ch4",
@@ -8217,7 +8806,8 @@
       ],
       "pages": "86-105",
       "external_id": "ec2ebd0892ac358e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f3.ch4.4.1_scale_drawings",
@@ -8232,7 +8822,8 @@
       ],
       "pages": "88",
       "external_id": "e76001b4e7dfa86c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f3.ch5",
@@ -8247,7 +8838,8 @@
       ],
       "pages": "106-127",
       "external_id": "7b5b645975cc920d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f3.ch5.5.1_sine_cosine_and_tangent_of_acute_ang",
@@ -8262,7 +8854,8 @@
       ],
       "pages": "108",
       "external_id": "93c12eb0c787edb9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f3.ch6",
@@ -8277,7 +8870,8 @@
       ],
       "pages": "128-167",
       "external_id": "ddecc4cd7f58485f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f3.ch6.6.1_circumference_angle_and_central_angl",
@@ -8292,7 +8886,8 @@
       ],
       "pages": "130-143",
       "external_id": "07748706fb4a32d8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f3.ch6.6.2_cyclic_quadrilaterals",
@@ -8307,7 +8902,8 @@
       ],
       "pages": "144-149",
       "external_id": "dc4811e226efd68a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f3.ch6.6.3_tangents_to_circles",
@@ -8322,7 +8918,8 @@
       ],
       "pages": "150-159",
       "external_id": "31c70eccd0cf5d10",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f3.ch6.6.4_angles_and_tangents_of_circles",
@@ -8337,7 +8934,8 @@
       ],
       "pages": "160",
       "external_id": "b08e996f7c31df43",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f3.ch7",
@@ -8352,7 +8950,8 @@
       ],
       "pages": "168-197",
       "external_id": "efc7748b525386bc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f3.ch7.7.1_orthogonal_projections",
@@ -8367,7 +8966,8 @@
       ],
       "pages": "170-181",
       "external_id": "93cf513180b62f46",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f3.ch7.7.2_plans_and_elevations",
@@ -8382,7 +8982,8 @@
       ],
       "pages": "182",
       "external_id": "0826a60f8800ea4f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f3.ch8",
@@ -8397,7 +8998,8 @@
       ],
       "pages": "198-223",
       "external_id": "6d1644605810221e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f3.ch8.8.1_loci",
@@ -8412,7 +9014,8 @@
       ],
       "pages": "200-203",
       "external_id": "eba008d3fb546f61",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f3.ch8.8.2_loci_in_two_dimensions",
@@ -8427,7 +9030,8 @@
       ],
       "pages": "204",
       "external_id": "38489a2c9a7d738d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f3.ch9",
@@ -8442,7 +9046,8 @@
       ],
       "pages": "224",
       "external_id": "d9c5c16319873b0d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f3.ch9.9.1_straight_lines",
@@ -8457,7 +9062,8 @@
       ],
       "pages": "226",
       "external_id": "2cfd5b3341d8303d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f4",
@@ -8471,7 +9077,8 @@
         "book"
       ],
       "external_id": "3164ab4aa710b5b6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f4.ch1",
@@ -8486,7 +9093,8 @@
       ],
       "pages": "1-31",
       "external_id": "334346eda81b1b06",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f4.ch1.1.1_quadratic_functions_and_equations",
@@ -8501,7 +9109,8 @@
       ],
       "pages": "2",
       "external_id": "71539f8d0ed3a162",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f4.ch2",
@@ -8516,7 +9125,8 @@
       ],
       "pages": "32-53",
       "external_id": "f6b84ebcf2d50d10",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f4.ch2.2.1_number_bases",
@@ -8531,7 +9141,8 @@
       ],
       "pages": "34",
       "external_id": "fb7aa6bcccd9b3e9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f4.ch3",
@@ -8546,7 +9157,8 @@
       ],
       "pages": "54-93",
       "external_id": "242dc5dd2cd32ca0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f4.ch3.3.1_statements",
@@ -8561,7 +9173,8 @@
       ],
       "pages": "56-70",
       "external_id": "6a26b6d59dec7115",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f4.ch3.3.2_arguments",
@@ -8576,7 +9189,8 @@
       ],
       "pages": "71",
       "external_id": "4dfbd4dfb9f9f009",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.f4.ch4",
@@ -8591,7 +9205,8 @@
       ],
       "pages": "94-127",
       "external_id": "6419d497e7cabfbf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f4.ch4.4.1_intersection_of_sets",
@@ -8606,7 +9221,8 @@
       ],
       "pages": "96-105",
       "external_id": "07b4cb78f77fdcfb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "book.f4.ch4.4.2_union_of_sets",
@@ -8621,7 +9237,8 @@
       ],
       "pages": "106-115",
       "external_id": "a2400d8c3046ae78",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "book.f4.ch4.4.3_combined_operations_on_sets",
@@ -8636,7 +9253,8 @@
       ],
       "pages": "116",
       "external_id": "d538815826f6d7bb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "book.f4.ch5",
@@ -8651,7 +9269,8 @@
       ],
       "pages": "128-153",
       "external_id": "cb2f3cdabe1d5548",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f4.ch5.5.1_network",
@@ -8666,7 +9285,8 @@
       ],
       "pages": "130",
       "external_id": "ae1d874ba84d9f9c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "book.f4.ch6",
@@ -8681,7 +9301,8 @@
       ],
       "pages": "154-181",
       "external_id": "6b7c219036a49ab6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f4.ch6.6.1_linear_inequalities_in_two_variables",
@@ -8696,7 +9317,8 @@
       ],
       "pages": "156-164",
       "external_id": "80d212acfd48dc7e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f4.ch6.6.2_systems_of_linear_inequalities",
@@ -8711,7 +9333,8 @@
       ],
       "pages": "165",
       "external_id": "c079b4f72f23e981",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f4.ch7",
@@ -8726,7 +9349,8 @@
       ],
       "pages": "182-209",
       "external_id": "ccb60471c5c45e13",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f4.ch7.7.1_distance-time_graphs",
@@ -8741,7 +9365,8 @@
       ],
       "pages": "184-194",
       "external_id": "2b574222e3678589",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f4.ch7.7.2_speed-time_graphs",
@@ -8756,7 +9381,8 @@
       ],
       "pages": "195",
       "external_id": "ff57ef1945b63270",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f4.ch8",
@@ -8771,7 +9397,8 @@
       ],
       "pages": "210-241",
       "external_id": "e166fd15996daeee",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f4.ch8.8.1_dispersion",
@@ -8786,7 +9413,8 @@
       ],
       "pages": "212-218",
       "external_id": "2ee449ae31ef1802",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.f4.ch8.8.2_measures_of_dispersion",
@@ -8801,7 +9429,8 @@
       ],
       "pages": "219",
       "external_id": "972be0a4eb145c85",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.f4.ch9",
@@ -8816,7 +9445,8 @@
       ],
       "pages": "242-269",
       "external_id": "2792f0c36614274c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f4.ch9.9.1_combined_events",
@@ -8831,7 +9461,8 @@
       ],
       "pages": "244-245",
       "external_id": "23d2515dcbf45c58",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.f4.ch9.9.2_dependent_and_independent_events",
@@ -8846,7 +9477,8 @@
       ],
       "pages": "246-252",
       "external_id": "513fedcd8e8c1c68",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.f4.ch9.9.3_mutually_exclusive_events",
@@ -8861,7 +9493,8 @@
       ],
       "pages": "253-261",
       "external_id": "aefcb432a63ff2c0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.f4.ch9.9.4_application_of_combined_events_proba",
@@ -8876,7 +9509,8 @@
       ],
       "pages": "262",
       "external_id": "b10762ee56ba2bde",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.f4.ch10",
@@ -8891,7 +9525,8 @@
       ],
       "pages": "270",
       "external_id": "d1582be805958eff",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f4.ch10.10.1_financial_planning_and_management",
@@ -8906,7 +9541,8 @@
       ],
       "pages": "272",
       "external_id": "49f7bfd789806418",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.f5",
@@ -8920,7 +9556,8 @@
         "book"
       ],
       "external_id": "6f15cc47c74d3157",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f5.ch1",
@@ -8935,7 +9572,8 @@
       ],
       "pages": "1-33",
       "external_id": "8ebb3ae9c429a6c5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f5.ch1.1.1_direct_variation",
@@ -8950,7 +9588,8 @@
       ],
       "pages": "2-16",
       "external_id": "39df2fc71310f447",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f5.ch1.1.2_inverse_variation",
@@ -8965,7 +9604,8 @@
       ],
       "pages": "17-25",
       "external_id": "62a04f8ae2113392",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f5.ch1.1.3_combined_variation",
@@ -8980,7 +9620,8 @@
       ],
       "pages": "26",
       "external_id": "ba7f3b0a9b0dfa23",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.f5.ch2",
@@ -8995,7 +9636,8 @@
       ],
       "pages": "34-71",
       "external_id": "92ac6d46f453c429",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f5.ch2.2.1_matrices",
@@ -9010,7 +9652,8 @@
       ],
       "pages": "36-41",
       "external_id": "040976190f24f383",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "book.f5.ch2.2.2_basic_operation_on_matrices",
@@ -9025,7 +9668,8 @@
       ],
       "pages": "42",
       "external_id": "008ccc91c6449e87",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "book.f5.ch3",
@@ -9040,7 +9684,8 @@
       ],
       "pages": "72-93",
       "external_id": "ebe44ea8ab59fb53",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f5.ch3.3.1_risk_and_insurance_coverage",
@@ -9055,7 +9700,8 @@
       ],
       "pages": "74",
       "external_id": "a394bcab311950cb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.f5.ch4",
@@ -9070,7 +9716,8 @@
       ],
       "pages": "94-121",
       "external_id": "926dbcaeb10029ef",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f5.ch4.4.1_taxation",
@@ -9085,7 +9732,8 @@
       ],
       "pages": "96",
       "external_id": "084111bc2b359a4b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.f5.ch5",
@@ -9100,7 +9748,8 @@
       ],
       "pages": "122-171",
       "external_id": "84068f5f8567c5c9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f5.ch5.5.1_congruency",
@@ -9115,7 +9764,8 @@
       ],
       "pages": "124-132",
       "external_id": "c31131eea27c7fa0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f5.ch5.5.2_enlargement",
@@ -9130,7 +9780,8 @@
       ],
       "pages": "133-148",
       "external_id": "f06f678221cf37e4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f5.ch5.5.3_combined_transformation",
@@ -9145,7 +9796,8 @@
       ],
       "pages": "149-160",
       "external_id": "ae8d565de20c8816",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f5.ch5.5.4_tessellation",
@@ -9160,7 +9812,8 @@
       ],
       "pages": "161",
       "external_id": "0e61fa8f8fd90a2b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f5.ch6",
@@ -9175,7 +9828,8 @@
       ],
       "pages": "172-195",
       "external_id": "80206d5826cf7170",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f5.ch6.6.1_sine_cosine_and_tangent_for_0-360_de",
@@ -9190,7 +9844,8 @@
       ],
       "pages": "174-183",
       "external_id": "6f0c6a272c802273",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f5.ch6.6.2_graphs_of_trig_functions",
@@ -9205,7 +9860,8 @@
       ],
       "pages": "184",
       "external_id": "3914220eb8fc0d99",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.f5.ch7",
@@ -9220,7 +9876,8 @@
       ],
       "pages": "196-225",
       "external_id": "8d20fd234d0097d2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f5.ch7.7.1_dispersion",
@@ -9235,7 +9892,8 @@
       ],
       "pages": "198-210",
       "external_id": "c4ddfb8a891ae6f4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.f5.ch7.7.2_measures_of_dispersion",
@@ -9250,7 +9908,8 @@
       ],
       "pages": "211",
       "external_id": "bb70f289743dc090",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.f5.ch8",
@@ -9265,7 +9924,8 @@
       ],
       "pages": "226",
       "external_id": "5d5a289305f138d1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.f5.ch8.8.1_mathematical_modeling",
@@ -9280,7 +9940,8 @@
       ],
       "pages": "228",
       "external_id": "3c7526835d1fa50d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am4",
@@ -9294,7 +9955,8 @@
         "book"
       ],
       "external_id": "534f01a161e1b00c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am4.ch1",
@@ -9309,7 +9971,8 @@
       ],
       "pages": "1-33",
       "external_id": "0d704fe2903d433a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am4.ch1.1.1_functions",
@@ -9324,7 +9987,8 @@
       ],
       "pages": "2-11",
       "external_id": "ad0b27b2f802d678",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch1.1.2_composite_functions",
@@ -9339,7 +10003,8 @@
       ],
       "pages": "12-19",
       "external_id": "91f7b57ee392013c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch1.1.3_inverse_functions",
@@ -9354,7 +10019,8 @@
       ],
       "pages": "20",
       "external_id": "2c49e3a07a6b3ca8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch2",
@@ -9369,7 +10035,8 @@
       ],
       "pages": "34-67",
       "external_id": "c3cbf673a7b0c11d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am4.ch2.2.1_quadratic_equations_and_inequalities",
@@ -9384,7 +10051,8 @@
       ],
       "pages": "36-44",
       "external_id": "c0980a3294f7fb74",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch2.2.2_types_of_roots_of_quadratic_equation",
@@ -9399,7 +10067,8 @@
       ],
       "pages": "45-48",
       "external_id": "69bd27633b6f32aa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch2.2.3_quadratic_functions",
@@ -9414,7 +10083,8 @@
       ],
       "pages": "49",
       "external_id": "11b2845af0c14786",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch3",
@@ -9429,7 +10099,8 @@
       ],
       "pages": "68-87",
       "external_id": "233047b710d8a03d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am4.ch3.3.1_systems_of_linear_equations_in_three",
@@ -9444,7 +10115,8 @@
       ],
       "pages": "70-78",
       "external_id": "007703d68d041f2d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch3.3.2_simultaneous_linear_and_non-linear_e",
@@ -9459,7 +10131,8 @@
       ],
       "pages": "79",
       "external_id": "c8a5f2918bb2ce62",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch4",
@@ -9474,7 +10147,8 @@
       ],
       "pages": "88-125",
       "external_id": "2b1d36f59b18cd7b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am4.ch4.4.1_laws_of_indices",
@@ -9489,7 +10163,8 @@
       ],
       "pages": "90-95",
       "external_id": "3d69e5aa13911739",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch4.4.2_laws_of_surds",
@@ -9504,7 +10179,8 @@
       ],
       "pages": "96-108",
       "external_id": "f9ba757e8c259272",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch4.4.3_laws_of_logarithms",
@@ -9519,7 +10195,8 @@
       ],
       "pages": "109-121",
       "external_id": "63d0a8623f98dd5e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch4.4.4_applications_of_indices_surds_and_lo",
@@ -9534,7 +10211,8 @@
       ],
       "pages": "122",
       "external_id": "b847e23f75949835",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch5",
@@ -9549,7 +10227,8 @@
       ],
       "pages": "126-151",
       "external_id": "d22477b8402307e0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am4.ch5.5.1_arithmetic_progressions",
@@ -9564,7 +10243,8 @@
       ],
       "pages": "128-138",
       "external_id": "58fb568bcfc2a3f7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch5.5.2_geometric_progressions",
@@ -9579,7 +10259,8 @@
       ],
       "pages": "139",
       "external_id": "9c600db5e0d3c7ec",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch6",
@@ -9594,7 +10275,8 @@
       ],
       "pages": "152-173",
       "external_id": "c6169a08c84a70de",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am4.ch6.6.1_linear_and_non-linear_relations",
@@ -9609,7 +10291,8 @@
       ],
       "pages": "154-161",
       "external_id": "2fb7103c0469c481",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch6.6.2_linear_law_and_non-linear_relations",
@@ -9624,7 +10307,8 @@
       ],
       "pages": "162-165",
       "external_id": "164fce03de26ba03",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch6.6.3_applications_of_linear_law",
@@ -9639,7 +10323,8 @@
       ],
       "pages": "166",
       "external_id": "d000e87a1d3ff1e9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.am4.ch7",
@@ -9654,7 +10339,8 @@
       ],
       "pages": "174-209",
       "external_id": "927d474756a28874",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am4.ch7.7.1_divisor_of_a_line_segment",
@@ -9669,7 +10355,8 @@
       ],
       "pages": "176-183",
       "external_id": "54f7495267c3b60f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am4.ch7.7.2_parallel_lines_and_perpendicular_lin",
@@ -9684,7 +10371,8 @@
       ],
       "pages": "184-191",
       "external_id": "1bb3c7358f703b2e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am4.ch7.7.3_areas_of_polygons",
@@ -9699,7 +10387,8 @@
       ],
       "pages": "192-199",
       "external_id": "c646eae1f0364ef8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am4.ch7.7.4_equations_of_loci",
@@ -9714,7 +10403,8 @@
       ],
       "pages": "200",
       "external_id": "337c06b17367cd82",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am4.ch8",
@@ -9729,7 +10419,8 @@
       ],
       "pages": "210-239",
       "external_id": "1a9f0118265133fd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am4.ch8.8.1_vectors",
@@ -9744,7 +10435,8 @@
       ],
       "pages": "212-220",
       "external_id": "ba7f6cc4bed255b9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am4.ch8.8.2_addition_and_subtraction_of_vectors",
@@ -9759,7 +10451,8 @@
       ],
       "pages": "221-226",
       "external_id": "40f6fbd70aae1228",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am4.ch8.8.3_vectors_in_a_cartesian_plane",
@@ -9774,7 +10467,8 @@
       ],
       "pages": "227",
       "external_id": "e5d3c73576b36be9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am4.ch9",
@@ -9789,7 +10483,8 @@
       ],
       "pages": "240-269",
       "external_id": "d8e8f3d0afafd268",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am4.ch9.9.1_sine_rule",
@@ -9804,7 +10499,8 @@
       ],
       "pages": "242-250",
       "external_id": "8f3e46d50a4eed5c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am4.ch9.9.2_cosine_rule",
@@ -9819,7 +10515,8 @@
       ],
       "pages": "251-255",
       "external_id": "327e495c1b0b739d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am4.ch9.9.3_area_of_a_triangle",
@@ -9834,7 +10531,8 @@
       ],
       "pages": "256-262",
       "external_id": "0ff393d06270b0b6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am4.ch9.9.4_application_of_sine_rule_cosine_rule",
@@ -9849,7 +10547,8 @@
       ],
       "pages": "263",
       "external_id": "61c32b0d6ad298b1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am4.ch10",
@@ -9864,7 +10563,8 @@
       ],
       "pages": "270",
       "external_id": "464ca9821a03462a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am4.ch10.10.1_index_numbers",
@@ -9879,7 +10579,8 @@
       ],
       "pages": "272-278",
       "external_id": "8851a576041a2c90",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.am4.ch10.10.2_composite_index",
@@ -9894,7 +10595,8 @@
       ],
       "pages": "279",
       "external_id": "4b005341c01416de",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.am5",
@@ -9908,7 +10610,8 @@
         "book"
       ],
       "external_id": "d997afea53b99407",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am5.ch1",
@@ -9923,7 +10626,8 @@
       ],
       "pages": "1-27",
       "external_id": "fc0b56d17278bb50",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am5.ch1.1.1_radian",
@@ -9938,7 +10642,8 @@
       ],
       "pages": "2-4",
       "external_id": "c179253d521a9ca3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.am5.ch1.1.2_arc_length_of_a_circle",
@@ -9953,7 +10658,8 @@
       ],
       "pages": "5-12",
       "external_id": "9d7292b59bedb5bb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am5.ch1.1.3_area_of_sector_of_a_circle",
@@ -9968,7 +10674,8 @@
       ],
       "pages": "13-19",
       "external_id": "2694a2f8f0ee83cb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am5.ch1.1.4_application_of_circular_measures",
@@ -9983,7 +10690,8 @@
       ],
       "pages": "20",
       "external_id": "953fac06b552e552",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.am5.ch2",
@@ -9998,7 +10706,8 @@
       ],
       "pages": "28-79",
       "external_id": "10332436da69d21a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am5.ch2.2.1_limit_and_its_relation_to_differenti",
@@ -10013,7 +10722,8 @@
       ],
       "pages": "30-33",
       "external_id": "eaf21e048e2eb6a6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.am5.ch2.2.2_the_first_derivative",
@@ -10028,7 +10738,8 @@
       ],
       "pages": "34-48",
       "external_id": "58f5d457fb64c451",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.am5.ch2.2.3_the_second_derivative",
@@ -10043,7 +10754,8 @@
       ],
       "pages": "49-55",
       "external_id": "d31d8b029f370089",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.am5.ch2.2.4_applications_of_differentiation",
@@ -10058,7 +10770,8 @@
       ],
       "pages": "56",
       "external_id": "0130cc8994b2f232",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.am5.ch3",
@@ -10073,7 +10786,8 @@
       ],
       "pages": "80-117",
       "external_id": "3c99a354ab1716d3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am5.ch3.3.1_integration_as_the_inverse_of_differ",
@@ -10088,7 +10802,8 @@
       ],
       "pages": "82-84",
       "external_id": "bff822cfd4f6d4b7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.am5.ch3.3.2_indefinite_integral",
@@ -10103,7 +10818,8 @@
       ],
       "pages": "85-91",
       "external_id": "60504ba64fee2dbe",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.am5.ch3.3.3_definite_integral",
@@ -10118,7 +10834,8 @@
       ],
       "pages": "92-110",
       "external_id": "a79f9d9f8ef2e692",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.am5.ch3.3.4_applications_of_integration",
@@ -10133,7 +10850,8 @@
       ],
       "pages": "111",
       "external_id": "26a2e34519ffc8a4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.am5.ch4",
@@ -10148,7 +10866,8 @@
       ],
       "pages": "118-139",
       "external_id": "2c2272dc8ff7f64e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am5.ch4.4.1_permutation",
@@ -10163,7 +10882,8 @@
       ],
       "pages": "120-131",
       "external_id": "3954f9e5ce9ef2d7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.am5.ch4.4.2_combination",
@@ -10178,7 +10898,8 @@
       ],
       "pages": "132",
       "external_id": "4cfb7b5f61b8990f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.am5.ch5",
@@ -10193,7 +10914,8 @@
       ],
       "pages": "140-187",
       "external_id": "df5f1e0c37703c9f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am5.ch5.5.1_random_variable",
@@ -10208,7 +10930,8 @@
       ],
       "pages": "142-151",
       "external_id": "459604c7311b5476",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.am5.ch5.5.2_binomial_distribution",
@@ -10223,7 +10946,8 @@
       ],
       "pages": "152-165",
       "external_id": "7339336e56e4bc4e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.am5.ch5.5.3_normal_distribution",
@@ -10238,7 +10962,8 @@
       ],
       "pages": "166",
       "external_id": "a30bae9811718828",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.am5.ch6",
@@ -10253,7 +10978,8 @@
       ],
       "pages": "188-231",
       "external_id": "312f84e93d9fb724",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am5.ch6.6.1_positive_angles_and_negative_angles",
@@ -10268,7 +10994,8 @@
       ],
       "pages": "190-192",
       "external_id": "a72927399f92faa0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am5.ch6.6.2_trigonometric_ratios_of_any_angle",
@@ -10283,7 +11010,8 @@
       ],
       "pages": "193-200",
       "external_id": "faaaa82c8e214182",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am5.ch6.6.3_graphs_of_sine_cosine_and_tangent",
@@ -10298,7 +11026,8 @@
       ],
       "pages": "201-209",
       "external_id": "9829cd1f2fd3a6ba",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am5.ch6.6.4_basic_identities",
@@ -10313,7 +11042,8 @@
       ],
       "pages": "210-214",
       "external_id": "d59730f8b30176ff",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am5.ch6.6.5_addition_formulae_and_double_angle_f",
@@ -10328,7 +11058,8 @@
       ],
       "pages": "215-221",
       "external_id": "ab3fae0a2347b1c5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am5.ch6.6.6_application_of_trigonometric_functio",
@@ -10343,7 +11074,8 @@
       ],
       "pages": "222",
       "external_id": "9832b9dcf284f27a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.am5.ch7",
@@ -10358,7 +11090,8 @@
       ],
       "pages": "232-249",
       "external_id": "d25d77beaa35e6bd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am5.ch7.7.1_linear_programming_model",
@@ -10373,7 +11106,8 @@
       ],
       "pages": "234-242",
       "external_id": "5efbb0e75311e5bc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.am5.ch7.7.2_application_of_linear_programming",
@@ -10388,7 +11122,8 @@
       ],
       "pages": "243",
       "external_id": "61c44764c6f6518b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "book.am5.ch8",
@@ -10403,7 +11138,8 @@
       ],
       "pages": "250",
       "external_id": "6e9b692e71106ce8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.am5.ch8.8.1_displacement_velocity_and_accelerati",
@@ -10418,7 +11154,8 @@
       ],
       "pages": "252-259",
       "external_id": "442759722360acce",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.am5.ch8.8.2_differentiation_in_kinematics",
@@ -10433,7 +11170,8 @@
       ],
       "pages": "260-266",
       "external_id": "4051498d1648b417",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.am5.ch8.8.3_integration_in_kinematics",
@@ -10448,7 +11186,8 @@
       ],
       "pages": "267-271",
       "external_id": "633d72208a49267f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.am5.ch8.8.4_application_of_kinematics",
@@ -10463,7 +11202,8 @@
       ],
       "pages": "272",
       "external_id": "12d6f2939e78ec91",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.stpm1",
@@ -10477,7 +11217,8 @@
         "book"
       ],
       "external_id": "393375ac510f2bc2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm1.ch1",
@@ -10492,7 +11233,8 @@
       ],
       "pages": "1-102",
       "external_id": "252bc048044555f6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm1.ch1.1.1_functions",
@@ -10507,7 +11249,8 @@
       ],
       "pages": "1-35",
       "external_id": "9acfce5f246db205",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.stpm1.ch1.1.2_polynomial_and_rational_functions",
@@ -10522,7 +11265,8 @@
       ],
       "pages": "36-61",
       "external_id": "8ff4f2e68dec6839",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.stpm1.ch1.1.3_exponential_and_logarithmic_function",
@@ -10537,7 +11281,8 @@
       ],
       "pages": "62-78",
       "external_id": "c1434bb273de9e0b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.stpm1.ch1.1.4_trigonometric_functions",
@@ -10552,7 +11297,8 @@
       ],
       "pages": "79",
       "external_id": "003a8f81f51a1d1c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "book.stpm1.ch2",
@@ -10567,7 +11313,8 @@
       ],
       "pages": "103-159",
       "external_id": "dc5a0d239c3d6250",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm1.ch2.2.1_sequences",
@@ -10582,7 +11329,8 @@
       ],
       "pages": "103-111",
       "external_id": "4bc1f5679b887589",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.stpm1.ch2.2.2_series",
@@ -10597,7 +11345,8 @@
       ],
       "pages": "112-129",
       "external_id": "049efbac15e0992e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.stpm1.ch2.2.3_binomial_expansions",
@@ -10612,7 +11361,8 @@
       ],
       "pages": "130",
       "external_id": "a9a69b6f375ebf9c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.stpm1.ch3",
@@ -10627,7 +11377,8 @@
       ],
       "pages": "160",
       "external_id": "b1a003653315a5a4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm1.ch3.3.1_matrices",
@@ -10642,7 +11393,8 @@
       ],
       "pages": "160-191",
       "external_id": "bf2dad2ddf65a5a7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "book.stpm1.ch3.3.2_systems_of_linear_equations",
@@ -10657,7 +11409,8 @@
       ],
       "pages": "192",
       "external_id": "a24c1c0778dd6d17",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "book.stpm2",
@@ -10671,7 +11424,8 @@
         "book"
       ],
       "external_id": "9eae1a676df50096",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm2.ch1",
@@ -10686,7 +11440,8 @@
       ],
       "pages": "1-15",
       "external_id": "a9b7a37bef262fa8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm2.ch1.1.1_limits",
@@ -10701,7 +11456,8 @@
       ],
       "pages": "2-7",
       "external_id": "6e201cd9927c7726",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.stpm2.ch1.1.2_continuity",
@@ -10716,7 +11472,8 @@
       ],
       "pages": "8",
       "external_id": "64565424f16daeeb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.stpm2.ch2",
@@ -10731,7 +11488,8 @@
       ],
       "pages": "16-79",
       "external_id": "c2bc1902e713dc20",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm2.ch2.2.1_derivatives",
@@ -10746,7 +11504,8 @@
       ],
       "pages": "17-38",
       "external_id": "06519b74f68cc47e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.stpm2.ch2.2.2_applications_of_differentiation",
@@ -10761,7 +11520,8 @@
       ],
       "pages": "39",
       "external_id": "3595e013ede3cda4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.stpm2.ch3",
@@ -10776,7 +11536,8 @@
       ],
       "pages": "80-125",
       "external_id": "3aec696a44548a39",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm2.ch3.3.1_indefinite_integrals",
@@ -10791,7 +11552,8 @@
       ],
       "pages": "81-103",
       "external_id": "4d73d986a4f6dbab",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.stpm2.ch3.3.2_definite_integrals",
@@ -10806,7 +11568,8 @@
       ],
       "pages": "104",
       "external_id": "c42015c352180ae1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.stpm2.ch4",
@@ -10821,7 +11584,8 @@
       ],
       "pages": "126-152",
       "external_id": "4373edad14a562c3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm2.ch4.4.1_differential_equations",
@@ -10836,7 +11600,8 @@
       ],
       "pages": "127-129",
       "external_id": "f9d54aeefc905987",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.stpm2.ch4.4.2_first_order_des_with_separable_varia",
@@ -10851,7 +11616,8 @@
       ],
       "pages": "130-133",
       "external_id": "4366851896cb22b2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.stpm2.ch4.4.3_first_order_linear_des",
@@ -10866,7 +11632,8 @@
       ],
       "pages": "134-135",
       "external_id": "639f76076e84ff9b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.stpm2.ch4.4.4_transformations_of_des",
@@ -10881,7 +11648,8 @@
       ],
       "pages": "136-139",
       "external_id": "bc76f6cdfdbba483",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.stpm2.ch4.4.5_problems_modelled_by_des",
@@ -10896,7 +11664,8 @@
       ],
       "pages": "140",
       "external_id": "d3fd3d94d5698bd4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.stpm2.ch5",
@@ -10911,7 +11680,8 @@
       ],
       "pages": "153-171",
       "external_id": "90a41fa41b173c14",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm2.ch5.5.1_maclaurin_series",
@@ -10926,7 +11696,8 @@
       ],
       "pages": "154-166",
       "external_id": "f51236cfa43f6c69",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.stpm2.ch5.5.2_applications_of_maclaurin_series",
@@ -10941,7 +11712,8 @@
       ],
       "pages": "167",
       "external_id": "bc888d78a84033ee",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.stpm2.ch6",
@@ -10956,7 +11728,8 @@
       ],
       "pages": "172",
       "external_id": "3cd7ba45ee84cc71",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm2.ch6.6.1_numerical_solution_of_equations",
@@ -10971,7 +11744,8 @@
       ],
       "pages": "173-185",
       "external_id": "d8d3fa89706fc755",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "book.stpm2.ch6.6.2_numerical_integration",
@@ -10986,7 +11760,8 @@
       ],
       "pages": "186",
       "external_id": "d943f49b47cd55f0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "book.stpm3",
@@ -11000,7 +11775,8 @@
         "book"
       ],
       "external_id": "41920358c85b43bc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm3.ch1",
@@ -11015,7 +11791,8 @@
       ],
       "pages": "1-70",
       "external_id": "e59a2e05ce22ad43",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm3.ch1.1.1_data_representation",
@@ -11030,7 +11807,8 @@
       ],
       "pages": "2-12",
       "external_id": "58d45c765d30fe51",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch1.1.2_measures_of_central_tendency",
@@ -11045,7 +11823,8 @@
       ],
       "pages": "13-27",
       "external_id": "4c075fa299f0c96d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch1.1.3_measures_of_dispersion",
@@ -11060,7 +11839,8 @@
       ],
       "pages": "28-48",
       "external_id": "2afa4a7ce7fb6297",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch1.1.4_the_shape_of_a_distribution",
@@ -11075,7 +11855,8 @@
       ],
       "pages": "49",
       "external_id": "ae897b4960de1ef2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch2",
@@ -11090,7 +11871,8 @@
       ],
       "pages": "71-113",
       "external_id": "4cefed5a7c49e80b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm3.ch2.2.1_counting_techniques",
@@ -11105,7 +11887,8 @@
       ],
       "pages": "72-80",
       "external_id": "eccfa90b40a7dd84",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch2.2.2_probability",
@@ -11120,7 +11903,8 @@
       ],
       "pages": "81",
       "external_id": "8e2374e386db65dd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch3",
@@ -11135,7 +11919,8 @@
       ],
       "pages": "114-193",
       "external_id": "a367d90f2fe334a2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm3.ch3.3.1_discrete_random_variables",
@@ -11150,7 +11935,8 @@
       ],
       "pages": "115-127",
       "external_id": "2ca0f2aca7b22e75",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch3.3.2_continuous_random_variables",
@@ -11165,7 +11951,8 @@
       ],
       "pages": "128-147",
       "external_id": "6902e6518b8fe1bc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch3.3.3_binomial_distribution",
@@ -11180,7 +11967,8 @@
       ],
       "pages": "148-155",
       "external_id": "b30d699f8a8c7c22",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch3.3.4_poisson_distribution",
@@ -11195,7 +11983,8 @@
       ],
       "pages": "156-163",
       "external_id": "a6bedac940848679",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch3.3.5_normal_distribution",
@@ -11210,7 +11999,8 @@
       ],
       "pages": "164",
       "external_id": "82c33b036bb8d5d9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch4",
@@ -11225,7 +12015,8 @@
       ],
       "pages": "194-236",
       "external_id": "83e613095c137a61",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm3.ch4.4.1_sampling",
@@ -11240,7 +12031,8 @@
       ],
       "pages": "195-212",
       "external_id": "9b4bf652a318022c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch4.4.2_estimation",
@@ -11255,7 +12047,8 @@
       ],
       "pages": "213",
       "external_id": "fd9def4828eb81e2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch5",
@@ -11270,7 +12063,8 @@
       ],
       "pages": "237-259",
       "external_id": "ee6605439172c888",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm3.ch5.5.1_hypothesis_tests",
@@ -11285,7 +12079,8 @@
       ],
       "pages": "238-243",
       "external_id": "41e561993bb20786",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch5.5.2_testing_population_mean",
@@ -11300,7 +12095,8 @@
       ],
       "pages": "244-249",
       "external_id": "e2a99ede6b1733e6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch5.5.3_testing_population_proportion",
@@ -11315,7 +12111,8 @@
       ],
       "pages": "250",
       "external_id": "660eb912a9ef6655",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch6",
@@ -11330,7 +12127,8 @@
       ],
       "pages": "260",
       "external_id": "8f0786dd3d082205",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure"
     },
     {
       "id": "book.stpm3.ch6.6.1_the_chi-squared_distribution",
@@ -11345,7 +12143,8 @@
       ],
       "pages": "261-264",
       "external_id": "a70c2d027e108e2e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "book.stpm3.ch6.6.2_goodness-of-fit_tests",
@@ -11360,7 +12159,8 @@
       ],
       "pages": "265-271",
       "external_id": "2de0120431bf3c37",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     },
     {
       "id": "book.stpm3.ch6.6.3_tests_of_independence",
@@ -11375,7 +12175,8 @@
       ],
       "pages": "272",
       "external_id": "32747c8f1b0fbef2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "num_arith"
     }
   ],
   "edges": [

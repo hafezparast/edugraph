@@ -24,6 +24,28 @@
       "order": 2
     }
   ],
+  "strands": [
+    {
+      "id": "reading-writing",
+      "name": "Reading & Writing",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "algebra",
+      "name": "Algebra & Linear Equations",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "problem-solving",
+      "name": "Problem Solving & Data",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "advanced-math",
+      "name": "Advanced Math",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "sat.rw.craft_and_structure",
@@ -41,7 +63,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "1e878dc6ec2b1489",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "sat.rw.information_and_ideas",
@@ -59,7 +82,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "8d07e9ae5b917e0a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "sat.rw.standard_english_conventions",
@@ -77,7 +101,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "9906c1151eaa6bd2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "sat.rw.expression_of_ideas",
@@ -95,7 +120,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "9f561a742da87227",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "sat.math.linear_equations",
@@ -113,7 +139,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "a07f6f9d4ed3f1ad",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "sat.math.systems_of_equations",
@@ -131,7 +158,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "dd3c342301f1e1c0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sat.math.linear_inequalities",
@@ -149,7 +177,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "c5dc6ecd65423d96",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sat.math.ratios_and_percentages",
@@ -167,7 +196,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "252880b3a09867ba",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sat.math.statistics",
@@ -185,7 +215,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "6ea194e42dc45fba",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "problem-solving"
     },
     {
       "id": "sat.math.probability",
@@ -203,7 +234,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "ce5f36c4bbc81a49",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "sat.math.quadratics",
@@ -221,7 +253,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "125a0140f5b5369f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "advanced-math"
     },
     {
       "id": "sat.math.polynomials",
@@ -239,7 +272,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "b7d517efc0516d44",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sat.math.functions",
@@ -257,7 +291,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "92df6bc7d20824d2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "sat.math.radicals_and_exponents",
@@ -275,7 +310,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "2fd1c78b2ede78e3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "sat.math.geometry",
@@ -293,7 +329,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "056d75f42d41d8a9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "advanced-math"
     },
     {
       "id": "sat.math.trigonometry",
@@ -311,7 +348,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "37620c7dad3754a1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "advanced-math"
     },
     {
       "id": "sat.math.complex_numbers",
@@ -329,7 +367,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "dccc5517c2dc55a4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sat.rw.command_of_evidence",
@@ -347,7 +386,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "066827000e36bfd7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "sat.math.absolute_value",
@@ -365,7 +405,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "30890b1592acc8b6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "sat.math.scatterplots_and_modeling",
@@ -383,7 +424,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "b1ea4042159b02ec",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "problem-solving"
     }
   ],
   "edges": [

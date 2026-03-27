@@ -30,6 +30,23 @@
       "order": 3
     }
   ],
+  "strands": [
+    {
+      "id": "verbal",
+      "name": "Verbal Reasoning",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "quant",
+      "name": "Quantitative Reasoning",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "writing",
+      "name": "Analytical Writing",
+      "color": "#E74C3C"
+    }
+  ],
   "nodes": [
     {
       "id": "gre.verbal.vocabulary_in_context",
@@ -47,7 +64,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "b128cb76cfad461b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "verbal"
     },
     {
       "id": "gre.verbal.text_completion",
@@ -65,7 +83,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "09820a243d50f9e7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "verbal"
     },
     {
       "id": "gre.verbal.sentence_equivalence",
@@ -83,7 +102,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "bbd3354e56cc9522",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "verbal"
     },
     {
       "id": "gre.verbal.reading_comprehension",
@@ -101,7 +121,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "63d649e8b3e0fb93",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "verbal"
     },
     {
       "id": "gre.verbal.critical_reasoning",
@@ -119,7 +140,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "9a6a864f4d68a19b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "verbal"
     },
     {
       "id": "gre.quant.arithmetic",
@@ -137,7 +159,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "91363a42a914b58e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quant"
     },
     {
       "id": "gre.quant.number_properties",
@@ -155,7 +178,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "9b4ea9c57b685f8d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quant"
     },
     {
       "id": "gre.quant.algebra",
@@ -173,7 +197,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "d3a3e421ada5b700",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quant"
     },
     {
       "id": "gre.quant.geometry",
@@ -191,7 +216,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "d01d9ef3f87e2ec7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quant"
     },
     {
       "id": "gre.quant.data_analysis",
@@ -209,7 +235,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "0b0468e749e2fa31",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quant"
     },
     {
       "id": "gre.quant.word_problems",
@@ -227,7 +254,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "bd91eb4582ac95fd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quant"
     },
     {
       "id": "gre.quant.probability",
@@ -245,7 +273,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "f69f6a128bee24ac",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quant"
     },
     {
       "id": "gre.verbal.analytical_passages",
@@ -263,7 +292,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "4abf5570ed44cd6e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "verbal"
     },
     {
       "id": "gre.quant.quantitative_comparison",
@@ -281,7 +311,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "9d1d3e14ae8e9de2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quant"
     },
     {
       "id": "gre.aw.issue_essay",
@@ -299,7 +330,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "9ab6b8abe242d0dd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "gre.aw.argument_essay",
@@ -317,7 +349,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "a0f5066dca35de81",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     }
   ],
   "edges": [

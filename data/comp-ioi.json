@@ -42,6 +42,33 @@
       "order": 5
     }
   ],
+  "strands": [
+    {
+      "id": "fundamentals",
+      "name": "Fundamentals",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "graphs",
+      "name": "Graph Algorithms",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "dp",
+      "name": "Dynamic Programming",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "data-structures",
+      "name": "Advanced Data Structures",
+      "color": "#F39C12"
+    },
+    {
+      "id": "advanced",
+      "name": "Advanced Algorithms",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ioi.fund.time_complexity",
@@ -60,7 +87,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "63f2ef165d4be682",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fundamentals"
     },
     {
       "id": "ioi.fund.sorting",
@@ -79,7 +107,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "f14c136090ef2b71",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fundamentals"
     },
     {
       "id": "ioi.fund.binary_search",
@@ -98,7 +127,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "b45e1d6d734904aa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fundamentals"
     },
     {
       "id": "ioi.fund.two_pointers",
@@ -117,7 +147,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "849e82db1e0aaf69",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fundamentals"
     },
     {
       "id": "ioi.fund.prefix_sums",
@@ -136,7 +167,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "21b50845f9799535",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fundamentals"
     },
     {
       "id": "ioi.graph.bfs",
@@ -155,7 +187,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "315e00f1fee5b747",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "graphs"
     },
     {
       "id": "ioi.graph.dfs",
@@ -174,7 +207,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "a115dfa5fcad8a14",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "graphs"
     },
     {
       "id": "ioi.graph.dijkstra",
@@ -193,7 +227,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "4c04eaa101c9b714",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "graphs"
     },
     {
       "id": "ioi.graph.bellman_ford",
@@ -212,7 +247,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "0bb0c1b6ac9dac8a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "graphs"
     },
     {
       "id": "ioi.graph.mst",
@@ -231,7 +267,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "e65e590ce557d32c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "graphs"
     },
     {
       "id": "ioi.graph.toposort",
@@ -250,7 +287,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "c3e4a61097cfe79f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "graphs"
     },
     {
       "id": "ioi.graph.scc",
@@ -269,7 +307,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "b88d0c1b9fe8ccfe",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "graphs"
     },
     {
       "id": "ioi.dp.dp_1d",
@@ -288,7 +327,8 @@
       "bookColor": "#f97316",
       "bookOrder": 3,
       "external_id": "e424ab9bd560b282",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "dp"
     },
     {
       "id": "ioi.dp.dp_2d",
@@ -307,7 +347,8 @@
       "bookColor": "#f97316",
       "bookOrder": 3,
       "external_id": "c1ea2fdcac185997",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "dp"
     },
     {
       "id": "ioi.dp.dp_trees",
@@ -326,7 +367,8 @@
       "bookColor": "#f97316",
       "bookOrder": 3,
       "external_id": "e04b4ad3e657345c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "dp"
     },
     {
       "id": "ioi.dp.bitmask_dp",
@@ -345,7 +387,8 @@
       "bookColor": "#f97316",
       "bookOrder": 3,
       "external_id": "a21e61515049a2dc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "dp"
     },
     {
       "id": "ioi.dp.digit_dp",
@@ -364,7 +407,8 @@
       "bookColor": "#f97316",
       "bookOrder": 3,
       "external_id": "914436254756b8a1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "dp"
     },
     {
       "id": "ioi.ds.segment_tree",
@@ -383,7 +427,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 4,
       "external_id": "56dbfe73c1eac066",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data-structures"
     },
     {
       "id": "ioi.ds.fenwick",
@@ -402,7 +447,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 4,
       "external_id": "0e9cff338e895537",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data-structures"
     },
     {
       "id": "ioi.ds.sparse_table",
@@ -421,7 +467,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 4,
       "external_id": "0967c52e92a1e536",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data-structures"
     },
     {
       "id": "ioi.ds.dsu",
@@ -440,7 +487,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 4,
       "external_id": "a265bfc75a2f170b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data-structures"
     },
     {
       "id": "ioi.ds.balanced_bst",
@@ -459,7 +507,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 4,
       "external_id": "c290333600d42367",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data-structures"
     },
     {
       "id": "ioi.ds.persistent",
@@ -478,7 +527,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 4,
       "external_id": "dfc8488c6915135f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data-structures"
     },
     {
       "id": "ioi.adv.kmp",
@@ -497,7 +547,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 5,
       "external_id": "631c278841bc104c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "advanced"
     },
     {
       "id": "ioi.adv.suffix_array",
@@ -516,7 +567,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 5,
       "external_id": "a1161edc46901c3e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "advanced"
     },
     {
       "id": "ioi.adv.convex_hull",
@@ -535,7 +587,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 5,
       "external_id": "2c10bbb3012fb286",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "advanced"
     },
     {
       "id": "ioi.adv.sweep_line",
@@ -554,7 +607,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 5,
       "external_id": "65d4c485ae614533",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "advanced"
     },
     {
       "id": "ioi.adv.network_flow",
@@ -573,7 +627,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 5,
       "external_id": "f54f51ecf4e3d948",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "advanced"
     },
     {
       "id": "ioi.adv.fft",
@@ -592,7 +647,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 5,
       "external_id": "f687ce5926a5202b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "advanced"
     },
     {
       "id": "ioi.fund.greedy",
@@ -611,7 +667,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "7442d327ebe3ca56",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fundamentals"
     }
   ],
   "edges": [

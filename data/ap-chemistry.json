@@ -42,6 +42,33 @@
       "order": 5
     }
   ],
+  "strands": [
+    {
+      "id": "atomic",
+      "name": "Atomic Structure & Bonding",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "imf",
+      "name": "Intermolecular Forces & States",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "reactions",
+      "name": "Reactions & Stoichiometry",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "kinetics-thermo",
+      "name": "Kinetics & Thermodynamics",
+      "color": "#F39C12"
+    },
+    {
+      "id": "equilibrium",
+      "name": "Equilibrium & Electrochemistry",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ap.chem.atomic_structure",
@@ -59,7 +86,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "129a722b133d1fdf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "atomic"
     },
     {
       "id": "ap.chem.mass_spectrometry",
@@ -77,7 +105,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "78affea717acf027",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "atomic"
     },
     {
       "id": "ap.chem.ionic_bonding",
@@ -95,7 +124,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "e223e297c9e2f3a9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "atomic"
     },
     {
       "id": "ap.chem.covalent_bonding",
@@ -113,7 +143,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "7bca42b138bf4b17",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "atomic"
     },
     {
       "id": "ap.chem.molecular_geometry",
@@ -131,7 +162,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "af225c91429a5709",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "atomic"
     },
     {
       "id": "ap.chem.imf",
@@ -149,7 +181,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "45c98a25fb10a772",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "imf"
     },
     {
       "id": "ap.chem.properties_of_matter",
@@ -167,7 +200,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "c8677f7462b44a7d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "imf"
     },
     {
       "id": "ap.chem.solutions",
@@ -185,7 +219,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "f89362d07b8c6cb7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "imf"
     },
     {
       "id": "ap.chem.chemical_reactions",
@@ -203,7 +238,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "76740e4d48c4143d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactions"
     },
     {
       "id": "ap.chem.stoichiometry",
@@ -221,7 +257,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "0aadb1f7947b4fb7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactions"
     },
     {
       "id": "ap.chem.redox",
@@ -239,7 +276,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "8b5793ccdd24716d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactions"
     },
     {
       "id": "ap.chem.kinetics",
@@ -257,7 +295,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "842740a1d2586e96",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactions"
     },
     {
       "id": "ap.chem.thermodynamics_enthalpy",
@@ -275,7 +314,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "138bf701f55bbba0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinetics-thermo"
     },
     {
       "id": "ap.chem.entropy_gibbs",
@@ -293,7 +333,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "a970c0bbbf52ace1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinetics-thermo"
     },
     {
       "id": "ap.chem.equilibrium",
@@ -311,7 +352,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "c8a174c49d60a060",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibrium"
     },
     {
       "id": "ap.chem.acids_bases",
@@ -329,7 +371,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "edb158b8e5a27a92",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibrium"
     },
     {
       "id": "ap.chem.buffers_titrations",
@@ -347,7 +390,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "c3e20b22f0d1d552",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "imf"
     },
     {
       "id": "ap.chem.solubility_equilibria",
@@ -365,7 +409,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "8178e1d6014517a7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibrium"
     },
     {
       "id": "ap.chem.electrochemistry",
@@ -383,7 +428,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "e41856a25e86f78c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibrium"
     }
   ],
   "edges": [

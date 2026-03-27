@@ -24,6 +24,48 @@
       "order": 2
     }
   ],
+  "strands": [
+    {
+      "id": "stoichiometry",
+      "name": "Stoichiometry & Measurement",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "structure_bonding",
+      "name": "Atomic Structure & Bonding",
+      "color": "#ef4444"
+    },
+    {
+      "id": "energetics",
+      "name": "Energetics & Thermodynamics",
+      "color": "#f97316"
+    },
+    {
+      "id": "equilibria",
+      "name": "Equilibria & Kinetics",
+      "color": "#eab308"
+    },
+    {
+      "id": "electrochemistry",
+      "name": "Electrochemistry & Redox",
+      "color": "#22c55e"
+    },
+    {
+      "id": "inorganic",
+      "name": "Inorganic Chemistry",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "organic",
+      "name": "Organic Chemistry",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "analytical",
+      "name": "Analytical Chemistry",
+      "color": "#ec4899"
+    }
+  ],
   "nodes": [
     {
       "id": "al.chem.as.relative_masses",
@@ -41,7 +83,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "04bc7d60f5cb6013",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "stoichiometry"
     },
     {
       "id": "al.chem.as.mole_concept",
@@ -59,7 +102,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "43c8692d3ef71e4b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "stoichiometry"
     },
     {
       "id": "al.chem.as.empirical_molecular_formulae",
@@ -77,7 +121,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "2516b2643abdfa67",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "stoichiometry"
     },
     {
       "id": "al.chem.as.chemical_equations",
@@ -95,7 +140,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "e47c34113c114dfe",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "stoichiometry"
     },
     {
       "id": "al.chem.as.solution_concentration",
@@ -113,7 +159,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "9ba49f42ac808b4a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "stoichiometry"
     },
     {
       "id": "al.chem.as.ideal_gas_equation",
@@ -131,7 +178,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "3f96ac9b0c0f8232",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure_bonding"
     },
     {
       "id": "al.chem.as.protons_neutrons_electrons",
@@ -149,7 +197,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "64c6b7b9bf75fa30",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure_bonding"
     },
     {
       "id": "al.chem.as.electron_configuration",
@@ -167,7 +216,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "c23ffd5ebc7f466b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure_bonding"
     },
     {
       "id": "al.chem.as.ionisation_energy",
@@ -185,7 +235,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "7780bdd1f28a2f8c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure_bonding"
     },
     {
       "id": "al.chem.as.ionic_bonding",
@@ -203,7 +254,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "c272fe0f0cb0d06b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure_bonding"
     },
     {
       "id": "al.chem.as.covalent_bonding",
@@ -221,7 +273,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "07c80a5d5dfc8948",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure_bonding"
     },
     {
       "id": "al.chem.as.metallic_bonding",
@@ -239,7 +292,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "cc0d40222dfa0a8c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure_bonding"
     },
     {
       "id": "al.chem.as.shapes_of_molecules",
@@ -257,7 +311,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "768ee89f38eb93eb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure_bonding"
     },
     {
       "id": "al.chem.as.electronegativity_polarity",
@@ -275,7 +330,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "87fe02bd15de8384",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure_bonding"
     },
     {
       "id": "al.chem.as.intermolecular_forces",
@@ -293,7 +349,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "d16f0c904c25bde7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure_bonding"
     },
     {
       "id": "al.chem.as.gases",
@@ -311,7 +368,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "fae2f0bd3781664e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure_bonding"
     },
     {
       "id": "al.chem.as.liquids_solids",
@@ -329,7 +387,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "30a913f9f35b72fb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure_bonding"
     },
     {
       "id": "al.chem.as.enthalpy_changes",
@@ -347,7 +406,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "14416ae9a67ce8e5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energetics"
     },
     {
       "id": "al.chem.as.calorimetry",
@@ -365,7 +425,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "23931076e5798d19",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energetics"
     },
     {
       "id": "al.chem.as.hess_law",
@@ -383,7 +444,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "606dc5d8cfebc171",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energetics"
     },
     {
       "id": "al.chem.as.bond_energies",
@@ -401,7 +463,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "f6589ccb16c8b204",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energetics"
     },
     {
       "id": "al.chem.as.redox_reactions",
@@ -419,7 +482,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "9e6721a1310e64dc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electrochemistry"
     },
     {
       "id": "al.chem.as.electrolysis",
@@ -437,7 +501,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "b3c30c0dec977f25",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electrochemistry"
     },
     {
       "id": "al.chem.as.dynamic_equilibrium",
@@ -455,7 +520,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "efeef8575485a741",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.as.le_chatelier",
@@ -473,7 +539,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "661aa997d300e243",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.as.equilibrium_constant_kc",
@@ -491,7 +558,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "894bed131cd3b07b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.as.rates_of_reaction",
@@ -509,7 +577,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "e5b928d1e5f2dab7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.as.collision_theory",
@@ -527,7 +596,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "15c49e1d7cf9a1ad",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.as.catalysts",
@@ -545,7 +615,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "fb9d9da771931345",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.as.periodicity",
@@ -563,7 +634,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "f41955c0b78d714d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inorganic"
     },
     {
       "id": "al.chem.as.period3_oxides_chlorides",
@@ -581,7 +653,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "28ff3dd1973e8e8f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inorganic"
     },
     {
       "id": "al.chem.as.group2_properties",
@@ -599,7 +672,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "451df2a69ca00097",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inorganic"
     },
     {
       "id": "al.chem.as.group2_compounds",
@@ -617,7 +691,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "917ec4a26a514298",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inorganic"
     },
     {
       "id": "al.chem.as.group17_properties",
@@ -635,7 +710,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "6784d0a7501bbdb0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inorganic"
     },
     {
       "id": "al.chem.as.group17_reactions",
@@ -653,7 +729,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "03a2559729875442",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inorganic"
     },
     {
       "id": "al.chem.as.nitrogen_chemistry",
@@ -671,7 +748,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "d1d421b5f3d28a10",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inorganic"
     },
     {
       "id": "al.chem.as.sulfur_chemistry",
@@ -689,7 +767,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "34e183d9793ca5d6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inorganic"
     },
     {
       "id": "al.chem.as.functional_groups",
@@ -707,7 +786,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "90779dcd484f774f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.as.isomerism",
@@ -725,7 +805,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "f1cfcc30c5f2c349",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.as.reaction_mechanisms",
@@ -743,7 +824,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "0054cddd8122cc9b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.as.alkanes",
@@ -761,7 +843,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "71967fa5a09196d4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.as.alkenes",
@@ -779,7 +862,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "0bf632597315ee3b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.as.addition_polymerisation",
@@ -797,7 +881,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "c7e81bf236b25573",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.as.halogenoalkanes",
@@ -815,7 +900,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "255005cf41f0d5e7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.as.elimination_reactions",
@@ -833,7 +919,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "ece1e9e71f552eca",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.as.cfcs_ozone",
@@ -851,7 +938,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "f5a235e2b8e91cf9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.as.alcohols",
@@ -869,7 +957,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "d1275d6b3febcf9c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.as.oxidation_of_alcohols",
@@ -887,7 +976,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "ec75ba0efa23d1b8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.as.aldehydes_ketones",
@@ -905,7 +995,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "950f0debbd95bf99",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.as.carboxylic_acids",
@@ -923,7 +1014,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "daab38fafa700bd0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.as.esters",
@@ -941,7 +1033,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "7b744e3b52d4b797",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.a2.particle_physics",
@@ -959,7 +1052,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "74fcb09057f33477",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure_bonding"
     },
     {
       "id": "al.chem.a2.lattice_energy",
@@ -977,7 +1071,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "c690ac5b71f55aaf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energetics"
     },
     {
       "id": "al.chem.a2.born_haber_cycles",
@@ -995,7 +1090,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "ee70915981482a51",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energetics"
     },
     {
       "id": "al.chem.a2.ion_polarisation",
@@ -1013,7 +1109,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "ab5202e3e0d8e0c8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energetics"
     },
     {
       "id": "al.chem.a2.enthalpy_of_solution",
@@ -1031,7 +1128,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "9b3b3867fdb15b96",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energetics"
     },
     {
       "id": "al.chem.a2.entropy",
@@ -1049,7 +1147,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "1527d8fb20248473",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energetics"
     },
     {
       "id": "al.chem.a2.gibbs_free_energy",
@@ -1067,7 +1166,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "4f124f559c9c55ca",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energetics"
     },
     {
       "id": "al.chem.a2.electrode_potentials",
@@ -1085,7 +1185,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "2150d8af9e3b9e83",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electrochemistry"
     },
     {
       "id": "al.chem.a2.electrochemical_cells",
@@ -1103,7 +1204,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "3e2a6c66d9c69ccc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electrochemistry"
     },
     {
       "id": "al.chem.a2.equilibrium_kp",
@@ -1121,7 +1223,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "f299d6c6ad33a9eb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.a2.acid_base_theory",
@@ -1139,7 +1242,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "1f3b97d40771a95c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.a2.ph_calculations",
@@ -1157,7 +1261,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "9add812ee80205aa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.a2.buffer_solutions",
@@ -1175,7 +1280,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "d732defcba75ca1d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.a2.titration_curves",
@@ -1193,7 +1299,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "9a5bdf3cb0ab09c9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.a2.solubility_product",
@@ -1211,7 +1318,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "1881cf39273c2d88",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.a2.partition_coefficients",
@@ -1229,7 +1337,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "bce80e03aeb12817",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.a2.rate_equations",
@@ -1247,7 +1356,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "1871c01fde645c31",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.a2.concentration_time_graphs",
@@ -1265,7 +1375,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "9ac1411586151efe",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.a2.rate_determining_step",
@@ -1283,7 +1394,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "ee76da8fc7599da4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.a2.arrhenius_equation",
@@ -1301,7 +1413,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "003ca66e1ff099cf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "equilibria"
     },
     {
       "id": "al.chem.a2.transition_elements",
@@ -1319,7 +1432,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "034d38f8feeff682",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inorganic"
     },
     {
       "id": "al.chem.a2.complex_ions",
@@ -1337,7 +1451,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "924e9bac3dcb789f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inorganic"
     },
     {
       "id": "al.chem.a2.colour_of_complexes",
@@ -1355,7 +1470,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "7c133f9aefe704f1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inorganic"
     },
     {
       "id": "al.chem.a2.ligand_substitution",
@@ -1373,7 +1489,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "a40809efab97c511",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inorganic"
     },
     {
       "id": "al.chem.a2.redox_titrations",
@@ -1391,7 +1508,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "fbb7ba5fe0c8492f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inorganic"
     },
     {
       "id": "al.chem.a2.optical_isomerism",
@@ -1409,7 +1527,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "63bf9ad720bad97a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.a2.arenes",
@@ -1427,7 +1546,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "5487bdca00d3a8c3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.a2.phenol",
@@ -1445,7 +1565,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "ca529468c79153dd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.a2.acyl_chlorides",
@@ -1463,7 +1584,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "46c22c7249c2b7da",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.a2.carboxylic_acid_derivatives",
@@ -1481,7 +1603,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "24b9e519282ece81",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.a2.amines",
@@ -1499,7 +1622,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "0328a5676afee2d2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.a2.amides",
@@ -1517,7 +1641,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "6b904dd1deb99e4c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.a2.amino_acids",
@@ -1535,7 +1660,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "ea32488bc9d69f1c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.a2.nitriles",
@@ -1553,7 +1679,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "c09af572aa1cfd10",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.a2.condensation_polymerisation",
@@ -1571,7 +1698,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "967dceb473525ee7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.a2.polymer_biodegradability",
@@ -1589,7 +1717,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "975f42d6f21d1129",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.a2.organic_synthesis",
@@ -1607,7 +1736,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "dba42262c9234658",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "al.chem.a2.mass_spectrometry",
@@ -1625,7 +1755,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "c76fea666b8ca5d1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "analytical"
     },
     {
       "id": "al.chem.a2.ir_spectroscopy",
@@ -1643,7 +1774,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "12896d9454218fd4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "analytical"
     },
     {
       "id": "al.chem.a2.nmr_spectroscopy",
@@ -1661,7 +1793,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "fe0bae8ce97b570d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "analytical"
     },
     {
       "id": "al.chem.a2.chromatography",
@@ -1679,7 +1812,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "5cf648d7157e338a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "analytical"
     },
     {
       "id": "al.chem.a2.combined_analytical",
@@ -1697,7 +1831,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "97bd9be3d790f23b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "analytical"
     }
   ],
   "edges": [

@@ -36,6 +36,28 @@
       "order": 4
     }
   ],
+  "strands": [
+    {
+      "id": "basics",
+      "name": "Economic Fundamentals",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "national-income",
+      "name": "National Income & Price Level",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "financial",
+      "name": "Financial Sector & Stabilization",
+      "color": "#F39C12"
+    },
+    {
+      "id": "policy",
+      "name": "Policy & International Trade",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ap.macro.scarcity_systems",
@@ -53,7 +75,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "8115f9c96396750d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basics"
     },
     {
       "id": "ap.macro.supply_demand",
@@ -71,7 +94,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "8b2acbaf5a62e890",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basics"
     },
     {
       "id": "ap.macro.gdp",
@@ -89,7 +113,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "408389227e006e3e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basics"
     },
     {
       "id": "ap.macro.unemployment",
@@ -107,7 +132,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "df2ed4adaa66a3ce",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basics"
     },
     {
       "id": "ap.macro.inflation",
@@ -125,7 +151,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "5d16122de2aeb3fb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basics"
     },
     {
       "id": "ap.macro.ad_as",
@@ -143,7 +170,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "17d352ca968f294a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basics"
     },
     {
       "id": "ap.macro.multiplier",
@@ -161,7 +189,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "3504ef9272350a0e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "national-income"
     },
     {
       "id": "ap.macro.phillips_curve",
@@ -179,7 +208,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "98e2d97e76d661d6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basics"
     },
     {
       "id": "ap.macro.money_banking",
@@ -197,7 +227,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "9657761e89f518fc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "national-income"
     },
     {
       "id": "ap.macro.loanable_funds",
@@ -215,7 +246,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "fc53212339771933",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "ap.macro.fiscal_policy",
@@ -233,7 +265,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "12f5772f59a23645",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "national-income"
     },
     {
       "id": "ap.macro.monetary_policy",
@@ -251,7 +284,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "ba86e68967a12b42",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "ap.macro.economic_growth",
@@ -269,7 +303,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "75a8439ca05a0724",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basics"
     },
     {
       "id": "ap.macro.international_trade",
@@ -287,7 +322,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "fc19bbfa02c5397b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "policy"
     },
     {
       "id": "ap.macro.foreign_exchange",
@@ -305,7 +341,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "a25162a97034ae9e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "policy"
     }
   ],
   "edges": [

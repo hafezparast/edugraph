@@ -42,6 +42,33 @@
       "order": 5
     }
   ],
+  "strands": [
+    {
+      "id": "exploring",
+      "name": "Exploring Data",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "sampling",
+      "name": "Sampling & Experimentation",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "probability",
+      "name": "Probability & Distributions",
+      "color": "#F39C12"
+    },
+    {
+      "id": "inference",
+      "name": "Statistical Inference",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "regression",
+      "name": "Regression & Advanced Inference",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ap.stat.categorical_data",
@@ -59,7 +86,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "6da7f6cd436f0583",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "exploring"
     },
     {
       "id": "ap.stat.quantitative_data",
@@ -77,7 +105,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "466237b9c50aa9f2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "exploring"
     },
     {
       "id": "ap.stat.summary_statistics",
@@ -95,7 +124,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "2d003fd7dbaa0bd4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "exploring"
     },
     {
       "id": "ap.stat.normal_distribution",
@@ -113,7 +143,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "8c00a38b91d49f6b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "exploring"
     },
     {
       "id": "ap.stat.scatterplots_correlation",
@@ -131,7 +162,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "b506056da1028fb5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "exploring"
     },
     {
       "id": "ap.stat.linear_regression",
@@ -149,7 +181,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "9bea712556abc639",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "regression"
     },
     {
       "id": "ap.stat.sampling_methods",
@@ -167,7 +200,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "4f176d498b87e6e1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sampling"
     },
     {
       "id": "ap.stat.experiments",
@@ -185,7 +219,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "26639b4e5b05818b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sampling"
     },
     {
       "id": "ap.stat.probability",
@@ -203,7 +238,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "0028af64a12fd1f3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "probability"
     },
     {
       "id": "ap.stat.random_variables",
@@ -221,7 +257,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "7bcc0cca3666d432",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "probability"
     },
     {
       "id": "ap.stat.binomial_geometric",
@@ -239,7 +276,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "77fa3c5eacd839f3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "probability"
     },
     {
       "id": "ap.stat.sampling_distributions",
@@ -257,7 +295,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "826adcfef2520b67",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sampling"
     },
     {
       "id": "ap.stat.confidence_intervals_prop",
@@ -275,7 +314,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "da3551e524fc8591",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inference"
     },
     {
       "id": "ap.stat.confidence_intervals_mean",
@@ -293,7 +333,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "3dea9e466114c3fb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inference"
     },
     {
       "id": "ap.stat.hypothesis_tests_prop",
@@ -311,7 +352,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "7a45206490076361",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inference"
     },
     {
       "id": "ap.stat.hypothesis_tests_mean",
@@ -329,7 +371,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "5585a049faf726bd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inference"
     },
     {
       "id": "ap.stat.type_errors_power",
@@ -347,7 +390,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "5da06cbc8acf2218",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inference"
     },
     {
       "id": "ap.stat.chi_square",
@@ -365,7 +409,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "46459922bf4dd3e8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "regression"
     },
     {
       "id": "ap.stat.regression_inference",
@@ -383,7 +428,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "207c83c807f46ae1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "inference"
     }
   ],
   "edges": [

@@ -302,6 +302,48 @@
       "order": 48
     }
   ],
+  "strands": [
+    {
+      "id": "number",
+      "name": "Number",
+      "color": "#ef4444"
+    },
+    {
+      "id": "algebra",
+      "name": "Algebra",
+      "color": "#f97316"
+    },
+    {
+      "id": "geometry",
+      "name": "Geometry & Measurement",
+      "color": "#22c55e"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics & Probability",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "trigonometry",
+      "name": "Trigonometry",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "calculus",
+      "name": "Calculus",
+      "color": "#ec4899"
+    },
+    {
+      "id": "ratio",
+      "name": "Ratio, Proportion & Rate",
+      "color": "#14b8a6"
+    },
+    {
+      "id": "sets_logic",
+      "name": "Sets, Vectors & Functions",
+      "color": "#d946ef"
+    }
+  ],
   "nodes": [
     {
       "id": "pri.y1.counting",
@@ -313,7 +355,8 @@
       "comprehended": false,
       "bookName": "Year 1",
       "bookColor": "#fecdd3",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "number"
     },
     {
       "id": "pri.y1.add_sub",
@@ -325,7 +368,8 @@
       "comprehended": false,
       "bookName": "Year 1",
       "bookColor": "#fecdd3",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "number"
     },
     {
       "id": "pri.y1.shapes",
@@ -337,7 +381,8 @@
       "comprehended": false,
       "bookName": "Year 1",
       "bookColor": "#fecdd3",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "geometry"
     },
     {
       "id": "pri.y1.position",
@@ -349,7 +394,8 @@
       "comprehended": false,
       "bookName": "Year 1",
       "bookColor": "#fecdd3",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "geometry"
     },
     {
       "id": "pri.y1.measurement",
@@ -361,7 +407,8 @@
       "comprehended": false,
       "bookName": "Year 1",
       "bookColor": "#fecdd3",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "geometry"
     },
     {
       "id": "pri.y1.data",
@@ -373,7 +420,8 @@
       "comprehended": false,
       "bookName": "Year 1",
       "bookColor": "#fecdd3",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "statistics"
     },
     {
       "id": "pri.y2.numbers",
@@ -385,7 +433,8 @@
       "comprehended": false,
       "bookName": "Year 2",
       "bookColor": "#fda4af",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "number"
     },
     {
       "id": "pri.y2.add_sub",
@@ -397,7 +446,8 @@
       "comprehended": false,
       "bookName": "Year 2",
       "bookColor": "#fda4af",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "number"
     },
     {
       "id": "pri.y2.mult_div",
@@ -409,7 +459,8 @@
       "comprehended": false,
       "bookName": "Year 2",
       "bookColor": "#fda4af",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "number"
     },
     {
       "id": "pri.y2.fractions",
@@ -421,7 +472,8 @@
       "comprehended": false,
       "bookName": "Year 2",
       "bookColor": "#fda4af",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "ratio"
     },
     {
       "id": "pri.y2.shapes",
@@ -433,7 +485,8 @@
       "comprehended": false,
       "bookName": "Year 2",
       "bookColor": "#fda4af",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "geometry"
     },
     {
       "id": "pri.y2.measurement",
@@ -445,7 +498,8 @@
       "comprehended": false,
       "bookName": "Year 2",
       "bookColor": "#fda4af",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "geometry"
     },
     {
       "id": "pri.y2.data",
@@ -457,7 +511,8 @@
       "comprehended": false,
       "bookName": "Year 2",
       "bookColor": "#fda4af",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "statistics"
     },
     {
       "id": "pri.y3.numbers",
@@ -469,7 +524,8 @@
       "comprehended": false,
       "bookName": "Year 3",
       "bookColor": "#fb7185",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "number"
     },
     {
       "id": "pri.y3.mental",
@@ -481,7 +537,8 @@
       "comprehended": false,
       "bookName": "Year 3",
       "bookColor": "#fb7185",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "ratio"
     },
     {
       "id": "pri.y3.add_sub",
@@ -493,7 +550,8 @@
       "comprehended": false,
       "bookName": "Year 3",
       "bookColor": "#fb7185",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "number"
     },
     {
       "id": "pri.y3.mult_div",
@@ -505,7 +563,8 @@
       "comprehended": false,
       "bookName": "Year 3",
       "bookColor": "#fb7185",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "number"
     },
     {
       "id": "pri.y3.fractions",
@@ -517,7 +576,8 @@
       "comprehended": false,
       "bookName": "Year 3",
       "bookColor": "#fb7185",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "ratio"
     },
     {
       "id": "pri.y3.shapes_angles",
@@ -529,7 +589,8 @@
       "comprehended": false,
       "bookName": "Year 3",
       "bookColor": "#fb7185",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "geometry"
     },
     {
       "id": "pri.y3.measurement",
@@ -541,7 +602,8 @@
       "comprehended": false,
       "bookName": "Year 3",
       "bookColor": "#fb7185",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "geometry"
     },
     {
       "id": "pri.y3.data",
@@ -553,7 +615,8 @@
       "comprehended": false,
       "bookName": "Year 3",
       "bookColor": "#fb7185",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "statistics"
     },
     {
       "id": "pri.y4.numbers",
@@ -565,7 +628,8 @@
       "comprehended": false,
       "bookName": "Year 4",
       "bookColor": "#f43f5e",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "number"
     },
     {
       "id": "pri.y4.decimals_fractions",
@@ -577,7 +641,8 @@
       "comprehended": false,
       "bookName": "Year 4",
       "bookColor": "#f43f5e",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "ratio"
     },
     {
       "id": "pri.y4.add_sub",
@@ -589,7 +654,8 @@
       "comprehended": false,
       "bookName": "Year 4",
       "bookColor": "#f43f5e",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "number"
     },
     {
       "id": "pri.y4.mult_div",
@@ -601,7 +667,8 @@
       "comprehended": false,
       "bookName": "Year 4",
       "bookColor": "#f43f5e",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "number"
     },
     {
       "id": "pri.y4.ratio",
@@ -613,7 +680,8 @@
       "comprehended": false,
       "bookName": "Year 4",
       "bookColor": "#f43f5e",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "ratio"
     },
     {
       "id": "pri.y4.shapes",
@@ -625,7 +693,8 @@
       "comprehended": false,
       "bookName": "Year 4",
       "bookColor": "#f43f5e",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "geometry"
     },
     {
       "id": "pri.y4.area_perimeter",
@@ -637,7 +706,8 @@
       "comprehended": false,
       "bookName": "Year 4",
       "bookColor": "#f43f5e",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "geometry"
     },
     {
       "id": "pri.y4.data",
@@ -649,7 +719,8 @@
       "comprehended": false,
       "bookName": "Year 4",
       "bookColor": "#f43f5e",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "statistics"
     },
     {
       "id": "pri.y5.large_numbers",
@@ -661,7 +732,8 @@
       "comprehended": false,
       "bookName": "Year 5",
       "bookColor": "#e11d48",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "ratio"
     },
     {
       "id": "pri.y5.fractions_pct",
@@ -673,7 +745,8 @@
       "comprehended": false,
       "bookName": "Year 5",
       "bookColor": "#e11d48",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "ratio"
     },
     {
       "id": "pri.y5.mental",
@@ -685,7 +758,8 @@
       "comprehended": false,
       "bookName": "Year 5",
       "bookColor": "#e11d48",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "ratio"
     },
     {
       "id": "pri.y5.written_calcs",
@@ -697,7 +771,8 @@
       "comprehended": false,
       "bookName": "Year 5",
       "bookColor": "#e11d48",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "number"
     },
     {
       "id": "pri.y5.sequences",
@@ -709,7 +784,8 @@
       "comprehended": false,
       "bookName": "Year 5",
       "bookColor": "#e11d48",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "algebra"
     },
     {
       "id": "pri.y5.angles",
@@ -721,7 +797,8 @@
       "comprehended": false,
       "bookName": "Year 5",
       "bookColor": "#e11d48",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "geometry"
     },
     {
       "id": "pri.y5.area_perimeter",
@@ -733,7 +810,8 @@
       "comprehended": false,
       "bookName": "Year 5",
       "bookColor": "#e11d48",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "geometry"
     },
     {
       "id": "pri.y5.coordinates",
@@ -745,7 +823,8 @@
       "comprehended": false,
       "bookName": "Year 5",
       "bookColor": "#e11d48",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "sets_logic"
     },
     {
       "id": "pri.y5.probability_stats",
@@ -757,7 +836,8 @@
       "comprehended": false,
       "bookName": "Year 5",
       "bookColor": "#e11d48",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "statistics"
     },
     {
       "id": "pri.y6.place_value",
@@ -769,7 +849,8 @@
       "comprehended": false,
       "bookName": "Year 6",
       "bookColor": "#be123c",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "number"
     },
     {
       "id": "pri.y6.fractions_pct",
@@ -781,7 +862,8 @@
       "comprehended": false,
       "bookName": "Year 6",
       "bookColor": "#be123c",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "ratio"
     },
     {
       "id": "pri.y6.ratio",
@@ -793,7 +875,8 @@
       "comprehended": false,
       "bookName": "Year 6",
       "bookColor": "#be123c",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "ratio"
     },
     {
       "id": "pri.y6.written_calcs",
@@ -805,7 +888,8 @@
       "comprehended": false,
       "bookName": "Year 6",
       "bookColor": "#be123c",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "number"
     },
     {
       "id": "pri.y6.primes",
@@ -817,7 +901,8 @@
       "comprehended": false,
       "bookName": "Year 6",
       "bookColor": "#be123c",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "number"
     },
     {
       "id": "pri.y6.angles",
@@ -829,7 +914,8 @@
       "comprehended": false,
       "bookName": "Year 6",
       "bookColor": "#be123c",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "geometry"
     },
     {
       "id": "pri.y6.area_volume",
@@ -841,7 +927,8 @@
       "comprehended": false,
       "bookName": "Year 6",
       "bookColor": "#be123c",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "geometry"
     },
     {
       "id": "pri.y6.coordinates",
@@ -853,7 +940,8 @@
       "comprehended": false,
       "bookName": "Year 6",
       "bookColor": "#be123c",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "sets_logic"
     },
     {
       "id": "pri.y6.probability",
@@ -865,7 +953,8 @@
       "comprehended": false,
       "bookName": "Year 6",
       "bookColor": "#be123c",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "statistics"
     },
     {
       "id": "pri.y6.statistics",
@@ -877,7 +966,8 @@
       "comprehended": false,
       "bookName": "Year 6",
       "bookColor": "#be123c",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "statistics"
     },
     {
       "id": "sec.y7.integers",
@@ -889,7 +979,8 @@
       "comprehended": false,
       "bookName": "Year 7",
       "bookColor": "#fdba74",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "number"
     },
     {
       "id": "sec.y7.expressions",
@@ -901,7 +992,8 @@
       "comprehended": false,
       "bookName": "Year 7",
       "bookColor": "#fdba74",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "algebra"
     },
     {
       "id": "sec.y7.place_value",
@@ -913,7 +1005,8 @@
       "comprehended": false,
       "bookName": "Year 7",
       "bookColor": "#fdba74",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "number"
     },
     {
       "id": "sec.y7.decimals",
@@ -925,7 +1018,8 @@
       "comprehended": false,
       "bookName": "Year 7",
       "bookColor": "#fdba74",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "ratio"
     },
     {
       "id": "sec.y7.angles",
@@ -937,7 +1031,8 @@
       "comprehended": false,
       "bookName": "Year 7",
       "bookColor": "#fdba74",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "geometry"
     },
     {
       "id": "sec.y7.collecting_data",
@@ -949,7 +1044,8 @@
       "comprehended": false,
       "bookName": "Year 7",
       "bookColor": "#fdba74",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "statistics"
     },
     {
       "id": "sec.y7.fractions",
@@ -961,7 +1057,8 @@
       "comprehended": false,
       "bookName": "Year 7",
       "bookColor": "#fdba74",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "ratio"
     },
     {
       "id": "sec.y7.shapes",
@@ -973,7 +1070,8 @@
       "comprehended": false,
       "bookName": "Year 7",
       "bookColor": "#fdba74",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "geometry"
     },
     {
       "id": "sec.y7.sequences",
@@ -985,7 +1083,8 @@
       "comprehended": false,
       "bookName": "Year 7",
       "bookColor": "#fdba74",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "algebra"
     },
     {
       "id": "sec.y7.percentages",
@@ -997,7 +1096,8 @@
       "comprehended": false,
       "bookName": "Year 7",
       "bookColor": "#fdba74",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "ratio"
     },
     {
       "id": "sec.y7.graphs",
@@ -1009,7 +1109,8 @@
       "comprehended": false,
       "bookName": "Year 7",
       "bookColor": "#fdba74",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "number"
     },
     {
       "id": "sec.y7.ratio",
@@ -1021,7 +1122,8 @@
       "comprehended": false,
       "bookName": "Year 7",
       "bookColor": "#fdba74",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "ratio"
     },
     {
       "id": "sec.y7.probability",
@@ -1033,7 +1135,8 @@
       "comprehended": false,
       "bookName": "Year 7",
       "bookColor": "#fdba74",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "statistics"
     },
     {
       "id": "sec.y7.position_transform",
@@ -1045,7 +1148,8 @@
       "comprehended": false,
       "bookName": "Year 7",
       "bookColor": "#fdba74",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "sets_logic"
     },
     {
       "id": "sec.y7.area_volume",
@@ -1057,7 +1161,8 @@
       "comprehended": false,
       "bookName": "Year 7",
       "bookColor": "#fdba74",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "geometry"
     },
     {
       "id": "sec.y7.interpreting_results",
@@ -1069,7 +1174,8 @@
       "comprehended": false,
       "bookName": "Year 7",
       "bookColor": "#fdba74",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "statistics"
     },
     {
       "id": "sec.y8.integers",
@@ -1081,7 +1187,8 @@
       "comprehended": false,
       "bookName": "Year 8",
       "bookColor": "#fb923c",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "number"
     },
     {
       "id": "sec.y8.expressions",
@@ -1093,7 +1200,8 @@
       "comprehended": false,
       "bookName": "Year 8",
       "bookColor": "#fb923c",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "algebra"
     },
     {
       "id": "sec.y8.place_value",
@@ -1105,7 +1213,8 @@
       "comprehended": false,
       "bookName": "Year 8",
       "bookColor": "#fb923c",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "number"
     },
     {
       "id": "sec.y8.decimals",
@@ -1117,7 +1226,8 @@
       "comprehended": false,
       "bookName": "Year 8",
       "bookColor": "#fb923c",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "ratio"
     },
     {
       "id": "sec.y8.angles",
@@ -1129,7 +1239,8 @@
       "comprehended": false,
       "bookName": "Year 8",
       "bookColor": "#fb923c",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "geometry"
     },
     {
       "id": "sec.y8.collecting_data",
@@ -1141,7 +1252,8 @@
       "comprehended": false,
       "bookName": "Year 8",
       "bookColor": "#fb923c",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "statistics"
     },
     {
       "id": "sec.y8.fractions",
@@ -1153,7 +1265,8 @@
       "comprehended": false,
       "bookName": "Year 8",
       "bookColor": "#fb923c",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "ratio"
     },
     {
       "id": "sec.y8.shapes",
@@ -1165,7 +1278,8 @@
       "comprehended": false,
       "bookName": "Year 8",
       "bookColor": "#fb923c",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "geometry"
     },
     {
       "id": "sec.y8.sequences",
@@ -1177,7 +1291,8 @@
       "comprehended": false,
       "bookName": "Year 8",
       "bookColor": "#fb923c",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "algebra"
     },
     {
       "id": "sec.y8.percentages",
@@ -1189,7 +1304,8 @@
       "comprehended": false,
       "bookName": "Year 8",
       "bookColor": "#fb923c",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "ratio"
     },
     {
       "id": "sec.y8.graphs",
@@ -1201,7 +1317,8 @@
       "comprehended": false,
       "bookName": "Year 8",
       "bookColor": "#fb923c",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "algebra"
     },
     {
       "id": "sec.y8.ratio",
@@ -1213,7 +1330,8 @@
       "comprehended": false,
       "bookName": "Year 8",
       "bookColor": "#fb923c",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "ratio"
     },
     {
       "id": "sec.y8.probability",
@@ -1225,7 +1343,8 @@
       "comprehended": false,
       "bookName": "Year 8",
       "bookColor": "#fb923c",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "statistics"
     },
     {
       "id": "sec.y8.position_transform",
@@ -1237,7 +1356,8 @@
       "comprehended": false,
       "bookName": "Year 8",
       "bookColor": "#fb923c",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "sets_logic"
     },
     {
       "id": "sec.y8.area_volume",
@@ -1249,7 +1369,8 @@
       "comprehended": false,
       "bookName": "Year 8",
       "bookColor": "#fb923c",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "geometry"
     },
     {
       "id": "sec.y8.interpreting_results",
@@ -1261,7 +1382,8 @@
       "comprehended": false,
       "bookName": "Year 8",
       "bookColor": "#fb923c",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "number"
     },
     {
       "id": "sec.y9.number",
@@ -1273,7 +1395,8 @@
       "comprehended": false,
       "bookName": "Year 9",
       "bookColor": "#f97316",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "number"
     },
     {
       "id": "sec.y9.expressions",
@@ -1285,7 +1408,8 @@
       "comprehended": false,
       "bookName": "Year 9",
       "bookColor": "#f97316",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "algebra"
     },
     {
       "id": "sec.y9.decimals_pct",
@@ -1297,7 +1421,8 @@
       "comprehended": false,
       "bookName": "Year 9",
       "bookColor": "#f97316",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "ratio"
     },
     {
       "id": "sec.y9.equations",
@@ -1309,7 +1434,8 @@
       "comprehended": false,
       "bookName": "Year 9",
       "bookColor": "#f97316",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "algebra"
     },
     {
       "id": "sec.y9.angles",
@@ -1321,7 +1447,8 @@
       "comprehended": false,
       "bookName": "Year 9",
       "bookColor": "#f97316",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "geometry"
     },
     {
       "id": "sec.y9.stat_investigations",
@@ -1333,7 +1460,8 @@
       "comprehended": false,
       "bookName": "Year 9",
       "bookColor": "#f97316",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "number"
     },
     {
       "id": "sec.y9.shapes",
@@ -1345,7 +1473,8 @@
       "comprehended": false,
       "bookName": "Year 9",
       "bookColor": "#f97316",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "geometry"
     },
     {
       "id": "sec.y9.fractions",
@@ -1357,7 +1486,8 @@
       "comprehended": false,
       "bookName": "Year 9",
       "bookColor": "#f97316",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "ratio"
     },
     {
       "id": "sec.y9.sequences",
@@ -1369,7 +1499,8 @@
       "comprehended": false,
       "bookName": "Year 9",
       "bookColor": "#f97316",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "algebra"
     },
     {
       "id": "sec.y9.graphs",
@@ -1381,7 +1512,8 @@
       "comprehended": false,
       "bookName": "Year 9",
       "bookColor": "#f97316",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "number"
     },
     {
       "id": "sec.y9.ratio",
@@ -1393,7 +1525,8 @@
       "comprehended": false,
       "bookName": "Year 9",
       "bookColor": "#f97316",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "ratio"
     },
     {
       "id": "sec.y9.probability",
@@ -1405,7 +1538,8 @@
       "comprehended": false,
       "bookName": "Year 9",
       "bookColor": "#f97316",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "statistics"
     },
     {
       "id": "sec.y9.position_transform",
@@ -1417,7 +1551,8 @@
       "comprehended": false,
       "bookName": "Year 9",
       "bookColor": "#f97316",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "sets_logic"
     },
     {
       "id": "sec.y9.volume_sa",
@@ -1429,7 +1564,8 @@
       "comprehended": false,
       "bookName": "Year 9",
       "bookColor": "#f97316",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "geometry"
     },
     {
       "id": "sec.y9.interpreting_results",
@@ -1441,7 +1577,8 @@
       "comprehended": false,
       "bookName": "Year 9",
       "bookColor": "#f97316",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "statistics"
     },
     {
       "id": "m.review_of_number_concepts.different_types_of_numbers",
@@ -1454,7 +1591,8 @@
       "comprehended": false,
       "bookName": "Number Concepts",
       "bookColor": "#ef4444",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "number"
     },
     {
       "id": "m.review_of_number_concepts.multiples_and_factors",
@@ -1467,7 +1605,8 @@
       "comprehended": false,
       "bookName": "Number Concepts",
       "bookColor": "#ef4444",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "number"
     },
     {
       "id": "m.review_of_number_concepts.prime_numbers",
@@ -1480,7 +1619,8 @@
       "comprehended": false,
       "bookName": "Number Concepts",
       "bookColor": "#ef4444",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "number"
     },
     {
       "id": "m.review_of_number_concepts.working_with_directed_numbers",
@@ -1493,7 +1633,8 @@
       "comprehended": false,
       "bookName": "Number Concepts",
       "bookColor": "#ef4444",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "number"
     },
     {
       "id": "m.review_of_number_concepts.powers_roots_and_laws_of_indices",
@@ -1506,7 +1647,8 @@
       "comprehended": false,
       "bookName": "Number Concepts",
       "bookColor": "#ef4444",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "algebra"
     },
     {
       "id": "m.review_of_number_concepts.order_of_operations",
@@ -1519,7 +1661,8 @@
       "comprehended": false,
       "bookName": "Number Concepts",
       "bookColor": "#ef4444",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "ratio"
     },
     {
       "id": "m.review_of_number_concepts.rounding_and_estimating",
@@ -1532,7 +1675,8 @@
       "comprehended": false,
       "bookName": "Number Concepts",
       "bookColor": "#ef4444",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "number"
     },
     {
       "id": "m.making_sense_of_algebra.using_letters_to_represent_unknown_values",
@@ -1545,7 +1689,8 @@
       "comprehended": false,
       "bookName": "Algebra Basics",
       "bookColor": "#f97316",
-      "bookOrder": 11
+      "bookOrder": 11,
+      "strand": "algebra"
     },
     {
       "id": "m.making_sense_of_algebra.substitution",
@@ -1558,7 +1703,8 @@
       "comprehended": false,
       "bookName": "Algebra Basics",
       "bookColor": "#f97316",
-      "bookOrder": 11
+      "bookOrder": 11,
+      "strand": "algebra"
     },
     {
       "id": "m.making_sense_of_algebra.simplifying_expressions",
@@ -1571,7 +1717,8 @@
       "comprehended": false,
       "bookName": "Algebra Basics",
       "bookColor": "#f97316",
-      "bookOrder": 11
+      "bookOrder": 11,
+      "strand": "algebra"
     },
     {
       "id": "m.making_sense_of_algebra.working_with_brackets",
@@ -1584,7 +1731,8 @@
       "comprehended": false,
       "bookName": "Algebra Basics",
       "bookColor": "#f97316",
-      "bookOrder": 11
+      "bookOrder": 11,
+      "strand": "algebra"
     },
     {
       "id": "m.making_sense_of_algebra.indices",
@@ -1597,7 +1745,8 @@
       "comprehended": false,
       "bookName": "Algebra Basics",
       "bookColor": "#f97316",
-      "bookOrder": 11
+      "bookOrder": 11,
+      "strand": "algebra"
     },
     {
       "id": "m.lines_angles_and_shapes.lines_and_angles",
@@ -1610,7 +1759,8 @@
       "comprehended": false,
       "bookName": "Geometry",
       "bookColor": "#22c55e",
-      "bookOrder": 12
+      "bookOrder": 12,
+      "strand": "geometry"
     },
     {
       "id": "m.lines_angles_and_shapes.triangles",
@@ -1623,7 +1773,8 @@
       "comprehended": false,
       "bookName": "Geometry",
       "bookColor": "#22c55e",
-      "bookOrder": 12
+      "bookOrder": 12,
+      "strand": "geometry"
     },
     {
       "id": "m.lines_angles_and_shapes.quadrilaterals",
@@ -1636,7 +1787,8 @@
       "comprehended": false,
       "bookName": "Geometry",
       "bookColor": "#22c55e",
-      "bookOrder": 12
+      "bookOrder": 12,
+      "strand": "geometry"
     },
     {
       "id": "m.lines_angles_and_shapes.polygons",
@@ -1649,7 +1801,8 @@
       "comprehended": false,
       "bookName": "Geometry",
       "bookColor": "#22c55e",
-      "bookOrder": 12
+      "bookOrder": 12,
+      "strand": "geometry"
     },
     {
       "id": "m.lines_angles_and_shapes.circles",
@@ -1662,7 +1815,8 @@
       "comprehended": false,
       "bookName": "Geometry",
       "bookColor": "#22c55e",
-      "bookOrder": 12
+      "bookOrder": 12,
+      "strand": "geometry"
     },
     {
       "id": "m.lines_angles_and_shapes.construction",
@@ -1675,7 +1829,8 @@
       "comprehended": false,
       "bookName": "Geometry",
       "bookColor": "#22c55e",
-      "bookOrder": 12
+      "bookOrder": 12,
+      "strand": "geometry"
     },
     {
       "id": "m.collecting_organising_and_displaying_data.collecting_and_classifying_data",
@@ -1688,7 +1843,8 @@
       "comprehended": false,
       "bookName": "Data Handling",
       "bookColor": "#ec4899",
-      "bookOrder": 13
+      "bookOrder": 13,
+      "strand": "statistics"
     },
     {
       "id": "m.collecting_organising_and_displaying_data.organising_data",
@@ -1701,7 +1857,8 @@
       "comprehended": false,
       "bookName": "Data Handling",
       "bookColor": "#ec4899",
-      "bookOrder": 13
+      "bookOrder": 13,
+      "strand": "statistics"
     },
     {
       "id": "m.collecting_organising_and_displaying_data.using_charts_to_display_data",
@@ -1714,7 +1871,8 @@
       "comprehended": false,
       "bookName": "Data Handling",
       "bookColor": "#ec4899",
-      "bookOrder": 13
+      "bookOrder": 13,
+      "strand": "statistics"
     },
     {
       "id": "m.fractions_percentages_and_standard_form.revisiting_fractions",
@@ -1727,7 +1885,8 @@
       "comprehended": false,
       "bookName": "Fractions & Percentages",
       "bookColor": "#fb923c",
-      "bookOrder": 14
+      "bookOrder": 14,
+      "strand": "ratio"
     },
     {
       "id": "m.fractions_percentages_and_standard_form.operations_on_fractions",
@@ -1740,7 +1899,8 @@
       "comprehended": false,
       "bookName": "Fractions & Percentages",
       "bookColor": "#fb923c",
-      "bookOrder": 14
+      "bookOrder": 14,
+      "strand": "ratio"
     },
     {
       "id": "m.fractions_percentages_and_standard_form.percentages",
@@ -1753,7 +1913,8 @@
       "comprehended": false,
       "bookName": "Fractions & Percentages",
       "bookColor": "#fb923c",
-      "bookOrder": 14
+      "bookOrder": 14,
+      "strand": "ratio"
     },
     {
       "id": "m.fractions_percentages_and_standard_form.standard_form",
@@ -1766,7 +1927,8 @@
       "comprehended": false,
       "bookName": "Fractions & Percentages",
       "bookColor": "#fb923c",
-      "bookOrder": 14
+      "bookOrder": 14,
+      "strand": "ratio"
     },
     {
       "id": "m.equations_factors_and_formulae.solving_equations",
@@ -1779,7 +1941,8 @@
       "comprehended": false,
       "bookName": "Equations & Formulae",
       "bookColor": "#f59e0b",
-      "bookOrder": 15
+      "bookOrder": 15,
+      "strand": "algebra"
     },
     {
       "id": "m.equations_factors_and_formulae.factorising_algebraic_expressions",
@@ -1792,7 +1955,8 @@
       "comprehended": false,
       "bookName": "Equations & Formulae",
       "bookColor": "#f59e0b",
-      "bookOrder": 15
+      "bookOrder": 15,
+      "strand": "algebra"
     },
     {
       "id": "m.equations_factors_and_formulae.rearranging_formulae",
@@ -1805,7 +1969,8 @@
       "comprehended": false,
       "bookName": "Equations & Formulae",
       "bookColor": "#f59e0b",
-      "bookOrder": 15
+      "bookOrder": 15,
+      "strand": "algebra"
     },
     {
       "id": "m.perimeter_area_and_volume.perimeter_and_area_in_two_dimensions",
@@ -1818,7 +1983,8 @@
       "comprehended": false,
       "bookName": "Mensuration",
       "bookColor": "#14b8a6",
-      "bookOrder": 16
+      "bookOrder": 16,
+      "strand": "geometry"
     },
     {
       "id": "m.perimeter_area_and_volume.three_dimensional_objects",
@@ -1831,7 +1997,8 @@
       "comprehended": false,
       "bookName": "Mensuration",
       "bookColor": "#14b8a6",
-      "bookOrder": 16
+      "bookOrder": 16,
+      "strand": "geometry"
     },
     {
       "id": "m.perimeter_area_and_volume.surface_areas_and_volumes_of_solids",
@@ -1844,7 +2011,8 @@
       "comprehended": false,
       "bookName": "Mensuration",
       "bookColor": "#14b8a6",
-      "bookOrder": 16
+      "bookOrder": 16,
+      "strand": "geometry"
     },
     {
       "id": "m.introduction_to_probability.understanding_basic_probability",
@@ -1857,7 +2025,8 @@
       "comprehended": false,
       "bookName": "Probability",
       "bookColor": "#8b5cf6",
-      "bookOrder": 17
+      "bookOrder": 17,
+      "strand": "statistics"
     },
     {
       "id": "m.introduction_to_probability.sample_space_diagrams",
@@ -1870,7 +2039,8 @@
       "comprehended": false,
       "bookName": "Probability",
       "bookColor": "#8b5cf6",
-      "bookOrder": 17
+      "bookOrder": 17,
+      "strand": "statistics"
     },
     {
       "id": "m.introduction_to_probability.combining_independent_and_mutually_exclusive_event",
@@ -1883,7 +2053,8 @@
       "comprehended": false,
       "bookName": "Probability",
       "bookColor": "#8b5cf6",
-      "bookOrder": 17
+      "bookOrder": 17,
+      "strand": "statistics"
     },
     {
       "id": "m.sequences_surds_and_sets.sequences",
@@ -1896,7 +2067,8 @@
       "comprehended": false,
       "bookName": "Sequences, Surds & Sets",
       "bookColor": "#d97706",
-      "bookOrder": 18
+      "bookOrder": 18,
+      "strand": "sets_logic"
     },
     {
       "id": "m.sequences_surds_and_sets.rational_and_irrational_numbers",
@@ -1909,7 +2081,8 @@
       "comprehended": false,
       "bookName": "Sequences, Surds & Sets",
       "bookColor": "#d97706",
-      "bookOrder": 18
+      "bookOrder": 18,
+      "strand": "sets_logic"
     },
     {
       "id": "m.sequences_surds_and_sets.surds",
@@ -1922,7 +2095,8 @@
       "comprehended": false,
       "bookName": "Sequences, Surds & Sets",
       "bookColor": "#d97706",
-      "bookOrder": 18
+      "bookOrder": 18,
+      "strand": "sets_logic"
     },
     {
       "id": "m.sequences_surds_and_sets.sets",
@@ -1935,7 +2109,8 @@
       "comprehended": false,
       "bookName": "Sequences, Surds & Sets",
       "bookColor": "#d97706",
-      "bookOrder": 18
+      "bookOrder": 18,
+      "strand": "sets_logic"
     },
     {
       "id": "m.straight_lines_and_quadratic_equations.straight_line_graphs",
@@ -1948,7 +2123,8 @@
       "comprehended": false,
       "bookName": "Lines & Quadratics",
       "bookColor": "#84cc16",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "geometry"
     },
     {
       "id": "m.straight_lines_and_quadratic_equations.quadratic_expressions_and_equations",
@@ -1961,7 +2137,8 @@
       "comprehended": false,
       "bookName": "Lines & Quadratics",
       "bookColor": "#84cc16",
-      "bookOrder": 19
+      "bookOrder": 19,
+      "strand": "algebra"
     },
     {
       "id": "m.pythagoras_theorem_and_similar_shapes.pythagoras_theorem",
@@ -1974,7 +2151,8 @@
       "comprehended": false,
       "bookName": "Pythagoras & Similarity",
       "bookColor": "#06b6d4",
-      "bookOrder": 20
+      "bookOrder": 20,
+      "strand": "geometry"
     },
     {
       "id": "m.pythagoras_theorem_and_similar_shapes.understanding_similar_triangles",
@@ -1987,7 +2165,8 @@
       "comprehended": false,
       "bookName": "Pythagoras & Similarity",
       "bookColor": "#06b6d4",
-      "bookOrder": 20
+      "bookOrder": 20,
+      "strand": "geometry"
     },
     {
       "id": "m.pythagoras_theorem_and_similar_shapes.understanding_similar_shapes",
@@ -2000,7 +2179,8 @@
       "comprehended": false,
       "bookName": "Pythagoras & Similarity",
       "bookColor": "#06b6d4",
-      "bookOrder": 20
+      "bookOrder": 20,
+      "strand": "geometry"
     },
     {
       "id": "m.pythagoras_theorem_and_similar_shapes.understanding_congruence",
@@ -2013,7 +2193,8 @@
       "comprehended": false,
       "bookName": "Pythagoras & Similarity",
       "bookColor": "#06b6d4",
-      "bookOrder": 20
+      "bookOrder": 20,
+      "strand": "geometry"
     },
     {
       "id": "m.averages_and_measures_of_spread.different_types_of_averages",
@@ -2026,7 +2207,8 @@
       "comprehended": false,
       "bookName": "Averages & Spread",
       "bookColor": "#e879f9",
-      "bookOrder": 21
+      "bookOrder": 21,
+      "strand": "statistics"
     },
     {
       "id": "m.averages_and_measures_of_spread.making_comparisons_using_averages_and_ranges",
@@ -2039,7 +2221,8 @@
       "comprehended": false,
       "bookName": "Averages & Spread",
       "bookColor": "#e879f9",
-      "bookOrder": 21
+      "bookOrder": 21,
+      "strand": "statistics"
     },
     {
       "id": "m.averages_and_measures_of_spread.calculating_averages_and_ranges_for_frequency",
@@ -2052,7 +2235,8 @@
       "comprehended": false,
       "bookName": "Averages & Spread",
       "bookColor": "#e879f9",
-      "bookOrder": 21
+      "bookOrder": 21,
+      "strand": "statistics"
     },
     {
       "id": "m.averages_and_measures_of_spread.estimating_the_mean_and_finding_the_modal_clas",
@@ -2065,7 +2249,8 @@
       "comprehended": false,
       "bookName": "Averages & Spread",
       "bookColor": "#e879f9",
-      "bookOrder": 21
+      "bookOrder": 21,
+      "strand": "statistics"
     },
     {
       "id": "m.averages_and_measures_of_spread.quartiles",
@@ -2078,7 +2263,8 @@
       "comprehended": false,
       "bookName": "Averages & Spread",
       "bookColor": "#e879f9",
-      "bookOrder": 21
+      "bookOrder": 21,
+      "strand": "statistics"
     },
     {
       "id": "m.understanding_measurement.understanding_units",
@@ -2091,7 +2277,8 @@
       "comprehended": false,
       "bookName": "Mensuration",
       "bookColor": "#14b8a6",
-      "bookOrder": 16
+      "bookOrder": 16,
+      "strand": "geometry"
     },
     {
       "id": "m.understanding_measurement.time",
@@ -2104,7 +2291,8 @@
       "comprehended": false,
       "bookName": "Mensuration",
       "bookColor": "#14b8a6",
-      "bookOrder": 16
+      "bookOrder": 16,
+      "strand": "geometry"
     },
     {
       "id": "m.understanding_measurement.limits_of_accuracy_upper_and_lower_bounds",
@@ -2117,7 +2305,8 @@
       "comprehended": false,
       "bookName": "Mensuration",
       "bookColor": "#14b8a6",
-      "bookOrder": 16
+      "bookOrder": 16,
+      "strand": "geometry"
     },
     {
       "id": "m.understanding_measurement.conversion_graphs",
@@ -2130,7 +2319,8 @@
       "comprehended": false,
       "bookName": "Mensuration",
       "bookColor": "#14b8a6",
-      "bookOrder": 16
+      "bookOrder": 16,
+      "strand": "ratio"
     },
     {
       "id": "m.understanding_measurement.exchanging_currencies",
@@ -2143,7 +2333,8 @@
       "comprehended": false,
       "bookName": "Mensuration",
       "bookColor": "#14b8a6",
-      "bookOrder": 16
+      "bookOrder": 16,
+      "strand": "ratio"
     },
     {
       "id": "m.further_solving_of_equations_and_inequalities.simultaneous_linear_equations",
@@ -2156,7 +2347,8 @@
       "comprehended": false,
       "bookName": "Further Equations",
       "bookColor": "#eab308",
-      "bookOrder": 22
+      "bookOrder": 22,
+      "strand": "algebra"
     },
     {
       "id": "m.further_solving_of_equations_and_inequalities.linear_inequalities",
@@ -2169,7 +2361,8 @@
       "comprehended": false,
       "bookName": "Further Equations",
       "bookColor": "#eab308",
-      "bookOrder": 22
+      "bookOrder": 22,
+      "strand": "geometry"
     },
     {
       "id": "m.further_solving_of_equations_and_inequalities.regions_in_a_plane",
@@ -2182,7 +2375,8 @@
       "comprehended": false,
       "bookName": "Further Equations",
       "bookColor": "#eab308",
-      "bookOrder": 22
+      "bookOrder": 22,
+      "strand": "algebra"
     },
     {
       "id": "m.further_solving_of_equations_and_inequalities.completing_the_square",
@@ -2195,7 +2389,8 @@
       "comprehended": false,
       "bookName": "Further Equations",
       "bookColor": "#eab308",
-      "bookOrder": 22
+      "bookOrder": 22,
+      "strand": "algebra"
     },
     {
       "id": "m.further_solving_of_equations_and_inequalities.quadratic_formula",
@@ -2208,7 +2403,8 @@
       "comprehended": false,
       "bookName": "Further Equations",
       "bookColor": "#eab308",
-      "bookOrder": 22
+      "bookOrder": 22,
+      "strand": "algebra"
     },
     {
       "id": "m.further_solving_of_equations_and_inequalities.factorising_quadratics_where_the",
@@ -2221,7 +2417,8 @@
       "comprehended": false,
       "bookName": "Further Equations",
       "bookColor": "#eab308",
-      "bookOrder": 22
+      "bookOrder": 22,
+      "strand": "algebra"
     },
     {
       "id": "m.further_solving_of_equations_and_inequalities.algebraic_fractions",
@@ -2234,7 +2431,8 @@
       "comprehended": false,
       "bookName": "Further Equations",
       "bookColor": "#eab308",
-      "bookOrder": 22
+      "bookOrder": 22,
+      "strand": "algebra"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.scale_drawings",
@@ -2247,7 +2445,8 @@
       "comprehended": false,
       "bookName": "Trigonometry",
       "bookColor": "#3b82f6",
-      "bookOrder": 23
+      "bookOrder": 23,
+      "strand": "trigonometry"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.bearings",
@@ -2260,7 +2459,8 @@
       "comprehended": false,
       "bookName": "Trigonometry",
       "bookColor": "#3b82f6",
-      "bookOrder": 23
+      "bookOrder": 23,
+      "strand": "trigonometry"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.understanding_the_tangent_cosine_and",
@@ -2273,7 +2473,8 @@
       "comprehended": false,
       "bookName": "Trigonometry",
       "bookColor": "#3b82f6",
-      "bookOrder": 23
+      "bookOrder": 23,
+      "strand": "calculus"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.exact_trigonometric_ratios",
@@ -2286,7 +2487,8 @@
       "comprehended": false,
       "bookName": "Trigonometry",
       "bookColor": "#3b82f6",
-      "bookOrder": 23
+      "bookOrder": 23,
+      "strand": "trigonometry"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.solving_problems_using_trigonometry",
@@ -2299,7 +2501,8 @@
       "comprehended": false,
       "bookName": "Trigonometry",
       "bookColor": "#3b82f6",
-      "bookOrder": 23
+      "bookOrder": 23,
+      "strand": "trigonometry"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.sines_cosines_and_tangents_of_angles",
@@ -2312,7 +2515,8 @@
       "comprehended": false,
       "bookName": "Trigonometry",
       "bookColor": "#3b82f6",
-      "bookOrder": 23
+      "bookOrder": 23,
+      "strand": "calculus"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.the_sine_and_cosine_rules",
@@ -2325,7 +2529,8 @@
       "comprehended": false,
       "bookName": "Trigonometry",
       "bookColor": "#3b82f6",
-      "bookOrder": 23
+      "bookOrder": 23,
+      "strand": "trigonometry"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.area_of_a_triangle",
@@ -2338,7 +2543,8 @@
       "comprehended": false,
       "bookName": "Trigonometry",
       "bookColor": "#3b82f6",
-      "bookOrder": 23
+      "bookOrder": 23,
+      "strand": "trigonometry"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.trigonometry_in_three_dimensions",
@@ -2351,7 +2557,8 @@
       "comprehended": false,
       "bookName": "Trigonometry",
       "bookColor": "#3b82f6",
-      "bookOrder": 23
+      "bookOrder": 23,
+      "strand": "trigonometry"
     },
     {
       "id": "m.scatter_diagrams_and_correlation.introduction_to_bivariate_data",
@@ -2364,7 +2571,8 @@
       "comprehended": false,
       "bookName": "Scatter & Correlation",
       "bookColor": "#a78bfa",
-      "bookOrder": 25
+      "bookOrder": 25,
+      "strand": "statistics"
     },
     {
       "id": "m.managing_money.earning_money",
@@ -2377,7 +2585,8 @@
       "comprehended": false,
       "bookName": "Managing Money",
       "bookColor": "#10b981",
-      "bookOrder": 26
+      "bookOrder": 26,
+      "strand": "ratio"
     },
     {
       "id": "m.managing_money.borrowing_and_investing_money",
@@ -2390,7 +2599,8 @@
       "comprehended": false,
       "bookName": "Managing Money",
       "bookColor": "#10b981",
-      "bookOrder": 26
+      "bookOrder": 26,
+      "strand": "ratio"
     },
     {
       "id": "m.managing_money.buying_and_selling",
@@ -2403,7 +2613,8 @@
       "comprehended": false,
       "bookName": "Managing Money",
       "bookColor": "#10b981",
-      "bookOrder": 26
+      "bookOrder": 26,
+      "strand": "ratio"
     },
     {
       "id": "m.curved_graphs.review_of_quadratic_graphs_the_parabola",
@@ -2416,7 +2627,8 @@
       "comprehended": false,
       "bookName": "Curved Graphs",
       "bookColor": "#6366f1",
-      "bookOrder": 27
+      "bookOrder": 27,
+      "strand": "algebra"
     },
     {
       "id": "m.curved_graphs.drawing_reciprocal_graphs_the_hyperbola",
@@ -2429,7 +2641,8 @@
       "comprehended": false,
       "bookName": "Curved Graphs",
       "bookColor": "#6366f1",
-      "bookOrder": 27
+      "bookOrder": 27,
+      "strand": "algebra"
     },
     {
       "id": "m.curved_graphs.using_graphs_to_solve_quadratic_equations",
@@ -2442,7 +2655,8 @@
       "comprehended": false,
       "bookName": "Curved Graphs",
       "bookColor": "#6366f1",
-      "bookOrder": 27
+      "bookOrder": 27,
+      "strand": "algebra"
     },
     {
       "id": "m.curved_graphs.simultaneous_linear_and_non_linear_equations",
@@ -2455,7 +2669,8 @@
       "comprehended": false,
       "bookName": "Curved Graphs",
       "bookColor": "#6366f1",
-      "bookOrder": 27
+      "bookOrder": 27,
+      "strand": "algebra"
     },
     {
       "id": "m.curved_graphs.other_non_linear_graphs",
@@ -2468,7 +2683,8 @@
       "comprehended": false,
       "bookName": "Curved Graphs",
       "bookColor": "#6366f1",
-      "bookOrder": 27
+      "bookOrder": 27,
+      "strand": "geometry"
     },
     {
       "id": "m.curved_graphs.finding_the_gradient_of_a_curve",
@@ -2481,7 +2697,8 @@
       "comprehended": false,
       "bookName": "Curved Graphs",
       "bookColor": "#6366f1",
-      "bookOrder": 27
+      "bookOrder": 27,
+      "strand": "algebra"
     },
     {
       "id": "m.curved_graphs.derivatives_of_functions",
@@ -2494,7 +2711,8 @@
       "comprehended": false,
       "bookName": "Curved Graphs",
       "bookColor": "#6366f1",
-      "bookOrder": 27
+      "bookOrder": 27,
+      "strand": "calculus"
     },
     {
       "id": "m.symmetry.symmetry_in_two_dimensions",
@@ -2507,7 +2725,8 @@
       "comprehended": false,
       "bookName": "Symmetry & Circles",
       "bookColor": "#22d3ee",
-      "bookOrder": 28
+      "bookOrder": 28,
+      "strand": "geometry"
     },
     {
       "id": "m.symmetry.symmetry_in_three_dimensions",
@@ -2520,7 +2739,8 @@
       "comprehended": false,
       "bookName": "Symmetry & Circles",
       "bookColor": "#22d3ee",
-      "bookOrder": 28
+      "bookOrder": 28,
+      "strand": "geometry"
     },
     {
       "id": "m.symmetry.symmetry_properties_of_circles",
@@ -2533,7 +2753,8 @@
       "comprehended": false,
       "bookName": "Symmetry & Circles",
       "bookColor": "#22d3ee",
-      "bookOrder": 28
+      "bookOrder": 28,
+      "strand": "geometry"
     },
     {
       "id": "m.symmetry.angle_relationships_in_circles",
@@ -2546,7 +2767,8 @@
       "comprehended": false,
       "bookName": "Symmetry & Circles",
       "bookColor": "#22d3ee",
-      "bookOrder": 28
+      "bookOrder": 28,
+      "strand": "geometry"
     },
     {
       "id": "m.histograms_and_cumulative_frequency_diagrams.histograms",
@@ -2559,7 +2781,8 @@
       "comprehended": false,
       "bookName": "Histograms & Cumulative Freq",
       "bookColor": "#f472b6",
-      "bookOrder": 29
+      "bookOrder": 29,
+      "strand": "statistics"
     },
     {
       "id": "m.histograms_and_cumulative_frequency_diagrams.cumulative_frequency",
@@ -2572,7 +2795,8 @@
       "comprehended": false,
       "bookName": "Histograms & Cumulative Freq",
       "bookColor": "#f472b6",
-      "bookOrder": 29
+      "bookOrder": 29,
+      "strand": "statistics"
     },
     {
       "id": "m.ratio_rate_and_proportion.working_with_ratio",
@@ -2585,7 +2809,8 @@
       "comprehended": false,
       "bookName": "Ratio & Proportion",
       "bookColor": "#f43f5e",
-      "bookOrder": 24
+      "bookOrder": 24,
+      "strand": "ratio"
     },
     {
       "id": "m.ratio_rate_and_proportion.ratio_and_scale",
@@ -2598,7 +2823,8 @@
       "comprehended": false,
       "bookName": "Ratio & Proportion",
       "bookColor": "#f43f5e",
-      "bookOrder": 24
+      "bookOrder": 24,
+      "strand": "ratio"
     },
     {
       "id": "m.ratio_rate_and_proportion.rates",
@@ -2611,7 +2837,8 @@
       "comprehended": false,
       "bookName": "Ratio & Proportion",
       "bookColor": "#f43f5e",
-      "bookOrder": 24
+      "bookOrder": 24,
+      "strand": "ratio"
     },
     {
       "id": "m.ratio_rate_and_proportion.kinematic_graphs",
@@ -2624,7 +2851,8 @@
       "comprehended": false,
       "bookName": "Ratio & Proportion",
       "bookColor": "#f43f5e",
-      "bookOrder": 24
+      "bookOrder": 24,
+      "strand": "ratio"
     },
     {
       "id": "m.ratio_rate_and_proportion.proportion",
@@ -2637,7 +2865,8 @@
       "comprehended": false,
       "bookName": "Ratio & Proportion",
       "bookColor": "#f43f5e",
-      "bookOrder": 24
+      "bookOrder": 24,
+      "strand": "ratio"
     },
     {
       "id": "m.ratio_rate_and_proportion.direct_and_inverse_proportion_in_algebraic_terms",
@@ -2650,7 +2879,8 @@
       "comprehended": false,
       "bookName": "Ratio & Proportion",
       "bookColor": "#f43f5e",
-      "bookOrder": 24
+      "bookOrder": 24,
+      "strand": "ratio"
     },
     {
       "id": "m.more_equations_formulae_and_functions.setting_up_equations_to_solve_problems",
@@ -2663,7 +2893,8 @@
       "comprehended": false,
       "bookName": "More Equations & Functions",
       "bookColor": "#facc15",
-      "bookOrder": 30
+      "bookOrder": 30,
+      "strand": "sets_logic"
     },
     {
       "id": "m.more_equations_formulae_and_functions.using_and_rearranging_formulae",
@@ -2676,7 +2907,8 @@
       "comprehended": false,
       "bookName": "More Equations & Functions",
       "bookColor": "#facc15",
-      "bookOrder": 30
+      "bookOrder": 30,
+      "strand": "algebra"
     },
     {
       "id": "m.more_equations_formulae_and_functions.functions_and_function_notation",
@@ -2689,7 +2921,8 @@
       "comprehended": false,
       "bookName": "More Equations & Functions",
       "bookColor": "#facc15",
-      "bookOrder": 30
+      "bookOrder": 30,
+      "strand": "algebra"
     },
     {
       "id": "m.transformations_and_vectors.simple_plane_transformations",
@@ -2702,7 +2935,8 @@
       "comprehended": false,
       "bookName": "Transformations & Vectors",
       "bookColor": "#a855f7",
-      "bookOrder": 31
+      "bookOrder": 31,
+      "strand": "sets_logic"
     },
     {
       "id": "m.transformations_and_vectors.further_transformations",
@@ -2715,7 +2949,8 @@
       "comprehended": false,
       "bookName": "Transformations & Vectors",
       "bookColor": "#a855f7",
-      "bookOrder": 31
+      "bookOrder": 31,
+      "strand": "sets_logic"
     },
     {
       "id": "m.transformations_and_vectors.vectors",
@@ -2728,7 +2963,8 @@
       "comprehended": false,
       "bookName": "Transformations & Vectors",
       "bookColor": "#a855f7",
-      "bookOrder": 31
+      "bookOrder": 31,
+      "strand": "sets_logic"
     },
     {
       "id": "m.probability_using_tree_diagrams_and_venn_diagrams.using_tree_diagrams_to_show",
@@ -2741,7 +2977,8 @@
       "comprehended": false,
       "bookName": "Advanced Probability",
       "bookColor": "#c084fc",
-      "bookOrder": 32
+      "bookOrder": 32,
+      "strand": "statistics"
     },
     {
       "id": "m.probability_using_tree_diagrams_and_venn_diagrams.calculating_probability_from",
@@ -2754,7 +2991,8 @@
       "comprehended": false,
       "bookName": "Advanced Probability",
       "bookColor": "#c084fc",
-      "bookOrder": 32
+      "bookOrder": 32,
+      "strand": "statistics"
     },
     {
       "id": "m.probability_using_tree_diagrams_and_venn_diagrams.calculating_probability_from_2",
@@ -2767,7 +3005,8 @@
       "comprehended": false,
       "bookName": "Advanced Probability",
       "bookColor": "#c084fc",
-      "bookOrder": 32
+      "bookOrder": 32,
+      "strand": "statistics"
     },
     {
       "id": "m.probability_using_tree_diagrams_and_venn_diagrams.conditional_probability",
@@ -2780,7 +3019,8 @@
       "comprehended": false,
       "bookName": "Advanced Probability",
       "bookColor": "#c084fc",
-      "bookOrder": 32
+      "bookOrder": 32,
+      "strand": "statistics"
     },
     {
       "id": "am.functions.mappings",
@@ -2793,7 +3033,8 @@
       "comprehended": false,
       "bookName": "Functions (AM)",
       "bookColor": "#ef4444",
-      "bookOrder": 33
+      "bookOrder": 33,
+      "strand": "sets_logic"
     },
     {
       "id": "am.functions.definition_of_a_function",
@@ -2806,7 +3047,8 @@
       "comprehended": false,
       "bookName": "Functions (AM)",
       "bookColor": "#ef4444",
-      "bookOrder": 33
+      "bookOrder": 33,
+      "strand": "sets_logic"
     },
     {
       "id": "am.functions.composite_functions",
@@ -2819,7 +3061,8 @@
       "comprehended": false,
       "bookName": "Functions (AM)",
       "bookColor": "#ef4444",
-      "bookOrder": 33
+      "bookOrder": 33,
+      "strand": "sets_logic"
     },
     {
       "id": "am.functions.modulus_functions",
@@ -2832,7 +3075,8 @@
       "comprehended": false,
       "bookName": "Functions (AM)",
       "bookColor": "#ef4444",
-      "bookOrder": 33
+      "bookOrder": 33,
+      "strand": "sets_logic"
     },
     {
       "id": "am.functions.graphs_of_y_fx_where_fx_is_linear",
@@ -2845,7 +3089,8 @@
       "comprehended": false,
       "bookName": "Functions (AM)",
       "bookColor": "#ef4444",
-      "bookOrder": 33
+      "bookOrder": 33,
+      "strand": "sets_logic"
     },
     {
       "id": "am.functions.inverse_functions",
@@ -2858,7 +3103,8 @@
       "comprehended": false,
       "bookName": "Functions (AM)",
       "bookColor": "#ef4444",
-      "bookOrder": 33
+      "bookOrder": 33,
+      "strand": "sets_logic"
     },
     {
       "id": "am.functions.the_graph_of_a_function_and_its_inverse",
@@ -2871,7 +3117,8 @@
       "comprehended": false,
       "bookName": "Functions (AM)",
       "bookColor": "#ef4444",
-      "bookOrder": 33
+      "bookOrder": 33,
+      "strand": "sets_logic"
     },
     {
       "id": "am.simultaneous_equations_and_quadratics.simultaneous_equations_one_linear_and_o",
@@ -2884,7 +3131,8 @@
       "comprehended": false,
       "bookName": "Quadratics (AM)",
       "bookColor": "#f97316",
-      "bookOrder": 34
+      "bookOrder": 34,
+      "strand": "algebra"
     },
     {
       "id": "am.simultaneous_equations_and_quadratics.maximum_and_minimum_values_of_a_quadrat",
@@ -2897,7 +3145,8 @@
       "comprehended": false,
       "bookName": "Quadratics (AM)",
       "bookColor": "#f97316",
-      "bookOrder": 34
+      "bookOrder": 34,
+      "strand": "calculus"
     },
     {
       "id": "am.simultaneous_equations_and_quadratics.graphs_of_y_fx_where_fx_is_quadratic",
@@ -2910,7 +3159,8 @@
       "comprehended": false,
       "bookName": "Quadratics (AM)",
       "bookColor": "#f97316",
-      "bookOrder": 34
+      "bookOrder": 34,
+      "strand": "algebra"
     },
     {
       "id": "am.simultaneous_equations_and_quadratics.quadratic_inequalities",
@@ -2923,7 +3173,8 @@
       "comprehended": false,
       "bookName": "Quadratics (AM)",
       "bookColor": "#f97316",
-      "bookOrder": 34
+      "bookOrder": 34,
+      "strand": "algebra"
     },
     {
       "id": "am.simultaneous_equations_and_quadratics.roots_of_quadratic_equations",
@@ -2936,7 +3187,8 @@
       "comprehended": false,
       "bookName": "Quadratics (AM)",
       "bookColor": "#f97316",
-      "bookOrder": 34
+      "bookOrder": 34,
+      "strand": "algebra"
     },
     {
       "id": "am.simultaneous_equations_and_quadratics.intersection_of_a_line_and_a_curve",
@@ -2949,7 +3201,8 @@
       "comprehended": false,
       "bookName": "Quadratics (AM)",
       "bookColor": "#f97316",
-      "bookOrder": 34
+      "bookOrder": 34,
+      "strand": "geometry"
     },
     {
       "id": "am.factors_and_polynomials.adding_subtracting_and_multiplying_polynomials",
@@ -2962,7 +3215,8 @@
       "comprehended": false,
       "bookName": "Polynomials (AM)",
       "bookColor": "#eab308",
-      "bookOrder": 35
+      "bookOrder": 35,
+      "strand": "algebra"
     },
     {
       "id": "am.factors_and_polynomials.division_of_polynomials",
@@ -2975,7 +3229,8 @@
       "comprehended": false,
       "bookName": "Polynomials (AM)",
       "bookColor": "#eab308",
-      "bookOrder": 35
+      "bookOrder": 35,
+      "strand": "algebra"
     },
     {
       "id": "am.factors_and_polynomials.the_factor_theorem",
@@ -2988,7 +3243,8 @@
       "comprehended": false,
       "bookName": "Polynomials (AM)",
       "bookColor": "#eab308",
-      "bookOrder": 35
+      "bookOrder": 35,
+      "strand": "algebra"
     },
     {
       "id": "am.factors_and_polynomials.cubic_expressions_and_equations",
@@ -3001,7 +3257,8 @@
       "comprehended": false,
       "bookName": "Polynomials (AM)",
       "bookColor": "#eab308",
-      "bookOrder": 35
+      "bookOrder": 35,
+      "strand": "algebra"
     },
     {
       "id": "am.factors_and_polynomials.the_remainder_theorem",
@@ -3014,7 +3271,8 @@
       "comprehended": false,
       "bookName": "Polynomials (AM)",
       "bookColor": "#eab308",
-      "bookOrder": 35
+      "bookOrder": 35,
+      "strand": "algebra"
     },
     {
       "id": "am.equations_inequalities_and_graphs.solving_equations_of_the_type_ax_b_cx_d",
@@ -3027,7 +3285,8 @@
       "comprehended": false,
       "bookName": "Equations & Graphs (AM)",
       "bookColor": "#84cc16",
-      "bookOrder": 36
+      "bookOrder": 36,
+      "strand": "algebra"
     },
     {
       "id": "am.equations_inequalities_and_graphs.solving_modulus_inequalities",
@@ -3040,7 +3299,8 @@
       "comprehended": false,
       "bookName": "Equations & Graphs (AM)",
       "bookColor": "#84cc16",
-      "bookOrder": 36
+      "bookOrder": 36,
+      "strand": "algebra"
     },
     {
       "id": "am.equations_inequalities_and_graphs.sketching_graphs_of_cubic_polynomials_and_t",
@@ -3053,7 +3313,8 @@
       "comprehended": false,
       "bookName": "Equations & Graphs (AM)",
       "bookColor": "#84cc16",
-      "bookOrder": 36
+      "bookOrder": 36,
+      "strand": "algebra"
     },
     {
       "id": "am.equations_inequalities_and_graphs.solving_cubic_inequalities_graphically",
@@ -3066,7 +3327,8 @@
       "comprehended": false,
       "bookName": "Equations & Graphs (AM)",
       "bookColor": "#84cc16",
-      "bookOrder": 36
+      "bookOrder": 36,
+      "strand": "algebra"
     },
     {
       "id": "am.equations_inequalities_and_graphs.solving_more_complex_quadratic_equations",
@@ -3079,7 +3341,8 @@
       "comprehended": false,
       "bookName": "Equations & Graphs (AM)",
       "bookColor": "#84cc16",
-      "bookOrder": 36
+      "bookOrder": 36,
+      "strand": "algebra"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.logarithms_to_base_10",
@@ -3092,7 +3355,8 @@
       "comprehended": false,
       "bookName": "Logarithms & Exp (AM)",
       "bookColor": "#22c55e",
-      "bookOrder": 37
+      "bookOrder": 37,
+      "strand": "algebra"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.logarithms_to_base_a",
@@ -3105,7 +3369,8 @@
       "comprehended": false,
       "bookName": "Logarithms & Exp (AM)",
       "bookColor": "#22c55e",
-      "bookOrder": 37
+      "bookOrder": 37,
+      "strand": "algebra"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.the_laws_of_logarithms",
@@ -3118,7 +3383,8 @@
       "comprehended": false,
       "bookName": "Logarithms & Exp (AM)",
       "bookColor": "#22c55e",
-      "bookOrder": 37
+      "bookOrder": 37,
+      "strand": "algebra"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.solving_logarithmic_equations",
@@ -3131,7 +3397,8 @@
       "comprehended": false,
       "bookName": "Logarithms & Exp (AM)",
       "bookColor": "#22c55e",
-      "bookOrder": 37
+      "bookOrder": 37,
+      "strand": "algebra"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.solving_exponential_equations",
@@ -3144,7 +3411,8 @@
       "comprehended": false,
       "bookName": "Logarithms & Exp (AM)",
       "bookColor": "#22c55e",
-      "bookOrder": 37
+      "bookOrder": 37,
+      "strand": "algebra"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.change_of_base_of_logarithms",
@@ -3157,7 +3425,8 @@
       "comprehended": false,
       "bookName": "Logarithms & Exp (AM)",
       "bookColor": "#22c55e",
-      "bookOrder": 37
+      "bookOrder": 37,
+      "strand": "algebra"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.natural_logarithms",
@@ -3170,7 +3439,8 @@
       "comprehended": false,
       "bookName": "Logarithms & Exp (AM)",
       "bookColor": "#22c55e",
-      "bookOrder": 37
+      "bookOrder": 37,
+      "strand": "algebra"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.practical_applications_of_exponential_e",
@@ -3183,7 +3453,8 @@
       "comprehended": false,
       "bookName": "Logarithms & Exp (AM)",
       "bookColor": "#22c55e",
-      "bookOrder": 37
+      "bookOrder": 37,
+      "strand": "algebra"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.the_graphs_of_simple_logarithmic_and_ex",
@@ -3196,7 +3467,8 @@
       "comprehended": false,
       "bookName": "Logarithms & Exp (AM)",
       "bookColor": "#22c55e",
-      "bookOrder": 37
+      "bookOrder": 37,
+      "strand": "algebra"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.the_graphs_of_y_k_e_x_a_and_y_k_ln_ax_b",
@@ -3209,7 +3481,8 @@
       "comprehended": false,
       "bookName": "Logarithms & Exp (AM)",
       "bookColor": "#22c55e",
-      "bookOrder": 37
+      "bookOrder": 37,
+      "strand": "algebra"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.the_inverse_of_logarithmic_and_exponent",
@@ -3222,7 +3495,8 @@
       "comprehended": false,
       "bookName": "Logarithms & Exp (AM)",
       "bookColor": "#22c55e",
-      "bookOrder": 37
+      "bookOrder": 37,
+      "strand": "algebra"
     },
     {
       "id": "am.straight_line_graphs.problems_involving_the_length_of_a_line_segment_and_the",
@@ -3235,7 +3509,8 @@
       "comprehended": false,
       "bookName": "Straight Lines (AM)",
       "bookColor": "#14b8a6",
-      "bookOrder": 38
+      "bookOrder": 38,
+      "strand": "geometry"
     },
     {
       "id": "am.straight_line_graphs.parallel_and_perpendicular_lines",
@@ -3248,7 +3523,8 @@
       "comprehended": false,
       "bookName": "Straight Lines (AM)",
       "bookColor": "#14b8a6",
-      "bookOrder": 38
+      "bookOrder": 38,
+      "strand": "geometry"
     },
     {
       "id": "am.straight_line_graphs.equations_of_straight_lines",
@@ -3261,7 +3537,8 @@
       "comprehended": false,
       "bookName": "Straight Lines (AM)",
       "bookColor": "#14b8a6",
-      "bookOrder": 38
+      "bookOrder": 38,
+      "strand": "geometry"
     },
     {
       "id": "am.straight_line_graphs.areas_of_rectilinear_figures",
@@ -3274,7 +3551,8 @@
       "comprehended": false,
       "bookName": "Straight Lines (AM)",
       "bookColor": "#14b8a6",
-      "bookOrder": 38
+      "bookOrder": 38,
+      "strand": "geometry"
     },
     {
       "id": "am.straight_line_graphs.converting_from_a_non_linear_equation_to_linear_form",
@@ -3287,7 +3565,8 @@
       "comprehended": false,
       "bookName": "Straight Lines (AM)",
       "bookColor": "#14b8a6",
-      "bookOrder": 38
+      "bookOrder": 38,
+      "strand": "geometry"
     },
     {
       "id": "am.straight_line_graphs.converting_from_linear_form_to_a_non_linear_equation",
@@ -3300,7 +3579,8 @@
       "comprehended": false,
       "bookName": "Straight Lines (AM)",
       "bookColor": "#14b8a6",
-      "bookOrder": 38
+      "bookOrder": 38,
+      "strand": "geometry"
     },
     {
       "id": "am.straight_line_graphs.finding_relationships_from_data",
@@ -3313,7 +3593,8 @@
       "comprehended": false,
       "bookName": "Straight Lines (AM)",
       "bookColor": "#14b8a6",
-      "bookOrder": 38
+      "bookOrder": 38,
+      "strand": "statistics"
     },
     {
       "id": "am.coordinate_geometry_of_the_circle.the_equation_of_a_circle",
@@ -3326,7 +3607,8 @@
       "comprehended": false,
       "bookName": "Circle Coord Geom (AM)",
       "bookColor": "#06b6d4",
-      "bookOrder": 39
+      "bookOrder": 39,
+      "strand": "geometry"
     },
     {
       "id": "am.coordinate_geometry_of_the_circle.problems_involving_the_intersection_of_line",
@@ -3339,7 +3621,8 @@
       "comprehended": false,
       "bookName": "Circle Coord Geom (AM)",
       "bookColor": "#06b6d4",
-      "bookOrder": 39
+      "bookOrder": 39,
+      "strand": "geometry"
     },
     {
       "id": "am.circular_measure.circular_measure",
@@ -3352,7 +3635,8 @@
       "comprehended": false,
       "bookName": "Circular Measure (AM)",
       "bookColor": "#3b82f6",
-      "bookOrder": 40
+      "bookOrder": 40,
+      "strand": "trigonometry"
     },
     {
       "id": "am.circular_measure.length_of_an_arc",
@@ -3365,7 +3649,8 @@
       "comprehended": false,
       "bookName": "Circular Measure (AM)",
       "bookColor": "#3b82f6",
-      "bookOrder": 40
+      "bookOrder": 40,
+      "strand": "trigonometry"
     },
     {
       "id": "am.circular_measure.area_of_a_sector",
@@ -3378,7 +3663,8 @@
       "comprehended": false,
       "bookName": "Circular Measure (AM)",
       "bookColor": "#3b82f6",
-      "bookOrder": 40
+      "bookOrder": 40,
+      "strand": "trigonometry"
     },
     {
       "id": "am.trigonometry.angles_between_0_and_90",
@@ -3391,7 +3677,8 @@
       "comprehended": false,
       "bookName": "Trigonometry (AM)",
       "bookColor": "#6366f1",
-      "bookOrder": 41
+      "bookOrder": 41,
+      "strand": "trigonometry"
     },
     {
       "id": "am.trigonometry.the_general_definition_of_an_angle",
@@ -3404,7 +3691,8 @@
       "comprehended": false,
       "bookName": "Trigonometry (AM)",
       "bookColor": "#6366f1",
-      "bookOrder": 41
+      "bookOrder": 41,
+      "strand": "trigonometry"
     },
     {
       "id": "am.trigonometry.trigonometric_ratios_of_general_angles",
@@ -3417,7 +3705,8 @@
       "comprehended": false,
       "bookName": "Trigonometry (AM)",
       "bookColor": "#6366f1",
-      "bookOrder": 41
+      "bookOrder": 41,
+      "strand": "trigonometry"
     },
     {
       "id": "am.trigonometry.graphs_of_trigonometric_functions",
@@ -3430,7 +3719,8 @@
       "comprehended": false,
       "bookName": "Trigonometry (AM)",
       "bookColor": "#6366f1",
-      "bookOrder": 41
+      "bookOrder": 41,
+      "strand": "trigonometry"
     },
     {
       "id": "am.trigonometry.graphs_of_y_fx_where_fx_is_a_trigonometric_function",
@@ -3443,7 +3733,8 @@
       "comprehended": false,
       "bookName": "Trigonometry (AM)",
       "bookColor": "#6366f1",
-      "bookOrder": 41
+      "bookOrder": 41,
+      "strand": "trigonometry"
     },
     {
       "id": "am.trigonometry.trigonometric_equations",
@@ -3456,7 +3747,8 @@
       "comprehended": false,
       "bookName": "Trigonometry (AM)",
       "bookColor": "#6366f1",
-      "bookOrder": 41
+      "bookOrder": 41,
+      "strand": "trigonometry"
     },
     {
       "id": "am.trigonometry.trigonometric_identities",
@@ -3469,7 +3761,8 @@
       "comprehended": false,
       "bookName": "Trigonometry (AM)",
       "bookColor": "#6366f1",
-      "bookOrder": 41
+      "bookOrder": 41,
+      "strand": "trigonometry"
     },
     {
       "id": "am.trigonometry.further_trigonometric_equations",
@@ -3482,7 +3775,8 @@
       "comprehended": false,
       "bookName": "Trigonometry (AM)",
       "bookColor": "#6366f1",
-      "bookOrder": 41
+      "bookOrder": 41,
+      "strand": "trigonometry"
     },
     {
       "id": "am.trigonometry.further_trigonometric_identities",
@@ -3495,7 +3789,8 @@
       "comprehended": false,
       "bookName": "Trigonometry (AM)",
       "bookColor": "#6366f1",
-      "bookOrder": 41
+      "bookOrder": 41,
+      "strand": "trigonometry"
     },
     {
       "id": "am.permutations_and_combinations.factorial_notation",
@@ -3508,7 +3803,8 @@
       "comprehended": false,
       "bookName": "Permutations & Comb (AM)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 42
+      "bookOrder": 42,
+      "strand": "sets_logic"
     },
     {
       "id": "am.permutations_and_combinations.arrangements",
@@ -3521,7 +3817,8 @@
       "comprehended": false,
       "bookName": "Permutations & Comb (AM)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 42
+      "bookOrder": 42,
+      "strand": "sets_logic"
     },
     {
       "id": "am.permutations_and_combinations.permutations",
@@ -3534,7 +3831,8 @@
       "comprehended": false,
       "bookName": "Permutations & Comb (AM)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 42
+      "bookOrder": 42,
+      "strand": "sets_logic"
     },
     {
       "id": "am.permutations_and_combinations.combinations",
@@ -3547,7 +3845,8 @@
       "comprehended": false,
       "bookName": "Permutations & Comb (AM)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 42
+      "bookOrder": 42,
+      "strand": "sets_logic"
     },
     {
       "id": "am.series.pascal_s_triangle",
@@ -3560,7 +3859,8 @@
       "comprehended": false,
       "bookName": "Series (AM)",
       "bookColor": "#a855f7",
-      "bookOrder": 43
+      "bookOrder": 43,
+      "strand": "sets_logic"
     },
     {
       "id": "am.series.the_binomial_theorem",
@@ -3573,7 +3873,8 @@
       "comprehended": false,
       "bookName": "Series (AM)",
       "bookColor": "#a855f7",
-      "bookOrder": 43
+      "bookOrder": 43,
+      "strand": "sets_logic"
     },
     {
       "id": "am.series.arithmetic_progressions",
@@ -3586,7 +3887,8 @@
       "comprehended": false,
       "bookName": "Series (AM)",
       "bookColor": "#a855f7",
-      "bookOrder": 43
+      "bookOrder": 43,
+      "strand": "sets_logic"
     },
     {
       "id": "am.series.geometric_progressions",
@@ -3599,7 +3901,8 @@
       "comprehended": false,
       "bookName": "Series (AM)",
       "bookColor": "#a855f7",
-      "bookOrder": 43
+      "bookOrder": 43,
+      "strand": "sets_logic"
     },
     {
       "id": "am.series.infinite_geometric_series",
@@ -3612,7 +3915,8 @@
       "comprehended": false,
       "bookName": "Series (AM)",
       "bookColor": "#a855f7",
-      "bookOrder": 43
+      "bookOrder": 43,
+      "strand": "sets_logic"
     },
     {
       "id": "am.series.further_arithmetic_and_geometric_series",
@@ -3625,7 +3929,8 @@
       "comprehended": false,
       "bookName": "Series (AM)",
       "bookColor": "#a855f7",
-      "bookOrder": 43
+      "bookOrder": 43,
+      "strand": "sets_logic"
     },
     {
       "id": "am.calculus_differentiation_1.the_gradient_function",
@@ -3638,7 +3943,8 @@
       "comprehended": false,
       "bookName": "Differentiation 1 (AM)",
       "bookColor": "#ec4899",
-      "bookOrder": 44
+      "bookOrder": 44,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_differentiation_1.the_chain_rule",
@@ -3651,7 +3957,8 @@
       "comprehended": false,
       "bookName": "Differentiation 1 (AM)",
       "bookColor": "#ec4899",
-      "bookOrder": 44
+      "bookOrder": 44,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_differentiation_1.the_product_rule",
@@ -3664,7 +3971,8 @@
       "comprehended": false,
       "bookName": "Differentiation 1 (AM)",
       "bookColor": "#ec4899",
-      "bookOrder": 44
+      "bookOrder": 44,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_differentiation_1.the_quotient_rule",
@@ -3677,7 +3985,8 @@
       "comprehended": false,
       "bookName": "Differentiation 1 (AM)",
       "bookColor": "#ec4899",
-      "bookOrder": 44
+      "bookOrder": 44,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_differentiation_1.tangents_and_normals",
@@ -3690,7 +3999,8 @@
       "comprehended": false,
       "bookName": "Differentiation 1 (AM)",
       "bookColor": "#ec4899",
-      "bookOrder": 44
+      "bookOrder": 44,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_differentiation_1.small_increments_and_approximations",
@@ -3703,7 +4013,8 @@
       "comprehended": false,
       "bookName": "Differentiation 1 (AM)",
       "bookColor": "#ec4899",
-      "bookOrder": 44
+      "bookOrder": 44,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_differentiation_1.rates_of_change",
@@ -3716,7 +4027,8 @@
       "comprehended": false,
       "bookName": "Differentiation 1 (AM)",
       "bookColor": "#ec4899",
-      "bookOrder": 44
+      "bookOrder": 44,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_differentiation_1.second_derivatives",
@@ -3729,7 +4041,8 @@
       "comprehended": false,
       "bookName": "Differentiation 1 (AM)",
       "bookColor": "#ec4899",
-      "bookOrder": 44
+      "bookOrder": 44,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_differentiation_1.stationary_points",
@@ -3742,7 +4055,8 @@
       "comprehended": false,
       "bookName": "Differentiation 1 (AM)",
       "bookColor": "#ec4899",
-      "bookOrder": 44
+      "bookOrder": 44,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_differentiation_1.practical_maximum_and_minimum_problems",
@@ -3755,7 +4069,8 @@
       "comprehended": false,
       "bookName": "Differentiation 1 (AM)",
       "bookColor": "#ec4899",
-      "bookOrder": 44
+      "bookOrder": 44,
+      "strand": "calculus"
     },
     {
       "id": "am.vectors.further_vector_notation",
@@ -3768,7 +4083,8 @@
       "comprehended": false,
       "bookName": "Vectors (AM)",
       "bookColor": "#f43f5e",
-      "bookOrder": 45
+      "bookOrder": 45,
+      "strand": "sets_logic"
     },
     {
       "id": "am.vectors.position_vectors",
@@ -3781,7 +4097,8 @@
       "comprehended": false,
       "bookName": "Vectors (AM)",
       "bookColor": "#f43f5e",
-      "bookOrder": 45
+      "bookOrder": 45,
+      "strand": "sets_logic"
     },
     {
       "id": "am.vectors.vector_geometry",
@@ -3794,7 +4111,8 @@
       "comprehended": false,
       "bookName": "Vectors (AM)",
       "bookColor": "#f43f5e",
-      "bookOrder": 45
+      "bookOrder": 45,
+      "strand": "sets_logic"
     },
     {
       "id": "am.vectors.constant_velocity_problems",
@@ -3807,7 +4125,8 @@
       "comprehended": false,
       "bookName": "Vectors (AM)",
       "bookColor": "#f43f5e",
-      "bookOrder": 45
+      "bookOrder": 45,
+      "strand": "sets_logic"
     },
     {
       "id": "am.calculus_differentiation_2.derivatives_of_exponential_functions",
@@ -3820,7 +4139,8 @@
       "comprehended": false,
       "bookName": "Differentiation 2 (AM)",
       "bookColor": "#d946ef",
-      "bookOrder": 46
+      "bookOrder": 46,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_differentiation_2.derivatives_of_logarithmic_functions",
@@ -3833,7 +4153,8 @@
       "comprehended": false,
       "bookName": "Differentiation 2 (AM)",
       "bookColor": "#d946ef",
-      "bookOrder": 46
+      "bookOrder": 46,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_differentiation_2.derivatives_of_trigonometric_functions",
@@ -3846,7 +4167,8 @@
       "comprehended": false,
       "bookName": "Differentiation 2 (AM)",
       "bookColor": "#d946ef",
-      "bookOrder": 46
+      "bookOrder": 46,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_differentiation_2.further_applications_of_differentiation",
@@ -3859,7 +4181,8 @@
       "comprehended": false,
       "bookName": "Differentiation 2 (AM)",
       "bookColor": "#d946ef",
-      "bookOrder": 46
+      "bookOrder": 46,
+      "strand": "number"
     },
     {
       "id": "am.calculus_integration.differentiation_reversed",
@@ -3872,7 +4195,8 @@
       "comprehended": false,
       "bookName": "Integration (AM)",
       "bookColor": "#f59e0b",
-      "bookOrder": 47
+      "bookOrder": 47,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_integration.indefinite_integrals",
@@ -3885,7 +4209,8 @@
       "comprehended": false,
       "bookName": "Integration (AM)",
       "bookColor": "#f59e0b",
-      "bookOrder": 47
+      "bookOrder": 47,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_integration.integration_of_functions_of_the_form_ax_b_n",
@@ -3898,7 +4223,8 @@
       "comprehended": false,
       "bookName": "Integration (AM)",
       "bookColor": "#f59e0b",
-      "bookOrder": 47
+      "bookOrder": 47,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_integration.integration_of_exponential_functions",
@@ -3911,7 +4237,8 @@
       "comprehended": false,
       "bookName": "Integration (AM)",
       "bookColor": "#f59e0b",
-      "bookOrder": 47
+      "bookOrder": 47,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_integration.integration_of_sine_cosine_and_sec_2_functions",
@@ -3924,7 +4251,8 @@
       "comprehended": false,
       "bookName": "Integration (AM)",
       "bookColor": "#f59e0b",
-      "bookOrder": 47
+      "bookOrder": 47,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_integration.integration_of_functions_of_the_form_1_x_and_1_ax_b",
@@ -3937,7 +4265,8 @@
       "comprehended": false,
       "bookName": "Integration (AM)",
       "bookColor": "#f59e0b",
-      "bookOrder": 47
+      "bookOrder": 47,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_integration.further_indefinite_integration",
@@ -3950,7 +4279,8 @@
       "comprehended": false,
       "bookName": "Integration (AM)",
       "bookColor": "#f59e0b",
-      "bookOrder": 47
+      "bookOrder": 47,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_integration.definite_integration",
@@ -3963,7 +4293,8 @@
       "comprehended": false,
       "bookName": "Integration (AM)",
       "bookColor": "#f59e0b",
-      "bookOrder": 47
+      "bookOrder": 47,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_integration.further_definite_integration",
@@ -3976,7 +4307,8 @@
       "comprehended": false,
       "bookName": "Integration (AM)",
       "bookColor": "#f59e0b",
-      "bookOrder": 47
+      "bookOrder": 47,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_integration.area_under_a_curve",
@@ -3989,7 +4321,8 @@
       "comprehended": false,
       "bookName": "Integration (AM)",
       "bookColor": "#f59e0b",
-      "bookOrder": 47
+      "bookOrder": 47,
+      "strand": "calculus"
     },
     {
       "id": "am.calculus_integration.area_of_regions_bounded_by_a_line_and_a_curve",
@@ -4002,7 +4335,8 @@
       "comprehended": false,
       "bookName": "Integration (AM)",
       "bookColor": "#f59e0b",
-      "bookOrder": 47
+      "bookOrder": 47,
+      "strand": "calculus"
     },
     {
       "id": "am.kinematics.applications_of_differentiation_in_kinematics",
@@ -4015,7 +4349,8 @@
       "comprehended": false,
       "bookName": "Kinematics (AM)",
       "bookColor": "#d97706",
-      "bookOrder": 48
+      "bookOrder": 48,
+      "strand": "calculus"
     },
     {
       "id": "am.kinematics.applications_of_integration_in_kinematics",
@@ -4028,7 +4363,8 @@
       "comprehended": false,
       "bookName": "Kinematics (AM)",
       "bookColor": "#d97706",
-      "bookOrder": 48
+      "bookOrder": 48,
+      "strand": "calculus"
     }
   ],
   "edges": [

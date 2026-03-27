@@ -30,6 +30,28 @@
       "order": 3
     }
   ],
+  "strands": [
+    {
+      "id": "population",
+      "name": "Population & Migration",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "culture",
+      "name": "Culture & Identity",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "political",
+      "name": "Political Geography",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "economic",
+      "name": "Agriculture, Urban & Development",
+      "color": "#F39C12"
+    }
+  ],
   "nodes": [
     {
       "id": "ap.hg.geographic_thinking",
@@ -47,7 +69,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "d5fc5a4778fadb86",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "population"
     },
     {
       "id": "ap.hg.population_distribution",
@@ -65,7 +88,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "411bf3bc879264a4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "population"
     },
     {
       "id": "ap.hg.population_change",
@@ -83,7 +107,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "29c3392d5a2bf77e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "population"
     },
     {
       "id": "ap.hg.migration",
@@ -101,7 +126,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "66345571babbc525",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "population"
     },
     {
       "id": "ap.hg.cultural_landscapes",
@@ -119,7 +145,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "5cfbeacd4290d153",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "ap.hg.language_religion",
@@ -137,7 +164,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "f42d911ca138fbbf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "ap.hg.ethnicity_identity",
@@ -155,7 +183,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "d45ccb791e4a8208",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "ap.hg.political_geography",
@@ -173,7 +202,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "45f75bfd545020f0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "political"
     },
     {
       "id": "ap.hg.agriculture_origins",
@@ -191,7 +221,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "4c08ea8896f4ebcd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "ap.hg.food_production",
@@ -209,7 +240,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "fb77c590efcf7f23",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "ap.hg.urbanization",
@@ -227,7 +259,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "2a9dabf45499eef6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "economic"
     },
     {
       "id": "ap.hg.urban_design",
@@ -245,7 +278,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "36cd504b72bf3c7a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "economic"
     },
     {
       "id": "ap.hg.industrialization",
@@ -263,7 +297,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "af5c90ac34b09421",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "economic"
     },
     {
       "id": "ap.hg.globalization",
@@ -281,7 +316,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "5b4f951ebeed9319",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "economic"
     }
   ],
   "edges": [

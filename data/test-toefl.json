@@ -36,6 +36,28 @@
       "order": 4
     }
   ],
+  "strands": [
+    {
+      "id": "reading",
+      "name": "Reading",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "listening",
+      "name": "Listening",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "speaking",
+      "name": "Speaking",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "writing",
+      "name": "Writing",
+      "color": "#F39C12"
+    }
+  ],
   "nodes": [
     {
       "id": "toefl.read.vocabulary_in_context",
@@ -53,7 +75,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "40c887d6a0b69d58",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "toefl.read.factual_information",
@@ -71,7 +94,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "caa532e400077ac3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "toefl.read.inference",
@@ -89,7 +113,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "6f3a400fe905ee17",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "toefl.read.rhetorical_purpose",
@@ -107,7 +132,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "ff59afa22a6d7b61",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "toefl.read.insert_text",
@@ -125,7 +151,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "5548210bb2d048dd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "toefl.read.summary",
@@ -143,7 +170,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "cf2987ed15eedcc4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "toefl.listen.main_idea",
@@ -161,7 +189,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 2,
       "external_id": "e937523795086944",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening"
     },
     {
       "id": "toefl.listen.detail",
@@ -179,7 +208,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 2,
       "external_id": "5f5ccbb161975b2a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening"
     },
     {
       "id": "toefl.listen.function",
@@ -197,7 +227,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 2,
       "external_id": "863775c4694fe536",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening"
     },
     {
       "id": "toefl.listen.attitude",
@@ -215,7 +246,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 2,
       "external_id": "98cd01678d9c4760",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening"
     },
     {
       "id": "toefl.speak.independent_tasks",
@@ -233,7 +265,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "05735e72e0938b71",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "speaking"
     },
     {
       "id": "toefl.speak.integrated_tasks",
@@ -251,7 +284,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "73174d070ba846f6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "speaking"
     },
     {
       "id": "toefl.listen.lectures",
@@ -269,7 +303,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 2,
       "external_id": "939e7f768e0b2903",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening"
     },
     {
       "id": "toefl.listen.conversations",
@@ -287,7 +322,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 2,
       "external_id": "7f18526fe9488f0b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening"
     },
     {
       "id": "toefl.write.independent_essay",
@@ -305,7 +341,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 4,
       "external_id": "1280f10b0eda27b1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "toefl.write.integrated_task",
@@ -323,7 +360,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 4,
       "external_id": "b7120ea048c5d37b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     }
   ],
   "edges": [

@@ -60,6 +60,43 @@
       "order": 8
     }
   ],
+  "strands": [
+    {
+      "id": "cell_bio",
+      "name": "Cell Biology & Biochemistry",
+      "color": "#ef4444"
+    },
+    {
+      "id": "genetics",
+      "name": "Genetics & Molecular Biology",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "physiology",
+      "name": "Human Physiology",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "plant",
+      "name": "Plant Biology",
+      "color": "#10b981"
+    },
+    {
+      "id": "ecology",
+      "name": "Ecology & Environment",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "reproduction",
+      "name": "Reproduction & Development",
+      "color": "#ec4899"
+    },
+    {
+      "id": "evolution",
+      "name": "Evolution & Diversity",
+      "color": "#06b6d4"
+    }
+  ],
   "nodes": [
     {
       "id": "sg.bio.ol.cell_organelles",
@@ -77,7 +114,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "ba11f38514443cab",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.ol.plant_vs_animal_cells",
@@ -95,7 +133,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "e881f2229865a1a3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "sg.bio.ol.cell_specialisation",
@@ -113,7 +152,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "4f4e167b68c9f839",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.ol.diffusion",
@@ -131,7 +171,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "80f37e1741cb711e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.ol.osmosis",
@@ -149,7 +190,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "e35c6f3c7e679eb7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.ol.active_transport",
@@ -167,7 +209,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "133c51a51fdbd636",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.ol.biological_molecules",
@@ -185,7 +228,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "95f8fcc85db34148",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.ol.food_tests",
@@ -203,7 +247,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "facf0ea76bb57605",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.ol.water_and_its_properties",
@@ -221,7 +266,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "3d1855f818db89c3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.ol.enzyme_structure_function",
@@ -239,7 +285,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "22b33ca272c04281",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.ol.factors_affecting_enzymes",
@@ -257,7 +304,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "95e91101200f7ea9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.ol.photosynthesis_process",
@@ -275,7 +323,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "e73baa6af167e1b5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "sg.bio.ol.leaf_structure",
@@ -293,7 +342,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "45d7c33c86b39cec",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "sg.bio.ol.factors_affecting_photosynthesis",
@@ -311,7 +361,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "a322bb2b47a19996",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "sg.bio.ol.mineral_nutrition_plants",
@@ -329,7 +380,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "99c2f6f298b121ca",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "sg.bio.ol.balanced_diet",
@@ -347,7 +399,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "acdafea0420badd1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.digestive_system",
@@ -365,7 +418,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "5a971e2142ef2981",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.digestion_enzymes",
@@ -383,7 +437,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "011aa551a45d4724",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.absorption_assimilation",
@@ -401,7 +456,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "8b48c7c68ca19447",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.heart_structure",
@@ -419,7 +475,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "61361b5c5638d9e8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.blood_vessels",
@@ -437,7 +494,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "55ae537e289e9463",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.blood_composition",
@@ -455,7 +513,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "408ba69c8332d134",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.circulatory_system",
@@ -473,7 +532,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "7359f1c072da8656",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.xylem_phloem",
@@ -491,7 +551,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "b9365fc52d9b3ee3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "sg.bio.ol.transpiration",
@@ -509,7 +570,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "cde72150bd9708e7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "sg.bio.ol.translocation",
@@ -527,7 +589,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "91b03e6c84573650",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "sg.bio.ol.aerobic_respiration",
@@ -545,7 +608,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "9a95c6321813ea56",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.anaerobic_respiration",
@@ -563,7 +627,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "13e79b069282f60d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.gas_exchange_humans",
@@ -581,7 +646,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "19072a473bf63b2f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.kidney_structure",
@@ -599,7 +665,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "cbb667d81f364e4f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.osmoregulation",
@@ -617,7 +684,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "7513af089263120f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.excretory_products",
@@ -635,7 +703,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "acb0d5465e4c89ac",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.nervous_system",
@@ -653,7 +722,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "3cb5e7e033cc829e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.reflex_arc",
@@ -671,7 +741,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "f93cbf4ac2c9c860",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.eye_structure",
@@ -689,7 +760,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "c9b4b4e99f7b6f96",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.hormones",
@@ -707,7 +779,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "9be6577af4df3e1c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.thermoregulation",
@@ -725,7 +798,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "1f964f7f8eb73c52",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.glucose_regulation",
@@ -743,7 +817,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "958852d069440688",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.tropisms",
@@ -761,7 +836,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "0f85373459044686",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "sg.bio.ol.infectious_diseases",
@@ -779,7 +855,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "7ff3a3bf7d1cbba3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.body_defences",
@@ -797,7 +874,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "9f7fe3277323b28a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.vaccination",
@@ -815,7 +893,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "a83265c9cbc9cc62",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.ol.mitosis",
@@ -833,7 +912,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "177926954a405ee6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reproduction"
     },
     {
       "id": "sg.bio.ol.meiosis",
@@ -851,7 +931,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "fc35cbf7f2b6af8c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reproduction"
     },
     {
       "id": "sg.bio.ol.cell_cycle",
@@ -869,7 +950,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "95c1c4469f13aae9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reproduction"
     },
     {
       "id": "sg.bio.ol.asexual_reproduction",
@@ -887,7 +969,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "94b5e9b89953fd16",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reproduction"
     },
     {
       "id": "sg.bio.ol.sexual_reproduction_plants",
@@ -905,7 +988,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "39eff2d1d19eb177",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reproduction"
     },
     {
       "id": "sg.bio.ol.human_reproductive_system",
@@ -923,7 +1007,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "243af5da7b792399",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reproduction"
     },
     {
       "id": "sg.bio.ol.menstrual_cycle",
@@ -941,7 +1026,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "4f19ae7e188502eb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reproduction"
     },
     {
       "id": "sg.bio.ol.prenatal_development",
@@ -959,7 +1045,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "d86b3095405f916a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reproduction"
     },
     {
       "id": "sg.bio.ol.sexually_transmitted_infections",
@@ -977,7 +1064,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "632b43f3baa2bc08",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reproduction"
     },
     {
       "id": "sg.bio.ol.dna_structure",
@@ -995,7 +1083,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "5f84563c6d2ad17a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.ol.protein_synthesis",
@@ -1013,7 +1102,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "4f50555f684e0069",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.ol.genetic_engineering",
@@ -1031,7 +1121,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "39078ee362f07d0a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.ol.mendelian_genetics",
@@ -1049,7 +1140,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "2e286ab0aceb05b5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.ol.monohybrid_crosses",
@@ -1067,7 +1159,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "4f35b953c7f935f9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.ol.codominance",
@@ -1085,7 +1178,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "0f69e7f117cce708",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.ol.sex_linkage",
@@ -1103,7 +1197,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "e9d99716b6447d82",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.ol.variation",
@@ -1121,7 +1216,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "01266070b5cacd25",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "evolution"
     },
     {
       "id": "sg.bio.ol.natural_selection",
@@ -1139,7 +1235,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "0f059e2760024344",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "evolution"
     },
     {
       "id": "sg.bio.ol.selective_breeding",
@@ -1157,7 +1254,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "833ec8f2d83a8cd5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "evolution"
     },
     {
       "id": "sg.bio.ol.ecosystem",
@@ -1175,7 +1273,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "07db7d85afc2ec3d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "sg.bio.ol.food_chains_webs",
@@ -1193,7 +1292,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "d48de59b62d8b7fa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "sg.bio.ol.nutrient_cycling",
@@ -1211,7 +1311,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "76787a5eb2ca8560",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "sg.bio.ol.pollution",
@@ -1229,7 +1330,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "eb717a85696898fc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "sg.bio.ol.deforestation",
@@ -1247,7 +1349,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "71ae4585f8f87e7c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "sg.bio.ol.greenhouse_effect",
@@ -1265,7 +1368,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "68aaa5fe42712c6b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "sg.bio.ol.conservation",
@@ -1283,7 +1387,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "dadac911d650f054",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "sg.bio.jc.water_properties",
@@ -1301,7 +1406,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "8ea69219f681bffb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.carbohydrates",
@@ -1319,7 +1425,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "b4231d59d9a0451e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.lipids",
@@ -1337,7 +1444,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "b18d0e2d3a589f8a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.proteins",
@@ -1355,7 +1463,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "8d3cbb95084db737",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.nucleic_acids",
@@ -1373,7 +1482,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "14dbd935632b2a24",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.cell_ultrastructure",
@@ -1391,7 +1501,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "b0de18e7d35898da",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.endomembrane_system",
@@ -1409,7 +1520,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "e89a3303e10c766a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.prokaryote_eukaryote",
@@ -1427,7 +1539,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "71dff37ea59210b3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.fluid_mosaic_model",
@@ -1445,7 +1558,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "066d67001da4eac9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.membrane_transport",
@@ -1463,7 +1577,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "68051623731a32e1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.endocytosis_exocytosis",
@@ -1481,7 +1596,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "5c414bbebdca289b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.cell_signalling",
@@ -1499,7 +1615,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "2cae95527635921c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.enzyme_kinetics",
@@ -1517,7 +1634,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "f2e654f2e7cbe7d8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.enzyme_inhibition",
@@ -1535,7 +1653,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "fb2afac93d03457d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.cofactors_coenzymes",
@@ -1553,7 +1672,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "9e6156233a37c5ae",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.dna_structure_h2",
@@ -1571,7 +1691,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "7180a7fa22f71888",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.dna_replication",
@@ -1589,7 +1710,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "c9e8c993feadd231",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.transcription",
@@ -1607,7 +1729,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "591ad585c0f81bd1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.translation",
@@ -1625,7 +1748,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "9f3d6e26c6cfc0da",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.genetic_code",
@@ -1643,7 +1767,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "204f2579a3115fe6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.lac_operon",
@@ -1661,7 +1786,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "63381acc37ffb067",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.eukaryotic_gene_regulation",
@@ -1679,7 +1805,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "b2369a410cf5361a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.dihybrid_crosses",
@@ -1697,7 +1824,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "9ecf0e99089f3894",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.gene_linkage",
@@ -1715,7 +1843,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "885aa0edc8a5c6f5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.epistasis",
@@ -1733,7 +1862,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "6402e96176c9109d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.chi_squared",
@@ -1751,7 +1881,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "5cb34ee98a290b99",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.pedigree_analysis",
@@ -1769,7 +1900,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "ac829504f96d3f64",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.gene_mutations",
@@ -1787,7 +1919,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "461732990eb27209",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.chromosome_mutations",
@@ -1805,7 +1938,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "cd926fecc3fb444c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.cancer_genetics",
@@ -1823,7 +1957,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "7b03457b0534661c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.pcr",
@@ -1841,7 +1976,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "8cb9ebc752f15fb2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.gel_electrophoresis",
@@ -1859,7 +1995,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "2cb71cfe3d972aa8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.genetic_engineering_h2",
@@ -1877,7 +2014,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "7fbcd35727b134cb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.genomics",
@@ -1895,7 +2033,8 @@
       "bookColor": "#6d28d9",
       "bookOrder": 6,
       "external_id": "7e46ea816145ac82",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "genetics"
     },
     {
       "id": "sg.bio.jc.glycolysis",
@@ -1913,7 +2052,8 @@
       "bookColor": "#d97706",
       "bookOrder": 7,
       "external_id": "7eea94c95241be82",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.link_reaction",
@@ -1931,7 +2071,8 @@
       "bookColor": "#d97706",
       "bookOrder": 7,
       "external_id": "146cb2aed40a105b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.krebs_cycle",
@@ -1949,7 +2090,8 @@
       "bookColor": "#d97706",
       "bookOrder": 7,
       "external_id": "6dcd05e2079efc15",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.oxidative_phosphorylation",
@@ -1967,7 +2109,8 @@
       "bookColor": "#d97706",
       "bookOrder": 7,
       "external_id": "74f692c42337048b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell_bio"
     },
     {
       "id": "sg.bio.jc.anaerobic_respiration_h2",
@@ -1985,7 +2128,8 @@
       "bookColor": "#d97706",
       "bookOrder": 7,
       "external_id": "a9c7bcec97174f97",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physiology"
     },
     {
       "id": "sg.bio.jc.light_dependent_reactions",
@@ -2003,7 +2147,8 @@
       "bookColor": "#d97706",
       "bookOrder": 7,
       "external_id": "8666d0f12b0670a0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "sg.bio.jc.calvin_cycle",
@@ -2021,7 +2166,8 @@
       "bookColor": "#d97706",
       "bookOrder": 7,
       "external_id": "2c7a2ee7e4168b30",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "sg.bio.jc.limiting_factors_photosynthesis",
@@ -2039,7 +2185,8 @@
       "bookColor": "#d97706",
       "bookOrder": 7,
       "external_id": "0a89924f2e13bf5f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "sg.bio.jc.mitosis_h2",
@@ -2057,7 +2204,8 @@
       "bookColor": "#d97706",
       "bookOrder": 7,
       "external_id": "4b03250faad36cb4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reproduction"
     },
     {
       "id": "sg.bio.jc.meiosis_h2",
@@ -2075,7 +2223,8 @@
       "bookColor": "#d97706",
       "bookOrder": 7,
       "external_id": "1cb7f6d6adcee2a1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reproduction"
     },
     {
       "id": "sg.bio.jc.cell_cycle_control",
@@ -2093,7 +2242,8 @@
       "bookColor": "#d97706",
       "bookOrder": 7,
       "external_id": "af4fba889d9d724e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reproduction"
     },
     {
       "id": "sg.bio.jc.natural_selection_h2",
@@ -2111,7 +2261,8 @@
       "bookColor": "#92400e",
       "bookOrder": 8,
       "external_id": "65a9567f69aefaf4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "evolution"
     },
     {
       "id": "sg.bio.jc.evidence_evolution",
@@ -2129,7 +2280,8 @@
       "bookColor": "#92400e",
       "bookOrder": 8,
       "external_id": "ffe1e8038fe29602",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "evolution"
     },
     {
       "id": "sg.bio.jc.speciation",
@@ -2147,7 +2299,8 @@
       "bookColor": "#92400e",
       "bookOrder": 8,
       "external_id": "45abc9d2be6d8848",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "evolution"
     },
     {
       "id": "sg.bio.jc.hardy_weinberg",
@@ -2165,7 +2318,8 @@
       "bookColor": "#92400e",
       "bookOrder": 8,
       "external_id": "f4e4eeb5cdf918ac",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "evolution"
     },
     {
       "id": "sg.bio.jc.genetic_drift",
@@ -2183,7 +2337,8 @@
       "bookColor": "#92400e",
       "bookOrder": 8,
       "external_id": "9c4fd702c14c67a3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "evolution"
     },
     {
       "id": "sg.bio.jc.taxonomy",
@@ -2201,7 +2356,8 @@
       "bookColor": "#92400e",
       "bookOrder": 8,
       "external_id": "beaa792c55788924",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "evolution"
     },
     {
       "id": "sg.bio.jc.species_concept",
@@ -2219,7 +2375,8 @@
       "bookColor": "#92400e",
       "bookOrder": 8,
       "external_id": "68da6d6ac088abc6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "evolution"
     },
     {
       "id": "sg.bio.jc.biodiversity",
@@ -2237,7 +2394,8 @@
       "bookColor": "#92400e",
       "bookOrder": 8,
       "external_id": "896c944da21150cc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "sg.bio.jc.threats_biodiversity",
@@ -2255,7 +2413,8 @@
       "bookColor": "#92400e",
       "bookOrder": 8,
       "external_id": "d43b7ad87df49576",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "sg.bio.jc.conservation_h2",
@@ -2273,7 +2432,8 @@
       "bookColor": "#92400e",
       "bookOrder": 8,
       "external_id": "495b948b4f83b63a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "sg.bio.jc.climate_change",
@@ -2291,7 +2451,8 @@
       "bookColor": "#92400e",
       "bookOrder": 8,
       "external_id": "3da2864454a6ad7b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "sg.bio.jc.population_ecology",
@@ -2309,7 +2470,8 @@
       "bookColor": "#92400e",
       "bookOrder": 8,
       "external_id": "b8fbe60a3f0ba57e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "sg.bio.jc.community_ecology",
@@ -2327,7 +2489,8 @@
       "bookColor": "#92400e",
       "bookOrder": 8,
       "external_id": "603c404fa3eea6b1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "sg.bio.jc.energy_flow_ecosystems",
@@ -2345,7 +2508,8 @@
       "bookColor": "#92400e",
       "bookOrder": 8,
       "external_id": "7fc573b0a595adb1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "sg.bio.jc.nutrient_cycling_h2",
@@ -2363,7 +2527,8 @@
       "bookColor": "#92400e",
       "bookOrder": 8,
       "external_id": "b64d965e5d478905",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     }
   ],
   "edges": [

@@ -30,6 +30,23 @@
       "order": 3
     }
   ],
+  "strands": [
+    {
+      "id": "core",
+      "name": "Core Topics",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "hl",
+      "name": "HL Extension",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "options",
+      "name": "Optional Topics",
+      "color": "#2ECC71"
+    }
+  ],
   "nodes": [
     {
       "id": "ib.geo.population_distribution",
@@ -47,7 +64,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "3d2daa625c26a820",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "core"
     },
     {
       "id": "ib.geo.global_climate",
@@ -65,7 +83,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "c97e7a3247f25ea4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "core"
     },
     {
       "id": "ib.geo.global_resource_consumption",
@@ -83,7 +102,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "a7466df9f29ad90b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "core"
     },
     {
       "id": "ib.geo.power_places_networks",
@@ -101,7 +121,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "06d8f5ace1cc5bc7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hl"
     },
     {
       "id": "ib.geo.human_development",
@@ -119,7 +140,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "a2e8e6f3b8d1e98c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hl"
     },
     {
       "id": "ib.geo.global_risks",
@@ -137,7 +159,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "f1f59faa662fe96a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hl"
     },
     {
       "id": "ib.geo.freshwater",
@@ -155,7 +178,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "e5af1d55b4e56e90",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "options"
     },
     {
       "id": "ib.geo.oceans",
@@ -173,7 +197,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "f020e80b4be36565",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "options"
     },
     {
       "id": "ib.geo.extreme_environments",
@@ -191,7 +216,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "0074cbb63d59d2f0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "options"
     },
     {
       "id": "ib.geo.hazards",
@@ -209,7 +235,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "d35de09303142e93",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "options"
     },
     {
       "id": "ib.geo.food_health",
@@ -227,7 +254,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "ca7b57951fc3f422",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "core"
     },
     {
       "id": "ib.geo.urban_environments",
@@ -245,7 +273,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "7c9aecc39c3ba4c3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "core"
     },
     {
       "id": "ib.geo.internal_assessment",
@@ -263,7 +292,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "caccf3651d2313fd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "core"
     },
     {
       "id": "ib.geo.leisure_tourism",
@@ -281,7 +311,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "e12419cfe25d7db6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "options"
     },
     {
       "id": "ib.geo.migration",
@@ -300,7 +331,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "59366e08438654f0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hl"
     }
   ],
   "edges": [

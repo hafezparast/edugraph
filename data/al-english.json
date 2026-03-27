@@ -24,6 +24,43 @@
       "order": 2
     }
   ],
+  "strands": [
+    {
+      "id": "reading",
+      "name": "Reading & Comprehension",
+      "color": "#ef4444"
+    },
+    {
+      "id": "writing",
+      "name": "Writing & Composition",
+      "color": "#f97316"
+    },
+    {
+      "id": "language_system",
+      "name": "Language System & Frameworks",
+      "color": "#eab308"
+    },
+    {
+      "id": "language_change",
+      "name": "Language Change & History",
+      "color": "#22c55e"
+    },
+    {
+      "id": "child_language",
+      "name": "Child Language Acquisition",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "language_society",
+      "name": "Language & Society",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "investigation",
+      "name": "Language Investigation",
+      "color": "#ec4899"
+    }
+  ],
   "nodes": [
     {
       "id": "al.eng.p1.reading_comprehension",
@@ -41,7 +78,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "48476d61b0a97405",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "al.eng.p1.vocabulary_in_context",
@@ -59,7 +97,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "e79bf9effc56750c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "al.eng.p1.writers_effects",
@@ -77,7 +116,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "81fdf5cb86806fd8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "al.eng.p1.summary_skills",
@@ -95,7 +135,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "2fcc0c60c9e9011e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "al.eng.p1.directed_writing",
@@ -113,7 +154,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "66083b32eedcd545",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "al.eng.p1.language_analysis",
@@ -131,7 +173,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "8e23afa6c2b3d8f2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "al.eng.p1.audience_purpose_context",
@@ -149,7 +192,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "b2c9eb2602bbdfad",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "al.eng.p1.figurative_language",
@@ -167,7 +211,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "47fc5b607568743f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "al.eng.p1.tone_mood_attitude",
@@ -185,7 +230,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "e1efb36005f88736",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "al.eng.p2.descriptive_narrative_writing",
@@ -203,7 +249,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "969d0f51b8fc0f34",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "al.eng.p2.argumentative_discursive_writing",
@@ -221,7 +268,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "dd13592ca76db188",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "al.eng.p2.register_audience",
@@ -239,7 +287,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "28be151b3e56885e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "al.eng.p2.sentence_variety_cohesion",
@@ -257,7 +306,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "2a9dfd3dc66304dc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "al.eng.p2.proofreading_accuracy",
@@ -275,7 +325,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "ea2a97d7af5d169f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "al.eng.p2.paragraphing_structure",
@@ -293,7 +344,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "a961b2a7e45876e7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "al.eng.p2.rhetorical_persuasive_techniques",
@@ -311,7 +363,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "658203a5e2c90ed5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "al.eng.p2.composition_planning",
@@ -329,7 +382,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "2aa68659cc5cd3ca",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "al.eng.p3.phonetics_phonology",
@@ -347,7 +401,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "8c111a4eca27ea12",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_system"
     },
     {
       "id": "al.eng.p3.morphology",
@@ -365,7 +420,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "4113521196b60721",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_system"
     },
     {
       "id": "al.eng.p3.lexis_semantics",
@@ -383,7 +439,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "c0f1afa26199c581",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_system"
     },
     {
       "id": "al.eng.p3.grammar_syntax",
@@ -401,7 +458,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "29090aa0479667c2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_system"
     },
     {
       "id": "al.eng.p3.pragmatics_discourse",
@@ -419,7 +477,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "d08c9553d44c2ffe",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_system"
     },
     {
       "id": "al.eng.p3.language_identity",
@@ -437,7 +496,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "5c3f39cd0690834e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_system"
     },
     {
       "id": "al.eng.p3.language_change",
@@ -455,7 +515,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "3c3a7af529aa6ea8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_change"
     },
     {
       "id": "al.eng.p3.child_language_acquisition",
@@ -473,7 +534,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "15f24b05a410a417",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "child_language"
     },
     {
       "id": "al.eng.p3.cla_phonological_development",
@@ -491,7 +553,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "f9ddd7b128c248ee",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "child_language"
     },
     {
       "id": "al.eng.p3.cla_lexical_semantic_development",
@@ -509,7 +572,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "274ce1477ca4922f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "child_language"
     },
     {
       "id": "al.eng.p3.cla_grammatical_development",
@@ -527,7 +591,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "9f8ff54ffddd262f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "child_language"
     },
     {
       "id": "al.eng.p3.cla_pragmatic_development",
@@ -545,7 +610,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "f73e215103673eaf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "child_language"
     },
     {
       "id": "al.eng.p3.cla_theories",
@@ -563,7 +629,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "c019ce965e9aa50c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "child_language"
     },
     {
       "id": "al.eng.p3.language_frameworks",
@@ -581,7 +648,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "ab3b47468cd36ab7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_system"
     },
     {
       "id": "al.eng.p3.graphology",
@@ -599,7 +667,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "d0a8ff59a9c607ed",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_system"
     },
     {
       "id": "al.eng.p4.english_global_language",
@@ -617,7 +686,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "1a3720f9c9d50797",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_society"
     },
     {
       "id": "al.eng.p4.world_englishes",
@@ -635,7 +705,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "b9304df1603f3dc0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_society"
     },
     {
       "id": "al.eng.p4.language_and_the_self",
@@ -653,7 +724,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "a225881de87128ef",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_society"
     },
     {
       "id": "al.eng.p4.language_and_power",
@@ -671,7 +743,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "d23f0d2d9018e758",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_society"
     },
     {
       "id": "al.eng.p4.language_and_gender",
@@ -689,7 +762,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "c67c89ec9ef15a05",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_society"
     },
     {
       "id": "al.eng.p4.language_and_social_groups",
@@ -707,7 +781,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "3ac5b5488a9359bc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_society"
     },
     {
       "id": "al.eng.p4.spoken_vs_written_language",
@@ -725,7 +800,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "f49976d90476bc22",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_society"
     },
     {
       "id": "al.eng.p4.conversation_analysis",
@@ -743,7 +819,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "f752e56f9996f4e4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_society"
     },
     {
       "id": "al.eng.p4.language_and_technology",
@@ -761,7 +838,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "aaa1c250470334d7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_society"
     },
     {
       "id": "al.eng.p4.language_investigation",
@@ -779,7 +857,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "cbfd161b456debc6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "investigation"
     },
     {
       "id": "al.eng.p4.data_collection_methodology",
@@ -797,7 +876,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "cc4ca0a78466e44b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "investigation"
     },
     {
       "id": "al.eng.p4.language_attitudes_debates",
@@ -815,7 +895,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "ae378dd31000b803",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "investigation"
     },
     {
       "id": "al.eng.p3.dialect_accent_variation",
@@ -833,7 +914,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "bd08a4e5b09a7e78",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_society"
     },
     {
       "id": "al.eng.p3.semantic_change",
@@ -851,7 +933,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "a7a2a6b68cac5b73",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_change"
     },
     {
       "id": "al.eng.p3.standardisation_codification",
@@ -869,7 +952,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "cbbd519706563909",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_change"
     },
     {
       "id": "al.eng.p4.multilingualism_code_switching",
@@ -887,7 +971,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "84f1f925590974b5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "language_society"
     },
     {
       "id": "al.eng.p3.cla_literacy_development",
@@ -905,7 +990,8 @@
       "bookColor": "#be185d",
       "bookOrder": 2,
       "external_id": "07cfd5413ae76342",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "child_language"
     }
   ],
   "edges": [

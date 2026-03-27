@@ -36,6 +36,33 @@
       "order": 4
     }
   ],
+  "strands": [
+    {
+      "id": "nationalism",
+      "name": "Nationalism & Unification",
+      "color": "#d97706"
+    },
+    {
+      "id": "world_wars",
+      "name": "World Wars",
+      "color": "#92400e"
+    },
+    {
+      "id": "rise_dictators",
+      "name": "Rise of Dictators",
+      "color": "#b45309"
+    },
+    {
+      "id": "cold_war",
+      "name": "Cold War",
+      "color": "#7c3aed"
+    },
+    {
+      "id": "modern_world",
+      "name": "Decolonisation & Modern World",
+      "color": "#7c2d12"
+    }
+  ],
   "nodes": [
     {
       "id": "hist.t1.unification_italy",
@@ -54,7 +81,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "3b481976ecfca5c2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "nationalism"
     },
     {
       "id": "hist.t2.unification_germany",
@@ -73,7 +101,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "52487567115fd441",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "nationalism"
     },
     {
       "id": "hist.t3.wwi_causes",
@@ -92,7 +121,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "b704f72ac27e38b5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "world_wars"
     },
     {
       "id": "hist.t4.wwi_events",
@@ -111,7 +141,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "05fc4c0ac230117d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "world_wars"
     },
     {
       "id": "hist.t5.wwi_consequences",
@@ -130,7 +161,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "dd1093ec0bf581b4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "world_wars"
     },
     {
       "id": "hist.t6.treaty_versailles",
@@ -149,7 +181,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "5dda8c4cb66d415c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "world_wars"
     },
     {
       "id": "hist.t7.league_of_nations",
@@ -168,7 +201,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "cc84edec51858572",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "world_wars"
     },
     {
       "id": "hist.t8.rise_hitler",
@@ -187,7 +221,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "cb6e148d62310077",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "rise_dictators"
     },
     {
       "id": "hist.t9.rise_mussolini",
@@ -206,7 +241,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "bb5d27530e9b8b03",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "rise_dictators"
     },
     {
       "id": "hist.t10.rise_stalin",
@@ -225,7 +261,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "fcdfb8bb5c6d1055",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "rise_dictators"
     },
     {
       "id": "hist.t11.wwii",
@@ -244,7 +281,8 @@
       "bookColor": "#92400e",
       "bookOrder": 3,
       "external_id": "1251dbddc2ae38ea",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "world_wars"
     },
     {
       "id": "hist.t12.cold_war_origins",
@@ -263,7 +301,8 @@
       "bookColor": "#92400e",
       "bookOrder": 3,
       "external_id": "724a3007f4d1cae8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cold_war"
     },
     {
       "id": "hist.t13.cuban_missile_crisis",
@@ -282,7 +321,8 @@
       "bookColor": "#92400e",
       "bookOrder": 3,
       "external_id": "1e9cd18f4d1d52d9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cold_war"
     },
     {
       "id": "hist.t14.vietnam_war",
@@ -301,7 +341,8 @@
       "bookColor": "#92400e",
       "bookOrder": 3,
       "external_id": "8abcba88ec3bcef9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cold_war"
     },
     {
       "id": "hist.t15.collapse_soviet_union",
@@ -320,7 +361,8 @@
       "bookColor": "#7c2d12",
       "bookOrder": 4,
       "external_id": "0f3ed11325899935",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cold_war"
     },
     {
       "id": "hist.t16.arab_israeli_conflict",
@@ -339,7 +381,8 @@
       "bookColor": "#7c2d12",
       "bookOrder": 4,
       "external_id": "2542e47ba1cbc84d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern_world"
     },
     {
       "id": "hist.t17.decolonisation",
@@ -358,7 +401,8 @@
       "bookColor": "#7c2d12",
       "bookOrder": 4,
       "external_id": "8c1d450c8ef0768c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern_world"
     }
   ],
   "edges": [

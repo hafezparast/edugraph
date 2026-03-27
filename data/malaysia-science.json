@@ -67,6 +67,33 @@
       "order": 9
     }
   ],
+  "strands": [
+    {
+      "id": "life_sci",
+      "name": "Life Science",
+      "color": "#22c55e"
+    },
+    {
+      "id": "physical_sci",
+      "name": "Physical Science",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "material_sci",
+      "name": "Material Science",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "earth_space",
+      "name": "Earth & Space",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "technology",
+      "name": "Technology & Investigation",
+      "color": "#ef4444"
+    }
+  ],
   "nodes": [
     {
       "id": "sci.y1.animal_body_parts",
@@ -85,7 +112,8 @@
       "bookColor": "#86efac",
       "bookOrder": 1,
       "external_id": "ddb55e9e0b223173",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y1.basic_construction",
@@ -104,7 +132,8 @@
       "bookColor": "#86efac",
       "bookOrder": 1,
       "external_id": "acb3652b1d7654b7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "technology"
     },
     {
       "id": "sci.y1.basic_needs",
@@ -123,7 +152,8 @@
       "bookColor": "#86efac",
       "bookOrder": 1,
       "external_id": "4643ea3881a6014c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y1.human_senses",
@@ -142,7 +172,8 @@
       "bookColor": "#86efac",
       "bookOrder": 1,
       "external_id": "4db265f38bd301e4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y1.landforms_soil",
@@ -161,7 +192,8 @@
       "bookColor": "#86efac",
       "bookOrder": 1,
       "external_id": "becd3df8c22cc738",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "earth_space"
     },
     {
       "id": "sci.y1.living_things",
@@ -180,7 +212,8 @@
       "bookColor": "#86efac",
       "bookOrder": 1,
       "external_id": "21e28650b6f2617a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y1.local_plants_animals",
@@ -199,7 +232,8 @@
       "bookColor": "#86efac",
       "bookOrder": 1,
       "external_id": "3771ff163302f1c7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y1.parts_of_plants",
@@ -218,7 +252,8 @@
       "bookColor": "#86efac",
       "bookOrder": 1,
       "external_id": "6a42e1e2642d0bf7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y2.absorption",
@@ -237,7 +272,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 2,
       "external_id": "733fa426d8cc5d97",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.y2.air",
@@ -256,7 +292,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 2,
       "external_id": "4beff2041740ad47",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.y2.animal_growth",
@@ -275,7 +312,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 2,
       "external_id": "1b5ecdada82cb64b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y2.design_technology",
@@ -294,7 +332,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 2,
       "external_id": "6d0c20ff092b019d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "technology"
     },
     {
       "id": "sci.y2.earth_environment",
@@ -313,7 +352,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 2,
       "external_id": "8071c71cf66790c3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "earth_space"
     },
     {
       "id": "sci.y2.electric_circuit",
@@ -332,7 +372,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 2,
       "external_id": "c54d3491f2743394",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.y2.human_growth",
@@ -351,7 +392,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 2,
       "external_id": "095b28fc7b474f49",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y2.light_dark",
@@ -370,7 +412,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 2,
       "external_id": "00c50265026715b1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.y2.magnets",
@@ -389,7 +432,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 2,
       "external_id": "d41283d0d9bce8bf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.y2.mixtures",
@@ -408,7 +452,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 2,
       "external_id": "8cd13001f3eccb05",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.y2.plant_growth",
@@ -427,7 +472,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 2,
       "external_id": "0edd646d20e8531a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y2.water",
@@ -446,7 +492,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 2,
       "external_id": "51c9405fa033c8cf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.y3.animal_life_cycles",
@@ -465,7 +512,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "1dc0594737b17b18",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y3.classes_of_food",
@@ -484,7 +532,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "2072f19a47eaf387",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y3.design_technology",
@@ -503,7 +552,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "4ae6583eed601397",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "technology"
     },
     {
       "id": "sci.y3.digestion",
@@ -522,7 +572,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "0b95b58de9c6e92a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y3.earth_moon_sun",
@@ -541,7 +592,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "b507489d5e678a43",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "earth_space"
     },
     {
       "id": "sci.y3.eating_habits",
@@ -560,7 +612,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "29454bfada6818c6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y3.measurement",
@@ -579,7 +632,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "1a2c6bf51ae01b69",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "technology"
     },
     {
       "id": "sci.y3.plant_reproduction",
@@ -598,7 +652,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "39a857ad0254ebdb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y3.properties_of_materials",
@@ -617,7 +672,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "a8f7ebd58a129203",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.y3.soil_types",
@@ -636,7 +692,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "03edf1338f5c490c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "earth_space"
     },
     {
       "id": "sci.y3.teeth",
@@ -655,7 +712,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "3f361267fec56ee5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y4.animal_reproduction",
@@ -674,7 +732,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 4,
       "external_id": "35e74cd58cbf21d0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y4.design_technology",
@@ -693,7 +752,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 4,
       "external_id": "e2e0065956c291e5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "technology"
     },
     {
       "id": "sci.y4.earth_gravity",
@@ -712,7 +772,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 4,
       "external_id": "f1b9d2874361904f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "earth_space"
     },
     {
       "id": "sci.y4.earth_rotation",
@@ -731,7 +792,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 4,
       "external_id": "5655cd9619d3bfb8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "earth_space"
     },
     {
       "id": "sci.y4.energy_sources",
@@ -750,7 +812,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 4,
       "external_id": "3263f58ed8b533bc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.y4.excretion",
@@ -769,7 +832,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 4,
       "external_id": "dcd50bce2d2d9443",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y4.human_respiration",
@@ -788,7 +852,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 4,
       "external_id": "c7afff85d524c170",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y4.human_response",
@@ -807,7 +872,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 4,
       "external_id": "c79a9e5aaa1a5a2e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y4.materials",
@@ -826,7 +892,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 4,
       "external_id": "04886c55145de2b0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.y4.movement",
@@ -845,7 +912,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 4,
       "external_id": "8f681f3ec056b7a6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y4.properties_of_light",
@@ -864,7 +932,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 4,
       "external_id": "efc11160c1e5b060",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.y4.simple_complex_machines",
@@ -883,7 +952,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 4,
       "external_id": "b363a025b69b2ee5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.y4.sound",
@@ -902,7 +972,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 4,
       "external_id": "ae0516fae782e4a9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.y5.animal_survival",
@@ -921,7 +992,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "a2afa18560f0a90a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y5.blood_circulation",
@@ -940,7 +1012,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "f87eb0e41cb601d7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y5.body_systems",
@@ -959,7 +1032,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "b8c28b066527d87f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y5.design_technology",
@@ -978,7 +1052,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "6edc6aa424fff859",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "technology"
     },
     {
       "id": "sci.y5.electrical_safety",
@@ -997,7 +1072,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "ca88b1ddf5d4a6dc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.y5.energy_uses",
@@ -1016,7 +1092,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "94e2ce9f47ca5bc5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.y5.food_relationships",
@@ -1035,7 +1112,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "c94860668a7f801e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y5.heat_temperature",
@@ -1054,7 +1132,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "9ca66dc19f3c6327",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.y5.moon_phases_constellations",
@@ -1073,7 +1152,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "91d37945079c3526",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "earth_space"
     },
     {
       "id": "sci.y5.plant_survival",
@@ -1092,7 +1172,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "467df79ab15b3156",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y5.rusting",
@@ -1111,7 +1192,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "32f0862f3428420a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.y5.seed_dispersal",
@@ -1130,7 +1212,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "bad54848c6fc0a7f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y5.series_parallel_circuits",
@@ -1149,7 +1232,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "8ec24d882dfd5ee6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.y5.skeletal_system",
@@ -1168,7 +1252,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "db8abfbd0456f9f8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.y5.states_of_matter",
@@ -1187,7 +1272,8 @@
       "bookColor": "#15803d",
       "bookOrder": 5,
       "external_id": "192d3a4282bea9af",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.y6.air_pressure",
@@ -1206,7 +1292,8 @@
       "bookColor": "#166534",
       "bookOrder": 6,
       "external_id": "3d27498e1136ec25",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "earth_space"
     },
     {
       "id": "sci.y6.animal_interactions",
@@ -1225,7 +1312,8 @@
       "bookColor": "#166534",
       "bookOrder": 6,
       "external_id": "08c2b7c93fa9b56d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y6.eclipses",
@@ -1244,7 +1332,8 @@
       "bookColor": "#166534",
       "bookOrder": 6,
       "external_id": "63ff144d247844cb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "earth_space"
     },
     {
       "id": "sci.y6.food_preservation",
@@ -1263,7 +1352,8 @@
       "bookColor": "#166534",
       "bookOrder": 6,
       "external_id": "806c37f4aa1465c6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.y6.force_friction",
@@ -1282,7 +1372,8 @@
       "bookColor": "#166534",
       "bookOrder": 6,
       "external_id": "38dc9802327b7e95",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.y6.human_reproduction",
@@ -1301,7 +1392,8 @@
       "bookColor": "#166534",
       "bookOrder": 6,
       "external_id": "29de92b990fe38b7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y6.interdependence",
@@ -1320,7 +1412,8 @@
       "bookColor": "#166534",
       "bookOrder": 6,
       "external_id": "a2816fa19476767c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y6.microorganisms",
@@ -1339,7 +1432,8 @@
       "bookColor": "#166534",
       "bookOrder": 6,
       "external_id": "9356889dcc368cce",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y6.milky_way_galaxy",
@@ -1358,7 +1452,8 @@
       "bookColor": "#166534",
       "bookOrder": 6,
       "external_id": "ebe211df48d2e3b4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "earth_space"
     },
     {
       "id": "sci.y6.nervous_system",
@@ -1377,7 +1472,8 @@
       "bookColor": "#166534",
       "bookOrder": 6,
       "external_id": "476bf95ef5097df4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y6.plant_interactions",
@@ -1396,7 +1492,8 @@
       "bookColor": "#166534",
       "bookOrder": 6,
       "external_id": "c1ba9f9de6aa94bd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.y6.preservation_conservation",
@@ -1415,7 +1512,8 @@
       "bookColor": "#166534",
       "bookOrder": 6,
       "external_id": "5e1c31cd648f95b7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.y6.speed",
@@ -1434,7 +1532,8 @@
       "bookColor": "#166534",
       "bookOrder": 6,
       "external_id": "ed615661fee9f795",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.y6.stability_strength",
@@ -1453,7 +1552,8 @@
       "bookColor": "#166534",
       "bookOrder": 6,
       "external_id": "eb1680553dc216cb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.y6.waste_management",
@@ -1472,7 +1572,8 @@
       "bookColor": "#166534",
       "bookOrder": 6,
       "external_id": "7dae1a455e7c6f93",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.f1.air_composition_pollution",
@@ -1491,7 +1592,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 7,
       "external_id": "16b375562d6e5062",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.f1.cells",
@@ -1510,7 +1612,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 7,
       "external_id": "a84f7a8a8cc8babf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.f1.coordination_response",
@@ -1529,7 +1632,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 7,
       "external_id": "fb0b50cca13b19cf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.f1.density",
@@ -1548,7 +1652,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 7,
       "external_id": "bff6474239be13aa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.f1.earth_structure_processes",
@@ -1567,7 +1672,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 7,
       "external_id": "c4012e2ab572cadd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "earth_space"
     },
     {
       "id": "sci.f1.energy_fossil_fuels",
@@ -1586,7 +1692,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 7,
       "external_id": "71b700f26842a589",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.f1.energy_sources",
@@ -1605,7 +1712,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 7,
       "external_id": "610af48f480a6e4d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.f1.light_optics",
@@ -1624,7 +1732,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 7,
       "external_id": "ff8c1434b61f39bb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.f1.matter_states",
@@ -1643,7 +1752,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 7,
       "external_id": "61177e850ee1f417",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.f1.periodic_table_compounds",
@@ -1662,7 +1772,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 7,
       "external_id": "e78787d9129fec2e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.f1.pollution_greenhouse",
@@ -1681,7 +1792,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 7,
       "external_id": "1c8e2a5ba1cc585e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.f1.reproduction",
@@ -1700,7 +1812,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 7,
       "external_id": "1b36c8c239ae7332",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.f1.scientific_investigation",
@@ -1719,7 +1832,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 7,
       "external_id": "1d032bbad239c94d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "technology"
     },
     {
       "id": "sci.f2.acids_alkalis",
@@ -1738,7 +1852,8 @@
       "bookColor": "#0891b2",
       "bookOrder": 8,
       "external_id": "be429b02271a4cde",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.f2.biodiversity",
@@ -1757,7 +1872,8 @@
       "bookColor": "#0891b2",
       "bookOrder": 8,
       "external_id": "e1d804db609e2d77",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.f2.ecosystem",
@@ -1776,7 +1892,8 @@
       "bookColor": "#0891b2",
       "bookOrder": 8,
       "external_id": "f1f81f96ae010061",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.f2.electricity_magnetism",
@@ -1795,7 +1912,8 @@
       "bookColor": "#0891b2",
       "bookOrder": 8,
       "external_id": "99b24373c2b0c39d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.f2.force_motion",
@@ -1814,7 +1932,8 @@
       "bookColor": "#0891b2",
       "bookOrder": 8,
       "external_id": "7e727093335d1366",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.f2.heat_transfer",
@@ -1833,7 +1952,8 @@
       "bookColor": "#0891b2",
       "bookOrder": 8,
       "external_id": "5ecf2221743b57af",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.f2.human_health",
@@ -1852,7 +1972,8 @@
       "bookColor": "#0891b2",
       "bookOrder": 8,
       "external_id": "c3f73abb2da73970",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.f2.nutrient_transport_plants",
@@ -1871,7 +1992,8 @@
       "bookColor": "#0891b2",
       "bookOrder": 8,
       "external_id": "2e39e30caf61c0bf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.f2.nutrition_digestion",
@@ -1890,7 +2012,8 @@
       "bookColor": "#0891b2",
       "bookOrder": 8,
       "external_id": "8243eea0040589db",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.f2.soil_resources",
@@ -1909,7 +2032,8 @@
       "bookColor": "#0891b2",
       "bookOrder": 8,
       "external_id": "58fabf77a66b35c7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "earth_space"
     },
     {
       "id": "sci.f2.sound_waves",
@@ -1928,7 +2052,8 @@
       "bookColor": "#0891b2",
       "bookOrder": 8,
       "external_id": "aa9f0a05a499bbb3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.f2.stars_solar_system",
@@ -1947,7 +2072,8 @@
       "bookColor": "#0891b2",
       "bookOrder": 8,
       "external_id": "17ae2201c05e03df",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "earth_space"
     },
     {
       "id": "sci.f2.synthetic_materials",
@@ -1966,7 +2092,8 @@
       "bookColor": "#0891b2",
       "bookOrder": 8,
       "external_id": "948cf7e2b9ac3cbd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.f2.water_solutions",
@@ -1985,7 +2112,8 @@
       "bookColor": "#0891b2",
       "bookOrder": 8,
       "external_id": "84d9340487508236",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.f3.conservation_sustainability",
@@ -2004,7 +2132,8 @@
       "bookColor": "#0e7490",
       "bookOrder": 9,
       "external_id": "f62b5f8a47dfe3d5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "earth_space"
     },
     {
       "id": "sci.f3.daily_materials",
@@ -2023,7 +2152,8 @@
       "bookColor": "#0e7490",
       "bookOrder": 9,
       "external_id": "e8f0f4c570456b9c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.f3.electricity_generation",
@@ -2042,7 +2172,8 @@
       "bookColor": "#0e7490",
       "bookOrder": 9,
       "external_id": "67abca861085eefb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.f3.energy_power",
@@ -2061,7 +2192,8 @@
       "bookColor": "#0e7490",
       "bookOrder": 9,
       "external_id": "6de15cea582c69cb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.f3.excretion_homeostasis",
@@ -2080,7 +2212,8 @@
       "bookColor": "#0e7490",
       "bookOrder": 9,
       "external_id": "4509cb9536f00455",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.f3.light_sound_waves",
@@ -2099,7 +2232,8 @@
       "bookColor": "#0e7490",
       "bookOrder": 9,
       "external_id": "0825db18a9aad2d1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical_sci"
     },
     {
       "id": "sci.f3.metal_reactivity",
@@ -2118,7 +2252,8 @@
       "bookColor": "#0e7490",
       "bookOrder": 9,
       "external_id": "ab7171a9be811689",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "material_sci"
     },
     {
       "id": "sci.f3.reproduction_growth",
@@ -2137,7 +2272,8 @@
       "bookColor": "#0e7490",
       "bookOrder": 9,
       "external_id": "70659332407616a5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.f3.respiration",
@@ -2156,7 +2292,8 @@
       "bookColor": "#0e7490",
       "bookOrder": 9,
       "external_id": "65c48564d2732807",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.f3.space_exploration",
@@ -2175,7 +2312,8 @@
       "bookColor": "#0e7490",
       "bookOrder": 9,
       "external_id": "02ae0c04056e7b54",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "earth_space"
     },
     {
       "id": "sci.f3.space_weather",
@@ -2194,7 +2332,8 @@
       "bookColor": "#0e7490",
       "bookOrder": 9,
       "external_id": "c0a4f30e7867158e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "earth_space"
     },
     {
       "id": "sci.f3.stimuli_response",
@@ -2213,7 +2352,8 @@
       "bookColor": "#0e7490",
       "bookOrder": 9,
       "external_id": "491ad9ae1318e8bb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     },
     {
       "id": "sci.f3.transport_circulation",
@@ -2232,7 +2372,8 @@
       "bookColor": "#0e7490",
       "bookOrder": 9,
       "external_id": "fd460f7db4707c44",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "life_sci"
     }
   ],
   "edges": [

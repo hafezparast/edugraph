@@ -24,6 +24,43 @@
       "order": 2
     }
   ],
+  "strands": [
+    {
+      "id": "business_env",
+      "name": "Business Environment",
+      "color": "#ef4444"
+    },
+    {
+      "id": "people",
+      "name": "People & Organisation",
+      "color": "#f97316"
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing",
+      "color": "#eab308"
+    },
+    {
+      "id": "operations",
+      "name": "Operations Management",
+      "color": "#22c55e"
+    },
+    {
+      "id": "finance",
+      "name": "Finance & Accounting",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "strategy",
+      "name": "Strategic Management",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "global",
+      "name": "Global Business & Ethics",
+      "color": "#ec4899"
+    }
+  ],
   "nodes": [
     {
       "id": "al.bus.as.enterprise_starting_business",
@@ -41,7 +78,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "b283bf4a14fa309e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "business_env"
     },
     {
       "id": "al.bus.as.business_structure",
@@ -59,7 +97,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "3620095275bb3993",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "business_env"
     },
     {
       "id": "al.bus.as.business_size",
@@ -77,7 +116,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "12fd8a790e813bc4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "business_env"
     },
     {
       "id": "al.bus.as.business_objectives",
@@ -95,7 +135,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "03c9284231eb07d7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "business_env"
     },
     {
       "id": "al.bus.as.external_environment",
@@ -113,7 +154,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "75468265c9b77c80",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "business_env"
     },
     {
       "id": "al.bus.as.economic_environment",
@@ -131,7 +173,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "f090638f4a587678",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "business_env"
     },
     {
       "id": "al.bus.as.legal_environment",
@@ -149,7 +192,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "d36a693e735d3d9f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "business_env"
     },
     {
       "id": "al.bus.as.hr_planning",
@@ -167,7 +211,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "4dc6c3001bce5144",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "people"
     },
     {
       "id": "al.bus.as.recruitment_selection",
@@ -185,7 +230,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "d28fd4218e318f52",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "people"
     },
     {
       "id": "al.bus.as.motivation_theory",
@@ -203,7 +249,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "9d4b43cfc51cb212",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "people"
     },
     {
       "id": "al.bus.as.motivation_practice",
@@ -221,7 +268,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "9d42b5536d122f56",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "people"
     },
     {
       "id": "al.bus.as.leadership_styles",
@@ -239,7 +287,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "3365747a9f748748",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "people"
     },
     {
       "id": "al.bus.as.org_structure",
@@ -257,7 +306,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "7620b2b84973553f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "people"
     },
     {
       "id": "al.bus.as.communication",
@@ -275,7 +325,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "2df4ce9f70e14c37",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "people"
     },
     {
       "id": "al.bus.as.market_research",
@@ -293,7 +344,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "0a5008721322d396",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "marketing"
     },
     {
       "id": "al.bus.as.segmentation_targeting",
@@ -311,7 +363,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "676f2c3b80cfd3b9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "marketing"
     },
     {
       "id": "al.bus.as.marketing_mix_product",
@@ -329,7 +382,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "db46e1dd31c53153",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "marketing"
     },
     {
       "id": "al.bus.as.marketing_mix_price",
@@ -347,7 +401,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "7614a7fe18f93204",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "marketing"
     },
     {
       "id": "al.bus.as.marketing_mix_place",
@@ -365,7 +420,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "d0bfb161db823fee",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "marketing"
     },
     {
       "id": "al.bus.as.marketing_mix_promotion",
@@ -383,7 +439,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "92fa6dc98d6c7848",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "marketing"
     },
     {
       "id": "al.bus.as.elasticity_of_demand",
@@ -401,7 +458,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "4967345c097907f9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "marketing"
     },
     {
       "id": "al.bus.as.production_methods",
@@ -419,7 +477,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "6d80783300fc56d8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "operations"
     },
     {
       "id": "al.bus.as.quality_management",
@@ -437,7 +496,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "a6d23e96855e0489",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "operations"
     },
     {
       "id": "al.bus.as.lean_production",
@@ -455,7 +515,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "21ce482d31e85598",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "operations"
     },
     {
       "id": "al.bus.as.inventory_management",
@@ -473,7 +534,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "706204acb89c2cd0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "operations"
     },
     {
       "id": "al.bus.as.project_management",
@@ -491,7 +553,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "0ca7312c2d2f3b3e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "operations"
     },
     {
       "id": "al.bus.as.sources_of_finance",
@@ -509,7 +572,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "67add99755368aa0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "finance"
     },
     {
       "id": "al.bus.as.cash_flow",
@@ -527,7 +591,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "e2a4573418deceed",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "finance"
     },
     {
       "id": "al.bus.as.costs_revenue_profit",
@@ -545,7 +610,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "bcdc950626d1baaa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "finance"
     },
     {
       "id": "al.bus.as.income_statements",
@@ -563,7 +629,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "175077915c5d3596",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "finance"
     },
     {
       "id": "al.bus.as.balance_sheets",
@@ -581,7 +648,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "4c75075c31fd99ea",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "finance"
     },
     {
       "id": "al.bus.as.budgets",
@@ -599,7 +667,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "0039982016173501",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "finance"
     },
     {
       "id": "al.bus.as.decision_trees",
@@ -617,7 +686,8 @@
       "bookColor": "#f97316",
       "bookOrder": 1,
       "external_id": "30d82f04c18a68b1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "finance"
     },
     {
       "id": "al.bus.a2.strategic_analysis_swot",
@@ -635,7 +705,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "5d41105ff9f60459",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "strategy"
     },
     {
       "id": "al.bus.a2.pest_analysis",
@@ -653,7 +724,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "9e137c50bee1b638",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "strategy"
     },
     {
       "id": "al.bus.a2.porters_five_forces",
@@ -671,7 +743,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "d225e5448110d929",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "strategy"
     },
     {
       "id": "al.bus.a2.core_competences",
@@ -689,7 +762,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "feb6bc6790fedc73",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "strategy"
     },
     {
       "id": "al.bus.a2.ansoff_matrix",
@@ -707,7 +781,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "536216ea4aaef085",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "strategy"
     },
     {
       "id": "al.bus.a2.strategic_choice_force_field",
@@ -725,7 +800,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "67e51316129567bb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "strategy"
     },
     {
       "id": "al.bus.a2.business_growth_strategy",
@@ -743,7 +819,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "baaa0b2cebce49cb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "strategy"
     },
     {
       "id": "al.bus.a2.strategic_implementation",
@@ -761,7 +838,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "85cf8cd12c69718e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "strategy"
     },
     {
       "id": "al.bus.a2.change_management",
@@ -779,7 +857,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "aefe04b137ebee58",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "strategy"
     },
     {
       "id": "al.bus.a2.corporate_culture",
@@ -797,7 +876,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "793496ae7fcef7c1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "strategy"
     },
     {
       "id": "al.bus.a2.marketing_planning",
@@ -815,7 +895,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "95b2cb68ad29653f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "marketing"
     },
     {
       "id": "al.bus.a2.international_marketing",
@@ -833,7 +914,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "a5d3292c07680421",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "marketing"
     },
     {
       "id": "al.bus.a2.supply_chain_management",
@@ -851,7 +933,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "b823b49b67525b6a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "operations"
     },
     {
       "id": "al.bus.a2.operations_strategy",
@@ -869,7 +952,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "7aa4ce5c09c0caaf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "operations"
     },
     {
       "id": "al.bus.a2.location_decisions",
@@ -887,7 +971,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "4ad69c04a1aeedc9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "operations"
     },
     {
       "id": "al.bus.a2.ratio_analysis",
@@ -905,7 +990,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "af9cd8191b776259",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "finance"
     },
     {
       "id": "al.bus.a2.investment_appraisal",
@@ -923,7 +1009,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "93716109dcf79eac",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "finance"
     },
     {
       "id": "al.bus.a2.finance_strategy",
@@ -941,7 +1028,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "e6402b435522d520",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "finance"
     },
     {
       "id": "al.bus.a2.workforce_planning",
@@ -959,7 +1047,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "3dddf4a506003f64",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "people"
     },
     {
       "id": "al.bus.a2.training_development",
@@ -977,7 +1066,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "07ff23c76584e7d3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "people"
     },
     {
       "id": "al.bus.a2.globalisation",
@@ -995,7 +1085,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "0ff77f6e87148dc3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "al.bus.a2.multinational_companies",
@@ -1013,7 +1104,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "3a17913a9f652582",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "al.bus.a2.exchange_rates_trade",
@@ -1031,7 +1123,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "055d1b0527e00152",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "al.bus.a2.cultural_differences",
@@ -1049,7 +1142,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "a47b97efffe99061",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "al.bus.a2.business_ethics",
@@ -1067,7 +1161,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "04c83d75fc5378af",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "al.bus.a2.csr",
@@ -1085,7 +1180,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "73d46cb7bcc77613",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "al.bus.a2.technology_and_business",
@@ -1103,7 +1199,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "38eee3c11d65f36d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "al.bus.a2.contingency_planning",
@@ -1121,7 +1218,8 @@
       "bookColor": "#ea580c",
       "bookOrder": 2,
       "external_id": "a7da14e03d19ac48",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     }
   ],
   "edges": [

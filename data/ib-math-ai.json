@@ -42,6 +42,33 @@
       "order": 5
     }
   ],
+  "strands": [
+    {
+      "id": "algebra",
+      "name": "Number & Algebra",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "functions",
+      "name": "Functions",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "geometry",
+      "name": "Geometry & Trigonometry",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics & Probability",
+      "color": "#F39C12"
+    },
+    {
+      "id": "calculus",
+      "name": "Calculus",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ib.mai.approximation_estimation",
@@ -59,7 +86,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "61c097353211a2bd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "ib.mai.sequences_series",
@@ -77,7 +105,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "97bb34cf8109680b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "ib.mai.financial_math",
@@ -95,7 +124,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "66c4fc1112330176",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "ib.mai.exponents_logs",
@@ -113,7 +143,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "fdd138b6f6722499",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "ib.mai.systems_of_equations",
@@ -131,7 +162,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "e51c792bc8219d20",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "ib.mai.matrices",
@@ -150,7 +182,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "c295a9705281dfd2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "ib.mai.complex_numbers",
@@ -169,7 +202,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "71fd0a0e7a40c2a9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "ib.mai.linear_models",
@@ -187,7 +221,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "e5e6fdce4732b813",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "functions"
     },
     {
       "id": "ib.mai.quadratic_models",
@@ -205,7 +240,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "4729a707e05ce8d8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "functions"
     },
     {
       "id": "ib.mai.exponential_models",
@@ -223,7 +259,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "c9e6e7b0f57e6664",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "functions"
     },
     {
       "id": "ib.mai.graph_transformations",
@@ -241,7 +278,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "7c0a8bd97813ffd7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "functions"
     },
     {
       "id": "ib.mai.graph_theory",
@@ -260,7 +298,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "30889be9f323b63d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "functions"
     },
     {
       "id": "ib.mai.mensuration",
@@ -278,7 +317,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "580050d1746a9ec9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "ib.mai.right_angle_trig",
@@ -296,7 +336,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "715970862427f1b6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "ib.mai.non_right_trig",
@@ -314,7 +355,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "398be7a1008a9f83",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "ib.mai.coordinate_geometry",
@@ -332,7 +374,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "f6ebe3e1baf516cf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "ib.mai.voronoi_diagrams",
@@ -350,7 +393,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "a712599bb7aa65b5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "ib.mai.vectors",
@@ -369,7 +413,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "8657ce4f9c69882b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "ib.mai.descriptive_statistics",
@@ -387,7 +432,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "38d11d8f96ebd076",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "ib.mai.regression_correlation",
@@ -405,7 +451,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "890ee0895ef78f95",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "ib.mai.probability",
@@ -423,7 +470,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "0a640b6cbcd5d073",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "ib.mai.distributions",
@@ -441,7 +489,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "382e6ad56146ac9f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "ib.mai.statistical_tests",
@@ -459,7 +508,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "5d1424b27ae08a6f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "ib.mai.markov_chains",
@@ -478,7 +528,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "b61fe530a9886efa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "ib.mai.differentiation",
@@ -496,7 +547,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "8d0a05b80bfed1b4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.mai.further_differentiation",
@@ -515,7 +567,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "fbc0dd9c83f5dc01",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.mai.optimization",
@@ -533,7 +586,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "d9c38cd618ece37e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.mai.integration",
@@ -551,7 +605,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "749c0ef6b4ca5b7e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.mai.kinematics",
@@ -569,7 +624,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "5488b24432d130a5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.mai.differential_equations",
@@ -588,7 +644,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "913ce3abb5ffe5b4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.mai.numerical_methods",
@@ -606,7 +663,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "944fc29f3dc7516f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.mai.modelling",
@@ -624,7 +682,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "07b91fa42fc01c79",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "functions"
     },
     {
       "id": "ib.mai.trig_models",
@@ -642,7 +701,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "91cb82d2141f502d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "ib.mai.network_analysis",
@@ -661,7 +721,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "93c5aa8eb9b9fa55",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "functions"
     },
     {
       "id": "ib.mai.linear_programming",
@@ -680,7 +741,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "b1d653cfa8ca1078",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "ib.mai.confidence_intervals",
@@ -699,7 +761,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "6dacce19a09b6b6b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "ib.mai.nonlinear_regression",
@@ -718,7 +781,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "30a9cf3f761bd2d1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "ib.mai.coupled_des",
@@ -737,7 +801,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "71b4c45cf95bcca9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     }
   ],
   "edges": [

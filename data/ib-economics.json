@@ -36,6 +36,28 @@
       "order": 4
     }
   ],
+  "strands": [
+    {
+      "id": "intro",
+      "name": "Introduction to Economics",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "micro",
+      "name": "Microeconomics",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "macro",
+      "name": "Macroeconomics",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "global",
+      "name": "The Global Economy",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ib.eco.scarcity_choice",
@@ -53,7 +75,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "7405b02007da26a1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "intro"
     },
     {
       "id": "ib.eco.economic_systems",
@@ -71,7 +94,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "e0554b11cf36b728",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "intro"
     },
     {
       "id": "ib.eco.demand_supply",
@@ -89,7 +113,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "5cb6b2ed044a35ac",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "micro"
     },
     {
       "id": "ib.eco.elasticity",
@@ -107,7 +132,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "44b9551dc22509b5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "micro"
     },
     {
       "id": "ib.eco.government_intervention",
@@ -125,7 +151,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "c059c27b93f2e08a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "micro"
     },
     {
       "id": "ib.eco.market_failure",
@@ -143,7 +170,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "c9cdacbcfa6a5fc5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "micro"
     },
     {
       "id": "ib.eco.firm_theory",
@@ -162,7 +190,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "283018d760fb1b4a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "micro"
     },
     {
       "id": "ib.eco.market_structures",
@@ -181,7 +210,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "13ef1a6a01339a02",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "micro"
     },
     {
       "id": "ib.eco.measuring_economic_activity",
@@ -199,7 +229,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "bb2dfbb3d7140c37",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "macro"
     },
     {
       "id": "ib.eco.aggregate_demand_supply",
@@ -217,7 +248,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "02589523f83444a2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "macro"
     },
     {
       "id": "ib.eco.fiscal_policy",
@@ -235,7 +267,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "a034c4670d15297a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "macro"
     },
     {
       "id": "ib.eco.monetary_policy",
@@ -253,7 +286,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "b46aa6a16e417cde",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "macro"
     },
     {
       "id": "ib.eco.supply_side",
@@ -271,7 +305,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "a662ad997a710ffd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "macro"
     },
     {
       "id": "ib.eco.unemployment",
@@ -289,7 +324,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "bf649b21c52e34ed",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "macro"
     },
     {
       "id": "ib.eco.inflation",
@@ -307,7 +343,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "ab1c1c5ff4cf8dfd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "macro"
     },
     {
       "id": "ib.eco.inequality",
@@ -325,7 +362,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "6ff580eb714e3bc1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "macro"
     },
     {
       "id": "ib.eco.international_trade",
@@ -343,7 +381,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "74f8a55dd616b6ed",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "ib.eco.protectionism",
@@ -361,7 +400,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "ed91e9d2487aa485",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "ib.eco.exchange_rates",
@@ -379,7 +419,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "fb8543ee7ce31acc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "ib.eco.balance_of_payments",
@@ -397,7 +438,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "879b6ff8785108b2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "ib.eco.economic_integration",
@@ -415,7 +457,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "2ef138d434b63907",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "ib.eco.economic_development",
@@ -433,7 +476,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "781eaf39a716170c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "ib.eco.sustainability",
@@ -451,7 +495,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "abf6f2673592b3d9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "ib.eco.economic_growth",
@@ -469,7 +514,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "9747e117cf2d2a6a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "macro"
     }
   ],
   "edges": [

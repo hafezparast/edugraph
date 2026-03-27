@@ -42,6 +42,33 @@
       "order": 5
     }
   ],
+  "strands": [
+    {
+      "id": "cell",
+      "name": "Cell Biology",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "plant",
+      "name": "Plant Biology",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "animal",
+      "name": "Animal Biology",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "ecology",
+      "name": "Ecology",
+      "color": "#F39C12"
+    },
+    {
+      "id": "biosystematics",
+      "name": "Biosystematics",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ibo.cell.structure",
@@ -60,7 +87,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "7cecbca588c156d6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell"
     },
     {
       "id": "ibo.cell.biochemistry",
@@ -79,7 +107,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "86eeaf5d9c965ff6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell"
     },
     {
       "id": "ibo.cell.molecular",
@@ -98,7 +127,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "a63519eca9adec8f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell"
     },
     {
       "id": "ibo.cell.genetics",
@@ -117,7 +147,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "68c9ce8964203f7d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell"
     },
     {
       "id": "ibo.cell.cell_division",
@@ -136,7 +167,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "cd7140fd493fa515",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell"
     },
     {
       "id": "ibo.plant.anatomy",
@@ -155,7 +187,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 2,
       "external_id": "7a7f14d9d284116b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "ibo.plant.physiology",
@@ -174,7 +207,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 2,
       "external_id": "99dbfaaa45d67282",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "ibo.plant.reproduction",
@@ -193,7 +227,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 2,
       "external_id": "87cd4dd9ed4a1c50",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "ibo.plant.ecology",
@@ -212,7 +247,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 2,
       "external_id": "59d6116a1b309f01",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "ibo.animal.anatomy",
@@ -231,7 +267,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "a444023172b0232e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "animal"
     },
     {
       "id": "ibo.animal.physiology",
@@ -250,7 +287,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "042f2c16ef90961b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "animal"
     },
     {
       "id": "ibo.animal.reproduction",
@@ -269,7 +307,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "70d07ea9ff47d08e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "animal"
     },
     {
       "id": "ibo.animal.development",
@@ -288,7 +327,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "e53bd1ed7f6de066",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "animal"
     },
     {
       "id": "ibo.animal.immunology",
@@ -307,7 +347,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "adde63d11797e756",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "animal"
     },
     {
       "id": "ibo.eco.population",
@@ -326,7 +367,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "8faa5117fa195514",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "ibo.eco.community",
@@ -345,7 +387,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "4b2338dea319bb08",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "ibo.eco.ecosystems",
@@ -364,7 +407,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "c03b3c013b922fdd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "ibo.eco.conservation",
@@ -383,7 +427,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "7179b3c50ebdd067",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "ibo.eco.biogeography",
@@ -402,7 +447,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "ba48d4913c7b02ee",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "ecology"
     },
     {
       "id": "ibo.biosys.taxonomy",
@@ -421,7 +467,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "2e51dfe4099dda5e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "biosystematics"
     },
     {
       "id": "ibo.biosys.phylogenetics",
@@ -440,7 +487,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "7a29e0de041c1b0f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "biosystematics"
     },
     {
       "id": "ibo.biosys.evolution",
@@ -459,7 +507,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "51d22e0e6dc9121b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "biosystematics"
     },
     {
       "id": "ibo.biosys.biodiversity",
@@ -478,7 +527,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "4f9b198e7eb8b321",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "biosystematics"
     }
   ],
   "edges": [

@@ -42,6 +42,33 @@
       "order": 5
     }
   ],
+  "strands": [
+    {
+      "id": "mechanics",
+      "name": "Mechanics",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "thermo",
+      "name": "Thermodynamics",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "em",
+      "name": "Electromagnetism",
+      "color": "#F39C12"
+    },
+    {
+      "id": "waves",
+      "name": "Waves & Optics",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "modern",
+      "name": "Modern Physics",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ipho.mech.classical",
@@ -60,7 +87,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "e37ce096815c52b5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "ipho.mech.rigid_body",
@@ -79,7 +107,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "4b4a0091cf7588cd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "ipho.mech.fluid",
@@ -98,7 +127,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "2a6a0bd7e6355af3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "ipho.mech.oscillations",
@@ -117,7 +147,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "755dbf9bcf5a1251",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "ipho.mech.relativity",
@@ -136,7 +167,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "be596f8c98286b73",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "ipho.thermo.kinetic",
@@ -155,7 +187,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "9aab1edcf914ed03",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermo"
     },
     {
       "id": "ipho.thermo.laws",
@@ -174,7 +207,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "94ddf7a0dde8cf42",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermo"
     },
     {
       "id": "ipho.thermo.phase",
@@ -193,7 +227,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "6b6e5b633000656d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermo"
     },
     {
       "id": "ipho.thermo.statistical",
@@ -212,7 +247,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "56693aa702397e61",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermo"
     },
     {
       "id": "ipho.em.electrostatics",
@@ -231,7 +267,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "1adea80845b86b26",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "em"
     },
     {
       "id": "ipho.em.magnetostatics",
@@ -250,7 +287,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "09a5d68320cc5acb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "em"
     },
     {
       "id": "ipho.em.induction",
@@ -269,7 +307,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "a0f3c5f3dfd01edc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "em"
     },
     {
       "id": "ipho.em.ac_circuits",
@@ -288,7 +327,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "63814fe5fbea8d03",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "em"
     },
     {
       "id": "ipho.em.maxwell",
@@ -307,7 +347,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "68c9b33ce29d3c90",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "em"
     },
     {
       "id": "ipho.waves.wave_phenomena",
@@ -326,7 +367,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "f1db482aca7240ae",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "waves"
     },
     {
       "id": "ipho.waves.interference",
@@ -345,7 +387,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "d033808a32c7f549",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "waves"
     },
     {
       "id": "ipho.waves.geometrical",
@@ -364,7 +407,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "f395a455300c7036",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "waves"
     },
     {
       "id": "ipho.waves.wave_optics",
@@ -383,7 +427,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "5ca9d4f32abf5226",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "waves"
     },
     {
       "id": "ipho.modern.quantum",
@@ -402,7 +447,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "725de12f48251383",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "ipho.modern.atomic",
@@ -421,7 +467,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "28ea0c78b3215567",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "ipho.modern.nuclear",
@@ -440,7 +487,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "6c12d5851f9b1894",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "ipho.modern.solid_state",
@@ -459,7 +507,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "c567ff124af802d4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "ipho.mech.gravitation",
@@ -478,7 +527,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "03c06eaa714a799b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "ipho.thermo.heat_transfer",
@@ -497,7 +547,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "e3c74ba74f0d4988",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermo"
     },
     {
       "id": "ipho.em.dc_circuits",
@@ -516,7 +567,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "c5fbbf666158fb24",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "em"
     }
   ],
   "edges": [

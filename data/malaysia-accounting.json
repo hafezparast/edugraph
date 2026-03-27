@@ -30,6 +30,23 @@
       "order": 3
     }
   ],
+  "strands": [
+    {
+      "id": "financial",
+      "name": "Financial Accounting",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "management",
+      "name": "Cost & Management Accounting",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "reporting",
+      "name": "Financial Reporting & Analysis",
+      "color": "#22c55e"
+    }
+  ],
   "nodes": [
     {
       "id": "acct.s1.ch1_fundamentals",
@@ -48,7 +65,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "460b9dd2b162844a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "acct.s1.ch2_assets",
@@ -67,7 +85,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "c8928814981c706c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "acct.s1.ch3_liabilities_equity",
@@ -86,7 +105,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "3a8d4a62c08fa813",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "acct.s1.ch4_inventory_valuation",
@@ -105,7 +125,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "54baf7b8c2bca485",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "acct.s1.ch5_cooperatives",
@@ -124,7 +145,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "df3b1ba37c508679",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "acct.s1.ch6_not_for_profit",
@@ -143,7 +165,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "d5e5a3d9cb13a03f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "acct.s1.ch7_incomplete_records",
@@ -162,7 +185,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "2bf04b9dad878fb1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "acct.s1.ch8_internal_control",
@@ -181,7 +205,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "197780fc0dc43c5c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial"
     },
     {
       "id": "acct.s2.ch1_cost_fundamentals",
@@ -200,7 +225,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 2,
       "external_id": "d3734c991c0dfea1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "management"
     },
     {
       "id": "acct.s2.ch2_costing_methods",
@@ -219,7 +245,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 2,
       "external_id": "be6c325a4357b7d0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "management"
     },
     {
       "id": "acct.s2.ch3_marginal_absorption",
@@ -238,7 +265,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 2,
       "external_id": "d5907bc658dd0406",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "management"
     },
     {
       "id": "acct.s2.ch4_cvp_analysis",
@@ -257,7 +285,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 2,
       "external_id": "66367a5af35c4b5f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "management"
     },
     {
       "id": "acct.s2.ch5_decision_making",
@@ -276,7 +305,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 2,
       "external_id": "ee8c1ef845dcdc39",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "management"
     },
     {
       "id": "acct.s2.ch6_standard_costing",
@@ -295,7 +325,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 2,
       "external_id": "703006beaee22a40",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "management"
     },
     {
       "id": "acct.s2.ch7_budgeting",
@@ -314,7 +345,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 2,
       "external_id": "706620eb6e75fee4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "management"
     },
     {
       "id": "acct.s3.ch1_accounting_standards",
@@ -333,7 +365,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 3,
       "external_id": "166690160601a77c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reporting"
     },
     {
       "id": "acct.s3.ch2_manufacturing_accounts",
@@ -352,7 +385,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 3,
       "external_id": "0ba0cda584255eea",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reporting"
     },
     {
       "id": "acct.s3.ch3_partnership",
@@ -371,7 +405,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 3,
       "external_id": "a489afffee0c3e1b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reporting"
     },
     {
       "id": "acct.s3.ch4_limited_companies",
@@ -390,7 +425,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 3,
       "external_id": "7d3609bc1e28215a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reporting"
     },
     {
       "id": "acct.s3.ch5_financial_statement_analysis",
@@ -409,7 +445,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 3,
       "external_id": "372dd43059117e88",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reporting"
     },
     {
       "id": "acct.s3.ch6_cash_flow_statement",
@@ -428,7 +465,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 3,
       "external_id": "2dc45f0f83ee0ffe",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reporting"
     },
     {
       "id": "acct.s3.sub_computerised_accounting",
@@ -447,7 +485,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 3,
       "external_id": "73fa9632fb99d9f4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reporting"
     }
   ],
   "edges": [

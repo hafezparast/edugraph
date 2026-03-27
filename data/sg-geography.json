@@ -32,6 +32,33 @@
       "order": 3
     }
   ],
+  "strands": [
+    {
+      "id": "physical",
+      "name": "Physical Geography",
+      "color": "#ef4444"
+    },
+    {
+      "id": "weather_climate",
+      "name": "Weather & Climate",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "human",
+      "name": "Human Geography",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "resources",
+      "name": "Resources & Sustainability",
+      "color": "#10b981"
+    },
+    {
+      "id": "skills",
+      "name": "Geographical Skills",
+      "color": "#8b5cf6"
+    }
+  ],
   "nodes": [
     {
       "id": "sg.geo.lower.water_cycle",
@@ -49,7 +76,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "ac57596012aae18d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "sg.geo.lower.water_supply_management",
@@ -67,7 +95,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "511c9de5b5b429bc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "resources"
     },
     {
       "id": "sg.geo.lower.tropical_rainforests",
@@ -85,7 +114,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "4dae333ae293ca68",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "sg.geo.lower.deforestation_conservation",
@@ -103,7 +133,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "454ff792053e788a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "sg.geo.lower.housing",
@@ -121,7 +152,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "53637d39ee22740a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "human"
     },
     {
       "id": "sg.geo.lower.transport",
@@ -139,7 +171,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "2d9a7bd82bb3fa24",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "human"
     },
     {
       "id": "sg.geo.lower.geographical_skills",
@@ -157,7 +190,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "084cc61450d9056b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "skills"
     },
     {
       "id": "sg.geo.lower.population",
@@ -175,7 +209,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "7f6ffc72606a4d2f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "human"
     },
     {
       "id": "sg.geo.upper.earths_structure",
@@ -193,7 +228,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "2bd19aeef3e7b2a8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "sg.geo.upper.plate_tectonics_theory",
@@ -211,7 +247,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "dbf2ce1eb42886c4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "sg.geo.upper.plate_boundaries",
@@ -229,7 +266,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "a931dd82b2aa7fff",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "sg.geo.upper.volcanoes",
@@ -247,7 +285,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "eb0dac88ce56979f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "sg.geo.upper.earthquakes",
@@ -265,7 +304,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "99ee7b841d969b89",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "sg.geo.upper.tectonic_hazard_management",
@@ -283,7 +323,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "f9af7194d1485899",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "sg.geo.upper.weather_elements",
@@ -301,7 +342,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "408d9f1a743a75f0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "weather_climate"
     },
     {
       "id": "sg.geo.upper.weather_processes",
@@ -319,7 +361,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "9c8b1069b3c02c27",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "weather_climate"
     },
     {
       "id": "sg.geo.upper.climate_zones",
@@ -337,7 +380,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "bc8f27b7df4cfd58",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "weather_climate"
     },
     {
       "id": "sg.geo.upper.greenhouse_effect",
@@ -355,7 +399,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "3ed7c26fdb2b5fd8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "weather_climate"
     },
     {
       "id": "sg.geo.upper.climate_change_responses",
@@ -373,7 +418,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "441e79559ec8203a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "weather_climate"
     },
     {
       "id": "sg.geo.upper.tourism_growth",
@@ -391,7 +437,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "37f8f8a116f62730",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "human"
     },
     {
       "id": "sg.geo.upper.tourism_impacts",
@@ -409,7 +456,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "47426d96f472acad",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "human"
     },
     {
       "id": "sg.geo.upper.sustainable_tourism",
@@ -427,7 +475,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "a42e9fac1720fee3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "resources"
     },
     {
       "id": "sg.geo.upper.food_production",
@@ -445,7 +494,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "ce8c55f8dbfca6ae",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "resources"
     },
     {
       "id": "sg.geo.upper.food_security",
@@ -463,7 +513,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "b04878aab838c2ab",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "resources"
     },
     {
       "id": "sg.geo.upper.food_strategies",
@@ -481,7 +532,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "8659386ca3ddbe40",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "resources"
     },
     {
       "id": "sg.geo.upper.health_diseases",
@@ -499,7 +551,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "e5e247194977fa47",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "resources"
     },
     {
       "id": "sg.geo.upper.infectious_diseases",
@@ -517,7 +570,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "bc6e38aeb30d0c3e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "resources"
     },
     {
       "id": "sg.geo.upper.disease_management",
@@ -535,7 +589,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "b37156d7290f9d18",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "resources"
     },
     {
       "id": "sg.geo.upper.coastal_processes",
@@ -553,7 +608,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "8f67fa96f3507be8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "sg.geo.upper.coastal_landforms",
@@ -571,7 +627,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "656b382e87f34901",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "sg.geo.upper.coastal_management",
@@ -589,7 +646,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "57a42857ec0cc8e4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "sg.geo.upper.development_indicators",
@@ -607,7 +665,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "d8e588b13dc051ce",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "resources"
     },
     {
       "id": "sg.geo.upper.development_gap",
@@ -625,7 +684,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "8c4089f4e2bff9bd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "resources"
     },
     {
       "id": "sg.geo.upper.reducing_development_gap",
@@ -643,7 +703,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "e64633e1f56759db",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "resources"
     },
     {
       "id": "sg.geo.upper.geographical_investigation",
@@ -661,7 +722,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "2c15cfca8cc2ff93",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "skills"
     },
     {
       "id": "sg.geo.jc.tropical_climate",
@@ -679,7 +741,8 @@
       "bookColor": "#7c3aed",
       "bookOrder": 3,
       "external_id": "a263e70a7d173689",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "weather_climate"
     },
     {
       "id": "sg.geo.jc.tropical_forests",
@@ -697,7 +760,8 @@
       "bookColor": "#7c3aed",
       "bookOrder": 3,
       "external_id": "950178670ff17c90",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "sg.geo.jc.tropical_coasts",
@@ -715,7 +779,8 @@
       "bookColor": "#7c3aed",
       "bookOrder": 3,
       "external_id": "2b056535024b57a8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "sg.geo.jc.tropical_hazards",
@@ -733,7 +798,8 @@
       "bookColor": "#7c3aed",
       "bookOrder": 3,
       "external_id": "21c03a0c27b78e79",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "weather_climate"
     },
     {
       "id": "sg.geo.jc.development_geography",
@@ -751,7 +817,8 @@
       "bookColor": "#7c3aed",
       "bookOrder": 3,
       "external_id": "53aa43f32ef04d2a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "resources"
     },
     {
       "id": "sg.geo.jc.globalisation",
@@ -769,7 +836,8 @@
       "bookColor": "#7c3aed",
       "bookOrder": 3,
       "external_id": "94854e3559ca9f4c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "human"
     },
     {
       "id": "sg.geo.jc.urbanisation",
@@ -787,7 +855,8 @@
       "bookColor": "#7c3aed",
       "bookOrder": 3,
       "external_id": "a976329d71ae9bbf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "human"
     },
     {
       "id": "sg.geo.jc.sustainable_development",
@@ -805,7 +874,8 @@
       "bookColor": "#7c3aed",
       "bookOrder": 3,
       "external_id": "5ebe7bf2775eb974",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "resources"
     },
     {
       "id": "sg.geo.jc.climate_change_governance",
@@ -823,7 +893,8 @@
       "bookColor": "#7c3aed",
       "bookOrder": 3,
       "external_id": "d1ea2b2e04681de2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "weather_climate"
     },
     {
       "id": "sg.geo.jc.food_resource_management",
@@ -841,7 +912,8 @@
       "bookColor": "#7c3aed",
       "bookOrder": 3,
       "external_id": "d15808b8b5002ef7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "resources"
     },
     {
       "id": "sg.geo.jc.water_resource_management",
@@ -859,7 +931,8 @@
       "bookColor": "#7c3aed",
       "bookOrder": 3,
       "external_id": "2a3ebff725b034e7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "resources"
     },
     {
       "id": "sg.geo.jc.geographical_skills_investigation",
@@ -877,7 +950,8 @@
       "bookColor": "#7c3aed",
       "bookOrder": 3,
       "external_id": "902de011b194e421",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "skills"
     }
   ],
   "edges": [

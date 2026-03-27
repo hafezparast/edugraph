@@ -42,6 +42,33 @@
       "order": 5
     }
   ],
+  "strands": [
+    {
+      "id": "biochem",
+      "name": "Chemistry of Life & Cells",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "energetics",
+      "name": "Cellular Energetics",
+      "color": "#F39C12"
+    },
+    {
+      "id": "cell-comm",
+      "name": "Cell Communication & Cycle",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "heredity",
+      "name": "Heredity & Gene Expression",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "evolution",
+      "name": "Evolution & Ecology",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ap.bio.biochemistry",
@@ -59,7 +86,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "15e0b9f36f76afdf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "biochem"
     },
     {
       "id": "ap.bio.cell_structure",
@@ -77,7 +105,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "bdecdc445480856d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "biochem"
     },
     {
       "id": "ap.bio.cell_membrane",
@@ -95,7 +124,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "96c6b65550c45f4b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "biochem"
     },
     {
       "id": "ap.bio.enzymes",
@@ -113,7 +143,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "d6f965cc58ef320d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "biochem"
     },
     {
       "id": "ap.bio.cellular_respiration",
@@ -131,7 +162,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "e86a2c6cc4672c8c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energetics"
     },
     {
       "id": "ap.bio.photosynthesis",
@@ -149,7 +181,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "b701a1b418e815cd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energetics"
     },
     {
       "id": "ap.bio.cell_communication",
@@ -167,7 +200,8 @@
       "bookColor": "#f97316",
       "bookOrder": 3,
       "external_id": "017c15328a4778b8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell-comm"
     },
     {
       "id": "ap.bio.cell_cycle",
@@ -185,7 +219,8 @@
       "bookColor": "#f97316",
       "bookOrder": 3,
       "external_id": "6bfa9aaad7d7860a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell-comm"
     },
     {
       "id": "ap.bio.meiosis",
@@ -203,7 +238,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "6ecb8a9c1bd4eb20",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cell-comm"
     },
     {
       "id": "ap.bio.mendelian_genetics",
@@ -221,7 +257,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "249454a4383b3b34",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "heredity"
     },
     {
       "id": "ap.bio.dna_structure",
@@ -239,7 +276,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "ca9e83d7e2e2e204",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "heredity"
     },
     {
       "id": "ap.bio.gene_expression",
@@ -257,7 +295,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "97834730d0ddbf98",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "heredity"
     },
     {
       "id": "ap.bio.gene_regulation",
@@ -275,7 +314,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "cbb07cb5bc811165",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "heredity"
     },
     {
       "id": "ap.bio.biotechnology",
@@ -293,7 +333,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "15ec6c727c87862a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "heredity"
     },
     {
       "id": "ap.bio.natural_selection",
@@ -311,7 +352,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "7d189d9ea066e35b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "evolution"
     },
     {
       "id": "ap.bio.evolution_evidence",
@@ -329,7 +371,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "251aec0df8003d73",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "evolution"
     },
     {
       "id": "ap.bio.population_genetics",
@@ -347,7 +390,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "73063c50da17cc48",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "heredity"
     },
     {
       "id": "ap.bio.phylogeny",
@@ -365,7 +409,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "b2dd30423e977cfa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "heredity"
     },
     {
       "id": "ap.bio.ecology",
@@ -383,7 +428,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "f76bb7b2ad45b1f3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energetics"
     }
   ],
   "edges": [

@@ -48,6 +48,38 @@
       "order": 6
     }
   ],
+  "strands": [
+    {
+      "id": "structure1",
+      "name": "Models of Particulate Nature",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "structure2",
+      "name": "Models of Bonding",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "structure3",
+      "name": "Classification of Matter",
+      "color": "#1ABC9C"
+    },
+    {
+      "id": "reactivity1",
+      "name": "What Drives Reactions?",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "reactivity2",
+      "name": "How Much, How Fast, How Far?",
+      "color": "#F39C12"
+    },
+    {
+      "id": "reactivity3",
+      "name": "Mechanisms of Change",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ib.chm.atomic_structure",
@@ -65,7 +97,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "da5367e2a290d7f4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure1"
     },
     {
       "id": "ib.chm.electron_configuration",
@@ -83,7 +116,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "7430da3d80a34eba",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure1"
     },
     {
       "id": "ib.chm.mass_spectrometry",
@@ -101,7 +135,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "041d06e9e586446b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure1"
     },
     {
       "id": "ib.chm.periodicity",
@@ -119,7 +154,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "340a71e8cc08a228",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure1"
     },
     {
       "id": "ib.chm.ionic_bonding",
@@ -137,7 +173,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "de84c388369fc2df",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure2"
     },
     {
       "id": "ib.chm.covalent_bonding",
@@ -155,7 +192,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "084c5a445f1db09f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure2"
     },
     {
       "id": "ib.chm.metallic_bonding",
@@ -173,7 +211,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "64d2e811d2a22d64",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure2"
     },
     {
       "id": "ib.chm.intermolecular_forces",
@@ -191,7 +230,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "fe79c5e9fb0d1e1b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure2"
     },
     {
       "id": "ib.chm.hybridization",
@@ -210,7 +250,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 2,
       "external_id": "5bc058b9cd898b5c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure2"
     },
     {
       "id": "ib.chm.mole_concept",
@@ -228,7 +269,8 @@
       "bookColor": "#0f766e",
       "bookOrder": 3,
       "external_id": "53b6188f3744437d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure3"
     },
     {
       "id": "ib.chm.gases",
@@ -246,7 +288,8 @@
       "bookColor": "#0f766e",
       "bookOrder": 3,
       "external_id": "1257b029ce94c966",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure3"
     },
     {
       "id": "ib.chm.solutions",
@@ -264,7 +307,8 @@
       "bookColor": "#0f766e",
       "bookOrder": 3,
       "external_id": "f8a5071544e72363",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure3"
     },
     {
       "id": "ib.chm.functional_groups",
@@ -282,7 +326,8 @@
       "bookColor": "#0f766e",
       "bookOrder": 3,
       "external_id": "1446068e42e771ee",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure3"
     },
     {
       "id": "ib.chm.enthalpy_changes",
@@ -300,7 +345,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "7aba987fda418cde",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactivity1"
     },
     {
       "id": "ib.chm.entropy_gibbs",
@@ -318,7 +364,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "3ac86af822e00e81",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactivity1"
     },
     {
       "id": "ib.chm.born_haber",
@@ -337,7 +384,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "d7b5133563897b44",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactivity1"
     },
     {
       "id": "ib.chm.stoichiometry",
@@ -355,7 +403,8 @@
       "bookColor": "#d97706",
       "bookOrder": 5,
       "external_id": "060443ee1794cdcb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactivity2"
     },
     {
       "id": "ib.chm.kinetics",
@@ -373,7 +422,8 @@
       "bookColor": "#d97706",
       "bookOrder": 5,
       "external_id": "09698a6545b204cc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactivity2"
     },
     {
       "id": "ib.chm.equilibrium",
@@ -391,7 +441,8 @@
       "bookColor": "#d97706",
       "bookOrder": 5,
       "external_id": "76376935e6a6310b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactivity2"
     },
     {
       "id": "ib.chm.acids_bases",
@@ -409,7 +460,8 @@
       "bookColor": "#d97706",
       "bookOrder": 5,
       "external_id": "49a0c8b4c166cf83",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactivity2"
     },
     {
       "id": "ib.chm.redox",
@@ -427,7 +479,8 @@
       "bookColor": "#b45309",
       "bookOrder": 6,
       "external_id": "ea818886d446e826",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactivity3"
     },
     {
       "id": "ib.chm.electrochemistry",
@@ -445,7 +498,8 @@
       "bookColor": "#b45309",
       "bookOrder": 6,
       "external_id": "756ab41675ef8af3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactivity3"
     },
     {
       "id": "ib.chm.organic_reactions",
@@ -463,7 +517,8 @@
       "bookColor": "#b45309",
       "bookOrder": 6,
       "external_id": "452a6314e31ab5f5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactivity3"
     },
     {
       "id": "ib.chm.reaction_mechanisms",
@@ -482,7 +537,8 @@
       "bookColor": "#b45309",
       "bookOrder": 6,
       "external_id": "9570e56c767cd006",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactivity3"
     },
     {
       "id": "ib.chm.spectroscopy",
@@ -500,7 +556,8 @@
       "bookColor": "#0f766e",
       "bookOrder": 3,
       "external_id": "c746e60a1ff7b217",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure3"
     },
     {
       "id": "ib.chm.transition_metals",
@@ -518,7 +575,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 1,
       "external_id": "fde208a6bdbbf826",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure1"
     },
     {
       "id": "ib.chm.activation_energy",
@@ -536,7 +594,8 @@
       "bookColor": "#d97706",
       "bookOrder": 5,
       "external_id": "3d5270c46634cdfd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactivity2"
     },
     {
       "id": "ib.chm.ph_curves",
@@ -555,7 +614,8 @@
       "bookColor": "#d97706",
       "bookOrder": 5,
       "external_id": "49654ca94c372883",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reactivity2"
     },
     {
       "id": "ib.chm.stereoisomerism",
@@ -574,7 +634,8 @@
       "bookColor": "#0f766e",
       "bookOrder": 3,
       "external_id": "062606a27012f205",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "structure3"
     }
   ],
   "edges": [

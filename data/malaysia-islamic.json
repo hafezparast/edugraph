@@ -80,6 +80,38 @@
       "order": 11
     }
   ],
+  "strands": [
+    {
+      "id": "quran_hadith",
+      "name": "Al-Quran & Hadith",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "aqidah_ibadah",
+      "name": "Aqidah & Ibadah",
+      "color": "#22c55e"
+    },
+    {
+      "id": "akhlak_sirah",
+      "name": "Akhlak & Sirah",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "tamadun_jawi",
+      "name": "Tamadun Islam & Jawi",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "syariah",
+      "name": "Syariah (Islamic Jurisprudence)",
+      "color": "#ef4444"
+    },
+    {
+      "id": "usuluddin",
+      "name": "Usuluddin (Islamic Theology)",
+      "color": "#ec4899"
+    }
+  ],
   "nodes": [
     {
       "id": "pi.f1.tilawah",
@@ -98,7 +130,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 1,
       "external_id": "c5c454c997029377",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quran_hadith"
     },
     {
       "id": "pi.f1.hadith",
@@ -117,7 +150,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 1,
       "external_id": "f82a12e1357c1bca",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quran_hadith"
     },
     {
       "id": "pi.f1.aqidah",
@@ -136,7 +170,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 1,
       "external_id": "eb793ce3c3fd71da",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "aqidah_ibadah"
     },
     {
       "id": "pi.f1.ibadah",
@@ -155,7 +190,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 1,
       "external_id": "50bcbbcbada010e7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "aqidah_ibadah"
     },
     {
       "id": "pi.f1.sirah",
@@ -174,7 +210,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 1,
       "external_id": "2065f5ab2cb76c80",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "akhlak_sirah"
     },
     {
       "id": "pi.f1.akhlak",
@@ -193,7 +230,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 1,
       "external_id": "8e64850726a3c538",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "akhlak_sirah"
     },
     {
       "id": "pi.f1.tamadun",
@@ -212,7 +250,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 1,
       "external_id": "6c21c8001ad864d1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "tamadun_jawi"
     },
     {
       "id": "pi.f1.jawi",
@@ -231,7 +270,8 @@
       "bookColor": "#16a34a",
       "bookOrder": 1,
       "external_id": "62259c81dd35f6c7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "tamadun_jawi"
     },
     {
       "id": "pi.f2.tilawah",
@@ -250,7 +290,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "1e292c6db0c1e0fa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quran_hadith"
     },
     {
       "id": "pi.f2.hadith",
@@ -269,7 +310,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "0c6ae891d2e7b836",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quran_hadith"
     },
     {
       "id": "pi.f2.aqidah",
@@ -288,7 +330,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "e0834a535613b873",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "aqidah_ibadah"
     },
     {
       "id": "pi.f2.ibadah",
@@ -307,7 +350,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "ac4f5dcbeb35c5ba",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "aqidah_ibadah"
     },
     {
       "id": "pi.f2.sirah",
@@ -326,7 +370,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "e4f49eaa0f73588d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "akhlak_sirah"
     },
     {
       "id": "pi.f2.akhlak",
@@ -345,7 +390,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "6c7cb2979acb8bc0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "akhlak_sirah"
     },
     {
       "id": "pi.f2.tamadun",
@@ -364,7 +410,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "544bf8aa0da8703a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "tamadun_jawi"
     },
     {
       "id": "pi.f2.jawi",
@@ -383,7 +430,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "94f45e8854b33b07",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "tamadun_jawi"
     },
     {
       "id": "pi.f3.tilawah",
@@ -402,7 +450,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 3,
       "external_id": "de07662c4469b69f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quran_hadith"
     },
     {
       "id": "pi.f3.hadith",
@@ -421,7 +470,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 3,
       "external_id": "8bd89033b1b6b1fc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quran_hadith"
     },
     {
       "id": "pi.f3.aqidah",
@@ -440,7 +490,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 3,
       "external_id": "b73e956af19518ed",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "aqidah_ibadah"
     },
     {
       "id": "pi.f3.ibadah",
@@ -459,7 +510,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 3,
       "external_id": "11849bfd1020860a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "aqidah_ibadah"
     },
     {
       "id": "pi.f3.sirah",
@@ -478,7 +530,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 3,
       "external_id": "0e47f259c3588ffb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "akhlak_sirah"
     },
     {
       "id": "pi.f3.akhlak",
@@ -497,7 +550,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 3,
       "external_id": "98b923303c38c1ac",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "akhlak_sirah"
     },
     {
       "id": "pi.f3.tamadun",
@@ -516,7 +570,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 3,
       "external_id": "af599a1ae2cf1c09",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "tamadun_jawi"
     },
     {
       "id": "pi.f3.jawi",
@@ -535,7 +590,8 @@
       "bookColor": "#4ade80",
       "bookOrder": 3,
       "external_id": "ab5503c9341202d8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "tamadun_jawi"
     },
     {
       "id": "pi.f4.tilawah",
@@ -554,7 +610,8 @@
       "bookColor": "#86efac",
       "bookOrder": 4,
       "external_id": "6a1b6079e6396aba",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quran_hadith"
     },
     {
       "id": "pi.f4.hadith",
@@ -573,7 +630,8 @@
       "bookColor": "#86efac",
       "bookOrder": 4,
       "external_id": "6cb7432d8e269373",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quran_hadith"
     },
     {
       "id": "pi.f4.aqidah",
@@ -592,7 +650,8 @@
       "bookColor": "#86efac",
       "bookOrder": 4,
       "external_id": "31cb73a2f51f5e8d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "aqidah_ibadah"
     },
     {
       "id": "pi.f4.ibadah",
@@ -611,7 +670,8 @@
       "bookColor": "#86efac",
       "bookOrder": 4,
       "external_id": "b5030bc7bc9faa87",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "aqidah_ibadah"
     },
     {
       "id": "pi.f4.sirah",
@@ -630,7 +690,8 @@
       "bookColor": "#86efac",
       "bookOrder": 4,
       "external_id": "968fc6e40fbe79a5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "akhlak_sirah"
     },
     {
       "id": "pi.f4.akhlak",
@@ -649,7 +710,8 @@
       "bookColor": "#86efac",
       "bookOrder": 4,
       "external_id": "1b9dd0e4e9c9692f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "akhlak_sirah"
     },
     {
       "id": "pi.f4.tamadun",
@@ -668,7 +730,8 @@
       "bookColor": "#86efac",
       "bookOrder": 4,
       "external_id": "8f0e7f0b0f611fc5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "tamadun_jawi"
     },
     {
       "id": "pi.f4.jawi",
@@ -687,7 +750,8 @@
       "bookColor": "#86efac",
       "bookOrder": 4,
       "external_id": "3cd8d6cf39aa89ed",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "tamadun_jawi"
     },
     {
       "id": "pi.f5.tilawah",
@@ -706,7 +770,8 @@
       "bookColor": "#bbf7d0",
       "bookOrder": 5,
       "external_id": "d056fa6a38f3fa51",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quran_hadith"
     },
     {
       "id": "pi.f5.hadith",
@@ -725,7 +790,8 @@
       "bookColor": "#bbf7d0",
       "bookOrder": 5,
       "external_id": "2cca61020f04a8be",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "quran_hadith"
     },
     {
       "id": "pi.f5.aqidah",
@@ -744,7 +810,8 @@
       "bookColor": "#bbf7d0",
       "bookOrder": 5,
       "external_id": "e1130dbf98169903",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "aqidah_ibadah"
     },
     {
       "id": "pi.f5.ibadah",
@@ -763,7 +830,8 @@
       "bookColor": "#bbf7d0",
       "bookOrder": 5,
       "external_id": "84512b6e7c3fb4bb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "aqidah_ibadah"
     },
     {
       "id": "pi.f5.sirah",
@@ -782,7 +850,8 @@
       "bookColor": "#bbf7d0",
       "bookOrder": 5,
       "external_id": "6ddbb9aed2a60a79",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "akhlak_sirah"
     },
     {
       "id": "pi.f5.akhlak",
@@ -801,7 +870,8 @@
       "bookColor": "#bbf7d0",
       "bookOrder": 5,
       "external_id": "3d05b00c6e5f7c66",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "akhlak_sirah"
     },
     {
       "id": "pi.f5.tamadun",
@@ -820,7 +890,8 @@
       "bookColor": "#bbf7d0",
       "bookOrder": 5,
       "external_id": "0fe61e724c915a29",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "tamadun_jawi"
     },
     {
       "id": "pi.f5.jawi",
@@ -839,7 +910,8 @@
       "bookColor": "#bbf7d0",
       "bookOrder": 5,
       "external_id": "10f473e76108856e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "tamadun_jawi"
     },
     {
       "id": "syariah.s1.ch1_usul_fiqh",
@@ -858,7 +930,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 6,
       "external_id": "feea836e6328d4ed",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "syariah"
     },
     {
       "id": "syariah.s1.ch2_fiqh_ibadah",
@@ -877,7 +950,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 6,
       "external_id": "03d4ebb009520522",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "syariah"
     },
     {
       "id": "syariah.s1.ch3_fiqh_munakahat",
@@ -896,7 +970,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 6,
       "external_id": "32396f405031399d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "syariah"
     },
     {
       "id": "syariah.s2.ch1_fiqh_muamalat",
@@ -915,7 +990,8 @@
       "bookColor": "#d97706",
       "bookOrder": 7,
       "external_id": "e069161374760063",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "syariah"
     },
     {
       "id": "syariah.s2.ch2_fiqh_jinayat",
@@ -934,7 +1010,8 @@
       "bookColor": "#d97706",
       "bookOrder": 7,
       "external_id": "112c878adf0fec38",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "syariah"
     },
     {
       "id": "syariah.s2.ch3_siyasah_syariyyah",
@@ -953,7 +1030,8 @@
       "bookColor": "#d97706",
       "bookOrder": 7,
       "external_id": "21536d28b8a2eb32",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "syariah"
     },
     {
       "id": "syariah.s2.ch4_fiqh_mawaris",
@@ -972,7 +1050,8 @@
       "bookColor": "#d97706",
       "bookOrder": 7,
       "external_id": "c5f9ada5f21e080d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "syariah"
     },
     {
       "id": "syariah.s3.ch1_maqasid_shariah",
@@ -991,7 +1070,8 @@
       "bookColor": "#b45309",
       "bookOrder": 8,
       "external_id": "bd705cd848c063a1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "syariah"
     },
     {
       "id": "syariah.s3.ch2_islamic_law_malaysia",
@@ -1010,7 +1090,8 @@
       "bookColor": "#b45309",
       "bookOrder": 8,
       "external_id": "5efe87929626a1b8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "syariah"
     },
     {
       "id": "syariah.s3.ch3_contemporary_issues",
@@ -1029,7 +1110,8 @@
       "bookColor": "#b45309",
       "bookOrder": 8,
       "external_id": "b99029a662b8d011",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "syariah"
     },
     {
       "id": "usul.s1.ch1_ulum_quran",
@@ -1048,7 +1130,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 9,
       "external_id": "068f87bdd61fff5e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "usuluddin"
     },
     {
       "id": "usul.s1.ch2_ulum_hadith",
@@ -1067,7 +1150,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 9,
       "external_id": "01a21b6d6658ae05",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "usuluddin"
     },
     {
       "id": "usul.s1.ch3_aqidah_islamiyyah",
@@ -1086,7 +1170,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 9,
       "external_id": "065fa1a74638cdda",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "usuluddin"
     },
     {
       "id": "usul.s2.ch1_tafsir",
@@ -1105,7 +1190,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 10,
       "external_id": "270ccf5028097aa0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "usuluddin"
     },
     {
       "id": "usul.s2.ch2_hadith_studies",
@@ -1124,7 +1210,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 10,
       "external_id": "8d0f72abb920efdd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "usuluddin"
     },
     {
       "id": "usul.s2.ch3_falsafah_islam",
@@ -1143,7 +1230,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 10,
       "external_id": "e0133c16df32d81f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "usuluddin"
     },
     {
       "id": "usul.s3.ch1_dakwah",
@@ -1162,7 +1250,8 @@
       "bookColor": "#7c3aed",
       "bookOrder": 11,
       "external_id": "7d7d6cdbac6947bf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "usuluddin"
     },
     {
       "id": "usul.s3.ch2_tasawuf",
@@ -1181,7 +1270,8 @@
       "bookColor": "#7c3aed",
       "bookOrder": 11,
       "external_id": "53d41f47ed75351d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "usuluddin"
     },
     {
       "id": "usul.s3.ch3_comparative_religion",
@@ -1200,7 +1290,8 @@
       "bookColor": "#7c3aed",
       "bookOrder": 11,
       "external_id": "b60932b4fe277698",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "usuluddin"
     },
     {
       "id": "usul.s3.ch4_islam_asia_tenggara",
@@ -1219,7 +1310,8 @@
       "bookColor": "#7c3aed",
       "bookOrder": 11,
       "external_id": "8a01231da340617b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "usuluddin"
     }
   ],
   "edges": [

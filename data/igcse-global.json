@@ -30,6 +30,23 @@
       "order": 3
     }
   ],
+  "strands": [
+    {
+      "id": "research",
+      "name": "Research & Critical Thinking",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "global_issues",
+      "name": "Global Issues",
+      "color": "#22c55e"
+    },
+    {
+      "id": "communication",
+      "name": "Communication & Projects",
+      "color": "#f59e0b"
+    }
+  ],
   "nodes": [
     {
       "id": "gp.t1.research_methodology",
@@ -48,7 +65,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "fc139d1671e1e7e2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "research"
     },
     {
       "id": "gp.t2.source_evaluation",
@@ -67,7 +85,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "a99f7ebd16ddb1d9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "research"
     },
     {
       "id": "gp.t3.critical_thinking",
@@ -86,7 +105,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "21cd233d4eb16bec",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "research"
     },
     {
       "id": "gp.t4.perspective_analysis",
@@ -105,7 +125,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "bee89fc6e3a2dc7c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global_issues"
     },
     {
       "id": "gp.t5.cause_consequence",
@@ -124,7 +145,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "a14bde93d10605a5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global_issues"
     },
     {
       "id": "gp.t6.global_citizenship",
@@ -143,7 +165,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "ce457096b442d330",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global_issues"
     },
     {
       "id": "gp.t7.demographic_change",
@@ -162,7 +185,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "8f9c5cbc30df72d3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global_issues"
     },
     {
       "id": "gp.t8.climate_change",
@@ -181,7 +205,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "0e6c209257f4dbef",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global_issues"
     },
     {
       "id": "gp.t9.conflict_resolution",
@@ -200,7 +225,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "869bb819e3a70c09",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global_issues"
     },
     {
       "id": "gp.t10.digital_world",
@@ -219,7 +245,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "7f78b0ad91715266",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global_issues"
     },
     {
       "id": "gp.t11.poverty_inequality",
@@ -238,7 +265,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "d24cbb41d5b16722",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global_issues"
     },
     {
       "id": "gp.t12.human_rights",
@@ -257,7 +285,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "bce6a51f813aa994",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global_issues"
     },
     {
       "id": "gp.t13.presentation_skills",
@@ -276,7 +305,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "41a7ee1f63ed27c4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "communication"
     },
     {
       "id": "gp.t14.collaborative_project",
@@ -295,7 +325,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "c32c831d4635b828",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "communication"
     },
     {
       "id": "gp.t15.individual_research_report",
@@ -314,7 +345,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "03192e29b10e0c09",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "communication"
     }
   ],
   "edges": [

@@ -75,6 +75,43 @@
       "order": 10
     }
   ],
+  "strands": [
+    {
+      "id": "number",
+      "name": "Number & Arithmetic",
+      "color": "#ef4444"
+    },
+    {
+      "id": "algebra",
+      "name": "Algebra",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "geometry",
+      "name": "Geometry & Measurement",
+      "color": "#10b981"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics & Probability",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "calculus",
+      "name": "Calculus",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "vectors",
+      "name": "Vectors & Complex Numbers",
+      "color": "#ec4899"
+    },
+    {
+      "id": "trigonometry",
+      "name": "Trigonometry",
+      "color": "#06b6d4"
+    }
+  ],
   "nodes": [
     {
       "id": "sg.math.p1.counting_to_10",
@@ -92,7 +129,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "f9d727f0523010ce",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p1.number_bonds",
@@ -110,7 +148,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "936bdccb29456ff7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p1.addition_within_20",
@@ -128,7 +167,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "c1494d727277aa25",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p1.subtraction_within_20",
@@ -146,7 +186,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "7cf65422e7f27283",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p1.numbers_to_40",
@@ -164,7 +205,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "f7cf4857838a804e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p1.addition_subtraction_within_40",
@@ -182,7 +224,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "14915864b0201dc0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p1.numbers_to_100",
@@ -200,7 +243,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "1aba637db293bc8c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p1.addition_subtraction_within_100",
@@ -218,7 +262,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "b01374ea12000703",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p1.ordinal_numbers",
@@ -236,7 +281,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "856ee0247c2b494c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p1.length",
@@ -254,7 +300,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "2ebd3dd7c6a59b75",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p1.mass",
@@ -272,7 +319,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "cb3a1cd110788b6a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p1.time",
@@ -290,7 +338,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "0e9044a22551a254",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p1.2d_shapes",
@@ -308,7 +357,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "3a1efce02e0a1893",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p1.3d_shapes",
@@ -326,7 +376,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "7e324e572e1f06a1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p1.patterns",
@@ -344,7 +395,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "3f594ee303661efd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.p1.picture_graphs",
@@ -362,7 +414,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "6e44caf99fe0b66e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.p1.money",
@@ -380,7 +433,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "47dc6661918f79fd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p2.numbers_to_1000",
@@ -398,7 +452,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "0100f855a40f6c1b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p2.addition_within_1000",
@@ -416,7 +471,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "ce57af170d1afa1e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p2.subtraction_within_1000",
@@ -434,7 +490,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "a3ea1f796ba2b244",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p2.multiplication_tables",
@@ -452,7 +509,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "d96804d44f7f0a90",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p2.division",
@@ -470,7 +528,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "2a57742c24bcf61d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p2.mental_calculation",
@@ -488,7 +547,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "bad41a7017f0f668",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p2.money",
@@ -506,7 +566,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "fc0cc99356acdb24",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p2.fractions_intro",
@@ -524,7 +585,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "fe4ef6bef11cc8fe",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p2.length_mass",
@@ -542,7 +604,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "e5f4f4d60ff81785",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p2.volume",
@@ -560,7 +623,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "4bd398a37cf551c8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p2.time",
@@ -578,7 +642,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "8db22b338bafb485",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p2.2d_3d_shapes",
@@ -596,7 +661,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "d6cbcc362c92492c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p2.lines_surfaces",
@@ -614,7 +680,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "dc8ef81a0f6ac761",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p2.picture_graphs_scales",
@@ -632,7 +699,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "d8eafc1e40df2914",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.p3.numbers_to_10000",
@@ -650,7 +718,8 @@
       "bookColor": "#fb7185",
       "bookOrder": 3,
       "external_id": "ea0ae7c917fded32",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p3.addition_subtraction",
@@ -668,7 +737,8 @@
       "bookColor": "#fb7185",
       "bookOrder": 3,
       "external_id": "93e31fd7c375ecc3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p3.multiplication_tables_extended",
@@ -686,7 +756,8 @@
       "bookColor": "#fb7185",
       "bookOrder": 3,
       "external_id": "a0be1e09ab04514e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p3.division_extended",
@@ -704,7 +775,8 @@
       "bookColor": "#fb7185",
       "bookOrder": 3,
       "external_id": "106fa701b57d6b0b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p3.mental_calculation_p3",
@@ -722,7 +794,8 @@
       "bookColor": "#fb7185",
       "bookOrder": 3,
       "external_id": "87ae873eb800c450",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p3.money_p3",
@@ -740,7 +813,8 @@
       "bookColor": "#fb7185",
       "bookOrder": 3,
       "external_id": "ae08718257311d16",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p3.fractions",
@@ -758,7 +832,8 @@
       "bookColor": "#fb7185",
       "bookOrder": 3,
       "external_id": "9e8b95d49167c74a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p3.length_mass_volume",
@@ -776,7 +851,8 @@
       "bookColor": "#fb7185",
       "bookOrder": 3,
       "external_id": "425e281f1191cf82",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p3.time_p3",
@@ -794,7 +870,8 @@
       "bookColor": "#fb7185",
       "bookOrder": 3,
       "external_id": "c570ba858ed2e8da",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p3.angles",
@@ -812,7 +889,8 @@
       "bookColor": "#fb7185",
       "bookOrder": 3,
       "external_id": "5c45a107deb4356e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p3.perpendicular_parallel",
@@ -830,7 +908,8 @@
       "bookColor": "#fb7185",
       "bookOrder": 3,
       "external_id": "a60ba636c15b14c4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p3.area_perimeter",
@@ -848,7 +927,8 @@
       "bookColor": "#fb7185",
       "bookOrder": 3,
       "external_id": "57c5ea0a6d8c5d80",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p3.bar_graphs",
@@ -866,7 +946,8 @@
       "bookColor": "#fb7185",
       "bookOrder": 3,
       "external_id": "5f615286b372896e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.p4.numbers_to_100000",
@@ -884,7 +965,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 4,
       "external_id": "8ab9c3e68cf849bf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p4.factors_multiples",
@@ -902,7 +984,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 4,
       "external_id": "260d11bc9fe8c512",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p4.four_operations",
@@ -920,7 +1003,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 4,
       "external_id": "0850f1c812e4de5c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p4.fractions_p4",
@@ -938,7 +1022,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 4,
       "external_id": "f04d3b403c138ac7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p4.decimals_intro",
@@ -956,7 +1041,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 4,
       "external_id": "71277d4d5b7baea3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p4.decimal_operations",
@@ -974,7 +1060,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 4,
       "external_id": "ab66fa6d4b9cccd0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p4.angles_p4",
@@ -992,7 +1079,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 4,
       "external_id": "c4932b78637bbebf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p4.rectangles_squares",
@@ -1010,7 +1098,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 4,
       "external_id": "2b450ac3e4dbfcf6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p4.symmetry",
@@ -1028,7 +1117,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 4,
       "external_id": "43280978111281a3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p4.area_perimeter_p4",
@@ -1046,7 +1136,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 4,
       "external_id": "1a424d99d500b57f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p4.tables_line_graphs",
@@ -1064,7 +1155,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 4,
       "external_id": "0a76d08f1c6988db",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.p5.numbers_to_10m",
@@ -1082,7 +1174,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 5,
       "external_id": "d3be7297d7336470",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p5.four_operations_p5",
@@ -1100,7 +1193,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 5,
       "external_id": "bac25b55ab9f22ff",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p5.fractions_p5",
@@ -1118,7 +1212,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 5,
       "external_id": "98fbf2eb4fa33032",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p5.decimals_p5",
@@ -1136,7 +1231,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 5,
       "external_id": "ba77244ddd2c7649",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p5.ratio",
@@ -1154,7 +1250,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 5,
       "external_id": "ed83673e0b8cb53a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p5.percentage",
@@ -1172,7 +1269,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 5,
       "external_id": "92a2b633ae006813",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p5.rate",
@@ -1190,7 +1288,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 5,
       "external_id": "a8cbf6ce66c9cc02",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p5.angles_triangles",
@@ -1208,7 +1307,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 5,
       "external_id": "22e173eb15ac7fd8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p5.angles_quadrilaterals",
@@ -1226,7 +1326,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 5,
       "external_id": "0b37f22ce134b8a6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p5.area_triangle",
@@ -1244,7 +1345,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 5,
       "external_id": "4c2aadb47ce5b49d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p5.volume_cube_cuboid",
@@ -1262,7 +1364,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 5,
       "external_id": "c0e8e955985f709d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p5.average",
@@ -1280,7 +1383,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 5,
       "external_id": "c8bec30041f60558",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.p6.algebra_intro",
@@ -1298,7 +1402,8 @@
       "bookColor": "#be123c",
       "bookOrder": 6,
       "external_id": "4fb8dddd5fac9ad7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.p6.fractions_p6",
@@ -1316,7 +1421,8 @@
       "bookColor": "#be123c",
       "bookOrder": 6,
       "external_id": "29ad37b32293c440",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p6.ratio_p6",
@@ -1334,7 +1440,8 @@
       "bookColor": "#be123c",
       "bookOrder": 6,
       "external_id": "21af1d6b164fbe0f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p6.percentage_p6",
@@ -1352,7 +1459,8 @@
       "bookColor": "#be123c",
       "bookOrder": 6,
       "external_id": "270bc085c0c2cccf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p6.speed",
@@ -1370,7 +1478,8 @@
       "bookColor": "#be123c",
       "bookOrder": 6,
       "external_id": "7cdd98771a550064",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p6.circles",
@@ -1388,7 +1497,8 @@
       "bookColor": "#be123c",
       "bookOrder": 6,
       "external_id": "ac91a6f128bf7881",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p6.area_circumference",
@@ -1406,7 +1516,8 @@
       "bookColor": "#be123c",
       "bookOrder": 6,
       "external_id": "b12d246af6f5d4fa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p6.volume_solids",
@@ -1424,7 +1535,8 @@
       "bookColor": "#be123c",
       "bookOrder": 6,
       "external_id": "4b8a2bf0cf4d92e6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p6.nets",
@@ -1442,7 +1554,8 @@
       "bookColor": "#be123c",
       "bookOrder": 6,
       "external_id": "be35356af9a139d2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p6.pie_charts",
@@ -1460,7 +1573,8 @@
       "bookColor": "#be123c",
       "bookOrder": 6,
       "external_id": "109bb134d362008b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.olevel.primes_hcf_lcm",
@@ -1478,7 +1592,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "d00bb2994c04bd8f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.olevel.integers_rationals",
@@ -1496,7 +1611,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "336fcc0c03e967fa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.olevel.real_numbers",
@@ -1514,7 +1630,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "e50b0ba31f5d290e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.olevel.ratio_rate_proportion",
@@ -1532,7 +1649,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "2481cae36f9495b1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.olevel.percentage_olevel",
@@ -1550,7 +1668,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "ae8a727f9d0c835f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.olevel.speed_olevel",
@@ -1568,7 +1687,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "19924072424a620e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.olevel.algebraic_expressions",
@@ -1586,7 +1706,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "843858ac299bb8a1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.linear_equations",
@@ -1604,7 +1725,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "49cc1f06745c10e2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.quadratic_equations",
@@ -1622,7 +1744,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "650119b9cf22a791",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.functions_graphs",
@@ -1640,7 +1763,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "1480a1d11870b314",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.indices",
@@ -1658,7 +1782,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "3000818fb75d44ac",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.set_language",
@@ -1676,7 +1801,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "fe7eeb6d18a64e7e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.matrices",
@@ -1694,7 +1820,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "18e98693bcaec9f8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.number_patterns_sequences",
@@ -1712,7 +1839,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "cc3cc1d997a9216e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.angles_polygons",
@@ -1730,7 +1858,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "af1d561b6da88631",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.olevel.congruence_similarity",
@@ -1748,7 +1877,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "5cc33eba600a7e47",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.olevel.pythagoras_theorem",
@@ -1766,7 +1896,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "e19f42c1a323af6a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.olevel.trigonometry",
@@ -1784,7 +1915,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "12c6cb8fc453be68",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "trigonometry"
     },
     {
       "id": "sg.math.olevel.mensuration_2d",
@@ -1802,7 +1934,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "20167bf8a8fc8e54",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.olevel.mensuration_3d",
@@ -1820,7 +1953,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "fcc7931bfed5161e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.olevel.coordinate_geometry",
@@ -1838,7 +1972,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "40f22ef8f3413675",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.olevel.transformations",
@@ -1856,7 +1991,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "d07d633252e0c9c5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.olevel.vectors_2d",
@@ -1874,7 +2010,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "1f922c80c9c1b298",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vectors"
     },
     {
       "id": "sg.math.olevel.data_handling",
@@ -1892,7 +2029,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "9b4d8340ed0697c6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.olevel.statistical_diagrams",
@@ -1910,7 +2048,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "e61d851e1b34f6c5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.olevel.mean_median_mode",
@@ -1928,7 +2067,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "a3ba67061342c4d3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.olevel.probability",
@@ -1946,7 +2086,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "38e9ad5a25841d19",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.olevel.problems_real_world",
@@ -1964,7 +2105,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "18653d6e11fcd6ac",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.quadratic_functions",
@@ -1982,7 +2124,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "5ef8e6c646a0559f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.surds",
@@ -2000,7 +2143,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "cd668e3b2f9131d1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.polynomials",
@@ -2018,7 +2162,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "9ba92a75381ce423",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.binomial_theorem",
@@ -2036,7 +2181,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "7d6faa348d6e01a7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.indices_surds",
@@ -2054,7 +2200,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "2edc9acbfa174954",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.logarithms",
@@ -2072,7 +2219,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "10fae4210a925d39",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.simultaneous_equations",
@@ -2090,7 +2238,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "a4a8752d0d358203",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.modulus_functions",
@@ -2108,7 +2257,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "48dc29d7fe10051b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.power_exponential_log_graphs",
@@ -2126,7 +2276,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "0eee9ca1b4fd991a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.linear_law",
@@ -2144,7 +2295,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "ed3e8c53c61168e9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.trig_functions",
@@ -2162,7 +2314,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "a1ff0ab62535c640",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "trigonometry"
     },
     {
       "id": "sg.math.amath.trig_equations",
@@ -2180,7 +2333,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "651a91f6323af53f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "trigonometry"
     },
     {
       "id": "sg.math.amath.addition_formulae",
@@ -2198,7 +2352,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "e35c24f02d6c72e6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "trigonometry"
     },
     {
       "id": "sg.math.amath.coordinate_geometry_amath",
@@ -2216,7 +2371,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "716d8d45ed27b067",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.amath.proofs_in_plane_geometry",
@@ -2234,7 +2390,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "8a745e611c48c071",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.amath.differentiation",
@@ -2252,7 +2409,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "bb99b8efca5f5639",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.amath.applications_differentiation",
@@ -2270,7 +2428,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "b61077c735fa588c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.amath.integration",
@@ -2288,7 +2447,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "3d3a0a784f3a03cc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.amath.definite_integrals",
@@ -2306,7 +2466,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "2d55515cd09d1b5b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.h2pure.functions",
@@ -2324,7 +2485,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "3ba3fb9de8d57272",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.graphing_techniques",
@@ -2342,7 +2504,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "9bb76089e8a61426",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.equations_inequalities",
@@ -2360,7 +2523,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "90c57d7a1fe486dd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.sequences_series",
@@ -2378,7 +2542,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "2bbe71d5bef38a91",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.summation",
@@ -2396,7 +2561,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "473a1f81e7ce6cca",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.mathematical_induction",
@@ -2414,7 +2580,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "f976def6d98f7de7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.recurrence_relations",
@@ -2432,7 +2599,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "61cc06cd1e755af3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.vectors_3d",
@@ -2450,7 +2618,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "29655acf7000702f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vectors"
     },
     {
       "id": "sg.math.h2pure.scalar_product",
@@ -2468,7 +2637,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "dc60c8d860284fe9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vectors"
     },
     {
       "id": "sg.math.h2pure.vector_product",
@@ -2486,7 +2656,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "604d7b21ae596b55",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vectors"
     },
     {
       "id": "sg.math.h2pure.lines_planes",
@@ -2504,7 +2675,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "29084711ee9ad36f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vectors"
     },
     {
       "id": "sg.math.h2pure.complex_numbers",
@@ -2522,7 +2694,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "3e033240c53c3ac3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vectors"
     },
     {
       "id": "sg.math.h2pure.polar_form",
@@ -2540,7 +2713,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "72d48f064bfe5b99",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vectors"
     },
     {
       "id": "sg.math.h2pure.complex_roots",
@@ -2558,7 +2732,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "ded98c03719efd13",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vectors"
     },
     {
       "id": "sg.math.h2pure.argand_diagram",
@@ -2576,7 +2751,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "af197be665391051",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vectors"
     },
     {
       "id": "sg.math.h2pure.differentiation_h2",
@@ -2594,7 +2770,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "e3797b227de24fd0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.h2pure.maclaurin_series",
@@ -2612,7 +2789,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "cdcf849f63bb4273",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.h2pure.applications_differentiation_h2",
@@ -2630,7 +2808,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "a549d27b1572b6fb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.h2pure.integration_techniques",
@@ -2648,7 +2827,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "4fb9d0d811437777",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.h2pure.definite_integrals_h2",
@@ -2666,7 +2846,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "fc7f6bf914e1cd1b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.h2pure.differential_equations",
@@ -2684,7 +2865,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "632c591e5821078d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.h2stats.permutations",
@@ -2702,7 +2884,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "5398ca128f78246a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.combinations",
@@ -2720,7 +2903,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "7479d048c1b31f1d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.probability_h2",
@@ -2738,7 +2922,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "ddfc059996e8549d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.bayes_theorem",
@@ -2756,7 +2941,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "b2f947f57031f75b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.discrete_random_variables",
@@ -2774,7 +2960,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "b9a1c6cdefd3dcda",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.binomial_distribution",
@@ -2792,7 +2979,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "7c5aef360fddd97b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.poisson_distribution",
@@ -2810,7 +2998,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "22b0ab0d4bc54741",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.normal_distribution",
@@ -2828,7 +3017,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "2cc69b0bc37e38e0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.normal_approximations",
@@ -2846,7 +3036,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "71acf541f93e5483",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.sampling",
@@ -2864,7 +3055,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "2aa99e7cae8b9045",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.hypothesis_testing_z",
@@ -2882,7 +3074,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "90dd60b980e5bf50",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.hypothesis_testing_t",
@@ -2900,7 +3093,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "e317fe01cc10f144",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.confidence_intervals",
@@ -2918,7 +3112,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "883064f159be285b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.correlation",
@@ -2936,7 +3131,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "9244950c394a05dc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.linear_regression",
@@ -2954,7 +3150,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "4b572a604ab87546",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.p1.comparing_ordering",
@@ -2972,7 +3169,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "199cb64c7e4389a3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p2.multiplication_word_problems",
@@ -2990,7 +3188,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "16ced5348b5f9327",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p2.division_word_problems",
@@ -3008,7 +3207,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "64b785c259aca205",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p3.word_problems_2step",
@@ -3026,7 +3226,8 @@
       "bookColor": "#fb7185",
       "bookOrder": 3,
       "external_id": "7986704b97bbacf1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p4.model_method",
@@ -3044,7 +3245,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 4,
       "external_id": "e467dbcb26d0eaf2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.p4.time_p4",
@@ -3062,7 +3264,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 4,
       "external_id": "a8765e41cef82588",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p5.model_method_p5",
@@ -3080,7 +3283,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 5,
       "external_id": "d3b8efd5bb436ba2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.p5.conversion_units",
@@ -3098,7 +3302,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 5,
       "external_id": "5642b8cad2775bd6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p6.order_of_operations",
@@ -3116,7 +3321,8 @@
       "bookColor": "#be123c",
       "bookOrder": 6,
       "external_id": "66df24210163c0e3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.p6.model_method_p6",
@@ -3134,7 +3340,8 @@
       "bookColor": "#be123c",
       "bookOrder": 6,
       "external_id": "17f5bcbeaf7cecd3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.p6.tessellations",
@@ -3152,7 +3359,8 @@
       "bookColor": "#be123c",
       "bookOrder": 6,
       "external_id": "1b3aec5433caaf03",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.p6.solid_figures",
@@ -3170,7 +3378,8 @@
       "bookColor": "#be123c",
       "bookOrder": 6,
       "external_id": "74d5d533baa54f08",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.olevel.standard_form",
@@ -3188,7 +3397,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "f4544c84e0e31d31",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.algebraic_fractions",
@@ -3206,7 +3416,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "85769fa855224747",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.factorisation",
@@ -3224,7 +3435,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "22dc4e36dfd677e9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.simultaneous_equations",
@@ -3242,7 +3454,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "3bbb5d8ae9ea85e8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.direct_inverse_proportion",
@@ -3260,7 +3473,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "8db1d14396f35391",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.arc_length_sector_area",
@@ -3278,7 +3492,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "1e73820c341ecb6d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.olevel.circle_properties",
@@ -3296,7 +3511,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "5c622fec5e632611",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.olevel.scale_drawing",
@@ -3314,7 +3530,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "95420c9ca2253c35",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.olevel.simple_compound_interest",
@@ -3332,7 +3549,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "c3249e27244c46c8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.olevel.cumulative_frequency",
@@ -3350,7 +3568,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "94c67b8a4220ed74",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.olevel.graph_interpretation",
@@ -3368,7 +3587,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "c17dcaf58648612e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.estimation_approximation",
@@ -3386,7 +3606,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "7495ec9fafc122f5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.bearing",
@@ -3404,7 +3625,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "54f830e4c0854ebb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.amath.remainder_factor_thm",
@@ -3422,7 +3644,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "4e27a5d8af1624c9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.power_geometry",
@@ -3440,7 +3663,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "6696a88ccb306a23",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.amath.kinematics",
@@ -3458,7 +3682,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "9155a766f579eb49",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.amath.rates_of_change",
@@ -3476,7 +3701,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "31644cacb7b9016a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.amath.small_angle_approximation",
@@ -3494,7 +3720,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "5218ad61e3771bb4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "trigonometry"
     },
     {
       "id": "sg.math.h2pure.partial_fractions",
@@ -3512,7 +3739,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "cab2652841940672",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.system_of_linear_equations",
@@ -3530,7 +3758,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "715e0ceeb42f8c7a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.binomial_expansion",
@@ -3548,7 +3777,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "16fd53155c95d386",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.curve_sketching",
@@ -3566,7 +3796,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "a6e7d01a230f1537",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.parametric_equations",
@@ -3584,7 +3815,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "e9f28297a96f3e08",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.h2pure.implicit_differentiation",
@@ -3602,7 +3834,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "1b289ad1020faca2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.h2pure.volume_of_revolution",
@@ -3620,7 +3853,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "d62a3235eb90fcb5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.h2stats.probability_distributions_overview",
@@ -3638,7 +3872,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "d17deb6924a6bdd8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.unbiased_estimates",
@@ -3656,7 +3891,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "6726c90bc1cff09d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.chi_squared_test",
@@ -3674,7 +3910,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "3433a7e04daab218",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.p2.odd_even",
@@ -3692,7 +3929,8 @@
       "bookColor": "#fda4af",
       "bookOrder": 2,
       "external_id": "ab1f1111c19cb00f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p3.number_patterns",
@@ -3710,7 +3948,8 @@
       "bookColor": "#fb7185",
       "bookOrder": 3,
       "external_id": "9bc623ae2a9b86a0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.p4.estimation",
@@ -3728,7 +3967,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 4,
       "external_id": "836c81d0c9cac814",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p5.negative_numbers",
@@ -3746,7 +3986,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 5,
       "external_id": "bcdbe971c3836203",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.olevel.expansion",
@@ -3764,7 +4005,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "734f7b2b926064c7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.completing_the_square",
@@ -3782,7 +4024,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "a8632459fd9aff71",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.olevel.quadratic_graphs",
@@ -3800,7 +4043,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "4a35f5e58405f5f0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.gradient_linear",
@@ -3818,7 +4062,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "e950b951c73c2d03",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.area_volume_similar",
@@ -3836,7 +4081,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "f0dc7887a95f6f30",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.olevel.trig_3d",
@@ -3854,7 +4100,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "796e00b680ca93f6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "trigonometry"
     },
     {
       "id": "sg.math.amath.equations_involving_surds",
@@ -3872,7 +4119,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "a279dd872563e428",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.discriminant",
@@ -3890,7 +4138,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "dd50faf921fc17b0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.double_angle",
@@ -3908,7 +4157,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "d58652cf484e16de",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.amath.r_formula",
@@ -3926,7 +4176,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "1c54ac829d7b29b7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.second_derivative",
@@ -3944,7 +4195,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "2560c3b521a912ab",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.tangent_normal",
@@ -3962,7 +4214,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "0c6173303b84b5d3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.inverse_functions",
@@ -3980,7 +4233,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "8aa914e2dff06656",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.composite_functions",
@@ -3998,7 +4252,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "4ca89c0be1b25488",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.ap_gp_applications",
@@ -4016,7 +4271,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "8a8a53ddb66b33e1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.integration_by_parts",
@@ -4034,7 +4290,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "904423f77c913aab",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.h2pure.integration_by_substitution",
@@ -4052,7 +4309,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "2ce48eac87679031",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "sg.math.h2stats.conditional_probability",
@@ -4070,7 +4328,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "051db50f284ef71d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "sg.math.h2stats.expectation_variance",
@@ -4088,7 +4347,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "47ecc43dd3614ac2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.p1.word_problems_p1",
@@ -4106,7 +4366,8 @@
       "bookColor": "#fecdd3",
       "bookOrder": 1,
       "external_id": "9165feef6f08ee0d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p3.model_drawing",
@@ -4124,7 +4385,8 @@
       "bookColor": "#fb7185",
       "bookOrder": 3,
       "external_id": "2738140316b47797",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p6.rate_p6",
@@ -4142,7 +4404,8 @@
       "bookColor": "#be123c",
       "bookOrder": 6,
       "external_id": "fce0d934119e229f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.p6.decimal_operations_p6",
@@ -4160,7 +4423,8 @@
       "bookColor": "#be123c",
       "bookOrder": 6,
       "external_id": "180e0a219d80e824",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.olevel.number_line",
@@ -4178,7 +4442,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "6c227725b091cc57",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "number"
     },
     {
       "id": "sg.math.olevel.absolute_value",
@@ -4196,7 +4461,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "c2d2c69007847d92",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.construction",
@@ -4214,7 +4480,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "3c0d626d58129431",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.locus",
@@ -4232,7 +4499,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "f25b21ebec85e0bd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.olevel.nets_olevel",
@@ -4250,7 +4518,8 @@
       "bookColor": "#f97316",
       "bookOrder": 7,
       "external_id": "ce0ac171da4283a9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.amath.partial_fractions_amath",
@@ -4268,7 +4537,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "9a7f8942d20fe4f4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.amath.exponential_growth_decay",
@@ -4286,7 +4556,8 @@
       "bookColor": "#eab308",
       "bookOrder": 8,
       "external_id": "46efad672bcdf53a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.absolute_value_functions",
@@ -4304,7 +4575,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "1a25a2e2142d10c3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "sg.math.h2pure.transformations_of_graphs",
@@ -4322,7 +4594,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "c604871e7fefdda5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "sg.math.h2stats.linear_combinations",
@@ -4340,7 +4613,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 10,
       "external_id": "9c5d6d9c806355a6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     }
   ],
   "edges": [

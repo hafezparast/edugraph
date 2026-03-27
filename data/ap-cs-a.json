@@ -36,6 +36,28 @@
       "order": 4
     }
   ],
+  "strands": [
+    {
+      "id": "fundamentals",
+      "name": "Fundamentals & Types",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "control",
+      "name": "Control Structures",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "oop",
+      "name": "Object-Oriented Programming",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "data-structures",
+      "name": "Data Structures",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ap.csa.primitive_types",
@@ -53,7 +75,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "c8cbcc0e3a6fb043",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fundamentals"
     },
     {
       "id": "ap.csa.using_objects",
@@ -71,7 +94,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "48d2987be73905b3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fundamentals"
     },
     {
       "id": "ap.csa.boolean_conditionals",
@@ -89,7 +113,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "7898ce19853b5f70",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "control"
     },
     {
       "id": "ap.csa.iteration",
@@ -107,7 +132,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "6b66a5e533b536eb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "control"
     },
     {
       "id": "ap.csa.writing_classes",
@@ -125,7 +151,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "19f1957dec60146f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fundamentals"
     },
     {
       "id": "ap.csa.string_methods",
@@ -143,7 +170,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "6ea2b80e10ee6e26",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fundamentals"
     },
     {
       "id": "ap.csa.arrays",
@@ -161,7 +189,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "53635eea5e60c5a9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data-structures"
     },
     {
       "id": "ap.csa.arraylist",
@@ -179,7 +208,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "3521be5c5e8d945a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "oop"
     },
     {
       "id": "ap.csa.2d_arrays",
@@ -197,7 +227,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "f13183a238142bd0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "control"
     },
     {
       "id": "ap.csa.searching_sorting",
@@ -215,7 +246,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "e8ae0d18939c5c86",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data-structures"
     },
     {
       "id": "ap.csa.inheritance",
@@ -233,7 +265,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "ba593447e91c5d72",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "oop"
     },
     {
       "id": "ap.csa.abstract_interfaces",
@@ -251,7 +284,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "de551cd5fb6abd9b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "oop"
     },
     {
       "id": "ap.csa.recursion",
@@ -269,7 +303,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "33a5bea000401eaa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "control"
     }
   ],
   "edges": [

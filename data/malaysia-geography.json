@@ -42,6 +42,28 @@
       "order": 5
     }
   ],
+  "strands": [
+    {
+      "id": "physical",
+      "name": "Physical Geography",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "human",
+      "name": "Human Geography & Economy",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "environment",
+      "name": "Environmental Management",
+      "color": "#22c55e"
+    },
+    {
+      "id": "skills",
+      "name": "Geographical Skills",
+      "color": "#6b7280"
+    }
+  ],
   "nodes": [
     {
       "id": "geo.f1.ch1_kemahiran_geografi",
@@ -59,7 +81,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 1,
       "external_id": "56bfb249bcc7234b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "skills"
     },
     {
       "id": "geo.f1.ch2_bentuk_muka_bumi",
@@ -77,7 +100,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 1,
       "external_id": "9e23ebb80893d372",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "geo.f1.ch3_cuaca_dan_iklim",
@@ -95,7 +119,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 1,
       "external_id": "df4ee563c009fcb1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "geo.f1.ch4_sumber",
@@ -113,7 +138,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 1,
       "external_id": "8eda2a39306acafb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "geo.f2.ch1_penduduk",
@@ -131,7 +157,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 2,
       "external_id": "9338b0897081ad95",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "human"
     },
     {
       "id": "geo.f2.ch2_petempatan",
@@ -149,7 +176,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 2,
       "external_id": "64043cf86d14c8e6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "human"
     },
     {
       "id": "geo.f2.ch3_pengangkutan",
@@ -167,7 +195,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 2,
       "external_id": "578eeea257f1d97c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "human"
     },
     {
       "id": "geo.f2.ch4_perbandaran",
@@ -185,7 +214,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 2,
       "external_id": "4fdfb22c3720096e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "human"
     },
     {
       "id": "geo.f2.ch5_kegiatan_ekonomi_utama",
@@ -203,7 +233,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 2,
       "external_id": "b3d840e99b97f37c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "human"
     },
     {
       "id": "geo.f3.ch1_pembangunan_ekonomi",
@@ -221,7 +252,8 @@
       "bookColor": "#2dd4bf",
       "bookOrder": 3,
       "external_id": "bcfb8b04e4d63e85",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "human"
     },
     {
       "id": "geo.f3.ch2_aktiviti_ekonomi",
@@ -239,7 +271,8 @@
       "bookColor": "#2dd4bf",
       "bookOrder": 3,
       "external_id": "90e6f142eb5e5548",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "human"
     },
     {
       "id": "geo.f3.ch3_perindustrian",
@@ -257,7 +290,8 @@
       "bookColor": "#2dd4bf",
       "bookOrder": 3,
       "external_id": "74a62f45cfa853a1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "human"
     },
     {
       "id": "geo.f3.ch4_kerjasama_ekonomi",
@@ -275,7 +309,8 @@
       "bookColor": "#2dd4bf",
       "bookOrder": 3,
       "external_id": "5ff2674a42e035fe",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "human"
     },
     {
       "id": "geo.f4.ch1_sistem_geomorfologi",
@@ -293,7 +328,8 @@
       "bookColor": "#0ea5e9",
       "bookOrder": 4,
       "external_id": "8c447ae44983df51",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "geo.f4.ch2_sistem_hidrologi",
@@ -311,7 +347,8 @@
       "bookColor": "#0ea5e9",
       "bookOrder": 4,
       "external_id": "224f403ac1c202ce",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "geo.f4.ch3_sistem_atmosfera",
@@ -329,7 +366,8 @@
       "bookColor": "#0ea5e9",
       "bookOrder": 4,
       "external_id": "895f2d2bfa09139a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "physical"
     },
     {
       "id": "geo.f4.ch4_alam_sekitar_manusia",
@@ -347,7 +385,8 @@
       "bookColor": "#0ea5e9",
       "bookOrder": 4,
       "external_id": "0a7ac8484f8c3408",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "environment"
     },
     {
       "id": "geo.f4.ch5_pengurusan_alam_sekitar_fizikal",
@@ -365,7 +404,8 @@
       "bookColor": "#0ea5e9",
       "bookOrder": 4,
       "external_id": "f986301e2b24a441",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "environment"
     },
     {
       "id": "geo.f5.ch1_pengurusan_sumber",
@@ -383,7 +423,8 @@
       "bookColor": "#38bdf8",
       "bookOrder": 5,
       "external_id": "bee40ed637ec90e9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "environment"
     },
     {
       "id": "geo.f5.ch2_isu_alam_sekitar",
@@ -401,7 +442,8 @@
       "bookColor": "#38bdf8",
       "bookOrder": 5,
       "external_id": "0b2bfe435cbef476",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "environment"
     },
     {
       "id": "geo.f5.ch3_pembangunan_lestari",
@@ -419,7 +461,8 @@
       "bookColor": "#38bdf8",
       "bookOrder": 5,
       "external_id": "5c5e761ea6913f9f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "environment"
     },
     {
       "id": "geo.f5.ch4_globalisasi",
@@ -437,7 +480,8 @@
       "bookColor": "#38bdf8",
       "bookOrder": 5,
       "external_id": "947f66c653e855e6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "environment"
     }
   ],
   "edges": [

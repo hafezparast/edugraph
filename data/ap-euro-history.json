@@ -30,6 +30,23 @@
       "order": 3
     }
   ],
+  "strands": [
+    {
+      "id": "early-modern",
+      "name": "Renaissance to Enlightenment (1450-1789)",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "revolution",
+      "name": "Revolution & Industry (1789-1914)",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "modern",
+      "name": "20th Century & Beyond (1914-Present)",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ap.eh.unit1",
@@ -47,7 +64,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "43c42b95f8d19910",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "early-modern"
     },
     {
       "id": "ap.eh.unit2",
@@ -65,7 +83,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "7f65d4ff00fcbb00",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "early-modern"
     },
     {
       "id": "ap.eh.unit3",
@@ -83,7 +102,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "4914c0f49441f294",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "early-modern"
     },
     {
       "id": "ap.eh.unit4",
@@ -101,7 +121,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "bea311cd223fad56",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "revolution"
     },
     {
       "id": "ap.eh.unit5",
@@ -119,7 +140,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "ced3c4a2df98f943",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "revolution"
     },
     {
       "id": "ap.eh.unit6",
@@ -137,7 +159,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "6e78c106378ef061",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "revolution"
     },
     {
       "id": "ap.eh.unit7",
@@ -155,7 +178,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "e3d3be68eddad84a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "revolution"
     },
     {
       "id": "ap.eh.unit8",
@@ -173,7 +197,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "5fa3026a9805b730",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "ap.eh.unit9",
@@ -191,7 +216,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "7cc143b98a3fc7e7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "ap.eh.historical_skills",
@@ -209,7 +235,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "bbea46450ebd31dd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "early-modern"
     },
     {
       "id": "ap.eh.intellectual_movements",
@@ -227,7 +254,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "812cbf0c3329d22d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "early-modern"
     },
     {
       "id": "ap.eh.economic_change",
@@ -245,7 +273,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "5ac49b73608d02b9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "early-modern"
     },
     {
       "id": "ap.eh.political_ideologies",
@@ -263,7 +292,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "65f7f1bc0eb1ebcc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "early-modern"
     },
     {
       "id": "ap.eh.social_change",
@@ -281,7 +311,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "d39cca442ecdab7a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "early-modern"
     }
   ],
   "edges": [

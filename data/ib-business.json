@@ -42,6 +42,33 @@
       "order": 5
     }
   ],
+  "strands": [
+    {
+      "id": "intro",
+      "name": "Business Organization & Environment",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "hr",
+      "name": "Human Resource Management",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "finance",
+      "name": "Finance & Accounts",
+      "color": "#F39C12"
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "operations",
+      "name": "Operations Management",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ib.biz.business_organization",
@@ -59,7 +86,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "d44f514158b0fabb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "intro"
     },
     {
       "id": "ib.biz.organizational_planning",
@@ -77,7 +105,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "d986027c981939e9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "intro"
     },
     {
       "id": "ib.biz.growth_evolution",
@@ -95,7 +124,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "031749a3e097fbec",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "intro"
     },
     {
       "id": "ib.biz.organizational_structure",
@@ -113,7 +143,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "f56274f63252ef0d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hr"
     },
     {
       "id": "ib.biz.leadership_management",
@@ -131,7 +162,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "795ce0e1ea018602",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hr"
     },
     {
       "id": "ib.biz.motivation",
@@ -149,7 +181,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "49cc9eb24a9b6d38",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hr"
     },
     {
       "id": "ib.biz.hr_planning",
@@ -167,7 +200,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "cf9bfb80cc793a02",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hr"
     },
     {
       "id": "ib.biz.industrial_relations",
@@ -186,7 +220,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "c80e671e1f7cdab8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hr"
     },
     {
       "id": "ib.biz.sources_of_finance",
@@ -204,7 +239,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "13c3d4196a6605de",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "finance"
     },
     {
       "id": "ib.biz.costs_revenue",
@@ -222,7 +258,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "4bade3495e4e50f1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "finance"
     },
     {
       "id": "ib.biz.final_accounts",
@@ -240,7 +277,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "bd6fd364b79c7811",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "finance"
     },
     {
       "id": "ib.biz.ratio_analysis",
@@ -258,7 +296,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "506a2b6482d07d5c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "finance"
     },
     {
       "id": "ib.biz.cash_flow",
@@ -276,7 +315,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "8a664aa8935bd76e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "finance"
     },
     {
       "id": "ib.biz.investment_appraisal",
@@ -295,7 +335,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "702297ef5ee8330b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "finance"
     },
     {
       "id": "ib.biz.marketing_planning",
@@ -313,7 +354,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "0decec7f17503064",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "marketing"
     },
     {
       "id": "ib.biz.four_ps",
@@ -331,7 +373,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "38acfa9b19dc51b9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "marketing"
     },
     {
       "id": "ib.biz.extended_mix",
@@ -349,7 +392,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "9394380c7460cee1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "marketing"
     },
     {
       "id": "ib.biz.international_marketing",
@@ -368,7 +412,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "dbf94e9d6a215221",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "marketing"
     },
     {
       "id": "ib.biz.production_methods",
@@ -386,7 +431,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "8ac1c2e3eb893afc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "operations"
     },
     {
       "id": "ib.biz.lean_production",
@@ -404,7 +450,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "6fc0961ddce5ba2a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "operations"
     },
     {
       "id": "ib.biz.location",
@@ -422,7 +469,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "5ec1af7da41665e3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "operations"
     },
     {
       "id": "ib.biz.supply_chain",
@@ -440,7 +488,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "07f89bbed7cc0635",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "operations"
     },
     {
       "id": "ib.biz.innovation",
@@ -458,7 +507,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "58a0d3af4d1e3edc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "operations"
     },
     {
       "id": "ib.biz.crisis_management",
@@ -477,7 +527,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "1fab55a7e74651bc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "operations"
     }
   ],
   "edges": [

@@ -36,6 +36,28 @@
       "order": 4
     }
   ],
+  "strands": [
+    {
+      "id": "biological",
+      "name": "Biological Approach",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "cognitive",
+      "name": "Cognitive Approach",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "sociocultural",
+      "name": "Sociocultural Approach",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "options",
+      "name": "Options & Extensions",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ib.psy.research_methods",
@@ -53,7 +75,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "582c707f44d27dc4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "biological"
     },
     {
       "id": "ib.psy.brain_behaviour",
@@ -71,7 +94,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "a6b7735f19b17cb4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "biological"
     },
     {
       "id": "ib.psy.genetics_behaviour",
@@ -89,7 +113,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "7436042accac3770",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "biological"
     },
     {
       "id": "ib.psy.evolution_behaviour",
@@ -107,7 +132,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "7a34f62f75cf59c1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "biological"
     },
     {
       "id": "ib.psy.cognitive_processes",
@@ -125,7 +151,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "3d536f2277e2486c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cognitive"
     },
     {
       "id": "ib.psy.reliability_cog",
@@ -143,7 +170,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "94b700cf831cc46f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cognitive"
     },
     {
       "id": "ib.psy.emotion_cognition",
@@ -161,7 +189,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "f3944e8e529b1e83",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cognitive"
     },
     {
       "id": "ib.psy.technology_cog",
@@ -180,7 +209,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "245cbe5955a423a2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cognitive"
     },
     {
       "id": "ib.psy.social_identity",
@@ -198,7 +228,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "3a701364acf1fa45",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sociocultural"
     },
     {
       "id": "ib.psy.social_influence",
@@ -216,7 +247,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "24e78ac271b6d04d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sociocultural"
     },
     {
       "id": "ib.psy.stereotypes",
@@ -234,7 +266,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
       "external_id": "87ebbd4775c09cf6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sociocultural"
     },
     {
       "id": "ib.psy.abnormal",
@@ -252,7 +285,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "0495c0a265d4f652",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "options"
     },
     {
       "id": "ib.psy.developmental",
@@ -270,7 +304,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "c3c9b973d2256a39",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "options"
     },
     {
       "id": "ib.psy.health",
@@ -288,7 +323,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "d928088a63f8d70e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "options"
     },
     {
       "id": "ib.psy.relationships",
@@ -306,7 +342,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "ac194e2f4f8a5255",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "options"
     }
   ],
   "edges": [

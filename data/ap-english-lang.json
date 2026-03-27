@@ -30,6 +30,23 @@
       "order": 3
     }
   ],
+  "strands": [
+    {
+      "id": "rhetoric",
+      "name": "Rhetoric & Analysis",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "argumentation",
+      "name": "Argumentation & Evidence",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "composition",
+      "name": "Composition & Synthesis",
+      "color": "#2ECC71"
+    }
+  ],
   "nodes": [
     {
       "id": "ap.elang.rhetorical_situation",
@@ -47,7 +64,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "e9703ab7f6045745",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "rhetoric"
     },
     {
       "id": "ap.elang.claims_evidence",
@@ -65,7 +83,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "8ad0cb5524790ca4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "argumentation"
     },
     {
       "id": "ap.elang.reasoning_organization",
@@ -83,7 +102,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "f9bd515d8eec59c8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "argumentation"
     },
     {
       "id": "ap.elang.style_tone",
@@ -101,7 +121,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "27a2eb53fab8106a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "rhetoric"
     },
     {
       "id": "ap.elang.rhetorical_strategies",
@@ -119,7 +140,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "3a029cbafac2aef7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "rhetoric"
     },
     {
       "id": "ap.elang.argument_construction",
@@ -137,7 +159,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "ff9d002dda637f69",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "argumentation"
     },
     {
       "id": "ap.elang.logical_fallacies",
@@ -155,7 +178,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "5afa082f79cddca2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "argumentation"
     },
     {
       "id": "ap.elang.rhetorical_analysis",
@@ -173,7 +197,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "8bd4d84bf64136ee",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "rhetoric"
     },
     {
       "id": "ap.elang.argument_essay",
@@ -191,7 +216,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "c9763834b0ce78c6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "argumentation"
     },
     {
       "id": "ap.elang.synthesis_essay",
@@ -209,7 +235,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "a03b7c8ee7a8e894",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "composition"
     },
     {
       "id": "ap.elang.revision",
@@ -227,7 +254,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "0fceaabc03dc1dda",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "composition"
     }
   ],
   "edges": [

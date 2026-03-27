@@ -107,6 +107,43 @@
       "order": 16
     }
   ],
+  "strands": [
+    {
+      "id": "matter",
+      "name": "States of Matter",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "atomic",
+      "name": "Atomic Structure & Bonding",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "stoichiometry",
+      "name": "Stoichiometry",
+      "color": "#06b6d4"
+    },
+    {
+      "id": "reactions",
+      "name": "Chemical Reactions & Energetics",
+      "color": "#ef4444"
+    },
+    {
+      "id": "inorganic",
+      "name": "Inorganic Chemistry",
+      "color": "#22c55e"
+    },
+    {
+      "id": "organic",
+      "name": "Organic Chemistry",
+      "color": "#f97316"
+    },
+    {
+      "id": "analytical",
+      "name": "Analytical & Environmental",
+      "color": "#eab308"
+    }
+  ],
   "nodes": [
     {
       "id": "chem.ch1.solids_liquids_and_gases",
@@ -119,7 +156,8 @@
       "comprehended": false,
       "bookName": "The particulate nature of matter",
       "bookColor": "#065f46",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "matter"
     },
     {
       "id": "chem.ch1.the_kinetic_theory_of_matter",
@@ -132,7 +170,8 @@
       "comprehended": false,
       "bookName": "The particulate nature of matter",
       "bookColor": "#065f46",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "matter"
     },
     {
       "id": "chem.ch1.changes_of_state",
@@ -145,7 +184,8 @@
       "comprehended": false,
       "bookName": "The particulate nature of matter",
       "bookColor": "#065f46",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "matter"
     },
     {
       "id": "chem.ch1.diffusion",
@@ -158,7 +198,8 @@
       "comprehended": false,
       "bookName": "The particulate nature of matter",
       "bookColor": "#065f46",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "matter"
     },
     {
       "id": "chem.ch2.elements",
@@ -171,7 +212,8 @@
       "comprehended": false,
       "bookName": "Elements, compounds and experimental techniques",
       "bookColor": "#047857",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "atomic"
     },
     {
       "id": "chem.ch2.compounds",
@@ -184,7 +226,8 @@
       "comprehended": false,
       "bookName": "Elements, compounds and experimental techniques",
       "bookColor": "#047857",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "atomic"
     },
     {
       "id": "chem.ch2.mixtures",
@@ -197,7 +240,8 @@
       "comprehended": false,
       "bookName": "Elements, compounds and experimental techniques",
       "bookColor": "#047857",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "atomic"
     },
     {
       "id": "chem.ch2.separating_mixtures",
@@ -210,7 +254,8 @@
       "comprehended": false,
       "bookName": "Elements, compounds and experimental techniques",
       "bookColor": "#047857",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "atomic"
     },
     {
       "id": "chem.ch3.inside_atoms",
@@ -223,7 +268,8 @@
       "comprehended": false,
       "bookName": "Atomic structure and bonding",
       "bookColor": "#059669",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "atomic"
     },
     {
       "id": "chem.ch3.the_arrangement_of_electrons_in_atoms",
@@ -236,7 +282,8 @@
       "comprehended": false,
       "bookName": "Atomic structure and bonding",
       "bookColor": "#059669",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "atomic"
     },
     {
       "id": "chem.ch3.ionic_bonding",
@@ -249,7 +296,8 @@
       "comprehended": false,
       "bookName": "Atomic structure and bonding",
       "bookColor": "#059669",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "atomic"
     },
     {
       "id": "chem.ch3.covalent_bonding",
@@ -262,7 +310,8 @@
       "comprehended": false,
       "bookName": "Atomic structure and bonding",
       "bookColor": "#059669",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "atomic"
     },
     {
       "id": "chem.ch3.metallic_bonding",
@@ -275,7 +324,8 @@
       "comprehended": false,
       "bookName": "Atomic structure and bonding",
       "bookColor": "#059669",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "atomic"
     },
     {
       "id": "chem.ch4.relative_atomic_mass",
@@ -288,7 +338,8 @@
       "comprehended": false,
       "bookName": "Stoichiometry - chemical calculations",
       "bookColor": "#0d9488",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "stoichiometry"
     },
     {
       "id": "chem.ch4.reacting_masses",
@@ -301,7 +352,8 @@
       "comprehended": false,
       "bookName": "Stoichiometry - chemical calculations",
       "bookColor": "#0d9488",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "stoichiometry"
     },
     {
       "id": "chem.ch4.calculating_moles",
@@ -314,7 +366,8 @@
       "comprehended": false,
       "bookName": "Stoichiometry - chemical calculations",
       "bookColor": "#0d9488",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "stoichiometry"
     },
     {
       "id": "chem.ch4.calculating_formulae",
@@ -327,7 +380,8 @@
       "comprehended": false,
       "bookName": "Stoichiometry - chemical calculations",
       "bookColor": "#0d9488",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "stoichiometry"
     },
     {
       "id": "chem.ch4.moles_and_chemical_equations",
@@ -340,7 +394,8 @@
       "comprehended": false,
       "bookName": "Stoichiometry - chemical calculations",
       "bookColor": "#0d9488",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "stoichiometry"
     },
     {
       "id": "chem.ch5.electrolysis_of_lead_ii_bromide",
@@ -353,7 +408,8 @@
       "comprehended": false,
       "bookName": "Electricity and chemistry",
       "bookColor": "#0f766e",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch5.electrolysis_of_aluminium_oxide",
@@ -366,7 +422,8 @@
       "comprehended": false,
       "bookName": "Electricity and chemistry",
       "bookColor": "#0f766e",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch5.electrolysis_of_aqueous_solutions",
@@ -379,7 +436,8 @@
       "comprehended": false,
       "bookName": "Electricity and chemistry",
       "bookColor": "#0f766e",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch5.electrolysis_of_concentrated_hydrochloric_acid",
@@ -392,7 +450,8 @@
       "comprehended": false,
       "bookName": "Electricity and chemistry",
       "bookColor": "#0f766e",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch5.electrolysis_of_copper_ii_sulfate_solution",
@@ -405,7 +464,8 @@
       "comprehended": false,
       "bookName": "Electricity and chemistry",
       "bookColor": "#0f766e",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch5.electroplating",
@@ -418,7 +478,8 @@
       "comprehended": false,
       "bookName": "Electricity and chemistry",
       "bookColor": "#0f766e",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch6.fossil_fuels",
@@ -431,7 +492,8 @@
       "comprehended": false,
       "bookName": "Chemical energetics",
       "bookColor": "#14b8a6",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch6.what_is_a_fuel",
@@ -444,7 +506,8 @@
       "comprehended": false,
       "bookName": "Chemical energetics",
       "bookColor": "#14b8a6",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch6.alternative_sources_of_energy",
@@ -457,7 +520,8 @@
       "comprehended": false,
       "bookName": "Chemical energetics",
       "bookColor": "#14b8a6",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch6.chemical_energy",
@@ -470,7 +534,8 @@
       "comprehended": false,
       "bookName": "Chemical energetics",
       "bookColor": "#14b8a6",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch6.cells_and_batteries",
@@ -483,7 +548,8 @@
       "comprehended": false,
       "bookName": "Chemical energetics",
       "bookColor": "#14b8a6",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch7.factors_that_affect_the_rate_of_a_reaction",
@@ -496,7 +562,8 @@
       "comprehended": false,
       "bookName": "Chemical reactions",
       "bookColor": "#10b981",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch7.enzymes",
@@ -509,7 +576,8 @@
       "comprehended": false,
       "bookName": "Chemical reactions",
       "bookColor": "#10b981",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch8.acids_and_alkalis",
@@ -522,7 +590,8 @@
       "comprehended": false,
       "bookName": "Acids, bases and salts",
       "bookColor": "#34d399",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch8.formation_of_salts",
@@ -535,7 +604,8 @@
       "comprehended": false,
       "bookName": "Acids, bases and salts",
       "bookColor": "#34d399",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch8.crystal_hydrates",
@@ -548,7 +618,8 @@
       "comprehended": false,
       "bookName": "Acids, bases and salts",
       "bookColor": "#34d399",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch8.solubility_of_salts_in_water",
@@ -561,7 +632,8 @@
       "comprehended": false,
       "bookName": "Acids, bases and salts",
       "bookColor": "#34d399",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch8.titration",
@@ -574,7 +646,8 @@
       "comprehended": false,
       "bookName": "Acids, bases and salts",
       "bookColor": "#34d399",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "strand": "reactions"
     },
     {
       "id": "chem.ch9.development_of_the_periodic_table",
@@ -587,7 +660,8 @@
       "comprehended": false,
       "bookName": "The Periodic Table",
       "bookColor": "#2dd4bf",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch9.electronic_structure_and_the_periodic_table",
@@ -600,7 +674,8 @@
       "comprehended": false,
       "bookName": "The Periodic Table",
       "bookColor": "#2dd4bf",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch9.group_i_the_alkali_metals",
@@ -613,7 +688,8 @@
       "comprehended": false,
       "bookName": "The Periodic Table",
       "bookColor": "#2dd4bf",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch9.group_ii_the_alkaline_earth_metals",
@@ -626,7 +702,8 @@
       "comprehended": false,
       "bookName": "The Periodic Table",
       "bookColor": "#2dd4bf",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch9.group_vii_the_halogens",
@@ -639,7 +716,8 @@
       "comprehended": false,
       "bookName": "The Periodic Table",
       "bookColor": "#2dd4bf",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch9.group_0_the_noble_gases",
@@ -652,7 +730,8 @@
       "comprehended": false,
       "bookName": "The Periodic Table",
       "bookColor": "#2dd4bf",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch9.transition_elements",
@@ -665,7 +744,8 @@
       "comprehended": false,
       "bookName": "The Periodic Table",
       "bookColor": "#2dd4bf",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch9.the_position_of_hydrogen",
@@ -678,7 +758,8 @@
       "comprehended": false,
       "bookName": "The Periodic Table",
       "bookColor": "#2dd4bf",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch10.metal_reactions",
@@ -691,7 +772,8 @@
       "comprehended": false,
       "bookName": "Metals",
       "bookColor": "#5eead4",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch10.decomposition_of_metal_compounds",
@@ -704,7 +786,8 @@
       "comprehended": false,
       "bookName": "Metals",
       "bookColor": "#5eead4",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch10.reactivity_of_metals_and_their_uses",
@@ -717,7 +800,8 @@
       "comprehended": false,
       "bookName": "Metals",
       "bookColor": "#5eead4",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch10.identifying_metal_ions",
@@ -730,7 +814,8 @@
       "comprehended": false,
       "bookName": "Metals",
       "bookColor": "#5eead4",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch10.discovery_of_metals_and_their_extraction",
@@ -743,7 +828,8 @@
       "comprehended": false,
       "bookName": "Metals",
       "bookColor": "#5eead4",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch10.rusting_of_iron",
@@ -756,7 +842,8 @@
       "comprehended": false,
       "bookName": "Metals",
       "bookColor": "#5eead4",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch10.alloys",
@@ -769,7 +856,8 @@
       "comprehended": false,
       "bookName": "Metals",
       "bookColor": "#5eead4",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch11.the_air",
@@ -782,7 +870,8 @@
       "comprehended": false,
       "bookName": "Air and water",
       "bookColor": "#6ee7b7",
-      "bookOrder": 11
+      "bookOrder": 11,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch11.useful_gases_from_the_air",
@@ -795,7 +884,8 @@
       "comprehended": false,
       "bookName": "Air and water",
       "bookColor": "#6ee7b7",
-      "bookOrder": 11
+      "bookOrder": 11,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch11.ammonia",
@@ -808,7 +898,8 @@
       "comprehended": false,
       "bookName": "Air and water",
       "bookColor": "#6ee7b7",
-      "bookOrder": 11
+      "bookOrder": 11,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch11.artificial_fertilisers",
@@ -821,7 +912,8 @@
       "comprehended": false,
       "bookName": "Air and water",
       "bookColor": "#6ee7b7",
-      "bookOrder": 11
+      "bookOrder": 11,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch11.atmospheric_pollution",
@@ -834,7 +926,8 @@
       "comprehended": false,
       "bookName": "Air and water",
       "bookColor": "#6ee7b7",
-      "bookOrder": 11
+      "bookOrder": 11,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch11.water",
@@ -847,7 +940,8 @@
       "comprehended": false,
       "bookName": "Air and water",
       "bookColor": "#6ee7b7",
-      "bookOrder": 11
+      "bookOrder": 11,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch11.hardness_in_water",
@@ -860,7 +954,8 @@
       "comprehended": false,
       "bookName": "Air and water",
       "bookColor": "#6ee7b7",
-      "bookOrder": 11
+      "bookOrder": 11,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch12.sulfur_the_element",
@@ -873,7 +968,8 @@
       "comprehended": false,
       "bookName": "Sulfur",
       "bookColor": "#a7f3d0",
-      "bookOrder": 12
+      "bookOrder": 12,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch12.sulfur_dioxide",
@@ -886,7 +982,8 @@
       "comprehended": false,
       "bookName": "Sulfur",
       "bookColor": "#a7f3d0",
-      "bookOrder": 12
+      "bookOrder": 12,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch12.sulfuric_acid",
@@ -899,7 +996,8 @@
       "comprehended": false,
       "bookName": "Sulfur",
       "bookColor": "#a7f3d0",
-      "bookOrder": 12
+      "bookOrder": 12,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch13.limestone",
@@ -912,7 +1010,8 @@
       "comprehended": false,
       "bookName": "Inorganic carbon chemistry",
       "bookColor": "#99f6e4",
-      "bookOrder": 13
+      "bookOrder": 13,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch13.carbonates",
@@ -925,7 +1024,8 @@
       "comprehended": false,
       "bookName": "Inorganic carbon chemistry",
       "bookColor": "#99f6e4",
-      "bookOrder": 13
+      "bookOrder": 13,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch13.carbon_dioxide",
@@ -938,7 +1038,8 @@
       "comprehended": false,
       "bookName": "Inorganic carbon chemistry",
       "bookColor": "#99f6e4",
-      "bookOrder": 13
+      "bookOrder": 13,
+      "strand": "inorganic"
     },
     {
       "id": "chem.ch14.alkanes",
@@ -951,7 +1052,8 @@
       "comprehended": false,
       "bookName": "Organic chemistry 1",
       "bookColor": "#22c55e",
-      "bookOrder": 14
+      "bookOrder": 14,
+      "strand": "organic"
     },
     {
       "id": "chem.ch14.the_chemical_behaviour_of_alkanes",
@@ -964,7 +1066,8 @@
       "comprehended": false,
       "bookName": "Organic chemistry 1",
       "bookColor": "#22c55e",
-      "bookOrder": 14
+      "bookOrder": 14,
+      "strand": "organic"
     },
     {
       "id": "chem.ch14.alkenes",
@@ -977,7 +1080,8 @@
       "comprehended": false,
       "bookName": "Organic chemistry 1",
       "bookColor": "#22c55e",
-      "bookOrder": 14
+      "bookOrder": 14,
+      "strand": "organic"
     },
     {
       "id": "chem.ch14.the_chemical_behaviour_of_alkenes",
@@ -990,7 +1094,8 @@
       "comprehended": false,
       "bookName": "Organic chemistry 1",
       "bookColor": "#22c55e",
-      "bookOrder": 14
+      "bookOrder": 14,
+      "strand": "organic"
     },
     {
       "id": "chem.ch14.addition_reaction_of_alkenes",
@@ -1003,7 +1108,8 @@
       "comprehended": false,
       "bookName": "Organic chemistry 1",
       "bookColor": "#22c55e",
-      "bookOrder": 14
+      "bookOrder": 14,
+      "strand": "organic"
     },
     {
       "id": "chem.ch15.alcohols",
@@ -1016,7 +1122,8 @@
       "comprehended": false,
       "bookName": "Organic chemistry 2",
       "bookColor": "#4ade80",
-      "bookOrder": 15
+      "bookOrder": 15,
+      "strand": "organic"
     },
     {
       "id": "chem.ch15.carboxylic_acids",
@@ -1029,7 +1136,8 @@
       "comprehended": false,
       "bookName": "Organic chemistry 2",
       "bookColor": "#4ade80",
-      "bookOrder": 15
+      "bookOrder": 15,
+      "strand": "organic"
     },
     {
       "id": "chem.ch15.condensation_polymers",
@@ -1042,7 +1150,8 @@
       "comprehended": false,
       "bookName": "Organic chemistry 2",
       "bookColor": "#4ade80",
-      "bookOrder": 15
+      "bookOrder": 15,
+      "strand": "organic"
     },
     {
       "id": "chem.ch15.some_biopolymers",
@@ -1055,7 +1164,8 @@
       "comprehended": false,
       "bookName": "Organic chemistry 2",
       "bookColor": "#4ade80",
-      "bookOrder": 15
+      "bookOrder": 15,
+      "strand": "organic"
     },
     {
       "id": "chem.ch16.notes_on_qualitative_analysis",
@@ -1068,7 +1178,8 @@
       "comprehended": false,
       "bookName": "Experimental chemistry",
       "bookColor": "#86efac",
-      "bookOrder": 16
+      "bookOrder": 16,
+      "strand": "analytical"
     }
   ],
   "edges": [

@@ -48,6 +48,38 @@
       "order": 6
     }
   ],
+  "strands": [
+    {
+      "id": "basic_problem",
+      "name": "Basic Economic Problem",
+      "color": "#ef4444"
+    },
+    {
+      "id": "markets",
+      "name": "Markets & Allocation",
+      "color": "#f97316"
+    },
+    {
+      "id": "microeconomics",
+      "name": "Microeconomics",
+      "color": "#eab308"
+    },
+    {
+      "id": "macroeconomics",
+      "name": "Government & Macroeconomy",
+      "color": "#22c55e"
+    },
+    {
+      "id": "development",
+      "name": "Economic Development",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "international",
+      "name": "International Trade",
+      "color": "#8b5cf6"
+    }
+  ],
   "nodes": [
     {
       "id": "econ.t1.economic_problem",
@@ -66,7 +98,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "cff2aa9405cf0b3c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basic_problem"
     },
     {
       "id": "econ.t2.opportunity_cost",
@@ -85,7 +118,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "ff77276a2f7d1844",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basic_problem"
     },
     {
       "id": "econ.t3.ppc",
@@ -104,7 +138,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "6156dc1fba7baf7d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basic_problem"
     },
     {
       "id": "econ.t4.price_mechanism",
@@ -123,7 +158,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "81b35a054e501c63",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "markets"
     },
     {
       "id": "econ.t5.demand",
@@ -142,7 +178,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "4a26b386c1f16928",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "markets"
     },
     {
       "id": "econ.t6.supply",
@@ -161,7 +198,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "db556b28889cadec",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "markets"
     },
     {
       "id": "econ.t7.market_equilibrium",
@@ -180,7 +218,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "e9f461fb2a0ec9dd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "markets"
     },
     {
       "id": "econ.t8.elasticity",
@@ -199,7 +238,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "184cf36de466da78",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "markets"
     },
     {
       "id": "econ.t9.types_of_business",
@@ -218,7 +258,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "ee7c2a21af4be03f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "microeconomics"
     },
     {
       "id": "econ.t10.costs_revenue_profit",
@@ -237,7 +278,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "66dfbf1c368e6e7b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "microeconomics"
     },
     {
       "id": "econ.t11.market_structure",
@@ -256,7 +298,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "b8f80e9eb3deb9af",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "microeconomics"
     },
     {
       "id": "econ.t12.labour_market",
@@ -275,7 +318,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "6a4a7c3467273de1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "microeconomics"
     },
     {
       "id": "econ.t13.government_objectives",
@@ -294,7 +338,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "63ee194d7a2770b9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "macroeconomics"
     },
     {
       "id": "econ.t14.fiscal_policy",
@@ -313,7 +358,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "b4125471fe22cc0c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "macroeconomics"
     },
     {
       "id": "econ.t15.monetary_policy",
@@ -332,7 +378,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "bbd69aa99f82cb79",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "macroeconomics"
     },
     {
       "id": "econ.t16.supply_side_policy",
@@ -351,7 +398,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "934b77c576f3354c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "macroeconomics"
     },
     {
       "id": "econ.t17.gdp",
@@ -370,7 +418,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "e55c993e928acbe3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "macroeconomics"
     },
     {
       "id": "econ.t18.inflation",
@@ -389,7 +438,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "501f45c2c1f7e751",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "macroeconomics"
     },
     {
       "id": "econ.t19.unemployment",
@@ -408,7 +458,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "c8f70250cfc32380",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "macroeconomics"
     },
     {
       "id": "econ.t20.development_indicators",
@@ -427,7 +478,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "6ff917afa04ad880",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "development"
     },
     {
       "id": "econ.t21.factors_affecting_development",
@@ -446,7 +498,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "11a224e95a2c6cf7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "development"
     },
     {
       "id": "econ.t22.consequences_of_growth",
@@ -465,7 +518,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "60c6157eb08ec03f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "development"
     },
     {
       "id": "econ.t23.specialisation",
@@ -484,7 +538,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 6,
       "external_id": "e7c7aa0760e3186e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "international"
     },
     {
       "id": "econ.t24.free_trade_protection",
@@ -503,7 +558,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 6,
       "external_id": "0c18c588b4d0df08",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "international"
     },
     {
       "id": "econ.t25.exchange_rates",
@@ -522,7 +578,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 6,
       "external_id": "c11577ee6096c5fd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "international"
     },
     {
       "id": "econ.t26.balance_of_payments",
@@ -541,7 +598,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 6,
       "external_id": "37e8f3473f16de72",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "international"
     },
     {
       "id": "econ.t27.globalisation",
@@ -560,7 +618,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 6,
       "external_id": "a5d17575895c4215",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "international"
     }
   ],
   "edges": [

@@ -36,6 +36,28 @@
       "order": 4
     }
   ],
+  "strands": [
+    {
+      "id": "kinematics",
+      "name": "Kinematics & Dynamics",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "energy",
+      "name": "Energy & Momentum",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "rotation",
+      "name": "Rotation & Torque",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "oscillations",
+      "name": "Oscillations & Fluids",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ap.phy1.kinematics",
@@ -53,7 +75,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "657c2432f249e516",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.phy1.newtons_first",
@@ -71,7 +94,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "3c2a8d68e4c0eb33",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.phy1.newtons_second",
@@ -89,7 +113,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "cd113f204a640996",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.phy1.newtons_third",
@@ -107,7 +132,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "939e59b5d0ffac1f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.phy1.circular_motion",
@@ -125,7 +151,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "063d7b57529d1d32",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.phy1.work_energy",
@@ -143,7 +170,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "939628d6a2d6a19b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.phy1.potential_energy",
@@ -161,7 +189,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "f8a624821d2184a8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.phy1.momentum",
@@ -179,7 +208,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "cc8481a010e8ae6d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energy"
     },
     {
       "id": "ap.phy1.collisions",
@@ -197,7 +227,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "00ec2d38827a001f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energy"
     },
     {
       "id": "ap.phy1.torque",
@@ -215,7 +246,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "925babca4eff9a7e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "rotation"
     },
     {
       "id": "ap.phy1.rotational_kinematics",
@@ -233,7 +265,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "7c912644f9055b0a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.phy1.rotational_dynamics",
@@ -251,7 +284,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "2046443a9ff3aed3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.phy1.rotational_energy",
@@ -269,7 +303,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "8eb90d043d543c6d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energy"
     },
     {
       "id": "ap.phy1.simple_harmonic",
@@ -287,7 +322,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "eb3abf85ed178485",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "oscillations"
     },
     {
       "id": "ap.phy1.waves",
@@ -305,7 +341,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "9c23c2533f51b2af",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "oscillations"
     },
     {
       "id": "ap.phy1.fluids_pressure",
@@ -323,7 +360,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "3f8c03a64835f3d9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "oscillations"
     },
     {
       "id": "ap.phy1.fluids_dynamics",
@@ -341,7 +379,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "ab462f4b53077573",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     }
   ],
   "edges": [

@@ -42,6 +42,33 @@
       "order": 5
     }
   ],
+  "strands": [
+    {
+      "id": "systems",
+      "name": "System Fundamentals",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "hardware",
+      "name": "Computer Organization",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "networks",
+      "name": "Networks",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "programming",
+      "name": "Computational Thinking & Programming",
+      "color": "#F39C12"
+    },
+    {
+      "id": "hl",
+      "name": "HL Extensions",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ib.cs.system_planning",
@@ -59,7 +86,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "2d979a1b4c16120b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "systems"
     },
     {
       "id": "ib.cs.system_design",
@@ -77,7 +105,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "0f6e3219c1a6571b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "systems"
     },
     {
       "id": "ib.cs.binary_representation",
@@ -95,7 +124,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 2,
       "external_id": "fd35b066a3530e3e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hardware"
     },
     {
       "id": "ib.cs.cpu_architecture",
@@ -113,7 +143,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 2,
       "external_id": "5f307d03978ec264",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hardware"
     },
     {
       "id": "ib.cs.logic_gates",
@@ -131,7 +162,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 2,
       "external_id": "15ec3a77a2c94107",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hardware"
     },
     {
       "id": "ib.cs.os",
@@ -149,7 +181,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 2,
       "external_id": "e55a0a6404264e98",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hardware"
     },
     {
       "id": "ib.cs.network_fundamentals",
@@ -167,7 +200,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 3,
       "external_id": "a9078cd5623db3bc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "networks"
     },
     {
       "id": "ib.cs.web_technologies",
@@ -185,7 +219,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 3,
       "external_id": "be7716a776c41b47",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "networks"
     },
     {
       "id": "ib.cs.security",
@@ -203,7 +238,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 3,
       "external_id": "3d778f812e5b1f13",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "networks"
     },
     {
       "id": "ib.cs.thinking_algorithmically",
@@ -221,7 +257,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "4b92f38822c3e2dc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "ib.cs.programming_fundamentals",
@@ -239,7 +276,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "623b62d4befef22c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "ib.cs.searching_sorting",
@@ -257,7 +295,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "853d405d5f81db17",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "ib.cs.collections",
@@ -275,7 +314,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "d7051642f5e78839",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "ib.cs.oop",
@@ -294,7 +334,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "622599ec55c3cf77",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hl"
     },
     {
       "id": "ib.cs.abstract_data_structures",
@@ -313,7 +354,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "6068c26195381c25",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hl"
     },
     {
       "id": "ib.cs.recursion",
@@ -332,7 +374,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "73dbf3509a8d9823",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hl"
     },
     {
       "id": "ib.cs.resource_management",
@@ -351,7 +394,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "b990d886eead3615",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hl"
     },
     {
       "id": "ib.cs.control_systems",
@@ -370,7 +414,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "acedf7c4164196af",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "hl"
     },
     {
       "id": "ib.cs.databases",
@@ -388,7 +433,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "dcc2f90752e8950b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "ib.cs.modelling",
@@ -406,7 +452,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "892cd8ade068d08b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     }
   ],
   "edges": [

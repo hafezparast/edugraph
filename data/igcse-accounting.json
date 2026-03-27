@@ -42,6 +42,33 @@
       "order": 5
     }
   ],
+  "strands": [
+    {
+      "id": "foundations",
+      "name": "Accounting Foundations",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "recording",
+      "name": "Recording Transactions",
+      "color": "#6366f1"
+    },
+    {
+      "id": "verification",
+      "name": "Verification & Control",
+      "color": "#a855f7"
+    },
+    {
+      "id": "financial_stmts",
+      "name": "Financial Statements",
+      "color": "#ec4899"
+    },
+    {
+      "id": "analysis",
+      "name": "Analysis & Interpretation",
+      "color": "#f43f5e"
+    }
+  ],
   "nodes": [
     {
       "id": "acc.t1.double_entry",
@@ -60,7 +87,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "a751d85038804c5e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "foundations"
     },
     {
       "id": "acc.t2.source_documents",
@@ -79,7 +107,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "c86bd0aa965f80c3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "foundations"
     },
     {
       "id": "acc.t3.accounting_equation",
@@ -98,7 +127,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 1,
       "external_id": "b13c17920a25b9bf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "foundations"
     },
     {
       "id": "acc.t4.journals",
@@ -117,7 +147,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 2,
       "external_id": "4e99c773cbeb82e5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "recording"
     },
     {
       "id": "acc.t5.cash_book",
@@ -136,7 +167,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 2,
       "external_id": "40494746218ff488",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "recording"
     },
     {
       "id": "acc.t6.petty_cash",
@@ -155,7 +187,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 2,
       "external_id": "6ad01fcb38dca38b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "recording"
     },
     {
       "id": "acc.t7.ledger_accounts",
@@ -174,7 +207,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 3,
       "external_id": "286bdc712e9bcf25",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "verification"
     },
     {
       "id": "acc.t8.trial_balance",
@@ -193,7 +227,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 3,
       "external_id": "f64fab4beef4a112",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "verification"
     },
     {
       "id": "acc.t9.bank_reconciliation",
@@ -212,7 +247,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 3,
       "external_id": "c1ec75324c70c6ed",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "verification"
     },
     {
       "id": "acc.t10.trading_account",
@@ -231,7 +267,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 4,
       "external_id": "4df35693a2afd18e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial_stmts"
     },
     {
       "id": "acc.t11.profit_and_loss",
@@ -250,7 +287,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 4,
       "external_id": "215caca01b7213a0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial_stmts"
     },
     {
       "id": "acc.t12.balance_sheet",
@@ -269,7 +307,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 4,
       "external_id": "0214fc495891ed07",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial_stmts"
     },
     {
       "id": "acc.t13.depreciation",
@@ -288,7 +327,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 4,
       "external_id": "37e5ac4f69ac9680",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial_stmts"
     },
     {
       "id": "acc.t14.bad_debts",
@@ -307,7 +347,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 4,
       "external_id": "7aee4a4afd772712",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "financial_stmts"
     },
     {
       "id": "acc.t15.partnerships",
@@ -326,7 +367,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 5,
       "external_id": "1665b09d6e0a30d4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "analysis"
     },
     {
       "id": "acc.t16.clubs_societies",
@@ -345,7 +387,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 5,
       "external_id": "537085673096faea",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "analysis"
     },
     {
       "id": "acc.t17.ratio_analysis",
@@ -364,7 +407,8 @@
       "bookColor": "#f43f5e",
       "bookOrder": 5,
       "external_id": "3860e1e69f45bb03",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "analysis"
     }
   ],
   "edges": [

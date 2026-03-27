@@ -42,6 +42,33 @@
       "order": 5
     }
   ],
+  "strands": [
+    {
+      "id": "limits",
+      "name": "Limits & Continuity",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "differentiation",
+      "name": "Differentiation",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "applications-deriv",
+      "name": "Applications of Derivatives",
+      "color": "#F39C12"
+    },
+    {
+      "id": "integration",
+      "name": "Integration",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "diff-eq",
+      "name": "Differential Equations & Applications",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ap.cab.limits_intro",
@@ -59,7 +86,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "8460d7e6656d283b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "limits"
     },
     {
       "id": "ap.cab.limit_properties",
@@ -77,7 +105,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "bd06394ca2e4d563",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "limits"
     },
     {
       "id": "ap.cab.continuity",
@@ -95,7 +124,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "b4600fcec406c282",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "limits"
     },
     {
       "id": "ap.cab.limits_infinity",
@@ -113,7 +143,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "2665d51371af57a4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "limits"
     },
     {
       "id": "ap.cab.derivative_definition",
@@ -131,7 +162,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "af3b4dda049a0a2e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "limits"
     },
     {
       "id": "ap.cab.basic_diff_rules",
@@ -149,7 +181,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "ee10e40277a97166",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "differentiation"
     },
     {
       "id": "ap.cab.product_quotient",
@@ -167,7 +200,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "794a002ecd116bcd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "differentiation"
     },
     {
       "id": "ap.cab.chain_rule",
@@ -185,7 +219,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "ddd082c5bc07dd17",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "differentiation"
     },
     {
       "id": "ap.cab.trig_derivatives",
@@ -203,7 +238,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "1fc18780d5d5d7bf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "limits"
     },
     {
       "id": "ap.cab.implicit_diff",
@@ -221,7 +257,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "ab6545ae7bf56088",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "differentiation"
     },
     {
       "id": "ap.cab.exp_log_derivatives",
@@ -239,7 +276,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "a356ee65a73a94c2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "limits"
     },
     {
       "id": "ap.cab.related_rates",
@@ -257,7 +295,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "cf70b7065bde547e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "applications-deriv"
     },
     {
       "id": "ap.cab.mvt",
@@ -275,7 +314,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "1b775060bd381b2e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "applications-deriv"
     },
     {
       "id": "ap.cab.extrema",
@@ -293,7 +333,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "a895aed4a5a5ef8c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "applications-deriv"
     },
     {
       "id": "ap.cab.curve_sketching",
@@ -311,7 +352,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "8ed4dd01406ecc75",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "applications-deriv"
     },
     {
       "id": "ap.cab.optimization",
@@ -329,7 +371,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "a1c894bc587aa216",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "applications-deriv"
     },
     {
       "id": "ap.cab.lhopital",
@@ -347,7 +390,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "331a486fda44b8cc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "applications-deriv"
     },
     {
       "id": "ap.cab.riemann_sums",
@@ -365,7 +409,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "a10c2df9a939a6f6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "integration"
     },
     {
       "id": "ap.cab.ftc",
@@ -383,7 +428,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "2bf8f60d7c35d47b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "differentiation"
     },
     {
       "id": "ap.cab.antiderivatives",
@@ -401,7 +447,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "afe4d3e894a730e8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "differentiation"
     },
     {
       "id": "ap.cab.u_sub",
@@ -419,7 +466,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "d3d96b30194288ed",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "integration"
     },
     {
       "id": "ap.cab.area_between",
@@ -437,7 +485,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "d2449fc326f4e33a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "integration"
     },
     {
       "id": "ap.cab.volume",
@@ -455,7 +504,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "dc15040927693d6c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "limits"
     },
     {
       "id": "ap.cab.slope_fields",
@@ -473,7 +523,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "c4645d3e05e642bd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "diff-eq"
     },
     {
       "id": "ap.cab.separation_of_variables",
@@ -491,7 +542,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "57aef10b5a2fdbfd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "diff-eq"
     }
   ],
   "edges": [

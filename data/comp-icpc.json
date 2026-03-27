@@ -49,6 +49,38 @@
       "order": 6
     }
   ],
+  "strands": [
+    {
+      "id": "fundamentals",
+      "name": "Fundamentals",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "color": "#F39C12"
+    },
+    {
+      "id": "graphs",
+      "name": "Graph Theory",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "dp",
+      "name": "Dynamic Programming",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "strings",
+      "name": "Strings",
+      "color": "#1ABC9C"
+    },
+    {
+      "id": "data-structures",
+      "name": "Data Structures",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "icpc.fund.implementation",
@@ -67,7 +99,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "4a3b238395063c40",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fundamentals"
     },
     {
       "id": "icpc.fund.brute_force",
@@ -86,7 +119,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "6d5ae6d19fbbef50",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fundamentals"
     },
     {
       "id": "icpc.fund.greedy",
@@ -105,7 +139,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "571be0215e111376",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fundamentals"
     },
     {
       "id": "icpc.fund.binary_search",
@@ -124,7 +159,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "378070b70c45999a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fundamentals"
     },
     {
       "id": "icpc.fund.sorting",
@@ -143,7 +179,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 1,
       "external_id": "9f665a1c90e85230",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fundamentals"
     },
     {
       "id": "icpc.math.number_theory",
@@ -162,7 +199,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "5bdd179387a317a7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "math"
     },
     {
       "id": "icpc.math.combinatorics",
@@ -181,7 +219,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "ace6b8109c254e37",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "math"
     },
     {
       "id": "icpc.math.probability",
@@ -200,7 +239,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "1bff029773bb1233",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "math"
     },
     {
       "id": "icpc.math.matrix_exp",
@@ -219,7 +259,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "a9cb18228ab98b0b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "math"
     },
     {
       "id": "icpc.math.game_theory",
@@ -238,7 +279,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "41d04706d4fa8b23",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "math"
     },
     {
       "id": "icpc.graph.bfs_dfs",
@@ -257,7 +299,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "eeafb9002a46982e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "graphs"
     },
     {
       "id": "icpc.graph.shortest_paths",
@@ -276,7 +319,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "a9c2222a411c2c36",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "graphs"
     },
     {
       "id": "icpc.graph.mst",
@@ -295,7 +339,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "ac07f686c48701ee",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "graphs"
     },
     {
       "id": "icpc.graph.network_flow",
@@ -314,7 +359,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "02ce00e5be44a770",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "graphs"
     },
     {
       "id": "icpc.graph.matching",
@@ -333,7 +379,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "d640671642c47253",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "graphs"
     },
     {
       "id": "icpc.graph.two_sat",
@@ -352,7 +399,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "6f339c9ec48ac2d4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "graphs"
     },
     {
       "id": "icpc.dp.classical",
@@ -371,7 +419,8 @@
       "bookColor": "#f97316",
       "bookOrder": 4,
       "external_id": "f6f84a069b1b95a6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "dp"
     },
     {
       "id": "icpc.dp.optimization",
@@ -390,7 +439,8 @@
       "bookColor": "#f97316",
       "bookOrder": 4,
       "external_id": "7d9e821b7b7b2b1e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "dp"
     },
     {
       "id": "icpc.dp.dp_trees",
@@ -409,7 +459,8 @@
       "bookColor": "#f97316",
       "bookOrder": 4,
       "external_id": "de59362aa6f2fb3d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "dp"
     },
     {
       "id": "icpc.dp.bitmask",
@@ -428,7 +479,8 @@
       "bookColor": "#f97316",
       "bookOrder": 4,
       "external_id": "b4611f9a9d6f7986",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "dp"
     },
     {
       "id": "icpc.str.hashing",
@@ -447,7 +499,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "58f62ebd8a8a4f1d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "strings"
     },
     {
       "id": "icpc.str.kmp",
@@ -466,7 +519,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "84692b44b1753992",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "strings"
     },
     {
       "id": "icpc.str.aho_corasick",
@@ -485,7 +539,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "d374abd13c740bc3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "strings"
     },
     {
       "id": "icpc.str.suffix_array",
@@ -504,7 +559,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "62b023af4350c357",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "strings"
     },
     {
       "id": "icpc.str.suffix_automaton",
@@ -523,7 +579,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
       "external_id": "66a077a6a6b62647",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "strings"
     },
     {
       "id": "icpc.ds.segment_tree",
@@ -542,7 +599,8 @@
       "bookColor": "#d946ef",
       "bookOrder": 6,
       "external_id": "451302b414c83697",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data-structures"
     },
     {
       "id": "icpc.ds.fenwick",
@@ -561,7 +619,8 @@
       "bookColor": "#d946ef",
       "bookOrder": 6,
       "external_id": "c8deb5c2494ba2f0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data-structures"
     },
     {
       "id": "icpc.ds.treap",
@@ -580,7 +639,8 @@
       "bookColor": "#d946ef",
       "bookOrder": 6,
       "external_id": "45d42d084edd0c6c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data-structures"
     },
     {
       "id": "icpc.ds.splay",
@@ -599,7 +659,8 @@
       "bookColor": "#d946ef",
       "bookOrder": 6,
       "external_id": "51a6999bb463ee3d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data-structures"
     },
     {
       "id": "icpc.ds.persistent",
@@ -618,7 +679,8 @@
       "bookColor": "#d946ef",
       "bookOrder": 6,
       "external_id": "a1d5ab18a1c37c96",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data-structures"
     },
     {
       "id": "icpc.ds.lct",
@@ -637,7 +699,8 @@
       "bookColor": "#d946ef",
       "bookOrder": 6,
       "external_id": "b00fb8c094d0d470",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data-structures"
     }
   ],
   "edges": [

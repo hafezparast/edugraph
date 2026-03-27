@@ -36,6 +36,28 @@
       "order": 4
     }
   ],
+  "strands": [
+    {
+      "id": "thermo",
+      "name": "Thermodynamics & Fluids",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "electricity",
+      "name": "Electricity",
+      "color": "#F39C12"
+    },
+    {
+      "id": "magnetism",
+      "name": "Magnetism & Optics",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "modern",
+      "name": "Waves & Modern Physics",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ap.phy2.thermodynamics",
@@ -53,7 +75,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "08907bcc422bd72f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermo"
     },
     {
       "id": "ap.phy2.ideal_gas",
@@ -71,7 +94,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "114949cf5c9f18aa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermo"
     },
     {
       "id": "ap.phy2.laws_of_thermo",
@@ -89,7 +113,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "e1fb880831799f50",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermo"
     },
     {
       "id": "ap.phy2.electric_charge",
@@ -107,7 +132,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "ccc43957063fe8d6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "ap.phy2.electric_field",
@@ -125,7 +151,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "e36f6c34a355d0e9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "ap.phy2.electric_potential",
@@ -143,7 +170,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "ca8bc3dae9e6a7b8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "ap.phy2.capacitors",
@@ -161,7 +189,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "3d797def350b6d6a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "ap.phy2.current_resistance",
@@ -179,7 +208,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "5d9f7efa9db8f758",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "ap.phy2.dc_circuits",
@@ -197,7 +227,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "cffd7b7d234765ed",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "ap.phy2.magnetic_fields",
@@ -215,7 +246,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "e800cf6e038621ab",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "ap.phy2.electromagnetic_induction",
@@ -233,7 +265,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "19a0fb71403260eb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "magnetism"
     },
     {
       "id": "ap.phy2.geometric_optics",
@@ -251,7 +284,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "2d166dd368959c58",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "magnetism"
     },
     {
       "id": "ap.phy2.wave_optics",
@@ -269,7 +303,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "5e862c6aec00ca01",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "magnetism"
     },
     {
       "id": "ap.phy2.em_waves",
@@ -287,7 +322,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "c9ccd3fc1149a40a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "magnetism"
     },
     {
       "id": "ap.phy2.quantum",
@@ -305,7 +341,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "010f5ac61c3a072d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "ap.phy2.atomic_nuclear",
@@ -323,7 +360,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "e08833ba6fdcafbf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     }
   ],
   "edges": [

@@ -36,6 +36,28 @@
       "order": 4
     }
   ],
+  "strands": [
+    {
+      "id": "colonial",
+      "name": "Colonial & Revolutionary (1491-1800)",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "expansion",
+      "name": "Expansion & Civil War (1800-1877)",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "industrial",
+      "name": "Industrialization & Progressive (1865-1945)",
+      "color": "#F39C12"
+    },
+    {
+      "id": "modern",
+      "name": "Modern America (1945-Present)",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ap.ush.period1",
@@ -53,7 +75,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "92ddc19011e0a78d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "colonial"
     },
     {
       "id": "ap.ush.period2",
@@ -71,7 +94,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "3a5a223f823991e6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "colonial"
     },
     {
       "id": "ap.ush.period3",
@@ -89,7 +113,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "923bbbcbac99dcd0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "colonial"
     },
     {
       "id": "ap.ush.period4",
@@ -107,7 +132,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "af548715bfc88b3a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "expansion"
     },
     {
       "id": "ap.ush.period5",
@@ -125,7 +151,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "53812e1be052218f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "expansion"
     },
     {
       "id": "ap.ush.period6",
@@ -143,7 +170,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "09ee647f9409a345",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "industrial"
     },
     {
       "id": "ap.ush.period7_early",
@@ -161,7 +189,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "dbaf2f161454c3f9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "industrial"
     },
     {
       "id": "ap.ush.period7_late",
@@ -179,7 +208,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "5fcc371ed0122de9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "industrial"
     },
     {
       "id": "ap.ush.period8",
@@ -197,7 +227,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "b3e150f25c283f2e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "ap.ush.period9",
@@ -215,7 +246,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "e51aa905c2510181",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "ap.ush.historical_thinking",
@@ -233,7 +265,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "a0b69fc8bdadcc96",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "colonial"
     },
     {
       "id": "ap.ush.document_analysis",
@@ -251,7 +284,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "32812d005364d0c1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "colonial"
     },
     {
       "id": "ap.ush.economic_systems",
@@ -269,7 +303,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "c21e1a9ae342f97c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "expansion"
     },
     {
       "id": "ap.ush.social_movements",
@@ -287,7 +322,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "66dc0116d8fbf54c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "industrial"
     },
     {
       "id": "ap.ush.foreign_policy",
@@ -305,7 +341,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "8f212c7273c7ec6a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     }
   ],
   "edges": [

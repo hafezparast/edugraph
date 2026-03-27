@@ -30,6 +30,28 @@
       "order": 3
     }
   ],
+  "strands": [
+    {
+      "id": "basics",
+      "name": "Economic Fundamentals & Markets",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "production",
+      "name": "Production & Costs",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "market-structures",
+      "name": "Market Structures",
+      "color": "#F39C12"
+    },
+    {
+      "id": "factor-failure",
+      "name": "Factor Markets & Market Failure",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ap.micro.scarcity_opportunity_cost",
@@ -47,7 +69,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "246dc062217706fb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basics"
     },
     {
       "id": "ap.micro.comparative_advantage",
@@ -65,7 +88,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "b936493118b6b6f1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basics"
     },
     {
       "id": "ap.micro.supply_demand",
@@ -83,7 +107,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "c02c77e6aca55cc6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basics"
     },
     {
       "id": "ap.micro.elasticity",
@@ -101,7 +126,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "d62b199fd3bb8cf2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basics"
     },
     {
       "id": "ap.micro.consumer_surplus",
@@ -119,7 +145,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "bada45d9d8350c8f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basics"
     },
     {
       "id": "ap.micro.gov_intervention",
@@ -137,7 +164,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "615299b8156b49f7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basics"
     },
     {
       "id": "ap.micro.production_costs",
@@ -155,7 +183,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "b8cdb01ba54ff741",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "production"
     },
     {
       "id": "ap.micro.perfect_competition",
@@ -173,7 +202,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "17933e4f0168dc01",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "market-structures"
     },
     {
       "id": "ap.micro.monopoly",
@@ -191,7 +221,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "d589b25c5795ea86",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "market-structures"
     },
     {
       "id": "ap.micro.monopolistic_competition",
@@ -209,7 +240,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "460cfbd64ae48fce",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "market-structures"
     },
     {
       "id": "ap.micro.oligopoly",
@@ -227,7 +259,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "cbd795cb8901be76",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "market-structures"
     },
     {
       "id": "ap.micro.factor_markets",
@@ -245,7 +278,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "cd74602a1bdc6fcc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "production"
     },
     {
       "id": "ap.micro.externalities",
@@ -263,7 +297,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "ee24db1f7b28453d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "basics"
     },
     {
       "id": "ap.micro.public_goods",
@@ -281,7 +316,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "5810cb68f67ad29c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "factor-failure"
     },
     {
       "id": "ap.micro.income_inequality",
@@ -299,7 +335,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "488df1b39a6c3b34",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "factor-failure"
     }
   ],
   "edges": [

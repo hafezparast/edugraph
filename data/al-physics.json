@@ -24,6 +24,48 @@
       "order": 2
     }
   ],
+  "strands": [
+    {
+      "id": "measurement",
+      "name": "Measurement & Units",
+      "color": "#94a3b8"
+    },
+    {
+      "id": "mechanics",
+      "name": "Mechanics & Materials",
+      "color": "#ef4444"
+    },
+    {
+      "id": "waves",
+      "name": "Waves & Optics",
+      "color": "#f97316"
+    },
+    {
+      "id": "electricity",
+      "name": "Electricity & Magnetism",
+      "color": "#eab308"
+    },
+    {
+      "id": "thermal",
+      "name": "Thermal Physics & SHM",
+      "color": "#22c55e"
+    },
+    {
+      "id": "fields",
+      "name": "Fields",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "modern",
+      "name": "Quantum & Nuclear Physics",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "medical",
+      "name": "Medical & Applied Physics",
+      "color": "#ec4899"
+    }
+  ],
   "nodes": [
     {
       "id": "al.phys.as.si_units",
@@ -41,7 +83,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "a1311d03fecf0258",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "measurement"
     },
     {
       "id": "al.phys.as.scalars_vectors",
@@ -59,7 +102,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "2def80f5f692ea6b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "measurement"
     },
     {
       "id": "al.phys.as.errors_uncertainties",
@@ -77,7 +121,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "7025597f5b07603e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "measurement"
     },
     {
       "id": "al.phys.as.displacement_velocity_acceleration",
@@ -95,7 +140,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "cc94dfd35b1e0a22",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.motion_graphs",
@@ -113,7 +159,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "5005fe406fcca8ab",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.equations_of_motion",
@@ -131,7 +178,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "56c75437664f0eb8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.free_fall",
@@ -149,7 +197,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "ed2d54216a718db5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.newtons_laws",
@@ -167,7 +216,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "ed910f7c4c1699f8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.mass_weight",
@@ -185,7 +235,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "4bd4b15f72859cb0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.momentum",
@@ -203,7 +254,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "510bef5ca0e36146",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.conservation_of_momentum",
@@ -221,7 +273,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "c066176664254c51",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.types_of_forces",
@@ -239,7 +292,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "9fd1967898bee6b1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.turning_effects",
@@ -257,7 +311,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "c20ea29951b147f7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.density_pressure",
@@ -275,7 +330,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "e9ba76f187542ba6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.work_done",
@@ -293,7 +349,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "4c26edda7ead06da",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.kinetic_potential_energy",
@@ -311,7 +368,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "4701f24eefd77630",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.conservation_of_energy",
@@ -329,7 +387,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "c79ca0b7c9849066",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.power_efficiency",
@@ -347,7 +406,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "070f0d05236136f4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.stress_strain",
@@ -365,7 +425,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "04bc5a6c25e1073f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.elastic_plastic",
@@ -383,7 +444,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "ecfe8782337b012f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.as.progressive_waves",
@@ -401,7 +463,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "d3b1f7a6be884378",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "waves"
     },
     {
       "id": "al.phys.as.wave_intensity",
@@ -419,7 +482,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "638b8cc1ddf7e3f7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "waves"
     },
     {
       "id": "al.phys.as.doppler_effect",
@@ -437,7 +501,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "46fcb332e2c211d6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "waves"
     },
     {
       "id": "al.phys.as.em_spectrum",
@@ -455,7 +520,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "d4cda32cbd843251",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "waves"
     },
     {
       "id": "al.phys.as.reflection_refraction",
@@ -473,7 +539,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "bbdfc3d2db74d5fd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "waves"
     },
     {
       "id": "al.phys.as.superposition_principle",
@@ -491,7 +558,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "822cccc3f6601d10",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "waves"
     },
     {
       "id": "al.phys.as.two_source_interference",
@@ -509,7 +577,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "75423401daa448c0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "waves"
     },
     {
       "id": "al.phys.as.diffraction_gratings",
@@ -527,7 +596,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "b4d446b4724c91bd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "waves"
     },
     {
       "id": "al.phys.as.stationary_waves",
@@ -545,7 +615,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "cc39c8d6890a6b8a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "waves"
     },
     {
       "id": "al.phys.as.charge_current",
@@ -563,7 +634,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "36c499dc1d58bb10",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.as.pd_emf",
@@ -581,7 +653,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "ed1003aed1f06164",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.as.resistance_resistivity",
@@ -599,7 +672,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "c47acc86b488352a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.as.electrical_power_energy",
@@ -617,7 +691,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "d50df3834d006fb3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.as.kirchhoffs_laws",
@@ -635,7 +710,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "7876e834fdee298b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.as.series_parallel",
@@ -653,7 +729,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "175888bf589218ea",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.as.potential_dividers",
@@ -671,7 +748,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "77c40f8683ce2246",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.as.emf_internal_resistance",
@@ -689,7 +767,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "4f34fa0eeb0ab241",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.as.atomic_structure",
@@ -707,7 +786,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "523742bab9015542",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "al.phys.as.nuclear_processes",
@@ -725,7 +805,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "e1ff7904058e1e5a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "al.phys.as.radioactive_decay",
@@ -743,7 +824,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "1c95402b9af1b8ea",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "al.phys.as.quarks_leptons",
@@ -761,7 +843,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "1dc3f688da3fdd62",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "al.phys.as.particle_interactions",
@@ -779,7 +862,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "852426fbf4fb0c94",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "al.phys.a2.angular_velocity",
@@ -797,7 +881,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "9e1336823400bb30",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.a2.centripetal_force",
@@ -815,7 +900,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "6d0c7338147b17fd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "mechanics"
     },
     {
       "id": "al.phys.a2.gravitational_field_strength",
@@ -833,7 +919,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "e3641214d1496782",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fields"
     },
     {
       "id": "al.phys.a2.newtons_law_gravitation",
@@ -851,7 +938,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "dd2ef6ca1d48f7c1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fields"
     },
     {
       "id": "al.phys.a2.gravitational_potential",
@@ -869,7 +957,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "036df25b05164f69",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fields"
     },
     {
       "id": "al.phys.a2.orbits",
@@ -887,7 +976,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "d974a0d42babb26d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fields"
     },
     {
       "id": "al.phys.a2.thermal_equilibrium",
@@ -905,7 +995,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "b3f68b5e057dc50b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermal"
     },
     {
       "id": "al.phys.a2.specific_heat_capacity",
@@ -923,7 +1014,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "638f872d7747c396",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.a2.specific_latent_heat",
@@ -941,7 +1033,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "a688dc99ee4027ae",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermal"
     },
     {
       "id": "al.phys.a2.gas_laws",
@@ -959,7 +1052,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "351b9e27892d07b0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermal"
     },
     {
       "id": "al.phys.a2.ideal_gas_equation",
@@ -977,7 +1071,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "46d09540cfe59072",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermal"
     },
     {
       "id": "al.phys.a2.kinetic_theory",
@@ -995,7 +1090,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "f432d99b07fe2444",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermal"
     },
     {
       "id": "al.phys.a2.first_law_thermodynamics",
@@ -1013,7 +1109,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "de9e3bb930ac3414",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermal"
     },
     {
       "id": "al.phys.a2.shm_definition",
@@ -1031,7 +1128,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "38d465f41716021d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermal"
     },
     {
       "id": "al.phys.a2.shm_energy",
@@ -1049,7 +1147,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "4225bb7103365c1b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermal"
     },
     {
       "id": "al.phys.a2.damping_resonance",
@@ -1067,7 +1166,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "3b2a98026a786f71",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "thermal"
     },
     {
       "id": "al.phys.a2.communication_channels",
@@ -1085,7 +1185,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "dc41c8af39665e46",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "medical"
     },
     {
       "id": "al.phys.a2.modulation",
@@ -1103,7 +1204,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "e49b739a2276f1a4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "medical"
     },
     {
       "id": "al.phys.a2.electric_field_concept",
@@ -1121,7 +1223,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "d3155d42a4495dc4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fields"
     },
     {
       "id": "al.phys.a2.coulombs_law",
@@ -1139,7 +1242,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "42842740f85fbd73",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fields"
     },
     {
       "id": "al.phys.a2.uniform_electric_fields",
@@ -1157,7 +1261,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "4f6e7aaa6eefd997",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fields"
     },
     {
       "id": "al.phys.a2.electric_potential",
@@ -1175,7 +1280,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "a498bc7a02cca99b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "fields"
     },
     {
       "id": "al.phys.a2.capacitance_definition",
@@ -1193,7 +1299,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "00b49811931f369f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.a2.capacitor_energy",
@@ -1211,7 +1318,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "940a92b43d11e07a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.a2.capacitor_charge_discharge",
@@ -1229,7 +1337,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "500532e28f55c94c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.a2.electronics_sensing",
@@ -1247,7 +1356,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "5577d215e192f972",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "medical"
     },
     {
       "id": "al.phys.a2.electronics_output",
@@ -1265,7 +1375,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "52294b2b29c22685",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "medical"
     },
     {
       "id": "al.phys.a2.magnetic_flux_density",
@@ -1283,7 +1394,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "36fed6c7878a6fc7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.a2.force_on_current",
@@ -1301,7 +1413,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "add264fcc5ea5dc1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.a2.force_on_moving_charge",
@@ -1319,7 +1432,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "9f3b6c0e3a88cd46",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.a2.magnetic_flux",
@@ -1337,7 +1451,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "cfef6b7310d42fd3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.a2.faradays_lenz_laws",
@@ -1355,7 +1470,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "5a6fad37fcbf6e3a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.a2.ac_characteristics",
@@ -1373,7 +1489,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "0dee3d4930496eba",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.a2.transformers",
@@ -1391,7 +1508,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "8061fead6e950e95",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.a2.rectification",
@@ -1409,7 +1527,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "c61e181166ed9603",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "electricity"
     },
     {
       "id": "al.phys.a2.photons",
@@ -1427,7 +1546,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "eee1372d94700131",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "al.phys.a2.photoelectric_effect",
@@ -1445,7 +1565,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "9c5461f791a80ca8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "al.phys.a2.energy_levels",
@@ -1463,7 +1584,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "16bc46742d4a5d8f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "al.phys.a2.wave_particle_duality",
@@ -1481,7 +1603,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "e4a4d1866646b986",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "waves"
     },
     {
       "id": "al.phys.a2.mass_energy",
@@ -1499,7 +1622,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "c1d2863582e0d75c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "al.phys.a2.binding_energy",
@@ -1517,7 +1641,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "baa49afd71458801",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "al.phys.a2.nuclear_fission",
@@ -1535,7 +1660,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "d1d010bc8d63668f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "al.phys.a2.nuclear_fusion",
@@ -1553,7 +1679,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "165efce16ad46d87",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "al.phys.a2.radioactive_decay_law",
@@ -1571,7 +1698,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "3f0eb8c661b61166",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "al.phys.a2.medical_xray",
@@ -1589,7 +1717,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "dcc949ca0751ba2a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "medical"
     },
     {
       "id": "al.phys.a2.medical_ultrasound",
@@ -1607,7 +1736,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "d4c2c779124bd124",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "medical"
     },
     {
       "id": "al.phys.a2.medical_mri",
@@ -1625,7 +1755,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 2,
       "external_id": "1bd4583b9ad8ccca",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "medical"
     }
   ],
   "edges": [

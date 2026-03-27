@@ -36,6 +36,28 @@
       "order": 4
     }
   ],
+  "strands": [
+    {
+      "id": "foundations",
+      "name": "Foundations & Biological Bases",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "cognition",
+      "name": "Sensation, Learning & Cognition",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "development",
+      "name": "Development & Personality",
+      "color": "#F39C12"
+    },
+    {
+      "id": "clinical-social",
+      "name": "Clinical & Social Psychology",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ap.psy.scientific_foundations",
@@ -53,7 +75,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "3a86978bc3c3c73e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "foundations"
     },
     {
       "id": "ap.psy.biological_bases",
@@ -71,7 +94,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "560f7602707e16d7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "foundations"
     },
     {
       "id": "ap.psy.genetics_evolution",
@@ -89,7 +113,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "fa63e383786f5e41",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "foundations"
     },
     {
       "id": "ap.psy.sensation_perception",
@@ -107,7 +132,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "8020159ca4ea791d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cognition"
     },
     {
       "id": "ap.psy.consciousness",
@@ -125,7 +151,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "308a89e6cbb9dd55",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cognition"
     },
     {
       "id": "ap.psy.learning",
@@ -143,7 +170,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "1133eb409aa0c3f0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cognition"
     },
     {
       "id": "ap.psy.memory",
@@ -161,7 +189,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "689bcd8d499ac3bf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cognition"
     },
     {
       "id": "ap.psy.cognition",
@@ -179,7 +208,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "873c28dc748dde6e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cognition"
     },
     {
       "id": "ap.psy.developmental",
@@ -197,7 +227,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "baef3f82bfa05d82",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "development"
     },
     {
       "id": "ap.psy.motivation_emotion",
@@ -215,7 +246,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "4bb45b1dbadca1f0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "development"
     },
     {
       "id": "ap.psy.personality",
@@ -233,7 +265,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "a072dbf80fe05f8b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cognition"
     },
     {
       "id": "ap.psy.abnormal",
@@ -251,7 +284,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "7e7e6f6391b7dd20",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "clinical-social"
     },
     {
       "id": "ap.psy.treatment",
@@ -269,7 +303,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "dc6636c68745359d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "clinical-social"
     },
     {
       "id": "ap.psy.social",
@@ -287,7 +322,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "5079659e427ede62",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "clinical-social"
     }
   ],
   "edges": [

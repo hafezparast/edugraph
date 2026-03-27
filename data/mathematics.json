@@ -8,6 +8,48 @@
     ],
     "last_updated": "2026-03-25"
   },
+  "strands": [
+    {
+      "id": "arithmetic",
+      "name": "Arithmetic",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "algebra",
+      "name": "Algebra",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "geometry",
+      "name": "Geometry",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "calculus",
+      "name": "Calculus & Analysis",
+      "color": "#F39C12"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics & Probability",
+      "color": "#9B59B6"
+    },
+    {
+      "id": "linear-algebra",
+      "name": "Linear Algebra",
+      "color": "#1ABC9C"
+    },
+    {
+      "id": "discrete",
+      "name": "Number Theory & Abstract Algebra",
+      "color": "#E67E22"
+    },
+    {
+      "id": "foundations",
+      "name": "Topology & Foundations",
+      "color": "#8E44AD"
+    }
+  ],
   "nodes": [
     {
       "id": "math",
@@ -22,7 +64,8 @@
         "root"
       ],
       "external_id": "b7939b65cccae42a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "foundations"
     },
     {
       "id": "math.arithmetic",
@@ -37,7 +80,8 @@
         "elementary"
       ],
       "external_id": "53dc2bdb5cabf010",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "arithmetic"
     },
     {
       "id": "math.algebra",
@@ -50,7 +94,8 @@
       ],
       "tags": [],
       "external_id": "b8914cbe16f832ef",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "math.geometry",
@@ -63,7 +108,8 @@
       ],
       "tags": [],
       "external_id": "417577cdbf49fafe",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "math.calculus",
@@ -76,7 +122,8 @@
       ],
       "tags": [],
       "external_id": "d6331736ee649dab",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "math.statistics",
@@ -89,7 +136,8 @@
       ],
       "tags": [],
       "external_id": "81b0703a02498bd3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "math.linear_algebra",
@@ -102,7 +150,8 @@
       ],
       "tags": [],
       "external_id": "9703e8f86bd4c07a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "linear-algebra"
     },
     {
       "id": "math.number_theory",
@@ -115,7 +164,8 @@
       ],
       "tags": [],
       "external_id": "09a3218ff8a1ccd5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "math.topology",
@@ -128,7 +178,8 @@
       ],
       "tags": [],
       "external_id": "4f462f1e626cef12",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "foundations"
     },
     {
       "id": "math.analysis",
@@ -141,7 +192,8 @@
       ],
       "tags": [],
       "external_id": "e42bc6809d3d73a4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "math.abstract_algebra",
@@ -154,7 +206,8 @@
       ],
       "tags": [],
       "external_id": "a5eed49fe2253bd5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "math.arithmetic.counting",
@@ -169,7 +222,8 @@
         "foundational"
       ],
       "external_id": "3a5c0efc0a1c3786",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "arithmetic"
     },
     {
       "id": "math.arithmetic.addition",
@@ -184,7 +238,8 @@
         "operation"
       ],
       "external_id": "f035575c25e30e1d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "arithmetic"
     },
     {
       "id": "math.arithmetic.subtraction",
@@ -199,7 +254,8 @@
         "operation"
       ],
       "external_id": "98e1be3d132e4786",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "arithmetic"
     },
     {
       "id": "math.arithmetic.multiplication",
@@ -214,7 +270,8 @@
         "operation"
       ],
       "external_id": "1aaeee3775c579b7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "arithmetic"
     },
     {
       "id": "math.arithmetic.division",
@@ -229,7 +286,8 @@
         "operation"
       ],
       "external_id": "558591b97f7151ce",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "arithmetic"
     },
     {
       "id": "math.arithmetic.fractions",
@@ -244,7 +302,8 @@
         "number-type"
       ],
       "external_id": "5fcdab513e37d3cb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "arithmetic"
     },
     {
       "id": "math.arithmetic.decimals",
@@ -259,7 +318,8 @@
         "number-type"
       ],
       "external_id": "a7ef06f27de85546",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "arithmetic"
     },
     {
       "id": "math.arithmetic.order_of_operations",
@@ -274,7 +334,8 @@
         "rule"
       ],
       "external_id": "62b3671b3fa11d0b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "arithmetic"
     },
     {
       "id": "math.algebra.variables",
@@ -289,7 +350,8 @@
         "foundational"
       ],
       "external_id": "5f640832fdd66db8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "math.algebra.linear_equations",
@@ -302,7 +364,8 @@
       ],
       "tags": [],
       "external_id": "b59738a99f68c794",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "foundations"
     },
     {
       "id": "math.algebra.quadratic_equations",
@@ -315,7 +378,8 @@
       ],
       "tags": [],
       "external_id": "221e847272e03185",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "math.algebra.quadratic_formula",
@@ -328,7 +392,8 @@
       ],
       "tags": [],
       "external_id": "fe4678f56ef639d4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "math.algebra.polynomials",
@@ -341,7 +406,8 @@
       ],
       "tags": [],
       "external_id": "ec50e77aee9222a7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "math.algebra.functions",
@@ -356,7 +422,8 @@
         "foundational"
       ],
       "external_id": "027f9fca58cff819",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "math.geometry.points_lines",
@@ -371,7 +438,8 @@
         "foundational"
       ],
       "external_id": "82903309d1ef2e01",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "math.geometry.angles",
@@ -384,7 +452,8 @@
       ],
       "tags": [],
       "external_id": "aad86df77524d580",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "math.geometry.triangles",
@@ -399,7 +468,8 @@
         "shape"
       ],
       "external_id": "5935e016c9abbba0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "math.geometry.pythagorean",
@@ -412,7 +482,8 @@
       ],
       "tags": [],
       "external_id": "13dcb598579b8370",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "math.geometry.congruence",
@@ -425,7 +496,8 @@
       ],
       "tags": [],
       "external_id": "fce507d242f74cb3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "math.geometry.similarity",
@@ -438,7 +510,8 @@
       ],
       "tags": [],
       "external_id": "a02e8792bb8fb1cf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "math.calculus.limits",
@@ -453,7 +526,8 @@
         "foundational"
       ],
       "external_id": "f955b4e6f5b33122",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "math.calculus.derivatives",
@@ -466,7 +540,8 @@
       ],
       "tags": [],
       "external_id": "9120e3c2cc8e3329",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "math.calculus.integrals",
@@ -479,7 +554,8 @@
       ],
       "tags": [],
       "external_id": "0ea39e75b8dd84ab",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "math.calculus.ftc",
@@ -492,7 +568,8 @@
       ],
       "tags": [],
       "external_id": "5855c1ac5ee58869",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "math.linear_algebra.vectors",
@@ -507,7 +584,8 @@
         "foundational"
       ],
       "external_id": "52fbd80fb8a57b62",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "linear-algebra"
     },
     {
       "id": "math.linear_algebra.matrices",
@@ -520,7 +598,8 @@
       ],
       "tags": [],
       "external_id": "835c7f1bdf711652",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "linear-algebra"
     },
     {
       "id": "math.linear_algebra.eigenvalues",
@@ -532,7 +611,8 @@
       ],
       "tags": [],
       "external_id": "7dedfef195d80876",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "linear-algebra"
     },
     {
       "id": "math.analysis.sequences",
@@ -545,7 +625,8 @@
       ],
       "tags": [],
       "external_id": "4d01466e73e9e9dd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "math.analysis.continuity",
@@ -558,7 +639,8 @@
       ],
       "tags": [],
       "external_id": "da6a65474a990900",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "math.analysis.metric_spaces",
@@ -571,7 +653,8 @@
       ],
       "tags": [],
       "external_id": "2b162b6ff5359488",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "math.number_theory.primes",
@@ -584,7 +667,8 @@
       ],
       "tags": [],
       "external_id": "fd4228db8a0845e2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "math.number_theory.fta",
@@ -597,7 +681,8 @@
       ],
       "tags": [],
       "external_id": "0c8953da983bd12a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "math.number_theory.modular_arithmetic",
@@ -610,7 +695,8 @@
       ],
       "tags": [],
       "external_id": "f2c8b40204566723",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "arithmetic"
     },
     {
       "id": "math.abstract_algebra.groups",
@@ -622,7 +708,8 @@
       ],
       "tags": [],
       "external_id": "1a8854e0956259a6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "math.abstract_algebra.rings",
@@ -635,7 +722,8 @@
       ],
       "tags": [],
       "external_id": "31b1b26b0598b650",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "math.abstract_algebra.fields",
@@ -648,7 +736,8 @@
       ],
       "tags": [],
       "external_id": "9aab6996a18064cd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "discrete"
     },
     {
       "id": "math.topology.open_sets",
@@ -661,7 +750,8 @@
       ],
       "tags": [],
       "external_id": "bd7b0aee8e57d806",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "foundations"
     },
     {
       "id": "math.topology.compactness",
@@ -673,7 +763,8 @@
       ],
       "tags": [],
       "external_id": "bdffa6fd156fc92b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "foundations"
     },
     {
       "id": "math.axiom.peano",
@@ -687,7 +778,8 @@
         "foundations"
       ],
       "external_id": "059894d3d91120c5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "foundations"
     },
     {
       "id": "math.axiom.euclid",
@@ -702,7 +794,8 @@
         "foundations"
       ],
       "external_id": "6cc6367a26f8b8f8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "foundations"
     },
     {
       "id": "math.axiom.zfc",
@@ -717,7 +810,8 @@
         "foundations"
       ],
       "external_id": "e0b83caf7bf4a17d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "foundations"
     }
   ],
   "edges": [

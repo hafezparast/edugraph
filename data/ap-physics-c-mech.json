@@ -36,6 +36,28 @@
       "order": 4
     }
   ],
+  "strands": [
+    {
+      "id": "kinematics",
+      "name": "Kinematics & Newton's Laws",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "energy-momentum",
+      "name": "Work, Energy & Momentum",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "rotation",
+      "name": "Rotation & Oscillations",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "gravitation",
+      "name": "Gravitation",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ap.pcm.kinematics",
@@ -53,7 +75,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "fe915bccba94b6eb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.pcm.newtons_laws",
@@ -71,7 +94,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "5038b3128951ae0d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.pcm.forces_applications",
@@ -89,7 +113,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "b6751dd139fbdc0f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.pcm.circular_motion",
@@ -107,7 +132,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "5de20d326ef81289",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.pcm.work_energy",
@@ -125,7 +151,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "acf4a507eef90067",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.pcm.potential_energy",
@@ -143,7 +170,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "272a5d53a99c5396",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.pcm.center_of_mass",
@@ -161,7 +189,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "baba140028ec7872",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energy-momentum"
     },
     {
       "id": "ap.pcm.momentum_impulse",
@@ -179,7 +208,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "7a81117afafff664",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energy-momentum"
     },
     {
       "id": "ap.pcm.torque_statics",
@@ -197,7 +227,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "b1c43761308d8a78",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "rotation"
     },
     {
       "id": "ap.pcm.rotational_kinematics",
@@ -215,7 +246,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "c68bef68274481fc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.pcm.angular_momentum",
@@ -233,7 +265,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "bd2cdb21e7284e6d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energy-momentum"
     },
     {
       "id": "ap.pcm.rolling_motion",
@@ -251,7 +284,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "951491a06eaa5adc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energy-momentum"
     },
     {
       "id": "ap.pcm.shm",
@@ -269,7 +303,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "3eb40ea26df74176",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "rotation"
     },
     {
       "id": "ap.pcm.gravitation",
@@ -287,7 +322,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "e10114c977e0295b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kinematics"
     },
     {
       "id": "ap.pcm.orbital_mechanics",
@@ -305,7 +341,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "4bfcf302214b672c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "gravitation"
     },
     {
       "id": "ap.pcm.gravitational_pe",
@@ -323,7 +360,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 4,
       "external_id": "d80432e99718b7f9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "energy-momentum"
     }
   ],
   "edges": [

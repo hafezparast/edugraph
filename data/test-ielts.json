@@ -36,6 +36,28 @@
       "order": 4
     }
   ],
+  "strands": [
+    {
+      "id": "listening",
+      "name": "Listening",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "reading",
+      "name": "Reading",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "writing",
+      "name": "Writing",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "speaking",
+      "name": "Speaking",
+      "color": "#F39C12"
+    }
+  ],
   "nodes": [
     {
       "id": "ielts.listen.section1",
@@ -53,7 +75,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 1,
       "external_id": "2789168646344c82",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening"
     },
     {
       "id": "ielts.listen.section2",
@@ -71,7 +94,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 1,
       "external_id": "6b15cebb0c2df7c1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening"
     },
     {
       "id": "ielts.listen.section3",
@@ -89,7 +113,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 1,
       "external_id": "6f1c4b03354c0851",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening"
     },
     {
       "id": "ielts.listen.section4",
@@ -107,7 +132,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 1,
       "external_id": "14ef439f61289008",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening"
     },
     {
       "id": "ielts.read.matching",
@@ -125,7 +151,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "1cce3bb752425854",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "ielts.read.true_false_not_given",
@@ -143,7 +170,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "14b311aedbb1ae38",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "ielts.read.multiple_choice",
@@ -161,7 +189,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "35609e1528a1d7b6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "ielts.read.summary_completion",
@@ -179,7 +208,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "54ea0dd721b7c01e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "ielts.read.heading_matching",
@@ -197,7 +227,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "ea832565c1a59257",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "ielts.read.short_answer",
@@ -215,7 +246,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 2,
       "external_id": "dddca6ee762c91d7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "ielts.write.grammar_and_vocabulary",
@@ -233,7 +265,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 3,
       "external_id": "332b0e793d075aa1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "ielts.write.task1",
@@ -251,7 +284,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 3,
       "external_id": "67bb94f74d3dd8dc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "ielts.write.task2",
@@ -269,7 +303,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 3,
       "external_id": "170ad88587e548de",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "ielts.speak.part1",
@@ -287,7 +322,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "c7472015acb07021",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "speaking"
     },
     {
       "id": "ielts.speak.part2",
@@ -305,7 +341,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "a8e2b037fa9dacdf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "speaking"
     },
     {
       "id": "ielts.speak.part3",
@@ -323,7 +360,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "556e16c41b411723",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "speaking"
     }
   ],
   "edges": [

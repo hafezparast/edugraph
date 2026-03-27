@@ -36,6 +36,28 @@
       "order": 4
     }
   ],
+  "strands": [
+    {
+      "id": "english",
+      "name": "English",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "math",
+      "name": "Mathematics",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "reading",
+      "name": "Reading",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "science",
+      "name": "Science",
+      "color": "#F39C12"
+    }
+  ],
   "nodes": [
     {
       "id": "act.eng.grammar_usage",
@@ -53,7 +75,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "ecad1031bbb7220d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "english"
     },
     {
       "id": "act.eng.punctuation",
@@ -71,7 +94,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "731cdbc475a3ef21",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "english"
     },
     {
       "id": "act.eng.sentence_structure",
@@ -89,7 +113,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "c602dc3bb014ea79",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "english"
     },
     {
       "id": "act.eng.rhetorical_skills",
@@ -107,7 +132,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "484e6438982af6aa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "english"
     },
     {
       "id": "act.math.pre_algebra",
@@ -125,7 +151,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "361285965cd87a6a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "math"
     },
     {
       "id": "act.math.algebra",
@@ -143,7 +170,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "a9143f7731478546",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "math"
     },
     {
       "id": "act.math.coordinate_geometry",
@@ -161,7 +189,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "dd5535b90c931249",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "math"
     },
     {
       "id": "act.math.plane_geometry",
@@ -179,7 +208,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "ccba62f8d70a8a96",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "math"
     },
     {
       "id": "act.math.trigonometry",
@@ -197,7 +227,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "9b1d40905a0a9c68",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "math"
     },
     {
       "id": "act.read.prose_fiction",
@@ -215,7 +246,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "6ece4f840a538609",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "act.read.social_science",
@@ -233,7 +265,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "2f4f00c6356c4515",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "act.read.humanities",
@@ -251,7 +284,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "667fe7dafe2489d7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "act.read.natural_science",
@@ -269,7 +303,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "fde5c2f11aabd039",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "act.sci.data_representation",
@@ -287,7 +322,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "e771e6ef0cd82596",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "science"
     },
     {
       "id": "act.sci.research_summaries",
@@ -305,7 +341,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "fb9c7102cb2facc4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "science"
     },
     {
       "id": "act.sci.conflicting_viewpoints",
@@ -323,7 +360,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "5e18077bbd67f60c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "science"
     },
     {
       "id": "act.math.statistics_and_probability",
@@ -341,7 +379,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 2,
       "external_id": "1f4dd60e77679a32",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "math"
     },
     {
       "id": "act.eng.organization_and_style",
@@ -359,7 +398,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "51ef99b7ebbd2987",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "english"
     }
   ],
   "edges": [

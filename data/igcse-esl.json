@@ -36,6 +36,28 @@
       "order": 4
     }
   ],
+  "strands": [
+    {
+      "id": "reading",
+      "name": "Reading & Comprehension",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "writing",
+      "name": "Writing",
+      "color": "#22c55e"
+    },
+    {
+      "id": "listening",
+      "name": "Listening",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "speaking",
+      "name": "Speaking",
+      "color": "#ec4899"
+    }
+  ],
   "nodes": [
     {
       "id": "esl.t1.skimming_scanning",
@@ -54,7 +76,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "4e0a8645e6a49261",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "esl.t2.detail_extraction",
@@ -73,7 +96,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "003e7f6d646693d9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "esl.t3.summary_writing",
@@ -92,7 +116,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "796aa3607c3bfb72",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "esl.t4.note_taking",
@@ -111,7 +136,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "b9b7a18eb27eef2b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading"
     },
     {
       "id": "esl.t5.informal_writing",
@@ -130,7 +156,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "31a0bf0765eb4bc8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "esl.t6.formal_writing",
@@ -149,7 +176,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "d9166e5ccb74560f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "esl.t7.argumentative_writing",
@@ -168,7 +196,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "7db19ea5a2b1490a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "esl.t8.descriptive_writing",
@@ -187,7 +216,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "221200b1b0f238ad",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "esl.t9.narrative_writing",
@@ -206,7 +236,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "20bb3b356d59bbf4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "writing"
     },
     {
       "id": "esl.t10.listening_gist",
@@ -225,7 +256,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "107b99db77f46963",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening"
     },
     {
       "id": "esl.t11.listening_detail",
@@ -244,7 +276,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "a6bebbde454d8670",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening"
     },
     {
       "id": "esl.t12.pronunciation",
@@ -263,7 +296,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 4,
       "external_id": "264e50bdf640d5d8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "speaking"
     },
     {
       "id": "esl.t13.discussion",
@@ -282,7 +316,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 4,
       "external_id": "1abc40fd0bb123f4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "speaking"
     },
     {
       "id": "esl.t14.role_play",
@@ -301,7 +336,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 4,
       "external_id": "5b27b6bf1a09cd41",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "speaking"
     },
     {
       "id": "esl.t15.picture_description",
@@ -320,7 +356,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 4,
       "external_id": "1bd5725d93fc3bc9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "speaking"
     }
   ],
   "edges": [

@@ -90,6 +90,43 @@
       "order": 13
     }
   ],
+  "strands": [
+    {
+      "id": "data",
+      "name": "Data Representation",
+      "color": "#ef4444"
+    },
+    {
+      "id": "systems",
+      "name": "Computer Systems",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "networks",
+      "name": "Networks & Security",
+      "color": "#10b981"
+    },
+    {
+      "id": "algorithms",
+      "name": "Algorithms & Data Structures",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "programming",
+      "name": "Programming",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "databases",
+      "name": "Databases & Data Management",
+      "color": "#ec4899"
+    },
+    {
+      "id": "software",
+      "name": "Software Engineering",
+      "color": "#06b6d4"
+    }
+  ],
   "nodes": [
     {
       "id": "sg.cs.ol.number_systems",
@@ -107,7 +144,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "252bbfe705801eb8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data"
     },
     {
       "id": "sg.cs.ol.binary_arithmetic",
@@ -125,7 +163,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "cdfd29c2f4e143db",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data"
     },
     {
       "id": "sg.cs.ol.text_representation",
@@ -143,7 +182,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "f40b2e4083f004db",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data"
     },
     {
       "id": "sg.cs.ol.image_representation",
@@ -161,7 +201,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "5d889fe3d13f894b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data"
     },
     {
       "id": "sg.cs.ol.sound_representation",
@@ -179,7 +220,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "03f28ebb444dfee2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data"
     },
     {
       "id": "sg.cs.ol.data_compression",
@@ -197,7 +239,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "67ae8d7b5a6f4f7a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data"
     },
     {
       "id": "sg.cs.ol.logic_gates",
@@ -215,7 +258,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "dd9377956f1ade9b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data"
     },
     {
       "id": "sg.cs.ol.boolean_expressions",
@@ -233,7 +277,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "ee993570c55f8f1e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data"
     },
     {
       "id": "sg.cs.ol.cpu_architecture",
@@ -251,7 +296,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 2,
       "external_id": "9a08d271e20517ce",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "systems"
     },
     {
       "id": "sg.cs.ol.memory",
@@ -269,7 +315,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 2,
       "external_id": "8994817f8f3d2b95",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "systems"
     },
     {
       "id": "sg.cs.ol.secondary_storage",
@@ -287,7 +334,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 2,
       "external_id": "298e6465fc145494",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "systems"
     },
     {
       "id": "sg.cs.ol.io_devices",
@@ -305,7 +353,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 2,
       "external_id": "eff810b962d604c6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "systems"
     },
     {
       "id": "sg.cs.ol.operating_systems",
@@ -323,7 +372,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 2,
       "external_id": "f928fa2dfd142b80",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "systems"
     },
     {
       "id": "sg.cs.ol.system_software",
@@ -341,7 +391,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 2,
       "external_id": "c728e2cd47a0298f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "systems"
     },
     {
       "id": "sg.cs.ol.embedded_systems",
@@ -359,7 +410,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 2,
       "external_id": "b6a77fb96b33bf96",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "systems"
     },
     {
       "id": "sg.cs.ol.network_types",
@@ -377,7 +429,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 3,
       "external_id": "3a28fa81b46b3037",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "networks"
     },
     {
       "id": "sg.cs.ol.network_hardware",
@@ -395,7 +448,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 3,
       "external_id": "954b82605de38115",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "networks"
     },
     {
       "id": "sg.cs.ol.network_protocols",
@@ -413,7 +467,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 3,
       "external_id": "040da40ae7241b47",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "networks"
     },
     {
       "id": "sg.cs.ol.internet",
@@ -431,7 +486,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 3,
       "external_id": "532b1cbc3433b4c2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "networks"
     },
     {
       "id": "sg.cs.ol.cyber_threats",
@@ -449,7 +505,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 3,
       "external_id": "c77d96458badf588",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "networks"
     },
     {
       "id": "sg.cs.ol.security_measures",
@@ -467,7 +524,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 3,
       "external_id": "90a6e13e81ce7c88",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "networks"
     },
     {
       "id": "sg.cs.ol.ethical_issues",
@@ -485,7 +543,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 3,
       "external_id": "9f14f4529836e4fb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "software"
     },
     {
       "id": "sg.cs.ol.algo_design",
@@ -503,7 +562,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "d1982512917f4beb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.ol.flowcharts",
@@ -521,7 +581,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "a9df46cc5d560d9f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.ol.pseudocode",
@@ -539,7 +600,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "f0790ffc672bd178",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.ol.linear_search",
@@ -557,7 +619,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "585dad903634fab6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.ol.binary_search",
@@ -575,7 +638,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "3c2517187c87629b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.ol.bubble_sort",
@@ -593,7 +657,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "af25afa80418cc4d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.ol.insertion_sort",
@@ -611,7 +676,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "dd5df82d884fddb2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.ol.trace_tables",
@@ -629,7 +695,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "4af6f016e378a0d7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.ol.validation_verification",
@@ -647,7 +714,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "7a3bdea7ca1f4f9f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "software"
     },
     {
       "id": "sg.cs.ol.testing",
@@ -665,7 +733,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "4dd10bb54392f46d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "software"
     },
     {
       "id": "sg.cs.ol.variables_constants",
@@ -683,7 +752,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 5,
       "external_id": "ccb7ba661d314b55",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "sg.cs.ol.data_types",
@@ -701,7 +771,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 5,
       "external_id": "87b8fdff092a4d55",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "sg.cs.ol.operators",
@@ -719,7 +790,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 5,
       "external_id": "44f6ecd1786e79c4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "sg.cs.ol.input_output",
@@ -737,7 +809,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 5,
       "external_id": "24d52eb8b32dfa2b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "sg.cs.ol.selection",
@@ -755,7 +828,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 5,
       "external_id": "289385a36234634e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "sg.cs.ol.iteration",
@@ -773,7 +847,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 5,
       "external_id": "9af2a95489c8f565",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "sg.cs.ol.strings",
@@ -791,7 +866,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 5,
       "external_id": "e7d22de637815a85",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "sg.cs.ol.arrays_lists",
@@ -809,7 +885,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 5,
       "external_id": "84dee249ed196a77",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.ol.functions",
@@ -827,7 +904,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 5,
       "external_id": "44bbdac22f219b94",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "sg.cs.ol.file_handling",
@@ -845,7 +923,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 5,
       "external_id": "1572404c1a362ffc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "sg.cs.ol.databases",
@@ -863,7 +942,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "d14c533f0d1f66bc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "databases"
     },
     {
       "id": "sg.cs.ol.sql_basics",
@@ -881,7 +961,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 1,
       "external_id": "3d369cd6008fc473",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "databases"
     },
     {
       "id": "sg.cs.jc.number_representation",
@@ -899,7 +980,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 6,
       "external_id": "85507ee04ddd5a2f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data"
     },
     {
       "id": "sg.cs.jc.floating_point",
@@ -917,7 +999,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 6,
       "external_id": "df10b51077eecb0e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data"
     },
     {
       "id": "sg.cs.jc.data_formats",
@@ -935,7 +1018,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 6,
       "external_id": "cdcbd8e5eb69f75d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data"
     },
     {
       "id": "sg.cs.jc.boolean_algebra",
@@ -953,7 +1037,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 6,
       "external_id": "ac3305ce724c9835",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "data"
     },
     {
       "id": "sg.cs.jc.processor_architecture",
@@ -971,7 +1056,8 @@
       "bookColor": "#0ea5e9",
       "bookOrder": 7,
       "external_id": "38f78656143a214c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "systems"
     },
     {
       "id": "sg.cs.jc.memory_management",
@@ -989,7 +1075,8 @@
       "bookColor": "#0ea5e9",
       "bookOrder": 7,
       "external_id": "efb6506e052ce1b0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "systems"
     },
     {
       "id": "sg.cs.jc.os_concepts",
@@ -1007,7 +1094,8 @@
       "bookColor": "#0ea5e9",
       "bookOrder": 7,
       "external_id": "15fa4e57ef41fe15",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "systems"
     },
     {
       "id": "sg.cs.jc.assembly_language",
@@ -1025,7 +1113,8 @@
       "bookColor": "#0ea5e9",
       "bookOrder": 7,
       "external_id": "84d036381320eab7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "systems"
     },
     {
       "id": "sg.cs.jc.network_architecture",
@@ -1043,7 +1132,8 @@
       "bookColor": "#d97706",
       "bookOrder": 8,
       "external_id": "5507958fc6dae6b0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "networks"
     },
     {
       "id": "sg.cs.jc.ip_addressing",
@@ -1061,7 +1151,8 @@
       "bookColor": "#d97706",
       "bookOrder": 8,
       "external_id": "c7d722ab9dd464ba",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "networks"
     },
     {
       "id": "sg.cs.jc.routing",
@@ -1079,7 +1170,8 @@
       "bookColor": "#d97706",
       "bookOrder": 8,
       "external_id": "f67739c1aec9ab21",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "networks"
     },
     {
       "id": "sg.cs.jc.protocols_h2",
@@ -1097,7 +1189,8 @@
       "bookColor": "#d97706",
       "bookOrder": 8,
       "external_id": "ddb22e19bd609b68",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "networks"
     },
     {
       "id": "sg.cs.jc.encryption",
@@ -1115,7 +1208,8 @@
       "bookColor": "#d97706",
       "bookOrder": 8,
       "external_id": "05b16684d8125884",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "networks"
     },
     {
       "id": "sg.cs.jc.network_security",
@@ -1133,7 +1227,8 @@
       "bookColor": "#d97706",
       "bookOrder": 8,
       "external_id": "c1a815d4d27e835d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "networks"
     },
     {
       "id": "sg.cs.jc.social_ethical",
@@ -1151,7 +1246,8 @@
       "bookColor": "#d97706",
       "bookOrder": 8,
       "external_id": "255c5ce5fdeddf30",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "software"
     },
     {
       "id": "sg.cs.jc.complexity",
@@ -1169,7 +1265,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 9,
       "external_id": "5fad12dc547e78ff",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.jc.merge_sort",
@@ -1187,7 +1284,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 9,
       "external_id": "7bc1610167d4f0e4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.jc.quicksort",
@@ -1205,7 +1303,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 9,
       "external_id": "48aeed8ff6084fec",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.jc.recursion",
@@ -1223,7 +1322,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 9,
       "external_id": "a40a6c876ff76d11",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.jc.graph_algorithms",
@@ -1241,7 +1341,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 9,
       "external_id": "a8bea42bcebf9af5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.jc.hashing_algorithms",
@@ -1259,7 +1360,8 @@
       "bookColor": "#1d4ed8",
       "bookOrder": 9,
       "external_id": "0ee4f51105b94b0a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.jc.arrays_ds",
@@ -1277,7 +1379,8 @@
       "bookColor": "#059669",
       "bookOrder": 10,
       "external_id": "f89cf884e0b3006b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.jc.linked_lists",
@@ -1295,7 +1398,8 @@
       "bookColor": "#059669",
       "bookOrder": 10,
       "external_id": "fab954ff2f7183df",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.jc.stacks",
@@ -1313,7 +1417,8 @@
       "bookColor": "#059669",
       "bookOrder": 10,
       "external_id": "a77153d272630f01",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.jc.queues",
@@ -1331,7 +1436,8 @@
       "bookColor": "#059669",
       "bookOrder": 10,
       "external_id": "1523b9c9d989e6b2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.jc.binary_trees",
@@ -1349,7 +1455,8 @@
       "bookColor": "#059669",
       "bookOrder": 10,
       "external_id": "67e4890e78decf65",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.jc.graphs",
@@ -1367,7 +1474,8 @@
       "bookColor": "#059669",
       "bookOrder": 10,
       "external_id": "1bfcd0a059d7257b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.jc.hash_tables",
@@ -1385,7 +1493,8 @@
       "bookColor": "#059669",
       "bookOrder": 10,
       "external_id": "4a07f53b529a412b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algorithms"
     },
     {
       "id": "sg.cs.jc.oop_concepts",
@@ -1403,7 +1512,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 11,
       "external_id": "ca4a2d851e3049ec",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "sg.cs.jc.encapsulation",
@@ -1421,7 +1531,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 11,
       "external_id": "b6c10fbe43d919ff",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "sg.cs.jc.inheritance",
@@ -1439,7 +1550,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 11,
       "external_id": "9149b9cdc050202d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "sg.cs.jc.polymorphism",
@@ -1457,7 +1569,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 11,
       "external_id": "71a33ab111bad522",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "sg.cs.jc.abstract_interfaces",
@@ -1475,7 +1588,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 11,
       "external_id": "bc56bac8bda5feb8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "sg.cs.jc.exception_handling",
@@ -1493,7 +1607,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 11,
       "external_id": "db8f6213dadeffcf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "sg.cs.jc.file_io",
@@ -1511,7 +1626,8 @@
       "bookColor": "#0d9488",
       "bookOrder": 11,
       "external_id": "cfdf28e7e4ad1542",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "sg.cs.jc.relational_model",
@@ -1529,7 +1645,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 12,
       "external_id": "db51bd20423eee2c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "databases"
     },
     {
       "id": "sg.cs.jc.er_diagrams",
@@ -1547,7 +1664,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 12,
       "external_id": "5fbdcca48a70ddd5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "databases"
     },
     {
       "id": "sg.cs.jc.normalisation",
@@ -1565,7 +1683,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 12,
       "external_id": "6d9eb62c78a8cf86",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "databases"
     },
     {
       "id": "sg.cs.jc.sql_advanced",
@@ -1583,7 +1702,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 12,
       "external_id": "b0ee3c8e260df3da",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "databases"
     },
     {
       "id": "sg.cs.jc.db_integrity",
@@ -1601,7 +1721,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 12,
       "external_id": "162d11a4926de67c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "databases"
     },
     {
       "id": "sg.cs.jc.sdlc",
@@ -1619,7 +1740,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 13,
       "external_id": "b886dc6e61df08a0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "software"
     },
     {
       "id": "sg.cs.jc.testing_strategies",
@@ -1637,7 +1759,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 13,
       "external_id": "523f6366e3793796",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "software"
     },
     {
       "id": "sg.cs.jc.program_design",
@@ -1655,7 +1778,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 13,
       "external_id": "00ba8abad41e42ec",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "software"
     },
     {
       "id": "sg.cs.jc.web_tech",
@@ -1673,7 +1797,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 13,
       "external_id": "e2bb7c798dbd8403",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "software"
     },
     {
       "id": "sg.cs.jc.data_analytics",
@@ -1691,7 +1816,8 @@
       "bookColor": "#e11d48",
       "bookOrder": 13,
       "external_id": "adc1f6aef413d479",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "databases"
     }
   ],
   "edges": [

@@ -30,6 +30,23 @@
       "order": 3
     }
   ],
+  "strands": [
+    {
+      "id": "kenegaraan",
+      "name": "Kenegaraan (Nationhood)",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "pembangunan",
+      "name": "Pembangunan (Development)",
+      "color": "#22c55e"
+    },
+    {
+      "id": "global",
+      "name": "Isu Antarabangsa (Global Issues)",
+      "color": "#f59e0b"
+    }
+  ],
   "nodes": [
     {
       "id": "pa.s1.ch1_negara_bangsa",
@@ -47,7 +64,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 1,
       "external_id": "208b820e937b81ff",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kenegaraan"
     },
     {
       "id": "pa.s1.ch2_perlembagaan",
@@ -65,7 +83,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 1,
       "external_id": "67a63265a8e68960",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kenegaraan"
     },
     {
       "id": "pa.s1.ch3_sistem_pemerintahan",
@@ -83,7 +102,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 1,
       "external_id": "3cfb4805a2682362",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kenegaraan"
     },
     {
       "id": "pa.s1.ch4_pentadbiran_negeri",
@@ -101,7 +121,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 1,
       "external_id": "f1c6145e4c0e15b1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kenegaraan"
     },
     {
       "id": "pa.s1.ch5_hubungan_etnik",
@@ -119,7 +140,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 1,
       "external_id": "cb22175741e32c6d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kenegaraan"
     },
     {
       "id": "pa.s1.ch6_cabaran_kedaulatan",
@@ -137,7 +159,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 1,
       "external_id": "ab50c348f391b583",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "kenegaraan"
     },
     {
       "id": "pa.s2.ch1_petunjuk_maju",
@@ -155,7 +178,8 @@
       "bookColor": "#d97706",
       "bookOrder": 2,
       "external_id": "6602211418170fdb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "pembangunan"
     },
     {
       "id": "pa.s2.ch2_pembangunan_ekonomi",
@@ -173,7 +197,8 @@
       "bookColor": "#d97706",
       "bookOrder": 2,
       "external_id": "1fc520e16314bd4d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "pembangunan"
     },
     {
       "id": "pa.s2.ch3_pembangunan_sosial",
@@ -191,7 +216,8 @@
       "bookColor": "#d97706",
       "bookOrder": 2,
       "external_id": "132a41d13e54d5fa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "pembangunan"
     },
     {
       "id": "pa.s2.ch4_ideologi_wawasan_dasar",
@@ -209,7 +235,8 @@
       "bookColor": "#d97706",
       "bookOrder": 2,
       "external_id": "e10c6ef8334c3ae2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "pembangunan"
     },
     {
       "id": "pa.s2.ch5_cabaran_pembangunan",
@@ -227,7 +254,8 @@
       "bookColor": "#d97706",
       "bookOrder": 2,
       "external_id": "49e74414d722405a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "pembangunan"
     },
     {
       "id": "pa.s3.ch1_hubungan_diplomatik",
@@ -245,7 +273,8 @@
       "bookColor": "#b45309",
       "bookOrder": 3,
       "external_id": "dc96d9c392cbd29e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "pa.s3.ch2_pertubuhan_antarabangsa",
@@ -263,7 +292,8 @@
       "bookColor": "#b45309",
       "bookOrder": 3,
       "external_id": "5b840666a64322ee",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "pa.s3.ch3_isu_antarabangsa",
@@ -281,7 +311,8 @@
       "bookColor": "#b45309",
       "bookOrder": 3,
       "external_id": "32cc7c0f4dade232",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     },
     {
       "id": "pa.s3.ch4_globalisasi",
@@ -299,7 +330,8 @@
       "bookColor": "#b45309",
       "bookOrder": 3,
       "external_id": "06580748f80be160",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "global"
     }
   ],
   "edges": [

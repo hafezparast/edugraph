@@ -25,6 +25,38 @@
       "order": 2
     }
   ],
+  "strands": [
+    {
+      "id": "sg_colonial",
+      "name": "Colonial Singapore",
+      "color": "#ef4444"
+    },
+    {
+      "id": "sg_nation",
+      "name": "Singapore Nation-Building",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "wwii",
+      "name": "World War II",
+      "color": "#10b981"
+    },
+    {
+      "id": "cold_war",
+      "name": "Cold War",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "sea",
+      "name": "Southeast Asian History",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "intl_order",
+      "name": "International Order",
+      "color": "#ec4899"
+    }
+  ],
   "nodes": [
     {
       "id": "sg.hist.olevel.founding_modern_sg",
@@ -42,7 +74,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "cf3148e85153eb7b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sg_colonial"
     },
     {
       "id": "sg.hist.olevel.crown_colony_admin",
@@ -60,7 +93,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "571474ad17287cae",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sg_colonial"
     },
     {
       "id": "sg.hist.olevel.immigrant_society",
@@ -78,7 +112,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "7d171f9ab8148edf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sg_colonial"
     },
     {
       "id": "sg.hist.olevel.colonial_economy",
@@ -96,7 +131,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "760ca466be2e9d2c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sg_colonial"
     },
     {
       "id": "sg.hist.olevel.fall_of_sg",
@@ -114,7 +150,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "a326a200ff9dba21",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "wwii"
     },
     {
       "id": "sg.hist.olevel.japanese_occupation",
@@ -132,7 +169,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "74a8d3b43459c469",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "wwii"
     },
     {
       "id": "sg.hist.olevel.postwar_political_dev",
@@ -150,7 +188,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "f136fb480e74e43e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sg_nation"
     },
     {
       "id": "sg.hist.olevel.road_to_self_government",
@@ -168,7 +207,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "ce4e42da9d529b3a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sg_nation"
     },
     {
       "id": "sg.hist.olevel.merger_with_malaya",
@@ -186,7 +226,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "7fa59b71cb5205e2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sg_nation"
     },
     {
       "id": "sg.hist.olevel.separation",
@@ -204,7 +245,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "8f91866da50689a6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sg_nation"
     },
     {
       "id": "sg.hist.olevel.nation_building_governance",
@@ -222,7 +264,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "87d5f0a57b442835",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sg_nation"
     },
     {
       "id": "sg.hist.olevel.nation_building_economy",
@@ -240,7 +283,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "737b2846b633204f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sg_nation"
     },
     {
       "id": "sg.hist.olevel.nation_building_housing",
@@ -258,7 +302,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "7968881b71465084",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sg_nation"
     },
     {
       "id": "sg.hist.olevel.nation_building_education",
@@ -276,7 +321,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "89e4be50f4c90bff",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sg_nation"
     },
     {
       "id": "sg.hist.olevel.nation_building_racial_harmony",
@@ -294,7 +340,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "e9d677dddaf57108",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sg_nation"
     },
     {
       "id": "sg.hist.olevel.nation_building_defence",
@@ -312,7 +359,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "2eb779d1786a6c42",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sg_nation"
     },
     {
       "id": "sg.hist.olevel.wwii_outbreak_europe",
@@ -330,7 +378,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "64729f3b692b7b82",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "wwii"
     },
     {
       "id": "sg.hist.olevel.wwii_asia_pacific",
@@ -348,7 +397,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "cde6d015b3e5bd2c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "wwii"
     },
     {
       "id": "sg.hist.olevel.sea_japanese_occupation",
@@ -366,7 +416,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "d6f73bcd62fe0ef5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "wwii"
     },
     {
       "id": "sg.hist.olevel.cold_war_origins",
@@ -384,7 +435,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "a175c4e1da3659ee",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cold_war"
     },
     {
       "id": "sg.hist.olevel.cold_war_asia",
@@ -402,7 +454,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "a0b36580153b1c9a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cold_war"
     },
     {
       "id": "sg.hist.olevel.sea_decolonisation",
@@ -420,7 +473,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "7888e40e7aa19ef0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sea"
     },
     {
       "id": "sg.hist.olevel.sea_asean",
@@ -438,7 +492,8 @@
       "bookColor": "#d97706",
       "bookOrder": 1,
       "external_id": "cfb0d0d973322eb7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sea"
     },
     {
       "id": "sg.hist.h2.wwi_causes",
@@ -456,7 +511,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "9a8edd17fcfe3eae",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "wwii"
     },
     {
       "id": "sg.hist.h2.wwi_course_end",
@@ -474,7 +530,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "39793ae0875dfa65",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "wwii"
     },
     {
       "id": "sg.hist.h2.paris_peace_treaties",
@@ -492,7 +549,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "41a93f7687e5e528",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "wwii"
     },
     {
       "id": "sg.hist.h2.league_of_nations",
@@ -510,7 +568,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "c018efc5025a2348",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "wwii"
     },
     {
       "id": "sg.hist.h2.rise_stalin",
@@ -528,7 +587,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "47f905ade588574b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "wwii"
     },
     {
       "id": "sg.hist.h2.rise_hitler",
@@ -546,7 +606,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "32dc7c3e393594b5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "wwii"
     },
     {
       "id": "sg.hist.h2.rise_mussolini",
@@ -564,7 +625,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "1af5c22d1678a910",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "wwii"
     },
     {
       "id": "sg.hist.h2.rise_japan_militarism",
@@ -582,7 +644,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "5be0a625389b4ec2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "wwii"
     },
     {
       "id": "sg.hist.h2.wwii_causes_europe",
@@ -600,7 +663,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "3da51ddb3d3a6548",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "wwii"
     },
     {
       "id": "sg.hist.h2.wwii_causes_asia_pacific",
@@ -618,7 +682,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "9510eb725274ca4a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "wwii"
     },
     {
       "id": "sg.hist.h2.cold_war_origins",
@@ -636,7 +701,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "5c9b7358d6137872",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cold_war"
     },
     {
       "id": "sg.hist.h2.cold_war_europe",
@@ -654,7 +720,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "329599bd2941bed1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cold_war"
     },
     {
       "id": "sg.hist.h2.cold_war_asia",
@@ -672,7 +739,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "f839bace0e34097f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cold_war"
     },
     {
       "id": "sg.hist.h2.cuban_missile_crisis",
@@ -690,7 +758,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "14adab20543b4648",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cold_war"
     },
     {
       "id": "sg.hist.h2.detente",
@@ -708,7 +777,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "92f24e49e01cf416",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cold_war"
     },
     {
       "id": "sg.hist.h2.end_cold_war",
@@ -726,7 +796,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "0b2b5b605c98b106",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cold_war"
     },
     {
       "id": "sg.hist.h2.united_nations",
@@ -744,7 +815,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "36509413b8a7fcfd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "intl_order"
     },
     {
       "id": "sg.hist.h2.un_peacekeeping",
@@ -762,7 +834,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "bc4382644f2d6a50",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "intl_order"
     },
     {
       "id": "sg.hist.h2.sea_anti_colonial",
@@ -780,7 +853,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "b007db8449d10d4d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sea"
     },
     {
       "id": "sg.hist.h2.sea_independence_indonesia",
@@ -798,7 +872,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "8fdc5883ba967077",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sea"
     },
     {
       "id": "sg.hist.h2.sea_independence_malaya",
@@ -816,7 +891,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "100b4b3c60b921f4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sea"
     },
     {
       "id": "sg.hist.h2.sea_independence_indochina",
@@ -834,7 +910,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "8e82df1129b80f36",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sea"
     },
     {
       "id": "sg.hist.h2.sea_nation_building_challenges",
@@ -852,7 +929,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "86ae0b425b6202ba",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sea"
     },
     {
       "id": "sg.hist.h2.sea_govt_indonesia",
@@ -870,7 +948,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "24533db08cafedcf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sea"
     },
     {
       "id": "sg.hist.h2.sea_govt_myanmar",
@@ -888,7 +967,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "d502957a23954089",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sea"
     },
     {
       "id": "sg.hist.h2.sea_vietnam_war",
@@ -906,7 +986,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "2973a1e53710c242",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sea"
     },
     {
       "id": "sg.hist.h2.sea_cold_war_impact",
@@ -924,7 +1005,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "65d9358984128c0e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "cold_war"
     },
     {
       "id": "sg.hist.h2.sea_asean_formation",
@@ -942,7 +1024,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "06735a3aad23bc02",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sea"
     },
     {
       "id": "sg.hist.h2.sea_asean_cambodia",
@@ -960,7 +1043,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "06c65dfc9a476387",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sea"
     },
     {
       "id": "sg.hist.h2.sea_economic_dev",
@@ -978,7 +1062,8 @@
       "bookColor": "#b45309",
       "bookOrder": 2,
       "external_id": "b07f95a90e85fca7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "sea"
     }
   ],
   "edges": [

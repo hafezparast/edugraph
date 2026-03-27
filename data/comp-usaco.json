@@ -36,6 +36,28 @@
       "order": 4
     }
   ],
+  "strands": [
+    {
+      "id": "bronze",
+      "name": "Bronze",
+      "color": "#CD7F32"
+    },
+    {
+      "id": "silver",
+      "name": "Silver",
+      "color": "#C0C0C0"
+    },
+    {
+      "id": "gold",
+      "name": "Gold",
+      "color": "#FFD700"
+    },
+    {
+      "id": "platinum",
+      "name": "Platinum",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "usaco.bronze.simulation",
@@ -54,7 +76,8 @@
       "bookColor": "#cd7f32",
       "bookOrder": 1,
       "external_id": "8940d363c2f3a3ee",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "bronze"
     },
     {
       "id": "usaco.bronze.sorting",
@@ -73,7 +96,8 @@
       "bookColor": "#cd7f32",
       "bookOrder": 1,
       "external_id": "bfd7691b08e9c8c7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "bronze"
     },
     {
       "id": "usaco.bronze.complete_search",
@@ -92,7 +116,8 @@
       "bookColor": "#cd7f32",
       "bookOrder": 1,
       "external_id": "066009c359c04a2b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "bronze"
     },
     {
       "id": "usaco.bronze.ad_hoc",
@@ -111,7 +136,8 @@
       "bookColor": "#cd7f32",
       "bookOrder": 1,
       "external_id": "f127bded7007e1e9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "bronze"
     },
     {
       "id": "usaco.bronze.rect_geometry",
@@ -130,7 +156,8 @@
       "bookColor": "#cd7f32",
       "bookOrder": 1,
       "external_id": "a1e4dbbff2c697a1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "bronze"
     },
     {
       "id": "usaco.silver.binary_search",
@@ -149,7 +176,8 @@
       "bookColor": "#c0c0c0",
       "bookOrder": 2,
       "external_id": "e7f3031ed63edaca",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "silver"
     },
     {
       "id": "usaco.silver.prefix_sums",
@@ -168,7 +196,8 @@
       "bookColor": "#c0c0c0",
       "bookOrder": 2,
       "external_id": "46a96858307d2036",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "silver"
     },
     {
       "id": "usaco.silver.two_pointers",
@@ -187,7 +216,8 @@
       "bookColor": "#c0c0c0",
       "bookOrder": 2,
       "external_id": "ab056926a2ee3cb5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "silver"
     },
     {
       "id": "usaco.silver.dfs_bfs",
@@ -206,7 +236,8 @@
       "bookColor": "#c0c0c0",
       "bookOrder": 2,
       "external_id": "33bd6a05f2e1252d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "silver"
     },
     {
       "id": "usaco.silver.flood_fill",
@@ -225,7 +256,8 @@
       "bookColor": "#c0c0c0",
       "bookOrder": 2,
       "external_id": "e20fe2dac91d7c08",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "silver"
     },
     {
       "id": "usaco.silver.trees",
@@ -244,7 +276,8 @@
       "bookColor": "#c0c0c0",
       "bookOrder": 2,
       "external_id": "140e4496a10637ed",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "silver"
     },
     {
       "id": "usaco.gold.dp",
@@ -263,7 +296,8 @@
       "bookColor": "#ffd700",
       "bookOrder": 3,
       "external_id": "13fcf023d675780c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "gold"
     },
     {
       "id": "usaco.gold.shortest_paths",
@@ -282,7 +316,8 @@
       "bookColor": "#ffd700",
       "bookOrder": 3,
       "external_id": "47511c708d437301",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "gold"
     },
     {
       "id": "usaco.gold.mst",
@@ -301,7 +336,8 @@
       "bookColor": "#ffd700",
       "bookOrder": 3,
       "external_id": "ff9957f8487ad7e3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "gold"
     },
     {
       "id": "usaco.gold.euler_tour",
@@ -320,7 +356,8 @@
       "bookColor": "#ffd700",
       "bookOrder": 3,
       "external_id": "672be359f1d7a29c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "gold"
     },
     {
       "id": "usaco.gold.range_queries",
@@ -339,7 +376,8 @@
       "bookColor": "#ffd700",
       "bookOrder": 3,
       "external_id": "29c189a112ce549f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "gold"
     },
     {
       "id": "usaco.gold.hashing",
@@ -358,7 +396,8 @@
       "bookColor": "#ffd700",
       "bookOrder": 3,
       "external_id": "e6f57d5f69df5b66",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "gold"
     },
     {
       "id": "usaco.plat.advanced_dp",
@@ -377,7 +416,8 @@
       "bookColor": "#e5e4e2",
       "bookOrder": 4,
       "external_id": "5cf015c0c36da492",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "platinum"
     },
     {
       "id": "usaco.plat.centroid_decomp",
@@ -396,7 +436,8 @@
       "bookColor": "#e5e4e2",
       "bookOrder": 4,
       "external_id": "1023461570aa8919",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "platinum"
     },
     {
       "id": "usaco.plat.hld",
@@ -415,7 +456,8 @@
       "bookColor": "#e5e4e2",
       "bookOrder": 4,
       "external_id": "1f212d7f4bcd34b0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "platinum"
     },
     {
       "id": "usaco.plat.cht",
@@ -434,7 +476,8 @@
       "bookColor": "#e5e4e2",
       "bookOrder": 4,
       "external_id": "79553a2acd17d03e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "platinum"
     },
     {
       "id": "usaco.plat.seg_beats",
@@ -453,7 +496,8 @@
       "bookColor": "#e5e4e2",
       "bookOrder": 4,
       "external_id": "04a72840e2541ef9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "platinum"
     },
     {
       "id": "usaco.plat.persistent",
@@ -472,7 +516,8 @@
       "bookColor": "#e5e4e2",
       "bookOrder": 4,
       "external_id": "d70a2f34226355b1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "platinum"
     },
     {
       "id": "usaco.bronze.intro_ds",
@@ -491,7 +536,8 @@
       "bookColor": "#cd7f32",
       "bookOrder": 1,
       "external_id": "9876d0c561317008",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "bronze"
     }
   ],
   "edges": [

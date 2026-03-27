@@ -30,6 +30,23 @@
       "order": 3
     }
   ],
+  "strands": [
+    {
+      "id": "creative",
+      "name": "Creative Development & Data",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "programming",
+      "name": "Algorithms & Programming",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "systems",
+      "name": "Computing Systems & Impact",
+      "color": "#E74C3C"
+    }
+  ],
   "nodes": [
     {
       "id": "ap.csp.creative_development",
@@ -47,7 +64,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "9181e58181f54e63",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "creative"
     },
     {
       "id": "ap.csp.data_binary",
@@ -65,7 +83,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "f8c5ba08f41f5a58",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "creative"
     },
     {
       "id": "ap.csp.data_analysis",
@@ -83,7 +102,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "45c99315c57d3848",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "creative"
     },
     {
       "id": "ap.csp.variables_assignments",
@@ -101,7 +121,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "4e6d04db335fabee",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "creative"
     },
     {
       "id": "ap.csp.algorithms",
@@ -119,7 +140,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "6226c2fe992b7aa6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "ap.csp.procedures",
@@ -137,7 +159,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "2062aa09700544d1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "ap.csp.lists",
@@ -155,7 +178,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "a76dfa208c1a4995",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "creative"
     },
     {
       "id": "ap.csp.simulations",
@@ -173,7 +197,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 2,
       "external_id": "7292f5262b9b9ab8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "programming"
     },
     {
       "id": "ap.csp.internet",
@@ -191,7 +216,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "466bbbe4480d338d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "systems"
     },
     {
       "id": "ap.csp.cybersecurity",
@@ -209,7 +235,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "17787b60183e3da2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "systems"
     },
     {
       "id": "ap.csp.computing_impact",
@@ -227,7 +254,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 3,
       "external_id": "21c93f05bba18a42",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "systems"
     }
   ],
   "edges": [

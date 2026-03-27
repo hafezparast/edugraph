@@ -30,6 +30,23 @@
       "order": 3
     }
   ],
+  "strands": [
+    {
+      "id": "readers",
+      "name": "Readers, Writers & Texts",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "time-space",
+      "name": "Time & Space",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "intertextuality",
+      "name": "Intertextuality",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ib.eng.textual_analysis",
@@ -47,7 +64,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "a9a4db2cd12fce49",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "readers"
     },
     {
       "id": "ib.eng.audience_purpose",
@@ -65,7 +83,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "f1a72f79a85e193d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "readers"
     },
     {
       "id": "ib.eng.literary_conventions",
@@ -83,7 +102,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "ded2b2e8be1d335e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "readers"
     },
     {
       "id": "ib.eng.language_and_power",
@@ -101,7 +121,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "bc57f2c0826a7bcf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "readers"
     },
     {
       "id": "ib.eng.context_meaning",
@@ -119,7 +140,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 2,
       "external_id": "55c3bc6c6428c2c0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "time-space"
     },
     {
       "id": "ib.eng.representation_transformation",
@@ -137,7 +159,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 2,
       "external_id": "40936855e16e75fd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "time-space"
     },
     {
       "id": "ib.eng.identity_culture",
@@ -155,7 +178,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 2,
       "external_id": "dc4f0c2315290850",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "time-space"
     },
     {
       "id": "ib.eng.translation_adaptation",
@@ -173,7 +197,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 2,
       "external_id": "c2499f45d3633a8e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "time-space"
     },
     {
       "id": "ib.eng.connecting_texts",
@@ -191,7 +216,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "c390dd762874b019",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "intertextuality"
     },
     {
       "id": "ib.eng.critical_perspectives",
@@ -210,7 +236,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "c3f38020fa31ae36",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "intertextuality"
     },
     {
       "id": "ib.eng.hl_essay",
@@ -229,7 +256,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "eb7f28f1d9764dbf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "intertextuality"
     },
     {
       "id": "ib.eng.individual_oral",
@@ -247,7 +275,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "c5d066647240a102",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "intertextuality"
     }
   ],
   "edges": [

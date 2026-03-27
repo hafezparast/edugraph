@@ -86,6 +86,38 @@
       "order": 12
     }
   ],
+  "strands": [
+    {
+      "id": "grammar",
+      "name": "Grammar & Sentence Structure",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "vocabulary",
+      "name": "Vocabulary & Topics",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "listening-speaking",
+      "name": "Listening & Speaking",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "reading-writing",
+      "name": "Reading & Writing",
+      "color": "#F39C12"
+    },
+    {
+      "id": "culture",
+      "name": "Culture & Communication",
+      "color": "#9B59B6"
+    },
+    {
+      "id": "pronunciation",
+      "name": "Pronunciation & Phonology",
+      "color": "#1ABC9C"
+    }
+  ],
   "nodes": [
     {
       "id": "fr.a1_1.k.alphabet_phonics",
@@ -105,7 +137,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "0f24af0bc7309379",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a1_1.k.greetings_farewells",
@@ -126,7 +159,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "3fb8465755570b3b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a1_1.k.personal_pronouns",
@@ -146,7 +180,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "01ebf4ef536a237a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.a1_1.k.present_simple_be",
@@ -167,7 +202,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "d632445b9040eb26",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.a1_1.k.numbers_1_20",
@@ -187,7 +223,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "d9b3e1c178ce01e6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a1_1.k.basic_nouns",
@@ -207,7 +244,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "7dddcb483b295559",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a1_1.s.introduce_self",
@@ -228,7 +266,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "c9865455e8d619d8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.a1_1.s.understand_simple_instructions",
@@ -248,7 +287,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "1b6c28aea3294d18",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.a1_1.s.ask_yes_no",
@@ -268,7 +308,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "391ef53ab4bc87ff",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.a1_1.s.copy_words",
@@ -288,7 +329,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "c0ed3f85b61bf0b2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.a1_2.k.present_simple_regular",
@@ -309,7 +351,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "7d3416148805a34c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.a1_2.k.articles_demonstratives",
@@ -329,7 +372,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "881d29305c12c725",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.a1_2.k.basic_adjectives",
@@ -350,7 +394,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "d932d0b50bbdc006",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.a1_2.k.prepositions_place",
@@ -370,7 +415,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "17be17d97124cc79",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.a1_2.k.numbers_dates_time",
@@ -390,7 +436,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "d7846516b349a35a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a1_2.k.food_drink_vocab",
@@ -410,7 +457,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "4e76d410fd5e8bfd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a1_2.s.describe_objects_people",
@@ -430,7 +478,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "460d6b515873d7d1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.a1_2.s.ask_where_when",
@@ -450,7 +499,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "754cedea00ebc44d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.a1_2.s.order_food",
@@ -470,7 +520,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "43040605a5ff1393",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.a1_2.s.fill_simple_form",
@@ -490,7 +541,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "f20c58600852b711",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.a2_1.k.past_simple",
@@ -511,7 +563,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "25131dba3f345fc7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.a2_1.k.possessives",
@@ -531,7 +584,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "17b04d5e9c13c647",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.a2_1.k.adverbs_frequency",
@@ -551,7 +605,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "b15fbffb5f5a06ff",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.a2_1.k.conjunctions_basic",
@@ -571,7 +626,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "b8de479c05eebe18",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.a2_1.k.daily_routine_vocab",
@@ -591,7 +647,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "bd49c74508702aeb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a2_1.k.countable_uncountable",
@@ -611,7 +668,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "c9393ab8b4772cf7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.a2_1.s.narrate_past_events",
@@ -631,7 +689,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "d240b0979e3eafe9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.a2_1.s.make_suggestions",
@@ -651,7 +710,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "6a1d97e3eba05b88",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.a2_1.s.write_short_message",
@@ -671,7 +731,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "3d7b7ae18d40f6ef",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.a2_1.s.understand_short_text",
@@ -691,7 +752,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "43abe44b7bece552",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.a2_2.k.future_forms",
@@ -712,7 +774,8 @@
       "bookColor": "#eab308",
       "bookOrder": 4,
       "external_id": "e064f1edf8b51ece",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.a2_2.k.comparatives_superlatives",
@@ -732,7 +795,8 @@
       "bookColor": "#eab308",
       "bookOrder": 4,
       "external_id": "ae751ed92c73ef89",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.a2_2.k.modal_verbs_basic",
@@ -753,7 +817,8 @@
       "bookColor": "#eab308",
       "bookOrder": 4,
       "external_id": "ea0397a55ca1c5fa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.a2_2.k.object_pronouns",
@@ -773,7 +838,8 @@
       "bookColor": "#eab308",
       "bookOrder": 4,
       "external_id": "710c03df2867f328",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.a2_2.k.travel_directions_vocab",
@@ -793,7 +859,8 @@
       "bookColor": "#eab308",
       "bookOrder": 4,
       "external_id": "11f388f2a8ff34f0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a2_2.k.imperative_mood",
@@ -813,7 +880,8 @@
       "bookColor": "#eab308",
       "bookOrder": 4,
       "external_id": "5748e6bb6be7e8af",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.a2_2.s.give_directions",
@@ -833,7 +901,8 @@
       "bookColor": "#eab308",
       "bookOrder": 4,
       "external_id": "dc7b4e5b5e3f898a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.a2_2.s.make_plans",
@@ -853,7 +922,8 @@
       "bookColor": "#eab308",
       "bookOrder": 4,
       "external_id": "3abd45b981b95cae",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.a2_2.s.write_personal_letter",
@@ -873,7 +943,8 @@
       "bookColor": "#eab308",
       "bookOrder": 4,
       "external_id": "f98eba548cba0ad2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.a2_2.s.describe_experiences",
@@ -893,7 +964,8 @@
       "bookColor": "#eab308",
       "bookOrder": 4,
       "external_id": "634d852741eb304d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.b1_1.k.present_perfect",
@@ -914,7 +986,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "05455fd9fa083230",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.b1_1.k.relative_clauses",
@@ -934,7 +1007,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "b6197d95bf8d0826",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.b1_1.k.first_conditional",
@@ -954,7 +1028,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "d34c35ec55148ff3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.b1_1.k.passive_voice",
@@ -974,7 +1049,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "9b3c9bcce646d29c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.b1_1.k.phrasal_verbs",
@@ -994,7 +1070,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "6a6e37fc01464bfa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b1_1.k.connectors_discourse",
@@ -1014,7 +1091,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "6e02ba2fe20b6025",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.b1_1.s.express_opinions",
@@ -1034,7 +1112,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "1e102c1d46c6f94c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.b1_1.s.understand_main_points",
@@ -1054,7 +1133,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "ee2a9a88aef6dbaf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.b1_1.s.write_structured_paragraph",
@@ -1074,7 +1154,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "f1ed69dc969a9bd8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.b1_1.s.handle_travel_situations",
@@ -1094,7 +1175,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "ff4ca21597d86ee8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b1_2.k.past_perfect",
@@ -1115,7 +1197,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 6,
       "external_id": "8783f16b5bf57fb6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.b1_2.k.second_conditional",
@@ -1135,7 +1218,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 6,
       "external_id": "22d36af9990738b7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.b1_2.k.reported_speech_basic",
@@ -1155,7 +1239,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 6,
       "external_id": "62af17916284801b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.b1_2.k.gerunds_infinitives",
@@ -1175,7 +1260,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 6,
       "external_id": "98d330822655e04a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.b1_2.k.quantifiers",
@@ -1195,7 +1281,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 6,
       "external_id": "dc9037d5f0be7d56",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.b1_2.k.work_education_vocab",
@@ -1215,7 +1302,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 6,
       "external_id": "2a45469982cbbe2f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b1_2.s.tell_story_detail",
@@ -1235,7 +1323,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 6,
       "external_id": "c0f01e20d8c48cbf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.b1_2.s.write_formal_email",
@@ -1255,7 +1344,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 6,
       "external_id": "7ff2fd341bc966ab",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.b1_2.s.summarize_text",
@@ -1276,7 +1366,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 6,
       "external_id": "81c7b62f4a534b78",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.b1_2.s.participate_discussion",
@@ -1296,7 +1387,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 6,
       "external_id": "9c00748679dd5e85",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.b2_1.k.third_conditional",
@@ -1316,7 +1408,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 7,
       "external_id": "c6007a4eebaeeb76",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.b2_1.k.passive_advanced",
@@ -1336,7 +1429,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 7,
       "external_id": "f204924cb1831616",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.b2_1.k.modal_perfects",
@@ -1357,7 +1451,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 7,
       "external_id": "17b291fc5f51d2c3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.b2_1.k.cleft_sentences",
@@ -1377,7 +1472,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 7,
       "external_id": "cac04286856a1f4a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.b2_1.k.collocations_idioms",
@@ -1397,7 +1493,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 7,
       "external_id": "98e9c573b0bb0a1f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b2_1.k.abstract_vocab",
@@ -1417,7 +1514,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 7,
       "external_id": "85ba5750b3c1dd74",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b2_1.s.present_argument",
@@ -1437,7 +1535,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 7,
       "external_id": "fbe70c559b53dcfe",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.b2_1.s.understand_extended_speech",
@@ -1457,7 +1556,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 7,
       "external_id": "1b1f25f2ddb7c6e0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.b2_1.s.write_essay",
@@ -1477,7 +1577,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 7,
       "external_id": "814b36737d376bd6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.b2_1.s.negotiate",
@@ -1497,7 +1598,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 7,
       "external_id": "a5d4210462ddf379",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.b2_2.k.mixed_conditionals",
@@ -1517,7 +1619,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 8,
       "external_id": "024d3e90d1e4e031",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.b2_2.k.subjunctive_mood",
@@ -1537,7 +1640,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 8,
       "external_id": "8c2e7b594a7cbb7f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.b2_2.k.inversion",
@@ -1557,7 +1661,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 8,
       "external_id": "4c8fc64e4c6ab0ad",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.b2_2.k.reported_speech_advanced",
@@ -1577,7 +1682,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 8,
       "external_id": "c46c52154919c61c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.b2_2.k.register_formality",
@@ -1597,7 +1703,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 8,
       "external_id": "3d472aebc852f590",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.b2_2.k.word_formation",
@@ -1617,7 +1724,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 8,
       "external_id": "5cf93980d1111363",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.b2_2.s.discuss_complex_topics",
@@ -1637,7 +1745,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 8,
       "external_id": "e990d352c626c5ed",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.b2_2.s.write_report",
@@ -1657,7 +1766,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 8,
       "external_id": "a3beb351a016e28b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.b2_2.s.read_authentic_texts",
@@ -1677,7 +1787,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 8,
       "external_id": "d5ddb4f4e4263dfe",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.b2_2.s.mediate_conversation",
@@ -1697,7 +1808,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 8,
       "external_id": "1cc1c2f06116f8fd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.c1_1.k.advanced_tense_aspect",
@@ -1717,7 +1829,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "5b500812e482833f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.c1_1.k.discourse_pragmatics",
@@ -1737,7 +1850,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "a2d532469f87c9d8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "fr.c1_1.k.ellipsis_substitution",
@@ -1757,7 +1871,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "5e4322cc58199dc9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.c1_1.k.advanced_relative_clauses",
@@ -1777,7 +1892,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "469b5cd115c42668",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.c1_1.k.specialized_vocab",
@@ -1797,7 +1913,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "caa3da06fe35e7c8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.c1_1.k.figurative_language",
@@ -1818,7 +1935,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "e84a37d029aafc0c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.c1_1.s.present_complex_ideas",
@@ -1838,7 +1956,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "395b6f03cb5154b7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.c1_1.s.write_academic_text",
@@ -1858,7 +1977,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "fd4f95f8513fa877",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.c1_1.s.understand_implicit",
@@ -1879,7 +1999,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "b131375e6b2ab4ae",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.c1_1.s.professional_discourse",
@@ -1899,7 +2020,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "8a01f0db332abe61",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.c1_2.k.stylistic_variation",
@@ -1919,7 +2041,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 10,
       "external_id": "366e2715d35544f5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "fr.c1_2.k.advanced_cohesion",
@@ -1939,7 +2062,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 10,
       "external_id": "1755b89b7ae6570e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.c1_2.k.sociolinguistic_awareness",
@@ -1959,7 +2083,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 10,
       "external_id": "bd318e569e8452f3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "fr.c1_2.k.etymology_word_roots",
@@ -1979,7 +2104,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 10,
       "external_id": "1ae263d7d05f82ff",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.c1_2.k.complex_sentence_patterns",
@@ -1999,7 +2125,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 10,
       "external_id": "8c230669900e8369",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.c1_2.s.write_persuasive_text",
@@ -2019,7 +2146,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 10,
       "external_id": "fce389efffefe737",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.c1_2.s.follow_complex_interaction",
@@ -2039,7 +2167,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 10,
       "external_id": "13a61d94b7b38b80",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.c1_2.s.reformulate_ideas",
@@ -2059,7 +2188,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 10,
       "external_id": "2ecad616b9ffc8ed",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.c1_2.s.critique_text",
@@ -2079,7 +2209,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 10,
       "external_id": "e31d03d233fb812c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.c1_2.s.deliver_spontaneous_speech",
@@ -2099,7 +2230,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 10,
       "external_id": "22f89277009d055f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.c2_1.k.near_native_grammar",
@@ -2119,7 +2251,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 11,
       "external_id": "6ae78ae455fc9b20",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.c2_1.k.pragmatic_competence",
@@ -2139,7 +2272,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 11,
       "external_id": "0de633235b9dcd3d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "fr.c2_1.k.literary_analysis",
@@ -2159,7 +2293,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 11,
       "external_id": "aa4822ed3c8ae9cf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.c2_1.k.technical_writing",
@@ -2179,7 +2314,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 11,
       "external_id": "9b0c767def5f745f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.c2_1.k.humor_wordplay",
@@ -2200,7 +2336,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 11,
       "external_id": "b8fbbd458c2bbf5a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "fr.c2_1.s.write_publishable",
@@ -2220,7 +2357,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 11,
       "external_id": "304d676a0cdeb74a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.c2_1.s.interpret_subtlety",
@@ -2241,7 +2379,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 11,
       "external_id": "9f3f66338dad82f0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.c2_1.s.simultaneous_mediation",
@@ -2261,7 +2400,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 11,
       "external_id": "6ccca2e4d6128d32",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.c2_1.s.adapt_any_audience",
@@ -2281,7 +2421,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 11,
       "external_id": "fd2f8ecfdc67ecae",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.c2_1.s.extended_monologue",
@@ -2301,7 +2442,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 11,
       "external_id": "495a865cdbeb34af",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.c2_2.k.language_as_system",
@@ -2321,7 +2463,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 12,
       "external_id": "f87ee71a9a070fc8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "fr.c2_2.k.historical_change",
@@ -2341,7 +2484,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 12,
       "external_id": "00acac6bb2994dd6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "fr.c2_2.k.creative_mastery",
@@ -2362,7 +2506,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 12,
       "external_id": "1adc47aaab81226c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.c2_2.k.professional_specialization",
@@ -2382,7 +2527,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 12,
       "external_id": "79f1238a3e8e8bec",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.c2_2.s.native_fluency",
@@ -2402,7 +2548,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 12,
       "external_id": "9a9a5fb77fcf10d9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "fr.c2_2.s.write_any_genre",
@@ -2422,7 +2569,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 12,
       "external_id": "803dc2be31e6200c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.c2_2.s.teach_language",
@@ -2442,7 +2590,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 12,
       "external_id": "d9f4fd2a4761406f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.c2_2.s.translate_interpret",
@@ -2462,7 +2611,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 12,
       "external_id": "8b2f7a1031f8d95a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.a1_1.v.family_people",
@@ -2482,7 +2632,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "ecb697814777e1d4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a1_1.v.classroom_school",
@@ -2502,7 +2653,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "ede512de654b36bd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a1_1.v.colors_body",
@@ -2522,7 +2674,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "ccaaf67d447c5f07",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a1_2.v.food_drink",
@@ -2542,7 +2695,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "497d908f217fd22f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a1_2.v.house_furniture",
@@ -2562,7 +2716,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "9a5cef41ea8934ec",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a2_1.v.daily_routine",
@@ -2582,7 +2737,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "5cdb82b61d83c7b5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a2_1.v.weather_nature",
@@ -2602,7 +2758,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "6278c35e28d1ec82",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a2_1.v.city_transport",
@@ -2622,7 +2779,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "a6a99b04aebbe15d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a2_2.v.travel_tourism",
@@ -2642,7 +2800,8 @@
       "bookColor": "#eab308",
       "bookOrder": 4,
       "external_id": "cca568577e5707dc",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a2_2.v.health_body",
@@ -2662,7 +2821,8 @@
       "bookColor": "#eab308",
       "bookOrder": 4,
       "external_id": "c72ddf0e90d59709",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a2_2.v.hobbies_sport",
@@ -2682,7 +2842,8 @@
       "bookColor": "#eab308",
       "bookOrder": 4,
       "external_id": "d1b22181e813655c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b1_1.v.work_career",
@@ -2702,7 +2863,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "2c6babe204f90c8b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b1_1.v.media_news",
@@ -2722,7 +2884,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "be2089bba5582ce8",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b1_1.v.environment",
@@ -2742,7 +2905,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "d2aa1f9d6f176d48",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b1_2.v.education",
@@ -2762,7 +2926,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 6,
       "external_id": "621ecd2bad01b454",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b1_2.v.technology",
@@ -2782,7 +2947,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 6,
       "external_id": "bb48f54e1d0b2d74",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b1_2.v.relationships",
@@ -2802,7 +2968,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 6,
       "external_id": "5e06831aed52868c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b2_1.v.politics_society",
@@ -2822,7 +2989,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 7,
       "external_id": "6e33ccc80cfc3e38",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b2_1.v.economy_business",
@@ -2842,7 +3010,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 7,
       "external_id": "ec4333bf0a1b11b0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b2_1.v.science_research",
@@ -2862,7 +3031,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 7,
       "external_id": "11a1983089f29e9e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b2_2.v.law_justice",
@@ -2882,7 +3052,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 8,
       "external_id": "b36c1dd3e54a0610",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b2_2.v.philosophy_ethics",
@@ -2902,7 +3073,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 8,
       "external_id": "0d46eec263bed875",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.b2_2.v.arts_culture",
@@ -2922,7 +3094,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 8,
       "external_id": "339b7686e92e5cc4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.c1_1.v.academic_discourse",
@@ -2942,7 +3115,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "271b0bb1b6d9f895",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a1_2.p.word_stress",
@@ -2962,7 +3136,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "bafd8aad120de950",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "pronunciation"
     },
     {
       "id": "fr.a2_1.p.sentence_rhythm",
@@ -2982,7 +3157,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "0fe156011b546fa5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.b1_1.p.reduction_weak_forms",
@@ -3002,7 +3178,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "eccfa372812bb0ac",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "pronunciation"
     },
     {
       "id": "fr.b2_1.p.accent_comprehension",
@@ -3022,7 +3199,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 7,
       "external_id": "c2f05c54c5cfce61",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.c1_1.p.prosody_delivery",
@@ -3042,7 +3220,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "d2c1dfe9b3b2807f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.a1_2.c.basic_norms",
@@ -3062,7 +3241,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "60bcf2a9bbf0c341",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "fr.a2_2.c.social_conventions",
@@ -3082,7 +3262,8 @@
       "bookColor": "#eab308",
       "bookOrder": 4,
       "external_id": "f0a2ec3ea80242a7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "fr.b1_2.c.humor_formality",
@@ -3102,7 +3283,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 6,
       "external_id": "535f418d1eb14dc5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "fr.b2_2.c.values_worldview",
@@ -3122,7 +3304,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 8,
       "external_id": "6303736a0e6c5090",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "fr.c1_2.c.deep_cultural_literacy",
@@ -3142,7 +3325,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 10,
       "external_id": "76e037c2cadec52f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "fr.c2_1.c.cultural_mediation",
@@ -3162,7 +3346,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 11,
       "external_id": "a68c4e016586e5b7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "culture"
     },
     {
       "id": "fr.a1_1.t.signs_labels",
@@ -3182,7 +3367,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "d0c2dc3a2d3c3dac",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.a1_2.t.forms_postcards",
@@ -3202,7 +3388,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "deeed99007783e9f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.a2_1.t.menus_timetables",
@@ -3222,7 +3409,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "ee15672cdf2a4629",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.a2_2.t.personal_emails",
@@ -3242,7 +3430,8 @@
       "bookColor": "#eab308",
       "bookOrder": 4,
       "external_id": "340a55552f760e86",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.b1_1.t.articles_blogs",
@@ -3262,7 +3451,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "1d871757ae76c3aa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.b1_2.t.formal_letters",
@@ -3282,7 +3472,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 6,
       "external_id": "8ef9a8824924dab7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.b2_1.t.essays_reviews",
@@ -3302,7 +3493,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 7,
       "external_id": "fee7bccd82f61ac4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.b2_2.t.reports_proposals",
@@ -3322,7 +3514,8 @@
       "bookColor": "#06b6d4",
       "bookOrder": 8,
       "external_id": "92a48a6eb5395da9",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.c1_1.t.academic_papers",
@@ -3342,7 +3535,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "9c5799f8cbf89ced",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.c1_2.t.editorials_critique",
@@ -3362,7 +3556,8 @@
       "bookColor": "#6366f1",
       "bookOrder": 10,
       "external_id": "6b423963180d5d5b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.c2_1.t.literature_legal",
@@ -3382,7 +3577,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 11,
       "external_id": "6e41980f6cbf35fe",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     },
     {
       "id": "fr.c2_2.t.any_genre_text",
@@ -3402,7 +3598,8 @@
       "bookColor": "#a855f7",
       "bookOrder": 12,
       "external_id": "4988f09fc654403e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "vocabulary"
     },
     {
       "id": "fr.a1_1.l.slow_clear_speech",
@@ -3422,7 +3619,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "1794b2dfd7121f80",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.a2_1.l.announcements_dialogues",
@@ -3442,7 +3640,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "0f490cd432754cb7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.b1_1.l.news_phone_presentations",
@@ -3462,7 +3661,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "801b1a36b42e5fab",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.b2_1.l.lectures_debates_films",
@@ -3482,7 +3682,8 @@
       "bookColor": "#14b8a6",
       "bookOrder": 7,
       "external_id": "80366114b352731d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.c1_1.l.fast_natural_accents",
@@ -3502,7 +3703,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 9,
       "external_id": "5685a63755c8c655",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.c2_1.l.any_spoken_input",
@@ -3522,7 +3724,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 11,
       "external_id": "bc64a10c785f5b32",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "listening-speaking"
     },
     {
       "id": "fr.a1_1.k.noun_gender_agreement",
@@ -3542,7 +3745,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "cecc02a551329e8c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.a2_1.k.passe_compose_imparfait",
@@ -3563,7 +3767,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 3,
       "external_id": "ce74a80e1a66dee5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.b1_1.k.subjonctif_present",
@@ -3583,7 +3788,8 @@
       "bookColor": "#84cc16",
       "bookOrder": 5,
       "external_id": "70dd3ad26ab95370",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "grammar"
     },
     {
       "id": "fr.a1_2.k.partitive_articles",
@@ -3603,7 +3809,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "2dbfe34ff7df5265",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "reading-writing"
     }
   ],
   "edges": [

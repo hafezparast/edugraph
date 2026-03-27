@@ -42,6 +42,33 @@
       "order": 5
     }
   ],
+  "strands": [
+    {
+      "id": "algebra",
+      "name": "Number & Algebra",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "functions",
+      "name": "Functions",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "geometry",
+      "name": "Geometry & Trigonometry",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics & Probability",
+      "color": "#F39C12"
+    },
+    {
+      "id": "calculus",
+      "name": "Calculus",
+      "color": "#9B59B6"
+    }
+  ],
   "nodes": [
     {
       "id": "ib.maa.sequences_series",
@@ -59,7 +86,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "94f0b139c80138fa",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "ib.maa.binomial_theorem",
@@ -77,7 +105,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "f09c690fa8eb8230",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "ib.maa.exponents_logs",
@@ -95,7 +124,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "3569e8f68f45e615",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "ib.maa.proof",
@@ -113,7 +143,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "05832467ce457561",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "ib.maa.counting_principles",
@@ -131,7 +162,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "a5924d1f2ab79db7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "ib.maa.complex_numbers",
@@ -150,7 +182,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "6a2011c368b0b56d",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "ib.maa.systems_of_equations",
@@ -168,7 +201,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "6edb527804d3898f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "ib.maa.functions_graphs",
@@ -186,7 +220,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "f5d476b51c90927a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "functions"
     },
     {
       "id": "ib.maa.composite_inverse",
@@ -204,7 +239,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "a43fcec0bb8d27be",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "functions"
     },
     {
       "id": "ib.maa.quadratics",
@@ -222,7 +258,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "a015bc77b03cc286",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "functions"
     },
     {
       "id": "ib.maa.polynomial_functions",
@@ -241,7 +278,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "c9e6cfff2bc37d13",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "functions"
     },
     {
       "id": "ib.maa.rational_functions",
@@ -260,7 +298,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "2d10f6eb0b0c8b38",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "functions"
     },
     {
       "id": "ib.maa.exponential_log_functions",
@@ -278,7 +317,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "b027a99d557129a6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "functions"
     },
     {
       "id": "ib.maa.transformations",
@@ -296,7 +336,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "a7c754e485ded92e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "functions"
     },
     {
       "id": "ib.maa.radian_measure",
@@ -314,7 +355,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "de76ff48bb28500a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "ib.maa.trig_functions",
@@ -332,7 +374,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "e8f78cb33d5c7ebd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "ib.maa.trig_identities",
@@ -350,7 +393,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "bd4973b9d4ecc508",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "ib.maa.trig_equations",
@@ -368,7 +412,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "fde5b177000165bb",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "ib.maa.sine_cosine_rules",
@@ -386,7 +431,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "da4446ffecb5c115",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "ib.maa.vectors",
@@ -404,7 +450,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "4679aa5bab8633c0",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "ib.maa.vector_applications",
@@ -423,7 +470,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "8d6db544bf5b9f28",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "ib.maa.descriptive_statistics",
@@ -441,7 +489,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "f27f524376706472",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "ib.maa.regression",
@@ -459,7 +508,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "afa781734101e33a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "ib.maa.probability_fundamentals",
@@ -477,7 +527,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "a8b29fad6c5365d3",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "ib.maa.conditional_probability",
@@ -495,7 +546,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "f4179bad21de8657",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "ib.maa.discrete_distributions",
@@ -513,7 +565,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "7bf9079959fb9a1f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "ib.maa.normal_distribution",
@@ -531,7 +584,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "115c40ad80c7577b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     },
     {
       "id": "ib.maa.limits_convergence",
@@ -549,7 +603,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "049aba1a4c8dda83",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.maa.differentiation_basics",
@@ -567,7 +622,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "1950b674444becd7",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.maa.differentiation_rules",
@@ -585,7 +641,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "579d19af4b656209",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.maa.further_differentiation",
@@ -604,7 +661,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "da62a1978ae3d3a5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.maa.applications_of_differentiation",
@@ -622,7 +680,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "633be797c93b9b89",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.maa.integration_basics",
@@ -640,7 +699,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "a5c3ce91d89a6ac4",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.maa.definite_integrals",
@@ -658,7 +718,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "91d1a986c34598f1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.maa.integration_techniques",
@@ -677,7 +738,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "7f8a9e2d4a3f7a72",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.maa.kinematics_calculus",
@@ -695,7 +757,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "e9d89165d013583c",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.maa.differential_equations",
@@ -714,7 +777,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "f467b65eb9bad17f",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.maa.maclaurin_series",
@@ -733,7 +797,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "23893a16c92f9719",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.maa.inequalities",
@@ -752,7 +817,8 @@
       "bookColor": "#f97316",
       "bookOrder": 2,
       "external_id": "bdba1d7dc57ba0d5",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "functions"
     },
     {
       "id": "ib.maa.coordinate_geometry",
@@ -770,7 +836,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "1032c8d57d792791",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "ib.maa.volumes_of_revolution",
@@ -789,7 +856,8 @@
       "bookColor": "#3b82f6",
       "bookOrder": 5,
       "external_id": "87e1d656b97458c2",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "calculus"
     },
     {
       "id": "ib.maa.partial_fractions",
@@ -808,7 +876,8 @@
       "bookColor": "#ef4444",
       "bookOrder": 1,
       "external_id": "1d6aaadaa08e06d6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "algebra"
     },
     {
       "id": "ib.maa.trig_reciprocal",
@@ -827,7 +896,8 @@
       "bookColor": "#eab308",
       "bookOrder": 3,
       "external_id": "62991fb09cd02d66",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "ib.maa.hypothesis_testing",
@@ -846,7 +916,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 4,
       "external_id": "3f0e180ec5339f4e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "statistics"
     }
   ],
   "edges": [

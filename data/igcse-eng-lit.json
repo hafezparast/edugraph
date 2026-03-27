@@ -36,6 +36,28 @@
       "order": 4
     }
   ],
+  "strands": [
+    {
+      "id": "poetry",
+      "name": "Poetry",
+      "color": "#ec4899"
+    },
+    {
+      "id": "prose",
+      "name": "Prose",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "drama",
+      "name": "Drama",
+      "color": "#22c55e"
+    },
+    {
+      "id": "critical",
+      "name": "Critical Skills",
+      "color": "#f59e0b"
+    }
+  ],
   "nodes": [
     {
       "id": "lit.t1.poetic_techniques",
@@ -54,7 +76,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "3bde9714b34bda02",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "poetry"
     },
     {
       "id": "lit.t2.imagery",
@@ -73,7 +96,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "83de6542e38182cd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "poetry"
     },
     {
       "id": "lit.t3.rhythm_meter",
@@ -92,7 +116,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "796828808f15dd07",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "poetry"
     },
     {
       "id": "lit.t4.theme_analysis",
@@ -111,7 +136,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 2,
       "external_id": "a156dba4dddfc32a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "prose"
     },
     {
       "id": "lit.t5.character_analysis",
@@ -130,7 +156,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 2,
       "external_id": "9334f4f9003b0af1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "prose"
     },
     {
       "id": "lit.t6.narrative_voice",
@@ -149,7 +176,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 2,
       "external_id": "8246e044d983ba85",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "prose"
     },
     {
       "id": "lit.t7.plot_structure",
@@ -168,7 +196,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 2,
       "external_id": "79c08ab9ee39137e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "prose"
     },
     {
       "id": "lit.t8.setting_atmosphere",
@@ -187,7 +216,8 @@
       "bookColor": "#8b5cf6",
       "bookOrder": 2,
       "external_id": "d38b838adaebc2ae",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "prose"
     },
     {
       "id": "lit.t9.shakespeare",
@@ -206,7 +236,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "328220d03362cbab",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "drama"
     },
     {
       "id": "lit.t10.modern_drama",
@@ -225,7 +256,8 @@
       "bookColor": "#22c55e",
       "bookOrder": 3,
       "external_id": "3865f3475848c729",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "drama"
     },
     {
       "id": "lit.t11.literary_comparison",
@@ -244,7 +276,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "463a3fb3460ff152",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "critical"
     },
     {
       "id": "lit.t12.essay_writing",
@@ -263,7 +296,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "cce3460842e9deb6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "critical"
     },
     {
       "id": "lit.t13.unseen_text_analysis",
@@ -282,7 +316,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "1052f052d04764cf",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "critical"
     },
     {
       "id": "lit.t14.context_interpretation",
@@ -301,7 +336,8 @@
       "bookColor": "#f59e0b",
       "bookOrder": 4,
       "external_id": "343e4989db6977b6",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "critical"
     }
   ],
   "edges": [

@@ -41,6 +41,48 @@
       "order": 5
     }
   ],
+  "strands": [
+    {
+      "id": "measurement",
+      "name": "Measurement & Units",
+      "color": "#6b7280"
+    },
+    {
+      "id": "mechanics",
+      "name": "Mechanics",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "energy",
+      "name": "Energy & Resources",
+      "color": "#f97316"
+    },
+    {
+      "id": "thermal",
+      "name": "Thermal Physics",
+      "color": "#ef4444"
+    },
+    {
+      "id": "waves",
+      "name": "Waves & Optics",
+      "color": "#22c55e"
+    },
+    {
+      "id": "electricity",
+      "name": "Electricity & Electronics",
+      "color": "#eab308"
+    },
+    {
+      "id": "magnetism",
+      "name": "Magnetism & Electromagnetism",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "nuclear",
+      "name": "Nuclear & Particle Physics",
+      "color": "#d946ef"
+    }
+  ],
   "nodes": [
     {
       "id": "p.ch1.units",
@@ -53,7 +95,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "measurement"
     },
     {
       "id": "p.ch1.powers_of_ten",
@@ -66,7 +109,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "measurement"
     },
     {
       "id": "p.ch1.length",
@@ -79,7 +123,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "measurement"
     },
     {
       "id": "p.ch1.sig_figs",
@@ -92,7 +137,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "measurement"
     },
     {
       "id": "p.ch1.area",
@@ -105,7 +151,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "measurement"
     },
     {
       "id": "p.ch1.volume",
@@ -118,7 +165,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "measurement"
     },
     {
       "id": "p.ch1.mass",
@@ -131,7 +179,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "measurement"
     },
     {
       "id": "p.ch1.time",
@@ -144,7 +193,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "measurement"
     },
     {
       "id": "p.ch1.systematic_errors",
@@ -157,7 +207,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "measurement"
     },
     {
       "id": "p.ch1.vernier_micrometer",
@@ -170,7 +221,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "measurement"
     },
     {
       "id": "p.ch2.speed",
@@ -183,7 +235,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch2.velocity",
@@ -196,7 +249,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch2.acceleration",
@@ -209,7 +263,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch2.timers",
@@ -222,7 +277,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch3.vt_graphs",
@@ -235,7 +291,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch3.dt_graphs",
@@ -248,7 +305,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch3.uniform_accel_eqs",
@@ -261,7 +319,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch4.free_fall",
@@ -274,7 +333,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch4.measuring_g",
@@ -287,7 +347,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch4.dt_graphs_fall",
@@ -300,7 +361,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch4.projectiles",
@@ -313,7 +375,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch5.density_calc",
@@ -326,7 +389,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch5.density_meas",
@@ -339,7 +403,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch5.floating",
@@ -352,7 +417,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch6.force",
@@ -365,7 +431,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch6.weight",
@@ -378,7 +445,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch6.newton",
@@ -391,7 +459,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch6.hookes_law",
@@ -404,7 +473,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch7.resultants",
@@ -417,7 +487,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch7.addition_examples",
@@ -430,7 +501,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch7.vectors_scalars",
@@ -443,7 +515,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch7.friction",
@@ -456,7 +529,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch8.newton1",
@@ -469,7 +543,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch8.mass_inertia",
@@ -482,7 +557,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch8.newton2",
@@ -495,7 +571,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch8.weight_gravity",
@@ -508,7 +585,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch8.grav_field",
@@ -521,7 +599,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch8.newton3",
@@ -534,7 +613,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch8.terminal_vel",
@@ -547,7 +627,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch9.centripetal",
@@ -560,7 +641,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch9.rounding_bend",
@@ -573,7 +655,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch9.looping",
@@ -586,7 +669,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch9.satellites",
@@ -599,7 +683,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch10.moment",
@@ -612,7 +697,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch10.balancing_beam",
@@ -625,7 +711,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch10.levers",
@@ -638,7 +725,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch10.equilibrium",
@@ -651,7 +739,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch11.toppling",
@@ -664,7 +753,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch11.stability",
@@ -677,7 +767,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch11.balancing_tricks",
@@ -690,7 +781,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch12.conserv_momentum",
@@ -703,7 +795,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch12.explosions",
@@ -716,7 +809,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch12.rockets_jets",
@@ -729,7 +823,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch12.force_momentum",
@@ -742,7 +837,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch12.impulse",
@@ -755,7 +851,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "mechanics"
     },
     {
       "id": "p.ch13.forms_energy",
@@ -768,7 +865,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch13.energy_transfers",
@@ -781,7 +879,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch13.energy_meas",
@@ -794,7 +893,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch13.energy_conserv",
@@ -807,7 +907,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch13.energy_food",
@@ -820,7 +921,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch13.combustion",
@@ -833,7 +935,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch14.ke",
@@ -846,7 +949,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch14.pe",
@@ -859,7 +963,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch14.conserv_energy",
@@ -872,7 +977,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch14.collisions",
@@ -885,7 +991,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch14.car_safety",
@@ -898,7 +1005,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch15.non_renewable",
@@ -911,7 +1019,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch15.renewable",
@@ -924,7 +1033,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch15.power_stations",
@@ -937,7 +1047,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch15.env_issues",
@@ -950,7 +1061,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch16.liquid_pressure",
@@ -963,7 +1075,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch16.water_supply",
@@ -976,7 +1089,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch16.hydraulic",
@@ -989,7 +1103,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch16.liquid_p_expr",
@@ -1002,7 +1117,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch16.pressure_gauges",
@@ -1015,7 +1131,8 @@
       "comprehended": false,
       "bookName": "General Physics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "strand": "energy"
     },
     {
       "id": "p.ch17.kinetic_theory",
@@ -1028,7 +1145,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch17.crystals",
@@ -1041,7 +1159,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch17.diffusion",
@@ -1054,7 +1173,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch18.gas_pressure",
@@ -1067,7 +1187,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch19.uses_expansion",
@@ -1080,7 +1201,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch19.precautions",
@@ -1093,7 +1215,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch20.liquid_glass_therm",
@@ -1106,7 +1229,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch20.scale_temp",
@@ -1119,7 +1243,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch20.clinical_therm",
@@ -1132,7 +1257,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch20.thermocouple",
@@ -1145,7 +1271,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch20.other_therm",
@@ -1158,7 +1285,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch21.shc",
@@ -1171,7 +1299,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch21.shc_water",
@@ -1184,7 +1313,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch22.evap_boil",
@@ -1197,7 +1327,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch22.condense_solidify",
@@ -1210,7 +1341,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch22.cooling_evap",
@@ -1223,7 +1355,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch22.liquefaction",
@@ -1236,7 +1369,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch23.conductors",
@@ -1249,7 +1383,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch23.convection",
@@ -1262,7 +1397,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch23.energy_losses",
@@ -1275,7 +1411,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch24.greenhouse",
@@ -1288,7 +1425,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch24.vacuum_flask",
@@ -1301,7 +1439,8 @@
       "comprehended": false,
       "bookName": "Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "strand": "thermal"
     },
     {
       "id": "p.ch25.wave_types",
@@ -1314,7 +1453,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch25.describing_waves",
@@ -1327,7 +1467,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch25.wavefronts_rays",
@@ -1340,7 +1481,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch25.wave_equation",
@@ -1353,7 +1495,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch25.reflection",
@@ -1366,7 +1509,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch25.refraction",
@@ -1379,7 +1523,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch25.diffraction",
@@ -1392,7 +1537,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch25.wave_theory",
@@ -1405,7 +1551,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch25.interference",
@@ -1418,7 +1565,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch26.light_sources",
@@ -1431,7 +1579,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch26.rays_beams",
@@ -1444,7 +1593,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch26.shadows",
@@ -1457,7 +1607,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch27.periscope",
@@ -1470,7 +1621,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch27.reg_diffuse",
@@ -1483,7 +1635,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch28.real_virtual",
@@ -1496,7 +1649,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch28.lateral_inv",
@@ -1509,7 +1663,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch28.image_props",
@@ -1522,7 +1677,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch28.kaleidoscope",
@@ -1535,7 +1691,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch29.refraction_facts",
@@ -1548,7 +1705,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch29.dispersion",
@@ -1561,7 +1719,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch29.prism",
@@ -1574,7 +1733,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch30.critical_angle",
@@ -1587,7 +1747,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch30.total_reflect_prisms",
@@ -1600,7 +1761,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch31.converge_diverge",
@@ -1613,7 +1775,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch31.principal_focus",
@@ -1626,7 +1789,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch31.spectacles",
@@ -1639,7 +1803,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch32.em_properties",
@@ -1652,7 +1817,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch32.uv",
@@ -1665,7 +1831,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch32.light_waves",
@@ -1678,7 +1845,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch32.ir",
@@ -1691,7 +1859,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch32.radio_waves",
@@ -1704,7 +1873,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch33.longitudinal",
@@ -1717,7 +1887,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch33.origin_trans",
@@ -1730,7 +1901,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch33.audibility",
@@ -1743,7 +1915,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch33.echoes",
@@ -1756,7 +1929,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch33.speed_sound",
@@ -1769,7 +1943,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch33.musical_notes",
@@ -1782,7 +1957,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch33.ultrasonics",
@@ -1795,7 +1971,8 @@
       "comprehended": false,
       "bookName": "Properties of Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "strand": "waves"
     },
     {
       "id": "p.ch34.magnet_props",
@@ -1808,7 +1985,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch34.magnetisation",
@@ -1821,7 +1999,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch34.mag_fields",
@@ -1834,7 +2013,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch34.earth_mag",
@@ -1847,7 +2027,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch35.pos_neg_charges",
@@ -1860,7 +2041,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch35.charges_atoms",
@@ -1873,7 +2055,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch35.insulators_cond",
@@ -1886,7 +2069,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch35.induction",
@@ -1899,7 +2083,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch35.attraction",
@@ -1912,7 +2097,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch35.dangers",
@@ -1925,7 +2111,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch35.uses",
@@ -1938,7 +2125,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch35.electric_fields",
@@ -1951,7 +2139,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch36.current_effects",
@@ -1964,7 +2153,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch36.ampere_coulomb",
@@ -1977,7 +2167,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch36.circuit_diagrams",
@@ -1990,7 +2181,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch36.series_parallel",
@@ -2003,7 +2195,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch36.dc_ac",
@@ -2016,7 +2209,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch37.energy_pd",
@@ -2029,7 +2223,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch37.circuit_model",
@@ -2042,7 +2237,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch37.volt",
@@ -2055,7 +2251,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch37.cells_emf",
@@ -2068,7 +2265,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch37.voltages_circuit",
@@ -2081,7 +2279,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch38.ohm",
@@ -2094,7 +2293,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch38.ohms_law",
@@ -2107,7 +2307,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch38.series_r",
@@ -2120,7 +2321,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch38.parallel_r",
@@ -2133,7 +2335,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch38.colour_code",
@@ -2146,7 +2349,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch38.resistivity",
@@ -2159,7 +2363,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch38.pot_divider",
@@ -2172,7 +2377,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch39.capacitance",
@@ -2185,7 +2391,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch39.cap_types",
@@ -2198,7 +2405,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch39.charge_discharge",
@@ -2211,7 +2419,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch39.cap_dc_ac",
@@ -2224,7 +2433,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch40.power_circuits",
@@ -2237,7 +2447,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch40.lighting",
@@ -2250,7 +2461,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch40.heating",
@@ -2263,7 +2475,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch40.joulemeter",
@@ -2276,7 +2489,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch40.house_circuits",
@@ -2289,7 +2503,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch40.paying",
@@ -2302,7 +2517,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch40.dangers_elec",
@@ -2315,7 +2531,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch41.elec_systems",
@@ -2328,7 +2545,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch41.input_trans",
@@ -2341,7 +2559,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch41.output_trans",
@@ -2354,7 +2573,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch41.diode",
@@ -2367,7 +2587,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch41.transistor",
@@ -2380,7 +2601,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch42.logic_gates",
@@ -2393,7 +2615,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch42.elec_society",
@@ -2406,7 +2629,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch43.em_induction",
@@ -2419,7 +2643,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch43.faradays_law",
@@ -2432,7 +2657,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch43.lenzs_law",
@@ -2445,7 +2671,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch43.ac_generator",
@@ -2458,7 +2685,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch43.dc_generator",
@@ -2471,7 +2699,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch43.practical_gen",
@@ -2484,7 +2713,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch43.em_induction_apps",
@@ -2497,7 +2727,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch44.mutual_induction",
@@ -2510,7 +2741,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch44.transformer_eq",
@@ -2523,7 +2755,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch44.transformer_losses",
@@ -2536,7 +2769,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch44.power_transmission",
@@ -2549,7 +2783,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch44.eddy_currents",
@@ -2562,7 +2797,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch45.oersted",
@@ -2575,7 +2811,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch45.field_wire",
@@ -2588,7 +2825,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch45.field_coil",
@@ -2601,7 +2839,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch45.field_solenoid",
@@ -2614,7 +2853,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch45.mag_demag",
@@ -2627,7 +2867,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch45.electromagnets",
@@ -2640,7 +2881,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch45.electric_bell",
@@ -2653,7 +2895,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch45.relay_reed_breaker",
@@ -2666,7 +2909,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch45.telephone",
@@ -2679,7 +2923,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch46.motor_effect",
@@ -2692,7 +2937,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch46.flemings_lhr",
@@ -2705,7 +2951,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch46.practical_motors",
@@ -2718,7 +2965,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch46.dc_motor",
@@ -2731,7 +2979,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch46.loudspeaker",
@@ -2744,7 +2993,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch47.ammeters_shunts",
@@ -2757,7 +3007,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch47.voltmeters_mult",
@@ -2770,7 +3021,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch47.galvanometer",
@@ -2783,7 +3035,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch47.reading_voltmeter",
@@ -2796,7 +3049,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch47.multimeters",
@@ -2809,7 +3063,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "magnetism"
     },
     {
       "id": "p.ch48.cathode_rays",
@@ -2822,7 +3077,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch48.thermionic",
@@ -2835,7 +3091,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch48.deflection",
@@ -2848,7 +3105,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch48.cro",
@@ -2861,7 +3119,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch48.cro_uses",
@@ -2874,7 +3133,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch48.xrays",
@@ -2887,7 +3147,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch48.photoelectric",
@@ -2900,7 +3161,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch48.wave_particle",
@@ -2913,7 +3175,8 @@
       "comprehended": false,
       "bookName": "Electricity and Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "strand": "electricity"
     },
     {
       "id": "p.ch49.ionising",
@@ -2926,7 +3189,8 @@
       "comprehended": false,
       "bookName": "Atomic Physics",
       "bookColor": "#8b5cf6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "nuclear"
     },
     {
       "id": "p.ch49.gm_tube",
@@ -2939,7 +3203,8 @@
       "comprehended": false,
       "bookName": "Atomic Physics",
       "bookColor": "#8b5cf6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "nuclear"
     },
     {
       "id": "p.ch49.abg_radiation",
@@ -2952,7 +3217,8 @@
       "comprehended": false,
       "bookName": "Atomic Physics",
       "bookColor": "#8b5cf6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "nuclear"
     },
     {
       "id": "p.ch49.particle_tracks",
@@ -2965,7 +3231,8 @@
       "comprehended": false,
       "bookName": "Atomic Physics",
       "bookColor": "#8b5cf6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "nuclear"
     },
     {
       "id": "p.ch49.decay",
@@ -2978,7 +3245,8 @@
       "comprehended": false,
       "bookName": "Atomic Physics",
       "bookColor": "#8b5cf6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "nuclear"
     },
     {
       "id": "p.ch49.uses_radioactivity",
@@ -2991,7 +3259,8 @@
       "comprehended": false,
       "bookName": "Atomic Physics",
       "bookColor": "#8b5cf6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "nuclear"
     },
     {
       "id": "p.ch49.dangers_safety",
@@ -3004,7 +3273,8 @@
       "comprehended": false,
       "bookName": "Atomic Physics",
       "bookColor": "#8b5cf6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "nuclear"
     },
     {
       "id": "p.ch50.nuclear_atom",
@@ -3017,7 +3287,8 @@
       "comprehended": false,
       "bookName": "Atomic Physics",
       "bookColor": "#8b5cf6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "nuclear"
     },
     {
       "id": "p.ch50.nuclear_stability",
@@ -3030,7 +3301,8 @@
       "comprehended": false,
       "bookName": "Atomic Physics",
       "bookColor": "#8b5cf6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "nuclear"
     },
     {
       "id": "p.ch50.atom_models",
@@ -3043,7 +3315,8 @@
       "comprehended": false,
       "bookName": "Atomic Physics",
       "bookColor": "#8b5cf6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "nuclear"
     },
     {
       "id": "p.ch50.nuclear_energy",
@@ -3056,7 +3329,8 @@
       "comprehended": false,
       "bookName": "Atomic Physics",
       "bookColor": "#8b5cf6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "strand": "nuclear"
     }
   ],
   "edges": [

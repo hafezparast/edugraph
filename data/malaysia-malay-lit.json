@@ -29,6 +29,23 @@
       "order": 3
     }
   ],
+  "strands": [
+    {
+      "id": "traditional",
+      "name": "Traditional Literature",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "modern",
+      "name": "Modern Literature",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "criticism",
+      "name": "Literary Criticism & Analysis",
+      "color": "#8b5cf6"
+    }
+  ],
   "nodes": [
     {
       "id": "mlit.s1.pengenalan",
@@ -47,7 +64,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "34912be78e625f3b",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "traditional"
     },
     {
       "id": "mlit.s1.sejarah_kesusasteraan",
@@ -66,7 +84,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "e7cf5430a8f5da60",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "traditional"
     },
     {
       "id": "mlit.s1.puisi_tradisional",
@@ -85,7 +104,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "1d17da4da15c60e1",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "traditional"
     },
     {
       "id": "mlit.s1.prosa_tradisional",
@@ -104,7 +124,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "8078b3a7f8ce917a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "traditional"
     },
     {
       "id": "mlit.s1.teori_sastera",
@@ -123,7 +144,8 @@
       "bookColor": "#ec4899",
       "bookOrder": 1,
       "external_id": "edd698e8b0544692",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "traditional"
     },
     {
       "id": "mlit.s2.puisi_moden",
@@ -142,7 +164,8 @@
       "bookColor": "#db2777",
       "bookOrder": 2,
       "external_id": "97bfed2519efc6ec",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "mlit.s2.cerpen",
@@ -161,7 +184,8 @@
       "bookColor": "#db2777",
       "bookOrder": 2,
       "external_id": "bf4458a0602e2bac",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "mlit.s2.novel",
@@ -180,7 +204,8 @@
       "bookColor": "#db2777",
       "bookOrder": 2,
       "external_id": "f62210aefc8d918e",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "mlit.s2.drama",
@@ -199,7 +224,8 @@
       "bookColor": "#db2777",
       "bookOrder": 2,
       "external_id": "55de8e7c767d6966",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "mlit.s2.esei",
@@ -218,7 +244,8 @@
       "bookColor": "#db2777",
       "bookOrder": 2,
       "external_id": "faf183cc440a34bd",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "modern"
     },
     {
       "id": "mlit.s3.kritikan_sastera",
@@ -237,7 +264,8 @@
       "bookColor": "#be185d",
       "bookOrder": 3,
       "external_id": "d3cc654322f18291",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "criticism"
     },
     {
       "id": "mlit.s3.perbandingan",
@@ -256,7 +284,8 @@
       "bookColor": "#be185d",
       "bookOrder": 3,
       "external_id": "2dc5fce8a61f0260",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "criticism"
     },
     {
       "id": "mlit.s3.apresiasi_sastera",
@@ -275,7 +304,8 @@
       "bookColor": "#be185d",
       "bookOrder": 3,
       "external_id": "c88a1533f9253c3a",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "criticism"
     },
     {
       "id": "mlit.s3.penulisan_kreatif",
@@ -295,7 +325,8 @@
       "bookColor": "#be185d",
       "bookOrder": 3,
       "external_id": "a8a59901542fe459",
-      "comprehended": false
+      "comprehended": false,
+      "strand": "criticism"
     }
   ],
   "edges": [
