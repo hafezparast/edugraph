@@ -1,0 +1,244 @@
+{
+  "metadata": {
+    "domain": "economics",
+    "curriculum": "AP Macroeconomics",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "AP Macroeconomics topics with prerequisite ordering, colored by unit group",
+    "sources": [
+      "College Board AP Macroeconomics Course and Exam Description"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ap.macro.b1",
+      "name": "Basic Concepts & Measurement",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "ap.macro.b2",
+      "name": "National Income & Price Determination",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "ap.macro.b3",
+      "name": "Financial Sector & Stabilization",
+      "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "ap.macro.b4",
+      "name": "Policy & International Trade",
+      "color": "#3b82f6",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ap.macro.scarcity_systems",
+      "label": "Scarcity & Economic Systems",
+      "type": "concept",
+      "description": "Scarcity, opportunity cost, PPC, economic systems, circular flow model",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.macro.b1",
+      "bookName": "Basic Concepts & Measurement",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.macro.supply_demand",
+      "label": "Supply & Demand (Review)",
+      "type": "concept",
+      "description": "Market equilibrium, shifts in supply and demand, price determination",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.macro.b1",
+      "bookName": "Basic Concepts & Measurement",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.macro.gdp",
+      "label": "Gross Domestic Product",
+      "type": "concept",
+      "description": "GDP measurement, expenditure and income approaches, real vs nominal GDP",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.macro.b1",
+      "bookName": "Basic Concepts & Measurement",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.macro.unemployment",
+      "label": "Unemployment",
+      "type": "concept",
+      "description": "Types of unemployment, natural rate, unemployment rate calculation",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.macro.b1",
+      "bookName": "Basic Concepts & Measurement",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.macro.inflation",
+      "label": "Inflation & Price Indices",
+      "type": "concept",
+      "description": "CPI, inflation rate, demand-pull vs cost-push inflation, costs of inflation",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.macro.b1",
+      "bookName": "Basic Concepts & Measurement",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.macro.ad_as",
+      "label": "Aggregate Demand & Aggregate Supply",
+      "type": "concept",
+      "description": "AD/AS model, short-run and long-run equilibrium, recessionary/inflationary gaps",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.macro.b2",
+      "bookName": "National Income & Price Determination",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.macro.multiplier",
+      "label": "Multiplier Effect",
+      "type": "concept",
+      "description": "Spending multiplier, tax multiplier, balanced budget multiplier, MPC/MPS",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.macro.b2",
+      "bookName": "National Income & Price Determination",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.macro.phillips_curve",
+      "label": "Phillips Curve",
+      "type": "concept",
+      "description": "Short-run and long-run Phillips curve, inflation-unemployment tradeoff",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.macro.b2",
+      "bookName": "National Income & Price Determination",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.macro.money_banking",
+      "label": "Money & Banking",
+      "type": "concept",
+      "description": "Functions of money, money supply, money demand, banking system, money multiplier",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.macro.b3",
+      "bookName": "Financial Sector & Stabilization",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.macro.loanable_funds",
+      "label": "Loanable Funds Market",
+      "type": "concept",
+      "description": "Supply and demand for loanable funds, real interest rate, crowding out",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.macro.b3",
+      "bookName": "Financial Sector & Stabilization",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.macro.fiscal_policy",
+      "label": "Fiscal Policy",
+      "type": "concept",
+      "description": "Government spending, taxation, budget deficits/surpluses, automatic stabilizers",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.macro.b4",
+      "bookName": "Policy & International Trade",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.macro.monetary_policy",
+      "label": "Monetary Policy",
+      "type": "concept",
+      "description": "Federal Reserve tools, open market operations, federal funds rate, quantitative easing",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.macro.b4",
+      "bookName": "Policy & International Trade",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.macro.economic_growth",
+      "label": "Economic Growth",
+      "type": "concept",
+      "description": "Long-run economic growth, productivity, capital accumulation, technology",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.macro.b4",
+      "bookName": "Policy & International Trade",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.macro.international_trade",
+      "label": "International Trade & Finance",
+      "type": "concept",
+      "description": "Balance of payments, exchange rates, trade barriers, capital flows",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.macro.b4",
+      "bookName": "Policy & International Trade",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.macro.foreign_exchange",
+      "label": "Foreign Exchange Market",
+      "type": "concept",
+      "description": "Currency appreciation/depreciation, exchange rate determination, net exports",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.macro.b4",
+      "bookName": "Policy & International Trade",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    }
+  ],
+  "edges": [
+    { "source": "ap.macro.scarcity_systems", "target": "ap.macro.supply_demand", "relation": "prerequisite_for" },
+    { "source": "ap.macro.supply_demand", "target": "ap.macro.gdp", "relation": "prerequisite_for" },
+    { "source": "ap.macro.gdp", "target": "ap.macro.unemployment", "relation": "prerequisite_for" },
+    { "source": "ap.macro.gdp", "target": "ap.macro.inflation", "relation": "prerequisite_for" },
+    { "source": "ap.macro.unemployment", "target": "ap.macro.ad_as", "relation": "prerequisite_for" },
+    { "source": "ap.macro.inflation", "target": "ap.macro.ad_as", "relation": "prerequisite_for" },
+    { "source": "ap.macro.ad_as", "target": "ap.macro.multiplier", "relation": "prerequisite_for" },
+    { "source": "ap.macro.ad_as", "target": "ap.macro.phillips_curve", "relation": "prerequisite_for" },
+    { "source": "ap.macro.unemployment", "target": "ap.macro.phillips_curve", "relation": "prerequisite_for" },
+    { "source": "ap.macro.supply_demand", "target": "ap.macro.money_banking", "relation": "prerequisite_for" },
+    { "source": "ap.macro.money_banking", "target": "ap.macro.loanable_funds", "relation": "prerequisite_for" },
+    { "source": "ap.macro.multiplier", "target": "ap.macro.fiscal_policy", "relation": "prerequisite_for" },
+    { "source": "ap.macro.loanable_funds", "target": "ap.macro.fiscal_policy", "relation": "prerequisite_for" },
+    { "source": "ap.macro.money_banking", "target": "ap.macro.monetary_policy", "relation": "prerequisite_for" },
+    { "source": "ap.macro.loanable_funds", "target": "ap.macro.monetary_policy", "relation": "prerequisite_for" },
+    { "source": "ap.macro.fiscal_policy", "target": "ap.macro.economic_growth", "relation": "prerequisite_for" },
+    { "source": "ap.macro.monetary_policy", "target": "ap.macro.economic_growth", "relation": "prerequisite_for" },
+    { "source": "ap.macro.scarcity_systems", "target": "ap.macro.international_trade", "relation": "prerequisite_for" },
+    { "source": "ap.macro.monetary_policy", "target": "ap.macro.international_trade", "relation": "prerequisite_for" },
+    { "source": "ap.macro.international_trade", "target": "ap.macro.foreign_exchange", "relation": "prerequisite_for" },
+    { "source": "ap.macro.inflation", "target": "ap.macro.money_banking", "relation": "prerequisite_for" }
+  ]
+}

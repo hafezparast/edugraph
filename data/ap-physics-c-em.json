@@ -1,0 +1,230 @@
+{
+  "metadata": {
+    "domain": "physics",
+    "curriculum": "AP Physics C: Electricity and Magnetism",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "AP Physics C E&M topics with prerequisite ordering, colored by unit group",
+    "sources": [
+      "College Board AP Physics C: Electricity and Magnetism Course and Exam Description"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ap.pce.b1",
+      "name": "Electrostatics",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "ap.pce.b2",
+      "name": "Conductors & Capacitors",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "ap.pce.b3",
+      "name": "Circuits",
+      "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "ap.pce.b4",
+      "name": "Magnetism & Induction",
+      "color": "#3b82f6",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ap.pce.electric_charge",
+      "label": "Electric Charge & Coulomb's Law",
+      "type": "concept",
+      "description": "Charge, charge conservation, Coulomb's law, superposition",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pce.b1",
+      "bookName": "Electrostatics",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.pce.electric_field",
+      "label": "Electric Fields",
+      "type": "concept",
+      "description": "Electric field of point charges and continuous distributions",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pce.b1",
+      "bookName": "Electrostatics",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.pce.gauss_law",
+      "label": "Gauss's Law",
+      "type": "concept",
+      "description": "Electric flux, Gauss's law, applications to symmetric charge distributions",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pce.b1",
+      "bookName": "Electrostatics",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.pce.electric_potential",
+      "label": "Electric Potential",
+      "type": "concept",
+      "description": "Potential, potential difference, relationship between field and potential",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pce.b1",
+      "bookName": "Electrostatics",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.pce.conductors",
+      "label": "Conductors & Electrostatic Equilibrium",
+      "type": "concept",
+      "description": "Conductors in electrostatic equilibrium, shielding, induced charge",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pce.b2",
+      "bookName": "Conductors & Capacitors",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.pce.capacitors",
+      "label": "Capacitors & Capacitance",
+      "type": "concept",
+      "description": "Capacitance, parallel plates, dielectrics, energy stored in capacitors",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pce.b2",
+      "bookName": "Conductors & Capacitors",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.pce.current_resistance",
+      "label": "Current & Resistance",
+      "type": "concept",
+      "description": "Current density, resistivity, Ohm's law, power dissipation",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pce.b3",
+      "bookName": "Circuits",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.pce.dc_circuits",
+      "label": "DC Circuits",
+      "type": "concept",
+      "description": "Series/parallel combinations, Kirchhoff's rules, EMF",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pce.b3",
+      "bookName": "Circuits",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.pce.rc_circuits",
+      "label": "RC Circuits",
+      "type": "concept",
+      "description": "Charging and discharging capacitors, time constants, transient behavior",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pce.b3",
+      "bookName": "Circuits",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.pce.magnetic_field",
+      "label": "Magnetic Fields",
+      "type": "concept",
+      "description": "Magnetic force on charges and currents, Biot-Savart law",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pce.b4",
+      "bookName": "Magnetism & Induction",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.pce.ampere_law",
+      "label": "Ampere's Law",
+      "type": "concept",
+      "description": "Ampere's law and applications to symmetric current distributions",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pce.b4",
+      "bookName": "Magnetism & Induction",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.pce.faraday_law",
+      "label": "Faraday's Law & Induction",
+      "type": "concept",
+      "description": "Magnetic flux, Faraday's law, Lenz's law, induced EMF",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pce.b4",
+      "bookName": "Magnetism & Induction",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.pce.inductance",
+      "label": "Inductance & LR Circuits",
+      "type": "concept",
+      "description": "Self-inductance, inductors, LR circuits, energy stored in magnetic fields",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pce.b4",
+      "bookName": "Magnetism & Induction",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.pce.maxwell_eqs",
+      "label": "Maxwell's Equations",
+      "type": "concept",
+      "description": "Overview of Maxwell's equations and electromagnetic waves",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pce.b4",
+      "bookName": "Magnetism & Induction",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    }
+  ],
+  "edges": [
+    { "source": "ap.pce.electric_charge", "target": "ap.pce.electric_field", "relation": "prerequisite_for" },
+    { "source": "ap.pce.electric_field", "target": "ap.pce.gauss_law", "relation": "prerequisite_for" },
+    { "source": "ap.pce.electric_field", "target": "ap.pce.electric_potential", "relation": "prerequisite_for" },
+    { "source": "ap.pce.gauss_law", "target": "ap.pce.conductors", "relation": "prerequisite_for" },
+    { "source": "ap.pce.electric_potential", "target": "ap.pce.conductors", "relation": "prerequisite_for" },
+    { "source": "ap.pce.conductors", "target": "ap.pce.capacitors", "relation": "prerequisite_for" },
+    { "source": "ap.pce.electric_potential", "target": "ap.pce.capacitors", "relation": "prerequisite_for" },
+    { "source": "ap.pce.electric_potential", "target": "ap.pce.current_resistance", "relation": "prerequisite_for" },
+    { "source": "ap.pce.current_resistance", "target": "ap.pce.dc_circuits", "relation": "prerequisite_for" },
+    { "source": "ap.pce.dc_circuits", "target": "ap.pce.rc_circuits", "relation": "prerequisite_for" },
+    { "source": "ap.pce.capacitors", "target": "ap.pce.rc_circuits", "relation": "prerequisite_for" },
+    { "source": "ap.pce.current_resistance", "target": "ap.pce.magnetic_field", "relation": "prerequisite_for" },
+    { "source": "ap.pce.magnetic_field", "target": "ap.pce.ampere_law", "relation": "prerequisite_for" },
+    { "source": "ap.pce.ampere_law", "target": "ap.pce.faraday_law", "relation": "prerequisite_for" },
+    { "source": "ap.pce.faraday_law", "target": "ap.pce.inductance", "relation": "prerequisite_for" },
+    { "source": "ap.pce.dc_circuits", "target": "ap.pce.inductance", "relation": "prerequisite_for" },
+    { "source": "ap.pce.gauss_law", "target": "ap.pce.maxwell_eqs", "relation": "prerequisite_for" },
+    { "source": "ap.pce.faraday_law", "target": "ap.pce.maxwell_eqs", "relation": "prerequisite_for" },
+    { "source": "ap.pce.ampere_law", "target": "ap.pce.maxwell_eqs", "relation": "prerequisite_for" }
+  ]
+}

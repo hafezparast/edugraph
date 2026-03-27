@@ -1,0 +1,185 @@
+{
+  "metadata": {
+    "domain": "english",
+    "curriculum": "AP English Language and Composition",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "AP English Language & Composition topics with prerequisite ordering, colored by unit group",
+    "sources": [
+      "College Board AP English Language and Composition Course and Exam Description"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ap.elang.b1",
+      "name": "Rhetoric & Reading",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "ap.elang.b2",
+      "name": "Argumentation & Evidence",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "ap.elang.b3",
+      "name": "Composition & Synthesis",
+      "color": "#3b82f6",
+      "order": 3
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ap.elang.rhetorical_situation",
+      "label": "Rhetorical Situation",
+      "type": "concept",
+      "description": "Purpose, audience, context, exigence, speaker/writer identity",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.elang.b1",
+      "bookName": "Rhetoric & Reading",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.elang.claims_evidence",
+      "label": "Claims & Evidence",
+      "type": "concept",
+      "description": "Thesis statements, types of claims, selecting and integrating evidence",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.elang.b1",
+      "bookName": "Rhetoric & Reading",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.elang.reasoning_organization",
+      "label": "Reasoning & Organization",
+      "type": "concept",
+      "description": "Line of reasoning, logical structure, transitions, cohesion",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.elang.b1",
+      "bookName": "Rhetoric & Reading",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.elang.style_tone",
+      "label": "Style, Tone & Word Choice",
+      "type": "concept",
+      "description": "Diction, syntax, tone, rhetorical effects of style choices",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.elang.b1",
+      "bookName": "Rhetoric & Reading",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.elang.rhetorical_strategies",
+      "label": "Rhetorical Strategies",
+      "type": "concept",
+      "description": "Ethos, pathos, logos, rhetorical devices (analogy, irony, juxtaposition)",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.elang.b2",
+      "bookName": "Argumentation & Evidence",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.elang.argument_construction",
+      "label": "Argument Construction",
+      "type": "concept",
+      "description": "Building arguments, counterarguments, concession, refutation",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.elang.b2",
+      "bookName": "Argumentation & Evidence",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.elang.logical_fallacies",
+      "label": "Logical Fallacies",
+      "type": "concept",
+      "description": "Identifying and avoiding logical fallacies in arguments",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.elang.b2",
+      "bookName": "Argumentation & Evidence",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.elang.rhetorical_analysis",
+      "label": "Rhetorical Analysis Essay",
+      "type": "concept",
+      "description": "Analyzing how writers use rhetoric to achieve their purpose",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.elang.b3",
+      "bookName": "Composition & Synthesis",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.elang.argument_essay",
+      "label": "Argument Essay",
+      "type": "concept",
+      "description": "Constructing evidence-based arguments on a given topic",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.elang.b3",
+      "bookName": "Composition & Synthesis",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.elang.synthesis_essay",
+      "label": "Synthesis Essay",
+      "type": "concept",
+      "description": "Synthesizing multiple sources to develop a coherent argument",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.elang.b3",
+      "bookName": "Composition & Synthesis",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.elang.revision",
+      "label": "Revision & Editing",
+      "type": "concept",
+      "description": "Revising for clarity, coherence, style, grammar, and conventions",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.elang.b3",
+      "bookName": "Composition & Synthesis",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    }
+  ],
+  "edges": [
+    { "source": "ap.elang.rhetorical_situation", "target": "ap.elang.claims_evidence", "relation": "prerequisite_for" },
+    { "source": "ap.elang.rhetorical_situation", "target": "ap.elang.style_tone", "relation": "prerequisite_for" },
+    { "source": "ap.elang.claims_evidence", "target": "ap.elang.reasoning_organization", "relation": "prerequisite_for" },
+    { "source": "ap.elang.style_tone", "target": "ap.elang.rhetorical_strategies", "relation": "prerequisite_for" },
+    { "source": "ap.elang.claims_evidence", "target": "ap.elang.rhetorical_strategies", "relation": "prerequisite_for" },
+    { "source": "ap.elang.reasoning_organization", "target": "ap.elang.argument_construction", "relation": "prerequisite_for" },
+    { "source": "ap.elang.rhetorical_strategies", "target": "ap.elang.argument_construction", "relation": "prerequisite_for" },
+    { "source": "ap.elang.argument_construction", "target": "ap.elang.logical_fallacies", "relation": "prerequisite_for" },
+    { "source": "ap.elang.rhetorical_strategies", "target": "ap.elang.rhetorical_analysis", "relation": "prerequisite_for" },
+    { "source": "ap.elang.style_tone", "target": "ap.elang.rhetorical_analysis", "relation": "prerequisite_for" },
+    { "source": "ap.elang.argument_construction", "target": "ap.elang.argument_essay", "relation": "prerequisite_for" },
+    { "source": "ap.elang.logical_fallacies", "target": "ap.elang.argument_essay", "relation": "prerequisite_for" },
+    { "source": "ap.elang.argument_essay", "target": "ap.elang.synthesis_essay", "relation": "prerequisite_for" },
+    { "source": "ap.elang.rhetorical_analysis", "target": "ap.elang.synthesis_essay", "relation": "prerequisite_for" },
+    { "source": "ap.elang.synthesis_essay", "target": "ap.elang.revision", "relation": "prerequisite_for" },
+    { "source": "ap.elang.argument_essay", "target": "ap.elang.revision", "relation": "prerequisite_for" }
+  ]
+}

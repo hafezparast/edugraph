@@ -1,0 +1,242 @@
+{
+  "metadata": {
+    "domain": "history",
+    "curriculum": "AP United States History",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "AP US History topics with prerequisite ordering, colored by era",
+    "sources": [
+      "College Board AP United States History Course and Exam Description"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ap.ush.b1",
+      "name": "Colonial & Revolutionary America (1491-1800)",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "ap.ush.b2",
+      "name": "Expansion & Civil War (1800-1877)",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "ap.ush.b3",
+      "name": "Industrialization & Progressive Era (1865-1945)",
+      "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "ap.ush.b4",
+      "name": "Modern America (1945-Present)",
+      "color": "#3b82f6",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ap.ush.period1",
+      "label": "Period 1: 1491-1607",
+      "type": "concept",
+      "description": "Pre-Columbian societies, European exploration, Columbian Exchange",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.ush.b1",
+      "bookName": "Colonial & Revolutionary America (1491-1800)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.ush.period2",
+      "label": "Period 2: 1607-1754",
+      "type": "concept",
+      "description": "Colonial settlements, transatlantic trade, slavery, colonial society",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.ush.b1",
+      "bookName": "Colonial & Revolutionary America (1491-1800)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.ush.period3",
+      "label": "Period 3: 1754-1800",
+      "type": "concept",
+      "description": "French and Indian War, American Revolution, Constitution, early republic",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.ush.b1",
+      "bookName": "Colonial & Revolutionary America (1491-1800)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.ush.period4",
+      "label": "Period 4: 1800-1848",
+      "type": "concept",
+      "description": "Jeffersonian democracy, Market Revolution, Jacksonian era, Manifest Destiny",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.ush.b2",
+      "bookName": "Expansion & Civil War (1800-1877)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.ush.period5",
+      "label": "Period 5: 1844-1877",
+      "type": "concept",
+      "description": "Sectionalism, Civil War, Reconstruction, 13th-15th Amendments",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.ush.b2",
+      "bookName": "Expansion & Civil War (1800-1877)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.ush.period6",
+      "label": "Period 6: 1865-1898",
+      "type": "concept",
+      "description": "Gilded Age, industrialization, immigration, westward expansion, labor movements",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.ush.b3",
+      "bookName": "Industrialization & Progressive Era (1865-1945)",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.ush.period7_early",
+      "label": "Period 7a: 1890-1920",
+      "type": "concept",
+      "description": "Progressive Era, imperialism, World War I, women's suffrage",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.ush.b3",
+      "bookName": "Industrialization & Progressive Era (1865-1945)",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.ush.period7_late",
+      "label": "Period 7b: 1920-1945",
+      "type": "concept",
+      "description": "Roaring Twenties, Great Depression, New Deal, World War II",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.ush.b3",
+      "bookName": "Industrialization & Progressive Era (1865-1945)",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.ush.period8",
+      "label": "Period 8: 1945-1980",
+      "type": "concept",
+      "description": "Cold War, Civil Rights Movement, Vietnam, Great Society, Watergate",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.ush.b4",
+      "bookName": "Modern America (1945-Present)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.ush.period9",
+      "label": "Period 9: 1980-Present",
+      "type": "concept",
+      "description": "Reagan era, end of Cold War, globalization, 9/11, technology revolution",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.ush.b4",
+      "bookName": "Modern America (1945-Present)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.ush.historical_thinking",
+      "label": "Historical Thinking Skills",
+      "type": "concept",
+      "description": "Causation, continuity/change, comparison, contextualization, argumentation",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.ush.b1",
+      "bookName": "Colonial & Revolutionary America (1491-1800)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.ush.document_analysis",
+      "label": "Document-Based Analysis",
+      "type": "concept",
+      "description": "Analyzing primary and secondary sources, HIPP analysis, DBQ writing",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.ush.b1",
+      "bookName": "Colonial & Revolutionary America (1491-1800)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.ush.economic_systems",
+      "label": "Economic Systems & Development",
+      "type": "concept",
+      "description": "Mercantilism to capitalism, labor systems, economic policy across eras",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.ush.b2",
+      "bookName": "Expansion & Civil War (1800-1877)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.ush.social_movements",
+      "label": "Social Movements & Reform",
+      "type": "concept",
+      "description": "Abolition, temperance, civil rights, feminism, labor reform across eras",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.ush.b3",
+      "bookName": "Industrialization & Progressive Era (1865-1945)",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.ush.foreign_policy",
+      "label": "American Foreign Policy",
+      "type": "concept",
+      "description": "Isolationism to interventionism, Monroe Doctrine, imperialism, Cold War containment",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.ush.b4",
+      "bookName": "Modern America (1945-Present)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    }
+  ],
+  "edges": [
+    { "source": "ap.ush.historical_thinking", "target": "ap.ush.document_analysis", "relation": "prerequisite_for" },
+    { "source": "ap.ush.historical_thinking", "target": "ap.ush.period1", "relation": "prerequisite_for" },
+    { "source": "ap.ush.period1", "target": "ap.ush.period2", "relation": "prerequisite_for" },
+    { "source": "ap.ush.period2", "target": "ap.ush.period3", "relation": "prerequisite_for" },
+    { "source": "ap.ush.period3", "target": "ap.ush.period4", "relation": "prerequisite_for" },
+    { "source": "ap.ush.period4", "target": "ap.ush.period5", "relation": "prerequisite_for" },
+    { "source": "ap.ush.period5", "target": "ap.ush.period6", "relation": "prerequisite_for" },
+    { "source": "ap.ush.period6", "target": "ap.ush.period7_early", "relation": "prerequisite_for" },
+    { "source": "ap.ush.period7_early", "target": "ap.ush.period7_late", "relation": "prerequisite_for" },
+    { "source": "ap.ush.period7_late", "target": "ap.ush.period8", "relation": "prerequisite_for" },
+    { "source": "ap.ush.period8", "target": "ap.ush.period9", "relation": "prerequisite_for" },
+    { "source": "ap.ush.period2", "target": "ap.ush.economic_systems", "relation": "prerequisite_for" },
+    { "source": "ap.ush.economic_systems", "target": "ap.ush.period6", "relation": "prerequisite_for" },
+    { "source": "ap.ush.period5", "target": "ap.ush.social_movements", "relation": "prerequisite_for" },
+    { "source": "ap.ush.social_movements", "target": "ap.ush.period8", "relation": "prerequisite_for" },
+    { "source": "ap.ush.period7_late", "target": "ap.ush.foreign_policy", "relation": "prerequisite_for" },
+    { "source": "ap.ush.foreign_policy", "target": "ap.ush.period9", "relation": "prerequisite_for" },
+    { "source": "ap.ush.document_analysis", "target": "ap.ush.period2", "relation": "prerequisite_for" },
+    { "source": "ap.ush.economic_systems", "target": "ap.ush.period4", "relation": "prerequisite_for" }
+  ]
+}

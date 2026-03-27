@@ -1,0 +1,257 @@
+{
+  "metadata": {
+    "domain": "physics",
+    "curriculum": "AP Physics C: Mechanics",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "AP Physics C Mechanics topics with prerequisite ordering, colored by unit group",
+    "sources": [
+      "College Board AP Physics C: Mechanics Course and Exam Description"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ap.pcm.b1",
+      "name": "Kinematics & Newton's Laws",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "ap.pcm.b2",
+      "name": "Work, Energy & Momentum",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "ap.pcm.b3",
+      "name": "Rotation & Oscillations",
+      "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "ap.pcm.b4",
+      "name": "Gravitation",
+      "color": "#3b82f6",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ap.pcm.kinematics",
+      "label": "Kinematics (Calculus-Based)",
+      "type": "concept",
+      "description": "Position, velocity, acceleration as derivatives and integrals; motion in 1D and 2D",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pcm.b1",
+      "bookName": "Kinematics & Newton's Laws",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.pcm.newtons_laws",
+      "label": "Newton's Laws of Motion",
+      "type": "concept",
+      "description": "Force, mass, acceleration; free-body diagrams; friction; systems of particles",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pcm.b1",
+      "bookName": "Kinematics & Newton's Laws",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.pcm.forces_applications",
+      "label": "Applications of Newton's Laws",
+      "type": "concept",
+      "description": "Friction, drag, inclined planes, pulleys, circular motion dynamics",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pcm.b1",
+      "bookName": "Kinematics & Newton's Laws",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.pcm.circular_motion",
+      "label": "Circular Motion",
+      "type": "concept",
+      "description": "Uniform and nonuniform circular motion, centripetal force, banked curves",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pcm.b1",
+      "bookName": "Kinematics & Newton's Laws",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.pcm.work_energy",
+      "label": "Work & Kinetic Energy",
+      "type": "concept",
+      "description": "Work as integral of force, work-energy theorem, variable forces",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pcm.b2",
+      "bookName": "Work, Energy & Momentum",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.pcm.potential_energy",
+      "label": "Potential Energy & Conservation",
+      "type": "concept",
+      "description": "Conservative forces, potential energy functions, conservation of energy, power",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pcm.b2",
+      "bookName": "Work, Energy & Momentum",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.pcm.center_of_mass",
+      "label": "Center of Mass",
+      "type": "concept",
+      "description": "Center of mass for systems and continuous distributions",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pcm.b2",
+      "bookName": "Work, Energy & Momentum",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.pcm.momentum_impulse",
+      "label": "Momentum & Impulse",
+      "type": "concept",
+      "description": "Linear momentum, impulse, collisions, conservation of momentum",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pcm.b2",
+      "bookName": "Work, Energy & Momentum",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.pcm.torque_statics",
+      "label": "Torque & Rotational Statics",
+      "type": "concept",
+      "description": "Torque, static equilibrium, moment of inertia calculations",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pcm.b3",
+      "bookName": "Rotation & Oscillations",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.pcm.rotational_kinematics",
+      "label": "Rotational Kinematics & Dynamics",
+      "type": "concept",
+      "description": "Angular position, velocity, acceleration; rotational analog of Newton's second law",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pcm.b3",
+      "bookName": "Rotation & Oscillations",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.pcm.angular_momentum",
+      "label": "Angular Momentum",
+      "type": "concept",
+      "description": "Angular momentum of particles and rigid bodies, conservation of angular momentum",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pcm.b3",
+      "bookName": "Rotation & Oscillations",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.pcm.rolling_motion",
+      "label": "Rolling Motion & Rotational Energy",
+      "type": "concept",
+      "description": "Rolling without slipping, rotational kinetic energy, combined translation and rotation",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pcm.b3",
+      "bookName": "Rotation & Oscillations",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.pcm.shm",
+      "label": "Simple Harmonic Motion",
+      "type": "concept",
+      "description": "SHM with calculus, springs, pendulums, energy in oscillations",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pcm.b3",
+      "bookName": "Rotation & Oscillations",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.pcm.gravitation",
+      "label": "Newton's Law of Gravitation",
+      "type": "concept",
+      "description": "Universal gravitation, gravitational field, orbits",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pcm.b4",
+      "bookName": "Gravitation",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.pcm.orbital_mechanics",
+      "label": "Orbital Mechanics",
+      "type": "concept",
+      "description": "Kepler's laws, orbital energy, escape velocity, satellite motion",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pcm.b4",
+      "bookName": "Gravitation",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.pcm.gravitational_pe",
+      "label": "Gravitational Potential Energy",
+      "type": "concept",
+      "description": "Gravitational PE for extended distances, binding energy",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.pcm.b4",
+      "bookName": "Gravitation",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    }
+  ],
+  "edges": [
+    { "source": "ap.pcm.kinematics", "target": "ap.pcm.newtons_laws", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.newtons_laws", "target": "ap.pcm.forces_applications", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.forces_applications", "target": "ap.pcm.circular_motion", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.forces_applications", "target": "ap.pcm.work_energy", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.work_energy", "target": "ap.pcm.potential_energy", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.newtons_laws", "target": "ap.pcm.center_of_mass", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.center_of_mass", "target": "ap.pcm.momentum_impulse", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.potential_energy", "target": "ap.pcm.momentum_impulse", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.forces_applications", "target": "ap.pcm.torque_statics", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.torque_statics", "target": "ap.pcm.rotational_kinematics", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.kinematics", "target": "ap.pcm.rotational_kinematics", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.rotational_kinematics", "target": "ap.pcm.angular_momentum", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.momentum_impulse", "target": "ap.pcm.angular_momentum", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.angular_momentum", "target": "ap.pcm.rolling_motion", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.potential_energy", "target": "ap.pcm.rolling_motion", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.potential_energy", "target": "ap.pcm.shm", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.circular_motion", "target": "ap.pcm.shm", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.circular_motion", "target": "ap.pcm.gravitation", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.gravitation", "target": "ap.pcm.orbital_mechanics", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.potential_energy", "target": "ap.pcm.gravitational_pe", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.gravitation", "target": "ap.pcm.gravitational_pe", "relation": "prerequisite_for" },
+    { "source": "ap.pcm.gravitational_pe", "target": "ap.pcm.orbital_mechanics", "relation": "prerequisite_for" }
+  ]
+}

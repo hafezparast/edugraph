@@ -1,0 +1,224 @@
+{
+  "metadata": {
+    "domain": "history",
+    "curriculum": "AP World History: Modern",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "AP World History topics with prerequisite ordering, colored by era",
+    "sources": [
+      "College Board AP World History: Modern Course and Exam Description"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ap.wh.b1",
+      "name": "Pre-Modern & Early Modern (1200-1750)",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "ap.wh.b2",
+      "name": "Revolutions & Industrialization (1750-1900)",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "ap.wh.b3",
+      "name": "Modern Era (1900-Present)",
+      "color": "#3b82f6",
+      "order": 3
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ap.wh.unit1",
+      "label": "Unit 1: The Global Tapestry (1200-1450)",
+      "type": "concept",
+      "description": "Song China, Dar al-Islam, South/Southeast Asia, the Americas, Africa, Europe in the medieval period",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.wh.b1",
+      "bookName": "Pre-Modern & Early Modern (1200-1750)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.wh.unit2",
+      "label": "Unit 2: Networks of Exchange (1200-1450)",
+      "type": "concept",
+      "description": "Silk Roads, Indian Ocean trade, trans-Saharan trade, Mongol Empire, effects of connectivity",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.wh.b1",
+      "bookName": "Pre-Modern & Early Modern (1200-1750)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.wh.unit3",
+      "label": "Unit 3: Land-Based Empires (1450-1750)",
+      "type": "concept",
+      "description": "Ottoman, Safavid, Mughal, Qing, Russian empires; administration and legitimacy",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.wh.b1",
+      "bookName": "Pre-Modern & Early Modern (1200-1750)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.wh.unit4",
+      "label": "Unit 4: Transoceanic Interconnections (1450-1750)",
+      "type": "concept",
+      "description": "European exploration, Columbian Exchange, Atlantic slave trade, maritime empires",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.wh.b1",
+      "bookName": "Pre-Modern & Early Modern (1200-1750)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.wh.unit5",
+      "label": "Unit 5: Revolutions (1750-1900)",
+      "type": "concept",
+      "description": "Enlightenment, American/French/Haitian revolutions, nationalism, abolition movements",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.wh.b2",
+      "bookName": "Revolutions & Industrialization (1750-1900)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.wh.unit6",
+      "label": "Unit 6: Consequences of Industrialization (1750-1900)",
+      "type": "concept",
+      "description": "Industrial Revolution, imperialism, economic transformations, social changes",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.wh.b2",
+      "bookName": "Revolutions & Industrialization (1750-1900)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.wh.unit7",
+      "label": "Unit 7: Global Conflict (1900-Present)",
+      "type": "concept",
+      "description": "World War I, Russian Revolution, World War II, causes and consequences of global conflict",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.wh.b3",
+      "bookName": "Modern Era (1900-Present)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.wh.unit8",
+      "label": "Unit 8: Cold War & Decolonization (1900-Present)",
+      "type": "concept",
+      "description": "Cold War, decolonization, independence movements, proxy wars, non-aligned movement",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.wh.b3",
+      "bookName": "Modern Era (1900-Present)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.wh.unit9",
+      "label": "Unit 9: Globalization (1900-Present)",
+      "type": "concept",
+      "description": "Globalization, technology, environmental issues, human rights, global institutions",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.wh.b3",
+      "bookName": "Modern Era (1900-Present)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.wh.historical_reasoning",
+      "label": "Historical Reasoning Skills",
+      "type": "concept",
+      "description": "Comparison, causation, continuity/change over time, contextualization",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.wh.b1",
+      "bookName": "Pre-Modern & Early Modern (1200-1750)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.wh.source_analysis",
+      "label": "Source Analysis & Argumentation",
+      "type": "concept",
+      "description": "Analyzing primary/secondary sources, constructing historical arguments, DBQ/LEQ",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.wh.b1",
+      "bookName": "Pre-Modern & Early Modern (1200-1750)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.wh.trade_economics",
+      "label": "Trade & Economic Systems",
+      "type": "concept",
+      "description": "Mercantilism, capitalism, communism, economic exchanges across eras",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.wh.b2",
+      "bookName": "Revolutions & Industrialization (1750-1900)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.wh.cultural_exchange",
+      "label": "Cultural & Technological Exchange",
+      "type": "concept",
+      "description": "Diffusion of ideas, technology, religion, and culture across civilizations",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.wh.b1",
+      "bookName": "Pre-Modern & Early Modern (1200-1750)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.wh.governance_empires",
+      "label": "Governance & Empire Building",
+      "type": "concept",
+      "description": "State-building, legitimacy, bureaucracy, resistance to authority",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.wh.b2",
+      "bookName": "Revolutions & Industrialization (1750-1900)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    }
+  ],
+  "edges": [
+    { "source": "ap.wh.historical_reasoning", "target": "ap.wh.source_analysis", "relation": "prerequisite_for" },
+    { "source": "ap.wh.historical_reasoning", "target": "ap.wh.unit1", "relation": "prerequisite_for" },
+    { "source": "ap.wh.unit1", "target": "ap.wh.unit2", "relation": "prerequisite_for" },
+    { "source": "ap.wh.unit2", "target": "ap.wh.unit3", "relation": "prerequisite_for" },
+    { "source": "ap.wh.unit2", "target": "ap.wh.unit4", "relation": "prerequisite_for" },
+    { "source": "ap.wh.unit3", "target": "ap.wh.unit5", "relation": "prerequisite_for" },
+    { "source": "ap.wh.unit4", "target": "ap.wh.unit5", "relation": "prerequisite_for" },
+    { "source": "ap.wh.unit5", "target": "ap.wh.unit6", "relation": "prerequisite_for" },
+    { "source": "ap.wh.unit6", "target": "ap.wh.unit7", "relation": "prerequisite_for" },
+    { "source": "ap.wh.unit7", "target": "ap.wh.unit8", "relation": "prerequisite_for" },
+    { "source": "ap.wh.unit8", "target": "ap.wh.unit9", "relation": "prerequisite_for" },
+    { "source": "ap.wh.unit1", "target": "ap.wh.cultural_exchange", "relation": "prerequisite_for" },
+    { "source": "ap.wh.unit2", "target": "ap.wh.cultural_exchange", "relation": "prerequisite_for" },
+    { "source": "ap.wh.cultural_exchange", "target": "ap.wh.unit4", "relation": "prerequisite_for" },
+    { "source": "ap.wh.unit4", "target": "ap.wh.trade_economics", "relation": "prerequisite_for" },
+    { "source": "ap.wh.trade_economics", "target": "ap.wh.unit6", "relation": "prerequisite_for" },
+    { "source": "ap.wh.unit3", "target": "ap.wh.governance_empires", "relation": "prerequisite_for" },
+    { "source": "ap.wh.governance_empires", "target": "ap.wh.unit7", "relation": "prerequisite_for" },
+    { "source": "ap.wh.source_analysis", "target": "ap.wh.unit1", "relation": "prerequisite_for" }
+  ]
+}

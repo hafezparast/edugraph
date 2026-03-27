@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "domain": "history",
+    "curriculum": "AP European History",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "AP European History topics with prerequisite ordering, colored by era",
+    "sources": [
+      "College Board AP European History Course and Exam Description"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ap.eh.b1",
+      "name": "Renaissance to Enlightenment (1450-1789)",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "ap.eh.b2",
+      "name": "Revolution & Industry (1789-1914)",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "ap.eh.b3",
+      "name": "20th Century & Beyond (1914-Present)",
+      "color": "#3b82f6",
+      "order": 3
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ap.eh.unit1",
+      "label": "Unit 1: Renaissance & Exploration (1450-1648)",
+      "type": "concept",
+      "description": "Italian and Northern Renaissance, humanism, Age of Exploration, new monarchies",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.eh.b1",
+      "bookName": "Renaissance to Enlightenment (1450-1789)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.eh.unit2",
+      "label": "Unit 2: Reformation & Religious Wars (1450-1648)",
+      "type": "concept",
+      "description": "Protestant Reformation, Counter-Reformation, Wars of Religion, Thirty Years' War",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.eh.b1",
+      "bookName": "Renaissance to Enlightenment (1450-1789)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.eh.unit3",
+      "label": "Unit 3: Absolutism & Constitutionalism (1648-1789)",
+      "type": "concept",
+      "description": "Absolute monarchies, constitutionalism in England, balance of power",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.eh.b1",
+      "bookName": "Renaissance to Enlightenment (1450-1789)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.eh.unit4",
+      "label": "Unit 4: Scientific Revolution & Enlightenment (1648-1789)",
+      "type": "concept",
+      "description": "Scientific Revolution, Enlightenment thinkers, natural rights, social contract",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.eh.b1",
+      "bookName": "Renaissance to Enlightenment (1450-1789)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.eh.unit5",
+      "label": "Unit 5: French Revolution & Napoleon (1789-1815)",
+      "type": "concept",
+      "description": "Causes of French Revolution, radical phase, Napoleon, Congress of Vienna",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.eh.b2",
+      "bookName": "Revolution & Industry (1789-1914)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.eh.unit6",
+      "label": "Unit 6: Industrialization & Society (1815-1914)",
+      "type": "concept",
+      "description": "Industrial Revolution, urbanization, socialism, labor movements, social change",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.eh.b2",
+      "bookName": "Revolution & Industry (1789-1914)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.eh.unit7",
+      "label": "Unit 7: Nationalism & Imperialism (1815-1914)",
+      "type": "concept",
+      "description": "Nationalism, unification of Italy/Germany, new imperialism, alliances",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.eh.b2",
+      "bookName": "Revolution & Industry (1789-1914)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.eh.unit8",
+      "label": "Unit 8: 20th-Century Global Conflicts (1914-1945)",
+      "type": "concept",
+      "description": "World War I, interwar period, rise of totalitarianism, World War II, Holocaust",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.eh.b3",
+      "bookName": "20th Century & Beyond (1914-Present)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.eh.unit9",
+      "label": "Unit 9: Cold War & Contemporary Europe (1945-Present)",
+      "type": "concept",
+      "description": "Cold War in Europe, decolonization, EU, fall of communism, contemporary issues",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.eh.b3",
+      "bookName": "20th Century & Beyond (1914-Present)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.eh.historical_skills",
+      "label": "Historical Thinking & Writing",
+      "type": "concept",
+      "description": "Argumentation, source analysis, contextualization, DBQ and LEQ skills",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.eh.b1",
+      "bookName": "Renaissance to Enlightenment (1450-1789)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.eh.intellectual_movements",
+      "label": "Intellectual & Cultural Movements",
+      "type": "concept",
+      "description": "Humanism, Romanticism, Realism, modernism, existentialism across eras",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.eh.b1",
+      "bookName": "Renaissance to Enlightenment (1450-1789)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.eh.economic_change",
+      "label": "Economic Systems & Change",
+      "type": "concept",
+      "description": "Mercantilism, capitalism, socialism, communism, welfare state, EU economics",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.eh.b2",
+      "bookName": "Revolution & Industry (1789-1914)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.eh.political_ideologies",
+      "label": "Political Ideologies",
+      "type": "concept",
+      "description": "Liberalism, conservatism, socialism, fascism, communism",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.eh.b2",
+      "bookName": "Revolution & Industry (1789-1914)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.eh.social_change",
+      "label": "Social Change & Demographics",
+      "type": "concept",
+      "description": "Family structures, gender roles, migration, urbanization, class relations",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.eh.b3",
+      "bookName": "20th Century & Beyond (1914-Present)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    }
+  ],
+  "edges": [
+    { "source": "ap.eh.historical_skills", "target": "ap.eh.unit1", "relation": "prerequisite_for" },
+    { "source": "ap.eh.unit1", "target": "ap.eh.unit2", "relation": "prerequisite_for" },
+    { "source": "ap.eh.unit2", "target": "ap.eh.unit3", "relation": "prerequisite_for" },
+    { "source": "ap.eh.unit3", "target": "ap.eh.unit4", "relation": "prerequisite_for" },
+    { "source": "ap.eh.unit4", "target": "ap.eh.unit5", "relation": "prerequisite_for" },
+    { "source": "ap.eh.unit5", "target": "ap.eh.unit6", "relation": "prerequisite_for" },
+    { "source": "ap.eh.unit5", "target": "ap.eh.unit7", "relation": "prerequisite_for" },
+    { "source": "ap.eh.unit7", "target": "ap.eh.unit8", "relation": "prerequisite_for" },
+    { "source": "ap.eh.unit6", "target": "ap.eh.unit8", "relation": "prerequisite_for" },
+    { "source": "ap.eh.unit8", "target": "ap.eh.unit9", "relation": "prerequisite_for" },
+    { "source": "ap.eh.unit1", "target": "ap.eh.intellectual_movements", "relation": "prerequisite_for" },
+    { "source": "ap.eh.unit4", "target": "ap.eh.intellectual_movements", "relation": "prerequisite_for" },
+    { "source": "ap.eh.intellectual_movements", "target": "ap.eh.unit8", "relation": "prerequisite_for" },
+    { "source": "ap.eh.unit3", "target": "ap.eh.economic_change", "relation": "prerequisite_for" },
+    { "source": "ap.eh.economic_change", "target": "ap.eh.unit6", "relation": "prerequisite_for" },
+    { "source": "ap.eh.unit5", "target": "ap.eh.political_ideologies", "relation": "prerequisite_for" },
+    { "source": "ap.eh.political_ideologies", "target": "ap.eh.unit7", "relation": "prerequisite_for" },
+    { "source": "ap.eh.political_ideologies", "target": "ap.eh.unit8", "relation": "prerequisite_for" },
+    { "source": "ap.eh.unit6", "target": "ap.eh.social_change", "relation": "prerequisite_for" },
+    { "source": "ap.eh.social_change", "target": "ap.eh.unit9", "relation": "prerequisite_for" }
+  ]
+}

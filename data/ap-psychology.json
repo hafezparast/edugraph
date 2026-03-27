@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "domain": "psychology",
+    "curriculum": "AP Psychology",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "AP Psychology topics with prerequisite ordering, colored by unit group",
+    "sources": [
+      "College Board AP Psychology Course and Exam Description"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ap.psy.b1",
+      "name": "Foundations & Biological Bases",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "ap.psy.b2",
+      "name": "Sensation, Learning & Cognition",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "ap.psy.b3",
+      "name": "Development, Motivation & Personality",
+      "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "ap.psy.b4",
+      "name": "Clinical & Social Psychology",
+      "color": "#3b82f6",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ap.psy.scientific_foundations",
+      "label": "Scientific Foundations",
+      "type": "concept",
+      "description": "History of psychology, research methods, experimental design, ethics",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.psy.b1",
+      "bookName": "Foundations & Biological Bases",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.psy.biological_bases",
+      "label": "Biological Bases of Behavior",
+      "type": "concept",
+      "description": "Neurons, neurotransmitters, brain structure, nervous system, endocrine system",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.psy.b1",
+      "bookName": "Foundations & Biological Bases",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.psy.genetics_evolution",
+      "label": "Genetics & Evolutionary Psychology",
+      "type": "concept",
+      "description": "Behavioral genetics, twin studies, evolutionary psychology, nature vs nurture",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.psy.b1",
+      "bookName": "Foundations & Biological Bases",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.psy.sensation_perception",
+      "label": "Sensation & Perception",
+      "type": "concept",
+      "description": "Sensory processes, thresholds, visual/auditory processing, perceptual organization",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.psy.b2",
+      "bookName": "Sensation, Learning & Cognition",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.psy.consciousness",
+      "label": "States of Consciousness",
+      "type": "concept",
+      "description": "Sleep, dreams, hypnosis, psychoactive drugs, altered states",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.psy.b2",
+      "bookName": "Sensation, Learning & Cognition",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.psy.learning",
+      "label": "Learning",
+      "type": "concept",
+      "description": "Classical conditioning, operant conditioning, observational learning, reinforcement",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.psy.b2",
+      "bookName": "Sensation, Learning & Cognition",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.psy.memory",
+      "label": "Memory",
+      "type": "concept",
+      "description": "Encoding, storage, retrieval, memory models, forgetting, memory distortion",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.psy.b2",
+      "bookName": "Sensation, Learning & Cognition",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.psy.cognition",
+      "label": "Thinking, Language & Intelligence",
+      "type": "concept",
+      "description": "Problem solving, decision making, language development, intelligence theories, testing",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.psy.b2",
+      "bookName": "Sensation, Learning & Cognition",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.psy.developmental",
+      "label": "Developmental Psychology",
+      "type": "concept",
+      "description": "Prenatal development, Piaget, Erikson, Kohlberg, attachment, aging",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.psy.b3",
+      "bookName": "Development, Motivation & Personality",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.psy.motivation_emotion",
+      "label": "Motivation & Emotion",
+      "type": "concept",
+      "description": "Drive theory, Maslow's hierarchy, hunger, emotion theories, stress",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.psy.b3",
+      "bookName": "Development, Motivation & Personality",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.psy.personality",
+      "label": "Personality",
+      "type": "concept",
+      "description": "Psychoanalytic, humanistic, trait, social-cognitive theories; personality assessment",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.psy.b3",
+      "bookName": "Development, Motivation & Personality",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.psy.abnormal",
+      "label": "Abnormal Psychology",
+      "type": "concept",
+      "description": "Psychological disorders, DSM classification, anxiety, mood, schizophrenia, dissociative",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.psy.b4",
+      "bookName": "Clinical & Social Psychology",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.psy.treatment",
+      "label": "Treatment of Disorders",
+      "type": "concept",
+      "description": "Psychotherapy approaches, biomedical therapy, effectiveness of treatment",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.psy.b4",
+      "bookName": "Clinical & Social Psychology",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.psy.social",
+      "label": "Social Psychology",
+      "type": "concept",
+      "description": "Attribution, conformity, obedience, group behavior, prejudice, aggression, attraction",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.psy.b4",
+      "bookName": "Clinical & Social Psychology",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    }
+  ],
+  "edges": [
+    { "source": "ap.psy.scientific_foundations", "target": "ap.psy.biological_bases", "relation": "prerequisite_for" },
+    { "source": "ap.psy.biological_bases", "target": "ap.psy.genetics_evolution", "relation": "prerequisite_for" },
+    { "source": "ap.psy.biological_bases", "target": "ap.psy.sensation_perception", "relation": "prerequisite_for" },
+    { "source": "ap.psy.biological_bases", "target": "ap.psy.consciousness", "relation": "prerequisite_for" },
+    { "source": "ap.psy.sensation_perception", "target": "ap.psy.learning", "relation": "prerequisite_for" },
+    { "source": "ap.psy.consciousness", "target": "ap.psy.learning", "relation": "prerequisite_for" },
+    { "source": "ap.psy.learning", "target": "ap.psy.memory", "relation": "prerequisite_for" },
+    { "source": "ap.psy.memory", "target": "ap.psy.cognition", "relation": "prerequisite_for" },
+    { "source": "ap.psy.genetics_evolution", "target": "ap.psy.developmental", "relation": "prerequisite_for" },
+    { "source": "ap.psy.cognition", "target": "ap.psy.developmental", "relation": "prerequisite_for" },
+    { "source": "ap.psy.biological_bases", "target": "ap.psy.motivation_emotion", "relation": "prerequisite_for" },
+    { "source": "ap.psy.learning", "target": "ap.psy.motivation_emotion", "relation": "prerequisite_for" },
+    { "source": "ap.psy.developmental", "target": "ap.psy.personality", "relation": "prerequisite_for" },
+    { "source": "ap.psy.motivation_emotion", "target": "ap.psy.personality", "relation": "prerequisite_for" },
+    { "source": "ap.psy.personality", "target": "ap.psy.abnormal", "relation": "prerequisite_for" },
+    { "source": "ap.psy.biological_bases", "target": "ap.psy.abnormal", "relation": "prerequisite_for" },
+    { "source": "ap.psy.abnormal", "target": "ap.psy.treatment", "relation": "prerequisite_for" },
+    { "source": "ap.psy.learning", "target": "ap.psy.treatment", "relation": "prerequisite_for" },
+    { "source": "ap.psy.personality", "target": "ap.psy.social", "relation": "prerequisite_for" },
+    { "source": "ap.psy.cognition", "target": "ap.psy.social", "relation": "prerequisite_for" }
+  ]
+}

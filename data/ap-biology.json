@@ -1,0 +1,303 @@
+{
+  "metadata": {
+    "domain": "biology",
+    "curriculum": "AP Biology",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "AP Biology topics with prerequisite ordering, colored by unit group",
+    "sources": [
+      "College Board AP Biology Course and Exam Description"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ap.bio.b1",
+      "name": "Chemistry of Life & Cells",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "ap.bio.b2",
+      "name": "Energetics",
+      "color": "#22c55e",
+      "order": 2
+    },
+    {
+      "id": "ap.bio.b3",
+      "name": "Cell Communication & Cell Cycle",
+      "color": "#f97316",
+      "order": 3
+    },
+    {
+      "id": "ap.bio.b4",
+      "name": "Heredity & Gene Expression",
+      "color": "#3b82f6",
+      "order": 4
+    },
+    {
+      "id": "ap.bio.b5",
+      "name": "Evolution & Ecology",
+      "color": "#8b5cf6",
+      "order": 5
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ap.bio.biochemistry",
+      "label": "Chemistry of Life",
+      "type": "concept",
+      "description": "Water properties, macromolecules (carbohydrates, lipids, proteins, nucleic acids)",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b1",
+      "bookName": "Chemistry of Life & Cells",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.bio.cell_structure",
+      "label": "Cell Structure & Function",
+      "type": "concept",
+      "description": "Organelles, prokaryotic vs eukaryotic cells, endomembrane system",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b1",
+      "bookName": "Chemistry of Life & Cells",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.bio.cell_membrane",
+      "label": "Cell Membranes & Transport",
+      "type": "concept",
+      "description": "Fluid mosaic model, passive/active transport, osmosis, endocytosis/exocytosis",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b1",
+      "bookName": "Chemistry of Life & Cells",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.bio.enzymes",
+      "label": "Enzymes",
+      "type": "concept",
+      "description": "Enzyme structure, catalysis, factors affecting enzyme activity",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b2",
+      "bookName": "Energetics",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.bio.cellular_respiration",
+      "label": "Cellular Respiration",
+      "type": "concept",
+      "description": "Glycolysis, Krebs cycle, oxidative phosphorylation, fermentation",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b2",
+      "bookName": "Energetics",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.bio.photosynthesis",
+      "label": "Photosynthesis",
+      "type": "concept",
+      "description": "Light reactions, Calvin cycle, C3/C4/CAM plants",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b2",
+      "bookName": "Energetics",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.bio.cell_communication",
+      "label": "Cell Communication",
+      "type": "concept",
+      "description": "Signal transduction pathways, ligands, receptors, feedback mechanisms",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b3",
+      "bookName": "Cell Communication & Cell Cycle",
+      "bookColor": "#f97316",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.bio.cell_cycle",
+      "label": "Cell Cycle & Mitosis",
+      "type": "concept",
+      "description": "Mitosis, cytokinesis, cell cycle regulation, cancer",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b3",
+      "bookName": "Cell Communication & Cell Cycle",
+      "bookColor": "#f97316",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.bio.meiosis",
+      "label": "Meiosis & Genetic Diversity",
+      "type": "concept",
+      "description": "Meiosis, crossing over, independent assortment, sources of genetic variation",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b4",
+      "bookName": "Heredity & Gene Expression",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.bio.mendelian_genetics",
+      "label": "Mendelian Genetics",
+      "type": "concept",
+      "description": "Mendel's laws, Punnett squares, non-Mendelian inheritance patterns",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b4",
+      "bookName": "Heredity & Gene Expression",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.bio.dna_structure",
+      "label": "DNA Structure & Replication",
+      "type": "concept",
+      "description": "DNA double helix, semiconservative replication, DNA repair",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b4",
+      "bookName": "Heredity & Gene Expression",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.bio.gene_expression",
+      "label": "Gene Expression (Transcription & Translation)",
+      "type": "concept",
+      "description": "Transcription, RNA processing, translation, gene regulation",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b4",
+      "bookName": "Heredity & Gene Expression",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.bio.gene_regulation",
+      "label": "Gene Regulation",
+      "type": "concept",
+      "description": "Operons, epigenetics, regulatory RNA, differential gene expression",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b4",
+      "bookName": "Heredity & Gene Expression",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.bio.biotechnology",
+      "label": "Biotechnology",
+      "type": "concept",
+      "description": "PCR, gel electrophoresis, gene cloning, CRISPR, genomics",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b4",
+      "bookName": "Heredity & Gene Expression",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.bio.natural_selection",
+      "label": "Natural Selection",
+      "type": "concept",
+      "description": "Darwin's theory, fitness, adaptation, types of selection",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b5",
+      "bookName": "Evolution & Ecology",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5
+    },
+    {
+      "id": "ap.bio.evolution_evidence",
+      "label": "Evidence for Evolution",
+      "type": "concept",
+      "description": "Fossil record, comparative anatomy, molecular evidence, biogeography",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b5",
+      "bookName": "Evolution & Ecology",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5
+    },
+    {
+      "id": "ap.bio.population_genetics",
+      "label": "Population Genetics",
+      "type": "concept",
+      "description": "Hardy-Weinberg, genetic drift, gene flow, speciation",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b5",
+      "bookName": "Evolution & Ecology",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5
+    },
+    {
+      "id": "ap.bio.phylogeny",
+      "label": "Phylogeny & Classification",
+      "type": "concept",
+      "description": "Cladograms, phylogenetic trees, shared derived characters",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b5",
+      "bookName": "Evolution & Ecology",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5
+    },
+    {
+      "id": "ap.bio.ecology",
+      "label": "Ecology",
+      "type": "concept",
+      "description": "Ecosystems, food webs, energy flow, biogeochemical cycles, community interactions",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.bio.b5",
+      "bookName": "Evolution & Ecology",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5
+    }
+  ],
+  "edges": [
+    { "source": "ap.bio.biochemistry", "target": "ap.bio.cell_structure", "relation": "prerequisite_for" },
+    { "source": "ap.bio.cell_structure", "target": "ap.bio.cell_membrane", "relation": "prerequisite_for" },
+    { "source": "ap.bio.biochemistry", "target": "ap.bio.enzymes", "relation": "prerequisite_for" },
+    { "source": "ap.bio.cell_membrane", "target": "ap.bio.enzymes", "relation": "prerequisite_for" },
+    { "source": "ap.bio.enzymes", "target": "ap.bio.cellular_respiration", "relation": "prerequisite_for" },
+    { "source": "ap.bio.enzymes", "target": "ap.bio.photosynthesis", "relation": "prerequisite_for" },
+    { "source": "ap.bio.cellular_respiration", "target": "ap.bio.photosynthesis", "relation": "prerequisite_for" },
+    { "source": "ap.bio.cell_membrane", "target": "ap.bio.cell_communication", "relation": "prerequisite_for" },
+    { "source": "ap.bio.cell_communication", "target": "ap.bio.cell_cycle", "relation": "prerequisite_for" },
+    { "source": "ap.bio.cell_structure", "target": "ap.bio.cell_cycle", "relation": "prerequisite_for" },
+    { "source": "ap.bio.cell_cycle", "target": "ap.bio.meiosis", "relation": "prerequisite_for" },
+    { "source": "ap.bio.meiosis", "target": "ap.bio.mendelian_genetics", "relation": "prerequisite_for" },
+    { "source": "ap.bio.biochemistry", "target": "ap.bio.dna_structure", "relation": "prerequisite_for" },
+    { "source": "ap.bio.cell_cycle", "target": "ap.bio.dna_structure", "relation": "prerequisite_for" },
+    { "source": "ap.bio.dna_structure", "target": "ap.bio.gene_expression", "relation": "prerequisite_for" },
+    { "source": "ap.bio.gene_expression", "target": "ap.bio.gene_regulation", "relation": "prerequisite_for" },
+    { "source": "ap.bio.gene_regulation", "target": "ap.bio.biotechnology", "relation": "prerequisite_for" },
+    { "source": "ap.bio.dna_structure", "target": "ap.bio.biotechnology", "relation": "prerequisite_for" },
+    { "source": "ap.bio.mendelian_genetics", "target": "ap.bio.natural_selection", "relation": "prerequisite_for" },
+    { "source": "ap.bio.natural_selection", "target": "ap.bio.evolution_evidence", "relation": "prerequisite_for" },
+    { "source": "ap.bio.mendelian_genetics", "target": "ap.bio.population_genetics", "relation": "prerequisite_for" },
+    { "source": "ap.bio.natural_selection", "target": "ap.bio.population_genetics", "relation": "prerequisite_for" },
+    { "source": "ap.bio.evolution_evidence", "target": "ap.bio.phylogeny", "relation": "prerequisite_for" },
+    { "source": "ap.bio.population_genetics", "target": "ap.bio.phylogeny", "relation": "prerequisite_for" },
+    { "source": "ap.bio.photosynthesis", "target": "ap.bio.ecology", "relation": "prerequisite_for" },
+    { "source": "ap.bio.population_genetics", "target": "ap.bio.ecology", "relation": "prerequisite_for" }
+  ]
+}

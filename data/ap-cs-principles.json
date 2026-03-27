@@ -1,0 +1,182 @@
+{
+  "metadata": {
+    "domain": "computer_science",
+    "curriculum": "AP Computer Science Principles",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "AP Computer Science Principles topics with prerequisite ordering, colored by unit group",
+    "sources": [
+      "College Board AP Computer Science Principles Course and Exam Description"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ap.csp.b1",
+      "name": "Creative Development & Data",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "ap.csp.b2",
+      "name": "Algorithms & Programming",
+      "color": "#22c55e",
+      "order": 2
+    },
+    {
+      "id": "ap.csp.b3",
+      "name": "Computing Systems & Impact",
+      "color": "#3b82f6",
+      "order": 3
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ap.csp.creative_development",
+      "label": "Creative Development",
+      "type": "concept",
+      "description": "Collaboration, program design, development process, documentation",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csp.b1",
+      "bookName": "Creative Development & Data",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.csp.data_binary",
+      "label": "Data & Binary",
+      "type": "concept",
+      "description": "Binary, data representation, compression, digital information",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csp.b1",
+      "bookName": "Creative Development & Data",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.csp.data_analysis",
+      "label": "Data Analysis",
+      "type": "concept",
+      "description": "Extracting information from data, metadata, data visualization, cleaning data",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csp.b1",
+      "bookName": "Creative Development & Data",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.csp.variables_assignments",
+      "label": "Variables & Assignments",
+      "type": "concept",
+      "description": "Variables, data types, assignment statements, expressions",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csp.b2",
+      "bookName": "Algorithms & Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.csp.algorithms",
+      "label": "Algorithms",
+      "type": "concept",
+      "description": "Sequencing, selection, iteration, algorithm efficiency, search algorithms",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csp.b2",
+      "bookName": "Algorithms & Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.csp.procedures",
+      "label": "Procedures & Abstraction",
+      "type": "concept",
+      "description": "Defining procedures, parameters, return values, procedural abstraction",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csp.b2",
+      "bookName": "Algorithms & Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.csp.lists",
+      "label": "Lists & Collections",
+      "type": "concept",
+      "description": "Lists, list operations, traversals, filtering, transforming data",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csp.b2",
+      "bookName": "Algorithms & Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.csp.simulations",
+      "label": "Simulations",
+      "type": "concept",
+      "description": "Using programs to simulate real-world phenomena, random values",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csp.b2",
+      "bookName": "Algorithms & Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.csp.internet",
+      "label": "The Internet & Networks",
+      "type": "concept",
+      "description": "Internet protocols, TCP/IP, DNS, HTTP, routing, bandwidth",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csp.b3",
+      "bookName": "Computing Systems & Impact",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.csp.cybersecurity",
+      "label": "Cybersecurity",
+      "type": "concept",
+      "description": "Encryption, authentication, phishing, malware, digital security",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csp.b3",
+      "bookName": "Computing Systems & Impact",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.csp.computing_impact",
+      "label": "Impact of Computing",
+      "type": "concept",
+      "description": "Digital divide, bias in computing, legal/ethical issues, crowdsourcing",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csp.b3",
+      "bookName": "Computing Systems & Impact",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    }
+  ],
+  "edges": [
+    { "source": "ap.csp.creative_development", "target": "ap.csp.data_binary", "relation": "prerequisite_for" },
+    { "source": "ap.csp.data_binary", "target": "ap.csp.data_analysis", "relation": "prerequisite_for" },
+    { "source": "ap.csp.creative_development", "target": "ap.csp.variables_assignments", "relation": "prerequisite_for" },
+    { "source": "ap.csp.variables_assignments", "target": "ap.csp.algorithms", "relation": "prerequisite_for" },
+    { "source": "ap.csp.algorithms", "target": "ap.csp.procedures", "relation": "prerequisite_for" },
+    { "source": "ap.csp.algorithms", "target": "ap.csp.lists", "relation": "prerequisite_for" },
+    { "source": "ap.csp.procedures", "target": "ap.csp.simulations", "relation": "prerequisite_for" },
+    { "source": "ap.csp.lists", "target": "ap.csp.simulations", "relation": "prerequisite_for" },
+    { "source": "ap.csp.data_binary", "target": "ap.csp.internet", "relation": "prerequisite_for" },
+    { "source": "ap.csp.internet", "target": "ap.csp.cybersecurity", "relation": "prerequisite_for" },
+    { "source": "ap.csp.cybersecurity", "target": "ap.csp.computing_impact", "relation": "prerequisite_for" },
+    { "source": "ap.csp.data_analysis", "target": "ap.csp.computing_impact", "relation": "prerequisite_for" },
+    { "source": "ap.csp.simulations", "target": "ap.csp.computing_impact", "relation": "prerequisite_for" }
+  ]
+}

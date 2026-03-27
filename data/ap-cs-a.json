@@ -1,0 +1,217 @@
+{
+  "metadata": {
+    "domain": "computer_science",
+    "curriculum": "AP Computer Science A",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "AP Computer Science A topics with prerequisite ordering, colored by unit group",
+    "sources": [
+      "College Board AP Computer Science A Course and Exam Description"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ap.csa.b1",
+      "name": "Fundamentals",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "ap.csa.b2",
+      "name": "Control Structures & Classes",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "ap.csa.b3",
+      "name": "Data Structures",
+      "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "ap.csa.b4",
+      "name": "Advanced OOP & Recursion",
+      "color": "#3b82f6",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ap.csa.primitive_types",
+      "label": "Primitive Types",
+      "type": "concept",
+      "description": "int, double, boolean; variable declaration, assignment, arithmetic operators",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csa.b1",
+      "bookName": "Fundamentals",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.csa.using_objects",
+      "label": "Using Objects",
+      "type": "concept",
+      "description": "Creating objects, calling methods, String class, wrapper classes",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csa.b1",
+      "bookName": "Fundamentals",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.csa.boolean_conditionals",
+      "label": "Boolean Expressions & Conditionals",
+      "type": "concept",
+      "description": "Boolean operators, if/else/else-if statements, comparing objects",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csa.b2",
+      "bookName": "Control Structures & Classes",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.csa.iteration",
+      "label": "Iteration",
+      "type": "concept",
+      "description": "while loops, for loops, do-while, nested loops, loop analysis",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csa.b2",
+      "bookName": "Control Structures & Classes",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.csa.writing_classes",
+      "label": "Writing Classes",
+      "type": "concept",
+      "description": "Instance variables, constructors, methods, access modifiers, this keyword",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csa.b2",
+      "bookName": "Control Structures & Classes",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.csa.string_methods",
+      "label": "String Methods",
+      "type": "concept",
+      "description": "String methods, string traversal, substring, indexOf, compareTo",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csa.b2",
+      "bookName": "Control Structures & Classes",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.csa.arrays",
+      "label": "Arrays",
+      "type": "concept",
+      "description": "Array creation, traversal, common algorithms (search, sort)",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csa.b3",
+      "bookName": "Data Structures",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.csa.arraylist",
+      "label": "ArrayList",
+      "type": "concept",
+      "description": "ArrayList methods, traversal, autoboxing, wrapper classes",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csa.b3",
+      "bookName": "Data Structures",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.csa.2d_arrays",
+      "label": "2D Arrays",
+      "type": "concept",
+      "description": "2D array creation, traversal (row-major, column-major), nested loops",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csa.b3",
+      "bookName": "Data Structures",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.csa.searching_sorting",
+      "label": "Searching & Sorting",
+      "type": "concept",
+      "description": "Sequential search, binary search, selection sort, insertion sort, merge sort",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csa.b3",
+      "bookName": "Data Structures",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.csa.inheritance",
+      "label": "Inheritance",
+      "type": "concept",
+      "description": "Subclasses, super keyword, overriding methods, polymorphism",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csa.b4",
+      "bookName": "Advanced OOP & Recursion",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.csa.abstract_interfaces",
+      "label": "Abstract Classes & Interfaces",
+      "type": "concept",
+      "description": "Abstract classes, interfaces, Comparable, class hierarchies",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csa.b4",
+      "bookName": "Advanced OOP & Recursion",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.csa.recursion",
+      "label": "Recursion",
+      "type": "concept",
+      "description": "Recursive methods, base case, recursive case, tracing recursive calls",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.csa.b4",
+      "bookName": "Advanced OOP & Recursion",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    }
+  ],
+  "edges": [
+    { "source": "ap.csa.primitive_types", "target": "ap.csa.using_objects", "relation": "prerequisite_for" },
+    { "source": "ap.csa.primitive_types", "target": "ap.csa.boolean_conditionals", "relation": "prerequisite_for" },
+    { "source": "ap.csa.boolean_conditionals", "target": "ap.csa.iteration", "relation": "prerequisite_for" },
+    { "source": "ap.csa.using_objects", "target": "ap.csa.writing_classes", "relation": "prerequisite_for" },
+    { "source": "ap.csa.iteration", "target": "ap.csa.writing_classes", "relation": "prerequisite_for" },
+    { "source": "ap.csa.using_objects", "target": "ap.csa.string_methods", "relation": "prerequisite_for" },
+    { "source": "ap.csa.iteration", "target": "ap.csa.string_methods", "relation": "prerequisite_for" },
+    { "source": "ap.csa.iteration", "target": "ap.csa.arrays", "relation": "prerequisite_for" },
+    { "source": "ap.csa.arrays", "target": "ap.csa.arraylist", "relation": "prerequisite_for" },
+    { "source": "ap.csa.using_objects", "target": "ap.csa.arraylist", "relation": "prerequisite_for" },
+    { "source": "ap.csa.arrays", "target": "ap.csa.2d_arrays", "relation": "prerequisite_for" },
+    { "source": "ap.csa.arrays", "target": "ap.csa.searching_sorting", "relation": "prerequisite_for" },
+    { "source": "ap.csa.arraylist", "target": "ap.csa.searching_sorting", "relation": "prerequisite_for" },
+    { "source": "ap.csa.writing_classes", "target": "ap.csa.inheritance", "relation": "prerequisite_for" },
+    { "source": "ap.csa.inheritance", "target": "ap.csa.abstract_interfaces", "relation": "prerequisite_for" },
+    { "source": "ap.csa.iteration", "target": "ap.csa.recursion", "relation": "prerequisite_for" },
+    { "source": "ap.csa.writing_classes", "target": "ap.csa.recursion", "relation": "prerequisite_for" },
+    { "source": "ap.csa.searching_sorting", "target": "ap.csa.recursion", "relation": "prerequisite_for" }
+  ]
+}

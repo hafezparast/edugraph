@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "domain": "geography",
+    "curriculum": "AP Human Geography",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "AP Human Geography topics with prerequisite ordering, colored by unit group",
+    "sources": [
+      "College Board AP Human Geography Course and Exam Description"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ap.hg.b1",
+      "name": "Thinking Geographically & Population",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "ap.hg.b2",
+      "name": "Culture & Political Geography",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "ap.hg.b3",
+      "name": "Agriculture, Urbanization & Development",
+      "color": "#3b82f6",
+      "order": 3
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ap.hg.geographic_thinking",
+      "label": "Thinking Geographically",
+      "type": "concept",
+      "description": "Maps, spatial concepts, scale, regionalization, geographic data",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.hg.b1",
+      "bookName": "Thinking Geographically & Population",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.hg.population_distribution",
+      "label": "Population Distribution & Density",
+      "type": "concept",
+      "description": "Population distribution, density measures, factors affecting settlement",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.hg.b1",
+      "bookName": "Thinking Geographically & Population",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.hg.population_change",
+      "label": "Population Composition & Change",
+      "type": "concept",
+      "description": "Demographic transition model, population pyramids, migration, growth rates",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.hg.b1",
+      "bookName": "Thinking Geographically & Population",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.hg.migration",
+      "label": "Migration",
+      "type": "concept",
+      "description": "Push/pull factors, voluntary/forced migration, immigration policies, refugees",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.hg.b1",
+      "bookName": "Thinking Geographically & Population",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.hg.cultural_landscapes",
+      "label": "Cultural Landscapes",
+      "type": "concept",
+      "description": "Cultural traits, diffusion, acculturation, cultural landscapes, folk vs popular culture",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.hg.b2",
+      "bookName": "Culture & Political Geography",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.hg.language_religion",
+      "label": "Language & Religion",
+      "type": "concept",
+      "description": "Language families, linguistic diffusion, universalizing vs ethnic religions",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.hg.b2",
+      "bookName": "Culture & Political Geography",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.hg.ethnicity_identity",
+      "label": "Ethnicity & Identity",
+      "type": "concept",
+      "description": "Race, ethnicity, nationalism, ethnic conflicts, identity formation",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.hg.b2",
+      "bookName": "Culture & Political Geography",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.hg.political_geography",
+      "label": "Political Geography",
+      "type": "concept",
+      "description": "State, nation, sovereignty, boundaries, supranational organizations, geopolitics",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.hg.b2",
+      "bookName": "Culture & Political Geography",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.hg.agriculture_origins",
+      "label": "Agriculture & Rural Land Use",
+      "type": "concept",
+      "description": "Agricultural origins, Von Thunen model, Green Revolution, agribusiness, subsistence farming",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.hg.b3",
+      "bookName": "Agriculture, Urbanization & Development",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.hg.food_production",
+      "label": "Food Production & Sustainability",
+      "type": "concept",
+      "description": "Food security, industrial agriculture, organic farming, GMOs, environmental impact",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.hg.b3",
+      "bookName": "Agriculture, Urbanization & Development",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.hg.urbanization",
+      "label": "Urbanization",
+      "type": "concept",
+      "description": "Urbanization patterns, city models, suburbanization, megacities, urban challenges",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.hg.b3",
+      "bookName": "Agriculture, Urbanization & Development",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.hg.urban_design",
+      "label": "Urban Design & Sustainability",
+      "type": "concept",
+      "description": "Urban planning, smart growth, new urbanism, transportation, gentrification",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.hg.b3",
+      "bookName": "Agriculture, Urbanization & Development",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.hg.industrialization",
+      "label": "Industrialization & Development",
+      "type": "concept",
+      "description": "Development indicators, HDI, models of development, industrialization patterns",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.hg.b3",
+      "bookName": "Agriculture, Urbanization & Development",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.hg.globalization",
+      "label": "Globalization & Development Strategies",
+      "type": "concept",
+      "description": "Globalization, trade, international development strategies, sustainability",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.hg.b3",
+      "bookName": "Agriculture, Urbanization & Development",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    }
+  ],
+  "edges": [
+    { "source": "ap.hg.geographic_thinking", "target": "ap.hg.population_distribution", "relation": "prerequisite_for" },
+    { "source": "ap.hg.population_distribution", "target": "ap.hg.population_change", "relation": "prerequisite_for" },
+    { "source": "ap.hg.population_change", "target": "ap.hg.migration", "relation": "prerequisite_for" },
+    { "source": "ap.hg.geographic_thinking", "target": "ap.hg.cultural_landscapes", "relation": "prerequisite_for" },
+    { "source": "ap.hg.migration", "target": "ap.hg.cultural_landscapes", "relation": "prerequisite_for" },
+    { "source": "ap.hg.cultural_landscapes", "target": "ap.hg.language_religion", "relation": "prerequisite_for" },
+    { "source": "ap.hg.language_religion", "target": "ap.hg.ethnicity_identity", "relation": "prerequisite_for" },
+    { "source": "ap.hg.ethnicity_identity", "target": "ap.hg.political_geography", "relation": "prerequisite_for" },
+    { "source": "ap.hg.population_change", "target": "ap.hg.political_geography", "relation": "prerequisite_for" },
+    { "source": "ap.hg.population_distribution", "target": "ap.hg.agriculture_origins", "relation": "prerequisite_for" },
+    { "source": "ap.hg.cultural_landscapes", "target": "ap.hg.agriculture_origins", "relation": "prerequisite_for" },
+    { "source": "ap.hg.agriculture_origins", "target": "ap.hg.food_production", "relation": "prerequisite_for" },
+    { "source": "ap.hg.population_change", "target": "ap.hg.urbanization", "relation": "prerequisite_for" },
+    { "source": "ap.hg.migration", "target": "ap.hg.urbanization", "relation": "prerequisite_for" },
+    { "source": "ap.hg.urbanization", "target": "ap.hg.urban_design", "relation": "prerequisite_for" },
+    { "source": "ap.hg.political_geography", "target": "ap.hg.industrialization", "relation": "prerequisite_for" },
+    { "source": "ap.hg.urbanization", "target": "ap.hg.industrialization", "relation": "prerequisite_for" },
+    { "source": "ap.hg.industrialization", "target": "ap.hg.globalization", "relation": "prerequisite_for" },
+    { "source": "ap.hg.food_production", "target": "ap.hg.globalization", "relation": "prerequisite_for" },
+    { "source": "ap.hg.urban_design", "target": "ap.hg.globalization", "relation": "prerequisite_for" }
+  ]
+}

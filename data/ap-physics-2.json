@@ -1,0 +1,254 @@
+{
+  "metadata": {
+    "domain": "physics",
+    "curriculum": "AP Physics 2: Algebra-Based",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "AP Physics 2 topics with prerequisite ordering, colored by unit group",
+    "sources": [
+      "College Board AP Physics 2 Course and Exam Description"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ap.phy2.b1",
+      "name": "Thermodynamics & Fluids",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "ap.phy2.b2",
+      "name": "Electricity",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "ap.phy2.b3",
+      "name": "Magnetism & Optics",
+      "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "ap.phy2.b4",
+      "name": "Waves & Modern Physics",
+      "color": "#3b82f6",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ap.phy2.thermodynamics",
+      "label": "Thermodynamics",
+      "type": "concept",
+      "description": "Temperature, heat transfer, thermal equilibrium, specific heat",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.phy2.b1",
+      "bookName": "Thermodynamics & Fluids",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.phy2.ideal_gas",
+      "label": "Ideal Gas Law & Kinetic Theory",
+      "type": "concept",
+      "description": "Ideal gas law, kinetic molecular theory, PV diagrams",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.phy2.b1",
+      "bookName": "Thermodynamics & Fluids",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.phy2.laws_of_thermo",
+      "label": "Laws of Thermodynamics",
+      "type": "concept",
+      "description": "First and second laws, entropy, heat engines, efficiency",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.phy2.b1",
+      "bookName": "Thermodynamics & Fluids",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "ap.phy2.electric_charge",
+      "label": "Electric Charge & Force",
+      "type": "concept",
+      "description": "Coulomb's law, charge conservation, conductors and insulators",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.phy2.b2",
+      "bookName": "Electricity",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.phy2.electric_field",
+      "label": "Electric Fields",
+      "type": "concept",
+      "description": "Electric field concept, field lines, superposition of fields",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.phy2.b2",
+      "bookName": "Electricity",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.phy2.electric_potential",
+      "label": "Electric Potential & Potential Energy",
+      "type": "concept",
+      "description": "Voltage, equipotential lines, potential energy of charge configurations",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.phy2.b2",
+      "bookName": "Electricity",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.phy2.capacitors",
+      "label": "Capacitors & Dielectrics",
+      "type": "concept",
+      "description": "Capacitance, parallel plate capacitors, dielectrics, energy stored",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.phy2.b2",
+      "bookName": "Electricity",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.phy2.current_resistance",
+      "label": "Current, Resistance & Ohm's Law",
+      "type": "concept",
+      "description": "Electric current, resistance, Ohm's law, resistivity",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.phy2.b2",
+      "bookName": "Electricity",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.phy2.dc_circuits",
+      "label": "DC Circuits",
+      "type": "concept",
+      "description": "Series and parallel circuits, Kirchhoff's rules, RC circuits",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.phy2.b2",
+      "bookName": "Electricity",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "ap.phy2.magnetic_fields",
+      "label": "Magnetic Fields & Forces",
+      "type": "concept",
+      "description": "Magnetic fields, force on moving charges and current-carrying wires",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.phy2.b3",
+      "bookName": "Magnetism & Optics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.phy2.electromagnetic_induction",
+      "label": "Electromagnetic Induction",
+      "type": "concept",
+      "description": "Faraday's law, Lenz's law, induced EMF",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.phy2.b3",
+      "bookName": "Magnetism & Optics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.phy2.geometric_optics",
+      "label": "Geometric Optics",
+      "type": "concept",
+      "description": "Reflection, refraction, Snell's law, mirrors and lenses",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.phy2.b3",
+      "bookName": "Magnetism & Optics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ap.phy2.wave_optics",
+      "label": "Wave Optics",
+      "type": "concept",
+      "description": "Interference, diffraction, double-slit experiment, thin films",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.phy2.b4",
+      "bookName": "Waves & Modern Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.phy2.em_waves",
+      "label": "Electromagnetic Waves",
+      "type": "concept",
+      "description": "EM spectrum, properties of electromagnetic waves",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.phy2.b4",
+      "bookName": "Waves & Modern Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.phy2.quantum",
+      "label": "Quantum Physics",
+      "type": "concept",
+      "description": "Photoelectric effect, photons, wave-particle duality, de Broglie",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.phy2.b4",
+      "bookName": "Waves & Modern Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "ap.phy2.atomic_nuclear",
+      "label": "Atomic & Nuclear Physics",
+      "type": "concept",
+      "description": "Atomic models, energy levels, radioactive decay, nuclear reactions",
+      "grade_range": ["AP"],
+      "tags": ["subtopic"],
+      "book": "ap.phy2.b4",
+      "bookName": "Waves & Modern Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    }
+  ],
+  "edges": [
+    { "source": "ap.phy2.thermodynamics", "target": "ap.phy2.ideal_gas", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.ideal_gas", "target": "ap.phy2.laws_of_thermo", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.electric_charge", "target": "ap.phy2.electric_field", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.electric_field", "target": "ap.phy2.electric_potential", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.electric_potential", "target": "ap.phy2.capacitors", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.electric_potential", "target": "ap.phy2.current_resistance", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.current_resistance", "target": "ap.phy2.dc_circuits", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.capacitors", "target": "ap.phy2.dc_circuits", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.electric_charge", "target": "ap.phy2.magnetic_fields", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.current_resistance", "target": "ap.phy2.magnetic_fields", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.magnetic_fields", "target": "ap.phy2.electromagnetic_induction", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.dc_circuits", "target": "ap.phy2.electromagnetic_induction", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.electromagnetic_induction", "target": "ap.phy2.em_waves", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.thermodynamics", "target": "ap.phy2.geometric_optics", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.geometric_optics", "target": "ap.phy2.wave_optics", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.em_waves", "target": "ap.phy2.wave_optics", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.wave_optics", "target": "ap.phy2.quantum", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.quantum", "target": "ap.phy2.atomic_nuclear", "relation": "prerequisite_for" },
+    { "source": "ap.phy2.laws_of_thermo", "target": "ap.phy2.electric_charge", "relation": "prerequisite_for" }
+  ]
+}
