@@ -546,6 +546,26 @@ LANG_OVERRIDES = {
             ("a1_1.k.personal_pronouns", "a1_1.k.basic_sentence_svo"),
         ],
     },
+    "ta": {
+        "add_nodes": [
+            ("a1_1", "k", "tamil_script", "Tamil Script (247 Characters)", ["script"]),
+            ("a1_1", "k", "vowels_consonants", "Uyir and Mei Letters", ["script", "phonology"]),
+            ("a1_2", "k", "combined_letters", "Uyirmei Combined Letters", ["script"]),
+            ("a2_1", "k", "verb_conjugation_classes", "Verb Classes and Conjugation", ["grammar", "verbs"]),
+            ("a2_1", "k", "case_markers", "Case Markers (Vetrumai Urubugal)", ["grammar"]),
+        ],
+        "remove_nodes": ["alphabet_phonics", "articles_demonstratives"],
+        "add_edges": [
+            ("a1_1.k.tamil_script", "a1_1.k.vowels_consonants"),
+            ("a1_1.k.vowels_consonants", "a1_2.k.combined_letters"),
+            ("a1_1.k.tamil_script", "a1_1.s.copy_words"),
+            ("a1_2.k.combined_letters", "a1_2.s.fill_simple_form"),
+            ("a1_2.k.present_simple_regular", "a2_1.k.verb_conjugation_classes"),
+            ("a2_1.k.verb_conjugation_classes", "a2_1.s.narrate_past_events"),
+            ("a1_1.k.basic_nouns", "a2_1.k.case_markers"),
+            ("a2_1.k.case_markers", "a2_1.s.write_short_message"),
+        ],
+    },
     # English and default — no overrides needed
     "en": {},
 }
@@ -566,6 +586,7 @@ LANGUAGES = {
     "ko": {"name": "Korean", "native": "한국어", "flag": "🇰🇷"},
     "tr": {"name": "Turkish", "native": "Türkçe", "flag": "🇹🇷"},
     "zh": {"name": "Mandarin Chinese", "native": "中文", "flag": "🇨🇳"},
+    "ta": {"name": "Tamil", "native": "தமிழ்", "flag": "🇮🇳"},
 }
 
 
