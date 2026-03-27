@@ -48,16 +48,120 @@ def generate(name, config):
             "book": n["book"],
             "bookName": b.get("name", ""),
             "bookOrder": b.get("order", 0),
-            "r": 4 + b.get("order", 0) * 0.8,
+            "r": 4 + min(b.get("order", 0), 20) * 0.8,
             "pages": n.get("pages", ""),
             "description": n.get("description", ""),
         })
 
     d3_edges = [{"source": e["source"], "target": e["target"]} for e in data["edges"]]
 
+    # Auto-detect topic strands from node labels
+    STRAND_KEYWORDS = [
+        ("Numbers & Counting", ["number", "counting", "integer", "digit", "place value"]),
+        ("Arithmetic", ["addition", "subtraction", "multiplication", "division", "operation"]),
+        ("Fractions", ["fraction", "improper", "mixed number"]),
+        ("Decimals", ["decimal", "hundredths"]),
+        ("Percentages", ["percent"]),
+        ("Algebra", ["algebra", "expression", "variable", "unknown", "substitution", "bracket", "expansion", "factoris"]),
+        ("Equations", ["equation", "simultaneous", "linear eq", "quadratic eq", "formula"]),
+        ("Inequalities", ["inequalit", "region"]),
+        ("Functions & Graphs", ["function", "graph", "gradient", "curve", "parabola", "reciprocal", "hyperbola"]),
+        ("Indices & Logarithms", ["indices", "index", "logarithm", "exponential", "surd", "power", "root"]),
+        ("Sequences & Series", ["sequence", "pattern", "progression", "series", "binomial"]),
+        ("Ratio & Proportion", ["ratio", "proportion", "rate", "variation", "scale"]),
+        ("Money & Finance", ["money", "currency", "profit", "loss", "discount", "interest", "dividend", "invoice", "tax", "insurance", "invest", "credit", "debt", "financial"]),
+        ("Time", ["time", "duration", "calendar", "clock", "hour", "minute", "day", "week", "month", "year", "century", "decade", "time zone"]),
+        ("Measurement", ["length", "mass", "volume", "weight", "litre", "gram", "metre", "kilometre", "centimetre", "millimetre", "unit"]),
+        ("Geometry", ["angle", "line", "triangle", "quadrilateral", "polygon", "circle", "shape", "prism", "construction", "congruence", "loci"]),
+        ("Symmetry & Transformations", ["symmetry", "reflection", "rotation", "translation", "transformation", "enlargement", "tessellation", "isometr"]),
+        ("Perimeter, Area & Volume", ["perimeter", "area", "surface", "volume", "sector", "arc"]),
+        ("Trigonometry", ["trigonometric", "sine", "cosine", "tangent", "bearing", "circular measure", "radian"]),
+        ("Pythagoras & Similarity", ["pythagoras", "similar", "congruence"]),
+        ("Coordinate Geometry", ["coordinate", "midpoint", "distance", "cartesian"]),
+        ("Vectors & Matrices", ["vector", "matri"]),
+        ("Statistics", ["data", "average", "mean", "median", "mode", "range", "frequency", "histogram", "pie chart", "bar chart", "pictograph", "scatter", "dispersion", "quartile", "cumulative"]),
+        ("Probability", ["probability", "likelihood", "certain", "impossible", "likely", "tree diagram", "venn", "conditional", "combined event", "permutation", "combination", "factorial"]),
+        ("Calculus", ["derivative", "differentiation", "integration", "integral", "limit", "continuity", "maclaurin", "differential equation", "gradient function", "chain rule", "product rule", "quotient rule", "stationary"]),
+        ("Kinematics", ["kinematic", "velocity", "acceleration", "displacement"]),
+        ("Sets & Logic", ["set", "venn diagram", "universal", "complement", "union", "intersection", "statement", "argument", "logical"]),
+        ("Number Bases", ["number base", "binary"]),
+        ("Graph Theory", ["network", "graph theory"]),
+        ("Mathematical Modeling", ["model"]),
+    ]
+
+    STRAND_COLORS = [
+        "#ef4444", "#f97316", "#f59e0b", "#eab308", "#84cc16",
+        "#22c55e", "#10b981", "#14b8a6", "#06b6d4", "#0ea5e9",
+        "#3b82f6", "#6366f1", "#8b5cf6", "#a855f7", "#d946ef",
+        "#ec4899", "#f43f5e", "#fb923c", "#facc15", "#a78bfa",
+        "#34d399", "#22d3ee", "#c084fc", "#fbbf24", "#4ade80",
+        "#f472b6", "#818cf8", "#2dd4bf", "#fb7185", "#d97706",
+    ]
+
+    def classify_node(n):
+        label = n["label"].lower()
+        desc = n.get("description", "").lower()
+        text = label + " " + desc
+        for strand_name, keywords in STRAND_KEYWORDS:
+            for kw in keywords:
+                if kw in text:
+                    return strand_name
+        return "Other"
+
+    # Build strand groups
+    from collections import OrderedDict
+    strand_nodes = OrderedDict()
+    for n in d3_nodes:
+        orig = next((x for x in data["nodes"] if x["id"] == n["id"]), n)
+        strand = classify_node(orig)
+        strand_nodes.setdefault(strand, []).append(n["id"])
+        n["strand"] = strand
+
+    # Assign strand colors
+    strand_color_map = {}
+    for i, strand_name in enumerate(strand_nodes.keys()):
+        strand_color_map[strand_name] = STRAND_COLORS[i % len(STRAND_COLORS)]
+
+    strands_list = [
+        {"name": name, "color": strand_color_map[name], "nodeIds": ids}
+        for name, ids in strand_nodes.items()
+        if len(ids) > 0
+    ]
+
+    # Group books by education level for collapsible groups
+    book_groups = OrderedDict()
+    for b in data["books"]:
+        name = b["name"]
+        if any(x in name for x in ["Y1", "Y2", "Y3", "Y4", "Y5", "Y6", "Year"]):
+            group = "Primary (Year 1-6)"
+        elif any(x in name for x in ["Form 1", "Form 2", "Form 3"]):
+            group = "Lower Secondary (Form 1-3)"
+        elif any(x in name for x in ["Form 4", "Form 5"]):
+            group = "Upper Secondary (Form 4-5)"
+        elif any(x in name for x in ["Add Math", "AM"]):
+            group = "Additional Mathematics"
+        elif "STPM" in name:
+            group = "Pre-University (STPM)"
+        elif any(x in name for x in ["Number", "Algebra", "Geometry", "Data", "Fraction", "Equation",
+                                       "Mensuration", "Probability", "Sequence", "Line", "Quadratic"]):
+            group = "IGCSE Math Core+Extended"
+        elif any(x in name for x in ["Pythagoras", "Average", "Further", "Trigonometry", "Ratio",
+                                       "Scatter", "Money", "Curved", "Symmetry", "Histogram",
+                                       "More Equation", "Transform", "Advanced"]):
+            group = "IGCSE Math Core+Extended"
+        elif any(x in name for x in ["(AM)", "Calculus", "Kinematics", "Vectors (AM)", "Polynomials",
+                                       "Logarithm", "Circle Coord", "Circular Measure", "Permutation",
+                                       "Series", "Differentiation", "Integration"]):
+            group = "IGCSE Additional Mathematics"
+        else:
+            group = "Other"
+        book_groups.setdefault(group, []).append(b)
+
     nodes_json = json.dumps(d3_nodes)
     edges_json = json.dumps(d3_edges)
     books_json = json.dumps(data["books"])
+    strands_json = json.dumps(strands_list)
+    book_groups_json = json.dumps(book_groups)
     page_title = config["title"]
     page_subtitle = config["subtitle"]
 
@@ -114,19 +218,46 @@ body::after { content: ''; position: fixed; inset: 0; opacity: 0.035; background
 .search-wrap { position: relative; }
 .search-wrap::before { content: '⌕'; position: absolute; left: 9px; top: 50%; transform: translateY(-50%); color: var(--text3); font-size: 13px; }
 
-.book-btns { display: flex; gap: 3px; }
+/* Tabs */
+.tab-bar { display: flex; gap: 0; margin-bottom: 8px; border-bottom: 1px solid var(--border); }
+.tab-btn { flex: 1; background: none; border: none; border-bottom: 2px solid transparent; color: var(--text3); padding: 6px 4px; font-size: 10px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-transform: uppercase; letter-spacing: 0.8px; transition: all 0.15s; }
+.tab-btn:hover { color: var(--text2); }
+.tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+.book-btns { display: flex; gap: 3px; margin-bottom: 6px; }
 .book-btn { flex: 1; background: rgba(255,255,255,0.03); border: 1px solid var(--border); color: var(--text3); padding: 3px; border-radius: 4px; font-size: 9px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
 .book-btn:hover { color: var(--text2); }
 
+/* Collapsible groups */
+.group-header { display: flex; align-items: center; gap: 5px; padding: 5px 4px; cursor: pointer; user-select: none; border-radius: 4px; margin-top: 4px; transition: background 0.12s; }
+.group-header:hover { background: rgba(255,255,255,0.03); }
+.group-arrow { font-size: 8px; color: var(--text3); transition: transform 0.2s; width: 12px; text-align: center; }
+.group-header.collapsed .group-arrow { transform: rotate(-90deg); }
+.group-label { font-size: 10px; color: var(--text2); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; flex: 1; }
+.group-cnt { font-size: 9px; color: var(--text3); }
+.group-body { overflow: hidden; transition: max-height 0.25s ease; }
+.group-header.collapsed + .group-body { max-height: 0 !important; overflow: hidden; }
+
 .book-list { display: flex; flex-direction: column; gap: 1px; }
-.book-item { display: flex; align-items: center; gap: 6px; padding: 4px 5px; border-radius: 4px; cursor: pointer; transition: all 0.12s; user-select: none; }
+.book-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px 3px 16px; border-radius: 4px; cursor: pointer; transition: all 0.12s; user-select: none; }
 .book-item:hover { background: rgba(255,255,255,0.03); }
 .book-item.off { opacity: 0.2; }
-.book-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; transition: transform 0.15s; }
-.book-item:not(.off) .book-dot { box-shadow: 0 0 6px currentColor; }
-.book-name { font-size: 11px; color: var(--text2); flex: 1; }
+.book-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; transition: transform 0.15s; }
+.book-item:not(.off) .book-dot { box-shadow: 0 0 5px currentColor; }
+.book-name { font-size: 10px; color: var(--text2); flex: 1; }
 .book-item:not(.off) .book-name { color: var(--text); }
 .book-cnt { font-size: 9px; color: var(--text3); }
+
+/* Strand items */
+.strand-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px 3px 16px; border-radius: 4px; cursor: pointer; transition: all 0.12s; user-select: none; }
+.strand-item:hover { background: rgba(255,255,255,0.03); }
+.strand-item.off { opacity: 0.2; }
+.strand-dot { width: 7px; height: 7px; border-radius: 3px; flex-shrink: 0; }
+.strand-name { font-size: 10px; color: var(--text2); flex: 1; }
+.strand-item:not(.off) .strand-name { color: var(--text); }
+.strand-cnt { font-size: 9px; color: var(--text3); }
 
 .controls { padding-top: 8px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 6px; }
 .ctrl-row { display: flex; align-items: center; justify-content: space-between; }
@@ -190,40 +321,57 @@ svg { width: 100%; height: 100%; display: block; }
     <input type="text" class="search-box" id="search" placeholder="Search topics..." autocomplete="off">
   </div>
 
-  <div>
-    <div class="sec-title">Textbooks</div>
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="grades">Grades</button>
+    <button class="tab-btn" data-tab="topics">Topics</button>
+    <button class="tab-btn" data-tab="forces">Forces</button>
+  </div>
+
+  <!-- Grades Tab -->
+  <div class="tab-content active" id="tab-grades">
     <div class="book-btns">
       <button class="book-btn" id="b-all">All</button>
       <button class="book-btn" id="b-none">None</button>
     </div>
-    <div class="book-list" id="book-list"></div>
+    <div id="grades-list"></div>
   </div>
 
-  <div class="controls">
-    <div class="sec-title">Forces</div>
-    <div class="ctrl-row">
-      <span class="ctrl-label">Repulsion</span>
-      <input type="range" class="ctrl-slider" id="sl-charge" min="-600" max="-20" value="-120">
+  <!-- Topics Tab -->
+  <div class="tab-content" id="tab-topics">
+    <div class="book-btns">
+      <button class="book-btn" id="t-all">All</button>
+      <button class="book-btn" id="t-none">None</button>
     </div>
-    <div class="ctrl-row">
-      <span class="ctrl-label">Link Dist</span>
-      <input type="range" class="ctrl-slider" id="sl-dist" min="15" max="200" value="55">
-    </div>
-    <div class="ctrl-row">
-      <span class="ctrl-label">Gravity</span>
-      <input type="range" class="ctrl-slider" id="sl-gravity" min="0" max="100" value="8">
-    </div>
-    <div class="ctrl-row">
-      <span class="ctrl-label">Collision</span>
-      <input type="range" class="ctrl-slider" id="sl-collide" min="1" max="30" value="10">
-    </div>
+    <div id="topics-list"></div>
   </div>
 
-  <div class="hint">
-    <b>Drag</b> nodes — physics responds live<br>
-    <b>Scroll</b> to zoom, drag canvas to pan<br>
-    <b>Click</b> node for details &amp; neighbors<br>
-    <b>Sliders</b> tune forces in real-time
+  <!-- Forces Tab -->
+  <div class="tab-content" id="tab-forces">
+    <div class="sec-title">Physics</div>
+    <div class="controls">
+      <div class="ctrl-row">
+        <span class="ctrl-label">Repulsion</span>
+        <input type="range" class="ctrl-slider" id="sl-charge" min="-600" max="-20" value="-120">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Link Dist</span>
+        <input type="range" class="ctrl-slider" id="sl-dist" min="15" max="200" value="55">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Gravity</span>
+        <input type="range" class="ctrl-slider" id="sl-gravity" min="0" max="100" value="8">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Collision</span>
+        <input type="range" class="ctrl-slider" id="sl-collide" min="1" max="30" value="10">
+      </div>
+    </div>
+    <div class="hint">
+      <b>Drag</b> nodes — physics responds live<br>
+      <b>Scroll</b> to zoom, drag canvas to pan<br>
+      <b>Click</b> node for details &amp; neighbors<br>
+      <b>Sliders</b> tune forces in real-time
+    </div>
   </div>
 </aside>
 
@@ -240,9 +388,13 @@ svg { width: 100%; height: 100%; display: block; }
 const rawNodes = """ + nodes_json + """;
 const rawEdges = """ + edges_json + """;
 const booksData = """ + books_json + """;
+const strandsData = """ + strands_json + """;
+const bookGroupsData = """ + book_groups_json + """;
 
 // State
 const activeBooks = new Set(booksData.map(b => b.id));
+const activeStrands = new Set(strandsData.map(s => s.name));
+let filterMode = 'grades'; // 'grades' or 'topics'
 let selectedNode = null;
 
 // D3 setup
@@ -293,7 +445,12 @@ let linkEls, nodeEls, labelEls;
 
 function renderGraph() {
   // Filter
-  const visibleIds = new Set(nodes.filter(n => activeBooks.has(n.book)).map(n => n.id));
+  let visibleIds;
+  if (filterMode === 'topics') {
+    visibleIds = new Set(nodes.filter(n => activeStrands.has(n.strand)).map(n => n.id));
+  } else {
+    visibleIds = new Set(nodes.filter(n => activeBooks.has(n.book)).map(n => n.id));
+  }
   const vNodes = nodes.filter(n => visibleIds.has(n.id));
   const vEdges = edges.filter(e => {
     const sid = typeof e.source === 'object' ? e.source.id : e.source;
@@ -509,32 +666,156 @@ function showDetail(d, prereqEdges, leadsEdges) {
 
 document.getElementById('detail-close').addEventListener('click', clearSelection);
 
-// Book sidebar
+// Tab switching
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+// Book counts
 const bookCounts = {};
 nodes.forEach(n => { bookCounts[n.book] = (bookCounts[n.book] || 0) + 1; });
 
-const bookListEl = document.getElementById('book-list');
-booksData.forEach(b => {
-  const el = document.createElement('div');
-  el.className = 'book-item';
-  el.dataset.id = b.id;
-  el.innerHTML = `<span class="book-dot" style="background:${b.color};color:${b.color}"></span><span class="book-name">${b.name}</span><span class="book-cnt">${bookCounts[b.id] || 0}</span>`;
-  el.addEventListener('click', () => {
-    if (activeBooks.has(b.id)) { activeBooks.delete(b.id); el.classList.add('off'); }
-    else { activeBooks.add(b.id); el.classList.remove('off'); }
-    renderGraph();
+// === GRADES TAB: books grouped by education level, collapsible ===
+const gradesListEl = document.getElementById('grades-list');
+Object.entries(bookGroupsData).forEach(([groupName, groupBooks]) => {
+  const totalInGroup = groupBooks.reduce((s, b) => s + (bookCounts[b.id] || 0), 0);
+  if (totalInGroup === 0) return;
+
+  // Group header
+  const header = document.createElement('div');
+  header.className = 'group-header';
+  header.innerHTML = `<span class="group-arrow">▼</span><span class="group-label">${groupName}</span><span class="group-cnt">${totalInGroup}</span>`;
+
+  // Group body
+  const body = document.createElement('div');
+  body.className = 'group-body';
+  body.style.maxHeight = '500px';
+
+  const list = document.createElement('div');
+  list.className = 'book-list';
+
+  groupBooks.forEach(b => {
+    const el = document.createElement('div');
+    el.className = 'book-item';
+    el.dataset.id = b.id;
+    el.innerHTML = `<span class="book-dot" style="background:${b.color};color:${b.color}"></span><span class="book-name">${b.name}</span><span class="book-cnt">${bookCounts[b.id] || 0}</span>`;
+    el.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      if (activeBooks.has(b.id)) { activeBooks.delete(b.id); el.classList.add('off'); }
+      else { activeBooks.add(b.id); el.classList.remove('off'); }
+      filterMode = 'grades';
+      renderGraph();
+    });
+    list.appendChild(el);
   });
-  bookListEl.appendChild(el);
+
+  body.appendChild(list);
+  header.addEventListener('click', () => { header.classList.toggle('collapsed'); });
+
+  gradesListEl.appendChild(header);
+  gradesListEl.appendChild(body);
 });
 
 document.getElementById('b-all').addEventListener('click', () => {
   booksData.forEach(b => activeBooks.add(b.id));
-  document.querySelectorAll('.book-item').forEach(el => el.classList.remove('off'));
+  document.querySelectorAll('#grades-list .book-item').forEach(el => el.classList.remove('off'));
+  filterMode = 'grades';
   renderGraph();
 });
 document.getElementById('b-none').addEventListener('click', () => {
   activeBooks.clear();
-  document.querySelectorAll('.book-item').forEach(el => el.classList.add('off'));
+  document.querySelectorAll('#grades-list .book-item').forEach(el => el.classList.add('off'));
+  filterMode = 'grades';
+  renderGraph();
+});
+
+// === TOPICS TAB: strands grouped by math domain, collapsible ===
+const topicsListEl = document.getElementById('topics-list');
+const strandDomains = {
+  'Number & Arithmetic': ['Numbers & Counting', 'Arithmetic', 'Fractions', 'Decimals', 'Percentages', 'Number Bases'],
+  'Algebra': ['Algebra', 'Equations', 'Inequalities', 'Functions & Graphs', 'Indices & Logarithms', 'Sequences & Series'],
+  'Geometry & Measure': ['Geometry', 'Symmetry & Transformations', 'Perimeter, Area & Volume', 'Coordinate Geometry', 'Pythagoras & Similarity', 'Trigonometry'],
+  'Data & Probability': ['Statistics', 'Probability', 'Sets & Logic'],
+  'Applied': ['Money & Finance', 'Time', 'Measurement', 'Ratio & Proportion', 'Calculus', 'Kinematics', 'Vectors & Matrices', 'Graph Theory', 'Mathematical Modeling'],
+};
+
+// Build strand lookup
+const strandNodeIds = {};
+strandsData.forEach(s => { strandNodeIds[s.name] = new Set(s.nodeIds); });
+
+Object.entries(strandDomains).forEach(([domain, strandNames]) => {
+  const domainStrands = strandNames.filter(sn => strandNodeIds[sn] && strandNodeIds[sn].size > 0);
+  if (domainStrands.length === 0) return;
+
+  const totalInDomain = domainStrands.reduce((s, sn) => s + (strandNodeIds[sn] ? strandNodeIds[sn].size : 0), 0);
+
+  const header = document.createElement('div');
+  header.className = 'group-header';
+  header.innerHTML = `<span class="group-arrow">▼</span><span class="group-label">${domain}</span><span class="group-cnt">${totalInDomain}</span>`;
+
+  const body = document.createElement('div');
+  body.className = 'group-body';
+  body.style.maxHeight = '500px';
+
+  const list = document.createElement('div');
+  list.className = 'book-list';
+
+  domainStrands.forEach(sn => {
+    const strand = strandsData.find(s => s.name === sn);
+    if (!strand) return;
+    const el = document.createElement('div');
+    el.className = 'strand-item';
+    el.dataset.strand = sn;
+    el.innerHTML = `<span class="strand-dot" style="background:${strand.color}"></span><span class="strand-name">${sn}</span><span class="strand-cnt">${strand.nodeIds.length}</span>`;
+    el.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      if (activeStrands.has(sn)) { activeStrands.delete(sn); el.classList.add('off'); }
+      else { activeStrands.add(sn); el.classList.remove('off'); }
+      filterMode = 'topics';
+      renderGraph();
+    });
+    list.appendChild(el);
+  });
+
+  body.appendChild(list);
+  header.addEventListener('click', () => { header.classList.toggle('collapsed'); });
+
+  topicsListEl.appendChild(header);
+  topicsListEl.appendChild(body);
+});
+
+// Also add "Other" strand if it exists
+const otherStrand = strandsData.find(s => s.name === 'Other');
+if (otherStrand && otherStrand.nodeIds.length > 0) {
+  const el = document.createElement('div');
+  el.className = 'strand-item';
+  el.dataset.strand = 'Other';
+  el.innerHTML = `<span class="strand-dot" style="background:${otherStrand.color}"></span><span class="strand-name">Other</span><span class="strand-cnt">${otherStrand.nodeIds.length}</span>`;
+  el.addEventListener('click', (ev) => {
+    ev.stopPropagation();
+    if (activeStrands.has('Other')) { activeStrands.delete('Other'); el.classList.add('off'); }
+    else { activeStrands.add('Other'); el.classList.remove('off'); }
+    filterMode = 'topics';
+    renderGraph();
+  });
+  topicsListEl.appendChild(el);
+}
+
+document.getElementById('t-all').addEventListener('click', () => {
+  strandsData.forEach(s => activeStrands.add(s.name));
+  document.querySelectorAll('.strand-item').forEach(el => el.classList.remove('off'));
+  filterMode = 'topics';
+  renderGraph();
+});
+document.getElementById('t-none').addEventListener('click', () => {
+  activeStrands.clear();
+  document.querySelectorAll('.strand-item').forEach(el => el.classList.add('off'));
+  filterMode = 'topics';
   renderGraph();
 });
 
