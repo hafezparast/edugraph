@@ -58,6 +58,24 @@
       "name": "Form 5",
       "color": "#78350f",
       "order": 8
+    },
+    {
+      "id": "book.sej.stpm1",
+      "name": "STPM Sem 1 (World History)",
+      "color": "#d97706",
+      "order": 9
+    },
+    {
+      "id": "book.sej.stpm2",
+      "name": "STPM Sem 2 (Islamic History)",
+      "color": "#b45309",
+      "order": 10
+    },
+    {
+      "id": "book.sej.stpm3",
+      "name": "STPM Sem 3 (MY & SEA History)",
+      "color": "#92400e",
+      "order": 11
     }
   ],
   "nodes": [
@@ -1087,6 +1105,149 @@
       "bookName": "Form 5",
       "bookColor": "#78350f",
       "bookOrder": 8
+    },
+    {
+      "id": "sej.stpm1.t1_society",
+      "label": "Society in World History",
+      "type": "concept",
+      "description": "STPM World History theme — Social structures, class systems, and community organisation across major world civilisations",
+      "grade_range": ["STPM Sem 1"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.sej.stpm1",
+      "bookName": "STPM Sem 1 (World History)",
+      "bookColor": "#d97706",
+      "bookOrder": 9
+    },
+    {
+      "id": "sej.stpm1.t2_government",
+      "label": "Government in World History",
+      "type": "concept",
+      "description": "STPM World History theme — Political systems, governance models, empires, and the evolution of state authority across civilisations",
+      "grade_range": ["STPM Sem 1"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.sej.stpm1",
+      "bookName": "STPM Sem 1 (World History)",
+      "bookColor": "#d97706",
+      "bookOrder": 9
+    },
+    {
+      "id": "sej.stpm1.t3_progress",
+      "label": "Progress in World History",
+      "type": "concept",
+      "description": "STPM World History theme — Economic development, industrialisation, technological advancement, and modernisation in world history",
+      "grade_range": ["STPM Sem 1"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.sej.stpm1",
+      "bookName": "STPM Sem 1 (World History)",
+      "bookColor": "#d97706",
+      "bookOrder": 9
+    },
+    {
+      "id": "sej.stpm1.t4_nationalism",
+      "label": "Nationalism in World History",
+      "type": "concept",
+      "description": "STPM World History theme — Rise of nationalism, independence movements, revolutions, and nation-building across the world",
+      "grade_range": ["STPM Sem 1"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.sej.stpm1",
+      "bookName": "STPM Sem 1 (World History)",
+      "bookColor": "#d97706",
+      "bookOrder": 9
+    },
+    {
+      "id": "sej.stpm2.t1_society_government",
+      "label": "Society and Government in Islamic History",
+      "type": "concept",
+      "description": "STPM Islamic History theme — Social structures and governance in Islamic civilisation, the caliphate system, and political thought",
+      "grade_range": ["STPM Sem 2"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.sej.stpm2",
+      "bookName": "STPM Sem 2 (Islamic History)",
+      "bookColor": "#b45309",
+      "bookOrder": 10
+    },
+    {
+      "id": "sej.stpm2.t2_development",
+      "label": "Development in Islamic History",
+      "type": "concept",
+      "description": "STPM Islamic History theme — Intellectual, scientific, economic, and cultural achievements of Islamic civilisation",
+      "grade_range": ["STPM Sem 2"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.sej.stpm2",
+      "bookName": "STPM Sem 2 (Islamic History)",
+      "bookColor": "#b45309",
+      "bookOrder": 10
+    },
+    {
+      "id": "sej.stpm2.t3_nationalism",
+      "label": "Nationalism in Islamic History",
+      "type": "concept",
+      "description": "STPM Islamic History theme — Nationalist movements in the Muslim world, anti-colonial struggles, and modern nation-state formation",
+      "grade_range": ["STPM Sem 2"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.sej.stpm2",
+      "bookName": "STPM Sem 2 (Islamic History)",
+      "bookColor": "#b45309",
+      "bookOrder": 10
+    },
+    {
+      "id": "sej.stpm3.t1_local_community",
+      "label": "Local Community in MY & SEA History",
+      "type": "concept",
+      "description": "STPM MY & SEA History theme — Indigenous communities, local social structures, and community life in Malaysia and Southeast Asia",
+      "grade_range": ["STPM Sem 3"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.sej.stpm3",
+      "bookName": "STPM Sem 3 (MY & SEA History)",
+      "bookColor": "#92400e",
+      "bookOrder": 11
+    },
+    {
+      "id": "sej.stpm3.t2_transformation",
+      "label": "Transformation in MY & SEA History",
+      "type": "concept",
+      "description": "STPM MY & SEA History theme — Political, economic, and social transformation in Malaysia and Southeast Asia through colonial and modern eras",
+      "grade_range": ["STPM Sem 3"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.sej.stpm3",
+      "bookName": "STPM Sem 3 (MY & SEA History)",
+      "bookColor": "#92400e",
+      "bookOrder": 11
+    },
+    {
+      "id": "sej.stpm3.t3_nationalism",
+      "label": "Nationalism in MY & SEA History",
+      "type": "concept",
+      "description": "STPM MY & SEA History theme — Nationalist movements, political awakening, and anti-colonial resistance in Malaysia and Southeast Asia",
+      "grade_range": ["STPM Sem 3"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.sej.stpm3",
+      "bookName": "STPM Sem 3 (MY & SEA History)",
+      "bookColor": "#92400e",
+      "bookOrder": 11
+    },
+    {
+      "id": "sej.stpm3.t4_independence",
+      "label": "Independence in MY & SEA History",
+      "type": "concept",
+      "description": "STPM MY & SEA History theme — Independence movements, nation-building, and post-independence development in Malaysia and Southeast Asia",
+      "grade_range": ["STPM Sem 3"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.sej.stpm3",
+      "bookName": "STPM Sem 3 (MY & SEA History)",
+      "bookColor": "#92400e",
+      "bookOrder": 11
     }
   ],
   "edges": [
@@ -1203,6 +1364,28 @@
 
     {"source": "sej.y6.ch8_economic_progress", "target": "sej.f5.ch8_building_prosperity", "relation": "prerequisite_for"},
     {"source": "sej.y5.ch2_islam_in_malaysia", "target": "sej.f2.ch4_religion_beliefs_heritage", "relation": "prerequisite_for"},
-    {"source": "sej.y6.ch3_rukun_negara", "target": "sej.f5.ch7_building_wellbeing", "relation": "prerequisite_for"}
+    {"source": "sej.y6.ch3_rukun_negara", "target": "sej.f5.ch7_building_wellbeing", "relation": "prerequisite_for"},
+
+    {"source": "sej.stpm1.t1_society", "target": "sej.stpm1.t2_government", "relation": "prerequisite_for"},
+    {"source": "sej.stpm1.t2_government", "target": "sej.stpm1.t3_progress", "relation": "prerequisite_for"},
+    {"source": "sej.stpm1.t3_progress", "target": "sej.stpm1.t4_nationalism", "relation": "prerequisite_for"},
+
+    {"source": "sej.stpm2.t1_society_government", "target": "sej.stpm2.t2_development", "relation": "prerequisite_for"},
+    {"source": "sej.stpm2.t2_development", "target": "sej.stpm2.t3_nationalism", "relation": "prerequisite_for"},
+
+    {"source": "sej.stpm3.t1_local_community", "target": "sej.stpm3.t2_transformation", "relation": "prerequisite_for"},
+    {"source": "sej.stpm3.t2_transformation", "target": "sej.stpm3.t3_nationalism", "relation": "prerequisite_for"},
+    {"source": "sej.stpm3.t3_nationalism", "target": "sej.stpm3.t4_independence", "relation": "prerequisite_for"},
+
+    {"source": "sej.stpm1.t4_nationalism", "target": "sej.stpm2.t1_society_government", "relation": "prerequisite_for"},
+    {"source": "sej.stpm2.t3_nationalism", "target": "sej.stpm3.t1_local_community", "relation": "prerequisite_for"},
+
+    {"source": "sej.f5.ch3_constitutional_monarchy", "target": "sej.stpm1.t2_government", "relation": "prerequisite_for"},
+    {"source": "sej.f5.ch6_post_malaysia_challenges", "target": "sej.stpm1.t4_nationalism", "relation": "prerequisite_for"},
+    {"source": "sej.f5.ch8_building_prosperity", "target": "sej.stpm1.t3_progress", "relation": "prerequisite_for"},
+    {"source": "sej.f5.ch10_world_excellence", "target": "sej.stpm1.t1_society", "relation": "prerequisite_for"},
+    {"source": "sej.f5.ch9_foreign_policy", "target": "sej.stpm3.t2_transformation", "relation": "prerequisite_for"},
+    {"source": "sej.f5.ch5_formation_of_malaysia", "target": "sej.stpm3.t4_independence", "relation": "prerequisite_for"},
+    {"source": "sej.f5.ch1_national_sovereignty", "target": "sej.stpm3.t3_nationalism", "relation": "prerequisite_for"}
   ]
 }

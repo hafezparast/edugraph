@@ -1,0 +1,298 @@
+{
+  "metadata": {
+    "domain": "accounting",
+    "curriculum": "Malaysia STPM Accounting",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "Malaysia STPM Accounting topics with prerequisite ordering, colored by semester",
+    "sources": [
+      "STPM Accounting Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "book.acct.s1",
+      "name": "Sem 1 Financial Accounting",
+      "color": "#8b5cf6",
+      "order": 1
+    },
+    {
+      "id": "book.acct.s2",
+      "name": "Sem 2 Management Accounting",
+      "color": "#6366f1",
+      "order": 2
+    },
+    {
+      "id": "book.acct.s3",
+      "name": "Sem 3 Applied Accounting",
+      "color": "#a855f7",
+      "order": 3
+    }
+  ],
+  "nodes": [
+    {
+      "id": "acct.s1.ch1_fundamentals",
+      "label": "Financial Accounting Fundamentals",
+      "type": "concept",
+      "description": "Accounting concepts, principles, double-entry system, journals, ledgers, trial balance, and preparation of basic financial statements",
+      "grade_range": ["STPM Sem 1"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s1",
+      "bookName": "Sem 1 Financial Accounting",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "acct.s1.ch2_assets",
+      "label": "Assets",
+      "type": "concept",
+      "description": "Current and non-current assets — recognition, measurement, depreciation, impairment, and disposal of assets",
+      "grade_range": ["STPM Sem 1"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s1",
+      "bookName": "Sem 1 Financial Accounting",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "acct.s1.ch3_liabilities_equity",
+      "label": "Liabilities and Equity",
+      "type": "concept",
+      "description": "Current and non-current liabilities, owner's equity, retained earnings, and the accounting equation",
+      "grade_range": ["STPM Sem 1"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s1",
+      "bookName": "Sem 1 Financial Accounting",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "acct.s1.ch4_cooperatives",
+      "label": "Cooperatives",
+      "type": "concept",
+      "description": "Accounting for cooperatives — membership, capital, revenue, and financial statements of cooperative societies",
+      "grade_range": ["STPM Sem 1"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s1",
+      "bookName": "Sem 1 Financial Accounting",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "acct.s1.ch5_incomplete_records",
+      "label": "Incomplete Records",
+      "type": "concept",
+      "description": "Accounting from incomplete records — statement of affairs, conversion to double-entry, and estimating profit",
+      "grade_range": ["STPM Sem 1"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s1",
+      "bookName": "Sem 1 Financial Accounting",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "acct.s1.ch6_internal_control",
+      "label": "Internal Control",
+      "type": "concept",
+      "description": "Internal control systems — objectives, components, bank reconciliation, petty cash, and control accounts",
+      "grade_range": ["STPM Sem 1"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s1",
+      "bookName": "Sem 1 Financial Accounting",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "acct.s2.ch1_cost_fundamentals",
+      "label": "Management Accounting and Cost Fundamentals",
+      "type": "concept",
+      "description": "Introduction to management accounting, cost classification, cost behaviour, materials, labour, and overhead costs",
+      "grade_range": ["STPM Sem 2"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s2",
+      "bookName": "Sem 2 Management Accounting",
+      "bookColor": "#6366f1",
+      "bookOrder": 2
+    },
+    {
+      "id": "acct.s2.ch2_costing_methods",
+      "label": "Costing Methods",
+      "type": "concept",
+      "description": "Job costing, process costing, joint products and by-products, and activity-based costing",
+      "grade_range": ["STPM Sem 2"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s2",
+      "bookName": "Sem 2 Management Accounting",
+      "bookColor": "#6366f1",
+      "bookOrder": 2
+    },
+    {
+      "id": "acct.s2.ch3_marginal_absorption",
+      "label": "Marginal and Absorption Costing",
+      "type": "concept",
+      "description": "Marginal costing vs absorption costing — income statements, profit reconciliation, and inventory valuation differences",
+      "grade_range": ["STPM Sem 2"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s2",
+      "bookName": "Sem 2 Management Accounting",
+      "bookColor": "#6366f1",
+      "bookOrder": 2
+    },
+    {
+      "id": "acct.s2.ch4_cvp_analysis",
+      "label": "CVP Analysis",
+      "type": "concept",
+      "description": "Cost-volume-profit analysis — break-even point, contribution margin, margin of safety, and target profit calculations",
+      "grade_range": ["STPM Sem 2"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s2",
+      "bookName": "Sem 2 Management Accounting",
+      "bookColor": "#6366f1",
+      "bookOrder": 2
+    },
+    {
+      "id": "acct.s2.ch5_decision_making",
+      "label": "Decision Making",
+      "type": "concept",
+      "description": "Short-term decision making — relevant costs, make or buy, special orders, limiting factors, and product mix decisions",
+      "grade_range": ["STPM Sem 2"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s2",
+      "bookName": "Sem 2 Management Accounting",
+      "bookColor": "#6366f1",
+      "bookOrder": 2
+    },
+    {
+      "id": "acct.s2.ch6_standard_costing",
+      "label": "Standard Costing",
+      "type": "concept",
+      "description": "Standard costing and variance analysis — material, labour, and overhead variances, and their interpretation",
+      "grade_range": ["STPM Sem 2"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s2",
+      "bookName": "Sem 2 Management Accounting",
+      "bookColor": "#6366f1",
+      "bookOrder": 2
+    },
+    {
+      "id": "acct.s3.ch1_computerised_accounting",
+      "label": "Computerised Accounting",
+      "type": "concept",
+      "description": "Accounting information systems, computerised accounting software, data entry, processing, and report generation",
+      "grade_range": ["STPM Sem 3"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s3",
+      "bookName": "Sem 3 Applied Accounting",
+      "bookColor": "#a855f7",
+      "bookOrder": 3
+    },
+    {
+      "id": "acct.s3.ch2_budgeting",
+      "label": "Budgeting",
+      "type": "concept",
+      "description": "Budgetary planning and control — master budget, flexible budgets, cash budgets, and budget variance analysis",
+      "grade_range": ["STPM Sem 3"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s3",
+      "bookName": "Sem 3 Applied Accounting",
+      "bookColor": "#a855f7",
+      "bookOrder": 3
+    },
+    {
+      "id": "acct.s3.ch3_partnership",
+      "label": "Partnership",
+      "type": "concept",
+      "description": "Partnership accounting — formation, profit sharing, admission, retirement, dissolution, and revaluation of assets",
+      "grade_range": ["STPM Sem 3"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s3",
+      "bookName": "Sem 3 Applied Accounting",
+      "bookColor": "#a855f7",
+      "bookOrder": 3
+    },
+    {
+      "id": "acct.s3.ch4_limited_companies",
+      "label": "Limited Companies",
+      "type": "concept",
+      "description": "Company accounting — share capital, debentures, retained earnings, and preparation of company financial statements",
+      "grade_range": ["STPM Sem 3"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s3",
+      "bookName": "Sem 3 Applied Accounting",
+      "bookColor": "#a855f7",
+      "bookOrder": 3
+    },
+    {
+      "id": "acct.s3.ch5_financial_statement_analysis",
+      "label": "Financial Statement Analysis",
+      "type": "concept",
+      "description": "Ratio analysis — profitability, liquidity, efficiency, and gearing ratios, and interpretation of financial performance",
+      "grade_range": ["STPM Sem 3"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s3",
+      "bookName": "Sem 3 Applied Accounting",
+      "bookColor": "#a855f7",
+      "bookOrder": 3
+    },
+    {
+      "id": "acct.s3.ch6_cash_flow_statement",
+      "label": "Cash Flow Statement",
+      "type": "concept",
+      "description": "Preparation and interpretation of cash flow statements — operating, investing, and financing activities",
+      "grade_range": ["STPM Sem 3"],
+      "tags": ["chapter"],
+      "pages": "",
+      "book": "book.acct.s3",
+      "bookName": "Sem 3 Applied Accounting",
+      "bookColor": "#a855f7",
+      "bookOrder": 3
+    }
+  ],
+  "edges": [
+    {"source": "acct.s1.ch1_fundamentals", "target": "acct.s1.ch2_assets", "relation": "prerequisite_for"},
+    {"source": "acct.s1.ch1_fundamentals", "target": "acct.s1.ch3_liabilities_equity", "relation": "prerequisite_for"},
+    {"source": "acct.s1.ch3_liabilities_equity", "target": "acct.s1.ch4_cooperatives", "relation": "prerequisite_for"},
+    {"source": "acct.s1.ch2_assets", "target": "acct.s1.ch5_incomplete_records", "relation": "prerequisite_for"},
+    {"source": "acct.s1.ch3_liabilities_equity", "target": "acct.s1.ch5_incomplete_records", "relation": "prerequisite_for"},
+    {"source": "acct.s1.ch5_incomplete_records", "target": "acct.s1.ch6_internal_control", "relation": "prerequisite_for"},
+
+    {"source": "acct.s2.ch1_cost_fundamentals", "target": "acct.s2.ch2_costing_methods", "relation": "prerequisite_for"},
+    {"source": "acct.s2.ch2_costing_methods", "target": "acct.s2.ch3_marginal_absorption", "relation": "prerequisite_for"},
+    {"source": "acct.s2.ch3_marginal_absorption", "target": "acct.s2.ch4_cvp_analysis", "relation": "prerequisite_for"},
+    {"source": "acct.s2.ch4_cvp_analysis", "target": "acct.s2.ch5_decision_making", "relation": "prerequisite_for"},
+    {"source": "acct.s2.ch5_decision_making", "target": "acct.s2.ch6_standard_costing", "relation": "prerequisite_for"},
+
+    {"source": "acct.s3.ch1_computerised_accounting", "target": "acct.s3.ch2_budgeting", "relation": "prerequisite_for"},
+    {"source": "acct.s3.ch2_budgeting", "target": "acct.s3.ch3_partnership", "relation": "prerequisite_for"},
+    {"source": "acct.s3.ch3_partnership", "target": "acct.s3.ch4_limited_companies", "relation": "prerequisite_for"},
+    {"source": "acct.s3.ch4_limited_companies", "target": "acct.s3.ch5_financial_statement_analysis", "relation": "prerequisite_for"},
+    {"source": "acct.s3.ch5_financial_statement_analysis", "target": "acct.s3.ch6_cash_flow_statement", "relation": "prerequisite_for"},
+
+    {"source": "acct.s1.ch6_internal_control", "target": "acct.s2.ch1_cost_fundamentals", "relation": "prerequisite_for"},
+    {"source": "acct.s1.ch1_fundamentals", "target": "acct.s2.ch1_cost_fundamentals", "relation": "prerequisite_for"},
+
+    {"source": "acct.s2.ch6_standard_costing", "target": "acct.s3.ch2_budgeting", "relation": "prerequisite_for"},
+    {"source": "acct.s1.ch1_fundamentals", "target": "acct.s3.ch1_computerised_accounting", "relation": "prerequisite_for"},
+    {"source": "acct.s1.ch3_liabilities_equity", "target": "acct.s3.ch3_partnership", "relation": "prerequisite_for"},
+    {"source": "acct.s1.ch2_assets", "target": "acct.s3.ch5_financial_statement_analysis", "relation": "prerequisite_for"},
+    {"source": "acct.s1.ch3_liabilities_equity", "target": "acct.s3.ch4_limited_companies", "relation": "prerequisite_for"}
+  ]
+}
