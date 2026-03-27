@@ -1,1647 +1,2801 @@
 {
   "metadata": {
     "domain": "mathematics",
-    "curriculum": "Cambridge IGCSE Mathematics (0580) & Additional Mathematics (0606)",
-    "version": "0.2.0",
-    "description": "IGCSE Math Core+Extended and Additional Mathematics prerequisite graph",
+    "curriculum": "Cambridge Primary, Lower Secondary & IGCSE Mathematics (0580) & Additional Mathematics (0606)",
+    "version": "0.3.0",
+    "description": "Year 1-11 Cambridge Mathematics prerequisite graph",
     "sources": [
       "math_core_extended(2025).json",
-      "add_math(2025).json"
+      "add_math(2025).json",
+      "cambridge_primary_math.json",
+      "cambridge_lower_secondary_math.json"
     ],
     "last_updated": "2026-03-27"
   },
   "books": [
     {
+      "id": "pri.y1",
+      "name": "Year 1",
+      "color": "#fecdd3",
+      "order": 1
+    },
+    {
+      "id": "pri.y2",
+      "name": "Year 2",
+      "color": "#fda4af",
+      "order": 2
+    },
+    {
+      "id": "pri.y3",
+      "name": "Year 3",
+      "color": "#fb7185",
+      "order": 3
+    },
+    {
+      "id": "pri.y4",
+      "name": "Year 4",
+      "color": "#f43f5e",
+      "order": 4
+    },
+    {
+      "id": "pri.y5",
+      "name": "Year 5",
+      "color": "#e11d48",
+      "order": 5
+    },
+    {
+      "id": "pri.y6",
+      "name": "Year 6",
+      "color": "#be123c",
+      "order": 6
+    },
+    {
+      "id": "sec.y7",
+      "name": "Year 7",
+      "color": "#fdba74",
+      "order": 7
+    },
+    {
+      "id": "sec.y8",
+      "name": "Year 8",
+      "color": "#fb923c",
+      "order": 8
+    },
+    {
+      "id": "sec.y9",
+      "name": "Year 9",
+      "color": "#f97316",
+      "order": 9
+    },
+    {
       "id": "igcse.y10.number_concepts",
       "name": "Number Concepts",
       "color": "#ef4444",
-      "order": 1
+      "order": 10
     },
     {
       "id": "igcse.y10.algebra_basics",
       "name": "Algebra Basics",
       "color": "#f97316",
-      "order": 2
+      "order": 11
     },
     {
       "id": "igcse.y10.geometry",
       "name": "Geometry",
       "color": "#22c55e",
-      "order": 3
+      "order": 12
     },
     {
       "id": "igcse.y10.data",
       "name": "Data Handling",
       "color": "#ec4899",
-      "order": 4
+      "order": 13
     },
     {
       "id": "igcse.y10.fractions_pct",
       "name": "Fractions & Percentages",
       "color": "#fb923c",
-      "order": 5
+      "order": 14
     },
     {
       "id": "igcse.y10.equations",
       "name": "Equations & Formulae",
       "color": "#f59e0b",
-      "order": 6
+      "order": 15
     },
     {
       "id": "igcse.y10.mensuration",
       "name": "Mensuration",
       "color": "#14b8a6",
-      "order": 7
+      "order": 16
     },
     {
       "id": "igcse.y10.probability",
       "name": "Probability",
       "color": "#8b5cf6",
-      "order": 8
+      "order": 17
     },
     {
       "id": "igcse.y10.sequences_sets",
       "name": "Sequences, Surds & Sets",
       "color": "#d97706",
-      "order": 9
+      "order": 18
     },
     {
       "id": "igcse.y10.linear_quadratic",
       "name": "Lines & Quadratics",
       "color": "#84cc16",
-      "order": 10
+      "order": 19
     },
     {
       "id": "igcse.y11.pythagoras",
       "name": "Pythagoras & Similarity",
       "color": "#06b6d4",
-      "order": 11
+      "order": 20
     },
     {
       "id": "igcse.y11.averages",
       "name": "Averages & Spread",
       "color": "#e879f9",
-      "order": 12
+      "order": 21
     },
     {
       "id": "igcse.y11.further_equations",
       "name": "Further Equations",
       "color": "#eab308",
-      "order": 13
+      "order": 22
     },
     {
       "id": "igcse.y11.trigonometry",
       "name": "Trigonometry",
       "color": "#3b82f6",
-      "order": 14
+      "order": 23
     },
     {
       "id": "igcse.y11.ratio_proportion",
       "name": "Ratio & Proportion",
       "color": "#f43f5e",
-      "order": 15
+      "order": 24
     },
     {
       "id": "igcse.y11.scatter",
       "name": "Scatter & Correlation",
       "color": "#a78bfa",
-      "order": 16
+      "order": 25
     },
     {
       "id": "igcse.y11.money",
       "name": "Managing Money",
       "color": "#10b981",
-      "order": 17
+      "order": 26
     },
     {
       "id": "igcse.y11.curved_graphs",
       "name": "Curved Graphs",
       "color": "#6366f1",
-      "order": 18
+      "order": 27
     },
     {
       "id": "igcse.y11.symmetry",
       "name": "Symmetry & Circles",
       "color": "#22d3ee",
-      "order": 19
+      "order": 28
     },
     {
       "id": "igcse.y11.histograms",
       "name": "Histograms & Cumulative Freq",
       "color": "#f472b6",
-      "order": 20
+      "order": 29
     },
     {
       "id": "igcse.y11.more_equations",
       "name": "More Equations & Functions",
       "color": "#facc15",
-      "order": 21
+      "order": 30
     },
     {
       "id": "igcse.y11.transforms_vectors",
       "name": "Transformations & Vectors",
       "color": "#a855f7",
-      "order": 22
+      "order": 31
     },
     {
       "id": "igcse.y11.adv_probability",
       "name": "Advanced Probability",
       "color": "#c084fc",
-      "order": 23
+      "order": 32
     },
     {
       "id": "igcse.am.functions",
       "name": "Functions (AM)",
       "color": "#ef4444",
-      "order": 24
+      "order": 33
     },
     {
       "id": "igcse.am.quadratics",
       "name": "Quadratics (AM)",
       "color": "#f97316",
-      "order": 25
+      "order": 34
     },
     {
       "id": "igcse.am.polynomials",
       "name": "Polynomials (AM)",
       "color": "#eab308",
-      "order": 26
+      "order": 35
     },
     {
       "id": "igcse.am.eq_ineq_graphs",
       "name": "Equations & Graphs (AM)",
       "color": "#84cc16",
-      "order": 27
+      "order": 36
     },
     {
       "id": "igcse.am.log_exp",
       "name": "Logarithms & Exp (AM)",
       "color": "#22c55e",
-      "order": 28
+      "order": 37
     },
     {
       "id": "igcse.am.straight_lines",
       "name": "Straight Lines (AM)",
       "color": "#14b8a6",
-      "order": 29
+      "order": 38
     },
     {
       "id": "igcse.am.circle_coord",
       "name": "Circle Coord Geom (AM)",
       "color": "#06b6d4",
-      "order": 30
+      "order": 39
     },
     {
       "id": "igcse.am.circular_measure",
       "name": "Circular Measure (AM)",
       "color": "#3b82f6",
-      "order": 31
+      "order": 40
     },
     {
       "id": "igcse.am.trigonometry",
       "name": "Trigonometry (AM)",
       "color": "#6366f1",
-      "order": 32
+      "order": 41
     },
     {
       "id": "igcse.am.perm_comb",
       "name": "Permutations & Comb (AM)",
       "color": "#8b5cf6",
-      "order": 33
+      "order": 42
     },
     {
       "id": "igcse.am.series",
       "name": "Series (AM)",
       "color": "#a855f7",
-      "order": 34
+      "order": 43
     },
     {
       "id": "igcse.am.diff1",
       "name": "Differentiation 1 (AM)",
       "color": "#ec4899",
-      "order": 35
+      "order": 44
     },
     {
       "id": "igcse.am.vectors",
       "name": "Vectors (AM)",
       "color": "#f43f5e",
-      "order": 36
+      "order": 45
     },
     {
       "id": "igcse.am.diff2",
       "name": "Differentiation 2 (AM)",
       "color": "#d946ef",
-      "order": 37
+      "order": 46
     },
     {
       "id": "igcse.am.integration",
       "name": "Integration (AM)",
       "color": "#f59e0b",
-      "order": 38
+      "order": 47
     },
     {
       "id": "igcse.am.kinematics",
       "name": "Kinematics (AM)",
       "color": "#d97706",
-      "order": 39
+      "order": 48
     }
   ],
   "nodes": [
+    {
+      "id": "pri.y1.counting",
+      "label": "Counting and Numbers",
+      "book": "pri.y1",
+      "description": "Counting and Numbers — Year 1 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y1.add_sub",
+      "label": "Addition and Subtraction",
+      "book": "pri.y1",
+      "description": "Addition and Subtraction — Year 1 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y1.shapes",
+      "label": "Shapes and Symmetry",
+      "book": "pri.y1",
+      "description": "Shapes and Symmetry — Year 1 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y1.position",
+      "label": "Position and Movement",
+      "book": "pri.y1",
+      "description": "Position and Movement — Year 1 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y1.measurement",
+      "label": "Money and Measurement",
+      "book": "pri.y1",
+      "description": "Money and Measurement — Year 1 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y1.data",
+      "label": "Sorting Data",
+      "book": "pri.y1",
+      "description": "Sorting Data — Year 1 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y2.numbers",
+      "label": "Numbers to 100",
+      "book": "pri.y2",
+      "description": "Numbers to 100 — Year 2 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y2.add_sub",
+      "label": "Addition and Subtraction",
+      "book": "pri.y2",
+      "description": "Addition and Subtraction — Year 2 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y2.mult_div",
+      "label": "Multiplication and Division",
+      "book": "pri.y2",
+      "description": "Multiplication and Division — Year 2 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y2.fractions",
+      "label": "Fractions",
+      "book": "pri.y2",
+      "description": "Fractions — Year 2 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y2.shapes",
+      "label": "Shapes and Symmetry",
+      "book": "pri.y2",
+      "description": "Shapes and Symmetry — Year 2 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y2.measurement",
+      "label": "Measurement",
+      "book": "pri.y2",
+      "description": "Measurement — Year 2 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y2.data",
+      "label": "Data Handling",
+      "book": "pri.y2",
+      "description": "Data Handling — Year 2 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y3.numbers",
+      "label": "Numbers to 1000",
+      "book": "pri.y3",
+      "description": "Numbers to 1000 — Year 3 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y3.mental",
+      "label": "Mental Strategies",
+      "book": "pri.y3",
+      "description": "Mental Strategies — Year 3 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y3.add_sub",
+      "label": "Addition and Subtraction",
+      "book": "pri.y3",
+      "description": "Addition and Subtraction — Year 3 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y3.mult_div",
+      "label": "Multiplication and Division",
+      "book": "pri.y3",
+      "description": "Multiplication and Division — Year 3 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y3.fractions",
+      "label": "Fractions",
+      "book": "pri.y3",
+      "description": "Fractions — Year 3 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y3.shapes_angles",
+      "label": "Shapes and Angles",
+      "book": "pri.y3",
+      "description": "Shapes and Angles — Year 3 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y3.measurement",
+      "label": "Measurement",
+      "book": "pri.y3",
+      "description": "Measurement — Year 3 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y3.data",
+      "label": "Data and Charts",
+      "book": "pri.y3",
+      "description": "Data and Charts — Year 3 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y4.numbers",
+      "label": "Numbers to 10000",
+      "book": "pri.y4",
+      "description": "Numbers to 10000 — Year 4 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y4.decimals_fractions",
+      "label": "Decimals and Fractions",
+      "book": "pri.y4",
+      "description": "Decimals and Fractions — Year 4 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y4.add_sub",
+      "label": "Addition and Subtraction",
+      "book": "pri.y4",
+      "description": "Addition and Subtraction — Year 4 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y4.mult_div",
+      "label": "Multiplication and Division",
+      "book": "pri.y4",
+      "description": "Multiplication and Division — Year 4 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y4.ratio",
+      "label": "Ratio and Proportion",
+      "book": "pri.y4",
+      "description": "Ratio and Proportion — Year 4 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y4.shapes",
+      "label": "Shapes and Symmetry",
+      "book": "pri.y4",
+      "description": "Shapes and Symmetry — Year 4 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y4.area_perimeter",
+      "label": "Area and Perimeter",
+      "book": "pri.y4",
+      "description": "Area and Perimeter — Year 4 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y4.data",
+      "label": "Data Handling",
+      "book": "pri.y4",
+      "description": "Data Handling — Year 4 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y5.large_numbers",
+      "label": "Large Numbers and Decimals",
+      "book": "pri.y5",
+      "description": "Large Numbers and Decimals — Year 5 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y5.fractions_pct",
+      "label": "Fractions Decimals Percentages",
+      "book": "pri.y5",
+      "description": "Fractions Decimals Percentages — Year 5 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y5.mental",
+      "label": "Mental Strategies",
+      "book": "pri.y5",
+      "description": "Mental Strategies — Year 5 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y5.written_calcs",
+      "label": "Written Calculations",
+      "book": "pri.y5",
+      "description": "Written Calculations — Year 5 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y5.sequences",
+      "label": "Sequences and Factors",
+      "book": "pri.y5",
+      "description": "Sequences and Factors — Year 5 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y5.angles",
+      "label": "Angles and Constructions",
+      "book": "pri.y5",
+      "description": "Angles and Constructions — Year 5 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y5.area_perimeter",
+      "label": "Area and Perimeter",
+      "book": "pri.y5",
+      "description": "Area and Perimeter — Year 5 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y5.coordinates",
+      "label": "Coordinates and Transformations",
+      "book": "pri.y5",
+      "description": "Coordinates and Transformations — Year 5 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y5.probability_stats",
+      "label": "Probability and Statistics",
+      "book": "pri.y5",
+      "description": "Probability and Statistics — Year 5 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y6.place_value",
+      "label": "Place Value to Million",
+      "book": "pri.y6",
+      "description": "Place Value to Million — Year 6 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y6.fractions_pct",
+      "label": "Fractions Decimals Percentages",
+      "book": "pri.y6",
+      "description": "Fractions Decimals Percentages — Year 6 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y6.ratio",
+      "label": "Ratio and Proportion",
+      "book": "pri.y6",
+      "description": "Ratio and Proportion — Year 6 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y6.written_calcs",
+      "label": "Written Calculations",
+      "book": "pri.y6",
+      "description": "Written Calculations — Year 6 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y6.primes",
+      "label": "Prime Numbers",
+      "book": "pri.y6",
+      "description": "Prime Numbers — Year 6 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y6.angles",
+      "label": "Angles and Properties",
+      "book": "pri.y6",
+      "description": "Angles and Properties — Year 6 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y6.area_volume",
+      "label": "Area Perimeter Volume",
+      "book": "pri.y6",
+      "description": "Area Perimeter Volume — Year 6 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y6.coordinates",
+      "label": "Coordinates and Transformations",
+      "book": "pri.y6",
+      "description": "Coordinates and Transformations — Year 6 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y6.probability",
+      "label": "Probability",
+      "book": "pri.y6",
+      "description": "Probability — Year 6 (Cambridge Primary)"
+    },
+    {
+      "id": "pri.y6.statistics",
+      "label": "Statistics",
+      "book": "pri.y6",
+      "description": "Statistics — Year 6 (Cambridge Primary)"
+    },
+    {
+      "id": "sec.y7.integers",
+      "label": "Integers",
+      "book": "sec.y7",
+      "description": "Integers — Year 7 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y7.expressions",
+      "label": "Expressions, Formulae and Equations",
+      "book": "sec.y7",
+      "description": "Expressions, Formulae and Equations — Year 7 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y7.place_value",
+      "label": "Place Value and Rounding",
+      "book": "sec.y7",
+      "description": "Place Value and Rounding — Year 7 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y7.decimals",
+      "label": "Decimals",
+      "book": "sec.y7",
+      "description": "Decimals — Year 7 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y7.angles",
+      "label": "Angles and Constructions",
+      "book": "sec.y7",
+      "description": "Angles and Constructions — Year 7 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y7.collecting_data",
+      "label": "Collecting Data",
+      "book": "sec.y7",
+      "description": "Collecting Data — Year 7 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y7.fractions",
+      "label": "Fractions",
+      "book": "sec.y7",
+      "description": "Fractions — Year 7 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y7.shapes",
+      "label": "Shapes and Symmetry",
+      "book": "sec.y7",
+      "description": "Shapes and Symmetry — Year 7 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y7.sequences",
+      "label": "Sequences and Functions",
+      "book": "sec.y7",
+      "description": "Sequences and Functions — Year 7 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y7.percentages",
+      "label": "Percentages",
+      "book": "sec.y7",
+      "description": "Percentages — Year 7 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y7.graphs",
+      "label": "Graphs",
+      "book": "sec.y7",
+      "description": "Graphs — Year 7 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y7.ratio",
+      "label": "Ratio and Proportion",
+      "book": "sec.y7",
+      "description": "Ratio and Proportion — Year 7 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y7.probability",
+      "label": "Probability",
+      "book": "sec.y7",
+      "description": "Probability — Year 7 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y7.position_transform",
+      "label": "Position and Transformation",
+      "book": "sec.y7",
+      "description": "Position and Transformation — Year 7 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y7.area_volume",
+      "label": "Area and Volume",
+      "book": "sec.y7",
+      "description": "Area and Volume — Year 7 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y7.interpreting_results",
+      "label": "Interpreting Results",
+      "book": "sec.y7",
+      "description": "Interpreting Results — Year 7 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y8.integers",
+      "label": "Integers and Powers",
+      "book": "sec.y8",
+      "description": "Integers and Powers — Year 8 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y8.expressions",
+      "label": "Expressions and Formulae",
+      "book": "sec.y8",
+      "description": "Expressions and Formulae — Year 8 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y8.place_value",
+      "label": "Place Value and Rounding",
+      "book": "sec.y8",
+      "description": "Place Value and Rounding — Year 8 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y8.decimals",
+      "label": "Decimals and Fractions",
+      "book": "sec.y8",
+      "description": "Decimals and Fractions — Year 8 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y8.angles",
+      "label": "Angles and Geometric Reasoning",
+      "book": "sec.y8",
+      "description": "Angles and Geometric Reasoning — Year 8 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y8.collecting_data",
+      "label": "Collecting and Recording Data",
+      "book": "sec.y8",
+      "description": "Collecting and Recording Data — Year 8 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y8.fractions",
+      "label": "Fractions and Percentages",
+      "book": "sec.y8",
+      "description": "Fractions and Percentages — Year 8 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y8.shapes",
+      "label": "Shapes and Geometric Properties",
+      "book": "sec.y8",
+      "description": "Shapes and Geometric Properties — Year 8 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y8.sequences",
+      "label": "Sequences and Functions",
+      "book": "sec.y8",
+      "description": "Sequences and Functions — Year 8 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y8.percentages",
+      "label": "Percentages and Ratio",
+      "book": "sec.y8",
+      "description": "Percentages and Ratio — Year 8 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y8.graphs",
+      "label": "Graphs and Equations",
+      "book": "sec.y8",
+      "description": "Graphs and Equations — Year 8 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y8.ratio",
+      "label": "Ratio and Proportion",
+      "book": "sec.y8",
+      "description": "Ratio and Proportion — Year 8 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y8.probability",
+      "label": "Probability and Experiments",
+      "book": "sec.y8",
+      "description": "Probability and Experiments — Year 8 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y8.position_transform",
+      "label": "Position and Transformation",
+      "book": "sec.y8",
+      "description": "Position and Transformation — Year 8 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y8.area_volume",
+      "label": "Distance, Area and Volume",
+      "book": "sec.y8",
+      "description": "Distance, Area and Volume — Year 8 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y8.interpreting_results",
+      "label": "Interpreting and Discussing Results",
+      "book": "sec.y8",
+      "description": "Interpreting and Discussing Results — Year 8 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y9.number",
+      "label": "Number and Calculation",
+      "book": "sec.y9",
+      "description": "Number and Calculation — Year 9 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y9.expressions",
+      "label": "Expressions and Formulae",
+      "book": "sec.y9",
+      "description": "Expressions and Formulae — Year 9 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y9.decimals_pct",
+      "label": "Decimals, Percentages and Rounding",
+      "book": "sec.y9",
+      "description": "Decimals, Percentages and Rounding — Year 9 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y9.equations",
+      "label": "Equations and Inequalities",
+      "book": "sec.y9",
+      "description": "Equations and Inequalities — Year 9 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y9.angles",
+      "label": "Angles",
+      "book": "sec.y9",
+      "description": "Angles — Year 9 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y9.stat_investigations",
+      "label": "Statistical Investigations",
+      "book": "sec.y9",
+      "description": "Statistical Investigations — Year 9 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y9.shapes",
+      "label": "Shapes and Measurements",
+      "book": "sec.y9",
+      "description": "Shapes and Measurements — Year 9 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y9.fractions",
+      "label": "Fractions",
+      "book": "sec.y9",
+      "description": "Fractions — Year 9 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y9.sequences",
+      "label": "Sequences and Functions",
+      "book": "sec.y9",
+      "description": "Sequences and Functions — Year 9 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y9.graphs",
+      "label": "Graphs",
+      "book": "sec.y9",
+      "description": "Graphs — Year 9 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y9.ratio",
+      "label": "Ratio and Proportion",
+      "book": "sec.y9",
+      "description": "Ratio and Proportion — Year 9 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y9.probability",
+      "label": "Probability",
+      "book": "sec.y9",
+      "description": "Probability — Year 9 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y9.position_transform",
+      "label": "Position and Transformation",
+      "book": "sec.y9",
+      "description": "Position and Transformation — Year 9 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y9.volume_sa",
+      "label": "Volume, Surface Area and Symmetry",
+      "book": "sec.y9",
+      "description": "Volume, Surface Area and Symmetry — Year 9 (Cambridge Lower Secondary)"
+    },
+    {
+      "id": "sec.y9.interpreting_results",
+      "label": "Interpreting Results",
+      "book": "sec.y9",
+      "description": "Interpreting Results — Year 9 (Cambridge Lower Secondary)"
+    },
     {
       "id": "m.review_of_number_concepts.different_types_of_numbers",
       "label": "Different types of numbers",
       "book": "igcse.y10.number_concepts",
       "pages": "17-20",
-      "description": "Different types of numbers \u2014 Review of number concepts (IGCSE Math)"
+      "description": "Different types of numbers — Review of number concepts (IGCSE Math)"
     },
     {
       "id": "m.review_of_number_concepts.multiples_and_factors",
       "label": "Multiples and factors",
       "book": "igcse.y10.number_concepts",
       "pages": "20-23",
-      "description": "Multiples and factors \u2014 Review of number concepts (IGCSE Math)"
+      "description": "Multiples and factors — Review of number concepts (IGCSE Math)"
     },
     {
       "id": "m.review_of_number_concepts.prime_numbers",
       "label": "Prime numbers",
       "book": "igcse.y10.number_concepts",
       "pages": "23-28",
-      "description": "Prime numbers \u2014 Review of number concepts (IGCSE Math)"
+      "description": "Prime numbers — Review of number concepts (IGCSE Math)"
     },
     {
       "id": "m.review_of_number_concepts.working_with_directed_numbers",
       "label": "Working with directed numbers",
       "book": "igcse.y10.number_concepts",
       "pages": "28-31",
-      "description": "Working with directed numbers \u2014 Review of number concepts (IGCSE Math)"
+      "description": "Working with directed numbers — Review of number concepts (IGCSE Math)"
     },
     {
       "id": "m.review_of_number_concepts.powers_roots_and_laws_of_indices",
       "label": "Powers, roots and laws of indices",
       "book": "igcse.y10.number_concepts",
       "pages": "31-40",
-      "description": "Powers, roots and laws of indices \u2014 Review of number concepts (IGCSE Math)"
+      "description": "Powers, roots and laws of indices — Review of number concepts (IGCSE Math)"
     },
     {
       "id": "m.review_of_number_concepts.order_of_operations",
       "label": "Order of operations",
       "book": "igcse.y10.number_concepts",
       "pages": "40-45",
-      "description": "Order of operations \u2014 Review of number concepts (IGCSE Math)"
+      "description": "Order of operations — Review of number concepts (IGCSE Math)"
     },
     {
       "id": "m.review_of_number_concepts.rounding_and_estimating",
       "label": "Rounding and estimating",
       "book": "igcse.y10.number_concepts",
       "pages": "45-52",
-      "description": "Rounding and estimating \u2014 Review of number concepts (IGCSE Math)"
+      "description": "Rounding and estimating — Review of number concepts (IGCSE Math)"
     },
     {
       "id": "m.making_sense_of_algebra.using_letters_to_represent_unknown_values",
       "label": "Using letters to represent unknown values",
       "book": "igcse.y10.algebra_basics",
       "pages": "54-57",
-      "description": "Using letters to represent unknown values \u2014 Making sense of algebra (IGCSE Math)"
+      "description": "Using letters to represent unknown values — Making sense of algebra (IGCSE Math)"
     },
     {
       "id": "m.making_sense_of_algebra.substitution",
       "label": "Substitution",
       "book": "igcse.y10.algebra_basics",
       "pages": "57-61",
-      "description": "Substitution \u2014 Making sense of algebra (IGCSE Math)"
+      "description": "Substitution — Making sense of algebra (IGCSE Math)"
     },
     {
       "id": "m.making_sense_of_algebra.simplifying_expressions",
       "label": "Simplifying expressions",
       "book": "igcse.y10.algebra_basics",
       "pages": "61-67",
-      "description": "Simplifying expressions \u2014 Making sense of algebra (IGCSE Math)"
+      "description": "Simplifying expressions — Making sense of algebra (IGCSE Math)"
     },
     {
       "id": "m.making_sense_of_algebra.working_with_brackets",
       "label": "Working with brackets",
       "book": "igcse.y10.algebra_basics",
       "pages": "67-71",
-      "description": "Working with brackets \u2014 Making sense of algebra (IGCSE Math)"
+      "description": "Working with brackets — Making sense of algebra (IGCSE Math)"
     },
     {
       "id": "m.making_sense_of_algebra.indices",
       "label": "Indices",
       "book": "igcse.y10.algebra_basics",
       "pages": "71-84",
-      "description": "Indices \u2014 Making sense of algebra (IGCSE Math)"
+      "description": "Indices — Making sense of algebra (IGCSE Math)"
     },
     {
       "id": "m.lines_angles_and_shapes.lines_and_angles",
       "label": "Lines and angles",
       "book": "igcse.y10.geometry",
       "pages": "86-100",
-      "description": "Lines and angles \u2014 Lines, angles and shapes (IGCSE Math)"
+      "description": "Lines and angles — Lines, angles and shapes (IGCSE Math)"
     },
     {
       "id": "m.lines_angles_and_shapes.triangles",
       "label": "Triangles",
       "book": "igcse.y10.geometry",
       "pages": "100-105",
-      "description": "Triangles \u2014 Lines, angles and shapes (IGCSE Math)"
+      "description": "Triangles — Lines, angles and shapes (IGCSE Math)"
     },
     {
       "id": "m.lines_angles_and_shapes.quadrilaterals",
       "label": "Quadrilaterals",
       "book": "igcse.y10.geometry",
       "pages": "105-108",
-      "description": "Quadrilaterals \u2014 Lines, angles and shapes (IGCSE Math)"
+      "description": "Quadrilaterals — Lines, angles and shapes (IGCSE Math)"
     },
     {
       "id": "m.lines_angles_and_shapes.polygons",
       "label": "Polygons",
       "book": "igcse.y10.geometry",
       "pages": "108-111",
-      "description": "Polygons \u2014 Lines, angles and shapes (IGCSE Math)"
+      "description": "Polygons — Lines, angles and shapes (IGCSE Math)"
     },
     {
       "id": "m.lines_angles_and_shapes.circles",
       "label": "Circles",
       "book": "igcse.y10.geometry",
       "pages": "111-113",
-      "description": "Circles \u2014 Lines, angles and shapes (IGCSE Math)"
+      "description": "Circles — Lines, angles and shapes (IGCSE Math)"
     },
     {
       "id": "m.lines_angles_and_shapes.construction",
       "label": "Construction",
       "book": "igcse.y10.geometry",
       "pages": "113-121",
-      "description": "Construction \u2014 Lines, angles and shapes (IGCSE Math)"
+      "description": "Construction — Lines, angles and shapes (IGCSE Math)"
     },
     {
       "id": "m.collecting_organising_and_displaying_data.collecting_and_classifying_data",
       "label": "Collecting and classifying data",
       "book": "igcse.y10.data",
       "pages": "124-127",
-      "description": "Collecting and classifying data \u2014 Collecting, organising and displaying data (IGCSE Math)"
+      "description": "Collecting and classifying data — Collecting, organising and displaying data (IGCSE Math)"
     },
     {
       "id": "m.collecting_organising_and_displaying_data.organising_data",
       "label": "Organising data",
       "book": "igcse.y10.data",
       "pages": "127-139",
-      "description": "Organising data \u2014 Collecting, organising and displaying data (IGCSE Math)"
+      "description": "Organising data — Collecting, organising and displaying data (IGCSE Math)"
     },
     {
       "id": "m.collecting_organising_and_displaying_data.using_charts_to_display_data",
       "label": "Using charts to display data",
       "book": "igcse.y10.data",
       "pages": "139-159",
-      "description": "Using charts to display data \u2014 Collecting, organising and displaying data (IGCSE Math)"
+      "description": "Using charts to display data — Collecting, organising and displaying data (IGCSE Math)"
     },
     {
       "id": "m.fractions_percentages_and_standard_form.revisiting_fractions",
       "label": "Revisiting fractions",
       "book": "igcse.y10.fractions_pct",
       "pages": "165-167",
-      "description": "Revisiting fractions \u2014 Fractions, percentages and standard form (IGCSE Math)"
+      "description": "Revisiting fractions — Fractions, percentages and standard form (IGCSE Math)"
     },
     {
       "id": "m.fractions_percentages_and_standard_form.operations_on_fractions",
       "label": "Operations on fractions",
       "book": "igcse.y10.fractions_pct",
       "pages": "167-173",
-      "description": "Operations on fractions \u2014 Fractions, percentages and standard form (IGCSE Math)"
+      "description": "Operations on fractions — Fractions, percentages and standard form (IGCSE Math)"
     },
     {
       "id": "m.fractions_percentages_and_standard_form.percentages",
       "label": "Percentages",
       "book": "igcse.y10.fractions_pct",
       "pages": "173-184",
-      "description": "Percentages \u2014 Fractions, percentages and standard form (IGCSE Math)"
+      "description": "Percentages — Fractions, percentages and standard form (IGCSE Math)"
     },
     {
       "id": "m.fractions_percentages_and_standard_form.standard_form",
       "label": "Standard form",
       "book": "igcse.y10.fractions_pct",
       "pages": "184-194",
-      "description": "Standard form \u2014 Fractions, percentages and standard form (IGCSE Math)"
+      "description": "Standard form — Fractions, percentages and standard form (IGCSE Math)"
     },
     {
       "id": "m.equations_factors_and_formulae.solving_equations",
       "label": "Solving equations",
       "book": "igcse.y10.equations",
       "pages": "195-200",
-      "description": "Solving equations \u2014 Equations, factors and formulae (IGCSE Math)"
+      "description": "Solving equations — Equations, factors and formulae (IGCSE Math)"
     },
     {
       "id": "m.equations_factors_and_formulae.factorising_algebraic_expressions",
       "label": "Factorising algebraic expressions",
       "book": "igcse.y10.equations",
       "pages": "200-203",
-      "description": "Factorising algebraic expressions \u2014 Equations, factors and formulae (IGCSE Math)"
+      "description": "Factorising algebraic expressions — Equations, factors and formulae (IGCSE Math)"
     },
     {
       "id": "m.equations_factors_and_formulae.rearranging_formulae",
       "label": "Rearranging formulae",
       "book": "igcse.y10.equations",
       "pages": "203-208",
-      "description": "Rearranging formulae \u2014 Equations, factors and formulae (IGCSE Math)"
+      "description": "Rearranging formulae — Equations, factors and formulae (IGCSE Math)"
     },
     {
       "id": "m.perimeter_area_and_volume.perimeter_and_area_in_two_dimensions",
       "label": "Perimeter and area in two dimensions",
       "book": "igcse.y10.mensuration",
       "pages": "209-226",
-      "description": "Perimeter and area in two dimensions \u2014 Perimeter, area and volume (IGCSE Math)"
+      "description": "Perimeter and area in two dimensions — Perimeter, area and volume (IGCSE Math)"
     },
     {
       "id": "m.perimeter_area_and_volume.three_dimensional_objects",
       "label": "Three-dimensional objects",
       "book": "igcse.y10.mensuration",
       "pages": "226-228",
-      "description": "Three-dimensional objects \u2014 Perimeter, area and volume (IGCSE Math)"
+      "description": "Three-dimensional objects — Perimeter, area and volume (IGCSE Math)"
     },
     {
       "id": "m.perimeter_area_and_volume.surface_areas_and_volumes_of_solids",
       "label": "Surface areas and volumes of solids",
       "book": "igcse.y10.mensuration",
       "pages": "228-242",
-      "description": "Surface areas and volumes of solids \u2014 Perimeter, area and volume (IGCSE Math)"
+      "description": "Surface areas and volumes of solids — Perimeter, area and volume (IGCSE Math)"
     },
     {
       "id": "m.introduction_to_probability.understanding_basic_probability",
       "label": "Understanding basic probability",
       "book": "igcse.y10.probability",
       "pages": "243-249",
-      "description": "Understanding basic probability \u2014 Introduction to probability (IGCSE Math)"
+      "description": "Understanding basic probability — Introduction to probability (IGCSE Math)"
     },
     {
       "id": "m.introduction_to_probability.sample_space_diagrams",
       "label": "Sample space diagrams",
       "book": "igcse.y10.probability",
       "pages": "249-253",
-      "description": "Sample space diagrams \u2014 Introduction to probability (IGCSE Math)"
+      "description": "Sample space diagrams — Introduction to probability (IGCSE Math)"
     },
     {
       "id": "m.introduction_to_probability.combining_independent_and_mutually_exclusive_event",
       "label": "Combining independent and mutually exclusive events",
       "book": "igcse.y10.probability",
       "pages": "253-260",
-      "description": "Combining independent and mutually exclusive events \u2014 Introduction to probability (IGCSE Math)"
+      "description": "Combining independent and mutually exclusive events — Introduction to probability (IGCSE Math)"
     },
     {
       "id": "m.sequences_surds_and_sets.sequences",
       "label": "Sequences",
       "book": "igcse.y10.sequences_sets",
       "pages": "269-283",
-      "description": "Sequences \u2014 Sequences, surds and sets (IGCSE Math)"
+      "description": "Sequences — Sequences, surds and sets (IGCSE Math)"
     },
     {
       "id": "m.sequences_surds_and_sets.rational_and_irrational_numbers",
       "label": "Rational and irrational numbers",
       "book": "igcse.y10.sequences_sets",
       "pages": "283-287",
-      "description": "Rational and irrational numbers \u2014 Sequences, surds and sets (IGCSE Math)"
+      "description": "Rational and irrational numbers — Sequences, surds and sets (IGCSE Math)"
     },
     {
       "id": "m.sequences_surds_and_sets.surds",
       "label": "Surds",
       "book": "igcse.y10.sequences_sets",
       "pages": "287-299",
-      "description": "Surds \u2014 Sequences, surds and sets (IGCSE Math)"
+      "description": "Surds — Sequences, surds and sets (IGCSE Math)"
     },
     {
       "id": "m.sequences_surds_and_sets.sets",
       "label": "Sets",
       "book": "igcse.y10.sequences_sets",
       "pages": "299-314",
-      "description": "Sets \u2014 Sequences, surds and sets (IGCSE Math)"
+      "description": "Sets — Sequences, surds and sets (IGCSE Math)"
     },
     {
       "id": "m.straight_lines_and_quadratic_equations.straight_line_graphs",
       "label": "Straight line graphs",
       "book": "igcse.y10.linear_quadratic",
       "pages": "315-335",
-      "description": "Straight line graphs \u2014 Straight lines and quadratic equations (IGCSE Math)"
+      "description": "Straight line graphs — Straight lines and quadratic equations (IGCSE Math)"
     },
     {
       "id": "m.straight_lines_and_quadratic_equations.quadratic_expressions_and_equations",
       "label": "Quadratic expressions and equations",
       "book": "igcse.y10.linear_quadratic",
       "pages": "335-349",
-      "description": "Quadratic expressions and equations \u2014 Straight lines and quadratic equations (IGCSE Math)"
+      "description": "Quadratic expressions and equations — Straight lines and quadratic equations (IGCSE Math)"
     },
     {
       "id": "m.pythagoras_theorem_and_similar_shapes.pythagoras_theorem",
       "label": "Pythagoras' theorem",
       "book": "igcse.y11.pythagoras",
       "pages": "351-358",
-      "description": "Pythagoras' theorem \u2014 Pythagoras' theorem and similar shapes (IGCSE Math)"
+      "description": "Pythagoras' theorem — Pythagoras' theorem and similar shapes (IGCSE Math)"
     },
     {
       "id": "m.pythagoras_theorem_and_similar_shapes.understanding_similar_triangles",
       "label": "Understanding similar triangles",
       "book": "igcse.y11.pythagoras",
       "pages": "358-363",
-      "description": "Understanding similar triangles \u2014 Pythagoras' theorem and similar shapes (IGCSE Math)"
+      "description": "Understanding similar triangles — Pythagoras' theorem and similar shapes (IGCSE Math)"
     },
     {
       "id": "m.pythagoras_theorem_and_similar_shapes.understanding_similar_shapes",
       "label": "Understanding similar shapes",
       "book": "igcse.y11.pythagoras",
       "pages": "363-374",
-      "description": "Understanding similar shapes \u2014 Pythagoras' theorem and similar shapes (IGCSE Math)"
+      "description": "Understanding similar shapes — Pythagoras' theorem and similar shapes (IGCSE Math)"
     },
     {
       "id": "m.pythagoras_theorem_and_similar_shapes.understanding_congruence",
       "label": "Understanding congruence",
       "book": "igcse.y11.pythagoras",
       "pages": "374-380",
-      "description": "Understanding congruence \u2014 Pythagoras' theorem and similar shapes (IGCSE Math)"
+      "description": "Understanding congruence — Pythagoras' theorem and similar shapes (IGCSE Math)"
     },
     {
       "id": "m.averages_and_measures_of_spread.different_types_of_averages",
       "label": "Different types of averages",
       "book": "igcse.y11.averages",
       "pages": "381-385",
-      "description": "Different types of averages \u2014 Averages and measures of spread (IGCSE Math)"
+      "description": "Different types of averages — Averages and measures of spread (IGCSE Math)"
     },
     {
       "id": "m.averages_and_measures_of_spread.making_comparisons_using_averages_and_ranges",
       "label": "Making comparisons using averages and ranges",
       "book": "igcse.y11.averages",
       "pages": "385-389",
-      "description": "Making comparisons using averages and ranges \u2014 Averages and measures of spread (IGCSE Math)"
+      "description": "Making comparisons using averages and ranges — Averages and measures of spread (IGCSE Math)"
     },
     {
       "id": "m.averages_and_measures_of_spread.calculating_averages_and_ranges_for_frequency",
       "label": "Calculating averages and ranges for frequency data",
       "book": "igcse.y11.averages",
       "pages": "389-394",
-      "description": "Calculating averages and ranges for frequency data \u2014 Averages and measures of spread (IGCSE Math)"
+      "description": "Calculating averages and ranges for frequency data — Averages and measures of spread (IGCSE Math)"
     },
     {
       "id": "m.averages_and_measures_of_spread.estimating_the_mean_and_finding_the_modal_clas",
       "label": "Estimating the mean and finding the modal class for grouped data",
       "book": "igcse.y11.averages",
       "pages": "394-397",
-      "description": "Estimating the mean and finding the modal class for grouped data \u2014 Averages and measures of spread (IGCSE Math)"
+      "description": "Estimating the mean and finding the modal class for grouped data — Averages and measures of spread (IGCSE Math)"
     },
     {
       "id": "m.averages_and_measures_of_spread.quartiles",
       "label": "Quartiles",
       "book": "igcse.y11.averages",
       "pages": "397-406",
-      "description": "Quartiles \u2014 Averages and measures of spread (IGCSE Math)"
+      "description": "Quartiles — Averages and measures of spread (IGCSE Math)"
     },
     {
       "id": "m.understanding_measurement.understanding_units",
       "label": "Understanding units",
       "book": "igcse.unknown",
       "pages": "415-419",
-      "description": "Understanding units \u2014 Understanding measurement (IGCSE Math)"
+      "description": "Understanding units — Understanding measurement (IGCSE Math)"
     },
     {
       "id": "m.understanding_measurement.time",
       "label": "Time",
       "book": "igcse.unknown",
       "pages": "419-423",
-      "description": "Time \u2014 Understanding measurement (IGCSE Math)"
+      "description": "Time — Understanding measurement (IGCSE Math)"
     },
     {
       "id": "m.understanding_measurement.limits_of_accuracy_upper_and_lower_bounds",
-      "label": "Limits of accuracy \u2013 upper and lower bounds",
+      "label": "Limits of accuracy – upper and lower bounds",
       "book": "igcse.unknown",
       "pages": "423-432",
-      "description": "Limits of accuracy \u2013 upper and lower bounds \u2014 Understanding measurement (IGCSE Math)"
+      "description": "Limits of accuracy – upper and lower bounds — Understanding measurement (IGCSE Math)"
     },
     {
       "id": "m.understanding_measurement.conversion_graphs",
       "label": "Conversion graphs",
       "book": "igcse.unknown",
       "pages": "432-435",
-      "description": "Conversion graphs \u2014 Understanding measurement (IGCSE Math)"
+      "description": "Conversion graphs — Understanding measurement (IGCSE Math)"
     },
     {
       "id": "m.understanding_measurement.exchanging_currencies",
       "label": "Exchanging currencies",
       "book": "igcse.unknown",
       "pages": "435-441",
-      "description": "Exchanging currencies \u2014 Understanding measurement (IGCSE Math)"
+      "description": "Exchanging currencies — Understanding measurement (IGCSE Math)"
     },
     {
       "id": "m.further_solving_of_equations_and_inequalities.simultaneous_linear_equations",
       "label": "Simultaneous linear equations",
       "book": "igcse.y11.further_equations",
       "pages": "442-454",
-      "description": "Simultaneous linear equations \u2014 Further solving of equations and inequalities (IGCSE Math)"
+      "description": "Simultaneous linear equations — Further solving of equations and inequalities (IGCSE Math)"
     },
     {
       "id": "m.further_solving_of_equations_and_inequalities.linear_inequalities",
       "label": "Linear inequalities",
       "book": "igcse.y11.further_equations",
       "pages": "454-459",
-      "description": "Linear inequalities \u2014 Further solving of equations and inequalities (IGCSE Math)"
+      "description": "Linear inequalities — Further solving of equations and inequalities (IGCSE Math)"
     },
     {
       "id": "m.further_solving_of_equations_and_inequalities.regions_in_a_plane",
       "label": "Regions in a plane",
       "book": "igcse.y11.further_equations",
       "pages": "459-466",
-      "description": "Regions in a plane \u2014 Further solving of equations and inequalities (IGCSE Math)"
+      "description": "Regions in a plane — Further solving of equations and inequalities (IGCSE Math)"
     },
     {
       "id": "m.further_solving_of_equations_and_inequalities.completing_the_square",
       "label": "Completing the square",
       "book": "igcse.y11.further_equations",
       "pages": "466-469",
-      "description": "Completing the square \u2014 Further solving of equations and inequalities (IGCSE Math)"
+      "description": "Completing the square — Further solving of equations and inequalities (IGCSE Math)"
     },
     {
       "id": "m.further_solving_of_equations_and_inequalities.quadratic_formula",
       "label": "Quadratic formula",
       "book": "igcse.y11.further_equations",
       "pages": "469-473",
-      "description": "Quadratic formula \u2014 Further solving of equations and inequalities (IGCSE Math)"
+      "description": "Quadratic formula — Further solving of equations and inequalities (IGCSE Math)"
     },
     {
       "id": "m.further_solving_of_equations_and_inequalities.factorising_quadratics_where_the",
-      "label": "Factorising quadratics where the coefficient of x\u00b2 is not 1",
+      "label": "Factorising quadratics where the coefficient of x² is not 1",
       "book": "igcse.y11.further_equations",
       "pages": "473-475",
-      "description": "Factorising quadratics where the coefficient of x\u00b2 is not 1 \u2014 Further solving of equations and inequalities (IGCSE Math)"
+      "description": "Factorising quadratics where the coefficient of x² is not 1 — Further solving of equations and inequalities (IGCSE Math)"
     },
     {
       "id": "m.further_solving_of_equations_and_inequalities.algebraic_fractions",
       "label": "Algebraic fractions",
       "book": "igcse.y11.further_equations",
       "pages": "475-485",
-      "description": "Algebraic fractions \u2014 Further solving of equations and inequalities (IGCSE Math)"
+      "description": "Algebraic fractions — Further solving of equations and inequalities (IGCSE Math)"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.scale_drawings",
       "label": "Scale drawings",
       "book": "igcse.y11.trigonometry",
       "pages": "486-490",
-      "description": "Scale drawings \u2014 Scale drawings, bearings and trigonometry (IGCSE Math)"
+      "description": "Scale drawings — Scale drawings, bearings and trigonometry (IGCSE Math)"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.bearings",
       "label": "Bearings",
       "book": "igcse.y11.trigonometry",
       "pages": "490-493",
-      "description": "Bearings \u2014 Scale drawings, bearings and trigonometry (IGCSE Math)"
+      "description": "Bearings — Scale drawings, bearings and trigonometry (IGCSE Math)"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.understanding_the_tangent_cosine_and",
       "label": "Understanding the tangent, cosine and sine ratios",
       "book": "igcse.y11.trigonometry",
       "pages": "493-509",
-      "description": "Understanding the tangent, cosine and sine ratios \u2014 Scale drawings, bearings and trigonometry (IGCSE Math)"
+      "description": "Understanding the tangent, cosine and sine ratios — Scale drawings, bearings and trigonometry (IGCSE Math)"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.exact_trigonometric_ratios",
       "label": "Exact trigonometric ratios",
       "book": "igcse.y11.trigonometry",
       "pages": "509-513",
-      "description": "Exact trigonometric ratios \u2014 Scale drawings, bearings and trigonometry (IGCSE Math)"
+      "description": "Exact trigonometric ratios — Scale drawings, bearings and trigonometry (IGCSE Math)"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.solving_problems_using_trigonometry",
       "label": "Solving problems using trigonometry",
       "book": "igcse.y11.trigonometry",
       "pages": "513-519",
-      "description": "Solving problems using trigonometry \u2014 Scale drawings, bearings and trigonometry (IGCSE Math)"
+      "description": "Solving problems using trigonometry — Scale drawings, bearings and trigonometry (IGCSE Math)"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.sines_cosines_and_tangents_of_angles",
-      "label": "Sines, cosines and tangents of angles greater than 90\u00b0",
+      "label": "Sines, cosines and tangents of angles greater than 90°",
       "book": "igcse.y11.trigonometry",
       "pages": "519-524",
-      "description": "Sines, cosines and tangents of angles greater than 90\u00b0 \u2014 Scale drawings, bearings and trigonometry (IGCSE Math)"
+      "description": "Sines, cosines and tangents of angles greater than 90° — Scale drawings, bearings and trigonometry (IGCSE Math)"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.the_sine_and_cosine_rules",
       "label": "The sine and cosine rules",
       "book": "igcse.y11.trigonometry",
       "pages": "524-533",
-      "description": "The sine and cosine rules \u2014 Scale drawings, bearings and trigonometry (IGCSE Math)"
+      "description": "The sine and cosine rules — Scale drawings, bearings and trigonometry (IGCSE Math)"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.area_of_a_triangle",
       "label": "Area of a triangle",
       "book": "igcse.y11.trigonometry",
       "pages": "533-537",
-      "description": "Area of a triangle \u2014 Scale drawings, bearings and trigonometry (IGCSE Math)"
+      "description": "Area of a triangle — Scale drawings, bearings and trigonometry (IGCSE Math)"
     },
     {
       "id": "m.scale_drawings_bearings_and_trigonometry.trigonometry_in_three_dimensions",
       "label": "Trigonometry in three dimensions",
       "book": "igcse.y11.trigonometry",
       "pages": "537-545",
-      "description": "Trigonometry in three dimensions \u2014 Scale drawings, bearings and trigonometry (IGCSE Math)"
+      "description": "Trigonometry in three dimensions — Scale drawings, bearings and trigonometry (IGCSE Math)"
     },
     {
       "id": "m.scatter_diagrams_and_correlation.introduction_to_bivariate_data",
       "label": "Introduction to bivariate data",
       "book": "igcse.y11.scatter",
       "pages": "546-557",
-      "description": "Introduction to bivariate data \u2014 Scatter diagrams and correlation (IGCSE Math)"
+      "description": "Introduction to bivariate data — Scatter diagrams and correlation (IGCSE Math)"
     },
     {
       "id": "m.managing_money.earning_money",
       "label": "Earning money",
       "book": "igcse.y11.money",
       "pages": "567-572",
-      "description": "Earning money \u2014 Managing money (IGCSE Math)"
+      "description": "Earning money — Managing money (IGCSE Math)"
     },
     {
       "id": "m.managing_money.borrowing_and_investing_money",
       "label": "Borrowing and investing money",
       "book": "igcse.y11.money",
       "pages": "572-585",
-      "description": "Borrowing and investing money \u2014 Managing money (IGCSE Math)"
+      "description": "Borrowing and investing money — Managing money (IGCSE Math)"
     },
     {
       "id": "m.managing_money.buying_and_selling",
       "label": "Buying and selling",
       "book": "igcse.y11.money",
       "pages": "585-595",
-      "description": "Buying and selling \u2014 Managing money (IGCSE Math)"
+      "description": "Buying and selling — Managing money (IGCSE Math)"
     },
     {
       "id": "m.curved_graphs.review_of_quadratic_graphs_the_parabola",
       "label": "Review of quadratic graphs (the parabola)",
       "book": "igcse.y11.curved_graphs",
       "pages": "598-610",
-      "description": "Review of quadratic graphs (the parabola) \u2014 Curved graphs (IGCSE Math)"
+      "description": "Review of quadratic graphs (the parabola) — Curved graphs (IGCSE Math)"
     },
     {
       "id": "m.curved_graphs.drawing_reciprocal_graphs_the_hyperbola",
       "label": "Drawing reciprocal graphs (the hyperbola)",
       "book": "igcse.y11.curved_graphs",
       "pages": "610-616",
-      "description": "Drawing reciprocal graphs (the hyperbola) \u2014 Curved graphs (IGCSE Math)"
+      "description": "Drawing reciprocal graphs (the hyperbola) — Curved graphs (IGCSE Math)"
     },
     {
       "id": "m.curved_graphs.using_graphs_to_solve_quadratic_equations",
       "label": "Using graphs to solve quadratic equations",
       "book": "igcse.y11.curved_graphs",
       "pages": "616-619",
-      "description": "Using graphs to solve quadratic equations \u2014 Curved graphs (IGCSE Math)"
+      "description": "Using graphs to solve quadratic equations — Curved graphs (IGCSE Math)"
     },
     {
       "id": "m.curved_graphs.simultaneous_linear_and_non_linear_equations",
       "label": "Simultaneous linear and non-linear equations",
       "book": "igcse.y11.curved_graphs",
       "pages": "619-622",
-      "description": "Simultaneous linear and non-linear equations \u2014 Curved graphs (IGCSE Math)"
+      "description": "Simultaneous linear and non-linear equations — Curved graphs (IGCSE Math)"
     },
     {
       "id": "m.curved_graphs.other_non_linear_graphs",
       "label": "Other non-linear graphs",
       "book": "igcse.y11.curved_graphs",
       "pages": "622-634",
-      "description": "Other non-linear graphs \u2014 Curved graphs (IGCSE Math)"
+      "description": "Other non-linear graphs — Curved graphs (IGCSE Math)"
     },
     {
       "id": "m.curved_graphs.finding_the_gradient_of_a_curve",
       "label": "Finding the gradient of a curve",
       "book": "igcse.y11.curved_graphs",
       "pages": "634-638",
-      "description": "Finding the gradient of a curve \u2014 Curved graphs (IGCSE Math)"
+      "description": "Finding the gradient of a curve — Curved graphs (IGCSE Math)"
     },
     {
       "id": "m.curved_graphs.derivatives_of_functions",
       "label": "Derivatives of functions",
       "book": "igcse.y11.curved_graphs",
       "pages": "638-655",
-      "description": "Derivatives of functions \u2014 Curved graphs (IGCSE Math)"
+      "description": "Derivatives of functions — Curved graphs (IGCSE Math)"
     },
     {
       "id": "m.symmetry.symmetry_in_two_dimensions",
       "label": "Symmetry in two dimensions",
       "book": "igcse.y11.symmetry",
       "pages": "657-663",
-      "description": "Symmetry in two dimensions \u2014 Symmetry (IGCSE Math)"
+      "description": "Symmetry in two dimensions — Symmetry (IGCSE Math)"
     },
     {
       "id": "m.symmetry.symmetry_in_three_dimensions",
       "label": "Symmetry in three dimensions",
       "book": "igcse.y11.symmetry",
       "pages": "663-665",
-      "description": "Symmetry in three dimensions \u2014 Symmetry (IGCSE Math)"
+      "description": "Symmetry in three dimensions — Symmetry (IGCSE Math)"
     },
     {
       "id": "m.symmetry.symmetry_properties_of_circles",
       "label": "Symmetry properties of circles",
       "book": "igcse.y11.symmetry",
       "pages": "665-670",
-      "description": "Symmetry properties of circles \u2014 Symmetry (IGCSE Math)"
+      "description": "Symmetry properties of circles — Symmetry (IGCSE Math)"
     },
     {
       "id": "m.symmetry.angle_relationships_in_circles",
       "label": "Angle relationships in circles",
       "book": "igcse.y11.symmetry",
       "pages": "670-685",
-      "description": "Angle relationships in circles \u2014 Symmetry (IGCSE Math)"
+      "description": "Angle relationships in circles — Symmetry (IGCSE Math)"
     },
     {
       "id": "m.histograms_and_cumulative_frequency_diagrams.histograms",
       "label": "Histograms",
       "book": "igcse.y11.histograms",
       "pages": "687-694",
-      "description": "Histograms \u2014 Histograms and cumulative frequency diagrams (IGCSE Math)"
+      "description": "Histograms — Histograms and cumulative frequency diagrams (IGCSE Math)"
     },
     {
       "id": "m.histograms_and_cumulative_frequency_diagrams.cumulative_frequency",
       "label": "Cumulative frequency",
       "book": "igcse.y11.histograms",
       "pages": "694-709",
-      "description": "Cumulative frequency \u2014 Histograms and cumulative frequency diagrams (IGCSE Math)"
+      "description": "Cumulative frequency — Histograms and cumulative frequency diagrams (IGCSE Math)"
     },
     {
       "id": "m.ratio_rate_and_proportion.working_with_ratio",
       "label": "Working with ratio",
       "book": "igcse.y11.ratio_proportion",
       "pages": "726-734",
-      "description": "Working with ratio \u2014 Ratio, rate and proportion (IGCSE Math)"
+      "description": "Working with ratio — Ratio, rate and proportion (IGCSE Math)"
     },
     {
       "id": "m.ratio_rate_and_proportion.ratio_and_scale",
       "label": "Ratio and scale",
       "book": "igcse.y11.ratio_proportion",
       "pages": "734-739",
-      "description": "Ratio and scale \u2014 Ratio, rate and proportion (IGCSE Math)"
+      "description": "Ratio and scale — Ratio, rate and proportion (IGCSE Math)"
     },
     {
       "id": "m.ratio_rate_and_proportion.rates",
       "label": "Rates",
       "book": "igcse.y11.ratio_proportion",
       "pages": "739-743",
-      "description": "Rates \u2014 Ratio, rate and proportion (IGCSE Math)"
+      "description": "Rates — Ratio, rate and proportion (IGCSE Math)"
     },
     {
       "id": "m.ratio_rate_and_proportion.kinematic_graphs",
       "label": "Kinematic graphs",
       "book": "igcse.y11.ratio_proportion",
       "pages": "743-753",
-      "description": "Kinematic graphs \u2014 Ratio, rate and proportion (IGCSE Math)"
+      "description": "Kinematic graphs — Ratio, rate and proportion (IGCSE Math)"
     },
     {
       "id": "m.ratio_rate_and_proportion.proportion",
       "label": "Proportion",
       "book": "igcse.y11.ratio_proportion",
       "pages": "753-759",
-      "description": "Proportion \u2014 Ratio, rate and proportion (IGCSE Math)"
+      "description": "Proportion — Ratio, rate and proportion (IGCSE Math)"
     },
     {
       "id": "m.ratio_rate_and_proportion.direct_and_inverse_proportion_in_algebraic_terms",
       "label": "Direct and inverse proportion in algebraic terms",
       "book": "igcse.y11.ratio_proportion",
       "pages": "759-768",
-      "description": "Direct and inverse proportion in algebraic terms \u2014 Ratio, rate and proportion (IGCSE Math)"
+      "description": "Direct and inverse proportion in algebraic terms — Ratio, rate and proportion (IGCSE Math)"
     },
     {
       "id": "m.more_equations_formulae_and_functions.setting_up_equations_to_solve_problems",
       "label": "Setting up equations to solve problems",
       "book": "igcse.y11.more_equations",
       "pages": "770-777",
-      "description": "Setting up equations to solve problems \u2014 More equations, formulae and functions (IGCSE Math)"
+      "description": "Setting up equations to solve problems — More equations, formulae and functions (IGCSE Math)"
     },
     {
       "id": "m.more_equations_formulae_and_functions.using_and_rearranging_formulae",
       "label": "Using and rearranging formulae",
       "book": "igcse.y11.more_equations",
       "pages": "777-782",
-      "description": "Using and rearranging formulae \u2014 More equations, formulae and functions (IGCSE Math)"
+      "description": "Using and rearranging formulae — More equations, formulae and functions (IGCSE Math)"
     },
     {
       "id": "m.more_equations_formulae_and_functions.functions_and_function_notation",
       "label": "Functions and function notation",
       "book": "igcse.y11.more_equations",
       "pages": "782-795",
-      "description": "Functions and function notation \u2014 More equations, formulae and functions (IGCSE Math)"
+      "description": "Functions and function notation — More equations, formulae and functions (IGCSE Math)"
     },
     {
       "id": "m.transformations_and_vectors.simple_plane_transformations",
       "label": "Simple plane transformations",
       "book": "igcse.y11.transforms_vectors",
       "pages": "797-815",
-      "description": "Simple plane transformations \u2014 Transformations and vectors (IGCSE Math)"
+      "description": "Simple plane transformations — Transformations and vectors (IGCSE Math)"
     },
     {
       "id": "m.transformations_and_vectors.further_transformations",
       "label": "Further transformations",
       "book": "igcse.y11.transforms_vectors",
       "pages": "815-823",
-      "description": "Further transformations \u2014 Transformations and vectors (IGCSE Math)"
+      "description": "Further transformations — Transformations and vectors (IGCSE Math)"
     },
     {
       "id": "m.transformations_and_vectors.vectors",
       "label": "Vectors",
       "book": "igcse.y11.transforms_vectors",
       "pages": "823-844",
-      "description": "Vectors \u2014 Transformations and vectors (IGCSE Math)"
+      "description": "Vectors — Transformations and vectors (IGCSE Math)"
     },
     {
       "id": "m.probability_using_tree_diagrams_and_venn_diagrams.using_tree_diagrams_to_show",
       "label": "Using tree diagrams to show outcomes",
       "book": "igcse.y11.adv_probability",
       "pages": "846-847",
-      "description": "Using tree diagrams to show outcomes \u2014 Probability using tree diagrams and Venn diagrams (IGCSE Math)"
+      "description": "Using tree diagrams to show outcomes — Probability using tree diagrams and Venn diagrams (IGCSE Math)"
     },
     {
       "id": "m.probability_using_tree_diagrams_and_venn_diagrams.calculating_probability_from",
       "label": "Calculating probability from tree diagrams",
       "book": "igcse.y11.adv_probability",
       "pages": "847-851",
-      "description": "Calculating probability from tree diagrams \u2014 Probability using tree diagrams and Venn diagrams (IGCSE Math)"
+      "description": "Calculating probability from tree diagrams — Probability using tree diagrams and Venn diagrams (IGCSE Math)"
     },
     {
       "id": "m.probability_using_tree_diagrams_and_venn_diagrams.calculating_probability_from_2",
       "label": "Calculating probability from Venn diagrams",
       "book": "igcse.y11.adv_probability",
       "pages": "851-857",
-      "description": "Calculating probability from Venn diagrams \u2014 Probability using tree diagrams and Venn diagrams (IGCSE Math)"
+      "description": "Calculating probability from Venn diagrams — Probability using tree diagrams and Venn diagrams (IGCSE Math)"
     },
     {
       "id": "m.probability_using_tree_diagrams_and_venn_diagrams.conditional_probability",
       "label": "Conditional probability",
       "book": "igcse.y11.adv_probability",
       "pages": "857-866",
-      "description": "Conditional probability \u2014 Probability using tree diagrams and Venn diagrams (IGCSE Math)"
+      "description": "Conditional probability — Probability using tree diagrams and Venn diagrams (IGCSE Math)"
     },
     {
       "id": "am.functions.mappings",
       "label": "Mappings",
       "book": "igcse.am.functions",
       "pages": "16-17",
-      "description": "Mappings \u2014 Functions (IGCSE Add Math)"
+      "description": "Mappings — Functions (IGCSE Add Math)"
     },
     {
       "id": "am.functions.definition_of_a_function",
       "label": "Definition of a function",
       "book": "igcse.am.functions",
       "pages": "17-20",
-      "description": "Definition of a function \u2014 Functions (IGCSE Add Math)"
+      "description": "Definition of a function — Functions (IGCSE Add Math)"
     },
     {
       "id": "am.functions.composite_functions",
       "label": "Composite functions",
       "book": "igcse.am.functions",
       "pages": "20-24",
-      "description": "Composite functions \u2014 Functions (IGCSE Add Math)"
+      "description": "Composite functions — Functions (IGCSE Add Math)"
     },
     {
       "id": "am.functions.modulus_functions",
       "label": "Modulus functions",
       "book": "igcse.am.functions",
       "pages": "24-26",
-      "description": "Modulus functions \u2014 Functions (IGCSE Add Math)"
+      "description": "Modulus functions — Functions (IGCSE Add Math)"
     },
     {
       "id": "am.functions.graphs_of_y_fx_where_fx_is_linear",
       "label": "Graphs of y = |f(x)| where f(x) is linear",
       "book": "igcse.am.functions",
       "pages": "26-29",
-      "description": "Graphs of y = |f(x)| where f(x) is linear \u2014 Functions (IGCSE Add Math)"
+      "description": "Graphs of y = |f(x)| where f(x) is linear — Functions (IGCSE Add Math)"
     },
     {
       "id": "am.functions.inverse_functions",
       "label": "Inverse functions",
       "book": "igcse.am.functions",
       "pages": "29-32",
-      "description": "Inverse functions \u2014 Functions (IGCSE Add Math)"
+      "description": "Inverse functions — Functions (IGCSE Add Math)"
     },
     {
       "id": "am.functions.the_graph_of_a_function_and_its_inverse",
       "label": "The graph of a function and its inverse",
       "book": "igcse.am.functions",
       "pages": "32-35",
-      "description": "The graph of a function and its inverse \u2014 Functions (IGCSE Add Math)"
+      "description": "The graph of a function and its inverse — Functions (IGCSE Add Math)"
     },
     {
       "id": "am.simultaneous_equations_and_quadratics.simultaneous_equations_one_linear_and_o",
       "label": "Simultaneous equations (one linear and one non-linear)",
       "book": "igcse.am.quadratics",
       "pages": "43-45",
-      "description": "Simultaneous equations (one linear and one non-linear) \u2014 Simultaneous equations and quadratics (IGCSE Add Math)"
+      "description": "Simultaneous equations (one linear and one non-linear) — Simultaneous equations and quadratics (IGCSE Add Math)"
     },
     {
       "id": "am.simultaneous_equations_and_quadratics.maximum_and_minimum_values_of_a_quadrat",
       "label": "Maximum and minimum values of a quadratic function",
       "book": "igcse.am.quadratics",
       "pages": "45-51",
-      "description": "Maximum and minimum values of a quadratic function \u2014 Simultaneous equations and quadratics (IGCSE Add Math)"
+      "description": "Maximum and minimum values of a quadratic function — Simultaneous equations and quadratics (IGCSE Add Math)"
     },
     {
       "id": "am.simultaneous_equations_and_quadratics.graphs_of_y_fx_where_fx_is_quadratic",
       "label": "Graphs of y = |f(x)| where f(x) is quadratic",
       "book": "igcse.am.quadratics",
       "pages": "51-57",
-      "description": "Graphs of y = |f(x)| where f(x) is quadratic \u2014 Simultaneous equations and quadratics (IGCSE Add Math)"
+      "description": "Graphs of y = |f(x)| where f(x) is quadratic — Simultaneous equations and quadratics (IGCSE Add Math)"
     },
     {
       "id": "am.simultaneous_equations_and_quadratics.quadratic_inequalities",
       "label": "Quadratic inequalities",
       "book": "igcse.am.quadratics",
       "pages": "57-60",
-      "description": "Quadratic inequalities \u2014 Simultaneous equations and quadratics (IGCSE Add Math)"
+      "description": "Quadratic inequalities — Simultaneous equations and quadratics (IGCSE Add Math)"
     },
     {
       "id": "am.simultaneous_equations_and_quadratics.roots_of_quadratic_equations",
       "label": "Roots of quadratic equations",
       "book": "igcse.am.quadratics",
       "pages": "60-62",
-      "description": "Roots of quadratic equations \u2014 Simultaneous equations and quadratics (IGCSE Add Math)"
+      "description": "Roots of quadratic equations — Simultaneous equations and quadratics (IGCSE Add Math)"
     },
     {
       "id": "am.simultaneous_equations_and_quadratics.intersection_of_a_line_and_a_curve",
       "label": "Intersection of a line and a curve",
       "book": "igcse.am.quadratics",
       "pages": "62-63",
-      "description": "Intersection of a line and a curve \u2014 Simultaneous equations and quadratics (IGCSE Add Math)"
+      "description": "Intersection of a line and a curve — Simultaneous equations and quadratics (IGCSE Add Math)"
     },
     {
       "id": "am.factors_and_polynomials.adding_subtracting_and_multiplying_polynomials",
       "label": "Adding, subtracting and multiplying polynomials",
       "book": "igcse.am.polynomials",
       "pages": "68-70",
-      "description": "Adding, subtracting and multiplying polynomials \u2014 Factors and polynomials (IGCSE Add Math)"
+      "description": "Adding, subtracting and multiplying polynomials — Factors and polynomials (IGCSE Add Math)"
     },
     {
       "id": "am.factors_and_polynomials.division_of_polynomials",
       "label": "Division of polynomials",
       "book": "igcse.am.polynomials",
       "pages": "70-72",
-      "description": "Division of polynomials \u2014 Factors and polynomials (IGCSE Add Math)"
+      "description": "Division of polynomials — Factors and polynomials (IGCSE Add Math)"
     },
     {
       "id": "am.factors_and_polynomials.the_factor_theorem",
       "label": "The factor theorem",
       "book": "igcse.am.polynomials",
       "pages": "72-75",
-      "description": "The factor theorem \u2014 Factors and polynomials (IGCSE Add Math)"
+      "description": "The factor theorem — Factors and polynomials (IGCSE Add Math)"
     },
     {
       "id": "am.factors_and_polynomials.cubic_expressions_and_equations",
       "label": "Cubic expressions and equations",
       "book": "igcse.am.polynomials",
       "pages": "75-80",
-      "description": "Cubic expressions and equations \u2014 Factors and polynomials (IGCSE Add Math)"
+      "description": "Cubic expressions and equations — Factors and polynomials (IGCSE Add Math)"
     },
     {
       "id": "am.factors_and_polynomials.the_remainder_theorem",
       "label": "The remainder theorem",
       "book": "igcse.am.polynomials",
       "pages": "80-84",
-      "description": "The remainder theorem \u2014 Factors and polynomials (IGCSE Add Math)"
+      "description": "The remainder theorem — Factors and polynomials (IGCSE Add Math)"
     },
     {
       "id": "am.equations_inequalities_and_graphs.solving_equations_of_the_type_ax_b_cx_d",
       "label": "Solving equations of the type |ax + b| = |cx + d|",
       "book": "igcse.am.eq_ineq_graphs",
       "pages": "88-92",
-      "description": "Solving equations of the type |ax + b| = |cx + d| \u2014 Equations, inequalities and graphs (IGCSE Add Math)"
+      "description": "Solving equations of the type |ax + b| = |cx + d| — Equations, inequalities and graphs (IGCSE Add Math)"
     },
     {
       "id": "am.equations_inequalities_and_graphs.solving_modulus_inequalities",
       "label": "Solving modulus inequalities",
       "book": "igcse.am.eq_ineq_graphs",
       "pages": "92-97",
-      "description": "Solving modulus inequalities \u2014 Equations, inequalities and graphs (IGCSE Add Math)"
+      "description": "Solving modulus inequalities — Equations, inequalities and graphs (IGCSE Add Math)"
     },
     {
       "id": "am.equations_inequalities_and_graphs.sketching_graphs_of_cubic_polynomials_and_t",
       "label": "Sketching graphs of cubic polynomials and their moduli",
       "book": "igcse.am.eq_ineq_graphs",
       "pages": "97-102",
-      "description": "Sketching graphs of cubic polynomials and their moduli \u2014 Equations, inequalities and graphs (IGCSE Add Math)"
+      "description": "Sketching graphs of cubic polynomials and their moduli — Equations, inequalities and graphs (IGCSE Add Math)"
     },
     {
       "id": "am.equations_inequalities_and_graphs.solving_cubic_inequalities_graphically",
       "label": "Solving cubic inequalities graphically",
       "book": "igcse.am.eq_ineq_graphs",
       "pages": "102-104",
-      "description": "Solving cubic inequalities graphically \u2014 Equations, inequalities and graphs (IGCSE Add Math)"
+      "description": "Solving cubic inequalities graphically — Equations, inequalities and graphs (IGCSE Add Math)"
     },
     {
       "id": "am.equations_inequalities_and_graphs.solving_more_complex_quadratic_equations",
       "label": "Solving more complex quadratic equations",
       "book": "igcse.am.eq_ineq_graphs",
       "pages": "104-106",
-      "description": "Solving more complex quadratic equations \u2014 Equations, inequalities and graphs (IGCSE Add Math)"
+      "description": "Solving more complex quadratic equations — Equations, inequalities and graphs (IGCSE Add Math)"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.logarithms_to_base_10",
       "label": "Logarithms to base 10",
       "book": "igcse.am.log_exp",
       "pages": "114-118",
-      "description": "Logarithms to base 10 \u2014 Logarithmic and exponential functions (IGCSE Add Math)"
+      "description": "Logarithms to base 10 — Logarithmic and exponential functions (IGCSE Add Math)"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.logarithms_to_base_a",
       "label": "Logarithms to base a",
       "book": "igcse.am.log_exp",
       "pages": "118-120",
-      "description": "Logarithms to base a \u2014 Logarithmic and exponential functions (IGCSE Add Math)"
+      "description": "Logarithms to base a — Logarithmic and exponential functions (IGCSE Add Math)"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.the_laws_of_logarithms",
       "label": "The laws of logarithms",
       "book": "igcse.am.log_exp",
       "pages": "120-122",
-      "description": "The laws of logarithms \u2014 Logarithmic and exponential functions (IGCSE Add Math)"
+      "description": "The laws of logarithms — Logarithmic and exponential functions (IGCSE Add Math)"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.solving_logarithmic_equations",
       "label": "Solving logarithmic equations",
       "book": "igcse.am.log_exp",
       "pages": "122-124",
-      "description": "Solving logarithmic equations \u2014 Logarithmic and exponential functions (IGCSE Add Math)"
+      "description": "Solving logarithmic equations — Logarithmic and exponential functions (IGCSE Add Math)"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.solving_exponential_equations",
       "label": "Solving exponential equations",
       "book": "igcse.am.log_exp",
       "pages": "124-126",
-      "description": "Solving exponential equations \u2014 Logarithmic and exponential functions (IGCSE Add Math)"
+      "description": "Solving exponential equations — Logarithmic and exponential functions (IGCSE Add Math)"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.change_of_base_of_logarithms",
       "label": "Change of base of logarithms",
       "book": "igcse.am.log_exp",
       "pages": "126-128",
-      "description": "Change of base of logarithms \u2014 Logarithmic and exponential functions (IGCSE Add Math)"
+      "description": "Change of base of logarithms — Logarithmic and exponential functions (IGCSE Add Math)"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.natural_logarithms",
       "label": "Natural logarithms",
       "book": "igcse.am.log_exp",
       "pages": "128-130",
-      "description": "Natural logarithms \u2014 Logarithmic and exponential functions (IGCSE Add Math)"
+      "description": "Natural logarithms — Logarithmic and exponential functions (IGCSE Add Math)"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.practical_applications_of_exponential_e",
       "label": "Practical applications of exponential equations",
       "book": "igcse.am.log_exp",
       "pages": "130-132",
-      "description": "Practical applications of exponential equations \u2014 Logarithmic and exponential functions (IGCSE Add Math)"
+      "description": "Practical applications of exponential equations — Logarithmic and exponential functions (IGCSE Add Math)"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.the_graphs_of_simple_logarithmic_and_ex",
       "label": "The graphs of simple logarithmic and exponential functions",
       "book": "igcse.am.log_exp",
       "pages": "132-133",
-      "description": "The graphs of simple logarithmic and exponential functions \u2014 Logarithmic and exponential functions (IGCSE Add Math)"
+      "description": "The graphs of simple logarithmic and exponential functions — Logarithmic and exponential functions (IGCSE Add Math)"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.the_graphs_of_y_k_e_x_a_and_y_k_ln_ax_b",
       "label": "The graphs of y = k e^x + a and y = k ln (ax + b) where n, k, a and b are integers",
       "book": "igcse.am.log_exp",
       "pages": "133-135",
-      "description": "The graphs of y = k e^x + a and y = k ln (ax + b) where n, k, a and b are integers \u2014 Logarithmic and exponential functions (IGCSE Add Math)"
+      "description": "The graphs of y = k e^x + a and y = k ln (ax + b) where n, k, a and b are integers — Logarithmic and exponential functions (IGCSE Add Math)"
     },
     {
       "id": "am.logarithmic_and_exponential_functions.the_inverse_of_logarithmic_and_exponent",
       "label": "The inverse of logarithmic and exponential functions",
       "book": "igcse.am.log_exp",
       "pages": "135-136",
-      "description": "The inverse of logarithmic and exponential functions \u2014 Logarithmic and exponential functions (IGCSE Add Math)"
+      "description": "The inverse of logarithmic and exponential functions — Logarithmic and exponential functions (IGCSE Add Math)"
     },
     {
       "id": "am.straight_line_graphs.problems_involving_the_length_of_a_line_segment_and_the",
       "label": "Problems involving the length of a line segment and the midpoint",
       "book": "igcse.am.straight_lines",
       "pages": "143-146",
-      "description": "Problems involving the length of a line segment and the midpoint \u2014 Straight-line graphs (IGCSE Add Math)"
+      "description": "Problems involving the length of a line segment and the midpoint — Straight-line graphs (IGCSE Add Math)"
     },
     {
       "id": "am.straight_line_graphs.parallel_and_perpendicular_lines",
       "label": "Parallel and perpendicular lines",
       "book": "igcse.am.straight_lines",
       "pages": "146-148",
-      "description": "Parallel and perpendicular lines \u2014 Straight-line graphs (IGCSE Add Math)"
+      "description": "Parallel and perpendicular lines — Straight-line graphs (IGCSE Add Math)"
     },
     {
       "id": "am.straight_line_graphs.equations_of_straight_lines",
       "label": "Equations of straight lines",
       "book": "igcse.am.straight_lines",
       "pages": "148-151",
-      "description": "Equations of straight lines \u2014 Straight-line graphs (IGCSE Add Math)"
+      "description": "Equations of straight lines — Straight-line graphs (IGCSE Add Math)"
     },
     {
       "id": "am.straight_line_graphs.areas_of_rectilinear_figures",
       "label": "Areas of rectilinear figures",
       "book": "igcse.am.straight_lines",
       "pages": "151-154",
-      "description": "Areas of rectilinear figures \u2014 Straight-line graphs (IGCSE Add Math)"
+      "description": "Areas of rectilinear figures — Straight-line graphs (IGCSE Add Math)"
     },
     {
       "id": "am.straight_line_graphs.converting_from_a_non_linear_equation_to_linear_form",
       "label": "Converting from a non-linear equation to linear form",
       "book": "igcse.am.straight_lines",
       "pages": "154-157",
-      "description": "Converting from a non-linear equation to linear form \u2014 Straight-line graphs (IGCSE Add Math)"
+      "description": "Converting from a non-linear equation to linear form — Straight-line graphs (IGCSE Add Math)"
     },
     {
       "id": "am.straight_line_graphs.converting_from_linear_form_to_a_non_linear_equation",
       "label": "Converting from linear form to a non-linear equation",
       "book": "igcse.am.straight_lines",
       "pages": "157-161",
-      "description": "Converting from linear form to a non-linear equation \u2014 Straight-line graphs (IGCSE Add Math)"
+      "description": "Converting from linear form to a non-linear equation — Straight-line graphs (IGCSE Add Math)"
     },
     {
       "id": "am.straight_line_graphs.finding_relationships_from_data",
       "label": "Finding relationships from data",
       "book": "igcse.am.straight_lines",
       "pages": "161-166",
-      "description": "Finding relationships from data \u2014 Straight-line graphs (IGCSE Add Math)"
+      "description": "Finding relationships from data — Straight-line graphs (IGCSE Add Math)"
     },
     {
       "id": "am.coordinate_geometry_of_the_circle.the_equation_of_a_circle",
       "label": "The equation of a circle",
       "book": "igcse.am.circle_coord",
       "pages": "171-180",
-      "description": "The equation of a circle \u2014 Coordinate geometry of the circle (IGCSE Add Math)"
+      "description": "The equation of a circle — Coordinate geometry of the circle (IGCSE Add Math)"
     },
     {
       "id": "am.coordinate_geometry_of_the_circle.problems_involving_the_intersection_of_line",
       "label": "Problems involving the intersection of lines and circles",
       "book": "igcse.am.circle_coord",
       "pages": "180-185",
-      "description": "Problems involving the intersection of lines and circles \u2014 Coordinate geometry of the circle (IGCSE Add Math)"
+      "description": "Problems involving the intersection of lines and circles — Coordinate geometry of the circle (IGCSE Add Math)"
     },
     {
       "id": "am.circular_measure.circular_measure",
       "label": "Circular measure",
       "book": "igcse.am.circular_measure",
       "pages": "190-193",
-      "description": "Circular measure \u2014 Circular measure (IGCSE Add Math)"
+      "description": "Circular measure — Circular measure (IGCSE Add Math)"
     },
     {
       "id": "am.circular_measure.length_of_an_arc",
       "label": "Length of an arc",
       "book": "igcse.am.circular_measure",
       "pages": "193-196",
-      "description": "Length of an arc \u2014 Circular measure (IGCSE Add Math)"
+      "description": "Length of an arc — Circular measure (IGCSE Add Math)"
     },
     {
       "id": "am.circular_measure.area_of_a_sector",
       "label": "Area of a sector",
       "book": "igcse.am.circular_measure",
       "pages": "196-200",
-      "description": "Area of a sector \u2014 Circular measure (IGCSE Add Math)"
+      "description": "Area of a sector — Circular measure (IGCSE Add Math)"
     },
     {
       "id": "am.trigonometry.angles_between_0_and_90",
-      "label": "Angles between 0\u00b0 and 90\u00b0",
+      "label": "Angles between 0° and 90°",
       "book": "igcse.am.trigonometry",
       "pages": "206-210",
-      "description": "Angles between 0\u00b0 and 90\u00b0 \u2014 Trigonometry (IGCSE Add Math)"
+      "description": "Angles between 0° and 90° — Trigonometry (IGCSE Add Math)"
     },
     {
       "id": "am.trigonometry.the_general_definition_of_an_angle",
       "label": "The general definition of an angle",
       "book": "igcse.am.trigonometry",
       "pages": "210-212",
-      "description": "The general definition of an angle \u2014 Trigonometry (IGCSE Add Math)"
+      "description": "The general definition of an angle — Trigonometry (IGCSE Add Math)"
     },
     {
       "id": "am.trigonometry.trigonometric_ratios_of_general_angles",
       "label": "Trigonometric ratios of general angles",
       "book": "igcse.am.trigonometry",
       "pages": "212-215",
-      "description": "Trigonometric ratios of general angles \u2014 Trigonometry (IGCSE Add Math)"
+      "description": "Trigonometric ratios of general angles — Trigonometry (IGCSE Add Math)"
     },
     {
       "id": "am.trigonometry.graphs_of_trigonometric_functions",
       "label": "Graphs of trigonometric functions",
       "book": "igcse.am.trigonometry",
       "pages": "215-225",
-      "description": "Graphs of trigonometric functions \u2014 Trigonometry (IGCSE Add Math)"
+      "description": "Graphs of trigonometric functions — Trigonometry (IGCSE Add Math)"
     },
     {
       "id": "am.trigonometry.graphs_of_y_fx_where_fx_is_a_trigonometric_function",
       "label": "Graphs of y = |f(x)|, where f(x) is a trigonometric function",
       "book": "igcse.am.trigonometry",
       "pages": "225-228",
-      "description": "Graphs of y = |f(x)|, where f(x) is a trigonometric function \u2014 Trigonometry (IGCSE Add Math)"
+      "description": "Graphs of y = |f(x)|, where f(x) is a trigonometric function — Trigonometry (IGCSE Add Math)"
     },
     {
       "id": "am.trigonometry.trigonometric_equations",
       "label": "Trigonometric equations",
       "book": "igcse.am.trigonometry",
       "pages": "228-234",
-      "description": "Trigonometric equations \u2014 Trigonometry (IGCSE Add Math)"
+      "description": "Trigonometric equations — Trigonometry (IGCSE Add Math)"
     },
     {
       "id": "am.trigonometry.trigonometric_identities",
       "label": "Trigonometric identities",
       "book": "igcse.am.trigonometry",
       "pages": "234-236",
-      "description": "Trigonometric identities \u2014 Trigonometry (IGCSE Add Math)"
+      "description": "Trigonometric identities — Trigonometry (IGCSE Add Math)"
     },
     {
       "id": "am.trigonometry.further_trigonometric_equations",
       "label": "Further trigonometric equations",
       "book": "igcse.am.trigonometry",
       "pages": "236-238",
-      "description": "Further trigonometric equations \u2014 Trigonometry (IGCSE Add Math)"
+      "description": "Further trigonometric equations — Trigonometry (IGCSE Add Math)"
     },
     {
       "id": "am.trigonometry.further_trigonometric_identities",
       "label": "Further trigonometric identities",
       "book": "igcse.am.trigonometry",
       "pages": "238-240",
-      "description": "Further trigonometric identities \u2014 Trigonometry (IGCSE Add Math)"
+      "description": "Further trigonometric identities — Trigonometry (IGCSE Add Math)"
     },
     {
       "id": "am.permutations_and_combinations.factorial_notation",
       "label": "Factorial notation",
       "book": "igcse.am.perm_comb",
       "pages": "245-246",
-      "description": "Factorial notation \u2014 Permutations and combinations (IGCSE Add Math)"
+      "description": "Factorial notation — Permutations and combinations (IGCSE Add Math)"
     },
     {
       "id": "am.permutations_and_combinations.arrangements",
       "label": "Arrangements",
       "book": "igcse.am.perm_comb",
       "pages": "246-249",
-      "description": "Arrangements \u2014 Permutations and combinations (IGCSE Add Math)"
+      "description": "Arrangements — Permutations and combinations (IGCSE Add Math)"
     },
     {
       "id": "am.permutations_and_combinations.permutations",
       "label": "Permutations",
       "book": "igcse.am.perm_comb",
       "pages": "249-254",
-      "description": "Permutations \u2014 Permutations and combinations (IGCSE Add Math)"
+      "description": "Permutations — Permutations and combinations (IGCSE Add Math)"
     },
     {
       "id": "am.permutations_and_combinations.combinations",
       "label": "Combinations",
       "book": "igcse.am.perm_comb",
       "pages": "254-259",
-      "description": "Combinations \u2014 Permutations and combinations (IGCSE Add Math)"
+      "description": "Combinations — Permutations and combinations (IGCSE Add Math)"
     },
     {
       "id": "am.series.pascal_s_triangle",
-      "label": "Pascal\u2019s triangle",
+      "label": "Pascal’s triangle",
       "book": "igcse.am.series",
       "pages": "265-270",
-      "description": "Pascal\u2019s triangle \u2014 Series (IGCSE Add Math)"
+      "description": "Pascal’s triangle — Series (IGCSE Add Math)"
     },
     {
       "id": "am.series.the_binomial_theorem",
       "label": "The binomial theorem",
       "book": "igcse.am.series",
       "pages": "270-273",
-      "description": "The binomial theorem \u2014 Series (IGCSE Add Math)"
+      "description": "The binomial theorem — Series (IGCSE Add Math)"
     },
     {
       "id": "am.series.arithmetic_progressions",
       "label": "Arithmetic progressions",
       "book": "igcse.am.series",
       "pages": "273-278",
-      "description": "Arithmetic progressions \u2014 Series (IGCSE Add Math)"
+      "description": "Arithmetic progressions — Series (IGCSE Add Math)"
     },
     {
       "id": "am.series.geometric_progressions",
       "label": "Geometric progressions",
       "book": "igcse.am.series",
       "pages": "278-284",
-      "description": "Geometric progressions \u2014 Series (IGCSE Add Math)"
+      "description": "Geometric progressions — Series (IGCSE Add Math)"
     },
     {
       "id": "am.series.infinite_geometric_series",
       "label": "Infinite geometric series",
       "book": "igcse.am.series",
       "pages": "284-288",
-      "description": "Infinite geometric series \u2014 Series (IGCSE Add Math)"
+      "description": "Infinite geometric series — Series (IGCSE Add Math)"
     },
     {
       "id": "am.series.further_arithmetic_and_geometric_series",
       "label": "Further arithmetic and geometric series",
       "book": "igcse.am.series",
       "pages": "288-290",
-      "description": "Further arithmetic and geometric series \u2014 Series (IGCSE Add Math)"
+      "description": "Further arithmetic and geometric series — Series (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_differentiation_1.the_gradient_function",
       "label": "The gradient function",
       "book": "igcse.am.diff1",
       "pages": "296-301",
-      "description": "The gradient function \u2014 Calculus \u2013 Differentiation 1 (IGCSE Add Math)"
+      "description": "The gradient function — Calculus – Differentiation 1 (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_differentiation_1.the_chain_rule",
       "label": "The chain rule",
       "book": "igcse.am.diff1",
       "pages": "301-303",
-      "description": "The chain rule \u2014 Calculus \u2013 Differentiation 1 (IGCSE Add Math)"
+      "description": "The chain rule — Calculus – Differentiation 1 (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_differentiation_1.the_product_rule",
       "label": "The product rule",
       "book": "igcse.am.diff1",
       "pages": "303-305",
-      "description": "The product rule \u2014 Calculus \u2013 Differentiation 1 (IGCSE Add Math)"
+      "description": "The product rule — Calculus – Differentiation 1 (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_differentiation_1.the_quotient_rule",
       "label": "The quotient rule",
       "book": "igcse.am.diff1",
       "pages": "305-308",
-      "description": "The quotient rule \u2014 Calculus \u2013 Differentiation 1 (IGCSE Add Math)"
+      "description": "The quotient rule — Calculus – Differentiation 1 (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_differentiation_1.tangents_and_normals",
       "label": "Tangents and normals",
       "book": "igcse.am.diff1",
       "pages": "308-311",
-      "description": "Tangents and normals \u2014 Calculus \u2013 Differentiation 1 (IGCSE Add Math)"
+      "description": "Tangents and normals — Calculus – Differentiation 1 (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_differentiation_1.small_increments_and_approximations",
       "label": "Small increments and approximations",
       "book": "igcse.am.diff1",
       "pages": "311-314",
-      "description": "Small increments and approximations \u2014 Calculus \u2013 Differentiation 1 (IGCSE Add Math)"
+      "description": "Small increments and approximations — Calculus – Differentiation 1 (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_differentiation_1.rates_of_change",
       "label": "Rates of change",
       "book": "igcse.am.diff1",
       "pages": "314-318",
-      "description": "Rates of change \u2014 Calculus \u2013 Differentiation 1 (IGCSE Add Math)"
+      "description": "Rates of change — Calculus – Differentiation 1 (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_differentiation_1.second_derivatives",
       "label": "Second derivatives",
       "book": "igcse.am.diff1",
       "pages": "318-320",
-      "description": "Second derivatives \u2014 Calculus \u2013 Differentiation 1 (IGCSE Add Math)"
+      "description": "Second derivatives — Calculus – Differentiation 1 (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_differentiation_1.stationary_points",
       "label": "Stationary points",
       "book": "igcse.am.diff1",
       "pages": "320-326",
-      "description": "Stationary points \u2014 Calculus \u2013 Differentiation 1 (IGCSE Add Math)"
+      "description": "Stationary points — Calculus – Differentiation 1 (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_differentiation_1.practical_maximum_and_minimum_problems",
       "label": "Practical maximum and minimum problems",
       "book": "igcse.am.diff1",
       "pages": "326-332",
-      "description": "Practical maximum and minimum problems \u2014 Calculus \u2013 Differentiation 1 (IGCSE Add Math)"
+      "description": "Practical maximum and minimum problems — Calculus – Differentiation 1 (IGCSE Add Math)"
     },
     {
       "id": "am.vectors.further_vector_notation",
       "label": "Further vector notation",
       "book": "igcse.am.vectors",
       "pages": "341-343",
-      "description": "Further vector notation \u2014 Vectors (IGCSE Add Math)"
+      "description": "Further vector notation — Vectors (IGCSE Add Math)"
     },
     {
       "id": "am.vectors.position_vectors",
       "label": "Position vectors",
       "book": "igcse.am.vectors",
       "pages": "343-347",
-      "description": "Position vectors \u2014 Vectors (IGCSE Add Math)"
+      "description": "Position vectors — Vectors (IGCSE Add Math)"
     },
     {
       "id": "am.vectors.vector_geometry",
       "label": "Vector geometry",
       "book": "igcse.am.vectors",
       "pages": "347-351",
-      "description": "Vector geometry \u2014 Vectors (IGCSE Add Math)"
+      "description": "Vector geometry — Vectors (IGCSE Add Math)"
     },
     {
       "id": "am.vectors.constant_velocity_problems",
       "label": "Constant velocity problems",
       "book": "igcse.am.vectors",
       "pages": "351-356",
-      "description": "Constant velocity problems \u2014 Vectors (IGCSE Add Math)"
+      "description": "Constant velocity problems — Vectors (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_differentiation_2.derivatives_of_exponential_functions",
       "label": "Derivatives of exponential functions",
       "book": "igcse.am.diff2",
       "pages": "362-365",
-      "description": "Derivatives of exponential functions \u2014 Calculus \u2013 Differentiation 2 (IGCSE Add Math)"
+      "description": "Derivatives of exponential functions — Calculus – Differentiation 2 (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_differentiation_2.derivatives_of_logarithmic_functions",
       "label": "Derivatives of logarithmic functions",
       "book": "igcse.am.diff2",
       "pages": "365-370",
-      "description": "Derivatives of logarithmic functions \u2014 Calculus \u2013 Differentiation 2 (IGCSE Add Math)"
+      "description": "Derivatives of logarithmic functions — Calculus – Differentiation 2 (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_differentiation_2.derivatives_of_trigonometric_functions",
       "label": "Derivatives of trigonometric functions",
       "book": "igcse.am.diff2",
       "pages": "370-374",
-      "description": "Derivatives of trigonometric functions \u2014 Calculus \u2013 Differentiation 2 (IGCSE Add Math)"
+      "description": "Derivatives of trigonometric functions — Calculus – Differentiation 2 (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_differentiation_2.further_applications_of_differentiation",
       "label": "Further applications of differentiation",
       "book": "igcse.am.diff2",
       "pages": "374-380",
-      "description": "Further applications of differentiation \u2014 Calculus \u2013 Differentiation 2 (IGCSE Add Math)"
+      "description": "Further applications of differentiation — Calculus – Differentiation 2 (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_integration.differentiation_reversed",
       "label": "Differentiation reversed",
       "book": "igcse.am.integration",
       "pages": "385-389",
-      "description": "Differentiation reversed \u2014 Calculus \u2013 Integration (IGCSE Add Math)"
+      "description": "Differentiation reversed — Calculus – Integration (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_integration.indefinite_integrals",
       "label": "Indefinite integrals",
       "book": "igcse.am.integration",
       "pages": "389-391",
-      "description": "Indefinite integrals \u2014 Calculus \u2013 Integration (IGCSE Add Math)"
+      "description": "Indefinite integrals — Calculus – Integration (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_integration.integration_of_functions_of_the_form_ax_b_n",
       "label": "Integration of functions of the form (ax + b)^n",
       "book": "igcse.am.integration",
       "pages": "391-392",
-      "description": "Integration of functions of the form (ax + b)^n \u2014 Calculus \u2013 Integration (IGCSE Add Math)"
+      "description": "Integration of functions of the form (ax + b)^n — Calculus – Integration (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_integration.integration_of_exponential_functions",
       "label": "Integration of exponential functions",
       "book": "igcse.am.integration",
       "pages": "392-394",
-      "description": "Integration of exponential functions \u2014 Calculus \u2013 Integration (IGCSE Add Math)"
+      "description": "Integration of exponential functions — Calculus – Integration (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_integration.integration_of_sine_cosine_and_sec_2_functions",
       "label": "Integration of sine, cosine and sec^2 functions",
       "book": "igcse.am.integration",
       "pages": "394-396",
-      "description": "Integration of sine, cosine and sec^2 functions \u2014 Calculus \u2013 Integration (IGCSE Add Math)"
+      "description": "Integration of sine, cosine and sec^2 functions — Calculus – Integration (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_integration.integration_of_functions_of_the_form_1_x_and_1_ax_b",
       "label": "Integration of functions of the form 1/x and 1/(ax + b)",
       "book": "igcse.am.integration",
       "pages": "396-399",
-      "description": "Integration of functions of the form 1/x and 1/(ax + b) \u2014 Calculus \u2013 Integration (IGCSE Add Math)"
+      "description": "Integration of functions of the form 1/x and 1/(ax + b) — Calculus – Integration (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_integration.further_indefinite_integration",
       "label": "Further indefinite integration",
       "book": "igcse.am.integration",
       "pages": "399-402",
-      "description": "Further indefinite integration \u2014 Calculus \u2013 Integration (IGCSE Add Math)"
+      "description": "Further indefinite integration — Calculus – Integration (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_integration.definite_integration",
       "label": "Definite integration",
       "book": "igcse.am.integration",
       "pages": "402-407",
-      "description": "Definite integration \u2014 Calculus \u2013 Integration (IGCSE Add Math)"
+      "description": "Definite integration — Calculus – Integration (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_integration.further_definite_integration",
       "label": "Further definite integration",
       "book": "igcse.am.integration",
       "pages": "407-409",
-      "description": "Further definite integration \u2014 Calculus \u2013 Integration (IGCSE Add Math)"
+      "description": "Further definite integration — Calculus – Integration (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_integration.area_under_a_curve",
       "label": "Area under a curve",
       "book": "igcse.am.integration",
       "pages": "409-417",
-      "description": "Area under a curve \u2014 Calculus \u2013 Integration (IGCSE Add Math)"
+      "description": "Area under a curve — Calculus – Integration (IGCSE Add Math)"
     },
     {
       "id": "am.calculus_integration.area_of_regions_bounded_by_a_line_and_a_curve",
       "label": "Area of regions bounded by a line and a curve",
       "book": "igcse.am.integration",
       "pages": "417-423",
-      "description": "Area of regions bounded by a line and a curve \u2014 Calculus \u2013 Integration (IGCSE Add Math)"
+      "description": "Area of regions bounded by a line and a curve — Calculus – Integration (IGCSE Add Math)"
     },
     {
       "id": "am.kinematics.applications_of_differentiation_in_kinematics",
       "label": "Applications of differentiation in kinematics",
       "book": "igcse.am.kinematics",
       "pages": "434-442",
-      "description": "Applications of differentiation in kinematics \u2014 Kinematics (IGCSE Add Math)"
+      "description": "Applications of differentiation in kinematics — Kinematics (IGCSE Add Math)"
     },
     {
       "id": "am.kinematics.applications_of_integration_in_kinematics",
       "label": "Applications of integration in kinematics",
       "book": "igcse.am.kinematics",
       "pages": "442-447",
-      "description": "Applications of integration in kinematics \u2014 Kinematics (IGCSE Add Math)"
+      "description": "Applications of integration in kinematics — Kinematics (IGCSE Add Math)"
     }
   ],
   "edges": [
+    {
+      "source": "pri.y1.counting",
+      "target": "pri.y1.add_sub"
+    },
+    {
+      "source": "pri.y1.counting",
+      "target": "pri.y1.measurement"
+    },
+    {
+      "source": "pri.y1.shapes",
+      "target": "pri.y1.position"
+    },
+    {
+      "source": "pri.y2.numbers",
+      "target": "pri.y2.add_sub"
+    },
+    {
+      "source": "pri.y2.add_sub",
+      "target": "pri.y2.mult_div"
+    },
+    {
+      "source": "pri.y2.numbers",
+      "target": "pri.y2.fractions"
+    },
+    {
+      "source": "pri.y2.shapes",
+      "target": "pri.y2.measurement"
+    },
+    {
+      "source": "pri.y3.numbers",
+      "target": "pri.y3.mental"
+    },
+    {
+      "source": "pri.y3.mental",
+      "target": "pri.y3.add_sub"
+    },
+    {
+      "source": "pri.y3.mental",
+      "target": "pri.y3.mult_div"
+    },
+    {
+      "source": "pri.y3.numbers",
+      "target": "pri.y3.fractions"
+    },
+    {
+      "source": "pri.y4.numbers",
+      "target": "pri.y4.decimals_fractions"
+    },
+    {
+      "source": "pri.y4.numbers",
+      "target": "pri.y4.add_sub"
+    },
+    {
+      "source": "pri.y4.numbers",
+      "target": "pri.y4.mult_div"
+    },
+    {
+      "source": "pri.y4.decimals_fractions",
+      "target": "pri.y4.ratio"
+    },
+    {
+      "source": "pri.y5.large_numbers",
+      "target": "pri.y5.mental"
+    },
+    {
+      "source": "pri.y5.mental",
+      "target": "pri.y5.written_calcs"
+    },
+    {
+      "source": "pri.y5.large_numbers",
+      "target": "pri.y5.fractions_pct"
+    },
+    {
+      "source": "pri.y6.place_value",
+      "target": "pri.y6.fractions_pct"
+    },
+    {
+      "source": "pri.y6.place_value",
+      "target": "pri.y6.written_calcs"
+    },
+    {
+      "source": "pri.y6.fractions_pct",
+      "target": "pri.y6.ratio"
+    },
+    {
+      "source": "sec.y7.integers",
+      "target": "sec.y7.expressions"
+    },
+    {
+      "source": "sec.y7.integers",
+      "target": "sec.y7.place_value"
+    },
+    {
+      "source": "sec.y7.place_value",
+      "target": "sec.y7.decimals"
+    },
+    {
+      "source": "sec.y7.fractions",
+      "target": "sec.y7.percentages"
+    },
+    {
+      "source": "sec.y7.expressions",
+      "target": "sec.y7.graphs"
+    },
+    {
+      "source": "sec.y7.collecting_data",
+      "target": "sec.y7.interpreting_results"
+    },
+    {
+      "source": "sec.y7.shapes",
+      "target": "sec.y7.area_volume"
+    },
+    {
+      "source": "sec.y8.integers",
+      "target": "sec.y8.expressions"
+    },
+    {
+      "source": "sec.y8.integers",
+      "target": "sec.y8.place_value"
+    },
+    {
+      "source": "sec.y8.place_value",
+      "target": "sec.y8.decimals"
+    },
+    {
+      "source": "sec.y8.fractions",
+      "target": "sec.y8.percentages"
+    },
+    {
+      "source": "sec.y8.expressions",
+      "target": "sec.y8.graphs"
+    },
+    {
+      "source": "sec.y8.collecting_data",
+      "target": "sec.y8.interpreting_results"
+    },
+    {
+      "source": "sec.y8.shapes",
+      "target": "sec.y8.area_volume"
+    },
+    {
+      "source": "sec.y9.number",
+      "target": "sec.y9.expressions"
+    },
+    {
+      "source": "sec.y9.expressions",
+      "target": "sec.y9.equations"
+    },
+    {
+      "source": "sec.y9.number",
+      "target": "sec.y9.decimals_pct"
+    },
+    {
+      "source": "sec.y9.fractions",
+      "target": "sec.y9.ratio"
+    },
+    {
+      "source": "sec.y9.expressions",
+      "target": "sec.y9.graphs"
+    },
+    {
+      "source": "sec.y9.stat_investigations",
+      "target": "sec.y9.interpreting_results"
+    },
+    {
+      "source": "sec.y9.shapes",
+      "target": "sec.y9.volume_sa"
+    },
+    {
+      "source": "pri.y1.counting",
+      "target": "pri.y2.numbers"
+    },
+    {
+      "source": "pri.y2.numbers",
+      "target": "pri.y3.numbers"
+    },
+    {
+      "source": "pri.y3.numbers",
+      "target": "pri.y4.numbers"
+    },
+    {
+      "source": "pri.y4.numbers",
+      "target": "pri.y5.large_numbers"
+    },
+    {
+      "source": "pri.y5.large_numbers",
+      "target": "pri.y6.place_value"
+    },
+    {
+      "source": "pri.y6.place_value",
+      "target": "sec.y7.integers"
+    },
+    {
+      "source": "sec.y7.integers",
+      "target": "sec.y8.integers"
+    },
+    {
+      "source": "sec.y8.integers",
+      "target": "sec.y9.number"
+    },
+    {
+      "source": "pri.y1.add_sub",
+      "target": "pri.y2.add_sub"
+    },
+    {
+      "source": "pri.y2.add_sub",
+      "target": "pri.y3.add_sub"
+    },
+    {
+      "source": "pri.y3.add_sub",
+      "target": "pri.y4.add_sub"
+    },
+    {
+      "source": "pri.y4.add_sub",
+      "target": "pri.y5.written_calcs"
+    },
+    {
+      "source": "pri.y5.written_calcs",
+      "target": "pri.y6.written_calcs"
+    },
+    {
+      "source": "pri.y2.mult_div",
+      "target": "pri.y3.mult_div"
+    },
+    {
+      "source": "pri.y3.mult_div",
+      "target": "pri.y4.mult_div"
+    },
+    {
+      "source": "pri.y4.mult_div",
+      "target": "pri.y5.written_calcs"
+    },
+    {
+      "source": "pri.y2.fractions",
+      "target": "pri.y3.fractions"
+    },
+    {
+      "source": "pri.y3.fractions",
+      "target": "pri.y4.decimals_fractions"
+    },
+    {
+      "source": "pri.y4.decimals_fractions",
+      "target": "pri.y5.fractions_pct"
+    },
+    {
+      "source": "pri.y5.fractions_pct",
+      "target": "pri.y6.fractions_pct"
+    },
+    {
+      "source": "pri.y6.fractions_pct",
+      "target": "sec.y7.fractions"
+    },
+    {
+      "source": "pri.y6.fractions_pct",
+      "target": "sec.y7.decimals"
+    },
+    {
+      "source": "pri.y6.fractions_pct",
+      "target": "sec.y7.percentages"
+    },
+    {
+      "source": "pri.y1.shapes",
+      "target": "pri.y2.shapes"
+    },
+    {
+      "source": "pri.y2.shapes",
+      "target": "pri.y3.shapes_angles"
+    },
+    {
+      "source": "pri.y3.shapes_angles",
+      "target": "pri.y4.shapes"
+    },
+    {
+      "source": "pri.y4.shapes",
+      "target": "pri.y5.angles"
+    },
+    {
+      "source": "pri.y5.angles",
+      "target": "pri.y6.angles"
+    },
+    {
+      "source": "pri.y6.angles",
+      "target": "sec.y7.angles"
+    },
+    {
+      "source": "sec.y7.angles",
+      "target": "sec.y8.angles"
+    },
+    {
+      "source": "sec.y8.angles",
+      "target": "sec.y9.angles"
+    },
+    {
+      "source": "pri.y4.area_perimeter",
+      "target": "pri.y5.area_perimeter"
+    },
+    {
+      "source": "pri.y5.area_perimeter",
+      "target": "pri.y6.area_volume"
+    },
+    {
+      "source": "pri.y6.area_volume",
+      "target": "sec.y7.area_volume"
+    },
+    {
+      "source": "sec.y7.area_volume",
+      "target": "sec.y8.area_volume"
+    },
+    {
+      "source": "sec.y8.area_volume",
+      "target": "sec.y9.shapes"
+    },
+    {
+      "source": "pri.y1.data",
+      "target": "pri.y2.data"
+    },
+    {
+      "source": "pri.y2.data",
+      "target": "pri.y3.data"
+    },
+    {
+      "source": "pri.y3.data",
+      "target": "pri.y4.data"
+    },
+    {
+      "source": "pri.y4.data",
+      "target": "pri.y5.probability_stats"
+    },
+    {
+      "source": "pri.y5.probability_stats",
+      "target": "pri.y6.statistics"
+    },
+    {
+      "source": "pri.y6.statistics",
+      "target": "sec.y7.collecting_data"
+    },
+    {
+      "source": "pri.y6.statistics",
+      "target": "sec.y7.interpreting_results"
+    },
+    {
+      "source": "pri.y5.coordinates",
+      "target": "pri.y6.coordinates"
+    },
+    {
+      "source": "pri.y6.coordinates",
+      "target": "sec.y7.position_transform"
+    },
+    {
+      "source": "pri.y5.probability_stats",
+      "target": "pri.y6.probability"
+    },
+    {
+      "source": "pri.y6.probability",
+      "target": "sec.y7.probability"
+    },
+    {
+      "source": "pri.y4.ratio",
+      "target": "pri.y5.fractions_pct"
+    },
+    {
+      "source": "pri.y6.ratio",
+      "target": "sec.y7.ratio"
+    },
+    {
+      "source": "pri.y5.sequences",
+      "target": "sec.y7.sequences"
+    },
+    {
+      "source": "sec.y7.sequences",
+      "target": "sec.y8.sequences"
+    },
+    {
+      "source": "sec.y8.sequences",
+      "target": "sec.y9.sequences"
+    },
+    {
+      "source": "sec.y7.expressions",
+      "target": "sec.y8.expressions"
+    },
+    {
+      "source": "sec.y8.expressions",
+      "target": "sec.y9.expressions"
+    },
+    {
+      "source": "sec.y7.graphs",
+      "target": "sec.y8.graphs"
+    },
+    {
+      "source": "sec.y8.graphs",
+      "target": "sec.y9.graphs"
+    },
+    {
+      "source": "sec.y7.fractions",
+      "target": "sec.y8.fractions"
+    },
+    {
+      "source": "sec.y7.fractions",
+      "target": "sec.y8.decimals"
+    },
+    {
+      "source": "sec.y7.percentages",
+      "target": "sec.y8.percentages"
+    },
+    {
+      "source": "sec.y7.ratio",
+      "target": "sec.y8.ratio"
+    },
+    {
+      "source": "sec.y7.probability",
+      "target": "sec.y8.probability"
+    },
+    {
+      "source": "sec.y7.position_transform",
+      "target": "sec.y8.position_transform"
+    },
+    {
+      "source": "sec.y7.shapes",
+      "target": "sec.y8.shapes"
+    },
+    {
+      "source": "sec.y7.collecting_data",
+      "target": "sec.y8.collecting_data"
+    },
+    {
+      "source": "sec.y7.interpreting_results",
+      "target": "sec.y8.interpreting_results"
+    },
+    {
+      "source": "sec.y8.fractions",
+      "target": "sec.y9.fractions"
+    },
+    {
+      "source": "sec.y8.percentages",
+      "target": "sec.y9.decimals_pct"
+    },
+    {
+      "source": "sec.y8.decimals",
+      "target": "sec.y9.decimals_pct"
+    },
+    {
+      "source": "sec.y8.ratio",
+      "target": "sec.y9.ratio"
+    },
+    {
+      "source": "sec.y8.probability",
+      "target": "sec.y9.probability"
+    },
+    {
+      "source": "sec.y8.position_transform",
+      "target": "sec.y9.position_transform"
+    },
+    {
+      "source": "sec.y8.shapes",
+      "target": "sec.y9.shapes"
+    },
+    {
+      "source": "sec.y8.collecting_data",
+      "target": "sec.y9.stat_investigations"
+    },
+    {
+      "source": "sec.y8.interpreting_results",
+      "target": "sec.y9.interpreting_results"
+    },
+    {
+      "source": "pri.y6.written_calcs",
+      "target": "sec.y7.integers"
+    },
+    {
+      "source": "pri.y6.primes",
+      "target": "sec.y7.integers"
+    },
+    {
+      "source": "pri.y1.position",
+      "target": "pri.y5.coordinates"
+    },
+    {
+      "source": "pri.y3.measurement",
+      "target": "pri.y4.area_perimeter"
+    },
+    {
+      "source": "sec.y7.angles",
+      "target": "sec.y7.shapes"
+    },
+    {
+      "source": "sec.y9.number",
+      "target": "m.review_of_number_concepts.different_types_of_numbers"
+    },
+    {
+      "source": "sec.y9.expressions",
+      "target": "m.making_sense_of_algebra.using_letters_to_represent_unknown_values"
+    },
+    {
+      "source": "sec.y9.equations",
+      "target": "m.equations_factors_and_formulae.solving_equations"
+    },
+    {
+      "source": "sec.y9.angles",
+      "target": "m.lines_angles_and_shapes.lines_and_angles"
+    },
+    {
+      "source": "sec.y9.shapes",
+      "target": "m.perimeter_area_and_volume.perimeter_and_area_in_two_dimensions"
+    },
+    {
+      "source": "sec.y9.fractions",
+      "target": "m.fractions_percentages_and_standard_form.revisiting_fractions"
+    },
+    {
+      "source": "sec.y9.probability",
+      "target": "m.introduction_to_probability.understanding_basic_probability"
+    },
+    {
+      "source": "sec.y9.interpreting_results",
+      "target": "m.collecting_organising_and_displaying_data.collecting_and_classifying_data"
+    },
+    {
+      "source": "sec.y9.ratio",
+      "target": "m.ratio_rate_and_proportion.working_with_ratio"
+    },
+    {
+      "source": "sec.y9.graphs",
+      "target": "m.straight_lines_and_quadratic_equations.straight_line_graphs"
+    },
+    {
+      "source": "sec.y9.sequences",
+      "target": "m.sequences_surds_and_sets.sequences"
+    },
     {
       "source": "m.review_of_number_concepts.different_types_of_numbers",
       "target": "m.review_of_number_concepts.multiples_and_factors",

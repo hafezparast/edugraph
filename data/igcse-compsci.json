@@ -1,92 +1,219 @@
 {
   "metadata": {
-    "domain": "computer_science",
-    "curriculum": "Cambridge IGCSE Computer Science (0478)",
-    "version": "0.1.0",
-    "description": "IGCSE Computer Science prerequisite graph",
+    "domain": "computer_science_and_ict",
+    "curriculum": "Cambridge IGCSE Computer Science (0478) & ICT (0417)",
+    "version": "0.2.0",
+    "description": "Combined IGCSE Computer Science and ICT prerequisite graph",
     "sources": [
-      "igcse_compsci_raw.txt"
+      "igcse_compsci_raw.txt",
+      "igcse_ict_raw.txt"
     ],
     "last_updated": "2026-03-27"
   },
   "books": [
     {
       "id": "igcse.cs.binary_hex",
-      "name": "Binary Systems and Hexadecimal",
+      "name": "CS: Binary Systems and Hexadecimal",
       "color": "#3b82f6",
       "order": 1
     },
     {
       "id": "igcse.cs.communication",
-      "name": "Communication and Internet Technologies",
+      "name": "CS: Communication and Internet Technologies",
       "color": "#6366f1",
       "order": 2
     },
     {
       "id": "igcse.cs.logic",
-      "name": "Logic Gates and Logic Circuits",
+      "name": "CS: Logic Gates and Logic Circuits",
       "color": "#8b5cf6",
       "order": 3
     },
     {
       "id": "igcse.cs.os_architecture",
-      "name": "Operating Systems and Computer Architecture",
+      "name": "CS: Operating Systems and Computer Architecture",
       "color": "#7c3aed",
       "order": 4
     },
     {
       "id": "igcse.cs.io_devices",
-      "name": "Input and Output Devices",
+      "name": "CS: Input and Output Devices",
       "color": "#2563eb",
       "order": 5
     },
     {
       "id": "igcse.cs.memory_storage",
-      "name": "Memory and Data Storage",
+      "name": "CS: Memory and Data Storage",
       "color": "#4f46e5",
       "order": 6
     },
     {
       "id": "igcse.cs.languages",
-      "name": "High- and Low-level Languages",
+      "name": "CS: High- and Low-level Languages",
       "color": "#7e22ce",
       "order": 7
     },
     {
       "id": "igcse.cs.security_ethics",
-      "name": "Security and Ethics",
+      "name": "CS: Security and Ethics",
       "color": "#6d28d9",
       "order": 8
     },
     {
       "id": "igcse.cs.problem_solving",
-      "name": "Problem-solving and Design",
+      "name": "CS: Problem-solving and Design",
       "color": "#1d4ed8",
       "order": 9
     },
     {
       "id": "igcse.cs.pseudocode_flowcharts",
-      "name": "Pseudocode and Flowcharts",
+      "name": "CS: Pseudocode and Flowcharts",
       "color": "#4338ca",
       "order": 10
     },
     {
       "id": "igcse.cs.programming",
-      "name": "Programming Concepts",
+      "name": "CS: Programming Concepts",
       "color": "#5b21b6",
       "order": 11
     },
     {
       "id": "igcse.cs.data_structures",
-      "name": "Data Structures: Arrays and Using Pre-release Material",
+      "name": "CS: Data Structures: Arrays and Using Pre-release Material",
       "color": "#3730a3",
       "order": 12
     },
     {
       "id": "igcse.cs.databases",
-      "name": "Databases",
+      "name": "CS: Databases",
       "color": "#1e3a8a",
       "order": 13
+    },
+    {
+      "id": "igcse.ict.computer_systems",
+      "name": "ICT: Types and Components of a Computer System",
+      "color": "#ea580c",
+      "order": 14
+    },
+    {
+      "id": "igcse.ict.io_devices",
+      "name": "ICT: Input and Output Devices",
+      "color": "#d97706",
+      "order": 15
+    },
+    {
+      "id": "igcse.ict.storage",
+      "name": "ICT: Storage Devices and Media",
+      "color": "#ca8a04",
+      "order": 16
+    },
+    {
+      "id": "igcse.ict.networks",
+      "name": "ICT: Networks and the Effects of Using Them",
+      "color": "#c2410c",
+      "order": 17
+    },
+    {
+      "id": "igcse.ict.effects_of_ict",
+      "name": "ICT: The Effects of Using ICT",
+      "color": "#b45309",
+      "order": 18
+    },
+    {
+      "id": "igcse.ict.applications",
+      "name": "ICT: ICT Applications",
+      "color": "#a16207",
+      "order": 19
+    },
+    {
+      "id": "igcse.ict.systems_life_cycle",
+      "name": "ICT: Systems Life Cycle",
+      "color": "#9a3412",
+      "order": 20
+    },
+    {
+      "id": "igcse.ict.safety_security",
+      "name": "ICT: Safety and Security",
+      "color": "#92400e",
+      "order": 21
+    },
+    {
+      "id": "igcse.ict.audiences",
+      "name": "ICT: Audiences",
+      "color": "#854d0e",
+      "order": 22
+    },
+    {
+      "id": "igcse.ict.communication",
+      "name": "ICT: Communication",
+      "color": "#7c2d12",
+      "order": 23
+    },
+    {
+      "id": "igcse.ict.file_management",
+      "name": "ICT: File Management",
+      "color": "#f97316",
+      "order": 24
+    },
+    {
+      "id": "igcse.ict.images",
+      "name": "ICT: Images",
+      "color": "#f59e0b",
+      "order": 25
+    },
+    {
+      "id": "igcse.ict.layout",
+      "name": "ICT: Layout",
+      "color": "#eab308",
+      "order": 26
+    },
+    {
+      "id": "igcse.ict.styles",
+      "name": "ICT: Styles",
+      "color": "#fb923c",
+      "order": 27
+    },
+    {
+      "id": "igcse.ict.proofing",
+      "name": "ICT: Proofing",
+      "color": "#fbbf24",
+      "order": 28
+    },
+    {
+      "id": "igcse.ict.graphs_charts",
+      "name": "ICT: Graphs and Charts",
+      "color": "#f59e0b",
+      "order": 29
+    },
+    {
+      "id": "igcse.ict.document_production",
+      "name": "ICT: Document Production",
+      "color": "#e67e22",
+      "order": 30
+    },
+    {
+      "id": "igcse.ict.data_manipulation",
+      "name": "ICT: Data Manipulation",
+      "color": "#dc7633",
+      "order": 31
+    },
+    {
+      "id": "igcse.ict.presentations",
+      "name": "ICT: Presentations",
+      "color": "#d4a017",
+      "order": 32
+    },
+    {
+      "id": "igcse.ict.data_analysis",
+      "name": "ICT: Data Analysis",
+      "color": "#cc7722",
+      "order": 33
+    },
+    {
+      "id": "igcse.ict.website_authoring",
+      "name": "ICT: Website Authoring",
+      "color": "#b8860b",
+      "order": 34
     }
   ],
   "nodes": [
@@ -488,6 +615,580 @@
       "book": "igcse.cs.databases",
       "pages": "252-263",
       "description": "Practical use of a database — Databases (IGCSE Computer Science)"
+    },
+    {
+      "id": "ict.ch1.hardware_and_software",
+      "label": "Hardware and software",
+      "book": "igcse.ict.computer_systems",
+      "pages": "2",
+      "description": "Hardware and software — Types and Components of a Computer System (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch1.main_components_of_a_computer_system",
+      "label": "Main components of a computer system",
+      "book": "igcse.ict.computer_systems",
+      "pages": "7",
+      "description": "Main components of a computer system — Types and Components of a Computer System (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch1.operating_systems",
+      "label": "Operating systems",
+      "book": "igcse.ict.computer_systems",
+      "pages": "8",
+      "description": "Operating systems — Types and Components of a Computer System (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch1.types_of_computer",
+      "label": "Types of computer",
+      "book": "igcse.ict.computer_systems",
+      "pages": "9",
+      "description": "Types of computer — Types and Components of a Computer System (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch1.impact_of_emerging_technologies",
+      "label": "Impact of emerging technologies",
+      "book": "igcse.ict.computer_systems",
+      "pages": "15",
+      "description": "Impact of emerging technologies — Types and Components of a Computer System (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch2.input_devices_and_their_uses",
+      "label": "Input devices and their uses",
+      "book": "igcse.ict.io_devices",
+      "pages": "19",
+      "description": "Input devices and their uses — Input and Output Devices (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch2.direct_data_entry_devices",
+      "label": "Direct data entry devices",
+      "book": "igcse.ict.io_devices",
+      "pages": "29",
+      "description": "Direct data entry devices — Input and Output Devices (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch2.output_devices_and_their_uses",
+      "label": "Output devices and their uses",
+      "book": "igcse.ict.io_devices",
+      "pages": "35",
+      "description": "Output devices and their uses — Input and Output Devices (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch3.backing_up_of_data",
+      "label": "Backing up of data",
+      "book": "igcse.ict.storage",
+      "pages": "44",
+      "description": "Backing up of data — Storage Devices and Media (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch3.types_of_access",
+      "label": "Types of access",
+      "book": "igcse.ict.storage",
+      "pages": "45",
+      "description": "Types of access — Storage Devices and Media (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch3.secondary_storage_media",
+      "label": "Secondary storage media",
+      "book": "igcse.ict.storage",
+      "pages": "47",
+      "description": "Secondary storage media — Storage Devices and Media (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch4.networks",
+      "label": "Networks",
+      "book": "igcse.ict.networks",
+      "pages": "58",
+      "description": "Networks — Networks and the Effects of Using Them (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch4.network_issues_and_communication",
+      "label": "Network issues and communication",
+      "book": "igcse.ict.networks",
+      "pages": "67",
+      "description": "Network issues and communication — Networks and the Effects of Using Them (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch5.effects_of_ict_on_employment",
+      "label": "Effects of ICT on employment",
+      "book": "igcse.ict.effects_of_ict",
+      "pages": "77",
+      "description": "Effects of ICT on employment — The Effects of Using ICT (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch5.effects_of_ict_on_working_patterns",
+      "label": "Effects of ICT on working patterns",
+      "book": "igcse.ict.effects_of_ict",
+      "pages": "81",
+      "description": "Effects of ICT on working patterns — The Effects of Using ICT (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch5.microprocessor_controlled_devices_in_the_home",
+      "label": "Microprocessor-controlled devices in the home",
+      "book": "igcse.ict.effects_of_ict",
+      "pages": "82",
+      "description": "Microprocessor-controlled devices in the home — The Effects of Using ICT (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch5.health_problems_related_to_ict_use",
+      "label": "Health problems related to ICT use",
+      "book": "igcse.ict.effects_of_ict",
+      "pages": "83",
+      "description": "Health problems related to ICT use — The Effects of Using ICT (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch6.communication_applications",
+      "label": "Communication applications",
+      "book": "igcse.ict.applications",
+      "pages": "84",
+      "description": "Communication applications — ICT Applications (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch6.data_handling_applications",
+      "label": "Data handling applications",
+      "book": "igcse.ict.applications",
+      "pages": "90",
+      "description": "Data handling applications — ICT Applications (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch6.measurement_applications",
+      "label": "Measurement applications",
+      "book": "igcse.ict.applications",
+      "pages": "93",
+      "description": "Measurement applications — ICT Applications (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch6.microprocessors_in_control_applications",
+      "label": "Microprocessors in control applications",
+      "book": "igcse.ict.applications",
+      "pages": "96",
+      "description": "Microprocessors in control applications — ICT Applications (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch6.modelling_applications",
+      "label": "Modelling applications",
+      "book": "igcse.ict.applications",
+      "pages": "102",
+      "description": "Modelling applications — ICT Applications (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch6.manufacturing_applications",
+      "label": "Manufacturing applications",
+      "book": "igcse.ict.applications",
+      "pages": "105",
+      "description": "Manufacturing applications — ICT Applications (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch6.school_management_systems",
+      "label": "School management systems",
+      "book": "igcse.ict.applications",
+      "pages": "106",
+      "description": "School management systems — ICT Applications (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch6.booking_systems",
+      "label": "Booking systems",
+      "book": "igcse.ict.applications",
+      "pages": "108",
+      "description": "Booking systems — ICT Applications (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch6.banking_applications",
+      "label": "Banking applications",
+      "book": "igcse.ict.applications",
+      "pages": "111",
+      "description": "Banking applications — ICT Applications (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch6.expert_systems",
+      "label": "Expert systems",
+      "book": "igcse.ict.applications",
+      "pages": "116",
+      "description": "Expert systems — ICT Applications (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch6.computers_in_medicine",
+      "label": "Computers in medicine",
+      "book": "igcse.ict.applications",
+      "pages": "118",
+      "description": "Computers in medicine — ICT Applications (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch6.computers_in_libraries",
+      "label": "Computers in libraries",
+      "book": "igcse.ict.applications",
+      "pages": "122",
+      "description": "Computers in libraries — ICT Applications (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch6.computers_in_retail",
+      "label": "Computers in retail",
+      "book": "igcse.ict.applications",
+      "pages": "123",
+      "description": "Computers in retail — ICT Applications (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch6.recognition_systems",
+      "label": "Recognition systems",
+      "book": "igcse.ict.applications",
+      "pages": "125",
+      "description": "Recognition systems — ICT Applications (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch6.monitoring_and_tracking_systems",
+      "label": "Monitoring and tracking systems",
+      "book": "igcse.ict.applications",
+      "pages": "127",
+      "description": "Monitoring and tracking systems — ICT Applications (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch6.satellite_systems",
+      "label": "Satellite systems",
+      "book": "igcse.ict.applications",
+      "pages": "128",
+      "description": "Satellite systems — ICT Applications (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch7.analysis",
+      "label": "Analysis",
+      "book": "igcse.ict.systems_life_cycle",
+      "pages": "131",
+      "description": "Analysis — Systems Life Cycle (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch7.design",
+      "label": "Design",
+      "book": "igcse.ict.systems_life_cycle",
+      "pages": "134",
+      "description": "Design — Systems Life Cycle (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch7.development_and_testing",
+      "label": "Development and testing",
+      "book": "igcse.ict.systems_life_cycle",
+      "pages": "139",
+      "description": "Development and testing — Systems Life Cycle (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch7.implementation",
+      "label": "Implementation",
+      "book": "igcse.ict.systems_life_cycle",
+      "pages": "141",
+      "description": "Implementation — Systems Life Cycle (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch7.documentation",
+      "label": "Documentation",
+      "book": "igcse.ict.systems_life_cycle",
+      "pages": "143",
+      "description": "Documentation — Systems Life Cycle (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch7.evaluation",
+      "label": "Evaluation",
+      "book": "igcse.ict.systems_life_cycle",
+      "pages": "144",
+      "description": "Evaluation — Systems Life Cycle (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch8.physical_security",
+      "label": "Physical security",
+      "book": "igcse.ict.safety_security",
+      "pages": "145",
+      "description": "Physical security — Safety and Security (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch8.e_safety",
+      "label": "E-safety",
+      "book": "igcse.ict.safety_security",
+      "pages": "147",
+      "description": "E-safety — Safety and Security (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch8.security_of_data",
+      "label": "Security of data",
+      "book": "igcse.ict.safety_security",
+      "pages": "149",
+      "description": "Security of data — Safety and Security (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch8.additional_security_of_data_online",
+      "label": "Additional security of data online",
+      "book": "igcse.ict.safety_security",
+      "pages": "153",
+      "description": "Additional security of data online — Safety and Security (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch9.audience_appreciation",
+      "label": "Audience appreciation",
+      "book": "igcse.ict.audiences",
+      "pages": "162",
+      "description": "Audience appreciation — Audiences (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch9.legal_moral_ethical_and_cultural_appreciation",
+      "label": "Legal, moral, ethical and cultural appreciation",
+      "book": "igcse.ict.audiences",
+      "pages": "166",
+      "description": "Legal, moral, ethical and cultural appreciation — Audiences (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch10.communication_with_other_ict_users_using_email",
+      "label": "Communication with other ICT users using email",
+      "book": "igcse.ict.communication",
+      "pages": "170",
+      "description": "Communication with other ICT users using email — Communication (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch10.effective_use_of_the_internet",
+      "label": "Effective use of the internet",
+      "book": "igcse.ict.communication",
+      "pages": "173",
+      "description": "Effective use of the internet — Communication (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch11.generic_file_types",
+      "label": "Generic file types",
+      "book": "igcse.ict.file_management",
+      "pages": "184",
+      "description": "Generic file types — File Management (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch11.manage_files_effectively",
+      "label": "Manage files effectively",
+      "book": "igcse.ict.file_management",
+      "pages": "185",
+      "description": "Manage files effectively — File Management (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch11.reduce_file_sizes",
+      "label": "Reduce file sizes",
+      "book": "igcse.ict.file_management",
+      "pages": "189",
+      "description": "Reduce file sizes — File Management (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch12.software_tools",
+      "label": "Software tools",
+      "book": "igcse.ict.images",
+      "pages": "192",
+      "description": "Software tools — Images (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch12.edit_an_image",
+      "label": "Edit an image",
+      "book": "igcse.ict.images",
+      "pages": "194",
+      "description": "Edit an image — Images (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch13.basic_documents",
+      "label": "Basic documents",
+      "book": "igcse.ict.layout",
+      "pages": "203",
+      "description": "Basic documents — Layout (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch13.place_objects_into_a_document",
+      "label": "Place objects into a document",
+      "book": "igcse.ict.layout",
+      "pages": "205",
+      "description": "Place objects into a document — Layout (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch13.headers_and_footers",
+      "label": "Headers and footers",
+      "book": "igcse.ict.layout",
+      "pages": "214",
+      "description": "Headers and footers — Layout (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch14.corporate_house_styles",
+      "label": "Corporate house styles",
+      "book": "igcse.ict.styles",
+      "pages": "220",
+      "description": "Corporate house styles — Styles (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch14.create_styles_in_a_document",
+      "label": "Create styles in a document",
+      "book": "igcse.ict.styles",
+      "pages": "222",
+      "description": "Create styles in a document — Styles (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch15.software_tools_for_proofing",
+      "label": "Software tools for proofing",
+      "book": "igcse.ict.proofing",
+      "pages": "234",
+      "description": "Software tools for proofing — Proofing (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch15.proofing_techniques",
+      "label": "Proofing techniques",
+      "book": "igcse.ict.proofing",
+      "pages": "238",
+      "description": "Proofing techniques — Proofing (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch16.chart_types",
+      "label": "Chart types",
+      "book": "igcse.ict.graphs_charts",
+      "pages": "241",
+      "description": "Chart types — Graphs and Charts (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch16.create_a_chart",
+      "label": "Create a chart",
+      "book": "igcse.ict.graphs_charts",
+      "pages": "241",
+      "description": "Create a chart — Graphs and Charts (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch16.label_a_chart",
+      "label": "Label a chart",
+      "book": "igcse.ict.graphs_charts",
+      "pages": "244",
+      "description": "Label a chart — Graphs and Charts (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch16.use_secondary_axes",
+      "label": "Use secondary axes",
+      "book": "igcse.ict.graphs_charts",
+      "pages": "246",
+      "description": "Use secondary axes — Graphs and Charts (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch17.format_text_and_page_layout",
+      "label": "Format text and page layout",
+      "book": "igcse.ict.document_production",
+      "pages": "249",
+      "description": "Format text and page layout — Document Production (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch17.edit_a_table",
+      "label": "Edit a table",
+      "book": "igcse.ict.document_production",
+      "pages": "259",
+      "description": "Edit a table — Document Production (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch17.mail_merge",
+      "label": "Mail merge",
+      "book": "igcse.ict.document_production",
+      "pages": "261",
+      "description": "Mail merge — Document Production (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch18.create_a_database_structure",
+      "label": "Create a database structure",
+      "book": "igcse.ict.data_manipulation",
+      "pages": "268",
+      "description": "Create a database structure — Data Manipulation (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch18.manipulate_data",
+      "label": "Manipulate data",
+      "book": "igcse.ict.data_manipulation",
+      "pages": "284",
+      "description": "Manipulate data — Data Manipulation (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch18.present_data",
+      "label": "Present data",
+      "book": "igcse.ict.data_manipulation",
+      "pages": "293",
+      "description": "Present data — Data Manipulation (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch19.what_is_a_presentation",
+      "label": "What is a presentation",
+      "book": "igcse.ict.presentations",
+      "pages": "310",
+      "description": "What is a presentation — Presentations (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch19.use_a_master_slide",
+      "label": "Use a master slide",
+      "book": "igcse.ict.presentations",
+      "pages": "311",
+      "description": "Use a master slide — Presentations (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch19.create_presentation_slides",
+      "label": "Create presentation slides",
+      "book": "igcse.ict.presentations",
+      "pages": "317",
+      "description": "Create presentation slides — Presentations (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch19.display_a_presentation",
+      "label": "Display a presentation",
+      "book": "igcse.ict.presentations",
+      "pages": "329",
+      "description": "Display a presentation — Presentations (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch20.what_is_a_data_model",
+      "label": "What is a data model",
+      "book": "igcse.ict.data_analysis",
+      "pages": "334",
+      "description": "What is a data model — Data Analysis (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch20.create_a_data_model",
+      "label": "Create a data model",
+      "book": "igcse.ict.data_analysis",
+      "pages": "336",
+      "description": "Create a data model — Data Analysis (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch20.test_the_data_model",
+      "label": "Test the data model",
+      "book": "igcse.ict.data_analysis",
+      "pages": "350",
+      "description": "Test the data model — Data Analysis (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch20.manipulate_data_in_models",
+      "label": "Manipulate data in models",
+      "book": "igcse.ict.data_analysis",
+      "pages": "350",
+      "description": "Manipulate data in models — Data Analysis (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch20.present_data_from_models",
+      "label": "Present data from models",
+      "book": "igcse.ict.data_analysis",
+      "pages": "357",
+      "description": "Present data from models — Data Analysis (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch21.web_development_layers",
+      "label": "Web development layers",
+      "book": "igcse.ict.website_authoring",
+      "pages": "367",
+      "description": "Web development layers — Website Authoring (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch21.create_a_web_page",
+      "label": "Create a web page",
+      "book": "igcse.ict.website_authoring",
+      "pages": "368",
+      "description": "Create a web page — Website Authoring (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch21.use_stylesheets",
+      "label": "Use stylesheets",
+      "book": "igcse.ict.website_authoring",
+      "pages": "399",
+      "description": "Use stylesheets — Website Authoring (IGCSE ICT)"
+    },
+    {
+      "id": "ict.ch21.test_and_publish_a_website",
+      "label": "Test and publish a website",
+      "book": "igcse.ict.website_authoring",
+      "pages": "417",
+      "description": "Test and publish a website — Website Authoring (IGCSE ICT)"
     }
   ],
   "edges": [
@@ -829,6 +1530,458 @@
     {
       "source": "cs.ch9.algorithms",
       "target": "cs.ch10.assignment",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch1.hardware_and_software",
+      "target": "ict.ch1.main_components_of_a_computer_system",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch1.main_components_of_a_computer_system",
+      "target": "ict.ch1.operating_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch1.main_components_of_a_computer_system",
+      "target": "ict.ch1.types_of_computer",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch1.types_of_computer",
+      "target": "ict.ch1.impact_of_emerging_technologies",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch1.main_components_of_a_computer_system",
+      "target": "ict.ch2.input_devices_and_their_uses",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch2.input_devices_and_their_uses",
+      "target": "ict.ch2.direct_data_entry_devices",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch2.input_devices_and_their_uses",
+      "target": "ict.ch2.output_devices_and_their_uses",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch2.output_devices_and_their_uses",
+      "target": "ict.ch3.backing_up_of_data",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch3.backing_up_of_data",
+      "target": "ict.ch3.types_of_access",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch3.types_of_access",
+      "target": "ict.ch3.secondary_storage_media",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch1.main_components_of_a_computer_system",
+      "target": "ict.ch4.networks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch4.networks",
+      "target": "ict.ch4.network_issues_and_communication",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch4.network_issues_and_communication",
+      "target": "ict.ch5.effects_of_ict_on_employment",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch5.effects_of_ict_on_employment",
+      "target": "ict.ch5.effects_of_ict_on_working_patterns",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch5.effects_of_ict_on_employment",
+      "target": "ict.ch5.microprocessor_controlled_devices_in_the_home",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch5.effects_of_ict_on_employment",
+      "target": "ict.ch5.health_problems_related_to_ict_use",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch5.effects_of_ict_on_employment",
+      "target": "ict.ch6.communication_applications",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch6.communication_applications",
+      "target": "ict.ch6.data_handling_applications",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch6.data_handling_applications",
+      "target": "ict.ch6.measurement_applications",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch6.measurement_applications",
+      "target": "ict.ch6.microprocessors_in_control_applications",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch6.microprocessors_in_control_applications",
+      "target": "ict.ch6.modelling_applications",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch6.modelling_applications",
+      "target": "ict.ch6.manufacturing_applications",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch6.data_handling_applications",
+      "target": "ict.ch6.school_management_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch6.data_handling_applications",
+      "target": "ict.ch6.booking_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch6.data_handling_applications",
+      "target": "ict.ch6.banking_applications",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch6.data_handling_applications",
+      "target": "ict.ch6.expert_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch6.data_handling_applications",
+      "target": "ict.ch6.computers_in_medicine",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch6.data_handling_applications",
+      "target": "ict.ch6.computers_in_libraries",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch6.data_handling_applications",
+      "target": "ict.ch6.computers_in_retail",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch6.communication_applications",
+      "target": "ict.ch6.recognition_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch6.recognition_systems",
+      "target": "ict.ch6.monitoring_and_tracking_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch6.monitoring_and_tracking_systems",
+      "target": "ict.ch6.satellite_systems",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch7.analysis",
+      "target": "ict.ch7.design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch7.design",
+      "target": "ict.ch7.development_and_testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch7.development_and_testing",
+      "target": "ict.ch7.implementation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch7.implementation",
+      "target": "ict.ch7.documentation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch7.documentation",
+      "target": "ict.ch7.evaluation",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch4.network_issues_and_communication",
+      "target": "ict.ch8.physical_security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch8.physical_security",
+      "target": "ict.ch8.e_safety",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch8.e_safety",
+      "target": "ict.ch8.security_of_data",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch8.security_of_data",
+      "target": "ict.ch8.additional_security_of_data_online",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch8.additional_security_of_data_online",
+      "target": "ict.ch9.audience_appreciation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch9.audience_appreciation",
+      "target": "ict.ch9.legal_moral_ethical_and_cultural_appreciation",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch9.legal_moral_ethical_and_cultural_appreciation",
+      "target": "ict.ch10.communication_with_other_ict_users_using_email",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch10.communication_with_other_ict_users_using_email",
+      "target": "ict.ch10.effective_use_of_the_internet",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch11.generic_file_types",
+      "target": "ict.ch11.manage_files_effectively",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch11.manage_files_effectively",
+      "target": "ict.ch11.reduce_file_sizes",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch11.reduce_file_sizes",
+      "target": "ict.ch12.software_tools",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch12.software_tools",
+      "target": "ict.ch12.edit_an_image",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch12.edit_an_image",
+      "target": "ict.ch13.basic_documents",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch13.basic_documents",
+      "target": "ict.ch13.place_objects_into_a_document",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch13.basic_documents",
+      "target": "ict.ch13.headers_and_footers",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch13.place_objects_into_a_document",
+      "target": "ict.ch14.corporate_house_styles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch14.corporate_house_styles",
+      "target": "ict.ch14.create_styles_in_a_document",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch14.create_styles_in_a_document",
+      "target": "ict.ch15.software_tools_for_proofing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch15.software_tools_for_proofing",
+      "target": "ict.ch15.proofing_techniques",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch15.proofing_techniques",
+      "target": "ict.ch17.format_text_and_page_layout",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch17.format_text_and_page_layout",
+      "target": "ict.ch17.edit_a_table",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch17.edit_a_table",
+      "target": "ict.ch17.mail_merge",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch11.reduce_file_sizes",
+      "target": "ict.ch16.chart_types",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch16.chart_types",
+      "target": "ict.ch16.create_a_chart",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch16.create_a_chart",
+      "target": "ict.ch16.label_a_chart",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch16.label_a_chart",
+      "target": "ict.ch16.use_secondary_axes",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch11.reduce_file_sizes",
+      "target": "ict.ch18.create_a_database_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch18.create_a_database_structure",
+      "target": "ict.ch18.manipulate_data",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch18.manipulate_data",
+      "target": "ict.ch18.present_data",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch12.edit_an_image",
+      "target": "ict.ch19.what_is_a_presentation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch13.basic_documents",
+      "target": "ict.ch19.what_is_a_presentation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch19.what_is_a_presentation",
+      "target": "ict.ch19.use_a_master_slide",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch19.use_a_master_slide",
+      "target": "ict.ch19.create_presentation_slides",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch19.create_presentation_slides",
+      "target": "ict.ch19.display_a_presentation",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch18.present_data",
+      "target": "ict.ch20.what_is_a_data_model",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch20.what_is_a_data_model",
+      "target": "ict.ch20.create_a_data_model",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch20.create_a_data_model",
+      "target": "ict.ch20.test_the_data_model",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch20.test_the_data_model",
+      "target": "ict.ch20.manipulate_data_in_models",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch20.manipulate_data_in_models",
+      "target": "ict.ch20.present_data_from_models",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "ict.ch13.place_objects_into_a_document",
+      "target": "ict.ch21.web_development_layers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch14.create_styles_in_a_document",
+      "target": "ict.ch21.web_development_layers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch21.web_development_layers",
+      "target": "ict.ch21.create_a_web_page",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch21.create_a_web_page",
+      "target": "ict.ch21.use_stylesheets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ict.ch21.use_stylesheets",
+      "target": "ict.ch21.test_and_publish_a_website",
+      "relation": "prerequisite_for"
+    },
+
+    {
+      "source": "cs.ch1.the_binary_system",
+      "target": "ict.ch1.hardware_and_software",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch2.data_transmission",
+      "target": "ict.ch4.networks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch8.security_and_data_integrity",
+      "target": "ict.ch8.physical_security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch13.practical_use_of_a_database",
+      "target": "ict.ch18.create_a_database_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch9.algorithms",
+      "target": "ict.ch7.analysis",
       "relation": "prerequisite_for"
     }
   ]
