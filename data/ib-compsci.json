@@ -1,0 +1,311 @@
+{
+  "metadata": {
+    "domain": "computer_science",
+    "curriculum": "IB Diploma Programme Computer Science (SL/HL)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "IB Computer Science topics with prerequisite ordering, colored by theme",
+    "sources": [
+      "IB Computer Science Guide"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ib.cs.sf",
+      "name": "System Fundamentals",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "ib.cs.co",
+      "name": "Computer Organization",
+      "color": "#6366f1",
+      "order": 2
+    },
+    {
+      "id": "ib.cs.nw",
+      "name": "Networks",
+      "color": "#06b6d4",
+      "order": 3
+    },
+    {
+      "id": "ib.cs.ct",
+      "name": "Computational Thinking & Programming",
+      "color": "#22c55e",
+      "order": 4
+    },
+    {
+      "id": "ib.cs.hl",
+      "name": "HL Extensions",
+      "color": "#8b5cf6",
+      "order": 5
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ib.cs.system_planning",
+      "label": "Systems in Organizations",
+      "type": "concept",
+      "description": "System planning, change management, user focus, system backups",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.cs.sf",
+      "bookName": "System Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "ib.cs.system_design",
+      "label": "System Design Basics",
+      "type": "concept",
+      "description": "Components, system design, user interfaces, hardware/software",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.cs.sf",
+      "bookName": "System Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "ib.cs.binary_representation",
+      "label": "Binary Representation",
+      "type": "concept",
+      "description": "Binary, hexadecimal, data representation, character encoding",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.cs.co",
+      "bookName": "Computer Organization",
+      "bookColor": "#6366f1",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.cs.cpu_architecture",
+      "label": "CPU Architecture",
+      "type": "concept",
+      "description": "CPU components, fetch-decode-execute cycle, registers, machine instruction cycle",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.cs.co",
+      "bookName": "Computer Organization",
+      "bookColor": "#6366f1",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.cs.logic_gates",
+      "label": "Logic Gates",
+      "type": "concept",
+      "description": "AND, OR, NOT, NAND, NOR, XOR gates; truth tables, Boolean logic",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.cs.co",
+      "bookName": "Computer Organization",
+      "bookColor": "#6366f1",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.cs.os",
+      "label": "Operating Systems & Software",
+      "type": "concept",
+      "description": "OS functions, memory management, application software, utilities",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.cs.co",
+      "bookName": "Computer Organization",
+      "bookColor": "#6366f1",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.cs.network_fundamentals",
+      "label": "Network Fundamentals",
+      "type": "concept",
+      "description": "Network types, topologies, protocols, TCP/IP, OSI model",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.cs.nw",
+      "bookName": "Networks",
+      "bookColor": "#06b6d4",
+      "bookOrder": 3
+    },
+    {
+      "id": "ib.cs.web_technologies",
+      "label": "Web Technologies",
+      "type": "concept",
+      "description": "HTML, CSS, HTTP, URLs, web servers, client-server model",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.cs.nw",
+      "bookName": "Networks",
+      "bookColor": "#06b6d4",
+      "bookOrder": 3
+    },
+    {
+      "id": "ib.cs.security",
+      "label": "Network Security",
+      "type": "concept",
+      "description": "Encryption, firewalls, malware, authentication, cybersecurity",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.cs.nw",
+      "bookName": "Networks",
+      "bookColor": "#06b6d4",
+      "bookOrder": 3
+    },
+    {
+      "id": "ib.cs.thinking_algorithmically",
+      "label": "Thinking Algorithmically",
+      "type": "concept",
+      "description": "Problem decomposition, pseudocode, flowcharts, algorithm design",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.cs.ct",
+      "bookName": "Computational Thinking & Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "ib.cs.programming_fundamentals",
+      "label": "Programming Fundamentals",
+      "type": "concept",
+      "description": "Variables, data types, control structures, loops, arrays, functions",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.cs.ct",
+      "bookName": "Computational Thinking & Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "ib.cs.searching_sorting",
+      "label": "Searching & Sorting",
+      "type": "concept",
+      "description": "Linear search, binary search, bubble sort, selection sort",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.cs.ct",
+      "bookName": "Computational Thinking & Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "ib.cs.collections",
+      "label": "Collections & Arrays",
+      "type": "concept",
+      "description": "Arrays, 2D arrays, collections, iteration over data structures",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.cs.ct",
+      "bookName": "Computational Thinking & Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "ib.cs.oop",
+      "label": "Object-Oriented Programming (HL)",
+      "type": "concept",
+      "description": "Classes, objects, encapsulation, inheritance, polymorphism",
+      "grade_range": ["IB"],
+      "tags": ["subtopic", "HL"],
+      "book": "ib.cs.hl",
+      "bookName": "HL Extensions",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5
+    },
+    {
+      "id": "ib.cs.abstract_data_structures",
+      "label": "Abstract Data Structures (HL)",
+      "type": "concept",
+      "description": "Stacks, queues, linked lists, trees, binary search trees",
+      "grade_range": ["IB"],
+      "tags": ["subtopic", "HL"],
+      "book": "ib.cs.hl",
+      "bookName": "HL Extensions",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5
+    },
+    {
+      "id": "ib.cs.recursion",
+      "label": "Recursion (HL)",
+      "type": "concept",
+      "description": "Recursive thinking, base cases, recursive algorithms, call stack",
+      "grade_range": ["IB"],
+      "tags": ["subtopic", "HL"],
+      "book": "ib.cs.hl",
+      "bookName": "HL Extensions",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5
+    },
+    {
+      "id": "ib.cs.resource_management",
+      "label": "Resource Management (HL)",
+      "type": "concept",
+      "description": "System resources, scheduling, multitasking, virtual memory, paging",
+      "grade_range": ["IB"],
+      "tags": ["subtopic", "HL"],
+      "book": "ib.cs.hl",
+      "bookName": "HL Extensions",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5
+    },
+    {
+      "id": "ib.cs.control_systems",
+      "label": "Control Systems (HL)",
+      "type": "concept",
+      "description": "Control systems, feedback loops, sensors, autonomous agents",
+      "grade_range": ["IB"],
+      "tags": ["subtopic", "HL"],
+      "book": "ib.cs.hl",
+      "bookName": "HL Extensions",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5
+    },
+    {
+      "id": "ib.cs.databases",
+      "label": "Databases",
+      "type": "concept",
+      "description": "Database concepts, relational databases, SQL queries, normalization",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.cs.ct",
+      "bookName": "Computational Thinking & Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "ib.cs.modelling",
+      "label": "Computational Modelling",
+      "type": "concept",
+      "description": "Modelling and simulation, limitations, uses in decision-making",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.cs.ct",
+      "bookName": "Computational Thinking & Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    }
+  ],
+  "edges": [
+    { "source": "ib.cs.system_planning", "target": "ib.cs.system_design", "relation": "prerequisite_for" },
+    { "source": "ib.cs.system_design", "target": "ib.cs.cpu_architecture", "relation": "prerequisite_for" },
+    { "source": "ib.cs.binary_representation", "target": "ib.cs.cpu_architecture", "relation": "prerequisite_for" },
+    { "source": "ib.cs.binary_representation", "target": "ib.cs.logic_gates", "relation": "prerequisite_for" },
+    { "source": "ib.cs.cpu_architecture", "target": "ib.cs.os", "relation": "prerequisite_for" },
+    { "source": "ib.cs.os", "target": "ib.cs.resource_management", "relation": "prerequisite_for" },
+    { "source": "ib.cs.system_design", "target": "ib.cs.network_fundamentals", "relation": "prerequisite_for" },
+    { "source": "ib.cs.network_fundamentals", "target": "ib.cs.web_technologies", "relation": "prerequisite_for" },
+    { "source": "ib.cs.network_fundamentals", "target": "ib.cs.security", "relation": "prerequisite_for" },
+    { "source": "ib.cs.system_design", "target": "ib.cs.thinking_algorithmically", "relation": "prerequisite_for" },
+    { "source": "ib.cs.thinking_algorithmically", "target": "ib.cs.programming_fundamentals", "relation": "prerequisite_for" },
+    { "source": "ib.cs.programming_fundamentals", "target": "ib.cs.collections", "relation": "prerequisite_for" },
+    { "source": "ib.cs.collections", "target": "ib.cs.searching_sorting", "relation": "prerequisite_for" },
+    { "source": "ib.cs.programming_fundamentals", "target": "ib.cs.oop", "relation": "prerequisite_for" },
+    { "source": "ib.cs.collections", "target": "ib.cs.abstract_data_structures", "relation": "prerequisite_for" },
+    { "source": "ib.cs.oop", "target": "ib.cs.abstract_data_structures", "relation": "prerequisite_for" },
+    { "source": "ib.cs.programming_fundamentals", "target": "ib.cs.recursion", "relation": "prerequisite_for" },
+    { "source": "ib.cs.abstract_data_structures", "target": "ib.cs.recursion", "relation": "prerequisite_for" },
+    { "source": "ib.cs.collections", "target": "ib.cs.databases", "relation": "prerequisite_for" },
+    { "source": "ib.cs.programming_fundamentals", "target": "ib.cs.modelling", "relation": "prerequisite_for" },
+    { "source": "ib.cs.logic_gates", "target": "ib.cs.control_systems", "relation": "prerequisite_for" },
+    { "source": "ib.cs.os", "target": "ib.cs.control_systems", "relation": "prerequisite_for" }
+  ]
+}

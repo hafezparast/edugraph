@@ -1,0 +1,301 @@
+{
+  "metadata": {
+    "domain": "history",
+    "curriculum": "IB Diploma Programme History (SL/HL)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "IB History topics with prerequisite ordering, colored by theme",
+    "sources": [
+      "IB History Guide"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ib.his.ps",
+      "name": "Prescribed Subjects",
+      "color": "#d97706",
+      "order": 1
+    },
+    {
+      "id": "ib.his.wh",
+      "name": "World History Topics",
+      "color": "#b45309",
+      "order": 2
+    },
+    {
+      "id": "ib.his.hl",
+      "name": "HL Regional Options",
+      "color": "#92400e",
+      "order": 3
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ib.his.military_leaders",
+      "label": "Military Leaders",
+      "type": "concept",
+      "description": "Case studies of military leaders and their impact on conflicts",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.his.ps",
+      "bookName": "Prescribed Subjects",
+      "bookColor": "#d97706",
+      "bookOrder": 1
+    },
+    {
+      "id": "ib.his.move_to_global_war",
+      "label": "Move to Global War",
+      "type": "concept",
+      "description": "Japanese and German expansion, causes of WWII",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.his.ps",
+      "bookName": "Prescribed Subjects",
+      "bookColor": "#d97706",
+      "bookOrder": 1
+    },
+    {
+      "id": "ib.his.rights_and_protest",
+      "label": "Rights & Protest",
+      "type": "concept",
+      "description": "Civil rights movements, apartheid, protest movements",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.his.ps",
+      "bookName": "Prescribed Subjects",
+      "bookColor": "#d97706",
+      "bookOrder": 1
+    },
+    {
+      "id": "ib.his.conflict_and_intervention",
+      "label": "Conflict & Intervention",
+      "type": "concept",
+      "description": "Case studies of conflict, humanitarian intervention, peacekeeping",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.his.ps",
+      "bookName": "Prescribed Subjects",
+      "bookColor": "#d97706",
+      "bookOrder": 1
+    },
+    {
+      "id": "ib.his.causes_of_wars",
+      "label": "Causes & Effects of 20th-Century Wars",
+      "type": "concept",
+      "description": "WWI, WWII, causes, practices, effects of wars",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.his.wh",
+      "bookName": "World History Topics",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.his.authoritarian_states",
+      "label": "Authoritarian States",
+      "type": "concept",
+      "description": "Rise, consolidation, and impact of authoritarian regimes (Stalin, Mao, Hitler)",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.his.wh",
+      "bookName": "World History Topics",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.his.cold_war",
+      "label": "The Cold War",
+      "type": "concept",
+      "description": "Superpower rivalry, containment, detente, end of Cold War",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.his.wh",
+      "bookName": "World History Topics",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.his.independence_movements",
+      "label": "Independence Movements",
+      "type": "concept",
+      "description": "Decolonization, independence movements in Asia, Africa, Middle East",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.his.wh",
+      "bookName": "World History Topics",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.his.democratic_states",
+      "label": "Democratic States",
+      "type": "concept",
+      "description": "Emergence, challenges, and evolution of democratic states",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.his.wh",
+      "bookName": "World History Topics",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.his.society_and_economy",
+      "label": "Society & Economy",
+      "type": "concept",
+      "description": "Social and economic changes in the 20th century, industrialization",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.his.wh",
+      "bookName": "World History Topics",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.his.source_analysis",
+      "label": "Source Analysis & Historiography",
+      "type": "concept",
+      "description": "Evaluating sources, OPVL, historical perspectives and interpretations",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.his.ps",
+      "bookName": "Prescribed Subjects",
+      "bookColor": "#d97706",
+      "bookOrder": 1
+    },
+    {
+      "id": "ib.his.hl_europe",
+      "label": "History of Europe (HL)",
+      "type": "concept",
+      "description": "European history from the late 19th century through 20th century",
+      "grade_range": ["IB"],
+      "tags": ["subtopic", "HL"],
+      "book": "ib.his.hl",
+      "bookName": "HL Regional Options",
+      "bookColor": "#92400e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ib.his.hl_americas",
+      "label": "History of the Americas (HL)",
+      "type": "concept",
+      "description": "History of North and South America, US civil rights, Latin American revolutions",
+      "grade_range": ["IB"],
+      "tags": ["subtopic", "HL"],
+      "book": "ib.his.hl",
+      "bookName": "HL Regional Options",
+      "bookColor": "#92400e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ib.his.hl_asia_oceania",
+      "label": "History of Asia & Oceania (HL)",
+      "type": "concept",
+      "description": "History of Asia and Oceania, Chinese revolution, Japanese imperialism",
+      "grade_range": ["IB"],
+      "tags": ["subtopic", "HL"],
+      "book": "ib.his.hl",
+      "bookName": "HL Regional Options",
+      "bookColor": "#92400e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ib.his.hl_africa_middle_east",
+      "label": "History of Africa & Middle East (HL)",
+      "type": "concept",
+      "description": "Colonial legacies, independence, conflicts in Africa and the Middle East",
+      "grade_range": ["IB"],
+      "tags": ["subtopic", "HL"],
+      "book": "ib.his.hl",
+      "bookName": "HL Regional Options",
+      "bookColor": "#92400e",
+      "bookOrder": 3
+    },
+    {
+      "id": "ib.his.technology_and_war",
+      "label": "Technology & Warfare",
+      "type": "concept",
+      "description": "Impact of technology on warfare, total war, nuclear weapons",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.his.wh",
+      "bookName": "World History Topics",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.his.resistance_and_opposition",
+      "label": "Resistance & Opposition",
+      "type": "concept",
+      "description": "Resistance movements, opposition to authoritarian rule",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.his.wh",
+      "bookName": "World History Topics",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.his.post_war_developments",
+      "label": "Post-War Developments",
+      "type": "concept",
+      "description": "UN formation, reconstruction, European integration, globalization",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.his.wh",
+      "bookName": "World History Topics",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.his.internal_assessment",
+      "label": "Historical Investigation (IA)",
+      "type": "concept",
+      "description": "Independent historical investigation, research methodology",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.his.ps",
+      "bookName": "Prescribed Subjects",
+      "bookColor": "#d97706",
+      "bookOrder": 1
+    },
+    {
+      "id": "ib.his.peacemaking",
+      "label": "Peacemaking & Peacekeeping",
+      "type": "concept",
+      "description": "Treaty of Versailles, League of Nations, United Nations peacekeeping",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.his.wh",
+      "bookName": "World History Topics",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    }
+  ],
+  "edges": [
+    { "source": "ib.his.source_analysis", "target": "ib.his.military_leaders", "relation": "prerequisite_for" },
+    { "source": "ib.his.source_analysis", "target": "ib.his.move_to_global_war", "relation": "prerequisite_for" },
+    { "source": "ib.his.source_analysis", "target": "ib.his.rights_and_protest", "relation": "prerequisite_for" },
+    { "source": "ib.his.source_analysis", "target": "ib.his.conflict_and_intervention", "relation": "prerequisite_for" },
+    { "source": "ib.his.source_analysis", "target": "ib.his.internal_assessment", "relation": "prerequisite_for" },
+    { "source": "ib.his.move_to_global_war", "target": "ib.his.causes_of_wars", "relation": "prerequisite_for" },
+    { "source": "ib.his.military_leaders", "target": "ib.his.causes_of_wars", "relation": "prerequisite_for" },
+    { "source": "ib.his.causes_of_wars", "target": "ib.his.authoritarian_states", "relation": "prerequisite_for" },
+    { "source": "ib.his.causes_of_wars", "target": "ib.his.technology_and_war", "relation": "prerequisite_for" },
+    { "source": "ib.his.causes_of_wars", "target": "ib.his.peacemaking", "relation": "prerequisite_for" },
+    { "source": "ib.his.authoritarian_states", "target": "ib.his.resistance_and_opposition", "relation": "prerequisite_for" },
+    { "source": "ib.his.authoritarian_states", "target": "ib.his.cold_war", "relation": "prerequisite_for" },
+    { "source": "ib.his.peacemaking", "target": "ib.his.cold_war", "relation": "prerequisite_for" },
+    { "source": "ib.his.cold_war", "target": "ib.his.independence_movements", "relation": "prerequisite_for" },
+    { "source": "ib.his.cold_war", "target": "ib.his.post_war_developments", "relation": "prerequisite_for" },
+    { "source": "ib.his.rights_and_protest", "target": "ib.his.democratic_states", "relation": "prerequisite_for" },
+    { "source": "ib.his.independence_movements", "target": "ib.his.democratic_states", "relation": "prerequisite_for" },
+    { "source": "ib.his.post_war_developments", "target": "ib.his.society_and_economy", "relation": "prerequisite_for" },
+    { "source": "ib.his.conflict_and_intervention", "target": "ib.his.peacemaking", "relation": "prerequisite_for" },
+    { "source": "ib.his.causes_of_wars", "target": "ib.his.hl_europe", "relation": "prerequisite_for" },
+    { "source": "ib.his.democratic_states", "target": "ib.his.hl_americas", "relation": "prerequisite_for" },
+    { "source": "ib.his.independence_movements", "target": "ib.his.hl_asia_oceania", "relation": "prerequisite_for" },
+    { "source": "ib.his.independence_movements", "target": "ib.his.hl_africa_middle_east", "relation": "prerequisite_for" },
+    { "source": "ib.his.resistance_and_opposition", "target": "ib.his.hl_europe", "relation": "prerequisite_for" }
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "metadata": {
+    "domain": "psychology",
+    "curriculum": "IB Diploma Programme Psychology (SL/HL)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "IB Psychology topics with prerequisite ordering, colored by theme",
+    "sources": [
+      "IB Psychology Guide"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ib.psy.bio",
+      "name": "Biological Approach",
+      "color": "#22c55e",
+      "order": 1
+    },
+    {
+      "id": "ib.psy.cog",
+      "name": "Cognitive Approach",
+      "color": "#3b82f6",
+      "order": 2
+    },
+    {
+      "id": "ib.psy.soc",
+      "name": "Sociocultural Approach",
+      "color": "#8b5cf6",
+      "order": 3
+    },
+    {
+      "id": "ib.psy.opt",
+      "name": "Options",
+      "color": "#f59e0b",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ib.psy.research_methods",
+      "label": "Research Methods",
+      "type": "concept",
+      "description": "Experimental methods, ethics, sampling, qualitative/quantitative approaches",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.psy.bio",
+      "bookName": "Biological Approach",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "ib.psy.brain_behaviour",
+      "label": "Brain & Behaviour",
+      "type": "concept",
+      "description": "Brain localization, neuroplasticity, neurotransmitters, hormones",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.psy.bio",
+      "bookName": "Biological Approach",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "ib.psy.genetics_behaviour",
+      "label": "Genetics & Behaviour",
+      "type": "concept",
+      "description": "Genes, twin studies, genetic predisposition, epigenetics",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.psy.bio",
+      "bookName": "Biological Approach",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "ib.psy.evolution_behaviour",
+      "label": "Evolution & Behaviour",
+      "type": "concept",
+      "description": "Evolutionary explanations of behaviour, natural selection and cognition",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.psy.bio",
+      "bookName": "Biological Approach",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "ib.psy.cognitive_processes",
+      "label": "Cognitive Processes",
+      "type": "concept",
+      "description": "Memory, perception, decision-making, cognitive biases",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.psy.cog",
+      "bookName": "Cognitive Approach",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.psy.reliability_cog",
+      "label": "Reliability of Cognitive Processes",
+      "type": "concept",
+      "description": "Reconstructive memory, schema theory, cognitive biases in thinking",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.psy.cog",
+      "bookName": "Cognitive Approach",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.psy.emotion_cognition",
+      "label": "Emotion & Cognition",
+      "type": "concept",
+      "description": "Influence of emotion on cognitive processes, flashbulb memories",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.psy.cog",
+      "bookName": "Cognitive Approach",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.psy.technology_cog",
+      "label": "Technology & Cognition (HL)",
+      "type": "concept",
+      "description": "Cognitive imaging technologies (fMRI, EEG), digital technology effects",
+      "grade_range": ["IB"],
+      "tags": ["subtopic", "HL"],
+      "book": "ib.psy.cog",
+      "bookName": "Cognitive Approach",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2
+    },
+    {
+      "id": "ib.psy.social_identity",
+      "label": "Social Identity",
+      "type": "concept",
+      "description": "Social identity theory, social groups, in-group/out-group dynamics",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.psy.soc",
+      "bookName": "Sociocultural Approach",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ib.psy.social_influence",
+      "label": "Social & Cultural Influence",
+      "type": "concept",
+      "description": "Conformity, obedience, cultural dimensions, acculturation",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.psy.soc",
+      "bookName": "Sociocultural Approach",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ib.psy.stereotypes",
+      "label": "Stereotypes & Prejudice",
+      "type": "concept",
+      "description": "Formation of stereotypes, prejudice, discrimination, stereotype threat",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.psy.soc",
+      "bookName": "Sociocultural Approach",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3
+    },
+    {
+      "id": "ib.psy.abnormal",
+      "label": "Abnormal Psychology (Option)",
+      "type": "concept",
+      "description": "Disorders, diagnosis, etiology, treatment approaches",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.psy.opt",
+      "bookName": "Options",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4
+    },
+    {
+      "id": "ib.psy.developmental",
+      "label": "Developmental Psychology (Option)",
+      "type": "concept",
+      "description": "Cognitive and social development, attachment, resilience",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.psy.opt",
+      "bookName": "Options",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4
+    },
+    {
+      "id": "ib.psy.health",
+      "label": "Health Psychology (Option)",
+      "type": "concept",
+      "description": "Stress, health promotion, substance abuse, adherence to treatment",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.psy.opt",
+      "bookName": "Options",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4
+    },
+    {
+      "id": "ib.psy.relationships",
+      "label": "Psychology of Relationships (Option)",
+      "type": "concept",
+      "description": "Formation, maintenance, breakdown of relationships, role of communication",
+      "grade_range": ["IB"],
+      "tags": ["subtopic"],
+      "book": "ib.psy.opt",
+      "bookName": "Options",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4
+    }
+  ],
+  "edges": [
+    { "source": "ib.psy.research_methods", "target": "ib.psy.brain_behaviour", "relation": "prerequisite_for" },
+    { "source": "ib.psy.research_methods", "target": "ib.psy.cognitive_processes", "relation": "prerequisite_for" },
+    { "source": "ib.psy.research_methods", "target": "ib.psy.social_identity", "relation": "prerequisite_for" },
+    { "source": "ib.psy.brain_behaviour", "target": "ib.psy.genetics_behaviour", "relation": "prerequisite_for" },
+    { "source": "ib.psy.brain_behaviour", "target": "ib.psy.evolution_behaviour", "relation": "prerequisite_for" },
+    { "source": "ib.psy.brain_behaviour", "target": "ib.psy.technology_cog", "relation": "prerequisite_for" },
+    { "source": "ib.psy.cognitive_processes", "target": "ib.psy.reliability_cog", "relation": "prerequisite_for" },
+    { "source": "ib.psy.cognitive_processes", "target": "ib.psy.emotion_cognition", "relation": "prerequisite_for" },
+    { "source": "ib.psy.cognitive_processes", "target": "ib.psy.technology_cog", "relation": "prerequisite_for" },
+    { "source": "ib.psy.social_identity", "target": "ib.psy.social_influence", "relation": "prerequisite_for" },
+    { "source": "ib.psy.social_identity", "target": "ib.psy.stereotypes", "relation": "prerequisite_for" },
+    { "source": "ib.psy.brain_behaviour", "target": "ib.psy.abnormal", "relation": "prerequisite_for" },
+    { "source": "ib.psy.cognitive_processes", "target": "ib.psy.abnormal", "relation": "prerequisite_for" },
+    { "source": "ib.psy.genetics_behaviour", "target": "ib.psy.developmental", "relation": "prerequisite_for" },
+    { "source": "ib.psy.social_influence", "target": "ib.psy.developmental", "relation": "prerequisite_for" },
+    { "source": "ib.psy.emotion_cognition", "target": "ib.psy.health", "relation": "prerequisite_for" },
+    { "source": "ib.psy.evolution_behaviour", "target": "ib.psy.relationships", "relation": "prerequisite_for" },
+    { "source": "ib.psy.stereotypes", "target": "ib.psy.relationships", "relation": "prerequisite_for" }
+  ]
+}
