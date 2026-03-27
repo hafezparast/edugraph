@@ -1,236 +1,9 @@
-#!/usr/bin/env python3
-"""
-Generate self-contained D3.js force-directed graph visualizations.
-
-Usage:
-    python visualize.py                    # generate all graphs
-    python visualize.py malaysia-k12       # generate one graph
-    python visualize.py igcse-math         # generate one graph
-"""
-
-import json
-import os
-import sys
-
-BASE_DIR = os.path.join(os.path.dirname(__file__), "..")
-
-GRAPHS = {
-    "malaysia-k12": {
-        "data": "data/malaysia-k12.json",
-        "output": "malaysia-math.html",
-        "title": "Malaysia Mathematics",
-        "subtitle": "Year 1 to STPM",
-    },
-    "malaysia-sejarah": {
-        "data": "data/malaysia-sejarah.json",
-        "output": "malaysia-sejarah.html",
-        "title": "Malaysia History (Sejarah)",
-        "subtitle": "Year 4 to Form 5",
-    },
-    "malaysia-cs": {
-        "data": "data/malaysia-cs.json",
-        "output": "malaysia-cs.html",
-        "title": "Malaysia Computer Science",
-        "subtitle": "ASK (Form 1-3) + Sains Komputer (Form 4-5)",
-    },
-    "malaysia-science": {
-        "data": "data/malaysia-science.json",
-        "output": "malaysia-science.html",
-        "title": "Malaysia Science",
-        "subtitle": "Year 1 to Form 3",
-    },
-    "malaysia-physics": {
-        "data": "data/malaysia-physics.json",
-        "output": "malaysia-physics.html",
-        "title": "Malaysia Physics",
-        "subtitle": "Form 4-5 (KSSM)",
-    },
-    "malaysia-chemistry": {
-        "data": "data/malaysia-chemistry.json",
-        "output": "malaysia-chemistry.html",
-        "title": "Malaysia Chemistry",
-        "subtitle": "Form 4-5 (KSSM)",
-    },
-    "malaysia-biology": {
-        "data": "data/malaysia-biology.json",
-        "output": "malaysia-biology.html",
-        "title": "Malaysia Biology",
-        "subtitle": "Form 4-5 (KSSM)",
-    },
-    "igcse-math": {
-        "data": "data/igcse-math.json",
-        "output": "igcse-math.html",
-        "title": "IGCSE Mathematics",
-        "subtitle": "Cambridge 0580 — Core & Extended + Add Math 0606",
-    },
-    "igcse-physics": {
-        "data": "data/igcse-physics.json",
-        "output": "igcse-physics.html",
-        "title": "IGCSE Physics",
-        "subtitle": "Cambridge 0625",
-    },
-    "igcse-chemistry": {
-        "data": "data/igcse-chemistry.json",
-        "output": "igcse-chemistry.html",
-        "title": "IGCSE Chemistry",
-        "subtitle": "Cambridge 0620",
-    },
-    "igcse-biology": {
-        "data": "data/igcse-biology.json",
-        "output": "igcse-biology.html",
-        "title": "IGCSE Biology",
-        "subtitle": "Cambridge 0610",
-    },
-    "igcse-compsci": {
-        "data": "data/igcse-compsci.json",
-        "output": "igcse-compsci.html",
-        "title": "IGCSE Computer Science",
-        "subtitle": "Cambridge 0478",
-    },
-}
-
-
-def generate(name, config):
-    data_path = os.path.join(BASE_DIR, config["data"])
-    output_path = os.path.join(BASE_DIR, config["output"])
-
-    with open(data_path) as f:
-        data = json.load(f)
-
-    books = {b["id"]: b for b in data["books"]}
-    d3_nodes = []
-    for n in data["nodes"]:
-        b = books.get(n["book"], {})
-        d3_nodes.append({
-            "id": n["id"],
-            "label": n["label"],
-            "color": b.get("color", "#666"),
-            "book": n["book"],
-            "bookName": b.get("name", ""),
-            "bookOrder": b.get("order", 0),
-            "r": 4 + min(b.get("order", 0), 20) * 0.8,
-            "pages": n.get("pages", ""),
-            "description": n.get("description", ""),
-        })
-
-    d3_edges = [{"source": e["source"], "target": e["target"]} for e in data["edges"]]
-
-    # Auto-detect topic strands from node labels
-    STRAND_KEYWORDS = [
-        ("Numbers & Counting", ["number", "counting", "integer", "digit", "place value"]),
-        ("Arithmetic", ["addition", "subtraction", "multiplication", "division", "operation"]),
-        ("Fractions", ["fraction", "improper", "mixed number"]),
-        ("Decimals", ["decimal", "hundredths"]),
-        ("Percentages", ["percent"]),
-        ("Algebra", ["algebra", "expression", "variable", "unknown", "substitution", "bracket", "expansion", "factoris"]),
-        ("Equations", ["equation", "simultaneous", "linear eq", "quadratic eq", "formula"]),
-        ("Inequalities", ["inequalit", "region"]),
-        ("Functions & Graphs", ["function", "graph", "gradient", "curve", "parabola", "reciprocal", "hyperbola"]),
-        ("Indices & Logarithms", ["indices", "index", "logarithm", "exponential", "surd", "power", "root"]),
-        ("Sequences & Series", ["sequence", "pattern", "progression", "series", "binomial"]),
-        ("Ratio & Proportion", ["ratio", "proportion", "rate", "variation", "scale"]),
-        ("Money & Finance", ["money", "currency", "profit", "loss", "discount", "interest", "dividend", "invoice", "tax", "insurance", "invest", "credit", "debt", "financial"]),
-        ("Time", ["time", "duration", "calendar", "clock", "hour", "minute", "day", "week", "month", "year", "century", "decade", "time zone"]),
-        ("Measurement", ["length", "mass", "volume", "weight", "litre", "gram", "metre", "kilometre", "centimetre", "millimetre", "unit"]),
-        ("Geometry", ["angle", "line", "triangle", "quadrilateral", "polygon", "circle", "shape", "prism", "construction", "congruence", "loci"]),
-        ("Symmetry & Transformations", ["symmetry", "reflection", "rotation", "translation", "transformation", "enlargement", "tessellation", "isometr"]),
-        ("Perimeter, Area & Volume", ["perimeter", "area", "surface", "volume", "sector", "arc"]),
-        ("Trigonometry", ["trigonometric", "sine", "cosine", "tangent", "bearing", "circular measure", "radian"]),
-        ("Pythagoras & Similarity", ["pythagoras", "similar", "congruence"]),
-        ("Coordinate Geometry", ["coordinate", "midpoint", "distance", "cartesian"]),
-        ("Vectors & Matrices", ["vector", "matri"]),
-        ("Statistics", ["data", "average", "mean", "median", "mode", "range", "frequency", "histogram", "pie chart", "bar chart", "pictograph", "scatter", "dispersion", "quartile", "cumulative"]),
-        ("Probability", ["probability", "likelihood", "certain", "impossible", "likely", "tree diagram", "venn", "conditional", "combined event", "permutation", "combination", "factorial"]),
-        ("Calculus", ["derivative", "differentiation", "integration", "integral", "limit", "continuity", "maclaurin", "differential equation", "gradient function", "chain rule", "product rule", "quotient rule", "stationary"]),
-        ("Kinematics", ["kinematic", "velocity", "acceleration", "displacement"]),
-        ("Sets & Logic", ["set", "venn diagram", "universal", "complement", "union", "intersection", "statement", "argument", "logical"]),
-        ("Number Bases", ["number base", "binary"]),
-        ("Graph Theory", ["network", "graph theory"]),
-        ("Mathematical Modeling", ["model"]),
-    ]
-
-    STRAND_COLORS = [
-        "#ef4444", "#f97316", "#f59e0b", "#eab308", "#84cc16",
-        "#22c55e", "#10b981", "#14b8a6", "#06b6d4", "#0ea5e9",
-        "#3b82f6", "#6366f1", "#8b5cf6", "#a855f7", "#d946ef",
-        "#ec4899", "#f43f5e", "#fb923c", "#facc15", "#a78bfa",
-        "#34d399", "#22d3ee", "#c084fc", "#fbbf24", "#4ade80",
-        "#f472b6", "#818cf8", "#2dd4bf", "#fb7185", "#d97706",
-    ]
-
-    def classify_node(n):
-        label = n["label"].lower()
-        desc = n.get("description", "").lower()
-        text = label + " " + desc
-        for strand_name, keywords in STRAND_KEYWORDS:
-            for kw in keywords:
-                if kw in text:
-                    return strand_name
-        return "Other"
-
-    # Build strand groups
-    from collections import OrderedDict
-    strand_nodes = OrderedDict()
-    for n in d3_nodes:
-        orig = next((x for x in data["nodes"] if x["id"] == n["id"]), n)
-        strand = classify_node(orig)
-        strand_nodes.setdefault(strand, []).append(n["id"])
-        n["strand"] = strand
-
-    # Assign strand colors
-    strand_color_map = {}
-    for i, strand_name in enumerate(strand_nodes.keys()):
-        strand_color_map[strand_name] = STRAND_COLORS[i % len(STRAND_COLORS)]
-
-    strands_list = [
-        {"name": name, "color": strand_color_map[name], "nodeIds": ids}
-        for name, ids in strand_nodes.items()
-        if len(ids) > 0
-    ]
-
-    # Group books by education level for collapsible groups
-    book_groups = OrderedDict()
-    for b in data["books"]:
-        name = b["name"]
-        if any(x in name for x in ["Y1", "Y2", "Y3", "Y4", "Y5", "Y6", "Year"]):
-            group = "Primary (Year 1-6)"
-        elif any(x in name for x in ["Form 1", "Form 2", "Form 3"]):
-            group = "Lower Secondary (Form 1-3)"
-        elif any(x in name for x in ["Form 4", "Form 5"]):
-            group = "Upper Secondary (Form 4-5)"
-        elif any(x in name for x in ["Add Math", "AM"]):
-            group = "Additional Mathematics"
-        elif "STPM" in name:
-            group = "Pre-University (STPM)"
-        elif any(x in name for x in ["Number", "Algebra", "Geometry", "Data", "Fraction", "Equation",
-                                       "Mensuration", "Probability", "Sequence", "Line", "Quadratic"]):
-            group = "IGCSE Math Core+Extended"
-        elif any(x in name for x in ["Pythagoras", "Average", "Further", "Trigonometry", "Ratio",
-                                       "Scatter", "Money", "Curved", "Symmetry", "Histogram",
-                                       "More Equation", "Transform", "Advanced"]):
-            group = "IGCSE Math Core+Extended"
-        elif any(x in name for x in ["(AM)", "Calculus", "Kinematics", "Vectors (AM)", "Polynomials",
-                                       "Logarithm", "Circle Coord", "Circular Measure", "Permutation",
-                                       "Series", "Differentiation", "Integration"]):
-            group = "IGCSE Additional Mathematics"
-        else:
-            group = "Other"
-        book_groups.setdefault(group, []).append(b)
-
-    nodes_json = json.dumps(d3_nodes)
-    edges_json = json.dumps(d3_edges)
-    books_json = json.dumps(data["books"])
-    strands_json = json.dumps(strands_list)
-    book_groups_json = json.dumps(book_groups)
-    page_title = config["title"]
-    page_subtitle = config["subtitle"]
-
-    html = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduGraph — """ + page_title + """</title>
+<title>EduGraph — Malaysia Chemistry</title>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
@@ -365,7 +138,7 @@ svg { width: 100%; height: 100%; display: block; }
 <header class="topbar">
   <div class="topbar-left">
     <h1>EduGraph</h1>
-    <span class="sub">""" + page_subtitle + """</span>
+    <span class="sub">Form 4-5 (KSSM)</span>
   </div>
   <div class="topbar-right">
     <div class="stats">
@@ -445,11 +218,11 @@ svg { width: 100%; height: 100%; display: block; }
 </div>
 
 <script>
-const rawNodes = """ + nodes_json + """;
-const rawEdges = """ + edges_json + """;
-const booksData = """ + books_json + """;
-const strandsData = """ + strands_json + """;
-const bookGroupsData = """ + book_groups_json + """;
+const rawNodes = [{"id": "mych.f4.ch1.development_of_chemistry", "label": "Development of Chemistry", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Development of Chemistry \u2014 Chapter 1: Introduction to Chemistry, Form 4", "strand": "Other"}, {"id": "mych.f4.ch1.scientific_investigation", "label": "Scientific Investigation", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Scientific Investigation \u2014 Chapter 1: Introduction to Chemistry, Form 4", "strand": "Money & Finance"}, {"id": "mych.f4.ch1.apparatus_and_chemicals", "label": "Apparatus and Chemicals", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Apparatus and Chemicals \u2014 Chapter 1: Introduction to Chemistry, Form 4", "strand": "Other"}, {"id": "mych.f4.ch2.basic_concepts_of_matter", "label": "Basic Concepts of Matter", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Basic Concepts of Matter \u2014 Chapter 2: Matter and Atomic Structure, Form 4", "strand": "Other"}, {"id": "mych.f4.ch2.development_of_atomic_model", "label": "Development of Atomic Model", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Development of Atomic Model \u2014 Chapter 2: Matter and Atomic Structure, Form 4", "strand": "Statistics"}, {"id": "mych.f4.ch2.structure_of_atom", "label": "Structure of Atom", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Structure of Atom \u2014 Chapter 2: Matter and Atomic Structure, Form 4", "strand": "Other"}, {"id": "mych.f4.ch2.isotopes", "label": "Isotopes", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Isotopes \u2014 Chapter 2: Matter and Atomic Structure, Form 4", "strand": "Other"}, {"id": "mych.f4.ch3.relative_atomic_molecular_mass", "label": "Relative Atomic/Molecular Mass", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Relative Atomic/Molecular Mass \u2014 Chapter 3: Mole Concept, Form 4", "strand": "Measurement"}, {"id": "mych.f4.ch3.mole_concept", "label": "Mole Concept", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Mole Concept \u2014 Chapter 3: Mole Concept, Form 4", "strand": "Other"}, {"id": "mych.f4.ch3.chemical_formulae", "label": "Chemical Formulae", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Chemical Formulae \u2014 Chapter 3: Mole Concept, Form 4", "strand": "Equations"}, {"id": "mych.f4.ch3.chemical_equations", "label": "Chemical Equations", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Chemical Equations \u2014 Chapter 3: Mole Concept, Form 4", "strand": "Equations"}, {"id": "mych.f4.ch4.development_of_periodic_table", "label": "Development of Periodic Table", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Development of Periodic Table \u2014 Chapter 4: Periodic Table, Form 4", "strand": "Other"}, {"id": "mych.f4.ch4.modern_arrangement", "label": "Modern Arrangement", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Modern Arrangement \u2014 Chapter 4: Periodic Table, Form 4", "strand": "Statistics"}, {"id": "mych.f4.ch4.group_18", "label": "Group 18", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Group 18 \u2014 Chapter 4: Periodic Table, Form 4", "strand": "Other"}, {"id": "mych.f4.ch4.group_1", "label": "Group 1", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Group 1 \u2014 Chapter 4: Periodic Table, Form 4", "strand": "Other"}, {"id": "mych.f4.ch4.group_17", "label": "Group 17", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Group 17 \u2014 Chapter 4: Periodic Table, Form 4", "strand": "Other"}, {"id": "mych.f4.ch4.period_3", "label": "Period 3", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Period 3 \u2014 Chapter 4: Periodic Table, Form 4", "strand": "Other"}, {"id": "mych.f4.ch4.transition_elements", "label": "Transition Elements", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Transition Elements \u2014 Chapter 4: Periodic Table, Form 4", "strand": "Other"}, {"id": "mych.f4.ch5.basics_of_compound_formation", "label": "Basics of Compound Formation", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Basics of Compound Formation \u2014 Chapter 5: Chemical Bonding, Form 4", "strand": "Other"}, {"id": "mych.f4.ch5.ionic_bonding", "label": "Ionic Bonding", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Ionic Bonding \u2014 Chapter 5: Chemical Bonding, Form 4", "strand": "Other"}, {"id": "mych.f4.ch5.covalent_bonding", "label": "Covalent Bonding", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Covalent Bonding \u2014 Chapter 5: Chemical Bonding, Form 4", "strand": "Other"}, {"id": "mych.f4.ch5.hydrogen_bonding", "label": "Hydrogen Bonding", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Hydrogen Bonding \u2014 Chapter 5: Chemical Bonding, Form 4", "strand": "Other"}, {"id": "mych.f4.ch5.dative_bonding", "label": "Dative Bonding", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Dative Bonding \u2014 Chapter 5: Chemical Bonding, Form 4", "strand": "Other"}, {"id": "mych.f4.ch5.metallic_bonding", "label": "Metallic Bonding", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Metallic Bonding \u2014 Chapter 5: Chemical Bonding, Form 4", "strand": "Other"}, {"id": "mych.f4.ch5.ionic_vs_covalent_compounds", "label": "Ionic vs Covalent Compounds", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Ionic vs Covalent Compounds \u2014 Chapter 5: Chemical Bonding, Form 4", "strand": "Other"}, {"id": "mych.f4.ch6.water_in_acidity", "label": "Water in Acidity", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Water in Acidity \u2014 Chapter 6: Acids, Bases and Salts, Form 4", "strand": "Other"}, {"id": "mych.f4.ch6.ph_value", "label": "pH Value", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "pH Value \u2014 Chapter 6: Acids, Bases and Salts, Form 4", "strand": "Other"}, {"id": "mych.f4.ch6.strength_of_acids_alkalis", "label": "Strength of Acids and Alkalis", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Strength of Acids and Alkalis \u2014 Chapter 6: Acids, Bases and Salts, Form 4", "strand": "Other"}, {"id": "mych.f4.ch6.chemical_properties", "label": "Chemical Properties of Acids and Bases", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Chemical Properties of Acids and Bases \u2014 Chapter 6: Acids, Bases and Salts, Form 4", "strand": "Other"}, {"id": "mych.f4.ch6.concentration", "label": "Concentration", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Concentration \u2014 Chapter 6: Acids, Bases and Salts, Form 4", "strand": "Ratio & Proportion"}, {"id": "mych.f4.ch6.standard_solutions", "label": "Standard Solutions", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Standard Solutions \u2014 Chapter 6: Acids, Bases and Salts, Form 4", "strand": "Other"}, {"id": "mych.f4.ch6.neutralization", "label": "Neutralization", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Neutralization \u2014 Chapter 6: Acids, Bases and Salts, Form 4", "strand": "Other"}, {"id": "mych.f4.ch6.salts_and_crystals", "label": "Salts and Crystals", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Salts and Crystals \u2014 Chapter 6: Acids, Bases and Salts, Form 4", "strand": "Other"}, {"id": "mych.f4.ch6.salt_preparation", "label": "Salt Preparation", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Salt Preparation \u2014 Chapter 6: Acids, Bases and Salts, Form 4", "strand": "Ratio & Proportion"}, {"id": "mych.f4.ch6.heat_on_salts", "label": "Heat on Salts", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Heat on Salts \u2014 Chapter 6: Acids, Bases and Salts, Form 4", "strand": "Other"}, {"id": "mych.f4.ch6.qualitative_analysis", "label": "Qualitative Analysis", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Qualitative Analysis \u2014 Chapter 6: Acids, Bases and Salts, Form 4", "strand": "Other"}, {"id": "mych.f4.ch7.determination_of_rate", "label": "Determination of Rate of Reaction", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Determination of Rate of Reaction \u2014 Chapter 7: Rate of Reaction, Form 4", "strand": "Ratio & Proportion"}, {"id": "mych.f4.ch7.factors_influencing", "label": "Factors Influencing Rate of Reaction", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Factors Influencing Rate of Reaction \u2014 Chapter 7: Rate of Reaction, Form 4", "strand": "Ratio & Proportion"}, {"id": "mych.f4.ch7.applications", "label": "Applications of Rate of Reaction", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Applications of Rate of Reaction \u2014 Chapter 7: Rate of Reaction, Form 4", "strand": "Ratio & Proportion"}, {"id": "mych.f4.ch7.collision_theory", "label": "Collision Theory", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Collision Theory \u2014 Chapter 7: Rate of Reaction, Form 4", "strand": "Ratio & Proportion"}, {"id": "mych.f4.ch8.alloys", "label": "Alloys", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Alloys \u2014 Chapter 8: Synthetic Materials, Form 4", "strand": "Other"}, {"id": "mych.f4.ch8.glass", "label": "Glass", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Glass \u2014 Chapter 8: Synthetic Materials, Form 4", "strand": "Other"}, {"id": "mych.f4.ch8.ceramics", "label": "Ceramics", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Ceramics \u2014 Chapter 8: Synthetic Materials, Form 4", "strand": "Other"}, {"id": "mych.f4.ch8.composite_materials", "label": "Composite Materials", "color": "#14b8a6", "book": "mych.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Composite Materials \u2014 Chapter 8: Synthetic Materials, Form 4", "strand": "Other"}, {"id": "mych.f5.ch1.oxidation_and_reduction", "label": "Oxidation and Reduction", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Oxidation and Reduction \u2014 Chapter 1: Redox, Form 5", "strand": "Other"}, {"id": "mych.f5.ch1.standard_electrode_potential", "label": "Standard Electrode Potential", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Standard Electrode Potential \u2014 Chapter 1: Redox, Form 5", "strand": "Other"}, {"id": "mych.f5.ch1.chemical_cells", "label": "Chemical Cells", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Chemical Cells \u2014 Chapter 1: Redox, Form 5", "strand": "Other"}, {"id": "mych.f5.ch1.electrolytic_cells", "label": "Electrolytic Cells", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Electrolytic Cells \u2014 Chapter 1: Redox, Form 5", "strand": "Other"}, {"id": "mych.f5.ch1.metal_extraction", "label": "Metal Extraction", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Metal Extraction \u2014 Chapter 1: Redox, Form 5", "strand": "Other"}, {"id": "mych.f5.ch1.rusting", "label": "Rusting", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Rusting \u2014 Chapter 1: Redox, Form 5", "strand": "Other"}, {"id": "mych.f5.ch2.types_of_carbon_compounds", "label": "Types of Carbon Compounds", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Types of Carbon Compounds \u2014 Chapter 2: Carbon Compounds, Form 5", "strand": "Other"}, {"id": "mych.f5.ch2.homologous_series", "label": "Homologous Series", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Homologous Series \u2014 Chapter 2: Carbon Compounds, Form 5", "strand": "Sequences & Series"}, {"id": "mych.f5.ch2.chemical_properties_of_carbon_compounds", "label": "Chemical Properties of Carbon Compounds", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Chemical Properties of Carbon Compounds \u2014 Chapter 2: Carbon Compounds, Form 5", "strand": "Other"}, {"id": "mych.f5.ch2.isomers_and_iupac_naming", "label": "Isomers and IUPAC Naming", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Isomers and IUPAC Naming \u2014 Chapter 2: Carbon Compounds, Form 5", "strand": "Other"}, {"id": "mych.f5.ch3.heat_changes", "label": "Heat Changes", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Heat Changes \u2014 Chapter 3: Thermochemistry, Form 5", "strand": "Other"}, {"id": "mych.f5.ch3.heat_of_reaction", "label": "Heat of Reaction", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Heat of Reaction \u2014 Chapter 3: Thermochemistry, Form 5", "strand": "Other"}, {"id": "mych.f5.ch3.applications_of_thermochemistry", "label": "Applications of Thermochemistry", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Applications of Thermochemistry \u2014 Chapter 3: Thermochemistry, Form 5", "strand": "Other"}, {"id": "mych.f5.ch4.polymers_and_polymerization", "label": "Polymers and Polymerization", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Polymers and Polymerization \u2014 Chapter 4: Polymers, Form 5", "strand": "Other"}, {"id": "mych.f5.ch4.natural_rubber", "label": "Natural Rubber", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Natural Rubber \u2014 Chapter 4: Polymers, Form 5", "strand": "Other"}, {"id": "mych.f5.ch4.synthetic_rubber", "label": "Synthetic Rubber", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Synthetic Rubber \u2014 Chapter 4: Polymers, Form 5", "strand": "Other"}, {"id": "mych.f5.ch5.oils_and_fats", "label": "Oils and Fats", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Oils and Fats \u2014 Chapter 5: Consumer and Industrial Chemistry, Form 5", "strand": "Other"}, {"id": "mych.f5.ch5.cleaning_agents", "label": "Cleaning Agents", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Cleaning Agents \u2014 Chapter 5: Consumer and Industrial Chemistry, Form 5", "strand": "Other"}, {"id": "mych.f5.ch5.food_additives", "label": "Food Additives", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Food Additives \u2014 Chapter 5: Consumer and Industrial Chemistry, Form 5", "strand": "Other"}, {"id": "mych.f5.ch5.medicines", "label": "Medicines", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Medicines \u2014 Chapter 5: Consumer and Industrial Chemistry, Form 5", "strand": "Other"}, {"id": "mych.f5.ch5.nanotechnology", "label": "Nanotechnology", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Nanotechnology \u2014 Chapter 5: Consumer and Industrial Chemistry, Form 5", "strand": "Other"}, {"id": "mych.f5.ch5.green_technology", "label": "Green Technology", "color": "#0d9488", "book": "mych.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Green Technology \u2014 Chapter 5: Consumer and Industrial Chemistry, Form 5", "strand": "Other"}];
+const rawEdges = [{"source": "mych.f4.ch1.development_of_chemistry", "target": "mych.f4.ch1.scientific_investigation"}, {"source": "mych.f4.ch1.scientific_investigation", "target": "mych.f4.ch1.apparatus_and_chemicals"}, {"source": "mych.f4.ch1.apparatus_and_chemicals", "target": "mych.f4.ch2.basic_concepts_of_matter"}, {"source": "mych.f4.ch2.basic_concepts_of_matter", "target": "mych.f4.ch2.development_of_atomic_model"}, {"source": "mych.f4.ch2.development_of_atomic_model", "target": "mych.f4.ch2.structure_of_atom"}, {"source": "mych.f4.ch2.structure_of_atom", "target": "mych.f4.ch2.isotopes"}, {"source": "mych.f4.ch2.isotopes", "target": "mych.f4.ch3.relative_atomic_molecular_mass"}, {"source": "mych.f4.ch3.relative_atomic_molecular_mass", "target": "mych.f4.ch3.mole_concept"}, {"source": "mych.f4.ch3.mole_concept", "target": "mych.f4.ch3.chemical_formulae"}, {"source": "mych.f4.ch3.chemical_formulae", "target": "mych.f4.ch3.chemical_equations"}, {"source": "mych.f4.ch2.structure_of_atom", "target": "mych.f4.ch4.development_of_periodic_table"}, {"source": "mych.f4.ch4.development_of_periodic_table", "target": "mych.f4.ch4.modern_arrangement"}, {"source": "mych.f4.ch4.modern_arrangement", "target": "mych.f4.ch4.group_18"}, {"source": "mych.f4.ch4.modern_arrangement", "target": "mych.f4.ch4.group_1"}, {"source": "mych.f4.ch4.modern_arrangement", "target": "mych.f4.ch4.group_17"}, {"source": "mych.f4.ch4.modern_arrangement", "target": "mych.f4.ch4.period_3"}, {"source": "mych.f4.ch4.modern_arrangement", "target": "mych.f4.ch4.transition_elements"}, {"source": "mych.f4.ch4.modern_arrangement", "target": "mych.f4.ch5.basics_of_compound_formation"}, {"source": "mych.f4.ch5.basics_of_compound_formation", "target": "mych.f4.ch5.ionic_bonding"}, {"source": "mych.f4.ch5.ionic_bonding", "target": "mych.f4.ch5.covalent_bonding"}, {"source": "mych.f4.ch5.covalent_bonding", "target": "mych.f4.ch5.hydrogen_bonding"}, {"source": "mych.f4.ch5.covalent_bonding", "target": "mych.f4.ch5.dative_bonding"}, {"source": "mych.f4.ch5.basics_of_compound_formation", "target": "mych.f4.ch5.metallic_bonding"}, {"source": "mych.f4.ch5.ionic_bonding", "target": "mych.f4.ch5.ionic_vs_covalent_compounds"}, {"source": "mych.f4.ch5.covalent_bonding", "target": "mych.f4.ch5.ionic_vs_covalent_compounds"}, {"source": "mych.f4.ch3.chemical_equations", "target": "mych.f4.ch6.water_in_acidity"}, {"source": "mych.f4.ch5.ionic_bonding", "target": "mych.f4.ch6.water_in_acidity"}, {"source": "mych.f4.ch6.water_in_acidity", "target": "mych.f4.ch6.ph_value"}, {"source": "mych.f4.ch6.ph_value", "target": "mych.f4.ch6.strength_of_acids_alkalis"}, {"source": "mych.f4.ch6.strength_of_acids_alkalis", "target": "mych.f4.ch6.chemical_properties"}, {"source": "mych.f4.ch6.chemical_properties", "target": "mych.f4.ch6.concentration"}, {"source": "mych.f4.ch6.concentration", "target": "mych.f4.ch6.standard_solutions"}, {"source": "mych.f4.ch6.chemical_properties", "target": "mych.f4.ch6.neutralization"}, {"source": "mych.f4.ch6.neutralization", "target": "mych.f4.ch6.salts_and_crystals"}, {"source": "mych.f4.ch6.salts_and_crystals", "target": "mych.f4.ch6.salt_preparation"}, {"source": "mych.f4.ch6.salt_preparation", "target": "mych.f4.ch6.heat_on_salts"}, {"source": "mych.f4.ch6.heat_on_salts", "target": "mych.f4.ch6.qualitative_analysis"}, {"source": "mych.f4.ch5.ionic_vs_covalent_compounds", "target": "mych.f4.ch7.determination_of_rate"}, {"source": "mych.f4.ch7.determination_of_rate", "target": "mych.f4.ch7.factors_influencing"}, {"source": "mych.f4.ch7.factors_influencing", "target": "mych.f4.ch7.applications"}, {"source": "mych.f4.ch7.factors_influencing", "target": "mych.f4.ch7.collision_theory"}, {"source": "mych.f4.ch5.metallic_bonding", "target": "mych.f4.ch8.alloys"}, {"source": "mych.f4.ch5.ionic_vs_covalent_compounds", "target": "mych.f4.ch8.glass"}, {"source": "mych.f4.ch5.ionic_vs_covalent_compounds", "target": "mych.f4.ch8.ceramics"}, {"source": "mych.f4.ch8.alloys", "target": "mych.f4.ch8.composite_materials"}, {"source": "mych.f4.ch8.glass", "target": "mych.f4.ch8.composite_materials"}, {"source": "mych.f4.ch8.ceramics", "target": "mych.f4.ch8.composite_materials"}, {"source": "mych.f4.ch2.structure_of_atom", "target": "mych.f5.ch1.oxidation_and_reduction"}, {"source": "mych.f5.ch1.oxidation_and_reduction", "target": "mych.f5.ch1.standard_electrode_potential"}, {"source": "mych.f5.ch1.standard_electrode_potential", "target": "mych.f5.ch1.chemical_cells"}, {"source": "mych.f4.ch5.ionic_bonding", "target": "mych.f5.ch1.electrolytic_cells"}, {"source": "mych.f5.ch1.standard_electrode_potential", "target": "mych.f5.ch1.electrolytic_cells"}, {"source": "mych.f5.ch1.electrolytic_cells", "target": "mych.f5.ch1.metal_extraction"}, {"source": "mych.f5.ch1.oxidation_and_reduction", "target": "mych.f5.ch1.rusting"}, {"source": "mych.f4.ch5.covalent_bonding", "target": "mych.f5.ch2.types_of_carbon_compounds"}, {"source": "mych.f5.ch2.types_of_carbon_compounds", "target": "mych.f5.ch2.homologous_series"}, {"source": "mych.f5.ch2.homologous_series", "target": "mych.f5.ch2.chemical_properties_of_carbon_compounds"}, {"source": "mych.f5.ch2.homologous_series", "target": "mych.f5.ch2.isomers_and_iupac_naming"}, {"source": "mych.f4.ch7.collision_theory", "target": "mych.f5.ch3.heat_changes"}, {"source": "mych.f5.ch3.heat_changes", "target": "mych.f5.ch3.heat_of_reaction"}, {"source": "mych.f5.ch3.heat_of_reaction", "target": "mych.f5.ch3.applications_of_thermochemistry"}, {"source": "mych.f5.ch2.chemical_properties_of_carbon_compounds", "target": "mych.f5.ch4.polymers_and_polymerization"}, {"source": "mych.f5.ch4.polymers_and_polymerization", "target": "mych.f5.ch4.natural_rubber"}, {"source": "mych.f5.ch4.natural_rubber", "target": "mych.f5.ch4.synthetic_rubber"}, {"source": "mych.f5.ch2.chemical_properties_of_carbon_compounds", "target": "mych.f5.ch5.oils_and_fats"}, {"source": "mych.f5.ch5.oils_and_fats", "target": "mych.f5.ch5.cleaning_agents"}, {"source": "mych.f5.ch5.cleaning_agents", "target": "mych.f5.ch5.food_additives"}, {"source": "mych.f5.ch5.food_additives", "target": "mych.f5.ch5.medicines"}, {"source": "mych.f5.ch5.medicines", "target": "mych.f5.ch5.nanotechnology"}, {"source": "mych.f5.ch5.nanotechnology", "target": "mych.f5.ch5.green_technology"}];
+const booksData = [{"id": "mych.f4", "name": "Form 4", "color": "#14b8a6", "order": 1}, {"id": "mych.f5", "name": "Form 5", "color": "#0d9488", "order": 2}];
+const strandsData = [{"name": "Other", "color": "#ef4444", "nodeIds": ["mych.f4.ch1.development_of_chemistry", "mych.f4.ch1.apparatus_and_chemicals", "mych.f4.ch2.basic_concepts_of_matter", "mych.f4.ch2.structure_of_atom", "mych.f4.ch2.isotopes", "mych.f4.ch3.mole_concept", "mych.f4.ch4.development_of_periodic_table", "mych.f4.ch4.group_18", "mych.f4.ch4.group_1", "mych.f4.ch4.group_17", "mych.f4.ch4.period_3", "mych.f4.ch4.transition_elements", "mych.f4.ch5.basics_of_compound_formation", "mych.f4.ch5.ionic_bonding", "mych.f4.ch5.covalent_bonding", "mych.f4.ch5.hydrogen_bonding", "mych.f4.ch5.dative_bonding", "mych.f4.ch5.metallic_bonding", "mych.f4.ch5.ionic_vs_covalent_compounds", "mych.f4.ch6.water_in_acidity", "mych.f4.ch6.ph_value", "mych.f4.ch6.strength_of_acids_alkalis", "mych.f4.ch6.chemical_properties", "mych.f4.ch6.standard_solutions", "mych.f4.ch6.neutralization", "mych.f4.ch6.salts_and_crystals", "mych.f4.ch6.heat_on_salts", "mych.f4.ch6.qualitative_analysis", "mych.f4.ch8.alloys", "mych.f4.ch8.glass", "mych.f4.ch8.ceramics", "mych.f4.ch8.composite_materials", "mych.f5.ch1.oxidation_and_reduction", "mych.f5.ch1.standard_electrode_potential", "mych.f5.ch1.chemical_cells", "mych.f5.ch1.electrolytic_cells", "mych.f5.ch1.metal_extraction", "mych.f5.ch1.rusting", "mych.f5.ch2.types_of_carbon_compounds", "mych.f5.ch2.chemical_properties_of_carbon_compounds", "mych.f5.ch2.isomers_and_iupac_naming", "mych.f5.ch3.heat_changes", "mych.f5.ch3.heat_of_reaction", "mych.f5.ch3.applications_of_thermochemistry", "mych.f5.ch4.polymers_and_polymerization", "mych.f5.ch4.natural_rubber", "mych.f5.ch4.synthetic_rubber", "mych.f5.ch5.oils_and_fats", "mych.f5.ch5.cleaning_agents", "mych.f5.ch5.food_additives", "mych.f5.ch5.medicines", "mych.f5.ch5.nanotechnology", "mych.f5.ch5.green_technology"]}, {"name": "Money & Finance", "color": "#f97316", "nodeIds": ["mych.f4.ch1.scientific_investigation"]}, {"name": "Statistics", "color": "#f59e0b", "nodeIds": ["mych.f4.ch2.development_of_atomic_model", "mych.f4.ch4.modern_arrangement"]}, {"name": "Measurement", "color": "#eab308", "nodeIds": ["mych.f4.ch3.relative_atomic_molecular_mass"]}, {"name": "Equations", "color": "#84cc16", "nodeIds": ["mych.f4.ch3.chemical_formulae", "mych.f4.ch3.chemical_equations"]}, {"name": "Ratio & Proportion", "color": "#22c55e", "nodeIds": ["mych.f4.ch6.concentration", "mych.f4.ch6.salt_preparation", "mych.f4.ch7.determination_of_rate", "mych.f4.ch7.factors_influencing", "mych.f4.ch7.applications", "mych.f4.ch7.collision_theory"]}, {"name": "Sequences & Series", "color": "#10b981", "nodeIds": ["mych.f5.ch2.homologous_series"]}];
+const bookGroupsData = {"Upper Secondary (Form 4-5)": [{"id": "mych.f4", "name": "Form 4", "color": "#14b8a6", "order": 1}, {"id": "mych.f5", "name": "Form 5", "color": "#0d9488", "order": 2}]};
 
 // State
 const activeBooks = new Set(booksData.map(b => b.id));
@@ -939,18 +712,4 @@ document.addEventListener('keydown', e => {
 renderGraph();
 </script>
 </body>
-</html>"""
-
-    with open(output_path, "w") as f:
-        f.write(html)
-
-    print(f"  {name}: {len(d3_nodes)} nodes, {len(d3_edges)} edges → {config['output']}")
-
-
-if __name__ == "__main__":
-    targets = sys.argv[1:] if len(sys.argv) > 1 else list(GRAPHS.keys())
-    for name in targets:
-        if name not in GRAPHS:
-            print(f"Unknown graph: {name}. Available: {', '.join(GRAPHS.keys())}")
-            continue
-        generate(name, GRAPHS[name])
+</html>

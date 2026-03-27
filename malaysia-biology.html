@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduGraph — Malaysia Biology</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #08090e;
+  --surface: rgba(12,14,24,0.94);
+  --border: rgba(255,255,255,0.06);
+  --text: #e8e4dc;
+  --text2: #8a8697;
+  --text3: #55516a;
+  --gold: #ffc857;
+  --topbar: 52px;
+  --sidebar: 230px;
+  --detail: 300px;
+}
+html, body { height: 100%; background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 13px; overflow: hidden; }
+
+/* Grain */
+body::after { content: ''; position: fixed; inset: 0; opacity: 0.035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9999; }
+
+/* Topbar */
+.topbar { position: fixed; top: 0; left: 0; right: 0; height: var(--topbar); display: flex; align-items: center; justify-content: space-between; padding: 0 18px; background: rgba(8,9,14,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); z-index: 200; }
+.topbar-left { display: flex; align-items: baseline; gap: 12px; }
+.topbar h1 { font-family: 'Instrument Serif', serif; font-size: 22px; font-weight: 400; color: var(--gold); }
+.topbar .sub { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; }
+.topbar-right { display: flex; align-items: center; gap: 6px; }
+.stats { display: flex; gap: 14px; margin-right: 12px; }
+.stat-n { font-family: 'Instrument Serif', serif; font-size: 17px; color: var(--gold); }
+.stat-l { font-size: 9px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; margin-left: 3px; }
+.nav-btn { background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text2); padding: 4px 10px; border-radius: 5px; font-size: 10px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.15s; }
+.nav-btn:hover { background: rgba(255,200,87,0.08); border-color: rgba(255,200,87,0.15); color: var(--gold); }
+
+/* Sidebar */
+.sidebar { position: fixed; top: var(--topbar); left: 0; bottom: 0; width: var(--sidebar); background: var(--surface); border-right: 1px solid var(--border); overflow-y: auto; z-index: 100; padding: 12px; display: flex; flex-direction: column; gap: 10px; }
+.sidebar::-webkit-scrollbar { width: 3px; }
+.sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
+.sec-title { font-family: 'Instrument Serif', serif; font-size: 13px; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.sec-title::before { content: ''; width: 2px; height: 11px; background: var(--gold); border-radius: 1px; }
+
+.search-box { width: 100%; padding: 7px 10px 7px 28px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 12px; outline: none; }
+.search-box::placeholder { color: var(--text3); }
+.search-box:focus { border-color: rgba(255,200,87,0.25); }
+.search-wrap { position: relative; }
+.search-wrap::before { content: '⌕'; position: absolute; left: 9px; top: 50%; transform: translateY(-50%); color: var(--text3); font-size: 13px; }
+
+/* Tabs */
+.tab-bar { display: flex; gap: 0; margin-bottom: 8px; border-bottom: 1px solid var(--border); }
+.tab-btn { flex: 1; background: none; border: none; border-bottom: 2px solid transparent; color: var(--text3); padding: 6px 4px; font-size: 10px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-transform: uppercase; letter-spacing: 0.8px; transition: all 0.15s; }
+.tab-btn:hover { color: var(--text2); }
+.tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+.book-btns { display: flex; gap: 3px; margin-bottom: 6px; }
+.book-btn { flex: 1; background: rgba(255,255,255,0.03); border: 1px solid var(--border); color: var(--text3); padding: 3px; border-radius: 4px; font-size: 9px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
+.book-btn:hover { color: var(--text2); }
+
+/* Collapsible groups */
+.group-header { display: flex; align-items: center; gap: 5px; padding: 5px 4px; cursor: pointer; user-select: none; border-radius: 4px; margin-top: 4px; transition: background 0.12s; }
+.group-header:hover { background: rgba(255,255,255,0.03); }
+.group-arrow { font-size: 8px; color: var(--text3); transition: transform 0.2s; width: 12px; text-align: center; }
+.group-header.collapsed .group-arrow { transform: rotate(-90deg); }
+.group-label { font-size: 10px; color: var(--text2); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; flex: 1; }
+.group-cnt { font-size: 9px; color: var(--text3); }
+.group-body { overflow: hidden; transition: max-height 0.25s ease; }
+.group-header.collapsed + .group-body { max-height: 0 !important; overflow: hidden; }
+
+.book-list { display: flex; flex-direction: column; gap: 1px; }
+.book-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px 3px 16px; border-radius: 4px; cursor: pointer; transition: all 0.12s; user-select: none; }
+.book-item:hover { background: rgba(255,255,255,0.03); }
+.book-item.off { opacity: 0.2; }
+.book-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; transition: transform 0.15s; }
+.book-item:not(.off) .book-dot { box-shadow: 0 0 5px currentColor; }
+.book-name { font-size: 10px; color: var(--text2); flex: 1; }
+.book-item:not(.off) .book-name { color: var(--text); }
+.book-cnt { font-size: 9px; color: var(--text3); }
+
+/* Strand items */
+.strand-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px 3px 16px; border-radius: 4px; cursor: pointer; transition: all 0.12s; user-select: none; }
+.strand-item:hover { background: rgba(255,255,255,0.03); }
+.strand-item.off { opacity: 0.2; }
+.strand-dot { width: 7px; height: 7px; border-radius: 3px; flex-shrink: 0; }
+.strand-name { font-size: 10px; color: var(--text2); flex: 1; }
+.strand-item:not(.off) .strand-name { color: var(--text); }
+.strand-cnt { font-size: 9px; color: var(--text3); }
+
+.controls { padding-top: 8px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 6px; }
+.ctrl-row { display: flex; align-items: center; justify-content: space-between; }
+.ctrl-label { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; }
+.ctrl-slider { -webkit-appearance: none; width: 90px; height: 3px; background: rgba(255,255,255,0.1); border-radius: 2px; outline: none; }
+.ctrl-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; background: var(--gold); border-radius: 50%; cursor: pointer; }
+
+.hint { font-size: 9px; color: var(--text3); line-height: 1.6; padding-top: 8px; border-top: 1px solid var(--border); }
+.hint b { color: var(--text2); font-weight: 500; }
+
+/* Graph SVG */
+#graph-container { position: fixed; top: var(--topbar); left: var(--sidebar); right: 0; bottom: 0; transition: right 0.3s; }
+#graph-container.detail-open { right: var(--detail); }
+svg { width: 100%; height: 100%; display: block; }
+
+/* Detail panel */
+.detail { position: fixed; top: var(--topbar); right: calc(-1 * var(--detail)); bottom: 0; width: var(--detail); background: var(--surface); border-left: 1px solid var(--border); z-index: 100; overflow-y: auto; padding: 20px 16px; transition: right 0.3s; }
+.detail.open { right: 0; }
+.detail::-webkit-scrollbar { width: 3px; }
+.detail::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
+.detail-close { position: absolute; top: 12px; right: 12px; width: 24px; height: 24px; border-radius: 5px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text3); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+.detail-close:hover { color: var(--text); }
+.detail-badge { display: inline-flex; align-items: center; gap: 5px; padding: 2px 8px; border-radius: 12px; font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+.detail-pages { display: inline-block; padding: 3px 10px; border-radius: 5px; font-family: 'Instrument Serif', serif; font-size: 16px; background: rgba(255,200,87,0.08); color: var(--gold); border: 1px solid rgba(255,200,87,0.12); margin-bottom: 10px; }
+.detail-title { font-family: 'Instrument Serif', serif; font-size: 20px; line-height: 1.2; margin-bottom: 14px; }
+.conn-section { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
+.conn-head { font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text3); margin-bottom: 6px; }
+.conn-head.prereq { color: #e07a5f; }
+.conn-head.leads { color: #81b29a; }
+.conn-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px; border-radius: 4px; cursor: pointer; transition: background 0.12s; }
+.conn-item:hover { background: rgba(255,255,255,0.04); }
+.conn-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+.conn-label { font-size: 11px; color: var(--text2); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.conn-book { font-size: 8px; color: var(--text3); flex-shrink: 0; }
+
+@media (max-width: 800px) {
+  .sidebar { display: none; }
+  :root { --sidebar: 0px; }
+  .topbar .sub, .stats { display: none; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <h1>EduGraph</h1>
+    <span class="sub">Form 4-5 (KSSM)</span>
+  </div>
+  <div class="topbar-right">
+    <div class="stats">
+      <span><span class="stat-n" id="s-nodes">0</span><span class="stat-l">nodes</span></span>
+      <span><span class="stat-n" id="s-edges">0</span><span class="stat-l">edges</span></span>
+    </div>
+    <a href="index.html" class="nav-btn">Home</a>
+  </div>
+</header>
+
+<aside class="sidebar">
+  <div class="search-wrap">
+    <input type="text" class="search-box" id="search" placeholder="Search topics..." autocomplete="off">
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="grades">Grades</button>
+    <button class="tab-btn" data-tab="topics">Topics</button>
+    <button class="tab-btn" data-tab="forces">Forces</button>
+  </div>
+
+  <!-- Grades Tab -->
+  <div class="tab-content active" id="tab-grades">
+    <div class="book-btns">
+      <button class="book-btn" id="b-all">All</button>
+      <button class="book-btn" id="b-none">None</button>
+    </div>
+    <div id="grades-list"></div>
+  </div>
+
+  <!-- Topics Tab -->
+  <div class="tab-content" id="tab-topics">
+    <div class="book-btns">
+      <button class="book-btn" id="t-all">All</button>
+      <button class="book-btn" id="t-none">None</button>
+    </div>
+    <div id="topics-list"></div>
+  </div>
+
+  <!-- Forces Tab -->
+  <div class="tab-content" id="tab-forces">
+    <div class="sec-title">Physics</div>
+    <div class="controls">
+      <div class="ctrl-row">
+        <span class="ctrl-label">Repulsion</span>
+        <input type="range" class="ctrl-slider" id="sl-charge" min="-600" max="-20" value="-120">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Link Dist</span>
+        <input type="range" class="ctrl-slider" id="sl-dist" min="15" max="200" value="55">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Gravity</span>
+        <input type="range" class="ctrl-slider" id="sl-gravity" min="0" max="100" value="8">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Collision</span>
+        <input type="range" class="ctrl-slider" id="sl-collide" min="1" max="30" value="10">
+      </div>
+    </div>
+    <div class="hint">
+      <b>Drag</b> nodes — physics responds live<br>
+      <b>Scroll</b> to zoom, drag canvas to pan<br>
+      <b>Click</b> node for details &amp; neighbors<br>
+      <b>Sliders</b> tune forces in real-time
+    </div>
+  </div>
+</aside>
+
+<div id="graph-container">
+  <svg id="svg"></svg>
+</div>
+
+<div class="detail" id="detail">
+  <button class="detail-close" id="detail-close">✕</button>
+  <div id="detail-content"></div>
+</div>
+
+<script>
+const rawNodes = [{"id": "mybio.f4.ch1.fields_and_careers", "label": "Fields and Careers", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Fields and Careers \u2014 Chapter 1: Introduction to Biology, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch1.safety_and_regulations", "label": "Safety and Regulations", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Safety and Regulations \u2014 Chapter 1: Introduction to Biology, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch1.communication", "label": "Communication", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Communication \u2014 Chapter 1: Introduction to Biology, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch1.scientific_investigation", "label": "Scientific Investigation", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Scientific Investigation \u2014 Chapter 1: Introduction to Biology, Form 4", "strand": "Money & Finance"}, {"id": "mybio.f4.ch2.cell_structure", "label": "Cell Structure and Function", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Cell Structure and Function \u2014 Chapter 2: Cell Biology, Form 4", "strand": "Functions & Graphs"}, {"id": "mybio.f4.ch2.unicellular_processes", "label": "Unicellular Processes", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Unicellular Processes \u2014 Chapter 2: Cell Biology, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch2.multicellular_processes", "label": "Multicellular Processes", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Multicellular Processes \u2014 Chapter 2: Cell Biology, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch2.levels_of_organization", "label": "Levels of Organization", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Levels of Organization \u2014 Chapter 2: Cell Biology, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch3.membrane_structure", "label": "Membrane Structure", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Membrane Structure \u2014 Chapter 3: Plasma Membrane, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch3.movement_concepts", "label": "Movement Concepts", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Movement Concepts \u2014 Chapter 3: Plasma Membrane, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch3.movement_in_living_organisms", "label": "Movement in Living Organisms", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Movement in Living Organisms \u2014 Chapter 3: Plasma Membrane, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch3.daily_life_applications", "label": "Daily Life Applications", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Daily Life Applications \u2014 Chapter 3: Plasma Membrane, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch4.water", "label": "Water", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Water \u2014 Chapter 4: Chemical Composition, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch4.carbohydrates", "label": "Carbohydrates", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Carbohydrates \u2014 Chapter 4: Chemical Composition, Form 4", "strand": "Ratio & Proportion"}, {"id": "mybio.f4.ch4.proteins", "label": "Proteins", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Proteins \u2014 Chapter 4: Chemical Composition, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch4.lipids", "label": "Lipids", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Lipids \u2014 Chapter 4: Chemical Composition, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch4.nucleic_acids", "label": "Nucleic Acids", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Nucleic Acids \u2014 Chapter 4: Chemical Composition, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch5.metabolism", "label": "Metabolism", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Metabolism \u2014 Chapter 5: Metabolism and Enzymes, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch5.enzymes", "label": "Enzymes", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Enzymes \u2014 Chapter 5: Metabolism and Enzymes, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch5.enzyme_applications", "label": "Enzyme Applications", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Enzyme Applications \u2014 Chapter 5: Metabolism and Enzymes, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch6.cell_division", "label": "Cell Division", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Cell Division \u2014 Chapter 6: Cell Division, Form 4", "strand": "Arithmetic"}, {"id": "mybio.f4.ch6.cell_cycle_and_mitosis", "label": "Cell Cycle and Mitosis", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Cell Cycle and Mitosis \u2014 Chapter 6: Cell Division, Form 4", "strand": "Arithmetic"}, {"id": "mybio.f4.ch6.meiosis", "label": "Meiosis", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Meiosis \u2014 Chapter 6: Cell Division, Form 4", "strand": "Arithmetic"}, {"id": "mybio.f4.ch6.health_issues", "label": "Health Issues (Cell Division)", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Health Issues \u2014 Chapter 6: Cell Division, Form 4", "strand": "Arithmetic"}, {"id": "mybio.f4.ch7.energy_production", "label": "Energy Production", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Energy Production \u2014 Chapter 7: Cellular Respiration, Form 4", "strand": "Ratio & Proportion"}, {"id": "mybio.f4.ch7.aerobic_respiration", "label": "Aerobic Respiration", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Aerobic Respiration \u2014 Chapter 7: Cellular Respiration, Form 4", "strand": "Ratio & Proportion"}, {"id": "mybio.f4.ch7.fermentation", "label": "Fermentation", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Fermentation \u2014 Chapter 7: Cellular Respiration, Form 4", "strand": "Ratio & Proportion"}, {"id": "mybio.f4.ch8.types_of_systems", "label": "Types of Respiratory Systems", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Types of Systems \u2014 Chapter 8: Respiratory System, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch8.breathing_mechanisms", "label": "Breathing Mechanisms", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Breathing Mechanisms \u2014 Chapter 8: Respiratory System, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch8.gaseous_exchange", "label": "Gaseous Exchange", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Gaseous Exchange \u2014 Chapter 8: Respiratory System, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch8.health_issues", "label": "Health Issues (Respiratory)", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Health Issues \u2014 Chapter 8: Respiratory System, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch9.digestive_system", "label": "Digestive System", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Digestive System \u2014 Chapter 9: Nutrition and Digestion, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch9.digestion", "label": "Digestion", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Digestion \u2014 Chapter 9: Nutrition and Digestion, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch9.absorption", "label": "Absorption", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Absorption \u2014 Chapter 9: Nutrition and Digestion, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch9.assimilation", "label": "Assimilation", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Assimilation \u2014 Chapter 9: Nutrition and Digestion, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch9.defecation", "label": "Defecation", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Defecation \u2014 Chapter 9: Nutrition and Digestion, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch9.balanced_diet", "label": "Balanced Diet", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Balanced Diet \u2014 Chapter 9: Nutrition and Digestion, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch9.health_issues", "label": "Health Issues (Nutrition)", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Health Issues \u2014 Chapter 9: Nutrition and Digestion, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch10.circulatory_system_types", "label": "Circulatory System Types", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Circulatory System Types \u2014 Chapter 10: Transport, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch10.human_circulatory_system", "label": "Human Circulatory System", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Human Circulatory System \u2014 Chapter 10: Transport, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch10.heartbeat", "label": "Heartbeat", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Heartbeat \u2014 Chapter 10: Transport, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch10.blood_clotting", "label": "Blood Clotting", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Blood Clotting \u2014 Chapter 10: Transport, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch10.blood_groups", "label": "Blood Groups", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Blood Groups \u2014 Chapter 10: Transport, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch10.health_issues", "label": "Health Issues (Transport)", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Health Issues \u2014 Chapter 10: Transport, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch10.lymphatic_system", "label": "Lymphatic System", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Lymphatic System \u2014 Chapter 10: Transport, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch11.body_defence", "label": "Body Defence", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Body Defence \u2014 Chapter 11: Immunity, Form 4", "strand": "Measurement"}, {"id": "mybio.f4.ch11.antibody_actions", "label": "Antibody Actions", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Antibody Actions \u2014 Chapter 11: Immunity, Form 4", "strand": "Measurement"}, {"id": "mybio.f4.ch11.types_of_immunity", "label": "Types of Immunity", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Types of Immunity \u2014 Chapter 11: Immunity, Form 4", "strand": "Measurement"}, {"id": "mybio.f4.ch11.health_issues", "label": "Health Issues (Immunity)", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Health Issues \u2014 Chapter 11: Immunity, Form 4", "strand": "Measurement"}, {"id": "mybio.f4.ch12.nervous_system", "label": "Nervous System", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Nervous System \u2014 Chapter 12: Coordination, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch12.neurons_and_synapses", "label": "Neurons and Synapses", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Neurons and Synapses \u2014 Chapter 12: Coordination, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch12.voluntary_and_involuntary_actions", "label": "Voluntary and Involuntary Actions", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Voluntary and Involuntary Actions \u2014 Chapter 12: Coordination, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch12.endocrine_system", "label": "Endocrine System", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Endocrine System \u2014 Chapter 12: Coordination, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch13.homeostasis", "label": "Homeostasis", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Homeostasis \u2014 Chapter 13: Homeostasis, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch13.urinary_system", "label": "Urinary System", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Urinary System \u2014 Chapter 13: Homeostasis, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch13.health_issues", "label": "Health Issues (Homeostasis)", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Health Issues \u2014 Chapter 13: Homeostasis, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch14.skeleton_types", "label": "Skeleton Types", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Skeleton Types \u2014 Chapter 14: Support and Movement, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch14.musculoskeletal_system", "label": "Musculoskeletal System", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Musculoskeletal System \u2014 Chapter 14: Support and Movement, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch14.movement_mechanisms", "label": "Movement Mechanisms", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Movement Mechanisms \u2014 Chapter 14: Support and Movement, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch14.health_issues", "label": "Health Issues (Support)", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Health Issues \u2014 Chapter 14: Support and Movement, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch15.reproductive_system", "label": "Reproductive System", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Reproductive System \u2014 Chapter 15: Reproduction, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch15.gametogenesis", "label": "Gametogenesis", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Gametogenesis \u2014 Chapter 15: Reproduction, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch15.menstrual_cycle", "label": "Menstrual Cycle", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Menstrual Cycle \u2014 Chapter 15: Reproduction, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch15.fetal_development", "label": "Fetal Development", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Fetal Development \u2014 Chapter 15: Reproduction, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch15.twins", "label": "Twins", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Twins \u2014 Chapter 15: Reproduction, Form 4", "strand": "Other"}, {"id": "mybio.f4.ch15.growth", "label": "Growth", "color": "#22c55e", "book": "mybio.f4", "bookName": "Form 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Growth \u2014 Chapter 15: Reproduction, Form 4", "strand": "Other"}, {"id": "mybio.f5.ch1.plant_tissues", "label": "Plant Tissues", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Plant Tissues \u2014 Chapter 1: Plant Tissue, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch1.meristematic_tissues", "label": "Meristematic Tissues", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Meristematic Tissues \u2014 Chapter 1: Plant Tissue, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch1.growth_curves", "label": "Growth Curves", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Growth Curves \u2014 Chapter 1: Plant Tissue, Form 5", "strand": "Functions & Graphs"}, {"id": "mybio.f5.ch2.leaf_structure", "label": "Leaf Structure", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Leaf Structure \u2014 Chapter 2: Leaf Structure, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch2.gas_exchange", "label": "Gas Exchange (Leaf)", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Gas Exchange \u2014 Chapter 2: Leaf Structure, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch2.transpiration", "label": "Transpiration", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Transpiration \u2014 Chapter 2: Leaf Structure, Form 5", "strand": "Ratio & Proportion"}, {"id": "mybio.f5.ch2.photosynthesis", "label": "Photosynthesis", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Photosynthesis \u2014 Chapter 2: Leaf Structure, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch2.compensation_point", "label": "Compensation Point", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Compensation Point \u2014 Chapter 2: Leaf Structure, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch3.primary_nutrients", "label": "Primary Nutrients", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Primary Nutrients \u2014 Chapter 3: Plant Nutrition, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch3.water_and_mineral_uptake", "label": "Water and Mineral Uptake", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Water and Mineral Uptake \u2014 Chapter 3: Plant Nutrition, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch3.diversity_in_nutrition", "label": "Diversity in Nutrition", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Diversity in Nutrition \u2014 Chapter 3: Plant Nutrition, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch4.vascular_tissue", "label": "Vascular Tissue", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Vascular Tissue \u2014 Chapter 4: Transport in Plants, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch4.water_and_mineral_transport", "label": "Water and Mineral Transport", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Water and Mineral Transport \u2014 Chapter 4: Transport in Plants, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch4.translocation", "label": "Translocation", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Translocation \u2014 Chapter 4: Transport in Plants, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch4.phytoremediation", "label": "Phytoremediation", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Phytoremediation \u2014 Chapter 4: Transport in Plants, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch5.types_of_responses", "label": "Types of Responses", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Types of Responses \u2014 Chapter 5: Plant Responses, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch5.plant_hormones", "label": "Plant Hormones", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Plant Hormones \u2014 Chapter 5: Plant Responses, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch5.agricultural_applications", "label": "Agricultural Applications", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Agricultural Applications \u2014 Chapter 5: Plant Responses, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch6.flower_structure", "label": "Flower Structure", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Flower Structure \u2014 Chapter 6: Plant Reproduction, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch6.pollen_formation", "label": "Pollen Formation", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Pollen Formation \u2014 Chapter 6: Plant Reproduction, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch6.pollination_and_fertilization", "label": "Pollination and Fertilization", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Pollination and Fertilization \u2014 Chapter 6: Plant Reproduction, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch6.seed_development", "label": "Seed Development", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Seed Development \u2014 Chapter 6: Plant Reproduction, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch7.hydrophytes", "label": "Hydrophytes", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Hydrophytes \u2014 Chapter 7: Plant Adaptations, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch7.halophytes", "label": "Halophytes", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Halophytes \u2014 Chapter 7: Plant Adaptations, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch7.xerophytes", "label": "Xerophytes", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Xerophytes \u2014 Chapter 7: Plant Adaptations, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch8.classification_systems", "label": "Classification Systems", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Classification Systems \u2014 Chapter 8: Biodiversity, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch8.biodiversity", "label": "Biodiversity", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Biodiversity \u2014 Chapter 8: Biodiversity, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch8.microorganisms_and_viruses", "label": "Microorganisms and Viruses", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Microorganisms and Viruses \u2014 Chapter 8: Biodiversity, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch9.community_and_ecosystem", "label": "Community and Ecosystem", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Community and Ecosystem \u2014 Chapter 9: Ecosystem, Form 5", "strand": "Measurement"}, {"id": "mybio.f5.ch9.ecology_and_population", "label": "Ecology and Population", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Ecology and Population \u2014 Chapter 9: Ecosystem, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch10.threats", "label": "Threats", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Threats \u2014 Chapter 10: Environmental Sustainability, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch10.conservation", "label": "Conservation", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Conservation \u2014 Chapter 10: Environmental Sustainability, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch10.practices", "label": "Practices", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Practices \u2014 Chapter 10: Environmental Sustainability, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch10.green_technology", "label": "Green Technology", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Green Technology \u2014 Chapter 10: Environmental Sustainability, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch11.monohybrid", "label": "Monohybrid", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Monohybrid \u2014 Chapter 11: Inheritance, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch11.dihybrid", "label": "Dihybrid", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Dihybrid \u2014 Chapter 11: Inheritance, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch11.genes_and_alleles", "label": "Genes and Alleles", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Genes and Alleles \u2014 Chapter 11: Inheritance, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch11.human_inheritance", "label": "Human Inheritance", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Human Inheritance \u2014 Chapter 11: Inheritance, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch12.types_and_factors", "label": "Types and Factors", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Types and Factors \u2014 Chapter 12: Variation, Form 5", "strand": "Ratio & Proportion"}, {"id": "mybio.f5.ch12.human_variation", "label": "Human Variation", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Human Variation \u2014 Chapter 12: Variation, Form 5", "strand": "Ratio & Proportion"}, {"id": "mybio.f5.ch12.mutation", "label": "Mutation", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Mutation \u2014 Chapter 12: Variation, Form 5", "strand": "Ratio & Proportion"}, {"id": "mybio.f5.ch13.genetic_engineering", "label": "Genetic Engineering", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Genetic Engineering \u2014 Chapter 13: Genetic Technology, Form 5", "strand": "Other"}, {"id": "mybio.f5.ch13.biotechnology", "label": "Biotechnology", "color": "#15803d", "book": "mybio.f5", "bookName": "Form 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Biotechnology \u2014 Chapter 13: Genetic Technology, Form 5", "strand": "Other"}];
+const rawEdges = [{"source": "mybio.f4.ch1.fields_and_careers", "target": "mybio.f4.ch1.safety_and_regulations"}, {"source": "mybio.f4.ch1.safety_and_regulations", "target": "mybio.f4.ch1.communication"}, {"source": "mybio.f4.ch1.communication", "target": "mybio.f4.ch1.scientific_investigation"}, {"source": "mybio.f4.ch1.scientific_investigation", "target": "mybio.f4.ch2.cell_structure"}, {"source": "mybio.f4.ch2.cell_structure", "target": "mybio.f4.ch2.unicellular_processes"}, {"source": "mybio.f4.ch2.unicellular_processes", "target": "mybio.f4.ch2.multicellular_processes"}, {"source": "mybio.f4.ch2.multicellular_processes", "target": "mybio.f4.ch2.levels_of_organization"}, {"source": "mybio.f4.ch2.cell_structure", "target": "mybio.f4.ch3.membrane_structure"}, {"source": "mybio.f4.ch3.membrane_structure", "target": "mybio.f4.ch3.movement_concepts"}, {"source": "mybio.f4.ch3.movement_concepts", "target": "mybio.f4.ch3.movement_in_living_organisms"}, {"source": "mybio.f4.ch3.movement_in_living_organisms", "target": "mybio.f4.ch3.daily_life_applications"}, {"source": "mybio.f4.ch2.cell_structure", "target": "mybio.f4.ch4.water"}, {"source": "mybio.f4.ch4.water", "target": "mybio.f4.ch4.carbohydrates"}, {"source": "mybio.f4.ch4.carbohydrates", "target": "mybio.f4.ch4.proteins"}, {"source": "mybio.f4.ch4.proteins", "target": "mybio.f4.ch4.lipids"}, {"source": "mybio.f4.ch4.lipids", "target": "mybio.f4.ch4.nucleic_acids"}, {"source": "mybio.f4.ch4.water", "target": "mybio.f4.ch5.metabolism"}, {"source": "mybio.f4.ch5.metabolism", "target": "mybio.f4.ch5.enzymes"}, {"source": "mybio.f4.ch5.enzymes", "target": "mybio.f4.ch5.enzyme_applications"}, {"source": "mybio.f4.ch5.enzymes", "target": "mybio.f4.ch7.energy_production"}, {"source": "mybio.f4.ch7.energy_production", "target": "mybio.f4.ch7.aerobic_respiration"}, {"source": "mybio.f4.ch7.aerobic_respiration", "target": "mybio.f4.ch7.fermentation"}, {"source": "mybio.f4.ch4.nucleic_acids", "target": "mybio.f4.ch6.cell_division"}, {"source": "mybio.f4.ch6.cell_division", "target": "mybio.f4.ch6.cell_cycle_and_mitosis"}, {"source": "mybio.f4.ch6.cell_cycle_and_mitosis", "target": "mybio.f4.ch6.meiosis"}, {"source": "mybio.f4.ch6.meiosis", "target": "mybio.f4.ch6.health_issues"}, {"source": "mybio.f4.ch7.energy_production", "target": "mybio.f4.ch8.types_of_systems"}, {"source": "mybio.f4.ch8.types_of_systems", "target": "mybio.f4.ch8.breathing_mechanisms"}, {"source": "mybio.f4.ch8.breathing_mechanisms", "target": "mybio.f4.ch8.gaseous_exchange"}, {"source": "mybio.f4.ch8.gaseous_exchange", "target": "mybio.f4.ch8.health_issues"}, {"source": "mybio.f4.ch4.water", "target": "mybio.f4.ch9.digestive_system"}, {"source": "mybio.f4.ch5.enzymes", "target": "mybio.f4.ch9.digestion"}, {"source": "mybio.f4.ch9.digestive_system", "target": "mybio.f4.ch9.digestion"}, {"source": "mybio.f4.ch9.digestion", "target": "mybio.f4.ch9.absorption"}, {"source": "mybio.f4.ch9.absorption", "target": "mybio.f4.ch9.assimilation"}, {"source": "mybio.f4.ch9.assimilation", "target": "mybio.f4.ch9.defecation"}, {"source": "mybio.f4.ch9.defecation", "target": "mybio.f4.ch9.balanced_diet"}, {"source": "mybio.f4.ch9.balanced_diet", "target": "mybio.f4.ch9.health_issues"}, {"source": "mybio.f4.ch2.cell_structure", "target": "mybio.f4.ch10.circulatory_system_types"}, {"source": "mybio.f4.ch10.circulatory_system_types", "target": "mybio.f4.ch10.human_circulatory_system"}, {"source": "mybio.f4.ch10.human_circulatory_system", "target": "mybio.f4.ch10.heartbeat"}, {"source": "mybio.f4.ch10.heartbeat", "target": "mybio.f4.ch10.blood_clotting"}, {"source": "mybio.f4.ch10.blood_clotting", "target": "mybio.f4.ch10.blood_groups"}, {"source": "mybio.f4.ch10.blood_groups", "target": "mybio.f4.ch10.health_issues"}, {"source": "mybio.f4.ch10.health_issues", "target": "mybio.f4.ch10.lymphatic_system"}, {"source": "mybio.f4.ch10.lymphatic_system", "target": "mybio.f4.ch11.body_defence"}, {"source": "mybio.f4.ch11.body_defence", "target": "mybio.f4.ch11.antibody_actions"}, {"source": "mybio.f4.ch11.antibody_actions", "target": "mybio.f4.ch11.types_of_immunity"}, {"source": "mybio.f4.ch11.types_of_immunity", "target": "mybio.f4.ch11.health_issues"}, {"source": "mybio.f4.ch2.cell_structure", "target": "mybio.f4.ch12.nervous_system"}, {"source": "mybio.f4.ch12.nervous_system", "target": "mybio.f4.ch12.neurons_and_synapses"}, {"source": "mybio.f4.ch12.neurons_and_synapses", "target": "mybio.f4.ch12.voluntary_and_involuntary_actions"}, {"source": "mybio.f4.ch12.voluntary_and_involuntary_actions", "target": "mybio.f4.ch12.endocrine_system"}, {"source": "mybio.f4.ch10.human_circulatory_system", "target": "mybio.f4.ch13.homeostasis"}, {"source": "mybio.f4.ch13.homeostasis", "target": "mybio.f4.ch13.urinary_system"}, {"source": "mybio.f4.ch13.urinary_system", "target": "mybio.f4.ch13.health_issues"}, {"source": "mybio.f4.ch2.levels_of_organization", "target": "mybio.f4.ch14.skeleton_types"}, {"source": "mybio.f4.ch14.skeleton_types", "target": "mybio.f4.ch14.musculoskeletal_system"}, {"source": "mybio.f4.ch14.musculoskeletal_system", "target": "mybio.f4.ch14.movement_mechanisms"}, {"source": "mybio.f4.ch14.movement_mechanisms", "target": "mybio.f4.ch14.health_issues"}, {"source": "mybio.f4.ch6.meiosis", "target": "mybio.f4.ch15.reproductive_system"}, {"source": "mybio.f4.ch15.reproductive_system", "target": "mybio.f4.ch15.gametogenesis"}, {"source": "mybio.f4.ch15.gametogenesis", "target": "mybio.f4.ch15.menstrual_cycle"}, {"source": "mybio.f4.ch15.menstrual_cycle", "target": "mybio.f4.ch15.fetal_development"}, {"source": "mybio.f4.ch15.fetal_development", "target": "mybio.f4.ch15.twins"}, {"source": "mybio.f4.ch15.twins", "target": "mybio.f4.ch15.growth"}, {"source": "mybio.f4.ch2.cell_structure", "target": "mybio.f5.ch1.plant_tissues"}, {"source": "mybio.f5.ch1.plant_tissues", "target": "mybio.f5.ch1.meristematic_tissues"}, {"source": "mybio.f5.ch1.meristematic_tissues", "target": "mybio.f5.ch1.growth_curves"}, {"source": "mybio.f5.ch1.plant_tissues", "target": "mybio.f5.ch2.leaf_structure"}, {"source": "mybio.f5.ch2.leaf_structure", "target": "mybio.f5.ch2.gas_exchange"}, {"source": "mybio.f5.ch2.gas_exchange", "target": "mybio.f5.ch2.transpiration"}, {"source": "mybio.f5.ch2.transpiration", "target": "mybio.f5.ch2.photosynthesis"}, {"source": "mybio.f5.ch2.photosynthesis", "target": "mybio.f5.ch2.compensation_point"}, {"source": "mybio.f5.ch2.leaf_structure", "target": "mybio.f5.ch3.primary_nutrients"}, {"source": "mybio.f5.ch3.primary_nutrients", "target": "mybio.f5.ch3.water_and_mineral_uptake"}, {"source": "mybio.f5.ch3.water_and_mineral_uptake", "target": "mybio.f5.ch3.diversity_in_nutrition"}, {"source": "mybio.f5.ch3.primary_nutrients", "target": "mybio.f5.ch4.vascular_tissue"}, {"source": "mybio.f5.ch4.vascular_tissue", "target": "mybio.f5.ch4.water_and_mineral_transport"}, {"source": "mybio.f5.ch4.water_and_mineral_transport", "target": "mybio.f5.ch4.translocation"}, {"source": "mybio.f5.ch4.translocation", "target": "mybio.f5.ch4.phytoremediation"}, {"source": "mybio.f5.ch2.leaf_structure", "target": "mybio.f5.ch5.types_of_responses"}, {"source": "mybio.f5.ch5.types_of_responses", "target": "mybio.f5.ch5.plant_hormones"}, {"source": "mybio.f5.ch5.plant_hormones", "target": "mybio.f5.ch5.agricultural_applications"}, {"source": "mybio.f5.ch5.agricultural_applications", "target": "mybio.f5.ch6.flower_structure"}, {"source": "mybio.f5.ch6.flower_structure", "target": "mybio.f5.ch6.pollen_formation"}, {"source": "mybio.f5.ch6.pollen_formation", "target": "mybio.f5.ch6.pollination_and_fertilization"}, {"source": "mybio.f5.ch6.pollination_and_fertilization", "target": "mybio.f5.ch6.seed_development"}, {"source": "mybio.f5.ch6.seed_development", "target": "mybio.f5.ch7.hydrophytes"}, {"source": "mybio.f5.ch7.hydrophytes", "target": "mybio.f5.ch7.halophytes"}, {"source": "mybio.f5.ch7.halophytes", "target": "mybio.f5.ch7.xerophytes"}, {"source": "mybio.f5.ch8.classification_systems", "target": "mybio.f5.ch8.biodiversity"}, {"source": "mybio.f5.ch8.biodiversity", "target": "mybio.f5.ch8.microorganisms_and_viruses"}, {"source": "mybio.f5.ch8.biodiversity", "target": "mybio.f5.ch9.community_and_ecosystem"}, {"source": "mybio.f5.ch9.community_and_ecosystem", "target": "mybio.f5.ch9.ecology_and_population"}, {"source": "mybio.f5.ch9.ecology_and_population", "target": "mybio.f5.ch10.threats"}, {"source": "mybio.f5.ch10.threats", "target": "mybio.f5.ch10.conservation"}, {"source": "mybio.f5.ch10.conservation", "target": "mybio.f5.ch10.practices"}, {"source": "mybio.f5.ch10.practices", "target": "mybio.f5.ch10.green_technology"}, {"source": "mybio.f4.ch6.cell_division", "target": "mybio.f5.ch11.monohybrid"}, {"source": "mybio.f5.ch11.monohybrid", "target": "mybio.f5.ch11.dihybrid"}, {"source": "mybio.f5.ch11.dihybrid", "target": "mybio.f5.ch11.genes_and_alleles"}, {"source": "mybio.f5.ch11.genes_and_alleles", "target": "mybio.f5.ch11.human_inheritance"}, {"source": "mybio.f5.ch11.human_inheritance", "target": "mybio.f5.ch12.types_and_factors"}, {"source": "mybio.f5.ch12.types_and_factors", "target": "mybio.f5.ch12.human_variation"}, {"source": "mybio.f5.ch12.human_variation", "target": "mybio.f5.ch12.mutation"}, {"source": "mybio.f5.ch12.mutation", "target": "mybio.f5.ch13.genetic_engineering"}, {"source": "mybio.f5.ch13.genetic_engineering", "target": "mybio.f5.ch13.biotechnology"}, {"source": "mybio.f4.ch2.levels_of_organization", "target": "mybio.f5.ch8.classification_systems"}];
+const booksData = [{"id": "mybio.f4", "name": "Form 4", "color": "#22c55e", "order": 1}, {"id": "mybio.f5", "name": "Form 5", "color": "#15803d", "order": 2}];
+const strandsData = [{"name": "Other", "color": "#ef4444", "nodeIds": ["mybio.f4.ch1.fields_and_careers", "mybio.f4.ch1.safety_and_regulations", "mybio.f4.ch1.communication", "mybio.f4.ch2.unicellular_processes", "mybio.f4.ch2.multicellular_processes", "mybio.f4.ch2.levels_of_organization", "mybio.f4.ch3.membrane_structure", "mybio.f4.ch3.movement_concepts", "mybio.f4.ch3.movement_in_living_organisms", "mybio.f4.ch3.daily_life_applications", "mybio.f4.ch4.water", "mybio.f4.ch4.proteins", "mybio.f4.ch4.lipids", "mybio.f4.ch4.nucleic_acids", "mybio.f4.ch5.metabolism", "mybio.f4.ch5.enzymes", "mybio.f4.ch5.enzyme_applications", "mybio.f4.ch8.types_of_systems", "mybio.f4.ch8.breathing_mechanisms", "mybio.f4.ch8.gaseous_exchange", "mybio.f4.ch8.health_issues", "mybio.f4.ch9.digestive_system", "mybio.f4.ch9.digestion", "mybio.f4.ch9.absorption", "mybio.f4.ch9.assimilation", "mybio.f4.ch9.defecation", "mybio.f4.ch9.balanced_diet", "mybio.f4.ch9.health_issues", "mybio.f4.ch10.circulatory_system_types", "mybio.f4.ch10.human_circulatory_system", "mybio.f4.ch10.heartbeat", "mybio.f4.ch10.blood_clotting", "mybio.f4.ch10.blood_groups", "mybio.f4.ch10.health_issues", "mybio.f4.ch10.lymphatic_system", "mybio.f4.ch12.nervous_system", "mybio.f4.ch12.neurons_and_synapses", "mybio.f4.ch12.voluntary_and_involuntary_actions", "mybio.f4.ch12.endocrine_system", "mybio.f4.ch13.homeostasis", "mybio.f4.ch13.urinary_system", "mybio.f4.ch13.health_issues", "mybio.f4.ch14.skeleton_types", "mybio.f4.ch14.musculoskeletal_system", "mybio.f4.ch14.movement_mechanisms", "mybio.f4.ch14.health_issues", "mybio.f4.ch15.reproductive_system", "mybio.f4.ch15.gametogenesis", "mybio.f4.ch15.menstrual_cycle", "mybio.f4.ch15.fetal_development", "mybio.f4.ch15.twins", "mybio.f4.ch15.growth", "mybio.f5.ch1.plant_tissues", "mybio.f5.ch1.meristematic_tissues", "mybio.f5.ch2.leaf_structure", "mybio.f5.ch2.gas_exchange", "mybio.f5.ch2.photosynthesis", "mybio.f5.ch2.compensation_point", "mybio.f5.ch3.primary_nutrients", "mybio.f5.ch3.water_and_mineral_uptake", "mybio.f5.ch3.diversity_in_nutrition", "mybio.f5.ch4.vascular_tissue", "mybio.f5.ch4.water_and_mineral_transport", "mybio.f5.ch4.translocation", "mybio.f5.ch4.phytoremediation", "mybio.f5.ch5.types_of_responses", "mybio.f5.ch5.plant_hormones", "mybio.f5.ch5.agricultural_applications", "mybio.f5.ch6.flower_structure", "mybio.f5.ch6.pollen_formation", "mybio.f5.ch6.pollination_and_fertilization", "mybio.f5.ch6.seed_development", "mybio.f5.ch7.hydrophytes", "mybio.f5.ch7.halophytes", "mybio.f5.ch7.xerophytes", "mybio.f5.ch8.classification_systems", "mybio.f5.ch8.biodiversity", "mybio.f5.ch8.microorganisms_and_viruses", "mybio.f5.ch9.ecology_and_population", "mybio.f5.ch10.threats", "mybio.f5.ch10.conservation", "mybio.f5.ch10.practices", "mybio.f5.ch10.green_technology", "mybio.f5.ch11.monohybrid", "mybio.f5.ch11.dihybrid", "mybio.f5.ch11.genes_and_alleles", "mybio.f5.ch11.human_inheritance", "mybio.f5.ch13.genetic_engineering", "mybio.f5.ch13.biotechnology"]}, {"name": "Money & Finance", "color": "#f97316", "nodeIds": ["mybio.f4.ch1.scientific_investigation"]}, {"name": "Functions & Graphs", "color": "#f59e0b", "nodeIds": ["mybio.f4.ch2.cell_structure", "mybio.f5.ch1.growth_curves"]}, {"name": "Ratio & Proportion", "color": "#eab308", "nodeIds": ["mybio.f4.ch4.carbohydrates", "mybio.f4.ch7.energy_production", "mybio.f4.ch7.aerobic_respiration", "mybio.f4.ch7.fermentation", "mybio.f5.ch2.transpiration", "mybio.f5.ch12.types_and_factors", "mybio.f5.ch12.human_variation", "mybio.f5.ch12.mutation"]}, {"name": "Arithmetic", "color": "#84cc16", "nodeIds": ["mybio.f4.ch6.cell_division", "mybio.f4.ch6.cell_cycle_and_mitosis", "mybio.f4.ch6.meiosis", "mybio.f4.ch6.health_issues"]}, {"name": "Measurement", "color": "#22c55e", "nodeIds": ["mybio.f4.ch11.body_defence", "mybio.f4.ch11.antibody_actions", "mybio.f4.ch11.types_of_immunity", "mybio.f4.ch11.health_issues", "mybio.f5.ch9.community_and_ecosystem"]}];
+const bookGroupsData = {"Upper Secondary (Form 4-5)": [{"id": "mybio.f4", "name": "Form 4", "color": "#22c55e", "order": 1}, {"id": "mybio.f5", "name": "Form 5", "color": "#15803d", "order": 2}]};
+
+// State
+const activeBooks = new Set(booksData.map(b => b.id));
+const activeStrands = new Set(strandsData.map(s => s.name));
+let filterMode = 'grades'; // 'grades' or 'topics'
+let selectedNode = null;
+
+// D3 setup
+const container = document.getElementById('graph-container');
+const svg = d3.select('#svg');
+const g = svg.append('g');
+
+// Arrow marker
+svg.append('defs').append('marker')
+  .attr('id', 'arrow')
+  .attr('viewBox', '0 -4 8 8')
+  .attr('refX', 18)
+  .attr('refY', 0)
+  .attr('markerWidth', 5)
+  .attr('markerHeight', 5)
+  .attr('orient', 'auto')
+  .append('path')
+  .attr('d', 'M0,-3L7,0L0,3')
+  .attr('fill', '#6b6590');
+
+// Glow marker for highlighted
+svg.select('defs').append('marker')
+  .attr('id', 'arrow-hl')
+  .attr('viewBox', '0 -4 8 8')
+  .attr('refX', 18)
+  .attr('refY', 0)
+  .attr('markerWidth', 6)
+  .attr('markerHeight', 6)
+  .attr('orient', 'auto')
+  .append('path')
+  .attr('d', 'M0,-3L7,0L0,3')
+  .attr('fill', '#ffc857');
+
+// Build graph data
+const nodes = rawNodes.map(d => ({...d}));
+const edges = rawEdges.map(d => ({...d}));
+
+// Index
+const nodeMap = {};
+nodes.forEach(n => { nodeMap[n.id] = n; });
+
+// Links
+const linkGroup = g.append('g').attr('class', 'links');
+const nodeGroup = g.append('g').attr('class', 'nodes');
+const labelGroup = g.append('g').attr('class', 'labels');
+
+let linkEls, nodeEls, labelEls;
+
+function renderGraph() {
+  // Filter
+  let visibleIds;
+  if (filterMode === 'topics') {
+    visibleIds = new Set(nodes.filter(n => activeStrands.has(n.strand)).map(n => n.id));
+  } else {
+    visibleIds = new Set(nodes.filter(n => activeBooks.has(n.book)).map(n => n.id));
+  }
+  const vNodes = nodes.filter(n => visibleIds.has(n.id));
+  const vEdges = edges.filter(e => {
+    const sid = typeof e.source === 'object' ? e.source.id : e.source;
+    const tid = typeof e.target === 'object' ? e.target.id : e.target;
+    return visibleIds.has(sid) && visibleIds.has(tid);
+  });
+
+  // Links
+  linkEls = linkGroup.selectAll('line').data(vEdges, d => {
+    const s = typeof d.source === 'object' ? d.source.id : d.source;
+    const t = typeof d.target === 'object' ? d.target.id : d.target;
+    return s + '->' + t;
+  });
+  linkEls.exit().remove();
+  linkEls = linkEls.enter().append('line')
+    .attr('stroke', '#5a5480')
+    .attr('stroke-width', 0.7)
+    .attr('stroke-opacity', 0.5)
+    .attr('marker-end', 'url(#arrow)')
+    .merge(linkEls);
+
+  // Nodes
+  nodeEls = nodeGroup.selectAll('circle').data(vNodes, d => d.id);
+  nodeEls.exit().remove();
+  nodeEls = nodeEls.enter().append('circle')
+    .attr('r', d => d.r)
+    .attr('fill', d => d.color)
+    .attr('fill-opacity', 0.85)
+    .attr('stroke', 'none')
+    .attr('stroke-width', 2)
+    .attr('cursor', 'pointer')
+    .on('click', (ev, d) => { ev.stopPropagation(); selectNode(d); })
+    .call(d3.drag()
+      .on('start', dragStart)
+      .on('drag', dragging)
+      .on('end', dragEnd))
+    .merge(nodeEls)
+    .attr('fill', d => d.color);
+
+  // Labels
+  labelEls = labelGroup.selectAll('text').data(vNodes, d => d.id);
+  labelEls.exit().remove();
+  labelEls = labelEls.enter().append('text')
+    .attr('font-size', d => Math.max(6, d.r * 0.85))
+    .attr('font-family', "'DM Sans', sans-serif")
+    .attr('fill', '#a09cac')
+    .attr('text-anchor', 'middle')
+    .attr('dy', d => d.r + 10)
+    .attr('pointer-events', 'none')
+    .text(d => d.label.length > 22 ? d.label.slice(0, 20) + '…' : d.label)
+    .merge(labelEls);
+
+  // Update simulation
+  simulation.nodes(vNodes);
+  simulation.force('link').links(vEdges);
+  simulation.alpha(0.6).restart();
+
+  updateStats(vNodes.length, vEdges.length);
+}
+
+// Force simulation
+const simulation = d3.forceSimulation()
+  .force('link', d3.forceLink().id(d => d.id).distance(55).strength(0.3))
+  .force('charge', d3.forceManyBody().strength(-120).distanceMax(400))
+  .force('center', d3.forceCenter())
+  .force('collide', d3.forceCollide().radius(10).strength(0.7))
+  .force('x', d3.forceX().strength(0.02))
+  .force('y', d3.forceY().strength(0.02))
+  .alphaDecay(0.015)
+  .velocityDecay(0.35)
+  .on('tick', ticked);
+
+function ticked() {
+  linkEls
+    .attr('x1', d => d.source.x)
+    .attr('y1', d => d.source.y)
+    .attr('x2', d => d.target.x)
+    .attr('y2', d => d.target.y);
+  nodeEls
+    .attr('cx', d => d.x)
+    .attr('cy', d => d.y);
+  labelEls
+    .attr('x', d => d.x)
+    .attr('y', d => d.y);
+}
+
+// Zoom
+const zoom = d3.zoom()
+  .scaleExtent([0.05, 8])
+  .on('zoom', (ev) => { g.attr('transform', ev.transform); });
+svg.call(zoom);
+
+// Resize
+function resize() {
+  const w = container.clientWidth;
+  const h = container.clientHeight;
+  svg.attr('viewBox', [-w/2, -h/2, w, h]);
+  simulation.force('center', d3.forceCenter(0, 0));
+}
+window.addEventListener('resize', resize);
+resize();
+
+// Drag
+function dragStart(ev, d) {
+  if (!ev.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x; d.fy = d.y;
+}
+function dragging(ev, d) {
+  d.fx = ev.x; d.fy = ev.y;
+}
+function dragEnd(ev, d) {
+  if (!ev.active) simulation.alphaTarget(0);
+  d.fx = null; d.fy = null;
+}
+
+// Selection & highlighting
+function selectNode(d) {
+  selectedNode = d;
+  const neighbors = new Set([d.id]);
+  const prereqEdges = new Set();
+  const leadsEdges = new Set();
+
+  edges.forEach(e => {
+    const sid = typeof e.source === 'object' ? e.source.id : e.source;
+    const tid = typeof e.target === 'object' ? e.target.id : e.target;
+    if (sid === d.id) { neighbors.add(tid); leadsEdges.add(sid + '->' + tid); }
+    if (tid === d.id) { neighbors.add(sid); prereqEdges.add(sid + '->' + tid); }
+  });
+
+  nodeEls.attr('fill-opacity', n => neighbors.has(n.id) ? 1 : 0.06)
+    .attr('stroke', n => n.id === d.id ? '#ffc857' : 'none')
+    .attr('stroke-width', n => n.id === d.id ? 2.5 : 0);
+  labelEls.attr('fill', n => neighbors.has(n.id) ? '#e8e4dc' : '#1a1830')
+    .attr('font-weight', n => n.id === d.id ? 600 : 400);
+  linkEls.attr('stroke', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      if (prereqEdges.has(k)) return '#e07a5f';
+      if (leadsEdges.has(k)) return '#81b29a';
+      return '#5a5480';
+    })
+    .attr('stroke-opacity', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      return (prereqEdges.has(k) || leadsEdges.has(k)) ? 0.9 : 0.04;
+    })
+    .attr('stroke-width', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      return (prereqEdges.has(k) || leadsEdges.has(k)) ? 1.8 : 0.7;
+    })
+    .attr('marker-end', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      return (prereqEdges.has(k) || leadsEdges.has(k)) ? 'url(#arrow-hl)' : 'url(#arrow)';
+    });
+
+  showDetail(d, prereqEdges, leadsEdges);
+}
+
+function clearSelection() {
+  selectedNode = null;
+  nodeEls.attr('fill-opacity', 0.85).attr('stroke', 'none');
+  labelEls.attr('fill', '#a09cac').attr('font-weight', 400);
+  linkEls.attr('stroke', '#5a5480').attr('stroke-opacity', 0.5).attr('stroke-width', 0.7).attr('marker-end', 'url(#arrow)');
+  document.getElementById('detail').classList.remove('open');
+  document.getElementById('graph-container').classList.remove('detail-open');
+}
+
+svg.on('click', () => clearSelection());
+
+// Detail panel
+function showDetail(d, prereqEdges, leadsEdges) {
+  const panel = document.getElementById('detail');
+  const content = document.getElementById('detail-content');
+  document.getElementById('graph-container').classList.add('detail-open');
+
+  const prereqs = [];
+  const leads = [];
+  edges.forEach(e => {
+    const sid = typeof e.source === 'object' ? e.source.id : e.source;
+    const tid = typeof e.target === 'object' ? e.target.id : e.target;
+    if (tid === d.id && nodeMap[sid]) prereqs.push(nodeMap[sid]);
+    if (sid === d.id && nodeMap[tid]) leads.push(nodeMap[tid]);
+  });
+
+  content.innerHTML = `
+    <div class="detail-badge" style="background:${d.color}18;color:${d.color};border:1px solid ${d.color}30">
+      <span style="width:5px;height:5px;border-radius:50%;background:${d.color};display:inline-block"></span>
+      ${d.bookName}
+    </div>
+    ${d.pages ? `<div class="detail-pages">p. ${d.pages}</div>` : ''}
+    <div class="detail-title">${d.label}</div>
+    ${prereqs.length ? `
+      <div class="conn-section">
+        <div class="conn-head prereq">▲ Prerequisites (${prereqs.length})</div>
+        ${prereqs.map(n => `<div class="conn-item" data-id="${n.id}"><span class="conn-dot" style="background:${n.color}"></span><span class="conn-label">${n.label}</span><span class="conn-book">${n.bookName}</span></div>`).join('')}
+      </div>
+    ` : '<div class="conn-section"><div class="conn-head" style="color:var(--gold)">★ Starting point</div></div>'}
+    ${leads.length ? `
+      <div class="conn-section">
+        <div class="conn-head leads">▼ Leads to (${leads.length})</div>
+        ${leads.map(n => `<div class="conn-item" data-id="${n.id}"><span class="conn-dot" style="background:${n.color}"></span><span class="conn-label">${n.label}</span><span class="conn-book">${n.bookName}</span></div>`).join('')}
+      </div>
+    ` : ''}
+  `;
+
+  content.querySelectorAll('.conn-item').forEach(el => {
+    el.addEventListener('click', () => {
+      const n = nodeMap[el.dataset.id];
+      if (n) { selectNode(n); }
+    });
+  });
+
+  panel.classList.add('open');
+}
+
+document.getElementById('detail-close').addEventListener('click', clearSelection);
+
+// Tab switching
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+// Book counts
+const bookCounts = {};
+nodes.forEach(n => { bookCounts[n.book] = (bookCounts[n.book] || 0) + 1; });
+
+// === GRADES TAB: books grouped by education level, collapsible ===
+const gradesListEl = document.getElementById('grades-list');
+Object.entries(bookGroupsData).forEach(([groupName, groupBooks]) => {
+  const totalInGroup = groupBooks.reduce((s, b) => s + (bookCounts[b.id] || 0), 0);
+  if (totalInGroup === 0) return;
+
+  // Group header
+  const header = document.createElement('div');
+  header.className = 'group-header';
+  header.innerHTML = `<span class="group-arrow">▼</span><span class="group-label">${groupName}</span><span class="group-cnt">${totalInGroup}</span>`;
+
+  // Group body
+  const body = document.createElement('div');
+  body.className = 'group-body';
+  body.style.maxHeight = '500px';
+
+  const list = document.createElement('div');
+  list.className = 'book-list';
+
+  groupBooks.forEach(b => {
+    const el = document.createElement('div');
+    el.className = 'book-item';
+    el.dataset.id = b.id;
+    el.innerHTML = `<span class="book-dot" style="background:${b.color};color:${b.color}"></span><span class="book-name">${b.name}</span><span class="book-cnt">${bookCounts[b.id] || 0}</span>`;
+    el.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      if (activeBooks.has(b.id)) { activeBooks.delete(b.id); el.classList.add('off'); }
+      else { activeBooks.add(b.id); el.classList.remove('off'); }
+      filterMode = 'grades';
+      renderGraph();
+    });
+    list.appendChild(el);
+  });
+
+  body.appendChild(list);
+  header.addEventListener('click', () => { header.classList.toggle('collapsed'); });
+
+  gradesListEl.appendChild(header);
+  gradesListEl.appendChild(body);
+});
+
+document.getElementById('b-all').addEventListener('click', () => {
+  booksData.forEach(b => activeBooks.add(b.id));
+  document.querySelectorAll('#grades-list .book-item').forEach(el => el.classList.remove('off'));
+  filterMode = 'grades';
+  renderGraph();
+});
+document.getElementById('b-none').addEventListener('click', () => {
+  activeBooks.clear();
+  document.querySelectorAll('#grades-list .book-item').forEach(el => el.classList.add('off'));
+  filterMode = 'grades';
+  renderGraph();
+});
+
+// === TOPICS TAB: strands grouped by math domain, collapsible ===
+const topicsListEl = document.getElementById('topics-list');
+const strandDomains = {
+  'Number & Arithmetic': ['Numbers & Counting', 'Arithmetic', 'Fractions', 'Decimals', 'Percentages', 'Number Bases'],
+  'Algebra': ['Algebra', 'Equations', 'Inequalities', 'Functions & Graphs', 'Indices & Logarithms', 'Sequences & Series'],
+  'Geometry & Measure': ['Geometry', 'Symmetry & Transformations', 'Perimeter, Area & Volume', 'Coordinate Geometry', 'Pythagoras & Similarity', 'Trigonometry'],
+  'Data & Probability': ['Statistics', 'Probability', 'Sets & Logic'],
+  'Applied': ['Money & Finance', 'Time', 'Measurement', 'Ratio & Proportion', 'Calculus', 'Kinematics', 'Vectors & Matrices', 'Graph Theory', 'Mathematical Modeling'],
+};
+
+// Build strand lookup
+const strandNodeIds = {};
+strandsData.forEach(s => { strandNodeIds[s.name] = new Set(s.nodeIds); });
+
+Object.entries(strandDomains).forEach(([domain, strandNames]) => {
+  const domainStrands = strandNames.filter(sn => strandNodeIds[sn] && strandNodeIds[sn].size > 0);
+  if (domainStrands.length === 0) return;
+
+  const totalInDomain = domainStrands.reduce((s, sn) => s + (strandNodeIds[sn] ? strandNodeIds[sn].size : 0), 0);
+
+  const header = document.createElement('div');
+  header.className = 'group-header';
+  header.innerHTML = `<span class="group-arrow">▼</span><span class="group-label">${domain}</span><span class="group-cnt">${totalInDomain}</span>`;
+
+  const body = document.createElement('div');
+  body.className = 'group-body';
+  body.style.maxHeight = '500px';
+
+  const list = document.createElement('div');
+  list.className = 'book-list';
+
+  domainStrands.forEach(sn => {
+    const strand = strandsData.find(s => s.name === sn);
+    if (!strand) return;
+    const el = document.createElement('div');
+    el.className = 'strand-item';
+    el.dataset.strand = sn;
+    el.innerHTML = `<span class="strand-dot" style="background:${strand.color}"></span><span class="strand-name">${sn}</span><span class="strand-cnt">${strand.nodeIds.length}</span>`;
+    el.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      if (activeStrands.has(sn)) { activeStrands.delete(sn); el.classList.add('off'); }
+      else { activeStrands.add(sn); el.classList.remove('off'); }
+      filterMode = 'topics';
+      renderGraph();
+    });
+    list.appendChild(el);
+  });
+
+  body.appendChild(list);
+  header.addEventListener('click', () => { header.classList.toggle('collapsed'); });
+
+  topicsListEl.appendChild(header);
+  topicsListEl.appendChild(body);
+});
+
+// Also add "Other" strand if it exists
+const otherStrand = strandsData.find(s => s.name === 'Other');
+if (otherStrand && otherStrand.nodeIds.length > 0) {
+  const el = document.createElement('div');
+  el.className = 'strand-item';
+  el.dataset.strand = 'Other';
+  el.innerHTML = `<span class="strand-dot" style="background:${otherStrand.color}"></span><span class="strand-name">Other</span><span class="strand-cnt">${otherStrand.nodeIds.length}</span>`;
+  el.addEventListener('click', (ev) => {
+    ev.stopPropagation();
+    if (activeStrands.has('Other')) { activeStrands.delete('Other'); el.classList.add('off'); }
+    else { activeStrands.add('Other'); el.classList.remove('off'); }
+    filterMode = 'topics';
+    renderGraph();
+  });
+  topicsListEl.appendChild(el);
+}
+
+document.getElementById('t-all').addEventListener('click', () => {
+  strandsData.forEach(s => activeStrands.add(s.name));
+  document.querySelectorAll('.strand-item').forEach(el => el.classList.remove('off'));
+  filterMode = 'topics';
+  renderGraph();
+});
+document.getElementById('t-none').addEventListener('click', () => {
+  activeStrands.clear();
+  document.querySelectorAll('.strand-item').forEach(el => el.classList.add('off'));
+  filterMode = 'topics';
+  renderGraph();
+});
+
+// Force sliders
+document.getElementById('sl-charge').addEventListener('input', function() {
+  simulation.force('charge').strength(+this.value);
+  simulation.alpha(0.4).restart();
+});
+document.getElementById('sl-dist').addEventListener('input', function() {
+  simulation.force('link').distance(+this.value);
+  simulation.alpha(0.4).restart();
+});
+document.getElementById('sl-gravity').addEventListener('input', function() {
+  const v = +this.value / 1000;
+  simulation.force('x').strength(v);
+  simulation.force('y').strength(v);
+  simulation.alpha(0.4).restart();
+});
+document.getElementById('sl-collide').addEventListener('input', function() {
+  simulation.force('collide').radius(+this.value);
+  simulation.alpha(0.4).restart();
+});
+
+// Search
+let searchTimeout;
+document.getElementById('search').addEventListener('input', function() {
+  clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(() => {
+    const q = this.value.trim().toLowerCase();
+    if (!q) { clearSelection(); return; }
+    const matches = nodes.filter(n => activeBooks.has(n.book) && (n.label.toLowerCase().includes(q) || n.id.toLowerCase().includes(q)));
+    if (matches.length) {
+      // Zoom to first match
+      const m = matches[0];
+      if (m.x != null) {
+        const t = d3.zoomIdentity.translate(-m.x * 2 + container.clientWidth/2, -m.y * 2 + container.clientHeight/2).scale(2);
+        svg.transition().duration(500).call(zoom.transform, t);
+      }
+      // Highlight all matches
+      const matchIds = new Set(matches.map(n => n.id));
+      nodeEls.attr('fill-opacity', n => matchIds.has(n.id) ? 1 : 0.06)
+        .attr('stroke', n => matchIds.has(n.id) ? '#ffc857' : 'none')
+        .attr('stroke-width', n => matchIds.has(n.id) ? 2 : 0);
+      labelEls.attr('fill', n => matchIds.has(n.id) ? '#fff' : '#1a1830');
+    }
+  }, 250);
+});
+
+function updateStats(n, e) {
+  document.getElementById('s-nodes').textContent = n;
+  document.getElementById('s-edges').textContent = e;
+}
+
+// Keyboard
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { clearSelection(); document.getElementById('search').value = ''; }
+  if (e.key === '/' && document.activeElement.tagName !== 'INPUT') { e.preventDefault(); document.getElementById('search').focus(); }
+});
+
+// Init
+renderGraph();
+</script>
+</body>
+</html>
