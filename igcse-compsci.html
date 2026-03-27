@@ -1,212 +1,9 @@
-#!/usr/bin/env python3
-"""
-Generate self-contained D3.js force-directed graph visualizations.
-
-Usage:
-    python visualize.py                    # generate all graphs
-    python visualize.py malaysia-k12       # generate one graph
-    python visualize.py igcse-math         # generate one graph
-"""
-
-import json
-import os
-import sys
-
-BASE_DIR = os.path.join(os.path.dirname(__file__), "..")
-
-GRAPHS = {
-    "malaysia-k12": {
-        "data": "data/malaysia-k12.json",
-        "output": "malaysia-math.html",
-        "title": "Malaysia Mathematics",
-        "subtitle": "Year 1 to STPM",
-    },
-    "malaysia-sejarah": {
-        "data": "data/malaysia-sejarah.json",
-        "output": "malaysia-sejarah.html",
-        "title": "Malaysia History (Sejarah)",
-        "subtitle": "Year 4 to Form 5",
-    },
-    "malaysia-cs": {
-        "data": "data/malaysia-cs.json",
-        "output": "malaysia-cs.html",
-        "title": "Malaysia Computer Science",
-        "subtitle": "ASK (Form 1-3) + Sains Komputer (Form 4-5)",
-    },
-    "igcse-math": {
-        "data": "data/igcse-math.json",
-        "output": "igcse-math.html",
-        "title": "IGCSE Mathematics",
-        "subtitle": "Cambridge 0580 — Core & Extended + Add Math 0606",
-    },
-    "igcse-physics": {
-        "data": "data/igcse-physics.json",
-        "output": "igcse-physics.html",
-        "title": "IGCSE Physics",
-        "subtitle": "Cambridge 0625",
-    },
-    "igcse-chemistry": {
-        "data": "data/igcse-chemistry.json",
-        "output": "igcse-chemistry.html",
-        "title": "IGCSE Chemistry",
-        "subtitle": "Cambridge 0620",
-    },
-    "igcse-biology": {
-        "data": "data/igcse-biology.json",
-        "output": "igcse-biology.html",
-        "title": "IGCSE Biology",
-        "subtitle": "Cambridge 0610",
-    },
-    "igcse-compsci": {
-        "data": "data/igcse-compsci.json",
-        "output": "igcse-compsci.html",
-        "title": "IGCSE Computer Science",
-        "subtitle": "Cambridge 0478",
-    },
-}
-
-
-def generate(name, config):
-    data_path = os.path.join(BASE_DIR, config["data"])
-    output_path = os.path.join(BASE_DIR, config["output"])
-
-    with open(data_path) as f:
-        data = json.load(f)
-
-    books = {b["id"]: b for b in data["books"]}
-    d3_nodes = []
-    for n in data["nodes"]:
-        b = books.get(n["book"], {})
-        d3_nodes.append({
-            "id": n["id"],
-            "label": n["label"],
-            "color": b.get("color", "#666"),
-            "book": n["book"],
-            "bookName": b.get("name", ""),
-            "bookOrder": b.get("order", 0),
-            "r": 4 + min(b.get("order", 0), 20) * 0.8,
-            "pages": n.get("pages", ""),
-            "description": n.get("description", ""),
-        })
-
-    d3_edges = [{"source": e["source"], "target": e["target"]} for e in data["edges"]]
-
-    # Auto-detect topic strands from node labels
-    STRAND_KEYWORDS = [
-        ("Numbers & Counting", ["number", "counting", "integer", "digit", "place value"]),
-        ("Arithmetic", ["addition", "subtraction", "multiplication", "division", "operation"]),
-        ("Fractions", ["fraction", "improper", "mixed number"]),
-        ("Decimals", ["decimal", "hundredths"]),
-        ("Percentages", ["percent"]),
-        ("Algebra", ["algebra", "expression", "variable", "unknown", "substitution", "bracket", "expansion", "factoris"]),
-        ("Equations", ["equation", "simultaneous", "linear eq", "quadratic eq", "formula"]),
-        ("Inequalities", ["inequalit", "region"]),
-        ("Functions & Graphs", ["function", "graph", "gradient", "curve", "parabola", "reciprocal", "hyperbola"]),
-        ("Indices & Logarithms", ["indices", "index", "logarithm", "exponential", "surd", "power", "root"]),
-        ("Sequences & Series", ["sequence", "pattern", "progression", "series", "binomial"]),
-        ("Ratio & Proportion", ["ratio", "proportion", "rate", "variation", "scale"]),
-        ("Money & Finance", ["money", "currency", "profit", "loss", "discount", "interest", "dividend", "invoice", "tax", "insurance", "invest", "credit", "debt", "financial"]),
-        ("Time", ["time", "duration", "calendar", "clock", "hour", "minute", "day", "week", "month", "year", "century", "decade", "time zone"]),
-        ("Measurement", ["length", "mass", "volume", "weight", "litre", "gram", "metre", "kilometre", "centimetre", "millimetre", "unit"]),
-        ("Geometry", ["angle", "line", "triangle", "quadrilateral", "polygon", "circle", "shape", "prism", "construction", "congruence", "loci"]),
-        ("Symmetry & Transformations", ["symmetry", "reflection", "rotation", "translation", "transformation", "enlargement", "tessellation", "isometr"]),
-        ("Perimeter, Area & Volume", ["perimeter", "area", "surface", "volume", "sector", "arc"]),
-        ("Trigonometry", ["trigonometric", "sine", "cosine", "tangent", "bearing", "circular measure", "radian"]),
-        ("Pythagoras & Similarity", ["pythagoras", "similar", "congruence"]),
-        ("Coordinate Geometry", ["coordinate", "midpoint", "distance", "cartesian"]),
-        ("Vectors & Matrices", ["vector", "matri"]),
-        ("Statistics", ["data", "average", "mean", "median", "mode", "range", "frequency", "histogram", "pie chart", "bar chart", "pictograph", "scatter", "dispersion", "quartile", "cumulative"]),
-        ("Probability", ["probability", "likelihood", "certain", "impossible", "likely", "tree diagram", "venn", "conditional", "combined event", "permutation", "combination", "factorial"]),
-        ("Calculus", ["derivative", "differentiation", "integration", "integral", "limit", "continuity", "maclaurin", "differential equation", "gradient function", "chain rule", "product rule", "quotient rule", "stationary"]),
-        ("Kinematics", ["kinematic", "velocity", "acceleration", "displacement"]),
-        ("Sets & Logic", ["set", "venn diagram", "universal", "complement", "union", "intersection", "statement", "argument", "logical"]),
-        ("Number Bases", ["number base", "binary"]),
-        ("Graph Theory", ["network", "graph theory"]),
-        ("Mathematical Modeling", ["model"]),
-    ]
-
-    STRAND_COLORS = [
-        "#ef4444", "#f97316", "#f59e0b", "#eab308", "#84cc16",
-        "#22c55e", "#10b981", "#14b8a6", "#06b6d4", "#0ea5e9",
-        "#3b82f6", "#6366f1", "#8b5cf6", "#a855f7", "#d946ef",
-        "#ec4899", "#f43f5e", "#fb923c", "#facc15", "#a78bfa",
-        "#34d399", "#22d3ee", "#c084fc", "#fbbf24", "#4ade80",
-        "#f472b6", "#818cf8", "#2dd4bf", "#fb7185", "#d97706",
-    ]
-
-    def classify_node(n):
-        label = n["label"].lower()
-        desc = n.get("description", "").lower()
-        text = label + " " + desc
-        for strand_name, keywords in STRAND_KEYWORDS:
-            for kw in keywords:
-                if kw in text:
-                    return strand_name
-        return "Other"
-
-    # Build strand groups
-    from collections import OrderedDict
-    strand_nodes = OrderedDict()
-    for n in d3_nodes:
-        orig = next((x for x in data["nodes"] if x["id"] == n["id"]), n)
-        strand = classify_node(orig)
-        strand_nodes.setdefault(strand, []).append(n["id"])
-        n["strand"] = strand
-
-    # Assign strand colors
-    strand_color_map = {}
-    for i, strand_name in enumerate(strand_nodes.keys()):
-        strand_color_map[strand_name] = STRAND_COLORS[i % len(STRAND_COLORS)]
-
-    strands_list = [
-        {"name": name, "color": strand_color_map[name], "nodeIds": ids}
-        for name, ids in strand_nodes.items()
-        if len(ids) > 0
-    ]
-
-    # Group books by education level for collapsible groups
-    book_groups = OrderedDict()
-    for b in data["books"]:
-        name = b["name"]
-        if any(x in name for x in ["Y1", "Y2", "Y3", "Y4", "Y5", "Y6", "Year"]):
-            group = "Primary (Year 1-6)"
-        elif any(x in name for x in ["Form 1", "Form 2", "Form 3"]):
-            group = "Lower Secondary (Form 1-3)"
-        elif any(x in name for x in ["Form 4", "Form 5"]):
-            group = "Upper Secondary (Form 4-5)"
-        elif any(x in name for x in ["Add Math", "AM"]):
-            group = "Additional Mathematics"
-        elif "STPM" in name:
-            group = "Pre-University (STPM)"
-        elif any(x in name for x in ["Number", "Algebra", "Geometry", "Data", "Fraction", "Equation",
-                                       "Mensuration", "Probability", "Sequence", "Line", "Quadratic"]):
-            group = "IGCSE Math Core+Extended"
-        elif any(x in name for x in ["Pythagoras", "Average", "Further", "Trigonometry", "Ratio",
-                                       "Scatter", "Money", "Curved", "Symmetry", "Histogram",
-                                       "More Equation", "Transform", "Advanced"]):
-            group = "IGCSE Math Core+Extended"
-        elif any(x in name for x in ["(AM)", "Calculus", "Kinematics", "Vectors (AM)", "Polynomials",
-                                       "Logarithm", "Circle Coord", "Circular Measure", "Permutation",
-                                       "Series", "Differentiation", "Integration"]):
-            group = "IGCSE Additional Mathematics"
-        else:
-            group = "Other"
-        book_groups.setdefault(group, []).append(b)
-
-    nodes_json = json.dumps(d3_nodes)
-    edges_json = json.dumps(d3_edges)
-    books_json = json.dumps(data["books"])
-    strands_json = json.dumps(strands_list)
-    book_groups_json = json.dumps(book_groups)
-    page_title = config["title"]
-    page_subtitle = config["subtitle"]
-
-    html = """<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduGraph — """ + page_title + """</title>
+<title>EduGraph — IGCSE Computer Science</title>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
@@ -341,7 +138,7 @@ svg { width: 100%; height: 100%; display: block; }
 <header class="topbar">
   <div class="topbar-left">
     <h1>EduGraph</h1>
-    <span class="sub">""" + page_subtitle + """</span>
+    <span class="sub">Cambridge 0478</span>
   </div>
   <div class="topbar-right">
     <div class="stats">
@@ -421,11 +218,11 @@ svg { width: 100%; height: 100%; display: block; }
 </div>
 
 <script>
-const rawNodes = """ + nodes_json + """;
-const rawEdges = """ + edges_json + """;
-const booksData = """ + books_json + """;
-const strandsData = """ + strands_json + """;
-const bookGroupsData = """ + book_groups_json + """;
+const rawNodes = [{"id": "cs.ch1.the_binary_system", "label": "The binary system", "color": "#3b82f6", "book": "igcse.cs.binary_hex", "bookName": "Binary Systems and Hexadecimal", "bookOrder": 1, "r": 4.8, "pages": "12-14", "description": "The binary system \u2014 Binary Systems and Hexadecimal (IGCSE Computer Science)", "strand": "Decimals"}, {"id": "cs.ch1.measurement_of_the_size_of_computer_memories", "label": "Measurement of the size of computer memories", "color": "#3b82f6", "book": "igcse.cs.binary_hex", "bookName": "Binary Systems and Hexadecimal", "bookOrder": 1, "r": 4.8, "pages": "14-15", "description": "Measurement of the size of computer memories \u2014 Binary Systems and Hexadecimal (IGCSE Computer Science)", "strand": "Decimals"}, {"id": "cs.ch1.example_use_of_binary", "label": "Example use of binary", "color": "#3b82f6", "book": "igcse.cs.binary_hex", "bookName": "Binary Systems and Hexadecimal", "bookOrder": 1, "r": 4.8, "pages": "15-17", "description": "Example use of binary \u2014 Binary Systems and Hexadecimal (IGCSE Computer Science)", "strand": "Decimals"}, {"id": "cs.ch1.the_hexadecimal_system", "label": "The hexadecimal system", "color": "#3b82f6", "book": "igcse.cs.binary_hex", "bookName": "Binary Systems and Hexadecimal", "bookOrder": 1, "r": 4.8, "pages": "17-22", "description": "The hexadecimal system \u2014 Binary Systems and Hexadecimal (IGCSE Computer Science)", "strand": "Decimals"}, {"id": "cs.ch1.use_of_the_hexadecimal_system", "label": "Use of the hexadecimal system", "color": "#3b82f6", "book": "igcse.cs.binary_hex", "bookName": "Binary Systems and Hexadecimal", "bookOrder": 1, "r": 4.8, "pages": "22-27", "description": "Use of the hexadecimal system \u2014 Binary Systems and Hexadecimal (IGCSE Computer Science)", "strand": "Decimals"}, {"id": "cs.ch2.data_transmission", "label": "Data transmission", "color": "#6366f1", "book": "igcse.cs.communication", "bookName": "Communication and Internet Technologies", "bookOrder": 2, "r": 5.6, "pages": "28-32", "description": "Data transmission \u2014 Communication and Internet Technologies (IGCSE Computer Science)", "strand": "Statistics"}, {"id": "cs.ch2.error_checking_methods", "label": "Error-checking methods", "color": "#6366f1", "book": "igcse.cs.communication", "bookName": "Communication and Internet Technologies", "bookOrder": 2, "r": 5.6, "pages": "32-40", "description": "Error-checking methods \u2014 Communication and Internet Technologies (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch2.internet_technologies", "label": "Internet technologies", "color": "#6366f1", "book": "igcse.cs.communication", "bookName": "Communication and Internet Technologies", "bookOrder": 2, "r": 5.6, "pages": "40-43", "description": "Internet technologies \u2014 Communication and Internet Technologies (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch3.logic_gates", "label": "Logic gates", "color": "#8b5cf6", "book": "igcse.cs.logic", "bookName": "Logic Gates and Logic Circuits", "bookOrder": 3, "r": 6.4, "pages": "44-45", "description": "Logic gates \u2014 Logic Gates and Logic Circuits (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch3.truth_tables", "label": "Truth tables", "color": "#8b5cf6", "book": "igcse.cs.logic", "bookName": "Logic Gates and Logic Circuits", "bookOrder": 3, "r": 6.4, "pages": "45-45", "description": "Truth tables \u2014 Logic Gates and Logic Circuits (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch3.the_function_of_the_six_logic_gates", "label": "The function of the six logic gates", "color": "#8b5cf6", "book": "igcse.cs.logic", "bookName": "Logic Gates and Logic Circuits", "bookOrder": 3, "r": 6.4, "pages": "45-50", "description": "The function of the six logic gates \u2014 Logic Gates and Logic Circuits (IGCSE Computer Science)", "strand": "Functions & Graphs"}, {"id": "cs.ch3.logic_circuits", "label": "Logic circuits", "color": "#8b5cf6", "book": "igcse.cs.logic", "bookName": "Logic Gates and Logic Circuits", "bookOrder": 3, "r": 6.4, "pages": "50-64", "description": "Logic circuits \u2014 Logic Gates and Logic Circuits (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch3.logic_circuits_in_the_real_world", "label": "Logic circuits in the real world", "color": "#8b5cf6", "book": "igcse.cs.logic", "bookName": "Logic Gates and Logic Circuits", "bookOrder": 3, "r": 6.4, "pages": "64-67", "description": "Logic circuits in the real world \u2014 Logic Gates and Logic Circuits (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch4.operating_systems", "label": "Operating systems", "color": "#7c3aed", "book": "igcse.cs.os_architecture", "bookName": "Operating Systems and Computer Architecture", "bookOrder": 4, "r": 7.2, "pages": "68-70", "description": "Operating systems \u2014 Operating Systems and Computer Architecture (IGCSE Computer Science)", "strand": "Perimeter, Area & Volume"}, {"id": "cs.ch4.interrupts", "label": "Interrupts", "color": "#7c3aed", "book": "igcse.cs.os_architecture", "bookName": "Operating Systems and Computer Architecture", "bookOrder": 4, "r": 7.2, "pages": "70-72", "description": "Interrupts \u2014 Operating Systems and Computer Architecture (IGCSE Computer Science)", "strand": "Perimeter, Area & Volume"}, {"id": "cs.ch4.computer_architecture", "label": "Computer architecture", "color": "#7c3aed", "book": "igcse.cs.os_architecture", "bookName": "Operating Systems and Computer Architecture", "bookOrder": 4, "r": 7.2, "pages": "72-78", "description": "Computer architecture \u2014 Operating Systems and Computer Architecture (IGCSE Computer Science)", "strand": "Perimeter, Area & Volume"}, {"id": "cs.ch4.the_fetch_execute_cycle", "label": "The fetch-execute cycle", "color": "#7c3aed", "book": "igcse.cs.os_architecture", "bookName": "Operating Systems and Computer Architecture", "bookOrder": 4, "r": 7.2, "pages": "78-80", "description": "The fetch-execute cycle \u2014 Operating Systems and Computer Architecture (IGCSE Computer Science)", "strand": "Perimeter, Area & Volume"}, {"id": "cs.ch5.input_devices", "label": "Input devices", "color": "#2563eb", "book": "igcse.cs.io_devices", "bookName": "Input and Output Devices", "bookOrder": 5, "r": 8.0, "pages": "81-105", "description": "Input devices \u2014 Input and Output Devices (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch5.output_devices", "label": "Output devices", "color": "#2563eb", "book": "igcse.cs.io_devices", "bookName": "Input and Output Devices", "bookOrder": 5, "r": 8.0, "pages": "105-117", "description": "Output devices \u2014 Input and Output Devices (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch6.file_formats", "label": "File formats", "color": "#4f46e5", "book": "igcse.cs.memory_storage", "bookName": "Memory and Data Storage", "bookOrder": 6, "r": 8.8, "pages": "118-123", "description": "File formats \u2014 Memory and Data Storage (IGCSE Computer Science)", "strand": "Statistics"}, {"id": "cs.ch6.lossless_and_lossy_file_compression", "label": "Lossless and lossy file compression", "color": "#4f46e5", "book": "igcse.cs.memory_storage", "bookName": "Memory and Data Storage", "bookOrder": 6, "r": 8.8, "pages": "123-124", "description": "Lossless and lossy file compression \u2014 Memory and Data Storage (IGCSE Computer Science)", "strand": "Money & Finance"}, {"id": "cs.ch6.memory_and_storage", "label": "Memory and storage", "color": "#4f46e5", "book": "igcse.cs.memory_storage", "bookName": "Memory and Data Storage", "bookOrder": 6, "r": 8.8, "pages": "124-135", "description": "Memory and storage \u2014 Memory and Data Storage (IGCSE Computer Science)", "strand": "Statistics"}, {"id": "cs.ch6.how_to_estimate_the_size_of_a_file", "label": "How to estimate the size of a file", "color": "#4f46e5", "book": "igcse.cs.memory_storage", "bookName": "Memory and Data Storage", "bookOrder": 6, "r": 8.8, "pages": "135-138", "description": "How to estimate the size of a file \u2014 Memory and Data Storage (IGCSE Computer Science)", "strand": "Statistics"}, {"id": "cs.ch7.programming_languages", "label": "Programming languages", "color": "#7e22ce", "book": "igcse.cs.languages", "bookName": "High- and Low-level Languages", "bookOrder": 7, "r": 9.600000000000001, "pages": "139-143", "description": "Programming languages \u2014 High- and Low-level Languages (IGCSE Computer Science)", "strand": "Measurement"}, {"id": "cs.ch7.translators", "label": "Translators", "color": "#7e22ce", "book": "igcse.cs.languages", "bookName": "High- and Low-level Languages", "bookOrder": 7, "r": 9.600000000000001, "pages": "143-145", "description": "Translators \u2014 High- and Low-level Languages (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch7.what_happens_when_things_go_wrong", "label": "What happens when things go wrong?", "color": "#7e22ce", "book": "igcse.cs.languages", "bookName": "High- and Low-level Languages", "bookOrder": 7, "r": 9.600000000000001, "pages": "145-148", "description": "What happens when things go wrong? \u2014 High- and Low-level Languages (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch8.security_and_data_integrity", "label": "Security and data integrity", "color": "#6d28d9", "book": "igcse.cs.security_ethics", "bookName": "Security and Ethics", "bookOrder": 8, "r": 10.4, "pages": "149-154", "description": "Security and data integrity \u2014 Security and Ethics (IGCSE Computer Science)", "strand": "Statistics"}, {"id": "cs.ch8.cookies", "label": "Cookies", "color": "#6d28d9", "book": "igcse.cs.security_ethics", "bookName": "Security and Ethics", "bookOrder": 8, "r": 10.4, "pages": "154-155", "description": "Cookies \u2014 Security and Ethics (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch8.loss_of_data_and_data_corruption", "label": "Loss of data and data corruption", "color": "#6d28d9", "book": "igcse.cs.security_ethics", "bookName": "Security and Ethics", "bookOrder": 8, "r": 10.4, "pages": "155-155", "description": "Loss of data and data corruption \u2014 Security and Ethics (IGCSE Computer Science)", "strand": "Money & Finance"}, {"id": "cs.ch8.firewalls_and_proxy_servers", "label": "Firewalls and proxy servers", "color": "#6d28d9", "book": "igcse.cs.security_ethics", "bookName": "Security and Ethics", "bookOrder": 8, "r": 10.4, "pages": "155-157", "description": "Firewalls and proxy servers \u2014 Security and Ethics (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch8.security_protocols", "label": "Security protocols", "color": "#6d28d9", "book": "igcse.cs.security_ethics", "bookName": "Security and Ethics", "bookOrder": 8, "r": 10.4, "pages": "157-159", "description": "Security protocols \u2014 Security and Ethics (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch8.encryption", "label": "Encryption", "color": "#6d28d9", "book": "igcse.cs.security_ethics", "bookName": "Security and Ethics", "bookOrder": 8, "r": 10.4, "pages": "159-165", "description": "Encryption \u2014 Security and Ethics (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch8.applications", "label": "Applications", "color": "#6d28d9", "book": "igcse.cs.security_ethics", "bookName": "Security and Ethics", "bookOrder": 8, "r": 10.4, "pages": "165-167", "description": "Applications \u2014 Security and Ethics (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch8.computer_ethics", "label": "Computer ethics", "color": "#6d28d9", "book": "igcse.cs.security_ethics", "bookName": "Security and Ethics", "bookOrder": 8, "r": 10.4, "pages": "167-168", "description": "Computer ethics \u2014 Security and Ethics (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch8.free_software_freeware_and_shareware", "label": "Free software, freeware and shareware", "color": "#6d28d9", "book": "igcse.cs.security_ethics", "bookName": "Security and Ethics", "bookOrder": 8, "r": 10.4, "pages": "168-172", "description": "Free software, freeware and shareware \u2014 Security and Ethics (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch9.algorithms", "label": "Algorithms", "color": "#1d4ed8", "book": "igcse.cs.problem_solving", "bookName": "Problem-solving and Design", "bookOrder": 9, "r": 11.2, "pages": "177-179", "description": "Algorithms \u2014 Problem-solving and Design (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch9.test_data", "label": "Test data", "color": "#1d4ed8", "book": "igcse.cs.problem_solving", "bookName": "Problem-solving and Design", "bookOrder": 9, "r": 11.2, "pages": "179-180", "description": "Test data \u2014 Problem-solving and Design (IGCSE Computer Science)", "strand": "Statistics"}, {"id": "cs.ch9.validation_and_verification", "label": "Validation and verification", "color": "#1d4ed8", "book": "igcse.cs.problem_solving", "bookName": "Problem-solving and Design", "bookOrder": 9, "r": 11.2, "pages": "180-186", "description": "Validation and verification \u2014 Problem-solving and Design (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch9.using_trace_tables", "label": "Using trace tables", "color": "#1d4ed8", "book": "igcse.cs.problem_solving", "bookName": "Problem-solving and Design", "bookOrder": 9, "r": 11.2, "pages": "186-190", "description": "Using trace tables \u2014 Problem-solving and Design (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch9.identifying_and_correcting_errors", "label": "Identifying and correcting errors", "color": "#1d4ed8", "book": "igcse.cs.problem_solving", "bookName": "Problem-solving and Design", "bookOrder": 9, "r": 11.2, "pages": "190-194", "description": "Identifying and correcting errors \u2014 Problem-solving and Design (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch9.producing_algorithms", "label": "Producing algorithms", "color": "#1d4ed8", "book": "igcse.cs.problem_solving", "bookName": "Problem-solving and Design", "bookOrder": 9, "r": 11.2, "pages": "194-201", "description": "Producing algorithms \u2014 Problem-solving and Design (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch10.assignment", "label": "Assignment", "color": "#4338ca", "book": "igcse.cs.pseudocode_flowcharts", "bookName": "Pseudocode and Flowcharts", "bookOrder": 10, "r": 12.0, "pages": "202-203", "description": "Assignment \u2014 Pseudocode and Flowcharts (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch10.conditional_statements", "label": "Conditional statements", "color": "#4338ca", "book": "igcse.cs.pseudocode_flowcharts", "bookName": "Pseudocode and Flowcharts", "bookOrder": 10, "r": 12.0, "pages": "203-206", "description": "Conditional statements \u2014 Pseudocode and Flowcharts (IGCSE Computer Science)", "strand": "Probability"}, {"id": "cs.ch10.loop_structures", "label": "Loop structures", "color": "#4338ca", "book": "igcse.cs.pseudocode_flowcharts", "bookName": "Pseudocode and Flowcharts", "bookOrder": 10, "r": 12.0, "pages": "206-209", "description": "Loop structures \u2014 Pseudocode and Flowcharts (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch10.input_and_output_statements", "label": "Input and output statements", "color": "#4338ca", "book": "igcse.cs.pseudocode_flowcharts", "bookName": "Pseudocode and Flowcharts", "bookOrder": 10, "r": 12.0, "pages": "209-209", "description": "Input and output statements \u2014 Pseudocode and Flowcharts (IGCSE Computer Science)", "strand": "Sets & Logic"}, {"id": "cs.ch10.standard_actions", "label": "Standard actions", "color": "#4338ca", "book": "igcse.cs.pseudocode_flowcharts", "bookName": "Pseudocode and Flowcharts", "bookOrder": 10, "r": 12.0, "pages": "209-209", "description": "Standard actions \u2014 Pseudocode and Flowcharts (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch10.examples_of_algorithms_in_pseudocode", "label": "Examples of algorithms in pseudocode", "color": "#4338ca", "book": "igcse.cs.pseudocode_flowcharts", "bookName": "Pseudocode and Flowcharts", "bookOrder": 10, "r": 12.0, "pages": "209-212", "description": "Examples of algorithms in pseudocode \u2014 Pseudocode and Flowcharts (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch10.standard_flowchart_symbols", "label": "Standard flowchart symbols", "color": "#4338ca", "book": "igcse.cs.pseudocode_flowcharts", "bookName": "Pseudocode and Flowcharts", "bookOrder": 10, "r": 12.0, "pages": "212-218", "description": "Standard flowchart symbols \u2014 Pseudocode and Flowcharts (IGCSE Computer Science)", "strand": "Other"}, {"id": "cs.ch11.programming", "label": "Programming", "color": "#5b21b6", "book": "igcse.cs.programming", "bookName": "Programming Concepts", "bookOrder": 11, "r": 12.8, "pages": "219-223", "description": "Programming \u2014 Programming Concepts (IGCSE Computer Science)", "strand": "Measurement"}, {"id": "cs.ch11.declaration_and_use_of_variables_and_constants", "label": "Declaration and use of variables and constants", "color": "#5b21b6", "book": "igcse.cs.programming", "bookName": "Programming Concepts", "bookOrder": 11, "r": 12.8, "pages": "223-224", "description": "Declaration and use of variables and constants \u2014 Programming Concepts (IGCSE Computer Science)", "strand": "Algebra"}, {"id": "cs.ch11.basic_data_types", "label": "Basic data types", "color": "#5b21b6", "book": "igcse.cs.programming", "bookName": "Programming Concepts", "bookOrder": 11, "r": 12.8, "pages": "224-226", "description": "Basic data types \u2014 Programming Concepts (IGCSE Computer Science)", "strand": "Measurement"}, {"id": "cs.ch11.how_to_make_your_program_work", "label": "How to make your program work", "color": "#5b21b6", "book": "igcse.cs.programming", "bookName": "Programming Concepts", "bookOrder": 11, "r": 12.8, "pages": "226-241", "description": "How to make your program work \u2014 Programming Concepts (IGCSE Computer Science)", "strand": "Measurement"}, {"id": "cs.ch12.arrays", "label": "Arrays", "color": "#3730a3", "book": "igcse.cs.data_structures", "bookName": "Data Structures: Arrays and Using Pre-release Material", "bookOrder": 12, "r": 13.600000000000001, "pages": "243-248", "description": "Arrays \u2014 Data Structures: Arrays and Using Pre-release Material (IGCSE Computer Science)", "strand": "Statistics"}, {"id": "cs.ch12.using_pre_release_material", "label": "Using pre-release material", "color": "#3730a3", "book": "igcse.cs.data_structures", "bookName": "Data Structures: Arrays and Using Pre-release Material", "bookOrder": 12, "r": 13.600000000000001, "pages": "248-249", "description": "Using pre-release material \u2014 Data Structures: Arrays and Using Pre-release Material (IGCSE Computer Science)", "strand": "Statistics"}, {"id": "cs.ch13.what_are_databases_used_for", "label": "What are databases used for?", "color": "#1e3a8a", "book": "igcse.cs.databases", "bookName": "Databases", "bookOrder": 13, "r": 14.4, "pages": "250-250", "description": "What are databases used for? \u2014 Databases (IGCSE Computer Science)", "strand": "Statistics"}, {"id": "cs.ch13.the_structure_of_a_database", "label": "The structure of a database", "color": "#1e3a8a", "book": "igcse.cs.databases", "bookName": "Databases", "bookOrder": 13, "r": 14.4, "pages": "250-252", "description": "The structure of a database \u2014 Databases (IGCSE Computer Science)", "strand": "Statistics"}, {"id": "cs.ch13.practical_use_of_a_database", "label": "Practical use of a database", "color": "#1e3a8a", "book": "igcse.cs.databases", "bookName": "Databases", "bookOrder": 13, "r": 14.4, "pages": "252-263", "description": "Practical use of a database \u2014 Databases (IGCSE Computer Science)", "strand": "Statistics"}];
+const rawEdges = [{"source": "cs.ch1.the_binary_system", "target": "cs.ch1.measurement_of_the_size_of_computer_memories"}, {"source": "cs.ch1.the_binary_system", "target": "cs.ch1.example_use_of_binary"}, {"source": "cs.ch1.the_binary_system", "target": "cs.ch1.the_hexadecimal_system"}, {"source": "cs.ch1.the_hexadecimal_system", "target": "cs.ch1.use_of_the_hexadecimal_system"}, {"source": "cs.ch1.the_binary_system", "target": "cs.ch3.logic_gates"}, {"source": "cs.ch3.logic_gates", "target": "cs.ch3.truth_tables"}, {"source": "cs.ch3.logic_gates", "target": "cs.ch3.the_function_of_the_six_logic_gates"}, {"source": "cs.ch3.truth_tables", "target": "cs.ch3.logic_circuits"}, {"source": "cs.ch3.the_function_of_the_six_logic_gates", "target": "cs.ch3.logic_circuits"}, {"source": "cs.ch3.logic_circuits", "target": "cs.ch3.logic_circuits_in_the_real_world"}, {"source": "cs.ch4.computer_architecture", "target": "cs.ch4.the_fetch_execute_cycle"}, {"source": "cs.ch4.the_fetch_execute_cycle", "target": "cs.ch4.operating_systems"}, {"source": "cs.ch4.operating_systems", "target": "cs.ch4.interrupts"}, {"source": "cs.ch1.the_binary_system", "target": "cs.ch2.data_transmission"}, {"source": "cs.ch2.data_transmission", "target": "cs.ch2.error_checking_methods"}, {"source": "cs.ch2.data_transmission", "target": "cs.ch2.internet_technologies"}, {"source": "cs.ch5.input_devices", "target": "cs.ch5.output_devices"}, {"source": "cs.ch5.input_devices", "target": "cs.ch6.memory_and_storage"}, {"source": "cs.ch5.output_devices", "target": "cs.ch6.memory_and_storage"}, {"source": "cs.ch1.use_of_the_hexadecimal_system", "target": "cs.ch6.file_formats"}, {"source": "cs.ch1.measurement_of_the_size_of_computer_memories", "target": "cs.ch6.memory_and_storage"}, {"source": "cs.ch6.file_formats", "target": "cs.ch6.lossless_and_lossy_file_compression"}, {"source": "cs.ch6.file_formats", "target": "cs.ch6.how_to_estimate_the_size_of_a_file"}, {"source": "cs.ch6.memory_and_storage", "target": "cs.ch6.how_to_estimate_the_size_of_a_file"}, {"source": "cs.ch4.computer_architecture", "target": "cs.ch7.programming_languages"}, {"source": "cs.ch7.programming_languages", "target": "cs.ch7.translators"}, {"source": "cs.ch7.translators", "target": "cs.ch7.what_happens_when_things_go_wrong"}, {"source": "cs.ch2.internet_technologies", "target": "cs.ch8.security_and_data_integrity"}, {"source": "cs.ch8.security_and_data_integrity", "target": "cs.ch8.cookies"}, {"source": "cs.ch8.security_and_data_integrity", "target": "cs.ch8.loss_of_data_and_data_corruption"}, {"source": "cs.ch8.security_and_data_integrity", "target": "cs.ch8.firewalls_and_proxy_servers"}, {"source": "cs.ch8.security_and_data_integrity", "target": "cs.ch8.encryption"}, {"source": "cs.ch8.encryption", "target": "cs.ch8.security_protocols"}, {"source": "cs.ch8.security_protocols", "target": "cs.ch8.applications"}, {"source": "cs.ch8.security_and_data_integrity", "target": "cs.ch8.computer_ethics"}, {"source": "cs.ch8.computer_ethics", "target": "cs.ch8.free_software_freeware_and_shareware"}, {"source": "cs.ch9.algorithms", "target": "cs.ch9.test_data"}, {"source": "cs.ch9.algorithms", "target": "cs.ch9.validation_and_verification"}, {"source": "cs.ch9.algorithms", "target": "cs.ch9.using_trace_tables"}, {"source": "cs.ch9.using_trace_tables", "target": "cs.ch9.identifying_and_correcting_errors"}, {"source": "cs.ch9.algorithms", "target": "cs.ch9.producing_algorithms"}, {"source": "cs.ch9.producing_algorithms", "target": "cs.ch10.assignment"}, {"source": "cs.ch10.assignment", "target": "cs.ch10.conditional_statements"}, {"source": "cs.ch10.conditional_statements", "target": "cs.ch10.loop_structures"}, {"source": "cs.ch10.assignment", "target": "cs.ch10.input_and_output_statements"}, {"source": "cs.ch10.loop_structures", "target": "cs.ch10.standard_actions"}, {"source": "cs.ch10.standard_actions", "target": "cs.ch10.examples_of_algorithms_in_pseudocode"}, {"source": "cs.ch10.assignment", "target": "cs.ch10.standard_flowchart_symbols"}, {"source": "cs.ch7.programming_languages", "target": "cs.ch11.programming"}, {"source": "cs.ch10.examples_of_algorithms_in_pseudocode", "target": "cs.ch11.programming"}, {"source": "cs.ch11.programming", "target": "cs.ch11.declaration_and_use_of_variables_and_constants"}, {"source": "cs.ch11.declaration_and_use_of_variables_and_constants", "target": "cs.ch11.basic_data_types"}, {"source": "cs.ch11.basic_data_types", "target": "cs.ch11.how_to_make_your_program_work"}, {"source": "cs.ch11.how_to_make_your_program_work", "target": "cs.ch12.arrays"}, {"source": "cs.ch12.arrays", "target": "cs.ch12.using_pre_release_material"}, {"source": "cs.ch9.validation_and_verification", "target": "cs.ch12.using_pre_release_material"}, {"source": "cs.ch1.example_use_of_binary", "target": "cs.ch6.file_formats"}, {"source": "cs.ch11.basic_data_types", "target": "cs.ch13.what_are_databases_used_for"}, {"source": "cs.ch13.what_are_databases_used_for", "target": "cs.ch13.the_structure_of_a_database"}, {"source": "cs.ch13.the_structure_of_a_database", "target": "cs.ch13.practical_use_of_a_database"}, {"source": "cs.ch9.test_data", "target": "cs.ch9.identifying_and_correcting_errors"}, {"source": "cs.ch6.lossless_and_lossy_file_compression", "target": "cs.ch6.how_to_estimate_the_size_of_a_file"}, {"source": "cs.ch4.computer_architecture", "target": "cs.ch5.input_devices"}, {"source": "cs.ch2.internet_technologies", "target": "cs.ch8.cookies"}, {"source": "cs.ch7.what_happens_when_things_go_wrong", "target": "cs.ch9.identifying_and_correcting_errors"}, {"source": "cs.ch3.logic_circuits_in_the_real_world", "target": "cs.ch4.computer_architecture"}, {"source": "cs.ch8.firewalls_and_proxy_servers", "target": "cs.ch8.security_protocols"}, {"source": "cs.ch9.algorithms", "target": "cs.ch10.assignment"}];
+const booksData = [{"id": "igcse.cs.binary_hex", "name": "Binary Systems and Hexadecimal", "color": "#3b82f6", "order": 1}, {"id": "igcse.cs.communication", "name": "Communication and Internet Technologies", "color": "#6366f1", "order": 2}, {"id": "igcse.cs.logic", "name": "Logic Gates and Logic Circuits", "color": "#8b5cf6", "order": 3}, {"id": "igcse.cs.os_architecture", "name": "Operating Systems and Computer Architecture", "color": "#7c3aed", "order": 4}, {"id": "igcse.cs.io_devices", "name": "Input and Output Devices", "color": "#2563eb", "order": 5}, {"id": "igcse.cs.memory_storage", "name": "Memory and Data Storage", "color": "#4f46e5", "order": 6}, {"id": "igcse.cs.languages", "name": "High- and Low-level Languages", "color": "#7e22ce", "order": 7}, {"id": "igcse.cs.security_ethics", "name": "Security and Ethics", "color": "#6d28d9", "order": 8}, {"id": "igcse.cs.problem_solving", "name": "Problem-solving and Design", "color": "#1d4ed8", "order": 9}, {"id": "igcse.cs.pseudocode_flowcharts", "name": "Pseudocode and Flowcharts", "color": "#4338ca", "order": 10}, {"id": "igcse.cs.programming", "name": "Programming Concepts", "color": "#5b21b6", "order": 11}, {"id": "igcse.cs.data_structures", "name": "Data Structures: Arrays and Using Pre-release Material", "color": "#3730a3", "order": 12}, {"id": "igcse.cs.databases", "name": "Databases", "color": "#1e3a8a", "order": 13}];
+const strandsData = [{"name": "Decimals", "color": "#ef4444", "nodeIds": ["cs.ch1.the_binary_system", "cs.ch1.measurement_of_the_size_of_computer_memories", "cs.ch1.example_use_of_binary", "cs.ch1.the_hexadecimal_system", "cs.ch1.use_of_the_hexadecimal_system"]}, {"name": "Statistics", "color": "#f97316", "nodeIds": ["cs.ch2.data_transmission", "cs.ch6.file_formats", "cs.ch6.memory_and_storage", "cs.ch6.how_to_estimate_the_size_of_a_file", "cs.ch8.security_and_data_integrity", "cs.ch9.test_data", "cs.ch12.arrays", "cs.ch12.using_pre_release_material", "cs.ch13.what_are_databases_used_for", "cs.ch13.the_structure_of_a_database", "cs.ch13.practical_use_of_a_database"]}, {"name": "Other", "color": "#f59e0b", "nodeIds": ["cs.ch2.error_checking_methods", "cs.ch2.internet_technologies", "cs.ch3.logic_gates", "cs.ch3.truth_tables", "cs.ch3.logic_circuits", "cs.ch3.logic_circuits_in_the_real_world", "cs.ch5.input_devices", "cs.ch5.output_devices", "cs.ch7.translators", "cs.ch7.what_happens_when_things_go_wrong", "cs.ch8.cookies", "cs.ch8.firewalls_and_proxy_servers", "cs.ch8.security_protocols", "cs.ch8.encryption", "cs.ch8.applications", "cs.ch8.computer_ethics", "cs.ch8.free_software_freeware_and_shareware", "cs.ch9.algorithms", "cs.ch9.validation_and_verification", "cs.ch9.using_trace_tables", "cs.ch9.identifying_and_correcting_errors", "cs.ch9.producing_algorithms", "cs.ch10.assignment", "cs.ch10.loop_structures", "cs.ch10.standard_actions", "cs.ch10.examples_of_algorithms_in_pseudocode", "cs.ch10.standard_flowchart_symbols"]}, {"name": "Functions & Graphs", "color": "#eab308", "nodeIds": ["cs.ch3.the_function_of_the_six_logic_gates"]}, {"name": "Perimeter, Area & Volume", "color": "#84cc16", "nodeIds": ["cs.ch4.operating_systems", "cs.ch4.interrupts", "cs.ch4.computer_architecture", "cs.ch4.the_fetch_execute_cycle"]}, {"name": "Money & Finance", "color": "#22c55e", "nodeIds": ["cs.ch6.lossless_and_lossy_file_compression", "cs.ch8.loss_of_data_and_data_corruption"]}, {"name": "Measurement", "color": "#10b981", "nodeIds": ["cs.ch7.programming_languages", "cs.ch11.programming", "cs.ch11.basic_data_types", "cs.ch11.how_to_make_your_program_work"]}, {"name": "Probability", "color": "#14b8a6", "nodeIds": ["cs.ch10.conditional_statements"]}, {"name": "Sets & Logic", "color": "#06b6d4", "nodeIds": ["cs.ch10.input_and_output_statements"]}, {"name": "Algebra", "color": "#0ea5e9", "nodeIds": ["cs.ch11.declaration_and_use_of_variables_and_constants"]}];
+const bookGroupsData = {"Other": [{"id": "igcse.cs.binary_hex", "name": "Binary Systems and Hexadecimal", "color": "#3b82f6", "order": 1}, {"id": "igcse.cs.communication", "name": "Communication and Internet Technologies", "color": "#6366f1", "order": 2}, {"id": "igcse.cs.logic", "name": "Logic Gates and Logic Circuits", "color": "#8b5cf6", "order": 3}, {"id": "igcse.cs.os_architecture", "name": "Operating Systems and Computer Architecture", "color": "#7c3aed", "order": 4}, {"id": "igcse.cs.io_devices", "name": "Input and Output Devices", "color": "#2563eb", "order": 5}, {"id": "igcse.cs.languages", "name": "High- and Low-level Languages", "color": "#7e22ce", "order": 7}, {"id": "igcse.cs.security_ethics", "name": "Security and Ethics", "color": "#6d28d9", "order": 8}, {"id": "igcse.cs.problem_solving", "name": "Problem-solving and Design", "color": "#1d4ed8", "order": 9}, {"id": "igcse.cs.pseudocode_flowcharts", "name": "Pseudocode and Flowcharts", "color": "#4338ca", "order": 10}, {"id": "igcse.cs.programming", "name": "Programming Concepts", "color": "#5b21b6", "order": 11}], "IGCSE Math Core+Extended": [{"id": "igcse.cs.memory_storage", "name": "Memory and Data Storage", "color": "#4f46e5", "order": 6}, {"id": "igcse.cs.data_structures", "name": "Data Structures: Arrays and Using Pre-release Material", "color": "#3730a3", "order": 12}, {"id": "igcse.cs.databases", "name": "Databases", "color": "#1e3a8a", "order": 13}]};
 
 // State
 const activeBooks = new Set(booksData.map(b => b.id));
@@ -915,18 +712,4 @@ document.addEventListener('keydown', e => {
 renderGraph();
 </script>
 </body>
-</html>"""
-
-    with open(output_path, "w") as f:
-        f.write(html)
-
-    print(f"  {name}: {len(d3_nodes)} nodes, {len(d3_edges)} edges → {config['output']}")
-
-
-if __name__ == "__main__":
-    targets = sys.argv[1:] if len(sys.argv) > 1 else list(GRAPHS.keys())
-    for name in targets:
-        if name not in GRAPHS:
-            print(f"Unknown graph: {name}. Available: {', '.join(GRAPHS.keys())}")
-            continue
-        generate(name, GRAPHS[name])
+</html>

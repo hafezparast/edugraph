@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduGraph — IGCSE Biology</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #08090e;
+  --surface: rgba(12,14,24,0.94);
+  --border: rgba(255,255,255,0.06);
+  --text: #e8e4dc;
+  --text2: #8a8697;
+  --text3: #55516a;
+  --gold: #ffc857;
+  --topbar: 52px;
+  --sidebar: 230px;
+  --detail: 300px;
+}
+html, body { height: 100%; background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 13px; overflow: hidden; }
+
+/* Grain */
+body::after { content: ''; position: fixed; inset: 0; opacity: 0.035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9999; }
+
+/* Topbar */
+.topbar { position: fixed; top: 0; left: 0; right: 0; height: var(--topbar); display: flex; align-items: center; justify-content: space-between; padding: 0 18px; background: rgba(8,9,14,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); z-index: 200; }
+.topbar-left { display: flex; align-items: baseline; gap: 12px; }
+.topbar h1 { font-family: 'Instrument Serif', serif; font-size: 22px; font-weight: 400; color: var(--gold); }
+.topbar .sub { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; }
+.topbar-right { display: flex; align-items: center; gap: 6px; }
+.stats { display: flex; gap: 14px; margin-right: 12px; }
+.stat-n { font-family: 'Instrument Serif', serif; font-size: 17px; color: var(--gold); }
+.stat-l { font-size: 9px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; margin-left: 3px; }
+.nav-btn { background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text2); padding: 4px 10px; border-radius: 5px; font-size: 10px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.15s; }
+.nav-btn:hover { background: rgba(255,200,87,0.08); border-color: rgba(255,200,87,0.15); color: var(--gold); }
+
+/* Sidebar */
+.sidebar { position: fixed; top: var(--topbar); left: 0; bottom: 0; width: var(--sidebar); background: var(--surface); border-right: 1px solid var(--border); overflow-y: auto; z-index: 100; padding: 12px; display: flex; flex-direction: column; gap: 10px; }
+.sidebar::-webkit-scrollbar { width: 3px; }
+.sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
+.sec-title { font-family: 'Instrument Serif', serif; font-size: 13px; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.sec-title::before { content: ''; width: 2px; height: 11px; background: var(--gold); border-radius: 1px; }
+
+.search-box { width: 100%; padding: 7px 10px 7px 28px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 12px; outline: none; }
+.search-box::placeholder { color: var(--text3); }
+.search-box:focus { border-color: rgba(255,200,87,0.25); }
+.search-wrap { position: relative; }
+.search-wrap::before { content: '⌕'; position: absolute; left: 9px; top: 50%; transform: translateY(-50%); color: var(--text3); font-size: 13px; }
+
+/* Tabs */
+.tab-bar { display: flex; gap: 0; margin-bottom: 8px; border-bottom: 1px solid var(--border); }
+.tab-btn { flex: 1; background: none; border: none; border-bottom: 2px solid transparent; color: var(--text3); padding: 6px 4px; font-size: 10px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-transform: uppercase; letter-spacing: 0.8px; transition: all 0.15s; }
+.tab-btn:hover { color: var(--text2); }
+.tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+.book-btns { display: flex; gap: 3px; margin-bottom: 6px; }
+.book-btn { flex: 1; background: rgba(255,255,255,0.03); border: 1px solid var(--border); color: var(--text3); padding: 3px; border-radius: 4px; font-size: 9px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
+.book-btn:hover { color: var(--text2); }
+
+/* Collapsible groups */
+.group-header { display: flex; align-items: center; gap: 5px; padding: 5px 4px; cursor: pointer; user-select: none; border-radius: 4px; margin-top: 4px; transition: background 0.12s; }
+.group-header:hover { background: rgba(255,255,255,0.03); }
+.group-arrow { font-size: 8px; color: var(--text3); transition: transform 0.2s; width: 12px; text-align: center; }
+.group-header.collapsed .group-arrow { transform: rotate(-90deg); }
+.group-label { font-size: 10px; color: var(--text2); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; flex: 1; }
+.group-cnt { font-size: 9px; color: var(--text3); }
+.group-body { overflow: hidden; transition: max-height 0.25s ease; }
+.group-header.collapsed + .group-body { max-height: 0 !important; overflow: hidden; }
+
+.book-list { display: flex; flex-direction: column; gap: 1px; }
+.book-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px 3px 16px; border-radius: 4px; cursor: pointer; transition: all 0.12s; user-select: none; }
+.book-item:hover { background: rgba(255,255,255,0.03); }
+.book-item.off { opacity: 0.2; }
+.book-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; transition: transform 0.15s; }
+.book-item:not(.off) .book-dot { box-shadow: 0 0 5px currentColor; }
+.book-name { font-size: 10px; color: var(--text2); flex: 1; }
+.book-item:not(.off) .book-name { color: var(--text); }
+.book-cnt { font-size: 9px; color: var(--text3); }
+
+/* Strand items */
+.strand-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px 3px 16px; border-radius: 4px; cursor: pointer; transition: all 0.12s; user-select: none; }
+.strand-item:hover { background: rgba(255,255,255,0.03); }
+.strand-item.off { opacity: 0.2; }
+.strand-dot { width: 7px; height: 7px; border-radius: 3px; flex-shrink: 0; }
+.strand-name { font-size: 10px; color: var(--text2); flex: 1; }
+.strand-item:not(.off) .strand-name { color: var(--text); }
+.strand-cnt { font-size: 9px; color: var(--text3); }
+
+.controls { padding-top: 8px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 6px; }
+.ctrl-row { display: flex; align-items: center; justify-content: space-between; }
+.ctrl-label { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; }
+.ctrl-slider { -webkit-appearance: none; width: 90px; height: 3px; background: rgba(255,255,255,0.1); border-radius: 2px; outline: none; }
+.ctrl-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; background: var(--gold); border-radius: 50%; cursor: pointer; }
+
+.hint { font-size: 9px; color: var(--text3); line-height: 1.6; padding-top: 8px; border-top: 1px solid var(--border); }
+.hint b { color: var(--text2); font-weight: 500; }
+
+/* Graph SVG */
+#graph-container { position: fixed; top: var(--topbar); left: var(--sidebar); right: 0; bottom: 0; transition: right 0.3s; }
+#graph-container.detail-open { right: var(--detail); }
+svg { width: 100%; height: 100%; display: block; }
+
+/* Detail panel */
+.detail { position: fixed; top: var(--topbar); right: calc(-1 * var(--detail)); bottom: 0; width: var(--detail); background: var(--surface); border-left: 1px solid var(--border); z-index: 100; overflow-y: auto; padding: 20px 16px; transition: right 0.3s; }
+.detail.open { right: 0; }
+.detail::-webkit-scrollbar { width: 3px; }
+.detail::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
+.detail-close { position: absolute; top: 12px; right: 12px; width: 24px; height: 24px; border-radius: 5px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text3); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+.detail-close:hover { color: var(--text); }
+.detail-badge { display: inline-flex; align-items: center; gap: 5px; padding: 2px 8px; border-radius: 12px; font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+.detail-pages { display: inline-block; padding: 3px 10px; border-radius: 5px; font-family: 'Instrument Serif', serif; font-size: 16px; background: rgba(255,200,87,0.08); color: var(--gold); border: 1px solid rgba(255,200,87,0.12); margin-bottom: 10px; }
+.detail-title { font-family: 'Instrument Serif', serif; font-size: 20px; line-height: 1.2; margin-bottom: 14px; }
+.conn-section { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
+.conn-head { font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text3); margin-bottom: 6px; }
+.conn-head.prereq { color: #e07a5f; }
+.conn-head.leads { color: #81b29a; }
+.conn-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px; border-radius: 4px; cursor: pointer; transition: background 0.12s; }
+.conn-item:hover { background: rgba(255,255,255,0.04); }
+.conn-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+.conn-label { font-size: 11px; color: var(--text2); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.conn-book { font-size: 8px; color: var(--text3); flex-shrink: 0; }
+
+@media (max-width: 800px) {
+  .sidebar { display: none; }
+  :root { --sidebar: 0px; }
+  .topbar .sub, .stats { display: none; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <h1>EduGraph</h1>
+    <span class="sub">Cambridge 0610</span>
+  </div>
+  <div class="topbar-right">
+    <div class="stats">
+      <span><span class="stat-n" id="s-nodes">0</span><span class="stat-l">nodes</span></span>
+      <span><span class="stat-n" id="s-edges">0</span><span class="stat-l">edges</span></span>
+    </div>
+    <a href="index.html" class="nav-btn">Home</a>
+  </div>
+</header>
+
+<aside class="sidebar">
+  <div class="search-wrap">
+    <input type="text" class="search-box" id="search" placeholder="Search topics..." autocomplete="off">
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="grades">Grades</button>
+    <button class="tab-btn" data-tab="topics">Topics</button>
+    <button class="tab-btn" data-tab="forces">Forces</button>
+  </div>
+
+  <!-- Grades Tab -->
+  <div class="tab-content active" id="tab-grades">
+    <div class="book-btns">
+      <button class="book-btn" id="b-all">All</button>
+      <button class="book-btn" id="b-none">None</button>
+    </div>
+    <div id="grades-list"></div>
+  </div>
+
+  <!-- Topics Tab -->
+  <div class="tab-content" id="tab-topics">
+    <div class="book-btns">
+      <button class="book-btn" id="t-all">All</button>
+      <button class="book-btn" id="t-none">None</button>
+    </div>
+    <div id="topics-list"></div>
+  </div>
+
+  <!-- Forces Tab -->
+  <div class="tab-content" id="tab-forces">
+    <div class="sec-title">Physics</div>
+    <div class="controls">
+      <div class="ctrl-row">
+        <span class="ctrl-label">Repulsion</span>
+        <input type="range" class="ctrl-slider" id="sl-charge" min="-600" max="-20" value="-120">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Link Dist</span>
+        <input type="range" class="ctrl-slider" id="sl-dist" min="15" max="200" value="55">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Gravity</span>
+        <input type="range" class="ctrl-slider" id="sl-gravity" min="0" max="100" value="8">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Collision</span>
+        <input type="range" class="ctrl-slider" id="sl-collide" min="1" max="30" value="10">
+      </div>
+    </div>
+    <div class="hint">
+      <b>Drag</b> nodes — physics responds live<br>
+      <b>Scroll</b> to zoom, drag canvas to pan<br>
+      <b>Click</b> node for details &amp; neighbors<br>
+      <b>Sliders</b> tune forces in real-time
+    </div>
+  </div>
+</aside>
+
+<div id="graph-container">
+  <svg id="svg"></svg>
+</div>
+
+<div class="detail" id="detail">
+  <button class="detail-close" id="detail-close">✕</button>
+  <div id="detail-content"></div>
+</div>
+
+<script>
+const rawNodes = [{"id": "bio.ch1.characteristics_of_living_organisms", "label": "Characteristics of living organisms", "color": "#d9f99d", "book": "igcse.bio.ch1_classification", "bookName": "Characteristics and classification of living organisms", "bookOrder": 1, "r": 4.8, "pages": "1", "description": "Characteristics of living organisms \u2014 Characteristics and classification of living organisms (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch1.concept_and_use_of_a_classification_system", "label": "Concept and use of a classification system", "color": "#d9f99d", "book": "igcse.bio.ch1_classification", "bookName": "Characteristics and classification of living organisms", "bookOrder": 1, "r": 4.8, "pages": "2-5", "description": "Concept and use of a classification system \u2014 Characteristics and classification of living organisms (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch1.features_of_organisms", "label": "Features of organisms", "color": "#d9f99d", "book": "igcse.bio.ch1_classification", "bookName": "Characteristics and classification of living organisms", "bookOrder": 1, "r": 4.8, "pages": "6-20", "description": "Features of organisms \u2014 Characteristics and classification of living organisms (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch1.dichotomous_keys", "label": "Dichotomous keys", "color": "#d9f99d", "book": "igcse.bio.ch1_classification", "bookName": "Characteristics and classification of living organisms", "bookOrder": 1, "r": 4.8, "pages": "21-23", "description": "Dichotomous keys \u2014 Characteristics and classification of living organisms (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch2.cell_structure_and_organisation", "label": "Cell structure and organisation", "color": "#bef264", "book": "igcse.bio.ch2_cell_structure", "bookName": "Organisation and maintenance of the organism", "bookOrder": 2, "r": 5.6, "pages": "24-28", "description": "Cell structure and organisation \u2014 Organisation and maintenance of the organism (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch2.levels_of_organisation", "label": "Levels of organisation", "color": "#bef264", "book": "igcse.bio.ch2_cell_structure", "bookName": "Organisation and maintenance of the organism", "bookOrder": 2, "r": 5.6, "pages": "29-32", "description": "Levels of organisation \u2014 Organisation and maintenance of the organism (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch2.size_of_specimens", "label": "Size of specimens", "color": "#bef264", "book": "igcse.bio.ch2_cell_structure", "bookName": "Organisation and maintenance of the organism", "bookOrder": 2, "r": 5.6, "pages": "33-35", "description": "Size of specimens \u2014 Organisation and maintenance of the organism (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch3.diffusion", "label": "Diffusion", "color": "#a3e635", "book": "igcse.bio.ch3_movement_cells", "bookName": "Movement in and out of cells", "bookOrder": 3, "r": 6.4, "pages": "36-39", "description": "Diffusion \u2014 Movement in and out of cells (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch3.osmosis", "label": "Osmosis", "color": "#a3e635", "book": "igcse.bio.ch3_movement_cells", "bookName": "Movement in and out of cells", "bookOrder": 3, "r": 6.4, "pages": "40-47", "description": "Osmosis \u2014 Movement in and out of cells (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch3.active_transport", "label": "Active transport", "color": "#a3e635", "book": "igcse.bio.ch3_movement_cells", "bookName": "Movement in and out of cells", "bookOrder": 3, "r": 6.4, "pages": "48-50", "description": "Active transport \u2014 Movement in and out of cells (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch4.biological_molecules", "label": "Biological molecules", "color": "#84cc16", "book": "igcse.bio.ch4_biological_molecules", "bookName": "Biological molecules", "bookOrder": 4, "r": 7.2, "pages": "51-52", "description": "Biological molecules \u2014 Biological molecules (IGCSE Biology)", "strand": "Sets & Logic"}, {"id": "bio.ch4.proteins", "label": "Proteins", "color": "#84cc16", "book": "igcse.bio.ch4_biological_molecules", "bookName": "Biological molecules", "bookOrder": 4, "r": 7.2, "pages": "53", "description": "Proteins \u2014 Biological molecules (IGCSE Biology)", "strand": "Sets & Logic"}, {"id": "bio.ch4.structure_of_dna", "label": "Structure of DNA", "color": "#84cc16", "book": "igcse.bio.ch4_biological_molecules", "bookName": "Biological molecules", "bookOrder": 4, "r": 7.2, "pages": "54", "description": "Structure of DNA \u2014 Biological molecules (IGCSE Biology)", "strand": "Sets & Logic"}, {"id": "bio.ch4.water", "label": "Water", "color": "#84cc16", "book": "igcse.bio.ch4_biological_molecules", "bookName": "Biological molecules", "bookOrder": 4, "r": 7.2, "pages": "55-58", "description": "Water \u2014 Biological molecules (IGCSE Biology)", "strand": "Sets & Logic"}, {"id": "bio.ch5.enzyme_action", "label": "Enzyme action", "color": "#65a30d", "book": "igcse.bio.ch5_enzymes", "bookName": "Enzymes", "bookOrder": 5, "r": 8.0, "pages": "59-65", "description": "Enzyme action \u2014 Enzymes (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch6.photosynthesis", "label": "Photosynthesis", "color": "#86efac", "book": "igcse.bio.ch6_plant_nutrition", "bookName": "Plant nutrition", "bookOrder": 6, "r": 8.8, "pages": "66-76", "description": "Photosynthesis \u2014 Plant nutrition (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch6.leaf_structure", "label": "Leaf structure", "color": "#86efac", "book": "igcse.bio.ch6_plant_nutrition", "bookName": "Plant nutrition", "bookOrder": 6, "r": 8.8, "pages": "77-80", "description": "Leaf structure \u2014 Plant nutrition (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch6.mineral_requirements", "label": "Mineral requirements", "color": "#86efac", "book": "igcse.bio.ch6_plant_nutrition", "bookName": "Plant nutrition", "bookOrder": 6, "r": 8.8, "pages": "81-85", "description": "Mineral requirements \u2014 Plant nutrition (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch7.diet", "label": "Diet", "color": "#4ade80", "book": "igcse.bio.ch7_human_nutrition", "bookName": "Human nutrition", "bookOrder": 7, "r": 9.600000000000001, "pages": "86-94", "description": "Diet \u2014 Human nutrition (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch7.alimentary_canal", "label": "Alimentary canal", "color": "#4ade80", "book": "igcse.bio.ch7_human_nutrition", "bookName": "Human nutrition", "bookOrder": 7, "r": 9.600000000000001, "pages": "95-97", "description": "Alimentary canal \u2014 Human nutrition (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch7.mechanical_digestion", "label": "Mechanical digestion", "color": "#4ade80", "book": "igcse.bio.ch7_human_nutrition", "bookName": "Human nutrition", "bookOrder": 7, "r": 9.600000000000001, "pages": "98-99", "description": "Mechanical digestion \u2014 Human nutrition (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch7.chemical_digestion", "label": "Chemical digestion", "color": "#4ade80", "book": "igcse.bio.ch7_human_nutrition", "bookName": "Human nutrition", "bookOrder": 7, "r": 9.600000000000001, "pages": "100-102", "description": "Chemical digestion \u2014 Human nutrition (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch7.absorption", "label": "Absorption", "color": "#4ade80", "book": "igcse.bio.ch7_human_nutrition", "bookName": "Human nutrition", "bookOrder": 7, "r": 9.600000000000001, "pages": "103-109", "description": "Absorption \u2014 Human nutrition (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch8.transport_in_plants", "label": "Transport in plants", "color": "#22c55e", "book": "igcse.bio.ch8_transport_plants", "bookName": "Transport in plants", "bookOrder": 8, "r": 10.4, "pages": "110-113", "description": "Transport in plants \u2014 Transport in plants (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch8.water_uptake", "label": "Water uptake", "color": "#22c55e", "book": "igcse.bio.ch8_transport_plants", "bookName": "Transport in plants", "bookOrder": 8, "r": 10.4, "pages": "114-115", "description": "Water uptake \u2014 Transport in plants (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch8.transpiration", "label": "Transpiration", "color": "#22c55e", "book": "igcse.bio.ch8_transport_plants", "bookName": "Transport in plants", "bookOrder": 8, "r": 10.4, "pages": "116-120", "description": "Transpiration \u2014 Transport in plants (IGCSE Biology)", "strand": "Ratio & Proportion"}, {"id": "bio.ch8.translocation", "label": "Translocation", "color": "#22c55e", "book": "igcse.bio.ch8_transport_plants", "bookName": "Transport in plants", "bookOrder": 8, "r": 10.4, "pages": "121-123", "description": "Translocation \u2014 Transport in plants (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch9.transport_in_animals", "label": "Transport in animals", "color": "#16a34a", "book": "igcse.bio.ch9_transport_animals", "bookName": "Transport in animals", "bookOrder": 9, "r": 11.2, "pages": "124", "description": "Transport in animals \u2014 Transport in animals (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch9.heart", "label": "Heart", "color": "#16a34a", "book": "igcse.bio.ch9_transport_animals", "bookName": "Transport in animals", "bookOrder": 9, "r": 11.2, "pages": "125-131", "description": "Heart \u2014 Transport in animals (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch9.blood_and_lymphatic_vessels", "label": "Blood and lymphatic vessels", "color": "#16a34a", "book": "igcse.bio.ch9_transport_animals", "bookName": "Transport in animals", "bookOrder": 9, "r": 11.2, "pages": "132-135", "description": "Blood and lymphatic vessels \u2014 Transport in animals (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch9.blood", "label": "Blood", "color": "#16a34a", "book": "igcse.bio.ch9_transport_animals", "bookName": "Transport in animals", "bookOrder": 9, "r": 11.2, "pages": "136-141", "description": "Blood \u2014 Transport in animals (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch10.pathogens_and_transmission", "label": "Pathogens and transmission", "color": "#15803d", "book": "igcse.bio.ch10_diseases", "bookName": "Diseases and immunity", "bookOrder": 10, "r": 12.0, "pages": "142-147", "description": "Pathogens and transmission \u2014 Diseases and immunity (IGCSE Biology)", "strand": "Measurement"}, {"id": "bio.ch10.defences_against_diseases", "label": "Defences against diseases", "color": "#15803d", "book": "igcse.bio.ch10_diseases", "bookName": "Diseases and immunity", "bookOrder": 10, "r": 12.0, "pages": "148-155", "description": "Defences against diseases \u2014 Diseases and immunity (IGCSE Biology)", "strand": "Measurement"}, {"id": "bio.ch11.gas_exchange_in_humans", "label": "Gas exchange in humans", "color": "#a7f3d0", "book": "igcse.bio.ch11_gas_exchange", "bookName": "Gas exchange in humans", "bookOrder": 11, "r": 12.8, "pages": "156-164", "description": "Gas exchange in humans \u2014 Gas exchange in humans (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch12.respiration", "label": "Respiration", "color": "#6ee7b7", "book": "igcse.bio.ch12_respiration", "bookName": "Respiration", "bookOrder": 12, "r": 13.600000000000001, "pages": "165", "description": "Respiration \u2014 Respiration (IGCSE Biology)", "strand": "Ratio & Proportion"}, {"id": "bio.ch12.aerobic_respiration", "label": "Aerobic respiration", "color": "#6ee7b7", "book": "igcse.bio.ch12_respiration", "bookName": "Respiration", "bookOrder": 12, "r": 13.600000000000001, "pages": "165-168", "description": "Aerobic respiration \u2014 Respiration (IGCSE Biology)", "strand": "Ratio & Proportion"}, {"id": "bio.ch12.anaerobic_respiration", "label": "Anaerobic respiration", "color": "#6ee7b7", "book": "igcse.bio.ch12_respiration", "bookName": "Respiration", "bookOrder": 12, "r": 13.600000000000001, "pages": "169-173", "description": "Anaerobic respiration \u2014 Respiration (IGCSE Biology)", "strand": "Ratio & Proportion"}, {"id": "bio.ch13.excretion", "label": "Excretion", "color": "#34d399", "book": "igcse.bio.ch13_excretion", "bookName": "Excretion in humans", "bookOrder": 13, "r": 14.4, "pages": "174-179", "description": "Excretion \u2014 Excretion in humans (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch14.nervous_control_in_humans", "label": "Nervous control in humans", "color": "#10b981", "book": "igcse.bio.ch14_coordination", "bookName": "Co-ordination and response", "bookOrder": 14, "r": 15.200000000000001, "pages": "181-185", "description": "Nervous control in humans \u2014 Co-ordination and response (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch14.sense_organs", "label": "Sense organs", "color": "#10b981", "book": "igcse.bio.ch14_coordination", "bookName": "Co-ordination and response", "bookOrder": 14, "r": 15.200000000000001, "pages": "186-189", "description": "Sense organs \u2014 Co-ordination and response (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch14.hormones_in_humans", "label": "Hormones in humans", "color": "#10b981", "book": "igcse.bio.ch14_coordination", "bookName": "Co-ordination and response", "bookOrder": 14, "r": 15.200000000000001, "pages": "190-191", "description": "Hormones in humans \u2014 Co-ordination and response (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch14.homeostasis", "label": "Homeostasis", "color": "#10b981", "book": "igcse.bio.ch14_coordination", "bookName": "Co-ordination and response", "bookOrder": 14, "r": 15.200000000000001, "pages": "192-196", "description": "Homeostasis \u2014 Co-ordination and response (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch14.tropic_responses", "label": "Tropic responses", "color": "#10b981", "book": "igcse.bio.ch14_coordination", "bookName": "Co-ordination and response", "bookOrder": 14, "r": 15.200000000000001, "pages": "197-204", "description": "Tropic responses \u2014 Co-ordination and response (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch15.drugs", "label": "Drugs", "color": "#059669", "book": "igcse.bio.ch15_drugs", "bookName": "Drugs", "bookOrder": 15, "r": 16.0, "pages": "205", "description": "Drugs \u2014 Drugs (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch15.medicinal_drugs", "label": "Medicinal drugs", "color": "#059669", "book": "igcse.bio.ch15_drugs", "bookName": "Drugs", "bookOrder": 15, "r": 16.0, "pages": "205-206", "description": "Medicinal drugs \u2014 Drugs (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch15.misused_drugs", "label": "Misused drugs", "color": "#059669", "book": "igcse.bio.ch15_drugs", "bookName": "Drugs", "bookOrder": 15, "r": 16.0, "pages": "207-212", "description": "Misused drugs \u2014 Drugs (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch16.asexual_reproduction", "label": "Asexual reproduction", "color": "#047857", "book": "igcse.bio.ch16_reproduction", "bookName": "Reproduction", "bookOrder": 16, "r": 16.8, "pages": "213-218", "description": "Asexual reproduction \u2014 Reproduction (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch16.sexual_reproduction", "label": "Sexual reproduction", "color": "#047857", "book": "igcse.bio.ch16_reproduction", "bookName": "Reproduction", "bookOrder": 16, "r": 16.8, "pages": "219-220", "description": "Sexual reproduction \u2014 Reproduction (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch16.sexual_reproduction_in_plants", "label": "Sexual reproduction in plants", "color": "#047857", "book": "igcse.bio.ch16_reproduction", "bookName": "Reproduction", "bookOrder": 16, "r": 16.8, "pages": "221-231", "description": "Sexual reproduction in plants \u2014 Reproduction (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch16.sexual_reproduction_in_humans", "label": "Sexual reproduction in humans", "color": "#047857", "book": "igcse.bio.ch16_reproduction", "bookName": "Reproduction", "bookOrder": 16, "r": 16.8, "pages": "232-240", "description": "Sexual reproduction in humans \u2014 Reproduction (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch16.sex_hormones_in_humans", "label": "Sex hormones in humans", "color": "#047857", "book": "igcse.bio.ch16_reproduction", "bookName": "Reproduction", "bookOrder": 16, "r": 16.8, "pages": "241-242", "description": "Sex hormones in humans \u2014 Reproduction (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch16.methods_of_birth_control_in_humans", "label": "Methods of birth control in humans", "color": "#047857", "book": "igcse.bio.ch16_reproduction", "bookName": "Reproduction", "bookOrder": 16, "r": 16.8, "pages": "243-244", "description": "Methods of birth control in humans \u2014 Reproduction (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch16.sexually_transmitted_infections_stis", "label": "Sexually transmitted infections (STIs)", "color": "#047857", "book": "igcse.bio.ch16_reproduction", "bookName": "Reproduction", "bookOrder": 16, "r": 16.8, "pages": "245-249", "description": "Sexually transmitted infections (STIs) \u2014 Reproduction (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch17.inheritance", "label": "Inheritance", "color": "#065f46", "book": "igcse.bio.ch17_inheritance", "bookName": "Inheritance", "bookOrder": 17, "r": 17.6, "pages": "250", "description": "Inheritance \u2014 Inheritance (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch17.chromosomes_genes_and_proteins", "label": "Chromosomes, genes and proteins", "color": "#065f46", "book": "igcse.bio.ch17_inheritance", "bookName": "Inheritance", "bookOrder": 17, "r": 17.6, "pages": "250-253", "description": "Chromosomes, genes and proteins \u2014 Inheritance (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch17.mitosis", "label": "Mitosis", "color": "#065f46", "book": "igcse.bio.ch17_inheritance", "bookName": "Inheritance", "bookOrder": 17, "r": 17.6, "pages": "254", "description": "Mitosis \u2014 Inheritance (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch17.meiosis", "label": "Meiosis", "color": "#065f46", "book": "igcse.bio.ch17_inheritance", "bookName": "Inheritance", "bookOrder": 17, "r": 17.6, "pages": "255-258", "description": "Meiosis \u2014 Inheritance (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch17.monohybrid_inheritance", "label": "Monohybrid inheritance", "color": "#065f46", "book": "igcse.bio.ch17_inheritance", "bookName": "Inheritance", "bookOrder": 17, "r": 17.6, "pages": "259-269", "description": "Monohybrid inheritance \u2014 Inheritance (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch18.variation", "label": "Variation", "color": "#064e3b", "book": "igcse.bio.ch18_variation_selection", "bookName": "Variation and selection", "bookOrder": 18, "r": 18.4, "pages": "270-273", "description": "Variation \u2014 Variation and selection (IGCSE Biology)", "strand": "Ratio & Proportion"}, {"id": "bio.ch18.adaptive_features", "label": "Adaptive features", "color": "#064e3b", "book": "igcse.bio.ch18_variation_selection", "bookName": "Variation and selection", "bookOrder": 18, "r": 18.4, "pages": "274-278", "description": "Adaptive features \u2014 Variation and selection (IGCSE Biology)", "strand": "Ratio & Proportion"}, {"id": "bio.ch18.selection", "label": "Selection", "color": "#064e3b", "book": "igcse.bio.ch18_variation_selection", "bookName": "Variation and selection", "bookOrder": 18, "r": 18.4, "pages": "279-283", "description": "Selection \u2014 Variation and selection (IGCSE Biology)", "strand": "Ratio & Proportion"}, {"id": "bio.ch19.energy_flow", "label": "Energy flow", "color": "#bbf7d0", "book": "igcse.bio.ch19_organisms_environment", "bookName": "Organisms and their environment", "bookOrder": 19, "r": 19.200000000000003, "pages": "284", "description": "Energy flow \u2014 Organisms and their environment (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch19.food_chains_and_food_webs", "label": "Food chains and food webs", "color": "#bbf7d0", "book": "igcse.bio.ch19_organisms_environment", "bookName": "Organisms and their environment", "bookOrder": 19, "r": 19.200000000000003, "pages": "285-291", "description": "Food chains and food webs \u2014 Organisms and their environment (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch19.nutrient_cycles", "label": "Nutrient cycles", "color": "#bbf7d0", "book": "igcse.bio.ch19_organisms_environment", "bookName": "Organisms and their environment", "bookOrder": 19, "r": 19.200000000000003, "pages": "292-295", "description": "Nutrient cycles \u2014 Organisms and their environment (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch19.population_size", "label": "Population size", "color": "#bbf7d0", "book": "igcse.bio.ch19_organisms_environment", "bookName": "Organisms and their environment", "bookOrder": 19, "r": 19.200000000000003, "pages": "296-304", "description": "Population size \u2014 Organisms and their environment (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch20.biotechnology_and_genetic_engineering", "label": "Biotechnology and genetic engineering", "color": "#4d7c0f", "book": "igcse.bio.ch20_biotechnology", "bookName": "Biotechnology and genetic engineering", "bookOrder": 20, "r": 20.0, "pages": "305", "description": "Biotechnology and genetic engineering \u2014 Biotechnology and genetic engineering (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch20.biotechnology", "label": "Biotechnology", "color": "#4d7c0f", "book": "igcse.bio.ch20_biotechnology", "bookName": "Biotechnology and genetic engineering", "bookOrder": 20, "r": 20.0, "pages": "305-309", "description": "Biotechnology \u2014 Biotechnology and genetic engineering (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch20.genetic_engineering", "label": "Genetic engineering", "color": "#4d7c0f", "book": "igcse.bio.ch20_biotechnology", "bookName": "Biotechnology and genetic engineering", "bookOrder": 20, "r": 20.0, "pages": "310-315", "description": "Genetic engineering \u2014 Biotechnology and genetic engineering (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch21.food_supply", "label": "Food supply", "color": "#365314", "book": "igcse.bio.ch21_human_influences", "bookName": "Human influences on ecosystems", "bookOrder": 21, "r": 20.0, "pages": "316-319", "description": "Food supply \u2014 Human influences on ecosystems (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch21.habitat_destruction", "label": "Habitat destruction", "color": "#365314", "book": "igcse.bio.ch21_human_influences", "bookName": "Human influences on ecosystems", "bookOrder": 21, "r": 20.0, "pages": "320-323", "description": "Habitat destruction \u2014 Human influences on ecosystems (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch21.pollution", "label": "Pollution", "color": "#365314", "book": "igcse.bio.ch21_human_influences", "bookName": "Human influences on ecosystems", "bookOrder": 21, "r": 20.0, "pages": "324-333", "description": "Pollution \u2014 Human influences on ecosystems (IGCSE Biology)", "strand": "Other"}, {"id": "bio.ch21.conservation", "label": "Conservation", "color": "#365314", "book": "igcse.bio.ch21_human_influences", "bookName": "Human influences on ecosystems", "bookOrder": 21, "r": 20.0, "pages": "334-346", "description": "Conservation \u2014 Human influences on ecosystems (IGCSE Biology)", "strand": "Other"}];
+const rawEdges = [{"source": "bio.ch1.characteristics_of_living_organisms", "target": "bio.ch1.concept_and_use_of_a_classification_system"}, {"source": "bio.ch1.concept_and_use_of_a_classification_system", "target": "bio.ch1.features_of_organisms"}, {"source": "bio.ch1.features_of_organisms", "target": "bio.ch1.dichotomous_keys"}, {"source": "bio.ch1.concept_and_use_of_a_classification_system", "target": "bio.ch2.cell_structure_and_organisation"}, {"source": "bio.ch2.cell_structure_and_organisation", "target": "bio.ch2.levels_of_organisation"}, {"source": "bio.ch2.cell_structure_and_organisation", "target": "bio.ch2.size_of_specimens"}, {"source": "bio.ch2.cell_structure_and_organisation", "target": "bio.ch3.diffusion"}, {"source": "bio.ch3.diffusion", "target": "bio.ch3.osmosis"}, {"source": "bio.ch3.diffusion", "target": "bio.ch3.active_transport"}, {"source": "bio.ch2.cell_structure_and_organisation", "target": "bio.ch4.biological_molecules"}, {"source": "bio.ch4.biological_molecules", "target": "bio.ch4.proteins"}, {"source": "bio.ch4.biological_molecules", "target": "bio.ch4.structure_of_dna"}, {"source": "bio.ch4.biological_molecules", "target": "bio.ch4.water"}, {"source": "bio.ch4.proteins", "target": "bio.ch5.enzyme_action"}, {"source": "bio.ch4.biological_molecules", "target": "bio.ch5.enzyme_action"}, {"source": "bio.ch2.cell_structure_and_organisation", "target": "bio.ch6.photosynthesis"}, {"source": "bio.ch5.enzyme_action", "target": "bio.ch6.photosynthesis"}, {"source": "bio.ch2.levels_of_organisation", "target": "bio.ch6.leaf_structure"}, {"source": "bio.ch6.photosynthesis", "target": "bio.ch6.leaf_structure"}, {"source": "bio.ch3.active_transport", "target": "bio.ch6.mineral_requirements"}, {"source": "bio.ch6.photosynthesis", "target": "bio.ch6.mineral_requirements"}, {"source": "bio.ch4.biological_molecules", "target": "bio.ch7.diet"}, {"source": "bio.ch2.cell_structure_and_organisation", "target": "bio.ch7.alimentary_canal"}, {"source": "bio.ch7.diet", "target": "bio.ch7.alimentary_canal"}, {"source": "bio.ch7.alimentary_canal", "target": "bio.ch7.mechanical_digestion"}, {"source": "bio.ch5.enzyme_action", "target": "bio.ch7.chemical_digestion"}, {"source": "bio.ch7.mechanical_digestion", "target": "bio.ch7.chemical_digestion"}, {"source": "bio.ch7.chemical_digestion", "target": "bio.ch7.absorption"}, {"source": "bio.ch3.diffusion", "target": "bio.ch7.absorption"}, {"source": "bio.ch2.cell_structure_and_organisation", "target": "bio.ch8.transport_in_plants"}, {"source": "bio.ch3.osmosis", "target": "bio.ch8.water_uptake"}, {"source": "bio.ch8.transport_in_plants", "target": "bio.ch8.water_uptake"}, {"source": "bio.ch8.water_uptake", "target": "bio.ch8.transpiration"}, {"source": "bio.ch6.photosynthesis", "target": "bio.ch8.translocation"}, {"source": "bio.ch8.transport_in_plants", "target": "bio.ch8.translocation"}, {"source": "bio.ch2.cell_structure_and_organisation", "target": "bio.ch9.transport_in_animals"}, {"source": "bio.ch9.transport_in_animals", "target": "bio.ch9.heart"}, {"source": "bio.ch9.heart", "target": "bio.ch9.blood_and_lymphatic_vessels"}, {"source": "bio.ch9.blood_and_lymphatic_vessels", "target": "bio.ch9.blood"}, {"source": "bio.ch9.blood", "target": "bio.ch10.pathogens_and_transmission"}, {"source": "bio.ch10.pathogens_and_transmission", "target": "bio.ch10.defences_against_diseases"}, {"source": "bio.ch2.cell_structure_and_organisation", "target": "bio.ch11.gas_exchange_in_humans"}, {"source": "bio.ch3.diffusion", "target": "bio.ch11.gas_exchange_in_humans"}, {"source": "bio.ch4.biological_molecules", "target": "bio.ch12.respiration"}, {"source": "bio.ch5.enzyme_action", "target": "bio.ch12.respiration"}, {"source": "bio.ch12.respiration", "target": "bio.ch12.aerobic_respiration"}, {"source": "bio.ch12.respiration", "target": "bio.ch12.anaerobic_respiration"}, {"source": "bio.ch12.aerobic_respiration", "target": "bio.ch12.anaerobic_respiration"}, {"source": "bio.ch9.blood", "target": "bio.ch13.excretion"}, {"source": "bio.ch12.respiration", "target": "bio.ch13.excretion"}, {"source": "bio.ch2.cell_structure_and_organisation", "target": "bio.ch14.nervous_control_in_humans"}, {"source": "bio.ch14.nervous_control_in_humans", "target": "bio.ch14.sense_organs"}, {"source": "bio.ch14.nervous_control_in_humans", "target": "bio.ch14.hormones_in_humans"}, {"source": "bio.ch14.hormones_in_humans", "target": "bio.ch14.homeostasis"}, {"source": "bio.ch13.excretion", "target": "bio.ch14.homeostasis"}, {"source": "bio.ch14.hormones_in_humans", "target": "bio.ch14.tropic_responses"}, {"source": "bio.ch14.nervous_control_in_humans", "target": "bio.ch15.drugs"}, {"source": "bio.ch15.drugs", "target": "bio.ch15.medicinal_drugs"}, {"source": "bio.ch15.drugs", "target": "bio.ch15.misused_drugs"}, {"source": "bio.ch2.cell_structure_and_organisation", "target": "bio.ch16.asexual_reproduction"}, {"source": "bio.ch17.mitosis", "target": "bio.ch16.asexual_reproduction"}, {"source": "bio.ch16.asexual_reproduction", "target": "bio.ch16.sexual_reproduction"}, {"source": "bio.ch17.meiosis", "target": "bio.ch16.sexual_reproduction"}, {"source": "bio.ch16.sexual_reproduction", "target": "bio.ch16.sexual_reproduction_in_plants"}, {"source": "bio.ch16.sexual_reproduction", "target": "bio.ch16.sexual_reproduction_in_humans"}, {"source": "bio.ch16.sexual_reproduction_in_humans", "target": "bio.ch16.sex_hormones_in_humans"}, {"source": "bio.ch14.hormones_in_humans", "target": "bio.ch16.sex_hormones_in_humans"}, {"source": "bio.ch16.sex_hormones_in_humans", "target": "bio.ch16.methods_of_birth_control_in_humans"}, {"source": "bio.ch16.sexual_reproduction_in_humans", "target": "bio.ch16.sexually_transmitted_infections_stis"}, {"source": "bio.ch10.pathogens_and_transmission", "target": "bio.ch16.sexually_transmitted_infections_stis"}, {"source": "bio.ch4.structure_of_dna", "target": "bio.ch17.inheritance"}, {"source": "bio.ch17.inheritance", "target": "bio.ch17.chromosomes_genes_and_proteins"}, {"source": "bio.ch4.proteins", "target": "bio.ch17.chromosomes_genes_and_proteins"}, {"source": "bio.ch17.chromosomes_genes_and_proteins", "target": "bio.ch17.mitosis"}, {"source": "bio.ch17.mitosis", "target": "bio.ch17.meiosis"}, {"source": "bio.ch17.meiosis", "target": "bio.ch17.monohybrid_inheritance"}, {"source": "bio.ch17.monohybrid_inheritance", "target": "bio.ch18.variation"}, {"source": "bio.ch18.variation", "target": "bio.ch18.adaptive_features"}, {"source": "bio.ch18.variation", "target": "bio.ch18.selection"}, {"source": "bio.ch18.adaptive_features", "target": "bio.ch18.selection"}, {"source": "bio.ch6.photosynthesis", "target": "bio.ch19.energy_flow"}, {"source": "bio.ch12.respiration", "target": "bio.ch19.energy_flow"}, {"source": "bio.ch19.energy_flow", "target": "bio.ch19.food_chains_and_food_webs"}, {"source": "bio.ch19.food_chains_and_food_webs", "target": "bio.ch19.nutrient_cycles"}, {"source": "bio.ch19.food_chains_and_food_webs", "target": "bio.ch19.population_size"}, {"source": "bio.ch17.monohybrid_inheritance", "target": "bio.ch20.biotechnology_and_genetic_engineering"}, {"source": "bio.ch20.biotechnology_and_genetic_engineering", "target": "bio.ch20.biotechnology"}, {"source": "bio.ch5.enzyme_action", "target": "bio.ch20.biotechnology"}, {"source": "bio.ch20.biotechnology_and_genetic_engineering", "target": "bio.ch20.genetic_engineering"}, {"source": "bio.ch4.structure_of_dna", "target": "bio.ch20.genetic_engineering"}, {"source": "bio.ch19.population_size", "target": "bio.ch21.food_supply"}, {"source": "bio.ch19.food_chains_and_food_webs", "target": "bio.ch21.habitat_destruction"}, {"source": "bio.ch21.food_supply", "target": "bio.ch21.pollution"}, {"source": "bio.ch21.habitat_destruction", "target": "bio.ch21.pollution"}, {"source": "bio.ch21.pollution", "target": "bio.ch21.conservation"}, {"source": "bio.ch18.selection", "target": "bio.ch21.conservation"}];
+const booksData = [{"id": "igcse.bio.ch1_classification", "name": "Characteristics and classification of living organisms", "color": "#d9f99d", "order": 1}, {"id": "igcse.bio.ch2_cell_structure", "name": "Organisation and maintenance of the organism", "color": "#bef264", "order": 2}, {"id": "igcse.bio.ch3_movement_cells", "name": "Movement in and out of cells", "color": "#a3e635", "order": 3}, {"id": "igcse.bio.ch4_biological_molecules", "name": "Biological molecules", "color": "#84cc16", "order": 4}, {"id": "igcse.bio.ch5_enzymes", "name": "Enzymes", "color": "#65a30d", "order": 5}, {"id": "igcse.bio.ch6_plant_nutrition", "name": "Plant nutrition", "color": "#86efac", "order": 6}, {"id": "igcse.bio.ch7_human_nutrition", "name": "Human nutrition", "color": "#4ade80", "order": 7}, {"id": "igcse.bio.ch8_transport_plants", "name": "Transport in plants", "color": "#22c55e", "order": 8}, {"id": "igcse.bio.ch9_transport_animals", "name": "Transport in animals", "color": "#16a34a", "order": 9}, {"id": "igcse.bio.ch10_diseases", "name": "Diseases and immunity", "color": "#15803d", "order": 10}, {"id": "igcse.bio.ch11_gas_exchange", "name": "Gas exchange in humans", "color": "#a7f3d0", "order": 11}, {"id": "igcse.bio.ch12_respiration", "name": "Respiration", "color": "#6ee7b7", "order": 12}, {"id": "igcse.bio.ch13_excretion", "name": "Excretion in humans", "color": "#34d399", "order": 13}, {"id": "igcse.bio.ch14_coordination", "name": "Co-ordination and response", "color": "#10b981", "order": 14}, {"id": "igcse.bio.ch15_drugs", "name": "Drugs", "color": "#059669", "order": 15}, {"id": "igcse.bio.ch16_reproduction", "name": "Reproduction", "color": "#047857", "order": 16}, {"id": "igcse.bio.ch17_inheritance", "name": "Inheritance", "color": "#065f46", "order": 17}, {"id": "igcse.bio.ch18_variation_selection", "name": "Variation and selection", "color": "#064e3b", "order": 18}, {"id": "igcse.bio.ch19_organisms_environment", "name": "Organisms and their environment", "color": "#bbf7d0", "order": 19}, {"id": "igcse.bio.ch20_biotechnology", "name": "Biotechnology and genetic engineering", "color": "#4d7c0f", "order": 20}, {"id": "igcse.bio.ch21_human_influences", "name": "Human influences on ecosystems", "color": "#365314", "order": 21}];
+const strandsData = [{"name": "Other", "color": "#ef4444", "nodeIds": ["bio.ch1.characteristics_of_living_organisms", "bio.ch1.concept_and_use_of_a_classification_system", "bio.ch1.features_of_organisms", "bio.ch1.dichotomous_keys", "bio.ch2.cell_structure_and_organisation", "bio.ch2.levels_of_organisation", "bio.ch2.size_of_specimens", "bio.ch3.diffusion", "bio.ch3.osmosis", "bio.ch3.active_transport", "bio.ch5.enzyme_action", "bio.ch6.photosynthesis", "bio.ch6.leaf_structure", "bio.ch6.mineral_requirements", "bio.ch7.diet", "bio.ch7.alimentary_canal", "bio.ch7.mechanical_digestion", "bio.ch7.chemical_digestion", "bio.ch7.absorption", "bio.ch8.transport_in_plants", "bio.ch8.water_uptake", "bio.ch8.translocation", "bio.ch9.transport_in_animals", "bio.ch9.heart", "bio.ch9.blood_and_lymphatic_vessels", "bio.ch9.blood", "bio.ch11.gas_exchange_in_humans", "bio.ch13.excretion", "bio.ch14.nervous_control_in_humans", "bio.ch14.sense_organs", "bio.ch14.hormones_in_humans", "bio.ch14.homeostasis", "bio.ch14.tropic_responses", "bio.ch15.drugs", "bio.ch15.medicinal_drugs", "bio.ch15.misused_drugs", "bio.ch16.asexual_reproduction", "bio.ch16.sexual_reproduction", "bio.ch16.sexual_reproduction_in_plants", "bio.ch16.sexual_reproduction_in_humans", "bio.ch16.sex_hormones_in_humans", "bio.ch16.methods_of_birth_control_in_humans", "bio.ch16.sexually_transmitted_infections_stis", "bio.ch17.inheritance", "bio.ch17.chromosomes_genes_and_proteins", "bio.ch17.mitosis", "bio.ch17.meiosis", "bio.ch17.monohybrid_inheritance", "bio.ch19.energy_flow", "bio.ch19.food_chains_and_food_webs", "bio.ch19.nutrient_cycles", "bio.ch19.population_size", "bio.ch20.biotechnology_and_genetic_engineering", "bio.ch20.biotechnology", "bio.ch20.genetic_engineering", "bio.ch21.food_supply", "bio.ch21.habitat_destruction", "bio.ch21.pollution", "bio.ch21.conservation"]}, {"name": "Sets & Logic", "color": "#f97316", "nodeIds": ["bio.ch4.biological_molecules", "bio.ch4.proteins", "bio.ch4.structure_of_dna", "bio.ch4.water"]}, {"name": "Ratio & Proportion", "color": "#f59e0b", "nodeIds": ["bio.ch8.transpiration", "bio.ch12.respiration", "bio.ch12.aerobic_respiration", "bio.ch12.anaerobic_respiration", "bio.ch18.variation", "bio.ch18.adaptive_features", "bio.ch18.selection"]}, {"name": "Measurement", "color": "#eab308", "nodeIds": ["bio.ch10.pathogens_and_transmission", "bio.ch10.defences_against_diseases"]}];
+const bookGroupsData = {"Other": [{"id": "igcse.bio.ch1_classification", "name": "Characteristics and classification of living organisms", "color": "#d9f99d", "order": 1}, {"id": "igcse.bio.ch2_cell_structure", "name": "Organisation and maintenance of the organism", "color": "#bef264", "order": 2}, {"id": "igcse.bio.ch3_movement_cells", "name": "Movement in and out of cells", "color": "#a3e635", "order": 3}, {"id": "igcse.bio.ch4_biological_molecules", "name": "Biological molecules", "color": "#84cc16", "order": 4}, {"id": "igcse.bio.ch5_enzymes", "name": "Enzymes", "color": "#65a30d", "order": 5}, {"id": "igcse.bio.ch6_plant_nutrition", "name": "Plant nutrition", "color": "#86efac", "order": 6}, {"id": "igcse.bio.ch7_human_nutrition", "name": "Human nutrition", "color": "#4ade80", "order": 7}, {"id": "igcse.bio.ch8_transport_plants", "name": "Transport in plants", "color": "#22c55e", "order": 8}, {"id": "igcse.bio.ch9_transport_animals", "name": "Transport in animals", "color": "#16a34a", "order": 9}, {"id": "igcse.bio.ch10_diseases", "name": "Diseases and immunity", "color": "#15803d", "order": 10}, {"id": "igcse.bio.ch11_gas_exchange", "name": "Gas exchange in humans", "color": "#a7f3d0", "order": 11}, {"id": "igcse.bio.ch12_respiration", "name": "Respiration", "color": "#6ee7b7", "order": 12}, {"id": "igcse.bio.ch13_excretion", "name": "Excretion in humans", "color": "#34d399", "order": 13}, {"id": "igcse.bio.ch14_coordination", "name": "Co-ordination and response", "color": "#10b981", "order": 14}, {"id": "igcse.bio.ch15_drugs", "name": "Drugs", "color": "#059669", "order": 15}, {"id": "igcse.bio.ch16_reproduction", "name": "Reproduction", "color": "#047857", "order": 16}, {"id": "igcse.bio.ch17_inheritance", "name": "Inheritance", "color": "#065f46", "order": 17}, {"id": "igcse.bio.ch18_variation_selection", "name": "Variation and selection", "color": "#064e3b", "order": 18}, {"id": "igcse.bio.ch19_organisms_environment", "name": "Organisms and their environment", "color": "#bbf7d0", "order": 19}, {"id": "igcse.bio.ch20_biotechnology", "name": "Biotechnology and genetic engineering", "color": "#4d7c0f", "order": 20}, {"id": "igcse.bio.ch21_human_influences", "name": "Human influences on ecosystems", "color": "#365314", "order": 21}]};
+
+// State
+const activeBooks = new Set(booksData.map(b => b.id));
+const activeStrands = new Set(strandsData.map(s => s.name));
+let filterMode = 'grades'; // 'grades' or 'topics'
+let selectedNode = null;
+
+// D3 setup
+const container = document.getElementById('graph-container');
+const svg = d3.select('#svg');
+const g = svg.append('g');
+
+// Arrow marker
+svg.append('defs').append('marker')
+  .attr('id', 'arrow')
+  .attr('viewBox', '0 -4 8 8')
+  .attr('refX', 18)
+  .attr('refY', 0)
+  .attr('markerWidth', 5)
+  .attr('markerHeight', 5)
+  .attr('orient', 'auto')
+  .append('path')
+  .attr('d', 'M0,-3L7,0L0,3')
+  .attr('fill', '#6b6590');
+
+// Glow marker for highlighted
+svg.select('defs').append('marker')
+  .attr('id', 'arrow-hl')
+  .attr('viewBox', '0 -4 8 8')
+  .attr('refX', 18)
+  .attr('refY', 0)
+  .attr('markerWidth', 6)
+  .attr('markerHeight', 6)
+  .attr('orient', 'auto')
+  .append('path')
+  .attr('d', 'M0,-3L7,0L0,3')
+  .attr('fill', '#ffc857');
+
+// Build graph data
+const nodes = rawNodes.map(d => ({...d}));
+const edges = rawEdges.map(d => ({...d}));
+
+// Index
+const nodeMap = {};
+nodes.forEach(n => { nodeMap[n.id] = n; });
+
+// Links
+const linkGroup = g.append('g').attr('class', 'links');
+const nodeGroup = g.append('g').attr('class', 'nodes');
+const labelGroup = g.append('g').attr('class', 'labels');
+
+let linkEls, nodeEls, labelEls;
+
+function renderGraph() {
+  // Filter
+  let visibleIds;
+  if (filterMode === 'topics') {
+    visibleIds = new Set(nodes.filter(n => activeStrands.has(n.strand)).map(n => n.id));
+  } else {
+    visibleIds = new Set(nodes.filter(n => activeBooks.has(n.book)).map(n => n.id));
+  }
+  const vNodes = nodes.filter(n => visibleIds.has(n.id));
+  const vEdges = edges.filter(e => {
+    const sid = typeof e.source === 'object' ? e.source.id : e.source;
+    const tid = typeof e.target === 'object' ? e.target.id : e.target;
+    return visibleIds.has(sid) && visibleIds.has(tid);
+  });
+
+  // Links
+  linkEls = linkGroup.selectAll('line').data(vEdges, d => {
+    const s = typeof d.source === 'object' ? d.source.id : d.source;
+    const t = typeof d.target === 'object' ? d.target.id : d.target;
+    return s + '->' + t;
+  });
+  linkEls.exit().remove();
+  linkEls = linkEls.enter().append('line')
+    .attr('stroke', '#5a5480')
+    .attr('stroke-width', 0.7)
+    .attr('stroke-opacity', 0.5)
+    .attr('marker-end', 'url(#arrow)')
+    .merge(linkEls);
+
+  // Nodes
+  nodeEls = nodeGroup.selectAll('circle').data(vNodes, d => d.id);
+  nodeEls.exit().remove();
+  nodeEls = nodeEls.enter().append('circle')
+    .attr('r', d => d.r)
+    .attr('fill', d => d.color)
+    .attr('fill-opacity', 0.85)
+    .attr('stroke', 'none')
+    .attr('stroke-width', 2)
+    .attr('cursor', 'pointer')
+    .on('click', (ev, d) => { ev.stopPropagation(); selectNode(d); })
+    .call(d3.drag()
+      .on('start', dragStart)
+      .on('drag', dragging)
+      .on('end', dragEnd))
+    .merge(nodeEls)
+    .attr('fill', d => d.color);
+
+  // Labels
+  labelEls = labelGroup.selectAll('text').data(vNodes, d => d.id);
+  labelEls.exit().remove();
+  labelEls = labelEls.enter().append('text')
+    .attr('font-size', d => Math.max(6, d.r * 0.85))
+    .attr('font-family', "'DM Sans', sans-serif")
+    .attr('fill', '#a09cac')
+    .attr('text-anchor', 'middle')
+    .attr('dy', d => d.r + 10)
+    .attr('pointer-events', 'none')
+    .text(d => d.label.length > 22 ? d.label.slice(0, 20) + '…' : d.label)
+    .merge(labelEls);
+
+  // Update simulation
+  simulation.nodes(vNodes);
+  simulation.force('link').links(vEdges);
+  simulation.alpha(0.6).restart();
+
+  updateStats(vNodes.length, vEdges.length);
+}
+
+// Force simulation
+const simulation = d3.forceSimulation()
+  .force('link', d3.forceLink().id(d => d.id).distance(55).strength(0.3))
+  .force('charge', d3.forceManyBody().strength(-120).distanceMax(400))
+  .force('center', d3.forceCenter())
+  .force('collide', d3.forceCollide().radius(10).strength(0.7))
+  .force('x', d3.forceX().strength(0.02))
+  .force('y', d3.forceY().strength(0.02))
+  .alphaDecay(0.015)
+  .velocityDecay(0.35)
+  .on('tick', ticked);
+
+function ticked() {
+  linkEls
+    .attr('x1', d => d.source.x)
+    .attr('y1', d => d.source.y)
+    .attr('x2', d => d.target.x)
+    .attr('y2', d => d.target.y);
+  nodeEls
+    .attr('cx', d => d.x)
+    .attr('cy', d => d.y);
+  labelEls
+    .attr('x', d => d.x)
+    .attr('y', d => d.y);
+}
+
+// Zoom
+const zoom = d3.zoom()
+  .scaleExtent([0.05, 8])
+  .on('zoom', (ev) => { g.attr('transform', ev.transform); });
+svg.call(zoom);
+
+// Resize
+function resize() {
+  const w = container.clientWidth;
+  const h = container.clientHeight;
+  svg.attr('viewBox', [-w/2, -h/2, w, h]);
+  simulation.force('center', d3.forceCenter(0, 0));
+}
+window.addEventListener('resize', resize);
+resize();
+
+// Drag
+function dragStart(ev, d) {
+  if (!ev.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x; d.fy = d.y;
+}
+function dragging(ev, d) {
+  d.fx = ev.x; d.fy = ev.y;
+}
+function dragEnd(ev, d) {
+  if (!ev.active) simulation.alphaTarget(0);
+  d.fx = null; d.fy = null;
+}
+
+// Selection & highlighting
+function selectNode(d) {
+  selectedNode = d;
+  const neighbors = new Set([d.id]);
+  const prereqEdges = new Set();
+  const leadsEdges = new Set();
+
+  edges.forEach(e => {
+    const sid = typeof e.source === 'object' ? e.source.id : e.source;
+    const tid = typeof e.target === 'object' ? e.target.id : e.target;
+    if (sid === d.id) { neighbors.add(tid); leadsEdges.add(sid + '->' + tid); }
+    if (tid === d.id) { neighbors.add(sid); prereqEdges.add(sid + '->' + tid); }
+  });
+
+  nodeEls.attr('fill-opacity', n => neighbors.has(n.id) ? 1 : 0.06)
+    .attr('stroke', n => n.id === d.id ? '#ffc857' : 'none')
+    .attr('stroke-width', n => n.id === d.id ? 2.5 : 0);
+  labelEls.attr('fill', n => neighbors.has(n.id) ? '#e8e4dc' : '#1a1830')
+    .attr('font-weight', n => n.id === d.id ? 600 : 400);
+  linkEls.attr('stroke', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      if (prereqEdges.has(k)) return '#e07a5f';
+      if (leadsEdges.has(k)) return '#81b29a';
+      return '#5a5480';
+    })
+    .attr('stroke-opacity', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      return (prereqEdges.has(k) || leadsEdges.has(k)) ? 0.9 : 0.04;
+    })
+    .attr('stroke-width', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      return (prereqEdges.has(k) || leadsEdges.has(k)) ? 1.8 : 0.7;
+    })
+    .attr('marker-end', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      return (prereqEdges.has(k) || leadsEdges.has(k)) ? 'url(#arrow-hl)' : 'url(#arrow)';
+    });
+
+  showDetail(d, prereqEdges, leadsEdges);
+}
+
+function clearSelection() {
+  selectedNode = null;
+  nodeEls.attr('fill-opacity', 0.85).attr('stroke', 'none');
+  labelEls.attr('fill', '#a09cac').attr('font-weight', 400);
+  linkEls.attr('stroke', '#5a5480').attr('stroke-opacity', 0.5).attr('stroke-width', 0.7).attr('marker-end', 'url(#arrow)');
+  document.getElementById('detail').classList.remove('open');
+  document.getElementById('graph-container').classList.remove('detail-open');
+}
+
+svg.on('click', () => clearSelection());
+
+// Detail panel
+function showDetail(d, prereqEdges, leadsEdges) {
+  const panel = document.getElementById('detail');
+  const content = document.getElementById('detail-content');
+  document.getElementById('graph-container').classList.add('detail-open');
+
+  const prereqs = [];
+  const leads = [];
+  edges.forEach(e => {
+    const sid = typeof e.source === 'object' ? e.source.id : e.source;
+    const tid = typeof e.target === 'object' ? e.target.id : e.target;
+    if (tid === d.id && nodeMap[sid]) prereqs.push(nodeMap[sid]);
+    if (sid === d.id && nodeMap[tid]) leads.push(nodeMap[tid]);
+  });
+
+  content.innerHTML = `
+    <div class="detail-badge" style="background:${d.color}18;color:${d.color};border:1px solid ${d.color}30">
+      <span style="width:5px;height:5px;border-radius:50%;background:${d.color};display:inline-block"></span>
+      ${d.bookName}
+    </div>
+    ${d.pages ? `<div class="detail-pages">p. ${d.pages}</div>` : ''}
+    <div class="detail-title">${d.label}</div>
+    ${prereqs.length ? `
+      <div class="conn-section">
+        <div class="conn-head prereq">▲ Prerequisites (${prereqs.length})</div>
+        ${prereqs.map(n => `<div class="conn-item" data-id="${n.id}"><span class="conn-dot" style="background:${n.color}"></span><span class="conn-label">${n.label}</span><span class="conn-book">${n.bookName}</span></div>`).join('')}
+      </div>
+    ` : '<div class="conn-section"><div class="conn-head" style="color:var(--gold)">★ Starting point</div></div>'}
+    ${leads.length ? `
+      <div class="conn-section">
+        <div class="conn-head leads">▼ Leads to (${leads.length})</div>
+        ${leads.map(n => `<div class="conn-item" data-id="${n.id}"><span class="conn-dot" style="background:${n.color}"></span><span class="conn-label">${n.label}</span><span class="conn-book">${n.bookName}</span></div>`).join('')}
+      </div>
+    ` : ''}
+  `;
+
+  content.querySelectorAll('.conn-item').forEach(el => {
+    el.addEventListener('click', () => {
+      const n = nodeMap[el.dataset.id];
+      if (n) { selectNode(n); }
+    });
+  });
+
+  panel.classList.add('open');
+}
+
+document.getElementById('detail-close').addEventListener('click', clearSelection);
+
+// Tab switching
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+// Book counts
+const bookCounts = {};
+nodes.forEach(n => { bookCounts[n.book] = (bookCounts[n.book] || 0) + 1; });
+
+// === GRADES TAB: books grouped by education level, collapsible ===
+const gradesListEl = document.getElementById('grades-list');
+Object.entries(bookGroupsData).forEach(([groupName, groupBooks]) => {
+  const totalInGroup = groupBooks.reduce((s, b) => s + (bookCounts[b.id] || 0), 0);
+  if (totalInGroup === 0) return;
+
+  // Group header
+  const header = document.createElement('div');
+  header.className = 'group-header';
+  header.innerHTML = `<span class="group-arrow">▼</span><span class="group-label">${groupName}</span><span class="group-cnt">${totalInGroup}</span>`;
+
+  // Group body
+  const body = document.createElement('div');
+  body.className = 'group-body';
+  body.style.maxHeight = '500px';
+
+  const list = document.createElement('div');
+  list.className = 'book-list';
+
+  groupBooks.forEach(b => {
+    const el = document.createElement('div');
+    el.className = 'book-item';
+    el.dataset.id = b.id;
+    el.innerHTML = `<span class="book-dot" style="background:${b.color};color:${b.color}"></span><span class="book-name">${b.name}</span><span class="book-cnt">${bookCounts[b.id] || 0}</span>`;
+    el.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      if (activeBooks.has(b.id)) { activeBooks.delete(b.id); el.classList.add('off'); }
+      else { activeBooks.add(b.id); el.classList.remove('off'); }
+      filterMode = 'grades';
+      renderGraph();
+    });
+    list.appendChild(el);
+  });
+
+  body.appendChild(list);
+  header.addEventListener('click', () => { header.classList.toggle('collapsed'); });
+
+  gradesListEl.appendChild(header);
+  gradesListEl.appendChild(body);
+});
+
+document.getElementById('b-all').addEventListener('click', () => {
+  booksData.forEach(b => activeBooks.add(b.id));
+  document.querySelectorAll('#grades-list .book-item').forEach(el => el.classList.remove('off'));
+  filterMode = 'grades';
+  renderGraph();
+});
+document.getElementById('b-none').addEventListener('click', () => {
+  activeBooks.clear();
+  document.querySelectorAll('#grades-list .book-item').forEach(el => el.classList.add('off'));
+  filterMode = 'grades';
+  renderGraph();
+});
+
+// === TOPICS TAB: strands grouped by math domain, collapsible ===
+const topicsListEl = document.getElementById('topics-list');
+const strandDomains = {
+  'Number & Arithmetic': ['Numbers & Counting', 'Arithmetic', 'Fractions', 'Decimals', 'Percentages', 'Number Bases'],
+  'Algebra': ['Algebra', 'Equations', 'Inequalities', 'Functions & Graphs', 'Indices & Logarithms', 'Sequences & Series'],
+  'Geometry & Measure': ['Geometry', 'Symmetry & Transformations', 'Perimeter, Area & Volume', 'Coordinate Geometry', 'Pythagoras & Similarity', 'Trigonometry'],
+  'Data & Probability': ['Statistics', 'Probability', 'Sets & Logic'],
+  'Applied': ['Money & Finance', 'Time', 'Measurement', 'Ratio & Proportion', 'Calculus', 'Kinematics', 'Vectors & Matrices', 'Graph Theory', 'Mathematical Modeling'],
+};
+
+// Build strand lookup
+const strandNodeIds = {};
+strandsData.forEach(s => { strandNodeIds[s.name] = new Set(s.nodeIds); });
+
+Object.entries(strandDomains).forEach(([domain, strandNames]) => {
+  const domainStrands = strandNames.filter(sn => strandNodeIds[sn] && strandNodeIds[sn].size > 0);
+  if (domainStrands.length === 0) return;
+
+  const totalInDomain = domainStrands.reduce((s, sn) => s + (strandNodeIds[sn] ? strandNodeIds[sn].size : 0), 0);
+
+  const header = document.createElement('div');
+  header.className = 'group-header';
+  header.innerHTML = `<span class="group-arrow">▼</span><span class="group-label">${domain}</span><span class="group-cnt">${totalInDomain}</span>`;
+
+  const body = document.createElement('div');
+  body.className = 'group-body';
+  body.style.maxHeight = '500px';
+
+  const list = document.createElement('div');
+  list.className = 'book-list';
+
+  domainStrands.forEach(sn => {
+    const strand = strandsData.find(s => s.name === sn);
+    if (!strand) return;
+    const el = document.createElement('div');
+    el.className = 'strand-item';
+    el.dataset.strand = sn;
+    el.innerHTML = `<span class="strand-dot" style="background:${strand.color}"></span><span class="strand-name">${sn}</span><span class="strand-cnt">${strand.nodeIds.length}</span>`;
+    el.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      if (activeStrands.has(sn)) { activeStrands.delete(sn); el.classList.add('off'); }
+      else { activeStrands.add(sn); el.classList.remove('off'); }
+      filterMode = 'topics';
+      renderGraph();
+    });
+    list.appendChild(el);
+  });
+
+  body.appendChild(list);
+  header.addEventListener('click', () => { header.classList.toggle('collapsed'); });
+
+  topicsListEl.appendChild(header);
+  topicsListEl.appendChild(body);
+});
+
+// Also add "Other" strand if it exists
+const otherStrand = strandsData.find(s => s.name === 'Other');
+if (otherStrand && otherStrand.nodeIds.length > 0) {
+  const el = document.createElement('div');
+  el.className = 'strand-item';
+  el.dataset.strand = 'Other';
+  el.innerHTML = `<span class="strand-dot" style="background:${otherStrand.color}"></span><span class="strand-name">Other</span><span class="strand-cnt">${otherStrand.nodeIds.length}</span>`;
+  el.addEventListener('click', (ev) => {
+    ev.stopPropagation();
+    if (activeStrands.has('Other')) { activeStrands.delete('Other'); el.classList.add('off'); }
+    else { activeStrands.add('Other'); el.classList.remove('off'); }
+    filterMode = 'topics';
+    renderGraph();
+  });
+  topicsListEl.appendChild(el);
+}
+
+document.getElementById('t-all').addEventListener('click', () => {
+  strandsData.forEach(s => activeStrands.add(s.name));
+  document.querySelectorAll('.strand-item').forEach(el => el.classList.remove('off'));
+  filterMode = 'topics';
+  renderGraph();
+});
+document.getElementById('t-none').addEventListener('click', () => {
+  activeStrands.clear();
+  document.querySelectorAll('.strand-item').forEach(el => el.classList.add('off'));
+  filterMode = 'topics';
+  renderGraph();
+});
+
+// Force sliders
+document.getElementById('sl-charge').addEventListener('input', function() {
+  simulation.force('charge').strength(+this.value);
+  simulation.alpha(0.4).restart();
+});
+document.getElementById('sl-dist').addEventListener('input', function() {
+  simulation.force('link').distance(+this.value);
+  simulation.alpha(0.4).restart();
+});
+document.getElementById('sl-gravity').addEventListener('input', function() {
+  const v = +this.value / 1000;
+  simulation.force('x').strength(v);
+  simulation.force('y').strength(v);
+  simulation.alpha(0.4).restart();
+});
+document.getElementById('sl-collide').addEventListener('input', function() {
+  simulation.force('collide').radius(+this.value);
+  simulation.alpha(0.4).restart();
+});
+
+// Search
+let searchTimeout;
+document.getElementById('search').addEventListener('input', function() {
+  clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(() => {
+    const q = this.value.trim().toLowerCase();
+    if (!q) { clearSelection(); return; }
+    const matches = nodes.filter(n => activeBooks.has(n.book) && (n.label.toLowerCase().includes(q) || n.id.toLowerCase().includes(q)));
+    if (matches.length) {
+      // Zoom to first match
+      const m = matches[0];
+      if (m.x != null) {
+        const t = d3.zoomIdentity.translate(-m.x * 2 + container.clientWidth/2, -m.y * 2 + container.clientHeight/2).scale(2);
+        svg.transition().duration(500).call(zoom.transform, t);
+      }
+      // Highlight all matches
+      const matchIds = new Set(matches.map(n => n.id));
+      nodeEls.attr('fill-opacity', n => matchIds.has(n.id) ? 1 : 0.06)
+        .attr('stroke', n => matchIds.has(n.id) ? '#ffc857' : 'none')
+        .attr('stroke-width', n => matchIds.has(n.id) ? 2 : 0);
+      labelEls.attr('fill', n => matchIds.has(n.id) ? '#fff' : '#1a1830');
+    }
+  }, 250);
+});
+
+function updateStats(n, e) {
+  document.getElementById('s-nodes').textContent = n;
+  document.getElementById('s-edges').textContent = e;
+}
+
+// Keyboard
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { clearSelection(); document.getElementById('search').value = ''; }
+  if (e.key === '/' && document.activeElement.tagName !== 'INPUT') { e.preventDefault(); document.getElementById('search').focus(); }
+});
+
+// Init
+renderGraph();
+</script>
+</body>
+</html>

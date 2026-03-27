@@ -1,0 +1,1128 @@
+{
+  "metadata": {
+    "domain": "biology",
+    "curriculum": "Cambridge IGCSE Biology (0610)",
+    "version": "0.1.0",
+    "description": "IGCSE Biology prerequisite graph",
+    "sources": [
+      "igcse_biology_raw.txt"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "igcse.bio.ch1_classification",
+      "name": "Characteristics and classification of living organisms",
+      "color": "#d9f99d",
+      "order": 1
+    },
+    {
+      "id": "igcse.bio.ch2_cell_structure",
+      "name": "Organisation and maintenance of the organism",
+      "color": "#bef264",
+      "order": 2
+    },
+    {
+      "id": "igcse.bio.ch3_movement_cells",
+      "name": "Movement in and out of cells",
+      "color": "#a3e635",
+      "order": 3
+    },
+    {
+      "id": "igcse.bio.ch4_biological_molecules",
+      "name": "Biological molecules",
+      "color": "#84cc16",
+      "order": 4
+    },
+    {
+      "id": "igcse.bio.ch5_enzymes",
+      "name": "Enzymes",
+      "color": "#65a30d",
+      "order": 5
+    },
+    {
+      "id": "igcse.bio.ch6_plant_nutrition",
+      "name": "Plant nutrition",
+      "color": "#86efac",
+      "order": 6
+    },
+    {
+      "id": "igcse.bio.ch7_human_nutrition",
+      "name": "Human nutrition",
+      "color": "#4ade80",
+      "order": 7
+    },
+    {
+      "id": "igcse.bio.ch8_transport_plants",
+      "name": "Transport in plants",
+      "color": "#22c55e",
+      "order": 8
+    },
+    {
+      "id": "igcse.bio.ch9_transport_animals",
+      "name": "Transport in animals",
+      "color": "#16a34a",
+      "order": 9
+    },
+    {
+      "id": "igcse.bio.ch10_diseases",
+      "name": "Diseases and immunity",
+      "color": "#15803d",
+      "order": 10
+    },
+    {
+      "id": "igcse.bio.ch11_gas_exchange",
+      "name": "Gas exchange in humans",
+      "color": "#a7f3d0",
+      "order": 11
+    },
+    {
+      "id": "igcse.bio.ch12_respiration",
+      "name": "Respiration",
+      "color": "#6ee7b7",
+      "order": 12
+    },
+    {
+      "id": "igcse.bio.ch13_excretion",
+      "name": "Excretion in humans",
+      "color": "#34d399",
+      "order": 13
+    },
+    {
+      "id": "igcse.bio.ch14_coordination",
+      "name": "Co-ordination and response",
+      "color": "#10b981",
+      "order": 14
+    },
+    {
+      "id": "igcse.bio.ch15_drugs",
+      "name": "Drugs",
+      "color": "#059669",
+      "order": 15
+    },
+    {
+      "id": "igcse.bio.ch16_reproduction",
+      "name": "Reproduction",
+      "color": "#047857",
+      "order": 16
+    },
+    {
+      "id": "igcse.bio.ch17_inheritance",
+      "name": "Inheritance",
+      "color": "#065f46",
+      "order": 17
+    },
+    {
+      "id": "igcse.bio.ch18_variation_selection",
+      "name": "Variation and selection",
+      "color": "#064e3b",
+      "order": 18
+    },
+    {
+      "id": "igcse.bio.ch19_organisms_environment",
+      "name": "Organisms and their environment",
+      "color": "#bbf7d0",
+      "order": 19
+    },
+    {
+      "id": "igcse.bio.ch20_biotechnology",
+      "name": "Biotechnology and genetic engineering",
+      "color": "#4d7c0f",
+      "order": 20
+    },
+    {
+      "id": "igcse.bio.ch21_human_influences",
+      "name": "Human influences on ecosystems",
+      "color": "#365314",
+      "order": 21
+    }
+  ],
+  "nodes": [
+    {
+      "id": "bio.ch1.characteristics_of_living_organisms",
+      "label": "Characteristics of living organisms",
+      "book": "igcse.bio.ch1_classification",
+      "pages": "1",
+      "description": "Characteristics of living organisms — Characteristics and classification of living organisms (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch1.concept_and_use_of_a_classification_system",
+      "label": "Concept and use of a classification system",
+      "book": "igcse.bio.ch1_classification",
+      "pages": "2-5",
+      "description": "Concept and use of a classification system — Characteristics and classification of living organisms (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch1.features_of_organisms",
+      "label": "Features of organisms",
+      "book": "igcse.bio.ch1_classification",
+      "pages": "6-20",
+      "description": "Features of organisms — Characteristics and classification of living organisms (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch1.dichotomous_keys",
+      "label": "Dichotomous keys",
+      "book": "igcse.bio.ch1_classification",
+      "pages": "21-23",
+      "description": "Dichotomous keys — Characteristics and classification of living organisms (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch2.cell_structure_and_organisation",
+      "label": "Cell structure and organisation",
+      "book": "igcse.bio.ch2_cell_structure",
+      "pages": "24-28",
+      "description": "Cell structure and organisation — Organisation and maintenance of the organism (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch2.levels_of_organisation",
+      "label": "Levels of organisation",
+      "book": "igcse.bio.ch2_cell_structure",
+      "pages": "29-32",
+      "description": "Levels of organisation — Organisation and maintenance of the organism (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch2.size_of_specimens",
+      "label": "Size of specimens",
+      "book": "igcse.bio.ch2_cell_structure",
+      "pages": "33-35",
+      "description": "Size of specimens — Organisation and maintenance of the organism (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch3.diffusion",
+      "label": "Diffusion",
+      "book": "igcse.bio.ch3_movement_cells",
+      "pages": "36-39",
+      "description": "Diffusion — Movement in and out of cells (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch3.osmosis",
+      "label": "Osmosis",
+      "book": "igcse.bio.ch3_movement_cells",
+      "pages": "40-47",
+      "description": "Osmosis — Movement in and out of cells (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch3.active_transport",
+      "label": "Active transport",
+      "book": "igcse.bio.ch3_movement_cells",
+      "pages": "48-50",
+      "description": "Active transport — Movement in and out of cells (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch4.biological_molecules",
+      "label": "Biological molecules",
+      "book": "igcse.bio.ch4_biological_molecules",
+      "pages": "51-52",
+      "description": "Biological molecules — Biological molecules (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch4.proteins",
+      "label": "Proteins",
+      "book": "igcse.bio.ch4_biological_molecules",
+      "pages": "53",
+      "description": "Proteins — Biological molecules (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch4.structure_of_dna",
+      "label": "Structure of DNA",
+      "book": "igcse.bio.ch4_biological_molecules",
+      "pages": "54",
+      "description": "Structure of DNA — Biological molecules (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch4.water",
+      "label": "Water",
+      "book": "igcse.bio.ch4_biological_molecules",
+      "pages": "55-58",
+      "description": "Water — Biological molecules (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch5.enzyme_action",
+      "label": "Enzyme action",
+      "book": "igcse.bio.ch5_enzymes",
+      "pages": "59-65",
+      "description": "Enzyme action — Enzymes (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch6.photosynthesis",
+      "label": "Photosynthesis",
+      "book": "igcse.bio.ch6_plant_nutrition",
+      "pages": "66-76",
+      "description": "Photosynthesis — Plant nutrition (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch6.leaf_structure",
+      "label": "Leaf structure",
+      "book": "igcse.bio.ch6_plant_nutrition",
+      "pages": "77-80",
+      "description": "Leaf structure — Plant nutrition (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch6.mineral_requirements",
+      "label": "Mineral requirements",
+      "book": "igcse.bio.ch6_plant_nutrition",
+      "pages": "81-85",
+      "description": "Mineral requirements — Plant nutrition (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch7.diet",
+      "label": "Diet",
+      "book": "igcse.bio.ch7_human_nutrition",
+      "pages": "86-94",
+      "description": "Diet — Human nutrition (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch7.alimentary_canal",
+      "label": "Alimentary canal",
+      "book": "igcse.bio.ch7_human_nutrition",
+      "pages": "95-97",
+      "description": "Alimentary canal — Human nutrition (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch7.mechanical_digestion",
+      "label": "Mechanical digestion",
+      "book": "igcse.bio.ch7_human_nutrition",
+      "pages": "98-99",
+      "description": "Mechanical digestion — Human nutrition (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch7.chemical_digestion",
+      "label": "Chemical digestion",
+      "book": "igcse.bio.ch7_human_nutrition",
+      "pages": "100-102",
+      "description": "Chemical digestion — Human nutrition (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch7.absorption",
+      "label": "Absorption",
+      "book": "igcse.bio.ch7_human_nutrition",
+      "pages": "103-109",
+      "description": "Absorption — Human nutrition (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch8.transport_in_plants",
+      "label": "Transport in plants",
+      "book": "igcse.bio.ch8_transport_plants",
+      "pages": "110-113",
+      "description": "Transport in plants — Transport in plants (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch8.water_uptake",
+      "label": "Water uptake",
+      "book": "igcse.bio.ch8_transport_plants",
+      "pages": "114-115",
+      "description": "Water uptake — Transport in plants (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch8.transpiration",
+      "label": "Transpiration",
+      "book": "igcse.bio.ch8_transport_plants",
+      "pages": "116-120",
+      "description": "Transpiration — Transport in plants (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch8.translocation",
+      "label": "Translocation",
+      "book": "igcse.bio.ch8_transport_plants",
+      "pages": "121-123",
+      "description": "Translocation — Transport in plants (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch9.transport_in_animals",
+      "label": "Transport in animals",
+      "book": "igcse.bio.ch9_transport_animals",
+      "pages": "124",
+      "description": "Transport in animals — Transport in animals (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch9.heart",
+      "label": "Heart",
+      "book": "igcse.bio.ch9_transport_animals",
+      "pages": "125-131",
+      "description": "Heart — Transport in animals (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch9.blood_and_lymphatic_vessels",
+      "label": "Blood and lymphatic vessels",
+      "book": "igcse.bio.ch9_transport_animals",
+      "pages": "132-135",
+      "description": "Blood and lymphatic vessels — Transport in animals (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch9.blood",
+      "label": "Blood",
+      "book": "igcse.bio.ch9_transport_animals",
+      "pages": "136-141",
+      "description": "Blood — Transport in animals (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch10.pathogens_and_transmission",
+      "label": "Pathogens and transmission",
+      "book": "igcse.bio.ch10_diseases",
+      "pages": "142-147",
+      "description": "Pathogens and transmission — Diseases and immunity (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch10.defences_against_diseases",
+      "label": "Defences against diseases",
+      "book": "igcse.bio.ch10_diseases",
+      "pages": "148-155",
+      "description": "Defences against diseases — Diseases and immunity (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch11.gas_exchange_in_humans",
+      "label": "Gas exchange in humans",
+      "book": "igcse.bio.ch11_gas_exchange",
+      "pages": "156-164",
+      "description": "Gas exchange in humans — Gas exchange in humans (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch12.respiration",
+      "label": "Respiration",
+      "book": "igcse.bio.ch12_respiration",
+      "pages": "165",
+      "description": "Respiration — Respiration (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch12.aerobic_respiration",
+      "label": "Aerobic respiration",
+      "book": "igcse.bio.ch12_respiration",
+      "pages": "165-168",
+      "description": "Aerobic respiration — Respiration (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch12.anaerobic_respiration",
+      "label": "Anaerobic respiration",
+      "book": "igcse.bio.ch12_respiration",
+      "pages": "169-173",
+      "description": "Anaerobic respiration — Respiration (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch13.excretion",
+      "label": "Excretion",
+      "book": "igcse.bio.ch13_excretion",
+      "pages": "174-179",
+      "description": "Excretion — Excretion in humans (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch14.nervous_control_in_humans",
+      "label": "Nervous control in humans",
+      "book": "igcse.bio.ch14_coordination",
+      "pages": "181-185",
+      "description": "Nervous control in humans — Co-ordination and response (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch14.sense_organs",
+      "label": "Sense organs",
+      "book": "igcse.bio.ch14_coordination",
+      "pages": "186-189",
+      "description": "Sense organs — Co-ordination and response (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch14.hormones_in_humans",
+      "label": "Hormones in humans",
+      "book": "igcse.bio.ch14_coordination",
+      "pages": "190-191",
+      "description": "Hormones in humans — Co-ordination and response (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch14.homeostasis",
+      "label": "Homeostasis",
+      "book": "igcse.bio.ch14_coordination",
+      "pages": "192-196",
+      "description": "Homeostasis — Co-ordination and response (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch14.tropic_responses",
+      "label": "Tropic responses",
+      "book": "igcse.bio.ch14_coordination",
+      "pages": "197-204",
+      "description": "Tropic responses — Co-ordination and response (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch15.drugs",
+      "label": "Drugs",
+      "book": "igcse.bio.ch15_drugs",
+      "pages": "205",
+      "description": "Drugs — Drugs (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch15.medicinal_drugs",
+      "label": "Medicinal drugs",
+      "book": "igcse.bio.ch15_drugs",
+      "pages": "205-206",
+      "description": "Medicinal drugs — Drugs (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch15.misused_drugs",
+      "label": "Misused drugs",
+      "book": "igcse.bio.ch15_drugs",
+      "pages": "207-212",
+      "description": "Misused drugs — Drugs (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch16.asexual_reproduction",
+      "label": "Asexual reproduction",
+      "book": "igcse.bio.ch16_reproduction",
+      "pages": "213-218",
+      "description": "Asexual reproduction — Reproduction (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch16.sexual_reproduction",
+      "label": "Sexual reproduction",
+      "book": "igcse.bio.ch16_reproduction",
+      "pages": "219-220",
+      "description": "Sexual reproduction — Reproduction (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch16.sexual_reproduction_in_plants",
+      "label": "Sexual reproduction in plants",
+      "book": "igcse.bio.ch16_reproduction",
+      "pages": "221-231",
+      "description": "Sexual reproduction in plants — Reproduction (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch16.sexual_reproduction_in_humans",
+      "label": "Sexual reproduction in humans",
+      "book": "igcse.bio.ch16_reproduction",
+      "pages": "232-240",
+      "description": "Sexual reproduction in humans — Reproduction (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch16.sex_hormones_in_humans",
+      "label": "Sex hormones in humans",
+      "book": "igcse.bio.ch16_reproduction",
+      "pages": "241-242",
+      "description": "Sex hormones in humans — Reproduction (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch16.methods_of_birth_control_in_humans",
+      "label": "Methods of birth control in humans",
+      "book": "igcse.bio.ch16_reproduction",
+      "pages": "243-244",
+      "description": "Methods of birth control in humans — Reproduction (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch16.sexually_transmitted_infections_stis",
+      "label": "Sexually transmitted infections (STIs)",
+      "book": "igcse.bio.ch16_reproduction",
+      "pages": "245-249",
+      "description": "Sexually transmitted infections (STIs) — Reproduction (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch17.inheritance",
+      "label": "Inheritance",
+      "book": "igcse.bio.ch17_inheritance",
+      "pages": "250",
+      "description": "Inheritance — Inheritance (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch17.chromosomes_genes_and_proteins",
+      "label": "Chromosomes, genes and proteins",
+      "book": "igcse.bio.ch17_inheritance",
+      "pages": "250-253",
+      "description": "Chromosomes, genes and proteins — Inheritance (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch17.mitosis",
+      "label": "Mitosis",
+      "book": "igcse.bio.ch17_inheritance",
+      "pages": "254",
+      "description": "Mitosis — Inheritance (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch17.meiosis",
+      "label": "Meiosis",
+      "book": "igcse.bio.ch17_inheritance",
+      "pages": "255-258",
+      "description": "Meiosis — Inheritance (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch17.monohybrid_inheritance",
+      "label": "Monohybrid inheritance",
+      "book": "igcse.bio.ch17_inheritance",
+      "pages": "259-269",
+      "description": "Monohybrid inheritance — Inheritance (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch18.variation",
+      "label": "Variation",
+      "book": "igcse.bio.ch18_variation_selection",
+      "pages": "270-273",
+      "description": "Variation — Variation and selection (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch18.adaptive_features",
+      "label": "Adaptive features",
+      "book": "igcse.bio.ch18_variation_selection",
+      "pages": "274-278",
+      "description": "Adaptive features — Variation and selection (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch18.selection",
+      "label": "Selection",
+      "book": "igcse.bio.ch18_variation_selection",
+      "pages": "279-283",
+      "description": "Selection — Variation and selection (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch19.energy_flow",
+      "label": "Energy flow",
+      "book": "igcse.bio.ch19_organisms_environment",
+      "pages": "284",
+      "description": "Energy flow — Organisms and their environment (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch19.food_chains_and_food_webs",
+      "label": "Food chains and food webs",
+      "book": "igcse.bio.ch19_organisms_environment",
+      "pages": "285-291",
+      "description": "Food chains and food webs — Organisms and their environment (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch19.nutrient_cycles",
+      "label": "Nutrient cycles",
+      "book": "igcse.bio.ch19_organisms_environment",
+      "pages": "292-295",
+      "description": "Nutrient cycles — Organisms and their environment (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch19.population_size",
+      "label": "Population size",
+      "book": "igcse.bio.ch19_organisms_environment",
+      "pages": "296-304",
+      "description": "Population size — Organisms and their environment (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch20.biotechnology_and_genetic_engineering",
+      "label": "Biotechnology and genetic engineering",
+      "book": "igcse.bio.ch20_biotechnology",
+      "pages": "305",
+      "description": "Biotechnology and genetic engineering — Biotechnology and genetic engineering (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch20.biotechnology",
+      "label": "Biotechnology",
+      "book": "igcse.bio.ch20_biotechnology",
+      "pages": "305-309",
+      "description": "Biotechnology — Biotechnology and genetic engineering (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch20.genetic_engineering",
+      "label": "Genetic engineering",
+      "book": "igcse.bio.ch20_biotechnology",
+      "pages": "310-315",
+      "description": "Genetic engineering — Biotechnology and genetic engineering (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch21.food_supply",
+      "label": "Food supply",
+      "book": "igcse.bio.ch21_human_influences",
+      "pages": "316-319",
+      "description": "Food supply — Human influences on ecosystems (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch21.habitat_destruction",
+      "label": "Habitat destruction",
+      "book": "igcse.bio.ch21_human_influences",
+      "pages": "320-323",
+      "description": "Habitat destruction — Human influences on ecosystems (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch21.pollution",
+      "label": "Pollution",
+      "book": "igcse.bio.ch21_human_influences",
+      "pages": "324-333",
+      "description": "Pollution — Human influences on ecosystems (IGCSE Biology)"
+    },
+    {
+      "id": "bio.ch21.conservation",
+      "label": "Conservation",
+      "book": "igcse.bio.ch21_human_influences",
+      "pages": "334-346",
+      "description": "Conservation — Human influences on ecosystems (IGCSE Biology)"
+    }
+  ],
+  "edges": [
+    {
+      "source": "bio.ch1.characteristics_of_living_organisms",
+      "target": "bio.ch1.concept_and_use_of_a_classification_system",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch1.concept_and_use_of_a_classification_system",
+      "target": "bio.ch1.features_of_organisms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch1.features_of_organisms",
+      "target": "bio.ch1.dichotomous_keys",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch1.concept_and_use_of_a_classification_system",
+      "target": "bio.ch2.cell_structure_and_organisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch2.cell_structure_and_organisation",
+      "target": "bio.ch2.levels_of_organisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch2.cell_structure_and_organisation",
+      "target": "bio.ch2.size_of_specimens",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch2.cell_structure_and_organisation",
+      "target": "bio.ch3.diffusion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch3.diffusion",
+      "target": "bio.ch3.osmosis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch3.diffusion",
+      "target": "bio.ch3.active_transport",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch2.cell_structure_and_organisation",
+      "target": "bio.ch4.biological_molecules",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch4.biological_molecules",
+      "target": "bio.ch4.proteins",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch4.biological_molecules",
+      "target": "bio.ch4.structure_of_dna",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch4.biological_molecules",
+      "target": "bio.ch4.water",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch4.proteins",
+      "target": "bio.ch5.enzyme_action",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch4.biological_molecules",
+      "target": "bio.ch5.enzyme_action",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch2.cell_structure_and_organisation",
+      "target": "bio.ch6.photosynthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch5.enzyme_action",
+      "target": "bio.ch6.photosynthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch2.levels_of_organisation",
+      "target": "bio.ch6.leaf_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch6.photosynthesis",
+      "target": "bio.ch6.leaf_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch3.active_transport",
+      "target": "bio.ch6.mineral_requirements",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch6.photosynthesis",
+      "target": "bio.ch6.mineral_requirements",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch4.biological_molecules",
+      "target": "bio.ch7.diet",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch2.cell_structure_and_organisation",
+      "target": "bio.ch7.alimentary_canal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch7.diet",
+      "target": "bio.ch7.alimentary_canal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch7.alimentary_canal",
+      "target": "bio.ch7.mechanical_digestion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch5.enzyme_action",
+      "target": "bio.ch7.chemical_digestion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch7.mechanical_digestion",
+      "target": "bio.ch7.chemical_digestion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch7.chemical_digestion",
+      "target": "bio.ch7.absorption",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch3.diffusion",
+      "target": "bio.ch7.absorption",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch2.cell_structure_and_organisation",
+      "target": "bio.ch8.transport_in_plants",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch3.osmosis",
+      "target": "bio.ch8.water_uptake",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch8.transport_in_plants",
+      "target": "bio.ch8.water_uptake",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch8.water_uptake",
+      "target": "bio.ch8.transpiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch6.photosynthesis",
+      "target": "bio.ch8.translocation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch8.transport_in_plants",
+      "target": "bio.ch8.translocation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch2.cell_structure_and_organisation",
+      "target": "bio.ch9.transport_in_animals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch9.transport_in_animals",
+      "target": "bio.ch9.heart",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch9.heart",
+      "target": "bio.ch9.blood_and_lymphatic_vessels",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch9.blood_and_lymphatic_vessels",
+      "target": "bio.ch9.blood",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch9.blood",
+      "target": "bio.ch10.pathogens_and_transmission",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch10.pathogens_and_transmission",
+      "target": "bio.ch10.defences_against_diseases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch2.cell_structure_and_organisation",
+      "target": "bio.ch11.gas_exchange_in_humans",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch3.diffusion",
+      "target": "bio.ch11.gas_exchange_in_humans",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch4.biological_molecules",
+      "target": "bio.ch12.respiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch5.enzyme_action",
+      "target": "bio.ch12.respiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch12.respiration",
+      "target": "bio.ch12.aerobic_respiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch12.respiration",
+      "target": "bio.ch12.anaerobic_respiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch12.aerobic_respiration",
+      "target": "bio.ch12.anaerobic_respiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch9.blood",
+      "target": "bio.ch13.excretion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch12.respiration",
+      "target": "bio.ch13.excretion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch2.cell_structure_and_organisation",
+      "target": "bio.ch14.nervous_control_in_humans",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch14.nervous_control_in_humans",
+      "target": "bio.ch14.sense_organs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch14.nervous_control_in_humans",
+      "target": "bio.ch14.hormones_in_humans",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch14.hormones_in_humans",
+      "target": "bio.ch14.homeostasis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch13.excretion",
+      "target": "bio.ch14.homeostasis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch14.hormones_in_humans",
+      "target": "bio.ch14.tropic_responses",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch14.nervous_control_in_humans",
+      "target": "bio.ch15.drugs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch15.drugs",
+      "target": "bio.ch15.medicinal_drugs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch15.drugs",
+      "target": "bio.ch15.misused_drugs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch2.cell_structure_and_organisation",
+      "target": "bio.ch16.asexual_reproduction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch17.mitosis",
+      "target": "bio.ch16.asexual_reproduction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch16.asexual_reproduction",
+      "target": "bio.ch16.sexual_reproduction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch17.meiosis",
+      "target": "bio.ch16.sexual_reproduction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch16.sexual_reproduction",
+      "target": "bio.ch16.sexual_reproduction_in_plants",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch16.sexual_reproduction",
+      "target": "bio.ch16.sexual_reproduction_in_humans",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch16.sexual_reproduction_in_humans",
+      "target": "bio.ch16.sex_hormones_in_humans",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch14.hormones_in_humans",
+      "target": "bio.ch16.sex_hormones_in_humans",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch16.sex_hormones_in_humans",
+      "target": "bio.ch16.methods_of_birth_control_in_humans",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch16.sexual_reproduction_in_humans",
+      "target": "bio.ch16.sexually_transmitted_infections_stis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch10.pathogens_and_transmission",
+      "target": "bio.ch16.sexually_transmitted_infections_stis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch4.structure_of_dna",
+      "target": "bio.ch17.inheritance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch17.inheritance",
+      "target": "bio.ch17.chromosomes_genes_and_proteins",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch4.proteins",
+      "target": "bio.ch17.chromosomes_genes_and_proteins",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch17.chromosomes_genes_and_proteins",
+      "target": "bio.ch17.mitosis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch17.mitosis",
+      "target": "bio.ch17.meiosis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch17.meiosis",
+      "target": "bio.ch17.monohybrid_inheritance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch17.monohybrid_inheritance",
+      "target": "bio.ch18.variation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch18.variation",
+      "target": "bio.ch18.adaptive_features",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch18.variation",
+      "target": "bio.ch18.selection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch18.adaptive_features",
+      "target": "bio.ch18.selection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch6.photosynthesis",
+      "target": "bio.ch19.energy_flow",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch12.respiration",
+      "target": "bio.ch19.energy_flow",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch19.energy_flow",
+      "target": "bio.ch19.food_chains_and_food_webs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch19.food_chains_and_food_webs",
+      "target": "bio.ch19.nutrient_cycles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch19.food_chains_and_food_webs",
+      "target": "bio.ch19.population_size",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch17.monohybrid_inheritance",
+      "target": "bio.ch20.biotechnology_and_genetic_engineering",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch20.biotechnology_and_genetic_engineering",
+      "target": "bio.ch20.biotechnology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch5.enzyme_action",
+      "target": "bio.ch20.biotechnology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch20.biotechnology_and_genetic_engineering",
+      "target": "bio.ch20.genetic_engineering",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch4.structure_of_dna",
+      "target": "bio.ch20.genetic_engineering",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch19.population_size",
+      "target": "bio.ch21.food_supply",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch19.food_chains_and_food_webs",
+      "target": "bio.ch21.habitat_destruction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch21.food_supply",
+      "target": "bio.ch21.pollution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch21.habitat_destruction",
+      "target": "bio.ch21.pollution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch21.pollution",
+      "target": "bio.ch21.conservation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "bio.ch18.selection",
+      "target": "bio.ch21.conservation",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

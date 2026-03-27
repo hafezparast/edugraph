@@ -67,7 +67,7 @@ body::after {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  max-width: 740px;
+  max-width: 1100px;
   width: 100%;
   position: relative;
 }
@@ -186,13 +186,25 @@ body::after {
 
 .card:hover .card-strip { opacity: 1; }
 
-.card.malaysia .card-strip {
-  background: linear-gradient(90deg, #ef4444, #f97316, #eab308, #22c55e, #3b82f6, #8b5cf6);
-}
+.card.math .card-strip { background: linear-gradient(90deg, #ef4444, #f97316, #eab308, #22c55e, #3b82f6, #8b5cf6); }
+.card.history .card-strip { background: linear-gradient(90deg, #d97706, #b45309, #92400e, #c2410c, #a16207); }
+.card.cs .card-strip { background: linear-gradient(90deg, #3b82f6, #06b6d4, #6366f1, #0ea5e9, #4f46e5); }
+.card.physics .card-strip { background: linear-gradient(90deg, #3b82f6, #ef4444, #22c55e, #f59e0b, #8b5cf6); }
+.card.chemistry .card-strip { background: linear-gradient(90deg, #065f46, #0d9488, #14b8a6, #34d399, #6ee7b7); }
+.card.biology .card-strip { background: linear-gradient(90deg, #365314, #4d7c0f, #65a30d, #84cc16, #a3e635); }
 
-.card.igcse .card-strip {
-  background: linear-gradient(90deg, #ef4444, #f97316, #22c55e, #3b82f6, #6366f1, #ec4899);
+.section-label {
+  font-family: 'Instrument Serif', serif;
+  font-size: 18px;
+  color: #55516a;
+  margin-bottom: 16px;
+  margin-top: 40px;
+  text-align: left;
+  width: 100%;
+  padding-left: 4px;
+  letter-spacing: 0.5px;
 }
+.section-label:first-of-type { margin-top: 0; }
 
 .footer {
   margin-top: 60px;
@@ -224,32 +236,112 @@ body::after {
   </div>
 
   <div class="cards">
-    <a href="malaysia-math.html" class="card malaysia">
+    <div class="section-label">Malaysia Curriculum (KSSR / KSSM)</div>
+
+    <a href="malaysia-math.html" class="card math">
       <div class="card-strip"></div>
       <span class="card-arrow">&rarr;</span>
       <span class="card-flag">&#127474;&#127486;</span>
-      <div class="card-title">Malaysia Mathematics</div>
-      <div class="card-subtitle">KSSR / KSSM / STPM</div>
+      <div class="card-title">Mathematics</div>
+      <div class="card-subtitle">Year 1 — STPM</div>
       <div class="card-stats">
         <div class="card-stat"><span class="card-stat-n">595</span><span class="card-stat-l">topics</span></div>
         <div class="card-stat"><span class="card-stat-n">1,241</span><span class="card-stat-l">prerequisites</span></div>
-        <div class="card-stat"><span class="card-stat-n">19</span><span class="card-stat-l">books</span></div>
       </div>
-      <div class="card-desc">Year 1 through STPM pre-university. Complete prerequisite map across arithmetic, algebra, geometry, calculus, statistics.</div>
+      <div class="card-desc">Arithmetic through calculus. 19 textbooks, Year 1 to STPM pre-university.</div>
     </a>
 
-    <a href="igcse-math.html" class="card igcse">
+    <a href="malaysia-sejarah.html" class="card history">
+      <div class="card-strip"></div>
+      <span class="card-arrow">&rarr;</span>
+      <span class="card-flag">&#127474;&#127486;</span>
+      <div class="card-title">History (Sejarah)</div>
+      <div class="card-subtitle">Year 4 — Form 5</div>
+      <div class="card-stats">
+        <div class="card-stat"><span class="card-stat-n">79</span><span class="card-stat-l">topics</span></div>
+        <div class="card-stat"><span class="card-stat-n">99</span><span class="card-stat-l">prerequisites</span></div>
+      </div>
+      <div class="card-desc">Pre-history to modern governance. Malay kingdoms, colonialism, independence, constitution.</div>
+    </a>
+
+    <a href="malaysia-cs.html" class="card cs">
+      <div class="card-strip"></div>
+      <span class="card-arrow">&rarr;</span>
+      <span class="card-flag">&#127474;&#127486;</span>
+      <div class="card-title">Computer Science</div>
+      <div class="card-subtitle">ASK (F1-3) + Sains Komputer (F4-5)</div>
+      <div class="card-stats">
+        <div class="card-stat"><span class="card-stat-n">69</span><span class="card-stat-l">topics</span></div>
+        <div class="card-stat"><span class="card-stat-n">80</span><span class="card-stat-l">prerequisites</span></div>
+      </div>
+      <div class="card-desc">Computational thinking, algorithms, programming, databases, web development.</div>
+    </a>
+
+    <div class="section-label">Cambridge IGCSE</div>
+
+    <a href="igcse-math.html" class="card math">
       <div class="card-strip"></div>
       <span class="card-arrow">&rarr;</span>
       <span class="card-flag">&#127468;&#127463;</span>
-      <div class="card-title">IGCSE Mathematics</div>
-      <div class="card-subtitle">Cambridge 0580</div>
+      <div class="card-title">Mathematics</div>
+      <div class="card-subtitle">0580 Core &amp; Extended + 0606 Add Math</div>
       <div class="card-stats">
         <div class="card-stat"><span class="card-stat-n">199</span><span class="card-stat-l">topics</span></div>
         <div class="card-stat"><span class="card-stat-n">319</span><span class="card-stat-l">prerequisites</span></div>
-        <div class="card-stat"><span class="card-stat-n">39</span><span class="card-stat-l">strands</span></div>
       </div>
-      <div class="card-desc">Core &amp; Extended + Additional Mathematics. Number through calculus, 39 topic strands with full prerequisite chains.</div>
+      <div class="card-desc">Number through calculus. Core, Extended, and Additional Mathematics with full prerequisite chains.</div>
+    </a>
+
+    <a href="igcse-physics.html" class="card physics">
+      <div class="card-strip"></div>
+      <span class="card-arrow">&rarr;</span>
+      <span class="card-flag">&#127468;&#127463;</span>
+      <div class="card-title">Physics</div>
+      <div class="card-subtitle">0625</div>
+      <div class="card-stats">
+        <div class="card-stat"><span class="card-stat-n" id="phys-n">—</span><span class="card-stat-l">topics</span></div>
+        <div class="card-stat"><span class="card-stat-n" id="phys-e">—</span><span class="card-stat-l">prerequisites</span></div>
+      </div>
+      <div class="card-desc">Mechanics, thermal physics, waves, electricity &amp; magnetism, atomic physics.</div>
+    </a>
+
+    <a href="igcse-chemistry.html" class="card chemistry">
+      <div class="card-strip"></div>
+      <span class="card-arrow">&rarr;</span>
+      <span class="card-flag">&#127468;&#127463;</span>
+      <div class="card-title">Chemistry</div>
+      <div class="card-subtitle">0620</div>
+      <div class="card-stats">
+        <div class="card-stat"><span class="card-stat-n">74</span><span class="card-stat-l">topics</span></div>
+        <div class="card-stat"><span class="card-stat-n">103</span><span class="card-stat-l">prerequisites</span></div>
+      </div>
+      <div class="card-desc">Particles, atomic structure, bonding, reactions, periodic table, organic chemistry.</div>
+    </a>
+
+    <a href="igcse-biology.html" class="card biology">
+      <div class="card-strip"></div>
+      <span class="card-arrow">&rarr;</span>
+      <span class="card-flag">&#127468;&#127463;</span>
+      <div class="card-title">Biology</div>
+      <div class="card-subtitle">0610</div>
+      <div class="card-stats">
+        <div class="card-stat"><span class="card-stat-n">72</span><span class="card-stat-l">topics</span></div>
+        <div class="card-stat"><span class="card-stat-n">96</span><span class="card-stat-l">prerequisites</span></div>
+      </div>
+      <div class="card-desc">Cells, nutrition, transport, reproduction, genetics, ecology, biotechnology.</div>
+    </a>
+
+    <a href="igcse-compsci.html" class="card cs">
+      <div class="card-strip"></div>
+      <span class="card-arrow">&rarr;</span>
+      <span class="card-flag">&#127468;&#127463;</span>
+      <div class="card-title">Computer Science</div>
+      <div class="card-subtitle">0478</div>
+      <div class="card-stats">
+        <div class="card-stat"><span class="card-stat-n">57</span><span class="card-stat-l">topics</span></div>
+        <div class="card-stat"><span class="card-stat-n">68</span><span class="card-stat-l">prerequisites</span></div>
+      </div>
+      <div class="card-desc">Binary, logic gates, architecture, networking, security, algorithms, programming, databases.</div>
     </a>
   </div>
 

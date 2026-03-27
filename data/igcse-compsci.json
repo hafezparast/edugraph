@@ -1,0 +1,835 @@
+{
+  "metadata": {
+    "domain": "computer_science",
+    "curriculum": "Cambridge IGCSE Computer Science (0478)",
+    "version": "0.1.0",
+    "description": "IGCSE Computer Science prerequisite graph",
+    "sources": [
+      "igcse_compsci_raw.txt"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "igcse.cs.binary_hex",
+      "name": "Binary Systems and Hexadecimal",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "igcse.cs.communication",
+      "name": "Communication and Internet Technologies",
+      "color": "#6366f1",
+      "order": 2
+    },
+    {
+      "id": "igcse.cs.logic",
+      "name": "Logic Gates and Logic Circuits",
+      "color": "#8b5cf6",
+      "order": 3
+    },
+    {
+      "id": "igcse.cs.os_architecture",
+      "name": "Operating Systems and Computer Architecture",
+      "color": "#7c3aed",
+      "order": 4
+    },
+    {
+      "id": "igcse.cs.io_devices",
+      "name": "Input and Output Devices",
+      "color": "#2563eb",
+      "order": 5
+    },
+    {
+      "id": "igcse.cs.memory_storage",
+      "name": "Memory and Data Storage",
+      "color": "#4f46e5",
+      "order": 6
+    },
+    {
+      "id": "igcse.cs.languages",
+      "name": "High- and Low-level Languages",
+      "color": "#7e22ce",
+      "order": 7
+    },
+    {
+      "id": "igcse.cs.security_ethics",
+      "name": "Security and Ethics",
+      "color": "#6d28d9",
+      "order": 8
+    },
+    {
+      "id": "igcse.cs.problem_solving",
+      "name": "Problem-solving and Design",
+      "color": "#1d4ed8",
+      "order": 9
+    },
+    {
+      "id": "igcse.cs.pseudocode_flowcharts",
+      "name": "Pseudocode and Flowcharts",
+      "color": "#4338ca",
+      "order": 10
+    },
+    {
+      "id": "igcse.cs.programming",
+      "name": "Programming Concepts",
+      "color": "#5b21b6",
+      "order": 11
+    },
+    {
+      "id": "igcse.cs.data_structures",
+      "name": "Data Structures: Arrays and Using Pre-release Material",
+      "color": "#3730a3",
+      "order": 12
+    },
+    {
+      "id": "igcse.cs.databases",
+      "name": "Databases",
+      "color": "#1e3a8a",
+      "order": 13
+    }
+  ],
+  "nodes": [
+    {
+      "id": "cs.ch1.the_binary_system",
+      "label": "The binary system",
+      "book": "igcse.cs.binary_hex",
+      "pages": "12-14",
+      "description": "The binary system — Binary Systems and Hexadecimal (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch1.measurement_of_the_size_of_computer_memories",
+      "label": "Measurement of the size of computer memories",
+      "book": "igcse.cs.binary_hex",
+      "pages": "14-15",
+      "description": "Measurement of the size of computer memories — Binary Systems and Hexadecimal (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch1.example_use_of_binary",
+      "label": "Example use of binary",
+      "book": "igcse.cs.binary_hex",
+      "pages": "15-17",
+      "description": "Example use of binary — Binary Systems and Hexadecimal (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch1.the_hexadecimal_system",
+      "label": "The hexadecimal system",
+      "book": "igcse.cs.binary_hex",
+      "pages": "17-22",
+      "description": "The hexadecimal system — Binary Systems and Hexadecimal (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch1.use_of_the_hexadecimal_system",
+      "label": "Use of the hexadecimal system",
+      "book": "igcse.cs.binary_hex",
+      "pages": "22-27",
+      "description": "Use of the hexadecimal system — Binary Systems and Hexadecimal (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch2.data_transmission",
+      "label": "Data transmission",
+      "book": "igcse.cs.communication",
+      "pages": "28-32",
+      "description": "Data transmission — Communication and Internet Technologies (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch2.error_checking_methods",
+      "label": "Error-checking methods",
+      "book": "igcse.cs.communication",
+      "pages": "32-40",
+      "description": "Error-checking methods — Communication and Internet Technologies (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch2.internet_technologies",
+      "label": "Internet technologies",
+      "book": "igcse.cs.communication",
+      "pages": "40-43",
+      "description": "Internet technologies — Communication and Internet Technologies (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch3.logic_gates",
+      "label": "Logic gates",
+      "book": "igcse.cs.logic",
+      "pages": "44-45",
+      "description": "Logic gates — Logic Gates and Logic Circuits (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch3.truth_tables",
+      "label": "Truth tables",
+      "book": "igcse.cs.logic",
+      "pages": "45-45",
+      "description": "Truth tables — Logic Gates and Logic Circuits (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch3.the_function_of_the_six_logic_gates",
+      "label": "The function of the six logic gates",
+      "book": "igcse.cs.logic",
+      "pages": "45-50",
+      "description": "The function of the six logic gates — Logic Gates and Logic Circuits (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch3.logic_circuits",
+      "label": "Logic circuits",
+      "book": "igcse.cs.logic",
+      "pages": "50-64",
+      "description": "Logic circuits — Logic Gates and Logic Circuits (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch3.logic_circuits_in_the_real_world",
+      "label": "Logic circuits in the real world",
+      "book": "igcse.cs.logic",
+      "pages": "64-67",
+      "description": "Logic circuits in the real world — Logic Gates and Logic Circuits (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch4.operating_systems",
+      "label": "Operating systems",
+      "book": "igcse.cs.os_architecture",
+      "pages": "68-70",
+      "description": "Operating systems — Operating Systems and Computer Architecture (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch4.interrupts",
+      "label": "Interrupts",
+      "book": "igcse.cs.os_architecture",
+      "pages": "70-72",
+      "description": "Interrupts — Operating Systems and Computer Architecture (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch4.computer_architecture",
+      "label": "Computer architecture",
+      "book": "igcse.cs.os_architecture",
+      "pages": "72-78",
+      "description": "Computer architecture — Operating Systems and Computer Architecture (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch4.the_fetch_execute_cycle",
+      "label": "The fetch-execute cycle",
+      "book": "igcse.cs.os_architecture",
+      "pages": "78-80",
+      "description": "The fetch-execute cycle — Operating Systems and Computer Architecture (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch5.input_devices",
+      "label": "Input devices",
+      "book": "igcse.cs.io_devices",
+      "pages": "81-105",
+      "description": "Input devices — Input and Output Devices (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch5.output_devices",
+      "label": "Output devices",
+      "book": "igcse.cs.io_devices",
+      "pages": "105-117",
+      "description": "Output devices — Input and Output Devices (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch6.file_formats",
+      "label": "File formats",
+      "book": "igcse.cs.memory_storage",
+      "pages": "118-123",
+      "description": "File formats — Memory and Data Storage (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch6.lossless_and_lossy_file_compression",
+      "label": "Lossless and lossy file compression",
+      "book": "igcse.cs.memory_storage",
+      "pages": "123-124",
+      "description": "Lossless and lossy file compression — Memory and Data Storage (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch6.memory_and_storage",
+      "label": "Memory and storage",
+      "book": "igcse.cs.memory_storage",
+      "pages": "124-135",
+      "description": "Memory and storage — Memory and Data Storage (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch6.how_to_estimate_the_size_of_a_file",
+      "label": "How to estimate the size of a file",
+      "book": "igcse.cs.memory_storage",
+      "pages": "135-138",
+      "description": "How to estimate the size of a file — Memory and Data Storage (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch7.programming_languages",
+      "label": "Programming languages",
+      "book": "igcse.cs.languages",
+      "pages": "139-143",
+      "description": "Programming languages — High- and Low-level Languages (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch7.translators",
+      "label": "Translators",
+      "book": "igcse.cs.languages",
+      "pages": "143-145",
+      "description": "Translators — High- and Low-level Languages (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch7.what_happens_when_things_go_wrong",
+      "label": "What happens when things go wrong?",
+      "book": "igcse.cs.languages",
+      "pages": "145-148",
+      "description": "What happens when things go wrong? — High- and Low-level Languages (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch8.security_and_data_integrity",
+      "label": "Security and data integrity",
+      "book": "igcse.cs.security_ethics",
+      "pages": "149-154",
+      "description": "Security and data integrity — Security and Ethics (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch8.cookies",
+      "label": "Cookies",
+      "book": "igcse.cs.security_ethics",
+      "pages": "154-155",
+      "description": "Cookies — Security and Ethics (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch8.loss_of_data_and_data_corruption",
+      "label": "Loss of data and data corruption",
+      "book": "igcse.cs.security_ethics",
+      "pages": "155-155",
+      "description": "Loss of data and data corruption — Security and Ethics (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch8.firewalls_and_proxy_servers",
+      "label": "Firewalls and proxy servers",
+      "book": "igcse.cs.security_ethics",
+      "pages": "155-157",
+      "description": "Firewalls and proxy servers — Security and Ethics (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch8.security_protocols",
+      "label": "Security protocols",
+      "book": "igcse.cs.security_ethics",
+      "pages": "157-159",
+      "description": "Security protocols — Security and Ethics (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch8.encryption",
+      "label": "Encryption",
+      "book": "igcse.cs.security_ethics",
+      "pages": "159-165",
+      "description": "Encryption — Security and Ethics (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch8.applications",
+      "label": "Applications",
+      "book": "igcse.cs.security_ethics",
+      "pages": "165-167",
+      "description": "Applications — Security and Ethics (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch8.computer_ethics",
+      "label": "Computer ethics",
+      "book": "igcse.cs.security_ethics",
+      "pages": "167-168",
+      "description": "Computer ethics — Security and Ethics (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch8.free_software_freeware_and_shareware",
+      "label": "Free software, freeware and shareware",
+      "book": "igcse.cs.security_ethics",
+      "pages": "168-172",
+      "description": "Free software, freeware and shareware — Security and Ethics (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch9.algorithms",
+      "label": "Algorithms",
+      "book": "igcse.cs.problem_solving",
+      "pages": "177-179",
+      "description": "Algorithms — Problem-solving and Design (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch9.test_data",
+      "label": "Test data",
+      "book": "igcse.cs.problem_solving",
+      "pages": "179-180",
+      "description": "Test data — Problem-solving and Design (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch9.validation_and_verification",
+      "label": "Validation and verification",
+      "book": "igcse.cs.problem_solving",
+      "pages": "180-186",
+      "description": "Validation and verification — Problem-solving and Design (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch9.using_trace_tables",
+      "label": "Using trace tables",
+      "book": "igcse.cs.problem_solving",
+      "pages": "186-190",
+      "description": "Using trace tables — Problem-solving and Design (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch9.identifying_and_correcting_errors",
+      "label": "Identifying and correcting errors",
+      "book": "igcse.cs.problem_solving",
+      "pages": "190-194",
+      "description": "Identifying and correcting errors — Problem-solving and Design (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch9.producing_algorithms",
+      "label": "Producing algorithms",
+      "book": "igcse.cs.problem_solving",
+      "pages": "194-201",
+      "description": "Producing algorithms — Problem-solving and Design (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch10.assignment",
+      "label": "Assignment",
+      "book": "igcse.cs.pseudocode_flowcharts",
+      "pages": "202-203",
+      "description": "Assignment — Pseudocode and Flowcharts (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch10.conditional_statements",
+      "label": "Conditional statements",
+      "book": "igcse.cs.pseudocode_flowcharts",
+      "pages": "203-206",
+      "description": "Conditional statements — Pseudocode and Flowcharts (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch10.loop_structures",
+      "label": "Loop structures",
+      "book": "igcse.cs.pseudocode_flowcharts",
+      "pages": "206-209",
+      "description": "Loop structures — Pseudocode and Flowcharts (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch10.input_and_output_statements",
+      "label": "Input and output statements",
+      "book": "igcse.cs.pseudocode_flowcharts",
+      "pages": "209-209",
+      "description": "Input and output statements — Pseudocode and Flowcharts (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch10.standard_actions",
+      "label": "Standard actions",
+      "book": "igcse.cs.pseudocode_flowcharts",
+      "pages": "209-209",
+      "description": "Standard actions — Pseudocode and Flowcharts (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch10.examples_of_algorithms_in_pseudocode",
+      "label": "Examples of algorithms in pseudocode",
+      "book": "igcse.cs.pseudocode_flowcharts",
+      "pages": "209-212",
+      "description": "Examples of algorithms in pseudocode — Pseudocode and Flowcharts (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch10.standard_flowchart_symbols",
+      "label": "Standard flowchart symbols",
+      "book": "igcse.cs.pseudocode_flowcharts",
+      "pages": "212-218",
+      "description": "Standard flowchart symbols — Pseudocode and Flowcharts (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch11.programming",
+      "label": "Programming",
+      "book": "igcse.cs.programming",
+      "pages": "219-223",
+      "description": "Programming — Programming Concepts (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch11.declaration_and_use_of_variables_and_constants",
+      "label": "Declaration and use of variables and constants",
+      "book": "igcse.cs.programming",
+      "pages": "223-224",
+      "description": "Declaration and use of variables and constants — Programming Concepts (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch11.basic_data_types",
+      "label": "Basic data types",
+      "book": "igcse.cs.programming",
+      "pages": "224-226",
+      "description": "Basic data types — Programming Concepts (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch11.how_to_make_your_program_work",
+      "label": "How to make your program work",
+      "book": "igcse.cs.programming",
+      "pages": "226-241",
+      "description": "How to make your program work — Programming Concepts (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch12.arrays",
+      "label": "Arrays",
+      "book": "igcse.cs.data_structures",
+      "pages": "243-248",
+      "description": "Arrays — Data Structures: Arrays and Using Pre-release Material (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch12.using_pre_release_material",
+      "label": "Using pre-release material",
+      "book": "igcse.cs.data_structures",
+      "pages": "248-249",
+      "description": "Using pre-release material — Data Structures: Arrays and Using Pre-release Material (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch13.what_are_databases_used_for",
+      "label": "What are databases used for?",
+      "book": "igcse.cs.databases",
+      "pages": "250-250",
+      "description": "What are databases used for? — Databases (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch13.the_structure_of_a_database",
+      "label": "The structure of a database",
+      "book": "igcse.cs.databases",
+      "pages": "250-252",
+      "description": "The structure of a database — Databases (IGCSE Computer Science)"
+    },
+    {
+      "id": "cs.ch13.practical_use_of_a_database",
+      "label": "Practical use of a database",
+      "book": "igcse.cs.databases",
+      "pages": "252-263",
+      "description": "Practical use of a database — Databases (IGCSE Computer Science)"
+    }
+  ],
+  "edges": [
+    {
+      "source": "cs.ch1.the_binary_system",
+      "target": "cs.ch1.measurement_of_the_size_of_computer_memories",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch1.the_binary_system",
+      "target": "cs.ch1.example_use_of_binary",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch1.the_binary_system",
+      "target": "cs.ch1.the_hexadecimal_system",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch1.the_hexadecimal_system",
+      "target": "cs.ch1.use_of_the_hexadecimal_system",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch1.the_binary_system",
+      "target": "cs.ch3.logic_gates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch3.logic_gates",
+      "target": "cs.ch3.truth_tables",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch3.logic_gates",
+      "target": "cs.ch3.the_function_of_the_six_logic_gates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch3.truth_tables",
+      "target": "cs.ch3.logic_circuits",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch3.the_function_of_the_six_logic_gates",
+      "target": "cs.ch3.logic_circuits",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch3.logic_circuits",
+      "target": "cs.ch3.logic_circuits_in_the_real_world",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch4.computer_architecture",
+      "target": "cs.ch4.the_fetch_execute_cycle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch4.the_fetch_execute_cycle",
+      "target": "cs.ch4.operating_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch4.operating_systems",
+      "target": "cs.ch4.interrupts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch1.the_binary_system",
+      "target": "cs.ch2.data_transmission",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch2.data_transmission",
+      "target": "cs.ch2.error_checking_methods",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch2.data_transmission",
+      "target": "cs.ch2.internet_technologies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch5.input_devices",
+      "target": "cs.ch5.output_devices",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch5.input_devices",
+      "target": "cs.ch6.memory_and_storage",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch5.output_devices",
+      "target": "cs.ch6.memory_and_storage",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch1.use_of_the_hexadecimal_system",
+      "target": "cs.ch6.file_formats",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch1.measurement_of_the_size_of_computer_memories",
+      "target": "cs.ch6.memory_and_storage",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch6.file_formats",
+      "target": "cs.ch6.lossless_and_lossy_file_compression",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch6.file_formats",
+      "target": "cs.ch6.how_to_estimate_the_size_of_a_file",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch6.memory_and_storage",
+      "target": "cs.ch6.how_to_estimate_the_size_of_a_file",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch4.computer_architecture",
+      "target": "cs.ch7.programming_languages",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch7.programming_languages",
+      "target": "cs.ch7.translators",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch7.translators",
+      "target": "cs.ch7.what_happens_when_things_go_wrong",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch2.internet_technologies",
+      "target": "cs.ch8.security_and_data_integrity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch8.security_and_data_integrity",
+      "target": "cs.ch8.cookies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch8.security_and_data_integrity",
+      "target": "cs.ch8.loss_of_data_and_data_corruption",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch8.security_and_data_integrity",
+      "target": "cs.ch8.firewalls_and_proxy_servers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch8.security_and_data_integrity",
+      "target": "cs.ch8.encryption",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch8.encryption",
+      "target": "cs.ch8.security_protocols",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch8.security_protocols",
+      "target": "cs.ch8.applications",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch8.security_and_data_integrity",
+      "target": "cs.ch8.computer_ethics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch8.computer_ethics",
+      "target": "cs.ch8.free_software_freeware_and_shareware",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch9.algorithms",
+      "target": "cs.ch9.test_data",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch9.algorithms",
+      "target": "cs.ch9.validation_and_verification",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch9.algorithms",
+      "target": "cs.ch9.using_trace_tables",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch9.using_trace_tables",
+      "target": "cs.ch9.identifying_and_correcting_errors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch9.algorithms",
+      "target": "cs.ch9.producing_algorithms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch9.producing_algorithms",
+      "target": "cs.ch10.assignment",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch10.assignment",
+      "target": "cs.ch10.conditional_statements",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch10.conditional_statements",
+      "target": "cs.ch10.loop_structures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch10.assignment",
+      "target": "cs.ch10.input_and_output_statements",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch10.loop_structures",
+      "target": "cs.ch10.standard_actions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch10.standard_actions",
+      "target": "cs.ch10.examples_of_algorithms_in_pseudocode",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch10.assignment",
+      "target": "cs.ch10.standard_flowchart_symbols",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch7.programming_languages",
+      "target": "cs.ch11.programming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch10.examples_of_algorithms_in_pseudocode",
+      "target": "cs.ch11.programming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch11.programming",
+      "target": "cs.ch11.declaration_and_use_of_variables_and_constants",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch11.declaration_and_use_of_variables_and_constants",
+      "target": "cs.ch11.basic_data_types",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch11.basic_data_types",
+      "target": "cs.ch11.how_to_make_your_program_work",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch11.how_to_make_your_program_work",
+      "target": "cs.ch12.arrays",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch12.arrays",
+      "target": "cs.ch12.using_pre_release_material",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch9.validation_and_verification",
+      "target": "cs.ch12.using_pre_release_material",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch1.example_use_of_binary",
+      "target": "cs.ch6.file_formats",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch11.basic_data_types",
+      "target": "cs.ch13.what_are_databases_used_for",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch13.what_are_databases_used_for",
+      "target": "cs.ch13.the_structure_of_a_database",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch13.the_structure_of_a_database",
+      "target": "cs.ch13.practical_use_of_a_database",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch9.test_data",
+      "target": "cs.ch9.identifying_and_correcting_errors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch6.lossless_and_lossy_file_compression",
+      "target": "cs.ch6.how_to_estimate_the_size_of_a_file",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch4.computer_architecture",
+      "target": "cs.ch5.input_devices",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch2.internet_technologies",
+      "target": "cs.ch8.cookies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch7.what_happens_when_things_go_wrong",
+      "target": "cs.ch9.identifying_and_correcting_errors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch3.logic_circuits_in_the_real_world",
+      "target": "cs.ch4.computer_architecture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch8.firewalls_and_proxy_servers",
+      "target": "cs.ch8.security_protocols",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cs.ch9.algorithms",
+      "target": "cs.ch10.assignment",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

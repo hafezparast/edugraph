@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduGraph — Malaysia History (Sejarah)</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #08090e;
+  --surface: rgba(12,14,24,0.94);
+  --border: rgba(255,255,255,0.06);
+  --text: #e8e4dc;
+  --text2: #8a8697;
+  --text3: #55516a;
+  --gold: #ffc857;
+  --topbar: 52px;
+  --sidebar: 230px;
+  --detail: 300px;
+}
+html, body { height: 100%; background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 13px; overflow: hidden; }
+
+/* Grain */
+body::after { content: ''; position: fixed; inset: 0; opacity: 0.035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9999; }
+
+/* Topbar */
+.topbar { position: fixed; top: 0; left: 0; right: 0; height: var(--topbar); display: flex; align-items: center; justify-content: space-between; padding: 0 18px; background: rgba(8,9,14,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); z-index: 200; }
+.topbar-left { display: flex; align-items: baseline; gap: 12px; }
+.topbar h1 { font-family: 'Instrument Serif', serif; font-size: 22px; font-weight: 400; color: var(--gold); }
+.topbar .sub { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; }
+.topbar-right { display: flex; align-items: center; gap: 6px; }
+.stats { display: flex; gap: 14px; margin-right: 12px; }
+.stat-n { font-family: 'Instrument Serif', serif; font-size: 17px; color: var(--gold); }
+.stat-l { font-size: 9px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; margin-left: 3px; }
+.nav-btn { background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text2); padding: 4px 10px; border-radius: 5px; font-size: 10px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.15s; }
+.nav-btn:hover { background: rgba(255,200,87,0.08); border-color: rgba(255,200,87,0.15); color: var(--gold); }
+
+/* Sidebar */
+.sidebar { position: fixed; top: var(--topbar); left: 0; bottom: 0; width: var(--sidebar); background: var(--surface); border-right: 1px solid var(--border); overflow-y: auto; z-index: 100; padding: 12px; display: flex; flex-direction: column; gap: 10px; }
+.sidebar::-webkit-scrollbar { width: 3px; }
+.sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
+.sec-title { font-family: 'Instrument Serif', serif; font-size: 13px; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.sec-title::before { content: ''; width: 2px; height: 11px; background: var(--gold); border-radius: 1px; }
+
+.search-box { width: 100%; padding: 7px 10px 7px 28px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 12px; outline: none; }
+.search-box::placeholder { color: var(--text3); }
+.search-box:focus { border-color: rgba(255,200,87,0.25); }
+.search-wrap { position: relative; }
+.search-wrap::before { content: '⌕'; position: absolute; left: 9px; top: 50%; transform: translateY(-50%); color: var(--text3); font-size: 13px; }
+
+/* Tabs */
+.tab-bar { display: flex; gap: 0; margin-bottom: 8px; border-bottom: 1px solid var(--border); }
+.tab-btn { flex: 1; background: none; border: none; border-bottom: 2px solid transparent; color: var(--text3); padding: 6px 4px; font-size: 10px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-transform: uppercase; letter-spacing: 0.8px; transition: all 0.15s; }
+.tab-btn:hover { color: var(--text2); }
+.tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+.book-btns { display: flex; gap: 3px; margin-bottom: 6px; }
+.book-btn { flex: 1; background: rgba(255,255,255,0.03); border: 1px solid var(--border); color: var(--text3); padding: 3px; border-radius: 4px; font-size: 9px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
+.book-btn:hover { color: var(--text2); }
+
+/* Collapsible groups */
+.group-header { display: flex; align-items: center; gap: 5px; padding: 5px 4px; cursor: pointer; user-select: none; border-radius: 4px; margin-top: 4px; transition: background 0.12s; }
+.group-header:hover { background: rgba(255,255,255,0.03); }
+.group-arrow { font-size: 8px; color: var(--text3); transition: transform 0.2s; width: 12px; text-align: center; }
+.group-header.collapsed .group-arrow { transform: rotate(-90deg); }
+.group-label { font-size: 10px; color: var(--text2); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; flex: 1; }
+.group-cnt { font-size: 9px; color: var(--text3); }
+.group-body { overflow: hidden; transition: max-height 0.25s ease; }
+.group-header.collapsed + .group-body { max-height: 0 !important; overflow: hidden; }
+
+.book-list { display: flex; flex-direction: column; gap: 1px; }
+.book-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px 3px 16px; border-radius: 4px; cursor: pointer; transition: all 0.12s; user-select: none; }
+.book-item:hover { background: rgba(255,255,255,0.03); }
+.book-item.off { opacity: 0.2; }
+.book-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; transition: transform 0.15s; }
+.book-item:not(.off) .book-dot { box-shadow: 0 0 5px currentColor; }
+.book-name { font-size: 10px; color: var(--text2); flex: 1; }
+.book-item:not(.off) .book-name { color: var(--text); }
+.book-cnt { font-size: 9px; color: var(--text3); }
+
+/* Strand items */
+.strand-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px 3px 16px; border-radius: 4px; cursor: pointer; transition: all 0.12s; user-select: none; }
+.strand-item:hover { background: rgba(255,255,255,0.03); }
+.strand-item.off { opacity: 0.2; }
+.strand-dot { width: 7px; height: 7px; border-radius: 3px; flex-shrink: 0; }
+.strand-name { font-size: 10px; color: var(--text2); flex: 1; }
+.strand-item:not(.off) .strand-name { color: var(--text); }
+.strand-cnt { font-size: 9px; color: var(--text3); }
+
+.controls { padding-top: 8px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 6px; }
+.ctrl-row { display: flex; align-items: center; justify-content: space-between; }
+.ctrl-label { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; }
+.ctrl-slider { -webkit-appearance: none; width: 90px; height: 3px; background: rgba(255,255,255,0.1); border-radius: 2px; outline: none; }
+.ctrl-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; background: var(--gold); border-radius: 50%; cursor: pointer; }
+
+.hint { font-size: 9px; color: var(--text3); line-height: 1.6; padding-top: 8px; border-top: 1px solid var(--border); }
+.hint b { color: var(--text2); font-weight: 500; }
+
+/* Graph SVG */
+#graph-container { position: fixed; top: var(--topbar); left: var(--sidebar); right: 0; bottom: 0; transition: right 0.3s; }
+#graph-container.detail-open { right: var(--detail); }
+svg { width: 100%; height: 100%; display: block; }
+
+/* Detail panel */
+.detail { position: fixed; top: var(--topbar); right: calc(-1 * var(--detail)); bottom: 0; width: var(--detail); background: var(--surface); border-left: 1px solid var(--border); z-index: 100; overflow-y: auto; padding: 20px 16px; transition: right 0.3s; }
+.detail.open { right: 0; }
+.detail::-webkit-scrollbar { width: 3px; }
+.detail::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
+.detail-close { position: absolute; top: 12px; right: 12px; width: 24px; height: 24px; border-radius: 5px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text3); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+.detail-close:hover { color: var(--text); }
+.detail-badge { display: inline-flex; align-items: center; gap: 5px; padding: 2px 8px; border-radius: 12px; font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+.detail-pages { display: inline-block; padding: 3px 10px; border-radius: 5px; font-family: 'Instrument Serif', serif; font-size: 16px; background: rgba(255,200,87,0.08); color: var(--gold); border: 1px solid rgba(255,200,87,0.12); margin-bottom: 10px; }
+.detail-title { font-family: 'Instrument Serif', serif; font-size: 20px; line-height: 1.2; margin-bottom: 14px; }
+.conn-section { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
+.conn-head { font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text3); margin-bottom: 6px; }
+.conn-head.prereq { color: #e07a5f; }
+.conn-head.leads { color: #81b29a; }
+.conn-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px; border-radius: 4px; cursor: pointer; transition: background 0.12s; }
+.conn-item:hover { background: rgba(255,255,255,0.04); }
+.conn-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+.conn-label { font-size: 11px; color: var(--text2); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.conn-book { font-size: 8px; color: var(--text3); flex-shrink: 0; }
+
+@media (max-width: 800px) {
+  .sidebar { display: none; }
+  :root { --sidebar: 0px; }
+  .topbar .sub, .stats { display: none; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <h1>EduGraph</h1>
+    <span class="sub">Year 4 to Form 5</span>
+  </div>
+  <div class="topbar-right">
+    <div class="stats">
+      <span><span class="stat-n" id="s-nodes">0</span><span class="stat-l">nodes</span></span>
+      <span><span class="stat-n" id="s-edges">0</span><span class="stat-l">edges</span></span>
+    </div>
+    <a href="index.html" class="nav-btn">Home</a>
+  </div>
+</header>
+
+<aside class="sidebar">
+  <div class="search-wrap">
+    <input type="text" class="search-box" id="search" placeholder="Search topics..." autocomplete="off">
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="grades">Grades</button>
+    <button class="tab-btn" data-tab="topics">Topics</button>
+    <button class="tab-btn" data-tab="forces">Forces</button>
+  </div>
+
+  <!-- Grades Tab -->
+  <div class="tab-content active" id="tab-grades">
+    <div class="book-btns">
+      <button class="book-btn" id="b-all">All</button>
+      <button class="book-btn" id="b-none">None</button>
+    </div>
+    <div id="grades-list"></div>
+  </div>
+
+  <!-- Topics Tab -->
+  <div class="tab-content" id="tab-topics">
+    <div class="book-btns">
+      <button class="book-btn" id="t-all">All</button>
+      <button class="book-btn" id="t-none">None</button>
+    </div>
+    <div id="topics-list"></div>
+  </div>
+
+  <!-- Forces Tab -->
+  <div class="tab-content" id="tab-forces">
+    <div class="sec-title">Physics</div>
+    <div class="controls">
+      <div class="ctrl-row">
+        <span class="ctrl-label">Repulsion</span>
+        <input type="range" class="ctrl-slider" id="sl-charge" min="-600" max="-20" value="-120">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Link Dist</span>
+        <input type="range" class="ctrl-slider" id="sl-dist" min="15" max="200" value="55">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Gravity</span>
+        <input type="range" class="ctrl-slider" id="sl-gravity" min="0" max="100" value="8">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Collision</span>
+        <input type="range" class="ctrl-slider" id="sl-collide" min="1" max="30" value="10">
+      </div>
+    </div>
+    <div class="hint">
+      <b>Drag</b> nodes — physics responds live<br>
+      <b>Scroll</b> to zoom, drag canvas to pan<br>
+      <b>Click</b> node for details &amp; neighbors<br>
+      <b>Sliders</b> tune forces in real-time
+    </div>
+  </div>
+</aside>
+
+<div id="graph-container">
+  <svg id="svg"></svg>
+</div>
+
+<div class="detail" id="detail">
+  <button class="detail-close" id="detail-close">✕</button>
+  <div id="detail-content"></div>
+</div>
+
+<script>
+const rawNodes = [{"id": "sej.y4.ch1_knowing_history", "label": "Knowing History", "color": "#d97706", "book": "book.sej.y4", "bookName": "Year 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Introduction to history \u2014 Pengertian Sejarah, sources of history, research methods, space and time, cause and effect in historical events", "strand": "Time"}, {"id": "sej.y4.ch2_me_and_family", "label": "Me and My Family", "color": "#d97706", "book": "book.sej.y4", "bookName": "Year 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Personal and family history \u2014 Saya dan Keluarga, understanding one's own heritage and family lineage", "strand": "Geometry"}, {"id": "sej.y4.ch3_history_of_school", "label": "History of School", "color": "#d97706", "book": "book.sej.y4", "bookName": "Year 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "History of one's school \u2014 Sejarah Sekolah, understanding the origins and development of educational institutions", "strand": "Other"}, {"id": "sej.y4.ch4_history_of_residence", "label": "History of Place of Residence", "color": "#d97706", "book": "book.sej.y4", "bookName": "Year 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "History of one's local area \u2014 Sejarah Tempat Tinggal, understanding the historical development of one's community", "strand": "Measurement"}, {"id": "sej.y4.ch5_ice_age", "label": "The Ice Age", "color": "#d97706", "book": "book.sej.y4", "bookName": "Year 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Introduction to the Ice Age \u2014 Zaman Air Batu, basic understanding of geological and climate changes in Southeast Asia", "strand": "Sets & Logic"}, {"id": "sej.y4.ch6_prehistoric_era", "label": "Pre-Historic Era", "color": "#d97706", "book": "book.sej.y4", "bookName": "Year 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Introduction to the prehistoric era \u2014 Zaman Pra-Sejarah, early human life and settlements in the Malay Archipelago", "strand": "Perimeter, Area & Volume"}, {"id": "sej.y4.ch7_early_malay_kingdoms", "label": "Early Malay Kingdoms", "color": "#d97706", "book": "book.sej.y4", "bookName": "Year 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Introduction to early Malay kingdoms \u2014 Kerajaan Melayu Awal, the rise of early political entities in the Malay world", "strand": "Other"}, {"id": "sej.y4.ch8_malacca_sultanate_figures", "label": "Distinguished Figures of Malacca Sultanate", "color": "#d97706", "book": "book.sej.y4", "bookName": "Year 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Key historical figures \u2014 Tokoh Terbilang Kesultanan Melayu Melaka, notable personalities of the Malacca Sultanate", "strand": "Other"}, {"id": "sej.y4.ch9_founding_malacca", "label": "Founding of the Malacca Sultanate", "color": "#d97706", "book": "book.sej.y4", "bookName": "Year 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "The establishment of Malacca \u2014 Pengasasan Kesultanan Melayu Melaka, Parameswara and the founding of the great trading port", "strand": "Other"}, {"id": "sej.y4.ch10_tun_perak", "label": "Tun Perak the Distinguished Bendahara", "color": "#d97706", "book": "book.sej.y4", "bookName": "Year 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Biography of Tun Perak \u2014 Tun Perak Bendahara Terbilang, the legendary chief minister who expanded Malacca's influence", "strand": "Functions & Graphs"}, {"id": "sej.y4.ch11_hang_tuah", "label": "Hang Tuah the Distinguished Admiral", "color": "#d97706", "book": "book.sej.y4", "bookName": "Year 4", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Biography of Hang Tuah \u2014 Hang Tuah Laksamana Terbilang, the legendary Malay warrior and admiral of the Malacca Sultanate", "strand": "Functions & Graphs"}, {"id": "sej.y5.ch1_royal_institution", "label": "The Royal Institution", "color": "#b45309", "book": "book.sej.y5", "bookName": "Year 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "The institution of the Malay rulers \u2014 Institusi Raja Payung Negara, the role and significance of the monarchy in Malaysia", "strand": "Perimeter, Area & Volume"}, {"id": "sej.y5.ch2_islam_in_malaysia", "label": "Islam in Malaysia", "color": "#b45309", "book": "book.sej.y5", "bookName": "Year 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "The spread and role of Islam \u2014 Agama Islam di Malaysia, the arrival of Islam and its influence on Malay society and governance", "strand": "Other"}, {"id": "sej.y5.ch3_malay_language_heritage", "label": "Malay Language Our Heritage", "color": "#b45309", "book": "book.sej.y5", "bookName": "Year 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "The Malay language as cultural heritage \u2014 Bahasa Melayu Warisan Kita, the development and significance of Bahasa Melayu", "strand": "Other"}, {"id": "sej.y5.ch4_sovereignty_challenged", "label": "National Sovereignty Challenged", "color": "#b45309", "book": "book.sej.y5", "bookName": "Year 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Threats to national sovereignty \u2014 Kedaulatan Negara Dicabar, colonial encroachment and challenges to Malay sovereignty", "strand": "Other"}, {"id": "sej.y5.ch5_fighting_colonizers", "label": "Rising to Fight Colonizers", "color": "#b45309", "book": "book.sej.y5", "bookName": "Year 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Resistance against colonial powers \u2014 Bangkit Berjuang Penjajah Ditentang, early struggles against foreign domination", "strand": "Indices & Logarithms"}, {"id": "sej.y5.ch6_history_of_independence", "label": "History of Independence", "color": "#b45309", "book": "book.sej.y5", "bookName": "Year 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "The path to Merdeka \u2014 Sejarah Kemerdekaan, the journey towards Malaysian independence", "strand": "Other"}, {"id": "sej.y5.ch7_yang_dipertuan_agong", "label": "Yang Di-Pertuan Agong", "color": "#b45309", "book": "book.sej.y5", "bookName": "Year 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "The Supreme Head of State \u2014 Yang Di-Pertuan Agong Teras Kedaulatan Negara, the role and significance of the King", "strand": "Other"}, {"id": "sej.y5.ch8_national_coat_of_arms", "label": "National Coat of Arms", "color": "#b45309", "book": "book.sej.y5", "bookName": "Year 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "The Jata Negara \u2014 national emblem of Malaysia, its symbolism and historical significance", "strand": "Other"}, {"id": "sej.y5.ch9_national_flag", "label": "Malaysian National Flag", "color": "#b45309", "book": "book.sej.y5", "bookName": "Year 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "The Jalur Gemilang \u2014 Bendera Kebangsaan Malaysia, history and symbolism of the Malaysian flag", "strand": "Other"}, {"id": "sej.y5.ch10_national_anthem", "label": "Malaysian National Anthem", "color": "#b45309", "book": "book.sej.y5", "bookName": "Year 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "The Negaraku \u2014 Lagu Kebangsaan Malaysia, origins and significance of the national anthem", "strand": "Other"}, {"id": "sej.y5.ch11_national_language", "label": "National Language", "color": "#b45309", "book": "book.sej.y5", "bookName": "Year 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Bahasa Kebangsaan \u2014 the national language, its role as a unifying element in Malaysian society", "strand": "Other"}, {"id": "sej.y5.ch12_national_flower", "label": "Hibiscus National Flower", "color": "#b45309", "book": "book.sej.y5", "bookName": "Year 5", "bookOrder": 2, "r": 5.6, "pages": "", "description": "The Bunga Raya \u2014 Bunga Raya Bunga Kebangsaan, the hibiscus as Malaysia's national flower and its symbolism", "strand": "Other"}, {"id": "sej.y6.ch1_formation_of_malaysia", "label": "Formation of Malaysia", "color": "#92400e", "book": "book.sej.y6", "bookName": "Year 6", "bookOrder": 3, "r": 6.4, "pages": "", "description": "The birth of Malaysia \u2014 Pembentukan Malaysia, the merger of Malaya, Sabah, Sarawak, and Singapore in 1963", "strand": "Other"}, {"id": "sej.y6.ch2_states_of_malaysia", "label": "States of Malaysia", "color": "#92400e", "book": "book.sej.y6", "bookName": "Year 6", "bookOrder": 3, "r": 6.4, "pages": "", "description": "The states and territories \u2014 Negeri-negeri di Malaysia, an overview of the thirteen states and federal territories", "strand": "Other"}, {"id": "sej.y6.ch3_rukun_negara", "label": "National Principles (Rukun Negara)", "color": "#92400e", "book": "book.sej.y6", "bookName": "Year 6", "bookOrder": 3, "r": 6.4, "pages": "", "description": "The five national principles \u2014 Rukun Negara, the ideological foundation of Malaysian society introduced in 1970", "strand": "Sets & Logic"}, {"id": "sej.y6.ch4_ethnic_groups", "label": "Ethnic Groups in Malaysia", "color": "#92400e", "book": "book.sej.y6", "bookName": "Year 6", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Malaysia's diverse communities \u2014 Kaum Di Malaysia, the major ethnic groups and their contributions to nation-building", "strand": "Measurement"}, {"id": "sej.y6.ch5_religion_and_beliefs", "label": "Religion and Beliefs in Malaysia", "color": "#92400e", "book": "book.sej.y6", "bookName": "Year 6", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Religious diversity \u2014 Agama dan Kepercayaan di Malaysia, the role of Islam as the official religion and the practice of other faiths", "strand": "Other"}, {"id": "sej.y6.ch6_community_celebrations", "label": "Community Celebrations in Malaysia", "color": "#92400e", "book": "book.sej.y6", "bookName": "Year 6", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Festivals and celebrations \u2014 Perayaan Masyarakat Di Malaysia, the cultural festivities of Malaysia's diverse communities", "strand": "Ratio & Proportion"}, {"id": "sej.y6.ch7_leaders_of_malaysia", "label": "Leaders of Malaysia", "color": "#92400e", "book": "book.sej.y6", "bookName": "Year 6", "bookOrder": 3, "r": 6.4, "pages": "", "description": "National leaders \u2014 Pemimpin Negara Malaysia, the prime ministers and key political figures who shaped modern Malaysia", "strand": "Geometry"}, {"id": "sej.y6.ch8_economic_progress", "label": "Economic Progress in Malaysia", "color": "#92400e", "book": "book.sej.y6", "bookName": "Year 6", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Economic development \u2014 Kemajuan Ekonomi di Malaysia, the growth of Malaysia's economy from agriculture to industrialization", "strand": "Other"}, {"id": "sej.y6.ch9_proud_sports", "label": "Malaysia's Proud Sports", "color": "#92400e", "book": "book.sej.y6", "bookName": "Year 6", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Sports achievements \u2014 Sukan Kebanggaan Malaysia, Malaysia's accomplishments in badminton, hockey, and other sports", "strand": "Other"}, {"id": "sej.y6.ch10_malaysia_and_world", "label": "Malaysia and the World", "color": "#92400e", "book": "book.sej.y6", "bookName": "Year 6", "bookOrder": 3, "r": 6.4, "pages": "", "description": "International relations \u2014 Malaysia dan Dunia, Malaysia's role in ASEAN, the UN, and the global community", "strand": "Measurement"}, {"id": "sej.f1.ch1_knowing_history", "label": "Knowing History (Form 1)", "color": "#c2410c", "book": "book.sej.f1", "bookName": "Form 1", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Deeper study of historical methodology \u2014 Mengenali Sejarah, definitions, sources, research methods, interpretation, and the importance of history", "strand": "Perimeter, Area & Volume"}, {"id": "sej.f1.ch2_ice_age", "label": "The Ice Age (Form 1)", "color": "#c2410c", "book": "book.sej.f1", "bookName": "Form 1", "bookOrder": 4, "r": 7.2, "pages": "", "description": "In-depth study of the Ice Age \u2014 Zaman Air Batu, geological changes, land bridges, and their impact on Southeast Asia", "strand": "Sets & Logic"}, {"id": "sej.f1.ch3_prehistoric_era", "label": "Prehistoric Era (Form 1)", "color": "#c2410c", "book": "book.sej.f1", "bookName": "Form 1", "bookOrder": 4, "r": 7.2, "pages": "", "description": "In-depth study of prehistory \u2014 Zaman Prasejarah, Paleolithic, Mesolithic, Neolithic periods and early human migration", "strand": "Ratio & Proportion"}, {"id": "sej.f1.ch4_knowing_civilizations", "label": "Knowing Civilizations", "color": "#c2410c", "book": "book.sej.f1", "bookName": "Form 1", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Introduction to world civilizations \u2014 Mengenali Tamadun, the concept and characteristics of civilization", "strand": "Other"}, {"id": "sej.f1.ch5_early_world_civilizations", "label": "Early World Civilizations", "color": "#c2410c", "book": "book.sej.f1", "bookName": "Form 1", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Ancient civilizations \u2014 Tamadun Awal Dunia, Mesopotamia, Egypt, Indus Valley, and Huang He civilizations", "strand": "Other"}, {"id": "sej.f1.ch6_greek_roman_civilization", "label": "Rise of Greek-Roman Civilization", "color": "#c2410c", "book": "book.sej.f1", "bookName": "Form 1", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Classical civilizations \u2014 Peningkatan Tamadun Yunani Rom, contributions of Greece and Rome to governance, philosophy, and culture", "strand": "Other"}, {"id": "sej.f1.ch7_indian_chinese_civilization", "label": "Rise of Indian and Chinese Civilization", "color": "#c2410c", "book": "book.sej.f1", "bookName": "Form 1", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Asian civilizations \u2014 Peningkatan Tamadun India dan China, contributions and influence on Southeast Asia", "strand": "Other"}, {"id": "sej.f1.ch8_islamic_civilization", "label": "Islamic Civilization and Contributions", "color": "#c2410c", "book": "book.sej.f1", "bookName": "Form 1", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Islamic civilization \u2014 Tamadun Islam dan Sumbangan, the rise of Islam and its contributions to science, art, and governance", "strand": "Other"}, {"id": "sej.f2.ch1_kingdoms_malay_world", "label": "Kingdoms of the Malay World", "color": "#9a3412", "book": "book.sej.f2", "bookName": "Form 2", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Early Malay kingdoms \u2014 Kerajaan Alam Melayu, Srivijaya, Majapahit, and other maritime and land-based kingdoms", "strand": "Time"}, {"id": "sej.f2.ch2_governance_economy", "label": "Governance and Economy", "color": "#9a3412", "book": "book.sej.f2", "bookName": "Form 2", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Political and economic systems \u2014 Sistem Pemerintahan dan Kegiatan Ekonomi, governance structures and trade in the Malay world", "strand": "Other"}, {"id": "sej.f2.ch3_socioculture", "label": "Socio-culture of Society", "color": "#9a3412", "book": "book.sej.f2", "bookName": "Form 2", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Social and cultural life \u2014 Sosiobudaya Masyarakat, customs, traditions, and social structures of Malay world communities", "strand": "Time"}, {"id": "sej.f2.ch4_religion_beliefs_heritage", "label": "Religion, Beliefs and Heritage", "color": "#9a3412", "book": "book.sej.f2", "bookName": "Form 2", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Religious influence and cultural heritage \u2014 Agama, Kepercayaan dan Keunikan Warisan, Hinduism, Buddhism, Islam and their legacy", "strand": "Other"}, {"id": "sej.f2.ch5_malacca_sultanate", "label": "The Malacca Sultanate (Form 2)", "color": "#9a3412", "book": "book.sej.f2", "bookName": "Form 2", "bookOrder": 5, "r": 8.0, "pages": "", "description": "In-depth study of Malacca \u2014 Kesultanan Melayu Melaka, administration, trade, society, and the golden age of the sultanate", "strand": "Ratio & Proportion"}, {"id": "sej.f2.ch6_johor_riau_sultanate", "label": "The Johor-Riau Sultanate", "color": "#9a3412", "book": "book.sej.f2", "bookName": "Form 2", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Successor to Malacca \u2014 Kesultanan Johor Riau, the continuation of Malay sovereignty after the fall of Malacca", "strand": "Other"}, {"id": "sej.f2.ch7_pahang_perak_terengganu_selangor", "label": "Sultanates of Pahang, Perak, Terengganu, and Selangor", "color": "#9a3412", "book": "book.sej.f2", "bookName": "Form 2", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Malay sultanates \u2014 Kesultanan Melayu Pahang, Perak, Terengganu, dan Selangor, their establishment and governance", "strand": "Other"}, {"id": "sej.f2.ch8_kedah_kelantan_ns_perlis", "label": "Kedah, Kelantan, Negeri Sembilan, and Perlis", "color": "#9a3412", "book": "book.sej.f2", "bookName": "Form 2", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Northern and central states \u2014 Kerajaan Kedah, Kelantan, Negeri Sembilan, dan Perlis, their unique governance systems", "strand": "Other"}, {"id": "sej.f2.ch9_heritage_kedah_kelantan_ns_perlis", "label": "Heritage of Kedah, Kelantan, Negeri Sembilan, and Perlis", "color": "#9a3412", "book": "book.sej.f2", "bookName": "Form 2", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Cultural heritage \u2014 Warisan Kerajaan Kedah, Kelantan, Negeri Sembilan dan Perlis, unique traditions and legacy", "strand": "Other"}, {"id": "sej.f2.ch10_sarawak_sabah", "label": "Sarawak and Sabah", "color": "#9a3412", "book": "book.sej.f2", "bookName": "Form 2", "bookOrder": 5, "r": 8.0, "pages": "", "description": "East Malaysian states \u2014 Sarawak dan Sabah, the history, governance, and unique heritage of Borneo territories", "strand": "Other"}, {"id": "sej.f3.ch1_arrival_western_powers", "label": "Arrival of Western Powers", "color": "#7c2d12", "book": "book.sej.f3", "bookName": "Form 3", "bookOrder": 6, "r": 8.8, "pages": "", "description": "European colonialism begins \u2014 Kedatangan Kuasa Barat, the Portuguese, Dutch, and British arrival in the Malay world", "strand": "Indices & Logarithms"}, {"id": "sej.f3.ch2_straits_settlements", "label": "Administration of Straits Settlements", "color": "#7c2d12", "book": "book.sej.f3", "bookName": "Form 3", "bookOrder": 6, "r": 8.8, "pages": "", "description": "British Straits Settlements \u2014 Pentadbiran Negeri-negeri Selat, Penang, Malacca, and Singapore under British rule", "strand": "Ratio & Proportion"}, {"id": "sej.f3.ch3_federated_malay_states", "label": "Federated Malay States Administration", "color": "#7c2d12", "book": "book.sej.f3", "bookName": "Form 3", "bookOrder": 6, "r": 8.8, "pages": "", "description": "The FMS \u2014 Pentadbiran Negeri-negeri Melayu Bersekutu, British Resident system in Perak, Selangor, Pahang, and Negeri Sembilan", "strand": "Ratio & Proportion"}, {"id": "sej.f3.ch4_unfederated_malay_states", "label": "Unfederated Malay States Administration", "color": "#7c2d12", "book": "book.sej.f3", "bookName": "Form 3", "bookOrder": 6, "r": 8.8, "pages": "", "description": "The UMS \u2014 Pentadbiran Negeri-negeri Melayu Tidak Bersekutu, British influence in Kedah, Kelantan, Terengganu, Perlis, and Johor", "strand": "Ratio & Proportion"}, {"id": "sej.f3.ch5_western_admin_sarawak_sabah", "label": "Western Administration in Sarawak and Sabah", "color": "#7c2d12", "book": "book.sej.f3", "bookName": "Form 3", "bookOrder": 6, "r": 8.8, "pages": "", "description": "Colonial rule in Borneo \u2014 Pentadbiran Barat di Sarawak dan Sabah, the Brooke dynasty and North Borneo Company", "strand": "Ratio & Proportion"}, {"id": "sej.f3.ch6_impact_western_admin", "label": "Impact of Western Administration", "color": "#7c2d12", "book": "book.sej.f3", "bookName": "Form 3", "bookOrder": 6, "r": 8.8, "pages": "", "description": "Colonial consequences \u2014 Kesan Pentadbiran Barat, economic exploitation, social changes, and political impact", "strand": "Sequences & Series"}, {"id": "sej.f3.ch7_local_resistance", "label": "Local Resistance", "color": "#7c2d12", "book": "book.sej.f3", "bookName": "Form 3", "bookOrder": 6, "r": 8.8, "pages": "", "description": "Anti-colonial struggles \u2014 Penentangan Masyarakat Tempatan, resistance by local communities against Western powers", "strand": "Indices & Logarithms"}, {"id": "sej.f3.ch8_wisdom_malay_rulers", "label": "Wisdom of Malay Rulers and Chiefs", "color": "#7c2d12", "book": "book.sej.f3", "bookName": "Form 3", "bookOrder": 6, "r": 8.8, "pages": "", "description": "Malay leadership \u2014 Kebijaksanaan Raja dan Pembesar Melayu, diplomatic strategies of rulers in dealing with colonial powers", "strand": "Indices & Logarithms"}, {"id": "sej.f4.ch1_heritage_nation", "label": "Heritage of the Nation", "color": "#a16207", "book": "book.sej.f4", "bookName": "Form 4", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "National heritage foundations \u2014 Warisan Negara Bangsa, the historical roots and identity of the Malaysian nation", "strand": "Indices & Logarithms"}, {"id": "sej.f4.ch2_rise_of_nationalism", "label": "Rise of Nationalism", "color": "#a16207", "book": "book.sej.f4", "bookName": "Form 4", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "Malay nationalism \u2014 Kebangkitan Nasionalisme, the growth of national consciousness and political movements", "strand": "Other"}, {"id": "sej.f4.ch3_japanese_occupation", "label": "World Conflicts and Japanese Occupation", "color": "#a16207", "book": "book.sej.f4", "bookName": "Form 4", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "WWII in Malaya \u2014 Konflik Dunia dan Pendudukan Jepun, the impact of Japanese occupation from 1941 to 1945", "strand": "Other"}, {"id": "sej.f4.ch4_british_power_transition", "label": "British Power Transition Era", "color": "#a16207", "book": "book.sej.f4", "bookName": "Form 4", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "Post-war British return \u2014 Era Peralihan Kuasa British, the Malayan Union proposal and Malay opposition", "strand": "Indices & Logarithms"}, {"id": "sej.f4.ch5_federation_malaya_1948", "label": "Federation of Malaya 1948", "color": "#a16207", "book": "book.sej.f4", "bookName": "Form 4", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "The Federation agreement \u2014 Persekutuan Tanah Melayu 1948, replacing the Malayan Union with a new constitutional framework", "strand": "Ratio & Proportion"}, {"id": "sej.f4.ch6_communist_threat_emergency", "label": "Communist Threat and Emergency", "color": "#a16207", "book": "book.sej.f4", "bookName": "Form 4", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "The Malayan Emergency \u2014 Ancaman Komunis dan Perisytiharan Darurat, the communist insurgency and the state of emergency", "strand": "Other"}, {"id": "sej.f4.ch7_efforts_towards_independence", "label": "Efforts Towards Independence", "color": "#a16207", "book": "book.sej.f4", "bookName": "Form 4", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "The road to Merdeka \u2014 Usaha Ke Arah Kemerdekaan, political negotiations, the Reid Commission, and constitutional talks", "strand": "Other"}, {"id": "sej.f4.ch8_elections", "label": "Elections", "color": "#a16207", "book": "book.sej.f4", "bookName": "Form 4", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "Early democratic processes \u2014 Pilihan Raya, the first municipal and federal elections leading to self-governance", "strand": "Other"}, {"id": "sej.f4.ch9_constitution_1957", "label": "Federal Constitution 1957", "color": "#a16207", "book": "book.sej.f4", "bookName": "Form 4", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "The Merdeka constitution \u2014 Perlembagaan Persekutuan Tanah Melayu 1957, drafting and key provisions of the constitution", "strand": "Other"}, {"id": "sej.f4.ch10_proclamation_independence", "label": "Proclamation of Independence", "color": "#a16207", "book": "book.sej.f4", "bookName": "Form 4", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "Merdeka 1957 \u2014 Pemasyhuran Kemerdekaan, the declaration of independence on 31 August 1957 by Tunku Abdul Rahman", "strand": "Ratio & Proportion"}, {"id": "sej.f5.ch1_national_sovereignty", "label": "National Sovereignty", "color": "#78350f", "book": "book.sej.f5", "bookName": "Form 5", "bookOrder": 8, "r": 10.4, "pages": "", "description": "Sovereignty of the nation \u2014 Kedaulatan Negara, the concept and importance of national sovereignty in the Malaysian context", "strand": "Other"}, {"id": "sej.f5.ch2_federal_constitution", "label": "Federal Constitution", "color": "#78350f", "book": "book.sej.f5", "bookName": "Form 5", "bookOrder": 8, "r": 10.4, "pages": "", "description": "The supreme law \u2014 Perlembagaan Persekutuan, detailed study of the Malaysian Federal Constitution and its amendments", "strand": "Other"}, {"id": "sej.f5.ch3_constitutional_monarchy", "label": "Constitutional Monarchy and Parliamentary Democracy", "color": "#78350f", "book": "book.sej.f5", "bookName": "Form 5", "bookOrder": 8, "r": 10.4, "pages": "", "description": "System of governance \u2014 Raja Berperlembagaan dan Demokrasi Berparlimen, the dual pillars of Malaysian governance", "strand": "Perimeter, Area & Volume"}, {"id": "sej.f5.ch4_federal_system", "label": "Federal System", "color": "#78350f", "book": "book.sej.f5", "bookName": "Form 5", "bookOrder": 8, "r": 10.4, "pages": "", "description": "Federalism in Malaysia \u2014 Sistem Persekutuan, the division of powers between federal and state governments", "strand": "Arithmetic"}, {"id": "sej.f5.ch5_formation_of_malaysia", "label": "Formation of Malaysia (Form 5)", "color": "#78350f", "book": "book.sej.f5", "bookName": "Form 5", "bookOrder": 8, "r": 10.4, "pages": "", "description": "In-depth study of Malaysia's formation \u2014 Pembentukan Malaysia, the political process, negotiations, and the Malaysia Agreement 1963", "strand": "Other"}, {"id": "sej.f5.ch6_post_malaysia_challenges", "label": "Post-Malaysia Formation Challenges", "color": "#78350f", "book": "book.sej.f5", "bookName": "Form 5", "bookOrder": 8, "r": 10.4, "pages": "", "description": "Challenges after 1963 \u2014 Cabaran Selepas Pembentukan Malaysia, Konfrontasi, Singapore's separation, and the May 13 incident", "strand": "Ratio & Proportion"}, {"id": "sej.f5.ch7_building_wellbeing", "label": "Building National Well-being", "color": "#78350f", "book": "book.sej.f5", "bookName": "Form 5", "bookOrder": 8, "r": 10.4, "pages": "", "description": "Social development \u2014 Membina Kesejahteraan Negara, national unity policies, education, and social welfare programs", "strand": "Measurement"}, {"id": "sej.f5.ch8_building_prosperity", "label": "Building National Prosperity", "color": "#78350f", "book": "book.sej.f5", "bookName": "Form 5", "bookOrder": 8, "r": 10.4, "pages": "", "description": "Economic policies \u2014 Membina Kemakmuran Negara, NEP, NDP, Vision 2020, and Malaysia's economic transformation", "strand": "Symmetry & Transformations"}, {"id": "sej.f5.ch9_foreign_policy", "label": "Malaysia's Foreign Policy", "color": "#78350f", "book": "book.sej.f5", "bookName": "Form 5", "bookOrder": 8, "r": 10.4, "pages": "", "description": "International relations \u2014 Dasar Luar Malaysia, Malaysia's foreign policy principles and involvement in international organizations", "strand": "Other"}, {"id": "sej.f5.ch10_world_excellence", "label": "Malaysia's World Excellence", "color": "#78350f", "book": "book.sej.f5", "bookName": "Form 5", "bookOrder": 8, "r": 10.4, "pages": "", "description": "Global achievements \u2014 Kecemerlangan Malaysia di Persada Dunia, Malaysia's contributions and recognition on the world stage", "strand": "Other"}];
+const rawEdges = [{"source": "sej.y4.ch1_knowing_history", "target": "sej.y4.ch2_me_and_family"}, {"source": "sej.y4.ch2_me_and_family", "target": "sej.y4.ch3_history_of_school"}, {"source": "sej.y4.ch3_history_of_school", "target": "sej.y4.ch4_history_of_residence"}, {"source": "sej.y4.ch4_history_of_residence", "target": "sej.y4.ch5_ice_age"}, {"source": "sej.y4.ch5_ice_age", "target": "sej.y4.ch6_prehistoric_era"}, {"source": "sej.y4.ch6_prehistoric_era", "target": "sej.y4.ch7_early_malay_kingdoms"}, {"source": "sej.y4.ch7_early_malay_kingdoms", "target": "sej.y4.ch8_malacca_sultanate_figures"}, {"source": "sej.y4.ch8_malacca_sultanate_figures", "target": "sej.y4.ch9_founding_malacca"}, {"source": "sej.y4.ch9_founding_malacca", "target": "sej.y4.ch10_tun_perak"}, {"source": "sej.y4.ch10_tun_perak", "target": "sej.y4.ch11_hang_tuah"}, {"source": "sej.y5.ch1_royal_institution", "target": "sej.y5.ch2_islam_in_malaysia"}, {"source": "sej.y5.ch2_islam_in_malaysia", "target": "sej.y5.ch3_malay_language_heritage"}, {"source": "sej.y5.ch3_malay_language_heritage", "target": "sej.y5.ch4_sovereignty_challenged"}, {"source": "sej.y5.ch4_sovereignty_challenged", "target": "sej.y5.ch5_fighting_colonizers"}, {"source": "sej.y5.ch5_fighting_colonizers", "target": "sej.y5.ch6_history_of_independence"}, {"source": "sej.y5.ch6_history_of_independence", "target": "sej.y5.ch7_yang_dipertuan_agong"}, {"source": "sej.y5.ch7_yang_dipertuan_agong", "target": "sej.y5.ch8_national_coat_of_arms"}, {"source": "sej.y5.ch8_national_coat_of_arms", "target": "sej.y5.ch9_national_flag"}, {"source": "sej.y5.ch9_national_flag", "target": "sej.y5.ch10_national_anthem"}, {"source": "sej.y5.ch10_national_anthem", "target": "sej.y5.ch11_national_language"}, {"source": "sej.y5.ch11_national_language", "target": "sej.y5.ch12_national_flower"}, {"source": "sej.y6.ch1_formation_of_malaysia", "target": "sej.y6.ch2_states_of_malaysia"}, {"source": "sej.y6.ch2_states_of_malaysia", "target": "sej.y6.ch3_rukun_negara"}, {"source": "sej.y6.ch3_rukun_negara", "target": "sej.y6.ch4_ethnic_groups"}, {"source": "sej.y6.ch4_ethnic_groups", "target": "sej.y6.ch5_religion_and_beliefs"}, {"source": "sej.y6.ch5_religion_and_beliefs", "target": "sej.y6.ch6_community_celebrations"}, {"source": "sej.y6.ch6_community_celebrations", "target": "sej.y6.ch7_leaders_of_malaysia"}, {"source": "sej.y6.ch7_leaders_of_malaysia", "target": "sej.y6.ch8_economic_progress"}, {"source": "sej.y6.ch8_economic_progress", "target": "sej.y6.ch9_proud_sports"}, {"source": "sej.y6.ch9_proud_sports", "target": "sej.y6.ch10_malaysia_and_world"}, {"source": "sej.f1.ch1_knowing_history", "target": "sej.f1.ch2_ice_age"}, {"source": "sej.f1.ch2_ice_age", "target": "sej.f1.ch3_prehistoric_era"}, {"source": "sej.f1.ch3_prehistoric_era", "target": "sej.f1.ch4_knowing_civilizations"}, {"source": "sej.f1.ch4_knowing_civilizations", "target": "sej.f1.ch5_early_world_civilizations"}, {"source": "sej.f1.ch5_early_world_civilizations", "target": "sej.f1.ch6_greek_roman_civilization"}, {"source": "sej.f1.ch6_greek_roman_civilization", "target": "sej.f1.ch7_indian_chinese_civilization"}, {"source": "sej.f1.ch7_indian_chinese_civilization", "target": "sej.f1.ch8_islamic_civilization"}, {"source": "sej.f2.ch1_kingdoms_malay_world", "target": "sej.f2.ch2_governance_economy"}, {"source": "sej.f2.ch2_governance_economy", "target": "sej.f2.ch3_socioculture"}, {"source": "sej.f2.ch3_socioculture", "target": "sej.f2.ch4_religion_beliefs_heritage"}, {"source": "sej.f2.ch4_religion_beliefs_heritage", "target": "sej.f2.ch5_malacca_sultanate"}, {"source": "sej.f2.ch5_malacca_sultanate", "target": "sej.f2.ch6_johor_riau_sultanate"}, {"source": "sej.f2.ch6_johor_riau_sultanate", "target": "sej.f2.ch7_pahang_perak_terengganu_selangor"}, {"source": "sej.f2.ch7_pahang_perak_terengganu_selangor", "target": "sej.f2.ch8_kedah_kelantan_ns_perlis"}, {"source": "sej.f2.ch8_kedah_kelantan_ns_perlis", "target": "sej.f2.ch9_heritage_kedah_kelantan_ns_perlis"}, {"source": "sej.f2.ch9_heritage_kedah_kelantan_ns_perlis", "target": "sej.f2.ch10_sarawak_sabah"}, {"source": "sej.f3.ch1_arrival_western_powers", "target": "sej.f3.ch2_straits_settlements"}, {"source": "sej.f3.ch2_straits_settlements", "target": "sej.f3.ch3_federated_malay_states"}, {"source": "sej.f3.ch3_federated_malay_states", "target": "sej.f3.ch4_unfederated_malay_states"}, {"source": "sej.f3.ch4_unfederated_malay_states", "target": "sej.f3.ch5_western_admin_sarawak_sabah"}, {"source": "sej.f3.ch5_western_admin_sarawak_sabah", "target": "sej.f3.ch6_impact_western_admin"}, {"source": "sej.f3.ch6_impact_western_admin", "target": "sej.f3.ch7_local_resistance"}, {"source": "sej.f3.ch7_local_resistance", "target": "sej.f3.ch8_wisdom_malay_rulers"}, {"source": "sej.f4.ch1_heritage_nation", "target": "sej.f4.ch2_rise_of_nationalism"}, {"source": "sej.f4.ch2_rise_of_nationalism", "target": "sej.f4.ch3_japanese_occupation"}, {"source": "sej.f4.ch3_japanese_occupation", "target": "sej.f4.ch4_british_power_transition"}, {"source": "sej.f4.ch4_british_power_transition", "target": "sej.f4.ch5_federation_malaya_1948"}, {"source": "sej.f4.ch5_federation_malaya_1948", "target": "sej.f4.ch6_communist_threat_emergency"}, {"source": "sej.f4.ch6_communist_threat_emergency", "target": "sej.f4.ch7_efforts_towards_independence"}, {"source": "sej.f4.ch7_efforts_towards_independence", "target": "sej.f4.ch8_elections"}, {"source": "sej.f4.ch8_elections", "target": "sej.f4.ch9_constitution_1957"}, {"source": "sej.f4.ch9_constitution_1957", "target": "sej.f4.ch10_proclamation_independence"}, {"source": "sej.f5.ch1_national_sovereignty", "target": "sej.f5.ch2_federal_constitution"}, {"source": "sej.f5.ch2_federal_constitution", "target": "sej.f5.ch3_constitutional_monarchy"}, {"source": "sej.f5.ch3_constitutional_monarchy", "target": "sej.f5.ch4_federal_system"}, {"source": "sej.f5.ch4_federal_system", "target": "sej.f5.ch5_formation_of_malaysia"}, {"source": "sej.f5.ch5_formation_of_malaysia", "target": "sej.f5.ch6_post_malaysia_challenges"}, {"source": "sej.f5.ch6_post_malaysia_challenges", "target": "sej.f5.ch7_building_wellbeing"}, {"source": "sej.f5.ch7_building_wellbeing", "target": "sej.f5.ch8_building_prosperity"}, {"source": "sej.f5.ch8_building_prosperity", "target": "sej.f5.ch9_foreign_policy"}, {"source": "sej.f5.ch9_foreign_policy", "target": "sej.f5.ch10_world_excellence"}, {"source": "sej.y4.ch1_knowing_history", "target": "sej.f1.ch1_knowing_history"}, {"source": "sej.y4.ch5_ice_age", "target": "sej.f1.ch2_ice_age"}, {"source": "sej.y4.ch6_prehistoric_era", "target": "sej.f1.ch3_prehistoric_era"}, {"source": "sej.y4.ch7_early_malay_kingdoms", "target": "sej.f2.ch1_kingdoms_malay_world"}, {"source": "sej.y4.ch9_founding_malacca", "target": "sej.f2.ch5_malacca_sultanate"}, {"source": "sej.y4.ch11_hang_tuah", "target": "sej.y5.ch1_royal_institution"}, {"source": "sej.y5.ch4_sovereignty_challenged", "target": "sej.f4.ch2_rise_of_nationalism"}, {"source": "sej.y5.ch5_fighting_colonizers", "target": "sej.f3.ch7_local_resistance"}, {"source": "sej.y5.ch6_history_of_independence", "target": "sej.f4.ch7_efforts_towards_independence"}, {"source": "sej.y5.ch12_national_flower", "target": "sej.y6.ch1_formation_of_malaysia"}, {"source": "sej.y6.ch1_formation_of_malaysia", "target": "sej.f5.ch5_formation_of_malaysia"}, {"source": "sej.y6.ch10_malaysia_and_world", "target": "sej.f5.ch9_foreign_policy"}, {"source": "sej.f1.ch5_early_world_civilizations", "target": "sej.f2.ch1_kingdoms_malay_world"}, {"source": "sej.f1.ch7_indian_chinese_civilization", "target": "sej.f2.ch4_religion_beliefs_heritage"}, {"source": "sej.f1.ch8_islamic_civilization", "target": "sej.f2.ch4_religion_beliefs_heritage"}, {"source": "sej.f2.ch5_malacca_sultanate", "target": "sej.f3.ch1_arrival_western_powers"}, {"source": "sej.f2.ch6_johor_riau_sultanate", "target": "sej.f3.ch1_arrival_western_powers"}, {"source": "sej.f2.ch10_sarawak_sabah", "target": "sej.f3.ch5_western_admin_sarawak_sabah"}, {"source": "sej.f3.ch6_impact_western_admin", "target": "sej.f4.ch2_rise_of_nationalism"}, {"source": "sej.f3.ch6_impact_western_admin", "target": "sej.f4.ch3_japanese_occupation"}, {"source": "sej.f3.ch8_wisdom_malay_rulers", "target": "sej.f4.ch1_heritage_nation"}, {"source": "sej.f4.ch10_proclamation_independence", "target": "sej.f5.ch1_national_sovereignty"}, {"source": "sej.f4.ch9_constitution_1957", "target": "sej.f5.ch2_federal_constitution"}, {"source": "sej.y5.ch1_royal_institution", "target": "sej.f5.ch3_constitutional_monarchy"}, {"source": "sej.y5.ch7_yang_dipertuan_agong", "target": "sej.f5.ch3_constitutional_monarchy"}, {"source": "sej.y6.ch8_economic_progress", "target": "sej.f5.ch8_building_prosperity"}, {"source": "sej.y5.ch2_islam_in_malaysia", "target": "sej.f2.ch4_religion_beliefs_heritage"}, {"source": "sej.y6.ch3_rukun_negara", "target": "sej.f5.ch7_building_wellbeing"}];
+const booksData = [{"id": "book.sej.y4", "name": "Year 4", "color": "#d97706", "order": 1}, {"id": "book.sej.y5", "name": "Year 5", "color": "#b45309", "order": 2}, {"id": "book.sej.y6", "name": "Year 6", "color": "#92400e", "order": 3}, {"id": "book.sej.f1", "name": "Form 1", "color": "#c2410c", "order": 4}, {"id": "book.sej.f2", "name": "Form 2", "color": "#9a3412", "order": 5}, {"id": "book.sej.f3", "name": "Form 3", "color": "#7c2d12", "order": 6}, {"id": "book.sej.f4", "name": "Form 4", "color": "#a16207", "order": 7}, {"id": "book.sej.f5", "name": "Form 5", "color": "#78350f", "order": 8}];
+const strandsData = [{"name": "Time", "color": "#ef4444", "nodeIds": ["sej.y4.ch1_knowing_history", "sej.f2.ch1_kingdoms_malay_world", "sej.f2.ch3_socioculture"]}, {"name": "Geometry", "color": "#f97316", "nodeIds": ["sej.y4.ch2_me_and_family", "sej.y6.ch7_leaders_of_malaysia"]}, {"name": "Other", "color": "#f59e0b", "nodeIds": ["sej.y4.ch3_history_of_school", "sej.y4.ch7_early_malay_kingdoms", "sej.y4.ch8_malacca_sultanate_figures", "sej.y4.ch9_founding_malacca", "sej.y5.ch2_islam_in_malaysia", "sej.y5.ch3_malay_language_heritage", "sej.y5.ch4_sovereignty_challenged", "sej.y5.ch6_history_of_independence", "sej.y5.ch7_yang_dipertuan_agong", "sej.y5.ch8_national_coat_of_arms", "sej.y5.ch9_national_flag", "sej.y5.ch10_national_anthem", "sej.y5.ch11_national_language", "sej.y5.ch12_national_flower", "sej.y6.ch1_formation_of_malaysia", "sej.y6.ch2_states_of_malaysia", "sej.y6.ch5_religion_and_beliefs", "sej.y6.ch8_economic_progress", "sej.y6.ch9_proud_sports", "sej.f1.ch4_knowing_civilizations", "sej.f1.ch5_early_world_civilizations", "sej.f1.ch6_greek_roman_civilization", "sej.f1.ch7_indian_chinese_civilization", "sej.f1.ch8_islamic_civilization", "sej.f2.ch2_governance_economy", "sej.f2.ch4_religion_beliefs_heritage", "sej.f2.ch6_johor_riau_sultanate", "sej.f2.ch7_pahang_perak_terengganu_selangor", "sej.f2.ch8_kedah_kelantan_ns_perlis", "sej.f2.ch9_heritage_kedah_kelantan_ns_perlis", "sej.f2.ch10_sarawak_sabah", "sej.f4.ch2_rise_of_nationalism", "sej.f4.ch3_japanese_occupation", "sej.f4.ch6_communist_threat_emergency", "sej.f4.ch7_efforts_towards_independence", "sej.f4.ch8_elections", "sej.f4.ch9_constitution_1957", "sej.f5.ch1_national_sovereignty", "sej.f5.ch2_federal_constitution", "sej.f5.ch5_formation_of_malaysia", "sej.f5.ch9_foreign_policy", "sej.f5.ch10_world_excellence"]}, {"name": "Measurement", "color": "#eab308", "nodeIds": ["sej.y4.ch4_history_of_residence", "sej.y6.ch4_ethnic_groups", "sej.y6.ch10_malaysia_and_world", "sej.f5.ch7_building_wellbeing"]}, {"name": "Sets & Logic", "color": "#84cc16", "nodeIds": ["sej.y4.ch5_ice_age", "sej.y6.ch3_rukun_negara", "sej.f1.ch2_ice_age"]}, {"name": "Perimeter, Area & Volume", "color": "#22c55e", "nodeIds": ["sej.y4.ch6_prehistoric_era", "sej.y5.ch1_royal_institution", "sej.f1.ch1_knowing_history", "sej.f5.ch3_constitutional_monarchy"]}, {"name": "Functions & Graphs", "color": "#10b981", "nodeIds": ["sej.y4.ch10_tun_perak", "sej.y4.ch11_hang_tuah"]}, {"name": "Indices & Logarithms", "color": "#14b8a6", "nodeIds": ["sej.y5.ch5_fighting_colonizers", "sej.f3.ch1_arrival_western_powers", "sej.f3.ch7_local_resistance", "sej.f3.ch8_wisdom_malay_rulers", "sej.f4.ch1_heritage_nation", "sej.f4.ch4_british_power_transition"]}, {"name": "Ratio & Proportion", "color": "#06b6d4", "nodeIds": ["sej.y6.ch6_community_celebrations", "sej.f1.ch3_prehistoric_era", "sej.f2.ch5_malacca_sultanate", "sej.f3.ch2_straits_settlements", "sej.f3.ch3_federated_malay_states", "sej.f3.ch4_unfederated_malay_states", "sej.f3.ch5_western_admin_sarawak_sabah", "sej.f4.ch5_federation_malaya_1948", "sej.f4.ch10_proclamation_independence", "sej.f5.ch6_post_malaysia_challenges"]}, {"name": "Sequences & Series", "color": "#0ea5e9", "nodeIds": ["sej.f3.ch6_impact_western_admin"]}, {"name": "Arithmetic", "color": "#3b82f6", "nodeIds": ["sej.f5.ch4_federal_system"]}, {"name": "Symmetry & Transformations", "color": "#6366f1", "nodeIds": ["sej.f5.ch8_building_prosperity"]}];
+const bookGroupsData = {"Primary (Year 1-6)": [{"id": "book.sej.y4", "name": "Year 4", "color": "#d97706", "order": 1}, {"id": "book.sej.y5", "name": "Year 5", "color": "#b45309", "order": 2}, {"id": "book.sej.y6", "name": "Year 6", "color": "#92400e", "order": 3}], "Lower Secondary (Form 1-3)": [{"id": "book.sej.f1", "name": "Form 1", "color": "#c2410c", "order": 4}, {"id": "book.sej.f2", "name": "Form 2", "color": "#9a3412", "order": 5}, {"id": "book.sej.f3", "name": "Form 3", "color": "#7c2d12", "order": 6}], "Upper Secondary (Form 4-5)": [{"id": "book.sej.f4", "name": "Form 4", "color": "#a16207", "order": 7}, {"id": "book.sej.f5", "name": "Form 5", "color": "#78350f", "order": 8}]};
+
+// State
+const activeBooks = new Set(booksData.map(b => b.id));
+const activeStrands = new Set(strandsData.map(s => s.name));
+let filterMode = 'grades'; // 'grades' or 'topics'
+let selectedNode = null;
+
+// D3 setup
+const container = document.getElementById('graph-container');
+const svg = d3.select('#svg');
+const g = svg.append('g');
+
+// Arrow marker
+svg.append('defs').append('marker')
+  .attr('id', 'arrow')
+  .attr('viewBox', '0 -4 8 8')
+  .attr('refX', 18)
+  .attr('refY', 0)
+  .attr('markerWidth', 5)
+  .attr('markerHeight', 5)
+  .attr('orient', 'auto')
+  .append('path')
+  .attr('d', 'M0,-3L7,0L0,3')
+  .attr('fill', '#6b6590');
+
+// Glow marker for highlighted
+svg.select('defs').append('marker')
+  .attr('id', 'arrow-hl')
+  .attr('viewBox', '0 -4 8 8')
+  .attr('refX', 18)
+  .attr('refY', 0)
+  .attr('markerWidth', 6)
+  .attr('markerHeight', 6)
+  .attr('orient', 'auto')
+  .append('path')
+  .attr('d', 'M0,-3L7,0L0,3')
+  .attr('fill', '#ffc857');
+
+// Build graph data
+const nodes = rawNodes.map(d => ({...d}));
+const edges = rawEdges.map(d => ({...d}));
+
+// Index
+const nodeMap = {};
+nodes.forEach(n => { nodeMap[n.id] = n; });
+
+// Links
+const linkGroup = g.append('g').attr('class', 'links');
+const nodeGroup = g.append('g').attr('class', 'nodes');
+const labelGroup = g.append('g').attr('class', 'labels');
+
+let linkEls, nodeEls, labelEls;
+
+function renderGraph() {
+  // Filter
+  let visibleIds;
+  if (filterMode === 'topics') {
+    visibleIds = new Set(nodes.filter(n => activeStrands.has(n.strand)).map(n => n.id));
+  } else {
+    visibleIds = new Set(nodes.filter(n => activeBooks.has(n.book)).map(n => n.id));
+  }
+  const vNodes = nodes.filter(n => visibleIds.has(n.id));
+  const vEdges = edges.filter(e => {
+    const sid = typeof e.source === 'object' ? e.source.id : e.source;
+    const tid = typeof e.target === 'object' ? e.target.id : e.target;
+    return visibleIds.has(sid) && visibleIds.has(tid);
+  });
+
+  // Links
+  linkEls = linkGroup.selectAll('line').data(vEdges, d => {
+    const s = typeof d.source === 'object' ? d.source.id : d.source;
+    const t = typeof d.target === 'object' ? d.target.id : d.target;
+    return s + '->' + t;
+  });
+  linkEls.exit().remove();
+  linkEls = linkEls.enter().append('line')
+    .attr('stroke', '#5a5480')
+    .attr('stroke-width', 0.7)
+    .attr('stroke-opacity', 0.5)
+    .attr('marker-end', 'url(#arrow)')
+    .merge(linkEls);
+
+  // Nodes
+  nodeEls = nodeGroup.selectAll('circle').data(vNodes, d => d.id);
+  nodeEls.exit().remove();
+  nodeEls = nodeEls.enter().append('circle')
+    .attr('r', d => d.r)
+    .attr('fill', d => d.color)
+    .attr('fill-opacity', 0.85)
+    .attr('stroke', 'none')
+    .attr('stroke-width', 2)
+    .attr('cursor', 'pointer')
+    .on('click', (ev, d) => { ev.stopPropagation(); selectNode(d); })
+    .call(d3.drag()
+      .on('start', dragStart)
+      .on('drag', dragging)
+      .on('end', dragEnd))
+    .merge(nodeEls)
+    .attr('fill', d => d.color);
+
+  // Labels
+  labelEls = labelGroup.selectAll('text').data(vNodes, d => d.id);
+  labelEls.exit().remove();
+  labelEls = labelEls.enter().append('text')
+    .attr('font-size', d => Math.max(6, d.r * 0.85))
+    .attr('font-family', "'DM Sans', sans-serif")
+    .attr('fill', '#a09cac')
+    .attr('text-anchor', 'middle')
+    .attr('dy', d => d.r + 10)
+    .attr('pointer-events', 'none')
+    .text(d => d.label.length > 22 ? d.label.slice(0, 20) + '…' : d.label)
+    .merge(labelEls);
+
+  // Update simulation
+  simulation.nodes(vNodes);
+  simulation.force('link').links(vEdges);
+  simulation.alpha(0.6).restart();
+
+  updateStats(vNodes.length, vEdges.length);
+}
+
+// Force simulation
+const simulation = d3.forceSimulation()
+  .force('link', d3.forceLink().id(d => d.id).distance(55).strength(0.3))
+  .force('charge', d3.forceManyBody().strength(-120).distanceMax(400))
+  .force('center', d3.forceCenter())
+  .force('collide', d3.forceCollide().radius(10).strength(0.7))
+  .force('x', d3.forceX().strength(0.02))
+  .force('y', d3.forceY().strength(0.02))
+  .alphaDecay(0.015)
+  .velocityDecay(0.35)
+  .on('tick', ticked);
+
+function ticked() {
+  linkEls
+    .attr('x1', d => d.source.x)
+    .attr('y1', d => d.source.y)
+    .attr('x2', d => d.target.x)
+    .attr('y2', d => d.target.y);
+  nodeEls
+    .attr('cx', d => d.x)
+    .attr('cy', d => d.y);
+  labelEls
+    .attr('x', d => d.x)
+    .attr('y', d => d.y);
+}
+
+// Zoom
+const zoom = d3.zoom()
+  .scaleExtent([0.05, 8])
+  .on('zoom', (ev) => { g.attr('transform', ev.transform); });
+svg.call(zoom);
+
+// Resize
+function resize() {
+  const w = container.clientWidth;
+  const h = container.clientHeight;
+  svg.attr('viewBox', [-w/2, -h/2, w, h]);
+  simulation.force('center', d3.forceCenter(0, 0));
+}
+window.addEventListener('resize', resize);
+resize();
+
+// Drag
+function dragStart(ev, d) {
+  if (!ev.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x; d.fy = d.y;
+}
+function dragging(ev, d) {
+  d.fx = ev.x; d.fy = ev.y;
+}
+function dragEnd(ev, d) {
+  if (!ev.active) simulation.alphaTarget(0);
+  d.fx = null; d.fy = null;
+}
+
+// Selection & highlighting
+function selectNode(d) {
+  selectedNode = d;
+  const neighbors = new Set([d.id]);
+  const prereqEdges = new Set();
+  const leadsEdges = new Set();
+
+  edges.forEach(e => {
+    const sid = typeof e.source === 'object' ? e.source.id : e.source;
+    const tid = typeof e.target === 'object' ? e.target.id : e.target;
+    if (sid === d.id) { neighbors.add(tid); leadsEdges.add(sid + '->' + tid); }
+    if (tid === d.id) { neighbors.add(sid); prereqEdges.add(sid + '->' + tid); }
+  });
+
+  nodeEls.attr('fill-opacity', n => neighbors.has(n.id) ? 1 : 0.06)
+    .attr('stroke', n => n.id === d.id ? '#ffc857' : 'none')
+    .attr('stroke-width', n => n.id === d.id ? 2.5 : 0);
+  labelEls.attr('fill', n => neighbors.has(n.id) ? '#e8e4dc' : '#1a1830')
+    .attr('font-weight', n => n.id === d.id ? 600 : 400);
+  linkEls.attr('stroke', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      if (prereqEdges.has(k)) return '#e07a5f';
+      if (leadsEdges.has(k)) return '#81b29a';
+      return '#5a5480';
+    })
+    .attr('stroke-opacity', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      return (prereqEdges.has(k) || leadsEdges.has(k)) ? 0.9 : 0.04;
+    })
+    .attr('stroke-width', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      return (prereqEdges.has(k) || leadsEdges.has(k)) ? 1.8 : 0.7;
+    })
+    .attr('marker-end', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      return (prereqEdges.has(k) || leadsEdges.has(k)) ? 'url(#arrow-hl)' : 'url(#arrow)';
+    });
+
+  showDetail(d, prereqEdges, leadsEdges);
+}
+
+function clearSelection() {
+  selectedNode = null;
+  nodeEls.attr('fill-opacity', 0.85).attr('stroke', 'none');
+  labelEls.attr('fill', '#a09cac').attr('font-weight', 400);
+  linkEls.attr('stroke', '#5a5480').attr('stroke-opacity', 0.5).attr('stroke-width', 0.7).attr('marker-end', 'url(#arrow)');
+  document.getElementById('detail').classList.remove('open');
+  document.getElementById('graph-container').classList.remove('detail-open');
+}
+
+svg.on('click', () => clearSelection());
+
+// Detail panel
+function showDetail(d, prereqEdges, leadsEdges) {
+  const panel = document.getElementById('detail');
+  const content = document.getElementById('detail-content');
+  document.getElementById('graph-container').classList.add('detail-open');
+
+  const prereqs = [];
+  const leads = [];
+  edges.forEach(e => {
+    const sid = typeof e.source === 'object' ? e.source.id : e.source;
+    const tid = typeof e.target === 'object' ? e.target.id : e.target;
+    if (tid === d.id && nodeMap[sid]) prereqs.push(nodeMap[sid]);
+    if (sid === d.id && nodeMap[tid]) leads.push(nodeMap[tid]);
+  });
+
+  content.innerHTML = `
+    <div class="detail-badge" style="background:${d.color}18;color:${d.color};border:1px solid ${d.color}30">
+      <span style="width:5px;height:5px;border-radius:50%;background:${d.color};display:inline-block"></span>
+      ${d.bookName}
+    </div>
+    ${d.pages ? `<div class="detail-pages">p. ${d.pages}</div>` : ''}
+    <div class="detail-title">${d.label}</div>
+    ${prereqs.length ? `
+      <div class="conn-section">
+        <div class="conn-head prereq">▲ Prerequisites (${prereqs.length})</div>
+        ${prereqs.map(n => `<div class="conn-item" data-id="${n.id}"><span class="conn-dot" style="background:${n.color}"></span><span class="conn-label">${n.label}</span><span class="conn-book">${n.bookName}</span></div>`).join('')}
+      </div>
+    ` : '<div class="conn-section"><div class="conn-head" style="color:var(--gold)">★ Starting point</div></div>'}
+    ${leads.length ? `
+      <div class="conn-section">
+        <div class="conn-head leads">▼ Leads to (${leads.length})</div>
+        ${leads.map(n => `<div class="conn-item" data-id="${n.id}"><span class="conn-dot" style="background:${n.color}"></span><span class="conn-label">${n.label}</span><span class="conn-book">${n.bookName}</span></div>`).join('')}
+      </div>
+    ` : ''}
+  `;
+
+  content.querySelectorAll('.conn-item').forEach(el => {
+    el.addEventListener('click', () => {
+      const n = nodeMap[el.dataset.id];
+      if (n) { selectNode(n); }
+    });
+  });
+
+  panel.classList.add('open');
+}
+
+document.getElementById('detail-close').addEventListener('click', clearSelection);
+
+// Tab switching
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+// Book counts
+const bookCounts = {};
+nodes.forEach(n => { bookCounts[n.book] = (bookCounts[n.book] || 0) + 1; });
+
+// === GRADES TAB: books grouped by education level, collapsible ===
+const gradesListEl = document.getElementById('grades-list');
+Object.entries(bookGroupsData).forEach(([groupName, groupBooks]) => {
+  const totalInGroup = groupBooks.reduce((s, b) => s + (bookCounts[b.id] || 0), 0);
+  if (totalInGroup === 0) return;
+
+  // Group header
+  const header = document.createElement('div');
+  header.className = 'group-header';
+  header.innerHTML = `<span class="group-arrow">▼</span><span class="group-label">${groupName}</span><span class="group-cnt">${totalInGroup}</span>`;
+
+  // Group body
+  const body = document.createElement('div');
+  body.className = 'group-body';
+  body.style.maxHeight = '500px';
+
+  const list = document.createElement('div');
+  list.className = 'book-list';
+
+  groupBooks.forEach(b => {
+    const el = document.createElement('div');
+    el.className = 'book-item';
+    el.dataset.id = b.id;
+    el.innerHTML = `<span class="book-dot" style="background:${b.color};color:${b.color}"></span><span class="book-name">${b.name}</span><span class="book-cnt">${bookCounts[b.id] || 0}</span>`;
+    el.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      if (activeBooks.has(b.id)) { activeBooks.delete(b.id); el.classList.add('off'); }
+      else { activeBooks.add(b.id); el.classList.remove('off'); }
+      filterMode = 'grades';
+      renderGraph();
+    });
+    list.appendChild(el);
+  });
+
+  body.appendChild(list);
+  header.addEventListener('click', () => { header.classList.toggle('collapsed'); });
+
+  gradesListEl.appendChild(header);
+  gradesListEl.appendChild(body);
+});
+
+document.getElementById('b-all').addEventListener('click', () => {
+  booksData.forEach(b => activeBooks.add(b.id));
+  document.querySelectorAll('#grades-list .book-item').forEach(el => el.classList.remove('off'));
+  filterMode = 'grades';
+  renderGraph();
+});
+document.getElementById('b-none').addEventListener('click', () => {
+  activeBooks.clear();
+  document.querySelectorAll('#grades-list .book-item').forEach(el => el.classList.add('off'));
+  filterMode = 'grades';
+  renderGraph();
+});
+
+// === TOPICS TAB: strands grouped by math domain, collapsible ===
+const topicsListEl = document.getElementById('topics-list');
+const strandDomains = {
+  'Number & Arithmetic': ['Numbers & Counting', 'Arithmetic', 'Fractions', 'Decimals', 'Percentages', 'Number Bases'],
+  'Algebra': ['Algebra', 'Equations', 'Inequalities', 'Functions & Graphs', 'Indices & Logarithms', 'Sequences & Series'],
+  'Geometry & Measure': ['Geometry', 'Symmetry & Transformations', 'Perimeter, Area & Volume', 'Coordinate Geometry', 'Pythagoras & Similarity', 'Trigonometry'],
+  'Data & Probability': ['Statistics', 'Probability', 'Sets & Logic'],
+  'Applied': ['Money & Finance', 'Time', 'Measurement', 'Ratio & Proportion', 'Calculus', 'Kinematics', 'Vectors & Matrices', 'Graph Theory', 'Mathematical Modeling'],
+};
+
+// Build strand lookup
+const strandNodeIds = {};
+strandsData.forEach(s => { strandNodeIds[s.name] = new Set(s.nodeIds); });
+
+Object.entries(strandDomains).forEach(([domain, strandNames]) => {
+  const domainStrands = strandNames.filter(sn => strandNodeIds[sn] && strandNodeIds[sn].size > 0);
+  if (domainStrands.length === 0) return;
+
+  const totalInDomain = domainStrands.reduce((s, sn) => s + (strandNodeIds[sn] ? strandNodeIds[sn].size : 0), 0);
+
+  const header = document.createElement('div');
+  header.className = 'group-header';
+  header.innerHTML = `<span class="group-arrow">▼</span><span class="group-label">${domain}</span><span class="group-cnt">${totalInDomain}</span>`;
+
+  const body = document.createElement('div');
+  body.className = 'group-body';
+  body.style.maxHeight = '500px';
+
+  const list = document.createElement('div');
+  list.className = 'book-list';
+
+  domainStrands.forEach(sn => {
+    const strand = strandsData.find(s => s.name === sn);
+    if (!strand) return;
+    const el = document.createElement('div');
+    el.className = 'strand-item';
+    el.dataset.strand = sn;
+    el.innerHTML = `<span class="strand-dot" style="background:${strand.color}"></span><span class="strand-name">${sn}</span><span class="strand-cnt">${strand.nodeIds.length}</span>`;
+    el.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      if (activeStrands.has(sn)) { activeStrands.delete(sn); el.classList.add('off'); }
+      else { activeStrands.add(sn); el.classList.remove('off'); }
+      filterMode = 'topics';
+      renderGraph();
+    });
+    list.appendChild(el);
+  });
+
+  body.appendChild(list);
+  header.addEventListener('click', () => { header.classList.toggle('collapsed'); });
+
+  topicsListEl.appendChild(header);
+  topicsListEl.appendChild(body);
+});
+
+// Also add "Other" strand if it exists
+const otherStrand = strandsData.find(s => s.name === 'Other');
+if (otherStrand && otherStrand.nodeIds.length > 0) {
+  const el = document.createElement('div');
+  el.className = 'strand-item';
+  el.dataset.strand = 'Other';
+  el.innerHTML = `<span class="strand-dot" style="background:${otherStrand.color}"></span><span class="strand-name">Other</span><span class="strand-cnt">${otherStrand.nodeIds.length}</span>`;
+  el.addEventListener('click', (ev) => {
+    ev.stopPropagation();
+    if (activeStrands.has('Other')) { activeStrands.delete('Other'); el.classList.add('off'); }
+    else { activeStrands.add('Other'); el.classList.remove('off'); }
+    filterMode = 'topics';
+    renderGraph();
+  });
+  topicsListEl.appendChild(el);
+}
+
+document.getElementById('t-all').addEventListener('click', () => {
+  strandsData.forEach(s => activeStrands.add(s.name));
+  document.querySelectorAll('.strand-item').forEach(el => el.classList.remove('off'));
+  filterMode = 'topics';
+  renderGraph();
+});
+document.getElementById('t-none').addEventListener('click', () => {
+  activeStrands.clear();
+  document.querySelectorAll('.strand-item').forEach(el => el.classList.add('off'));
+  filterMode = 'topics';
+  renderGraph();
+});
+
+// Force sliders
+document.getElementById('sl-charge').addEventListener('input', function() {
+  simulation.force('charge').strength(+this.value);
+  simulation.alpha(0.4).restart();
+});
+document.getElementById('sl-dist').addEventListener('input', function() {
+  simulation.force('link').distance(+this.value);
+  simulation.alpha(0.4).restart();
+});
+document.getElementById('sl-gravity').addEventListener('input', function() {
+  const v = +this.value / 1000;
+  simulation.force('x').strength(v);
+  simulation.force('y').strength(v);
+  simulation.alpha(0.4).restart();
+});
+document.getElementById('sl-collide').addEventListener('input', function() {
+  simulation.force('collide').radius(+this.value);
+  simulation.alpha(0.4).restart();
+});
+
+// Search
+let searchTimeout;
+document.getElementById('search').addEventListener('input', function() {
+  clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(() => {
+    const q = this.value.trim().toLowerCase();
+    if (!q) { clearSelection(); return; }
+    const matches = nodes.filter(n => activeBooks.has(n.book) && (n.label.toLowerCase().includes(q) || n.id.toLowerCase().includes(q)));
+    if (matches.length) {
+      // Zoom to first match
+      const m = matches[0];
+      if (m.x != null) {
+        const t = d3.zoomIdentity.translate(-m.x * 2 + container.clientWidth/2, -m.y * 2 + container.clientHeight/2).scale(2);
+        svg.transition().duration(500).call(zoom.transform, t);
+      }
+      // Highlight all matches
+      const matchIds = new Set(matches.map(n => n.id));
+      nodeEls.attr('fill-opacity', n => matchIds.has(n.id) ? 1 : 0.06)
+        .attr('stroke', n => matchIds.has(n.id) ? '#ffc857' : 'none')
+        .attr('stroke-width', n => matchIds.has(n.id) ? 2 : 0);
+      labelEls.attr('fill', n => matchIds.has(n.id) ? '#fff' : '#1a1830');
+    }
+  }, 250);
+});
+
+function updateStats(n, e) {
+  document.getElementById('s-nodes').textContent = n;
+  document.getElementById('s-edges').textContent = e;
+}
+
+// Keyboard
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { clearSelection(); document.getElementById('search').value = ''; }
+  if (e.key === '/' && document.activeElement.tagName !== 'INPUT') { e.preventDefault(); document.getElementById('search').focus(); }
+});
+
+// Init
+renderGraph();
+</script>
+</body>
+</html>

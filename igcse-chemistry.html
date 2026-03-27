@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduGraph — IGCSE Chemistry</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #08090e;
+  --surface: rgba(12,14,24,0.94);
+  --border: rgba(255,255,255,0.06);
+  --text: #e8e4dc;
+  --text2: #8a8697;
+  --text3: #55516a;
+  --gold: #ffc857;
+  --topbar: 52px;
+  --sidebar: 230px;
+  --detail: 300px;
+}
+html, body { height: 100%; background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 13px; overflow: hidden; }
+
+/* Grain */
+body::after { content: ''; position: fixed; inset: 0; opacity: 0.035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9999; }
+
+/* Topbar */
+.topbar { position: fixed; top: 0; left: 0; right: 0; height: var(--topbar); display: flex; align-items: center; justify-content: space-between; padding: 0 18px; background: rgba(8,9,14,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); z-index: 200; }
+.topbar-left { display: flex; align-items: baseline; gap: 12px; }
+.topbar h1 { font-family: 'Instrument Serif', serif; font-size: 22px; font-weight: 400; color: var(--gold); }
+.topbar .sub { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; }
+.topbar-right { display: flex; align-items: center; gap: 6px; }
+.stats { display: flex; gap: 14px; margin-right: 12px; }
+.stat-n { font-family: 'Instrument Serif', serif; font-size: 17px; color: var(--gold); }
+.stat-l { font-size: 9px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; margin-left: 3px; }
+.nav-btn { background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text2); padding: 4px 10px; border-radius: 5px; font-size: 10px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.15s; }
+.nav-btn:hover { background: rgba(255,200,87,0.08); border-color: rgba(255,200,87,0.15); color: var(--gold); }
+
+/* Sidebar */
+.sidebar { position: fixed; top: var(--topbar); left: 0; bottom: 0; width: var(--sidebar); background: var(--surface); border-right: 1px solid var(--border); overflow-y: auto; z-index: 100; padding: 12px; display: flex; flex-direction: column; gap: 10px; }
+.sidebar::-webkit-scrollbar { width: 3px; }
+.sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
+.sec-title { font-family: 'Instrument Serif', serif; font-size: 13px; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.sec-title::before { content: ''; width: 2px; height: 11px; background: var(--gold); border-radius: 1px; }
+
+.search-box { width: 100%; padding: 7px 10px 7px 28px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 12px; outline: none; }
+.search-box::placeholder { color: var(--text3); }
+.search-box:focus { border-color: rgba(255,200,87,0.25); }
+.search-wrap { position: relative; }
+.search-wrap::before { content: '⌕'; position: absolute; left: 9px; top: 50%; transform: translateY(-50%); color: var(--text3); font-size: 13px; }
+
+/* Tabs */
+.tab-bar { display: flex; gap: 0; margin-bottom: 8px; border-bottom: 1px solid var(--border); }
+.tab-btn { flex: 1; background: none; border: none; border-bottom: 2px solid transparent; color: var(--text3); padding: 6px 4px; font-size: 10px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-transform: uppercase; letter-spacing: 0.8px; transition: all 0.15s; }
+.tab-btn:hover { color: var(--text2); }
+.tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+.book-btns { display: flex; gap: 3px; margin-bottom: 6px; }
+.book-btn { flex: 1; background: rgba(255,255,255,0.03); border: 1px solid var(--border); color: var(--text3); padding: 3px; border-radius: 4px; font-size: 9px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
+.book-btn:hover { color: var(--text2); }
+
+/* Collapsible groups */
+.group-header { display: flex; align-items: center; gap: 5px; padding: 5px 4px; cursor: pointer; user-select: none; border-radius: 4px; margin-top: 4px; transition: background 0.12s; }
+.group-header:hover { background: rgba(255,255,255,0.03); }
+.group-arrow { font-size: 8px; color: var(--text3); transition: transform 0.2s; width: 12px; text-align: center; }
+.group-header.collapsed .group-arrow { transform: rotate(-90deg); }
+.group-label { font-size: 10px; color: var(--text2); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; flex: 1; }
+.group-cnt { font-size: 9px; color: var(--text3); }
+.group-body { overflow: hidden; transition: max-height 0.25s ease; }
+.group-header.collapsed + .group-body { max-height: 0 !important; overflow: hidden; }
+
+.book-list { display: flex; flex-direction: column; gap: 1px; }
+.book-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px 3px 16px; border-radius: 4px; cursor: pointer; transition: all 0.12s; user-select: none; }
+.book-item:hover { background: rgba(255,255,255,0.03); }
+.book-item.off { opacity: 0.2; }
+.book-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; transition: transform 0.15s; }
+.book-item:not(.off) .book-dot { box-shadow: 0 0 5px currentColor; }
+.book-name { font-size: 10px; color: var(--text2); flex: 1; }
+.book-item:not(.off) .book-name { color: var(--text); }
+.book-cnt { font-size: 9px; color: var(--text3); }
+
+/* Strand items */
+.strand-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px 3px 16px; border-radius: 4px; cursor: pointer; transition: all 0.12s; user-select: none; }
+.strand-item:hover { background: rgba(255,255,255,0.03); }
+.strand-item.off { opacity: 0.2; }
+.strand-dot { width: 7px; height: 7px; border-radius: 3px; flex-shrink: 0; }
+.strand-name { font-size: 10px; color: var(--text2); flex: 1; }
+.strand-item:not(.off) .strand-name { color: var(--text); }
+.strand-cnt { font-size: 9px; color: var(--text3); }
+
+.controls { padding-top: 8px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 6px; }
+.ctrl-row { display: flex; align-items: center; justify-content: space-between; }
+.ctrl-label { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; }
+.ctrl-slider { -webkit-appearance: none; width: 90px; height: 3px; background: rgba(255,255,255,0.1); border-radius: 2px; outline: none; }
+.ctrl-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; background: var(--gold); border-radius: 50%; cursor: pointer; }
+
+.hint { font-size: 9px; color: var(--text3); line-height: 1.6; padding-top: 8px; border-top: 1px solid var(--border); }
+.hint b { color: var(--text2); font-weight: 500; }
+
+/* Graph SVG */
+#graph-container { position: fixed; top: var(--topbar); left: var(--sidebar); right: 0; bottom: 0; transition: right 0.3s; }
+#graph-container.detail-open { right: var(--detail); }
+svg { width: 100%; height: 100%; display: block; }
+
+/* Detail panel */
+.detail { position: fixed; top: var(--topbar); right: calc(-1 * var(--detail)); bottom: 0; width: var(--detail); background: var(--surface); border-left: 1px solid var(--border); z-index: 100; overflow-y: auto; padding: 20px 16px; transition: right 0.3s; }
+.detail.open { right: 0; }
+.detail::-webkit-scrollbar { width: 3px; }
+.detail::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
+.detail-close { position: absolute; top: 12px; right: 12px; width: 24px; height: 24px; border-radius: 5px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text3); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+.detail-close:hover { color: var(--text); }
+.detail-badge { display: inline-flex; align-items: center; gap: 5px; padding: 2px 8px; border-radius: 12px; font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+.detail-pages { display: inline-block; padding: 3px 10px; border-radius: 5px; font-family: 'Instrument Serif', serif; font-size: 16px; background: rgba(255,200,87,0.08); color: var(--gold); border: 1px solid rgba(255,200,87,0.12); margin-bottom: 10px; }
+.detail-title { font-family: 'Instrument Serif', serif; font-size: 20px; line-height: 1.2; margin-bottom: 14px; }
+.conn-section { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
+.conn-head { font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text3); margin-bottom: 6px; }
+.conn-head.prereq { color: #e07a5f; }
+.conn-head.leads { color: #81b29a; }
+.conn-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px; border-radius: 4px; cursor: pointer; transition: background 0.12s; }
+.conn-item:hover { background: rgba(255,255,255,0.04); }
+.conn-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+.conn-label { font-size: 11px; color: var(--text2); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.conn-book { font-size: 8px; color: var(--text3); flex-shrink: 0; }
+
+@media (max-width: 800px) {
+  .sidebar { display: none; }
+  :root { --sidebar: 0px; }
+  .topbar .sub, .stats { display: none; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <h1>EduGraph</h1>
+    <span class="sub">Cambridge 0620</span>
+  </div>
+  <div class="topbar-right">
+    <div class="stats">
+      <span><span class="stat-n" id="s-nodes">0</span><span class="stat-l">nodes</span></span>
+      <span><span class="stat-n" id="s-edges">0</span><span class="stat-l">edges</span></span>
+    </div>
+    <a href="index.html" class="nav-btn">Home</a>
+  </div>
+</header>
+
+<aside class="sidebar">
+  <div class="search-wrap">
+    <input type="text" class="search-box" id="search" placeholder="Search topics..." autocomplete="off">
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="grades">Grades</button>
+    <button class="tab-btn" data-tab="topics">Topics</button>
+    <button class="tab-btn" data-tab="forces">Forces</button>
+  </div>
+
+  <!-- Grades Tab -->
+  <div class="tab-content active" id="tab-grades">
+    <div class="book-btns">
+      <button class="book-btn" id="b-all">All</button>
+      <button class="book-btn" id="b-none">None</button>
+    </div>
+    <div id="grades-list"></div>
+  </div>
+
+  <!-- Topics Tab -->
+  <div class="tab-content" id="tab-topics">
+    <div class="book-btns">
+      <button class="book-btn" id="t-all">All</button>
+      <button class="book-btn" id="t-none">None</button>
+    </div>
+    <div id="topics-list"></div>
+  </div>
+
+  <!-- Forces Tab -->
+  <div class="tab-content" id="tab-forces">
+    <div class="sec-title">Physics</div>
+    <div class="controls">
+      <div class="ctrl-row">
+        <span class="ctrl-label">Repulsion</span>
+        <input type="range" class="ctrl-slider" id="sl-charge" min="-600" max="-20" value="-120">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Link Dist</span>
+        <input type="range" class="ctrl-slider" id="sl-dist" min="15" max="200" value="55">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Gravity</span>
+        <input type="range" class="ctrl-slider" id="sl-gravity" min="0" max="100" value="8">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Collision</span>
+        <input type="range" class="ctrl-slider" id="sl-collide" min="1" max="30" value="10">
+      </div>
+    </div>
+    <div class="hint">
+      <b>Drag</b> nodes — physics responds live<br>
+      <b>Scroll</b> to zoom, drag canvas to pan<br>
+      <b>Click</b> node for details &amp; neighbors<br>
+      <b>Sliders</b> tune forces in real-time
+    </div>
+  </div>
+</aside>
+
+<div id="graph-container">
+  <svg id="svg"></svg>
+</div>
+
+<div class="detail" id="detail">
+  <button class="detail-close" id="detail-close">✕</button>
+  <div id="detail-content"></div>
+</div>
+
+<script>
+const rawNodes = [{"id": "chem.ch1.solids_liquids_and_gases", "label": "Solids, liquids and gases", "color": "#065f46", "book": "igcse.ch1.particulate_nature", "bookName": "The particulate nature of matter", "bookOrder": 1, "r": 4.8, "pages": "2-3", "description": "Solids, liquids and gases \u2014 The particulate nature of matter (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch1.the_kinetic_theory_of_matter", "label": "The kinetic theory of matter", "color": "#065f46", "book": "igcse.ch1.particulate_nature", "bookName": "The particulate nature of matter", "bookOrder": 1, "r": 4.8, "pages": "2-3", "description": "The kinetic theory of matter \u2014 The particulate nature of matter (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch1.changes_of_state", "label": "Changes of state", "color": "#065f46", "book": "igcse.ch1.particulate_nature", "bookName": "The particulate nature of matter", "bookOrder": 1, "r": 4.8, "pages": "4-5", "description": "Changes of state \u2014 The particulate nature of matter (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch1.diffusion", "label": "Diffusion - evidence for moving particles", "color": "#065f46", "book": "igcse.ch1.particulate_nature", "bookName": "The particulate nature of matter", "bookOrder": 1, "r": 4.8, "pages": "6-9", "description": "Diffusion - evidence for moving particles \u2014 The particulate nature of matter (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch2.elements", "label": "Elements", "color": "#047857", "book": "igcse.ch2.elements_compounds", "bookName": "Elements, compounds and experimental techniques", "bookOrder": 2, "r": 5.6, "pages": "10-12", "description": "Elements \u2014 Elements, compounds and experimental techniques (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch2.compounds", "label": "Compounds", "color": "#047857", "book": "igcse.ch2.elements_compounds", "bookName": "Elements, compounds and experimental techniques", "bookOrder": 2, "r": 5.6, "pages": "13-15", "description": "Compounds \u2014 Elements, compounds and experimental techniques (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch2.mixtures", "label": "Mixtures", "color": "#047857", "book": "igcse.ch2.elements_compounds", "bookName": "Elements, compounds and experimental techniques", "bookOrder": 2, "r": 5.6, "pages": "16-16", "description": "Mixtures \u2014 Elements, compounds and experimental techniques (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch2.separating_mixtures", "label": "Separating mixtures", "color": "#047857", "book": "igcse.ch2.elements_compounds", "bookName": "Elements, compounds and experimental techniques", "bookOrder": 2, "r": 5.6, "pages": "17-24", "description": "Separating mixtures \u2014 Elements, compounds and experimental techniques (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch3.inside_atoms", "label": "Inside atoms", "color": "#059669", "book": "igcse.ch3.atomic_structure_bonding", "bookName": "Atomic structure and bonding", "bookOrder": 3, "r": 6.4, "pages": "33-36", "description": "Inside atoms \u2014 Atomic structure and bonding (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch3.the_arrangement_of_electrons_in_atoms", "label": "The arrangement of electrons in atoms", "color": "#059669", "book": "igcse.ch3.atomic_structure_bonding", "bookName": "Atomic structure and bonding", "bookOrder": 3, "r": 6.4, "pages": "37-37", "description": "The arrangement of electrons in atoms \u2014 Atomic structure and bonding (IGCSE Chemistry)", "strand": "Statistics"}, {"id": "chem.ch3.ionic_bonding", "label": "Ionic bonding", "color": "#059669", "book": "igcse.ch3.atomic_structure_bonding", "bookName": "Atomic structure and bonding", "bookOrder": 3, "r": 6.4, "pages": "38-44", "description": "Ionic bonding \u2014 Atomic structure and bonding (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch3.covalent_bonding", "label": "Covalent bonding", "color": "#059669", "book": "igcse.ch3.atomic_structure_bonding", "bookName": "Atomic structure and bonding", "bookOrder": 3, "r": 6.4, "pages": "45-53", "description": "Covalent bonding \u2014 Atomic structure and bonding (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch3.metallic_bonding", "label": "Metallic bonding", "color": "#059669", "book": "igcse.ch3.atomic_structure_bonding", "bookName": "Atomic structure and bonding", "bookOrder": 3, "r": 6.4, "pages": "55-58", "description": "Metallic bonding \u2014 Atomic structure and bonding (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch4.relative_atomic_mass", "label": "Relative atomic mass", "color": "#0d9488", "book": "igcse.ch4.stoichiometry", "bookName": "Stoichiometry - chemical calculations", "bookOrder": 4, "r": 7.2, "pages": "59-59", "description": "Relative atomic mass \u2014 Stoichiometry - chemical calculations (IGCSE Chemistry)", "strand": "Measurement"}, {"id": "chem.ch4.reacting_masses", "label": "Reacting masses", "color": "#0d9488", "book": "igcse.ch4.stoichiometry", "bookName": "Stoichiometry - chemical calculations", "bookOrder": 4, "r": 7.2, "pages": "59-60", "description": "Reacting masses \u2014 Stoichiometry - chemical calculations (IGCSE Chemistry)", "strand": "Measurement"}, {"id": "chem.ch4.calculating_moles", "label": "Calculating moles", "color": "#0d9488", "book": "igcse.ch4.stoichiometry", "bookName": "Stoichiometry - chemical calculations", "bookOrder": 4, "r": 7.2, "pages": "61-63", "description": "Calculating moles \u2014 Stoichiometry - chemical calculations (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch4.calculating_formulae", "label": "Calculating formulae", "color": "#0d9488", "book": "igcse.ch4.stoichiometry", "bookName": "Stoichiometry - chemical calculations", "bookOrder": 4, "r": 7.2, "pages": "64-65", "description": "Calculating formulae \u2014 Stoichiometry - chemical calculations (IGCSE Chemistry)", "strand": "Equations"}, {"id": "chem.ch4.moles_and_chemical_equations", "label": "Moles and chemical equations", "color": "#0d9488", "book": "igcse.ch4.stoichiometry", "bookName": "Stoichiometry - chemical calculations", "bookOrder": 4, "r": 7.2, "pages": "66-71", "description": "Moles and chemical equations \u2014 Stoichiometry - chemical calculations (IGCSE Chemistry)", "strand": "Equations"}, {"id": "chem.ch5.electrolysis_of_lead_ii_bromide", "label": "Electrolysis of lead(II) bromide", "color": "#0f766e", "book": "igcse.ch5.electricity_chemistry", "bookName": "Electricity and chemistry", "bookOrder": 5, "r": 8.0, "pages": "73-73", "description": "Electrolysis of lead(II) bromide \u2014 Electricity and chemistry (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch5.electrolysis_of_aluminium_oxide", "label": "Electrolysis of aluminium oxide", "color": "#0f766e", "book": "igcse.ch5.electricity_chemistry", "bookName": "Electricity and chemistry", "bookOrder": 5, "r": 8.0, "pages": "74-76", "description": "Electrolysis of aluminium oxide \u2014 Electricity and chemistry (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch5.electrolysis_of_aqueous_solutions", "label": "Electrolysis of aqueous solutions", "color": "#0f766e", "book": "igcse.ch5.electricity_chemistry", "bookName": "Electricity and chemistry", "bookOrder": 5, "r": 8.0, "pages": "77-79", "description": "Electrolysis of aqueous solutions \u2014 Electricity and chemistry (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch5.electrolysis_of_concentrated_hydrochloric_acid", "label": "Electrolysis of concentrated hydrochloric acid", "color": "#0f766e", "book": "igcse.ch5.electricity_chemistry", "bookName": "Electricity and chemistry", "bookOrder": 5, "r": 8.0, "pages": "80-80", "description": "Electrolysis of concentrated hydrochloric acid \u2014 Electricity and chemistry (IGCSE Chemistry)", "strand": "Ratio & Proportion"}, {"id": "chem.ch5.electrolysis_of_copper_ii_sulfate_solution", "label": "Electrolysis of copper(II) sulfate solution", "color": "#0f766e", "book": "igcse.ch5.electricity_chemistry", "bookName": "Electricity and chemistry", "bookOrder": 5, "r": 8.0, "pages": "80-82", "description": "Electrolysis of copper(II) sulfate solution \u2014 Electricity and chemistry (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch5.electroplating", "label": "Electroplating", "color": "#0f766e", "book": "igcse.ch5.electricity_chemistry", "bookName": "Electricity and chemistry", "bookOrder": 5, "r": 8.0, "pages": "83-87", "description": "Electroplating \u2014 Electricity and chemistry (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch6.fossil_fuels", "label": "Fossil fuels", "color": "#14b8a6", "book": "igcse.ch6.chemical_energetics", "bookName": "Chemical energetics", "bookOrder": 6, "r": 8.8, "pages": "90-91", "description": "Fossil fuels \u2014 Chemical energetics (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch6.what_is_a_fuel", "label": "What is a fuel?", "color": "#14b8a6", "book": "igcse.ch6.chemical_energetics", "bookName": "Chemical energetics", "bookOrder": 6, "r": 8.8, "pages": "92-92", "description": "What is a fuel? \u2014 Chemical energetics (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch6.alternative_sources_of_energy", "label": "Alternative sources of energy", "color": "#14b8a6", "book": "igcse.ch6.chemical_energetics", "bookName": "Chemical energetics", "bookOrder": 6, "r": 8.8, "pages": "93-94", "description": "Alternative sources of energy \u2014 Chemical energetics (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch6.chemical_energy", "label": "Chemical energy", "color": "#14b8a6", "book": "igcse.ch6.chemical_energetics", "bookName": "Chemical energetics", "bookOrder": 6, "r": 8.8, "pages": "95-96", "description": "Chemical energy \u2014 Chemical energetics (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch6.cells_and_batteries", "label": "Cells and batteries", "color": "#14b8a6", "book": "igcse.ch6.chemical_energetics", "bookName": "Chemical energetics", "bookOrder": 6, "r": 8.8, "pages": "98-103", "description": "Cells and batteries \u2014 Chemical energetics (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch7.factors_that_affect_the_rate_of_a_reaction", "label": "Factors that affect the rate of a reaction", "color": "#10b981", "book": "igcse.ch7.chemical_reactions", "bookName": "Chemical reactions", "bookOrder": 7, "r": 9.600000000000001, "pages": "105-110", "description": "Factors that affect the rate of a reaction \u2014 Chemical reactions (IGCSE Chemistry)", "strand": "Ratio & Proportion"}, {"id": "chem.ch7.enzymes", "label": "Enzymes", "color": "#10b981", "book": "igcse.ch7.chemical_reactions", "bookName": "Chemical reactions", "bookOrder": 7, "r": 9.600000000000001, "pages": "111-116", "description": "Enzymes \u2014 Chemical reactions (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch8.acids_and_alkalis", "label": "Acids and alkalis", "color": "#34d399", "book": "igcse.ch8.acids_bases_salts", "bookName": "Acids, bases and salts", "bookOrder": 8, "r": 10.4, "pages": "117-121", "description": "Acids and alkalis \u2014 Acids, bases and salts (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch8.formation_of_salts", "label": "Formation of salts", "color": "#34d399", "book": "igcse.ch8.acids_bases_salts", "bookName": "Acids, bases and salts", "bookOrder": 8, "r": 10.4, "pages": "122-126", "description": "Formation of salts \u2014 Acids, bases and salts (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch8.crystal_hydrates", "label": "Crystal hydrates", "color": "#34d399", "book": "igcse.ch8.acids_bases_salts", "bookName": "Acids, bases and salts", "bookOrder": 8, "r": 10.4, "pages": "127-128", "description": "Crystal hydrates \u2014 Acids, bases and salts (IGCSE Chemistry)", "strand": "Ratio & Proportion"}, {"id": "chem.ch8.solubility_of_salts_in_water", "label": "Solubility of salts in water", "color": "#34d399", "book": "igcse.ch8.acids_bases_salts", "bookName": "Acids, bases and salts", "bookOrder": 8, "r": 10.4, "pages": "129-129", "description": "Solubility of salts in water \u2014 Acids, bases and salts (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch8.titration", "label": "Titration", "color": "#34d399", "book": "igcse.ch8.acids_bases_salts", "bookName": "Acids, bases and salts", "bookOrder": 8, "r": 10.4, "pages": "129-134", "description": "Titration \u2014 Acids, bases and salts (IGCSE Chemistry)", "strand": "Ratio & Proportion"}, {"id": "chem.ch9.development_of_the_periodic_table", "label": "Development of the Periodic Table", "color": "#2dd4bf", "book": "igcse.ch9.periodic_table", "bookName": "The Periodic Table", "bookOrder": 9, "r": 11.2, "pages": "135-137", "description": "Development of the Periodic Table \u2014 The Periodic Table (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch9.electronic_structure_and_the_periodic_table", "label": "Electronic structure and the Periodic Table", "color": "#2dd4bf", "book": "igcse.ch9.periodic_table", "bookName": "The Periodic Table", "bookOrder": 9, "r": 11.2, "pages": "138-138", "description": "Electronic structure and the Periodic Table \u2014 The Periodic Table (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch9.group_i_the_alkali_metals", "label": "Group I - the alkali metals", "color": "#2dd4bf", "book": "igcse.ch9.periodic_table", "bookName": "The Periodic Table", "bookOrder": 9, "r": 11.2, "pages": "138-139", "description": "Group I - the alkali metals \u2014 The Periodic Table (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch9.group_ii_the_alkaline_earth_metals", "label": "Group II - the alkaline earth metals", "color": "#2dd4bf", "book": "igcse.ch9.periodic_table", "bookName": "The Periodic Table", "bookOrder": 9, "r": 11.2, "pages": "140-140", "description": "Group II - the alkaline earth metals \u2014 The Periodic Table (IGCSE Chemistry)", "strand": "Geometry"}, {"id": "chem.ch9.group_vii_the_halogens", "label": "Group VII - the halogens", "color": "#2dd4bf", "book": "igcse.ch9.periodic_table", "bookName": "The Periodic Table", "bookOrder": 9, "r": 11.2, "pages": "141-142", "description": "Group VII - the halogens \u2014 The Periodic Table (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch9.group_0_the_noble_gases", "label": "Group 0 - the noble gases", "color": "#2dd4bf", "book": "igcse.ch9.periodic_table", "bookName": "The Periodic Table", "bookOrder": 9, "r": 11.2, "pages": "143-143", "description": "Group 0 - the noble gases \u2014 The Periodic Table (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch9.transition_elements", "label": "Transition elements", "color": "#2dd4bf", "book": "igcse.ch9.periodic_table", "bookName": "The Periodic Table", "bookOrder": 9, "r": 11.2, "pages": "144-145", "description": "Transition elements \u2014 The Periodic Table (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch9.the_position_of_hydrogen", "label": "The position of hydrogen", "color": "#2dd4bf", "book": "igcse.ch9.periodic_table", "bookName": "The Periodic Table", "bookOrder": 9, "r": 11.2, "pages": "146-148", "description": "The position of hydrogen \u2014 The Periodic Table (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch10.metal_reactions", "label": "Metal reactions", "color": "#5eead4", "book": "igcse.ch10.metals", "bookName": "Metals", "bookOrder": 10, "r": 12.0, "pages": "150-151", "description": "Metal reactions \u2014 Metals (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch10.decomposition_of_metal_compounds", "label": "Decomposition of metal nitrates, carbonates, oxides and hydroxides", "color": "#5eead4", "book": "igcse.ch10.metals", "bookName": "Metals", "bookOrder": 10, "r": 12.0, "pages": "152-152", "description": "Decomposition of metal nitrates, carbonates, oxides and hydroxides \u2014 Metals (IGCSE Chemistry)", "strand": "Ratio & Proportion"}, {"id": "chem.ch10.reactivity_of_metals_and_their_uses", "label": "Reactivity of metals and their uses", "color": "#5eead4", "book": "igcse.ch10.metals", "bookName": "Metals", "bookOrder": 10, "r": 12.0, "pages": "153-154", "description": "Reactivity of metals and their uses \u2014 Metals (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch10.identifying_metal_ions", "label": "Identifying metal ions", "color": "#5eead4", "book": "igcse.ch10.metals", "bookName": "Metals", "bookOrder": 10, "r": 12.0, "pages": "155-156", "description": "Identifying metal ions \u2014 Metals (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch10.discovery_of_metals_and_their_extraction", "label": "Discovery of metals and their extraction", "color": "#5eead4", "book": "igcse.ch10.metals", "bookName": "Metals", "bookOrder": 10, "r": 12.0, "pages": "157-160", "description": "Discovery of metals and their extraction \u2014 Metals (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch10.rusting_of_iron", "label": "Rusting of iron", "color": "#5eead4", "book": "igcse.ch10.metals", "bookName": "Metals", "bookOrder": 10, "r": 12.0, "pages": "161-164", "description": "Rusting of iron \u2014 Metals (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch10.alloys", "label": "Alloys", "color": "#5eead4", "book": "igcse.ch10.metals", "bookName": "Metals", "bookOrder": 10, "r": 12.0, "pages": "165-170", "description": "Alloys \u2014 Metals (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch11.the_air", "label": "The air", "color": "#6ee7b7", "book": "igcse.ch11.air_water", "bookName": "Air and water", "bookOrder": 11, "r": 12.8, "pages": "171-173", "description": "The air \u2014 Air and water (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch11.useful_gases_from_the_air", "label": "How do we get the useful gases we need from the air?", "color": "#6ee7b7", "book": "igcse.ch11.air_water", "bookName": "Air and water", "bookOrder": 11, "r": 12.8, "pages": "174-175", "description": "How do we get the useful gases we need from the air? \u2014 Air and water (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch11.ammonia", "label": "Ammonia - an important nitrogen-containing chemical", "color": "#6ee7b7", "book": "igcse.ch11.air_water", "bookName": "Air and water", "bookOrder": 11, "r": 12.8, "pages": "176-179", "description": "Ammonia - an important nitrogen-containing chemical \u2014 Air and water (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch11.artificial_fertilisers", "label": "Artificial fertilisers", "color": "#6ee7b7", "book": "igcse.ch11.air_water", "bookName": "Air and water", "bookOrder": 11, "r": 12.8, "pages": "180-181", "description": "Artificial fertilisers \u2014 Air and water (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch11.atmospheric_pollution", "label": "Atmospheric pollution", "color": "#6ee7b7", "book": "igcse.ch11.air_water", "bookName": "Air and water", "bookOrder": 11, "r": 12.8, "pages": "182-183", "description": "Atmospheric pollution \u2014 Air and water (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch11.water", "label": "Water", "color": "#6ee7b7", "book": "igcse.ch11.air_water", "bookName": "Air and water", "bookOrder": 11, "r": 12.8, "pages": "184-185", "description": "Water \u2014 Air and water (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch11.hardness_in_water", "label": "Hardness in water", "color": "#6ee7b7", "book": "igcse.ch11.air_water", "bookName": "Air and water", "bookOrder": 11, "r": 12.8, "pages": "187-189", "description": "Hardness in water \u2014 Air and water (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch12.sulfur_the_element", "label": "Sulfur - the element", "color": "#a7f3d0", "book": "igcse.ch12.sulfur", "bookName": "Sulfur", "bookOrder": 12, "r": 13.600000000000001, "pages": "197-197", "description": "Sulfur - the element \u2014 Sulfur (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch12.sulfur_dioxide", "label": "Sulfur dioxide", "color": "#a7f3d0", "book": "igcse.ch12.sulfur", "bookName": "Sulfur", "bookOrder": 12, "r": 13.600000000000001, "pages": "198-198", "description": "Sulfur dioxide \u2014 Sulfur (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch12.sulfuric_acid", "label": "Sulfuric acid", "color": "#a7f3d0", "book": "igcse.ch12.sulfur", "bookName": "Sulfur", "bookOrder": 12, "r": 13.600000000000001, "pages": "199-205", "description": "Sulfuric acid \u2014 Sulfur (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch13.limestone", "label": "Limestone", "color": "#99f6e4", "book": "igcse.ch13.inorganic_carbon", "bookName": "Inorganic carbon chemistry", "bookOrder": 13, "r": 14.4, "pages": "206-210", "description": "Limestone \u2014 Inorganic carbon chemistry (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch13.carbonates", "label": "Carbonates", "color": "#99f6e4", "book": "igcse.ch13.inorganic_carbon", "bookName": "Inorganic carbon chemistry", "bookOrder": 13, "r": 14.4, "pages": "211-211", "description": "Carbonates \u2014 Inorganic carbon chemistry (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch13.carbon_dioxide", "label": "Carbon dioxide", "color": "#99f6e4", "book": "igcse.ch13.inorganic_carbon", "bookName": "Inorganic carbon chemistry", "bookOrder": 13, "r": 14.4, "pages": "212-217", "description": "Carbon dioxide \u2014 Inorganic carbon chemistry (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch14.alkanes", "label": "Alkanes", "color": "#22c55e", "book": "igcse.ch14.organic_chemistry_1", "bookName": "Organic chemistry 1", "bookOrder": 14, "r": 15.200000000000001, "pages": "218-219", "description": "Alkanes \u2014 Organic chemistry 1 (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch14.the_chemical_behaviour_of_alkanes", "label": "The chemical behaviour of alkanes", "color": "#22c55e", "book": "igcse.ch14.organic_chemistry_1", "bookName": "Organic chemistry 1", "bookOrder": 14, "r": 15.200000000000001, "pages": "220-221", "description": "The chemical behaviour of alkanes \u2014 Organic chemistry 1 (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch14.alkenes", "label": "Alkenes", "color": "#22c55e", "book": "igcse.ch14.organic_chemistry_1", "bookName": "Organic chemistry 1", "bookOrder": 14, "r": 15.200000000000001, "pages": "222-223", "description": "Alkenes \u2014 Organic chemistry 1 (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch14.the_chemical_behaviour_of_alkenes", "label": "The chemical behaviour of alkenes", "color": "#22c55e", "book": "igcse.ch14.organic_chemistry_1", "bookName": "Organic chemistry 1", "bookOrder": 14, "r": 15.200000000000001, "pages": "224-225", "description": "The chemical behaviour of alkenes \u2014 Organic chemistry 1 (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch14.addition_reaction_of_alkenes", "label": "A special addition reaction of alkene molecules", "color": "#22c55e", "book": "igcse.ch14.organic_chemistry_1", "bookName": "Organic chemistry 1", "bookOrder": 14, "r": 15.200000000000001, "pages": "226-232", "description": "A special addition reaction of alkene molecules \u2014 Organic chemistry 1 (IGCSE Chemistry)", "strand": "Arithmetic"}, {"id": "chem.ch15.alcohols", "label": "Alcohols (R-OH)", "color": "#4ade80", "book": "igcse.ch15.organic_chemistry_2", "bookName": "Organic chemistry 2", "bookOrder": 15, "r": 16.0, "pages": "233-235", "description": "Alcohols (R-OH) \u2014 Organic chemistry 2 (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch15.carboxylic_acids", "label": "Carboxylic acids", "color": "#4ade80", "book": "igcse.ch15.organic_chemistry_2", "bookName": "Organic chemistry 2", "bookOrder": 15, "r": 16.0, "pages": "237-238", "description": "Carboxylic acids \u2014 Organic chemistry 2 (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch15.condensation_polymers", "label": "Condensation polymers", "color": "#4ade80", "book": "igcse.ch15.organic_chemistry_2", "bookName": "Organic chemistry 2", "bookOrder": 15, "r": 16.0, "pages": "241-241", "description": "Condensation polymers \u2014 Organic chemistry 2 (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch15.some_biopolymers", "label": "Some biopolymers", "color": "#4ade80", "book": "igcse.ch15.organic_chemistry_2", "bookName": "Organic chemistry 2", "bookOrder": 15, "r": 16.0, "pages": "242-245", "description": "Some biopolymers \u2014 Organic chemistry 2 (IGCSE Chemistry)", "strand": "Other"}, {"id": "chem.ch16.notes_on_qualitative_analysis", "label": "Notes on qualitative analysis", "color": "#86efac", "book": "igcse.ch16.experimental_chemistry", "bookName": "Experimental chemistry", "bookOrder": 16, "r": 16.8, "pages": "261-293", "description": "Notes on qualitative analysis \u2014 Experimental chemistry (IGCSE Chemistry)", "strand": "Other"}];
+const rawEdges = [{"source": "chem.ch1.solids_liquids_and_gases", "target": "chem.ch1.the_kinetic_theory_of_matter"}, {"source": "chem.ch1.the_kinetic_theory_of_matter", "target": "chem.ch1.changes_of_state"}, {"source": "chem.ch1.the_kinetic_theory_of_matter", "target": "chem.ch1.diffusion"}, {"source": "chem.ch1.solids_liquids_and_gases", "target": "chem.ch2.elements"}, {"source": "chem.ch2.elements", "target": "chem.ch2.compounds"}, {"source": "chem.ch2.compounds", "target": "chem.ch2.mixtures"}, {"source": "chem.ch2.mixtures", "target": "chem.ch2.separating_mixtures"}, {"source": "chem.ch2.elements", "target": "chem.ch3.inside_atoms"}, {"source": "chem.ch1.solids_liquids_and_gases", "target": "chem.ch3.inside_atoms"}, {"source": "chem.ch3.inside_atoms", "target": "chem.ch3.the_arrangement_of_electrons_in_atoms"}, {"source": "chem.ch3.the_arrangement_of_electrons_in_atoms", "target": "chem.ch3.ionic_bonding"}, {"source": "chem.ch3.the_arrangement_of_electrons_in_atoms", "target": "chem.ch3.covalent_bonding"}, {"source": "chem.ch3.the_arrangement_of_electrons_in_atoms", "target": "chem.ch3.metallic_bonding"}, {"source": "chem.ch2.compounds", "target": "chem.ch3.ionic_bonding"}, {"source": "chem.ch2.compounds", "target": "chem.ch3.covalent_bonding"}, {"source": "chem.ch3.inside_atoms", "target": "chem.ch4.relative_atomic_mass"}, {"source": "chem.ch4.relative_atomic_mass", "target": "chem.ch4.reacting_masses"}, {"source": "chem.ch4.reacting_masses", "target": "chem.ch4.calculating_moles"}, {"source": "chem.ch4.calculating_moles", "target": "chem.ch4.calculating_formulae"}, {"source": "chem.ch4.calculating_formulae", "target": "chem.ch4.moles_and_chemical_equations"}, {"source": "chem.ch3.ionic_bonding", "target": "chem.ch5.electrolysis_of_lead_ii_bromide"}, {"source": "chem.ch3.metallic_bonding", "target": "chem.ch5.electrolysis_of_lead_ii_bromide"}, {"source": "chem.ch5.electrolysis_of_lead_ii_bromide", "target": "chem.ch5.electrolysis_of_aluminium_oxide"}, {"source": "chem.ch5.electrolysis_of_lead_ii_bromide", "target": "chem.ch5.electrolysis_of_aqueous_solutions"}, {"source": "chem.ch5.electrolysis_of_aqueous_solutions", "target": "chem.ch5.electrolysis_of_concentrated_hydrochloric_acid"}, {"source": "chem.ch5.electrolysis_of_aqueous_solutions", "target": "chem.ch5.electrolysis_of_copper_ii_sulfate_solution"}, {"source": "chem.ch5.electrolysis_of_copper_ii_sulfate_solution", "target": "chem.ch5.electroplating"}, {"source": "chem.ch2.compounds", "target": "chem.ch6.fossil_fuels"}, {"source": "chem.ch6.fossil_fuels", "target": "chem.ch6.what_is_a_fuel"}, {"source": "chem.ch6.what_is_a_fuel", "target": "chem.ch6.alternative_sources_of_energy"}, {"source": "chem.ch6.what_is_a_fuel", "target": "chem.ch6.chemical_energy"}, {"source": "chem.ch6.chemical_energy", "target": "chem.ch6.cells_and_batteries"}, {"source": "chem.ch6.chemical_energy", "target": "chem.ch7.factors_that_affect_the_rate_of_a_reaction"}, {"source": "chem.ch1.the_kinetic_theory_of_matter", "target": "chem.ch7.factors_that_affect_the_rate_of_a_reaction"}, {"source": "chem.ch7.factors_that_affect_the_rate_of_a_reaction", "target": "chem.ch7.enzymes"}, {"source": "chem.ch3.ionic_bonding", "target": "chem.ch8.acids_and_alkalis"}, {"source": "chem.ch3.covalent_bonding", "target": "chem.ch8.acids_and_alkalis"}, {"source": "chem.ch2.compounds", "target": "chem.ch8.acids_and_alkalis"}, {"source": "chem.ch8.acids_and_alkalis", "target": "chem.ch8.formation_of_salts"}, {"source": "chem.ch8.formation_of_salts", "target": "chem.ch8.crystal_hydrates"}, {"source": "chem.ch8.formation_of_salts", "target": "chem.ch8.solubility_of_salts_in_water"}, {"source": "chem.ch8.acids_and_alkalis", "target": "chem.ch8.titration"}, {"source": "chem.ch4.calculating_moles", "target": "chem.ch8.titration"}, {"source": "chem.ch3.the_arrangement_of_electrons_in_atoms", "target": "chem.ch9.development_of_the_periodic_table"}, {"source": "chem.ch3.inside_atoms", "target": "chem.ch9.development_of_the_periodic_table"}, {"source": "chem.ch9.development_of_the_periodic_table", "target": "chem.ch9.electronic_structure_and_the_periodic_table"}, {"source": "chem.ch9.electronic_structure_and_the_periodic_table", "target": "chem.ch9.group_i_the_alkali_metals"}, {"source": "chem.ch9.electronic_structure_and_the_periodic_table", "target": "chem.ch9.group_ii_the_alkaline_earth_metals"}, {"source": "chem.ch9.electronic_structure_and_the_periodic_table", "target": "chem.ch9.group_vii_the_halogens"}, {"source": "chem.ch9.electronic_structure_and_the_periodic_table", "target": "chem.ch9.group_0_the_noble_gases"}, {"source": "chem.ch9.electronic_structure_and_the_periodic_table", "target": "chem.ch9.transition_elements"}, {"source": "chem.ch9.electronic_structure_and_the_periodic_table", "target": "chem.ch9.the_position_of_hydrogen"}, {"source": "chem.ch9.transition_elements", "target": "chem.ch10.metal_reactions"}, {"source": "chem.ch3.metallic_bonding", "target": "chem.ch10.metal_reactions"}, {"source": "chem.ch10.metal_reactions", "target": "chem.ch10.decomposition_of_metal_compounds"}, {"source": "chem.ch10.metal_reactions", "target": "chem.ch10.reactivity_of_metals_and_their_uses"}, {"source": "chem.ch10.reactivity_of_metals_and_their_uses", "target": "chem.ch10.identifying_metal_ions"}, {"source": "chem.ch10.reactivity_of_metals_and_their_uses", "target": "chem.ch10.discovery_of_metals_and_their_extraction"}, {"source": "chem.ch10.metal_reactions", "target": "chem.ch10.rusting_of_iron"}, {"source": "chem.ch3.metallic_bonding", "target": "chem.ch10.alloys"}, {"source": "chem.ch10.reactivity_of_metals_and_their_uses", "target": "chem.ch10.alloys"}, {"source": "chem.ch2.mixtures", "target": "chem.ch11.the_air"}, {"source": "chem.ch2.elements", "target": "chem.ch11.the_air"}, {"source": "chem.ch11.the_air", "target": "chem.ch11.useful_gases_from_the_air"}, {"source": "chem.ch11.useful_gases_from_the_air", "target": "chem.ch11.ammonia"}, {"source": "chem.ch7.factors_that_affect_the_rate_of_a_reaction", "target": "chem.ch11.ammonia"}, {"source": "chem.ch11.ammonia", "target": "chem.ch11.artificial_fertilisers"}, {"source": "chem.ch8.acids_and_alkalis", "target": "chem.ch11.artificial_fertilisers"}, {"source": "chem.ch6.fossil_fuels", "target": "chem.ch11.atmospheric_pollution"}, {"source": "chem.ch11.the_air", "target": "chem.ch11.atmospheric_pollution"}, {"source": "chem.ch1.changes_of_state", "target": "chem.ch11.water"}, {"source": "chem.ch2.compounds", "target": "chem.ch11.water"}, {"source": "chem.ch11.water", "target": "chem.ch11.hardness_in_water"}, {"source": "chem.ch8.formation_of_salts", "target": "chem.ch11.hardness_in_water"}, {"source": "chem.ch2.elements", "target": "chem.ch12.sulfur_the_element"}, {"source": "chem.ch9.electronic_structure_and_the_periodic_table", "target": "chem.ch12.sulfur_the_element"}, {"source": "chem.ch12.sulfur_the_element", "target": "chem.ch12.sulfur_dioxide"}, {"source": "chem.ch12.sulfur_dioxide", "target": "chem.ch12.sulfuric_acid"}, {"source": "chem.ch8.acids_and_alkalis", "target": "chem.ch12.sulfuric_acid"}, {"source": "chem.ch3.ionic_bonding", "target": "chem.ch13.limestone"}, {"source": "chem.ch10.decomposition_of_metal_compounds", "target": "chem.ch13.limestone"}, {"source": "chem.ch13.limestone", "target": "chem.ch13.carbonates"}, {"source": "chem.ch13.carbonates", "target": "chem.ch13.carbon_dioxide"}, {"source": "chem.ch11.atmospheric_pollution", "target": "chem.ch13.carbon_dioxide"}, {"source": "chem.ch3.covalent_bonding", "target": "chem.ch14.alkanes"}, {"source": "chem.ch6.fossil_fuels", "target": "chem.ch14.alkanes"}, {"source": "chem.ch14.alkanes", "target": "chem.ch14.the_chemical_behaviour_of_alkanes"}, {"source": "chem.ch14.alkanes", "target": "chem.ch14.alkenes"}, {"source": "chem.ch14.alkenes", "target": "chem.ch14.the_chemical_behaviour_of_alkenes"}, {"source": "chem.ch14.the_chemical_behaviour_of_alkenes", "target": "chem.ch14.addition_reaction_of_alkenes"}, {"source": "chem.ch14.alkanes", "target": "chem.ch15.alcohols"}, {"source": "chem.ch14.alkenes", "target": "chem.ch15.alcohols"}, {"source": "chem.ch15.alcohols", "target": "chem.ch15.carboxylic_acids"}, {"source": "chem.ch15.carboxylic_acids", "target": "chem.ch15.condensation_polymers"}, {"source": "chem.ch14.addition_reaction_of_alkenes", "target": "chem.ch15.condensation_polymers"}, {"source": "chem.ch15.condensation_polymers", "target": "chem.ch15.some_biopolymers"}, {"source": "chem.ch10.identifying_metal_ions", "target": "chem.ch16.notes_on_qualitative_analysis"}, {"source": "chem.ch8.acids_and_alkalis", "target": "chem.ch16.notes_on_qualitative_analysis"}, {"source": "chem.ch9.group_vii_the_halogens", "target": "chem.ch16.notes_on_qualitative_analysis"}, {"source": "chem.ch5.electrolysis_of_aluminium_oxide", "target": "chem.ch10.discovery_of_metals_and_their_extraction"}, {"source": "chem.ch12.sulfur_dioxide", "target": "chem.ch11.atmospheric_pollution"}, {"source": "chem.ch9.group_i_the_alkali_metals", "target": "chem.ch10.metal_reactions"}, {"source": "chem.ch9.group_ii_the_alkaline_earth_metals", "target": "chem.ch10.metal_reactions"}];
+const booksData = [{"id": "igcse.ch1.particulate_nature", "name": "The particulate nature of matter", "color": "#065f46", "order": 1}, {"id": "igcse.ch2.elements_compounds", "name": "Elements, compounds and experimental techniques", "color": "#047857", "order": 2}, {"id": "igcse.ch3.atomic_structure_bonding", "name": "Atomic structure and bonding", "color": "#059669", "order": 3}, {"id": "igcse.ch4.stoichiometry", "name": "Stoichiometry - chemical calculations", "color": "#0d9488", "order": 4}, {"id": "igcse.ch5.electricity_chemistry", "name": "Electricity and chemistry", "color": "#0f766e", "order": 5}, {"id": "igcse.ch6.chemical_energetics", "name": "Chemical energetics", "color": "#14b8a6", "order": 6}, {"id": "igcse.ch7.chemical_reactions", "name": "Chemical reactions", "color": "#10b981", "order": 7}, {"id": "igcse.ch8.acids_bases_salts", "name": "Acids, bases and salts", "color": "#34d399", "order": 8}, {"id": "igcse.ch9.periodic_table", "name": "The Periodic Table", "color": "#2dd4bf", "order": 9}, {"id": "igcse.ch10.metals", "name": "Metals", "color": "#5eead4", "order": 10}, {"id": "igcse.ch11.air_water", "name": "Air and water", "color": "#6ee7b7", "order": 11}, {"id": "igcse.ch12.sulfur", "name": "Sulfur", "color": "#a7f3d0", "order": 12}, {"id": "igcse.ch13.inorganic_carbon", "name": "Inorganic carbon chemistry", "color": "#99f6e4", "order": 13}, {"id": "igcse.ch14.organic_chemistry_1", "name": "Organic chemistry 1", "color": "#22c55e", "order": 14}, {"id": "igcse.ch15.organic_chemistry_2", "name": "Organic chemistry 2", "color": "#4ade80", "order": 15}, {"id": "igcse.ch16.experimental_chemistry", "name": "Experimental chemistry", "color": "#86efac", "order": 16}];
+const strandsData = [{"name": "Other", "color": "#ef4444", "nodeIds": ["chem.ch1.solids_liquids_and_gases", "chem.ch1.the_kinetic_theory_of_matter", "chem.ch1.changes_of_state", "chem.ch1.diffusion", "chem.ch2.elements", "chem.ch2.compounds", "chem.ch2.mixtures", "chem.ch2.separating_mixtures", "chem.ch3.inside_atoms", "chem.ch3.ionic_bonding", "chem.ch3.covalent_bonding", "chem.ch3.metallic_bonding", "chem.ch4.calculating_moles", "chem.ch5.electrolysis_of_lead_ii_bromide", "chem.ch5.electrolysis_of_aluminium_oxide", "chem.ch5.electrolysis_of_aqueous_solutions", "chem.ch5.electrolysis_of_copper_ii_sulfate_solution", "chem.ch5.electroplating", "chem.ch6.fossil_fuels", "chem.ch6.what_is_a_fuel", "chem.ch6.alternative_sources_of_energy", "chem.ch6.chemical_energy", "chem.ch6.cells_and_batteries", "chem.ch7.enzymes", "chem.ch8.acids_and_alkalis", "chem.ch8.formation_of_salts", "chem.ch8.solubility_of_salts_in_water", "chem.ch9.development_of_the_periodic_table", "chem.ch9.electronic_structure_and_the_periodic_table", "chem.ch9.group_i_the_alkali_metals", "chem.ch9.group_vii_the_halogens", "chem.ch9.group_0_the_noble_gases", "chem.ch9.transition_elements", "chem.ch9.the_position_of_hydrogen", "chem.ch10.metal_reactions", "chem.ch10.reactivity_of_metals_and_their_uses", "chem.ch10.identifying_metal_ions", "chem.ch10.discovery_of_metals_and_their_extraction", "chem.ch10.rusting_of_iron", "chem.ch10.alloys", "chem.ch11.the_air", "chem.ch11.useful_gases_from_the_air", "chem.ch11.ammonia", "chem.ch11.artificial_fertilisers", "chem.ch11.atmospheric_pollution", "chem.ch11.water", "chem.ch11.hardness_in_water", "chem.ch12.sulfur_the_element", "chem.ch12.sulfur_dioxide", "chem.ch12.sulfuric_acid", "chem.ch13.limestone", "chem.ch13.carbonates", "chem.ch13.carbon_dioxide", "chem.ch14.alkanes", "chem.ch14.the_chemical_behaviour_of_alkanes", "chem.ch14.alkenes", "chem.ch14.the_chemical_behaviour_of_alkenes", "chem.ch15.alcohols", "chem.ch15.carboxylic_acids", "chem.ch15.condensation_polymers", "chem.ch15.some_biopolymers", "chem.ch16.notes_on_qualitative_analysis"]}, {"name": "Statistics", "color": "#f97316", "nodeIds": ["chem.ch3.the_arrangement_of_electrons_in_atoms"]}, {"name": "Measurement", "color": "#f59e0b", "nodeIds": ["chem.ch4.relative_atomic_mass", "chem.ch4.reacting_masses"]}, {"name": "Equations", "color": "#eab308", "nodeIds": ["chem.ch4.calculating_formulae", "chem.ch4.moles_and_chemical_equations"]}, {"name": "Ratio & Proportion", "color": "#84cc16", "nodeIds": ["chem.ch5.electrolysis_of_concentrated_hydrochloric_acid", "chem.ch7.factors_that_affect_the_rate_of_a_reaction", "chem.ch8.crystal_hydrates", "chem.ch8.titration", "chem.ch10.decomposition_of_metal_compounds"]}, {"name": "Geometry", "color": "#22c55e", "nodeIds": ["chem.ch9.group_ii_the_alkaline_earth_metals"]}, {"name": "Arithmetic", "color": "#10b981", "nodeIds": ["chem.ch14.addition_reaction_of_alkenes"]}];
+const bookGroupsData = {"Other": [{"id": "igcse.ch1.particulate_nature", "name": "The particulate nature of matter", "color": "#065f46", "order": 1}, {"id": "igcse.ch2.elements_compounds", "name": "Elements, compounds and experimental techniques", "color": "#047857", "order": 2}, {"id": "igcse.ch3.atomic_structure_bonding", "name": "Atomic structure and bonding", "color": "#059669", "order": 3}, {"id": "igcse.ch4.stoichiometry", "name": "Stoichiometry - chemical calculations", "color": "#0d9488", "order": 4}, {"id": "igcse.ch5.electricity_chemistry", "name": "Electricity and chemistry", "color": "#0f766e", "order": 5}, {"id": "igcse.ch6.chemical_energetics", "name": "Chemical energetics", "color": "#14b8a6", "order": 6}, {"id": "igcse.ch7.chemical_reactions", "name": "Chemical reactions", "color": "#10b981", "order": 7}, {"id": "igcse.ch8.acids_bases_salts", "name": "Acids, bases and salts", "color": "#34d399", "order": 8}, {"id": "igcse.ch9.periodic_table", "name": "The Periodic Table", "color": "#2dd4bf", "order": 9}, {"id": "igcse.ch10.metals", "name": "Metals", "color": "#5eead4", "order": 10}, {"id": "igcse.ch11.air_water", "name": "Air and water", "color": "#6ee7b7", "order": 11}, {"id": "igcse.ch12.sulfur", "name": "Sulfur", "color": "#a7f3d0", "order": 12}, {"id": "igcse.ch13.inorganic_carbon", "name": "Inorganic carbon chemistry", "color": "#99f6e4", "order": 13}, {"id": "igcse.ch14.organic_chemistry_1", "name": "Organic chemistry 1", "color": "#22c55e", "order": 14}, {"id": "igcse.ch15.organic_chemistry_2", "name": "Organic chemistry 2", "color": "#4ade80", "order": 15}, {"id": "igcse.ch16.experimental_chemistry", "name": "Experimental chemistry", "color": "#86efac", "order": 16}]};
+
+// State
+const activeBooks = new Set(booksData.map(b => b.id));
+const activeStrands = new Set(strandsData.map(s => s.name));
+let filterMode = 'grades'; // 'grades' or 'topics'
+let selectedNode = null;
+
+// D3 setup
+const container = document.getElementById('graph-container');
+const svg = d3.select('#svg');
+const g = svg.append('g');
+
+// Arrow marker
+svg.append('defs').append('marker')
+  .attr('id', 'arrow')
+  .attr('viewBox', '0 -4 8 8')
+  .attr('refX', 18)
+  .attr('refY', 0)
+  .attr('markerWidth', 5)
+  .attr('markerHeight', 5)
+  .attr('orient', 'auto')
+  .append('path')
+  .attr('d', 'M0,-3L7,0L0,3')
+  .attr('fill', '#6b6590');
+
+// Glow marker for highlighted
+svg.select('defs').append('marker')
+  .attr('id', 'arrow-hl')
+  .attr('viewBox', '0 -4 8 8')
+  .attr('refX', 18)
+  .attr('refY', 0)
+  .attr('markerWidth', 6)
+  .attr('markerHeight', 6)
+  .attr('orient', 'auto')
+  .append('path')
+  .attr('d', 'M0,-3L7,0L0,3')
+  .attr('fill', '#ffc857');
+
+// Build graph data
+const nodes = rawNodes.map(d => ({...d}));
+const edges = rawEdges.map(d => ({...d}));
+
+// Index
+const nodeMap = {};
+nodes.forEach(n => { nodeMap[n.id] = n; });
+
+// Links
+const linkGroup = g.append('g').attr('class', 'links');
+const nodeGroup = g.append('g').attr('class', 'nodes');
+const labelGroup = g.append('g').attr('class', 'labels');
+
+let linkEls, nodeEls, labelEls;
+
+function renderGraph() {
+  // Filter
+  let visibleIds;
+  if (filterMode === 'topics') {
+    visibleIds = new Set(nodes.filter(n => activeStrands.has(n.strand)).map(n => n.id));
+  } else {
+    visibleIds = new Set(nodes.filter(n => activeBooks.has(n.book)).map(n => n.id));
+  }
+  const vNodes = nodes.filter(n => visibleIds.has(n.id));
+  const vEdges = edges.filter(e => {
+    const sid = typeof e.source === 'object' ? e.source.id : e.source;
+    const tid = typeof e.target === 'object' ? e.target.id : e.target;
+    return visibleIds.has(sid) && visibleIds.has(tid);
+  });
+
+  // Links
+  linkEls = linkGroup.selectAll('line').data(vEdges, d => {
+    const s = typeof d.source === 'object' ? d.source.id : d.source;
+    const t = typeof d.target === 'object' ? d.target.id : d.target;
+    return s + '->' + t;
+  });
+  linkEls.exit().remove();
+  linkEls = linkEls.enter().append('line')
+    .attr('stroke', '#5a5480')
+    .attr('stroke-width', 0.7)
+    .attr('stroke-opacity', 0.5)
+    .attr('marker-end', 'url(#arrow)')
+    .merge(linkEls);
+
+  // Nodes
+  nodeEls = nodeGroup.selectAll('circle').data(vNodes, d => d.id);
+  nodeEls.exit().remove();
+  nodeEls = nodeEls.enter().append('circle')
+    .attr('r', d => d.r)
+    .attr('fill', d => d.color)
+    .attr('fill-opacity', 0.85)
+    .attr('stroke', 'none')
+    .attr('stroke-width', 2)
+    .attr('cursor', 'pointer')
+    .on('click', (ev, d) => { ev.stopPropagation(); selectNode(d); })
+    .call(d3.drag()
+      .on('start', dragStart)
+      .on('drag', dragging)
+      .on('end', dragEnd))
+    .merge(nodeEls)
+    .attr('fill', d => d.color);
+
+  // Labels
+  labelEls = labelGroup.selectAll('text').data(vNodes, d => d.id);
+  labelEls.exit().remove();
+  labelEls = labelEls.enter().append('text')
+    .attr('font-size', d => Math.max(6, d.r * 0.85))
+    .attr('font-family', "'DM Sans', sans-serif")
+    .attr('fill', '#a09cac')
+    .attr('text-anchor', 'middle')
+    .attr('dy', d => d.r + 10)
+    .attr('pointer-events', 'none')
+    .text(d => d.label.length > 22 ? d.label.slice(0, 20) + '…' : d.label)
+    .merge(labelEls);
+
+  // Update simulation
+  simulation.nodes(vNodes);
+  simulation.force('link').links(vEdges);
+  simulation.alpha(0.6).restart();
+
+  updateStats(vNodes.length, vEdges.length);
+}
+
+// Force simulation
+const simulation = d3.forceSimulation()
+  .force('link', d3.forceLink().id(d => d.id).distance(55).strength(0.3))
+  .force('charge', d3.forceManyBody().strength(-120).distanceMax(400))
+  .force('center', d3.forceCenter())
+  .force('collide', d3.forceCollide().radius(10).strength(0.7))
+  .force('x', d3.forceX().strength(0.02))
+  .force('y', d3.forceY().strength(0.02))
+  .alphaDecay(0.015)
+  .velocityDecay(0.35)
+  .on('tick', ticked);
+
+function ticked() {
+  linkEls
+    .attr('x1', d => d.source.x)
+    .attr('y1', d => d.source.y)
+    .attr('x2', d => d.target.x)
+    .attr('y2', d => d.target.y);
+  nodeEls
+    .attr('cx', d => d.x)
+    .attr('cy', d => d.y);
+  labelEls
+    .attr('x', d => d.x)
+    .attr('y', d => d.y);
+}
+
+// Zoom
+const zoom = d3.zoom()
+  .scaleExtent([0.05, 8])
+  .on('zoom', (ev) => { g.attr('transform', ev.transform); });
+svg.call(zoom);
+
+// Resize
+function resize() {
+  const w = container.clientWidth;
+  const h = container.clientHeight;
+  svg.attr('viewBox', [-w/2, -h/2, w, h]);
+  simulation.force('center', d3.forceCenter(0, 0));
+}
+window.addEventListener('resize', resize);
+resize();
+
+// Drag
+function dragStart(ev, d) {
+  if (!ev.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x; d.fy = d.y;
+}
+function dragging(ev, d) {
+  d.fx = ev.x; d.fy = ev.y;
+}
+function dragEnd(ev, d) {
+  if (!ev.active) simulation.alphaTarget(0);
+  d.fx = null; d.fy = null;
+}
+
+// Selection & highlighting
+function selectNode(d) {
+  selectedNode = d;
+  const neighbors = new Set([d.id]);
+  const prereqEdges = new Set();
+  const leadsEdges = new Set();
+
+  edges.forEach(e => {
+    const sid = typeof e.source === 'object' ? e.source.id : e.source;
+    const tid = typeof e.target === 'object' ? e.target.id : e.target;
+    if (sid === d.id) { neighbors.add(tid); leadsEdges.add(sid + '->' + tid); }
+    if (tid === d.id) { neighbors.add(sid); prereqEdges.add(sid + '->' + tid); }
+  });
+
+  nodeEls.attr('fill-opacity', n => neighbors.has(n.id) ? 1 : 0.06)
+    .attr('stroke', n => n.id === d.id ? '#ffc857' : 'none')
+    .attr('stroke-width', n => n.id === d.id ? 2.5 : 0);
+  labelEls.attr('fill', n => neighbors.has(n.id) ? '#e8e4dc' : '#1a1830')
+    .attr('font-weight', n => n.id === d.id ? 600 : 400);
+  linkEls.attr('stroke', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      if (prereqEdges.has(k)) return '#e07a5f';
+      if (leadsEdges.has(k)) return '#81b29a';
+      return '#5a5480';
+    })
+    .attr('stroke-opacity', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      return (prereqEdges.has(k) || leadsEdges.has(k)) ? 0.9 : 0.04;
+    })
+    .attr('stroke-width', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      return (prereqEdges.has(k) || leadsEdges.has(k)) ? 1.8 : 0.7;
+    })
+    .attr('marker-end', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      return (prereqEdges.has(k) || leadsEdges.has(k)) ? 'url(#arrow-hl)' : 'url(#arrow)';
+    });
+
+  showDetail(d, prereqEdges, leadsEdges);
+}
+
+function clearSelection() {
+  selectedNode = null;
+  nodeEls.attr('fill-opacity', 0.85).attr('stroke', 'none');
+  labelEls.attr('fill', '#a09cac').attr('font-weight', 400);
+  linkEls.attr('stroke', '#5a5480').attr('stroke-opacity', 0.5).attr('stroke-width', 0.7).attr('marker-end', 'url(#arrow)');
+  document.getElementById('detail').classList.remove('open');
+  document.getElementById('graph-container').classList.remove('detail-open');
+}
+
+svg.on('click', () => clearSelection());
+
+// Detail panel
+function showDetail(d, prereqEdges, leadsEdges) {
+  const panel = document.getElementById('detail');
+  const content = document.getElementById('detail-content');
+  document.getElementById('graph-container').classList.add('detail-open');
+
+  const prereqs = [];
+  const leads = [];
+  edges.forEach(e => {
+    const sid = typeof e.source === 'object' ? e.source.id : e.source;
+    const tid = typeof e.target === 'object' ? e.target.id : e.target;
+    if (tid === d.id && nodeMap[sid]) prereqs.push(nodeMap[sid]);
+    if (sid === d.id && nodeMap[tid]) leads.push(nodeMap[tid]);
+  });
+
+  content.innerHTML = `
+    <div class="detail-badge" style="background:${d.color}18;color:${d.color};border:1px solid ${d.color}30">
+      <span style="width:5px;height:5px;border-radius:50%;background:${d.color};display:inline-block"></span>
+      ${d.bookName}
+    </div>
+    ${d.pages ? `<div class="detail-pages">p. ${d.pages}</div>` : ''}
+    <div class="detail-title">${d.label}</div>
+    ${prereqs.length ? `
+      <div class="conn-section">
+        <div class="conn-head prereq">▲ Prerequisites (${prereqs.length})</div>
+        ${prereqs.map(n => `<div class="conn-item" data-id="${n.id}"><span class="conn-dot" style="background:${n.color}"></span><span class="conn-label">${n.label}</span><span class="conn-book">${n.bookName}</span></div>`).join('')}
+      </div>
+    ` : '<div class="conn-section"><div class="conn-head" style="color:var(--gold)">★ Starting point</div></div>'}
+    ${leads.length ? `
+      <div class="conn-section">
+        <div class="conn-head leads">▼ Leads to (${leads.length})</div>
+        ${leads.map(n => `<div class="conn-item" data-id="${n.id}"><span class="conn-dot" style="background:${n.color}"></span><span class="conn-label">${n.label}</span><span class="conn-book">${n.bookName}</span></div>`).join('')}
+      </div>
+    ` : ''}
+  `;
+
+  content.querySelectorAll('.conn-item').forEach(el => {
+    el.addEventListener('click', () => {
+      const n = nodeMap[el.dataset.id];
+      if (n) { selectNode(n); }
+    });
+  });
+
+  panel.classList.add('open');
+}
+
+document.getElementById('detail-close').addEventListener('click', clearSelection);
+
+// Tab switching
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+// Book counts
+const bookCounts = {};
+nodes.forEach(n => { bookCounts[n.book] = (bookCounts[n.book] || 0) + 1; });
+
+// === GRADES TAB: books grouped by education level, collapsible ===
+const gradesListEl = document.getElementById('grades-list');
+Object.entries(bookGroupsData).forEach(([groupName, groupBooks]) => {
+  const totalInGroup = groupBooks.reduce((s, b) => s + (bookCounts[b.id] || 0), 0);
+  if (totalInGroup === 0) return;
+
+  // Group header
+  const header = document.createElement('div');
+  header.className = 'group-header';
+  header.innerHTML = `<span class="group-arrow">▼</span><span class="group-label">${groupName}</span><span class="group-cnt">${totalInGroup}</span>`;
+
+  // Group body
+  const body = document.createElement('div');
+  body.className = 'group-body';
+  body.style.maxHeight = '500px';
+
+  const list = document.createElement('div');
+  list.className = 'book-list';
+
+  groupBooks.forEach(b => {
+    const el = document.createElement('div');
+    el.className = 'book-item';
+    el.dataset.id = b.id;
+    el.innerHTML = `<span class="book-dot" style="background:${b.color};color:${b.color}"></span><span class="book-name">${b.name}</span><span class="book-cnt">${bookCounts[b.id] || 0}</span>`;
+    el.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      if (activeBooks.has(b.id)) { activeBooks.delete(b.id); el.classList.add('off'); }
+      else { activeBooks.add(b.id); el.classList.remove('off'); }
+      filterMode = 'grades';
+      renderGraph();
+    });
+    list.appendChild(el);
+  });
+
+  body.appendChild(list);
+  header.addEventListener('click', () => { header.classList.toggle('collapsed'); });
+
+  gradesListEl.appendChild(header);
+  gradesListEl.appendChild(body);
+});
+
+document.getElementById('b-all').addEventListener('click', () => {
+  booksData.forEach(b => activeBooks.add(b.id));
+  document.querySelectorAll('#grades-list .book-item').forEach(el => el.classList.remove('off'));
+  filterMode = 'grades';
+  renderGraph();
+});
+document.getElementById('b-none').addEventListener('click', () => {
+  activeBooks.clear();
+  document.querySelectorAll('#grades-list .book-item').forEach(el => el.classList.add('off'));
+  filterMode = 'grades';
+  renderGraph();
+});
+
+// === TOPICS TAB: strands grouped by math domain, collapsible ===
+const topicsListEl = document.getElementById('topics-list');
+const strandDomains = {
+  'Number & Arithmetic': ['Numbers & Counting', 'Arithmetic', 'Fractions', 'Decimals', 'Percentages', 'Number Bases'],
+  'Algebra': ['Algebra', 'Equations', 'Inequalities', 'Functions & Graphs', 'Indices & Logarithms', 'Sequences & Series'],
+  'Geometry & Measure': ['Geometry', 'Symmetry & Transformations', 'Perimeter, Area & Volume', 'Coordinate Geometry', 'Pythagoras & Similarity', 'Trigonometry'],
+  'Data & Probability': ['Statistics', 'Probability', 'Sets & Logic'],
+  'Applied': ['Money & Finance', 'Time', 'Measurement', 'Ratio & Proportion', 'Calculus', 'Kinematics', 'Vectors & Matrices', 'Graph Theory', 'Mathematical Modeling'],
+};
+
+// Build strand lookup
+const strandNodeIds = {};
+strandsData.forEach(s => { strandNodeIds[s.name] = new Set(s.nodeIds); });
+
+Object.entries(strandDomains).forEach(([domain, strandNames]) => {
+  const domainStrands = strandNames.filter(sn => strandNodeIds[sn] && strandNodeIds[sn].size > 0);
+  if (domainStrands.length === 0) return;
+
+  const totalInDomain = domainStrands.reduce((s, sn) => s + (strandNodeIds[sn] ? strandNodeIds[sn].size : 0), 0);
+
+  const header = document.createElement('div');
+  header.className = 'group-header';
+  header.innerHTML = `<span class="group-arrow">▼</span><span class="group-label">${domain}</span><span class="group-cnt">${totalInDomain}</span>`;
+
+  const body = document.createElement('div');
+  body.className = 'group-body';
+  body.style.maxHeight = '500px';
+
+  const list = document.createElement('div');
+  list.className = 'book-list';
+
+  domainStrands.forEach(sn => {
+    const strand = strandsData.find(s => s.name === sn);
+    if (!strand) return;
+    const el = document.createElement('div');
+    el.className = 'strand-item';
+    el.dataset.strand = sn;
+    el.innerHTML = `<span class="strand-dot" style="background:${strand.color}"></span><span class="strand-name">${sn}</span><span class="strand-cnt">${strand.nodeIds.length}</span>`;
+    el.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      if (activeStrands.has(sn)) { activeStrands.delete(sn); el.classList.add('off'); }
+      else { activeStrands.add(sn); el.classList.remove('off'); }
+      filterMode = 'topics';
+      renderGraph();
+    });
+    list.appendChild(el);
+  });
+
+  body.appendChild(list);
+  header.addEventListener('click', () => { header.classList.toggle('collapsed'); });
+
+  topicsListEl.appendChild(header);
+  topicsListEl.appendChild(body);
+});
+
+// Also add "Other" strand if it exists
+const otherStrand = strandsData.find(s => s.name === 'Other');
+if (otherStrand && otherStrand.nodeIds.length > 0) {
+  const el = document.createElement('div');
+  el.className = 'strand-item';
+  el.dataset.strand = 'Other';
+  el.innerHTML = `<span class="strand-dot" style="background:${otherStrand.color}"></span><span class="strand-name">Other</span><span class="strand-cnt">${otherStrand.nodeIds.length}</span>`;
+  el.addEventListener('click', (ev) => {
+    ev.stopPropagation();
+    if (activeStrands.has('Other')) { activeStrands.delete('Other'); el.classList.add('off'); }
+    else { activeStrands.add('Other'); el.classList.remove('off'); }
+    filterMode = 'topics';
+    renderGraph();
+  });
+  topicsListEl.appendChild(el);
+}
+
+document.getElementById('t-all').addEventListener('click', () => {
+  strandsData.forEach(s => activeStrands.add(s.name));
+  document.querySelectorAll('.strand-item').forEach(el => el.classList.remove('off'));
+  filterMode = 'topics';
+  renderGraph();
+});
+document.getElementById('t-none').addEventListener('click', () => {
+  activeStrands.clear();
+  document.querySelectorAll('.strand-item').forEach(el => el.classList.add('off'));
+  filterMode = 'topics';
+  renderGraph();
+});
+
+// Force sliders
+document.getElementById('sl-charge').addEventListener('input', function() {
+  simulation.force('charge').strength(+this.value);
+  simulation.alpha(0.4).restart();
+});
+document.getElementById('sl-dist').addEventListener('input', function() {
+  simulation.force('link').distance(+this.value);
+  simulation.alpha(0.4).restart();
+});
+document.getElementById('sl-gravity').addEventListener('input', function() {
+  const v = +this.value / 1000;
+  simulation.force('x').strength(v);
+  simulation.force('y').strength(v);
+  simulation.alpha(0.4).restart();
+});
+document.getElementById('sl-collide').addEventListener('input', function() {
+  simulation.force('collide').radius(+this.value);
+  simulation.alpha(0.4).restart();
+});
+
+// Search
+let searchTimeout;
+document.getElementById('search').addEventListener('input', function() {
+  clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(() => {
+    const q = this.value.trim().toLowerCase();
+    if (!q) { clearSelection(); return; }
+    const matches = nodes.filter(n => activeBooks.has(n.book) && (n.label.toLowerCase().includes(q) || n.id.toLowerCase().includes(q)));
+    if (matches.length) {
+      // Zoom to first match
+      const m = matches[0];
+      if (m.x != null) {
+        const t = d3.zoomIdentity.translate(-m.x * 2 + container.clientWidth/2, -m.y * 2 + container.clientHeight/2).scale(2);
+        svg.transition().duration(500).call(zoom.transform, t);
+      }
+      // Highlight all matches
+      const matchIds = new Set(matches.map(n => n.id));
+      nodeEls.attr('fill-opacity', n => matchIds.has(n.id) ? 1 : 0.06)
+        .attr('stroke', n => matchIds.has(n.id) ? '#ffc857' : 'none')
+        .attr('stroke-width', n => matchIds.has(n.id) ? 2 : 0);
+      labelEls.attr('fill', n => matchIds.has(n.id) ? '#fff' : '#1a1830');
+    }
+  }, 250);
+});
+
+function updateStats(n, e) {
+  document.getElementById('s-nodes').textContent = n;
+  document.getElementById('s-edges').textContent = e;
+}
+
+// Keyboard
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { clearSelection(); document.getElementById('search').value = ''; }
+  if (e.key === '/' && document.activeElement.tagName !== 'INPUT') { e.preventDefault(); document.getElementById('search').focus(); }
+});
+
+// Init
+renderGraph();
+</script>
+</body>
+</html>
