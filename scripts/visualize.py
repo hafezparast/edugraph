@@ -1,55 +1,72 @@
 #!/usr/bin/env python3
 """
-Generate a self-contained D3.js force-directed graph visualization
-from the Malaysia K-12 knowledge graph data.
+Generate self-contained D3.js force-directed graph visualizations.
 
 Usage:
-    python visualize.py
-    # Opens k12-d3.html in browser
+    python visualize.py                    # generate all graphs
+    python visualize.py malaysia-k12       # generate one graph
+    python visualize.py igcse-math         # generate one graph
 """
 
 import json
 import os
+import sys
 
-DATA_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "malaysia-k12.json")
-OUTPUT_PATH = os.path.join(os.path.dirname(__file__), "..", "k12-d3.html")
+BASE_DIR = os.path.join(os.path.dirname(__file__), "..")
 
-with open(DATA_PATH) as f:
-    data = json.load(f)
+GRAPHS = {
+    "malaysia-k12": {
+        "data": "data/malaysia-k12.json",
+        "output": "malaysia-math.html",
+        "title": "Malaysia Mathematics",
+        "subtitle": "Year 1 to STPM",
+    },
+    "igcse-math": {
+        "data": "data/igcse-math.json",
+        "output": "igcse-math.html",
+        "title": "IGCSE Mathematics",
+        "subtitle": "Cambridge 0580 — Core & Extended",
+    },
+}
 
-# Build compact nodes/edges for D3
-books = {b["id"]: b for b in data["books"]}
-d3_nodes = []
-for n in data["nodes"]:
-    b = books.get(n["book"], {})
-    d3_nodes.append({
-        "id": n["id"],
-        "label": n["label"],
-        "color": b.get("color", "#666"),
-        "book": n["book"],
-        "bookName": b.get("name", ""),
-        "bookOrder": b.get("order", 0),
-        "r": 4 + b.get("order", 0) * 0.8,
-        "pages": n.get("pages", ""),
-    })
 
-d3_edges = []
-for e in data["edges"]:
-    d3_edges.append({
-        "source": e["source"],
-        "target": e["target"],
-    })
+def generate(name, config):
+    data_path = os.path.join(BASE_DIR, config["data"])
+    output_path = os.path.join(BASE_DIR, config["output"])
 
-nodes_json = json.dumps(d3_nodes)
-edges_json = json.dumps(d3_edges)
-books_json = json.dumps(data["books"])
+    with open(data_path) as f:
+        data = json.load(f)
 
-html = """<!DOCTYPE html>
+    books = {b["id"]: b for b in data["books"]}
+    d3_nodes = []
+    for n in data["nodes"]:
+        b = books.get(n["book"], {})
+        d3_nodes.append({
+            "id": n["id"],
+            "label": n["label"],
+            "color": b.get("color", "#666"),
+            "book": n["book"],
+            "bookName": b.get("name", ""),
+            "bookOrder": b.get("order", 0),
+            "r": 4 + b.get("order", 0) * 0.8,
+            "pages": n.get("pages", ""),
+            "description": n.get("description", ""),
+        })
+
+    d3_edges = [{"source": e["source"], "target": e["target"]} for e in data["edges"]]
+
+    nodes_json = json.dumps(d3_nodes)
+    edges_json = json.dumps(d3_edges)
+    books_json = json.dumps(data["books"])
+    page_title = config["title"]
+    page_subtitle = config["subtitle"]
+
+    html = """<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduGraph — Malaysia K-12 (D3.js Force Graph)</title>
+<title>EduGraph — """ + page_title + """</title>
 <script src="https://d3js.org/d3.v7.min.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
@@ -157,16 +174,14 @@ svg { width: 100%; height: 100%; display: block; }
 <header class="topbar">
   <div class="topbar-left">
     <h1>EduGraph</h1>
-    <span class="sub">D3.js Force-Directed Graph</span>
+    <span class="sub">""" + page_subtitle + """</span>
   </div>
   <div class="topbar-right">
     <div class="stats">
       <span><span class="stat-n" id="s-nodes">0</span><span class="stat-l">nodes</span></span>
       <span><span class="stat-n" id="s-edges">0</span><span class="stat-l">edges</span></span>
     </div>
-    <a href="index.html" class="nav-btn">General</a>
-    <a href="k12.html" class="nav-btn">Cytoscape</a>
-    <a href="k12-pyvis.html" class="nav-btn">vis.js</a>
+    <a href="index.html" class="nav-btn">Home</a>
   </div>
 </header>
 
@@ -585,9 +600,16 @@ renderGraph();
 </body>
 </html>"""
 
-with open(OUTPUT_PATH, "w") as f:
-    f.write(html)
+    with open(output_path, "w") as f:
+        f.write(html)
 
-print(f"Generated: {OUTPUT_PATH}")
-print(f"  {len(d3_nodes)} nodes, {len(d3_edges)} edges")
-print(f"  Open in browser or deploy to GitHub Pages")
+    print(f"  {name}: {len(d3_nodes)} nodes, {len(d3_edges)} edges → {config['output']}")
+
+
+if __name__ == "__main__":
+    targets = sys.argv[1:] if len(sys.argv) > 1 else list(GRAPHS.keys())
+    for name in targets:
+        if name not in GRAPHS:
+            print(f"Unknown graph: {name}. Available: {', '.join(GRAPHS.keys())}")
+            continue
+        generate(name, GRAPHS[name])

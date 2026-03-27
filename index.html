@@ -3,1168 +3,260 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduGraph — Knowledge Constellation</title>
-<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+<title>EduGraph — Knowledge Graphs for Education</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { height: 100%; background: #08090e; color: #e8e4dc; font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
 
-:root {
-  --bg-deep: #0a0b10;
-  --bg-surface: rgba(14, 16, 26, 0.85);
-  --bg-glass: rgba(18, 20, 35, 0.72);
-  --border-dim: rgba(255, 255, 255, 0.06);
-  --border-glow: rgba(255, 200, 87, 0.15);
-  --text-primary: #e8e4dc;
-  --text-secondary: #8a8697;
-  --text-muted: #55516a;
-  --accent-gold: #ffc857;
-  --accent-warm: #ff8c42;
-
-  /* node type colors */
-  --c-domain: #ffc857;
-  --c-branch: #e07a5f;
-  --c-topic: #81b29a;
-  --c-concept: #3d85c6;
-  --c-axiom: #f4a261;
-  --c-theorem: #e76f51;
-  --c-definition: #a78bfa;
-  --c-formula: #34d399;
-  --c-technique: #60a5fa;
-  --c-question: #fb923c;
-  --c-example: #94a3b8;
-
-  --sidebar-w: 280px;
-  --detail-w: 320px;
-  --topbar-h: 64px;
-  --radius: 10px;
-}
-
-html, body {
-  height: 100%;
-  background: var(--bg-deep);
-  color: var(--text-primary);
-  font-family: 'DM Sans', sans-serif;
-  font-size: 13px;
-  overflow: hidden;
-}
-
-/* Grain overlay */
 body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 9999;
+  content: ''; position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.035; pointer-events: none; z-index: 9999;
 }
 
-/* Top bar */
-.topbar {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  height: var(--topbar-h);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 24px;
-  background: linear-gradient(180deg, rgba(10,11,16,0.95) 0%, rgba(10,11,16,0.6) 100%);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border-dim);
-  z-index: 100;
-}
-
-.topbar-title {
-  display: flex;
-  align-items: baseline;
-  gap: 14px;
-}
-
-.topbar h1 {
-  font-family: 'Instrument Serif', serif;
-  font-size: 26px;
-  font-weight: 400;
-  color: var(--accent-gold);
-  letter-spacing: -0.5px;
-}
-
-.topbar .subtitle {
-  font-size: 12px;
-  color: var(--text-secondary);
-  font-weight: 300;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
-.topbar-stats {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.stat {
-  display: flex;
-  align-items: baseline;
-  gap: 5px;
-}
-
-.stat-num {
-  font-family: 'Instrument Serif', serif;
-  font-size: 20px;
-  color: var(--accent-gold);
-}
-
-.stat-label {
-  font-size: 11px;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.layout-btns {
-  display: flex;
-  gap: 4px;
-}
-
-.layout-btn {
-  background: var(--bg-glass);
-  border: 1px solid var(--border-dim);
-  color: var(--text-secondary);
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-size: 11px;
-  font-family: 'DM Sans', sans-serif;
-  cursor: pointer;
-  transition: all 0.2s;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.layout-btn:hover, .layout-btn.active {
-  background: rgba(255, 200, 87, 0.1);
-  border-color: var(--border-glow);
-  color: var(--accent-gold);
-}
-
-/* Sidebar */
-.sidebar {
-  position: fixed;
-  top: var(--topbar-h);
-  left: 0;
-  bottom: 0;
-  width: var(--sidebar-w);
-  background: var(--bg-surface);
-  backdrop-filter: blur(20px);
-  border-right: 1px solid var(--border-dim);
-  overflow-y: auto;
-  z-index: 50;
-  padding: 16px;
+.page {
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-.sidebar::-webkit-scrollbar { width: 4px; }
-.sidebar::-webkit-scrollbar-track { background: transparent; }
-.sidebar::-webkit-scrollbar-thumb { background: var(--border-dim); border-radius: 2px; }
-
-.section-title {
-  font-family: 'Instrument Serif', serif;
-  font-size: 15px;
-  color: var(--text-primary);
-  margin-bottom: 10px;
-  display: flex;
   align-items: center;
-  gap: 8px;
-}
-
-.section-title::before {
-  content: '';
-  width: 3px;
-  height: 14px;
-  background: var(--accent-gold);
-  border-radius: 2px;
-}
-
-/* Search */
-.search-wrap {
+  justify-content: center;
+  padding: 40px 20px;
   position: relative;
 }
 
-.search-input {
-  width: 100%;
-  padding: 10px 12px 10px 34px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid var(--border-dim);
-  border-radius: var(--radius);
-  color: var(--text-primary);
-  font-family: 'DM Sans', sans-serif;
-  font-size: 13px;
-  outline: none;
-  transition: border-color 0.2s;
-}
-
-.search-input::placeholder { color: var(--text-muted); }
-.search-input:focus { border-color: rgba(255, 200, 87, 0.3); }
-
-.search-icon {
+/* Ambient glow */
+.page::before {
+  content: '';
   position: absolute;
-  left: 11px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--text-muted);
-  font-size: 14px;
-}
-
-/* Filters */
-.filter-group {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.filter-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 4px 6px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.15s;
-  user-select: none;
-}
-
-.filter-item:hover { background: rgba(255,255,255,0.03); }
-
-.filter-item input[type="checkbox"] {
-  display: none;
-}
-
-.filter-check {
-  width: 14px;
-  height: 14px;
-  border-radius: 3px;
-  border: 1.5px solid var(--text-muted);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.15s;
-  flex-shrink: 0;
-}
-
-.filter-item input:checked + .filter-check {
-  border-color: transparent;
-}
-
-.filter-check::after {
-  content: '✓';
-  font-size: 9px;
-  color: var(--bg-deep);
-  opacity: 0;
-  transition: opacity 0.15s;
-}
-
-.filter-item input:checked + .filter-check::after {
-  opacity: 1;
-}
-
-.filter-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.filter-label {
-  font-size: 12px;
-  color: var(--text-secondary);
-  text-transform: capitalize;
-}
-
-.filter-count {
-  margin-left: auto;
-  font-size: 10px;
-  color: var(--text-muted);
-  font-variant-numeric: tabular-nums;
-}
-
-/* Grade select */
-.grade-select {
-  width: 100%;
-  padding: 8px 10px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid var(--border-dim);
-  border-radius: var(--radius);
-  color: var(--text-primary);
-  font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
-  outline: none;
-  cursor: pointer;
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238a8697' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-}
-
-.grade-select option { background: var(--bg-deep); }
-
-/* Legend */
-.legend-section { margin-top: 4px; }
-
-.legend-edges {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-top: 8px;
-}
-
-.legend-edge {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.legend-line {
-  width: 24px;
-  height: 2px;
-  border-radius: 1px;
-  flex-shrink: 0;
-}
-
-.legend-line.dashed {
-  background: repeating-linear-gradient(90deg, currentColor 0, currentColor 4px, transparent 4px, transparent 8px);
-  height: 2px;
-}
-
-.legend-edge-label {
-  font-size: 11px;
-  color: var(--text-muted);
-  text-transform: capitalize;
-}
-
-/* Graph container */
-#cy {
-  position: fixed;
-  top: var(--topbar-h);
-  left: var(--sidebar-w);
-  right: 0;
-  bottom: 0;
-  background: var(--bg-deep);
-  transition: right 0.3s ease;
-}
-
-#cy.detail-open {
-  right: var(--detail-w);
-}
-
-/* Detail panel */
-.detail-panel {
-  position: fixed;
-  top: var(--topbar-h);
-  right: calc(-1 * var(--detail-w));
-  bottom: 0;
-  width: var(--detail-w);
-  background: var(--bg-surface);
-  backdrop-filter: blur(20px);
-  border-left: 1px solid var(--border-dim);
-  z-index: 50;
-  overflow-y: auto;
-  padding: 24px 20px;
-  transition: right 0.3s ease;
-}
-
-.detail-panel.open {
-  right: 0;
-}
-
-.detail-panel::-webkit-scrollbar { width: 4px; }
-.detail-panel::-webkit-scrollbar-track { background: transparent; }
-.detail-panel::-webkit-scrollbar-thumb { background: var(--border-dim); border-radius: 2px; }
-
-.detail-close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  width: 28px;
-  height: 28px;
-  border-radius: 6px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid var(--border-dim);
-  color: var(--text-muted);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  transition: all 0.15s;
-}
-
-.detail-close:hover {
-  background: rgba(255,255,255,0.08);
-  color: var(--text-primary);
-}
-
-.detail-type-badge {
-  display: inline-block;
-  padding: 3px 10px;
-  border-radius: 20px;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.detail-label {
-  font-family: 'Instrument Serif', serif;
-  font-size: 24px;
-  color: var(--text-primary);
-  line-height: 1.2;
-  margin-bottom: 12px;
-}
-
-.detail-desc {
-  font-size: 13px;
-  line-height: 1.6;
-  color: var(--text-secondary);
-  margin-bottom: 20px;
-}
-
-.detail-meta {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 20px;
-}
-
-.detail-meta-row {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.detail-meta-key {
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: var(--text-muted);
-}
-
-.detail-meta-val {
-  font-size: 12px;
-  color: var(--text-secondary);
-}
-
-.detail-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-}
-
-.detail-tag {
-  padding: 2px 8px;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid var(--border-dim);
-  border-radius: 4px;
-  font-size: 11px;
-  color: var(--text-muted);
-}
-
-.detail-connections {
-  margin-top: 20px;
-  border-top: 1px solid var(--border-dim);
-  padding-top: 16px;
-}
-
-.connection-list {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  margin-top: 10px;
-}
-
-.connection-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 8px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.15s;
-}
-
-.connection-item:hover {
-  background: rgba(255,255,255,0.04);
-}
-
-.connection-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.connection-name {
-  font-size: 12px;
-  color: var(--text-secondary);
-  flex: 1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.connection-rel {
-  font-size: 10px;
-  color: var(--text-muted);
-  flex-shrink: 0;
-}
-
-.connection-dir {
-  font-size: 10px;
-  color: var(--text-muted);
-  flex-shrink: 0;
-  opacity: 0.5;
-}
-
-/* Loading */
-.loading-overlay {
-  position: fixed;
-  inset: 0;
-  background: var(--bg-deep);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  transition: opacity 0.5s;
-}
-
-.loading-overlay.hidden {
-  opacity: 0;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,200,87,0.04) 0%, transparent 70%);
   pointer-events: none;
 }
 
-.loading-text {
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.header h1 {
   font-family: 'Instrument Serif', serif;
-  font-size: 28px;
-  color: var(--accent-gold);
-  margin-bottom: 12px;
+  font-size: clamp(48px, 8vw, 80px);
+  font-weight: 400;
+  color: #ffc857;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 16px;
 }
 
-.loading-sub {
-  font-size: 12px;
-  color: var(--text-muted);
-  letter-spacing: 2px;
+.header p {
+  font-size: 14px;
+  color: #8a8697;
+  letter-spacing: 3px;
   text-transform: uppercase;
+  font-weight: 300;
 }
 
-.loading-spinner {
-  width: 32px;
-  height: 32px;
-  border: 2px solid var(--border-dim);
-  border-top-color: var(--accent-gold);
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-  margin-bottom: 20px;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 740px;
+  width: 100%;
+  position: relative;
 }
 
-@keyframes spin { to { transform: rotate(360deg); } }
-
-/* Responsive */
-@media (max-width: 900px) {
-  .sidebar { width: 220px; }
-  :root { --sidebar-w: 220px; }
-  .topbar .subtitle { display: none; }
-  .topbar-stats { display: none; }
+.card {
+  background: rgba(14, 16, 26, 0.8);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 36px 30px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 
-@media (max-width: 640px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    max-height: 40vh;
-    top: auto;
-    bottom: 0;
-    border-right: none;
-    border-top: 1px solid var(--border-dim);
-  }
-  :root { --sidebar-w: 0px; }
-  #cy { left: 0; bottom: 40vh; }
-  .detail-panel {
-    width: 100%;
-    right: -100%;
-    --detail-w: 100%;
-  }
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover {
+  border-color: rgba(255,200,87,0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 40px rgba(255,200,87,0.03);
+}
+
+.card:hover::before {
+  opacity: 1;
+  background: linear-gradient(135deg, rgba(255,200,87,0.03) 0%, transparent 50%);
+}
+
+.card-flag {
+  font-size: 36px;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.card-title {
+  font-family: 'Instrument Serif', serif;
+  font-size: 26px;
+  color: #e8e4dc;
+  margin-bottom: 8px;
+  line-height: 1.2;
+}
+
+.card-subtitle {
+  font-size: 12px;
+  color: #8a8697;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+}
+
+.card-stats {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.card-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.card-stat-n {
+  font-family: 'Instrument Serif', serif;
+  font-size: 22px;
+  color: #ffc857;
+}
+
+.card-stat-l {
+  font-size: 10px;
+  color: #55516a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.card-desc {
+  font-size: 13px;
+  color: #6b6590;
+  line-height: 1.6;
+}
+
+.card-arrow {
+  position: absolute;
+  top: 30px;
+  right: 24px;
+  font-size: 18px;
+  color: #55516a;
+  transition: all 0.3s;
+}
+
+.card:hover .card-arrow {
+  color: #ffc857;
+  transform: translateX(4px);
+}
+
+/* Color strip per card */
+.card-strip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  border-radius: 16px 16px 0 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.card:hover .card-strip { opacity: 1; }
+
+.card.malaysia .card-strip {
+  background: linear-gradient(90deg, #ef4444, #f97316, #eab308, #22c55e, #3b82f6, #8b5cf6);
+}
+
+.card.igcse .card-strip {
+  background: linear-gradient(90deg, #ef4444, #f97316, #22c55e, #3b82f6, #6366f1, #ec4899);
+}
+
+.footer {
+  margin-top: 60px;
+  text-align: center;
+  color: #55516a;
+  font-size: 12px;
+}
+
+.footer a {
+  color: #8a8697;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer a:hover { color: #ffc857; }
+
+@media (max-width: 500px) {
+  .cards { grid-template-columns: 1fr; }
+  .card { padding: 28px 22px; }
 }
 </style>
 </head>
 <body>
 
-<div class="loading-overlay" id="loading">
-  <div class="loading-spinner"></div>
-  <div class="loading-text">EduGraph</div>
-  <div class="loading-sub">Mapping the constellation of knowledge</div>
-</div>
-
-<header class="topbar">
-  <div class="topbar-title">
+<div class="page">
+  <div class="header">
     <h1>EduGraph</h1>
-    <span class="subtitle">Interactive Knowledge Graph for Education</span>
-  </div>
-  <div class="topbar-stats">
-    <div class="stat"><span class="stat-num" id="stat-nodes">0</span><span class="stat-label">Nodes</span></div>
-    <div class="stat"><span class="stat-num" id="stat-edges">0</span><span class="stat-label">Edges</span></div>
-  </div>
-  <div class="layout-btns">
-    <a href="malaysia.html" class="layout-btn" style="text-decoration:none">Malaysia</a>
-    <a href="books.html" class="layout-btn" style="text-decoration:none">Books</a>
-    <a href="k12.html" class="layout-btn" style="text-decoration:none">K-12</a>
-    <button class="layout-btn active" data-layout="cose">Force</button>
-    <button class="layout-btn" data-layout="breadthfirst">Tree</button>
-    <button class="layout-btn" data-layout="circle">Circle</button>
-  </div>
-</header>
-
-<aside class="sidebar">
-  <div>
-    <div class="search-wrap">
-      <span class="search-icon">⌕</span>
-      <input type="text" class="search-input" id="search" placeholder="Search concepts…" autocomplete="off">
-    </div>
+    <p>Interactive Knowledge Graphs for Education</p>
   </div>
 
-  <div>
-    <div class="section-title">Node Types</div>
-    <div class="filter-group" id="type-filters"></div>
+  <div class="cards">
+    <a href="malaysia-math.html" class="card malaysia">
+      <div class="card-strip"></div>
+      <span class="card-arrow">&rarr;</span>
+      <span class="card-flag">&#127474;&#127486;</span>
+      <div class="card-title">Malaysia Mathematics</div>
+      <div class="card-subtitle">KSSR / KSSM / STPM</div>
+      <div class="card-stats">
+        <div class="card-stat"><span class="card-stat-n">595</span><span class="card-stat-l">topics</span></div>
+        <div class="card-stat"><span class="card-stat-n">1,241</span><span class="card-stat-l">prerequisites</span></div>
+        <div class="card-stat"><span class="card-stat-n">19</span><span class="card-stat-l">books</span></div>
+      </div>
+      <div class="card-desc">Year 1 through STPM pre-university. Complete prerequisite map across arithmetic, algebra, geometry, calculus, statistics.</div>
+    </a>
+
+    <a href="igcse-math.html" class="card igcse">
+      <div class="card-strip"></div>
+      <span class="card-arrow">&rarr;</span>
+      <span class="card-flag">&#127468;&#127463;</span>
+      <div class="card-title">IGCSE Mathematics</div>
+      <div class="card-subtitle">Cambridge 0580</div>
+      <div class="card-stats">
+        <div class="card-stat"><span class="card-stat-n">84</span><span class="card-stat-l">topics</span></div>
+        <div class="card-stat"><span class="card-stat-n">124</span><span class="card-stat-l">prerequisites</span></div>
+        <div class="card-stat"><span class="card-stat-n">10</span><span class="card-stat-l">strands</span></div>
+      </div>
+      <div class="card-desc">Core and Extended syllabus. Number, algebra, geometry, trigonometry, statistics, probability, vectors.</div>
+    </a>
   </div>
 
-  <div>
-    <div class="section-title">Grade Level</div>
-    <select class="grade-select" id="grade-filter">
-      <option value="all">All Levels</option>
-      <option value="K">Kindergarten</option>
-      <option value="1">Grade 1</option>
-      <option value="2">Grade 2</option>
-      <option value="3">Grade 3</option>
-      <option value="4">Grade 4</option>
-      <option value="5">Grade 5</option>
-      <option value="6">Grade 6</option>
-      <option value="7">Grade 7</option>
-      <option value="8">Grade 8</option>
-      <option value="9">Grade 9</option>
-      <option value="10">Grade 10</option>
-      <option value="11">Grade 11</option>
-      <option value="12">Grade 12</option>
-      <option value="undergraduate">Undergraduate</option>
-      <option value="graduate">Graduate</option>
-      <option value="PhD">PhD</option>
-    </select>
+  <div class="footer">
+    <p>Open source &middot; <a href="https://github.com/hafezparast/edugraph">GitHub</a> &middot; Data contributions welcome</p>
   </div>
-
-  <div class="legend-section">
-    <div class="section-title">Edge Relations</div>
-    <div class="legend-edges" id="edge-legend"></div>
-  </div>
-</aside>
-
-<div id="cy"></div>
-
-<div class="detail-panel" id="detail">
-  <button class="detail-close" id="detail-close">✕</button>
-  <div id="detail-content"></div>
 </div>
 
-<script>
-const TYPE_COLORS = {
-  domain: '#ffc857',
-  branch: '#e07a5f',
-  topic: '#81b29a',
-  concept: '#3d85c6',
-  axiom: '#f4a261',
-  theorem: '#e76f51',
-  definition: '#a78bfa',
-  formula: '#34d399',
-  technique: '#60a5fa',
-  question: '#fb923c',
-  example: '#94a3b8',
-};
-
-const TYPE_SIZES = {
-  domain: 50,
-  branch: 38,
-  topic: 28,
-  concept: 22,
-  axiom: 26,
-  theorem: 26,
-  definition: 22,
-  formula: 22,
-  technique: 22,
-  question: 20,
-  example: 18,
-};
-
-const EDGE_COLORS = {
-  contains: '#4a4660',
-  prerequisite_for: '#e07a5f',
-  builds_on: '#81b29a',
-  related_to: '#3d85c6',
-  generalizes: '#a78bfa',
-  specializes: '#a78bfa',
-  proves: '#e76f51',
-  applies: '#60a5fa',
-  example_of: '#94a3b8',
-  formalized_by: '#f4a261',
-  equivalent_to: '#ffc857',
-};
-
-const EDGE_STYLES = {
-  contains: 'solid',
-  prerequisite_for: 'solid',
-  builds_on: 'dashed',
-  related_to: 'dotted',
-  generalizes: 'dashed',
-  specializes: 'dashed',
-  proves: 'solid',
-  applies: 'dotted',
-  example_of: 'dotted',
-  formalized_by: 'dashed',
-  equivalent_to: 'solid',
-};
-
-const GRADE_ORDER = ['K','1','2','3','4','5','6','7','8','9','10','11','12','undergraduate','graduate','PhD'];
-
-let cy;
-let graphData;
-
-async function init() {
-  const res = await fetch('data/mathematics.json');
-  graphData = await res.json();
-
-  const elements = [];
-
-  graphData.nodes.forEach(n => {
-    elements.push({
-      data: {
-        id: n.id,
-        label: n.label,
-        nodeType: n.type,
-        description: n.description || '',
-        grade_range: n.grade_range || [],
-        tags: n.tags || [],
-        sources: n.sources || [],
-        color: TYPE_COLORS[n.type] || '#666',
-        size: TYPE_SIZES[n.type] || 20,
-      }
-    });
-  });
-
-  graphData.edges.forEach((e, i) => {
-    elements.push({
-      data: {
-        id: 'e' + i,
-        source: e.source,
-        target: e.target,
-        relation: e.relation,
-        description: e.description || '',
-        color: EDGE_COLORS[e.relation] || '#444',
-        lineStyle: EDGE_STYLES[e.relation] || 'solid',
-      }
-    });
-  });
-
-  cy = cytoscape({
-    container: document.getElementById('cy'),
-    elements,
-    style: [
-      {
-        selector: 'node',
-        style: {
-          'background-color': 'data(color)',
-          'label': 'data(label)',
-          'width': 'data(size)',
-          'height': 'data(size)',
-          'font-size': 10,
-          'font-family': "'DM Sans', sans-serif",
-          'color': '#c8c4bc',
-          'text-valign': 'bottom',
-          'text-margin-y': 6,
-          'text-outline-color': '#0a0b10',
-          'text-outline-width': 2,
-          'border-width': 0,
-          'overlay-padding': 4,
-          'background-opacity': 0.85,
-          'text-max-width': 90,
-          'text-wrap': 'ellipsis',
-          'min-zoomed-font-size': 8,
-        }
-      },
-      {
-        selector: 'node:active',
-        style: { 'overlay-opacity': 0.08 }
-      },
-      {
-        selector: 'edge',
-        style: {
-          'line-color': 'data(color)',
-          'target-arrow-color': 'data(color)',
-          'target-arrow-shape': 'triangle',
-          'arrow-scale': 0.7,
-          'width': 1.2,
-          'curve-style': 'bezier',
-          'line-style': 'data(lineStyle)',
-          'opacity': 0.45,
-        }
-      },
-      {
-        selector: '.highlighted',
-        style: {
-          'background-color': 'data(color)',
-          'background-opacity': 1,
-          'border-width': 3,
-          'border-color': '#ffc857',
-          'text-outline-color': '#0a0b10',
-          'text-outline-width': 3,
-          'font-size': 12,
-          'font-weight': 600,
-          'color': '#fff',
-          'z-index': 999,
-        }
-      },
-      {
-        selector: '.highlighted-edge',
-        style: {
-          'opacity': 0.9,
-          'width': 2.5,
-          'z-index': 998,
-        }
-      },
-      {
-        selector: '.dimmed',
-        style: {
-          'opacity': 0.12,
-        }
-      },
-      {
-        selector: '.search-match',
-        style: {
-          'border-width': 3,
-          'border-color': '#ffc857',
-          'background-opacity': 1,
-          'z-index': 999,
-        }
-      },
-      {
-        selector: '.hidden-filter',
-        style: {
-          'display': 'none',
-        }
-      },
-    ],
-    layout: {
-      name: 'cose',
-      idealEdgeLength: 100,
-      nodeOverlap: 20,
-      refresh: 20,
-      randomize: false,
-      componentSpacing: 60,
-      nodeRepulsion: 6000,
-      edgeElasticity: 80,
-      nestingFactor: 1.2,
-      gravity: 0.3,
-      numIter: 1500,
-      animate: false,
-    },
-    minZoom: 0.15,
-    maxZoom: 4,
-    wheelSensitivity: 0.3,
-  });
-
-  // Node click
-  cy.on('tap', 'node', e => {
-    const node = e.target;
-    showDetail(node);
-    highlightNeighborhood(node);
-  });
-
-  cy.on('tap', e => {
-    if (e.target === cy) {
-      clearHighlight();
-      closeDetail();
-    }
-  });
-
-  buildTypeFilters();
-  buildEdgeLegend();
-  updateStats();
-
-  document.getElementById('loading').classList.add('hidden');
-}
-
-function showDetail(node) {
-  const d = node.data();
-  const panel = document.getElementById('detail');
-  const content = document.getElementById('detail-content');
-  const cyEl = document.getElementById('cy');
-
-  const connections = [];
-  node.connectedEdges().forEach(edge => {
-    const other = edge.source().id() === node.id() ? edge.target() : edge.source();
-    connections.push({
-      id: other.id(),
-      label: other.data('label'),
-      type: other.data('nodeType'),
-      color: other.data('color'),
-      relation: edge.data('relation').replace(/_/g, ' '),
-      dir: edge.source().id() === node.id() ? '→' : '←',
-    });
-  });
-
-  content.innerHTML = `
-    <div class="detail-type-badge" style="background:${d.color}22;color:${d.color};border:1px solid ${d.color}33">${d.nodeType}</div>
-    <div class="detail-label">${d.label}</div>
-    <div class="detail-desc">${d.description}</div>
-    <div class="detail-meta">
-      ${d.grade_range.length ? `<div class="detail-meta-row">
-        <span class="detail-meta-key">Grade Range</span>
-        <span class="detail-meta-val">${formatGradeRange(d.grade_range)}</span>
-      </div>` : ''}
-      ${d.tags.length ? `<div class="detail-meta-row">
-        <span class="detail-meta-key">Tags</span>
-        <div class="detail-tags">${d.tags.map(t => `<span class="detail-tag">${t}</span>`).join('')}</div>
-      </div>` : ''}
-      <div class="detail-meta-row">
-        <span class="detail-meta-key">ID</span>
-        <span class="detail-meta-val" style="font-family:monospace;font-size:11px;opacity:0.6">${d.id}</span>
-      </div>
-    </div>
-    ${connections.length ? `
-    <div class="detail-connections">
-      <div class="section-title">Connections (${connections.length})</div>
-      <div class="connection-list">
-        ${connections.map(c => `
-          <div class="connection-item" data-node-id="${c.id}">
-            <span class="connection-dot" style="background:${c.color}"></span>
-            <span class="connection-name">${c.label}</span>
-            <span class="connection-rel">${c.relation}</span>
-            <span class="connection-dir">${c.dir}</span>
-          </div>
-        `).join('')}
-      </div>
-    </div>` : ''}
-  `;
-
-  // Click connection to navigate
-  content.querySelectorAll('.connection-item').forEach(item => {
-    item.addEventListener('click', () => {
-      const targetNode = cy.getElementById(item.dataset.nodeId);
-      if (targetNode.length) {
-        showDetail(targetNode);
-        highlightNeighborhood(targetNode);
-        cy.animate({ center: { eles: targetNode }, duration: 300 });
-      }
-    });
-  });
-
-  panel.classList.add('open');
-  cyEl.classList.add('detail-open');
-}
-
-function closeDetail() {
-  document.getElementById('detail').classList.remove('open');
-  document.getElementById('cy').classList.remove('detail-open');
-}
-
-function highlightNeighborhood(node) {
-  cy.elements().removeClass('highlighted highlighted-edge dimmed');
-  cy.elements().addClass('dimmed');
-  const neighborhood = node.neighborhood().add(node);
-  neighborhood.removeClass('dimmed');
-  node.addClass('highlighted');
-  node.connectedEdges().addClass('highlighted-edge');
-  node.neighborhood('node').addClass('highlighted');
-}
-
-function clearHighlight() {
-  cy.elements().removeClass('highlighted highlighted-edge dimmed');
-}
-
-function formatGradeRange(range) {
-  if (!range.length) return '';
-  if (range.length === 1) return range[0] === 'K' ? 'Kindergarten' : `Grade ${range[0]}`;
-  const first = range[0] === 'K' ? 'Kindergarten' : (['undergraduate','graduate','PhD'].includes(range[0]) ? range[0].charAt(0).toUpperCase() + range[0].slice(1) : `Grade ${range[0]}`);
-  const last = ['undergraduate','graduate','PhD'].includes(range[range.length-1]) ? range[range.length-1].charAt(0).toUpperCase() + range[range.length-1].slice(1) : `Grade ${range[range.length-1]}`;
-  return `${first} — ${last}`;
-}
-
-function buildTypeFilters() {
-  const container = document.getElementById('type-filters');
-  const typeCounts = {};
-  cy.nodes().forEach(n => {
-    const t = n.data('nodeType');
-    typeCounts[t] = (typeCounts[t] || 0) + 1;
-  });
-
-  Object.keys(TYPE_COLORS).forEach(type => {
-    if (!typeCounts[type]) return;
-    const el = document.createElement('label');
-    el.className = 'filter-item';
-    el.innerHTML = `
-      <input type="checkbox" checked data-type="${type}">
-      <span class="filter-check" style="background:${TYPE_COLORS[type]}"></span>
-      <span class="filter-dot" style="background:${TYPE_COLORS[type]}"></span>
-      <span class="filter-label">${type.replace(/_/g, ' ')}</span>
-      <span class="filter-count">${typeCounts[type]}</span>
-    `;
-    el.querySelector('input').addEventListener('change', applyFilters);
-    container.appendChild(el);
-  });
-}
-
-function buildEdgeLegend() {
-  const container = document.getElementById('edge-legend');
-  const usedRelations = new Set();
-  cy.edges().forEach(e => usedRelations.add(e.data('relation')));
-
-  Object.keys(EDGE_COLORS).forEach(rel => {
-    if (!usedRelations.has(rel)) return;
-    const style = EDGE_STYLES[rel];
-    const el = document.createElement('div');
-    el.className = 'legend-edge';
-    const lineClass = style === 'dashed' || style === 'dotted' ? 'dashed' : '';
-    el.innerHTML = `
-      <span class="legend-line ${lineClass}" style="background:${EDGE_COLORS[rel]};color:${EDGE_COLORS[rel]}"></span>
-      <span class="legend-edge-label">${rel.replace(/_/g, ' ')}</span>
-    `;
-    container.appendChild(el);
-  });
-}
-
-function applyFilters() {
-  const checkedTypes = new Set();
-  document.querySelectorAll('#type-filters input:checked').forEach(cb => {
-    checkedTypes.add(cb.dataset.type);
-  });
-
-  const gradeFilter = document.getElementById('grade-filter').value;
-
-  cy.nodes().forEach(node => {
-    const typeMatch = checkedTypes.has(node.data('nodeType'));
-    let gradeMatch = true;
-
-    if (gradeFilter !== 'all') {
-      const range = node.data('grade_range');
-      if (range && range.length >= 2) {
-        const lo = GRADE_ORDER.indexOf(range[0]);
-        const hi = GRADE_ORDER.indexOf(range[range.length - 1]);
-        const target = GRADE_ORDER.indexOf(gradeFilter);
-        gradeMatch = target >= lo && target <= hi;
-      } else if (range && range.length === 1) {
-        gradeMatch = range[0] === gradeFilter;
-      }
-    }
-
-    if (typeMatch && gradeMatch) {
-      node.removeClass('hidden-filter');
-    } else {
-      node.addClass('hidden-filter');
-    }
-  });
-
-  // Hide edges where either endpoint is hidden
-  cy.edges().forEach(edge => {
-    if (edge.source().hasClass('hidden-filter') || edge.target().hasClass('hidden-filter')) {
-      edge.addClass('hidden-filter');
-    } else {
-      edge.removeClass('hidden-filter');
-    }
-  });
-
-  updateStats();
-}
-
-document.getElementById('grade-filter').addEventListener('change', applyFilters);
-
-// Search
-let searchTimeout;
-document.getElementById('search').addEventListener('input', e => {
-  clearTimeout(searchTimeout);
-  searchTimeout = setTimeout(() => {
-    const q = e.target.value.trim().toLowerCase();
-    cy.nodes().removeClass('search-match');
-    clearHighlight();
-
-    if (!q) return;
-
-    const matches = cy.nodes().filter(n => {
-      return n.data('label').toLowerCase().includes(q) ||
-             n.data('id').toLowerCase().includes(q) ||
-             n.data('description').toLowerCase().includes(q);
-    });
-
-    if (matches.length) {
-      matches.addClass('search-match');
-      cy.animate({ fit: { eles: matches, padding: 60 }, duration: 400 });
-    }
-  }, 200);
-});
-
-// Layout buttons
-document.querySelectorAll('.layout-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.layout-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-
-    const layoutName = btn.dataset.layout;
-    const opts = { name: layoutName, animate: true, animationDuration: 600 };
-
-    if (layoutName === 'cose') {
-      Object.assign(opts, {
-        idealEdgeLength: 100,
-        nodeOverlap: 20,
-        nodeRepulsion: 6000,
-        edgeElasticity: 80,
-        gravity: 0.3,
-        numIter: 1500,
-      });
-    } else if (layoutName === 'breadthfirst') {
-      Object.assign(opts, { spacingFactor: 1.2, directed: true, roots: cy.nodes().filter(n => n.data('nodeType') === 'domain') });
-    } else if (layoutName === 'circle') {
-      Object.assign(opts, { spacingFactor: 1.5 });
-    }
-
-    cy.layout(opts).run();
-  });
-});
-
-// Detail close
-document.getElementById('detail-close').addEventListener('click', () => {
-  closeDetail();
-  clearHighlight();
-});
-
-function updateStats() {
-  const visibleNodes = cy.nodes().filter(n => !n.hasClass('hidden-filter'));
-  const visibleEdges = cy.edges().filter(e => !e.hasClass('hidden-filter'));
-  document.getElementById('stat-nodes').textContent = visibleNodes.length;
-  document.getElementById('stat-edges').textContent = visibleEdges.length;
-}
-
-// Keyboard
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') {
-    closeDetail();
-    clearHighlight();
-    document.getElementById('search').value = '';
-    cy.nodes().removeClass('search-match');
-  }
-  if (e.key === '/' && document.activeElement !== document.getElementById('search')) {
-    e.preventDefault();
-    document.getElementById('search').focus();
-  }
-});
-
-init();
-</script>
 </body>
 </html>
