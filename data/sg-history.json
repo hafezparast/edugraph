@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "domain": "history",
+    "curriculum": "Singapore History (Secondary)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "Singapore Secondary History curriculum covering Lower and Upper Secondary, with prerequisite ordering",
+    "sources": [
+      "MOE Singapore History Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    { "id": "sg.hist.lower", "name": "Lower Secondary History", "color": "#d97706", "order": 1 },
+    { "id": "sg.hist.upper", "name": "Upper Secondary History", "color": "#b45309", "order": 2 }
+  ],
+  "nodes": [
+    {
+      "id": "sg.hist.lower.temasek",
+      "label": "Temasek to Singapore",
+      "type": "concept",
+      "description": "Early Singapore; founding of modern Singapore; Stamford Raffles; early colonial period",
+      "grade_range": ["Sec 1-2"],
+      "tags": ["subtopic"],
+      "book": "sg.hist.lower",
+      "bookName": "Lower Secondary History",
+      "bookColor": "#d97706",
+      "bookOrder": 1
+    },
+    {
+      "id": "sg.hist.lower.crown_colony",
+      "label": "Crown Colony",
+      "type": "concept",
+      "description": "British colonial administration; Straits Settlements; society and economy under colonial rule",
+      "grade_range": ["Sec 1-2"],
+      "tags": ["subtopic"],
+      "book": "sg.hist.lower",
+      "bookName": "Lower Secondary History",
+      "bookColor": "#d97706",
+      "bookOrder": 1
+    },
+    {
+      "id": "sg.hist.lower.japanese_occupation",
+      "label": "Japanese Occupation",
+      "type": "concept",
+      "description": "Fall of Singapore; life under Japanese rule; impact on Singapore society",
+      "grade_range": ["Sec 1-2"],
+      "tags": ["subtopic"],
+      "book": "sg.hist.lower",
+      "bookName": "Lower Secondary History",
+      "bookColor": "#d97706",
+      "bookOrder": 1
+    },
+    {
+      "id": "sg.hist.lower.independence",
+      "label": "Road to Independence",
+      "type": "concept",
+      "description": "Post-war political developments; merger and separation; independence in 1965",
+      "grade_range": ["Sec 1-2"],
+      "tags": ["subtopic"],
+      "book": "sg.hist.lower",
+      "bookName": "Lower Secondary History",
+      "bookColor": "#d97706",
+      "bookOrder": 1
+    },
+    {
+      "id": "sg.hist.upper.world_wars",
+      "label": "World Wars",
+      "type": "concept",
+      "description": "Causes and consequences of WWI and WWII; global impact",
+      "grade_range": ["Sec 3-4"],
+      "tags": ["subtopic"],
+      "book": "sg.hist.upper",
+      "bookName": "Upper Secondary History",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "sg.hist.upper.sea_colonialism",
+      "label": "Southeast Asian Colonialism",
+      "type": "concept",
+      "description": "European imperialism in Southeast Asia; colonial economies; nationalist movements",
+      "grade_range": ["Sec 3-4"],
+      "tags": ["subtopic"],
+      "book": "sg.hist.upper",
+      "bookName": "Upper Secondary History",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "sg.hist.upper.cold_war",
+      "label": "Cold War",
+      "type": "concept",
+      "description": "Origins; superpower rivalry; proxy wars; impact on Southeast Asia",
+      "grade_range": ["Sec 3-4"],
+      "tags": ["subtopic"],
+      "book": "sg.hist.upper",
+      "bookName": "Upper Secondary History",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    },
+    {
+      "id": "sg.hist.upper.decolonisation",
+      "label": "Decolonisation & Independence",
+      "type": "concept",
+      "description": "End of colonial rule in Asia and Africa; nation-building challenges",
+      "grade_range": ["Sec 3-4"],
+      "tags": ["subtopic"],
+      "book": "sg.hist.upper",
+      "bookName": "Upper Secondary History",
+      "bookColor": "#b45309",
+      "bookOrder": 2
+    }
+  ],
+  "edges": [
+    { "source": "sg.hist.lower.temasek", "target": "sg.hist.lower.crown_colony", "relation": "prerequisite_for" },
+    { "source": "sg.hist.lower.crown_colony", "target": "sg.hist.lower.japanese_occupation", "relation": "prerequisite_for" },
+    { "source": "sg.hist.lower.japanese_occupation", "target": "sg.hist.lower.independence", "relation": "prerequisite_for" },
+    { "source": "sg.hist.lower.crown_colony", "target": "sg.hist.upper.sea_colonialism", "relation": "prerequisite_for" },
+    { "source": "sg.hist.lower.japanese_occupation", "target": "sg.hist.upper.world_wars", "relation": "prerequisite_for" },
+    { "source": "sg.hist.upper.world_wars", "target": "sg.hist.upper.cold_war", "relation": "prerequisite_for" },
+    { "source": "sg.hist.upper.sea_colonialism", "target": "sg.hist.upper.decolonisation", "relation": "prerequisite_for" },
+    { "source": "sg.hist.upper.cold_war", "target": "sg.hist.upper.decolonisation", "relation": "prerequisite_for" },
+    { "source": "sg.hist.lower.independence", "target": "sg.hist.upper.decolonisation", "relation": "prerequisite_for" }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "metadata": {
+    "domain": "economics",
+    "curriculum": "Singapore Economics (H2)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "Singapore H2 Economics curriculum with prerequisite ordering",
+    "sources": [
+      "MOE Singapore H2 Economics Syllabus (9757)"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    { "id": "sg.econ.central", "name": "The Central Economic Problem", "color": "#ef4444", "order": 1 },
+    { "id": "sg.econ.micro", "name": "Markets & Microeconomics", "color": "#f97316", "order": 2 },
+    { "id": "sg.econ.macro", "name": "Macroeconomics", "color": "#22c55e", "order": 3 }
+  ],
+  "nodes": [
+    {
+      "id": "sg.econ.scarcity",
+      "label": "Scarcity & Choice",
+      "type": "concept",
+      "description": "Scarcity; opportunity cost; production possibility curve",
+      "grade_range": ["JC"],
+      "tags": ["subtopic"],
+      "book": "sg.econ.central",
+      "bookName": "The Central Economic Problem",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "sg.econ.resource_allocation",
+      "label": "Resource Allocation",
+      "type": "concept",
+      "description": "Market mechanism; price mechanism; resource allocation in different economies",
+      "grade_range": ["JC"],
+      "tags": ["subtopic"],
+      "book": "sg.econ.central",
+      "bookName": "The Central Economic Problem",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "sg.econ.demand_supply",
+      "label": "Demand & Supply",
+      "type": "concept",
+      "description": "Law of demand and supply; shifts; equilibrium price and quantity",
+      "grade_range": ["JC"],
+      "tags": ["subtopic"],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "sg.econ.elasticity",
+      "label": "Elasticity",
+      "type": "concept",
+      "description": "Price elasticity of demand and supply; income and cross elasticity",
+      "grade_range": ["JC"],
+      "tags": ["subtopic"],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "sg.econ.market_failure",
+      "label": "Market Failure",
+      "type": "concept",
+      "description": "Externalities; public goods; merit goods; information failure",
+      "grade_range": ["JC"],
+      "tags": ["subtopic"],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "sg.econ.government_micro",
+      "label": "Government Microeconomic Intervention",
+      "type": "concept",
+      "description": "Taxes; subsidies; regulation; price controls; tradable permits",
+      "grade_range": ["JC"],
+      "tags": ["subtopic"],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "sg.econ.firm_theory",
+      "label": "Theory of the Firm",
+      "type": "concept",
+      "description": "Costs of production; revenue; profit maximisation; shut-down decisions",
+      "grade_range": ["JC"],
+      "tags": ["subtopic"],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "sg.econ.market_structures",
+      "label": "Market Structures",
+      "type": "concept",
+      "description": "Perfect competition; monopolistic competition; oligopoly; monopoly",
+      "grade_range": ["JC"],
+      "tags": ["subtopic"],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "sg.econ.national_income",
+      "label": "National Income",
+      "type": "concept",
+      "description": "GDP measurement; real vs nominal; standard of living; limitations",
+      "grade_range": ["JC"],
+      "tags": ["subtopic"],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "sg.econ.ad_as",
+      "label": "AD-AS Model",
+      "type": "concept",
+      "description": "Aggregate demand and supply; macroeconomic equilibrium; multiplier",
+      "grade_range": ["JC"],
+      "tags": ["subtopic"],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "sg.econ.inflation",
+      "label": "Inflation & Deflation",
+      "type": "concept",
+      "description": "Causes of inflation; consequences; measurement; CPI",
+      "grade_range": ["JC"],
+      "tags": ["subtopic"],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "sg.econ.unemployment",
+      "label": "Unemployment",
+      "type": "concept",
+      "description": "Types of unemployment; natural rate; consequences; policies",
+      "grade_range": ["JC"],
+      "tags": ["subtopic"],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "sg.econ.fiscal_monetary",
+      "label": "Fiscal & Monetary Policy",
+      "type": "concept",
+      "description": "Government budget; money supply; interest rates; exchange rate policy",
+      "grade_range": ["JC"],
+      "tags": ["subtopic"],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "sg.econ.trade",
+      "label": "International Trade",
+      "type": "concept",
+      "description": "Comparative advantage; free trade vs protectionism; balance of payments",
+      "grade_range": ["JC"],
+      "tags": ["subtopic"],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "sg.econ.growth",
+      "label": "Economic Growth & Development",
+      "type": "concept",
+      "description": "Sources of growth; sustainable development; supply-side policies; Singapore context",
+      "grade_range": ["JC"],
+      "tags": ["subtopic"],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    }
+  ],
+  "edges": [
+    { "source": "sg.econ.scarcity", "target": "sg.econ.resource_allocation", "relation": "prerequisite_for" },
+    { "source": "sg.econ.resource_allocation", "target": "sg.econ.demand_supply", "relation": "prerequisite_for" },
+    { "source": "sg.econ.demand_supply", "target": "sg.econ.elasticity", "relation": "prerequisite_for" },
+    { "source": "sg.econ.demand_supply", "target": "sg.econ.market_failure", "relation": "prerequisite_for" },
+    { "source": "sg.econ.market_failure", "target": "sg.econ.government_micro", "relation": "prerequisite_for" },
+    { "source": "sg.econ.elasticity", "target": "sg.econ.firm_theory", "relation": "prerequisite_for" },
+    { "source": "sg.econ.firm_theory", "target": "sg.econ.market_structures", "relation": "prerequisite_for" },
+    { "source": "sg.econ.scarcity", "target": "sg.econ.national_income", "relation": "prerequisite_for" },
+    { "source": "sg.econ.demand_supply", "target": "sg.econ.ad_as", "relation": "prerequisite_for" },
+    { "source": "sg.econ.national_income", "target": "sg.econ.ad_as", "relation": "prerequisite_for" },
+    { "source": "sg.econ.ad_as", "target": "sg.econ.inflation", "relation": "prerequisite_for" },
+    { "source": "sg.econ.ad_as", "target": "sg.econ.unemployment", "relation": "prerequisite_for" },
+    { "source": "sg.econ.inflation", "target": "sg.econ.fiscal_monetary", "relation": "prerequisite_for" },
+    { "source": "sg.econ.unemployment", "target": "sg.econ.fiscal_monetary", "relation": "prerequisite_for" },
+    { "source": "sg.econ.elasticity", "target": "sg.econ.trade", "relation": "prerequisite_for" },
+    { "source": "sg.econ.fiscal_monetary", "target": "sg.econ.trade", "relation": "prerequisite_for" },
+    { "source": "sg.econ.trade", "target": "sg.econ.growth", "relation": "prerequisite_for" },
+    { "source": "sg.econ.fiscal_monetary", "target": "sg.econ.growth", "relation": "prerequisite_for" }
+  ]
+}

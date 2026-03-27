@@ -1,0 +1,125 @@
+{
+  "metadata": {
+    "domain": "geography",
+    "curriculum": "Singapore Geography (Secondary)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "Singapore Secondary Geography curriculum covering Lower and Upper Secondary, with prerequisite ordering",
+    "sources": [
+      "MOE Singapore Geography Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    { "id": "sg.geog.lower", "name": "Lower Secondary Geography", "color": "#22c55e", "order": 1 },
+    { "id": "sg.geog.upper", "name": "Upper Secondary Geography", "color": "#0d9488", "order": 2 }
+  ],
+  "nodes": [
+    {
+      "id": "sg.geog.lower.water",
+      "label": "Water Resources",
+      "type": "concept",
+      "description": "Water cycle; water supply; water management in Singapore",
+      "grade_range": ["Sec 1-2"],
+      "tags": ["subtopic"],
+      "book": "sg.geog.lower",
+      "bookName": "Lower Secondary Geography",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "sg.geog.lower.tropical_rainforests",
+      "label": "Tropical Rainforests",
+      "type": "concept",
+      "description": "Characteristics; biodiversity; deforestation; conservation",
+      "grade_range": ["Sec 1-2"],
+      "tags": ["subtopic"],
+      "book": "sg.geog.lower",
+      "bookName": "Lower Secondary Geography",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "sg.geog.lower.housing",
+      "label": "Housing",
+      "type": "concept",
+      "description": "Housing issues; urban planning; Singapore's housing policies",
+      "grade_range": ["Sec 1-2"],
+      "tags": ["subtopic"],
+      "book": "sg.geog.lower",
+      "bookName": "Lower Secondary Geography",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "sg.geog.lower.transport",
+      "label": "Transport",
+      "type": "concept",
+      "description": "Transport systems; sustainable transport; congestion management",
+      "grade_range": ["Sec 1-2"],
+      "tags": ["subtopic"],
+      "book": "sg.geog.lower",
+      "bookName": "Lower Secondary Geography",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "sg.geog.upper.climate",
+      "label": "Weather & Climate",
+      "type": "concept",
+      "description": "Elements of weather; climate zones; climate change; greenhouse effect",
+      "grade_range": ["Sec 3-4"],
+      "tags": ["subtopic"],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography",
+      "bookColor": "#0d9488",
+      "bookOrder": 2
+    },
+    {
+      "id": "sg.geog.upper.tectonics",
+      "label": "Plate Tectonics",
+      "type": "concept",
+      "description": "Tectonic plates; earthquakes; volcanoes; living with tectonic hazards",
+      "grade_range": ["Sec 3-4"],
+      "tags": ["subtopic"],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography",
+      "bookColor": "#0d9488",
+      "bookOrder": 2
+    },
+    {
+      "id": "sg.geog.upper.tourism",
+      "label": "Tourism",
+      "type": "concept",
+      "description": "Tourism industry; impacts; sustainable tourism; Singapore as a tourist destination",
+      "grade_range": ["Sec 3-4"],
+      "tags": ["subtopic"],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography",
+      "bookColor": "#0d9488",
+      "bookOrder": 2
+    },
+    {
+      "id": "sg.geog.upper.food_resources",
+      "label": "Food Resources",
+      "type": "concept",
+      "description": "Food production; food security; Singapore's food supply strategies",
+      "grade_range": ["Sec 3-4"],
+      "tags": ["subtopic"],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography",
+      "bookColor": "#0d9488",
+      "bookOrder": 2
+    }
+  ],
+  "edges": [
+    { "source": "sg.geog.lower.water", "target": "sg.geog.upper.climate", "relation": "prerequisite_for" },
+    { "source": "sg.geog.lower.tropical_rainforests", "target": "sg.geog.upper.climate", "relation": "prerequisite_for" },
+    { "source": "sg.geog.lower.water", "target": "sg.geog.upper.tectonics", "relation": "prerequisite_for" },
+    { "source": "sg.geog.lower.housing", "target": "sg.geog.upper.tourism", "relation": "prerequisite_for" },
+    { "source": "sg.geog.lower.transport", "target": "sg.geog.upper.tourism", "relation": "prerequisite_for" },
+    { "source": "sg.geog.lower.tropical_rainforests", "target": "sg.geog.upper.food_resources", "relation": "prerequisite_for" },
+    { "source": "sg.geog.upper.climate", "target": "sg.geog.upper.food_resources", "relation": "prerequisite_for" },
+    { "source": "sg.geog.upper.tectonics", "target": "sg.geog.upper.tourism", "relation": "prerequisite_for" }
+  ]
+}
