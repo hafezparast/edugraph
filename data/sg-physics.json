@@ -3,7 +3,7 @@
     "domain": "physics",
     "curriculum": "Singapore Physics (O-Level + A-Level H2)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Singapore Physics curriculum covering O-Level and JC H2 A-Level, with prerequisite ordering",
     "sources": [
       "MOE Singapore Physics Syllabus (6091, 9749)"
@@ -11,535 +11,2669 @@
     "last_updated": "2026-03-27"
   },
   "books": [
-    { "id": "sg.phy.ol.mech", "name": "O-Level Mechanics", "color": "#3b82f6", "order": 1 },
-    { "id": "sg.phy.ol.thermal", "name": "O-Level Thermal Physics", "color": "#ef4444", "order": 2 },
-    { "id": "sg.phy.ol.waves", "name": "O-Level Waves", "color": "#22c55e", "order": 3 },
-    { "id": "sg.phy.ol.elec", "name": "O-Level Electricity & Magnetism", "color": "#f59e0b", "order": 4 },
-    { "id": "sg.phy.ol.radio", "name": "O-Level Radioactivity", "color": "#8b5cf6", "order": 5 },
-    { "id": "sg.phy.jc.mech", "name": "JC Mechanics", "color": "#1d4ed8", "order": 6 },
-    { "id": "sg.phy.jc.thermal", "name": "JC Thermal Physics", "color": "#dc2626", "order": 7 },
-    { "id": "sg.phy.jc.waves", "name": "JC Waves", "color": "#15803d", "order": 8 },
-    { "id": "sg.phy.jc.em", "name": "JC Electricity & Magnetism", "color": "#d97706", "order": 9 },
-    { "id": "sg.phy.jc.modern", "name": "JC Modern Physics", "color": "#6d28d9", "order": 10 }
+    {
+      "id": "sg.phy.ol.mech",
+      "name": "O-Level Mechanics",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "sg.phy.ol.thermal",
+      "name": "O-Level Thermal Physics",
+      "color": "#ef4444",
+      "order": 2
+    },
+    {
+      "id": "sg.phy.ol.waves",
+      "name": "O-Level Waves",
+      "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "sg.phy.ol.elec",
+      "name": "O-Level Electricity & Magnetism",
+      "color": "#f59e0b",
+      "order": 4
+    },
+    {
+      "id": "sg.phy.ol.radio",
+      "name": "O-Level Radioactivity",
+      "color": "#8b5cf6",
+      "order": 5
+    },
+    {
+      "id": "sg.phy.jc.mech",
+      "name": "JC Mechanics",
+      "color": "#1d4ed8",
+      "order": 6
+    },
+    {
+      "id": "sg.phy.jc.thermal",
+      "name": "JC Thermal Physics",
+      "color": "#dc2626",
+      "order": 7
+    },
+    {
+      "id": "sg.phy.jc.waves",
+      "name": "JC Waves",
+      "color": "#15803d",
+      "order": 8
+    },
+    {
+      "id": "sg.phy.jc.em",
+      "name": "JC Electricity & Magnetism",
+      "color": "#d97706",
+      "order": 9
+    },
+    {
+      "id": "sg.phy.jc.modern",
+      "name": "JC Modern Physics",
+      "color": "#6d28d9",
+      "order": 10
+    }
   ],
   "nodes": [
     {
-      "id": "sg.phy.ol.measurement",
-      "label": "Physical Quantities & Measurement",
+      "id": "sg.phys.ol.si_units",
+      "label": "SI Units & Prefixes",
       "type": "concept",
-      "description": "SI units; scalars and vectors; measurement techniques",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Base and derived SI units; standard prefixes (nano to mega); unit conversions",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.ol.mech",
       "bookName": "O-Level Mechanics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "05bd2d55c596cfa5",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.kinematics",
-      "label": "Kinematics",
+      "id": "sg.phys.ol.scalars_vectors",
+      "label": "Scalars & Vectors",
       "type": "concept",
-      "description": "Speed, velocity, acceleration; distance-time and velocity-time graphs; free fall",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Distinguishing scalars and vectors; addition of vectors by graphical method",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.ol.mech",
       "bookName": "O-Level Mechanics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "2c6167217f0d25e3",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.dynamics",
-      "label": "Dynamics",
+      "id": "sg.phys.ol.measurement_techniques",
+      "label": "Measurement Techniques",
       "type": "concept",
-      "description": "Newton's laws; mass and weight; friction; momentum",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Use of rulers, vernier calipers, micrometers, measuring cylinders, clocks; precision and accuracy",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.ol.mech",
       "bookName": "O-Level Mechanics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "d88ace623b80e589",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.turning_effects",
-      "label": "Turning Effects of Forces",
+      "id": "sg.phys.ol.speed_velocity",
+      "label": "Speed & Velocity",
       "type": "concept",
-      "description": "Moments; centre of gravity; equilibrium",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Distance vs displacement; speed vs velocity; average and instantaneous speed",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.ol.mech",
       "bookName": "O-Level Mechanics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "bcbcdf274f4abea3",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.pressure",
-      "label": "Pressure",
+      "id": "sg.phys.ol.acceleration",
+      "label": "Acceleration",
       "type": "concept",
-      "description": "Pressure in solids, liquids and gases; atmospheric pressure",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Definition of acceleration; uniform and non-uniform acceleration; deceleration",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.ol.mech",
       "bookName": "O-Level Mechanics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "37ac29b042271de5",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.energy_work_power",
-      "label": "Energy, Work & Power",
+      "id": "sg.phys.ol.dt_vt_graphs",
+      "label": "Distance-Time & Velocity-Time Graphs",
       "type": "concept",
-      "description": "Forms of energy; conservation of energy; work done; power; efficiency",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Interpreting and sketching d-t and v-t graphs; gradient and area under v-t graph",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.ol.mech",
       "bookName": "O-Level Mechanics",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "55a321ff9eeab868",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.kinetic_model",
+      "id": "sg.phys.ol.free_fall",
+      "label": "Free Fall & Acceleration Due to Gravity",
+      "type": "concept",
+      "description": "Acceleration of free fall g; objects falling with and without air resistance",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.mech",
+      "bookName": "O-Level Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "5f7fc4a503fd82da",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.newtons_laws",
+      "label": "Newton's Laws of Motion",
+      "type": "concept",
+      "description": "Inertia and Newton's first law; F=ma (second law); action-reaction pairs (third law)",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.mech",
+      "bookName": "O-Level Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "f8dc19678de78175",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.mass_weight",
+      "label": "Mass & Weight",
+      "type": "concept",
+      "description": "Distinction between mass and weight; gravitational field strength; W = mg",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.mech",
+      "bookName": "O-Level Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "ffb659c49b7af671",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.friction",
+      "label": "Friction",
+      "type": "concept",
+      "description": "Static and kinetic friction; effects of friction; reducing friction",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.mech",
+      "bookName": "O-Level Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "059890c93126c29d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.momentum",
+      "label": "Momentum",
+      "type": "concept",
+      "description": "Linear momentum p = mv; conservation of momentum; collisions and explosions",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.mech",
+      "bookName": "O-Level Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "42af3c6f72489ee5",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.moments",
+      "label": "Moments of Forces",
+      "type": "concept",
+      "description": "Moment = force x perpendicular distance; principle of moments; torque",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.mech",
+      "bookName": "O-Level Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "7ae2125117671fdb",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.centre_of_gravity",
+      "label": "Centre of Gravity & Stability",
+      "type": "concept",
+      "description": "Centre of gravity; stable, unstable and neutral equilibrium; conditions for equilibrium",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.mech",
+      "bookName": "O-Level Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "265530e795eb4daa",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.pressure_solids",
+      "label": "Pressure in Solids",
+      "type": "concept",
+      "description": "Pressure = force / area; applications of high and low pressure",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.mech",
+      "bookName": "O-Level Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "f7c72175a1b87094",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.pressure_liquids",
+      "label": "Pressure in Liquids",
+      "type": "concept",
+      "description": "Pressure at a depth in a liquid (p = hpg); hydraulic systems; manometers",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.mech",
+      "bookName": "O-Level Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "944001245b7db23c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.atmospheric_pressure",
+      "label": "Atmospheric Pressure",
+      "type": "concept",
+      "description": "Atmospheric pressure; barometers; variation with altitude",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.mech",
+      "bookName": "O-Level Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "94c660d3a65928e9",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.energy_forms",
+      "label": "Forms & Sources of Energy",
+      "type": "concept",
+      "description": "Kinetic, potential (gravitational, elastic, chemical), nuclear, thermal, electrical, light, sound energy",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.mech",
+      "bookName": "O-Level Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "01cf542c74fe530b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.energy_conversion_conservation",
+      "label": "Energy Conversion & Conservation",
+      "type": "concept",
+      "description": "Principle of conservation of energy; energy conversion in practical devices; efficiency",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.mech",
+      "bookName": "O-Level Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "9ad0c110c6463990",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.work_done",
+      "label": "Work Done",
+      "type": "concept",
+      "description": "Work = force x distance moved in direction of force; work done against gravity and friction",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.mech",
+      "bookName": "O-Level Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "e1afaf945de98988",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.power_efficiency",
+      "label": "Power & Efficiency",
+      "type": "concept",
+      "description": "Power = work done / time; efficiency = useful energy output / total energy input",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.mech",
+      "bookName": "O-Level Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "d8eca122020a61ed",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.kinetic_model",
       "label": "Kinetic Model of Matter",
       "type": "concept",
-      "description": "States of matter; kinetic theory; Brownian motion",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Three states of matter; particle arrangement, motion and energy; Brownian motion as evidence",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.ol.thermal",
       "bookName": "O-Level Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "7e6090e53f9e4ee4",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.thermal_processes",
-      "label": "Thermal Processes",
-      "type": "concept",
-      "description": "Conduction, convection, radiation; thermal equilibrium",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.ol.thermal",
-      "bookName": "O-Level Thermal Physics",
-      "bookColor": "#ef4444",
-      "bookOrder": 2
-    },
-    {
-      "id": "sg.phy.ol.thermal_properties",
-      "label": "Thermal Properties of Matter",
-      "type": "concept",
-      "description": "Heat capacity; latent heat; melting and boiling",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.ol.thermal",
-      "bookName": "O-Level Thermal Physics",
-      "bookColor": "#ef4444",
-      "bookOrder": 2
-    },
-    {
-      "id": "sg.phy.ol.temperature",
+      "id": "sg.phys.ol.temperature",
       "label": "Temperature",
       "type": "concept",
-      "description": "Temperature scales; thermometers; calibration",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Temperature as measure of degree of hotness; Celsius and thermodynamic scales; thermometers and calibration",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.ol.thermal",
       "bookName": "O-Level Thermal Physics",
       "bookColor": "#ef4444",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "c3a381275f91289d",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.wave_properties",
+      "id": "sg.phys.ol.thermal_expansion",
+      "label": "Thermal Expansion",
+      "type": "concept",
+      "description": "Expansion and contraction of solids, liquids and gases; applications and consequences",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.thermal",
+      "bookName": "O-Level Thermal Physics",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "df44e0577c44d31b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.heat_capacity",
+      "label": "Heat Capacity & Specific Heat Capacity",
+      "type": "concept",
+      "description": "Heat capacity; specific heat capacity; Q = mc delta-T; experimental determination",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.thermal",
+      "bookName": "O-Level Thermal Physics",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "47e3d22ec4379549",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.latent_heat",
+      "label": "Latent Heat",
+      "type": "concept",
+      "description": "Specific latent heat of fusion and vaporisation; Q = mL; heating and cooling curves",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.thermal",
+      "bookName": "O-Level Thermal Physics",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "be75c644e4c7c7b8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.melting_boiling",
+      "label": "Melting & Boiling",
+      "type": "concept",
+      "description": "Melting and solidification; boiling and condensation; evaporation vs boiling; effect of pressure on boiling point",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.thermal",
+      "bookName": "O-Level Thermal Physics",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "b3dd5341be9cf1ad",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.conduction",
+      "label": "Conduction",
+      "type": "concept",
+      "description": "Thermal conduction through solids; conductors and insulators; molecular explanation",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.thermal",
+      "bookName": "O-Level Thermal Physics",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "1b767ffaab0050ab",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.convection",
+      "label": "Convection",
+      "type": "concept",
+      "description": "Convection currents in fluids; explanation in terms of density changes; applications",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.thermal",
+      "bookName": "O-Level Thermal Physics",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "936b9a365ae5ea43",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.radiation",
+      "label": "Radiation",
+      "type": "concept",
+      "description": "Infrared radiation; emission and absorption; factors affecting rate; applications (vacuum flask, greenhouse effect)",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.thermal",
+      "bookName": "O-Level Thermal Physics",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "7cdbe4d5e617d010",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.wave_properties",
       "label": "General Wave Properties",
       "type": "concept",
-      "description": "Transverse and longitudinal waves; frequency, wavelength, amplitude, speed",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Transverse and longitudinal waves; amplitude, wavelength, frequency, period, wave speed; v = f lambda",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.ol.waves",
       "bookName": "O-Level Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "77ed6419670af8b4",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.light",
-      "label": "Light",
+      "id": "sg.phys.ol.wave_phenomena",
+      "label": "Wave Phenomena",
       "type": "concept",
-      "description": "Reflection; refraction; thin lenses; total internal reflection",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Reflection, refraction, diffraction of waves; ripple tank demonstrations",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.ol.waves",
       "bookName": "O-Level Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "4ef399ef3dc417cb",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.em_spectrum",
+      "id": "sg.phys.ol.reflection_light",
+      "label": "Reflection of Light",
+      "type": "concept",
+      "description": "Laws of reflection; plane mirrors; image formation; regular and diffuse reflection",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.waves",
+      "bookName": "O-Level Waves",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "9181fc07a97d4d0c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.refraction_light",
+      "label": "Refraction of Light",
+      "type": "concept",
+      "description": "Laws of refraction; refractive index; Snell's law; real and apparent depth",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.waves",
+      "bookName": "O-Level Waves",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "b9906cea5f10f1c2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.total_internal_reflection",
+      "label": "Total Internal Reflection",
+      "type": "concept",
+      "description": "Critical angle; conditions for total internal reflection; applications (optical fibres, prisms)",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.waves",
+      "bookName": "O-Level Waves",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "a0bb32af6478e61f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.thin_lenses",
+      "label": "Thin Converging Lenses",
+      "type": "concept",
+      "description": "Converging lens; focal length; ray diagrams; image characteristics; magnification",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.waves",
+      "bookName": "O-Level Waves",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "2d0d65e1637f82f2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.em_spectrum",
       "label": "Electromagnetic Spectrum",
       "type": "concept",
-      "description": "Properties and applications of EM waves",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Properties common to all EM waves; regions of the EM spectrum; uses and hazards of each type",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.ol.waves",
       "bookName": "O-Level Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "33e0194e09e3622b",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.sound",
+      "id": "sg.phys.ol.sound",
       "label": "Sound",
       "type": "concept",
-      "description": "Production and transmission of sound; speed of sound; echo; ultrasound",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Production and propagation of sound; speed of sound in different media; echo; ultrasound applications",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.ol.waves",
       "bookName": "O-Level Waves",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "56c2945e56958927",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.static_elec",
+      "id": "sg.phys.ol.pitch_loudness",
+      "label": "Pitch, Loudness & Quality of Sound",
+      "type": "concept",
+      "description": "Relationship of pitch to frequency, loudness to amplitude; waveform displays on CRO",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.waves",
+      "bookName": "O-Level Waves",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "0449427083c1ce5e",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.static_electricity",
       "label": "Static Electricity",
       "type": "concept",
-      "description": "Electric charge; charging by induction; electric field",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Positive and negative charges; charging by friction and induction; electric field lines; hazards and applications",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.ol.elec",
       "bookName": "O-Level Electricity & Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "e5dde2c611919b3c",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.current_elec",
-      "label": "Current Electricity",
+      "id": "sg.phys.ol.electric_field",
+      "label": "Electric Field",
       "type": "concept",
-      "description": "Current, EMF, potential difference; resistance; Ohm's law; series and parallel circuits",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Electric field as region of force; field patterns around point charges and parallel plates",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.ol.elec",
       "bookName": "O-Level Electricity & Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "794c0b406b3129d4",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.dc_circuits",
-      "label": "D.C. Circuits",
+      "id": "sg.phys.ol.current_emf_pd",
+      "label": "Current, EMF & Potential Difference",
       "type": "concept",
-      "description": "Circuit components; potential divider; electrical energy and power",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Conventional current; electron flow; EMF of a source; potential difference; I = Q/t; V = W/Q",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.ol.elec",
       "bookName": "O-Level Electricity & Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "f0bb978ef4bab7a7",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.magnetism",
-      "label": "Magnetism & Electromagnetism",
+      "id": "sg.phys.ol.resistance_ohms_law",
+      "label": "Resistance & Ohm's Law",
       "type": "concept",
-      "description": "Magnets; magnetic fields; electromagnets; DC motor; electromagnetic induction",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Resistance R = V/I; Ohm's law; factors affecting resistance; I-V characteristics of ohmic and non-ohmic conductors",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.ol.elec",
       "bookName": "O-Level Electricity & Magnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "e55747c5266bd146",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.radioactivity",
-      "label": "Radioactivity",
+      "id": "sg.phys.ol.series_parallel",
+      "label": "Series & Parallel Circuits",
       "type": "concept",
-      "description": "Alpha, beta, gamma radiation; half-life; nuclear reactions; safety",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.ol.radio",
-      "bookName": "O-Level Radioactivity",
-      "bookColor": "#8b5cf6",
-      "bookOrder": 5
+      "description": "Current and voltage rules in series and parallel; combined resistance calculations",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.elec",
+      "bookName": "O-Level Electricity & Magnetism",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "7bdea98fb65b8c36",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.ol.atomic_model",
-      "label": "Atomic Model",
+      "id": "sg.phys.ol.circuit_components",
+      "label": "Circuit Components",
       "type": "concept",
-      "description": "Atomic structure; nucleus; protons, neutrons, electrons; isotopes",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.ol.radio",
-      "bookName": "O-Level Radioactivity",
-      "bookColor": "#8b5cf6",
-      "bookOrder": 5
+      "description": "Circuit symbols and diagrams; thermistors, LDRs, diodes, LEDs, relays, transistors; potential divider",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.elec",
+      "bookName": "O-Level Electricity & Magnetism",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "22b988609cf46a01",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.jc.measurement_h2",
-      "label": "Measurement (H2)",
+      "id": "sg.phys.ol.electrical_energy_power",
+      "label": "Electrical Energy & Power",
       "type": "concept",
-      "description": "Errors and uncertainties; dimensional analysis",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.jc.mech",
-      "bookName": "JC Mechanics",
-      "bookColor": "#1d4ed8",
-      "bookOrder": 6
+      "description": "E = VIt; P = VI = I^2R = V^2/R; kilowatt-hour; cost of electricity",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.elec",
+      "bookName": "O-Level Electricity & Magnetism",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "7d1f155270328d73",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.jc.kinematics_h2",
-      "label": "Kinematics (H2)",
+      "id": "sg.phys.ol.practical_electricity",
+      "label": "Practical Electricity & Safety",
       "type": "concept",
-      "description": "2D motion; projectile motion; relative velocity",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.jc.mech",
-      "bookName": "JC Mechanics",
-      "bookColor": "#1d4ed8",
-      "bookOrder": 6
+      "description": "Household wiring (live, neutral, earth); fuses and circuit breakers; earthing; safety precautions; double insulation",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.elec",
+      "bookName": "O-Level Electricity & Magnetism",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "4b411c8877ca5ca5",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.jc.dynamics_h2",
-      "label": "Dynamics (H2)",
+      "id": "sg.phys.ol.magnets_magnetic_fields",
+      "label": "Magnets & Magnetic Fields",
       "type": "concept",
-      "description": "Newton's laws revisited; impulse; conservation of momentum in 2D",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.jc.mech",
-      "bookName": "JC Mechanics",
-      "bookColor": "#1d4ed8",
-      "bookOrder": 6
+      "description": "Permanent magnets; magnetic materials; magnetic field patterns; plotting field lines with compass",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.elec",
+      "bookName": "O-Level Electricity & Magnetism",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "cf0ea51ede82e69f",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.jc.forces",
-      "label": "Forces (H2)",
+      "id": "sg.phys.ol.electromagnets",
+      "label": "Electromagnets",
       "type": "concept",
-      "description": "Types of forces; equilibrium of forces; upthrust; viscous drag",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.jc.mech",
-      "bookName": "JC Mechanics",
-      "bookColor": "#1d4ed8",
-      "bookOrder": 6
+      "description": "Magnetic effect of a current; solenoids; electromagnets; applications (relay, circuit breaker, bell)",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.elec",
+      "bookName": "O-Level Electricity & Magnetism",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "2f0c207183171c28",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.jc.work_energy",
-      "label": "Work, Energy & Power (H2)",
+      "id": "sg.phys.ol.force_on_conductor",
+      "label": "Force on Current-Carrying Conductor",
       "type": "concept",
-      "description": "Work-energy theorem; potential energy curves; elastic and inelastic collisions",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.jc.mech",
-      "bookName": "JC Mechanics",
-      "bookColor": "#1d4ed8",
-      "bookOrder": 6
+      "description": "Motor effect; Fleming's left-hand rule; factors affecting force; DC motor",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.elec",
+      "bookName": "O-Level Electricity & Magnetism",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "bc07f14a50fd714c",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.jc.circular_motion",
-      "label": "Circular Motion",
-      "type": "concept",
-      "description": "Uniform circular motion; centripetal acceleration and force",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.jc.mech",
-      "bookName": "JC Mechanics",
-      "bookColor": "#1d4ed8",
-      "bookOrder": 6
-    },
-    {
-      "id": "sg.phy.jc.gravitation",
-      "label": "Gravitational Field",
-      "type": "concept",
-      "description": "Newton's law of gravitation; gravitational potential; satellite motion",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.jc.mech",
-      "bookName": "JC Mechanics",
-      "bookColor": "#1d4ed8",
-      "bookOrder": 6
-    },
-    {
-      "id": "sg.phy.jc.oscillations",
-      "label": "Oscillations",
-      "type": "concept",
-      "description": "Simple harmonic motion; damping; forced oscillations; resonance",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.jc.mech",
-      "bookName": "JC Mechanics",
-      "bookColor": "#1d4ed8",
-      "bookOrder": 6
-    },
-    {
-      "id": "sg.phy.jc.thermal_h2",
-      "label": "Thermal Physics (H2)",
-      "type": "concept",
-      "description": "Internal energy; first law of thermodynamics; ideal gases",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.jc.thermal",
-      "bookName": "JC Thermal Physics",
-      "bookColor": "#dc2626",
-      "bookOrder": 7
-    },
-    {
-      "id": "sg.phy.jc.ideal_gas",
-      "label": "Ideal Gases",
-      "type": "concept",
-      "description": "Gas laws; kinetic theory of gases; root-mean-square speed",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.jc.thermal",
-      "bookName": "JC Thermal Physics",
-      "bookColor": "#dc2626",
-      "bookOrder": 7
-    },
-    {
-      "id": "sg.phy.jc.superposition",
-      "label": "Superposition",
-      "type": "concept",
-      "description": "Principle of superposition; interference; diffraction; standing waves",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.jc.waves",
-      "bookName": "JC Waves",
-      "bookColor": "#15803d",
-      "bookOrder": 8
-    },
-    {
-      "id": "sg.phy.jc.wave_optics",
-      "label": "Wave Optics",
-      "type": "concept",
-      "description": "Diffraction gratings; single-slit diffraction; thin-film interference",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.jc.waves",
-      "bookName": "JC Waves",
-      "bookColor": "#15803d",
-      "bookOrder": 8
-    },
-    {
-      "id": "sg.phy.jc.electric_fields",
-      "label": "Electric Fields",
-      "type": "concept",
-      "description": "Coulomb's law; electric field strength; electric potential",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.jc.em",
-      "bookName": "JC Electricity & Magnetism",
-      "bookColor": "#d97706",
-      "bookOrder": 9
-    },
-    {
-      "id": "sg.phy.jc.current_h2",
-      "label": "Current of Electricity (H2)",
-      "type": "concept",
-      "description": "Kirchhoff's laws; internal resistance; potentiometer",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.jc.em",
-      "bookName": "JC Electricity & Magnetism",
-      "bookColor": "#d97706",
-      "bookOrder": 9
-    },
-    {
-      "id": "sg.phy.jc.magnetic_fields",
-      "label": "Magnetic Fields (H2)",
-      "type": "concept",
-      "description": "Force on current-carrying conductor; force on moving charge; Hall effect",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.phy.jc.em",
-      "bookName": "JC Electricity & Magnetism",
-      "bookColor": "#d97706",
-      "bookOrder": 9
-    },
-    {
-      "id": "sg.phy.jc.em_induction",
+      "id": "sg.phys.ol.em_induction",
       "label": "Electromagnetic Induction",
       "type": "concept",
-      "description": "Faraday's law; Lenz's law; AC generator; transformers",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Faraday's experiments; factors affecting induced EMF; AC generator; transformer; Lenz's law (direction only)",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.elec",
+      "bookName": "O-Level Electricity & Magnetism",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "a6549f5d5bae1d5b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.atomic_model",
+      "label": "Atomic Model",
+      "type": "concept",
+      "description": "Nuclear model of the atom; protons, neutrons, electrons; proton/nucleon number; isotopes",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.radio",
+      "bookName": "O-Level Radioactivity",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "d2965f70c50e28a1",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.radioactive_emission",
+      "label": "Radioactive Emission",
+      "type": "concept",
+      "description": "Properties of alpha, beta and gamma radiation; penetrating power; ionising ability; deflection in fields",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.radio",
+      "bookName": "O-Level Radioactivity",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "0a80cb84ce4b65ba",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.radioactive_decay",
+      "label": "Radioactive Decay & Half-Life",
+      "type": "concept",
+      "description": "Random nature of decay; half-life; decay curves; calculations involving half-life",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.radio",
+      "bookName": "O-Level Radioactivity",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "7455266afbafd350",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.nuclear_reactions",
+      "label": "Nuclear Reactions",
+      "type": "concept",
+      "description": "Nuclear equations for alpha and beta decay; fission and fusion (descriptive); nuclear energy",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.radio",
+      "bookName": "O-Level Radioactivity",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "31cb8b12f230995c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.ol.uses_hazards_radioactivity",
+      "label": "Uses & Hazards of Radioactivity",
+      "type": "concept",
+      "description": "Applications (medical, industrial, dating); safety precautions; background radiation; nuclear waste",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.ol.radio",
+      "bookName": "O-Level Radioactivity",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "ac8bf5c4e4d48593",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.errors_uncertainties",
+      "label": "Errors & Uncertainties",
+      "type": "concept",
+      "description": "Systematic and random errors; precision and accuracy; propagation of uncertainties; percentage uncertainty",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "3667ede37fbb5cdc",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.dimensional_analysis",
+      "label": "Dimensional Analysis",
+      "type": "concept",
+      "description": "Dimensions of physical quantities; checking homogeneity of equations; deriving relationships",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "79a11d6b07cdcd97",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.kinematics_2d",
+      "label": "Kinematics in Two Dimensions",
+      "type": "concept",
+      "description": "2D motion; vector components; relative velocity; equations of motion for uniform acceleration",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "f736bc450262ed36",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.projectile_motion",
+      "label": "Projectile Motion",
+      "type": "concept",
+      "description": "Independence of horizontal and vertical motion; trajectory calculations; range and time of flight",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "408f590d22d11418",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.newtons_laws_h2",
+      "label": "Newton's Laws (H2)",
+      "type": "concept",
+      "description": "Newton's laws revisited with rigour; net force and acceleration; connected bodies; non-inertial frames",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "a4845fa3111b2110",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.impulse_momentum",
+      "label": "Impulse & Momentum (H2)",
+      "type": "concept",
+      "description": "Impulse as F delta-t; conservation of linear momentum in 2D; elastic and inelastic collisions",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "d2db8b97d1529bc5",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.types_of_forces",
+      "label": "Types of Forces",
+      "type": "concept",
+      "description": "Contact and non-contact forces; weight, normal, tension, friction, drag, upthrust; free-body diagrams",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "53e2eddd7efa6100",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.equilibrium_forces",
+      "label": "Equilibrium of Forces",
+      "type": "concept",
+      "description": "Conditions for translational and rotational equilibrium; triangle and polygon of forces; torque",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "5b58ab2264bf336d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.upthrust_viscous_drag",
+      "label": "Upthrust & Viscous Drag",
+      "type": "concept",
+      "description": "Archimedes' principle; viscous drag; terminal velocity; Stokes' law",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "ad7b5bdb3a635ecd",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.work_energy_theorem",
+      "label": "Work-Energy Theorem",
+      "type": "concept",
+      "description": "Work done by constant and variable forces; work-energy theorem; kinetic energy",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "80aca94dc740591c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.potential_energy",
+      "label": "Potential Energy & Energy Diagrams",
+      "type": "concept",
+      "description": "Gravitational and elastic potential energy; potential energy curves; stable and unstable equilibrium from PE graphs",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "ca44b7bb04e0b18a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.power_h2",
+      "label": "Power (H2)",
+      "type": "concept",
+      "description": "P = Fv; efficiency; power dissipation",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "e738fed22c658e3f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.circular_motion",
+      "label": "Uniform Circular Motion",
+      "type": "concept",
+      "description": "Angular velocity; centripetal acceleration a = v^2/r; centripetal force; applications (banked curves, orbits)",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "a9927f9b2822efc6",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.newtons_law_gravitation",
+      "label": "Newton's Law of Gravitation",
+      "type": "concept",
+      "description": "Universal gravitational constant G; F = GMm/r^2; gravitational field strength g = GM/r^2",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "dbdf1b89fbcc9cd7",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.gravitational_potential",
+      "label": "Gravitational Potential & Energy",
+      "type": "concept",
+      "description": "Gravitational potential phi = -GM/r; gravitational PE; escape velocity; potential-distance graphs",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "d49c840d3e0b1027",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.satellite_motion",
+      "label": "Satellite Motion & Orbits",
+      "type": "concept",
+      "description": "Geostationary and polar orbits; orbital speed and period; weightlessness in orbit",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "0a1a28b74611117b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.shm",
+      "label": "Simple Harmonic Motion",
+      "type": "concept",
+      "description": "Defining equation a = -omega^2 x; displacement, velocity, acceleration graphs; T and f of SHM systems",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "4e765569f706b9c6",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.energy_in_shm",
+      "label": "Energy in SHM",
+      "type": "concept",
+      "description": "KE and PE variation in SHM; total energy; energy-displacement graphs",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "4f86a86b9bcad965",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.damping_resonance",
+      "label": "Damping & Resonance",
+      "type": "concept",
+      "description": "Free and forced oscillations; light, critical and heavy damping; resonance; effects of damping on resonance",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.mech",
+      "bookName": "JC Mechanics",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 6,
+      "external_id": "c47c15b968ad9138",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.temperature_thermodynamic_scale",
+      "label": "Temperature & Thermodynamic Scale",
+      "type": "concept",
+      "description": "Thermal equilibrium; absolute zero; thermodynamic (Kelvin) scale; empirical temperature scales",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.thermal",
+      "bookName": "JC Thermal Physics",
+      "bookColor": "#dc2626",
+      "bookOrder": 7,
+      "external_id": "3437d1070134fb55",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.ideal_gas_laws",
+      "label": "Ideal Gas Laws",
+      "type": "concept",
+      "description": "Boyle's, Charles's and pressure laws; ideal gas equation pV = nRT; mole concept for gases",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.thermal",
+      "bookName": "JC Thermal Physics",
+      "bookColor": "#dc2626",
+      "bookOrder": 7,
+      "external_id": "567cb78b982674b8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.kinetic_theory_gases",
+      "label": "Kinetic Theory of Gases",
+      "type": "concept",
+      "description": "Assumptions of kinetic theory; derivation of p = (1/3)Nm<c^2>/V; root-mean-square speed; pV = NkT",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.thermal",
+      "bookName": "JC Thermal Physics",
+      "bookColor": "#dc2626",
+      "bookOrder": 7,
+      "external_id": "e7a8667225c14372",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.internal_energy",
+      "label": "Internal Energy",
+      "type": "concept",
+      "description": "Internal energy as sum of random KE and PE of molecules; relation to temperature for ideal gas",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.thermal",
+      "bookName": "JC Thermal Physics",
+      "bookColor": "#dc2626",
+      "bookOrder": 7,
+      "external_id": "54f00dbcbde0e1ee",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.first_law_thermo",
+      "label": "First Law of Thermodynamics",
+      "type": "concept",
+      "description": "delta-U = q + W; sign conventions; isothermal, adiabatic, isobaric and isovolumetric processes",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.thermal",
+      "bookName": "JC Thermal Physics",
+      "bookColor": "#dc2626",
+      "bookOrder": 7,
+      "external_id": "9664df2fe4cb1bfd",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.wave_motion",
+      "label": "Wave Motion (H2)",
+      "type": "concept",
+      "description": "Progressive waves; displacement-distance and displacement-time graphs; intensity; polarisation",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.waves",
+      "bookName": "JC Waves",
+      "bookColor": "#15803d",
+      "bookOrder": 8,
+      "external_id": "16320eca1a75a1e8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.polarisation",
+      "label": "Polarisation",
+      "type": "concept",
+      "description": "Polarisation of transverse waves; Malus's law; polaroid filters; applications (LCD, sunglasses)",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.waves",
+      "bookName": "JC Waves",
+      "bookColor": "#15803d",
+      "bookOrder": 8,
+      "external_id": "b9c56b9964de838c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.intensity",
+      "label": "Wave Intensity",
+      "type": "concept",
+      "description": "Intensity proportional to amplitude squared; inverse square law for point sources",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.waves",
+      "bookName": "JC Waves",
+      "bookColor": "#15803d",
+      "bookOrder": 8,
+      "external_id": "ccf6414d1c440a12",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.superposition_principle",
+      "label": "Principle of Superposition",
+      "type": "concept",
+      "description": "Superposition of waves; constructive and destructive interference; path difference and phase difference",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.waves",
+      "bookName": "JC Waves",
+      "bookColor": "#15803d",
+      "bookOrder": 8,
+      "external_id": "e96457b22f14b591",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.two_source_interference",
+      "label": "Two-Source Interference",
+      "type": "concept",
+      "description": "Young's double-slit experiment; fringe spacing formula; coherence; conditions for observable interference",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.waves",
+      "bookName": "JC Waves",
+      "bookColor": "#15803d",
+      "bookOrder": 8,
+      "external_id": "795e0e8d5f6ff3c2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.diffraction",
+      "label": "Diffraction",
+      "type": "concept",
+      "description": "Single-slit diffraction; effect of slit width; diffraction of water waves, sound and light",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.waves",
+      "bookName": "JC Waves",
+      "bookColor": "#15803d",
+      "bookOrder": 8,
+      "external_id": "5b6ee30773f4b44a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.diffraction_grating",
+      "label": "Diffraction Grating",
+      "type": "concept",
+      "description": "d sin theta = n lambda; multiple-slit interference; applications in spectroscopy",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.waves",
+      "bookName": "JC Waves",
+      "bookColor": "#15803d",
+      "bookOrder": 8,
+      "external_id": "30f4961dc7b82912",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.stationary_waves",
+      "label": "Stationary Waves",
+      "type": "concept",
+      "description": "Formation of stationary waves; nodes and antinodes; harmonics on strings and in pipes",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.waves",
+      "bookName": "JC Waves",
+      "bookColor": "#15803d",
+      "bookOrder": 8,
+      "external_id": "2f206f6549a28170",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.coulombs_law",
+      "label": "Coulomb's Law",
+      "type": "concept",
+      "description": "F = kQq/r^2; permittivity of free space; comparison with gravitational force",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.jc.em",
       "bookName": "JC Electricity & Magnetism",
       "bookColor": "#d97706",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "external_id": "7decda3241c49a35",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.jc.ac_circuits",
+      "id": "sg.phys.jc.electric_field_strength",
+      "label": "Electric Field Strength",
+      "type": "concept",
+      "description": "E = F/q; field due to point charge E = kQ/r^2; uniform field E = V/d; field line patterns",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.em",
+      "bookName": "JC Electricity & Magnetism",
+      "bookColor": "#d97706",
+      "bookOrder": 9,
+      "external_id": "df2b9c757c758aa2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.electric_potential",
+      "label": "Electric Potential & Energy",
+      "type": "concept",
+      "description": "Electric potential V = kQ/r; potential energy U = kQq/r; equipotential lines; potential-distance graphs",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.em",
+      "bookName": "JC Electricity & Magnetism",
+      "bookColor": "#d97706",
+      "bookOrder": 9,
+      "external_id": "ac8e4b7dcd77c2b5",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.motion_in_electric_field",
+      "label": "Motion of Charged Particles in Electric Fields",
+      "type": "concept",
+      "description": "Acceleration and deflection of charges in uniform electric fields; applications (CRT, velocity selector)",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.em",
+      "bookName": "JC Electricity & Magnetism",
+      "bookColor": "#d97706",
+      "bookOrder": 9,
+      "external_id": "ef76a405246633a0",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.current_resistance",
+      "label": "Current & Resistance (H2)",
+      "type": "concept",
+      "description": "Drift velocity; resistivity; I-V characteristics; temperature dependence of resistance",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.em",
+      "bookName": "JC Electricity & Magnetism",
+      "bookColor": "#d97706",
+      "bookOrder": 9,
+      "external_id": "817454788c98d1a3",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.emf_internal_resistance",
+      "label": "EMF & Internal Resistance",
+      "type": "concept",
+      "description": "EMF as energy per unit charge; internal resistance; terminal potential difference; V = E - Ir",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.em",
+      "bookName": "JC Electricity & Magnetism",
+      "bookColor": "#d97706",
+      "bookOrder": 9,
+      "external_id": "fc65b7489cbaefbe",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.kirchhoffs_laws",
+      "label": "Kirchhoff's Laws",
+      "type": "concept",
+      "description": "Kirchhoff's first law (junction rule); second law (loop rule); solving complex circuits",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.em",
+      "bookName": "JC Electricity & Magnetism",
+      "bookColor": "#d97706",
+      "bookOrder": 9,
+      "external_id": "7418369a5285735c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.potential_divider_h2",
+      "label": "Potential Divider (H2)",
+      "type": "concept",
+      "description": "Potential divider with fixed and variable resistors; use of thermistors and LDRs; potentiometer",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.em",
+      "bookName": "JC Electricity & Magnetism",
+      "bookColor": "#d97706",
+      "bookOrder": 9,
+      "external_id": "94a81e9decd17274",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.force_on_current_conductor",
+      "label": "Force on Current-Carrying Conductor (H2)",
+      "type": "concept",
+      "description": "F = BIL sin theta; magnetic flux density B; Fleming's left-hand rule; torque on a coil",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.em",
+      "bookName": "JC Electricity & Magnetism",
+      "bookColor": "#d97706",
+      "bookOrder": 9,
+      "external_id": "0c50a93d5babae06",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.force_on_moving_charge",
+      "label": "Force on Moving Charge",
+      "type": "concept",
+      "description": "F = Bqv sin theta; circular motion of charges in magnetic fields; velocity selector; Hall effect",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.em",
+      "bookName": "JC Electricity & Magnetism",
+      "bookColor": "#d97706",
+      "bookOrder": 9,
+      "external_id": "1382ab63a062dea1",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.magnetic_flux",
+      "label": "Magnetic Flux & Flux Linkage",
+      "type": "concept",
+      "description": "Magnetic flux Phi = BA cos theta; flux linkage N Phi; units (weber, weber-turn)",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.em",
+      "bookName": "JC Electricity & Magnetism",
+      "bookColor": "#d97706",
+      "bookOrder": 9,
+      "external_id": "b58c1a90af5da01d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.faradays_lenzs_law",
+      "label": "Faraday's & Lenz's Laws",
+      "type": "concept",
+      "description": "Faraday's law of electromagnetic induction; Lenz's law; induced EMF calculations; eddy currents",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.em",
+      "bookName": "JC Electricity & Magnetism",
+      "bookColor": "#d97706",
+      "bookOrder": 9,
+      "external_id": "369e11379f3893f2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.ac_generator_transformer",
+      "label": "AC Generator & Transformer",
+      "type": "concept",
+      "description": "Working principle of AC generators; ideal transformers; Vs/Vp = Ns/Np; power transmission",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.em",
+      "bookName": "JC Electricity & Magnetism",
+      "bookColor": "#d97706",
+      "bookOrder": 9,
+      "external_id": "15dafaf3fa9a5c40",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.alternating_currents",
       "label": "Alternating Currents",
       "type": "concept",
-      "description": "RMS values; rectification; smoothing",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Sinusoidal AC; peak and RMS values; relationship between peak and RMS; AC power P = Irms^2 R",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.jc.em",
       "bookName": "JC Electricity & Magnetism",
       "bookColor": "#d97706",
-      "bookOrder": 9
+      "bookOrder": 9,
+      "external_id": "890c96cfcb1e6284",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.jc.quantum",
-      "label": "Quantum Physics",
+      "id": "sg.phys.jc.rectification",
+      "label": "Rectification",
       "type": "concept",
-      "description": "Photoelectric effect; wave-particle duality; energy levels; line spectra",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Half-wave and full-wave rectification using diodes; smoothing with capacitors; output waveforms",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.em",
+      "bookName": "JC Electricity & Magnetism",
+      "bookColor": "#d97706",
+      "bookOrder": 9,
+      "external_id": "3a23a52cb47d2017",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.photoelectric_effect",
+      "label": "Photoelectric Effect",
+      "type": "concept",
+      "description": "Observations; Einstein's photoelectric equation; work function; threshold frequency; stopping potential",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.jc.modern",
       "bookName": "JC Modern Physics",
       "bookColor": "#6d28d9",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "external_id": "f9f96063d841b61f",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.jc.nuclear",
-      "label": "Nuclear Physics",
+      "id": "sg.phys.jc.photons_energy_levels",
+      "label": "Photons & Energy Levels",
       "type": "concept",
-      "description": "Nuclear binding energy; mass-energy equivalence; fission and fusion",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "E = hf; energy levels of atoms; emission and absorption spectra; line spectra as evidence for energy levels",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.jc.modern",
       "bookName": "JC Modern Physics",
       "bookColor": "#6d28d9",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "external_id": "4cf96d9fd515342c",
+      "comprehended": false
     },
     {
-      "id": "sg.phy.jc.particle_physics",
-      "label": "Particle Physics",
+      "id": "sg.phys.jc.wave_particle_duality",
+      "label": "Wave-Particle Duality",
       "type": "concept",
-      "description": "Standard model; quarks and leptons; fundamental interactions",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "De Broglie wavelength lambda = h/p; electron diffraction; wave-particle duality of light and matter",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.phy.jc.modern",
       "bookName": "JC Modern Physics",
       "bookColor": "#6d28d9",
-      "bookOrder": 10
+      "bookOrder": 10,
+      "external_id": "9ae7aa5f748c6c84",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.heisenberg_uncertainty",
+      "label": "Heisenberg Uncertainty Principle",
+      "type": "concept",
+      "description": "Uncertainty in position and momentum; delta-x delta-p >= h/(4 pi); implications for measurement",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.modern",
+      "bookName": "JC Modern Physics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 10,
+      "external_id": "c9a540cba8336759",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.nuclear_structure",
+      "label": "Nuclear Structure",
+      "type": "concept",
+      "description": "Constituents of the nucleus; nucleon and proton number; isotopes; nuclear size and density",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.modern",
+      "bookName": "JC Modern Physics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 10,
+      "external_id": "7be2e9a7c9167915",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.mass_energy_equivalence",
+      "label": "Mass-Energy Equivalence",
+      "type": "concept",
+      "description": "E = mc^2; mass defect; binding energy; binding energy per nucleon curve; unified atomic mass unit",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.modern",
+      "bookName": "JC Modern Physics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 10,
+      "external_id": "c6e689e641cb0273",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.nuclear_reactions",
+      "label": "Nuclear Reactions",
+      "type": "concept",
+      "description": "Nuclear fission and fusion; energy released; chain reactions; conditions for fusion",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.modern",
+      "bookName": "JC Modern Physics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 10,
+      "external_id": "182f55d573448cd6",
+      "comprehended": false
+    },
+    {
+      "id": "sg.phys.jc.radioactive_decay_h2",
+      "label": "Radioactive Decay (H2)",
+      "type": "concept",
+      "description": "Spontaneous and random nature; activity A = lambda N; decay constant; half-life t_1/2 = ln2/lambda; decay equations",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.phy.jc.modern",
+      "bookName": "JC Modern Physics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 10,
+      "external_id": "2bcd6ad87214c9df",
+      "comprehended": false
     }
   ],
   "edges": [
-    { "source": "sg.phy.ol.measurement", "target": "sg.phy.ol.kinematics", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.kinematics", "target": "sg.phy.ol.dynamics", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.dynamics", "target": "sg.phy.ol.turning_effects", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.dynamics", "target": "sg.phy.ol.pressure", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.dynamics", "target": "sg.phy.ol.energy_work_power", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.kinetic_model", "target": "sg.phy.ol.thermal_processes", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.kinetic_model", "target": "sg.phy.ol.temperature", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.temperature", "target": "sg.phy.ol.thermal_properties", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.wave_properties", "target": "sg.phy.ol.light", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.wave_properties", "target": "sg.phy.ol.sound", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.light", "target": "sg.phy.ol.em_spectrum", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.static_elec", "target": "sg.phy.ol.current_elec", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.current_elec", "target": "sg.phy.ol.dc_circuits", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.dc_circuits", "target": "sg.phy.ol.magnetism", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.atomic_model", "target": "sg.phy.ol.radioactivity", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.measurement", "target": "sg.phy.jc.measurement_h2", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.kinematics", "target": "sg.phy.jc.kinematics_h2", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.dynamics", "target": "sg.phy.jc.dynamics_h2", "relation": "prerequisite_for" },
-    { "source": "sg.phy.jc.dynamics_h2", "target": "sg.phy.jc.forces", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.energy_work_power", "target": "sg.phy.jc.work_energy", "relation": "prerequisite_for" },
-    { "source": "sg.phy.jc.forces", "target": "sg.phy.jc.circular_motion", "relation": "prerequisite_for" },
-    { "source": "sg.phy.jc.circular_motion", "target": "sg.phy.jc.gravitation", "relation": "prerequisite_for" },
-    { "source": "sg.phy.jc.circular_motion", "target": "sg.phy.jc.oscillations", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.thermal_properties", "target": "sg.phy.jc.thermal_h2", "relation": "prerequisite_for" },
-    { "source": "sg.phy.jc.thermal_h2", "target": "sg.phy.jc.ideal_gas", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.wave_properties", "target": "sg.phy.jc.superposition", "relation": "prerequisite_for" },
-    { "source": "sg.phy.jc.superposition", "target": "sg.phy.jc.wave_optics", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.static_elec", "target": "sg.phy.jc.electric_fields", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.dc_circuits", "target": "sg.phy.jc.current_h2", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.magnetism", "target": "sg.phy.jc.magnetic_fields", "relation": "prerequisite_for" },
-    { "source": "sg.phy.jc.magnetic_fields", "target": "sg.phy.jc.em_induction", "relation": "prerequisite_for" },
-    { "source": "sg.phy.jc.em_induction", "target": "sg.phy.jc.ac_circuits", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.em_spectrum", "target": "sg.phy.jc.quantum", "relation": "prerequisite_for" },
-    { "source": "sg.phy.ol.radioactivity", "target": "sg.phy.jc.nuclear", "relation": "prerequisite_for" },
-    { "source": "sg.phy.jc.quantum", "target": "sg.phy.jc.nuclear", "relation": "prerequisite_for" },
-    { "source": "sg.phy.jc.nuclear", "target": "sg.phy.jc.particle_physics", "relation": "prerequisite_for" }
+    {
+      "source": "sg.phys.ol.si_units",
+      "target": "sg.phys.ol.scalars_vectors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.si_units",
+      "target": "sg.phys.ol.measurement_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.scalars_vectors",
+      "target": "sg.phys.ol.speed_velocity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.measurement_techniques",
+      "target": "sg.phys.ol.speed_velocity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.speed_velocity",
+      "target": "sg.phys.ol.acceleration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.speed_velocity",
+      "target": "sg.phys.ol.dt_vt_graphs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.acceleration",
+      "target": "sg.phys.ol.dt_vt_graphs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.acceleration",
+      "target": "sg.phys.ol.free_fall",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.dt_vt_graphs",
+      "target": "sg.phys.ol.free_fall",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.free_fall",
+      "target": "sg.phys.ol.newtons_laws",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.newtons_laws",
+      "target": "sg.phys.ol.mass_weight",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.newtons_laws",
+      "target": "sg.phys.ol.friction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.newtons_laws",
+      "target": "sg.phys.ol.momentum",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.mass_weight",
+      "target": "sg.phys.ol.moments",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.moments",
+      "target": "sg.phys.ol.centre_of_gravity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.mass_weight",
+      "target": "sg.phys.ol.pressure_solids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.pressure_solids",
+      "target": "sg.phys.ol.pressure_liquids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.pressure_liquids",
+      "target": "sg.phys.ol.atmospheric_pressure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.newtons_laws",
+      "target": "sg.phys.ol.energy_forms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.energy_forms",
+      "target": "sg.phys.ol.energy_conversion_conservation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.energy_forms",
+      "target": "sg.phys.ol.work_done",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.work_done",
+      "target": "sg.phys.ol.power_efficiency",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.energy_conversion_conservation",
+      "target": "sg.phys.ol.power_efficiency",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.kinetic_model",
+      "target": "sg.phys.ol.temperature",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.kinetic_model",
+      "target": "sg.phys.ol.thermal_expansion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.temperature",
+      "target": "sg.phys.ol.heat_capacity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.heat_capacity",
+      "target": "sg.phys.ol.latent_heat",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.latent_heat",
+      "target": "sg.phys.ol.melting_boiling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.kinetic_model",
+      "target": "sg.phys.ol.conduction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.conduction",
+      "target": "sg.phys.ol.convection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.convection",
+      "target": "sg.phys.ol.radiation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.wave_properties",
+      "target": "sg.phys.ol.wave_phenomena",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.wave_phenomena",
+      "target": "sg.phys.ol.reflection_light",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.reflection_light",
+      "target": "sg.phys.ol.refraction_light",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.refraction_light",
+      "target": "sg.phys.ol.total_internal_reflection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.refraction_light",
+      "target": "sg.phys.ol.thin_lenses",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.wave_properties",
+      "target": "sg.phys.ol.em_spectrum",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.wave_properties",
+      "target": "sg.phys.ol.sound",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.sound",
+      "target": "sg.phys.ol.pitch_loudness",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.static_electricity",
+      "target": "sg.phys.ol.electric_field",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.static_electricity",
+      "target": "sg.phys.ol.current_emf_pd",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.current_emf_pd",
+      "target": "sg.phys.ol.resistance_ohms_law",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.resistance_ohms_law",
+      "target": "sg.phys.ol.series_parallel",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.series_parallel",
+      "target": "sg.phys.ol.circuit_components",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.series_parallel",
+      "target": "sg.phys.ol.electrical_energy_power",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.electrical_energy_power",
+      "target": "sg.phys.ol.practical_electricity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.current_emf_pd",
+      "target": "sg.phys.ol.magnets_magnetic_fields",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.magnets_magnetic_fields",
+      "target": "sg.phys.ol.electromagnets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.electromagnets",
+      "target": "sg.phys.ol.force_on_conductor",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.force_on_conductor",
+      "target": "sg.phys.ol.em_induction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.atomic_model",
+      "target": "sg.phys.ol.radioactive_emission",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.radioactive_emission",
+      "target": "sg.phys.ol.radioactive_decay",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.radioactive_emission",
+      "target": "sg.phys.ol.nuclear_reactions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.radioactive_decay",
+      "target": "sg.phys.ol.uses_hazards_radioactivity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.nuclear_reactions",
+      "target": "sg.phys.ol.uses_hazards_radioactivity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.si_units",
+      "target": "sg.phys.jc.errors_uncertainties",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.measurement_techniques",
+      "target": "sg.phys.jc.errors_uncertainties",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.errors_uncertainties",
+      "target": "sg.phys.jc.dimensional_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.dt_vt_graphs",
+      "target": "sg.phys.jc.kinematics_2d",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.free_fall",
+      "target": "sg.phys.jc.kinematics_2d",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.kinematics_2d",
+      "target": "sg.phys.jc.projectile_motion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.newtons_laws",
+      "target": "sg.phys.jc.newtons_laws_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.newtons_laws_h2",
+      "target": "sg.phys.jc.impulse_momentum",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.momentum",
+      "target": "sg.phys.jc.impulse_momentum",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.newtons_laws_h2",
+      "target": "sg.phys.jc.types_of_forces",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.types_of_forces",
+      "target": "sg.phys.jc.equilibrium_forces",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.types_of_forces",
+      "target": "sg.phys.jc.upthrust_viscous_drag",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.work_done",
+      "target": "sg.phys.jc.work_energy_theorem",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.energy_conversion_conservation",
+      "target": "sg.phys.jc.work_energy_theorem",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.work_energy_theorem",
+      "target": "sg.phys.jc.potential_energy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.power_efficiency",
+      "target": "sg.phys.jc.power_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.work_energy_theorem",
+      "target": "sg.phys.jc.power_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.types_of_forces",
+      "target": "sg.phys.jc.circular_motion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.circular_motion",
+      "target": "sg.phys.jc.newtons_law_gravitation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.newtons_law_gravitation",
+      "target": "sg.phys.jc.gravitational_potential",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.gravitational_potential",
+      "target": "sg.phys.jc.satellite_motion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.circular_motion",
+      "target": "sg.phys.jc.satellite_motion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.circular_motion",
+      "target": "sg.phys.jc.shm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.potential_energy",
+      "target": "sg.phys.jc.shm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.shm",
+      "target": "sg.phys.jc.energy_in_shm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.shm",
+      "target": "sg.phys.jc.damping_resonance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.temperature",
+      "target": "sg.phys.jc.temperature_thermodynamic_scale",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.temperature_thermodynamic_scale",
+      "target": "sg.phys.jc.ideal_gas_laws",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.kinetic_model",
+      "target": "sg.phys.jc.kinetic_theory_gases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.ideal_gas_laws",
+      "target": "sg.phys.jc.kinetic_theory_gases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.kinetic_theory_gases",
+      "target": "sg.phys.jc.internal_energy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.heat_capacity",
+      "target": "sg.phys.jc.internal_energy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.internal_energy",
+      "target": "sg.phys.jc.first_law_thermo",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.wave_properties",
+      "target": "sg.phys.jc.wave_motion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.wave_motion",
+      "target": "sg.phys.jc.polarisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.wave_motion",
+      "target": "sg.phys.jc.intensity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.wave_motion",
+      "target": "sg.phys.jc.superposition_principle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.superposition_principle",
+      "target": "sg.phys.jc.two_source_interference",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.superposition_principle",
+      "target": "sg.phys.jc.diffraction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.two_source_interference",
+      "target": "sg.phys.jc.diffraction_grating",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.diffraction",
+      "target": "sg.phys.jc.diffraction_grating",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.superposition_principle",
+      "target": "sg.phys.jc.stationary_waves",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.electric_field",
+      "target": "sg.phys.jc.coulombs_law",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.coulombs_law",
+      "target": "sg.phys.jc.electric_field_strength",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.electric_field_strength",
+      "target": "sg.phys.jc.electric_potential",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.electric_field_strength",
+      "target": "sg.phys.jc.motion_in_electric_field",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.resistance_ohms_law",
+      "target": "sg.phys.jc.current_resistance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.current_emf_pd",
+      "target": "sg.phys.jc.emf_internal_resistance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.current_resistance",
+      "target": "sg.phys.jc.emf_internal_resistance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.series_parallel",
+      "target": "sg.phys.jc.kirchhoffs_laws",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.emf_internal_resistance",
+      "target": "sg.phys.jc.kirchhoffs_laws",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.kirchhoffs_laws",
+      "target": "sg.phys.jc.potential_divider_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.circuit_components",
+      "target": "sg.phys.jc.potential_divider_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.force_on_conductor",
+      "target": "sg.phys.jc.force_on_current_conductor",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.force_on_current_conductor",
+      "target": "sg.phys.jc.force_on_moving_charge",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.em_induction",
+      "target": "sg.phys.jc.magnetic_flux",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.magnetic_flux",
+      "target": "sg.phys.jc.faradays_lenzs_law",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.faradays_lenzs_law",
+      "target": "sg.phys.jc.ac_generator_transformer",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.ac_generator_transformer",
+      "target": "sg.phys.jc.alternating_currents",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.alternating_currents",
+      "target": "sg.phys.jc.rectification",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.em_spectrum",
+      "target": "sg.phys.jc.photoelectric_effect",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.photoelectric_effect",
+      "target": "sg.phys.jc.photons_energy_levels",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.photons_energy_levels",
+      "target": "sg.phys.jc.wave_particle_duality",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.wave_particle_duality",
+      "target": "sg.phys.jc.heisenberg_uncertainty",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.atomic_model",
+      "target": "sg.phys.jc.nuclear_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.nuclear_structure",
+      "target": "sg.phys.jc.mass_energy_equivalence",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.mass_energy_equivalence",
+      "target": "sg.phys.jc.nuclear_reactions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.ol.radioactive_decay",
+      "target": "sg.phys.jc.radioactive_decay_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.phys.jc.nuclear_structure",
+      "target": "sg.phys.jc.radioactive_decay_h2",
+      "relation": "prerequisite_for"
+    }
   ]
 }

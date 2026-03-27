@@ -1,126 +1,1331 @@
 {
   "metadata": {
     "domain": "history",
-    "curriculum": "Singapore History (Secondary)",
+    "curriculum": "Singapore MOE History (O-Level & JC H2)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
-    "description": "Singapore Secondary History curriculum covering Lower and Upper Secondary, with prerequisite ordering",
+    "version": "0.2.0",
+    "description": "Singapore MOE History syllabuses: O-Level History (2174) and JC H2 History (9752), with full subtopic coverage and prerequisite ordering",
     "sources": [
-      "MOE Singapore History Syllabus"
+      "MOE Singapore O-Level History Syllabus (2174)",
+      "MOE Singapore H2 History Syllabus (9752)"
     ],
     "last_updated": "2026-03-27"
   },
   "books": [
-    { "id": "sg.hist.lower", "name": "Lower Secondary History", "color": "#d97706", "order": 1 },
-    { "id": "sg.hist.upper", "name": "Upper Secondary History", "color": "#b45309", "order": 2 }
+    {
+      "id": "sg.hist.olevel",
+      "name": "O-Level History (2174)",
+      "color": "#d97706",
+      "order": 1
+    },
+    {
+      "id": "sg.hist.h2",
+      "name": "JC H2 History (9752)",
+      "color": "#b45309",
+      "order": 2
+    }
   ],
   "nodes": [
     {
-      "id": "sg.hist.lower.temasek",
-      "label": "Temasek to Singapore",
+      "id": "sg.hist.olevel.founding_modern_sg",
+      "label": "Founding of Modern Singapore",
       "type": "concept",
-      "description": "Early Singapore; founding of modern Singapore; Stamford Raffles; early colonial period",
-      "grade_range": ["Sec 1-2"],
-      "tags": ["subtopic"],
-      "book": "sg.hist.lower",
-      "bookName": "Lower Secondary History",
+      "description": "Arrival of Stamford Raffles in 1819; establishment of a British trading post; early treaties with local rulers",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
       "bookColor": "#d97706",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "cf3148e85153eb7b",
+      "comprehended": false
     },
     {
-      "id": "sg.hist.lower.crown_colony",
-      "label": "Crown Colony",
+      "id": "sg.hist.olevel.crown_colony_admin",
+      "label": "Crown Colony Administration",
       "type": "concept",
-      "description": "British colonial administration; Straits Settlements; society and economy under colonial rule",
-      "grade_range": ["Sec 1-2"],
-      "tags": ["subtopic"],
-      "book": "sg.hist.lower",
-      "bookName": "Lower Secondary History",
+      "description": "Singapore as a Crown Colony; Straits Settlements; British colonial governance structure and policies",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
       "bookColor": "#d97706",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "571474ad17287cae",
+      "comprehended": false
     },
     {
-      "id": "sg.hist.lower.japanese_occupation",
-      "label": "Japanese Occupation",
+      "id": "sg.hist.olevel.immigrant_society",
+      "label": "Immigrant Society in Colonial Singapore",
       "type": "concept",
-      "description": "Fall of Singapore; life under Japanese rule; impact on Singapore society",
-      "grade_range": ["Sec 1-2"],
-      "tags": ["subtopic"],
-      "book": "sg.hist.lower",
-      "bookName": "Lower Secondary History",
+      "description": "Migration patterns of Chinese, Malay, Indian, and other communities; social organisation; secret societies; communal identities",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
       "bookColor": "#d97706",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "7d171f9ab8148edf",
+      "comprehended": false
     },
     {
-      "id": "sg.hist.lower.independence",
-      "label": "Road to Independence",
+      "id": "sg.hist.olevel.colonial_economy",
+      "label": "Colonial Economy and Trade",
       "type": "concept",
-      "description": "Post-war political developments; merger and separation; independence in 1965",
-      "grade_range": ["Sec 1-2"],
-      "tags": ["subtopic"],
-      "book": "sg.hist.lower",
-      "bookName": "Lower Secondary History",
+      "description": "Entrepot trade; rubber and tin industries; economic roles of different communities; impact of the Great Depression",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
       "bookColor": "#d97706",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "760ca466be2e9d2c",
+      "comprehended": false
     },
     {
-      "id": "sg.hist.upper.world_wars",
-      "label": "World Wars",
+      "id": "sg.hist.olevel.fall_of_sg",
+      "label": "Fall of Singapore (1942)",
       "type": "concept",
-      "description": "Causes and consequences of WWI and WWII; global impact",
-      "grade_range": ["Sec 3-4"],
-      "tags": ["subtopic"],
-      "book": "sg.hist.upper",
-      "bookName": "Upper Secondary History",
-      "bookColor": "#b45309",
-      "bookOrder": 2
+      "description": "British defence strategy and its weaknesses; Japanese invasion of Malaya; the fall of Singapore on 15 February 1942",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "a326a200ff9dba21",
+      "comprehended": false
     },
     {
-      "id": "sg.hist.upper.sea_colonialism",
-      "label": "Southeast Asian Colonialism",
+      "id": "sg.hist.olevel.japanese_occupation",
+      "label": "Japanese Occupation of Singapore",
       "type": "concept",
-      "description": "European imperialism in Southeast Asia; colonial economies; nationalist movements",
-      "grade_range": ["Sec 3-4"],
-      "tags": ["subtopic"],
-      "book": "sg.hist.upper",
-      "bookName": "Upper Secondary History",
-      "bookColor": "#b45309",
-      "bookOrder": 2
+      "description": "Life under Japanese rule (Syonan-to); Sook Ching massacre; hardships; resistance movements; impact on different communities",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "74a8d3b43459c469",
+      "comprehended": false
     },
     {
-      "id": "sg.hist.upper.cold_war",
-      "label": "Cold War",
+      "id": "sg.hist.olevel.postwar_political_dev",
+      "label": "Post-War Political Developments",
       "type": "concept",
-      "description": "Origins; superpower rivalry; proxy wars; impact on Southeast Asia",
-      "grade_range": ["Sec 3-4"],
-      "tags": ["subtopic"],
-      "book": "sg.hist.upper",
-      "bookName": "Upper Secondary History",
-      "bookColor": "#b45309",
-      "bookOrder": 2
+      "description": "Return of the British; growth of political awareness; anti-colonial sentiment; formation of political parties; constitutional changes",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "f136fb480e74e43e",
+      "comprehended": false
     },
     {
-      "id": "sg.hist.upper.decolonisation",
-      "label": "Decolonisation & Independence",
+      "id": "sg.hist.olevel.road_to_self_government",
+      "label": "Road to Self-Government",
       "type": "concept",
-      "description": "End of colonial rule in Asia and Africa; nation-building challenges",
-      "grade_range": ["Sec 3-4"],
-      "tags": ["subtopic"],
-      "book": "sg.hist.upper",
-      "bookName": "Upper Secondary History",
+      "description": "Rendel Constitution; 1955 elections; David Marshall and Lim Yew Hock; Merdeka Talks; 1959 self-government and PAP victory",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "ce4e42da9d529b3a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.olevel.merger_with_malaya",
+      "label": "Merger with Malaya",
+      "type": "concept",
+      "description": "Reasons for merger; formation of Malaysia in 1963; political negotiations; the 1962 referendum; communist threat and merger rationale",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "7fa59b71cb5205e2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.olevel.separation",
+      "label": "Separation from Malaysia",
+      "type": "concept",
+      "description": "Tensions between Singapore and the federal government; racial politics; economic disputes; separation on 9 August 1965",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "8f91866da50689a6",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.olevel.nation_building_governance",
+      "label": "Nation Building: Governance",
+      "type": "concept",
+      "description": "Challenges of independence; building a defence force (SAF/NS); establishing diplomatic relations; survival as a small nation-state",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "87d5f0a57b442835",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.olevel.nation_building_economy",
+      "label": "Nation Building: Economic Development",
+      "type": "concept",
+      "description": "Industrialisation strategy; EDB and MNCs; shift from labour-intensive to high-tech industries; economic transformation",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "737b2846b633204f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.olevel.nation_building_housing",
+      "label": "Nation Building: Housing and Urban Development",
+      "type": "concept",
+      "description": "HDB public housing programme; resettlement; urban planning; creating a sense of home and belonging",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "7968881b71465084",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.olevel.nation_building_education",
+      "label": "Nation Building: Education",
+      "type": "concept",
+      "description": "Bilingual education policy; national education system; creating a common national identity through schooling",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "89e4be50f4c90bff",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.olevel.nation_building_racial_harmony",
+      "label": "Nation Building: Racial Harmony",
+      "type": "concept",
+      "description": "1964 racial riots; policies for racial and religious harmony; ethnic integration policy; community self-help groups; shared values",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "e9d677dddaf57108",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.olevel.nation_building_defence",
+      "label": "Nation Building: Defence and Diplomacy",
+      "type": "concept",
+      "description": "Total Defence; National Service; ASEAN membership; bilateral relations; Singapore's role in international organisations",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "2eb779d1786a6c42",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.olevel.wwii_outbreak_europe",
+      "label": "WWII: Outbreak in Europe",
+      "type": "concept",
+      "description": "Treaty of Versailles; rise of Hitler and Nazi Germany; failure of appeasement; outbreak of war in Europe in 1939",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "64729f3b692b7b82",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.olevel.wwii_asia_pacific",
+      "label": "WWII: War in Asia-Pacific",
+      "type": "concept",
+      "description": "Japanese expansionism; Greater East Asia Co-Prosperity Sphere; Pearl Harbor; war across Southeast Asia and the Pacific",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "cde6d015b3e5bd2c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.olevel.sea_japanese_occupation",
+      "label": "Japanese Occupation of Southeast Asia",
+      "type": "concept",
+      "description": "Japanese occupation policies across Southeast Asia; impact on local populations; resistance movements in Malaya, Indonesia, Philippines, Burma",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "d6f73bcd62fe0ef5",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.olevel.cold_war_origins",
+      "label": "Cold War: Origins and Development",
+      "type": "concept",
+      "description": "Ideological differences between USA and USSR; Truman Doctrine; Marshall Plan; formation of NATO and Warsaw Pact; division of Europe",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "a175c4e1da3659ee",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.olevel.cold_war_asia",
+      "label": "Cold War in Asia",
+      "type": "concept",
+      "description": "Korean War; Vietnam War; spread of communism in Asia; domino theory; impact on Southeast Asian countries",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "a0b36580153b1c9a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.olevel.sea_decolonisation",
+      "label": "Decolonisation in Southeast Asia",
+      "type": "concept",
+      "description": "End of colonial rule across Southeast Asia; independence movements in Indonesia, Malaya, Vietnam, Philippines, Burma; challenges of nation-building",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "7888e40e7aa19ef0",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.olevel.sea_asean",
+      "label": "Formation and Role of ASEAN",
+      "type": "concept",
+      "description": "Founding of ASEAN in 1967; objectives; regional cooperation; ASEAN's role during the Cold War and beyond",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.olevel",
+      "bookName": "O-Level History (2174)",
+      "bookColor": "#d97706",
+      "bookOrder": 1,
+      "external_id": "cfb0d0d973322eb7",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.wwi_causes",
+      "label": "Causes of World War I",
+      "type": "concept",
+      "description": "Alliance system; militarism; imperialism; nationalism; Balkan crises; assassination of Archduke Franz Ferdinand; outbreak of war in 1914",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
       "bookColor": "#b45309",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "9a8edd17fcfe3eae",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.wwi_course_end",
+      "label": "Course and End of World War I",
+      "type": "concept",
+      "description": "Key phases of the war; trench warfare; total war; entry of the USA; armistice; impact and human cost",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "39793ae0875dfa65",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.paris_peace_treaties",
+      "label": "Paris Peace Settlement (1919-1920)",
+      "type": "concept",
+      "description": "Treaty of Versailles; aims of the Big Three; terms and impact on Germany; other peace treaties; war guilt and reparations",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "41a93f7687e5e528",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.league_of_nations",
+      "label": "League of Nations",
+      "type": "concept",
+      "description": "Formation and structure of the League; successes in the 1920s; failures in the 1930s (Manchuria, Abyssinia); reasons for collapse",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "c018efc5025a2348",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.rise_stalin",
+      "label": "Rise of Authoritarianism: Stalin's USSR",
+      "type": "concept",
+      "description": "Rise of Stalin; consolidation of power; five-year plans; collectivisation; purges; totalitarian state",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "47f905ade588574b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.rise_hitler",
+      "label": "Rise of Authoritarianism: Hitler's Germany",
+      "type": "concept",
+      "description": "Weimar Republic weaknesses; rise of the Nazi Party; Hitler's consolidation of power; Nazi ideology; domestic policies",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "32dc7c3e393594b5",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.rise_mussolini",
+      "label": "Rise of Authoritarianism: Mussolini's Italy",
+      "type": "concept",
+      "description": "Post-WWI Italy; rise of Fascism; Mussolini's seizure of power; Fascist state and policies; corporatism",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "1af5c22d1678a910",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.rise_japan_militarism",
+      "label": "Rise of Authoritarianism: Japanese Militarism",
+      "type": "concept",
+      "description": "Rise of militarism in Japan; ultranationalism; expansion into Manchuria and China; military dominance in politics",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "5be0a625389b4ec2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.wwii_causes_europe",
+      "label": "Causes of WWII in Europe",
+      "type": "concept",
+      "description": "German aggression; appeasement policy; Nazi-Soviet Pact; failure of collective security; invasion of Poland and outbreak of war",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "3da51ddb3d3a6548",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.wwii_causes_asia_pacific",
+      "label": "Causes of WWII in Asia-Pacific",
+      "type": "concept",
+      "description": "Japanese imperial ambitions; conflict with China; US-Japan tensions; oil embargo; attack on Pearl Harbor",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "9510eb725274ca4a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.cold_war_origins",
+      "label": "Origins of the Cold War",
+      "type": "concept",
+      "description": "Wartime conferences; ideological rivalry; breakdown of the Grand Alliance; Truman Doctrine; Marshall Plan; Cominform and Comecon",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "5c9b7358d6137872",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.cold_war_europe",
+      "label": "Cold War in Europe",
+      "type": "concept",
+      "description": "Berlin Blockade and Airlift; division of Germany; NATO and Warsaw Pact; Berlin Wall; Hungarian Uprising; Prague Spring",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "329599bd2941bed1",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.cold_war_asia",
+      "label": "Cold War in Asia",
+      "type": "concept",
+      "description": "Chinese Civil War and Communist victory; Korean War; Vietnam War; domino theory; Cold War impact on Southeast Asia",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "f839bace0e34097f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.cuban_missile_crisis",
+      "label": "Cuban Missile Crisis",
+      "type": "concept",
+      "description": "Background to the crisis; the thirteen days; nuclear brinkmanship; resolution and significance; impact on superpower relations",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "14adab20543b4648",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.detente",
+      "label": "Detente and Arms Control",
+      "type": "concept",
+      "description": "Reasons for detente; SALT treaties; Helsinki Accords; Nixon's visit to China; limits of detente; renewed tensions in late 1970s",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "92f24e49e01cf416",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.end_cold_war",
+      "label": "End of the Cold War",
+      "type": "concept",
+      "description": "Gorbachev's reforms (glasnost and perestroika); fall of the Berlin Wall; collapse of communist regimes in Eastern Europe; dissolution of USSR",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "0b2b5b605c98b106",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.united_nations",
+      "label": "United Nations: Formation and Structure",
+      "type": "concept",
+      "description": "Formation of the UN; structure (General Assembly, Security Council, Secretariat); comparison with League of Nations; principles and charter",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "36509413b8a7fcfd",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.un_peacekeeping",
+      "label": "United Nations: Peacekeeping and Conflict Resolution",
+      "type": "concept",
+      "description": "UN peacekeeping operations; successes and failures; role during the Cold War; post-Cold War interventions; challenges of collective security",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "bc4382644f2d6a50",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.sea_anti_colonial",
+      "label": "Anti-Colonial Movements in Southeast Asia",
+      "type": "concept",
+      "description": "Growth of nationalism; anti-colonial leaders and movements across Southeast Asia; impact of WWII on nationalism; struggle for independence",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "b007db8449d10d4d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.sea_independence_indonesia",
+      "label": "Independence of Indonesia",
+      "type": "concept",
+      "description": "Indonesian nationalism; Sukarno and Hatta; Japanese occupation and its impact; declaration of independence; Dutch resistance; international recognition",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "8fdc5883ba967077",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.sea_independence_malaya",
+      "label": "Independence of Malaya",
+      "type": "concept",
+      "description": "Malayan nationalism; UMNO and the Alliance; Malayan Emergency; path to Merdeka in 1957; formation of Malaysia in 1963",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "100b4b3c60b921f4",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.sea_independence_indochina",
+      "label": "Independence Struggles in Indochina",
+      "type": "concept",
+      "description": "Vietnamese nationalism; Ho Chi Minh; First Indochina War; Geneva Accords; Cambodian and Laotian independence; French withdrawal",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "8e82df1129b80f36",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.sea_nation_building_challenges",
+      "label": "Challenges of Nation-Building in Southeast Asia",
+      "type": "concept",
+      "description": "Ethnic and religious diversity; economic underdevelopment; political instability; authoritarian vs democratic governance; Cold War pressures",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "86ae0b425b6202ba",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.sea_govt_indonesia",
+      "label": "Government in Independent Indonesia",
+      "type": "concept",
+      "description": "Guided Democracy under Sukarno; Konfrontasi; rise of Suharto; New Order regime; economic development and authoritarianism",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "24533db08cafedcf",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.sea_govt_myanmar",
+      "label": "Government in Independent Myanmar",
+      "type": "concept",
+      "description": "Post-independence challenges; military coup of 1962; Ne Win and military rule; isolationism; ethnic conflicts",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "d502957a23954089",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.sea_vietnam_war",
+      "label": "Vietnam War",
+      "type": "concept",
+      "description": "US involvement in Vietnam; escalation; Tet Offensive; anti-war movement; Vietnamisation; fall of Saigon; impact on the region",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "2973a1e53710c242",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.sea_cold_war_impact",
+      "label": "Impact of the Cold War on Southeast Asia",
+      "type": "concept",
+      "description": "Proxy wars; communist insurgencies (Malayan Emergency, Indonesian communism); SEATO; alignment and non-alignment; regional security",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "65d9358984128c0e",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.sea_asean_formation",
+      "label": "ASEAN: Formation and Development",
+      "type": "concept",
+      "description": "Bangkok Declaration 1967; founding members; objectives; ZOPFAN; regional cooperation during and after the Cold War; ASEAN Way",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "06735a3aad23bc02",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.sea_asean_cambodia",
+      "label": "ASEAN and the Cambodian Conflict",
+      "type": "concept",
+      "description": "Khmer Rouge regime; Vietnamese invasion of Cambodia; ASEAN's diplomatic response; Paris Peace Accords; role of external powers",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "06c65dfc9a476387",
+      "comprehended": false
+    },
+    {
+      "id": "sg.hist.h2.sea_economic_dev",
+      "label": "Economic Development in Southeast Asia",
+      "type": "concept",
+      "description": "Different economic strategies; role of the state; Asian Tigers; ASEAN economic cooperation; impact of globalisation; 1997 Asian Financial Crisis",
+      "grade_range": [
+        "JC 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.hist.h2",
+      "bookName": "JC H2 History (9752)",
+      "bookColor": "#b45309",
+      "bookOrder": 2,
+      "external_id": "b07f95a90e85fca7",
+      "comprehended": false
     }
   ],
   "edges": [
-    { "source": "sg.hist.lower.temasek", "target": "sg.hist.lower.crown_colony", "relation": "prerequisite_for" },
-    { "source": "sg.hist.lower.crown_colony", "target": "sg.hist.lower.japanese_occupation", "relation": "prerequisite_for" },
-    { "source": "sg.hist.lower.japanese_occupation", "target": "sg.hist.lower.independence", "relation": "prerequisite_for" },
-    { "source": "sg.hist.lower.crown_colony", "target": "sg.hist.upper.sea_colonialism", "relation": "prerequisite_for" },
-    { "source": "sg.hist.lower.japanese_occupation", "target": "sg.hist.upper.world_wars", "relation": "prerequisite_for" },
-    { "source": "sg.hist.upper.world_wars", "target": "sg.hist.upper.cold_war", "relation": "prerequisite_for" },
-    { "source": "sg.hist.upper.sea_colonialism", "target": "sg.hist.upper.decolonisation", "relation": "prerequisite_for" },
-    { "source": "sg.hist.upper.cold_war", "target": "sg.hist.upper.decolonisation", "relation": "prerequisite_for" },
-    { "source": "sg.hist.lower.independence", "target": "sg.hist.upper.decolonisation", "relation": "prerequisite_for" }
+    {
+      "source": "sg.hist.olevel.founding_modern_sg",
+      "target": "sg.hist.olevel.crown_colony_admin",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.crown_colony_admin",
+      "target": "sg.hist.olevel.immigrant_society",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.crown_colony_admin",
+      "target": "sg.hist.olevel.colonial_economy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.colonial_economy",
+      "target": "sg.hist.olevel.fall_of_sg",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.wwii_asia_pacific",
+      "target": "sg.hist.olevel.fall_of_sg",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.fall_of_sg",
+      "target": "sg.hist.olevel.japanese_occupation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.japanese_occupation",
+      "target": "sg.hist.olevel.postwar_political_dev",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.postwar_political_dev",
+      "target": "sg.hist.olevel.road_to_self_government",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.road_to_self_government",
+      "target": "sg.hist.olevel.merger_with_malaya",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.merger_with_malaya",
+      "target": "sg.hist.olevel.separation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.separation",
+      "target": "sg.hist.olevel.nation_building_governance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.nation_building_governance",
+      "target": "sg.hist.olevel.nation_building_economy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.nation_building_governance",
+      "target": "sg.hist.olevel.nation_building_housing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.nation_building_governance",
+      "target": "sg.hist.olevel.nation_building_education",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.nation_building_governance",
+      "target": "sg.hist.olevel.nation_building_racial_harmony",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.nation_building_governance",
+      "target": "sg.hist.olevel.nation_building_defence",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.immigrant_society",
+      "target": "sg.hist.olevel.nation_building_racial_harmony",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.wwii_outbreak_europe",
+      "target": "sg.hist.olevel.wwii_asia_pacific",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.wwii_asia_pacific",
+      "target": "sg.hist.olevel.sea_japanese_occupation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.sea_japanese_occupation",
+      "target": "sg.hist.olevel.sea_decolonisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.cold_war_origins",
+      "target": "sg.hist.olevel.cold_war_asia",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.wwii_outbreak_europe",
+      "target": "sg.hist.olevel.cold_war_origins",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.cold_war_asia",
+      "target": "sg.hist.olevel.sea_asean",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.sea_decolonisation",
+      "target": "sg.hist.olevel.sea_asean",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.nation_building_defence",
+      "target": "sg.hist.olevel.sea_asean",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.wwi_causes",
+      "target": "sg.hist.h2.wwi_course_end",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.wwi_course_end",
+      "target": "sg.hist.h2.paris_peace_treaties",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.paris_peace_treaties",
+      "target": "sg.hist.h2.league_of_nations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.paris_peace_treaties",
+      "target": "sg.hist.h2.rise_hitler",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.paris_peace_treaties",
+      "target": "sg.hist.h2.rise_mussolini",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.wwi_course_end",
+      "target": "sg.hist.h2.rise_stalin",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.wwi_course_end",
+      "target": "sg.hist.h2.rise_japan_militarism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.rise_hitler",
+      "target": "sg.hist.h2.wwii_causes_europe",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.rise_mussolini",
+      "target": "sg.hist.h2.wwii_causes_europe",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.league_of_nations",
+      "target": "sg.hist.h2.wwii_causes_europe",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.rise_japan_militarism",
+      "target": "sg.hist.h2.wwii_causes_asia_pacific",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.wwii_causes_europe",
+      "target": "sg.hist.h2.cold_war_origins",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.wwii_causes_asia_pacific",
+      "target": "sg.hist.h2.cold_war_origins",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.cold_war_origins",
+      "target": "sg.hist.h2.cold_war_europe",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.cold_war_origins",
+      "target": "sg.hist.h2.cold_war_asia",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.cold_war_europe",
+      "target": "sg.hist.h2.cuban_missile_crisis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.cuban_missile_crisis",
+      "target": "sg.hist.h2.detente",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.detente",
+      "target": "sg.hist.h2.end_cold_war",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.league_of_nations",
+      "target": "sg.hist.h2.united_nations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.cold_war_origins",
+      "target": "sg.hist.h2.united_nations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.united_nations",
+      "target": "sg.hist.h2.un_peacekeeping",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.wwii_causes_asia_pacific",
+      "target": "sg.hist.h2.sea_anti_colonial",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.sea_anti_colonial",
+      "target": "sg.hist.h2.sea_independence_indonesia",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.sea_anti_colonial",
+      "target": "sg.hist.h2.sea_independence_malaya",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.sea_anti_colonial",
+      "target": "sg.hist.h2.sea_independence_indochina",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.sea_independence_indonesia",
+      "target": "sg.hist.h2.sea_nation_building_challenges",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.sea_independence_malaya",
+      "target": "sg.hist.h2.sea_nation_building_challenges",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.sea_independence_indochina",
+      "target": "sg.hist.h2.sea_nation_building_challenges",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.sea_independence_indonesia",
+      "target": "sg.hist.h2.sea_govt_indonesia",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.sea_nation_building_challenges",
+      "target": "sg.hist.h2.sea_govt_indonesia",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.sea_nation_building_challenges",
+      "target": "sg.hist.h2.sea_govt_myanmar",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.sea_independence_indochina",
+      "target": "sg.hist.h2.sea_vietnam_war",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.cold_war_asia",
+      "target": "sg.hist.h2.sea_vietnam_war",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.cold_war_asia",
+      "target": "sg.hist.h2.sea_cold_war_impact",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.sea_nation_building_challenges",
+      "target": "sg.hist.h2.sea_cold_war_impact",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.sea_cold_war_impact",
+      "target": "sg.hist.h2.sea_asean_formation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.sea_asean_formation",
+      "target": "sg.hist.h2.sea_asean_cambodia",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.sea_vietnam_war",
+      "target": "sg.hist.h2.sea_asean_cambodia",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.sea_nation_building_challenges",
+      "target": "sg.hist.h2.sea_economic_dev",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.h2.sea_asean_formation",
+      "target": "sg.hist.h2.sea_economic_dev",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.wwii_outbreak_europe",
+      "target": "sg.hist.h2.wwi_causes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.cold_war_origins",
+      "target": "sg.hist.h2.cold_war_origins",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.sea_decolonisation",
+      "target": "sg.hist.h2.sea_anti_colonial",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.hist.olevel.sea_asean",
+      "target": "sg.hist.h2.sea_asean_formation",
+      "relation": "prerequisite_for"
+    }
   ]
 }

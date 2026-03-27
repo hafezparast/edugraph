@@ -3,472 +3,3229 @@
     "domain": "biology",
     "curriculum": "Singapore Biology (O-Level + A-Level H2)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
-    "description": "Singapore Biology curriculum covering O-Level and JC H2 A-Level, with prerequisite ordering",
+    "version": "0.2.0",
+    "description": "Singapore Biology curriculum covering O-Level and JC H2 A-Level, with prerequisite ordering and full subtopic coverage",
     "sources": [
       "MOE Singapore Biology Syllabus (6093, 9744)"
     ],
     "last_updated": "2026-03-27"
   },
   "books": [
-    { "id": "sg.bio.ol.principles", "name": "O-Level Principles of Biology", "color": "#22c55e", "order": 1 },
-    { "id": "sg.bio.ol.maintenance", "name": "O-Level Maintenance of Life", "color": "#3b82f6", "order": 2 },
-    { "id": "sg.bio.ol.continuity", "name": "O-Level Continuity of Life", "color": "#8b5cf6", "order": 3 },
-    { "id": "sg.bio.ol.environment", "name": "O-Level Man & Environment", "color": "#f59e0b", "order": 4 },
-    { "id": "sg.bio.jc.cell", "name": "JC Cell & Biomolecules", "color": "#15803d", "order": 5 },
-    { "id": "sg.bio.jc.genetics", "name": "JC Genetics", "color": "#6d28d9", "order": 6 },
-    { "id": "sg.bio.jc.energy", "name": "JC Energy & Equilibrium", "color": "#d97706", "order": 7 },
-    { "id": "sg.bio.jc.evolution", "name": "JC Evolution & Diversity", "color": "#92400e", "order": 8 }
+    {
+      "id": "sg.bio.ol.principles",
+      "name": "O-Level Principles of Biology",
+      "color": "#22c55e",
+      "order": 1
+    },
+    {
+      "id": "sg.bio.ol.maintenance",
+      "name": "O-Level Maintenance of Life",
+      "color": "#3b82f6",
+      "order": 2
+    },
+    {
+      "id": "sg.bio.ol.continuity",
+      "name": "O-Level Continuity of Life",
+      "color": "#8b5cf6",
+      "order": 3
+    },
+    {
+      "id": "sg.bio.ol.environment",
+      "name": "O-Level Man & Environment",
+      "color": "#f59e0b",
+      "order": 4
+    },
+    {
+      "id": "sg.bio.jc.cell",
+      "name": "JC Cell & Biomolecules",
+      "color": "#15803d",
+      "order": 5
+    },
+    {
+      "id": "sg.bio.jc.genetics",
+      "name": "JC Genetics",
+      "color": "#6d28d9",
+      "order": 6
+    },
+    {
+      "id": "sg.bio.jc.energy",
+      "name": "JC Energy & Equilibrium",
+      "color": "#d97706",
+      "order": 7
+    },
+    {
+      "id": "sg.bio.jc.evolution",
+      "name": "JC Evolution & Diversity",
+      "color": "#92400e",
+      "order": 8
+    }
   ],
   "nodes": [
     {
-      "id": "sg.bio.ol.cell_structure",
-      "label": "Cell Structure & Organisation",
+      "id": "sg.bio.ol.cell_organelles",
+      "label": "Cell Organelles",
       "type": "concept",
-      "description": "Cell organelles; plant vs animal cells; cell specialisation",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Structure and function of nucleus, mitochondria, chloroplasts, ribosomes, endoplasmic reticulum, Golgi apparatus, lysosomes, centrioles, vacuoles",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.ol.principles",
       "bookName": "O-Level Principles of Biology",
       "bookColor": "#22c55e",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "ba11f38514443cab",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.ol.movement_substances",
-      "label": "Movement of Substances",
+      "id": "sg.bio.ol.plant_vs_animal_cells",
+      "label": "Plant vs Animal Cells",
       "type": "concept",
-      "description": "Diffusion; osmosis; active transport",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Comparing plant and animal cells; cell wall, chloroplasts, large central vacuole in plant cells; use of light microscope",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.ol.principles",
       "bookName": "O-Level Principles of Biology",
       "bookColor": "#22c55e",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "e881f2229865a1a3",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.ol.enzymes",
-      "label": "Enzymes",
+      "id": "sg.bio.ol.cell_specialisation",
+      "label": "Cell Specialisation",
       "type": "concept",
-      "description": "Enzyme structure; lock-and-key model; factors affecting enzyme activity",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Specialised cells (red blood cells, root hair cells, nerve cells); levels of organisation: cell, tissue, organ, organ system",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.ol.principles",
       "bookName": "O-Level Principles of Biology",
       "bookColor": "#22c55e",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "4f4e167b68c9f839",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.ol.nutrition_plants",
-      "label": "Nutrition in Plants",
+      "id": "sg.bio.ol.diffusion",
+      "label": "Diffusion",
       "type": "concept",
-      "description": "Photosynthesis; leaf structure; factors affecting rate",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Definition of diffusion; factors affecting rate of diffusion; importance in living organisms; gas exchange surfaces",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.ol.principles",
       "bookName": "O-Level Principles of Biology",
       "bookColor": "#22c55e",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "80f37e1741cb711e",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.ol.nutrition_humans",
-      "label": "Nutrition in Humans",
+      "id": "sg.bio.ol.osmosis",
+      "label": "Osmosis",
       "type": "concept",
-      "description": "Balanced diet; digestive system; absorption; assimilation",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Osmosis as diffusion of water through a selectively permeable membrane; effects on plant and animal cells; plasmolysis and turgidity",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.principles",
+      "bookName": "O-Level Principles of Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "e35c6f3c7e679eb7",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.active_transport",
+      "label": "Active Transport",
+      "type": "concept",
+      "description": "Movement of substances against concentration gradient; role of energy (ATP); examples in root hair cells and gut lining",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.principles",
+      "bookName": "O-Level Principles of Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "133c51a51fdbd636",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.biological_molecules",
+      "label": "Biological Molecules",
+      "type": "concept",
+      "description": "Carbohydrates, fats and proteins; chemical elements in each; building blocks (monosaccharides, amino acids, fatty acids & glycerol)",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.principles",
+      "bookName": "O-Level Principles of Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "95f8fcc85db34148",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.food_tests",
+      "label": "Food Tests",
+      "type": "concept",
+      "description": "Testing for starch (iodine), reducing sugars (Benedict's), protein (Biuret), fats (ethanol emulsion); qualitative analysis",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.principles",
+      "bookName": "O-Level Principles of Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "facf0ea76bb57605",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.water_and_its_properties",
+      "label": "Water & Its Properties",
+      "type": "concept",
+      "description": "Properties of water important for life: solvent, high specific heat capacity, transport medium",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.principles",
+      "bookName": "O-Level Principles of Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "3d1855f818db89c3",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.enzyme_structure_function",
+      "label": "Enzyme Structure & Function",
+      "type": "concept",
+      "description": "Enzymes as biological catalysts; protein nature; active site; lock-and-key hypothesis; specificity",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.principles",
+      "bookName": "O-Level Principles of Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "22b33ca272c04281",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.factors_affecting_enzymes",
+      "label": "Factors Affecting Enzyme Activity",
+      "type": "concept",
+      "description": "Effect of temperature, pH, substrate concentration on enzyme activity; denaturation; optimum conditions",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.principles",
+      "bookName": "O-Level Principles of Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "95e91101200f7ea9",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.photosynthesis_process",
+      "label": "Photosynthesis",
+      "type": "concept",
+      "description": "Word and balanced chemical equation; role of chlorophyll; conversion of light energy to chemical energy in glucose",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.principles",
+      "bookName": "O-Level Principles of Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "e73baa6af167e1b5",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.leaf_structure",
+      "label": "Leaf Structure & Adaptations",
+      "type": "concept",
+      "description": "Internal structure of a leaf: palisade mesophyll, spongy mesophyll, stomata, guard cells; adaptations for photosynthesis",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.principles",
+      "bookName": "O-Level Principles of Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "45d7c33c86b39cec",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.factors_affecting_photosynthesis",
+      "label": "Factors Affecting Photosynthesis",
+      "type": "concept",
+      "description": "Effect of light intensity, CO2 concentration, temperature on rate of photosynthesis; limiting factors; experiments",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.principles",
+      "bookName": "O-Level Principles of Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "a322bb2b47a19996",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.mineral_nutrition_plants",
+      "label": "Mineral Nutrition in Plants",
+      "type": "concept",
+      "description": "Need for mineral ions: nitrate for amino acids, magnesium for chlorophyll; effects of mineral deficiency",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.principles",
+      "bookName": "O-Level Principles of Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "99c2f6f298b121ca",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.balanced_diet",
+      "label": "Balanced Diet",
+      "type": "concept",
+      "description": "Nutrients: carbohydrates, fats, proteins, vitamins, minerals, water, dietary fibre; energy requirements; malnutrition",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.ol.maintenance",
       "bookName": "O-Level Maintenance of Life",
       "bookColor": "#3b82f6",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "acdafea0420badd1",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.ol.transport_humans",
-      "label": "Transport in Humans",
+      "id": "sg.bio.ol.digestive_system",
+      "label": "Digestive System",
       "type": "concept",
-      "description": "Heart and circulatory system; blood components; lymphatic system",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Alimentary canal: mouth, oesophagus, stomach, small intestine, large intestine; associated organs: liver, pancreas, salivary glands",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.ol.maintenance",
       "bookName": "O-Level Maintenance of Life",
       "bookColor": "#3b82f6",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "5a971e2142ef2981",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.ol.transport_plants",
-      "label": "Transport in Plants",
+      "id": "sg.bio.ol.digestion_enzymes",
+      "label": "Digestive Enzymes",
       "type": "concept",
-      "description": "Xylem and phloem; transpiration; translocation",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Amylase, protease, lipase; role of bile in emulsification; chemical vs physical digestion; optimum pH of enzymes",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.ol.maintenance",
       "bookName": "O-Level Maintenance of Life",
       "bookColor": "#3b82f6",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "011aa551a45d4724",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.ol.respiration",
-      "label": "Respiration",
+      "id": "sg.bio.ol.absorption_assimilation",
+      "label": "Absorption & Assimilation",
       "type": "concept",
-      "description": "Aerobic and anaerobic respiration; gas exchange in humans",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Absorption in small intestine; villi and microvilli adaptations; assimilation of nutrients; role of liver",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.ol.maintenance",
       "bookName": "O-Level Maintenance of Life",
       "bookColor": "#3b82f6",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "8b48c7c68ca19447",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.ol.excretion",
-      "label": "Excretion",
+      "id": "sg.bio.ol.heart_structure",
+      "label": "Heart Structure & Function",
       "type": "concept",
-      "description": "Kidneys; nephron structure; osmoregulation; dialysis",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Chambers of the heart; valves; cardiac cycle; coronary heart disease; pacemaker",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.ol.maintenance",
       "bookName": "O-Level Maintenance of Life",
       "bookColor": "#3b82f6",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "61361b5c5638d9e8",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.ol.homeostasis",
-      "label": "Homeostasis & Coordination",
+      "id": "sg.bio.ol.blood_vessels",
+      "label": "Blood Vessels",
       "type": "concept",
-      "description": "Nervous system; hormones; homeostatic mechanisms; eye and ear",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Structure and function of arteries, veins, capillaries; relating structure to function",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.ol.maintenance",
       "bookName": "O-Level Maintenance of Life",
       "bookColor": "#3b82f6",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "55ae537e289e9463",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.ol.cell_division",
-      "label": "Cell Division",
+      "id": "sg.bio.ol.blood_composition",
+      "label": "Blood Composition",
       "type": "concept",
-      "description": "Mitosis and meiosis; cell cycle; significance",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.bio.ol.continuity",
-      "bookName": "O-Level Continuity of Life",
-      "bookColor": "#8b5cf6",
-      "bookOrder": 3
+      "description": "Red blood cells, white blood cells, platelets, plasma; functions of each component; blood clotting",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "408ba69c8332d134",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.ol.reproduction",
-      "label": "Reproduction",
+      "id": "sg.bio.ol.circulatory_system",
+      "label": "Circulatory System",
       "type": "concept",
-      "description": "Asexual and sexual reproduction; human reproductive system; menstrual cycle",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.bio.ol.continuity",
-      "bookName": "O-Level Continuity of Life",
-      "bookColor": "#8b5cf6",
-      "bookOrder": 3
+      "description": "Double circulatory system; pulmonary and systemic circulation; lymphatic system",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "7359f1c072da8656",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.ol.molecular_genetics",
-      "label": "Molecular Genetics",
+      "id": "sg.bio.ol.xylem_phloem",
+      "label": "Xylem & Phloem",
       "type": "concept",
-      "description": "DNA structure; protein synthesis; genetic engineering",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.bio.ol.continuity",
-      "bookName": "O-Level Continuity of Life",
-      "bookColor": "#8b5cf6",
-      "bookOrder": 3
+      "description": "Structure and function of xylem and phloem; arrangement in roots, stems, leaves",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "b9365fc52d9b3ee3",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.ol.inheritance",
-      "label": "Inheritance",
+      "id": "sg.bio.ol.transpiration",
+      "label": "Transpiration",
       "type": "concept",
-      "description": "Mendelian genetics; monohybrid crosses; codominance; sex linkage",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.bio.ol.continuity",
-      "bookName": "O-Level Continuity of Life",
-      "bookColor": "#8b5cf6",
-      "bookOrder": 3
+      "description": "Transpiration stream; factors affecting rate of transpiration; stomatal control; wilting",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "cde72150bd9708e7",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.ol.ecology",
-      "label": "Organisms & Environment",
+      "id": "sg.bio.ol.translocation",
+      "label": "Translocation",
       "type": "concept",
-      "description": "Ecosystem; food chains and webs; energy flow; nutrient cycling",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.bio.ol.environment",
-      "bookName": "O-Level Man & Environment",
-      "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "description": "Transport of sucrose and amino acids in phloem; source to sink movement",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "91b03e6c84573650",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.ol.human_impact",
-      "label": "Human Impact on Ecosystem",
+      "id": "sg.bio.ol.aerobic_respiration",
+      "label": "Aerobic Respiration",
       "type": "concept",
-      "description": "Pollution; deforestation; conservation; sustainability",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.bio.ol.environment",
-      "bookName": "O-Level Man & Environment",
-      "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "description": "Word and balanced chemical equation; role of oxygen; energy release from glucose; comparison with combustion",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "9a95c6321813ea56",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.anaerobic_respiration",
+      "label": "Anaerobic Respiration",
+      "type": "concept",
+      "description": "Anaerobic respiration in muscles and yeast; lactic acid; ethanol and CO2; oxygen debt; fermentation",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "13e79b069282f60d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.gas_exchange_humans",
+      "label": "Gas Exchange in Humans",
+      "type": "concept",
+      "description": "Structure of the human gas exchange system; lungs, alveoli, diaphragm, intercostal muscles; breathing mechanism",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "19072a473bf63b2f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.kidney_structure",
+      "label": "Kidney Structure & Function",
+      "type": "concept",
+      "description": "Structure of kidney and nephron; ultrafiltration; selective reabsorption; formation of urine",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "cbb667d81f364e4f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.osmoregulation",
+      "label": "Osmoregulation",
+      "type": "concept",
+      "description": "Role of ADH in regulating water content of blood; negative feedback; dialysis as treatment for kidney failure",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "7513af089263120f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.excretory_products",
+      "label": "Excretory Products",
+      "type": "concept",
+      "description": "Excretion of CO2 and urea; difference between excretion and egestion; role of liver in deamination",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "acb0d5465e4c89ac",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.nervous_system",
+      "label": "Nervous System",
+      "type": "concept",
+      "description": "Central and peripheral nervous system; sensory, relay and motor neurones; synapses; voluntary and involuntary actions",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "3cb5e7e033cc829e",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.reflex_arc",
+      "label": "Reflex Arc",
+      "type": "concept",
+      "description": "Structure and function of a reflex arc; stimulus, receptor, coordinator, effector, response; examples of reflexes",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "f93cbf4ac2c9c860",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.eye_structure",
+      "label": "The Eye",
+      "type": "concept",
+      "description": "Structure of the eye; focusing (accommodation); pupil reflex; long-sightedness and short-sightedness; corrective lenses",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "c9b4b4e99f7b6f96",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.hormones",
+      "label": "Hormonal System",
+      "type": "concept",
+      "description": "Endocrine glands; insulin and glucagon in blood glucose regulation; adrenaline; comparison of nervous and hormonal control",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "9be6577af4df3e1c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.thermoregulation",
+      "label": "Thermoregulation",
+      "type": "concept",
+      "description": "Maintenance of constant body temperature; role of skin in temperature regulation; vasodilation, vasoconstriction, sweating, shivering",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "1f964f7f8eb73c52",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.glucose_regulation",
+      "label": "Blood Glucose Regulation",
+      "type": "concept",
+      "description": "Role of insulin and glucagon; negative feedback; diabetes (Type 1 and Type 2); management of diabetes",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "958852d069440688",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.tropisms",
+      "label": "Tropisms",
+      "type": "concept",
+      "description": "Phototropism and gravitropism; role of auxins; experiments demonstrating tropisms",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "0f85373459044686",
+      "comprehended": false
     },
     {
       "id": "sg.bio.ol.infectious_diseases",
       "label": "Infectious Diseases",
       "type": "concept",
-      "description": "Transmission; body defences; immunity; vaccination; antibiotics",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Transmission of diseases; pathogens: bacteria, viruses; examples (cholera, influenza, HIV/AIDS); conditions for spread",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.ol.maintenance",
       "bookName": "O-Level Maintenance of Life",
       "bookColor": "#3b82f6",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "7ff3a3bf7d1cbba3",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.ol.stimulus_response",
-      "label": "Stimulus & Response in Plants",
+      "id": "sg.bio.ol.body_defences",
+      "label": "Body Defences",
       "type": "concept",
-      "description": "Tropisms; plant hormones (auxins); phototropism; geotropism",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "First line of defence (skin, mucous membranes); phagocytosis; antibody production by lymphocytes; active and passive immunity",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.ol.maintenance",
       "bookName": "O-Level Maintenance of Life",
       "bookColor": "#3b82f6",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "9f7fe3277323b28a",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.jc.biomolecules",
-      "label": "Biomolecules",
+      "id": "sg.bio.ol.vaccination",
+      "label": "Vaccination & Antibiotics",
       "type": "concept",
-      "description": "Carbohydrates, lipids, proteins, nucleic acids; water",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Principles of vaccination; active immunity; role of antibiotics; antibiotic resistance; distinction between antibiotics and antibodies",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.maintenance",
+      "bookName": "O-Level Maintenance of Life",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "a83265c9cbc9cc62",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.mitosis",
+      "label": "Mitosis",
+      "type": "concept",
+      "description": "Stages of mitosis; role in growth, repair and asexual reproduction; significance of maintaining chromosome number",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "177926954a405ee6",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.meiosis",
+      "label": "Meiosis",
+      "type": "concept",
+      "description": "Stages of meiosis; reduction division; significance in producing genetically different haploid gametes; crossing over",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "fc35cbf7f2b6af8c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.cell_cycle",
+      "label": "Cell Cycle",
+      "type": "concept",
+      "description": "Interphase (G1, S, G2) and mitotic phase; DNA replication; role of cell cycle in organisms; uncontrolled cell division and cancer",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "95c1c4469f13aae9",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.asexual_reproduction",
+      "label": "Asexual Reproduction",
+      "type": "concept",
+      "description": "Binary fission, budding, spore formation; advantages and disadvantages; cloning in plants",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "94b5e9b89953fd16",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.sexual_reproduction_plants",
+      "label": "Sexual Reproduction in Plants",
+      "type": "concept",
+      "description": "Structure of a flower; pollination (self and cross); fertilisation; seed and fruit formation; seed dispersal; germination",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "39eff2d1d19eb177",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.human_reproductive_system",
+      "label": "Human Reproductive System",
+      "type": "concept",
+      "description": "Male and female reproductive systems; structure and function of testes, ovaries, uterus; puberty and secondary sexual characteristics",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "243af5da7b792399",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.menstrual_cycle",
+      "label": "Menstrual Cycle",
+      "type": "concept",
+      "description": "Hormonal control of menstrual cycle; oestrogen and progesterone; ovulation; role of FSH and LH; fertilisation and implantation",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "4f19ae7e188502eb",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.prenatal_development",
+      "label": "Prenatal Development",
+      "type": "concept",
+      "description": "Development of embryo and fetus; role of placenta; functions of amniotic fluid; birth; methods of contraception",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "d86b3095405f916a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.sexually_transmitted_infections",
+      "label": "Sexually Transmitted Infections",
+      "type": "concept",
+      "description": "HIV/AIDS; methods of transmission; prevention and control of STIs",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "632b43f3baa2bc08",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.dna_structure",
+      "label": "DNA Structure",
+      "type": "concept",
+      "description": "Double helix structure; nucleotides; complementary base pairing (A-T, G-C); role of DNA in carrying genetic information",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "5f84563c6d2ad17a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.protein_synthesis",
+      "label": "Protein Synthesis",
+      "type": "concept",
+      "description": "Transcription and translation overview; triplet code; role of mRNA; relationship between genes, proteins and characteristics",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "4f50555f684e0069",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.genetic_engineering",
+      "label": "Genetic Engineering",
+      "type": "concept",
+      "description": "Principles of genetic engineering; cutting and inserting genes; production of human insulin by bacteria; benefits and risks of GMOs",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "39078ee362f07d0a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.mendelian_genetics",
+      "label": "Mendelian Genetics",
+      "type": "concept",
+      "description": "Genes and alleles; dominant and recessive; genotype and phenotype; homozygous and heterozygous; Punnett squares",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "2e286ab0aceb05b5",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.monohybrid_crosses",
+      "label": "Monohybrid Crosses",
+      "type": "concept",
+      "description": "Predicting outcomes of monohybrid crosses; test crosses; expected ratios (3:1, 1:1); interpreting genetic diagrams",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "4f35b953c7f935f9",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.codominance",
+      "label": "Codominance",
+      "type": "concept",
+      "description": "Codominance in inheritance (e.g., sickle cell trait); ABO blood group system as example of multiple alleles and codominance",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "0f69e7f117cce708",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.sex_linkage",
+      "label": "Sex Linkage",
+      "type": "concept",
+      "description": "Sex determination (XX/XY); sex-linked inheritance; X-linked conditions (colour blindness, haemophilia); carrier status",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "e9d99716b6447d82",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.variation",
+      "label": "Variation",
+      "type": "concept",
+      "description": "Continuous and discontinuous variation; causes of variation (genetic and environmental); mutation as source of new alleles",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "01266070b5cacd25",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.natural_selection",
+      "label": "Natural Selection & Adaptive Evolution",
+      "type": "concept",
+      "description": "Darwin's theory of evolution by natural selection; survival of the fittest; adaptation; antibiotic resistance as example",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "0f059e2760024344",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.selective_breeding",
+      "label": "Selective Breeding",
+      "type": "concept",
+      "description": "Artificial selection; advantages and disadvantages; inbreeding; applications in agriculture",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.continuity",
+      "bookName": "O-Level Continuity of Life",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "833ec8f2d83a8cd5",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.ecosystem",
+      "label": "Ecosystem Concepts",
+      "type": "concept",
+      "description": "Habitat, population, community, ecosystem; biotic and abiotic factors; producers, consumers, decomposers",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.environment",
+      "bookName": "O-Level Man & Environment",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "07db7d85afc2ec3d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.food_chains_webs",
+      "label": "Food Chains & Webs",
+      "type": "concept",
+      "description": "Trophic levels; food chains and food webs; pyramids of number, biomass and energy; energy loss between trophic levels",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.environment",
+      "bookName": "O-Level Man & Environment",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "d48de59b62d8b7fa",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.nutrient_cycling",
+      "label": "Nutrient Cycling",
+      "type": "concept",
+      "description": "Carbon cycle; water cycle; role of decomposers; nitrogen cycle (basic); recycling of materials in ecosystems",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.environment",
+      "bookName": "O-Level Man & Environment",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "76787a5eb2ca8560",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.pollution",
+      "label": "Pollution",
+      "type": "concept",
+      "description": "Air pollution (sulfur dioxide, carbon monoxide); water pollution (sewage, fertiliser runoff, eutrophication); land pollution",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.environment",
+      "bookName": "O-Level Man & Environment",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "eb717a85696898fc",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.deforestation",
+      "label": "Deforestation",
+      "type": "concept",
+      "description": "Causes and effects of deforestation; loss of biodiversity; soil erosion; impact on carbon cycle",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.environment",
+      "bookName": "O-Level Man & Environment",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "71ae4585f8f87e7c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.greenhouse_effect",
+      "label": "Greenhouse Effect & Climate Change",
+      "type": "concept",
+      "description": "Greenhouse gases; enhanced greenhouse effect; global warming; effects on ecosystems and sea levels",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.environment",
+      "bookName": "O-Level Man & Environment",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "68aaa5fe42712c6b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.ol.conservation",
+      "label": "Conservation",
+      "type": "concept",
+      "description": "Importance of biodiversity; conservation strategies; sustainable development; role of legislation and education",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.ol.environment",
+      "bookName": "O-Level Man & Environment",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "dadac911d650f054",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.water_properties",
+      "label": "Water & Inorganic Ions",
+      "type": "concept",
+      "description": "Hydrogen bonding in water; thermal properties; solvent properties; roles of inorganic ions (Fe2+, PO43-, Ca2+)",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.jc.cell",
       "bookName": "JC Cell & Biomolecules",
       "bookColor": "#15803d",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "8ea69219f681bffb",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.jc.cell_structure_h2",
-      "label": "Cell Structure (H2)",
+      "id": "sg.bio.jc.carbohydrates",
+      "label": "Carbohydrates",
       "type": "concept",
-      "description": "Ultrastructure of cells; endomembrane system; cytoskeleton",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Monosaccharides (glucose, fructose, galactose); disaccharides (maltose, sucrose, lactose); polysaccharides (starch, glycogen, cellulose); glycosidic bonds",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.jc.cell",
       "bookName": "JC Cell & Biomolecules",
       "bookColor": "#15803d",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "b4231d59d9a0451e",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.jc.membrane",
-      "label": "Cell Membrane & Transport",
+      "id": "sg.bio.jc.lipids",
+      "label": "Lipids",
       "type": "concept",
-      "description": "Fluid mosaic model; transport across membranes; endocytosis; exocytosis",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Triglycerides; saturated and unsaturated fatty acids; phospholipids; ester bonds; roles of lipids in energy storage and membranes",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.jc.cell",
       "bookName": "JC Cell & Biomolecules",
       "bookColor": "#15803d",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "b18d0e2d3a589f8a",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.jc.enzymes_h2",
-      "label": "Enzymes (H2)",
+      "id": "sg.bio.jc.proteins",
+      "label": "Proteins",
       "type": "concept",
-      "description": "Enzyme kinetics; Michaelis-Menten; inhibitors; cofactors",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Amino acid structure; peptide bonds; four levels of protein structure (primary, secondary, tertiary, quaternary); globular vs fibrous proteins",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.jc.cell",
       "bookName": "JC Cell & Biomolecules",
       "bookColor": "#15803d",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "8d3cbb95084db737",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.nucleic_acids",
+      "label": "Nucleic Acids",
+      "type": "concept",
+      "description": "Structure of DNA and RNA; nucleotide composition; differences between DNA and RNA; phosphodiester bonds; antiparallel strands",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.cell",
+      "bookName": "JC Cell & Biomolecules",
+      "bookColor": "#15803d",
+      "bookOrder": 5,
+      "external_id": "14dbd935632b2a24",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.cell_ultrastructure",
+      "label": "Cell Ultrastructure",
+      "type": "concept",
+      "description": "Electron microscope view of organelles; nucleus, rough/smooth ER, Golgi apparatus, mitochondria, chloroplasts, ribosomes, lysosomes, cytoskeleton",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.cell",
+      "bookName": "JC Cell & Biomolecules",
+      "bookColor": "#15803d",
+      "bookOrder": 5,
+      "external_id": "b0de18e7d35898da",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.endomembrane_system",
+      "label": "Endomembrane System",
+      "type": "concept",
+      "description": "Functional relationship between ER, Golgi, lysosomes, vesicles; protein trafficking and secretion; endosymbiotic theory",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.cell",
+      "bookName": "JC Cell & Biomolecules",
+      "bookColor": "#15803d",
+      "bookOrder": 5,
+      "external_id": "e89a3303e10c766a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.prokaryote_eukaryote",
+      "label": "Prokaryotic vs Eukaryotic Cells",
+      "type": "concept",
+      "description": "Comparing prokaryotic and eukaryotic cell structure; bacteria vs animal/plant cells; viruses as non-cellular",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.cell",
+      "bookName": "JC Cell & Biomolecules",
+      "bookColor": "#15803d",
+      "bookOrder": 5,
+      "external_id": "71dff37ea59210b3",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.fluid_mosaic_model",
+      "label": "Fluid Mosaic Model",
+      "type": "concept",
+      "description": "Phospholipid bilayer; integral and peripheral proteins; cholesterol; glycoproteins and glycolipids; membrane fluidity",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.cell",
+      "bookName": "JC Cell & Biomolecules",
+      "bookColor": "#15803d",
+      "bookOrder": 5,
+      "external_id": "066d67001da4eac9",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.membrane_transport",
+      "label": "Membrane Transport",
+      "type": "concept",
+      "description": "Passive transport (diffusion, facilitated diffusion, osmosis); active transport; carrier and channel proteins; water potential",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.cell",
+      "bookName": "JC Cell & Biomolecules",
+      "bookColor": "#15803d",
+      "bookOrder": 5,
+      "external_id": "68051623731a32e1",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.endocytosis_exocytosis",
+      "label": "Endocytosis & Exocytosis",
+      "type": "concept",
+      "description": "Bulk transport; phagocytosis, pinocytosis, receptor-mediated endocytosis; secretion by exocytosis",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.cell",
+      "bookName": "JC Cell & Biomolecules",
+      "bookColor": "#15803d",
+      "bookOrder": 5,
+      "external_id": "5c414bbebdca289b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.cell_signalling",
+      "label": "Cell Signalling",
+      "type": "concept",
+      "description": "Signal transduction; ligand-receptor interaction; intracellular signalling pathways; role of membrane receptors",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.cell",
+      "bookName": "JC Cell & Biomolecules",
+      "bookColor": "#15803d",
+      "bookOrder": 5,
+      "external_id": "2cae95527635921c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.enzyme_kinetics",
+      "label": "Enzyme Kinetics",
+      "type": "concept",
+      "description": "Rate of reaction; Michaelis-Menten kinetics; Vmax and Km; enzyme-substrate complex; induced fit model",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.cell",
+      "bookName": "JC Cell & Biomolecules",
+      "bookColor": "#15803d",
+      "bookOrder": 5,
+      "external_id": "f2e654f2e7cbe7d8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.enzyme_inhibition",
+      "label": "Enzyme Inhibition",
+      "type": "concept",
+      "description": "Competitive and non-competitive inhibition; reversible and irreversible inhibitors; allosteric regulation; feedback inhibition",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.cell",
+      "bookName": "JC Cell & Biomolecules",
+      "bookColor": "#15803d",
+      "bookOrder": 5,
+      "external_id": "fb2afac93d03457d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.cofactors_coenzymes",
+      "label": "Cofactors & Coenzymes",
+      "type": "concept",
+      "description": "Role of cofactors (metal ions) and coenzymes (NAD, FAD, coenzyme A); prosthetic groups; activation energy",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.cell",
+      "bookName": "JC Cell & Biomolecules",
+      "bookColor": "#15803d",
+      "bookOrder": 5,
+      "external_id": "9e6156233a37c5ae",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.dna_structure_h2",
+      "label": "DNA Structure (H2)",
+      "type": "concept",
+      "description": "Watson-Crick model; antiparallel strands; major and minor grooves; packaging of DNA with histones; chromosome structure; euchromatin and heterochromatin",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.genetics",
+      "bookName": "JC Genetics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 6,
+      "external_id": "7180a7fa22f71888",
+      "comprehended": false
     },
     {
       "id": "sg.bio.jc.dna_replication",
       "label": "DNA Replication",
       "type": "concept",
-      "description": "Semiconservative replication; enzymes involved; Meselson-Stahl",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Semiconservative replication; helicase, DNA polymerase, ligase; leading and lagging strands; Okazaki fragments; Meselson-Stahl experiment",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.jc.genetics",
       "bookName": "JC Genetics",
       "bookColor": "#6d28d9",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "external_id": "c9e8c993feadd231",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.jc.gene_expression",
-      "label": "Gene Expression",
+      "id": "sg.bio.jc.transcription",
+      "label": "Transcription",
       "type": "concept",
-      "description": "Transcription; translation; genetic code; post-translational modification",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "RNA polymerase; promoter and terminator; template and coding strands; mRNA processing in eukaryotes (capping, polyadenylation, splicing)",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.jc.genetics",
       "bookName": "JC Genetics",
       "bookColor": "#6d28d9",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "external_id": "591ad585c0f81bd1",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.jc.gene_regulation",
-      "label": "Gene Regulation",
+      "id": "sg.bio.jc.translation",
+      "label": "Translation",
       "type": "concept",
-      "description": "Lac operon; epigenetics; gene regulation in eukaryotes",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Ribosome structure; tRNA and anticodons; initiation, elongation, termination; codon table; post-translational modifications",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.jc.genetics",
       "bookName": "JC Genetics",
       "bookColor": "#6d28d9",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "external_id": "9f3d6e26c6cfc0da",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.jc.inheritance_h2",
-      "label": "Inheritance (H2)",
+      "id": "sg.bio.jc.genetic_code",
+      "label": "The Genetic Code",
       "type": "concept",
-      "description": "Dihybrid crosses; epistasis; chi-squared test; pedigree analysis",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Properties of genetic code: degenerate, non-overlapping, universal; start and stop codons; reading frames",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.jc.genetics",
       "bookName": "JC Genetics",
       "bookColor": "#6d28d9",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "external_id": "204f2579a3115fe6",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.jc.mutations",
-      "label": "Mutations",
+      "id": "sg.bio.jc.lac_operon",
+      "label": "Lac Operon",
       "type": "concept",
-      "description": "Gene and chromosome mutations; mutagens; cancer genetics",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Gene regulation in prokaryotes; structural genes, operator, promoter, regulatory gene; inducible system; role of lactose and repressor",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.jc.genetics",
       "bookName": "JC Genetics",
       "bookColor": "#6d28d9",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "external_id": "63381acc37ffb067",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.jc.biotech",
-      "label": "Genetic Technology",
+      "id": "sg.bio.jc.eukaryotic_gene_regulation",
+      "label": "Eukaryotic Gene Regulation",
       "type": "concept",
-      "description": "PCR; gel electrophoresis; genetic engineering; cloning; GMOs",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Transcription factors; enhancers and silencers; chromatin remodelling; post-transcriptional regulation (alternative splicing); epigenetics (DNA methylation, histone modification)",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.jc.genetics",
       "bookName": "JC Genetics",
       "bookColor": "#6d28d9",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "external_id": "b2369a410cf5361a",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.jc.cell_resp",
-      "label": "Cellular Respiration",
+      "id": "sg.bio.jc.dihybrid_crosses",
+      "label": "Dihybrid Crosses",
       "type": "concept",
-      "description": "Glycolysis; Krebs cycle; oxidative phosphorylation; ATP",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Independent assortment; 9:3:3:1 ratio; predicting outcomes with Punnett squares; test crosses for dihybrid",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.genetics",
+      "bookName": "JC Genetics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 6,
+      "external_id": "9ecf0e99089f3894",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.gene_linkage",
+      "label": "Gene Linkage & Crossing Over",
+      "type": "concept",
+      "description": "Linked genes; recombination frequency; chromosome mapping; effect of crossing over on genetic variation",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.genetics",
+      "bookName": "JC Genetics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 6,
+      "external_id": "885aa0edc8a5c6f5",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.epistasis",
+      "label": "Epistasis",
+      "type": "concept",
+      "description": "Gene interaction; modified dihybrid ratios (9:3:4, 12:3:1, 9:7); complementary and supplementary gene interaction",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.genetics",
+      "bookName": "JC Genetics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 6,
+      "external_id": "6402e96176c9109d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.chi_squared",
+      "label": "Chi-Squared Test",
+      "type": "concept",
+      "description": "Null hypothesis; observed vs expected ratios; degrees of freedom; interpreting chi-squared values; statistical significance",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.genetics",
+      "bookName": "JC Genetics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 6,
+      "external_id": "5cb34ee98a290b99",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.pedigree_analysis",
+      "label": "Pedigree Analysis",
+      "type": "concept",
+      "description": "Interpreting pedigree diagrams; autosomal dominant/recessive; sex-linked patterns; determining genotypes from pedigrees",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.genetics",
+      "bookName": "JC Genetics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 6,
+      "external_id": "ac829504f96d3f64",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.gene_mutations",
+      "label": "Gene Mutations",
+      "type": "concept",
+      "description": "Point mutations: substitution, insertion, deletion; frameshift mutations; silent, missense, nonsense mutations; sickle cell anaemia",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.genetics",
+      "bookName": "JC Genetics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 6,
+      "external_id": "461732990eb27209",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.chromosome_mutations",
+      "label": "Chromosome Mutations",
+      "type": "concept",
+      "description": "Changes in chromosome number: aneuploidy (Down syndrome), polyploidy; changes in chromosome structure: deletion, duplication, inversion, translocation",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.genetics",
+      "bookName": "JC Genetics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 6,
+      "external_id": "cd926fecc3fb444c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.cancer_genetics",
+      "label": "Cancer Genetics",
+      "type": "concept",
+      "description": "Oncogenes and tumour suppressor genes; multi-step model of cancer; mutagens and carcinogens; p53 gene",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.genetics",
+      "bookName": "JC Genetics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 6,
+      "external_id": "7b03457b0534661c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.pcr",
+      "label": "Polymerase Chain Reaction (PCR)",
+      "type": "concept",
+      "description": "Principles of PCR; denaturation, annealing, extension; Taq polymerase; applications in forensics and diagnosis",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.genetics",
+      "bookName": "JC Genetics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 6,
+      "external_id": "8cb9ebc752f15fb2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.gel_electrophoresis",
+      "label": "Gel Electrophoresis",
+      "type": "concept",
+      "description": "Separation of DNA fragments by size; restriction enzymes; DNA fingerprinting; applications",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.genetics",
+      "bookName": "JC Genetics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 6,
+      "external_id": "2cb71cfe3d972aa8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.genetic_engineering_h2",
+      "label": "Genetic Engineering (H2)",
+      "type": "concept",
+      "description": "Restriction enzymes and ligase; vectors (plasmids); recombinant DNA; transformation; production of transgenic organisms; gene therapy",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.genetics",
+      "bookName": "JC Genetics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 6,
+      "external_id": "7fbcd35727b134cb",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.genomics",
+      "label": "Genomics & Bioinformatics",
+      "type": "concept",
+      "description": "DNA sequencing; Human Genome Project; comparative genomics; applications of bioinformatics; ethical considerations of genetic technology",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.genetics",
+      "bookName": "JC Genetics",
+      "bookColor": "#6d28d9",
+      "bookOrder": 6,
+      "external_id": "7e46ea816145ac82",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.glycolysis",
+      "label": "Glycolysis",
+      "type": "concept",
+      "description": "Glucose to pyruvate; phosphorylation; net yield of ATP and NADH; occurs in cytoplasm; substrate-level phosphorylation",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.jc.energy",
       "bookName": "JC Energy & Equilibrium",
       "bookColor": "#d97706",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "external_id": "7eea94c95241be82",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.jc.photosynthesis",
-      "label": "Photosynthesis (H2)",
+      "id": "sg.bio.jc.link_reaction",
+      "label": "Link Reaction",
       "type": "concept",
-      "description": "Light-dependent reactions; Calvin cycle; limiting factors",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Pyruvate to acetyl CoA; decarboxylation and dehydrogenation; occurs in mitochondrial matrix; production of NADH and CO2",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.jc.energy",
       "bookName": "JC Energy & Equilibrium",
       "bookColor": "#d97706",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "external_id": "146cb2aed40a105b",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.jc.cell_division_h2",
-      "label": "Cell Division (H2)",
+      "id": "sg.bio.jc.krebs_cycle",
+      "label": "Krebs Cycle",
       "type": "concept",
-      "description": "Mitosis and meiosis in detail; cell cycle control; checkpoints",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Acetyl CoA enters cycle; production of NADH, FADH2, ATP, CO2; decarboxylation and dehydrogenation reactions; occurs in mitochondrial matrix",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.jc.energy",
       "bookName": "JC Energy & Equilibrium",
       "bookColor": "#d97706",
-      "bookOrder": 7
+      "bookOrder": 7,
+      "external_id": "6dcd05e2079efc15",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.jc.evolution",
-      "label": "Evolution",
+      "id": "sg.bio.jc.oxidative_phosphorylation",
+      "label": "Oxidative Phosphorylation",
       "type": "concept",
-      "description": "Natural selection; speciation; evidence for evolution; Hardy-Weinberg",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Electron transport chain; chemiosmosis; ATP synthase; role of oxygen as final electron acceptor; proton gradient across inner mitochondrial membrane",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.energy",
+      "bookName": "JC Energy & Equilibrium",
+      "bookColor": "#d97706",
+      "bookOrder": 7,
+      "external_id": "74f692c42337048b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.anaerobic_respiration_h2",
+      "label": "Anaerobic Respiration (H2)",
+      "type": "concept",
+      "description": "Alcoholic fermentation in yeast; lactate fermentation in muscles; comparison with aerobic respiration; respiratory quotient",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.energy",
+      "bookName": "JC Energy & Equilibrium",
+      "bookColor": "#d97706",
+      "bookOrder": 7,
+      "external_id": "a9c7bcec97174f97",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.light_dependent_reactions",
+      "label": "Light-Dependent Reactions",
+      "type": "concept",
+      "description": "Photosystems I and II; photophosphorylation (cyclic and non-cyclic); photolysis of water; production of ATP and NADPH; thylakoid membrane",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.energy",
+      "bookName": "JC Energy & Equilibrium",
+      "bookColor": "#d97706",
+      "bookOrder": 7,
+      "external_id": "8666d0f12b0670a0",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.calvin_cycle",
+      "label": "Calvin Cycle",
+      "type": "concept",
+      "description": "Carbon fixation by RuBisCO; reduction of GP to G3P; regeneration of RuBP; uses ATP and NADPH from light reactions; occurs in stroma",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.energy",
+      "bookName": "JC Energy & Equilibrium",
+      "bookColor": "#d97706",
+      "bookOrder": 7,
+      "external_id": "2c7a2ee7e4168b30",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.limiting_factors_photosynthesis",
+      "label": "Limiting Factors in Photosynthesis",
+      "type": "concept",
+      "description": "Effect of light intensity, CO2 concentration, temperature on rate; compensation point; interaction of limiting factors",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.energy",
+      "bookName": "JC Energy & Equilibrium",
+      "bookColor": "#d97706",
+      "bookOrder": 7,
+      "external_id": "0a89924f2e13bf5f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.mitosis_h2",
+      "label": "Mitosis (H2)",
+      "type": "concept",
+      "description": "Detailed stages (prophase, metaphase, anaphase, telophase); role of spindle fibres; cytokinesis; significance in growth and repair",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.energy",
+      "bookName": "JC Energy & Equilibrium",
+      "bookColor": "#d97706",
+      "bookOrder": 7,
+      "external_id": "4b03250faad36cb4",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.meiosis_h2",
+      "label": "Meiosis (H2)",
+      "type": "concept",
+      "description": "Meiosis I and II in detail; independent assortment; crossing over; chiasmata; sources of genetic variation; comparison with mitosis",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.energy",
+      "bookName": "JC Energy & Equilibrium",
+      "bookColor": "#d97706",
+      "bookOrder": 7,
+      "external_id": "1cb7f6d6adcee2a1",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.cell_cycle_control",
+      "label": "Cell Cycle Control",
+      "type": "concept",
+      "description": "Cell cycle checkpoints (G1, G2, M); cyclins and CDKs; role of p53; apoptosis; loss of control leading to cancer",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.energy",
+      "bookName": "JC Energy & Equilibrium",
+      "bookColor": "#d97706",
+      "bookOrder": 7,
+      "external_id": "af4fba889d9d724e",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.natural_selection_h2",
+      "label": "Natural Selection (H2)",
+      "type": "concept",
+      "description": "Variation, overproduction, competition, differential survival and reproduction; directional, stabilising, disruptive selection",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.jc.evolution",
       "bookName": "JC Evolution & Diversity",
       "bookColor": "#92400e",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "external_id": "65a9567f69aefaf4",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.jc.classification",
-      "label": "Classification & Biodiversity",
+      "id": "sg.bio.jc.evidence_evolution",
+      "label": "Evidence for Evolution",
       "type": "concept",
-      "description": "Taxonomy; three-domain system; species concept; biodiversity conservation",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Fossil record; comparative anatomy (homologous structures); molecular evidence (DNA/protein sequences); biogeography",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.jc.evolution",
       "bookName": "JC Evolution & Diversity",
       "bookColor": "#92400e",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "external_id": "ffe1e8038fe29602",
+      "comprehended": false
     },
     {
-      "id": "sg.bio.jc.ecology_h2",
-      "label": "Ecology (H2)",
+      "id": "sg.bio.jc.speciation",
+      "label": "Speciation",
       "type": "concept",
-      "description": "Population ecology; community ecology; ecosystems; climate change",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Allopatric and sympatric speciation; reproductive isolation mechanisms; adaptive radiation; convergent evolution",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.bio.jc.evolution",
       "bookName": "JC Evolution & Diversity",
       "bookColor": "#92400e",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "external_id": "45abc9d2be6d8848",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.hardy_weinberg",
+      "label": "Hardy-Weinberg Principle",
+      "type": "concept",
+      "description": "Allele and genotype frequencies; Hardy-Weinberg equation (p2 + 2pq + q2 = 1); conditions for equilibrium; factors causing deviation",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.evolution",
+      "bookName": "JC Evolution & Diversity",
+      "bookColor": "#92400e",
+      "bookOrder": 8,
+      "external_id": "f4e4eeb5cdf918ac",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.genetic_drift",
+      "label": "Genetic Drift",
+      "type": "concept",
+      "description": "Random changes in allele frequency; bottleneck effect; founder effect; significance in small populations",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.evolution",
+      "bookName": "JC Evolution & Diversity",
+      "bookColor": "#92400e",
+      "bookOrder": 8,
+      "external_id": "9c4fd702c14c67a3",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.taxonomy",
+      "label": "Taxonomy & Systematics",
+      "type": "concept",
+      "description": "Hierarchical classification; binomial nomenclature; three-domain system (Archaea, Bacteria, Eukarya); phylogenetic trees",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.evolution",
+      "bookName": "JC Evolution & Diversity",
+      "bookColor": "#92400e",
+      "bookOrder": 8,
+      "external_id": "beaa792c55788924",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.species_concept",
+      "label": "Species Concept",
+      "type": "concept",
+      "description": "Biological species concept; morphological species concept; difficulties in defining species; ring species",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.evolution",
+      "bookName": "JC Evolution & Diversity",
+      "bookColor": "#92400e",
+      "bookOrder": 8,
+      "external_id": "68da6d6ac088abc6",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.biodiversity",
+      "label": "Biodiversity",
+      "type": "concept",
+      "description": "Species diversity, genetic diversity, ecosystem diversity; measuring biodiversity (Simpson's index); importance of biodiversity",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.evolution",
+      "bookName": "JC Evolution & Diversity",
+      "bookColor": "#92400e",
+      "bookOrder": 8,
+      "external_id": "896c944da21150cc",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.threats_biodiversity",
+      "label": "Threats to Biodiversity",
+      "type": "concept",
+      "description": "Habitat destruction; invasive species; overexploitation; pollution; climate change as threat to species",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.evolution",
+      "bookName": "JC Evolution & Diversity",
+      "bookColor": "#92400e",
+      "bookOrder": 8,
+      "external_id": "d43b7ad87df49576",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.conservation_h2",
+      "label": "Conservation Biology",
+      "type": "concept",
+      "description": "In-situ and ex-situ conservation; protected areas; captive breeding; seed banks; international agreements (CITES)",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.evolution",
+      "bookName": "JC Evolution & Diversity",
+      "bookColor": "#92400e",
+      "bookOrder": 8,
+      "external_id": "495b948b4f83b63a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.climate_change",
+      "label": "Climate Change",
+      "type": "concept",
+      "description": "Evidence for climate change; greenhouse gases and enhanced greenhouse effect; impact on ecosystems; mitigation and adaptation strategies",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.evolution",
+      "bookName": "JC Evolution & Diversity",
+      "bookColor": "#92400e",
+      "bookOrder": 8,
+      "external_id": "3da2864454a6ad7b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.population_ecology",
+      "label": "Population Ecology",
+      "type": "concept",
+      "description": "Population growth curves (exponential, logistic); carrying capacity; density-dependent and density-independent factors; r- and K-selected species",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.evolution",
+      "bookName": "JC Evolution & Diversity",
+      "bookColor": "#92400e",
+      "bookOrder": 8,
+      "external_id": "b8fbe60a3f0ba57e",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.community_ecology",
+      "label": "Community Ecology",
+      "type": "concept",
+      "description": "Interspecific relationships: predation, competition, mutualism, parasitism; ecological niches; succession; keystone species",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.evolution",
+      "bookName": "JC Evolution & Diversity",
+      "bookColor": "#92400e",
+      "bookOrder": 8,
+      "external_id": "603c404fa3eea6b1",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.energy_flow_ecosystems",
+      "label": "Energy Flow in Ecosystems",
+      "type": "concept",
+      "description": "Gross and net primary productivity; energy transfer between trophic levels; ecological pyramids; energy budgets",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.evolution",
+      "bookName": "JC Evolution & Diversity",
+      "bookColor": "#92400e",
+      "bookOrder": 8,
+      "external_id": "7fc573b0a595adb1",
+      "comprehended": false
+    },
+    {
+      "id": "sg.bio.jc.nutrient_cycling_h2",
+      "label": "Nutrient Cycling (H2)",
+      "type": "concept",
+      "description": "Carbon cycle in detail; nitrogen cycle (nitrogen fixation, nitrification, denitrification); role of microorganisms; impact of human activity",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.bio.jc.evolution",
+      "bookName": "JC Evolution & Diversity",
+      "bookColor": "#92400e",
+      "bookOrder": 8,
+      "external_id": "b64d965e5d478905",
+      "comprehended": false
     }
   ],
   "edges": [
-    { "source": "sg.bio.ol.cell_structure", "target": "sg.bio.ol.movement_substances", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.cell_structure", "target": "sg.bio.ol.enzymes", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.enzymes", "target": "sg.bio.ol.nutrition_plants", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.enzymes", "target": "sg.bio.ol.nutrition_humans", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.movement_substances", "target": "sg.bio.ol.transport_humans", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.movement_substances", "target": "sg.bio.ol.transport_plants", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.nutrition_humans", "target": "sg.bio.ol.respiration", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.transport_humans", "target": "sg.bio.ol.excretion", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.transport_humans", "target": "sg.bio.ol.homeostasis", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.cell_structure", "target": "sg.bio.ol.cell_division", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.cell_division", "target": "sg.bio.ol.reproduction", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.cell_division", "target": "sg.bio.ol.molecular_genetics", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.molecular_genetics", "target": "sg.bio.ol.inheritance", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.nutrition_plants", "target": "sg.bio.ol.ecology", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.respiration", "target": "sg.bio.ol.ecology", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.ecology", "target": "sg.bio.ol.human_impact", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.transport_humans", "target": "sg.bio.ol.infectious_diseases", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.nutrition_plants", "target": "sg.bio.ol.stimulus_response", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.cell_structure", "target": "sg.bio.jc.biomolecules", "relation": "prerequisite_for" },
-    { "source": "sg.bio.jc.biomolecules", "target": "sg.bio.jc.cell_structure_h2", "relation": "prerequisite_for" },
-    { "source": "sg.bio.jc.cell_structure_h2", "target": "sg.bio.jc.membrane", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.enzymes", "target": "sg.bio.jc.enzymes_h2", "relation": "prerequisite_for" },
-    { "source": "sg.bio.jc.biomolecules", "target": "sg.bio.jc.enzymes_h2", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.molecular_genetics", "target": "sg.bio.jc.dna_replication", "relation": "prerequisite_for" },
-    { "source": "sg.bio.jc.dna_replication", "target": "sg.bio.jc.gene_expression", "relation": "prerequisite_for" },
-    { "source": "sg.bio.jc.gene_expression", "target": "sg.bio.jc.gene_regulation", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.inheritance", "target": "sg.bio.jc.inheritance_h2", "relation": "prerequisite_for" },
-    { "source": "sg.bio.jc.dna_replication", "target": "sg.bio.jc.mutations", "relation": "prerequisite_for" },
-    { "source": "sg.bio.jc.gene_expression", "target": "sg.bio.jc.biotech", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.respiration", "target": "sg.bio.jc.cell_resp", "relation": "prerequisite_for" },
-    { "source": "sg.bio.jc.enzymes_h2", "target": "sg.bio.jc.cell_resp", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.nutrition_plants", "target": "sg.bio.jc.photosynthesis", "relation": "prerequisite_for" },
-    { "source": "sg.bio.jc.cell_resp", "target": "sg.bio.jc.photosynthesis", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.cell_division", "target": "sg.bio.jc.cell_division_h2", "relation": "prerequisite_for" },
-    { "source": "sg.bio.jc.mutations", "target": "sg.bio.jc.evolution", "relation": "prerequisite_for" },
-    { "source": "sg.bio.jc.inheritance_h2", "target": "sg.bio.jc.evolution", "relation": "prerequisite_for" },
-    { "source": "sg.bio.jc.evolution", "target": "sg.bio.jc.classification", "relation": "prerequisite_for" },
-    { "source": "sg.bio.ol.ecology", "target": "sg.bio.jc.ecology_h2", "relation": "prerequisite_for" },
-    { "source": "sg.bio.jc.classification", "target": "sg.bio.jc.ecology_h2", "relation": "prerequisite_for" }
+    {
+      "source": "sg.bio.ol.cell_organelles",
+      "target": "sg.bio.ol.plant_vs_animal_cells",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.plant_vs_animal_cells",
+      "target": "sg.bio.ol.cell_specialisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.cell_organelles",
+      "target": "sg.bio.ol.diffusion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.diffusion",
+      "target": "sg.bio.ol.osmosis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.diffusion",
+      "target": "sg.bio.ol.active_transport",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.cell_organelles",
+      "target": "sg.bio.ol.biological_molecules",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.biological_molecules",
+      "target": "sg.bio.ol.food_tests",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.biological_molecules",
+      "target": "sg.bio.ol.water_and_its_properties",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.biological_molecules",
+      "target": "sg.bio.ol.enzyme_structure_function",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.enzyme_structure_function",
+      "target": "sg.bio.ol.factors_affecting_enzymes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.enzyme_structure_function",
+      "target": "sg.bio.ol.photosynthesis_process",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.cell_specialisation",
+      "target": "sg.bio.ol.leaf_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.photosynthesis_process",
+      "target": "sg.bio.ol.leaf_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.leaf_structure",
+      "target": "sg.bio.ol.factors_affecting_photosynthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.photosynthesis_process",
+      "target": "sg.bio.ol.mineral_nutrition_plants",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.biological_molecules",
+      "target": "sg.bio.ol.balanced_diet",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.balanced_diet",
+      "target": "sg.bio.ol.digestive_system",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.enzyme_structure_function",
+      "target": "sg.bio.ol.digestion_enzymes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.digestive_system",
+      "target": "sg.bio.ol.digestion_enzymes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.digestion_enzymes",
+      "target": "sg.bio.ol.absorption_assimilation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.osmosis",
+      "target": "sg.bio.ol.absorption_assimilation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.cell_specialisation",
+      "target": "sg.bio.ol.heart_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.heart_structure",
+      "target": "sg.bio.ol.blood_vessels",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.heart_structure",
+      "target": "sg.bio.ol.blood_composition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.blood_vessels",
+      "target": "sg.bio.ol.circulatory_system",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.blood_composition",
+      "target": "sg.bio.ol.circulatory_system",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.osmosis",
+      "target": "sg.bio.ol.xylem_phloem",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.active_transport",
+      "target": "sg.bio.ol.xylem_phloem",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.xylem_phloem",
+      "target": "sg.bio.ol.transpiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.xylem_phloem",
+      "target": "sg.bio.ol.translocation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.biological_molecules",
+      "target": "sg.bio.ol.aerobic_respiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.enzyme_structure_function",
+      "target": "sg.bio.ol.aerobic_respiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.aerobic_respiration",
+      "target": "sg.bio.ol.anaerobic_respiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.diffusion",
+      "target": "sg.bio.ol.gas_exchange_humans",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.aerobic_respiration",
+      "target": "sg.bio.ol.gas_exchange_humans",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.circulatory_system",
+      "target": "sg.bio.ol.kidney_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.osmosis",
+      "target": "sg.bio.ol.kidney_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.kidney_structure",
+      "target": "sg.bio.ol.osmoregulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.aerobic_respiration",
+      "target": "sg.bio.ol.excretory_products",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.kidney_structure",
+      "target": "sg.bio.ol.excretory_products",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.cell_specialisation",
+      "target": "sg.bio.ol.nervous_system",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.nervous_system",
+      "target": "sg.bio.ol.reflex_arc",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.nervous_system",
+      "target": "sg.bio.ol.eye_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.nervous_system",
+      "target": "sg.bio.ol.hormones",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.hormones",
+      "target": "sg.bio.ol.thermoregulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.hormones",
+      "target": "sg.bio.ol.glucose_regulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.photosynthesis_process",
+      "target": "sg.bio.ol.tropisms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.hormones",
+      "target": "sg.bio.ol.tropisms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.blood_composition",
+      "target": "sg.bio.ol.infectious_diseases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.infectious_diseases",
+      "target": "sg.bio.ol.body_defences",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.body_defences",
+      "target": "sg.bio.ol.vaccination",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.cell_organelles",
+      "target": "sg.bio.ol.mitosis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.mitosis",
+      "target": "sg.bio.ol.meiosis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.mitosis",
+      "target": "sg.bio.ol.cell_cycle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.mitosis",
+      "target": "sg.bio.ol.asexual_reproduction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.meiosis",
+      "target": "sg.bio.ol.sexual_reproduction_plants",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.meiosis",
+      "target": "sg.bio.ol.human_reproductive_system",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.human_reproductive_system",
+      "target": "sg.bio.ol.menstrual_cycle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.hormones",
+      "target": "sg.bio.ol.menstrual_cycle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.menstrual_cycle",
+      "target": "sg.bio.ol.prenatal_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.human_reproductive_system",
+      "target": "sg.bio.ol.sexually_transmitted_infections",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.cell_organelles",
+      "target": "sg.bio.ol.dna_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.biological_molecules",
+      "target": "sg.bio.ol.dna_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.dna_structure",
+      "target": "sg.bio.ol.protein_synthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.protein_synthesis",
+      "target": "sg.bio.ol.genetic_engineering",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.dna_structure",
+      "target": "sg.bio.ol.mendelian_genetics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.meiosis",
+      "target": "sg.bio.ol.mendelian_genetics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.mendelian_genetics",
+      "target": "sg.bio.ol.monohybrid_crosses",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.monohybrid_crosses",
+      "target": "sg.bio.ol.codominance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.monohybrid_crosses",
+      "target": "sg.bio.ol.sex_linkage",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.meiosis",
+      "target": "sg.bio.ol.variation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.mendelian_genetics",
+      "target": "sg.bio.ol.variation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.variation",
+      "target": "sg.bio.ol.natural_selection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.natural_selection",
+      "target": "sg.bio.ol.selective_breeding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.photosynthesis_process",
+      "target": "sg.bio.ol.ecosystem",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.aerobic_respiration",
+      "target": "sg.bio.ol.ecosystem",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.ecosystem",
+      "target": "sg.bio.ol.food_chains_webs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.food_chains_webs",
+      "target": "sg.bio.ol.nutrient_cycling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.ecosystem",
+      "target": "sg.bio.ol.pollution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.ecosystem",
+      "target": "sg.bio.ol.deforestation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.nutrient_cycling",
+      "target": "sg.bio.ol.greenhouse_effect",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.pollution",
+      "target": "sg.bio.ol.greenhouse_effect",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.deforestation",
+      "target": "sg.bio.ol.conservation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.greenhouse_effect",
+      "target": "sg.bio.ol.conservation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.water_and_its_properties",
+      "target": "sg.bio.jc.water_properties",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.biological_molecules",
+      "target": "sg.bio.jc.carbohydrates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.water_properties",
+      "target": "sg.bio.jc.carbohydrates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.carbohydrates",
+      "target": "sg.bio.jc.lipids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.lipids",
+      "target": "sg.bio.jc.proteins",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.proteins",
+      "target": "sg.bio.jc.nucleic_acids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.cell_organelles",
+      "target": "sg.bio.jc.cell_ultrastructure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.proteins",
+      "target": "sg.bio.jc.cell_ultrastructure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.cell_ultrastructure",
+      "target": "sg.bio.jc.endomembrane_system",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.cell_ultrastructure",
+      "target": "sg.bio.jc.prokaryote_eukaryote",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.lipids",
+      "target": "sg.bio.jc.fluid_mosaic_model",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.proteins",
+      "target": "sg.bio.jc.fluid_mosaic_model",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.fluid_mosaic_model",
+      "target": "sg.bio.jc.membrane_transport",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.osmosis",
+      "target": "sg.bio.jc.membrane_transport",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.active_transport",
+      "target": "sg.bio.jc.membrane_transport",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.membrane_transport",
+      "target": "sg.bio.jc.endocytosis_exocytosis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.fluid_mosaic_model",
+      "target": "sg.bio.jc.cell_signalling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.factors_affecting_enzymes",
+      "target": "sg.bio.jc.enzyme_kinetics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.proteins",
+      "target": "sg.bio.jc.enzyme_kinetics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.enzyme_kinetics",
+      "target": "sg.bio.jc.enzyme_inhibition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.enzyme_kinetics",
+      "target": "sg.bio.jc.cofactors_coenzymes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.dna_structure",
+      "target": "sg.bio.jc.dna_structure_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.nucleic_acids",
+      "target": "sg.bio.jc.dna_structure_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.dna_structure_h2",
+      "target": "sg.bio.jc.dna_replication",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.dna_replication",
+      "target": "sg.bio.jc.transcription",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.transcription",
+      "target": "sg.bio.jc.translation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.nucleic_acids",
+      "target": "sg.bio.jc.genetic_code",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.protein_synthesis",
+      "target": "sg.bio.jc.genetic_code",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.genetic_code",
+      "target": "sg.bio.jc.translation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.transcription",
+      "target": "sg.bio.jc.lac_operon",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.lac_operon",
+      "target": "sg.bio.jc.eukaryotic_gene_regulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.translation",
+      "target": "sg.bio.jc.eukaryotic_gene_regulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.monohybrid_crosses",
+      "target": "sg.bio.jc.dihybrid_crosses",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.sex_linkage",
+      "target": "sg.bio.jc.dihybrid_crosses",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.dihybrid_crosses",
+      "target": "sg.bio.jc.gene_linkage",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.dihybrid_crosses",
+      "target": "sg.bio.jc.epistasis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.dihybrid_crosses",
+      "target": "sg.bio.jc.chi_squared",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.sex_linkage",
+      "target": "sg.bio.jc.pedigree_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.dihybrid_crosses",
+      "target": "sg.bio.jc.pedigree_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.dna_replication",
+      "target": "sg.bio.jc.gene_mutations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.translation",
+      "target": "sg.bio.jc.gene_mutations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.gene_mutations",
+      "target": "sg.bio.jc.chromosome_mutations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.gene_mutations",
+      "target": "sg.bio.jc.cancer_genetics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.eukaryotic_gene_regulation",
+      "target": "sg.bio.jc.cancer_genetics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.dna_replication",
+      "target": "sg.bio.jc.pcr",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.pcr",
+      "target": "sg.bio.jc.gel_electrophoresis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.genetic_engineering",
+      "target": "sg.bio.jc.genetic_engineering_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.gel_electrophoresis",
+      "target": "sg.bio.jc.genetic_engineering_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.genetic_engineering_h2",
+      "target": "sg.bio.jc.genomics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.aerobic_respiration",
+      "target": "sg.bio.jc.glycolysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.cofactors_coenzymes",
+      "target": "sg.bio.jc.glycolysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.glycolysis",
+      "target": "sg.bio.jc.link_reaction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.link_reaction",
+      "target": "sg.bio.jc.krebs_cycle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.krebs_cycle",
+      "target": "sg.bio.jc.oxidative_phosphorylation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.glycolysis",
+      "target": "sg.bio.jc.anaerobic_respiration_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.anaerobic_respiration",
+      "target": "sg.bio.jc.anaerobic_respiration_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.factors_affecting_photosynthesis",
+      "target": "sg.bio.jc.light_dependent_reactions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.cofactors_coenzymes",
+      "target": "sg.bio.jc.light_dependent_reactions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.oxidative_phosphorylation",
+      "target": "sg.bio.jc.light_dependent_reactions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.light_dependent_reactions",
+      "target": "sg.bio.jc.calvin_cycle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.calvin_cycle",
+      "target": "sg.bio.jc.limiting_factors_photosynthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.mitosis",
+      "target": "sg.bio.jc.mitosis_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.dna_replication",
+      "target": "sg.bio.jc.mitosis_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.meiosis",
+      "target": "sg.bio.jc.meiosis_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.mitosis_h2",
+      "target": "sg.bio.jc.meiosis_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.cell_cycle",
+      "target": "sg.bio.jc.cell_cycle_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.mitosis_h2",
+      "target": "sg.bio.jc.cell_cycle_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.cancer_genetics",
+      "target": "sg.bio.jc.cell_cycle_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.natural_selection",
+      "target": "sg.bio.jc.natural_selection_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.gene_mutations",
+      "target": "sg.bio.jc.natural_selection_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.natural_selection_h2",
+      "target": "sg.bio.jc.evidence_evolution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.natural_selection_h2",
+      "target": "sg.bio.jc.speciation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.natural_selection_h2",
+      "target": "sg.bio.jc.hardy_weinberg",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.hardy_weinberg",
+      "target": "sg.bio.jc.genetic_drift",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.speciation",
+      "target": "sg.bio.jc.taxonomy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.evidence_evolution",
+      "target": "sg.bio.jc.taxonomy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.speciation",
+      "target": "sg.bio.jc.species_concept",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.taxonomy",
+      "target": "sg.bio.jc.biodiversity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.biodiversity",
+      "target": "sg.bio.jc.threats_biodiversity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.threats_biodiversity",
+      "target": "sg.bio.jc.conservation_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.threats_biodiversity",
+      "target": "sg.bio.jc.climate_change",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.greenhouse_effect",
+      "target": "sg.bio.jc.climate_change",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.food_chains_webs",
+      "target": "sg.bio.jc.energy_flow_ecosystems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.biodiversity",
+      "target": "sg.bio.jc.population_ecology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.population_ecology",
+      "target": "sg.bio.jc.community_ecology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.community_ecology",
+      "target": "sg.bio.jc.energy_flow_ecosystems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.ol.nutrient_cycling",
+      "target": "sg.bio.jc.nutrient_cycling_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.bio.jc.energy_flow_ecosystems",
+      "target": "sg.bio.jc.nutrient_cycling_h2",
+      "relation": "prerequisite_for"
+    }
   ]
 }

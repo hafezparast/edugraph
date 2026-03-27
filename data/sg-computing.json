@@ -3,429 +3,2212 @@
     "domain": "computing",
     "curriculum": "Singapore Computing (O-Level + H2)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
-    "description": "Singapore Computing curriculum covering O-Level and JC H2, with prerequisite ordering",
+    "version": "0.2.0",
+    "description": "Singapore Computing curriculum covering O-Level (7155) and JC H2 (9569), with prerequisite ordering",
     "sources": [
       "MOE Singapore Computing Syllabus (7155, 9569)"
     ],
     "last_updated": "2026-03-27"
   },
   "books": [
-    { "id": "sg.comp.ol.data", "name": "O-Level Data & Information", "color": "#3b82f6", "order": 1 },
-    { "id": "sg.comp.ol.systems", "name": "O-Level Computer Systems", "color": "#06b6d4", "order": 2 },
-    { "id": "sg.comp.ol.algo", "name": "O-Level Algorithms", "color": "#22c55e", "order": 3 },
-    { "id": "sg.comp.ol.prog", "name": "O-Level Programming", "color": "#f59e0b", "order": 4 },
-    { "id": "sg.comp.jc.algo", "name": "JC Algorithms & Data Structures", "color": "#1d4ed8", "order": 5 },
-    { "id": "sg.comp.jc.oop", "name": "JC Object-Oriented Programming", "color": "#0d9488", "order": 6 },
-    { "id": "sg.comp.jc.dataweb", "name": "JC Data & Web Technologies", "color": "#8b5cf6", "order": 7 },
-    { "id": "sg.comp.jc.networks", "name": "JC Networks & Security", "color": "#d97706", "order": 8 }
+    {
+      "id": "sg.comp.ol.data",
+      "name": "O-Level Data & Information",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "sg.comp.ol.systems",
+      "name": "O-Level Computer Systems",
+      "color": "#06b6d4",
+      "order": 2
+    },
+    {
+      "id": "sg.comp.ol.networks",
+      "name": "O-Level Networks & Security",
+      "color": "#14b8a6",
+      "order": 3
+    },
+    {
+      "id": "sg.comp.ol.algo",
+      "name": "O-Level Algorithms",
+      "color": "#22c55e",
+      "order": 4
+    },
+    {
+      "id": "sg.comp.ol.prog",
+      "name": "O-Level Programming",
+      "color": "#f59e0b",
+      "order": 5
+    },
+    {
+      "id": "sg.comp.jc.datarep",
+      "name": "JC Data Representation",
+      "color": "#6366f1",
+      "order": 6
+    },
+    {
+      "id": "sg.comp.jc.arch",
+      "name": "JC Computer Architecture",
+      "color": "#0ea5e9",
+      "order": 7
+    },
+    {
+      "id": "sg.comp.jc.networks",
+      "name": "JC Networks & Security",
+      "color": "#d97706",
+      "order": 8
+    },
+    {
+      "id": "sg.comp.jc.algo",
+      "name": "JC Algorithms & Analysis",
+      "color": "#1d4ed8",
+      "order": 9
+    },
+    {
+      "id": "sg.comp.jc.ds",
+      "name": "JC Data Structures",
+      "color": "#059669",
+      "order": 10
+    },
+    {
+      "id": "sg.comp.jc.oop",
+      "name": "JC Object-Oriented Programming",
+      "color": "#0d9488",
+      "order": 11
+    },
+    {
+      "id": "sg.comp.jc.db",
+      "name": "JC Databases & SQL",
+      "color": "#8b5cf6",
+      "order": 12
+    },
+    {
+      "id": "sg.comp.jc.swe",
+      "name": "JC Software Engineering",
+      "color": "#e11d48",
+      "order": 13
+    }
   ],
   "nodes": [
     {
-      "id": "sg.comp.ol.number_systems",
+      "id": "sg.cs.ol.number_systems",
       "label": "Number Systems",
       "type": "concept",
-      "description": "Binary, denary, hexadecimal; conversions; binary arithmetic",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Binary, denary and hexadecimal number systems; conversions between bases",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.comp.ol.data",
       "bookName": "O-Level Data & Information",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "252bbfe705801eb8",
+      "comprehended": false
     },
     {
-      "id": "sg.comp.ol.data_representation",
-      "label": "Data Representation",
+      "id": "sg.cs.ol.binary_arithmetic",
+      "label": "Binary Arithmetic",
       "type": "concept",
-      "description": "Text, image, sound representation; compression; encoding",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Binary addition, subtraction; overflow; two's complement for signed integers",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.comp.ol.data",
       "bookName": "O-Level Data & Information",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "cdfd29c2f4e143db",
+      "comprehended": false
     },
     {
-      "id": "sg.comp.ol.logic_gates",
+      "id": "sg.cs.ol.text_representation",
+      "label": "Text Representation",
+      "type": "concept",
+      "description": "ASCII and Unicode character encoding; text storage in binary",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.data",
+      "bookName": "O-Level Data & Information",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "f40b2e4083f004db",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.image_representation",
+      "label": "Image Representation",
+      "type": "concept",
+      "description": "Bitmap images; pixels, colour depth, resolution; image file size calculation",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.data",
+      "bookName": "O-Level Data & Information",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "5d889fe3d13f894b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.sound_representation",
+      "label": "Sound Representation",
+      "type": "concept",
+      "description": "Sampling; sample rate, bit depth, channels; sound file size calculation",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.data",
+      "bookName": "O-Level Data & Information",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "03f28ebb444dfee2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.data_compression",
+      "label": "Data Compression",
+      "type": "concept",
+      "description": "Lossy vs lossless compression; run-length encoding; need for compression",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.data",
+      "bookName": "O-Level Data & Information",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "67ae8d7b5a6f4f7a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.logic_gates",
       "label": "Logic Gates",
       "type": "concept",
-      "description": "AND, OR, NOT, NAND, NOR; truth tables; Boolean expressions",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "AND, OR, NOT, NAND, NOR gates; truth tables; logic circuits",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.comp.ol.data",
       "bookName": "O-Level Data & Information",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "dd9377956f1ade9b",
+      "comprehended": false
     },
     {
-      "id": "sg.comp.ol.databases",
-      "label": "Databases",
+      "id": "sg.cs.ol.boolean_expressions",
+      "label": "Boolean Expressions",
       "type": "concept",
-      "description": "Flat-file and relational databases; SQL basics; primary keys",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Writing and simplifying Boolean expressions from truth tables and logic circuits",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.comp.ol.data",
       "bookName": "O-Level Data & Information",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "ee993570c55f8f1e",
+      "comprehended": false
     },
     {
-      "id": "sg.comp.ol.hardware",
-      "label": "Computer Hardware",
+      "id": "sg.cs.ol.cpu_architecture",
+      "label": "CPU Architecture",
       "type": "concept",
-      "description": "CPU architecture; memory; input/output devices; secondary storage",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "ALU, control unit, registers; fetch-decode-execute cycle; clock speed",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.comp.ol.systems",
       "bookName": "O-Level Computer Systems",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "9a08d271e20517ce",
+      "comprehended": false
     },
     {
-      "id": "sg.comp.ol.software",
-      "label": "Software & OS",
+      "id": "sg.cs.ol.memory",
+      "label": "Memory",
       "type": "concept",
-      "description": "System software; application software; operating system functions",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "RAM and ROM; cache memory; virtual memory; memory hierarchy",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.comp.ol.systems",
       "bookName": "O-Level Computer Systems",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "8994817f8f3d2b95",
+      "comprehended": false
     },
     {
-      "id": "sg.comp.ol.networks_ol",
-      "label": "Networks",
+      "id": "sg.cs.ol.secondary_storage",
+      "label": "Secondary Storage",
       "type": "concept",
-      "description": "LAN, WAN; network topologies; protocols; internet basics",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Magnetic, optical and solid-state storage; capacity; speed; cost comparisons",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.comp.ol.systems",
       "bookName": "O-Level Computer Systems",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "298e6465fc145494",
+      "comprehended": false
     },
     {
-      "id": "sg.comp.ol.cyber_security",
-      "label": "Cyber Security",
+      "id": "sg.cs.ol.io_devices",
+      "label": "Input & Output Devices",
       "type": "concept",
-      "description": "Threats; authorisation; encryption basics; ethical issues",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Input devices (keyboard, mouse, scanner, microphone); output devices (monitor, printer, speaker)",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.comp.ol.systems",
       "bookName": "O-Level Computer Systems",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "eff810b962d604c6",
+      "comprehended": false
     },
     {
-      "id": "sg.comp.ol.algo_design",
-      "label": "Algorithm Design",
+      "id": "sg.cs.ol.operating_systems",
+      "label": "Operating Systems",
       "type": "concept",
-      "description": "Flowcharts; pseudocode; structured programming; decomposition",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.ol.algo",
-      "bookName": "O-Level Algorithms",
-      "bookColor": "#22c55e",
-      "bookOrder": 3
+      "description": "Functions of OS; memory management; process scheduling; file management; user interface",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.systems",
+      "bookName": "O-Level Computer Systems",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "f928fa2dfd142b80",
+      "comprehended": false
     },
     {
-      "id": "sg.comp.ol.searching_sorting",
-      "label": "Searching & Sorting",
+      "id": "sg.cs.ol.system_software",
+      "label": "System & Application Software",
       "type": "concept",
-      "description": "Linear search; binary search; bubble sort; insertion sort",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.ol.algo",
-      "bookName": "O-Level Algorithms",
-      "bookColor": "#22c55e",
-      "bookOrder": 3
+      "description": "Types of software; compilers, interpreters, assemblers; utility software; application software",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.systems",
+      "bookName": "O-Level Computer Systems",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "c728e2cd47a0298f",
+      "comprehended": false
     },
     {
-      "id": "sg.comp.ol.validation",
-      "label": "Validation & Testing",
+      "id": "sg.cs.ol.embedded_systems",
+      "label": "Embedded Systems",
       "type": "concept",
-      "description": "Validation checks; test data; trace tables; debugging",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.ol.algo",
-      "bookName": "O-Level Algorithms",
-      "bookColor": "#22c55e",
-      "bookOrder": 3
+      "description": "Microcontrollers; sensors and actuators; real-world applications of embedded computing",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.systems",
+      "bookName": "O-Level Computer Systems",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "b6a77fb96b33bf96",
+      "comprehended": false
     },
     {
-      "id": "sg.comp.ol.variables",
-      "label": "Variables & Data Types",
+      "id": "sg.cs.ol.network_types",
+      "label": "Network Types & Topologies",
       "type": "concept",
-      "description": "Data types; variables; constants; type casting",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.ol.prog",
-      "bookName": "O-Level Programming",
-      "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "description": "LAN, WAN, MAN; star, bus, ring topologies; peer-to-peer vs client-server",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.networks",
+      "bookName": "O-Level Networks & Security",
+      "bookColor": "#14b8a6",
+      "bookOrder": 3,
+      "external_id": "3a28fa81b46b3037",
+      "comprehended": false
     },
     {
-      "id": "sg.comp.ol.control_structures",
-      "label": "Control Structures",
+      "id": "sg.cs.ol.network_hardware",
+      "label": "Network Hardware",
       "type": "concept",
-      "description": "Selection (if/else); iteration (for, while); nested structures",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.ol.prog",
-      "bookName": "O-Level Programming",
-      "bookColor": "#f59e0b",
-      "bookOrder": 4
+      "description": "Routers, switches, hubs, access points, NICs; wired and wireless media",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.networks",
+      "bookName": "O-Level Networks & Security",
+      "bookColor": "#14b8a6",
+      "bookOrder": 3,
+      "external_id": "954b82605de38115",
+      "comprehended": false
     },
     {
-      "id": "sg.comp.ol.arrays",
-      "label": "Arrays & Strings",
-      "type": "concept",
-      "description": "1D and 2D arrays; string manipulation; array operations",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.ol.prog",
-      "bookName": "O-Level Programming",
-      "bookColor": "#f59e0b",
-      "bookOrder": 4
-    },
-    {
-      "id": "sg.comp.ol.functions",
-      "label": "Functions & Procedures",
-      "type": "concept",
-      "description": "Defining and calling functions; parameters; return values; scope",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.ol.prog",
-      "bookName": "O-Level Programming",
-      "bookColor": "#f59e0b",
-      "bookOrder": 4
-    },
-    {
-      "id": "sg.comp.jc.complexity",
-      "label": "Algorithm Complexity",
-      "type": "concept",
-      "description": "Big-O notation; time and space complexity; best/worst/average case",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.jc.algo",
-      "bookName": "JC Algorithms & Data Structures",
-      "bookColor": "#1d4ed8",
-      "bookOrder": 5
-    },
-    {
-      "id": "sg.comp.jc.advanced_sorting",
-      "label": "Advanced Sorting & Searching",
-      "type": "concept",
-      "description": "Merge sort; quicksort; hashing; hash tables",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.jc.algo",
-      "bookName": "JC Algorithms & Data Structures",
-      "bookColor": "#1d4ed8",
-      "bookOrder": 5
-    },
-    {
-      "id": "sg.comp.jc.linked_lists",
-      "label": "Linked Lists",
-      "type": "concept",
-      "description": "Singly and doubly linked lists; insertion and deletion",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.jc.algo",
-      "bookName": "JC Algorithms & Data Structures",
-      "bookColor": "#1d4ed8",
-      "bookOrder": 5
-    },
-    {
-      "id": "sg.comp.jc.stacks_queues",
-      "label": "Stacks & Queues",
-      "type": "concept",
-      "description": "Stack and queue ADTs; implementations; applications",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.jc.algo",
-      "bookName": "JC Algorithms & Data Structures",
-      "bookColor": "#1d4ed8",
-      "bookOrder": 5
-    },
-    {
-      "id": "sg.comp.jc.trees_graphs",
-      "label": "Trees & Graphs",
-      "type": "concept",
-      "description": "Binary trees; BST; graph representations; BFS; DFS",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.jc.algo",
-      "bookName": "JC Algorithms & Data Structures",
-      "bookColor": "#1d4ed8",
-      "bookOrder": 5
-    },
-    {
-      "id": "sg.comp.jc.recursion",
-      "label": "Recursion",
-      "type": "concept",
-      "description": "Recursive functions; base case; recursive thinking; tail recursion",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.jc.algo",
-      "bookName": "JC Algorithms & Data Structures",
-      "bookColor": "#1d4ed8",
-      "bookOrder": 5
-    },
-    {
-      "id": "sg.comp.jc.oop_concepts",
-      "label": "OOP Concepts",
-      "type": "concept",
-      "description": "Classes and objects; encapsulation; constructors; methods",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.jc.oop",
-      "bookName": "JC Object-Oriented Programming",
-      "bookColor": "#0d9488",
-      "bookOrder": 6
-    },
-    {
-      "id": "sg.comp.jc.inheritance_poly",
-      "label": "Inheritance & Polymorphism",
-      "type": "concept",
-      "description": "Inheritance hierarchies; polymorphism; abstract classes; interfaces",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.jc.oop",
-      "bookName": "JC Object-Oriented Programming",
-      "bookColor": "#0d9488",
-      "bookOrder": 6
-    },
-    {
-      "id": "sg.comp.jc.file_io",
-      "label": "File I/O & Exception Handling",
-      "type": "concept",
-      "description": "Reading/writing files; exception handling; error management",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.jc.oop",
-      "bookName": "JC Object-Oriented Programming",
-      "bookColor": "#0d9488",
-      "bookOrder": 6
-    },
-    {
-      "id": "sg.comp.jc.rdbms",
-      "label": "Relational Databases (H2)",
-      "type": "concept",
-      "description": "Normalisation; ER diagrams; advanced SQL; joins",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.jc.dataweb",
-      "bookName": "JC Data & Web Technologies",
-      "bookColor": "#8b5cf6",
-      "bookOrder": 7
-    },
-    {
-      "id": "sg.comp.jc.web_tech",
-      "label": "Web Technologies",
-      "type": "concept",
-      "description": "HTML, CSS, JavaScript; client-server model; web applications",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.jc.dataweb",
-      "bookName": "JC Data & Web Technologies",
-      "bookColor": "#8b5cf6",
-      "bookOrder": 7
-    },
-    {
-      "id": "sg.comp.jc.data_analytics",
-      "label": "Data Analytics",
-      "type": "concept",
-      "description": "Data collection; data cleaning; visualisation; basic statistical analysis",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.jc.dataweb",
-      "bookName": "JC Data & Web Technologies",
-      "bookColor": "#8b5cf6",
-      "bookOrder": 7
-    },
-    {
-      "id": "sg.comp.jc.network_arch",
-      "label": "Network Architecture",
-      "type": "concept",
-      "description": "OSI/TCP-IP model; routing; IP addressing; subnetting",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.jc.networks",
-      "bookName": "JC Networks & Security",
-      "bookColor": "#d97706",
-      "bookOrder": 8
-    },
-    {
-      "id": "sg.comp.jc.network_protocols",
+      "id": "sg.cs.ol.network_protocols",
       "label": "Network Protocols",
       "type": "concept",
-      "description": "HTTP, FTP, SMTP, DNS; protocol stack; socket programming",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.jc.networks",
-      "bookName": "JC Networks & Security",
-      "bookColor": "#d97706",
-      "bookOrder": 8
+      "description": "TCP/IP; HTTP/HTTPS; FTP; email protocols (SMTP, POP3, IMAP); DNS",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.networks",
+      "bookName": "O-Level Networks & Security",
+      "bookColor": "#14b8a6",
+      "bookOrder": 3,
+      "external_id": "040da40ae7241b47",
+      "comprehended": false
     },
     {
-      "id": "sg.comp.jc.security_h2",
-      "label": "Security (H2)",
+      "id": "sg.cs.ol.internet",
+      "label": "The Internet & WWW",
       "type": "concept",
-      "description": "Symmetric and asymmetric encryption; digital signatures; firewalls; security policies",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
-      "book": "sg.comp.jc.networks",
-      "bookName": "JC Networks & Security",
-      "bookColor": "#d97706",
-      "bookOrder": 8
+      "description": "How the internet works; IP addressing; URLs; web browsers; ISPs; packet switching",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.networks",
+      "bookName": "O-Level Networks & Security",
+      "bookColor": "#14b8a6",
+      "bookOrder": 3,
+      "external_id": "532b1cbc3433b4c2",
+      "comprehended": false
     },
     {
-      "id": "sg.comp.jc.social_ethical",
-      "label": "Social & Ethical Issues",
+      "id": "sg.cs.ol.cyber_threats",
+      "label": "Cyber Threats",
       "type": "concept",
-      "description": "Intellectual property; data protection; AI ethics; digital divide",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Malware (virus, worm, trojan, ransomware); phishing; social engineering; denial-of-service",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.networks",
+      "bookName": "O-Level Networks & Security",
+      "bookColor": "#14b8a6",
+      "bookOrder": 3,
+      "external_id": "c77d96458badf588",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.security_measures",
+      "label": "Security Measures",
+      "type": "concept",
+      "description": "Firewalls; anti-virus; encryption basics; authentication; access control; backups",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.networks",
+      "bookName": "O-Level Networks & Security",
+      "bookColor": "#14b8a6",
+      "bookOrder": 3,
+      "external_id": "90a6e13e81ce7c88",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.ethical_issues",
+      "label": "Ethical & Social Issues",
+      "type": "concept",
+      "description": "Data privacy; intellectual property; software licensing; digital divide; responsible use",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.networks",
+      "bookName": "O-Level Networks & Security",
+      "bookColor": "#14b8a6",
+      "bookOrder": 3,
+      "external_id": "9f14f4529836e4fb",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.algo_design",
+      "label": "Algorithm Design",
+      "type": "concept",
+      "description": "Problem decomposition; structured approach; identifying inputs, outputs, processes",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.algo",
+      "bookName": "O-Level Algorithms",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "d1982512917f4beb",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.flowcharts",
+      "label": "Flowcharts",
+      "type": "concept",
+      "description": "Standard flowchart symbols; drawing and interpreting flowcharts for algorithms",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.algo",
+      "bookName": "O-Level Algorithms",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "a9df46cc5d560d9f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.pseudocode",
+      "label": "Pseudocode",
+      "type": "concept",
+      "description": "Writing pseudocode; standard pseudocode conventions; translating between pseudocode and code",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.algo",
+      "bookName": "O-Level Algorithms",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "f0790ffc672bd178",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.linear_search",
+      "label": "Linear Search",
+      "type": "concept",
+      "description": "Sequential search through a list; implementation; efficiency considerations",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.algo",
+      "bookName": "O-Level Algorithms",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "585dad903634fab6",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.binary_search",
+      "label": "Binary Search",
+      "type": "concept",
+      "description": "Searching sorted lists by halving; implementation; comparison with linear search",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.algo",
+      "bookName": "O-Level Algorithms",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "3c2517187c87629b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.bubble_sort",
+      "label": "Bubble Sort",
+      "type": "concept",
+      "description": "Bubble sort algorithm; step-by-step tracing; optimisation with flag",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.algo",
+      "bookName": "O-Level Algorithms",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "af25afa80418cc4d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.insertion_sort",
+      "label": "Insertion Sort",
+      "type": "concept",
+      "description": "Insertion sort algorithm; tracing; comparison with bubble sort",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.algo",
+      "bookName": "O-Level Algorithms",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "dd5df82d884fddb2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.trace_tables",
+      "label": "Trace Tables",
+      "type": "concept",
+      "description": "Dry-running algorithms using trace tables; tracking variable values step by step",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.algo",
+      "bookName": "O-Level Algorithms",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "4af6f016e378a0d7",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.validation_verification",
+      "label": "Validation & Verification",
+      "type": "concept",
+      "description": "Validation checks (range, length, type, format, presence); verification methods",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.algo",
+      "bookName": "O-Level Algorithms",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "7a3bdea7ca1f4f9f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.testing",
+      "label": "Testing & Debugging",
+      "type": "concept",
+      "description": "Test data (normal, boundary, erroneous); debugging techniques; error types (syntax, logic, runtime)",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.algo",
+      "bookName": "O-Level Algorithms",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "4dd10bb54392f46d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.variables_constants",
+      "label": "Variables & Constants",
+      "type": "concept",
+      "description": "Declaring variables; naming conventions; constants; assignment",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.prog",
+      "bookName": "O-Level Programming",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "ccb7ba661d314b55",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.data_types",
+      "label": "Data Types",
+      "type": "concept",
+      "description": "Integer, float/real, string, char, Boolean; type casting and conversion",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.prog",
+      "bookName": "O-Level Programming",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "87b8fdff092a4d55",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.operators",
+      "label": "Operators & Expressions",
+      "type": "concept",
+      "description": "Arithmetic (+, -, *, /, //, %); comparison; logical (AND, OR, NOT); operator precedence",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.prog",
+      "bookName": "O-Level Programming",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "44f6ecd1786e79c4",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.input_output",
+      "label": "Input & Output",
+      "type": "concept",
+      "description": "Reading user input; displaying output; formatting output in Python",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.prog",
+      "bookName": "O-Level Programming",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "24d52eb8b32dfa2b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.selection",
+      "label": "Selection (if/elif/else)",
+      "type": "concept",
+      "description": "if, elif, else statements; nested selection; multi-way branching",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.prog",
+      "bookName": "O-Level Programming",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "289385a36234634e",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.iteration",
+      "label": "Iteration (Loops)",
+      "type": "concept",
+      "description": "for loops; while loops; nested loops; loop control (break, continue)",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.prog",
+      "bookName": "O-Level Programming",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "9af2a95489c8f565",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.strings",
+      "label": "String Manipulation",
+      "type": "concept",
+      "description": "String indexing and slicing; concatenation; string methods (len, upper, lower, find, split)",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.prog",
+      "bookName": "O-Level Programming",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "e7d22de637815a85",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.arrays_lists",
+      "label": "Arrays / Lists",
+      "type": "concept",
+      "description": "1D and 2D arrays (Python lists); indexing; traversal; insertion; deletion; list methods",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.prog",
+      "bookName": "O-Level Programming",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "84dee249ed196a77",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.functions",
+      "label": "Functions & Procedures",
+      "type": "concept",
+      "description": "Defining and calling functions; parameters and arguments; return values; scope of variables",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.prog",
+      "bookName": "O-Level Programming",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "44bbdac22f219b94",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.file_handling",
+      "label": "File Handling",
+      "type": "concept",
+      "description": "Reading from and writing to text files; CSV file processing in Python",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.prog",
+      "bookName": "O-Level Programming",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "1572404c1a362ffc",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.databases",
+      "label": "Databases",
+      "type": "concept",
+      "description": "Flat-file vs relational databases; tables, records, fields; primary keys; foreign keys",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.data",
+      "bookName": "O-Level Data & Information",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "d14c533f0d1f66bc",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.ol.sql_basics",
+      "label": "SQL Basics",
+      "type": "concept",
+      "description": "SELECT, FROM, WHERE; INSERT, UPDATE, DELETE; ORDER BY; simple queries on single tables",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.ol.data",
+      "bookName": "O-Level Data & Information",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "3d369cd6008fc473",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.number_representation",
+      "label": "Number Representation (H2)",
+      "type": "concept",
+      "description": "Two's complement; fixed and floating point representation; precision and range trade-offs",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.datarep",
+      "bookName": "JC Data Representation",
+      "bookColor": "#6366f1",
+      "bookOrder": 6,
+      "external_id": "85507ee04ddd5a2f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.floating_point",
+      "label": "Floating-Point Representation",
+      "type": "concept",
+      "description": "Mantissa and exponent; normalisation; floating-point arithmetic; rounding errors",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.datarep",
+      "bookName": "JC Data Representation",
+      "bookColor": "#6366f1",
+      "bookOrder": 6,
+      "external_id": "df10b51077eecb0e",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.data_formats",
+      "label": "Data Formats & Encoding (H2)",
+      "type": "concept",
+      "description": "Advanced text encoding (UTF-8/16); vector vs bitmap graphics; video representation; data formats",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.datarep",
+      "bookName": "JC Data Representation",
+      "bookColor": "#6366f1",
+      "bookOrder": 6,
+      "external_id": "cdcbd8e5eb69f75d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.boolean_algebra",
+      "label": "Boolean Algebra (H2)",
+      "type": "concept",
+      "description": "Boolean identities; De Morgan's laws; simplification using Karnaugh maps; XOR, XNOR gates",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.datarep",
+      "bookName": "JC Data Representation",
+      "bookColor": "#6366f1",
+      "bookOrder": 6,
+      "external_id": "ac3305ce724c9835",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.processor_architecture",
+      "label": "Processor Architecture (H2)",
+      "type": "concept",
+      "description": "Von Neumann architecture; buses; instruction set; registers; pipelining; RISC vs CISC",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.arch",
+      "bookName": "JC Computer Architecture",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 7,
+      "external_id": "38f78656143a214c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.memory_management",
+      "label": "Memory Management (H2)",
+      "type": "concept",
+      "description": "Paging; segmentation; virtual memory; memory allocation; garbage collection",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.arch",
+      "bookName": "JC Computer Architecture",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 7,
+      "external_id": "efb6506e052ce1b0",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.os_concepts",
+      "label": "OS Concepts (H2)",
+      "type": "concept",
+      "description": "Process management; scheduling algorithms; concurrency; deadlock; interrupts",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.arch",
+      "bookName": "JC Computer Architecture",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 7,
+      "external_id": "15fa4e57ef41fe15",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.assembly_language",
+      "label": "Assembly Language",
+      "type": "concept",
+      "description": "Machine code; assembly mnemonics; addressing modes; instruction execution",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.arch",
+      "bookName": "JC Computer Architecture",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 7,
+      "external_id": "84d036381320eab7",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.network_architecture",
+      "label": "Network Architecture (H2)",
+      "type": "concept",
+      "description": "OSI model layers; TCP/IP model; comparison; encapsulation and decapsulation",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.comp.jc.networks",
       "bookName": "JC Networks & Security",
       "bookColor": "#d97706",
-      "bookOrder": 8
+      "bookOrder": 8,
+      "external_id": "5507958fc6dae6b0",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.ip_addressing",
+      "label": "IP Addressing & Subnetting",
+      "type": "concept",
+      "description": "IPv4 and IPv6; subnet masks; CIDR notation; subnetting; NAT",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.networks",
+      "bookName": "JC Networks & Security",
+      "bookColor": "#d97706",
+      "bookOrder": 8,
+      "external_id": "c7d722ab9dd464ba",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.routing",
+      "label": "Routing",
+      "type": "concept",
+      "description": "Routing tables; static and dynamic routing; routing protocols; traceroute",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.networks",
+      "bookName": "JC Networks & Security",
+      "bookColor": "#d97706",
+      "bookOrder": 8,
+      "external_id": "f67739c1aec9ab21",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.protocols_h2",
+      "label": "Application Protocols (H2)",
+      "type": "concept",
+      "description": "HTTP/HTTPS; FTP; SMTP/POP3/IMAP; DNS resolution; DHCP; socket programming basics",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.networks",
+      "bookName": "JC Networks & Security",
+      "bookColor": "#d97706",
+      "bookOrder": 8,
+      "external_id": "ddb22e19bd609b68",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.encryption",
+      "label": "Encryption & Cryptography",
+      "type": "concept",
+      "description": "Symmetric vs asymmetric encryption; public/private keys; digital signatures; SSL/TLS; hashing",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.networks",
+      "bookName": "JC Networks & Security",
+      "bookColor": "#d97706",
+      "bookOrder": 8,
+      "external_id": "05b16684d8125884",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.network_security",
+      "label": "Network Security (H2)",
+      "type": "concept",
+      "description": "Firewalls; intrusion detection; VPN; security policies; penetration testing; defence in depth",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.networks",
+      "bookName": "JC Networks & Security",
+      "bookColor": "#d97706",
+      "bookOrder": 8,
+      "external_id": "c1a815d4d27e835d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.social_ethical",
+      "label": "Social & Ethical Issues (H2)",
+      "type": "concept",
+      "description": "Intellectual property; data protection legislation; AI ethics; digital divide; responsible computing",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.networks",
+      "bookName": "JC Networks & Security",
+      "bookColor": "#d97706",
+      "bookOrder": 8,
+      "external_id": "255c5ce5fdeddf30",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.complexity",
+      "label": "Algorithm Complexity",
+      "type": "concept",
+      "description": "Big-O notation; time and space complexity; best, worst, average case analysis",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.algo",
+      "bookName": "JC Algorithms & Analysis",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 9,
+      "external_id": "5fad12dc547e78ff",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.merge_sort",
+      "label": "Merge Sort",
+      "type": "concept",
+      "description": "Divide-and-conquer merge sort; tracing; O(n log n) time complexity; space usage",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.algo",
+      "bookName": "JC Algorithms & Analysis",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 9,
+      "external_id": "7bc1610167d4f0e4",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.quicksort",
+      "label": "Quicksort",
+      "type": "concept",
+      "description": "Quicksort algorithm; pivot selection; partitioning; average vs worst-case complexity",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.algo",
+      "bookName": "JC Algorithms & Analysis",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 9,
+      "external_id": "48aeed8ff6084fec",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.recursion",
+      "label": "Recursion",
+      "type": "concept",
+      "description": "Recursive functions; base case and recursive case; call stack; tail recursion; recursion vs iteration",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.algo",
+      "bookName": "JC Algorithms & Analysis",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 9,
+      "external_id": "a40a6c876ff76d11",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.graph_algorithms",
+      "label": "Graph Algorithms",
+      "type": "concept",
+      "description": "Breadth-first search (BFS); depth-first search (DFS); shortest path (Dijkstra's); applications",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.algo",
+      "bookName": "JC Algorithms & Analysis",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 9,
+      "external_id": "a8bea42bcebf9af5",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.hashing_algorithms",
+      "label": "Hashing Algorithms",
+      "type": "concept",
+      "description": "Hash functions; collision resolution (chaining, open addressing); hash table operations",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.algo",
+      "bookName": "JC Algorithms & Analysis",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 9,
+      "external_id": "0ee4f51105b94b0a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.arrays_ds",
+      "label": "Arrays (H2)",
+      "type": "concept",
+      "description": "Static vs dynamic arrays; 2D arrays; array-based implementations; advantages and limitations",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.ds",
+      "bookName": "JC Data Structures",
+      "bookColor": "#059669",
+      "bookOrder": 10,
+      "external_id": "f89cf884e0b3006b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.linked_lists",
+      "label": "Linked Lists",
+      "type": "concept",
+      "description": "Singly and doubly linked lists; insertion, deletion, traversal; comparison with arrays",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.ds",
+      "bookName": "JC Data Structures",
+      "bookColor": "#059669",
+      "bookOrder": 10,
+      "external_id": "fab954ff2f7183df",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.stacks",
+      "label": "Stacks",
+      "type": "concept",
+      "description": "Stack ADT; LIFO principle; push, pop, peek; array and linked-list implementations; applications",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.ds",
+      "bookName": "JC Data Structures",
+      "bookColor": "#059669",
+      "bookOrder": 10,
+      "external_id": "a77153d272630f01",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.queues",
+      "label": "Queues",
+      "type": "concept",
+      "description": "Queue ADT; FIFO principle; enqueue, dequeue; circular queue; priority queue; implementations",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.ds",
+      "bookName": "JC Data Structures",
+      "bookColor": "#059669",
+      "bookOrder": 10,
+      "external_id": "1523b9c9d989e6b2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.binary_trees",
+      "label": "Binary Trees",
+      "type": "concept",
+      "description": "Binary tree structure; traversals (in-order, pre-order, post-order); binary search trees; insert, delete, search",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.ds",
+      "bookName": "JC Data Structures",
+      "bookColor": "#059669",
+      "bookOrder": 10,
+      "external_id": "67e4890e78decf65",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.graphs",
+      "label": "Graphs",
+      "type": "concept",
+      "description": "Graph terminology (vertex, edge, directed, undirected, weighted); adjacency matrix; adjacency list",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.ds",
+      "bookName": "JC Data Structures",
+      "bookColor": "#059669",
+      "bookOrder": 10,
+      "external_id": "1bfcd0a059d7257b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.hash_tables",
+      "label": "Hash Tables",
+      "type": "concept",
+      "description": "Hash table data structure; hash functions; collision handling; load factor; O(1) average access",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.ds",
+      "bookName": "JC Data Structures",
+      "bookColor": "#059669",
+      "bookOrder": 10,
+      "external_id": "4a07f53b529a412b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.oop_concepts",
+      "label": "Classes & Objects",
+      "type": "concept",
+      "description": "Defining classes; creating objects; attributes and methods; constructors; this/self reference",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.oop",
+      "bookName": "JC Object-Oriented Programming",
+      "bookColor": "#0d9488",
+      "bookOrder": 11,
+      "external_id": "ca4a2d851e3049ec",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.encapsulation",
+      "label": "Encapsulation",
+      "type": "concept",
+      "description": "Access modifiers (public, private, protected); getters and setters; data hiding; information hiding",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.oop",
+      "bookName": "JC Object-Oriented Programming",
+      "bookColor": "#0d9488",
+      "bookOrder": 11,
+      "external_id": "b6c10fbe43d919ff",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.inheritance",
+      "label": "Inheritance",
+      "type": "concept",
+      "description": "Superclass and subclass; extending classes; method overriding; super keyword; inheritance hierarchies",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.oop",
+      "bookName": "JC Object-Oriented Programming",
+      "bookColor": "#0d9488",
+      "bookOrder": 11,
+      "external_id": "9149b9cdc050202d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.polymorphism",
+      "label": "Polymorphism",
+      "type": "concept",
+      "description": "Method overloading; method overriding; dynamic binding; polymorphic references",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.oop",
+      "bookName": "JC Object-Oriented Programming",
+      "bookColor": "#0d9488",
+      "bookOrder": 11,
+      "external_id": "71a33ab111bad522",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.abstract_interfaces",
+      "label": "Abstract Classes & Interfaces",
+      "type": "concept",
+      "description": "Abstract classes; abstract methods; interfaces; implementing interfaces; design contracts",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.oop",
+      "bookName": "JC Object-Oriented Programming",
+      "bookColor": "#0d9488",
+      "bookOrder": 11,
+      "external_id": "bc56bac8bda5feb8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.exception_handling",
+      "label": "Exception Handling",
+      "type": "concept",
+      "description": "Try-catch blocks; throwing exceptions; checked vs unchecked exceptions; custom exceptions",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.oop",
+      "bookName": "JC Object-Oriented Programming",
+      "bookColor": "#0d9488",
+      "bookOrder": 11,
+      "external_id": "db8f6213dadeffcf",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.file_io",
+      "label": "File I/O (H2)",
+      "type": "concept",
+      "description": "Reading and writing files in Java; buffered I/O; serialisation; working with different file formats",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.oop",
+      "bookName": "JC Object-Oriented Programming",
+      "bookColor": "#0d9488",
+      "bookOrder": 11,
+      "external_id": "cfdf28e7e4ad1542",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.relational_model",
+      "label": "Relational Data Model",
+      "type": "concept",
+      "description": "Relations, tuples, attributes; primary key, foreign key, candidate key; referential integrity",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.db",
+      "bookName": "JC Databases & SQL",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 12,
+      "external_id": "db51bd20423eee2c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.er_diagrams",
+      "label": "Entity-Relationship Diagrams",
+      "type": "concept",
+      "description": "Entities, attributes, relationships; cardinality (1:1, 1:M, M:M); ER to relational mapping",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.db",
+      "bookName": "JC Databases & SQL",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 12,
+      "external_id": "5fbdcca48a70ddd5",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.normalisation",
+      "label": "Normalisation",
+      "type": "concept",
+      "description": "1NF, 2NF, 3NF; functional dependencies; removing redundancy; denormalisation trade-offs",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.db",
+      "bookName": "JC Databases & SQL",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 12,
+      "external_id": "6d9eb62c78a8cf86",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.sql_advanced",
+      "label": "Advanced SQL",
+      "type": "concept",
+      "description": "JOINs (INNER, LEFT, RIGHT); GROUP BY; HAVING; aggregate functions; subqueries; CREATE, ALTER, DROP",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.db",
+      "bookName": "JC Databases & SQL",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 12,
+      "external_id": "b0ee3c8e260df3da",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.db_integrity",
+      "label": "Database Integrity & Security",
+      "type": "concept",
+      "description": "Data integrity constraints; transactions; ACID properties; access control; SQL injection prevention",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.db",
+      "bookName": "JC Databases & SQL",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 12,
+      "external_id": "162d11a4926de67c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.sdlc",
+      "label": "Software Development Life Cycle",
+      "type": "concept",
+      "description": "Waterfall, iterative, agile methodologies; requirements analysis; design; implementation; testing; maintenance",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.swe",
+      "bookName": "JC Software Engineering",
+      "bookColor": "#e11d48",
+      "bookOrder": 13,
+      "external_id": "b886dc6e61df08a0",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.testing_strategies",
+      "label": "Testing Strategies (H2)",
+      "type": "concept",
+      "description": "Unit testing; integration testing; system testing; acceptance testing; black-box vs white-box testing",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.swe",
+      "bookName": "JC Software Engineering",
+      "bookColor": "#e11d48",
+      "bookOrder": 13,
+      "external_id": "523f6366e3793796",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.program_design",
+      "label": "Program Design",
+      "type": "concept",
+      "description": "Top-down and bottom-up design; modular design; UML class diagrams; design patterns basics",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.swe",
+      "bookName": "JC Software Engineering",
+      "bookColor": "#e11d48",
+      "bookOrder": 13,
+      "external_id": "00ba8abad41e42ec",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.web_tech",
+      "label": "Web Technologies",
+      "type": "concept",
+      "description": "HTML, CSS, JavaScript; client-server model; web applications; APIs; dynamic web pages",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.swe",
+      "bookName": "JC Software Engineering",
+      "bookColor": "#e11d48",
+      "bookOrder": 13,
+      "external_id": "e2bb7c798dbd8403",
+      "comprehended": false
+    },
+    {
+      "id": "sg.cs.jc.data_analytics",
+      "label": "Data Analytics",
+      "type": "concept",
+      "description": "Data collection and cleaning; data visualisation; basic statistical analysis; spreadsheet and database tools",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.comp.jc.swe",
+      "bookName": "JC Software Engineering",
+      "bookColor": "#e11d48",
+      "bookOrder": 13,
+      "external_id": "adc1f6aef413d479",
+      "comprehended": false
     }
   ],
   "edges": [
-    { "source": "sg.comp.ol.number_systems", "target": "sg.comp.ol.data_representation", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.number_systems", "target": "sg.comp.ol.logic_gates", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.data_representation", "target": "sg.comp.ol.databases", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.logic_gates", "target": "sg.comp.ol.hardware", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.hardware", "target": "sg.comp.ol.software", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.hardware", "target": "sg.comp.ol.networks_ol", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.networks_ol", "target": "sg.comp.ol.cyber_security", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.logic_gates", "target": "sg.comp.ol.algo_design", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.algo_design", "target": "sg.comp.ol.searching_sorting", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.algo_design", "target": "sg.comp.ol.validation", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.algo_design", "target": "sg.comp.ol.variables", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.variables", "target": "sg.comp.ol.control_structures", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.control_structures", "target": "sg.comp.ol.arrays", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.arrays", "target": "sg.comp.ol.functions", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.searching_sorting", "target": "sg.comp.jc.complexity", "relation": "prerequisite_for" },
-    { "source": "sg.comp.jc.complexity", "target": "sg.comp.jc.advanced_sorting", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.arrays", "target": "sg.comp.jc.linked_lists", "relation": "prerequisite_for" },
-    { "source": "sg.comp.jc.linked_lists", "target": "sg.comp.jc.stacks_queues", "relation": "prerequisite_for" },
-    { "source": "sg.comp.jc.stacks_queues", "target": "sg.comp.jc.trees_graphs", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.functions", "target": "sg.comp.jc.recursion", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.functions", "target": "sg.comp.jc.oop_concepts", "relation": "prerequisite_for" },
-    { "source": "sg.comp.jc.oop_concepts", "target": "sg.comp.jc.inheritance_poly", "relation": "prerequisite_for" },
-    { "source": "sg.comp.jc.oop_concepts", "target": "sg.comp.jc.file_io", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.databases", "target": "sg.comp.jc.rdbms", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.networks_ol", "target": "sg.comp.jc.web_tech", "relation": "prerequisite_for" },
-    { "source": "sg.comp.jc.rdbms", "target": "sg.comp.jc.data_analytics", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.networks_ol", "target": "sg.comp.jc.network_arch", "relation": "prerequisite_for" },
-    { "source": "sg.comp.jc.network_arch", "target": "sg.comp.jc.network_protocols", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.cyber_security", "target": "sg.comp.jc.security_h2", "relation": "prerequisite_for" },
-    { "source": "sg.comp.jc.network_protocols", "target": "sg.comp.jc.security_h2", "relation": "prerequisite_for" },
-    { "source": "sg.comp.jc.security_h2", "target": "sg.comp.jc.social_ethical", "relation": "prerequisite_for" },
-    { "source": "sg.comp.ol.software", "target": "sg.comp.jc.web_tech", "relation": "prerequisite_for" }
+    {
+      "source": "sg.cs.ol.number_systems",
+      "target": "sg.cs.ol.binary_arithmetic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.number_systems",
+      "target": "sg.cs.ol.text_representation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.number_systems",
+      "target": "sg.cs.ol.image_representation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.number_systems",
+      "target": "sg.cs.ol.sound_representation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.image_representation",
+      "target": "sg.cs.ol.data_compression",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.sound_representation",
+      "target": "sg.cs.ol.data_compression",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.number_systems",
+      "target": "sg.cs.ol.logic_gates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.logic_gates",
+      "target": "sg.cs.ol.boolean_expressions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.text_representation",
+      "target": "sg.cs.ol.databases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.databases",
+      "target": "sg.cs.ol.sql_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.boolean_expressions",
+      "target": "sg.cs.ol.cpu_architecture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.cpu_architecture",
+      "target": "sg.cs.ol.memory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.cpu_architecture",
+      "target": "sg.cs.ol.secondary_storage",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.cpu_architecture",
+      "target": "sg.cs.ol.io_devices",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.memory",
+      "target": "sg.cs.ol.operating_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.operating_systems",
+      "target": "sg.cs.ol.system_software",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.cpu_architecture",
+      "target": "sg.cs.ol.embedded_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.io_devices",
+      "target": "sg.cs.ol.embedded_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.cpu_architecture",
+      "target": "sg.cs.ol.network_types",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.network_types",
+      "target": "sg.cs.ol.network_hardware",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.network_hardware",
+      "target": "sg.cs.ol.network_protocols",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.network_protocols",
+      "target": "sg.cs.ol.internet",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.internet",
+      "target": "sg.cs.ol.cyber_threats",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.cyber_threats",
+      "target": "sg.cs.ol.security_measures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.security_measures",
+      "target": "sg.cs.ol.ethical_issues",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.algo_design",
+      "target": "sg.cs.ol.flowcharts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.algo_design",
+      "target": "sg.cs.ol.pseudocode",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.pseudocode",
+      "target": "sg.cs.ol.trace_tables",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.pseudocode",
+      "target": "sg.cs.ol.linear_search",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.linear_search",
+      "target": "sg.cs.ol.binary_search",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.pseudocode",
+      "target": "sg.cs.ol.bubble_sort",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.bubble_sort",
+      "target": "sg.cs.ol.insertion_sort",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.trace_tables",
+      "target": "sg.cs.ol.validation_verification",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.validation_verification",
+      "target": "sg.cs.ol.testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.pseudocode",
+      "target": "sg.cs.ol.variables_constants",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.variables_constants",
+      "target": "sg.cs.ol.data_types",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.data_types",
+      "target": "sg.cs.ol.operators",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.variables_constants",
+      "target": "sg.cs.ol.input_output",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.operators",
+      "target": "sg.cs.ol.selection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.selection",
+      "target": "sg.cs.ol.iteration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.iteration",
+      "target": "sg.cs.ol.strings",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.iteration",
+      "target": "sg.cs.ol.arrays_lists",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.arrays_lists",
+      "target": "sg.cs.ol.functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.strings",
+      "target": "sg.cs.ol.functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.functions",
+      "target": "sg.cs.ol.file_handling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.binary_arithmetic",
+      "target": "sg.cs.jc.number_representation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.number_representation",
+      "target": "sg.cs.jc.floating_point",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.data_compression",
+      "target": "sg.cs.jc.data_formats",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.boolean_expressions",
+      "target": "sg.cs.jc.boolean_algebra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.cpu_architecture",
+      "target": "sg.cs.jc.processor_architecture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.processor_architecture",
+      "target": "sg.cs.jc.assembly_language",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.memory",
+      "target": "sg.cs.jc.memory_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.processor_architecture",
+      "target": "sg.cs.jc.memory_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.operating_systems",
+      "target": "sg.cs.jc.os_concepts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.memory_management",
+      "target": "sg.cs.jc.os_concepts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.network_protocols",
+      "target": "sg.cs.jc.network_architecture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.network_architecture",
+      "target": "sg.cs.jc.ip_addressing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.ip_addressing",
+      "target": "sg.cs.jc.routing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.network_architecture",
+      "target": "sg.cs.jc.protocols_h2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.security_measures",
+      "target": "sg.cs.jc.encryption",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.protocols_h2",
+      "target": "sg.cs.jc.encryption",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.encryption",
+      "target": "sg.cs.jc.network_security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.network_security",
+      "target": "sg.cs.jc.social_ethical",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.ethical_issues",
+      "target": "sg.cs.jc.social_ethical",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.binary_search",
+      "target": "sg.cs.jc.complexity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.insertion_sort",
+      "target": "sg.cs.jc.complexity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.complexity",
+      "target": "sg.cs.jc.merge_sort",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.complexity",
+      "target": "sg.cs.jc.quicksort",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.functions",
+      "target": "sg.cs.jc.recursion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.complexity",
+      "target": "sg.cs.jc.recursion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.recursion",
+      "target": "sg.cs.jc.merge_sort",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.recursion",
+      "target": "sg.cs.jc.quicksort",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.complexity",
+      "target": "sg.cs.jc.hashing_algorithms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.arrays_lists",
+      "target": "sg.cs.jc.arrays_ds",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.arrays_ds",
+      "target": "sg.cs.jc.linked_lists",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.linked_lists",
+      "target": "sg.cs.jc.stacks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.linked_lists",
+      "target": "sg.cs.jc.queues",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.stacks",
+      "target": "sg.cs.jc.binary_trees",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.queues",
+      "target": "sg.cs.jc.binary_trees",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.binary_trees",
+      "target": "sg.cs.jc.graphs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.graphs",
+      "target": "sg.cs.jc.graph_algorithms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.hashing_algorithms",
+      "target": "sg.cs.jc.hash_tables",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.functions",
+      "target": "sg.cs.jc.oop_concepts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.oop_concepts",
+      "target": "sg.cs.jc.encapsulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.encapsulation",
+      "target": "sg.cs.jc.inheritance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.inheritance",
+      "target": "sg.cs.jc.polymorphism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.polymorphism",
+      "target": "sg.cs.jc.abstract_interfaces",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.oop_concepts",
+      "target": "sg.cs.jc.exception_handling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.exception_handling",
+      "target": "sg.cs.jc.file_io",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.sql_basics",
+      "target": "sg.cs.jc.relational_model",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.relational_model",
+      "target": "sg.cs.jc.er_diagrams",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.er_diagrams",
+      "target": "sg.cs.jc.normalisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.relational_model",
+      "target": "sg.cs.jc.sql_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.normalisation",
+      "target": "sg.cs.jc.sql_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.sql_advanced",
+      "target": "sg.cs.jc.db_integrity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.testing",
+      "target": "sg.cs.jc.sdlc",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.oop_concepts",
+      "target": "sg.cs.jc.program_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.sdlc",
+      "target": "sg.cs.jc.testing_strategies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.sdlc",
+      "target": "sg.cs.jc.program_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.protocols_h2",
+      "target": "sg.cs.jc.web_tech",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.ol.system_software",
+      "target": "sg.cs.jc.web_tech",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.sql_advanced",
+      "target": "sg.cs.jc.data_analytics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.cs.jc.web_tech",
+      "target": "sg.cs.jc.data_analytics",
+      "relation": "prerequisite_for"
+    }
   ]
 }

@@ -4,40 +4,405 @@
     "curriculum": "Malaysia STPM (922)",
     "version": "0.1.0",
     "description": "Kesusasteraan Melayu Komunikatif — STPM Communicative Malay Literature",
-    "sources": ["MPM STPM Syllabus"],
+    "sources": [
+      "MPM STPM Syllabus"
+    ],
     "last_updated": "2026-03-27"
   },
   "books": [
-    {"id": "mlit.s1", "name": "STPM Sem 1", "color": "#ec4899", "order": 1},
-    {"id": "mlit.s2", "name": "STPM Sem 2", "color": "#db2777", "order": 2},
-    {"id": "mlit.s3", "name": "STPM Sem 3", "color": "#be185d", "order": 3}
+    {
+      "id": "mlit.s1",
+      "name": "STPM Sem 1",
+      "color": "#ec4899",
+      "order": 1
+    },
+    {
+      "id": "mlit.s2",
+      "name": "STPM Sem 2",
+      "color": "#db2777",
+      "order": 2
+    },
+    {
+      "id": "mlit.s3",
+      "name": "STPM Sem 3",
+      "color": "#be185d",
+      "order": 3
+    }
   ],
   "nodes": [
-    {"id": "mlit.s1.pengenalan", "label": "Introduction to Malay Literature", "type": "concept", "description": "Pengenalan Kesusasteraan Melayu — definition, functions, genres", "grade_range": ["STPM"], "tags": ["foundation"], "pages": "", "book": "mlit.s1", "bookName": "STPM Sem 1", "bookColor": "#ec4899", "bookOrder": 1},
-    {"id": "mlit.s1.puisi_tradisional", "label": "Traditional Poetry (Puisi Tradisional)", "type": "concept", "description": "Pantun, syair, gurindam, seloka, nazam", "grade_range": ["STPM"], "tags": ["poetry"], "pages": "", "book": "mlit.s1", "bookName": "STPM Sem 1", "bookColor": "#ec4899", "bookOrder": 1},
-    {"id": "mlit.s1.prosa_tradisional", "label": "Traditional Prose (Prosa Tradisional)", "type": "concept", "description": "Hikayat, sejarah Melayu, classical narratives", "grade_range": ["STPM"], "tags": ["prose"], "pages": "", "book": "mlit.s1", "bookName": "STPM Sem 1", "bookColor": "#ec4899", "bookOrder": 1},
-    {"id": "mlit.s1.teori_sastera", "label": "Literary Theory (Teori Sastera)", "type": "concept", "description": "Approaches to literary criticism", "grade_range": ["STPM"], "tags": ["theory"], "pages": "", "book": "mlit.s1", "bookName": "STPM Sem 1", "bookColor": "#ec4899", "bookOrder": 1},
-    {"id": "mlit.s2.puisi_moden", "label": "Modern Poetry (Puisi Moden)", "type": "concept", "description": "Sajak, modern verse forms", "grade_range": ["STPM"], "tags": ["poetry"], "pages": "", "book": "mlit.s2", "bookName": "STPM Sem 2", "bookColor": "#db2777", "bookOrder": 2},
-    {"id": "mlit.s2.cerpen", "label": "Short Stories (Cerpen)", "type": "concept", "description": "Modern Malay short fiction analysis", "grade_range": ["STPM"], "tags": ["prose"], "pages": "", "book": "mlit.s2", "bookName": "STPM Sem 2", "bookColor": "#db2777", "bookOrder": 2},
-    {"id": "mlit.s2.novel", "label": "Novel", "type": "concept", "description": "Novel analysis — plot, character, theme, style", "grade_range": ["STPM"], "tags": ["prose"], "pages": "", "book": "mlit.s2", "bookName": "STPM Sem 2", "bookColor": "#db2777", "bookOrder": 2},
-    {"id": "mlit.s2.drama", "label": "Drama", "type": "concept", "description": "Dramatic works — script analysis, staging", "grade_range": ["STPM"], "tags": ["drama"], "pages": "", "book": "mlit.s2", "bookName": "STPM Sem 2", "bookColor": "#db2777", "bookOrder": 2},
-    {"id": "mlit.s3.kritikan_sastera", "label": "Literary Criticism (Kritikan Sastera)", "type": "concept", "description": "Critical essays and analytical writing", "grade_range": ["STPM"], "tags": ["criticism"], "pages": "", "book": "mlit.s3", "bookName": "STPM Sem 3", "bookColor": "#be185d", "bookOrder": 3},
-    {"id": "mlit.s3.perbandingan", "label": "Comparative Literature (Perbandingan)", "type": "concept", "description": "Comparing works across genres and periods", "grade_range": ["STPM"], "tags": ["criticism"], "pages": "", "book": "mlit.s3", "bookName": "STPM Sem 3", "bookColor": "#be185d", "bookOrder": 3},
-    {"id": "mlit.s3.penulisan_kreatif", "label": "Creative Writing (Penulisan Kreatif)", "type": "concept", "description": "Producing original literary works", "grade_range": ["STPM"], "tags": ["writing"], "pages": "", "book": "mlit.s3", "bookName": "STPM Sem 3", "bookColor": "#be185d", "bookOrder": 3}
+    {
+      "id": "mlit.s1.pengenalan",
+      "label": "Introduction to Malay Literature",
+      "type": "concept",
+      "description": "Pengenalan Kesusasteraan Melayu — definition, functions, genres",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "foundation"
+      ],
+      "pages": "",
+      "book": "mlit.s1",
+      "bookName": "STPM Sem 1",
+      "bookColor": "#ec4899",
+      "bookOrder": 1,
+      "external_id": "34912be78e625f3b",
+      "comprehended": false
+    },
+    {
+      "id": "mlit.s1.sejarah_kesusasteraan",
+      "label": "Sejarah Perkembangan Kesusasteraan Melayu",
+      "type": "concept",
+      "description": "History of Malay literature development — pre-Islamic, classical, transitional, and modern periods",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "foundation"
+      ],
+      "pages": "",
+      "book": "mlit.s1",
+      "bookName": "STPM Sem 1",
+      "bookColor": "#ec4899",
+      "bookOrder": 1,
+      "external_id": "e7cf5430a8f5da60",
+      "comprehended": false
+    },
+    {
+      "id": "mlit.s1.puisi_tradisional",
+      "label": "Traditional Poetry (Puisi Tradisional)",
+      "type": "concept",
+      "description": "Pantun, syair, gurindam, seloka, nazam",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "poetry"
+      ],
+      "pages": "",
+      "book": "mlit.s1",
+      "bookName": "STPM Sem 1",
+      "bookColor": "#ec4899",
+      "bookOrder": 1,
+      "external_id": "1d17da4da15c60e1",
+      "comprehended": false
+    },
+    {
+      "id": "mlit.s1.prosa_tradisional",
+      "label": "Traditional Prose (Prosa Tradisional)",
+      "type": "concept",
+      "description": "Hikayat, sejarah Melayu, classical narratives",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "prose"
+      ],
+      "pages": "",
+      "book": "mlit.s1",
+      "bookName": "STPM Sem 1",
+      "bookColor": "#ec4899",
+      "bookOrder": 1,
+      "external_id": "8078b3a7f8ce917a",
+      "comprehended": false
+    },
+    {
+      "id": "mlit.s1.teori_sastera",
+      "label": "Literary Theory (Teori Sastera)",
+      "type": "concept",
+      "description": "Approaches to literary criticism",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "theory"
+      ],
+      "pages": "",
+      "book": "mlit.s1",
+      "bookName": "STPM Sem 1",
+      "bookColor": "#ec4899",
+      "bookOrder": 1,
+      "external_id": "edd698e8b0544692",
+      "comprehended": false
+    },
+    {
+      "id": "mlit.s2.puisi_moden",
+      "label": "Modern Poetry (Puisi Moden)",
+      "type": "concept",
+      "description": "Sajak, modern verse forms",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "poetry"
+      ],
+      "pages": "",
+      "book": "mlit.s2",
+      "bookName": "STPM Sem 2",
+      "bookColor": "#db2777",
+      "bookOrder": 2,
+      "external_id": "97bfed2519efc6ec",
+      "comprehended": false
+    },
+    {
+      "id": "mlit.s2.cerpen",
+      "label": "Short Stories (Cerpen)",
+      "type": "concept",
+      "description": "Modern Malay short fiction analysis",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "prose"
+      ],
+      "pages": "",
+      "book": "mlit.s2",
+      "bookName": "STPM Sem 2",
+      "bookColor": "#db2777",
+      "bookOrder": 2,
+      "external_id": "bf4458a0602e2bac",
+      "comprehended": false
+    },
+    {
+      "id": "mlit.s2.novel",
+      "label": "Novel",
+      "type": "concept",
+      "description": "Novel analysis — plot, character, theme, style",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "prose"
+      ],
+      "pages": "",
+      "book": "mlit.s2",
+      "bookName": "STPM Sem 2",
+      "bookColor": "#db2777",
+      "bookOrder": 2,
+      "external_id": "f62210aefc8d918e",
+      "comprehended": false
+    },
+    {
+      "id": "mlit.s2.drama",
+      "label": "Drama",
+      "type": "concept",
+      "description": "Dramatic works — script analysis, staging",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "drama"
+      ],
+      "pages": "",
+      "book": "mlit.s2",
+      "bookName": "STPM Sem 2",
+      "bookColor": "#db2777",
+      "bookOrder": 2,
+      "external_id": "55de8e7c767d6966",
+      "comprehended": false
+    },
+    {
+      "id": "mlit.s2.esei",
+      "label": "Esei (Non-Fiction Prose)",
+      "type": "concept",
+      "description": "Essay as a literary genre — types of essays, structure, style, and analysis of notable Malay essays",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "prose"
+      ],
+      "pages": "",
+      "book": "mlit.s2",
+      "bookName": "STPM Sem 2",
+      "bookColor": "#db2777",
+      "bookOrder": 2,
+      "external_id": "faf183cc440a34bd",
+      "comprehended": false
+    },
+    {
+      "id": "mlit.s3.kritikan_sastera",
+      "label": "Literary Criticism (Kritikan Sastera)",
+      "type": "concept",
+      "description": "Critical essays and analytical writing",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "criticism"
+      ],
+      "pages": "",
+      "book": "mlit.s3",
+      "bookName": "STPM Sem 3",
+      "bookColor": "#be185d",
+      "bookOrder": 3,
+      "external_id": "d3cc654322f18291",
+      "comprehended": false
+    },
+    {
+      "id": "mlit.s3.perbandingan",
+      "label": "Comparative Literature (Perbandingan)",
+      "type": "concept",
+      "description": "Comparing works across genres and periods",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "criticism"
+      ],
+      "pages": "",
+      "book": "mlit.s3",
+      "bookName": "STPM Sem 3",
+      "bookColor": "#be185d",
+      "bookOrder": 3,
+      "external_id": "2dc5fce8a61f0260",
+      "comprehended": false
+    },
+    {
+      "id": "mlit.s3.apresiasi_sastera",
+      "label": "Apresiasi Sastera (Literary Appreciation)",
+      "type": "concept",
+      "description": "Literary appreciation — aesthetic response, evaluating literary merit, and personal engagement with texts",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "criticism"
+      ],
+      "pages": "",
+      "book": "mlit.s3",
+      "bookName": "STPM Sem 3",
+      "bookColor": "#be185d",
+      "bookOrder": 3,
+      "external_id": "c88a1533f9253c3a",
+      "comprehended": false
+    },
+    {
+      "id": "mlit.s3.penulisan_kreatif",
+      "label": "Creative Writing (Penulisan Kreatif)",
+      "type": "concept",
+      "description": "Producing original literary works — part of STPM assessment skills for demonstrating literary understanding through creative practice",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "writing",
+        "assessment"
+      ],
+      "pages": "",
+      "book": "mlit.s3",
+      "bookName": "STPM Sem 3",
+      "bookColor": "#be185d",
+      "bookOrder": 3,
+      "external_id": "a8a59901542fe459",
+      "comprehended": false
+    }
   ],
   "edges": [
-    {"source": "mlit.s1.pengenalan", "target": "mlit.s1.puisi_tradisional", "relation": "prerequisite_for"},
-    {"source": "mlit.s1.pengenalan", "target": "mlit.s1.prosa_tradisional", "relation": "prerequisite_for"},
-    {"source": "mlit.s1.pengenalan", "target": "mlit.s1.teori_sastera", "relation": "prerequisite_for"},
-    {"source": "mlit.s1.puisi_tradisional", "target": "mlit.s2.puisi_moden", "relation": "prerequisite_for"},
-    {"source": "mlit.s1.prosa_tradisional", "target": "mlit.s2.cerpen", "relation": "prerequisite_for"},
-    {"source": "mlit.s1.prosa_tradisional", "target": "mlit.s2.novel", "relation": "prerequisite_for"},
-    {"source": "mlit.s1.teori_sastera", "target": "mlit.s2.drama", "relation": "prerequisite_for"},
-    {"source": "mlit.s1.teori_sastera", "target": "mlit.s3.kritikan_sastera", "relation": "prerequisite_for"},
-    {"source": "mlit.s2.cerpen", "target": "mlit.s3.kritikan_sastera", "relation": "prerequisite_for"},
-    {"source": "mlit.s2.novel", "target": "mlit.s3.perbandingan", "relation": "prerequisite_for"},
-    {"source": "mlit.s2.drama", "target": "mlit.s3.perbandingan", "relation": "prerequisite_for"},
-    {"source": "mlit.s2.puisi_moden", "target": "mlit.s3.perbandingan", "relation": "prerequisite_for"},
-    {"source": "mlit.s3.kritikan_sastera", "target": "mlit.s3.penulisan_kreatif", "relation": "prerequisite_for"}
+    {
+      "source": "mlit.s1.pengenalan",
+      "target": "mlit.s1.sejarah_kesusasteraan",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s1.pengenalan",
+      "target": "mlit.s1.puisi_tradisional",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s1.pengenalan",
+      "target": "mlit.s1.prosa_tradisional",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s1.pengenalan",
+      "target": "mlit.s1.teori_sastera",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s1.sejarah_kesusasteraan",
+      "target": "mlit.s1.puisi_tradisional",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s1.sejarah_kesusasteraan",
+      "target": "mlit.s1.prosa_tradisional",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s1.puisi_tradisional",
+      "target": "mlit.s2.puisi_moden",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s1.prosa_tradisional",
+      "target": "mlit.s2.cerpen",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s1.prosa_tradisional",
+      "target": "mlit.s2.novel",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s1.teori_sastera",
+      "target": "mlit.s2.drama",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s1.prosa_tradisional",
+      "target": "mlit.s2.esei",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s1.teori_sastera",
+      "target": "mlit.s2.esei",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s1.teori_sastera",
+      "target": "mlit.s3.kritikan_sastera",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s2.cerpen",
+      "target": "mlit.s3.kritikan_sastera",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s2.novel",
+      "target": "mlit.s3.perbandingan",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s2.drama",
+      "target": "mlit.s3.perbandingan",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s2.puisi_moden",
+      "target": "mlit.s3.perbandingan",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s3.kritikan_sastera",
+      "target": "mlit.s3.apresiasi_sastera",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s3.perbandingan",
+      "target": "mlit.s3.apresiasi_sastera",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s3.kritikan_sastera",
+      "target": "mlit.s3.penulisan_kreatif",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mlit.s3.apresiasi_sastera",
+      "target": "mlit.s3.penulisan_kreatif",
+      "relation": "prerequisite_for"
+    }
   ]
 }

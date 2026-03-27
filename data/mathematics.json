@@ -3,173 +3,1157 @@
     "domain": "mathematics",
     "version": "0.1.0",
     "description": "Mathematics knowledge graph from kindergarten through PhD level",
-    "sources": ["seed-data"],
+    "sources": [
+      "seed-data"
+    ],
     "last_updated": "2026-03-25"
   },
   "nodes": [
-    { "id": "math", "label": "Mathematics", "type": "domain", "description": "The study of numbers, quantities, structures, and patterns", "grade_range": ["K", "PhD"], "tags": ["root"] },
-
-    { "id": "math.arithmetic", "label": "Arithmetic", "type": "branch", "description": "Basic operations on numbers", "grade_range": ["K", "6"], "tags": ["elementary"] },
-    { "id": "math.algebra", "label": "Algebra", "type": "branch", "description": "Study of symbols and rules for manipulating them", "grade_range": ["6", "undergraduate"], "tags": [] },
-    { "id": "math.geometry", "label": "Geometry", "type": "branch", "description": "Study of shapes, sizes, and properties of space", "grade_range": ["K", "undergraduate"], "tags": [] },
-    { "id": "math.calculus", "label": "Calculus", "type": "branch", "description": "Study of continuous change", "grade_range": ["11", "undergraduate"], "tags": [] },
-    { "id": "math.statistics", "label": "Statistics & Probability", "type": "branch", "description": "Collection, analysis, and interpretation of data", "grade_range": ["6", "PhD"], "tags": [] },
-    { "id": "math.linear_algebra", "label": "Linear Algebra", "type": "branch", "description": "Study of vectors, vector spaces, and linear transformations", "grade_range": ["undergraduate", "PhD"], "tags": [] },
-    { "id": "math.number_theory", "label": "Number Theory", "type": "branch", "description": "Study of integers and integer-valued functions", "grade_range": ["9", "PhD"], "tags": [] },
-    { "id": "math.topology", "label": "Topology", "type": "branch", "description": "Study of properties preserved under continuous deformations", "grade_range": ["undergraduate", "PhD"], "tags": [] },
-    { "id": "math.analysis", "label": "Real Analysis", "type": "branch", "description": "Rigorous study of calculus and continuous functions", "grade_range": ["undergraduate", "PhD"], "tags": [] },
-    { "id": "math.abstract_algebra", "label": "Abstract Algebra", "type": "branch", "description": "Study of algebraic structures: groups, rings, fields", "grade_range": ["undergraduate", "PhD"], "tags": [] },
-
-    { "id": "math.arithmetic.counting", "label": "Counting", "type": "concept", "description": "Determining the number of elements in a set", "grade_range": ["K", "1"], "tags": ["foundational"] },
-    { "id": "math.arithmetic.addition", "label": "Addition", "type": "concept", "description": "Combining two or more quantities", "grade_range": ["K", "2"], "tags": ["operation"] },
-    { "id": "math.arithmetic.subtraction", "label": "Subtraction", "type": "concept", "description": "Finding the difference between quantities", "grade_range": ["K", "2"], "tags": ["operation"] },
-    { "id": "math.arithmetic.multiplication", "label": "Multiplication", "type": "concept", "description": "Repeated addition of a number", "grade_range": ["2", "4"], "tags": ["operation"] },
-    { "id": "math.arithmetic.division", "label": "Division", "type": "concept", "description": "Splitting into equal parts", "grade_range": ["3", "5"], "tags": ["operation"] },
-    { "id": "math.arithmetic.fractions", "label": "Fractions", "type": "concept", "description": "Numbers representing parts of a whole", "grade_range": ["3", "6"], "tags": ["number-type"] },
-    { "id": "math.arithmetic.decimals", "label": "Decimals", "type": "concept", "description": "Base-10 fractional representation", "grade_range": ["4", "6"], "tags": ["number-type"] },
-    { "id": "math.arithmetic.order_of_operations", "label": "Order of Operations", "type": "concept", "description": "Rules for evaluating expressions (PEMDAS)", "grade_range": ["5", "6"], "tags": ["rule"] },
-
-    { "id": "math.algebra.variables", "label": "Variables", "type": "concept", "description": "Symbols representing unknown or changing quantities", "grade_range": ["6", "7"], "tags": ["foundational"] },
-    { "id": "math.algebra.linear_equations", "label": "Linear Equations", "type": "concept", "description": "Equations of degree one", "grade_range": ["7", "8"], "tags": [] },
-    { "id": "math.algebra.quadratic_equations", "label": "Quadratic Equations", "type": "concept", "description": "Equations of degree two", "grade_range": ["9", "10"], "tags": [] },
-    { "id": "math.algebra.quadratic_formula", "label": "Quadratic Formula", "type": "formula", "description": "x = (-b ± √(b²-4ac)) / 2a", "grade_range": ["9", "10"], "tags": [] },
-    { "id": "math.algebra.polynomials", "label": "Polynomials", "type": "concept", "description": "Expressions with variables and coefficients using addition, subtraction, multiplication, and non-negative integer exponents", "grade_range": ["9", "11"], "tags": [] },
-    { "id": "math.algebra.functions", "label": "Functions", "type": "concept", "description": "Relations mapping each input to exactly one output", "grade_range": ["8", "11"], "tags": ["foundational"] },
-
-    { "id": "math.geometry.points_lines", "label": "Points, Lines & Planes", "type": "concept", "description": "Fundamental geometric objects", "grade_range": ["3", "6"], "tags": ["foundational"] },
-    { "id": "math.geometry.angles", "label": "Angles", "type": "concept", "description": "Measure of rotation between two rays", "grade_range": ["4", "7"], "tags": [] },
-    { "id": "math.geometry.triangles", "label": "Triangles", "type": "concept", "description": "Three-sided polygons and their properties", "grade_range": ["4", "10"], "tags": ["shape"] },
-    { "id": "math.geometry.pythagorean", "label": "Pythagorean Theorem", "type": "theorem", "description": "In a right triangle, a² + b² = c²", "grade_range": ["8", "9"], "tags": [] },
-    { "id": "math.geometry.congruence", "label": "Congruence", "type": "concept", "description": "Figures with same shape and size", "grade_range": ["8", "10"], "tags": [] },
-    { "id": "math.geometry.similarity", "label": "Similarity", "type": "concept", "description": "Figures with same shape but different size", "grade_range": ["8", "10"], "tags": [] },
-
-    { "id": "math.calculus.limits", "label": "Limits", "type": "concept", "description": "Value a function approaches as input approaches a point", "grade_range": ["11", "12"], "tags": ["foundational"] },
-    { "id": "math.calculus.derivatives", "label": "Derivatives", "type": "concept", "description": "Rate of change of a function", "grade_range": ["11", "12"], "tags": [] },
-    { "id": "math.calculus.integrals", "label": "Integrals", "type": "concept", "description": "Accumulation of quantities, area under curves", "grade_range": ["12", "undergraduate"], "tags": [] },
-    { "id": "math.calculus.ftc", "label": "Fundamental Theorem of Calculus", "type": "theorem", "description": "Links differentiation and integration as inverse operations", "grade_range": ["12", "undergraduate"], "tags": [] },
-
-    { "id": "math.linear_algebra.vectors", "label": "Vectors", "type": "concept", "description": "Quantities with magnitude and direction", "grade_range": ["10", "undergraduate"], "tags": ["foundational"] },
-    { "id": "math.linear_algebra.matrices", "label": "Matrices", "type": "concept", "description": "Rectangular arrays of numbers", "grade_range": ["10", "undergraduate"], "tags": [] },
-    { "id": "math.linear_algebra.eigenvalues", "label": "Eigenvalues & Eigenvectors", "type": "concept", "description": "Scalar-vector pairs preserved under linear transformation", "grade_range": ["undergraduate"], "tags": [] },
-
-    { "id": "math.analysis.sequences", "label": "Sequences & Series", "type": "concept", "description": "Ordered lists of numbers and their sums", "grade_range": ["11", "undergraduate"], "tags": [] },
-    { "id": "math.analysis.continuity", "label": "Continuity", "type": "concept", "description": "A function with no breaks, jumps, or holes", "grade_range": ["11", "undergraduate"], "tags": [] },
-    { "id": "math.analysis.metric_spaces", "label": "Metric Spaces", "type": "concept", "description": "Sets with a notion of distance between elements", "grade_range": ["undergraduate", "graduate"], "tags": [] },
-
-    { "id": "math.number_theory.primes", "label": "Prime Numbers", "type": "concept", "description": "Natural numbers greater than 1 with no positive divisors other than 1 and itself", "grade_range": ["4", "PhD"], "tags": [] },
-    { "id": "math.number_theory.fta", "label": "Fundamental Theorem of Arithmetic", "type": "theorem", "description": "Every integer greater than 1 is either prime or a unique product of primes", "grade_range": ["9", "undergraduate"], "tags": [] },
-    { "id": "math.number_theory.modular_arithmetic", "label": "Modular Arithmetic", "type": "concept", "description": "Arithmetic on remainders after division", "grade_range": ["9", "undergraduate"], "tags": [] },
-
-    { "id": "math.abstract_algebra.groups", "label": "Groups", "type": "concept", "description": "Set with a binary operation satisfying closure, associativity, identity, and invertibility", "grade_range": ["undergraduate"], "tags": [] },
-    { "id": "math.abstract_algebra.rings", "label": "Rings", "type": "concept", "description": "Set with two binary operations generalizing integer arithmetic", "grade_range": ["undergraduate", "graduate"], "tags": [] },
-    { "id": "math.abstract_algebra.fields", "label": "Fields", "type": "concept", "description": "Commutative ring where every nonzero element has a multiplicative inverse", "grade_range": ["undergraduate", "graduate"], "tags": [] },
-
-    { "id": "math.topology.open_sets", "label": "Open Sets", "type": "concept", "description": "Fundamental building blocks of topological spaces", "grade_range": ["undergraduate", "graduate"], "tags": [] },
-    { "id": "math.topology.compactness", "label": "Compactness", "type": "concept", "description": "Generalization of closed and bounded sets", "grade_range": ["graduate"], "tags": [] },
-
-    { "id": "math.axiom.peano", "label": "Peano Axioms", "type": "axiom", "description": "Axioms defining natural numbers: zero exists, every number has a successor, induction principle", "grade_range": ["undergraduate"], "tags": ["foundations"] },
-    { "id": "math.axiom.euclid", "label": "Euclid's Axioms", "type": "axiom", "description": "Five postulates forming the basis of Euclidean geometry", "grade_range": ["9", "undergraduate"], "tags": ["foundations"] },
-    { "id": "math.axiom.zfc", "label": "ZFC Set Theory Axioms", "type": "axiom", "description": "Zermelo-Fraenkel axioms with Choice — standard foundation for modern mathematics", "grade_range": ["graduate", "PhD"], "tags": ["foundations"] }
+    {
+      "id": "math",
+      "label": "Mathematics",
+      "type": "domain",
+      "description": "The study of numbers, quantities, structures, and patterns",
+      "grade_range": [
+        "K",
+        "PhD"
+      ],
+      "tags": [
+        "root"
+      ],
+      "external_id": "b7939b65cccae42a",
+      "comprehended": false
+    },
+    {
+      "id": "math.arithmetic",
+      "label": "Arithmetic",
+      "type": "branch",
+      "description": "Basic operations on numbers",
+      "grade_range": [
+        "K",
+        "6"
+      ],
+      "tags": [
+        "elementary"
+      ],
+      "external_id": "53dc2bdb5cabf010",
+      "comprehended": false
+    },
+    {
+      "id": "math.algebra",
+      "label": "Algebra",
+      "type": "branch",
+      "description": "Study of symbols and rules for manipulating them",
+      "grade_range": [
+        "6",
+        "undergraduate"
+      ],
+      "tags": [],
+      "external_id": "b8914cbe16f832ef",
+      "comprehended": false
+    },
+    {
+      "id": "math.geometry",
+      "label": "Geometry",
+      "type": "branch",
+      "description": "Study of shapes, sizes, and properties of space",
+      "grade_range": [
+        "K",
+        "undergraduate"
+      ],
+      "tags": [],
+      "external_id": "417577cdbf49fafe",
+      "comprehended": false
+    },
+    {
+      "id": "math.calculus",
+      "label": "Calculus",
+      "type": "branch",
+      "description": "Study of continuous change",
+      "grade_range": [
+        "11",
+        "undergraduate"
+      ],
+      "tags": [],
+      "external_id": "d6331736ee649dab",
+      "comprehended": false
+    },
+    {
+      "id": "math.statistics",
+      "label": "Statistics & Probability",
+      "type": "branch",
+      "description": "Collection, analysis, and interpretation of data",
+      "grade_range": [
+        "6",
+        "PhD"
+      ],
+      "tags": [],
+      "external_id": "81b0703a02498bd3",
+      "comprehended": false
+    },
+    {
+      "id": "math.linear_algebra",
+      "label": "Linear Algebra",
+      "type": "branch",
+      "description": "Study of vectors, vector spaces, and linear transformations",
+      "grade_range": [
+        "undergraduate",
+        "PhD"
+      ],
+      "tags": [],
+      "external_id": "9703e8f86bd4c07a",
+      "comprehended": false
+    },
+    {
+      "id": "math.number_theory",
+      "label": "Number Theory",
+      "type": "branch",
+      "description": "Study of integers and integer-valued functions",
+      "grade_range": [
+        "9",
+        "PhD"
+      ],
+      "tags": [],
+      "external_id": "09a3218ff8a1ccd5",
+      "comprehended": false
+    },
+    {
+      "id": "math.topology",
+      "label": "Topology",
+      "type": "branch",
+      "description": "Study of properties preserved under continuous deformations",
+      "grade_range": [
+        "undergraduate",
+        "PhD"
+      ],
+      "tags": [],
+      "external_id": "4f462f1e626cef12",
+      "comprehended": false
+    },
+    {
+      "id": "math.analysis",
+      "label": "Real Analysis",
+      "type": "branch",
+      "description": "Rigorous study of calculus and continuous functions",
+      "grade_range": [
+        "undergraduate",
+        "PhD"
+      ],
+      "tags": [],
+      "external_id": "e42bc6809d3d73a4",
+      "comprehended": false
+    },
+    {
+      "id": "math.abstract_algebra",
+      "label": "Abstract Algebra",
+      "type": "branch",
+      "description": "Study of algebraic structures: groups, rings, fields",
+      "grade_range": [
+        "undergraduate",
+        "PhD"
+      ],
+      "tags": [],
+      "external_id": "a5eed49fe2253bd5",
+      "comprehended": false
+    },
+    {
+      "id": "math.arithmetic.counting",
+      "label": "Counting",
+      "type": "concept",
+      "description": "Determining the number of elements in a set",
+      "grade_range": [
+        "K",
+        "1"
+      ],
+      "tags": [
+        "foundational"
+      ],
+      "external_id": "3a5c0efc0a1c3786",
+      "comprehended": false
+    },
+    {
+      "id": "math.arithmetic.addition",
+      "label": "Addition",
+      "type": "concept",
+      "description": "Combining two or more quantities",
+      "grade_range": [
+        "K",
+        "2"
+      ],
+      "tags": [
+        "operation"
+      ],
+      "external_id": "f035575c25e30e1d",
+      "comprehended": false
+    },
+    {
+      "id": "math.arithmetic.subtraction",
+      "label": "Subtraction",
+      "type": "concept",
+      "description": "Finding the difference between quantities",
+      "grade_range": [
+        "K",
+        "2"
+      ],
+      "tags": [
+        "operation"
+      ],
+      "external_id": "98e1be3d132e4786",
+      "comprehended": false
+    },
+    {
+      "id": "math.arithmetic.multiplication",
+      "label": "Multiplication",
+      "type": "concept",
+      "description": "Repeated addition of a number",
+      "grade_range": [
+        "2",
+        "4"
+      ],
+      "tags": [
+        "operation"
+      ],
+      "external_id": "1aaeee3775c579b7",
+      "comprehended": false
+    },
+    {
+      "id": "math.arithmetic.division",
+      "label": "Division",
+      "type": "concept",
+      "description": "Splitting into equal parts",
+      "grade_range": [
+        "3",
+        "5"
+      ],
+      "tags": [
+        "operation"
+      ],
+      "external_id": "558591b97f7151ce",
+      "comprehended": false
+    },
+    {
+      "id": "math.arithmetic.fractions",
+      "label": "Fractions",
+      "type": "concept",
+      "description": "Numbers representing parts of a whole",
+      "grade_range": [
+        "3",
+        "6"
+      ],
+      "tags": [
+        "number-type"
+      ],
+      "external_id": "5fcdab513e37d3cb",
+      "comprehended": false
+    },
+    {
+      "id": "math.arithmetic.decimals",
+      "label": "Decimals",
+      "type": "concept",
+      "description": "Base-10 fractional representation",
+      "grade_range": [
+        "4",
+        "6"
+      ],
+      "tags": [
+        "number-type"
+      ],
+      "external_id": "a7ef06f27de85546",
+      "comprehended": false
+    },
+    {
+      "id": "math.arithmetic.order_of_operations",
+      "label": "Order of Operations",
+      "type": "concept",
+      "description": "Rules for evaluating expressions (PEMDAS)",
+      "grade_range": [
+        "5",
+        "6"
+      ],
+      "tags": [
+        "rule"
+      ],
+      "external_id": "62b3671b3fa11d0b",
+      "comprehended": false
+    },
+    {
+      "id": "math.algebra.variables",
+      "label": "Variables",
+      "type": "concept",
+      "description": "Symbols representing unknown or changing quantities",
+      "grade_range": [
+        "6",
+        "7"
+      ],
+      "tags": [
+        "foundational"
+      ],
+      "external_id": "5f640832fdd66db8",
+      "comprehended": false
+    },
+    {
+      "id": "math.algebra.linear_equations",
+      "label": "Linear Equations",
+      "type": "concept",
+      "description": "Equations of degree one",
+      "grade_range": [
+        "7",
+        "8"
+      ],
+      "tags": [],
+      "external_id": "b59738a99f68c794",
+      "comprehended": false
+    },
+    {
+      "id": "math.algebra.quadratic_equations",
+      "label": "Quadratic Equations",
+      "type": "concept",
+      "description": "Equations of degree two",
+      "grade_range": [
+        "9",
+        "10"
+      ],
+      "tags": [],
+      "external_id": "221e847272e03185",
+      "comprehended": false
+    },
+    {
+      "id": "math.algebra.quadratic_formula",
+      "label": "Quadratic Formula",
+      "type": "formula",
+      "description": "x = (-b ± √(b²-4ac)) / 2a",
+      "grade_range": [
+        "9",
+        "10"
+      ],
+      "tags": [],
+      "external_id": "fe4678f56ef639d4",
+      "comprehended": false
+    },
+    {
+      "id": "math.algebra.polynomials",
+      "label": "Polynomials",
+      "type": "concept",
+      "description": "Expressions with variables and coefficients using addition, subtraction, multiplication, and non-negative integer exponents",
+      "grade_range": [
+        "9",
+        "11"
+      ],
+      "tags": [],
+      "external_id": "ec50e77aee9222a7",
+      "comprehended": false
+    },
+    {
+      "id": "math.algebra.functions",
+      "label": "Functions",
+      "type": "concept",
+      "description": "Relations mapping each input to exactly one output",
+      "grade_range": [
+        "8",
+        "11"
+      ],
+      "tags": [
+        "foundational"
+      ],
+      "external_id": "027f9fca58cff819",
+      "comprehended": false
+    },
+    {
+      "id": "math.geometry.points_lines",
+      "label": "Points, Lines & Planes",
+      "type": "concept",
+      "description": "Fundamental geometric objects",
+      "grade_range": [
+        "3",
+        "6"
+      ],
+      "tags": [
+        "foundational"
+      ],
+      "external_id": "82903309d1ef2e01",
+      "comprehended": false
+    },
+    {
+      "id": "math.geometry.angles",
+      "label": "Angles",
+      "type": "concept",
+      "description": "Measure of rotation between two rays",
+      "grade_range": [
+        "4",
+        "7"
+      ],
+      "tags": [],
+      "external_id": "aad86df77524d580",
+      "comprehended": false
+    },
+    {
+      "id": "math.geometry.triangles",
+      "label": "Triangles",
+      "type": "concept",
+      "description": "Three-sided polygons and their properties",
+      "grade_range": [
+        "4",
+        "10"
+      ],
+      "tags": [
+        "shape"
+      ],
+      "external_id": "5935e016c9abbba0",
+      "comprehended": false
+    },
+    {
+      "id": "math.geometry.pythagorean",
+      "label": "Pythagorean Theorem",
+      "type": "theorem",
+      "description": "In a right triangle, a² + b² = c²",
+      "grade_range": [
+        "8",
+        "9"
+      ],
+      "tags": [],
+      "external_id": "13dcb598579b8370",
+      "comprehended": false
+    },
+    {
+      "id": "math.geometry.congruence",
+      "label": "Congruence",
+      "type": "concept",
+      "description": "Figures with same shape and size",
+      "grade_range": [
+        "8",
+        "10"
+      ],
+      "tags": [],
+      "external_id": "fce507d242f74cb3",
+      "comprehended": false
+    },
+    {
+      "id": "math.geometry.similarity",
+      "label": "Similarity",
+      "type": "concept",
+      "description": "Figures with same shape but different size",
+      "grade_range": [
+        "8",
+        "10"
+      ],
+      "tags": [],
+      "external_id": "a02e8792bb8fb1cf",
+      "comprehended": false
+    },
+    {
+      "id": "math.calculus.limits",
+      "label": "Limits",
+      "type": "concept",
+      "description": "Value a function approaches as input approaches a point",
+      "grade_range": [
+        "11",
+        "12"
+      ],
+      "tags": [
+        "foundational"
+      ],
+      "external_id": "f955b4e6f5b33122",
+      "comprehended": false
+    },
+    {
+      "id": "math.calculus.derivatives",
+      "label": "Derivatives",
+      "type": "concept",
+      "description": "Rate of change of a function",
+      "grade_range": [
+        "11",
+        "12"
+      ],
+      "tags": [],
+      "external_id": "9120e3c2cc8e3329",
+      "comprehended": false
+    },
+    {
+      "id": "math.calculus.integrals",
+      "label": "Integrals",
+      "type": "concept",
+      "description": "Accumulation of quantities, area under curves",
+      "grade_range": [
+        "12",
+        "undergraduate"
+      ],
+      "tags": [],
+      "external_id": "0ea39e75b8dd84ab",
+      "comprehended": false
+    },
+    {
+      "id": "math.calculus.ftc",
+      "label": "Fundamental Theorem of Calculus",
+      "type": "theorem",
+      "description": "Links differentiation and integration as inverse operations",
+      "grade_range": [
+        "12",
+        "undergraduate"
+      ],
+      "tags": [],
+      "external_id": "5855c1ac5ee58869",
+      "comprehended": false
+    },
+    {
+      "id": "math.linear_algebra.vectors",
+      "label": "Vectors",
+      "type": "concept",
+      "description": "Quantities with magnitude and direction",
+      "grade_range": [
+        "10",
+        "undergraduate"
+      ],
+      "tags": [
+        "foundational"
+      ],
+      "external_id": "52fbd80fb8a57b62",
+      "comprehended": false
+    },
+    {
+      "id": "math.linear_algebra.matrices",
+      "label": "Matrices",
+      "type": "concept",
+      "description": "Rectangular arrays of numbers",
+      "grade_range": [
+        "10",
+        "undergraduate"
+      ],
+      "tags": [],
+      "external_id": "835c7f1bdf711652",
+      "comprehended": false
+    },
+    {
+      "id": "math.linear_algebra.eigenvalues",
+      "label": "Eigenvalues & Eigenvectors",
+      "type": "concept",
+      "description": "Scalar-vector pairs preserved under linear transformation",
+      "grade_range": [
+        "undergraduate"
+      ],
+      "tags": [],
+      "external_id": "7dedfef195d80876",
+      "comprehended": false
+    },
+    {
+      "id": "math.analysis.sequences",
+      "label": "Sequences & Series",
+      "type": "concept",
+      "description": "Ordered lists of numbers and their sums",
+      "grade_range": [
+        "11",
+        "undergraduate"
+      ],
+      "tags": [],
+      "external_id": "4d01466e73e9e9dd",
+      "comprehended": false
+    },
+    {
+      "id": "math.analysis.continuity",
+      "label": "Continuity",
+      "type": "concept",
+      "description": "A function with no breaks, jumps, or holes",
+      "grade_range": [
+        "11",
+        "undergraduate"
+      ],
+      "tags": [],
+      "external_id": "da6a65474a990900",
+      "comprehended": false
+    },
+    {
+      "id": "math.analysis.metric_spaces",
+      "label": "Metric Spaces",
+      "type": "concept",
+      "description": "Sets with a notion of distance between elements",
+      "grade_range": [
+        "undergraduate",
+        "graduate"
+      ],
+      "tags": [],
+      "external_id": "2b162b6ff5359488",
+      "comprehended": false
+    },
+    {
+      "id": "math.number_theory.primes",
+      "label": "Prime Numbers",
+      "type": "concept",
+      "description": "Natural numbers greater than 1 with no positive divisors other than 1 and itself",
+      "grade_range": [
+        "4",
+        "PhD"
+      ],
+      "tags": [],
+      "external_id": "fd4228db8a0845e2",
+      "comprehended": false
+    },
+    {
+      "id": "math.number_theory.fta",
+      "label": "Fundamental Theorem of Arithmetic",
+      "type": "theorem",
+      "description": "Every integer greater than 1 is either prime or a unique product of primes",
+      "grade_range": [
+        "9",
+        "undergraduate"
+      ],
+      "tags": [],
+      "external_id": "0c8953da983bd12a",
+      "comprehended": false
+    },
+    {
+      "id": "math.number_theory.modular_arithmetic",
+      "label": "Modular Arithmetic",
+      "type": "concept",
+      "description": "Arithmetic on remainders after division",
+      "grade_range": [
+        "9",
+        "undergraduate"
+      ],
+      "tags": [],
+      "external_id": "f2c8b40204566723",
+      "comprehended": false
+    },
+    {
+      "id": "math.abstract_algebra.groups",
+      "label": "Groups",
+      "type": "concept",
+      "description": "Set with a binary operation satisfying closure, associativity, identity, and invertibility",
+      "grade_range": [
+        "undergraduate"
+      ],
+      "tags": [],
+      "external_id": "1a8854e0956259a6",
+      "comprehended": false
+    },
+    {
+      "id": "math.abstract_algebra.rings",
+      "label": "Rings",
+      "type": "concept",
+      "description": "Set with two binary operations generalizing integer arithmetic",
+      "grade_range": [
+        "undergraduate",
+        "graduate"
+      ],
+      "tags": [],
+      "external_id": "31b1b26b0598b650",
+      "comprehended": false
+    },
+    {
+      "id": "math.abstract_algebra.fields",
+      "label": "Fields",
+      "type": "concept",
+      "description": "Commutative ring where every nonzero element has a multiplicative inverse",
+      "grade_range": [
+        "undergraduate",
+        "graduate"
+      ],
+      "tags": [],
+      "external_id": "9aab6996a18064cd",
+      "comprehended": false
+    },
+    {
+      "id": "math.topology.open_sets",
+      "label": "Open Sets",
+      "type": "concept",
+      "description": "Fundamental building blocks of topological spaces",
+      "grade_range": [
+        "undergraduate",
+        "graduate"
+      ],
+      "tags": [],
+      "external_id": "bd7b0aee8e57d806",
+      "comprehended": false
+    },
+    {
+      "id": "math.topology.compactness",
+      "label": "Compactness",
+      "type": "concept",
+      "description": "Generalization of closed and bounded sets",
+      "grade_range": [
+        "graduate"
+      ],
+      "tags": [],
+      "external_id": "bdffa6fd156fc92b",
+      "comprehended": false
+    },
+    {
+      "id": "math.axiom.peano",
+      "label": "Peano Axioms",
+      "type": "axiom",
+      "description": "Axioms defining natural numbers: zero exists, every number has a successor, induction principle",
+      "grade_range": [
+        "undergraduate"
+      ],
+      "tags": [
+        "foundations"
+      ],
+      "external_id": "059894d3d91120c5",
+      "comprehended": false
+    },
+    {
+      "id": "math.axiom.euclid",
+      "label": "Euclid's Axioms",
+      "type": "axiom",
+      "description": "Five postulates forming the basis of Euclidean geometry",
+      "grade_range": [
+        "9",
+        "undergraduate"
+      ],
+      "tags": [
+        "foundations"
+      ],
+      "external_id": "6cc6367a26f8b8f8",
+      "comprehended": false
+    },
+    {
+      "id": "math.axiom.zfc",
+      "label": "ZFC Set Theory Axioms",
+      "type": "axiom",
+      "description": "Zermelo-Fraenkel axioms with Choice — standard foundation for modern mathematics",
+      "grade_range": [
+        "graduate",
+        "PhD"
+      ],
+      "tags": [
+        "foundations"
+      ],
+      "external_id": "e0b83caf7bf4a17d",
+      "comprehended": false
+    }
   ],
   "edges": [
-    { "source": "math", "target": "math.arithmetic", "relation": "contains" },
-    { "source": "math", "target": "math.algebra", "relation": "contains" },
-    { "source": "math", "target": "math.geometry", "relation": "contains" },
-    { "source": "math", "target": "math.calculus", "relation": "contains" },
-    { "source": "math", "target": "math.statistics", "relation": "contains" },
-    { "source": "math", "target": "math.linear_algebra", "relation": "contains" },
-    { "source": "math", "target": "math.number_theory", "relation": "contains" },
-    { "source": "math", "target": "math.topology", "relation": "contains" },
-    { "source": "math", "target": "math.analysis", "relation": "contains" },
-    { "source": "math", "target": "math.abstract_algebra", "relation": "contains" },
-
-    { "source": "math.arithmetic", "target": "math.arithmetic.counting", "relation": "contains" },
-    { "source": "math.arithmetic", "target": "math.arithmetic.addition", "relation": "contains" },
-    { "source": "math.arithmetic", "target": "math.arithmetic.subtraction", "relation": "contains" },
-    { "source": "math.arithmetic", "target": "math.arithmetic.multiplication", "relation": "contains" },
-    { "source": "math.arithmetic", "target": "math.arithmetic.division", "relation": "contains" },
-    { "source": "math.arithmetic", "target": "math.arithmetic.fractions", "relation": "contains" },
-    { "source": "math.arithmetic", "target": "math.arithmetic.decimals", "relation": "contains" },
-    { "source": "math.arithmetic", "target": "math.arithmetic.order_of_operations", "relation": "contains" },
-
-    { "source": "math.arithmetic.counting", "target": "math.arithmetic.addition", "relation": "prerequisite_for" },
-    { "source": "math.arithmetic.addition", "target": "math.arithmetic.subtraction", "relation": "related_to" },
-    { "source": "math.arithmetic.addition", "target": "math.arithmetic.multiplication", "relation": "prerequisite_for" },
-    { "source": "math.arithmetic.multiplication", "target": "math.arithmetic.division", "relation": "related_to" },
-    { "source": "math.arithmetic.division", "target": "math.arithmetic.fractions", "relation": "prerequisite_for" },
-    { "source": "math.arithmetic.fractions", "target": "math.arithmetic.decimals", "relation": "related_to" },
-
-    { "source": "math.algebra", "target": "math.algebra.variables", "relation": "contains" },
-    { "source": "math.algebra", "target": "math.algebra.linear_equations", "relation": "contains" },
-    { "source": "math.algebra", "target": "math.algebra.quadratic_equations", "relation": "contains" },
-    { "source": "math.algebra", "target": "math.algebra.polynomials", "relation": "contains" },
-    { "source": "math.algebra", "target": "math.algebra.functions", "relation": "contains" },
-
-    { "source": "math.arithmetic", "target": "math.algebra", "relation": "prerequisite_for", "description": "Arithmetic fluency is required before algebraic abstraction" },
-    { "source": "math.algebra.variables", "target": "math.algebra.linear_equations", "relation": "prerequisite_for" },
-    { "source": "math.algebra.linear_equations", "target": "math.algebra.quadratic_equations", "relation": "prerequisite_for" },
-    { "source": "math.algebra.quadratic_equations", "target": "math.algebra.quadratic_formula", "relation": "formalized_by" },
-    { "source": "math.algebra.quadratic_equations", "target": "math.algebra.polynomials", "relation": "specializes" },
-    { "source": "math.algebra.variables", "target": "math.algebra.functions", "relation": "prerequisite_for" },
-
-    { "source": "math.geometry", "target": "math.geometry.points_lines", "relation": "contains" },
-    { "source": "math.geometry", "target": "math.geometry.angles", "relation": "contains" },
-    { "source": "math.geometry", "target": "math.geometry.triangles", "relation": "contains" },
-    { "source": "math.geometry", "target": "math.geometry.congruence", "relation": "contains" },
-    { "source": "math.geometry", "target": "math.geometry.similarity", "relation": "contains" },
-
-    { "source": "math.geometry.points_lines", "target": "math.geometry.angles", "relation": "prerequisite_for" },
-    { "source": "math.geometry.angles", "target": "math.geometry.triangles", "relation": "prerequisite_for" },
-    { "source": "math.geometry.triangles", "target": "math.geometry.pythagorean", "relation": "proves" },
-    { "source": "math.geometry.triangles", "target": "math.geometry.congruence", "relation": "related_to" },
-    { "source": "math.geometry.congruence", "target": "math.geometry.similarity", "relation": "generalizes" },
-    { "source": "math.axiom.euclid", "target": "math.geometry", "relation": "formalized_by" },
-
-    { "source": "math.algebra", "target": "math.calculus", "relation": "prerequisite_for" },
-    { "source": "math.calculus", "target": "math.calculus.limits", "relation": "contains" },
-    { "source": "math.calculus", "target": "math.calculus.derivatives", "relation": "contains" },
-    { "source": "math.calculus", "target": "math.calculus.integrals", "relation": "contains" },
-    { "source": "math.calculus.limits", "target": "math.calculus.derivatives", "relation": "prerequisite_for" },
-    { "source": "math.calculus.limits", "target": "math.calculus.integrals", "relation": "prerequisite_for" },
-    { "source": "math.calculus.derivatives", "target": "math.calculus.ftc", "relation": "related_to" },
-    { "source": "math.calculus.integrals", "target": "math.calculus.ftc", "relation": "related_to" },
-
-    { "source": "math.algebra", "target": "math.linear_algebra", "relation": "prerequisite_for" },
-    { "source": "math.linear_algebra", "target": "math.linear_algebra.vectors", "relation": "contains" },
-    { "source": "math.linear_algebra", "target": "math.linear_algebra.matrices", "relation": "contains" },
-    { "source": "math.linear_algebra", "target": "math.linear_algebra.eigenvalues", "relation": "contains" },
-    { "source": "math.linear_algebra.vectors", "target": "math.linear_algebra.matrices", "relation": "prerequisite_for" },
-    { "source": "math.linear_algebra.matrices", "target": "math.linear_algebra.eigenvalues", "relation": "prerequisite_for" },
-
-    { "source": "math.calculus", "target": "math.analysis", "relation": "prerequisite_for", "description": "Analysis provides rigorous foundations for calculus" },
-    { "source": "math.analysis", "target": "math.analysis.sequences", "relation": "contains" },
-    { "source": "math.analysis", "target": "math.analysis.continuity", "relation": "contains" },
-    { "source": "math.analysis", "target": "math.analysis.metric_spaces", "relation": "contains" },
-    { "source": "math.calculus.limits", "target": "math.analysis.continuity", "relation": "builds_on" },
-    { "source": "math.analysis.continuity", "target": "math.analysis.metric_spaces", "relation": "generalizes" },
-
-    { "source": "math.arithmetic", "target": "math.number_theory", "relation": "prerequisite_for" },
-    { "source": "math.number_theory", "target": "math.number_theory.primes", "relation": "contains" },
-    { "source": "math.number_theory", "target": "math.number_theory.fta", "relation": "contains" },
-    { "source": "math.number_theory", "target": "math.number_theory.modular_arithmetic", "relation": "contains" },
-    { "source": "math.number_theory.primes", "target": "math.number_theory.fta", "relation": "related_to" },
-    { "source": "math.arithmetic.division", "target": "math.number_theory.modular_arithmetic", "relation": "prerequisite_for" },
-
-    { "source": "math.algebra", "target": "math.abstract_algebra", "relation": "prerequisite_for" },
-    { "source": "math.abstract_algebra", "target": "math.abstract_algebra.groups", "relation": "contains" },
-    { "source": "math.abstract_algebra", "target": "math.abstract_algebra.rings", "relation": "contains" },
-    { "source": "math.abstract_algebra", "target": "math.abstract_algebra.fields", "relation": "contains" },
-    { "source": "math.abstract_algebra.groups", "target": "math.abstract_algebra.rings", "relation": "prerequisite_for" },
-    { "source": "math.abstract_algebra.rings", "target": "math.abstract_algebra.fields", "relation": "specializes" },
-
-    { "source": "math.analysis.metric_spaces", "target": "math.topology", "relation": "prerequisite_for" },
-    { "source": "math.topology", "target": "math.topology.open_sets", "relation": "contains" },
-    { "source": "math.topology", "target": "math.topology.compactness", "relation": "contains" },
-    { "source": "math.topology.open_sets", "target": "math.topology.compactness", "relation": "prerequisite_for" },
-
-    { "source": "math.axiom.peano", "target": "math.arithmetic", "relation": "formalized_by" },
-    { "source": "math.axiom.zfc", "target": "math.axiom.peano", "relation": "generalizes" },
-    { "source": "math.number_theory.modular_arithmetic", "target": "math.abstract_algebra.groups", "relation": "builds_on", "description": "Modular arithmetic provides key examples of groups and rings" },
-    { "source": "math.linear_algebra", "target": "math.abstract_algebra", "relation": "related_to", "description": "Vector spaces are studied abstractly in abstract algebra" }
+    {
+      "source": "math",
+      "target": "math.arithmetic",
+      "relation": "contains"
+    },
+    {
+      "source": "math",
+      "target": "math.algebra",
+      "relation": "contains"
+    },
+    {
+      "source": "math",
+      "target": "math.geometry",
+      "relation": "contains"
+    },
+    {
+      "source": "math",
+      "target": "math.calculus",
+      "relation": "contains"
+    },
+    {
+      "source": "math",
+      "target": "math.statistics",
+      "relation": "contains"
+    },
+    {
+      "source": "math",
+      "target": "math.linear_algebra",
+      "relation": "contains"
+    },
+    {
+      "source": "math",
+      "target": "math.number_theory",
+      "relation": "contains"
+    },
+    {
+      "source": "math",
+      "target": "math.topology",
+      "relation": "contains"
+    },
+    {
+      "source": "math",
+      "target": "math.analysis",
+      "relation": "contains"
+    },
+    {
+      "source": "math",
+      "target": "math.abstract_algebra",
+      "relation": "contains"
+    },
+    {
+      "source": "math.arithmetic",
+      "target": "math.arithmetic.counting",
+      "relation": "contains"
+    },
+    {
+      "source": "math.arithmetic",
+      "target": "math.arithmetic.addition",
+      "relation": "contains"
+    },
+    {
+      "source": "math.arithmetic",
+      "target": "math.arithmetic.subtraction",
+      "relation": "contains"
+    },
+    {
+      "source": "math.arithmetic",
+      "target": "math.arithmetic.multiplication",
+      "relation": "contains"
+    },
+    {
+      "source": "math.arithmetic",
+      "target": "math.arithmetic.division",
+      "relation": "contains"
+    },
+    {
+      "source": "math.arithmetic",
+      "target": "math.arithmetic.fractions",
+      "relation": "contains"
+    },
+    {
+      "source": "math.arithmetic",
+      "target": "math.arithmetic.decimals",
+      "relation": "contains"
+    },
+    {
+      "source": "math.arithmetic",
+      "target": "math.arithmetic.order_of_operations",
+      "relation": "contains"
+    },
+    {
+      "source": "math.arithmetic.counting",
+      "target": "math.arithmetic.addition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.arithmetic.addition",
+      "target": "math.arithmetic.subtraction",
+      "relation": "related_to"
+    },
+    {
+      "source": "math.arithmetic.addition",
+      "target": "math.arithmetic.multiplication",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.arithmetic.multiplication",
+      "target": "math.arithmetic.division",
+      "relation": "related_to"
+    },
+    {
+      "source": "math.arithmetic.division",
+      "target": "math.arithmetic.fractions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.arithmetic.fractions",
+      "target": "math.arithmetic.decimals",
+      "relation": "related_to"
+    },
+    {
+      "source": "math.algebra",
+      "target": "math.algebra.variables",
+      "relation": "contains"
+    },
+    {
+      "source": "math.algebra",
+      "target": "math.algebra.linear_equations",
+      "relation": "contains"
+    },
+    {
+      "source": "math.algebra",
+      "target": "math.algebra.quadratic_equations",
+      "relation": "contains"
+    },
+    {
+      "source": "math.algebra",
+      "target": "math.algebra.polynomials",
+      "relation": "contains"
+    },
+    {
+      "source": "math.algebra",
+      "target": "math.algebra.functions",
+      "relation": "contains"
+    },
+    {
+      "source": "math.arithmetic",
+      "target": "math.algebra",
+      "relation": "prerequisite_for",
+      "description": "Arithmetic fluency is required before algebraic abstraction"
+    },
+    {
+      "source": "math.algebra.variables",
+      "target": "math.algebra.linear_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.algebra.linear_equations",
+      "target": "math.algebra.quadratic_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.algebra.quadratic_equations",
+      "target": "math.algebra.quadratic_formula",
+      "relation": "formalized_by"
+    },
+    {
+      "source": "math.algebra.quadratic_equations",
+      "target": "math.algebra.polynomials",
+      "relation": "specializes"
+    },
+    {
+      "source": "math.algebra.variables",
+      "target": "math.algebra.functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.geometry",
+      "target": "math.geometry.points_lines",
+      "relation": "contains"
+    },
+    {
+      "source": "math.geometry",
+      "target": "math.geometry.angles",
+      "relation": "contains"
+    },
+    {
+      "source": "math.geometry",
+      "target": "math.geometry.triangles",
+      "relation": "contains"
+    },
+    {
+      "source": "math.geometry",
+      "target": "math.geometry.congruence",
+      "relation": "contains"
+    },
+    {
+      "source": "math.geometry",
+      "target": "math.geometry.similarity",
+      "relation": "contains"
+    },
+    {
+      "source": "math.geometry.points_lines",
+      "target": "math.geometry.angles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.geometry.angles",
+      "target": "math.geometry.triangles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.geometry.triangles",
+      "target": "math.geometry.pythagorean",
+      "relation": "proves"
+    },
+    {
+      "source": "math.geometry.triangles",
+      "target": "math.geometry.congruence",
+      "relation": "related_to"
+    },
+    {
+      "source": "math.geometry.congruence",
+      "target": "math.geometry.similarity",
+      "relation": "generalizes"
+    },
+    {
+      "source": "math.axiom.euclid",
+      "target": "math.geometry",
+      "relation": "formalized_by"
+    },
+    {
+      "source": "math.algebra",
+      "target": "math.calculus",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.calculus",
+      "target": "math.calculus.limits",
+      "relation": "contains"
+    },
+    {
+      "source": "math.calculus",
+      "target": "math.calculus.derivatives",
+      "relation": "contains"
+    },
+    {
+      "source": "math.calculus",
+      "target": "math.calculus.integrals",
+      "relation": "contains"
+    },
+    {
+      "source": "math.calculus.limits",
+      "target": "math.calculus.derivatives",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.calculus.limits",
+      "target": "math.calculus.integrals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.calculus.derivatives",
+      "target": "math.calculus.ftc",
+      "relation": "related_to"
+    },
+    {
+      "source": "math.calculus.integrals",
+      "target": "math.calculus.ftc",
+      "relation": "related_to"
+    },
+    {
+      "source": "math.algebra",
+      "target": "math.linear_algebra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.linear_algebra",
+      "target": "math.linear_algebra.vectors",
+      "relation": "contains"
+    },
+    {
+      "source": "math.linear_algebra",
+      "target": "math.linear_algebra.matrices",
+      "relation": "contains"
+    },
+    {
+      "source": "math.linear_algebra",
+      "target": "math.linear_algebra.eigenvalues",
+      "relation": "contains"
+    },
+    {
+      "source": "math.linear_algebra.vectors",
+      "target": "math.linear_algebra.matrices",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.linear_algebra.matrices",
+      "target": "math.linear_algebra.eigenvalues",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.calculus",
+      "target": "math.analysis",
+      "relation": "prerequisite_for",
+      "description": "Analysis provides rigorous foundations for calculus"
+    },
+    {
+      "source": "math.analysis",
+      "target": "math.analysis.sequences",
+      "relation": "contains"
+    },
+    {
+      "source": "math.analysis",
+      "target": "math.analysis.continuity",
+      "relation": "contains"
+    },
+    {
+      "source": "math.analysis",
+      "target": "math.analysis.metric_spaces",
+      "relation": "contains"
+    },
+    {
+      "source": "math.calculus.limits",
+      "target": "math.analysis.continuity",
+      "relation": "builds_on"
+    },
+    {
+      "source": "math.analysis.continuity",
+      "target": "math.analysis.metric_spaces",
+      "relation": "generalizes"
+    },
+    {
+      "source": "math.arithmetic",
+      "target": "math.number_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.number_theory",
+      "target": "math.number_theory.primes",
+      "relation": "contains"
+    },
+    {
+      "source": "math.number_theory",
+      "target": "math.number_theory.fta",
+      "relation": "contains"
+    },
+    {
+      "source": "math.number_theory",
+      "target": "math.number_theory.modular_arithmetic",
+      "relation": "contains"
+    },
+    {
+      "source": "math.number_theory.primes",
+      "target": "math.number_theory.fta",
+      "relation": "related_to"
+    },
+    {
+      "source": "math.arithmetic.division",
+      "target": "math.number_theory.modular_arithmetic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.algebra",
+      "target": "math.abstract_algebra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.abstract_algebra",
+      "target": "math.abstract_algebra.groups",
+      "relation": "contains"
+    },
+    {
+      "source": "math.abstract_algebra",
+      "target": "math.abstract_algebra.rings",
+      "relation": "contains"
+    },
+    {
+      "source": "math.abstract_algebra",
+      "target": "math.abstract_algebra.fields",
+      "relation": "contains"
+    },
+    {
+      "source": "math.abstract_algebra.groups",
+      "target": "math.abstract_algebra.rings",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.abstract_algebra.rings",
+      "target": "math.abstract_algebra.fields",
+      "relation": "specializes"
+    },
+    {
+      "source": "math.analysis.metric_spaces",
+      "target": "math.topology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.topology",
+      "target": "math.topology.open_sets",
+      "relation": "contains"
+    },
+    {
+      "source": "math.topology",
+      "target": "math.topology.compactness",
+      "relation": "contains"
+    },
+    {
+      "source": "math.topology.open_sets",
+      "target": "math.topology.compactness",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "math.axiom.peano",
+      "target": "math.arithmetic",
+      "relation": "formalized_by"
+    },
+    {
+      "source": "math.axiom.zfc",
+      "target": "math.axiom.peano",
+      "relation": "generalizes"
+    },
+    {
+      "source": "math.number_theory.modular_arithmetic",
+      "target": "math.abstract_algebra.groups",
+      "relation": "builds_on",
+      "description": "Modular arithmetic provides key examples of groups and rings"
+    },
+    {
+      "source": "math.linear_algebra",
+      "target": "math.abstract_algebra",
+      "relation": "related_to",
+      "description": "Vector spaces are studied abstractly in abstract algebra"
+    }
   ]
 }

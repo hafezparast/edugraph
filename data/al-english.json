@@ -3,7 +3,7 @@
     "domain": "english_language",
     "curriculum": "Cambridge A-Level English Language (9093)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "A-Level English Language topics with prerequisite ordering, colored by component",
     "sources": [
       "Cambridge International AS & A Level English Language 9093 Syllabus"
@@ -26,205 +26,1277 @@
   ],
   "nodes": [
     {
-      "id": "al.eng.text_analysis",
-      "label": "Text Analysis Fundamentals",
+      "id": "al.eng.p1.reading_comprehension",
+      "label": "Reading Comprehension",
       "type": "concept",
-      "description": "Identifying audience, purpose, context, register, tone; annotation techniques",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Understanding explicit and implicit meanings in unseen passages; identifying main ideas, themes, and supporting details",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.eng.as",
       "bookName": "English Language AS (Year 1)",
       "bookColor": "#ec4899",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "48476d61b0a97405",
+      "comprehended": false
     },
     {
-      "id": "al.eng.lexis_semantics",
-      "label": "Lexis & Semantics",
+      "id": "al.eng.p1.vocabulary_in_context",
+      "label": "Vocabulary in Context",
       "type": "concept",
-      "description": "Word classes, connotation, denotation, figurative language, semantic fields",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Explaining the meanings of words and phrases as used in passages; understanding connotation, denotation, and nuance",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.eng.as",
       "bookName": "English Language AS (Year 1)",
       "bookColor": "#ec4899",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "e79bf9effc56750c",
+      "comprehended": false
     },
     {
-      "id": "al.eng.grammar_syntax",
-      "label": "Grammar & Syntax",
+      "id": "al.eng.p1.writers_effects",
+      "label": "Writer's Effects",
       "type": "concept",
-      "description": "Sentence structures, clause types, tense, mood, voice, cohesion devices",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Analysing how writers use language to create effects; commenting on choices of vocabulary, imagery, sentence structure, and rhetorical techniques",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.eng.as",
       "bookName": "English Language AS (Year 1)",
       "bookColor": "#ec4899",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "81fdf5cb86806fd8",
+      "comprehended": false
     },
     {
-      "id": "al.eng.phonology",
-      "label": "Phonology & Prosody",
+      "id": "al.eng.p1.summary_skills",
+      "label": "Summary Writing",
       "type": "concept",
-      "description": "Sound patterns, rhythm, intonation, phonetic representation, accent features",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Selecting, synthesising, and reorganising material from passages into a concise and coherent summary using own words",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.eng.as",
       "bookName": "English Language AS (Year 1)",
       "bookColor": "#ec4899",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "2fcc0c60c9e9011e",
+      "comprehended": false
     },
     {
-      "id": "al.eng.writing_skills",
+      "id": "al.eng.p1.directed_writing",
       "label": "Directed Writing",
       "type": "concept",
-      "description": "Writing for specific audiences and purposes, persuasion, argumentation, style adaptation",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Writing in response to a passage for a specified audience and purpose; adapting content, style, and register appropriately",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.eng.as",
       "bookName": "English Language AS (Year 1)",
       "bookColor": "#ec4899",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "66083b32eedcd545",
+      "comprehended": false
     },
     {
-      "id": "al.eng.spoken_language",
-      "label": "Spoken Language & Discourse",
+      "id": "al.eng.p1.language_analysis",
+      "label": "Language Analysis (Passages)",
       "type": "concept",
-      "description": "Conversation analysis, turn-taking, pragmatics, politeness, spoken vs written language",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Commenting on and comparing use of language in different passages; identifying linguistic features and their effects on readers",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.eng.as",
       "bookName": "English Language AS (Year 1)",
       "bookColor": "#ec4899",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "8e23afa6c2b3d8f2",
+      "comprehended": false
     },
     {
-      "id": "al.eng.language_change",
+      "id": "al.eng.p1.audience_purpose_context",
+      "label": "Audience, Purpose & Context",
+      "type": "concept",
+      "description": "Identifying and evaluating how audience, purpose, and context shape the language choices and structure of texts",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1,
+      "external_id": "b2c9eb2602bbdfad",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p1.figurative_language",
+      "label": "Figurative Language & Imagery",
+      "type": "concept",
+      "description": "Recognising and analysing simile, metaphor, personification, symbolism, and other figurative devices in passages",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1,
+      "external_id": "47fc5b607568743f",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p1.tone_mood_attitude",
+      "label": "Tone, Mood & Attitude",
+      "type": "concept",
+      "description": "Identifying and evaluating the tone, mood, and attitude conveyed through a writer's language choices",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1,
+      "external_id": "e1efb36005f88736",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p2.descriptive_narrative_writing",
+      "label": "Descriptive & Narrative Writing",
+      "type": "concept",
+      "description": "Composing descriptive and narrative pieces demonstrating effective use of detail, structure, voice, and literary techniques",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1,
+      "external_id": "969d0f51b8fc0f34",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p2.argumentative_discursive_writing",
+      "label": "Argumentative & Discursive Writing",
+      "type": "concept",
+      "description": "Constructing well-organised argumentative or discursive essays with clear reasoning, evidence, and balanced perspectives",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1,
+      "external_id": "dd13592ca76db188",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p2.register_audience",
+      "label": "Register & Audience Awareness",
+      "type": "concept",
+      "description": "Selecting and sustaining an appropriate register, tone, and level of formality for different audiences and contexts",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1,
+      "external_id": "28be151b3e56885e",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p2.sentence_variety_cohesion",
+      "label": "Sentence Variety & Cohesion",
+      "type": "concept",
+      "description": "Using a variety of sentence types, lengths, and structures; deploying cohesive devices for fluent and engaging writing",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1,
+      "external_id": "2a9dfd3dc66304dc",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p2.proofreading_accuracy",
+      "label": "Proofreading & Accuracy",
+      "type": "concept",
+      "description": "Identifying and correcting errors in spelling, punctuation, grammar, and style; editing for clarity and precision",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1,
+      "external_id": "ea2a97d7af5d169f",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p2.paragraphing_structure",
+      "label": "Paragraphing & Text Structure",
+      "type": "concept",
+      "description": "Organising ideas into well-structured paragraphs with effective openings, developments, and conclusions",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1,
+      "external_id": "a961b2a7e45876e7",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p2.rhetorical_persuasive_techniques",
+      "label": "Rhetorical & Persuasive Techniques",
+      "type": "concept",
+      "description": "Employing rhetorical devices (repetition, tricolon, antithesis, rhetorical questions) and persuasive strategies in writing",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1,
+      "external_id": "658203a5e2c90ed5",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p2.composition_planning",
+      "label": "Composition & Planning",
+      "type": "concept",
+      "description": "Planning and drafting extended writing pieces; selecting appropriate form, genre, and structure for the task",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1,
+      "external_id": "2aa68659cc5cd3ca",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p3.phonetics_phonology",
+      "label": "Phonetics & Phonology",
+      "type": "concept",
+      "description": "Articulatory phonetics, IPA transcription, vowel and consonant classification, phonological processes, accent variation, prosodic features (stress, rhythm, intonation)",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "8c111a4eca27ea12",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p3.morphology",
+      "label": "Morphology",
+      "type": "concept",
+      "description": "Free and bound morphemes, inflectional and derivational affixes, compounding, blending, clipping, acronyms, back-formation, conversion, word formation processes",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "4113521196b60721",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p3.lexis_semantics",
+      "label": "Lexis & Semantics",
+      "type": "concept",
+      "description": "Word classes, semantic fields, synonymy, antonymy, hyponymy, polysemy, collocation, connotation, denotation, figurative meaning, lexical cohesion",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "c0f1afa26199c581",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p3.grammar_syntax",
+      "label": "Grammar & Syntax",
+      "type": "concept",
+      "description": "Phrase structure, clause types (main, subordinate, relative), sentence types, tense, aspect, mood, voice (active/passive), grammatical cohesion",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "29090aa0479667c2",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p3.pragmatics_discourse",
+      "label": "Pragmatics & Discourse",
+      "type": "concept",
+      "description": "Speech acts, implicature, presupposition, politeness theory (Brown & Levinson), Grice's maxims, turn-taking, discourse markers, coherence and cohesion in texts",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "d08c9553d44c2ffe",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p3.language_identity",
+      "label": "Language & Identity",
+      "type": "concept",
+      "description": "How language reflects and constructs personal, social, and cultural identity; sociolects, idiolects, ethnolects, and code-switching",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "5c3f39cd0690834e",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p3.language_change",
       "label": "Language Change",
       "type": "concept",
-      "description": "Historical development of English, standardisation, neologisms, etymology",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Historical development of English (Old, Middle, Early Modern, Modern); standardisation, prescriptivism vs descriptivism, neologisms, etymology, semantic shift",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.eng.a2",
       "bookName": "English Language A2 (Year 2)",
       "bookColor": "#be185d",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "3c3a7af529aa6ea8",
+      "comprehended": false
     },
     {
-      "id": "al.eng.child_language",
+      "id": "al.eng.p3.child_language_acquisition",
       "label": "Child Language Acquisition",
       "type": "concept",
-      "description": "Stages of acquisition, theories (Skinner, Chomsky, Bruner), phonological/lexical/syntactic development",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Stages of first language acquisition; theories (nativist, behaviourist, interactionist, cognitive); phonological, lexical, grammatical, and pragmatic development in children",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.eng.a2",
       "bookName": "English Language A2 (Year 2)",
       "bookColor": "#be185d",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "15f24b05a410a417",
+      "comprehended": false
     },
     {
-      "id": "al.eng.english_world",
-      "label": "English in the World",
+      "id": "al.eng.p3.cla_phonological_development",
+      "label": "CLA: Phonological Development",
       "type": "concept",
-      "description": "World Englishes, lingua franca, pidgins, creoles, language and identity, globalisation of English",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Stages of phonological development in children: cooing, babbling, proto-words; simplification processes (deletion, substitution, assimilation)",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.eng.a2",
       "bookName": "English Language A2 (Year 2)",
       "bookColor": "#be185d",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "f9ddd7b128c248ee",
+      "comprehended": false
     },
     {
-      "id": "al.eng.language_society",
-      "label": "Language & Society",
+      "id": "al.eng.p3.cla_lexical_semantic_development",
+      "label": "CLA: Lexical & Semantic Development",
       "type": "concept",
-      "description": "Language and power, gender, social class, taboo language, political correctness",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "First words, overextension and underextension, vocabulary growth, holophrastic and two-word stages, semantic development in children",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.eng.a2",
       "bookName": "English Language A2 (Year 2)",
       "bookColor": "#be185d",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "274ce1477ca4922f",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p3.cla_grammatical_development",
+      "label": "CLA: Grammatical Development",
+      "type": "concept",
+      "description": "Telegraphic speech, virtuous errors, overgeneralisation, acquisition of syntax, negation, question formation, morphological development in children",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "9f8ff54ffddd262f",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p3.cla_pragmatic_development",
+      "label": "CLA: Pragmatic Development",
+      "type": "concept",
+      "description": "Development of conversational skills, politeness, turn-taking in children; child-directed speech (CDS/motherese) and its role in acquisition",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "f73e215103673eaf",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p3.cla_theories",
+      "label": "CLA: Theories of Acquisition",
+      "type": "concept",
+      "description": "Comparing nativist (Chomsky LAD), behaviourist (Skinner), interactionist (Bruner LASS), and cognitive (Piaget) theories of language acquisition",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "c019ce965e9aa50c",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p3.language_frameworks",
+      "label": "Language Frameworks (Toolkit)",
+      "type": "concept",
+      "description": "Applying the integrated language frameworks (lexis, grammar, phonology, pragmatics, discourse) systematically when analysing texts",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "ab3b47468cd36ab7",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p3.graphology",
+      "label": "Graphology",
+      "type": "concept",
+      "description": "Visual presentation of texts: font, layout, colour, images, and how graphological features contribute to meaning",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "d0a8ff59a9c607ed",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p4.english_global_language",
+      "label": "English as a Global Language",
+      "type": "concept",
+      "description": "Spread of English worldwide, Kachru's three circles, lingua franca English, pidgins, creoles, impact of colonialism and globalisation on English",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "1a3720f9c9d50797",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p4.world_englishes",
+      "label": "World Englishes",
+      "type": "concept",
+      "description": "Varieties of English across the world (Indian English, Singlish, etc.); phonological, lexical, and grammatical variation; attitudes to non-standard varieties",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "b9304df1603f3dc0",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p4.language_and_the_self",
+      "label": "Language & the Self",
+      "type": "concept",
+      "description": "How individuals use language to construct and project personal identity; idiolect, style-shifting, accommodation theory (Giles), self-representation through language",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "a225881de87128ef",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p4.language_and_power",
+      "label": "Language & Power",
+      "type": "concept",
+      "description": "How language is used to exert, maintain, and challenge power; instrumental and influential power; political discourse, media language, institutional language",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "d23f0d2d9018e758",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p4.language_and_gender",
+      "label": "Language & Gender",
+      "type": "concept",
+      "description": "Theories of language and gender (Lakoff, Tannen, Cameron); gendered language use, deficit, dominance, and difference models; gender-neutral language",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "c67c89ec9ef15a05",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p4.language_and_social_groups",
+      "label": "Language & Social Groups",
+      "type": "concept",
+      "description": "Sociolects, class-based language variation (Bernstein, Labov), occupational jargon, age-related language, slang and in-group identity",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "3ac5b5488a9359bc",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p4.spoken_vs_written_language",
+      "label": "Spoken vs Written Language",
+      "type": "concept",
+      "description": "Key differences between spoken and written modes; features of spontaneous speech (fillers, hedges, false starts, elision); transcription conventions",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "f49976d90476bc22",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p4.conversation_analysis",
+      "label": "Conversation Analysis",
+      "type": "concept",
+      "description": "Turn-taking mechanisms, adjacency pairs, topic management, repair, overlap, interruption; analysing naturally occurring speech",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "f752e56f9996f4e4",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p4.language_and_technology",
+      "label": "Language & Technology",
+      "type": "concept",
+      "description": "Impact of technology on language use: texting, social media, email, multimodal communication; new genres and registers; David Crystal's views",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "aaa1c250470334d7",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p4.language_investigation",
+      "label": "Language Investigation",
+      "type": "concept",
+      "description": "Designing and conducting an independent language investigation; forming hypotheses, collecting data, applying frameworks, analysing findings, and drawing conclusions",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "cbfd161b456debc6",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p4.data_collection_methodology",
+      "label": "Data Collection & Methodology",
+      "type": "concept",
+      "description": "Methods for collecting linguistic data: corpora, questionnaires, interviews, recordings, transcription; ethical considerations in language research",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "cc4ca0a78466e44b",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p4.language_attitudes_debates",
+      "label": "Language Attitudes & Debates",
+      "type": "concept",
+      "description": "Prescriptivism vs descriptivism, standard vs non-standard English, linguistic prejudice, political correctness, language and taboo",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "ae378dd31000b803",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p3.dialect_accent_variation",
+      "label": "Dialect & Accent Variation",
+      "type": "concept",
+      "description": "Regional and social dialect variation; accent features (RP, Estuary English, regional accents); lexical, phonological, and grammatical variation across dialects",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "bd08a4e5b09a7e78",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p3.semantic_change",
+      "label": "Semantic Change",
+      "type": "concept",
+      "description": "Types of meaning change: broadening, narrowing, amelioration, pejoration, metaphorical extension; causes and examples of semantic shift",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "a7a2a6b68cac5b73",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p3.standardisation_codification",
+      "label": "Standardisation & Codification",
+      "type": "concept",
+      "description": "Development of Standard English; role of dictionaries, grammar books, printing press; Caxton, Johnson, Lowth; codification and its effects",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "cbbd519706563909",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p4.multilingualism_code_switching",
+      "label": "Multilingualism & Code-Switching",
+      "type": "concept",
+      "description": "Bilingualism, multilingualism, code-switching and code-mixing; language contact phenomena, borrowing, and language maintenance vs shift",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "84f1f925590974b5",
+      "comprehended": false
+    },
+    {
+      "id": "al.eng.p3.cla_literacy_development",
+      "label": "CLA: Literacy Development",
+      "type": "concept",
+      "description": "Stages of reading and writing development in children; invented spelling, emergent writing, links between spoken and written acquisition",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2,
+      "external_id": "07cfd5413ae76342",
+      "comprehended": false
     }
   ],
   "edges": [
     {
-      "source": "al.eng.text_analysis",
-      "target": "al.eng.lexis_semantics",
+      "source": "al.eng.p1.reading_comprehension",
+      "target": "al.eng.p1.vocabulary_in_context",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.eng.text_analysis",
-      "target": "al.eng.grammar_syntax",
+      "source": "al.eng.p1.reading_comprehension",
+      "target": "al.eng.p1.audience_purpose_context",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.eng.text_analysis",
-      "target": "al.eng.phonology",
+      "source": "al.eng.p1.vocabulary_in_context",
+      "target": "al.eng.p1.figurative_language",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.eng.lexis_semantics",
-      "target": "al.eng.writing_skills",
+      "source": "al.eng.p1.audience_purpose_context",
+      "target": "al.eng.p1.tone_mood_attitude",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.eng.grammar_syntax",
-      "target": "al.eng.writing_skills",
+      "source": "al.eng.p1.figurative_language",
+      "target": "al.eng.p1.writers_effects",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.eng.phonology",
-      "target": "al.eng.spoken_language",
+      "source": "al.eng.p1.tone_mood_attitude",
+      "target": "al.eng.p1.writers_effects",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.eng.grammar_syntax",
-      "target": "al.eng.spoken_language",
+      "source": "al.eng.p1.reading_comprehension",
+      "target": "al.eng.p1.summary_skills",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.eng.lexis_semantics",
-      "target": "al.eng.language_change",
+      "source": "al.eng.p1.writers_effects",
+      "target": "al.eng.p1.language_analysis",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.eng.grammar_syntax",
-      "target": "al.eng.language_change",
+      "source": "al.eng.p1.summary_skills",
+      "target": "al.eng.p1.directed_writing",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.eng.phonology",
-      "target": "al.eng.child_language",
+      "source": "al.eng.p1.audience_purpose_context",
+      "target": "al.eng.p1.directed_writing",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.eng.lexis_semantics",
-      "target": "al.eng.child_language",
+      "source": "al.eng.p1.language_analysis",
+      "target": "al.eng.p1.directed_writing",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.eng.grammar_syntax",
-      "target": "al.eng.child_language",
+      "source": "al.eng.p1.audience_purpose_context",
+      "target": "al.eng.p2.register_audience",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.eng.language_change",
-      "target": "al.eng.english_world",
+      "source": "al.eng.p2.register_audience",
+      "target": "al.eng.p2.composition_planning",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.eng.spoken_language",
-      "target": "al.eng.english_world",
+      "source": "al.eng.p2.composition_planning",
+      "target": "al.eng.p2.paragraphing_structure",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.eng.spoken_language",
-      "target": "al.eng.language_society",
+      "source": "al.eng.p2.paragraphing_structure",
+      "target": "al.eng.p2.sentence_variety_cohesion",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.eng.writing_skills",
-      "target": "al.eng.language_society",
+      "source": "al.eng.p2.sentence_variety_cohesion",
+      "target": "al.eng.p2.descriptive_narrative_writing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p1.figurative_language",
+      "target": "al.eng.p2.descriptive_narrative_writing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p2.sentence_variety_cohesion",
+      "target": "al.eng.p2.argumentative_discursive_writing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p2.rhetorical_persuasive_techniques",
+      "target": "al.eng.p2.argumentative_discursive_writing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p1.vocabulary_in_context",
+      "target": "al.eng.p2.rhetorical_persuasive_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p2.descriptive_narrative_writing",
+      "target": "al.eng.p2.proofreading_accuracy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p2.argumentative_discursive_writing",
+      "target": "al.eng.p2.proofreading_accuracy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p1.language_analysis",
+      "target": "al.eng.p3.phonetics_phonology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p1.language_analysis",
+      "target": "al.eng.p3.morphology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p1.vocabulary_in_context",
+      "target": "al.eng.p3.lexis_semantics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p1.language_analysis",
+      "target": "al.eng.p3.grammar_syntax",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.lexis_semantics",
+      "target": "al.eng.p3.pragmatics_discourse",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.grammar_syntax",
+      "target": "al.eng.p3.pragmatics_discourse",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.phonetics_phonology",
+      "target": "al.eng.p3.language_frameworks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.morphology",
+      "target": "al.eng.p3.language_frameworks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.lexis_semantics",
+      "target": "al.eng.p3.language_frameworks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.grammar_syntax",
+      "target": "al.eng.p3.language_frameworks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.pragmatics_discourse",
+      "target": "al.eng.p3.language_frameworks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.language_frameworks",
+      "target": "al.eng.p3.graphology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.pragmatics_discourse",
+      "target": "al.eng.p3.language_identity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.phonetics_phonology",
+      "target": "al.eng.p3.dialect_accent_variation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.language_identity",
+      "target": "al.eng.p3.dialect_accent_variation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.lexis_semantics",
+      "target": "al.eng.p3.semantic_change",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.morphology",
+      "target": "al.eng.p3.language_change",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.semantic_change",
+      "target": "al.eng.p3.language_change",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.language_change",
+      "target": "al.eng.p3.standardisation_codification",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.phonetics_phonology",
+      "target": "al.eng.p3.cla_phonological_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.child_language_acquisition",
+      "target": "al.eng.p3.cla_phonological_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.child_language_acquisition",
+      "target": "al.eng.p3.cla_lexical_semantic_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.lexis_semantics",
+      "target": "al.eng.p3.cla_lexical_semantic_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.child_language_acquisition",
+      "target": "al.eng.p3.cla_grammatical_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.grammar_syntax",
+      "target": "al.eng.p3.cla_grammatical_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.child_language_acquisition",
+      "target": "al.eng.p3.cla_pragmatic_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.pragmatics_discourse",
+      "target": "al.eng.p3.cla_pragmatic_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.cla_phonological_development",
+      "target": "al.eng.p3.cla_theories",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.cla_lexical_semantic_development",
+      "target": "al.eng.p3.cla_theories",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.cla_grammatical_development",
+      "target": "al.eng.p3.cla_theories",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.cla_pragmatic_development",
+      "target": "al.eng.p3.cla_theories",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.cla_lexical_semantic_development",
+      "target": "al.eng.p3.cla_literacy_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.cla_grammatical_development",
+      "target": "al.eng.p3.cla_literacy_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.language_change",
+      "target": "al.eng.p4.english_global_language",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.dialect_accent_variation",
+      "target": "al.eng.p4.english_global_language",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p4.english_global_language",
+      "target": "al.eng.p4.world_englishes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.language_identity",
+      "target": "al.eng.p4.language_and_the_self",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.pragmatics_discourse",
+      "target": "al.eng.p4.language_and_power",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.language_identity",
+      "target": "al.eng.p4.language_and_power",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p4.language_and_the_self",
+      "target": "al.eng.p4.language_and_gender",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p4.language_and_power",
+      "target": "al.eng.p4.language_and_gender",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.language_identity",
+      "target": "al.eng.p4.language_and_social_groups",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.dialect_accent_variation",
+      "target": "al.eng.p4.language_and_social_groups",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.pragmatics_discourse",
+      "target": "al.eng.p4.spoken_vs_written_language",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p4.spoken_vs_written_language",
+      "target": "al.eng.p4.conversation_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p4.spoken_vs_written_language",
+      "target": "al.eng.p4.language_and_technology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p4.world_englishes",
+      "target": "al.eng.p4.multilingualism_code_switching",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.language_identity",
+      "target": "al.eng.p4.multilingualism_code_switching",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.standardisation_codification",
+      "target": "al.eng.p4.language_attitudes_debates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p4.language_and_power",
+      "target": "al.eng.p4.language_attitudes_debates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.language_frameworks",
+      "target": "al.eng.p4.data_collection_methodology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p4.data_collection_methodology",
+      "target": "al.eng.p4.language_investigation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p4.language_and_gender",
+      "target": "al.eng.p4.language_investigation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p4.language_and_social_groups",
+      "target": "al.eng.p4.language_investigation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p4.conversation_analysis",
+      "target": "al.eng.p4.language_investigation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.p3.child_language_acquisition",
+      "target": "al.eng.p3.cla_theories",
       "relation": "prerequisite_for"
     }
   ]

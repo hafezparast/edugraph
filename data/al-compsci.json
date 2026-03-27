@@ -1,9 +1,9 @@
 {
   "metadata": {
     "domain": "computer_science",
-    "curriculum": "Cambridge A-Level Computer Science (9618)",
+    "curriculum": "Cambridge International AS & A Level Computer Science (9618)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "A-Level Computer Science topics with prerequisite ordering, colored by component",
     "sources": [
       "Cambridge International AS & A Level Computer Science 9618 Syllabus"
@@ -26,368 +26,2149 @@
   ],
   "nodes": [
     {
-      "id": "al.cs.data_representation",
-      "label": "Data Representation",
+      "id": "al.cs.as.number_systems",
+      "label": "Number Systems",
       "type": "concept",
-      "description": "Number systems, binary, hexadecimal, two's complement, floating point, character sets",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Binary, denary, and hexadecimal number systems; conversion between bases",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.as",
       "bookName": "Computer Science AS (Year 1)",
       "bookColor": "#6366f1",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "6e97ea158a30d9d8",
+      "comprehended": false
     },
     {
-      "id": "al.cs.communication",
-      "label": "Communication & Networking",
+      "id": "al.cs.as.binary_arithmetic",
+      "label": "Binary Arithmetic",
       "type": "concept",
-      "description": "Networks, protocols, TCP/IP, packet switching, network topologies",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Binary addition, subtraction, overflow; two's complement representation for signed integers",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.as",
       "bookName": "Computer Science AS (Year 1)",
       "bookColor": "#6366f1",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "68db84d84b157741",
+      "comprehended": false
     },
     {
-      "id": "al.cs.hardware",
-      "label": "Hardware",
+      "id": "al.cs.as.binary_coded_decimal",
+      "label": "Binary Coded Decimal (BCD)",
       "type": "concept",
-      "description": "Input/output devices, storage devices, logic gates, flip-flops",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "BCD representation of denary numbers and its applications",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.as",
       "bookName": "Computer Science AS (Year 1)",
       "bookColor": "#6366f1",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "ab098ecf1c286369",
+      "comprehended": false
     },
     {
-      "id": "al.cs.processor",
-      "label": "Processor Fundamentals",
+      "id": "al.cs.as.character_encoding",
+      "label": "Character Encoding",
       "type": "concept",
-      "description": "CPU architecture, fetch-decode-execute cycle, registers, instruction sets",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "ASCII and Unicode character sets; encoding text data in binary",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.as",
       "bookName": "Computer Science AS (Year 1)",
       "bookColor": "#6366f1",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "e09f92cfbaa2d03b",
+      "comprehended": false
     },
     {
-      "id": "al.cs.system_software",
-      "label": "System Software",
+      "id": "al.cs.as.images",
+      "label": "Image Representation",
       "type": "concept",
-      "description": "Operating systems, utility software, translators, compilers, interpreters",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Bitmap image representation; pixel, resolution, colour depth; image file size calculation",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.as",
       "bookName": "Computer Science AS (Year 1)",
       "bookColor": "#6366f1",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "dcacfab31bf05acc",
+      "comprehended": false
     },
     {
-      "id": "al.cs.security",
-      "label": "Security, Privacy & Integrity",
+      "id": "al.cs.as.sound",
+      "label": "Sound Representation",
       "type": "concept",
-      "description": "Encryption, malware, firewalls, authentication, data integrity",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Analogue-to-digital conversion; sampling rate, sample resolution, bit rate; sound file size calculation",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.as",
       "bookName": "Computer Science AS (Year 1)",
       "bookColor": "#6366f1",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "2ef4038575aca5ff",
+      "comprehended": false
     },
     {
-      "id": "al.cs.ethics",
-      "label": "Ethics & Ownership",
+      "id": "al.cs.as.compression",
+      "label": "Data Compression",
       "type": "concept",
-      "description": "Ethical issues, intellectual property, software licensing, digital divide",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Lossless vs lossy compression; run-length encoding (RLE); need for compression",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.as",
       "bookName": "Computer Science AS (Year 1)",
       "bookColor": "#6366f1",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "7ea64f8a801c4dcc",
+      "comprehended": false
     },
     {
-      "id": "al.cs.algorithm_design",
-      "label": "Algorithm Design & Problem Solving",
+      "id": "al.cs.as.network_types",
+      "label": "Network Types & Topologies",
       "type": "concept",
-      "description": "Pseudocode, flowcharts, decomposition, abstraction, searching, sorting",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "LAN, WAN, PAN; bus, star, mesh topologies; client-server vs peer-to-peer models",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.as",
       "bookName": "Computer Science AS (Year 1)",
       "bookColor": "#6366f1",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "8b67ff2944c7091c",
+      "comprehended": false
     },
     {
-      "id": "al.cs.programming",
-      "label": "Programming",
+      "id": "al.cs.as.transmission_media",
+      "label": "Transmission Media & Hardware",
       "type": "concept",
-      "description": "Variables, selection, iteration, procedures, functions, file handling",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Wired and wireless transmission; routers, switches, hubs, NIC, WAP; bandwidth and latency",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.as",
       "bookName": "Computer Science AS (Year 1)",
       "bookColor": "#6366f1",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "47ede7754e2d3c5d",
+      "comprehended": false
     },
     {
-      "id": "al.cs.data_types",
-      "label": "Data Types & Structures",
+      "id": "al.cs.as.protocols",
+      "label": "Network Protocols",
       "type": "concept",
-      "description": "Arrays, records, stacks, queues, linked lists, file organisation",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "TCP/IP, HTTP/HTTPS, FTP, POP3, IMAP, SMTP, BitTorrent; packet switching and circuit switching",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.as",
       "bookName": "Computer Science AS (Year 1)",
       "bookColor": "#6366f1",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "40f31fe947c62001",
+      "comprehended": false
     },
     {
-      "id": "al.cs.computational_thinking",
-      "label": "Computational Thinking",
+      "id": "al.cs.as.internet",
+      "label": "The Internet & World Wide Web",
       "type": "concept",
-      "description": "Abstraction, pattern recognition, algorithm complexity, Big-O notation",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Structure of the internet; URLs, DNS, ISPs; the difference between the internet and WWW",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "8ce1ccd74b5730cf",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.input_output_devices",
+      "label": "Input & Output Devices",
+      "type": "concept",
+      "description": "Types and uses of input devices (keyboard, mouse, scanner, microphone) and output devices (monitor, printer, speakers)",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "651617da26fe9c21",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.storage_devices",
+      "label": "Storage Devices & Media",
+      "type": "concept",
+      "description": "Primary vs secondary storage; magnetic, optical, solid-state; RAM, ROM; virtual memory",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "3dc708d6959ed296",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.logic_gates",
+      "label": "Logic Gates & Logic Circuits",
+      "type": "concept",
+      "description": "AND, OR, NOT, NAND, NOR, XOR gates; truth tables; constructing and interpreting logic circuits",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "5e0450facf7dc4df",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.cpu_architecture",
+      "label": "CPU Architecture",
+      "type": "concept",
+      "description": "Von Neumann architecture; ALU, control unit, registers (PC, MAR, MDR, CIR, ACC); system buses",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "2f672dcaf54f77e4",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.fetch_execute",
+      "label": "Fetch-Decode-Execute Cycle",
+      "type": "concept",
+      "description": "Stages of the FDE cycle; role of registers and buses during instruction processing",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "27d5160d6a36d3bc",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.instruction_set",
+      "label": "Instruction Sets & Addressing Modes",
+      "type": "concept",
+      "description": "Machine code instructions; opcode and operand; immediate, direct, indirect, indexed addressing",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "2648d3be5843938f",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.assembly_language",
+      "label": "Assembly Language",
+      "type": "concept",
+      "description": "Assembly language instructions; mnemonics; writing and tracing simple assembly programs",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "f111aca9527e04cf",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.operating_systems",
+      "label": "Operating Systems",
+      "type": "concept",
+      "description": "Functions of an OS; process management, memory management, I/O management, file management; interrupts",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "e25366726f09763a",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.translators",
+      "label": "Language Translators",
+      "type": "concept",
+      "description": "Compilers, interpreters, assemblers; stages of compilation; comparison of translation methods",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "872f239af0a68e64",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.utility_software",
+      "label": "Utility Software",
+      "type": "concept",
+      "description": "Disk formatter, defragmenter, backup, virus checker, file compression; role of utility programs",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "26bd62bfd7bfbc9d",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.encryption",
+      "label": "Encryption",
+      "type": "concept",
+      "description": "Symmetric and asymmetric encryption; public/private keys; SSL/TLS; digital signatures and certificates",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "b2a28d84f4818a9b",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.malware",
+      "label": "Malware & Cyber Threats",
+      "type": "concept",
+      "description": "Viruses, worms, trojans, spyware, ransomware, phishing, pharming, DoS attacks",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "dd307a4e058558a7",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.firewalls_auth",
+      "label": "Firewalls & Authentication",
+      "type": "concept",
+      "description": "Firewalls, proxy servers, authentication methods, biometrics, access control, user accounts",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "3d237976112f968e",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.data_integrity",
+      "label": "Data Integrity & Verification",
+      "type": "concept",
+      "description": "Parity checks, checksums, check digits, verification vs validation; error detection methods",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "8d4a32d9decba63b",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.privacy",
+      "label": "Privacy & Data Protection",
+      "type": "concept",
+      "description": "Privacy issues; data protection legislation; cookies; personal data collection and use",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "06a9fdc5ab0d22b9",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.ethics",
+      "label": "Ethics & Computing",
+      "type": "concept",
+      "description": "Ethical issues in computing; autonomous vehicles, AI ethics, digital surveillance, social media impact",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "2406c409379f4bbb",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.intellectual_property",
+      "label": "Intellectual Property & Licensing",
+      "type": "concept",
+      "description": "Copyright, patents, trademarks; software licensing (open source, proprietary, freeware, shareware)",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "9ebe669a668bf844",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.databases",
+      "label": "Databases (AS)",
+      "type": "concept",
+      "description": "Relational database concepts; tables, records, fields, primary keys, foreign keys; single-table and multi-table SQL queries; DDL and DML",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "d77abcd38bbad232",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.pseudocode_flowcharts",
+      "label": "Pseudocode & Flowcharts",
+      "type": "concept",
+      "description": "Writing and interpreting pseudocode; program flowcharts; structured English; trace tables",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "261643d5f0d640f5",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.decomposition",
+      "label": "Decomposition & Abstraction",
+      "type": "concept",
+      "description": "Problem decomposition into sub-problems; abstraction to remove unnecessary detail; top-down design",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "9b6e77d6c79169a1",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.linear_search",
+      "label": "Linear Search",
+      "type": "concept",
+      "description": "Linear search algorithm; implementation in pseudocode; efficiency considerations",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "ad8959bdb0ecb4bd",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.binary_search",
+      "label": "Binary Search",
+      "type": "concept",
+      "description": "Binary search algorithm on sorted data; implementation; comparison with linear search",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "6a335520de6fa8ea",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.bubble_sort",
+      "label": "Bubble Sort",
+      "type": "concept",
+      "description": "Bubble sort algorithm; implementation in pseudocode; analysis of passes and comparisons",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "0d9c3b1693b94b18",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.insertion_sort",
+      "label": "Insertion Sort",
+      "type": "concept",
+      "description": "Insertion sort algorithm; implementation; comparison with bubble sort",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "1cd5c59cab9f734c",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.variables_constants",
+      "label": "Variables, Constants & Data Types",
+      "type": "concept",
+      "description": "Declaring variables and constants; integer, real, char, string, Boolean, date data types; type casting",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "864a8985d20c0091",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.selection",
+      "label": "Selection Statements",
+      "type": "concept",
+      "description": "IF-THEN-ELSE, nested IF, CASE/SWITCH statements; Boolean expressions and conditions",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "41d977c1190c5888",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.iteration",
+      "label": "Iteration & Loops",
+      "type": "concept",
+      "description": "FOR, WHILE, REPEAT-UNTIL loops; count-controlled vs condition-controlled iteration; nested loops",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "aebf43c57fc85b72",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.procedures_functions",
+      "label": "Procedures & Functions",
+      "type": "concept",
+      "description": "Defining and calling procedures and functions; parameters (by value, by reference); return values; local and global variables",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "10cca1b61ef649d8",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.string_operations",
+      "label": "String Operations",
+      "type": "concept",
+      "description": "String handling: length, substring, concatenation, upper/lower case, character-to-ASCII conversion",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "f676a3725fb2e2d4",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.file_handling",
+      "label": "File Handling",
+      "type": "concept",
+      "description": "Reading from and writing to text files; opening, closing, appending; sequential file processing",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "2163abcaba61628c",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.arrays",
+      "label": "Arrays",
+      "type": "concept",
+      "description": "One-dimensional and two-dimensional arrays; declaring, initialising, accessing and iterating through arrays",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "90519c25d4f4ffcf",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.records",
+      "label": "User-Defined Data Types & Records",
+      "type": "concept",
+      "description": "Defining record types; enumerated and pointer types; using records to group related data",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "445b7bb64f38241e",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.stacks",
+      "label": "Stacks",
+      "type": "concept",
+      "description": "Stack as LIFO structure; push, pop, peek operations; implementing stacks using arrays; applications",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "a781cc9059f4fd4b",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.queues",
+      "label": "Queues",
+      "type": "concept",
+      "description": "Queue as FIFO structure; enqueue, dequeue operations; linear and circular queue implementations",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "7c993da0b2cdd42b",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.linked_lists",
+      "label": "Linked Lists",
+      "type": "concept",
+      "description": "Singly linked list structure; inserting, deleting, traversing nodes; comparison with arrays",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "cf0f26c5c5f26828",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.testing",
+      "label": "Program Testing",
+      "type": "concept",
+      "description": "Types of testing: unit, integration, system, acceptance; test data: normal, boundary, erroneous; dry-run and trace tables",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "e92a85dd0c0f29c0",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.as.sdlc_basics",
+      "label": "Software Development Lifecycle (Basics)",
+      "type": "concept",
+      "description": "Stages of the SDLC: analysis, design, coding, testing, maintenance; waterfall model introduction",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "799f8cf8a5f5c244",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.floating_point",
+      "label": "Floating-Point Representation",
+      "type": "concept",
+      "description": "Floating-point binary representation; mantissa and exponent; normalisation; precision, range and rounding errors",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.a2",
       "bookName": "Computer Science A2 (Year 2)",
       "bookColor": "#4f46e5",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "a7ce8bf3eba08cca",
+      "comprehended": false
     },
     {
-      "id": "al.cs.abstract_data_structures",
-      "label": "Abstract Data Structures",
+      "id": "al.cs.a2.user_defined_types",
+      "label": "User-Defined Data Types (A2)",
       "type": "concept",
-      "description": "Trees, binary trees, hash tables, graphs, traversal algorithms",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Non-composite types (enumerated, pointer) and composite types (record, set, class/object); type definitions",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.a2",
       "bookName": "Computer Science A2 (Year 2)",
       "bookColor": "#4f46e5",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "673aea40aed2b8d3",
+      "comprehended": false
     },
     {
-      "id": "al.cs.recursion",
-      "label": "Recursion",
+      "id": "al.cs.a2.protocol_layers",
+      "label": "Protocol Layering & TCP/IP Stack",
       "type": "concept",
-      "description": "Recursive algorithms, base case, call stack, comparison with iteration",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "TCP/IP four-layer model; application, transport, internet, network access layers; benefits of layered approach",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.a2",
       "bookName": "Computer Science A2 (Year 2)",
       "bookColor": "#4f46e5",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "3e391c134ca3274a",
+      "comprehended": false
     },
     {
-      "id": "al.cs.oop",
-      "label": "Object-Oriented Programming",
+      "id": "al.cs.a2.packet_structure",
+      "label": "Packet Structure & Switching",
       "type": "concept",
-      "description": "Classes, objects, inheritance, polymorphism, encapsulation",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Packet headers, payload, and trailers; circuit switching vs packet switching; routing algorithms",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.a2",
       "bookName": "Computer Science A2 (Year 2)",
       "bookColor": "#4f46e5",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "40b21bf28c7997c1",
+      "comprehended": false
     },
     {
-      "id": "al.cs.databases",
-      "label": "Databases",
+      "id": "al.cs.a2.ip_addressing",
+      "label": "IP Addressing & Subnetting",
       "type": "concept",
-      "description": "Relational databases, normalisation, SQL, entity-relationship diagrams",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "IPv4 and IPv6; subnet masks; public and private IP addresses; NAT and DHCP",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.a2",
       "bookName": "Computer Science A2 (Year 2)",
       "bookColor": "#4f46e5",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "386c0c6d7ef52ca2",
+      "comprehended": false
     },
     {
-      "id": "al.cs.boolean_algebra",
+      "id": "al.cs.a2.client_server_web",
+      "label": "Client-Server & Web Technologies",
+      "type": "concept",
+      "description": "Client-server model; web servers; HTML, CSS, JavaScript basics; web browser rendering; APIs",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "2b4771470ec97b1f",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.risc_cisc",
+      "label": "RISC vs CISC Processors",
+      "type": "concept",
+      "description": "Reduced vs complex instruction set computing; comparison of architectures; design trade-offs",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "446adf4ad3c76505",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.pipelining",
+      "label": "Pipelining & Parallel Processing",
+      "type": "concept",
+      "description": "Instruction pipelining; multi-core processors; parallel processing; SIMD, MIMD architectures; massively parallel computers",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "da05dd8b9ced30aa",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.virtual_machines",
+      "label": "Virtual Machines",
+      "type": "concept",
+      "description": "Role of virtual machines; benefits and limitations; hypervisors; virtual machine software; bytecode execution",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "200e537edab6c880",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.boolean_algebra",
       "label": "Boolean Algebra",
       "type": "concept",
-      "description": "Boolean expressions, Karnaugh maps, logic circuit simplification",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Boolean identities and laws (De Morgan's, distribution, commutation); simplifying Boolean expressions algebraically",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.a2",
       "bookName": "Computer Science A2 (Year 2)",
       "bookColor": "#4f46e5",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "7bde1b8d56d5e608",
+      "comprehended": false
     },
     {
-      "id": "al.cs.processor_arch",
-      "label": "Processor Architecture (A2)",
+      "id": "al.cs.a2.karnaugh_maps",
+      "label": "Karnaugh Maps",
       "type": "concept",
-      "description": "RISC/CISC, pipelining, parallel processing, virtual machines",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Using Karnaugh maps for 2, 3 and 4 variables to simplify Boolean expressions; don't care conditions",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.a2",
       "bookName": "Computer Science A2 (Year 2)",
       "bookColor": "#4f46e5",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "2696674e6916e96e",
+      "comprehended": false
     },
     {
-      "id": "al.cs.networking_protocols",
-      "label": "Networking Protocols (A2)",
+      "id": "al.cs.a2.flip_flops",
+      "label": "Flip-Flops & Sequential Circuits",
       "type": "concept",
-      "description": "OSI model, TCP/IP in depth, circuit/packet switching, wireless networking",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "SR and JK flip-flops; timing diagrams; sequential logic circuits; memory storage using flip-flops",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.a2",
       "bookName": "Computer Science A2 (Year 2)",
       "bookColor": "#4f46e5",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "e945a8236ab168e1",
+      "comprehended": false
     },
     {
-      "id": "al.cs.ai",
-      "label": "Artificial Intelligence",
+      "id": "al.cs.a2.os_process_management",
+      "label": "OS Process Management",
       "type": "concept",
-      "description": "Machine learning, neural networks, backpropagation, deep learning concepts",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Process states and transitions; scheduling algorithms (round robin, priority, shortest job first); interrupts and ISRs",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.cs.a2",
       "bookName": "Computer Science A2 (Year 2)",
       "bookColor": "#4f46e5",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "23548e996b3cdd21",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.os_memory_management",
+      "label": "OS Memory Management",
+      "type": "concept",
+      "description": "Paging, segmentation, virtual memory; page tables; thrashing; memory allocation strategies",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "019966acc705b2ae",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.compiler_stages",
+      "label": "Compiler Construction Stages",
+      "type": "concept",
+      "description": "Lexical analysis, syntax analysis (parsing), code generation and optimisation; BNF and syntax diagrams; reverse Polish notation",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "cff59cd39e275d22",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.bnf_syntax_diagrams",
+      "label": "BNF & Syntax Diagrams",
+      "type": "concept",
+      "description": "Backus-Naur Form notation; syntax diagrams; defining and interpreting language grammar rules",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "ca750b15a8198f30",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.rpn",
+      "label": "Reverse Polish Notation",
+      "type": "concept",
+      "description": "Converting infix to postfix (RPN); evaluating RPN expressions using a stack; benefits of RPN for compilers",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "da573f763b618734",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.security_advanced",
+      "label": "Security (Advanced)",
+      "type": "concept",
+      "description": "Advanced encryption techniques; hashing; digital certificates; SQL injection; cross-site scripting; social engineering",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "461fb0af8fb76f7d",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.monitoring_control",
+      "label": "Monitoring & Control Systems",
+      "type": "concept",
+      "description": "Sensors, actuators, ADC/DAC; feedback loops; real-time processing; embedded systems; applications in industry",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "0da4aa75cfd026af",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.recursion",
+      "label": "Recursion",
+      "type": "concept",
+      "description": "Recursive algorithms; base case and general case; call stack; comparison with iteration; tail recursion",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "95640c3ca97bf82f",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.merge_sort",
+      "label": "Merge Sort",
+      "type": "concept",
+      "description": "Divide-and-conquer merge sort algorithm; recursive implementation; time complexity analysis",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "bf6822673cec48c9",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.quick_sort",
+      "label": "Quick Sort",
+      "type": "concept",
+      "description": "Quick sort algorithm using pivot selection and partitioning; recursive implementation; best/worst/average case",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "f2171312ecf8c325",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.big_o",
+      "label": "Big-O Notation & Algorithm Complexity",
+      "type": "concept",
+      "description": "Time complexity: O(1), O(log n), O(n), O(n log n), O(n^2), O(2^n); space complexity; comparing algorithm efficiency",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "c356dbf94adaaeeb",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.binary_trees",
+      "label": "Binary Trees",
+      "type": "concept",
+      "description": "Binary tree structure; inserting, searching, deleting nodes; in-order, pre-order, post-order traversal",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "4dd7e67d9f8c51c8",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.hash_tables",
+      "label": "Hash Tables",
+      "type": "concept",
+      "description": "Hashing functions; collision resolution (linear probing, chaining); hash table operations; applications",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "b9dbb956fe26ad2a",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.graphs",
+      "label": "Graphs",
+      "type": "concept",
+      "description": "Directed and undirected graphs; weighted graphs; adjacency matrix and adjacency list representations",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "5b8242a6c8e6c55b",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.graph_traversal",
+      "label": "Graph Traversal Algorithms",
+      "type": "concept",
+      "description": "Depth-first search (DFS) and breadth-first search (BFS); applications; implementation using stacks and queues",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "79940141fde9a104",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.dijkstra",
+      "label": "Dijkstra's Shortest Path Algorithm",
+      "type": "concept",
+      "description": "Dijkstra's algorithm for finding shortest paths in weighted graphs; step-by-step execution; applications",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "e0822fa5785afc5f",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.oop_classes",
+      "label": "Classes & Objects",
+      "type": "concept",
+      "description": "Defining classes; creating objects; attributes (properties) and methods; constructors and destructors; this/self keyword",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "224a1d543970daef",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.encapsulation",
+      "label": "Encapsulation & Access Modifiers",
+      "type": "concept",
+      "description": "Public, private, protected access; getters and setters; information hiding; benefits of encapsulation",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "cf26e11b644e3641",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.inheritance",
+      "label": "Inheritance",
+      "type": "concept",
+      "description": "Base and derived classes; inheriting attributes and methods; overriding methods; IS-A relationship",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "f10c9afddd494a6b",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.polymorphism",
+      "label": "Polymorphism",
+      "type": "concept",
+      "description": "Method overriding and overloading; runtime polymorphism; using polymorphism for flexible code design",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "f7335f70709787ee",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.databases_advanced",
+      "label": "Database Normalisation",
+      "type": "concept",
+      "description": "First, second and third normal forms (1NF, 2NF, 3NF); functional dependencies; entity-relationship diagrams",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "27239d5613fd3cd0",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.sql_advanced",
+      "label": "SQL (Advanced)",
+      "type": "concept",
+      "description": "Multi-table queries with JOIN; GROUP BY and HAVING; aggregate functions; subqueries; ALTER TABLE; CREATE INDEX",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "dadbb1ad57913d1d",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.declarative_programming",
+      "label": "Declarative Programming",
+      "type": "concept",
+      "description": "Declarative programming paradigm; Prolog-style facts, rules and queries; logic programming concepts",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "22b555aa70c499fd",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.sdlc_methodologies",
+      "label": "Software Development Methodologies",
+      "type": "concept",
+      "description": "Waterfall, iterative, agile, RAD, extreme programming; choosing appropriate methodology; prototyping",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "c56271f6d2d4e921",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.testing_strategies",
+      "label": "Testing Strategies (Advanced)",
+      "type": "concept",
+      "description": "Black-box vs white-box testing; stub testing; integration testing; alpha and beta testing; acceptance testing",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "1177ffe2ea3fb539",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.ai_machine_learning",
+      "label": "Artificial Intelligence & Machine Learning",
+      "type": "concept",
+      "description": "Machine learning concepts; neural networks; backpropagation; deep learning; A* algorithm; applications of AI",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "d4465c7ee31878e0",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.file_organisation",
+      "label": "File Organisation & Access",
+      "type": "concept",
+      "description": "Serial, sequential, random (direct) and indexed sequential file organisation; hashing for file access",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "b46223ace29a91d1",
+      "comprehended": false
+    },
+    {
+      "id": "al.cs.a2.exception_handling",
+      "label": "Exception Handling",
+      "type": "concept",
+      "description": "Try-catch-finally blocks; throwing and catching exceptions; creating custom exception classes; defensive programming",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2,
+      "external_id": "47ef7a7100e40ad4",
+      "comprehended": false
     }
   ],
   "edges": [
     {
-      "source": "al.cs.data_representation",
-      "target": "al.cs.hardware",
+      "source": "al.cs.as.number_systems",
+      "target": "al.cs.as.binary_arithmetic",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.data_representation",
-      "target": "al.cs.communication",
+      "source": "al.cs.as.number_systems",
+      "target": "al.cs.as.binary_coded_decimal",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.hardware",
-      "target": "al.cs.processor",
+      "source": "al.cs.as.number_systems",
+      "target": "al.cs.as.character_encoding",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.processor",
-      "target": "al.cs.system_software",
+      "source": "al.cs.as.number_systems",
+      "target": "al.cs.as.images",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.communication",
-      "target": "al.cs.security",
+      "source": "al.cs.as.number_systems",
+      "target": "al.cs.as.sound",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.security",
-      "target": "al.cs.ethics",
+      "source": "al.cs.as.images",
+      "target": "al.cs.as.compression",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.data_representation",
-      "target": "al.cs.algorithm_design",
+      "source": "al.cs.as.sound",
+      "target": "al.cs.as.compression",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.algorithm_design",
-      "target": "al.cs.programming",
+      "source": "al.cs.as.binary_arithmetic",
+      "target": "al.cs.a2.floating_point",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.programming",
-      "target": "al.cs.data_types",
+      "source": "al.cs.as.number_systems",
+      "target": "al.cs.as.logic_gates",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.algorithm_design",
-      "target": "al.cs.computational_thinking",
+      "source": "al.cs.as.network_types",
+      "target": "al.cs.as.transmission_media",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.programming",
-      "target": "al.cs.computational_thinking",
+      "source": "al.cs.as.transmission_media",
+      "target": "al.cs.as.protocols",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.data_types",
-      "target": "al.cs.abstract_data_structures",
+      "source": "al.cs.as.protocols",
+      "target": "al.cs.as.internet",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.computational_thinking",
-      "target": "al.cs.abstract_data_structures",
+      "source": "al.cs.as.protocols",
+      "target": "al.cs.a2.protocol_layers",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.programming",
-      "target": "al.cs.recursion",
+      "source": "al.cs.as.internet",
+      "target": "al.cs.a2.ip_addressing",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.computational_thinking",
-      "target": "al.cs.recursion",
+      "source": "al.cs.a2.protocol_layers",
+      "target": "al.cs.a2.packet_structure",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.programming",
-      "target": "al.cs.oop",
+      "source": "al.cs.a2.ip_addressing",
+      "target": "al.cs.a2.client_server_web",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.data_types",
-      "target": "al.cs.oop",
+      "source": "al.cs.a2.protocol_layers",
+      "target": "al.cs.a2.client_server_web",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.data_types",
-      "target": "al.cs.databases",
+      "source": "al.cs.as.input_output_devices",
+      "target": "al.cs.as.storage_devices",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.algorithm_design",
-      "target": "al.cs.databases",
+      "source": "al.cs.as.logic_gates",
+      "target": "al.cs.as.cpu_architecture",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.hardware",
-      "target": "al.cs.boolean_algebra",
+      "source": "al.cs.as.storage_devices",
+      "target": "al.cs.as.cpu_architecture",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.data_representation",
-      "target": "al.cs.boolean_algebra",
+      "source": "al.cs.as.cpu_architecture",
+      "target": "al.cs.as.fetch_execute",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.processor",
-      "target": "al.cs.processor_arch",
+      "source": "al.cs.as.fetch_execute",
+      "target": "al.cs.as.instruction_set",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.system_software",
-      "target": "al.cs.processor_arch",
+      "source": "al.cs.as.instruction_set",
+      "target": "al.cs.as.assembly_language",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.communication",
-      "target": "al.cs.networking_protocols",
+      "source": "al.cs.as.cpu_architecture",
+      "target": "al.cs.as.operating_systems",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.security",
-      "target": "al.cs.networking_protocols",
+      "source": "al.cs.as.operating_systems",
+      "target": "al.cs.as.translators",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.abstract_data_structures",
-      "target": "al.cs.ai",
+      "source": "al.cs.as.operating_systems",
+      "target": "al.cs.as.utility_software",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.cs.computational_thinking",
-      "target": "al.cs.ai",
+      "source": "al.cs.as.instruction_set",
+      "target": "al.cs.a2.risc_cisc",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.fetch_execute",
+      "target": "al.cs.a2.pipelining",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.risc_cisc",
+      "target": "al.cs.a2.pipelining",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.translators",
+      "target": "al.cs.a2.virtual_machines",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.operating_systems",
+      "target": "al.cs.a2.virtual_machines",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.logic_gates",
+      "target": "al.cs.a2.boolean_algebra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.boolean_algebra",
+      "target": "al.cs.a2.karnaugh_maps",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.boolean_algebra",
+      "target": "al.cs.a2.flip_flops",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.logic_gates",
+      "target": "al.cs.a2.flip_flops",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.operating_systems",
+      "target": "al.cs.a2.os_process_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.operating_systems",
+      "target": "al.cs.a2.os_memory_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.storage_devices",
+      "target": "al.cs.a2.os_memory_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.translators",
+      "target": "al.cs.a2.compiler_stages",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.compiler_stages",
+      "target": "al.cs.a2.bnf_syntax_diagrams",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.stacks",
+      "target": "al.cs.a2.rpn",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.compiler_stages",
+      "target": "al.cs.a2.rpn",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.protocols",
+      "target": "al.cs.as.encryption",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.network_types",
+      "target": "al.cs.as.malware",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.encryption",
+      "target": "al.cs.as.firewalls_auth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.malware",
+      "target": "al.cs.as.firewalls_auth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.number_systems",
+      "target": "al.cs.as.data_integrity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.firewalls_auth",
+      "target": "al.cs.as.privacy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.privacy",
+      "target": "al.cs.as.ethics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.ethics",
+      "target": "al.cs.as.intellectual_property",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.encryption",
+      "target": "al.cs.a2.security_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.firewalls_auth",
+      "target": "al.cs.a2.security_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.input_output_devices",
+      "target": "al.cs.a2.monitoring_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.operating_systems",
+      "target": "al.cs.a2.monitoring_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.pseudocode_flowcharts",
+      "target": "al.cs.as.decomposition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.decomposition",
+      "target": "al.cs.as.linear_search",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.linear_search",
+      "target": "al.cs.as.binary_search",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.decomposition",
+      "target": "al.cs.as.bubble_sort",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.bubble_sort",
+      "target": "al.cs.as.insertion_sort",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.pseudocode_flowcharts",
+      "target": "al.cs.as.variables_constants",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.variables_constants",
+      "target": "al.cs.as.selection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.selection",
+      "target": "al.cs.as.iteration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.iteration",
+      "target": "al.cs.as.procedures_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.variables_constants",
+      "target": "al.cs.as.string_operations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.iteration",
+      "target": "al.cs.as.file_handling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.variables_constants",
+      "target": "al.cs.as.arrays",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.iteration",
+      "target": "al.cs.as.arrays",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.arrays",
+      "target": "al.cs.as.records",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.arrays",
+      "target": "al.cs.as.stacks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.arrays",
+      "target": "al.cs.as.queues",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.records",
+      "target": "al.cs.as.linked_lists",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.procedures_functions",
+      "target": "al.cs.as.testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.testing",
+      "target": "al.cs.as.sdlc_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.records",
+      "target": "al.cs.a2.user_defined_types",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.records",
+      "target": "al.cs.as.databases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.procedures_functions",
+      "target": "al.cs.a2.recursion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.stacks",
+      "target": "al.cs.a2.recursion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.recursion",
+      "target": "al.cs.a2.merge_sort",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.insertion_sort",
+      "target": "al.cs.a2.merge_sort",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.recursion",
+      "target": "al.cs.a2.quick_sort",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.bubble_sort",
+      "target": "al.cs.a2.big_o",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.binary_search",
+      "target": "al.cs.a2.big_o",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.merge_sort",
+      "target": "al.cs.a2.big_o",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.quick_sort",
+      "target": "al.cs.a2.big_o",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.linked_lists",
+      "target": "al.cs.a2.binary_trees",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.recursion",
+      "target": "al.cs.a2.binary_trees",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.arrays",
+      "target": "al.cs.a2.hash_tables",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.linked_lists",
+      "target": "al.cs.a2.hash_tables",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.linked_lists",
+      "target": "al.cs.a2.graphs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.graphs",
+      "target": "al.cs.a2.graph_traversal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.stacks",
+      "target": "al.cs.a2.graph_traversal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.queues",
+      "target": "al.cs.a2.graph_traversal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.graph_traversal",
+      "target": "al.cs.a2.dijkstra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.procedures_functions",
+      "target": "al.cs.a2.oop_classes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.user_defined_types",
+      "target": "al.cs.a2.oop_classes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.oop_classes",
+      "target": "al.cs.a2.encapsulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.oop_classes",
+      "target": "al.cs.a2.inheritance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.inheritance",
+      "target": "al.cs.a2.polymorphism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.databases",
+      "target": "al.cs.a2.databases_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.databases_advanced",
+      "target": "al.cs.a2.sql_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.procedures_functions",
+      "target": "al.cs.a2.declarative_programming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.databases",
+      "target": "al.cs.a2.declarative_programming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.sdlc_basics",
+      "target": "al.cs.a2.sdlc_methodologies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.testing",
+      "target": "al.cs.a2.testing_strategies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.sdlc_methodologies",
+      "target": "al.cs.a2.testing_strategies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.binary_trees",
+      "target": "al.cs.a2.ai_machine_learning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.big_o",
+      "target": "al.cs.a2.ai_machine_learning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.graphs",
+      "target": "al.cs.a2.ai_machine_learning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.file_handling",
+      "target": "al.cs.a2.file_organisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.hash_tables",
+      "target": "al.cs.a2.file_organisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.as.procedures_functions",
+      "target": "al.cs.a2.exception_handling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.a2.oop_classes",
+      "target": "al.cs.a2.exception_handling",
       "relation": "prerequisite_for"
     }
   ]

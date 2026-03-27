@@ -1,9 +1,9 @@
 {
   "metadata": {
     "domain": "psychology",
-    "curriculum": "Cambridge A-Level Psychology (9990)",
+    "curriculum": "Cambridge International AS & A Level Psychology (9990)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "A-Level Psychology topics with prerequisite ordering, colored by component",
     "sources": [
       "Cambridge International AS & A Level Psychology 9990 Syllabus"
@@ -26,293 +26,1489 @@
   ],
   "nodes": [
     {
-      "id": "al.psy.research_methods",
-      "label": "Research Methods",
+      "id": "al.psych.as.experimental_method",
+      "label": "Experimental Method",
       "type": "concept",
-      "description": "Experiments, observations, self-reports, sampling, ethics, data analysis",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Laboratory, field and natural experiments; independent, dependent and extraneous variables; experimental designs",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.psy.as",
       "bookName": "Psychology AS (Year 1)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "083521020e8ce4f6",
+      "comprehended": false
     },
     {
-      "id": "al.psy.biological",
-      "label": "Biological Approach",
+      "id": "al.psych.as.self_report_methods",
+      "label": "Self-Report Methods",
       "type": "concept",
-      "description": "Brain structure, neurons, neurotransmitters, genetics and behaviour, localisation of function",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Questionnaires and interviews; open and closed questions; structured, semi-structured and unstructured interviews",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.psy.as",
       "bookName": "Psychology AS (Year 1)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "03c847b0cccd62bc",
+      "comprehended": false
     },
     {
-      "id": "al.psy.cognitive",
-      "label": "Cognitive Approach",
+      "id": "al.psych.as.observation_method",
+      "label": "Observation Method",
       "type": "concept",
-      "description": "Memory models, attention, perception, cognitive development, schema theory",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Naturalistic and controlled observation; participant and non-participant; covert and overt; structured observation techniques",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.psy.as",
       "bookName": "Psychology AS (Year 1)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "6ed0c142a2636f41",
+      "comprehended": false
     },
     {
-      "id": "al.psy.learning",
-      "label": "Learning Approach",
+      "id": "al.psych.as.correlation",
+      "label": "Correlational Studies",
       "type": "concept",
-      "description": "Classical conditioning, operant conditioning, social learning theory",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Positive and negative correlations; scatter diagrams; correlation coefficients; strengths and limitations of correlations",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.psy.as",
       "bookName": "Psychology AS (Year 1)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "a17b2e68b10cbb57",
+      "comprehended": false
     },
     {
-      "id": "al.psy.social",
-      "label": "Social Approach",
+      "id": "al.psych.as.case_studies",
+      "label": "Case Studies",
       "type": "concept",
-      "description": "Obedience, conformity, social identity theory, bystander behaviour",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "In-depth investigation of an individual, group or event; use of multiple methods; strengths and limitations",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.psy.as",
       "bookName": "Psychology AS (Year 1)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "4977cb537b5c6926",
+      "comprehended": false
     },
     {
-      "id": "al.psy.developmental",
-      "label": "Developmental Psychology",
+      "id": "al.psych.as.sampling_methods",
+      "label": "Sampling Methods",
       "type": "concept",
-      "description": "Attachment theory, cognitive development stages, moral development",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Random, opportunity, self-selected and snowball sampling; target populations; generalisability and bias",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.psy.as",
       "bookName": "Psychology AS (Year 1)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "a4c4ea56a308d110",
+      "comprehended": false
     },
     {
-      "id": "al.psy.abnormality",
-      "label": "Abnormal Psychology",
+      "id": "al.psych.as.data_types_and_analysis",
+      "label": "Data Types & Descriptive Statistics",
       "type": "concept",
-      "description": "Definitions of abnormality, depression, anxiety disorders, treatments",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
-      "book": "al.psy.a2",
-      "bookName": "Psychology A2 (Year 2)",
-      "bookColor": "#6d28d9",
-      "bookOrder": 2
-    },
-    {
-      "id": "al.psy.health",
-      "label": "Health Psychology",
-      "type": "concept",
-      "description": "Stress, coping strategies, health promotion, substance abuse, adherence to treatment",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
-      "book": "al.psy.a2",
-      "bookName": "Psychology A2 (Year 2)",
-      "bookColor": "#6d28d9",
-      "bookOrder": 2
-    },
-    {
-      "id": "al.psy.organisations",
-      "label": "Psychology of Organisations",
-      "type": "concept",
-      "description": "Motivation at work, leadership, group dynamics, selection and training",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
-      "book": "al.psy.a2",
-      "bookName": "Psychology A2 (Year 2)",
-      "bookColor": "#6d28d9",
-      "bookOrder": 2
-    },
-    {
-      "id": "al.psy.consumer",
-      "label": "Consumer Psychology",
-      "type": "concept",
-      "description": "Advertising, brand loyalty, consumer decision making, persuasion techniques",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
-      "book": "al.psy.a2",
-      "bookName": "Psychology A2 (Year 2)",
-      "bookColor": "#6d28d9",
-      "bookOrder": 2
-    },
-    {
-      "id": "al.psy.research_a2",
-      "label": "Research Methods (A2)",
-      "type": "concept",
-      "description": "Inferential statistics, chi-squared, Mann-Whitney, Wilcoxon, Spearman's, research design evaluation",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
-      "book": "al.psy.a2",
-      "bookName": "Psychology A2 (Year 2)",
-      "bookColor": "#6d28d9",
-      "bookOrder": 2
-    },
-    {
-      "id": "al.psy.individual_differences",
-      "label": "Individual Differences",
-      "type": "concept",
-      "description": "Intelligence, personality, psychometrics, nature-nurture debate",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Quantitative and qualitative data; measures of central tendency and dispersion; tables, charts and graphs",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.psy.as",
       "bookName": "Psychology AS (Year 1)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "032f889df2209340",
+      "comprehended": false
     },
     {
-      "id": "al.psy.forensic",
-      "label": "Forensic Psychology",
+      "id": "al.psych.as.ethical_considerations",
+      "label": "Ethical Considerations",
       "type": "concept",
-      "description": "Criminal behaviour, eyewitness testimony, offender profiling, punishment and rehabilitation",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "BPS guidelines; informed consent, deception, right to withdraw, protection from harm, confidentiality, debriefing",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "91a9fd7b415db168",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.reliability_and_validity",
+      "label": "Reliability & Validity",
+      "type": "concept",
+      "description": "Internal and external validity; ecological validity; test-retest and inter-rater reliability; demand characteristics",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "04b7bc9feff8f8f6",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.memory",
+      "label": "Memory",
+      "type": "concept",
+      "description": "Multi-store model (Atkinson & Shiffrin); working memory model (Baddeley & Hitch); levels of processing; reconstructive memory",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "9e3b5661af8689b2",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.attention",
+      "label": "Attention",
+      "type": "concept",
+      "description": "Selective attention; Broadbent's filter model; Treisman's attenuation model; divided attention; inattentional blindness",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "ce0437b141625a5e",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.cognitive_development",
+      "label": "Cognitive Development",
+      "type": "concept",
+      "description": "Piaget's stages of cognitive development; schema theory; assimilation and accommodation; Vygotsky's zone of proximal development",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "67035f33af44e92c",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.cognitive_approach_assumptions",
+      "label": "Cognitive Approach: Assumptions",
+      "type": "concept",
+      "description": "Mind as information processor; internal mental processes; computer analogy; schemas; cognitive neuroscience",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "b40fddc3cd5153c8",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.obedience",
+      "label": "Obedience",
+      "type": "concept",
+      "description": "Milgram's obedience studies; situational factors; agentic state; legitimate authority; variations and ethical concerns",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "1700e7c4ce53b0f3",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.conformity",
+      "label": "Conformity",
+      "type": "concept",
+      "description": "Asch's line studies; types of conformity (compliance, identification, internalisation); informational and normative social influence",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "484d131680ca824e",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.social_influence",
+      "label": "Social Influence & Social Identity",
+      "type": "concept",
+      "description": "Minority influence; social identity theory (Tajfel); in-group/out-group bias; social categorisation; social comparison",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "429156ff66c75877",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.social_approach_assumptions",
+      "label": "Social Approach: Assumptions",
+      "type": "concept",
+      "description": "Behaviour influenced by presence of others; social context shapes actions; importance of groups and norms",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "37f1c651198e4246",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.bystander_behaviour",
+      "label": "Bystander Behaviour",
+      "type": "concept",
+      "description": "Diffusion of responsibility; pluralistic ignorance; Latane and Darley's decision model; bystander effect research",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "88bc7bfde3f7307e",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.classical_conditioning",
+      "label": "Classical Conditioning",
+      "type": "concept",
+      "description": "Pavlov's experiments; UCS, UCR, CS, CR; acquisition, extinction, spontaneous recovery; stimulus generalisation and discrimination",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "6d2f1a2734e0535e",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.operant_conditioning",
+      "label": "Operant Conditioning",
+      "type": "concept",
+      "description": "Skinner's experiments; positive and negative reinforcement; punishment; schedules of reinforcement; shaping",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "1234c170fc0fdd12",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.social_learning_theory",
+      "label": "Social Learning Theory",
+      "type": "concept",
+      "description": "Bandura's Bobo doll studies; observational learning; modelling; vicarious reinforcement; self-efficacy; mediational processes",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "f80939f1e932b4dc",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.learning_approach_assumptions",
+      "label": "Learning Approach: Assumptions",
+      "type": "concept",
+      "description": "Behaviour is learned from environment; stimulus-response associations; behaviourism; focus on observable behaviour; nurture over nature",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "241d4cc39855fd97",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.brain_structure",
+      "label": "Brain Structure & Localisation",
+      "type": "concept",
+      "description": "Structure and function of brain regions; cerebral cortex; localisation of function; hemispheric lateralisation; brain scanning techniques",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "47e904ebba85cb6a",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.neurotransmitters",
+      "label": "Neurotransmitters",
+      "type": "concept",
+      "description": "Synaptic transmission; role of serotonin, dopamine, noradrenaline and GABA in behaviour; excitatory and inhibitory effects",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "26e3fad8e99eebee",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.hormones",
+      "label": "Hormones & Behaviour",
+      "type": "concept",
+      "description": "Endocrine system; role of cortisol, testosterone, adrenaline and oxytocin; fight-or-flight response; hormonal influences on behaviour",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "674bd96441d062ae",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.genetics_and_behaviour",
+      "label": "Genetics & Behaviour",
+      "type": "concept",
+      "description": "Genotype and phenotype; twin studies; adoption studies; nature-nurture debate; genetic predispositions; epigenetics",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "e0e77f5f9cd4f633",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.biological_approach_assumptions",
+      "label": "Biological Approach: Assumptions",
+      "type": "concept",
+      "description": "Behaviour has a biological basis; role of CNS and nervous system; evolutionary influences; biological determinism",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "eb33a90721407d33",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.neurons_and_synaptic_transmission",
+      "label": "Neurons & Synaptic Transmission",
+      "type": "concept",
+      "description": "Types of neurons (sensory, relay, motor); structure of a neuron; electrical impulse transmission; synaptic process",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "90877d5ed5656a92",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.advanced_research_methods",
+      "label": "Advanced Research Methods",
+      "type": "concept",
+      "description": "Longitudinal, cross-sectional and cross-cultural studies; meta-analysis; methodological issues in psychological research",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.psy.a2",
       "bookName": "Psychology A2 (Year 2)",
       "bookColor": "#6d28d9",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "c93c880b4f04101d",
+      "comprehended": false
     },
     {
-      "id": "al.psy.environmental",
-      "label": "Environmental Psychology",
+      "id": "al.psych.a2.inferential_statistics",
+      "label": "Inferential Statistics",
       "type": "concept",
-      "description": "Personal space, crowding, environmental stress, pro-environmental behaviour",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Levels of significance; Type I and Type II errors; chi-squared, Mann-Whitney U, Wilcoxon signed ranks, Spearman's rho",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.psy.a2",
       "bookName": "Psychology A2 (Year 2)",
       "bookColor": "#6d28d9",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "b6e2718d53561266",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.hypothesis_testing",
+      "label": "Hypothesis Testing & Significance",
+      "type": "concept",
+      "description": "Null and alternative hypotheses; one-tailed and two-tailed tests; probability and significance levels; critical values",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "53f1b120fc9fcfa2",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.diagnosis_of_mental_disorders",
+      "label": "Diagnosis of Mental Disorders",
+      "type": "concept",
+      "description": "Classification systems (DSM and ICD); reliability and validity of diagnosis; labelling; cultural considerations in diagnosis",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "bbd213038bce4515",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.schizophrenia",
+      "label": "Schizophrenia",
+      "type": "concept",
+      "description": "Symptoms and diagnosis; biological explanations (dopamine hypothesis, genetics); psychological explanations; treatments",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "2f6d1c00dc74d4d7",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.depression",
+      "label": "Depression",
+      "type": "concept",
+      "description": "Symptoms and diagnosis; biological explanations (serotonin, genetics); cognitive explanations (Beck, Ellis); treatments",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "d67344a4f5a3379a",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.ocd",
+      "label": "Obsessive-Compulsive Disorder",
+      "type": "concept",
+      "description": "Symptoms and diagnosis; biological explanations (serotonin, genetics); behavioural explanations; treatments including ERP",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "96caa75aabdc3629",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.phobias",
+      "label": "Phobias",
+      "type": "concept",
+      "description": "Types of phobias; behavioural explanations (two-process model); biological preparedness; treatments including systematic desensitisation and flooding",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "e287439fe0f3a43d",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.biological_treatments",
+      "label": "Biological Treatments",
+      "type": "concept",
+      "description": "Drug therapy (antipsychotics, antidepressants, anxiolytics); ECT; psychosurgery; effectiveness and ethical issues",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "139e9604d048271e",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.psychological_treatments",
+      "label": "Psychological Treatments",
+      "type": "concept",
+      "description": "CBT; systematic desensitisation; token economies; psychoanalysis; effectiveness of psychological therapies compared to biological treatments",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "a01a3cfcb8725cd6",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.explanations_of_mental_disorders",
+      "label": "Explanations of Mental Disorders",
+      "type": "concept",
+      "description": "Biological, behavioural, cognitive and social explanations; diathesis-stress model; interactionist approach",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "daed839927ea083f",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.advertising_techniques",
+      "label": "Advertising Techniques",
+      "type": "concept",
+      "description": "Types of advertising appeals; use of emotion, humour and fear; celebrity endorsement; persuasion theories (ELM)",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "8fb1d26481e4f611",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.brand_recognition",
+      "label": "Brand Recognition & Loyalty",
+      "type": "concept",
+      "description": "Brand awareness; brand personality; consumer-brand relationships; factors affecting brand loyalty; packaging and design",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "82079f4aa4e7cf33",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.consumer_decision_making",
+      "label": "Consumer Decision-Making",
+      "type": "concept",
+      "description": "Models of consumer decision-making; heuristics and biases; cognitive dissonance; impulse buying; environmental influences on purchasing",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "03ad4cc0d79a0324",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.product_and_environment",
+      "label": "Product Design & Shopping Environment",
+      "type": "concept",
+      "description": "Store layout and atmosphere; music and colour effects on buying; product placement; online vs in-store consumer behaviour",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "67a3580a2a8bed02",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.stress",
+      "label": "Stress",
+      "type": "concept",
+      "description": "Sources of stress; physiological response to stress (GAS, HPA axis, SAM pathway); stress and the immune system; workplace stress",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "25aa175925331f57",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.coping_with_stress",
+      "label": "Coping with Stress",
+      "type": "concept",
+      "description": "Problem-focused and emotion-focused coping; stress inoculation training; social support; biofeedback; mindfulness approaches",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "6d46e5783af64475",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.addiction",
+      "label": "Addiction",
+      "type": "concept",
+      "description": "Biological explanations of addiction (dopamine, genetics); psychological explanations (learning theory, cognitive); substance and behavioural addictions",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "1ccd20933f0845a6",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.health_promotion",
+      "label": "Health Promotion",
+      "type": "concept",
+      "description": "Health belief model; theory of planned behaviour; fear arousal; media campaigns; doctor-patient communication; adherence to medical advice",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "c3486489fa8cb91f",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.individual_differences_in_health",
+      "label": "Individual Differences in Health",
+      "type": "concept",
+      "description": "Type A and Type B personality; locus of control; hardiness; role of individual differences in stress and health outcomes",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "a3374a2f44756342",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.motivation_at_work",
+      "label": "Motivation at Work",
+      "type": "concept",
+      "description": "Maslow's hierarchy of needs; Herzberg's two-factor theory; equity theory; expectancy theory; intrinsic and extrinsic motivation",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "8cda81240c144a94",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.leadership",
+      "label": "Leadership",
+      "type": "concept",
+      "description": "Trait theories of leadership; behavioural styles; contingency models (Fiedler); transformational and transactional leadership",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "b846848a3f8bc623",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.group_behaviour",
+      "label": "Group Behaviour in Organisations",
+      "type": "concept",
+      "description": "Group dynamics; groupthink; social loafing; team roles (Belbin); group decision-making; intergroup conflict",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "7b655e9ed5aeb789",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.job_satisfaction",
+      "label": "Job Satisfaction",
+      "type": "concept",
+      "description": "Measurement of job satisfaction; factors affecting satisfaction; job satisfaction and performance; organisational commitment; absenteeism and turnover",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "4d7b0bf274f6831a",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.selection_and_training",
+      "label": "Selection & Training",
+      "type": "concept",
+      "description": "Personnel selection methods (interviews, psychometric tests); assessment centres; training methods; effectiveness of training programmes",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "197c5db1f0087ba3",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.organisational_work_conditions",
+      "label": "Organisational Work Conditions",
+      "type": "concept",
+      "description": "Physical work environment; temporal conditions (shift work); ergonomics; effects of work conditions on performance and well-being",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "7e86d63f061ccb6c",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.children_as_witnesses",
+      "label": "Children as Witnesses",
+      "type": "concept",
+      "description": "Reliability of child testimony; suggestibility; cognitive interview techniques adapted for children; ethical considerations",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "22bed935e47a36af",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.as.approaches_comparison",
+      "label": "Comparing Approaches",
+      "type": "concept",
+      "description": "Strengths and limitations of cognitive, social, learning and biological approaches; reductionism; determinism; nature-nurture",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "0852c4612ad5e00b",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.issues_and_debates",
+      "label": "Issues & Debates in Psychology",
+      "type": "concept",
+      "description": "Nature vs nurture; free will vs determinism; reductionism vs holism; ethnocentrism; psychology as a science; ethical issues in research",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "02ca0fdcc039640a",
+      "comprehended": false
+    },
+    {
+      "id": "al.psych.a2.applying_research_to_everyday_life",
+      "label": "Applying Research to Everyday Life",
+      "type": "concept",
+      "description": "Ecological validity; practical applications of psychological research; ethics of application; cultural considerations",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "56efaa13767cddd5",
+      "comprehended": false
     }
   ],
   "edges": [
     {
-      "source": "al.psy.research_methods",
-      "target": "al.psy.biological",
+      "source": "al.psych.as.experimental_method",
+      "target": "al.psych.as.self_report_methods",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.research_methods",
-      "target": "al.psy.cognitive",
+      "source": "al.psych.as.experimental_method",
+      "target": "al.psych.as.observation_method",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.research_methods",
-      "target": "al.psy.learning",
+      "source": "al.psych.as.experimental_method",
+      "target": "al.psych.as.correlation",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.research_methods",
-      "target": "al.psy.social",
+      "source": "al.psych.as.experimental_method",
+      "target": "al.psych.as.case_studies",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.cognitive",
-      "target": "al.psy.developmental",
+      "source": "al.psych.as.experimental_method",
+      "target": "al.psych.as.sampling_methods",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.learning",
-      "target": "al.psy.developmental",
+      "source": "al.psych.as.experimental_method",
+      "target": "al.psych.as.data_types_and_analysis",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.biological",
-      "target": "al.psy.individual_differences",
+      "source": "al.psych.as.experimental_method",
+      "target": "al.psych.as.ethical_considerations",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.cognitive",
-      "target": "al.psy.individual_differences",
+      "source": "al.psych.as.data_types_and_analysis",
+      "target": "al.psych.as.reliability_and_validity",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.biological",
-      "target": "al.psy.abnormality",
+      "source": "al.psych.as.sampling_methods",
+      "target": "al.psych.as.reliability_and_validity",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.cognitive",
-      "target": "al.psy.abnormality",
+      "source": "al.psych.as.cognitive_approach_assumptions",
+      "target": "al.psych.as.memory",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.learning",
-      "target": "al.psy.abnormality",
+      "source": "al.psych.as.cognitive_approach_assumptions",
+      "target": "al.psych.as.attention",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.biological",
-      "target": "al.psy.health",
+      "source": "al.psych.as.cognitive_approach_assumptions",
+      "target": "al.psych.as.cognitive_development",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.cognitive",
-      "target": "al.psy.health",
+      "source": "al.psych.as.memory",
+      "target": "al.psych.as.cognitive_development",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.social",
-      "target": "al.psy.organisations",
+      "source": "al.psych.as.experimental_method",
+      "target": "al.psych.as.cognitive_approach_assumptions",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.learning",
-      "target": "al.psy.organisations",
+      "source": "al.psych.as.social_approach_assumptions",
+      "target": "al.psych.as.obedience",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.cognitive",
-      "target": "al.psy.consumer",
+      "source": "al.psych.as.social_approach_assumptions",
+      "target": "al.psych.as.conformity",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.social",
-      "target": "al.psy.consumer",
+      "source": "al.psych.as.obedience",
+      "target": "al.psych.as.social_influence",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.research_methods",
-      "target": "al.psy.research_a2",
+      "source": "al.psych.as.conformity",
+      "target": "al.psych.as.social_influence",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.individual_differences",
-      "target": "al.psy.research_a2",
+      "source": "al.psych.as.social_approach_assumptions",
+      "target": "al.psych.as.bystander_behaviour",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.social",
-      "target": "al.psy.forensic",
+      "source": "al.psych.as.experimental_method",
+      "target": "al.psych.as.social_approach_assumptions",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.abnormality",
-      "target": "al.psy.forensic",
+      "source": "al.psych.as.learning_approach_assumptions",
+      "target": "al.psych.as.classical_conditioning",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.cognitive",
-      "target": "al.psy.environmental",
+      "source": "al.psych.as.learning_approach_assumptions",
+      "target": "al.psych.as.operant_conditioning",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.social",
-      "target": "al.psy.environmental",
+      "source": "al.psych.as.classical_conditioning",
+      "target": "al.psych.as.social_learning_theory",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.psy.developmental",
-      "target": "al.psy.abnormality",
+      "source": "al.psych.as.operant_conditioning",
+      "target": "al.psych.as.social_learning_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.experimental_method",
+      "target": "al.psych.as.learning_approach_assumptions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.biological_approach_assumptions",
+      "target": "al.psych.as.brain_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.biological_approach_assumptions",
+      "target": "al.psych.as.neurons_and_synaptic_transmission",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.neurons_and_synaptic_transmission",
+      "target": "al.psych.as.neurotransmitters",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.biological_approach_assumptions",
+      "target": "al.psych.as.hormones",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.biological_approach_assumptions",
+      "target": "al.psych.as.genetics_and_behaviour",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.experimental_method",
+      "target": "al.psych.as.biological_approach_assumptions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.cognitive_approach_assumptions",
+      "target": "al.psych.as.approaches_comparison",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.social_approach_assumptions",
+      "target": "al.psych.as.approaches_comparison",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.learning_approach_assumptions",
+      "target": "al.psych.as.approaches_comparison",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.biological_approach_assumptions",
+      "target": "al.psych.as.approaches_comparison",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.reliability_and_validity",
+      "target": "al.psych.a2.advanced_research_methods",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.data_types_and_analysis",
+      "target": "al.psych.a2.inferential_statistics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.correlation",
+      "target": "al.psych.a2.inferential_statistics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.inferential_statistics",
+      "target": "al.psych.a2.hypothesis_testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.neurotransmitters",
+      "target": "al.psych.a2.diagnosis_of_mental_disorders",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.genetics_and_behaviour",
+      "target": "al.psych.a2.diagnosis_of_mental_disorders",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.diagnosis_of_mental_disorders",
+      "target": "al.psych.a2.explanations_of_mental_disorders",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.diagnosis_of_mental_disorders",
+      "target": "al.psych.a2.schizophrenia",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.explanations_of_mental_disorders",
+      "target": "al.psych.a2.schizophrenia",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.diagnosis_of_mental_disorders",
+      "target": "al.psych.a2.depression",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.explanations_of_mental_disorders",
+      "target": "al.psych.a2.depression",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.diagnosis_of_mental_disorders",
+      "target": "al.psych.a2.ocd",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.explanations_of_mental_disorders",
+      "target": "al.psych.a2.ocd",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.diagnosis_of_mental_disorders",
+      "target": "al.psych.a2.phobias",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.classical_conditioning",
+      "target": "al.psych.a2.phobias",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.schizophrenia",
+      "target": "al.psych.a2.biological_treatments",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.depression",
+      "target": "al.psych.a2.biological_treatments",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.depression",
+      "target": "al.psych.a2.psychological_treatments",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.phobias",
+      "target": "al.psych.a2.psychological_treatments",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.ocd",
+      "target": "al.psych.a2.psychological_treatments",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.social_learning_theory",
+      "target": "al.psych.a2.advertising_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.social_influence",
+      "target": "al.psych.a2.advertising_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.advertising_techniques",
+      "target": "al.psych.a2.brand_recognition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.memory",
+      "target": "al.psych.a2.brand_recognition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.cognitive_approach_assumptions",
+      "target": "al.psych.a2.consumer_decision_making",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.advertising_techniques",
+      "target": "al.psych.a2.consumer_decision_making",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.consumer_decision_making",
+      "target": "al.psych.a2.product_and_environment",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.hormones",
+      "target": "al.psych.a2.stress",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.biological_approach_assumptions",
+      "target": "al.psych.a2.stress",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.stress",
+      "target": "al.psych.a2.coping_with_stress",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.neurotransmitters",
+      "target": "al.psych.a2.addiction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.classical_conditioning",
+      "target": "al.psych.a2.addiction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.operant_conditioning",
+      "target": "al.psych.a2.addiction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.stress",
+      "target": "al.psych.a2.health_promotion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.social_influence",
+      "target": "al.psych.a2.health_promotion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.stress",
+      "target": "al.psych.a2.individual_differences_in_health",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.genetics_and_behaviour",
+      "target": "al.psych.a2.individual_differences_in_health",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.social_influence",
+      "target": "al.psych.a2.motivation_at_work",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.operant_conditioning",
+      "target": "al.psych.a2.motivation_at_work",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.motivation_at_work",
+      "target": "al.psych.a2.leadership",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.conformity",
+      "target": "al.psych.a2.group_behaviour",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.social_influence",
+      "target": "al.psych.a2.group_behaviour",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.motivation_at_work",
+      "target": "al.psych.a2.job_satisfaction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.group_behaviour",
+      "target": "al.psych.a2.job_satisfaction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.leadership",
+      "target": "al.psych.a2.selection_and_training",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.job_satisfaction",
+      "target": "al.psych.a2.organisational_work_conditions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.stress",
+      "target": "al.psych.a2.organisational_work_conditions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.memory",
+      "target": "al.psych.a2.children_as_witnesses",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.cognitive_development",
+      "target": "al.psych.a2.children_as_witnesses",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.as.approaches_comparison",
+      "target": "al.psych.a2.issues_and_debates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.advanced_research_methods",
+      "target": "al.psych.a2.issues_and_debates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.issues_and_debates",
+      "target": "al.psych.a2.applying_research_to_everyday_life",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psych.a2.advanced_research_methods",
+      "target": "al.psych.a2.applying_research_to_everyday_life",
       "relation": "prerequisite_for"
     }
   ]

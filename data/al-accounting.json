@@ -3,7 +3,7 @@
     "domain": "accounting",
     "curriculum": "Cambridge A-Level Accounting (9706)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "A-Level Accounting topics with prerequisite ordering, colored by component",
     "sources": [
       "Cambridge International AS & A Level Accounting 9706 Syllabus"
@@ -26,244 +26,1522 @@
   ],
   "nodes": [
     {
-      "id": "al.acc.double_entry",
-      "label": "Double Entry & Accounting Cycle",
+      "id": "al.acc.as.accounting_equation",
+      "label": "The Accounting Equation",
       "type": "concept",
-      "description": "Accounting equation, double entry bookkeeping, ledger accounts, trial balance",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Assets = Capital + Liabilities; understanding the dual nature of transactions and their effect on the equation",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.acc.as",
       "bookName": "Accounting AS (Year 1)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "aa88af3eb8572a49",
+      "comprehended": false
     },
     {
-      "id": "al.acc.source_documents",
-      "label": "Source Documents & Books of Prime Entry",
+      "id": "al.acc.as.double_entry_bookkeeping",
+      "label": "Double Entry Bookkeeping",
       "type": "concept",
-      "description": "Invoices, credit notes, journals, day books, cash book",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Principles of debit and credit; recording transactions in T-accounts using the dual aspect concept",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.acc.as",
       "bookName": "Accounting AS (Year 1)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "ffe7febfc8126be9",
+      "comprehended": false
     },
     {
-      "id": "al.acc.adjustments",
-      "label": "Year-End Adjustments",
+      "id": "al.acc.as.source_documents",
+      "label": "Source Documents",
       "type": "concept",
-      "description": "Accruals, prepayments, depreciation, bad debts, provisions",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Invoices, credit notes, receipts, cheques, debit notes and their role as evidence of transactions",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.acc.as",
       "bookName": "Accounting AS (Year 1)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "05c3c366815b1486",
+      "comprehended": false
     },
     {
-      "id": "al.acc.financial_statements",
-      "label": "Financial Statements",
+      "id": "al.acc.as.books_of_prime_entry",
+      "label": "Books of Prime Entry",
       "type": "concept",
-      "description": "Income statement, statement of financial position, preparation and presentation",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Sales day book, purchases day book, returns day books, general journal and cash book as primary recording books",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.acc.as",
       "bookName": "Accounting AS (Year 1)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "bd72c6cedcfc9aa6",
+      "comprehended": false
     },
     {
-      "id": "al.acc.bank_reconciliation",
+      "id": "al.acc.as.cash_book",
+      "label": "Cash Book",
+      "type": "concept",
+      "description": "Two-column and three-column cash books; recording cash and bank transactions, cash discounts",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "51721fee5c40d697",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.petty_cash_book",
+      "label": "Petty Cash Book",
+      "type": "concept",
+      "description": "Imprest system, recording small cash payments, analysis columns, reimbursement of the float",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "d3266b981c972a6c",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.ledger_accounts",
+      "label": "Ledger Accounts",
+      "type": "concept",
+      "description": "Posting from books of prime entry to sales, purchases and general ledgers; balancing off accounts",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "0c1cdc2b528e175c",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.trial_balance",
+      "label": "Trial Balance",
+      "type": "concept",
+      "description": "Extracting a trial balance from ledger accounts; purpose, limitations and uses of the trial balance",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "5dd8f4fb197bcadb",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.errors_not_affecting_trial_balance",
+      "label": "Errors Not Affecting the Trial Balance",
+      "type": "concept",
+      "description": "Errors of omission, commission, principle, original entry, reversal of entries, and compensating errors",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "582bcdd0c61b5c40",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.suspense_accounts",
+      "label": "Suspense Accounts",
+      "type": "concept",
+      "description": "Using suspense accounts to balance the trial balance; correcting errors through journal entries and clearing the suspense account",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "a9c9cd9a8063c719",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.bank_reconciliation",
       "label": "Bank Reconciliation",
       "type": "concept",
-      "description": "Bank statements, reconciliation process, adjusted cash book, outstanding items",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Comparing the cash book with the bank statement; identifying timing differences, errors, unpresented cheques and uncredited deposits",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.acc.as",
       "bookName": "Accounting AS (Year 1)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "da915f850e0246f2",
+      "comprehended": false
     },
     {
-      "id": "al.acc.partnerships",
-      "label": "Partnership Accounts",
+      "id": "al.acc.as.capital_revenue_expenditure",
+      "label": "Capital & Revenue Expenditure",
       "type": "concept",
-      "description": "Partnership agreements, appropriation accounts, capital and current accounts, admission/retirement",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Distinguishing between capital and revenue expenditure and receipts; effect on financial statements",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.acc.as",
       "bookName": "Accounting AS (Year 1)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "f0ef260cbc139591",
+      "comprehended": false
     },
     {
-      "id": "al.acc.limited_companies",
-      "label": "Limited Company Accounts",
+      "id": "al.acc.as.accounting_concepts_conventions",
+      "label": "Accounting Concepts & Conventions",
       "type": "concept",
-      "description": "Share capital, reserves, dividends, published accounts, IAS compliance",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Going concern, accruals, consistency, prudence, materiality, business entity, money measurement, duality, realisation, historical cost",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "1f21746d7d942251",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.accruals_prepayments",
+      "label": "Accruals & Prepayments",
+      "type": "concept",
+      "description": "Recognising expenses and income in the correct accounting period; adjusting for accrued and prepaid items at year end",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "0c432576f36276d8",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.depreciation",
+      "label": "Depreciation of Non-Current Assets",
+      "type": "concept",
+      "description": "Straight-line and reducing balance methods; recording depreciation, accumulated depreciation, and disposal of assets",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "4cf840b39270c6f4",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.bad_debts",
+      "label": "Bad Debts & Provision for Doubtful Debts",
+      "type": "concept",
+      "description": "Writing off irrecoverable debts; creating, increasing and decreasing provisions for doubtful debts; recovery of bad debts",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "38925daa0d490868",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.inventory_valuation",
+      "label": "Inventory Valuation",
+      "type": "concept",
+      "description": "FIFO, LIFO, AVCO methods; IAS 2 lower of cost and net realisable value; effect on profit",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "81f2526f9722e6c1",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.income_statement_sole_trader",
+      "label": "Income Statement (Sole Trader)",
+      "type": "concept",
+      "description": "Preparing the trading account and profit and loss account for a sole trader; cost of sales, gross profit, net profit",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "3e9373ace2bf793e",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.sofp_sole_trader",
+      "label": "Statement of Financial Position (Sole Trader)",
+      "type": "concept",
+      "description": "Preparing the balance sheet for a sole trader; classifying assets, liabilities and owner's equity",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "abc3fcfb59e44869",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.control_accounts",
+      "label": "Control Accounts",
+      "type": "concept",
+      "description": "Sales ledger and purchases ledger control accounts; reconciliation with individual debtor and creditor balances",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "5d583d2de5b28fbf",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.incomplete_records",
+      "label": "Incomplete Records",
+      "type": "concept",
+      "description": "Preparing financial statements from incomplete records; calculating opening capital, using mark-up and margin, statement of affairs",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "95699ab8c8f5a053",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.club_society_accounts",
+      "label": "Club & Society Accounts (Not-for-Profit)",
+      "type": "concept",
+      "description": "Receipts and payments accounts, income and expenditure accounts, accumulated fund, subscriptions account, life membership",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "9afa9affeb508a79",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.partnership_agreements",
+      "label": "Partnership Agreements",
+      "type": "concept",
+      "description": "Terms of partnership agreements; profit-sharing ratios, salaries, interest on capital and drawings, Partnership Act 1890 default rules",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "047d947b260cb553",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.partnership_appropriation",
+      "label": "Partnership Appropriation Account",
+      "type": "concept",
+      "description": "Preparing the appropriation account; distributing profit between partners according to the partnership agreement",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "fcad67fdccda5d21",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.partnership_capital_current",
+      "label": "Partnership Capital & Current Accounts",
+      "type": "concept",
+      "description": "Maintaining fixed capital accounts and fluctuating current accounts for each partner; recording drawings, shares of profit, interest",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "fa5d8c6b8bcc120f",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.partnership_changes",
+      "label": "Partnership Changes: Admission & Retirement",
+      "type": "concept",
+      "description": "Goodwill treatment on admission, retirement or death of a partner; revaluation of assets; adjusting capital accounts",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "98e9eab3774df2bb",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.partnership_dissolution",
+      "label": "Partnership Dissolution",
+      "type": "concept",
+      "description": "Closing the partnership books; realisation account; distribution of proceeds to creditors and partners using Garner v Murray rule",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "8da4f0774563de69",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.as.manufacturing_accounts",
+      "label": "Manufacturing Accounts",
+      "type": "concept",
+      "description": "Preparing manufacturing accounts; prime cost, factory overheads, cost of production, transfer price to trading account",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.as",
+      "bookName": "Accounting AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "9844f82b2d919fbd",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.share_capital",
+      "label": "Share Capital & Types of Shares",
+      "type": "concept",
+      "description": "Ordinary and preference shares; authorised, issued and paid-up capital; share premium; rights issues and bonus issues",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.acc.a2",
       "bookName": "Accounting A2 (Year 2)",
       "bookColor": "#6d28d9",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "2d227963174edc76",
+      "comprehended": false
     },
     {
-      "id": "al.acc.ratio_analysis",
-      "label": "Ratio Analysis & Interpretation",
+      "id": "al.acc.a2.debentures_loan_capital",
+      "label": "Debentures & Loan Capital",
       "type": "concept",
-      "description": "Profitability, liquidity, efficiency, gearing ratios, investor ratios, interpretation",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Types of debentures; recording issue and redemption of debentures; debenture interest; secured vs unsecured loan capital",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.acc.a2",
       "bookName": "Accounting A2 (Year 2)",
       "bookColor": "#6d28d9",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "bca2a05fba97ec08",
+      "comprehended": false
     },
     {
-      "id": "al.acc.cost_accounting",
-      "label": "Cost & Management Accounting",
+      "id": "al.acc.a2.company_income_statement",
+      "label": "Company Income Statement",
       "type": "concept",
-      "description": "Cost classification, absorption costing, marginal costing, break-even analysis",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Preparing the income statement for a limited company; corporation tax, dividends, retained earnings for the year",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.acc.a2",
       "bookName": "Accounting A2 (Year 2)",
       "bookColor": "#6d28d9",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "bf9c629f465714ff",
+      "comprehended": false
     },
     {
-      "id": "al.acc.budgeting",
-      "label": "Budgeting & Variance Analysis",
+      "id": "al.acc.a2.company_sofp",
+      "label": "Company Statement of Financial Position",
       "type": "concept",
-      "description": "Master budgets, flexible budgets, variance analysis, budget control",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Preparing the balance sheet for a limited company; share capital section, reserves, non-current and current liabilities",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.acc.a2",
       "bookName": "Accounting A2 (Year 2)",
       "bookColor": "#6d28d9",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "f7ccf0aef7ac66b1",
+      "comprehended": false
     },
     {
-      "id": "al.acc.investment_appraisal",
-      "label": "Investment Appraisal",
+      "id": "al.acc.a2.reserves",
+      "label": "Reserves: Capital & Revenue",
       "type": "concept",
-      "description": "Payback period, ARR, NPV, IRR, capital expenditure decisions",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Share premium, revaluation reserve, retained earnings, general reserve; distinguishing capital reserves from revenue reserves",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.acc.a2",
       "bookName": "Accounting A2 (Year 2)",
       "bookColor": "#6d28d9",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "031844245722bb72",
+      "comprehended": false
     },
     {
-      "id": "al.acc.statement_cash_flows",
-      "label": "Statement of Cash Flows",
+      "id": "al.acc.a2.published_accounts",
+      "label": "Published Financial Statements (IAS 1)",
       "type": "concept",
-      "description": "Operating, investing and financing activities, IAS 7, preparation and interpretation",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "IAS 1 presentation requirements; statement of changes in equity; notes to the accounts; directors' and auditors' reports",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.acc.a2",
       "bookName": "Accounting A2 (Year 2)",
       "bookColor": "#6d28d9",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "a62d615856d40efe",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.statement_cash_flows",
+      "label": "Statement of Cash Flows (IAS 7)",
+      "type": "concept",
+      "description": "Preparing statements of cash flows; operating, investing and financing activities; indirect method; interpreting cash flow information",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "63942f7278a75716",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.profitability_ratios",
+      "label": "Profitability Ratios",
+      "type": "concept",
+      "description": "Gross profit margin, net profit margin, return on capital employed (ROCE), return on equity (ROE); calculation and interpretation",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "4bfd660efbb18135",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.liquidity_ratios",
+      "label": "Liquidity Ratios",
+      "type": "concept",
+      "description": "Current ratio, quick (acid test) ratio; assessing a business's ability to meet short-term obligations",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "3a9385f8d78a73fa",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.efficiency_ratios",
+      "label": "Efficiency Ratios",
+      "type": "concept",
+      "description": "Inventory turnover, trade receivables days, trade payables days, asset turnover; measuring operational efficiency",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "0fd4ca4b3ab047f9",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.gearing_investor_ratios",
+      "label": "Gearing & Investor Ratios",
+      "type": "concept",
+      "description": "Gearing ratio, interest cover, earnings per share (EPS), price/earnings (P/E) ratio, dividend yield, dividend cover",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "ea14af570d41564b",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.interpretation_of_accounts",
+      "label": "Interpretation of Accounts",
+      "type": "concept",
+      "description": "Using ratios to compare performance over time and between businesses; limitations of ratio analysis; non-financial factors",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "ce17eb6c754d5e48",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.cost_classification",
+      "label": "Cost Classification",
+      "type": "concept",
+      "description": "Direct and indirect costs; fixed, variable and semi-variable costs; product and period costs; cost behaviour",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "6b86ca52ed8abc69",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.absorption_costing",
+      "label": "Absorption Costing",
+      "type": "concept",
+      "description": "Allocating and apportioning overheads; overhead absorption rates; over- and under-absorption; full cost per unit",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "c766969b1215ccbd",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.marginal_costing",
+      "label": "Marginal Costing",
+      "type": "concept",
+      "description": "Contribution per unit and total contribution; contribution to sales ratio; comparing marginal and absorption costing profit",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "27d89cc675583322",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.break_even_analysis",
+      "label": "Break-Even Analysis",
+      "type": "concept",
+      "description": "Break-even point in units and revenue; margin of safety; break-even charts; target profit calculations; limitations",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "a6339e877200ffff",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.decision_making",
+      "label": "Short-Term Decision Making",
+      "type": "concept",
+      "description": "Make or buy decisions; accept or reject special orders; limiting factor analysis; relevant and irrelevant costs",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "86758212c7991704",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.budgeting_purpose",
+      "label": "Budgeting: Purpose & Types",
+      "type": "concept",
+      "description": "Purpose of budgeting; functional budgets (sales, production, materials, labour, overheads); master budget; cash budget",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "006fdadcfb900c83",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.flexible_budgets",
+      "label": "Flexible Budgets",
+      "type": "concept",
+      "description": "Preparing flexible budgets for different activity levels; comparing flexible budget with actual results for meaningful analysis",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "4a147ce647a71ae8",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.standard_costing",
+      "label": "Standard Costing",
+      "type": "concept",
+      "description": "Setting standard costs for materials, labour and overheads; standard cost card; purpose and advantages of standard costing",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "615997c34a820ebb",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.variance_analysis",
+      "label": "Variance Analysis",
+      "type": "concept",
+      "description": "Calculating material price and usage variances, labour rate and efficiency variances, fixed overhead variances; favourable and adverse",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "9cf673e311768354",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.variance_interpretation",
+      "label": "Variance Interpretation & Corrective Action",
+      "type": "concept",
+      "description": "Interpreting the causes of variances; interdependence of variances; recommending corrective action; responsibility accounting",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "d30990d87703e6ae",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.payback_period",
+      "label": "Payback Period",
+      "type": "concept",
+      "description": "Calculating the payback period for capital projects; advantages and disadvantages; discounted payback",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "f2a668d8db9cee0f",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.arr",
+      "label": "Accounting Rate of Return (ARR)",
+      "type": "concept",
+      "description": "Calculating ARR using average annual profit and initial or average investment; advantages and limitations",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "c7483376e563ff8e",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.npv",
+      "label": "Net Present Value (NPV)",
+      "type": "concept",
+      "description": "Discounting future cash flows to present values; NPV decision rule; selecting discount rates; advantages over non-discounting methods",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "1d31b98dfe2a6d4d",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.irr",
+      "label": "Internal Rate of Return (IRR)",
+      "type": "concept",
+      "description": "Calculating IRR by interpolation; IRR decision rule; comparison with NPV; advantages and limitations",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "c8f380d61eab7981",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.social_accounting",
+      "label": "Social & Environmental Accounting",
+      "type": "concept",
+      "description": "Social responsibility of businesses; environmental reporting; ethical considerations in accounting; stakeholder vs shareholder perspectives",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "aa9273c766b4104c",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.ias_standards",
+      "label": "International Accounting Standards (IAS/IFRS)",
+      "type": "concept",
+      "description": "Key IAS/IFRS standards relevant to the syllabus: IAS 1, IAS 2, IAS 7, IAS 16, IAS 37, IAS 38; role of the IASB",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "9a7e03b562e59d0c",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.integrated_accounting_systems",
+      "label": "Integrated Accounting Systems",
+      "type": "concept",
+      "description": "Integrating financial and cost accounting; interlocking and integrated ledger systems; control accounts in cost bookkeeping",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "d67e8d32d77ee6d2",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.revaluation_of_assets",
+      "label": "Revaluation of Non-Current Assets",
+      "type": "concept",
+      "description": "Revaluing non-current assets; revaluation surplus; effect on depreciation, financial statements and reserves (IAS 16)",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "807697a83608fda7",
+      "comprehended": false
+    },
+    {
+      "id": "al.acc.a2.intangible_assets",
+      "label": "Intangible Assets & Goodwill",
+      "type": "concept",
+      "description": "Accounting for purchased goodwill, patents, trademarks; amortisation; IAS 38 recognition criteria; internally generated intangibles",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.acc.a2",
+      "bookName": "Accounting A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2,
+      "external_id": "fc370b1d47a15dc4",
+      "comprehended": false
     }
   ],
   "edges": [
     {
-      "source": "al.acc.double_entry",
-      "target": "al.acc.source_documents",
+      "source": "al.acc.as.accounting_equation",
+      "target": "al.acc.as.double_entry_bookkeeping",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.double_entry",
-      "target": "al.acc.adjustments",
+      "source": "al.acc.as.double_entry_bookkeeping",
+      "target": "al.acc.as.source_documents",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.source_documents",
-      "target": "al.acc.adjustments",
+      "source": "al.acc.as.source_documents",
+      "target": "al.acc.as.books_of_prime_entry",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.adjustments",
-      "target": "al.acc.financial_statements",
+      "source": "al.acc.as.books_of_prime_entry",
+      "target": "al.acc.as.cash_book",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.double_entry",
-      "target": "al.acc.bank_reconciliation",
+      "source": "al.acc.as.cash_book",
+      "target": "al.acc.as.petty_cash_book",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.source_documents",
-      "target": "al.acc.bank_reconciliation",
+      "source": "al.acc.as.books_of_prime_entry",
+      "target": "al.acc.as.ledger_accounts",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.financial_statements",
-      "target": "al.acc.partnerships",
+      "source": "al.acc.as.double_entry_bookkeeping",
+      "target": "al.acc.as.ledger_accounts",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.financial_statements",
-      "target": "al.acc.limited_companies",
+      "source": "al.acc.as.ledger_accounts",
+      "target": "al.acc.as.trial_balance",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.partnerships",
-      "target": "al.acc.limited_companies",
+      "source": "al.acc.as.trial_balance",
+      "target": "al.acc.as.errors_not_affecting_trial_balance",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.limited_companies",
-      "target": "al.acc.ratio_analysis",
+      "source": "al.acc.as.trial_balance",
+      "target": "al.acc.as.suspense_accounts",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.financial_statements",
-      "target": "al.acc.ratio_analysis",
+      "source": "al.acc.as.errors_not_affecting_trial_balance",
+      "target": "al.acc.as.suspense_accounts",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.financial_statements",
-      "target": "al.acc.cost_accounting",
+      "source": "al.acc.as.cash_book",
+      "target": "al.acc.as.bank_reconciliation",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.adjustments",
-      "target": "al.acc.cost_accounting",
+      "source": "al.acc.as.ledger_accounts",
+      "target": "al.acc.as.control_accounts",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.cost_accounting",
-      "target": "al.acc.budgeting",
+      "source": "al.acc.as.books_of_prime_entry",
+      "target": "al.acc.as.control_accounts",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.financial_statements",
-      "target": "al.acc.budgeting",
+      "source": "al.acc.as.accounting_equation",
+      "target": "al.acc.as.capital_revenue_expenditure",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.cost_accounting",
-      "target": "al.acc.investment_appraisal",
+      "source": "al.acc.as.accounting_equation",
+      "target": "al.acc.as.accounting_concepts_conventions",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.ratio_analysis",
-      "target": "al.acc.investment_appraisal",
+      "source": "al.acc.as.accounting_concepts_conventions",
+      "target": "al.acc.as.accruals_prepayments",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.limited_companies",
-      "target": "al.acc.statement_cash_flows",
+      "source": "al.acc.as.ledger_accounts",
+      "target": "al.acc.as.accruals_prepayments",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.acc.ratio_analysis",
-      "target": "al.acc.statement_cash_flows",
+      "source": "al.acc.as.capital_revenue_expenditure",
+      "target": "al.acc.as.depreciation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.ledger_accounts",
+      "target": "al.acc.as.depreciation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.ledger_accounts",
+      "target": "al.acc.as.bad_debts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.accounting_concepts_conventions",
+      "target": "al.acc.as.bad_debts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.accounting_concepts_conventions",
+      "target": "al.acc.as.inventory_valuation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.trial_balance",
+      "target": "al.acc.as.income_statement_sole_trader",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.accruals_prepayments",
+      "target": "al.acc.as.income_statement_sole_trader",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.depreciation",
+      "target": "al.acc.as.income_statement_sole_trader",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.bad_debts",
+      "target": "al.acc.as.income_statement_sole_trader",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.inventory_valuation",
+      "target": "al.acc.as.income_statement_sole_trader",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.income_statement_sole_trader",
+      "target": "al.acc.as.sofp_sole_trader",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.capital_revenue_expenditure",
+      "target": "al.acc.as.sofp_sole_trader",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.sofp_sole_trader",
+      "target": "al.acc.as.incomplete_records",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.control_accounts",
+      "target": "al.acc.as.incomplete_records",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.sofp_sole_trader",
+      "target": "al.acc.as.club_society_accounts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.accruals_prepayments",
+      "target": "al.acc.as.club_society_accounts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.sofp_sole_trader",
+      "target": "al.acc.as.partnership_agreements",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.partnership_agreements",
+      "target": "al.acc.as.partnership_appropriation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.partnership_appropriation",
+      "target": "al.acc.as.partnership_capital_current",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.partnership_capital_current",
+      "target": "al.acc.as.partnership_changes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.partnership_changes",
+      "target": "al.acc.as.partnership_dissolution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.income_statement_sole_trader",
+      "target": "al.acc.as.manufacturing_accounts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.sofp_sole_trader",
+      "target": "al.acc.a2.share_capital",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.partnership_capital_current",
+      "target": "al.acc.a2.share_capital",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.share_capital",
+      "target": "al.acc.a2.debentures_loan_capital",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.share_capital",
+      "target": "al.acc.a2.reserves",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.share_capital",
+      "target": "al.acc.a2.company_income_statement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.income_statement_sole_trader",
+      "target": "al.acc.a2.company_income_statement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.company_income_statement",
+      "target": "al.acc.a2.company_sofp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.reserves",
+      "target": "al.acc.a2.company_sofp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.debentures_loan_capital",
+      "target": "al.acc.a2.company_sofp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.accounting_concepts_conventions",
+      "target": "al.acc.a2.ias_standards",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.company_sofp",
+      "target": "al.acc.a2.published_accounts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.ias_standards",
+      "target": "al.acc.a2.published_accounts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.company_sofp",
+      "target": "al.acc.a2.statement_cash_flows",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.company_income_statement",
+      "target": "al.acc.a2.statement_cash_flows",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.depreciation",
+      "target": "al.acc.a2.revaluation_of_assets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.reserves",
+      "target": "al.acc.a2.revaluation_of_assets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.revaluation_of_assets",
+      "target": "al.acc.a2.intangible_assets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.ias_standards",
+      "target": "al.acc.a2.intangible_assets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.company_sofp",
+      "target": "al.acc.a2.profitability_ratios",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.company_income_statement",
+      "target": "al.acc.a2.profitability_ratios",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.company_sofp",
+      "target": "al.acc.a2.liquidity_ratios",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.company_sofp",
+      "target": "al.acc.a2.efficiency_ratios",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.debentures_loan_capital",
+      "target": "al.acc.a2.gearing_investor_ratios",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.share_capital",
+      "target": "al.acc.a2.gearing_investor_ratios",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.profitability_ratios",
+      "target": "al.acc.a2.interpretation_of_accounts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.liquidity_ratios",
+      "target": "al.acc.a2.interpretation_of_accounts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.efficiency_ratios",
+      "target": "al.acc.a2.interpretation_of_accounts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.gearing_investor_ratios",
+      "target": "al.acc.a2.interpretation_of_accounts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.statement_cash_flows",
+      "target": "al.acc.a2.interpretation_of_accounts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.income_statement_sole_trader",
+      "target": "al.acc.a2.cost_classification",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.manufacturing_accounts",
+      "target": "al.acc.a2.cost_classification",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.cost_classification",
+      "target": "al.acc.a2.absorption_costing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.cost_classification",
+      "target": "al.acc.a2.marginal_costing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.marginal_costing",
+      "target": "al.acc.a2.break_even_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.marginal_costing",
+      "target": "al.acc.a2.decision_making",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.absorption_costing",
+      "target": "al.acc.a2.decision_making",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.cost_classification",
+      "target": "al.acc.a2.budgeting_purpose",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.budgeting_purpose",
+      "target": "al.acc.a2.flexible_budgets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.cost_classification",
+      "target": "al.acc.a2.standard_costing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.absorption_costing",
+      "target": "al.acc.a2.standard_costing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.standard_costing",
+      "target": "al.acc.a2.variance_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.flexible_budgets",
+      "target": "al.acc.a2.variance_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.variance_analysis",
+      "target": "al.acc.a2.variance_interpretation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.marginal_costing",
+      "target": "al.acc.a2.payback_period",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.payback_period",
+      "target": "al.acc.a2.arr",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.arr",
+      "target": "al.acc.a2.npv",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.npv",
+      "target": "al.acc.a2.irr",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.interpretation_of_accounts",
+      "target": "al.acc.a2.social_accounting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.ias_standards",
+      "target": "al.acc.a2.social_accounting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.a2.absorption_costing",
+      "target": "al.acc.a2.integrated_accounting_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.acc.as.control_accounts",
+      "target": "al.acc.a2.integrated_accounting_systems",
       "relation": "prerequisite_for"
     }
   ]

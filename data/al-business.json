@@ -1,9 +1,9 @@
 {
   "metadata": {
     "domain": "business",
-    "curriculum": "Cambridge A-Level Business (9609)",
+    "curriculum": "Cambridge International AS & A Level Business (9609)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "A-Level Business topics with prerequisite ordering, colored by component",
     "sources": [
       "Cambridge International AS & A Level Business 9609 Syllabus"
@@ -26,283 +26,1548 @@
   ],
   "nodes": [
     {
-      "id": "al.bus.enterprise",
-      "label": "Business & its Environment",
+      "id": "al.bus.as.enterprise_starting_business",
+      "label": "Enterprise & Starting a Business",
       "type": "concept",
-      "description": "Enterprise, business structure, stakeholders, business objectives, external environment",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "The nature of business activity, the role of entrepreneurs, characteristics of successful entrepreneurs, intrapreneurship",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.bus.as",
       "bookName": "Business AS (Year 1)",
       "bookColor": "#f97316",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "b283bf4a14fa309e",
+      "comprehended": false
     },
     {
-      "id": "al.bus.people",
-      "label": "People in Organisations",
+      "id": "al.bus.as.business_structure",
+      "label": "Business Structure & Legal Forms",
       "type": "concept",
-      "description": "HR planning, recruitment, motivation theories, leadership styles, organisational structure",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Sole traders, partnerships, private and public limited companies, cooperatives, franchises, social enterprises",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.bus.as",
       "bookName": "Business AS (Year 1)",
       "bookColor": "#f97316",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "3620095275bb3993",
+      "comprehended": false
     },
     {
-      "id": "al.bus.marketing",
-      "label": "Marketing",
+      "id": "al.bus.as.business_size",
+      "label": "Size of Business & Growth",
       "type": "concept",
-      "description": "Market research, marketing mix (4Ps), segmentation, positioning, elasticity of demand",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Measures of business size (revenue, employees, capital), small vs large businesses, internal and external growth, economies and diseconomies of scale",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.bus.as",
       "bookName": "Business AS (Year 1)",
       "bookColor": "#f97316",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "12fd8a790e813bc4",
+      "comprehended": false
     },
     {
-      "id": "al.bus.operations",
-      "label": "Operations & Project Management",
+      "id": "al.bus.as.business_objectives",
+      "label": "Business Objectives & Stakeholders",
       "type": "concept",
-      "description": "Production methods, quality management, capacity utilisation, lean production",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Mission, vision, aims and objectives; SMART objectives; stakeholder groups and conflicts; corporate social responsibility at AS level",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.bus.as",
       "bookName": "Business AS (Year 1)",
       "bookColor": "#f97316",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "03c9284231eb07d7",
+      "comprehended": false
     },
     {
-      "id": "al.bus.finance_as",
-      "label": "Finance & Accounting (AS)",
+      "id": "al.bus.as.external_environment",
+      "label": "External Environment",
       "type": "concept",
-      "description": "Sources of finance, cash flow, income statements, balance sheets, break-even",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Political, economic, social, technological, legal and environmental factors affecting business; opportunities and threats from external change",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.bus.as",
       "bookName": "Business AS (Year 1)",
       "bookColor": "#f97316",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "75468265c9b77c80",
+      "comprehended": false
     },
     {
-      "id": "al.bus.external",
-      "label": "External Influences (AS)",
+      "id": "al.bus.as.economic_environment",
+      "label": "Economic Environment",
       "type": "concept",
-      "description": "Economic environment, legal constraints, technological change, globalisation basics",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Economic growth, inflation, unemployment, exchange rates, interest rates, business cycle and their effects on business",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.bus.as",
       "bookName": "Business AS (Year 1)",
       "bookColor": "#f97316",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "f090638f4a587678",
+      "comprehended": false
     },
     {
-      "id": "al.bus.strategic_management",
-      "label": "Strategic Management",
+      "id": "al.bus.as.legal_environment",
+      "label": "Legal Environment",
       "type": "concept",
-      "description": "Strategic analysis (SWOT, PESTLE, Porter's Five Forces), strategic choice, implementation",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
-      "book": "al.bus.a2",
-      "bookName": "Business A2 (Year 2)",
-      "bookColor": "#ea580c",
-      "bookOrder": 2
-    },
-    {
-      "id": "al.bus.marketing_a2",
-      "label": "Marketing Strategy (A2)",
-      "type": "concept",
-      "description": "Marketing planning, international marketing, digital marketing, Ansoff matrix",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
-      "book": "al.bus.a2",
-      "bookName": "Business A2 (Year 2)",
-      "bookColor": "#ea580c",
-      "bookOrder": 2
-    },
-    {
-      "id": "al.bus.operations_a2",
-      "label": "Operations Strategy (A2)",
-      "type": "concept",
-      "description": "Supply chain management, enterprise resource planning, Kaizen, Six Sigma",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
-      "book": "al.bus.a2",
-      "bookName": "Business A2 (Year 2)",
-      "bookColor": "#ea580c",
-      "bookOrder": 2
-    },
-    {
-      "id": "al.bus.finance_a2",
-      "label": "Finance & Accounting (A2)",
-      "type": "concept",
-      "description": "Ratio analysis, investment appraisal (NPV, IRR, payback), budgets, variance analysis",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
-      "book": "al.bus.a2",
-      "bookName": "Business A2 (Year 2)",
-      "bookColor": "#ea580c",
-      "bookOrder": 2
-    },
-    {
-      "id": "al.bus.hr_a2",
-      "label": "Human Resource Strategy (A2)",
-      "type": "concept",
-      "description": "Workforce planning, change management, corporate culture, employer-employee relations",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
-      "book": "al.bus.a2",
-      "bookName": "Business A2 (Year 2)",
-      "bookColor": "#ea580c",
-      "bookOrder": 2
-    },
-    {
-      "id": "al.bus.globalisation",
-      "label": "Globalisation & Multinational Strategy",
-      "type": "concept",
-      "description": "International trade, multinational companies, entry strategies, cultural differences",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
-      "book": "al.bus.a2",
-      "bookName": "Business A2 (Year 2)",
-      "bookColor": "#ea580c",
-      "bookOrder": 2
-    },
-    {
-      "id": "al.bus.decision_making",
-      "label": "Business Decision Making",
-      "type": "concept",
-      "description": "Decision trees, critical path analysis, data analytics for decision making",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Employment law, consumer protection, competition law, environmental legislation and their impact on business decisions",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.bus.as",
       "bookName": "Business AS (Year 1)",
       "bookColor": "#f97316",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "d36a693e735d3d9f",
+      "comprehended": false
     },
     {
-      "id": "al.bus.business_growth",
-      "label": "Business Growth & Strategy",
+      "id": "al.bus.as.hr_planning",
+      "label": "Human Resource Planning",
       "type": "concept",
-      "description": "Organic/inorganic growth, mergers, takeovers, joint ventures, franchises",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Workforce planning, labour turnover, workforce audit, factors influencing HR plans",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "4dc6c3001bce5144",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.recruitment_selection",
+      "label": "Recruitment & Selection",
+      "type": "concept",
+      "description": "Recruitment process, internal vs external recruitment, selection methods, job descriptions and person specifications",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "d28fd4218e318f52",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.motivation_theory",
+      "label": "Motivation Theory",
+      "type": "concept",
+      "description": "Taylor, Maslow, Herzberg, McClelland; content and process theories of motivation; intrinsic and extrinsic motivation",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "9d4b43cfc51cb212",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.motivation_practice",
+      "label": "Motivation in Practice",
+      "type": "concept",
+      "description": "Financial rewards (wages, salaries, commission, profit-sharing), non-financial methods (job enrichment, empowerment, teamwork)",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "9d42b5536d122f56",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.leadership_styles",
+      "label": "Leadership & Management Styles",
+      "type": "concept",
+      "description": "Autocratic, democratic, laissez-faire, paternalistic leadership; difference between leadership and management; situational leadership",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "3365747a9f748748",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.org_structure",
+      "label": "Organisational Structure",
+      "type": "concept",
+      "description": "Hierarchy, span of control, chain of command, delegation, centralisation vs decentralisation, tall vs flat structures, matrix structure",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "7620b2b84973553f",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.communication",
+      "label": "Communication in Business",
+      "type": "concept",
+      "description": "Formal and informal communication, communication channels, barriers to communication, role of ICT in communication",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "2df4ce9f70e14c37",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.market_research",
+      "label": "Market Research",
+      "type": "concept",
+      "description": "Primary and secondary research methods, qualitative and quantitative data, sampling methods, market research limitations",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "0a5008721322d396",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.segmentation_targeting",
+      "label": "Market Segmentation, Targeting & Positioning",
+      "type": "concept",
+      "description": "Bases for segmentation (geographic, demographic, psychographic, behavioural), target market selection, positioning and mapping",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "676f2c3b80cfd3b9",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.marketing_mix_product",
+      "label": "Marketing Mix: Product",
+      "type": "concept",
+      "description": "Product life cycle, Boston Matrix, product portfolio, new product development, branding, packaging",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "db46e1dd31c53153",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.marketing_mix_price",
+      "label": "Marketing Mix: Price",
+      "type": "concept",
+      "description": "Pricing strategies (cost-plus, penetration, skimming, competitive, psychological, dynamic), price elasticity of demand",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "7614a7fe18f93204",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.marketing_mix_place",
+      "label": "Marketing Mix: Place (Distribution)",
+      "type": "concept",
+      "description": "Distribution channels, direct selling, retailers, wholesalers, agents, e-commerce, multi-channel distribution",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "d0bfb161db823fee",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.marketing_mix_promotion",
+      "label": "Marketing Mix: Promotion",
+      "type": "concept",
+      "description": "Advertising, sales promotion, personal selling, public relations, sponsorship, digital and social media promotion",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "92fa6dc98d6c7848",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.elasticity_of_demand",
+      "label": "Elasticity of Demand",
+      "type": "concept",
+      "description": "Price elasticity, income elasticity, cross elasticity of demand; calculation and interpretation; significance for business decisions",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "4967345c097907f9",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.production_methods",
+      "label": "Production Methods",
+      "type": "concept",
+      "description": "Job, batch, flow and cell production; choosing appropriate methods; factors influencing production method choice",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "6d80783300fc56d8",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.quality_management",
+      "label": "Quality Management",
+      "type": "concept",
+      "description": "Quality control, quality assurance, Total Quality Management (TQM), benchmarking, quality standards (ISO 9000)",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "a6d23e96855e0489",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.lean_production",
+      "label": "Lean Production & Efficiency",
+      "type": "concept",
+      "description": "Lean production, just-in-time (JIT), Kaizen, capacity utilisation, productivity, waste minimisation",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "21ce482d31e85598",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.inventory_management",
+      "label": "Inventory Management",
+      "type": "concept",
+      "description": "Inventory control charts, buffer stock, lead time, economic order quantity, JIT and inventory costs",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "706204acb89c2cd0",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.project_management",
+      "label": "Project Management",
+      "type": "concept",
+      "description": "Network diagrams, critical path analysis (CPA), Gantt charts, project planning and resource allocation",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "0ca7312c2d2f3b3e",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.sources_of_finance",
+      "label": "Sources of Finance",
+      "type": "concept",
+      "description": "Internal sources (retained profit, sale of assets) and external sources (bank loans, share capital, venture capital, crowdfunding, trade credit), short-term vs long-term",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "67add99755368aa0",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.cash_flow",
+      "label": "Cash Flow Forecasting",
+      "type": "concept",
+      "description": "Cash flow forecasts, cash vs profit, causes and management of cash flow problems, working capital cycle",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "e2a4573418deceed",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.costs_revenue_profit",
+      "label": "Costs, Revenue & Profit",
+      "type": "concept",
+      "description": "Fixed and variable costs, total cost, revenue, contribution, profit and loss; break-even analysis and charts; margin of safety",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "bcdc950626d1baaa",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.income_statements",
+      "label": "Income Statements",
+      "type": "concept",
+      "description": "Structure and interpretation of income statements (profit and loss accounts), gross profit, operating profit, profit for the year",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "175077915c5d3596",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.balance_sheets",
+      "label": "Statements of Financial Position",
+      "type": "concept",
+      "description": "Balance sheet structure and interpretation; assets, liabilities, equity; working capital; depreciation (straight-line and reducing balance)",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "4c75075c31fd99ea",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.budgets",
+      "label": "Budgets & Variance Analysis",
+      "type": "concept",
+      "description": "Purpose and types of budgets, setting budgets, variance analysis (favourable and adverse), benefits and limitations of budgeting",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "0039982016173501",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.as.decision_trees",
+      "label": "Decision Making & Decision Trees",
+      "type": "concept",
+      "description": "Decision trees, expected values, probability, risk and uncertainty in decision making; opportunity cost",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "30d82f04c18a68b1",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.strategic_analysis_swot",
+      "label": "SWOT Analysis",
+      "type": "concept",
+      "description": "Strengths, weaknesses, opportunities and threats; using SWOT to inform strategic decisions; limitations of SWOT",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.bus.a2",
       "bookName": "Business A2 (Year 2)",
       "bookColor": "#ea580c",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "5d41105ff9f60459",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.pest_analysis",
+      "label": "PEST / PESTLE Analysis",
+      "type": "concept",
+      "description": "Political, economic, social, technological (legal, environmental) factors; macro-environment analysis; using PEST for strategic planning",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "9e137c50bee1b638",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.porters_five_forces",
+      "label": "Porter's Five Forces",
+      "type": "concept",
+      "description": "Threat of new entrants, bargaining power of buyers and suppliers, threat of substitutes, competitive rivalry; industry attractiveness",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "d225e5448110d929",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.core_competences",
+      "label": "Core Competences & Competitive Advantage",
+      "type": "concept",
+      "description": "Identifying core competences, sustainable competitive advantage, Porter's generic strategies (cost leadership, differentiation, focus)",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "feb6bc6790fedc73",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.ansoff_matrix",
+      "label": "Ansoff Matrix & Strategic Choice",
+      "type": "concept",
+      "description": "Market penetration, market development, product development, diversification; risk assessment of strategic options",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "536216ea4aaef085",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.strategic_choice_force_field",
+      "label": "Force Field Analysis",
+      "type": "concept",
+      "description": "Lewin's force field analysis, driving and restraining forces, evaluating forces for and against change",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "67e51316129567bb",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.business_growth_strategy",
+      "label": "Business Growth Strategies",
+      "type": "concept",
+      "description": "Organic vs inorganic growth, mergers, acquisitions, takeovers, joint ventures, strategic alliances, franchising",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "baaa0b2cebce49cb",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.strategic_implementation",
+      "label": "Strategic Implementation & Business Plans",
+      "type": "concept",
+      "description": "Turning strategy into action, business plans, corporate planning, resource allocation, contingency planning",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "85cf8cd12c69718e",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.change_management",
+      "label": "Managing Change",
+      "type": "concept",
+      "description": "Causes of change, resistance to change, Kotter's change model, managing and overcoming resistance, organisational culture and change",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "aefe04b137ebee58",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.corporate_culture",
+      "label": "Corporate Culture",
+      "type": "concept",
+      "description": "Types of corporate culture (Handy's model), importance of culture, changing culture, culture clashes in mergers",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "793496ae7fcef7c1",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.marketing_planning",
+      "label": "Marketing Planning & Strategy",
+      "type": "concept",
+      "description": "Marketing plans, marketing objectives, marketing audit, marketing budgets, marketing strategies at A2 level",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "95b2cb68ad29653f",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.international_marketing",
+      "label": "International & Digital Marketing",
+      "type": "concept",
+      "description": "International marketing strategy, standardisation vs adaptation, e-commerce, digital marketing channels, big data in marketing",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "a5d3292c07680421",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.supply_chain_management",
+      "label": "Supply Chain Management",
+      "type": "concept",
+      "description": "Supply chain design, outsourcing, offshoring, supplier relationships, supply chain resilience, logistics management",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "b823b49b67525b6a",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.operations_strategy",
+      "label": "Operations Strategy",
+      "type": "concept",
+      "description": "Enterprise resource planning (ERP), operations flexibility, innovation in operations, technology and automation, Six Sigma",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "7aa4ce5c09c0caaf",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.location_decisions",
+      "label": "Location & Relocation Decisions",
+      "type": "concept",
+      "description": "Factors influencing location decisions, relocation, multi-site operations, offshoring, reshoring, quantitative location techniques",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "4ad69c04a1aeedc9",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.ratio_analysis",
+      "label": "Ratio Analysis",
+      "type": "concept",
+      "description": "Profitability ratios (ROCE, gross/net profit margin), liquidity ratios (current, acid test), efficiency ratios, gearing, limitations of ratios",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "af9cd8191b776259",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.investment_appraisal",
+      "label": "Investment Appraisal",
+      "type": "concept",
+      "description": "Payback period, accounting rate of return (ARR), net present value (NPV), internal rate of return (IRR); discounting, time value of money",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "93716109dcf79eac",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.finance_strategy",
+      "label": "Finance Strategy & Accounts",
+      "type": "concept",
+      "description": "Financial objectives, capital structure, gearing, dividend policy, window dressing accounts, creative accounting limitations",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "e6402b435522d520",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.workforce_planning",
+      "label": "Workforce Planning & Strategy",
+      "type": "concept",
+      "description": "Strategic workforce planning, hard vs soft HRM, flexible workforces, employer-employee relations, industrial disputes, trade unions",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "3dddf4a506003f64",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.training_development",
+      "label": "Training & Development",
+      "type": "concept",
+      "description": "Induction, on-the-job and off-the-job training, management development, appraisals, talent management, succession planning",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "07ff23c76584e7d3",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.globalisation",
+      "label": "Globalisation",
+      "type": "concept",
+      "description": "Causes and effects of globalisation, international trade, protectionism (tariffs, quotas, subsidies), free trade agreements, WTO",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "0ff77f6e87148dc3",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.multinational_companies",
+      "label": "Multinational Companies",
+      "type": "concept",
+      "description": "Reasons for becoming multinational, benefits and drawbacks of MNCs to host countries, entry strategies (exporting, FDI, licensing, joint ventures)",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "3a17913a9f652582",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.exchange_rates_trade",
+      "label": "Exchange Rates & International Trade",
+      "type": "concept",
+      "description": "Impact of exchange rate changes on business, hedging, managing exchange rate risk, balance of payments effects",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "055d1b0527e00152",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.cultural_differences",
+      "label": "Cultural Differences in Business",
+      "type": "concept",
+      "description": "Hofstede's cultural dimensions, cross-cultural management, adapting to local markets, cultural impact on HRM and marketing",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "a47b97efffe99061",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.business_ethics",
+      "label": "Business Ethics",
+      "type": "concept",
+      "description": "Ethical decision making, ethical dilemmas, pay and conditions, impact of ethical behaviour on stakeholders, ethical codes of practice",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "04c83d75fc5378af",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.csr",
+      "label": "Corporate Social Responsibility",
+      "type": "concept",
+      "description": "CSR policies, environmental sustainability, social audits, pressure groups, CSR vs profit maximisation, triple bottom line",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "73d46cb7bcc77613",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.technology_and_business",
+      "label": "Technology & Business Change",
+      "type": "concept",
+      "description": "Impact of technological change on business, AI and automation, digital transformation, disruptive innovation, Industry 4.0",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "38eee3c11d65f36d",
+      "comprehended": false
+    },
+    {
+      "id": "al.bus.a2.contingency_planning",
+      "label": "Contingency & Crisis Management",
+      "type": "concept",
+      "description": "Contingency planning, crisis management, risk assessment, business continuity planning, scenario planning",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2,
+      "external_id": "a7da14e03d19ac48",
+      "comprehended": false
     }
   ],
   "edges": [
     {
-      "source": "al.bus.enterprise",
-      "target": "al.bus.people",
+      "source": "al.bus.as.enterprise_starting_business",
+      "target": "al.bus.as.business_structure",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.enterprise",
-      "target": "al.bus.marketing",
+      "source": "al.bus.as.enterprise_starting_business",
+      "target": "al.bus.as.business_objectives",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.enterprise",
-      "target": "al.bus.operations",
+      "source": "al.bus.as.business_structure",
+      "target": "al.bus.as.business_size",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.enterprise",
-      "target": "al.bus.finance_as",
+      "source": "al.bus.as.business_objectives",
+      "target": "al.bus.as.external_environment",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.enterprise",
-      "target": "al.bus.external",
+      "source": "al.bus.as.external_environment",
+      "target": "al.bus.as.economic_environment",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.finance_as",
-      "target": "al.bus.decision_making",
+      "source": "al.bus.as.external_environment",
+      "target": "al.bus.as.legal_environment",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.operations",
-      "target": "al.bus.decision_making",
+      "source": "al.bus.as.business_objectives",
+      "target": "al.bus.as.hr_planning",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.external",
-      "target": "al.bus.strategic_management",
+      "source": "al.bus.as.hr_planning",
+      "target": "al.bus.as.recruitment_selection",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.marketing",
-      "target": "al.bus.strategic_management",
+      "source": "al.bus.as.hr_planning",
+      "target": "al.bus.as.motivation_theory",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.finance_as",
-      "target": "al.bus.strategic_management",
+      "source": "al.bus.as.motivation_theory",
+      "target": "al.bus.as.motivation_practice",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.marketing",
-      "target": "al.bus.marketing_a2",
+      "source": "al.bus.as.motivation_theory",
+      "target": "al.bus.as.leadership_styles",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.strategic_management",
-      "target": "al.bus.marketing_a2",
+      "source": "al.bus.as.hr_planning",
+      "target": "al.bus.as.org_structure",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.operations",
-      "target": "al.bus.operations_a2",
+      "source": "al.bus.as.org_structure",
+      "target": "al.bus.as.communication",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.strategic_management",
-      "target": "al.bus.operations_a2",
+      "source": "al.bus.as.business_objectives",
+      "target": "al.bus.as.market_research",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.finance_as",
-      "target": "al.bus.finance_a2",
+      "source": "al.bus.as.market_research",
+      "target": "al.bus.as.segmentation_targeting",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.decision_making",
-      "target": "al.bus.finance_a2",
+      "source": "al.bus.as.segmentation_targeting",
+      "target": "al.bus.as.marketing_mix_product",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.people",
-      "target": "al.bus.hr_a2",
+      "source": "al.bus.as.segmentation_targeting",
+      "target": "al.bus.as.marketing_mix_price",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.strategic_management",
-      "target": "al.bus.hr_a2",
+      "source": "al.bus.as.segmentation_targeting",
+      "target": "al.bus.as.marketing_mix_place",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.external",
-      "target": "al.bus.globalisation",
+      "source": "al.bus.as.segmentation_targeting",
+      "target": "al.bus.as.marketing_mix_promotion",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.strategic_management",
-      "target": "al.bus.globalisation",
+      "source": "al.bus.as.marketing_mix_price",
+      "target": "al.bus.as.elasticity_of_demand",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.strategic_management",
-      "target": "al.bus.business_growth",
+      "source": "al.bus.as.business_objectives",
+      "target": "al.bus.as.production_methods",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.bus.finance_a2",
-      "target": "al.bus.business_growth",
+      "source": "al.bus.as.production_methods",
+      "target": "al.bus.as.quality_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.production_methods",
+      "target": "al.bus.as.lean_production",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.production_methods",
+      "target": "al.bus.as.inventory_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.production_methods",
+      "target": "al.bus.as.project_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.enterprise_starting_business",
+      "target": "al.bus.as.sources_of_finance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.sources_of_finance",
+      "target": "al.bus.as.cash_flow",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.sources_of_finance",
+      "target": "al.bus.as.costs_revenue_profit",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.costs_revenue_profit",
+      "target": "al.bus.as.income_statements",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.income_statements",
+      "target": "al.bus.as.balance_sheets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.costs_revenue_profit",
+      "target": "al.bus.as.budgets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.costs_revenue_profit",
+      "target": "al.bus.as.decision_trees",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.external_environment",
+      "target": "al.bus.a2.strategic_analysis_swot",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.business_objectives",
+      "target": "al.bus.a2.strategic_analysis_swot",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.external_environment",
+      "target": "al.bus.a2.pest_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.economic_environment",
+      "target": "al.bus.a2.pest_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.legal_environment",
+      "target": "al.bus.a2.pest_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.business_size",
+      "target": "al.bus.a2.porters_five_forces",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.external_environment",
+      "target": "al.bus.a2.porters_five_forces",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.porters_five_forces",
+      "target": "al.bus.a2.core_competences",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.strategic_analysis_swot",
+      "target": "al.bus.a2.core_competences",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.core_competences",
+      "target": "al.bus.a2.ansoff_matrix",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.strategic_analysis_swot",
+      "target": "al.bus.a2.ansoff_matrix",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.pest_analysis",
+      "target": "al.bus.a2.strategic_choice_force_field",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.strategic_analysis_swot",
+      "target": "al.bus.a2.strategic_choice_force_field",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.ansoff_matrix",
+      "target": "al.bus.a2.business_growth_strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.business_size",
+      "target": "al.bus.a2.business_growth_strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.ansoff_matrix",
+      "target": "al.bus.a2.strategic_implementation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.strategic_choice_force_field",
+      "target": "al.bus.a2.strategic_implementation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.strategic_implementation",
+      "target": "al.bus.a2.change_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.leadership_styles",
+      "target": "al.bus.a2.change_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.change_management",
+      "target": "al.bus.a2.corporate_culture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.org_structure",
+      "target": "al.bus.a2.corporate_culture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.marketing_mix_product",
+      "target": "al.bus.a2.marketing_planning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.marketing_mix_price",
+      "target": "al.bus.a2.marketing_planning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.marketing_mix_promotion",
+      "target": "al.bus.a2.marketing_planning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.marketing_mix_place",
+      "target": "al.bus.a2.marketing_planning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.marketing_planning",
+      "target": "al.bus.a2.international_marketing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.globalisation",
+      "target": "al.bus.a2.international_marketing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.inventory_management",
+      "target": "al.bus.a2.supply_chain_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.lean_production",
+      "target": "al.bus.a2.supply_chain_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.supply_chain_management",
+      "target": "al.bus.a2.operations_strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.quality_management",
+      "target": "al.bus.a2.operations_strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.supply_chain_management",
+      "target": "al.bus.a2.location_decisions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.globalisation",
+      "target": "al.bus.a2.location_decisions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.balance_sheets",
+      "target": "al.bus.a2.ratio_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.income_statements",
+      "target": "al.bus.a2.ratio_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.cash_flow",
+      "target": "al.bus.a2.investment_appraisal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.decision_trees",
+      "target": "al.bus.a2.investment_appraisal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.ratio_analysis",
+      "target": "al.bus.a2.finance_strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.investment_appraisal",
+      "target": "al.bus.a2.finance_strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.budgets",
+      "target": "al.bus.a2.finance_strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.recruitment_selection",
+      "target": "al.bus.a2.workforce_planning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.motivation_practice",
+      "target": "al.bus.a2.workforce_planning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.workforce_planning",
+      "target": "al.bus.a2.training_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.economic_environment",
+      "target": "al.bus.a2.globalisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.external_environment",
+      "target": "al.bus.a2.globalisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.globalisation",
+      "target": "al.bus.a2.multinational_companies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.business_growth_strategy",
+      "target": "al.bus.a2.multinational_companies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.globalisation",
+      "target": "al.bus.a2.exchange_rates_trade",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.economic_environment",
+      "target": "al.bus.a2.exchange_rates_trade",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.multinational_companies",
+      "target": "al.bus.a2.cultural_differences",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.business_objectives",
+      "target": "al.bus.a2.business_ethics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.as.legal_environment",
+      "target": "al.bus.a2.business_ethics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.business_ethics",
+      "target": "al.bus.a2.csr",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.strategic_implementation",
+      "target": "al.bus.a2.technology_and_business",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.operations_strategy",
+      "target": "al.bus.a2.technology_and_business",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.strategic_implementation",
+      "target": "al.bus.a2.contingency_planning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.a2.change_management",
+      "target": "al.bus.a2.contingency_planning",
       "relation": "prerequisite_for"
     }
   ]

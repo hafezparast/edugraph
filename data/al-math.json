@@ -3,7 +3,7 @@
     "domain": "mathematics",
     "curriculum": "Cambridge A-Level Mathematics (9709)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "A-Level Mathematics topics with prerequisite ordering, colored by component",
     "sources": [
       "Cambridge International AS & A Level Mathematics 9709 Syllabus"
@@ -50,753 +50,3300 @@
   ],
   "nodes": [
     {
-      "id": "al.math.p1.quadratics",
-      "label": "Quadratics",
+      "id": "al.math.p1.quadratic_equations",
+      "label": "Solving Quadratic Equations",
       "type": "concept",
-      "description": "Quadratic equations, inequalities, graphs and the discriminant",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Solving quadratics by factorisation, completing the square and the quadratic formula",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p1",
       "bookName": "Pure Mathematics 1 (AS)",
       "bookColor": "#ef4444",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "ea617e32c4aee34d",
+      "comprehended": false
     },
     {
-      "id": "al.math.p1.functions",
-      "label": "Functions",
+      "id": "al.math.p1.discriminant",
+      "label": "The Discriminant",
       "type": "concept",
-      "description": "Domain, range, composite functions, inverse functions and transformations",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Using the discriminant b^2 - 4ac to determine the nature and number of roots",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p1",
       "bookName": "Pure Mathematics 1 (AS)",
       "bookColor": "#ef4444",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "9495c41585793d46",
+      "comprehended": false
     },
     {
-      "id": "al.math.p1.coordinate_geometry",
-      "label": "Coordinate Geometry",
+      "id": "al.math.p1.completing_the_square",
+      "label": "Completing the Square",
       "type": "concept",
-      "description": "Equations of lines, circles, gradients, distance and midpoint",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Writing quadratics in vertex form a(x-h)^2 + k, finding maximum/minimum values",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p1",
       "bookName": "Pure Mathematics 1 (AS)",
       "bookColor": "#ef4444",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "9c118b7367c60e92",
+      "comprehended": false
     },
     {
-      "id": "al.math.p1.circular_measure",
-      "label": "Circular Measure",
+      "id": "al.math.p1.quadratic_graphs",
+      "label": "Quadratic Graphs",
       "type": "concept",
-      "description": "Radians, arc length and sector area",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Sketching parabolas, finding vertex, axis of symmetry and intersections with axes",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p1",
       "bookName": "Pure Mathematics 1 (AS)",
       "bookColor": "#ef4444",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "aa977615a70b8539",
+      "comprehended": false
     },
     {
-      "id": "al.math.p1.trigonometry",
-      "label": "Trigonometry (AS)",
+      "id": "al.math.p1.simultaneous_equations",
+      "label": "Simultaneous Equations",
       "type": "concept",
-      "description": "Trigonometric ratios, identities, equations and graphs",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Solving simultaneous equations where one is linear and one is quadratic",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p1",
       "bookName": "Pure Mathematics 1 (AS)",
       "bookColor": "#ef4444",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "830d90d0303a8814",
+      "comprehended": false
     },
     {
-      "id": "al.math.p1.series",
-      "label": "Series",
+      "id": "al.math.p1.quadratic_inequalities",
+      "label": "Quadratic Inequalities",
       "type": "concept",
-      "description": "Arithmetic and geometric progressions, binomial expansion",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Solving quadratic inequalities and representing solutions on a number line",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p1",
       "bookName": "Pure Mathematics 1 (AS)",
       "bookColor": "#ef4444",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "2c1f42bbe5468500",
+      "comprehended": false
     },
     {
-      "id": "al.math.p1.differentiation",
-      "label": "Differentiation (AS)",
+      "id": "al.math.p1.domain_range",
+      "label": "Domain & Range",
       "type": "concept",
-      "description": "Derivatives of powers, gradients, tangents, normals, stationary points",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Understanding and finding the domain and range of functions",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p1",
       "bookName": "Pure Mathematics 1 (AS)",
       "bookColor": "#ef4444",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "bfcca3da0d1a4aa8",
+      "comprehended": false
     },
     {
-      "id": "al.math.p1.integration",
-      "label": "Integration (AS)",
+      "id": "al.math.p1.composite_functions",
+      "label": "Composite Functions",
       "type": "concept",
-      "description": "Integration as reverse of differentiation, definite integrals, areas under curves",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Forming and evaluating composite functions fg(x) and gf(x)",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p1",
       "bookName": "Pure Mathematics 1 (AS)",
       "bookColor": "#ef4444",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "83b67cae90dab82f",
+      "comprehended": false
     },
     {
-      "id": "al.math.p2.algebra",
-      "label": "Algebra (A2)",
+      "id": "al.math.p1.inverse_functions",
+      "label": "Inverse Functions",
       "type": "concept",
-      "description": "Factor theorem, remainder theorem, partial fractions and modulus functions",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Finding inverse functions, relationship between f and f^{-1}, reflection in y = x",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "41d565fedd056bbc",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.graph_transformations",
+      "label": "Graph Transformations",
+      "type": "concept",
+      "description": "Translations, reflections, stretches: y = f(x+a), y = f(ax), y = af(x), y = f(x)+a",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "6cf268ae1c247929",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.equations_of_lines",
+      "label": "Equations of Straight Lines",
+      "type": "concept",
+      "description": "Gradient, y = mx + c, finding equations of lines, parallel and perpendicular lines",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "71486af075905bd1",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.distance_midpoint",
+      "label": "Distance & Midpoint",
+      "type": "concept",
+      "description": "Distance between two points and midpoint of a line segment",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "df216c246322d608",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.equation_of_circle",
+      "label": "Equation of a Circle",
+      "type": "concept",
+      "description": "Standard and expanded form of circle equations, finding centre and radius",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "0d78523311a9164a",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.intersection_line_circle",
+      "label": "Intersection of Lines & Circles",
+      "type": "concept",
+      "description": "Finding intersection points of lines and circles, tangent to a circle",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "9bba5db5a3e3db9e",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.radians",
+      "label": "Radians",
+      "type": "concept",
+      "description": "Definition of a radian, converting between degrees and radians",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "a65d53b7dcaf4909",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.arc_length_sector_area",
+      "label": "Arc Length & Sector Area",
+      "type": "concept",
+      "description": "Calculating arc length s = r*theta and sector area A = 0.5*r^2*theta",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "e1bcc60e02f75c3a",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.trig_ratios",
+      "label": "Trigonometric Ratios",
+      "type": "concept",
+      "description": "Exact values of sin, cos and tan for standard angles, the unit circle",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "c57cbf2ef3108e50",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.trig_identities",
+      "label": "Trigonometric Identities (AS)",
+      "type": "concept",
+      "description": "tan(x) = sin(x)/cos(x), sin^2(x) + cos^2(x) = 1 and their applications",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "782efabeff7e5c24",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.trig_equations",
+      "label": "Trigonometric Equations (AS)",
+      "type": "concept",
+      "description": "Solving trigonometric equations in given intervals, principal and secondary values",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "14d0a9f60276864a",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.trig_graphs",
+      "label": "Trigonometric Graphs",
+      "type": "concept",
+      "description": "Graphs of sin, cos, tan and their transformations, amplitude and period",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "36c931fe0b529b89",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.arithmetic_progressions",
+      "label": "Arithmetic Progressions",
+      "type": "concept",
+      "description": "nth term, sum of n terms, common difference, applications of AP",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "05cecd85b7b29c0f",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.geometric_progressions",
+      "label": "Geometric Progressions",
+      "type": "concept",
+      "description": "nth term, sum of n terms, common ratio, sum to infinity for convergent GP",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "cf9bde611b655198",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.binomial_expansion",
+      "label": "Binomial Expansion (Positive Integer)",
+      "type": "concept",
+      "description": "Expansion of (a + b)^n for positive integer n using Pascal's triangle and nCr",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "9f7428de9e7f27e4",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.differentiation_power_rule",
+      "label": "Differentiation: Power Rule",
+      "type": "concept",
+      "description": "Differentiating x^n, sums and differences of polynomials, gradient of a curve",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "1a45061ad5e8e1f8",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.tangents_normals",
+      "label": "Tangents & Normals",
+      "type": "concept",
+      "description": "Finding equations of tangent and normal lines to a curve at a given point",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "de1fa56e3dd519ff",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.stationary_points",
+      "label": "Stationary Points",
+      "type": "concept",
+      "description": "Finding and classifying stationary points using first and second derivatives",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "0b141b8130256f03",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.connected_rates_of_change",
+      "label": "Connected Rates of Change",
+      "type": "concept",
+      "description": "Using the chain rule dy/dt = dy/dx * dx/dt for related rates problems",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "40a522df4832d03a",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.increasing_decreasing_functions",
+      "label": "Increasing & Decreasing Functions",
+      "type": "concept",
+      "description": "Using the sign of the derivative to determine where a function is increasing or decreasing",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "343a3b606c476eb4",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.indefinite_integration",
+      "label": "Indefinite Integration",
+      "type": "concept",
+      "description": "Integration as the reverse of differentiation, integrating x^n, constant of integration",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "f8e79c2ce57ca409",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.definite_integration",
+      "label": "Definite Integration",
+      "type": "concept",
+      "description": "Evaluating definite integrals, the fundamental theorem of calculus",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "e769a6c19ab506b3",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.area_under_curve",
+      "label": "Area Under a Curve",
+      "type": "concept",
+      "description": "Using definite integration to find areas under curves and between curves",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "9a3a0d83c99e152e",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p1.volume_of_revolution_as",
+      "label": "Volume of Revolution (AS)",
+      "type": "concept",
+      "description": "Finding volumes of revolution about the x-axis and y-axis using integration",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "a82227d8dad78e56",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.modulus_function",
+      "label": "Modulus Function",
+      "type": "concept",
+      "description": "Definition of |x|, graphs of modulus functions, solving modulus equations and inequalities",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p2",
       "bookName": "Pure Mathematics 2 (A2)",
       "bookColor": "#f97316",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "c1ec4f87c6cdbcf6",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.factor_remainder_theorem",
+      "label": "Factor & Remainder Theorem",
+      "type": "concept",
+      "description": "Using the factor theorem to factorise polynomials and the remainder theorem",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "edd6faa5ce325899",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.polynomial_division",
+      "label": "Polynomial Division",
+      "type": "concept",
+      "description": "Dividing polynomials by linear and quadratic expressions",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "abdeacb90a4c7eda",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.partial_fractions",
+      "label": "Partial Fractions",
+      "type": "concept",
+      "description": "Decomposing rational expressions into partial fractions including repeated and quadratic factors",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "3c55df14b15413ac",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.exponential_functions",
+      "label": "Exponential Functions",
+      "type": "concept",
+      "description": "Properties and graphs of e^x and a^x, exponential growth and decay models",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "6cf4a6297e7a7d05",
+      "comprehended": false
     },
     {
       "id": "al.math.p2.logarithms",
-      "label": "Logarithmic & Exponential Functions",
+      "label": "Logarithms",
       "type": "concept",
-      "description": "Laws of logarithms, exponential growth/decay, natural logarithms",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Definition of logarithms, laws of logarithms, change of base, natural logarithm ln",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p2",
       "bookName": "Pure Mathematics 2 (A2)",
       "bookColor": "#f97316",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "56b742a0afea1bf0",
+      "comprehended": false
     },
     {
-      "id": "al.math.p2.trigonometry",
-      "label": "Trigonometry (A2)",
+      "id": "al.math.p2.solving_exponential_equations",
+      "label": "Solving Exponential Equations",
       "type": "concept",
-      "description": "Addition formulae, double angle, harmonic form, inverse trig functions",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Using logarithms to solve equations of the form a^x = b, reducing to linear form",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p2",
       "bookName": "Pure Mathematics 2 (A2)",
       "bookColor": "#f97316",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "2b215771aca3fd8b",
+      "comprehended": false
     },
     {
-      "id": "al.math.p2.differentiation",
-      "label": "Differentiation (A2)",
+      "id": "al.math.p2.linear_law",
+      "label": "Reducing to Linear Form",
       "type": "concept",
-      "description": "Chain rule, product rule, quotient rule, implicit and parametric differentiation",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Using logarithms to reduce y = ax^n and y = Ab^x to straight-line form",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p2",
       "bookName": "Pure Mathematics 2 (A2)",
       "bookColor": "#f97316",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "b9aee593498edaf6",
+      "comprehended": false
     },
     {
-      "id": "al.math.p2.integration_a2",
-      "label": "Integration (A2)",
+      "id": "al.math.p2.addition_formulae",
+      "label": "Addition Formulae",
       "type": "concept",
-      "description": "Integration by substitution, by parts, partial fractions, volumes of revolution",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "sin(A +/- B), cos(A +/- B), tan(A +/- B) and their proofs and applications",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p2",
       "bookName": "Pure Mathematics 2 (A2)",
       "bookColor": "#f97316",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "915f01f01f0dfc46",
+      "comprehended": false
     },
     {
-      "id": "al.math.p2.numerical_methods",
-      "label": "Numerical Methods",
+      "id": "al.math.p2.double_angle_formulae",
+      "label": "Double Angle Formulae",
       "type": "concept",
-      "description": "Location of roots, iterative methods, Newton-Raphson, trapezium rule",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "sin(2A), cos(2A), tan(2A) and their use in solving equations and proving identities",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p2",
       "bookName": "Pure Mathematics 2 (A2)",
       "bookColor": "#f97316",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "109a17a5d726726a",
+      "comprehended": false
     },
     {
-      "id": "al.math.p3.vectors",
-      "label": "Vectors",
+      "id": "al.math.p2.harmonic_form",
+      "label": "Harmonic Form (R-formula)",
       "type": "concept",
-      "description": "Vector equations of lines, scalar and vector products, intersections",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Expressing a*sin(x) + b*cos(x) in the form R*sin(x + alpha) or R*cos(x + alpha)",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "e08e953d57fc1b7f",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.chain_rule",
+      "label": "Chain Rule",
+      "type": "concept",
+      "description": "Differentiating composite functions using the chain rule dy/dx = dy/du * du/dx",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "16232aaab8eefab0",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.product_rule",
+      "label": "Product Rule",
+      "type": "concept",
+      "description": "Differentiating products of functions: d/dx(uv) = u*dv/dx + v*du/dx",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "d748b76747915a46",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.quotient_rule",
+      "label": "Quotient Rule",
+      "type": "concept",
+      "description": "Differentiating quotients of functions: d/dx(u/v) = (v*du/dx - u*dv/dx)/v^2",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "eff9e0af6a04ec34",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.diff_exp_ln",
+      "label": "Differentiating e^x and ln(x)",
+      "type": "concept",
+      "description": "Derivatives of e^(f(x)) and ln(f(x)), applications to growth and decay",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "c6230bd1cad453fc",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.diff_trig",
+      "label": "Differentiating Trigonometric Functions",
+      "type": "concept",
+      "description": "Derivatives of sin(x), cos(x), tan(x) and their composites",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "72764c45e15aa2e3",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.implicit_differentiation",
+      "label": "Implicit Differentiation",
+      "type": "concept",
+      "description": "Differentiating equations not explicitly in the form y = f(x)",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "22b672325ee0bcdb",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.parametric_differentiation",
+      "label": "Parametric Differentiation",
+      "type": "concept",
+      "description": "Finding dy/dx from parametric equations using dy/dx = (dy/dt)/(dx/dt)",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "a5d6f5043ce44ba4",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.integration_exp_trig",
+      "label": "Integration of e^x & Trig Functions",
+      "type": "concept",
+      "description": "Integrating e^(ax+b), sin(ax+b), cos(ax+b), sec^2(ax+b) and 1/x",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "c93d8433335db4e3",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.integration_by_substitution",
+      "label": "Integration by Substitution",
+      "type": "concept",
+      "description": "Using substitution to simplify and evaluate integrals, reverse chain rule",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "518196ce6231e201",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.integration_by_parts",
+      "label": "Integration by Parts",
+      "type": "concept",
+      "description": "Using the formula integral(u dv) = uv - integral(v du), repeated integration by parts",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "dcfc24a604a61956",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.integration_partial_fractions",
+      "label": "Integration Using Partial Fractions",
+      "type": "concept",
+      "description": "Integrating rational functions by decomposing into partial fractions",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "34998cff98f4a81c",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.trapezium_rule",
+      "label": "Trapezium Rule",
+      "type": "concept",
+      "description": "Numerical integration using the trapezium rule, estimating errors",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "78ca45454494cbf5",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.location_of_roots",
+      "label": "Location of Roots",
+      "type": "concept",
+      "description": "Using sign-change methods and graphical approaches to locate roots of equations",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "24b8e20e1d4b087d",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p2.iterative_methods",
+      "label": "Iterative Methods",
+      "type": "concept",
+      "description": "Solving equations using iterative formulae x_{n+1} = g(x_n), convergence and divergence",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "45871b03217421c5",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.binomial_expansion_rational",
+      "label": "Binomial Expansion (Rational Powers)",
+      "type": "concept",
+      "description": "Expansion of (1 + x)^n for rational n, validity condition |x| < 1",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p3",
       "bookName": "Pure Mathematics 3 (A2)",
       "bookColor": "#eab308",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "c5da5355deb27892",
+      "comprehended": false
     },
     {
-      "id": "al.math.p3.differential_equations",
-      "label": "Differential Equations",
+      "id": "al.math.p3.partial_fractions_advanced",
+      "label": "Partial Fractions (Advanced)",
       "type": "concept",
-      "description": "Separable variables, first-order differential equations, modelling",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Partial fractions with repeated factors and use in binomial expansions",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p3",
       "bookName": "Pure Mathematics 3 (A2)",
       "bookColor": "#eab308",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "f14d1f2b62f57c6c",
+      "comprehended": false
     },
     {
-      "id": "al.math.p3.complex_numbers",
-      "label": "Complex Numbers",
+      "id": "al.math.p3.modulus_inequalities",
+      "label": "Modulus Inequalities",
       "type": "concept",
-      "description": "Argand diagrams, modulus-argument form, loci, de Moivre's theorem",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Solving inequalities involving modulus functions, algebraic and graphical methods",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.p3",
       "bookName": "Pure Mathematics 3 (A2)",
       "bookColor": "#eab308",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "38b1c3364f0d7e57",
+      "comprehended": false
     },
     {
-      "id": "al.math.s1.probability",
-      "label": "Probability",
+      "id": "al.math.p3.exponential_growth_decay",
+      "label": "Exponential Growth & Decay Models",
       "type": "concept",
-      "description": "Conditional probability, independent events, tree diagrams, Venn diagrams",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Modelling with exponential functions, fitting models to data using logarithms",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "e7ec27f079ab537d",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.sec_cosec_cot",
+      "label": "sec, cosec & cot",
+      "type": "concept",
+      "description": "Definitions, graphs and identities for sec, cosec and cot, including 1 + tan^2 = sec^2",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "310dbbf208d5131f",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.inverse_trig_functions",
+      "label": "Inverse Trigonometric Functions",
+      "type": "concept",
+      "description": "Definitions, domains, ranges and graphs of arcsin, arccos and arctan",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "4d1c55f3a947b4ea",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.trig_identities_advanced",
+      "label": "Trigonometric Identities (Advanced)",
+      "type": "concept",
+      "description": "Proving and using identities involving sec, cosec, cot and double angle results",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "cec907211750e745",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.diff_inverse_trig",
+      "label": "Differentiation of Inverse Trig",
+      "type": "concept",
+      "description": "Derivatives of arcsin(x), arccos(x), arctan(x) and related composite functions",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "d88cd4ef661f1d11",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.diff_parametric",
+      "label": "Further Parametric Differentiation",
+      "type": "concept",
+      "description": "Finding second derivatives and tangent/normal equations from parametric forms",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "69fe7b431b9b28a1",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.integration_inverse_trig",
+      "label": "Integration Yielding Inverse Trig",
+      "type": "concept",
+      "description": "Recognising and evaluating integrals that give arcsin or arctan results",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "e79265610397a332",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.integration_trig_identities",
+      "label": "Integration Using Trig Identities",
+      "type": "concept",
+      "description": "Using trigonometric identities to integrate sin^2, cos^2, tan^2 and products",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "3562251d6103dc08",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.numerical_methods_advanced",
+      "label": "Numerical Methods (P3)",
+      "type": "concept",
+      "description": "Sign-change, iterative methods, use of technology, convergence of sequences",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "c3905d1e47854869",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.vectors_2d_3d",
+      "label": "Vectors in 2D & 3D",
+      "type": "concept",
+      "description": "Position vectors, magnitude, unit vectors, addition and scalar multiplication in 2D/3D",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "351e4f9272ae6537",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.scalar_product",
+      "label": "Scalar (Dot) Product",
+      "type": "concept",
+      "description": "Calculating a.b, finding angles between vectors, perpendicularity condition",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "7569f2b3b9d0b2a5",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.vector_equation_of_line",
+      "label": "Vector Equation of a Line",
+      "type": "concept",
+      "description": "r = a + t*b, finding equations of lines, intersection and skewness of lines",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "60b0990f8246f6c1",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.vector_planes",
+      "label": "Vector Equation of a Plane",
+      "type": "concept",
+      "description": "Equation of a plane in scalar product form r.n = d, distance from point to plane",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "8b28dcf64c37a6e1",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.cross_product",
+      "label": "Vector (Cross) Product",
+      "type": "concept",
+      "description": "Calculating a x b, geometric interpretation, area of triangle and parallelogram",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "9650648de76be283",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.separable_variables",
+      "label": "Separation of Variables",
+      "type": "concept",
+      "description": "Solving first-order ODEs by separating variables, general and particular solutions",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "aa5a90732f0968d8",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.de_modelling",
+      "label": "Modelling with Differential Equations",
+      "type": "concept",
+      "description": "Formulating and solving differential equations for real-world problems",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "d83443a9593e7020",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.complex_arithmetic",
+      "label": "Complex Number Arithmetic",
+      "type": "concept",
+      "description": "Addition, subtraction, multiplication, division, conjugates of complex numbers",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "87afaee62200b4f5",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.argand_diagrams",
+      "label": "Argand Diagrams",
+      "type": "concept",
+      "description": "Representing complex numbers on the Argand diagram, geometric interpretation",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "42cdae8dada9f9c9",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.modulus_argument_form",
+      "label": "Modulus-Argument Form",
+      "type": "concept",
+      "description": "Polar form r(cos(theta) + i*sin(theta)), conversion between forms",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "beca0dce5f1c0f12",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.complex_loci",
+      "label": "Loci in the Complex Plane",
+      "type": "concept",
+      "description": "Loci defined by |z - a| = r, |z - a| = |z - b|, arg(z - a) = theta",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "3c33f0f1ea9ad1f1",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.p3.complex_roots_polynomials",
+      "label": "Complex Roots of Polynomials",
+      "type": "concept",
+      "description": "Conjugate root theorem, solving polynomial equations with complex roots",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "2904d09a018efad0",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s1.histograms",
+      "label": "Histograms",
+      "type": "concept",
+      "description": "Drawing and interpreting histograms for grouped continuous data, frequency density",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.s1",
       "bookName": "Statistics 1 (AS)",
       "bookColor": "#22c55e",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "43ada3a9219362ac",
+      "comprehended": false
     },
     {
-      "id": "al.math.s1.permutations_combinations",
-      "label": "Permutations & Combinations",
+      "id": "al.math.s1.cumulative_frequency",
+      "label": "Cumulative Frequency & Box Plots",
       "type": "concept",
-      "description": "Arrangements, selections, factorials and binomial coefficients",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Cumulative frequency diagrams, box-and-whisker plots, quartiles, outliers",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.s1",
       "bookName": "Statistics 1 (AS)",
       "bookColor": "#22c55e",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "68aa5a55237dfe68",
+      "comprehended": false
     },
     {
-      "id": "al.math.s1.discrete_random_variables",
-      "label": "Discrete Random Variables",
+      "id": "al.math.s1.stem_and_leaf",
+      "label": "Stem-and-Leaf Diagrams",
       "type": "concept",
-      "description": "Probability distributions, expectation, variance, binomial distribution",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Constructing and interpreting stem-and-leaf diagrams, back-to-back comparisons",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.s1",
       "bookName": "Statistics 1 (AS)",
       "bookColor": "#22c55e",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "ee2c6f793cef020b",
+      "comprehended": false
     },
     {
-      "id": "al.math.s1.normal_distribution",
-      "label": "Normal Distribution",
+      "id": "al.math.s1.measures_central_tendency",
+      "label": "Measures of Central Tendency",
       "type": "concept",
-      "description": "Standard normal, z-scores, probability calculations, inverse normal",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Mean, median and mode for raw, grouped and frequency data",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.s1",
       "bookName": "Statistics 1 (AS)",
       "bookColor": "#22c55e",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "fb90278e25138af8",
+      "comprehended": false
     },
     {
-      "id": "al.math.s2.poisson",
+      "id": "al.math.s1.measures_spread",
+      "label": "Measures of Spread",
+      "type": "concept",
+      "description": "Range, interquartile range, variance and standard deviation for raw and grouped data",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s1",
+      "bookName": "Statistics 1 (AS)",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "952885fccef0d070",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s1.permutations",
+      "label": "Permutations",
+      "type": "concept",
+      "description": "Arrangements of objects, factorial notation, permutations with restrictions",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s1",
+      "bookName": "Statistics 1 (AS)",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "448f49092f820b81",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s1.combinations",
+      "label": "Combinations",
+      "type": "concept",
+      "description": "Selections of objects, nCr notation, combinations with restrictions",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s1",
+      "bookName": "Statistics 1 (AS)",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "aef9c988ced191b8",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s1.probability_basic",
+      "label": "Basic Probability",
+      "type": "concept",
+      "description": "Sample spaces, equally likely outcomes, addition and multiplication rules",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s1",
+      "bookName": "Statistics 1 (AS)",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "6eeb5dcb210884be",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s1.conditional_probability",
+      "label": "Conditional Probability",
+      "type": "concept",
+      "description": "P(A|B), independent events, tree diagrams, Venn diagrams, probability tables",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s1",
+      "bookName": "Statistics 1 (AS)",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "07229dc689bfe75f",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s1.probability_distributions",
+      "label": "Probability Distributions",
+      "type": "concept",
+      "description": "Constructing probability distributions for discrete random variables",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s1",
+      "bookName": "Statistics 1 (AS)",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "95150bb7227329da",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s1.expectation_variance",
+      "label": "Expectation & Variance",
+      "type": "concept",
+      "description": "E(X) and Var(X) for discrete random variables, E(aX + b), Var(aX + b)",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s1",
+      "bookName": "Statistics 1 (AS)",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "ca4bbf1a9be014ef",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s1.binomial_distribution",
+      "label": "Binomial Distribution",
+      "type": "concept",
+      "description": "Conditions for B(n,p), calculating P(X = r), mean and variance np, npq",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s1",
+      "bookName": "Statistics 1 (AS)",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "d6e84b173434f4ef",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s1.normal_distribution_standard",
+      "label": "Standard Normal Distribution",
+      "type": "concept",
+      "description": "Z ~ N(0,1), using normal tables, standardisation z = (x - mu)/sigma",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s1",
+      "bookName": "Statistics 1 (AS)",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "87e5b7e7e646a356",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s1.normal_probability_calculations",
+      "label": "Normal Probability Calculations",
+      "type": "concept",
+      "description": "Finding probabilities and values for X ~ N(mu, sigma^2), inverse normal problems",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s1",
+      "bookName": "Statistics 1 (AS)",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "ed92f35090250b33",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s1.normal_approximation_binomial",
+      "label": "Normal Approximation to Binomial",
+      "type": "concept",
+      "description": "Using N(np, npq) to approximate B(n, p) when n is large, continuity correction",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s1",
+      "bookName": "Statistics 1 (AS)",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "b72e7b0c68a3f163",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s2.poisson_distribution",
       "label": "Poisson Distribution",
       "type": "concept",
-      "description": "Poisson distribution, mean and variance, approximation to binomial",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Conditions for Poisson, P(X = r) = e^(-lambda)*lambda^r / r!, mean = variance = lambda",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.s2",
       "bookName": "Statistics 2 (A2)",
       "bookColor": "#3b82f6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "990f13c2cf425ac7",
+      "comprehended": false
     },
     {
-      "id": "al.math.s2.linear_combinations",
-      "label": "Linear Combinations of Random Variables",
+      "id": "al.math.s2.poisson_sum",
+      "label": "Sum of Poisson Variables",
       "type": "concept",
-      "description": "E(aX+bY), Var(aX+bY) for independent random variables",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "If X ~ Po(a) and Y ~ Po(b) independently, then X + Y ~ Po(a + b)",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.s2",
       "bookName": "Statistics 2 (A2)",
       "bookColor": "#3b82f6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "45996ce2e8c47470",
+      "comprehended": false
     },
     {
-      "id": "al.math.s2.clt",
-      "label": "Central Limit Theorem",
+      "id": "al.math.s2.poisson_approx_binomial",
+      "label": "Poisson Approximation to Binomial",
       "type": "concept",
-      "description": "Sampling distributions, CLT for means, normal approximation",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Using Po(np) to approximate B(n, p) when n is large and p is small",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.s2",
       "bookName": "Statistics 2 (A2)",
       "bookColor": "#3b82f6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "c8021463cc8a6b4f",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s2.linear_combinations_expectation",
+      "label": "E(aX + bY)",
+      "type": "concept",
+      "description": "Expectation of linear combinations of independent random variables",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s2",
+      "bookName": "Statistics 2 (A2)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "c520dabe24468983",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s2.linear_combinations_variance",
+      "label": "Var(aX + bY)",
+      "type": "concept",
+      "description": "Variance of linear combinations of independent random variables",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s2",
+      "bookName": "Statistics 2 (A2)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "61fcb8523d1e8078",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s2.pdf_cdf",
+      "label": "Probability Density Functions",
+      "type": "concept",
+      "description": "Definition of PDF, properties, relationship to CDF, finding probabilities",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s2",
+      "bookName": "Statistics 2 (A2)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "8a42dc8f01dbfab8",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s2.continuous_ev",
+      "label": "E(X) & Var(X) for Continuous RVs",
+      "type": "concept",
+      "description": "Calculating expectation and variance using integration for continuous random variables",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s2",
+      "bookName": "Statistics 2 (A2)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "8a11d09ee8f2b227",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s2.continuous_median_quartiles",
+      "label": "Median & Quartiles of Continuous RVs",
+      "type": "concept",
+      "description": "Finding median and quartiles by solving integral(f(x)) = 0.5 or 0.25/0.75",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s2",
+      "bookName": "Statistics 2 (A2)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "be0c6d9a2e77a86e",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s2.uniform_distribution",
+      "label": "Continuous Uniform Distribution",
+      "type": "concept",
+      "description": "Properties of U(a, b), PDF, mean and variance of the uniform distribution",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s2",
+      "bookName": "Statistics 2 (A2)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "76973fca3af1cd1f",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s2.sampling",
+      "label": "Sampling & Sampling Methods",
+      "type": "concept",
+      "description": "Population and sample, random sampling, unbiased estimators for mean and variance",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s2",
+      "bookName": "Statistics 2 (A2)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "047bc6db572085d4",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s2.sampling_distribution_mean",
+      "label": "Sampling Distribution of the Mean",
+      "type": "concept",
+      "description": "Distribution of sample mean, Central Limit Theorem, standard error",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s2",
+      "bookName": "Statistics 2 (A2)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "b0417158d7122bde",
+      "comprehended": false
     },
     {
       "id": "al.math.s2.confidence_intervals",
       "label": "Confidence Intervals",
       "type": "concept",
-      "description": "Confidence intervals for population mean, interpretation",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Confidence intervals for population mean (known variance), interpretation",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.s2",
       "bookName": "Statistics 2 (A2)",
       "bookColor": "#3b82f6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "558e49fbfb0cd2c2",
+      "comprehended": false
     },
     {
-      "id": "al.math.s2.hypothesis_testing",
-      "label": "Hypothesis Testing",
+      "id": "al.math.s2.hypothesis_testing_normal",
+      "label": "Hypothesis Testing for a Mean",
       "type": "concept",
-      "description": "Null/alternative hypotheses, significance levels, Type I/II errors",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "One-sample z-test for population mean, null/alternative hypotheses, significance levels",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.s2",
       "bookName": "Statistics 2 (A2)",
       "bookColor": "#3b82f6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "277694f3f67fc367",
+      "comprehended": false
     },
     {
-      "id": "al.math.m1.forces_equilibrium",
-      "label": "Forces & Equilibrium",
+      "id": "al.math.s2.hypothesis_testing_poisson",
+      "label": "Hypothesis Testing for Poisson",
       "type": "concept",
-      "description": "Force diagrams, resolving forces, equilibrium of a particle, friction",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
-      "book": "al.math.m1",
-      "bookName": "Mechanics 1 (AS)",
-      "bookColor": "#8b5cf6",
-      "bookOrder": 6
-    },
-    {
-      "id": "al.math.m1.kinematics",
-      "label": "Kinematics of Motion in a Straight Line",
-      "type": "concept",
-      "description": "Displacement, velocity, acceleration, suvat equations, graphs",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
-      "book": "al.math.m1",
-      "bookName": "Mechanics 1 (AS)",
-      "bookColor": "#8b5cf6",
-      "bookOrder": 6
-    },
-    {
-      "id": "al.math.m1.newtons_laws",
-      "label": "Newton's Laws of Motion",
-      "type": "concept",
-      "description": "Newton's first, second and third laws, connected particles, pulleys",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
-      "book": "al.math.m1",
-      "bookName": "Mechanics 1 (AS)",
-      "bookColor": "#8b5cf6",
-      "bookOrder": 6
-    },
-    {
-      "id": "al.math.m1.energy",
-      "label": "Energy, Work & Power",
-      "type": "concept",
-      "description": "Kinetic and potential energy, work-energy theorem, power",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
-      "book": "al.math.m1",
-      "bookName": "Mechanics 1 (AS)",
-      "bookColor": "#8b5cf6",
-      "bookOrder": 6
-    },
-    {
-      "id": "al.math.p1.binomial_expansion",
-      "label": "Binomial Expansion",
-      "type": "concept",
-      "description": "Binomial theorem for positive integer powers",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
-      "book": "al.math.p1",
-      "bookName": "Pure Mathematics 1 (AS)",
-      "bookColor": "#ef4444",
-      "bookOrder": 1
-    },
-    {
-      "id": "al.math.s1.data_representation",
-      "label": "Data Representation",
-      "type": "concept",
-      "description": "Histograms, cumulative frequency, box plots, measures of central tendency and spread",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
-      "book": "al.math.s1",
-      "bookName": "Statistics 1 (AS)",
-      "bookColor": "#22c55e",
-      "bookOrder": 4
-    },
-    {
-      "id": "al.math.p3.further_algebra",
-      "label": "Further Algebra",
-      "type": "concept",
-      "description": "Binomial expansion for rational powers, partial fractions decomposition",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
-      "book": "al.math.p3",
-      "bookName": "Pure Mathematics 3 (A2)",
-      "bookColor": "#eab308",
-      "bookOrder": 3
-    },
-    {
-      "id": "al.math.p2.parametric_equations",
-      "label": "Parametric Equations",
-      "type": "concept",
-      "description": "Parametric curves, conversion to Cartesian form, calculus with parametric equations",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
-      "book": "al.math.p2",
-      "bookName": "Pure Mathematics 2 (A2)",
-      "bookColor": "#f97316",
-      "bookOrder": 2
-    },
-    {
-      "id": "al.math.s2.continuous_random_variables",
-      "label": "Continuous Random Variables",
-      "type": "concept",
-      "description": "Probability density functions, cumulative distribution functions, median and quartiles",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
+      "description": "Testing the mean of a Poisson distribution, critical values and p-values",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.s2",
       "bookName": "Statistics 2 (A2)",
       "bookColor": "#3b82f6",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "2c2ede87ff293b88",
+      "comprehended": false
     },
     {
-      "id": "al.math.m1.projectiles",
-      "label": "Projectile Motion",
+      "id": "al.math.s2.hypothesis_testing_binomial",
+      "label": "Hypothesis Testing for Proportion",
       "type": "concept",
-      "description": "Projectile motion in two dimensions, range, maximum height, trajectory",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Testing a population proportion using the binomial distribution",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s2",
+      "bookName": "Statistics 2 (A2)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "bf8e6848465350ca",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.s2.type_i_ii_errors",
+      "label": "Type I & Type II Errors",
+      "type": "concept",
+      "description": "Definitions of Type I and Type II errors, calculating their probabilities",
+      "grade_range": [
+        "A2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.s2",
+      "bookName": "Statistics 2 (A2)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "3838a852301fd4a3",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.force_diagrams",
+      "label": "Force Diagrams",
+      "type": "concept",
+      "description": "Drawing and interpreting force diagrams showing weight, normal reaction, friction, tension",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.m1",
       "bookName": "Mechanics 1 (AS)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "external_id": "4011582d0e110490",
+      "comprehended": false
     },
     {
-      "id": "al.math.p1.inequalities",
-      "label": "Inequalities",
+      "id": "al.math.m1.resolving_forces",
+      "label": "Resolving Forces",
       "type": "concept",
-      "description": "Linear and quadratic inequalities, graphical solutions, modulus inequalities",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
-      "book": "al.math.p1",
-      "bookName": "Pure Mathematics 1 (AS)",
-      "bookColor": "#ef4444",
-      "bookOrder": 1
-    },
-    {
-      "id": "al.math.p3.further_calculus",
-      "label": "Further Calculus",
-      "type": "concept",
-      "description": "Integration of rational functions, trigonometric integrals, reduction formulae",
-      "grade_range": ["A2"],
-      "tags": ["subtopic"],
-      "book": "al.math.p3",
-      "bookName": "Pure Mathematics 3 (A2)",
-      "bookColor": "#eab308",
-      "bookOrder": 3
-    },
-    {
-      "id": "al.math.m1.moments",
-      "label": "Moments",
-      "type": "concept",
-      "description": "Moment of a force, equilibrium of rigid bodies, centres of mass",
-      "grade_range": ["AS"],
-      "tags": ["subtopic"],
+      "description": "Resolving forces into horizontal and vertical components, inclined planes",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "al.math.m1",
       "bookName": "Mechanics 1 (AS)",
       "bookColor": "#8b5cf6",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "external_id": "b49a1c87c95a421b",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.equilibrium",
+      "label": "Equilibrium of a Particle",
+      "type": "concept",
+      "description": "Conditions for equilibrium, resolving in two perpendicular directions, triangle of forces",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "933302348cf2cdaa",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.friction",
+      "label": "Friction",
+      "type": "concept",
+      "description": "Coefficient of friction, F <= mu*R, limiting friction, rough surfaces",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "310818c052c6f7f0",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.displacement_velocity_acceleration",
+      "label": "Displacement, Velocity & Acceleration",
+      "type": "concept",
+      "description": "Definitions of displacement, velocity and acceleration as vectors/scalars, sign conventions",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "9790ae06017038e1",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.suvat_equations",
+      "label": "SUVAT Equations",
+      "type": "concept",
+      "description": "Using the five constant acceleration equations: v = u + at, s = ut + 0.5at^2, etc.",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "f67ba3ecee159dc8",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.velocity_time_graphs",
+      "label": "Velocity-Time Graphs",
+      "type": "concept",
+      "description": "Interpreting velocity-time graphs, gradient = acceleration, area = displacement",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "1dca37e3bf981326",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.vertical_motion",
+      "label": "Vertical Motion Under Gravity",
+      "type": "concept",
+      "description": "Free-fall problems, projectile dropped or thrown vertically, g = 10 or 9.8 m/s^2",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "3257279ae926687e",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.variable_acceleration",
+      "label": "Variable Acceleration",
+      "type": "concept",
+      "description": "Using differentiation and integration when acceleration varies with time, v = ds/dt, a = dv/dt",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "890aa27f5a9847e0",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.newtons_first_law",
+      "label": "Newton's First Law",
+      "type": "concept",
+      "description": "A body remains at rest or in uniform motion unless acted on by a resultant force",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "7f12375f9c9c72a3",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.newtons_second_law",
+      "label": "Newton's Second Law (F = ma)",
+      "type": "concept",
+      "description": "Applying F = ma to find resultant force, acceleration or mass; motion on inclines",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "86a5a4aae1d06a68",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.newtons_third_law",
+      "label": "Newton's Third Law",
+      "type": "concept",
+      "description": "Action and reaction pairs, identifying force pairs in connected systems",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "b043234a68bd5327",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.connected_particles_pulleys",
+      "label": "Connected Particles & Pulleys",
+      "type": "concept",
+      "description": "Particles connected by strings over pulleys, Atwood machines, acceleration of system",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "36acd840fd9bf4cf",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.motion_on_inclined_planes",
+      "label": "Motion on Inclined Planes",
+      "type": "concept",
+      "description": "Resolving weight on a slope, acceleration on smooth and rough inclines",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "a90d6565dd6051be",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.work_done",
+      "label": "Work Done by a Force",
+      "type": "concept",
+      "description": "Work = Force x distance in direction of force, work done against friction and gravity",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "d5fc27639f41068a",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.kinetic_potential_energy",
+      "label": "Kinetic & Potential Energy",
+      "type": "concept",
+      "description": "KE = 0.5mv^2, PE = mgh, conservation of energy principle",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "1bafdd756f330213",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.power",
+      "label": "Power",
+      "type": "concept",
+      "description": "Power = Force x velocity, P = Fv, driving force and resistance, maximum speed",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "fd1683d20a653405",
+      "comprehended": false
+    },
+    {
+      "id": "al.math.m1.work_energy_principle",
+      "label": "Work-Energy Principle",
+      "type": "concept",
+      "description": "Net work done = change in kinetic energy, solving problems using energy methods",
+      "grade_range": [
+        "AS"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "193ed9ddf353dc92",
+      "comprehended": false
     }
   ],
   "edges": [
     {
-      "source": "al.math.p1.quadratics",
-      "target": "al.math.p1.functions",
+      "source": "al.math.p1.quadratic_equations",
+      "target": "al.math.p1.discriminant",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.quadratics",
-      "target": "al.math.p1.inequalities",
+      "source": "al.math.p1.quadratic_equations",
+      "target": "al.math.p1.completing_the_square",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.quadratics",
-      "target": "al.math.p1.coordinate_geometry",
+      "source": "al.math.p1.completing_the_square",
+      "target": "al.math.p1.quadratic_graphs",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.coordinate_geometry",
-      "target": "al.math.p1.circular_measure",
+      "source": "al.math.p1.discriminant",
+      "target": "al.math.p1.quadratic_graphs",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.circular_measure",
-      "target": "al.math.p1.trigonometry",
+      "source": "al.math.p1.quadratic_equations",
+      "target": "al.math.p1.simultaneous_equations",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.functions",
-      "target": "al.math.p1.series",
+      "source": "al.math.p1.quadratic_graphs",
+      "target": "al.math.p1.quadratic_inequalities",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.series",
+      "source": "al.math.p1.quadratic_equations",
+      "target": "al.math.p1.quadratic_inequalities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.quadratic_equations",
+      "target": "al.math.p1.domain_range",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.domain_range",
+      "target": "al.math.p1.composite_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.composite_functions",
+      "target": "al.math.p1.inverse_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.domain_range",
+      "target": "al.math.p1.inverse_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.inverse_functions",
+      "target": "al.math.p1.graph_transformations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.quadratic_graphs",
+      "target": "al.math.p1.graph_transformations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.simultaneous_equations",
+      "target": "al.math.p1.equations_of_lines",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.equations_of_lines",
+      "target": "al.math.p1.distance_midpoint",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.distance_midpoint",
+      "target": "al.math.p1.equation_of_circle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.equations_of_lines",
+      "target": "al.math.p1.equation_of_circle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.equation_of_circle",
+      "target": "al.math.p1.intersection_line_circle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.simultaneous_equations",
+      "target": "al.math.p1.intersection_line_circle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.discriminant",
+      "target": "al.math.p1.intersection_line_circle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.equation_of_circle",
+      "target": "al.math.p1.radians",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.radians",
+      "target": "al.math.p1.arc_length_sector_area",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.radians",
+      "target": "al.math.p1.trig_ratios",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.trig_ratios",
+      "target": "al.math.p1.trig_identities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.trig_identities",
+      "target": "al.math.p1.trig_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.trig_ratios",
+      "target": "al.math.p1.trig_graphs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.graph_transformations",
+      "target": "al.math.p1.trig_graphs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.domain_range",
+      "target": "al.math.p1.arithmetic_progressions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.arithmetic_progressions",
+      "target": "al.math.p1.geometric_progressions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.geometric_progressions",
       "target": "al.math.p1.binomial_expansion",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.quadratics",
-      "target": "al.math.p1.differentiation",
+      "source": "al.math.p1.quadratic_equations",
+      "target": "al.math.p1.differentiation_power_rule",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.functions",
-      "target": "al.math.p1.differentiation",
+      "source": "al.math.p1.equations_of_lines",
+      "target": "al.math.p1.differentiation_power_rule",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.coordinate_geometry",
-      "target": "al.math.p1.differentiation",
+      "source": "al.math.p1.differentiation_power_rule",
+      "target": "al.math.p1.tangents_normals",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.differentiation",
-      "target": "al.math.p1.integration",
+      "source": "al.math.p1.equations_of_lines",
+      "target": "al.math.p1.tangents_normals",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.quadratics",
-      "target": "al.math.p2.algebra",
+      "source": "al.math.p1.differentiation_power_rule",
+      "target": "al.math.p1.stationary_points",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.functions",
-      "target": "al.math.p2.algebra",
+      "source": "al.math.p1.quadratic_inequalities",
+      "target": "al.math.p1.stationary_points",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.series",
+      "source": "al.math.p1.stationary_points",
+      "target": "al.math.p1.connected_rates_of_change",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.differentiation_power_rule",
+      "target": "al.math.p1.increasing_decreasing_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.differentiation_power_rule",
+      "target": "al.math.p1.indefinite_integration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.indefinite_integration",
+      "target": "al.math.p1.definite_integration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.definite_integration",
+      "target": "al.math.p1.area_under_curve",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.area_under_curve",
+      "target": "al.math.p1.volume_of_revolution_as",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.quadratic_equations",
+      "target": "al.math.p2.factor_remainder_theorem",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.domain_range",
+      "target": "al.math.p2.modulus_function",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.graph_transformations",
+      "target": "al.math.p2.modulus_function",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.quadratic_inequalities",
+      "target": "al.math.p2.modulus_function",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.factor_remainder_theorem",
+      "target": "al.math.p2.polynomial_division",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.polynomial_division",
+      "target": "al.math.p2.partial_fractions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.geometric_progressions",
+      "target": "al.math.p2.exponential_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.graph_transformations",
+      "target": "al.math.p2.exponential_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.exponential_functions",
       "target": "al.math.p2.logarithms",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.functions",
-      "target": "al.math.p2.logarithms",
+      "source": "al.math.p2.logarithms",
+      "target": "al.math.p2.solving_exponential_equations",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.trigonometry",
-      "target": "al.math.p2.trigonometry",
+      "source": "al.math.p2.solving_exponential_equations",
+      "target": "al.math.p2.linear_law",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.differentiation",
-      "target": "al.math.p2.differentiation",
+      "source": "al.math.p1.trig_identities",
+      "target": "al.math.p2.addition_formulae",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.trig_equations",
+      "target": "al.math.p2.addition_formulae",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.addition_formulae",
+      "target": "al.math.p2.double_angle_formulae",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.double_angle_formulae",
+      "target": "al.math.p2.harmonic_form",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.addition_formulae",
+      "target": "al.math.p2.harmonic_form",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.differentiation_power_rule",
+      "target": "al.math.p2.chain_rule",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.composite_functions",
+      "target": "al.math.p2.chain_rule",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.chain_rule",
+      "target": "al.math.p2.product_rule",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.product_rule",
+      "target": "al.math.p2.quotient_rule",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.chain_rule",
+      "target": "al.math.p2.diff_exp_ln",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.exponential_functions",
+      "target": "al.math.p2.diff_exp_ln",
       "relation": "prerequisite_for"
     },
     {
       "source": "al.math.p2.logarithms",
-      "target": "al.math.p2.differentiation",
+      "target": "al.math.p2.diff_exp_ln",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p2.trigonometry",
-      "target": "al.math.p2.differentiation",
+      "source": "al.math.p2.chain_rule",
+      "target": "al.math.p2.diff_trig",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.integration",
-      "target": "al.math.p2.integration_a2",
+      "source": "al.math.p1.trig_ratios",
+      "target": "al.math.p2.diff_trig",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p2.differentiation",
-      "target": "al.math.p2.integration_a2",
+      "source": "al.math.p2.product_rule",
+      "target": "al.math.p2.implicit_differentiation",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p2.algebra",
-      "target": "al.math.p2.integration_a2",
+      "source": "al.math.p2.chain_rule",
+      "target": "al.math.p2.implicit_differentiation",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.differentiation",
-      "target": "al.math.p2.numerical_methods",
+      "source": "al.math.p2.chain_rule",
+      "target": "al.math.p2.parametric_differentiation",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.integration",
-      "target": "al.math.p2.numerical_methods",
+      "source": "al.math.p2.diff_exp_ln",
+      "target": "al.math.p2.integration_exp_trig",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p2.differentiation",
-      "target": "al.math.p2.parametric_equations",
+      "source": "al.math.p2.diff_trig",
+      "target": "al.math.p2.integration_exp_trig",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.coordinate_geometry",
-      "target": "al.math.p3.vectors",
+      "source": "al.math.p1.indefinite_integration",
+      "target": "al.math.p2.integration_exp_trig",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p2.algebra",
-      "target": "al.math.p3.vectors",
+      "source": "al.math.p2.integration_exp_trig",
+      "target": "al.math.p2.integration_by_substitution",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p2.integration_a2",
-      "target": "al.math.p3.differential_equations",
+      "source": "al.math.p2.chain_rule",
+      "target": "al.math.p2.integration_by_substitution",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p2.logarithms",
-      "target": "al.math.p3.differential_equations",
+      "source": "al.math.p2.integration_by_substitution",
+      "target": "al.math.p2.integration_by_parts",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.quadratics",
-      "target": "al.math.p3.complex_numbers",
+      "source": "al.math.p2.product_rule",
+      "target": "al.math.p2.integration_by_parts",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p2.trigonometry",
-      "target": "al.math.p3.complex_numbers",
+      "source": "al.math.p2.partial_fractions",
+      "target": "al.math.p2.integration_partial_fractions",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p2.algebra",
-      "target": "al.math.p3.further_algebra",
+      "source": "al.math.p2.integration_exp_trig",
+      "target": "al.math.p2.integration_partial_fractions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.definite_integration",
+      "target": "al.math.p2.trapezium_rule",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.differentiation_power_rule",
+      "target": "al.math.p2.location_of_roots",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.location_of_roots",
+      "target": "al.math.p2.iterative_methods",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.partial_fractions",
+      "target": "al.math.p3.partial_fractions_advanced",
       "relation": "prerequisite_for"
     },
     {
       "source": "al.math.p1.binomial_expansion",
-      "target": "al.math.p3.further_algebra",
+      "target": "al.math.p3.binomial_expansion_rational",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p2.integration_a2",
-      "target": "al.math.p3.further_calculus",
+      "source": "al.math.p3.partial_fractions_advanced",
+      "target": "al.math.p3.binomial_expansion_rational",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p2.trigonometry",
-      "target": "al.math.p3.further_calculus",
+      "source": "al.math.p2.modulus_function",
+      "target": "al.math.p3.modulus_inequalities",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.s1.data_representation",
-      "target": "al.math.s1.probability",
+      "source": "al.math.p2.logarithms",
+      "target": "al.math.p3.exponential_growth_decay",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.s1.probability",
-      "target": "al.math.s1.permutations_combinations",
+      "source": "al.math.p2.exponential_functions",
+      "target": "al.math.p3.exponential_growth_decay",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.s1.probability",
-      "target": "al.math.s1.discrete_random_variables",
+      "source": "al.math.p2.addition_formulae",
+      "target": "al.math.p3.sec_cosec_cot",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.s1.permutations_combinations",
-      "target": "al.math.s1.discrete_random_variables",
+      "source": "al.math.p1.trig_identities",
+      "target": "al.math.p3.sec_cosec_cot",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.s1.discrete_random_variables",
-      "target": "al.math.s1.normal_distribution",
+      "source": "al.math.p1.inverse_functions",
+      "target": "al.math.p3.inverse_trig_functions",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.s1.discrete_random_variables",
-      "target": "al.math.s2.poisson",
+      "source": "al.math.p1.trig_ratios",
+      "target": "al.math.p3.inverse_trig_functions",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.s1.normal_distribution",
-      "target": "al.math.s2.linear_combinations",
+      "source": "al.math.p3.sec_cosec_cot",
+      "target": "al.math.p3.trig_identities_advanced",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.s2.poisson",
-      "target": "al.math.s2.linear_combinations",
+      "source": "al.math.p2.double_angle_formulae",
+      "target": "al.math.p3.trig_identities_advanced",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.s1.normal_distribution",
-      "target": "al.math.s2.continuous_random_variables",
+      "source": "al.math.p3.inverse_trig_functions",
+      "target": "al.math.p3.diff_inverse_trig",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.integration",
-      "target": "al.math.s2.continuous_random_variables",
+      "source": "al.math.p2.implicit_differentiation",
+      "target": "al.math.p3.diff_inverse_trig",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.s2.linear_combinations",
-      "target": "al.math.s2.clt",
+      "source": "al.math.p2.parametric_differentiation",
+      "target": "al.math.p3.diff_parametric",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.s2.clt",
+      "source": "al.math.p3.diff_inverse_trig",
+      "target": "al.math.p3.integration_inverse_trig",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.integration_by_substitution",
+      "target": "al.math.p3.integration_inverse_trig",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p3.trig_identities_advanced",
+      "target": "al.math.p3.integration_trig_identities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.integration_exp_trig",
+      "target": "al.math.p3.integration_trig_identities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.iterative_methods",
+      "target": "al.math.p3.numerical_methods_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.equations_of_lines",
+      "target": "al.math.p3.vectors_2d_3d",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p3.vectors_2d_3d",
+      "target": "al.math.p3.scalar_product",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p3.scalar_product",
+      "target": "al.math.p3.vector_equation_of_line",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p3.vector_equation_of_line",
+      "target": "al.math.p3.vector_planes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p3.scalar_product",
+      "target": "al.math.p3.vector_planes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p3.vectors_2d_3d",
+      "target": "al.math.p3.cross_product",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p3.cross_product",
+      "target": "al.math.p3.vector_planes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.integration_by_substitution",
+      "target": "al.math.p3.separable_variables",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.diff_exp_ln",
+      "target": "al.math.p3.separable_variables",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p3.separable_variables",
+      "target": "al.math.p3.de_modelling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p3.exponential_growth_decay",
+      "target": "al.math.p3.de_modelling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.quadratic_equations",
+      "target": "al.math.p3.complex_arithmetic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.discriminant",
+      "target": "al.math.p3.complex_arithmetic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p3.complex_arithmetic",
+      "target": "al.math.p3.argand_diagrams",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p3.argand_diagrams",
+      "target": "al.math.p3.modulus_argument_form",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.trig_ratios",
+      "target": "al.math.p3.modulus_argument_form",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p3.modulus_argument_form",
+      "target": "al.math.p3.complex_loci",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p3.argand_diagrams",
+      "target": "al.math.p3.complex_loci",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p3.complex_arithmetic",
+      "target": "al.math.p3.complex_roots_polynomials",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.factor_remainder_theorem",
+      "target": "al.math.p3.complex_roots_polynomials",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.histograms",
+      "target": "al.math.s1.cumulative_frequency",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.histograms",
+      "target": "al.math.s1.stem_and_leaf",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.cumulative_frequency",
+      "target": "al.math.s1.measures_central_tendency",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.measures_central_tendency",
+      "target": "al.math.s1.measures_spread",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.measures_spread",
+      "target": "al.math.s1.permutations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.permutations",
+      "target": "al.math.s1.combinations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.combinations",
+      "target": "al.math.s1.probability_basic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.probability_basic",
+      "target": "al.math.s1.conditional_probability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.conditional_probability",
+      "target": "al.math.s1.probability_distributions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.probability_distributions",
+      "target": "al.math.s1.expectation_variance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.expectation_variance",
+      "target": "al.math.s1.binomial_distribution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.combinations",
+      "target": "al.math.s1.binomial_distribution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.measures_spread",
+      "target": "al.math.s1.normal_distribution_standard",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.expectation_variance",
+      "target": "al.math.s1.normal_distribution_standard",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.normal_distribution_standard",
+      "target": "al.math.s1.normal_probability_calculations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.normal_probability_calculations",
+      "target": "al.math.s1.normal_approximation_binomial",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.binomial_distribution",
+      "target": "al.math.s1.normal_approximation_binomial",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.binomial_distribution",
+      "target": "al.math.s2.poisson_distribution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s2.poisson_distribution",
+      "target": "al.math.s2.poisson_sum",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s2.poisson_distribution",
+      "target": "al.math.s2.poisson_approx_binomial",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.binomial_distribution",
+      "target": "al.math.s2.poisson_approx_binomial",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.expectation_variance",
+      "target": "al.math.s2.linear_combinations_expectation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s2.linear_combinations_expectation",
+      "target": "al.math.s2.linear_combinations_variance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.normal_probability_calculations",
+      "target": "al.math.s2.linear_combinations_variance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.normal_probability_calculations",
+      "target": "al.math.s2.pdf_cdf",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.definite_integration",
+      "target": "al.math.s2.pdf_cdf",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s2.pdf_cdf",
+      "target": "al.math.s2.continuous_ev",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s2.pdf_cdf",
+      "target": "al.math.s2.continuous_median_quartiles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s2.pdf_cdf",
+      "target": "al.math.s2.uniform_distribution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.measures_central_tendency",
+      "target": "al.math.s2.sampling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.measures_spread",
+      "target": "al.math.s2.sampling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s2.sampling",
+      "target": "al.math.s2.sampling_distribution_mean",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s2.linear_combinations_variance",
+      "target": "al.math.s2.sampling_distribution_mean",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.normal_probability_calculations",
+      "target": "al.math.s2.sampling_distribution_mean",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s2.sampling_distribution_mean",
       "target": "al.math.s2.confidence_intervals",
       "relation": "prerequisite_for"
     },
     {
+      "source": "al.math.s2.sampling_distribution_mean",
+      "target": "al.math.s2.hypothesis_testing_normal",
+      "relation": "prerequisite_for"
+    },
+    {
       "source": "al.math.s2.confidence_intervals",
-      "target": "al.math.s2.hypothesis_testing",
+      "target": "al.math.s2.hypothesis_testing_normal",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.differentiation",
-      "target": "al.math.m1.kinematics",
+      "source": "al.math.s2.poisson_distribution",
+      "target": "al.math.s2.hypothesis_testing_poisson",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.trigonometry",
-      "target": "al.math.m1.forces_equilibrium",
+      "source": "al.math.s2.hypothesis_testing_normal",
+      "target": "al.math.s2.hypothesis_testing_poisson",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.m1.forces_equilibrium",
-      "target": "al.math.m1.newtons_laws",
+      "source": "al.math.s1.binomial_distribution",
+      "target": "al.math.s2.hypothesis_testing_binomial",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.m1.kinematics",
-      "target": "al.math.m1.newtons_laws",
+      "source": "al.math.s2.hypothesis_testing_normal",
+      "target": "al.math.s2.hypothesis_testing_binomial",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.m1.newtons_laws",
-      "target": "al.math.m1.energy",
+      "source": "al.math.s2.hypothesis_testing_normal",
+      "target": "al.math.s2.type_i_ii_errors",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.m1.kinematics",
-      "target": "al.math.m1.projectiles",
+      "source": "al.math.p1.trig_ratios",
+      "target": "al.math.m1.force_diagrams",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.p1.trigonometry",
-      "target": "al.math.m1.projectiles",
+      "source": "al.math.m1.force_diagrams",
+      "target": "al.math.m1.resolving_forces",
       "relation": "prerequisite_for"
     },
     {
-      "source": "al.math.m1.forces_equilibrium",
-      "target": "al.math.m1.moments",
+      "source": "al.math.p1.trig_ratios",
+      "target": "al.math.m1.resolving_forces",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.resolving_forces",
+      "target": "al.math.m1.equilibrium",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.equilibrium",
+      "target": "al.math.m1.friction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.displacement_velocity_acceleration",
+      "target": "al.math.m1.suvat_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.quadratic_equations",
+      "target": "al.math.m1.suvat_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.suvat_equations",
+      "target": "al.math.m1.velocity_time_graphs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.suvat_equations",
+      "target": "al.math.m1.vertical_motion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.differentiation_power_rule",
+      "target": "al.math.m1.variable_acceleration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.indefinite_integration",
+      "target": "al.math.m1.variable_acceleration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.suvat_equations",
+      "target": "al.math.m1.variable_acceleration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.equilibrium",
+      "target": "al.math.m1.newtons_first_law",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.suvat_equations",
+      "target": "al.math.m1.newtons_second_law",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.resolving_forces",
+      "target": "al.math.m1.newtons_second_law",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.newtons_first_law",
+      "target": "al.math.m1.newtons_second_law",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.newtons_second_law",
+      "target": "al.math.m1.newtons_third_law",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.newtons_third_law",
+      "target": "al.math.m1.connected_particles_pulleys",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.friction",
+      "target": "al.math.m1.connected_particles_pulleys",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.newtons_second_law",
+      "target": "al.math.m1.motion_on_inclined_planes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.friction",
+      "target": "al.math.m1.motion_on_inclined_planes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.resolving_forces",
+      "target": "al.math.m1.motion_on_inclined_planes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.newtons_second_law",
+      "target": "al.math.m1.work_done",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.work_done",
+      "target": "al.math.m1.kinetic_potential_energy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.kinetic_potential_energy",
+      "target": "al.math.m1.power",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.kinetic_potential_energy",
+      "target": "al.math.m1.work_energy_principle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.work_done",
+      "target": "al.math.m1.work_energy_principle",
       "relation": "prerequisite_for"
     }
   ]

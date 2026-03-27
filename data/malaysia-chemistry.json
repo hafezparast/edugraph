@@ -1,12 +1,13 @@
 {
   "metadata": {
     "domain": "chemistry",
-    "curriculum": "Malaysia Chemistry (KSSM)",
+    "curriculum": "Malaysia Chemistry (KSSM + STPM 962)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Malaysia secondary chemistry subtopics with prerequisite ordering, colored by textbook",
     "sources": [
-      "KSSM Chemistry Curriculum"
+      "KSSM Chemistry DSKP",
+      "STPM 962 Chemistry Syllabus"
     ],
     "last_updated": "2026-03-27"
   },
@@ -58,7 +59,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "3bf7e3056f408753",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch1.scientific_investigation",
@@ -75,7 +78,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "ce64fcb6c2a6205c",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch1.apparatus_and_chemicals",
@@ -92,7 +97,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "4c2db54e11cdc7e6",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch2.basic_concepts_of_matter",
@@ -109,7 +116,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "a69069d85fdcb618",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch2.development_of_atomic_model",
@@ -126,7 +135,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "ce4d6f34c80eeda6",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch2.structure_of_atom",
@@ -143,7 +154,28 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "19657be513bf3b44",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f4.ch2.electron_configuration",
+      "label": "Electron Configuration",
+      "type": "concept",
+      "description": "Electron Configuration (Susunan Elektron) — Chapter 2: Matter and Atomic Structure, Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f4",
+      "bookName": "Form 4",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "330e12ad7e445315",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch2.isotopes",
@@ -160,7 +192,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "0459079f1f2cbe2f",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch3.relative_atomic_molecular_mass",
@@ -177,7 +211,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "50f741363c2afc99",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch3.mole_concept",
@@ -194,7 +230,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "8c118b7fb5b948ab",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch3.chemical_formulae",
@@ -211,7 +249,28 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "fd1971080dcdc441",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f4.ch3.empirical_and_molecular_formula",
+      "label": "Empirical and Molecular Formula",
+      "type": "concept",
+      "description": "Empirical and Molecular Formula — Chapter 3: Mole Concept, Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f4",
+      "bookName": "Form 4",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "7ac8793f67d8fd8d",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch3.chemical_equations",
@@ -228,7 +287,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "9f8c855595e50ced",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch4.development_of_periodic_table",
@@ -245,7 +306,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "5671cec782329f64",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch4.modern_arrangement",
@@ -262,13 +325,15 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "2c7c4c9e4ff91a9c",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch4.group_18",
       "label": "Group 18",
       "type": "concept",
-      "description": "Group 18 — Chapter 4: Periodic Table, Form 4",
+      "description": "Group 18 (Noble Gases) — Chapter 4: Periodic Table, Form 4",
       "grade_range": [
         "Form 4"
       ],
@@ -279,13 +344,15 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "7c4676cdd831b9b6",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch4.group_1",
-      "label": "Group 1",
+      "label": "Group 1 (Alkali Metals)",
       "type": "concept",
-      "description": "Group 1 — Chapter 4: Periodic Table, Form 4",
+      "description": "Group 1 (Alkali Metals) — Chapter 4: Periodic Table, Form 4",
       "grade_range": [
         "Form 4"
       ],
@@ -296,13 +363,34 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "b5d76c611b8203a2",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f4.ch4.group_2",
+      "label": "Group 2 (Alkaline Earth Metals)",
+      "type": "concept",
+      "description": "Group 2 (Alkaline Earth Metals) — Chapter 4: Periodic Table, Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f4",
+      "bookName": "Form 4",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "b062008f180e7e64",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch4.group_17",
-      "label": "Group 17",
+      "label": "Group 17 (Halogens)",
       "type": "concept",
-      "description": "Group 17 — Chapter 4: Periodic Table, Form 4",
+      "description": "Group 17 (Halogens) — Chapter 4: Periodic Table, Form 4",
       "grade_range": [
         "Form 4"
       ],
@@ -313,7 +401,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "3c705839efac16a6",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch4.period_3",
@@ -330,7 +420,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "d7b332a6233863e7",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch4.transition_elements",
@@ -347,7 +439,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "b1d8b554ac30b998",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch5.basics_of_compound_formation",
@@ -364,7 +458,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "17db75423e840c62",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch5.ionic_bonding",
@@ -381,7 +477,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "97ff586d9823bf31",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch5.covalent_bonding",
@@ -398,7 +496,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "539a601da94c6c41",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch5.hydrogen_bonding",
@@ -415,7 +515,28 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "60afcaaf73d7525f",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f4.ch5.van_der_waals_forces",
+      "label": "Van der Waals Forces",
+      "type": "concept",
+      "description": "Van der Waals / Intermolecular Forces — Chapter 5: Chemical Bonding, Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f4",
+      "bookName": "Form 4",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "93c8af4b066922e5",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch5.dative_bonding",
@@ -432,7 +553,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "76ef13e2e9c15a5e",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch5.metallic_bonding",
@@ -449,7 +572,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "1c3cdd3c0fd18193",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch5.ionic_vs_covalent_compounds",
@@ -466,7 +591,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "3fb9993a34807f0a",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch6.water_in_acidity",
@@ -483,7 +610,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "b71a0d4827e93795",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch6.ph_value",
@@ -500,7 +629,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "1a289815269b138d",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch6.strength_of_acids_alkalis",
@@ -517,7 +648,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "fb57038e837ea15d",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch6.chemical_properties",
@@ -534,7 +667,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "0ca03adbd5362226",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch6.concentration",
@@ -551,7 +686,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "36408c5c586e4e83",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch6.standard_solutions",
@@ -568,7 +705,28 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "a315e0f40a8796af",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f4.ch6.titration",
+      "label": "Titration",
+      "type": "concept",
+      "description": "Titration (Pentitratan) — Chapter 6: Acids, Bases and Salts, Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f4",
+      "bookName": "Form 4",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "1af675d0661d3dbd",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch6.neutralization",
@@ -585,7 +743,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "6739ea41de892a82",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch6.salts_and_crystals",
@@ -602,7 +762,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "de7b9958b799d291",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch6.salt_preparation",
@@ -619,7 +781,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "f96afa4724985fb4",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch6.heat_on_salts",
@@ -636,7 +800,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "63a2bec9f41ca5c2",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch6.qualitative_analysis",
@@ -653,7 +819,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "b016c4207f6c10f4",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch7.determination_of_rate",
@@ -670,7 +838,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "29a7f5a053215751",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch7.factors_influencing",
@@ -687,7 +857,28 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "a881a39a0f55e686",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f4.ch7.catalyst_and_function",
+      "label": "Catalyst and its Function",
+      "type": "concept",
+      "description": "Catalyst and its Function — Chapter 7: Rate of Reaction, Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f4",
+      "bookName": "Form 4",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "9cd898fff957875b",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch7.applications",
@@ -704,7 +895,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "2c59feddb4428f75",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch7.collision_theory",
@@ -721,7 +914,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "113f996c151b3fcb",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch8.alloys",
@@ -738,7 +933,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "3656072df33a6692",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch8.glass",
@@ -755,7 +952,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "d92352ba336aa1d3",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch8.ceramics",
@@ -772,7 +971,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "4857ac3731d373fe",
+      "comprehended": false
     },
     {
       "id": "mych.f4.ch8.composite_materials",
@@ -789,7 +990,9 @@
       "book": "mych.f4",
       "bookName": "Form 4",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "ab720b6c7559c46e",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch1.oxidation_and_reduction",
@@ -806,13 +1009,15 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "6d6566be309aae94",
+      "comprehended": false
     },
     {
-      "id": "mych.f5.ch1.standard_electrode_potential",
-      "label": "Standard Electrode Potential",
+      "id": "mych.f5.ch1.electrochemical_series",
+      "label": "Electrochemical Series / Reactivity Series",
       "type": "concept",
-      "description": "Standard Electrode Potential — Chapter 1: Redox, Form 5",
+      "description": "Electrochemical Series / Reactivity Series — Chapter 1: Redox, Form 5",
       "grade_range": [
         "Form 5"
       ],
@@ -823,7 +1028,9 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "c91df97952af1562",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch1.chemical_cells",
@@ -840,7 +1047,9 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "9ddbf07f94cecf46",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch1.electrolytic_cells",
@@ -857,7 +1066,66 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "c7cfb05d09689816",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f5.ch1.selective_discharge_of_ions",
+      "label": "Selective Discharge of Ions",
+      "type": "concept",
+      "description": "Selective Discharge of Ions — Chapter 1: Redox, Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f5",
+      "bookName": "Form 5",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "ab824b5b18560b6c",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f5.ch1.faradays_laws",
+      "label": "Faraday's Laws / Quantitative Electrolysis",
+      "type": "concept",
+      "description": "Faraday's Laws / Quantitative Electrolysis — Chapter 1: Redox, Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f5",
+      "bookName": "Form 5",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "299981270606ccda",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f5.ch1.electroplating_purification",
+      "label": "Electroplating / Purification of Metals",
+      "type": "concept",
+      "description": "Electroplating / Purification of Metals — Chapter 1: Redox, Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f5",
+      "bookName": "Form 5",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "e8536bc6b7b101ba",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch1.metal_extraction",
@@ -874,7 +1142,9 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "4e7c41d64e3f28d3",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch1.rusting",
@@ -891,7 +1161,9 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "b5f2660c97c70e59",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch2.types_of_carbon_compounds",
@@ -908,7 +1180,9 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "03bd44d198d62646",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch2.homologous_series",
@@ -925,7 +1199,9 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "6a653956cee1e857",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch2.chemical_properties_of_carbon_compounds",
@@ -942,7 +1218,66 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "7144e01a58d02ded",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f5.ch2.combustion_of_hydrocarbons",
+      "label": "Combustion of Hydrocarbons",
+      "type": "concept",
+      "description": "Combustion of Hydrocarbons — Chapter 2: Carbon Compounds, Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f5",
+      "bookName": "Form 5",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "554f3f2209046412",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f5.ch2.substitution_and_addition_reactions",
+      "label": "Substitution and Addition Reactions",
+      "type": "concept",
+      "description": "Substitution and Addition Reactions — Chapter 2: Carbon Compounds, Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f5",
+      "bookName": "Form 5",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "7330b342c867d05a",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f5.ch2.esterification",
+      "label": "Esterification",
+      "type": "concept",
+      "description": "Esterification — Chapter 2: Carbon Compounds, Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f5",
+      "bookName": "Form 5",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "55fe927e0cb4c6ad",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch2.isomers_and_iupac_naming",
@@ -959,7 +1294,9 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "9bda92d752d3ae6e",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch3.heat_changes",
@@ -976,7 +1313,9 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "0a6bb90d373cbd9d",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch3.heat_of_reaction",
@@ -993,7 +1332,47 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "a669682265953b35",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f5.ch3.hess_law",
+      "label": "Hess's Law",
+      "type": "concept",
+      "description": "Hess's Law — Chapter 3: Thermochemistry, Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f5",
+      "bookName": "Form 5",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "ab3dad4e895ac2fd",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f5.ch3.enthalpy_diagrams",
+      "label": "Enthalpy Diagrams",
+      "type": "concept",
+      "description": "Enthalpy Diagrams — Chapter 3: Thermochemistry, Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f5",
+      "bookName": "Form 5",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "002e6fab72a83de6",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch3.applications_of_thermochemistry",
@@ -1010,7 +1389,9 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "2b4471a8006ff293",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch4.polymers_and_polymerization",
@@ -1027,7 +1408,9 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "5bf81ee074bd85f7",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch4.natural_rubber",
@@ -1044,7 +1427,28 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "8821feecfd82e35b",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f5.ch4.vulcanization",
+      "label": "Vulcanization of Rubber",
+      "type": "concept",
+      "description": "Vulcanization of Rubber — Chapter 4: Polymers, Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f5",
+      "bookName": "Form 5",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "1aa452cc2a4bf0ff",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch4.synthetic_rubber",
@@ -1061,7 +1465,28 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "381ed0d3ee1a4443",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f5.ch4.plastics",
+      "label": "Plastics (Thermoplastics vs Thermosets)",
+      "type": "concept",
+      "description": "Plastics — Thermoplastics vs Thermosetting Plastics — Chapter 4: Polymers, Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f5",
+      "bookName": "Form 5",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "75cee89c4213ca29",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch5.oils_and_fats",
@@ -1078,7 +1503,28 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "bc9a720cf333d340",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f5.ch5.saponification",
+      "label": "Saponification",
+      "type": "concept",
+      "description": "Saponification — Chapter 5: Consumer and Industrial Chemistry, Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f5",
+      "bookName": "Form 5",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "a98812108bc70369",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch5.cleaning_agents",
@@ -1095,7 +1541,9 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "ee583e5bd75a07bb",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch5.food_additives",
@@ -1112,7 +1560,9 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "ab3b397346365dd1",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch5.medicines",
@@ -1129,7 +1579,66 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "d222fc1def9971b9",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f5.ch5.haber_process",
+      "label": "Haber Process",
+      "type": "concept",
+      "description": "Haber Process — Chapter 5: Consumer and Industrial Chemistry, Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f5",
+      "bookName": "Form 5",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "096d60bf491d2cb2",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f5.ch5.contact_process",
+      "label": "Contact Process",
+      "type": "concept",
+      "description": "Contact Process — Chapter 5: Consumer and Industrial Chemistry, Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f5",
+      "bookName": "Form 5",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "8c452a84531622b6",
+      "comprehended": false
+    },
+    {
+      "id": "mych.f5.ch5.fertilizers",
+      "label": "Fertilizers (Baja)",
+      "type": "concept",
+      "description": "Fertilizers (Baja) — Chapter 5: Consumer and Industrial Chemistry, Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.f5",
+      "bookName": "Form 5",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "8ed135cd3d5dd3ff",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch5.nanotechnology",
@@ -1146,7 +1655,9 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "0126cd3dc9c368a3",
+      "comprehended": false
     },
     {
       "id": "mych.f5.ch5.green_technology",
@@ -1163,13 +1674,15 @@
       "book": "mych.f5",
       "bookName": "Form 5",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "148ca7b7b64dc993",
+      "comprehended": false
     },
     {
       "id": "mych.stpm1.ch1_atoms_molecules_stoichiometry",
-      "label": "Atoms Molecules Stoichiometry",
+      "label": "Atoms, Molecules and Stoichiometry",
       "type": "concept",
-      "description": "Atoms Molecules Stoichiometry — STPM Chemistry (962), STPM Sem 1",
+      "description": "Atoms, Molecules and Stoichiometry — STPM Chemistry (962), STPM Sem 1",
       "grade_range": [
         "STPM Sem 1"
       ],
@@ -1180,7 +1693,28 @@
       "book": "mych.stpm1",
       "bookName": "STPM Sem 1",
       "bookColor": "#f59e0b",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "9b30bcbe5b2ecd99",
+      "comprehended": false
+    },
+    {
+      "id": "mych.stpm1.ch1b_atomic_structure",
+      "label": "Atomic Structure (Quantum Numbers and Orbitals)",
+      "type": "concept",
+      "description": "Atomic Structure — quantum numbers, orbitals, electron configuration — STPM Chemistry (962), STPM Sem 1",
+      "grade_range": [
+        "STPM Sem 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.stpm1",
+      "bookName": "STPM Sem 1",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "be417d619e412498",
+      "comprehended": false
     },
     {
       "id": "mych.stpm1.ch2_electronic_structure",
@@ -1197,7 +1731,9 @@
       "book": "mych.stpm1",
       "bookName": "STPM Sem 1",
       "bookColor": "#f59e0b",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "875014984c11910f",
+      "comprehended": false
     },
     {
       "id": "mych.stpm1.ch3_chemical_bonding",
@@ -1214,7 +1750,9 @@
       "book": "mych.stpm1",
       "bookName": "STPM Sem 1",
       "bookColor": "#f59e0b",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "f50e8d1e829f2a1c",
+      "comprehended": false
     },
     {
       "id": "mych.stpm1.ch4_states_of_matter",
@@ -1231,7 +1769,28 @@
       "book": "mych.stpm1",
       "bookName": "STPM Sem 1",
       "bookColor": "#f59e0b",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "a66fc533cd13e55e",
+      "comprehended": false
+    },
+    {
+      "id": "mych.stpm1.ch4b_gaseous_state",
+      "label": "Gaseous State / Gas Laws",
+      "type": "concept",
+      "description": "Gaseous State / Gas Laws — ideal vs real gas, PV=nRT — STPM Chemistry (962), STPM Sem 1",
+      "grade_range": [
+        "STPM Sem 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.stpm1",
+      "bookName": "STPM Sem 1",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "073bdbb4f7bb2516",
+      "comprehended": false
     },
     {
       "id": "mych.stpm1.ch5_reaction_kinetics",
@@ -1248,7 +1807,9 @@
       "book": "mych.stpm1",
       "bookName": "STPM Sem 1",
       "bookColor": "#f59e0b",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "e4f2894369106e64",
+      "comprehended": false
     },
     {
       "id": "mych.stpm1.ch6_equilibria",
@@ -1265,7 +1826,28 @@
       "book": "mych.stpm1",
       "bookName": "STPM Sem 1",
       "bookColor": "#f59e0b",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "287b288d68905bce",
+      "comprehended": false
+    },
+    {
+      "id": "mych.stpm1.ch6b_ionic_equilibria",
+      "label": "Ionic Equilibria / Buffer Solutions / Solubility Product",
+      "type": "concept",
+      "description": "Ionic Equilibria — buffer solutions, solubility product (Ksp) — STPM Chemistry (962), STPM Sem 1",
+      "grade_range": [
+        "STPM Sem 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.stpm1",
+      "bookName": "STPM Sem 1",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "01bdcbf1f7f1e740",
+      "comprehended": false
     },
     {
       "id": "mych.stpm2.ch1_chemical_energetics",
@@ -1282,7 +1864,47 @@
       "book": "mych.stpm2",
       "bookName": "STPM Sem 2",
       "bookColor": "#d97706",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "f26ca20a1896bb99",
+      "comprehended": false
+    },
+    {
+      "id": "mych.stpm2.ch1b_lattice_energy_born_haber",
+      "label": "Lattice Energy / Born-Haber Cycle",
+      "type": "concept",
+      "description": "Lattice Energy / Born-Haber Cycle — STPM Chemistry (962), STPM Sem 2",
+      "grade_range": [
+        "STPM Sem 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.stpm2",
+      "bookName": "STPM Sem 2",
+      "bookColor": "#d97706",
+      "bookOrder": 4,
+      "external_id": "25b6bb96541d3b8d",
+      "comprehended": false
+    },
+    {
+      "id": "mych.stpm2.ch1c_entropy_gibbs",
+      "label": "Entropy and Gibbs Free Energy",
+      "type": "concept",
+      "description": "Entropy and Gibbs Free Energy — STPM Chemistry (962), STPM Sem 2",
+      "grade_range": [
+        "STPM Sem 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.stpm2",
+      "bookName": "STPM Sem 2",
+      "bookColor": "#d97706",
+      "bookOrder": 4,
+      "external_id": "42345d3ba9554c45",
+      "comprehended": false
     },
     {
       "id": "mych.stpm2.ch2_electrochemistry",
@@ -1299,7 +1921,9 @@
       "book": "mych.stpm2",
       "bookName": "STPM Sem 2",
       "bookColor": "#d97706",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "ce47d25c1246c554",
+      "comprehended": false
     },
     {
       "id": "mych.stpm2.ch3_periodicity",
@@ -1316,7 +1940,9 @@
       "book": "mych.stpm2",
       "bookName": "STPM Sem 2",
       "bookColor": "#d97706",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "c4b75dfb905be02c",
+      "comprehended": false
     },
     {
       "id": "mych.stpm2.ch4_group_2",
@@ -1333,7 +1959,9 @@
       "book": "mych.stpm2",
       "bookName": "STPM Sem 2",
       "bookColor": "#d97706",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "03a65d0dc16b0f41",
+      "comprehended": false
     },
     {
       "id": "mych.stpm2.ch5_group_14",
@@ -1350,7 +1978,28 @@
       "book": "mych.stpm2",
       "bookName": "STPM Sem 2",
       "bookColor": "#d97706",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "9c063c659ac4b499",
+      "comprehended": false
+    },
+    {
+      "id": "mych.stpm2.ch5b_group_15",
+      "label": "Group 15 (Nitrogen Group)",
+      "type": "concept",
+      "description": "Group 15 (Nitrogen Group) — STPM Chemistry (962), STPM Sem 2",
+      "grade_range": [
+        "STPM Sem 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.stpm2",
+      "bookName": "STPM Sem 2",
+      "bookColor": "#d97706",
+      "bookOrder": 4,
+      "external_id": "004aff43cbb43b19",
+      "comprehended": false
     },
     {
       "id": "mych.stpm2.ch6_group_17",
@@ -1367,7 +2016,9 @@
       "book": "mych.stpm2",
       "bookName": "STPM Sem 2",
       "bookColor": "#d97706",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "2b5c9634e3b147f1",
+      "comprehended": false
     },
     {
       "id": "mych.stpm2.ch7_transition_elements",
@@ -1384,7 +2035,28 @@
       "book": "mych.stpm2",
       "bookName": "STPM Sem 2",
       "bookColor": "#d97706",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "f762fa6c5ac215f3",
+      "comprehended": false
+    },
+    {
+      "id": "mych.stpm2.ch7b_extraction_of_metals",
+      "label": "Extraction of Metals",
+      "type": "concept",
+      "description": "Extraction of Metals — STPM Chemistry (962), STPM Sem 2",
+      "grade_range": [
+        "STPM Sem 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.stpm2",
+      "bookName": "STPM Sem 2",
+      "bookColor": "#d97706",
+      "bookOrder": 4,
+      "external_id": "9b350bbd25ebccd2",
+      "comprehended": false
     },
     {
       "id": "mych.stpm3.ch1_intro_organic_chemistry",
@@ -1401,7 +2073,28 @@
       "book": "mych.stpm3",
       "bookName": "STPM Sem 3",
       "bookColor": "#b45309",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "167e07ca2caf7836",
+      "comprehended": false
+    },
+    {
+      "id": "mych.stpm3.ch1b_stereoisomerism",
+      "label": "Stereoisomerism (Optical / Geometric)",
+      "type": "concept",
+      "description": "Stereoisomerism — optical and geometric isomerism — STPM Chemistry (962), STPM Sem 3",
+      "grade_range": [
+        "STPM Sem 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.stpm3",
+      "bookName": "STPM Sem 3",
+      "bookColor": "#b45309",
+      "bookOrder": 5,
+      "external_id": "34e02066880b2107",
+      "comprehended": false
     },
     {
       "id": "mych.stpm3.ch2_hydrocarbons",
@@ -1418,7 +2111,28 @@
       "book": "mych.stpm3",
       "bookName": "STPM Sem 3",
       "bookColor": "#b45309",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "e6e38cc1e0484d49",
+      "comprehended": false
+    },
+    {
+      "id": "mych.stpm3.ch2b_aromatic_compounds",
+      "label": "Aromatic Compounds / Benzene Chemistry",
+      "type": "concept",
+      "description": "Aromatic Compounds / Benzene Chemistry — electrophilic substitution, Friedel-Crafts reactions — STPM Chemistry (962), STPM Sem 3",
+      "grade_range": [
+        "STPM Sem 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.stpm3",
+      "bookName": "STPM Sem 3",
+      "bookColor": "#b45309",
+      "bookOrder": 5,
+      "external_id": "513a9ac9cb8dfbd3",
+      "comprehended": false
     },
     {
       "id": "mych.stpm3.ch3_haloalkanes",
@@ -1435,7 +2149,28 @@
       "book": "mych.stpm3",
       "bookName": "STPM Sem 3",
       "bookColor": "#b45309",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "a477c45ae2d6fc23",
+      "comprehended": false
+    },
+    {
+      "id": "mych.stpm3.ch3b_reaction_mechanisms",
+      "label": "Reaction Mechanisms (SN1, SN2, E1, E2)",
+      "type": "concept",
+      "description": "Reaction Mechanisms — SN1, SN2, E1, E2 — STPM Chemistry (962), STPM Sem 3",
+      "grade_range": [
+        "STPM Sem 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.stpm3",
+      "bookName": "STPM Sem 3",
+      "bookColor": "#b45309",
+      "bookOrder": 5,
+      "external_id": "23a85329f14c3865",
+      "comprehended": false
     },
     {
       "id": "mych.stpm3.ch4_hydroxy_compounds",
@@ -1452,7 +2187,9 @@
       "book": "mych.stpm3",
       "bookName": "STPM Sem 3",
       "bookColor": "#b45309",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "18b22ce6972d2696",
+      "comprehended": false
     },
     {
       "id": "mych.stpm3.ch5_carbonyl_compounds",
@@ -1469,7 +2206,9 @@
       "book": "mych.stpm3",
       "bookName": "STPM Sem 3",
       "bookColor": "#b45309",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "062e246d13285f1c",
+      "comprehended": false
     },
     {
       "id": "mych.stpm3.ch6_carboxylic_acids_derivatives",
@@ -1486,13 +2225,15 @@
       "book": "mych.stpm3",
       "bookName": "STPM Sem 3",
       "bookColor": "#b45309",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "deab122f92b322e1",
+      "comprehended": false
     },
     {
       "id": "mych.stpm3.ch7_amines_amino_acids_proteins",
-      "label": "Amines Amino Acids Proteins",
+      "label": "Amines, Amino Acids and Proteins",
       "type": "concept",
-      "description": "Amines Amino Acids Proteins — STPM Chemistry (962), STPM Sem 3",
+      "description": "Amines, Amino Acids and Proteins — STPM Chemistry (962), STPM Sem 3",
       "grade_range": [
         "STPM Sem 3"
       ],
@@ -1503,7 +2244,9 @@
       "book": "mych.stpm3",
       "bookName": "STPM Sem 3",
       "bookColor": "#b45309",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "35fc2a70987c8343",
+      "comprehended": false
     },
     {
       "id": "mych.stpm3.ch8_polymers",
@@ -1520,7 +2263,28 @@
       "book": "mych.stpm3",
       "bookName": "STPM Sem 3",
       "bookColor": "#b45309",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "82fec2d4c53314cf",
+      "comprehended": false
+    },
+    {
+      "id": "mych.stpm3.ch9_spectroscopy",
+      "label": "Spectroscopy (IR, NMR, Mass Spec)",
+      "type": "concept",
+      "description": "Spectroscopy — IR, NMR, Mass Spectrometry — STPM Chemistry (962), STPM Sem 3",
+      "grade_range": [
+        "STPM Sem 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "mych.stpm3",
+      "bookName": "STPM Sem 3",
+      "bookColor": "#b45309",
+      "bookOrder": 5,
+      "external_id": "b706f191c2ae7681",
+      "comprehended": false
     }
   ],
   "edges": [
@@ -1551,6 +2315,11 @@
     },
     {
       "source": "mych.f4.ch2.structure_of_atom",
+      "target": "mych.f4.ch2.electron_configuration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f4.ch2.electron_configuration",
       "target": "mych.f4.ch2.isotopes",
       "relation": "prerequisite_for"
     },
@@ -1571,11 +2340,16 @@
     },
     {
       "source": "mych.f4.ch3.chemical_formulae",
+      "target": "mych.f4.ch3.empirical_and_molecular_formula",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f4.ch3.empirical_and_molecular_formula",
       "target": "mych.f4.ch3.chemical_equations",
       "relation": "prerequisite_for"
     },
     {
-      "source": "mych.f4.ch2.structure_of_atom",
+      "source": "mych.f4.ch2.electron_configuration",
       "target": "mych.f4.ch4.development_of_periodic_table",
       "relation": "prerequisite_for"
     },
@@ -1592,6 +2366,11 @@
     {
       "source": "mych.f4.ch4.modern_arrangement",
       "target": "mych.f4.ch4.group_1",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f4.ch4.modern_arrangement",
+      "target": "mych.f4.ch4.group_2",
       "relation": "prerequisite_for"
     },
     {
@@ -1627,6 +2406,11 @@
     {
       "source": "mych.f4.ch5.covalent_bonding",
       "target": "mych.f4.ch5.hydrogen_bonding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f4.ch5.covalent_bonding",
+      "target": "mych.f4.ch5.van_der_waals_forces",
       "relation": "prerequisite_for"
     },
     {
@@ -1685,6 +2469,11 @@
       "relation": "prerequisite_for"
     },
     {
+      "source": "mych.f4.ch6.standard_solutions",
+      "target": "mych.f4.ch6.titration",
+      "relation": "prerequisite_for"
+    },
+    {
       "source": "mych.f4.ch6.chemical_properties",
       "target": "mych.f4.ch6.neutralization",
       "relation": "prerequisite_for"
@@ -1721,6 +2510,11 @@
     },
     {
       "source": "mych.f4.ch7.factors_influencing",
+      "target": "mych.f4.ch7.catalyst_and_function",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f4.ch7.catalyst_and_function",
       "target": "mych.f4.ch7.applications",
       "relation": "prerequisite_for"
     },
@@ -1766,11 +2560,11 @@
     },
     {
       "source": "mych.f5.ch1.oxidation_and_reduction",
-      "target": "mych.f5.ch1.standard_electrode_potential",
+      "target": "mych.f5.ch1.electrochemical_series",
       "relation": "prerequisite_for"
     },
     {
-      "source": "mych.f5.ch1.standard_electrode_potential",
+      "source": "mych.f5.ch1.electrochemical_series",
       "target": "mych.f5.ch1.chemical_cells",
       "relation": "prerequisite_for"
     },
@@ -1780,8 +2574,23 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "mych.f5.ch1.standard_electrode_potential",
+      "source": "mych.f5.ch1.electrochemical_series",
       "target": "mych.f5.ch1.electrolytic_cells",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f5.ch1.electrolytic_cells",
+      "target": "mych.f5.ch1.selective_discharge_of_ions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f5.ch1.selective_discharge_of_ions",
+      "target": "mych.f5.ch1.faradays_laws",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f5.ch1.faradays_laws",
+      "target": "mych.f5.ch1.electroplating_purification",
       "relation": "prerequisite_for"
     },
     {
@@ -1810,6 +2619,21 @@
       "relation": "prerequisite_for"
     },
     {
+      "source": "mych.f5.ch2.chemical_properties_of_carbon_compounds",
+      "target": "mych.f5.ch2.combustion_of_hydrocarbons",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f5.ch2.chemical_properties_of_carbon_compounds",
+      "target": "mych.f5.ch2.substitution_and_addition_reactions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f5.ch2.chemical_properties_of_carbon_compounds",
+      "target": "mych.f5.ch2.esterification",
+      "relation": "prerequisite_for"
+    },
+    {
       "source": "mych.f5.ch2.homologous_series",
       "target": "mych.f5.ch2.isomers_and_iupac_naming",
       "relation": "prerequisite_for"
@@ -1826,6 +2650,16 @@
     },
     {
       "source": "mych.f5.ch3.heat_of_reaction",
+      "target": "mych.f5.ch3.hess_law",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f5.ch3.hess_law",
+      "target": "mych.f5.ch3.enthalpy_diagrams",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f5.ch3.enthalpy_diagrams",
       "target": "mych.f5.ch3.applications_of_thermochemistry",
       "relation": "prerequisite_for"
     },
@@ -1841,7 +2675,17 @@
     },
     {
       "source": "mych.f5.ch4.natural_rubber",
+      "target": "mych.f5.ch4.vulcanization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f5.ch4.vulcanization",
       "target": "mych.f5.ch4.synthetic_rubber",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f5.ch4.polymers_and_polymerization",
+      "target": "mych.f5.ch4.plastics",
       "relation": "prerequisite_for"
     },
     {
@@ -1851,6 +2695,11 @@
     },
     {
       "source": "mych.f5.ch5.oils_and_fats",
+      "target": "mych.f5.ch5.saponification",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f5.ch5.saponification",
       "target": "mych.f5.ch5.cleaning_agents",
       "relation": "prerequisite_for"
     },
@@ -1865,6 +2714,26 @@
       "relation": "prerequisite_for"
     },
     {
+      "source": "mych.f4.ch7.catalyst_and_function",
+      "target": "mych.f5.ch5.haber_process",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f5.ch1.oxidation_and_reduction",
+      "target": "mych.f5.ch5.haber_process",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f5.ch5.haber_process",
+      "target": "mych.f5.ch5.contact_process",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f5.ch5.haber_process",
+      "target": "mych.f5.ch5.fertilizers",
+      "relation": "prerequisite_for"
+    },
+    {
       "source": "mych.f5.ch5.medicines",
       "target": "mych.f5.ch5.nanotechnology",
       "relation": "prerequisite_for"
@@ -1875,12 +2744,27 @@
       "relation": "prerequisite_for"
     },
     {
+      "source": "mych.f4.ch2.development_of_atomic_model",
+      "target": "mych.stpm1.ch1_atoms_molecules_stoichiometry",
+      "relation": "prerequisite_for"
+    },
+    {
       "source": "mych.stpm1.ch1_atoms_molecules_stoichiometry",
+      "target": "mych.stpm1.ch1b_atomic_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.stpm1.ch1b_atomic_structure",
       "target": "mych.stpm1.ch2_electronic_structure",
       "relation": "prerequisite_for"
     },
     {
       "source": "mych.stpm1.ch2_electronic_structure",
+      "target": "mych.stpm1.ch3_chemical_bonding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f4.ch5.ionic_bonding",
       "target": "mych.stpm1.ch3_chemical_bonding",
       "relation": "prerequisite_for"
     },
@@ -1891,6 +2775,16 @@
     },
     {
       "source": "mych.stpm1.ch4_states_of_matter",
+      "target": "mych.stpm1.ch4b_gaseous_state",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.stpm1.ch4b_gaseous_state",
+      "target": "mych.stpm1.ch5_reaction_kinetics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f4.ch7.determination_of_rate",
       "target": "mych.stpm1.ch5_reaction_kinetics",
       "relation": "prerequisite_for"
     },
@@ -1900,7 +2794,32 @@
       "relation": "prerequisite_for"
     },
     {
+      "source": "mych.stpm1.ch6_equilibria",
+      "target": "mych.stpm1.ch6b_ionic_equilibria",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.stpm1.ch6b_ionic_equilibria",
+      "target": "mych.stpm2.ch1_chemical_energetics",
+      "relation": "prerequisite_for"
+    },
+    {
       "source": "mych.stpm2.ch1_chemical_energetics",
+      "target": "mych.stpm2.ch1b_lattice_energy_born_haber",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.stpm2.ch1b_lattice_energy_born_haber",
+      "target": "mych.stpm2.ch1c_entropy_gibbs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.stpm2.ch1c_entropy_gibbs",
+      "target": "mych.stpm2.ch2_electrochemistry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f5.ch1.oxidation_and_reduction",
       "target": "mych.stpm2.ch2_electrochemistry",
       "relation": "prerequisite_for"
     },
@@ -1921,6 +2840,11 @@
     },
     {
       "source": "mych.stpm2.ch5_group_14",
+      "target": "mych.stpm2.ch5b_group_15",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.stpm2.ch5b_group_15",
       "target": "mych.stpm2.ch6_group_17",
       "relation": "prerequisite_for"
     },
@@ -1930,17 +2854,47 @@
       "relation": "prerequisite_for"
     },
     {
+      "source": "mych.stpm2.ch7_transition_elements",
+      "target": "mych.stpm2.ch7b_extraction_of_metals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.stpm2.ch7b_extraction_of_metals",
+      "target": "mych.stpm3.ch1_intro_organic_chemistry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.f5.ch2.types_of_carbon_compounds",
+      "target": "mych.stpm3.ch1_intro_organic_chemistry",
+      "relation": "prerequisite_for"
+    },
+    {
       "source": "mych.stpm3.ch1_intro_organic_chemistry",
+      "target": "mych.stpm3.ch1b_stereoisomerism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.stpm3.ch1b_stereoisomerism",
       "target": "mych.stpm3.ch2_hydrocarbons",
       "relation": "prerequisite_for"
     },
     {
       "source": "mych.stpm3.ch2_hydrocarbons",
+      "target": "mych.stpm3.ch2b_aromatic_compounds",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.stpm3.ch2b_aromatic_compounds",
       "target": "mych.stpm3.ch3_haloalkanes",
       "relation": "prerequisite_for"
     },
     {
       "source": "mych.stpm3.ch3_haloalkanes",
+      "target": "mych.stpm3.ch3b_reaction_mechanisms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mych.stpm3.ch3b_reaction_mechanisms",
       "target": "mych.stpm3.ch4_hydroxy_compounds",
       "relation": "prerequisite_for"
     },
@@ -1965,38 +2919,8 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "mych.stpm1.ch6_equilibria",
-      "target": "mych.stpm2.ch1_chemical_energetics",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mych.stpm2.ch7_transition_elements",
-      "target": "mych.stpm3.ch1_intro_organic_chemistry",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mych.f5.ch1.oxidation_and_reduction",
-      "target": "mych.stpm2.ch2_electrochemistry",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mych.f4.ch2.development_of_atomic_model",
-      "target": "mych.stpm1.ch1_atoms_molecules_stoichiometry",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mych.f4.ch5.ionic_bonding",
-      "target": "mych.stpm1.ch3_chemical_bonding",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mych.f4.ch7.determination_of_rate",
-      "target": "mych.stpm1.ch5_reaction_kinetics",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mych.f5.ch2.types_of_carbon_compounds",
-      "target": "mych.stpm3.ch1_intro_organic_chemistry",
+      "source": "mych.stpm3.ch8_polymers",
+      "target": "mych.stpm3.ch9_spectroscopy",
       "relation": "prerequisite_for"
     }
   ]

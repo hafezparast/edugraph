@@ -4,562 +4,4214 @@
     "curriculum": "Malaysia (KSSR/KSSM/STPM)",
     "version": "0.1.0",
     "description": "Malaysia school mathematics curriculum knowledge graph — Year 1 through STPM, with prerequisite ordering",
-    "sources": ["Malaysia School Math Content.pdf"],
-    "last_updated": "2026-03-25"
+    "sources": [
+      "Malaysia School Math Content.pdf"
+    ],
+    "last_updated": "2026-03-27",
+    "notes": "Mathematics M (950) is not yet covered in this graph. Only Mathematics T (954) is included."
   },
   "nodes": [
-    {"id": "my", "label": "Malaysia Mathematics", "type": "domain", "description": "Complete Malaysian mathematics curriculum from Year 1 through pre-university (STPM)", "grade_range": ["Year 1", "STPM"], "tags": ["root"]},
-
-    {"id": "my.primary", "label": "Primary Mathematics (KSSR)", "type": "branch", "description": "Year 1–6 primary school mathematics under KSSR Semakan curriculum", "grade_range": ["Year 1", "Year 6"], "tags": ["KSSR"]},
-    {"id": "my.secondary", "label": "Secondary Mathematics (KSSM)", "type": "branch", "description": "Form 1–5 secondary school mathematics under KSSM curriculum", "grade_range": ["Form 1", "Form 5"], "tags": ["KSSM"]},
-    {"id": "my.addmath", "label": "Additional Mathematics (KSSM)", "type": "branch", "description": "Form 4–5 Additional Mathematics — advanced elective stream", "grade_range": ["Form 4", "Form 5"], "tags": ["KSSM", "elective"]},
-    {"id": "my.stpm", "label": "STPM Mathematics", "type": "branch", "description": "Pre-university STPM Mathematics (T) and (M) — Semesters 1–3", "grade_range": ["STPM"], "tags": ["pre-university"]},
-
-    {"id": "my.y1.numbers100", "label": "Numbers Up to 100", "type": "topic", "description": "Recognise, read, write and count numbers from 0 to 100", "grade_range": ["Year 1"], "tags": ["numbers"]},
-    {"id": "my.y1.counting", "label": "Counting", "type": "concept", "description": "Counting objects and determining 'many' and 'few'", "grade_range": ["Year 1"], "tags": ["numbers"]},
-    {"id": "my.y1.recognize_0_10", "label": "Recognise 0 to 10", "type": "concept", "description": "Identify and name numbers from zero to ten", "grade_range": ["Year 1"], "tags": ["numbers"]},
-    {"id": "my.y1.write_0_10", "label": "Write 0 to 10", "type": "concept", "description": "Write numerals and number words for 0 to 10", "grade_range": ["Year 1"], "tags": ["numbers"]},
-    {"id": "my.y1.recognize_11_20", "label": "Recognise 11 to 20", "type": "concept", "description": "Identify and name numbers from 11 to 20", "grade_range": ["Year 1"], "tags": ["numbers"]},
-    {"id": "my.y1.recognize_21_100", "label": "Recognise 21 to 100", "type": "concept", "description": "Identify and name numbers from 21 to 100", "grade_range": ["Year 1"], "tags": ["numbers"]},
-    {"id": "my.y1.place_value", "label": "Place Value and Digit Value (Y1)", "type": "concept", "description": "Recognise place value (ones, tens) and digit value for numbers up to 100", "grade_range": ["Year 1"], "tags": ["numbers", "place-value"]},
-    {"id": "my.y1.number_order", "label": "Number Ordering (Y1)", "type": "concept", "description": "Compare numbers using more/less and arrange numbers in order", "grade_range": ["Year 1"], "tags": ["numbers"]},
-    {"id": "my.y1.number_patterns", "label": "Number Patterns (Y1)", "type": "concept", "description": "Recognise and continue simple number patterns", "grade_range": ["Year 1"], "tags": ["numbers", "patterns"]},
-    {"id": "my.y1.estimation", "label": "Estimation (Y1)", "type": "concept", "description": "Recognise and make reasonable estimates of quantities", "grade_range": ["Year 1"], "tags": ["numbers"]},
-    {"id": "my.y1.rounding", "label": "Rounding Off (Y1)", "type": "concept", "description": "Round off numbers to the nearest ten", "grade_range": ["Year 1"], "tags": ["numbers"]},
-
-    {"id": "my.y1.addition", "label": "Addition (Y1)", "type": "concept", "description": "Add numbers with sums up to 100, including quick addition strategies", "grade_range": ["Year 1"], "tags": ["operations"]},
-    {"id": "my.y1.subtraction", "label": "Subtraction (Y1)", "type": "concept", "description": "Subtract numbers within 100", "grade_range": ["Year 1"], "tags": ["operations"]},
-    {"id": "my.y1.repeated_addition", "label": "Repeated Addition", "type": "concept", "description": "Add the same number multiple times — foundation for multiplication", "grade_range": ["Year 1"], "tags": ["operations"]},
-    {"id": "my.y1.repeated_subtraction", "label": "Repeated Subtraction", "type": "concept", "description": "Subtract the same number multiple times — foundation for division", "grade_range": ["Year 1"], "tags": ["operations"]},
-
-    {"id": "my.y1.fractions_intro", "label": "Fractions Introduction (Y1)", "type": "concept", "description": "Recognise halves, quarters — parts of a whole", "grade_range": ["Year 1"], "tags": ["fractions"]},
-
-    {"id": "my.y1.money", "label": "Money (Y1)", "type": "topic", "description": "Recognise Malaysian coins and notes, value and conversion of money", "grade_range": ["Year 1"], "tags": ["money", "measurement"]},
-    {"id": "my.y1.time", "label": "Time (Y1)", "type": "topic", "description": "Recognise time of day, read clocks, days, weeks and months", "grade_range": ["Year 1"], "tags": ["time", "measurement"]},
-    {"id": "my.y1.length_mass_volume", "label": "Length, Mass and Volume (Y1)", "type": "topic", "description": "Recognise, measure and compare length, mass, and volume of liquids using non-standard units", "grade_range": ["Year 1"], "tags": ["measurement"]},
-
-    {"id": "my.y1.3d_shapes", "label": "3D Shapes (Y1)", "type": "concept", "description": "Recognise basic 3D shapes, shape patterns, build models", "grade_range": ["Year 1"], "tags": ["geometry"]},
-    {"id": "my.y1.2d_shapes", "label": "2D Shapes (Y1)", "type": "concept", "description": "Recognise basic 2D shapes, shape patterns, create patterns", "grade_range": ["Year 1"], "tags": ["geometry"]},
-
-    {"id": "my.y1.data", "label": "Data and Pictographs (Y1)", "type": "concept", "description": "Collect data and read simple pictographs", "grade_range": ["Year 1"], "tags": ["statistics"]},
-
-    {"id": "my.y2.numbers1000", "label": "Numbers Up to 1 000", "type": "topic", "description": "Recognise, write, compare, arrange, estimate and round off numbers up to 1 000", "grade_range": ["Year 2"], "tags": ["numbers"]},
-    {"id": "my.y2.place_value", "label": "Place Value (Y2)", "type": "concept", "description": "Place value and digit value for numbers up to 1 000 (ones, tens, hundreds)", "grade_range": ["Year 2"], "tags": ["numbers", "place-value"]},
-    {"id": "my.y2.partition", "label": "Partition Numbers (Y2)", "type": "concept", "description": "Break numbers into expanded form by place value", "grade_range": ["Year 2"], "tags": ["numbers"]},
-    {"id": "my.y2.number_patterns", "label": "Number Patterns (Y2)", "type": "concept", "description": "Recognise and continue number patterns up to 1 000", "grade_range": ["Year 2"], "tags": ["numbers", "patterns"]},
-
-    {"id": "my.y2.addition", "label": "Addition (Y2)", "type": "concept", "description": "Add two and three numbers with sums up to 1 000", "grade_range": ["Year 2"], "tags": ["operations"]},
-    {"id": "my.y2.subtraction", "label": "Subtraction (Y2)", "type": "concept", "description": "Subtract numbers within 1 000, including successive subtraction", "grade_range": ["Year 2"], "tags": ["operations"]},
-    {"id": "my.y2.multiplication", "label": "Multiplication (Y2)", "type": "concept", "description": "Build up times tables (0–10), multiply within 1 000", "grade_range": ["Year 2"], "tags": ["operations"]},
-    {"id": "my.y2.division", "label": "Division (Y2)", "type": "concept", "description": "Build up division tables, divide within 1 000", "grade_range": ["Year 2"], "tags": ["operations"]},
-
-    {"id": "my.y2.fractions", "label": "Fractions (Y2)", "type": "concept", "description": "Recognise, write, and compare fractions", "grade_range": ["Year 2"], "tags": ["fractions"]},
-    {"id": "my.y2.decimals_intro", "label": "Decimals Introduction (Y2)", "type": "concept", "description": "Convert fractions to decimals, compare decimals and fractions", "grade_range": ["Year 2"], "tags": ["decimals"]},
-
-    {"id": "my.y2.money", "label": "Money (Y2)", "type": "topic", "description": "Addition, subtraction, multiplication and division of money", "grade_range": ["Year 2"], "tags": ["money"]},
-    {"id": "my.y2.time", "label": "Time (Y2)", "type": "topic", "description": "Read minutes, say and write time, relationships in time", "grade_range": ["Year 2"], "tags": ["time"]},
-    {"id": "my.y2.length_mass_volume", "label": "Length, Mass and Volume (Y2)", "type": "topic", "description": "Standard units (cm, m, g, kg, ml, L), measure and estimate", "grade_range": ["Year 2"], "tags": ["measurement"]},
-    {"id": "my.y2.3d_2d_shapes", "label": "3D and 2D Shapes (Y2)", "type": "concept", "description": "Identify 3D shapes and nets, identify and draw 2D shapes", "grade_range": ["Year 2"], "tags": ["geometry"]},
-    {"id": "my.y2.bar_charts", "label": "Bar Charts (Y2)", "type": "concept", "description": "Collect data and read bar charts", "grade_range": ["Year 2"], "tags": ["statistics"]},
-
-    {"id": "my.y3.numbers10000", "label": "Numbers Up to 10 000", "type": "topic", "description": "Recognise, compare, arrange, estimate, round off numbers up to 10 000", "grade_range": ["Year 3"], "tags": ["numbers"]},
-    {"id": "my.y3.addition_subtraction", "label": "Addition and Subtraction (Y3)", "type": "concept", "description": "Add and subtract within 10 000 including three-number addition and successive subtraction", "grade_range": ["Year 3"], "tags": ["operations"]},
-    {"id": "my.y3.multiplication", "label": "Multiplication (Y3)", "type": "concept", "description": "Multiply numbers within 10 000", "grade_range": ["Year 3"], "tags": ["operations"]},
-    {"id": "my.y3.division", "label": "Division (Y3)", "type": "concept", "description": "Divide numbers within 10 000", "grade_range": ["Year 3"], "tags": ["operations"]},
-    {"id": "my.y3.unknown", "label": "Unknown in Equations (Y3)", "type": "concept", "description": "Recognise and find unknown values in number sentences", "grade_range": ["Year 3"], "tags": ["operations", "algebra-readiness"]},
-
-    {"id": "my.y3.proper_fractions", "label": "Proper Fractions", "type": "concept", "description": "Recognise and work with proper fractions", "grade_range": ["Year 3"], "tags": ["fractions"]},
-    {"id": "my.y3.equivalent_fractions", "label": "Equivalent Fractions", "type": "concept", "description": "Identify equivalent fractions and simplify to simplest form", "grade_range": ["Year 3"], "tags": ["fractions"]},
-    {"id": "my.y3.improper_mixed", "label": "Improper Fractions and Mixed Numbers (Y3)", "type": "concept", "description": "Convert between improper fractions and mixed numbers", "grade_range": ["Year 3"], "tags": ["fractions"]},
-    {"id": "my.y3.add_sub_fractions", "label": "Addition and Subtraction of Fractions (Y3)", "type": "concept", "description": "Add and subtract fractions with same and different denominators", "grade_range": ["Year 3"], "tags": ["fractions"]},
-    {"id": "my.y3.hundredths_decimals", "label": "Hundredths and Decimals", "type": "concept", "description": "Recognise fractions of hundredths and their decimal equivalents", "grade_range": ["Year 3"], "tags": ["decimals"]},
-    {"id": "my.y3.add_sub_decimals", "label": "Addition and Subtraction of Decimals (Y3)", "type": "concept", "description": "Add and subtract decimal numbers", "grade_range": ["Year 3"], "tags": ["decimals"]},
-    {"id": "my.y3.percentages_intro", "label": "Percentages Introduction", "type": "concept", "description": "Recognise percentages and relate to fractions and decimals", "grade_range": ["Year 3"], "tags": ["percentages"]},
-
-    {"id": "my.y3.money", "label": "Money (Y3)", "type": "topic", "description": "Four operations with money, recognise foreign currencies, money literacy", "grade_range": ["Year 3"], "tags": ["money"]},
-    {"id": "my.y3.time", "label": "Time (Y3)", "type": "topic", "description": "Calendar, time relationships, four operations with time", "grade_range": ["Year 3"], "tags": ["time"]},
-    {"id": "my.y3.measurement", "label": "Length, Mass and Volume (Y3)", "type": "topic", "description": "Convert units, four operations with length, mass, and volume of liquid", "grade_range": ["Year 3"], "tags": ["measurement"]},
-    {"id": "my.y3.prisms", "label": "Prisms and Non-Prisms", "type": "concept", "description": "Recognise prisms and non-prisms, regular polygons", "grade_range": ["Year 3"], "tags": ["geometry"]},
-    {"id": "my.y3.symmetry", "label": "Axis of Symmetry", "type": "concept", "description": "Identify lines of symmetry in 2D shapes", "grade_range": ["Year 3"], "tags": ["geometry"]},
-    {"id": "my.y3.location", "label": "Location", "type": "concept", "description": "Recognise and determine location on simple maps", "grade_range": ["Year 3"], "tags": ["geometry"]},
-    {"id": "my.y3.pie_chart", "label": "Pie Charts (Y3)", "type": "concept", "description": "Recognise pie charts, relate to pictographs and bar charts", "grade_range": ["Year 3"], "tags": ["statistics"]},
-
-    {"id": "my.y4.numbers100000", "label": "Numbers Up to 100 000", "type": "topic", "description": "Place value, digit value, partition, estimate, round off, number patterns up to 100 000", "grade_range": ["Year 4"], "tags": ["numbers"]},
-    {"id": "my.y4.addition", "label": "Addition (Y4)", "type": "concept", "description": "Addition within 100 000, unknown in addition", "grade_range": ["Year 4"], "tags": ["operations"]},
-    {"id": "my.y4.subtraction", "label": "Subtraction (Y4)", "type": "concept", "description": "Subtraction within 100 000, consecutive subtraction, unknown in subtraction", "grade_range": ["Year 4"], "tags": ["operations"]},
-    {"id": "my.y4.multiplication", "label": "Multiplication (Y4)", "type": "concept", "description": "Multiply within 100 000", "grade_range": ["Year 4"], "tags": ["operations"]},
-    {"id": "my.y4.division", "label": "Division (Y4)", "type": "concept", "description": "Divide within 100 000", "grade_range": ["Year 4"], "tags": ["operations"]},
-    {"id": "my.y4.mixed_operations", "label": "Mixed Operations (Y4)", "type": "concept", "description": "Combined addition/subtraction and multiplication/division", "grade_range": ["Year 4"], "tags": ["operations"]},
-
-    {"id": "my.y4.improper_mixed", "label": "Improper Fractions and Mixed Numbers (Y4)", "type": "concept", "description": "Relationship and conversion between improper fractions and mixed numbers", "grade_range": ["Year 4"], "tags": ["fractions"]},
-    {"id": "my.y4.add_sub_fractions", "label": "Addition and Subtraction of Fractions (Y4)", "type": "concept", "description": "Add and subtract fractions including mixed numbers", "grade_range": ["Year 4"], "tags": ["fractions"]},
-    {"id": "my.y4.decimals", "label": "Decimals (Y4)", "type": "concept", "description": "Recognise decimals, relate to fractions, compare, four operations with decimals", "grade_range": ["Year 4"], "tags": ["decimals"]},
-    {"id": "my.y4.percentages", "label": "Percentages (Y4)", "type": "concept", "description": "Relationship between percentages and decimals", "grade_range": ["Year 4"], "tags": ["percentages"]},
-
-    {"id": "my.y4.money", "label": "Money (Y4)", "type": "topic", "description": "Four operations with money, rounding, foreign currency, payment instruments", "grade_range": ["Year 4"], "tags": ["money"]},
-    {"id": "my.y4.time", "label": "Time (Y4)", "type": "topic", "description": "Relationships in time (day/hour, week/day, year/month), four operations with time", "grade_range": ["Year 4"], "tags": ["time"]},
-    {"id": "my.y4.length", "label": "Length (Y4)", "type": "concept", "description": "Units of length (mm, cm, m, km), conversions, four operations", "grade_range": ["Year 4"], "tags": ["measurement"]},
-    {"id": "my.y4.mass", "label": "Mass (Y4)", "type": "concept", "description": "Four operations with mass (g, kg)", "grade_range": ["Year 4"], "tags": ["measurement"]},
-    {"id": "my.y4.volume_liquid", "label": "Volume of Liquid (Y4)", "type": "concept", "description": "Four operations with volume of liquid (ml, L)", "grade_range": ["Year 4"], "tags": ["measurement"]},
-
-    {"id": "my.y4.angles", "label": "Angles (Y4)", "type": "concept", "description": "Recognise angles", "grade_range": ["Year 4"], "tags": ["geometry"]},
-    {"id": "my.y4.lines", "label": "Parallel and Perpendicular Lines (Y4)", "type": "concept", "description": "Recognise parallel lines and perpendicular lines", "grade_range": ["Year 4"], "tags": ["geometry"]},
-    {"id": "my.y4.perimeter", "label": "Perimeter (Y4)", "type": "concept", "description": "Calculate perimeter of shapes", "grade_range": ["Year 4"], "tags": ["geometry", "measurement"]},
-    {"id": "my.y4.area", "label": "Area (Y4)", "type": "concept", "description": "Calculate area of rectangles and squares", "grade_range": ["Year 4"], "tags": ["geometry", "measurement"]},
-    {"id": "my.y4.volume_space", "label": "Volume of 3D Shapes (Y4)", "type": "concept", "description": "Calculate volume of cubes and cuboids", "grade_range": ["Year 4"], "tags": ["geometry", "measurement"]},
-    {"id": "my.y4.coordinates", "label": "Coordinates (Y4)", "type": "concept", "description": "Recognise and determine position on a coordinate grid", "grade_range": ["Year 4"], "tags": ["geometry"]},
-    {"id": "my.y4.rates", "label": "Rates (Y4)", "type": "concept", "description": "Recognise and use rates", "grade_range": ["Year 4"], "tags": ["ratio"]},
-    {"id": "my.y4.data_handling", "label": "Data Handling (Y4)", "type": "concept", "description": "Compare information using pictographs, bar charts, and pie charts", "grade_range": ["Year 4"], "tags": ["statistics"]},
-
-    {"id": "my.y5.numbers_million", "label": "Whole Numbers and Operations (Y5)", "type": "topic", "description": "Numbers up to millions, prime numbers, all four operations and mixed operations", "grade_range": ["Year 5"], "tags": ["numbers"]},
-    {"id": "my.y5.prime_numbers", "label": "Prime Numbers (Y5)", "type": "concept", "description": "Identify prime numbers", "grade_range": ["Year 5"], "tags": ["numbers"]},
-    {"id": "my.y5.mixed_operations", "label": "Mixed Operations (Y5)", "type": "concept", "description": "Combinations of operations: add/multiply, subtract/divide, etc.", "grade_range": ["Year 5"], "tags": ["operations"]},
-
-    {"id": "my.y5.multiply_fractions", "label": "Multiplication of Fractions (Y5)", "type": "concept", "description": "Multiply fractions by whole numbers and fractions", "grade_range": ["Year 5"], "tags": ["fractions"]},
-    {"id": "my.y5.rounding_decimals", "label": "Rounding Off Decimals (Y5)", "type": "concept", "description": "Round decimals to specified decimal places", "grade_range": ["Year 5"], "tags": ["decimals"]},
-    {"id": "my.y5.operations_decimals", "label": "Four Operations with Decimals (Y5)", "type": "concept", "description": "Add, subtract, multiply and divide decimals", "grade_range": ["Year 5"], "tags": ["decimals"]},
-    {"id": "my.y5.percentages", "label": "Percentages (Y5)", "type": "concept", "description": "Convert mixed numbers and percentages, find quantity and percentage", "grade_range": ["Year 5"], "tags": ["percentages"]},
-
-    {"id": "my.y5.money", "label": "Money (Y5)", "type": "topic", "description": "Four operations and mixed operations with money, financial literacy including interest and credit", "grade_range": ["Year 5"], "tags": ["money", "financial-literacy"]},
-    {"id": "my.y5.interest", "label": "Simple and Compound Interest (Y5)", "type": "concept", "description": "Understand simple interest and compound interest", "grade_range": ["Year 5"], "tags": ["financial-literacy"]},
-    {"id": "my.y5.time", "label": "Time (Y5)", "type": "topic", "description": "Duration, unit conversion (decades, centuries), four operations with time", "grade_range": ["Year 5"], "tags": ["time"]},
-    {"id": "my.y5.measurement", "label": "Length, Mass and Volume (Y5)", "type": "topic", "description": "Convert units, four operations with all measurement types", "grade_range": ["Year 5"], "tags": ["measurement"]},
-
-    {"id": "my.y5.regular_polygons", "label": "Regular Polygons (Y5)", "type": "concept", "description": "Recognise regular polygons and measure interior angles", "grade_range": ["Year 5"], "tags": ["geometry"]},
-    {"id": "my.y5.composite_perimeter", "label": "Perimeter of Composite Shapes (Y5)", "type": "concept", "description": "Calculate perimeter of composite 2D shapes", "grade_range": ["Year 5"], "tags": ["geometry"]},
-    {"id": "my.y5.composite_area", "label": "Area of Composite Shapes (Y5)", "type": "concept", "description": "Calculate area of composite 2D shapes", "grade_range": ["Year 5"], "tags": ["geometry"]},
-    {"id": "my.y5.composite_volume", "label": "Volume of Composite Shapes (Y5)", "type": "concept", "description": "Calculate volume of composite 3D shapes", "grade_range": ["Year 5"], "tags": ["geometry"]},
-
-    {"id": "my.y5.coordinates_distance", "label": "Distance Between Coordinates (Y5)", "type": "concept", "description": "Find horizontal and vertical distance between two coordinates", "grade_range": ["Year 5"], "tags": ["geometry"]},
-    {"id": "my.y5.ratio", "label": "Ratio (Y5)", "type": "concept", "description": "Ratio between two quantities", "grade_range": ["Year 5"], "tags": ["ratio"]},
-    {"id": "my.y5.proportion", "label": "Proportion (Y5)", "type": "concept", "description": "Use proportion to find unknown values", "grade_range": ["Year 5"], "tags": ["ratio"]},
-    {"id": "my.y5.mode_mean_median", "label": "Mode, Range, Median and Mean (Y5)", "type": "concept", "description": "Calculate mode, range, median and mean from data", "grade_range": ["Year 5"], "tags": ["statistics"]},
-
-    {"id": "my.y6.numbers_operations", "label": "Whole Numbers and Operations (Y6)", "type": "topic", "description": "Fractions/decimals of millions, all operations, mixed operations with unknowns, prime and composite numbers", "grade_range": ["Year 6"], "tags": ["numbers"]},
-    {"id": "my.y6.composite_numbers", "label": "Prime and Composite Numbers (Y6)", "type": "concept", "description": "Distinguish prime numbers from composite numbers", "grade_range": ["Year 6"], "tags": ["numbers"]},
-
-    {"id": "my.y6.divide_fractions", "label": "Division of Fractions (Y6)", "type": "concept", "description": "Divide proper fractions and mixed numbers by whole numbers and fractions", "grade_range": ["Year 6"], "tags": ["fractions"]},
-    {"id": "my.y6.mixed_ops_decimals", "label": "Mixed Operations with Decimals (Y6)", "type": "concept", "description": "All combined operations with decimals", "grade_range": ["Year 6"], "tags": ["decimals"]},
-    {"id": "my.y6.percentages", "label": "Percentages (Y6)", "type": "concept", "description": "Convert decimals to percentages, add/subtract percentages, find quantity and percentage value", "grade_range": ["Year 6"], "tags": ["percentages"]},
-
-    {"id": "my.y6.profit_loss", "label": "Profit and Loss", "type": "concept", "description": "Cost price, selling price, profit and loss", "grade_range": ["Year 6"], "tags": ["financial-literacy"]},
-    {"id": "my.y6.discount", "label": "Discount, Rebate and Voucher", "type": "concept", "description": "Calculate discounts, understand rebates and vouchers", "grade_range": ["Year 6"], "tags": ["financial-literacy"]},
-    {"id": "my.y6.invoice_bill", "label": "Invoice, Bill, Receipt and Tax", "type": "concept", "description": "Read invoices, bills, receipts; understand service tax", "grade_range": ["Year 6"], "tags": ["financial-literacy"]},
-    {"id": "my.y6.interest_dividend", "label": "Interest and Dividend", "type": "concept", "description": "Calculate interest and dividends", "grade_range": ["Year 6"], "tags": ["financial-literacy"]},
-    {"id": "my.y6.assets_insurance", "label": "Assets, Liability, Insurance", "type": "concept", "description": "Recognise assets, liabilities, insurance and takaful", "grade_range": ["Year 6"], "tags": ["financial-literacy"]},
-
-    {"id": "my.y6.time_zones", "label": "Time Zones", "type": "concept", "description": "Recognise time zones around the world", "grade_range": ["Year 6"], "tags": ["time"]},
-    {"id": "my.y6.measurement", "label": "Measurement (Y6)", "type": "topic", "description": "Combined problems involving length, mass, and volume of liquid", "grade_range": ["Year 6"], "tags": ["measurement"]},
-
-    {"id": "my.y6.interior_angles", "label": "Interior Angles of Regular Polygons (Y6)", "type": "concept", "description": "Draw, measure and calculate interior angles of regular polygons", "grade_range": ["Year 6"], "tags": ["geometry"]},
-    {"id": "my.y6.circles", "label": "Circles (Y6)", "type": "concept", "description": "Centre, diameter, radius; draw circles", "grade_range": ["Year 6"], "tags": ["geometry"]},
-    {"id": "my.y6.coordinates_ratio", "label": "Coordinates and Ratio (Y6)", "type": "concept", "description": "Distance between coordinates, ratio, proportion", "grade_range": ["Year 6"], "tags": ["geometry", "ratio"]},
-    {"id": "my.y6.likelihood", "label": "Likelihood", "type": "concept", "description": "Certain, impossible, equally likely, more/less likely events", "grade_range": ["Year 6"], "tags": ["statistics", "probability"]},
-
-    {"id": "my.f1.integers", "label": "Integers", "type": "concept", "description": "Positive and negative integers, basic arithmetic operations with integers", "grade_range": ["Form 1"], "tags": ["numbers"]},
-    {"id": "my.f1.rational_numbers", "label": "Rational Numbers", "type": "concept", "description": "Positive/negative fractions and decimals as rational numbers", "grade_range": ["Form 1"], "tags": ["numbers"]},
-    {"id": "my.f1.factors_multiples", "label": "Factors, Prime Factors and HCF", "type": "concept", "description": "Factors, prime factorisation, highest common factor", "grade_range": ["Form 1"], "tags": ["numbers"]},
-    {"id": "my.f1.multiples_lcm", "label": "Multiples and LCM", "type": "concept", "description": "Common multiples and lowest common multiple", "grade_range": ["Form 1"], "tags": ["numbers"]},
-    {"id": "my.f1.squares_roots", "label": "Squares and Square Roots", "type": "concept", "description": "Perfect squares, square roots of whole numbers and fractions", "grade_range": ["Form 1"], "tags": ["numbers"]},
-    {"id": "my.f1.cubes_roots", "label": "Cubes and Cube Roots", "type": "concept", "description": "Perfect cubes and cube roots", "grade_range": ["Form 1"], "tags": ["numbers"]},
-
-    {"id": "my.f1.ratios", "label": "Ratios (F1)", "type": "concept", "description": "Ratios between quantities, equivalent ratios", "grade_range": ["Form 1"], "tags": ["ratio"]},
-    {"id": "my.f1.rates", "label": "Rates (F1)", "type": "concept", "description": "Rates and unit rates", "grade_range": ["Form 1"], "tags": ["ratio"]},
-    {"id": "my.f1.proportions", "label": "Proportions (F1)", "type": "concept", "description": "Direct proportion, relationship with percentages, fractions and decimals", "grade_range": ["Form 1"], "tags": ["ratio"]},
-
-    {"id": "my.f1.algebraic_expressions", "label": "Algebraic Expressions", "type": "concept", "description": "Variables, algebraic expressions, basic arithmetic operations on expressions", "grade_range": ["Form 1"], "tags": ["algebra"]},
-    {"id": "my.f1.linear_eq_one", "label": "Linear Equations in One Variable", "type": "concept", "description": "Solve linear equations in one variable", "grade_range": ["Form 1"], "tags": ["algebra"]},
-    {"id": "my.f1.linear_eq_two", "label": "Linear Equations in Two Variables", "type": "concept", "description": "Form and solve linear equations in two variables", "grade_range": ["Form 1"], "tags": ["algebra"]},
-    {"id": "my.f1.simultaneous_linear", "label": "Simultaneous Linear Equations", "type": "concept", "description": "Solve simultaneous linear equations in two variables", "grade_range": ["Form 1"], "tags": ["algebra"]},
-    {"id": "my.f1.linear_inequalities", "label": "Linear Inequalities in One Variable", "type": "concept", "description": "Inequalities and solving linear inequalities in one variable", "grade_range": ["Form 1"], "tags": ["algebra"]},
-
-    {"id": "my.f1.lines_angles", "label": "Lines and Angles", "type": "concept", "description": "Lines, angles, angles at intersecting lines, parallel lines and transversals", "grade_range": ["Form 1"], "tags": ["geometry"]},
-    {"id": "my.f1.polygons", "label": "Basic Polygons", "type": "concept", "description": "Properties of triangles and quadrilaterals, interior and exterior angles", "grade_range": ["Form 1"], "tags": ["geometry"]},
-    {"id": "my.f1.perimeter_area", "label": "Perimeter and Area (F1)", "type": "concept", "description": "Perimeter and area of triangles, parallelograms, kites and trapeziums", "grade_range": ["Form 1"], "tags": ["geometry"]},
-    {"id": "my.f1.sets", "label": "Introduction to Sets", "type": "concept", "description": "Sets, Venn diagrams, universal sets, complement, subsets", "grade_range": ["Form 1"], "tags": ["sets"]},
-    {"id": "my.f1.data_handling", "label": "Data Handling (F1)", "type": "concept", "description": "Data collection, organisation, representation and interpretation", "grade_range": ["Form 1"], "tags": ["statistics"]},
-    {"id": "my.f1.pythagoras", "label": "Pythagoras' Theorem", "type": "theorem", "description": "The Pythagorean theorem and its converse for right-angled triangles", "grade_range": ["Form 1"], "tags": ["geometry"]},
-
-    {"id": "my.f2.patterns_sequences", "label": "Patterns and Sequences", "type": "concept", "description": "Recognise patterns, sequences, and predict terms", "grade_range": ["Form 2"], "tags": ["algebra"]},
-    {"id": "my.f2.expansion", "label": "Expansion", "type": "concept", "description": "Expand algebraic expressions", "grade_range": ["Form 2"], "tags": ["algebra"]},
-    {"id": "my.f2.factorisation", "label": "Factorisation", "type": "concept", "description": "Factorise algebraic expressions", "grade_range": ["Form 2"], "tags": ["algebra"]},
-    {"id": "my.f2.algebraic_formulae", "label": "Algebraic Formulae", "type": "concept", "description": "Form and use algebraic formulae, change subject of formula", "grade_range": ["Form 2"], "tags": ["algebra"]},
-
-    {"id": "my.f2.polygon_angles", "label": "Interior and Exterior Angles of Polygons", "type": "concept", "description": "Calculate interior and exterior angles of regular polygons", "grade_range": ["Form 2"], "tags": ["geometry"]},
-    {"id": "my.f2.circle_properties", "label": "Properties of Circles", "type": "concept", "description": "Symmetry, chords, circumference and area of circles", "grade_range": ["Form 2"], "tags": ["geometry"]},
-    {"id": "my.f2.3d_shapes", "label": "Three-Dimensional Shapes (F2)", "type": "concept", "description": "Geometric properties, nets, surface area and volume of 3D shapes", "grade_range": ["Form 2"], "tags": ["geometry"]},
-
-    {"id": "my.f2.cartesian_coordinates", "label": "Cartesian Coordinates", "type": "concept", "description": "Distance and midpoint in the Cartesian coordinate system", "grade_range": ["Form 2"], "tags": ["geometry"]},
-    {"id": "my.f2.functions", "label": "Functions and Graphs", "type": "concept", "description": "Functions and graphs of functions", "grade_range": ["Form 2"], "tags": ["algebra"]},
-    {"id": "my.f2.speed_acceleration", "label": "Speed and Acceleration", "type": "concept", "description": "Speed and acceleration concepts", "grade_range": ["Form 2"], "tags": ["applied"]},
-    {"id": "my.f2.gradient", "label": "Gradient of a Straight Line", "type": "concept", "description": "Calculate and interpret gradient", "grade_range": ["Form 2"], "tags": ["algebra", "geometry"]},
-
-    {"id": "my.f2.transformations", "label": "Isometric Transformations", "type": "concept", "description": "Translation, reflection, rotation as isometries; rotational symmetry", "grade_range": ["Form 2"], "tags": ["geometry"]},
-    {"id": "my.f2.central_tendency", "label": "Measures of Central Tendency", "type": "concept", "description": "Mean, median, mode for ungrouped data", "grade_range": ["Form 2"], "tags": ["statistics"]},
-    {"id": "my.f2.probability", "label": "Simple Probability", "type": "concept", "description": "Experimental probability, theoretical probability, complement of events", "grade_range": ["Form 2"], "tags": ["probability"]},
-
-    {"id": "my.f3.indices", "label": "Indices", "type": "concept", "description": "Index notation and laws of indices", "grade_range": ["Form 3"], "tags": ["algebra"]},
-    {"id": "my.f3.standard_form", "label": "Standard Form", "type": "concept", "description": "Significant figures and standard form (scientific notation)", "grade_range": ["Form 3"], "tags": ["numbers"]},
-    {"id": "my.f3.consumer_math", "label": "Consumer Mathematics (F3)", "type": "concept", "description": "Savings, investments, credit and debt management", "grade_range": ["Form 3"], "tags": ["financial-literacy"]},
-    {"id": "my.f3.scale_drawings", "label": "Scale Drawings", "type": "concept", "description": "Interpret and create scale drawings", "grade_range": ["Form 3"], "tags": ["geometry"]},
-    {"id": "my.f3.trigonometric_ratios", "label": "Trigonometric Ratios", "type": "concept", "description": "Sine, cosine and tangent of acute angles in right-angled triangles", "grade_range": ["Form 3"], "tags": ["trigonometry"]},
-    {"id": "my.f3.circle_angles", "label": "Angles and Tangents of Circles", "type": "concept", "description": "Central angle, angle at circumference, cyclic quadrilaterals, tangents to circles", "grade_range": ["Form 3"], "tags": ["geometry"]},
-    {"id": "my.f3.plans_elevations", "label": "Plans and Elevations", "type": "concept", "description": "Orthogonal projections, plans and elevations of 3D objects", "grade_range": ["Form 3"], "tags": ["geometry"]},
-    {"id": "my.f3.loci", "label": "Loci in Two Dimensions", "type": "concept", "description": "Understand and construct loci in 2D", "grade_range": ["Form 3"], "tags": ["geometry"]},
-    {"id": "my.f3.straight_lines", "label": "Straight Lines", "type": "concept", "description": "Equation of straight lines, gradient-intercept form", "grade_range": ["Form 3"], "tags": ["algebra", "geometry"]},
-
-    {"id": "my.f4.quadratic_functions", "label": "Quadratic Functions and Equations", "type": "concept", "description": "Quadratic functions and equations in one variable", "grade_range": ["Form 4"], "tags": ["algebra"]},
-    {"id": "my.f4.number_bases", "label": "Number Bases", "type": "concept", "description": "Convert between different number bases", "grade_range": ["Form 4"], "tags": ["numbers"]},
-    {"id": "my.f4.logical_reasoning", "label": "Logical Reasoning", "type": "concept", "description": "Statements, arguments, deductive and inductive reasoning", "grade_range": ["Form 4"], "tags": ["logic"]},
-    {"id": "my.f4.set_operations", "label": "Operations on Sets", "type": "concept", "description": "Intersection, union, and combined operations on sets", "grade_range": ["Form 4"], "tags": ["sets"]},
-    {"id": "my.f4.graph_theory", "label": "Network in Graph Theory", "type": "concept", "description": "Vertices, edges, degree, Euler paths in networks", "grade_range": ["Form 4"], "tags": ["discrete-math"]},
-    {"id": "my.f4.linear_ineq_two", "label": "Linear Inequalities in Two Variables", "type": "concept", "description": "Linear inequalities and systems of linear inequalities in two variables", "grade_range": ["Form 4"], "tags": ["algebra"]},
-    {"id": "my.f4.graphs_of_motion", "label": "Graphs of Motion", "type": "concept", "description": "Distance-time and speed-time graphs", "grade_range": ["Form 4"], "tags": ["applied"]},
-    {"id": "my.f4.dispersion", "label": "Measures of Dispersion (Ungrouped)", "type": "concept", "description": "Range, interquartile range, variance, standard deviation for ungrouped data", "grade_range": ["Form 4"], "tags": ["statistics"]},
-    {"id": "my.f4.combined_probability", "label": "Probability of Combined Events", "type": "concept", "description": "Combined events, dependent/independent events, mutually exclusive events", "grade_range": ["Form 4"], "tags": ["probability"]},
-    {"id": "my.f4.financial_management", "label": "Financial Planning and Management", "type": "concept", "description": "Personal financial planning and management", "grade_range": ["Form 4"], "tags": ["financial-literacy"]},
-
-    {"id": "my.f5.variation", "label": "Variation", "type": "concept", "description": "Direct variation, inverse variation, combined variation", "grade_range": ["Form 5"], "tags": ["algebra"]},
-    {"id": "my.f5.matrices", "label": "Matrices", "type": "concept", "description": "Matrix operations: addition, subtraction, scalar multiplication, matrix multiplication", "grade_range": ["Form 5"], "tags": ["algebra"]},
-    {"id": "my.f5.insurance", "label": "Consumer Mathematics: Insurance", "type": "concept", "description": "Risk assessment and insurance coverage", "grade_range": ["Form 5"], "tags": ["financial-literacy"]},
-    {"id": "my.f5.taxation", "label": "Consumer Mathematics: Taxation", "type": "concept", "description": "Income tax and other forms of taxation", "grade_range": ["Form 5"], "tags": ["financial-literacy"]},
-    {"id": "my.f5.congruency_enlargement", "label": "Congruency and Enlargement", "type": "concept", "description": "Congruency, enlargement, combined transformations, tessellation", "grade_range": ["Form 5"], "tags": ["geometry"]},
-    {"id": "my.f5.trig_functions", "label": "Trigonometric Functions (F5)", "type": "concept", "description": "Sine, cosine, tangent for 0°–360°; graphs of trig functions", "grade_range": ["Form 5"], "tags": ["trigonometry"]},
-    {"id": "my.f5.dispersion_grouped", "label": "Measures of Dispersion (Grouped)", "type": "concept", "description": "Dispersion and measures of dispersion for grouped data", "grade_range": ["Form 5"], "tags": ["statistics"]},
-    {"id": "my.f5.mathematical_modeling", "label": "Mathematical Modeling", "type": "concept", "description": "Build and interpret mathematical models", "grade_range": ["Form 5"], "tags": ["applied"]},
-
-    {"id": "my.am4.functions", "label": "Functions (Add Math)", "type": "concept", "description": "Functions, composite functions, inverse functions", "grade_range": ["Form 4"], "tags": ["add-math", "algebra"]},
-    {"id": "my.am4.quadratic", "label": "Quadratic Functions (Add Math)", "type": "concept", "description": "Quadratic equations, discriminant, types of roots, quadratic inequalities", "grade_range": ["Form 4"], "tags": ["add-math", "algebra"]},
-    {"id": "my.am4.systems_equations", "label": "Systems of Equations (Add Math)", "type": "concept", "description": "Systems of 3 linear equations; simultaneous linear and non-linear equations", "grade_range": ["Form 4"], "tags": ["add-math", "algebra"]},
-    {"id": "my.am4.indices_surds_log", "label": "Indices, Surds and Logarithms", "type": "concept", "description": "Laws of indices, surds, logarithms and their applications", "grade_range": ["Form 4"], "tags": ["add-math", "algebra"]},
-    {"id": "my.am4.progressions", "label": "Arithmetic and Geometric Progressions", "type": "concept", "description": "Arithmetic progressions (AP) and geometric progressions (GP), nth term and sum", "grade_range": ["Form 4"], "tags": ["add-math", "algebra"]},
-    {"id": "my.am4.linear_law", "label": "Linear Law", "type": "concept", "description": "Linear and non-linear relations, applying linear law", "grade_range": ["Form 4"], "tags": ["add-math", "algebra"]},
-    {"id": "my.am4.coordinate_geometry", "label": "Coordinate Geometry (Add Math)", "type": "concept", "description": "Divisor of line segment, parallel/perpendicular lines, area of polygons, equations of loci", "grade_range": ["Form 4"], "tags": ["add-math", "geometry"]},
-    {"id": "my.am4.vectors", "label": "Vectors", "type": "concept", "description": "Vectors, vector addition/subtraction, vectors in Cartesian plane", "grade_range": ["Form 4"], "tags": ["add-math", "geometry"]},
-    {"id": "my.am4.solution_triangles", "label": "Solution of Triangles", "type": "concept", "description": "Sine rule, cosine rule, area of triangle", "grade_range": ["Form 4"], "tags": ["add-math", "trigonometry"]},
-    {"id": "my.am4.index_number", "label": "Index Numbers", "type": "concept", "description": "Index numbers and composite index", "grade_range": ["Form 4"], "tags": ["add-math", "statistics"]},
-
-    {"id": "my.am5.circular_measure", "label": "Circular Measure", "type": "concept", "description": "Radians, arc length, area of sector", "grade_range": ["Form 5"], "tags": ["add-math", "trigonometry"]},
-    {"id": "my.am5.differentiation", "label": "Differentiation (Add Math)", "type": "concept", "description": "Limits, first and second derivatives, applications of differentiation", "grade_range": ["Form 5"], "tags": ["add-math", "calculus"]},
-    {"id": "my.am5.integration", "label": "Integration (Add Math)", "type": "concept", "description": "Indefinite and definite integrals, applications of integration", "grade_range": ["Form 5"], "tags": ["add-math", "calculus"]},
-    {"id": "my.am5.permutation_combination", "label": "Permutation and Combination", "type": "concept", "description": "Counting principles: permutations and combinations", "grade_range": ["Form 5"], "tags": ["add-math", "probability"]},
-    {"id": "my.am5.probability_distribution", "label": "Probability Distribution (Add Math)", "type": "concept", "description": "Random variables, binomial distribution, normal distribution", "grade_range": ["Form 5"], "tags": ["add-math", "probability"]},
-    {"id": "my.am5.trig_functions", "label": "Trigonometric Functions (Add Math)", "type": "concept", "description": "Trig ratios for all angles, graphs, identities, addition and double angle formulae", "grade_range": ["Form 5"], "tags": ["add-math", "trigonometry"]},
-    {"id": "my.am5.linear_programming", "label": "Linear Programming", "type": "concept", "description": "Linear programming models and applications", "grade_range": ["Form 5"], "tags": ["add-math", "algebra"]},
-    {"id": "my.am5.kinematics", "label": "Kinematics of Linear Motion", "type": "concept", "description": "Displacement, velocity, acceleration as functions of time; differentiation and integration in kinematics", "grade_range": ["Form 5"], "tags": ["add-math", "calculus", "applied"]},
-
-    {"id": "my.stpm1.functions", "label": "Functions (STPM)", "type": "topic", "description": "Polynomial, rational, exponential, logarithmic, and trigonometric functions", "grade_range": ["STPM"], "tags": ["pre-university"]},
-    {"id": "my.stpm1.sequences_series", "label": "Sequences and Series (STPM)", "type": "topic", "description": "Sequences, series, and binomial expansions", "grade_range": ["STPM"], "tags": ["pre-university"]},
-    {"id": "my.stpm1.matrices", "label": "Matrices (STPM)", "type": "topic", "description": "Matrices and systems of linear equations", "grade_range": ["STPM"], "tags": ["pre-university"]},
-
-    {"id": "my.stpm2.limits_continuity", "label": "Limits and Continuity", "type": "topic", "description": "Limits of functions and continuity", "grade_range": ["STPM"], "tags": ["pre-university", "calculus"]},
-    {"id": "my.stpm2.differentiation", "label": "Differentiation (STPM)", "type": "topic", "description": "Derivatives and applications of differentiation", "grade_range": ["STPM"], "tags": ["pre-university", "calculus"]},
-    {"id": "my.stpm2.integration", "label": "Integration (STPM)", "type": "topic", "description": "Indefinite and definite integrals", "grade_range": ["STPM"], "tags": ["pre-university", "calculus"]},
-    {"id": "my.stpm2.diff_equations", "label": "Differential Equations", "type": "topic", "description": "First order differential equations, separable variables, linear DEs", "grade_range": ["STPM"], "tags": ["pre-university", "calculus"]},
-    {"id": "my.stpm2.maclaurin", "label": "Maclaurin Series", "type": "topic", "description": "Maclaurin series expansions and applications", "grade_range": ["STPM"], "tags": ["pre-university", "calculus"]},
-    {"id": "my.stpm2.numerical_methods", "label": "Numerical Methods", "type": "topic", "description": "Numerical solutions of equations and numerical integration", "grade_range": ["STPM"], "tags": ["pre-university"]},
-
-    {"id": "my.stpm3.data_description", "label": "Data Description (STPM)", "type": "topic", "description": "Data representation, central tendency, dispersion, distribution shape", "grade_range": ["STPM"], "tags": ["pre-university", "statistics"]},
-    {"id": "my.stpm3.probability", "label": "Probability (STPM)", "type": "topic", "description": "Counting techniques and probability theory", "grade_range": ["STPM"], "tags": ["pre-university", "probability"]},
-    {"id": "my.stpm3.distributions", "label": "Probability Distributions (STPM)", "type": "topic", "description": "Discrete/continuous random variables, binomial, Poisson, normal distributions", "grade_range": ["STPM"], "tags": ["pre-university", "probability"]},
-    {"id": "my.stpm3.sampling_estimation", "label": "Sampling and Estimation", "type": "topic", "description": "Sampling methods and estimation of population parameters", "grade_range": ["STPM"], "tags": ["pre-university", "statistics"]},
-    {"id": "my.stpm3.hypothesis_testing", "label": "Hypothesis Testing", "type": "topic", "description": "Testing population mean and proportion", "grade_range": ["STPM"], "tags": ["pre-university", "statistics"]},
-    {"id": "my.stpm3.chi_squared", "label": "Chi-Squared Tests", "type": "topic", "description": "Goodness-of-fit tests and tests of independence", "grade_range": ["STPM"], "tags": ["pre-university", "statistics"]}
+    {
+      "id": "my",
+      "label": "Malaysia Mathematics",
+      "type": "domain",
+      "description": "Complete Malaysian mathematics curriculum from Year 1 through pre-university (STPM)",
+      "grade_range": [
+        "Year 1",
+        "STPM"
+      ],
+      "tags": [
+        "root"
+      ],
+      "external_id": "34af66423a2ddb47",
+      "comprehended": false
+    },
+    {
+      "id": "my.primary",
+      "label": "Primary Mathematics (KSSR)",
+      "type": "branch",
+      "description": "Year 1–6 primary school mathematics under KSSR Semakan curriculum",
+      "grade_range": [
+        "Year 1",
+        "Year 6"
+      ],
+      "tags": [
+        "KSSR"
+      ],
+      "external_id": "c1f9f9ea28ce670c",
+      "comprehended": false
+    },
+    {
+      "id": "my.secondary",
+      "label": "Secondary Mathematics (KSSM)",
+      "type": "branch",
+      "description": "Form 1–5 secondary school mathematics under KSSM curriculum",
+      "grade_range": [
+        "Form 1",
+        "Form 5"
+      ],
+      "tags": [
+        "KSSM"
+      ],
+      "external_id": "2bc6a0f488047bfe",
+      "comprehended": false
+    },
+    {
+      "id": "my.addmath",
+      "label": "Additional Mathematics (KSSM)",
+      "type": "branch",
+      "description": "Form 4–5 Additional Mathematics — advanced elective stream",
+      "grade_range": [
+        "Form 4",
+        "Form 5"
+      ],
+      "tags": [
+        "KSSM",
+        "elective"
+      ],
+      "external_id": "0e51c86c41cb2de5",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm",
+      "label": "STPM Mathematics",
+      "type": "branch",
+      "description": "Pre-university STPM Mathematics (T) and (M) — Semesters 1–3",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university"
+      ],
+      "external_id": "f5d56bdad08323b0",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.numbers100",
+      "label": "Numbers Up to 100",
+      "type": "topic",
+      "description": "Recognise, read, write and count numbers from 0 to 100",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "83ff631bbf5050e6",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.counting",
+      "label": "Counting",
+      "type": "concept",
+      "description": "Counting objects and determining 'many' and 'few'",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "d04bf264ebe4ad2f",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.recognize_0_10",
+      "label": "Recognise 0 to 10",
+      "type": "concept",
+      "description": "Identify and name numbers from zero to ten",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "431d064ee3b50b00",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.write_0_10",
+      "label": "Write 0 to 10",
+      "type": "concept",
+      "description": "Write numerals and number words for 0 to 10",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "3671a5c5b4415a86",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.recognize_11_20",
+      "label": "Recognise 11 to 20",
+      "type": "concept",
+      "description": "Identify and name numbers from 11 to 20",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "e322b1906f538998",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.recognize_21_100",
+      "label": "Recognise 21 to 100",
+      "type": "concept",
+      "description": "Identify and name numbers from 21 to 100",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "5ae1e038b508dc9f",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.place_value",
+      "label": "Place Value and Digit Value (Y1)",
+      "type": "concept",
+      "description": "Recognise place value (ones, tens) and digit value for numbers up to 100",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "numbers",
+        "place-value"
+      ],
+      "external_id": "70ddae95b93e02c2",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.number_order",
+      "label": "Number Ordering (Y1)",
+      "type": "concept",
+      "description": "Compare numbers using more/less and arrange numbers in order",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "ef7bdb9af27f4a2e",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.number_patterns",
+      "label": "Number Patterns (Y1)",
+      "type": "concept",
+      "description": "Recognise and continue simple number patterns",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "numbers",
+        "patterns"
+      ],
+      "external_id": "dfe6f5f6efc0965a",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.addition",
+      "label": "Addition (Y1)",
+      "type": "concept",
+      "description": "Add numbers with sums up to 100, including quick addition strategies",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "863d51d69aa618ec",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.subtraction",
+      "label": "Subtraction (Y1)",
+      "type": "concept",
+      "description": "Subtract numbers within 100",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "6c5d37ba97b9f3c3",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.repeated_addition",
+      "label": "Repeated Addition",
+      "type": "concept",
+      "description": "Add the same number multiple times — foundation for multiplication",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "e7fb686cfa90b115",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.repeated_subtraction",
+      "label": "Repeated Subtraction",
+      "type": "concept",
+      "description": "Subtract the same number multiple times — foundation for division",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "008f20d6e355ba69",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.money",
+      "label": "Money (Y1)",
+      "type": "topic",
+      "description": "Recognise Malaysian coins and notes, value and conversion of money",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "money",
+        "measurement"
+      ],
+      "external_id": "9d20d21b41e632c2",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.time",
+      "label": "Time (Y1)",
+      "type": "topic",
+      "description": "Recognise time of day, read clocks, days, weeks and months",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "time",
+        "measurement"
+      ],
+      "external_id": "05521950d5db4bef",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.length_mass_volume",
+      "label": "Length, Mass and Volume (Y1)",
+      "type": "topic",
+      "description": "Recognise, measure and compare length, mass, and volume of liquids using non-standard units",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "measurement"
+      ],
+      "external_id": "d52a63a49accb4c7",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.3d_shapes",
+      "label": "3D Shapes (Y1)",
+      "type": "concept",
+      "description": "Recognise basic 3D shapes, shape patterns, build models",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "246ec79d3fc66b58",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.2d_shapes",
+      "label": "2D Shapes (Y1)",
+      "type": "concept",
+      "description": "Recognise basic 2D shapes, shape patterns, create patterns",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "29b7c064302a3425",
+      "comprehended": false
+    },
+    {
+      "id": "my.y1.data",
+      "label": "Data and Pictographs (Y1)",
+      "type": "concept",
+      "description": "Collect data and read simple pictographs",
+      "grade_range": [
+        "Year 1"
+      ],
+      "tags": [
+        "statistics"
+      ],
+      "external_id": "76af6bb4fc9d784a",
+      "comprehended": false
+    },
+    {
+      "id": "my.y2.numbers1000",
+      "label": "Numbers Up to 1 000",
+      "type": "topic",
+      "description": "Recognise, write, compare, arrange, estimate and round off numbers up to 1 000",
+      "grade_range": [
+        "Year 2"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "dd6ac4979706633f",
+      "comprehended": false
+    },
+    {
+      "id": "my.y2.place_value",
+      "label": "Place Value (Y2)",
+      "type": "concept",
+      "description": "Place value and digit value for numbers up to 1 000 (ones, tens, hundreds)",
+      "grade_range": [
+        "Year 2"
+      ],
+      "tags": [
+        "numbers",
+        "place-value"
+      ],
+      "external_id": "5aadec03cd6ee692",
+      "comprehended": false
+    },
+    {
+      "id": "my.y2.partition",
+      "label": "Partition Numbers (Y2)",
+      "type": "concept",
+      "description": "Break numbers into expanded form by place value",
+      "grade_range": [
+        "Year 2"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "ae9d7b2511b51a8b",
+      "comprehended": false
+    },
+    {
+      "id": "my.y2.number_patterns",
+      "label": "Number Patterns (Y2)",
+      "type": "concept",
+      "description": "Recognise and continue number patterns up to 1 000",
+      "grade_range": [
+        "Year 2"
+      ],
+      "tags": [
+        "numbers",
+        "patterns"
+      ],
+      "external_id": "ef03995149644c7c",
+      "comprehended": false
+    },
+    {
+      "id": "my.y2.addition",
+      "label": "Addition (Y2)",
+      "type": "concept",
+      "description": "Add two and three numbers with sums up to 1 000",
+      "grade_range": [
+        "Year 2"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "452e6220e74e90cb",
+      "comprehended": false
+    },
+    {
+      "id": "my.y2.subtraction",
+      "label": "Subtraction (Y2)",
+      "type": "concept",
+      "description": "Subtract numbers within 1 000, including successive subtraction",
+      "grade_range": [
+        "Year 2"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "2546a0f384444c8f",
+      "comprehended": false
+    },
+    {
+      "id": "my.y2.multiplication",
+      "label": "Multiplication (Y2)",
+      "type": "concept",
+      "description": "Build up times tables (2, 3, 4, 5, 10), basic multiplication facts",
+      "grade_range": [
+        "Year 2"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "2abf27f24651591d",
+      "comprehended": false
+    },
+    {
+      "id": "my.y2.division",
+      "label": "Division (Y2)",
+      "type": "concept",
+      "description": "Build up division facts related to times tables (2, 3, 4, 5, 10)",
+      "grade_range": [
+        "Year 2"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "84283b9504bb9a78",
+      "comprehended": false
+    },
+    {
+      "id": "my.y2.fractions",
+      "label": "Fractions (Y2)",
+      "type": "concept",
+      "description": "Recognise, write, and compare fractions",
+      "grade_range": [
+        "Year 2"
+      ],
+      "tags": [
+        "fractions"
+      ],
+      "external_id": "fc6a6d5d0a584890",
+      "comprehended": false
+    },
+    {
+      "id": "my.y2.money",
+      "label": "Money (Y2)",
+      "type": "topic",
+      "description": "Addition, subtraction, multiplication and division of money",
+      "grade_range": [
+        "Year 2"
+      ],
+      "tags": [
+        "money"
+      ],
+      "external_id": "325be944a56cd5ec",
+      "comprehended": false
+    },
+    {
+      "id": "my.y2.time",
+      "label": "Time (Y2)",
+      "type": "topic",
+      "description": "Read minutes, say and write time, relationships in time",
+      "grade_range": [
+        "Year 2"
+      ],
+      "tags": [
+        "time"
+      ],
+      "external_id": "3db3dba653203b2d",
+      "comprehended": false
+    },
+    {
+      "id": "my.y2.length_mass_volume",
+      "label": "Length, Mass and Volume (Y2)",
+      "type": "topic",
+      "description": "Standard units (cm, m, g, kg, ml, L), measure and estimate",
+      "grade_range": [
+        "Year 2"
+      ],
+      "tags": [
+        "measurement"
+      ],
+      "external_id": "666ce65b8eb5c1a2",
+      "comprehended": false
+    },
+    {
+      "id": "my.y2.3d_2d_shapes",
+      "label": "3D and 2D Shapes (Y2)",
+      "type": "concept",
+      "description": "Identify 3D shapes and nets, identify and draw 2D shapes",
+      "grade_range": [
+        "Year 2"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "90be9307cbcdac31",
+      "comprehended": false
+    },
+    {
+      "id": "my.y2.bar_charts",
+      "label": "Bar Charts (Y2)",
+      "type": "concept",
+      "description": "Collect data and read bar charts",
+      "grade_range": [
+        "Year 2"
+      ],
+      "tags": [
+        "statistics"
+      ],
+      "external_id": "beeb7388aa0a4be1",
+      "comprehended": false
+    },
+    {
+      "id": "my.y3.numbers10000",
+      "label": "Numbers Up to 10 000",
+      "type": "topic",
+      "description": "Recognise, compare, arrange, estimate, round off numbers up to 10 000",
+      "grade_range": [
+        "Year 3"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "882ec110e19ad034",
+      "comprehended": false
+    },
+    {
+      "id": "my.y3.addition_subtraction",
+      "label": "Addition and Subtraction (Y3)",
+      "type": "concept",
+      "description": "Add and subtract within 10 000 including three-number addition and successive subtraction",
+      "grade_range": [
+        "Year 3"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "5d6e3d02f69ba29c",
+      "comprehended": false
+    },
+    {
+      "id": "my.y3.multiplication",
+      "label": "Multiplication (Y3)",
+      "type": "concept",
+      "description": "Multiply numbers within 10 000",
+      "grade_range": [
+        "Year 3"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "8e9260605413804e",
+      "comprehended": false
+    },
+    {
+      "id": "my.y3.division",
+      "label": "Division (Y3)",
+      "type": "concept",
+      "description": "Divide numbers within 10 000",
+      "grade_range": [
+        "Year 3"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "84582d8a2ec92987",
+      "comprehended": false
+    },
+    {
+      "id": "my.y3.unknown",
+      "label": "Unknown in Equations (Y3)",
+      "type": "concept",
+      "description": "Recognise and find unknown values in number sentences",
+      "grade_range": [
+        "Year 3"
+      ],
+      "tags": [
+        "operations",
+        "algebra-readiness"
+      ],
+      "external_id": "cd013bbb2496e0f1",
+      "comprehended": false
+    },
+    {
+      "id": "my.y3.proper_fractions",
+      "label": "Proper Fractions",
+      "type": "concept",
+      "description": "Recognise and work with proper fractions",
+      "grade_range": [
+        "Year 3"
+      ],
+      "tags": [
+        "fractions"
+      ],
+      "external_id": "20ad00ba78b36384",
+      "comprehended": false
+    },
+    {
+      "id": "my.y3.equivalent_fractions",
+      "label": "Equivalent Fractions",
+      "type": "concept",
+      "description": "Identify equivalent fractions and simplify to simplest form",
+      "grade_range": [
+        "Year 3"
+      ],
+      "tags": [
+        "fractions"
+      ],
+      "external_id": "78af3642458bd404",
+      "comprehended": false
+    },
+    {
+      "id": "my.y3.add_sub_fractions",
+      "label": "Addition and Subtraction of Fractions (Y3)",
+      "type": "concept",
+      "description": "Add and subtract fractions with same and different denominators",
+      "grade_range": [
+        "Year 3"
+      ],
+      "tags": [
+        "fractions"
+      ],
+      "external_id": "26438aed3d89ecd6",
+      "comprehended": false
+    },
+    {
+      "id": "my.y3.money",
+      "label": "Money (Y3)",
+      "type": "topic",
+      "description": "Four operations with money, recognise foreign currencies, money literacy",
+      "grade_range": [
+        "Year 3"
+      ],
+      "tags": [
+        "money"
+      ],
+      "external_id": "2360d3928e3ff67a",
+      "comprehended": false
+    },
+    {
+      "id": "my.y3.time",
+      "label": "Time (Y3)",
+      "type": "topic",
+      "description": "Calendar, time relationships, four operations with time",
+      "grade_range": [
+        "Year 3"
+      ],
+      "tags": [
+        "time"
+      ],
+      "external_id": "efa9d4f269a3592e",
+      "comprehended": false
+    },
+    {
+      "id": "my.y3.measurement",
+      "label": "Length, Mass and Volume (Y3)",
+      "type": "topic",
+      "description": "Convert units, four operations with length, mass, and volume of liquid",
+      "grade_range": [
+        "Year 3"
+      ],
+      "tags": [
+        "measurement"
+      ],
+      "external_id": "78678a27cb5fd582",
+      "comprehended": false
+    },
+    {
+      "id": "my.y3.prisms",
+      "label": "Prisms and Non-Prisms",
+      "type": "concept",
+      "description": "Recognise prisms and non-prisms, regular polygons",
+      "grade_range": [
+        "Year 3"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "0091d73e9170290b",
+      "comprehended": false
+    },
+    {
+      "id": "my.y3.symmetry",
+      "label": "Axis of Symmetry",
+      "type": "concept",
+      "description": "Identify lines of symmetry in 2D shapes",
+      "grade_range": [
+        "Year 3"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "3c20489612d613fe",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.numbers100000",
+      "label": "Numbers Up to 100 000",
+      "type": "topic",
+      "description": "Place value, digit value, partition, estimate, round off, number patterns up to 100 000",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "0aabf4a788c044d3",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.addition",
+      "label": "Addition (Y4)",
+      "type": "concept",
+      "description": "Addition within 100 000, unknown in addition",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "cb3da7c4e836a246",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.subtraction",
+      "label": "Subtraction (Y4)",
+      "type": "concept",
+      "description": "Subtraction within 100 000, consecutive subtraction, unknown in subtraction",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "6d1ff4f065161d12",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.multiplication",
+      "label": "Multiplication (Y4)",
+      "type": "concept",
+      "description": "Multiply within 100 000",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "4d3a79a021bcaef6",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.division",
+      "label": "Division (Y4)",
+      "type": "concept",
+      "description": "Divide within 100 000",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "127909e03fe2f7f2",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.mixed_operations",
+      "label": "Mixed Operations (Y4)",
+      "type": "concept",
+      "description": "Combined addition/subtraction and multiplication/division",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "9788bbd49cf65c2a",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.improper_mixed",
+      "label": "Improper Fractions and Mixed Numbers (Y4)",
+      "type": "concept",
+      "description": "Relationship and conversion between improper fractions and mixed numbers",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "fractions"
+      ],
+      "external_id": "0f5bfbc70e6675c7",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.add_sub_fractions",
+      "label": "Addition and Subtraction of Fractions (Y4)",
+      "type": "concept",
+      "description": "Add and subtract fractions including mixed numbers",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "fractions"
+      ],
+      "external_id": "b6271e70fa99c42d",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.decimals",
+      "label": "Decimals (Y4)",
+      "type": "concept",
+      "description": "Recognise decimals, relate to fractions, compare, four operations with decimals",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "decimals"
+      ],
+      "external_id": "84762bf976e1de76",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.money",
+      "label": "Money (Y4)",
+      "type": "topic",
+      "description": "Four operations with money, rounding, foreign currency, payment instruments",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "money"
+      ],
+      "external_id": "5b99d466850c8b92",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.time",
+      "label": "Time (Y4)",
+      "type": "topic",
+      "description": "Relationships in time (day/hour, week/day, year/month), four operations with time",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "time"
+      ],
+      "external_id": "80e8cc79179499dd",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.length",
+      "label": "Length (Y4)",
+      "type": "concept",
+      "description": "Units of length (mm, cm, m, km), conversions, four operations",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "measurement"
+      ],
+      "external_id": "90e8651e6fdbcc08",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.mass",
+      "label": "Mass (Y4)",
+      "type": "concept",
+      "description": "Four operations with mass (g, kg)",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "measurement"
+      ],
+      "external_id": "b3d02cd481871f7b",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.volume_liquid",
+      "label": "Volume of Liquid (Y4)",
+      "type": "concept",
+      "description": "Four operations with volume of liquid (ml, L)",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "measurement"
+      ],
+      "external_id": "03247e681ef5d745",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.angles",
+      "label": "Angles (Y4)",
+      "type": "concept",
+      "description": "Recognise angles",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "14c88e5b1e861b29",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.lines",
+      "label": "Parallel and Perpendicular Lines (Y4)",
+      "type": "concept",
+      "description": "Recognise parallel lines and perpendicular lines",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "a02c66e5efa96947",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.perimeter",
+      "label": "Perimeter (Y4)",
+      "type": "concept",
+      "description": "Calculate perimeter of shapes",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "geometry",
+        "measurement"
+      ],
+      "external_id": "7a9a4abbb1fde3b1",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.area",
+      "label": "Area (Y4)",
+      "type": "concept",
+      "description": "Calculate area of rectangles and squares",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "geometry",
+        "measurement"
+      ],
+      "external_id": "32dd8abc136de43d",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.coordinates",
+      "label": "Coordinates (Y4)",
+      "type": "concept",
+      "description": "Recognise and determine position on a coordinate grid",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "efdf9b1e76ac82ed",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.data_handling",
+      "label": "Data Handling (Y4)",
+      "type": "concept",
+      "description": "Compare information using pictographs, bar charts, and pie charts",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "statistics"
+      ],
+      "external_id": "c002a096c2114686",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.numbers_million",
+      "label": "Whole Numbers and Operations (Y5)",
+      "type": "topic",
+      "description": "Numbers up to millions, prime numbers, all four operations and mixed operations",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "a15a2b89ef21b7ff",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.prime_numbers",
+      "label": "Prime Numbers (Y5)",
+      "type": "concept",
+      "description": "Identify prime numbers",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "c3797321be026b60",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.mixed_operations",
+      "label": "Mixed Operations (Y5)",
+      "type": "concept",
+      "description": "Combinations of operations: add/multiply, subtract/divide, etc.",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "operations"
+      ],
+      "external_id": "d663e4fa624a0bee",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.multiply_fractions",
+      "label": "Multiplication of Fractions (Y5)",
+      "type": "concept",
+      "description": "Multiply fractions by whole numbers and fractions",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "fractions"
+      ],
+      "external_id": "82bb50ae4feaab65",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.rounding_decimals",
+      "label": "Rounding Off Decimals (Y5)",
+      "type": "concept",
+      "description": "Round decimals to specified decimal places",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "decimals"
+      ],
+      "external_id": "b80c7f6037f198d7",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.operations_decimals",
+      "label": "Four Operations with Decimals (Y5)",
+      "type": "concept",
+      "description": "Add, subtract, multiply and divide decimals",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "decimals"
+      ],
+      "external_id": "9d0499954c509b1f",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.percentages",
+      "label": "Percentages (Y5)",
+      "type": "concept",
+      "description": "Convert mixed numbers and percentages, find quantity and percentage",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "percentages"
+      ],
+      "external_id": "4ba7b8c233e08cd3",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.money",
+      "label": "Money (Y5)",
+      "type": "topic",
+      "description": "Four operations and mixed operations with money, financial literacy including interest and credit",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "money",
+        "financial-literacy"
+      ],
+      "external_id": "69f4be3b10d16d1d",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.time",
+      "label": "Time (Y5)",
+      "type": "topic",
+      "description": "Duration, unit conversion (decades, centuries), four operations with time",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "time"
+      ],
+      "external_id": "dd8528b30535499c",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.measurement",
+      "label": "Length, Mass and Volume (Y5)",
+      "type": "topic",
+      "description": "Convert units, four operations with all measurement types",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "measurement"
+      ],
+      "external_id": "bd19110de089d8f9",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.regular_polygons",
+      "label": "Regular Polygons (Y5)",
+      "type": "concept",
+      "description": "Recognise regular polygons and measure interior angles",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "df35276cd546c74f",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.composite_perimeter",
+      "label": "Perimeter of Composite Shapes (Y5)",
+      "type": "concept",
+      "description": "Calculate perimeter of composite 2D shapes",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "1e87f1b0951de0cf",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.composite_area",
+      "label": "Area of Composite Shapes (Y5)",
+      "type": "concept",
+      "description": "Calculate area of composite 2D shapes",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "ca5145cc01f7ee33",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.coordinates_distance",
+      "label": "Distance Between Coordinates (Y5)",
+      "type": "concept",
+      "description": "Find horizontal and vertical distance between two coordinates",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "4df2a32a0c4d24bf",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.ratio",
+      "label": "Ratio (Y5)",
+      "type": "concept",
+      "description": "Ratio between two quantities",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "ratio"
+      ],
+      "external_id": "19f8a064303c3e27",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.proportion",
+      "label": "Proportion (Y5)",
+      "type": "concept",
+      "description": "Use proportion to find unknown values",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "ratio"
+      ],
+      "external_id": "ef0a586da55bd1fd",
+      "comprehended": false
+    },
+    {
+      "id": "my.y6.numbers_operations",
+      "label": "Whole Numbers and Operations (Y6)",
+      "type": "topic",
+      "description": "Fractions/decimals of millions, all operations, mixed operations with unknowns, prime and composite numbers",
+      "grade_range": [
+        "Year 6"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "b41aaa579662c9bc",
+      "comprehended": false
+    },
+    {
+      "id": "my.y6.composite_numbers",
+      "label": "Prime and Composite Numbers (Y6)",
+      "type": "concept",
+      "description": "Distinguish prime numbers from composite numbers",
+      "grade_range": [
+        "Year 6"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "fa9da111799d2999",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.divide_fractions",
+      "label": "Division of Fractions (Y5)",
+      "type": "concept",
+      "description": "Divide proper fractions and mixed numbers by whole numbers and fractions",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "fractions"
+      ],
+      "external_id": "c20ec31809a19ce3",
+      "comprehended": false
+    },
+    {
+      "id": "my.y6.mixed_ops_decimals",
+      "label": "Mixed Operations with Decimals (Y6)",
+      "type": "concept",
+      "description": "All combined operations with decimals",
+      "grade_range": [
+        "Year 6"
+      ],
+      "tags": [
+        "decimals"
+      ],
+      "external_id": "cd8483885aca86c6",
+      "comprehended": false
+    },
+    {
+      "id": "my.y6.percentages",
+      "label": "Percentages (Y6)",
+      "type": "concept",
+      "description": "Convert decimals to percentages, add/subtract percentages, find quantity and percentage value",
+      "grade_range": [
+        "Year 6"
+      ],
+      "tags": [
+        "percentages"
+      ],
+      "external_id": "ba69dc57ccff228d",
+      "comprehended": false
+    },
+    {
+      "id": "my.y6.profit_loss",
+      "label": "Profit and Loss",
+      "type": "concept",
+      "description": "Cost price, selling price, profit and loss",
+      "grade_range": [
+        "Year 6"
+      ],
+      "tags": [
+        "financial-literacy"
+      ],
+      "external_id": "461b8f40dcd47cc8",
+      "comprehended": false
+    },
+    {
+      "id": "my.y6.discount",
+      "label": "Discount, Rebate and Voucher",
+      "type": "concept",
+      "description": "Calculate discounts, understand rebates and vouchers",
+      "grade_range": [
+        "Year 6"
+      ],
+      "tags": [
+        "financial-literacy"
+      ],
+      "external_id": "45550e7cedced54b",
+      "comprehended": false
+    },
+    {
+      "id": "my.y6.invoice_bill",
+      "label": "Invoice, Bill, Receipt and Tax",
+      "type": "concept",
+      "description": "Read invoices, bills, receipts; understand service tax",
+      "grade_range": [
+        "Year 6"
+      ],
+      "tags": [
+        "financial-literacy"
+      ],
+      "external_id": "fe401afaccb5d022",
+      "comprehended": false
+    },
+    {
+      "id": "my.y6.time_zones",
+      "label": "Time Zones",
+      "type": "concept",
+      "description": "Recognise time zones around the world",
+      "grade_range": [
+        "Year 6"
+      ],
+      "tags": [
+        "time"
+      ],
+      "external_id": "9659d67802168ded",
+      "comprehended": false
+    },
+    {
+      "id": "my.y6.measurement",
+      "label": "Measurement (Y6)",
+      "type": "topic",
+      "description": "Combined problems involving length, mass, and volume of liquid",
+      "grade_range": [
+        "Year 6"
+      ],
+      "tags": [
+        "measurement"
+      ],
+      "external_id": "9d45719f494e0b0a",
+      "comprehended": false
+    },
+    {
+      "id": "my.y6.interior_angles",
+      "label": "Interior Angles of Regular Polygons (Y6)",
+      "type": "concept",
+      "description": "Draw, measure and calculate interior angles of regular polygons",
+      "grade_range": [
+        "Year 6"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "6beb77441c1b9a06",
+      "comprehended": false
+    },
+    {
+      "id": "my.y6.circles",
+      "label": "Circles (Y6)",
+      "type": "concept",
+      "description": "Centre, diameter, radius; draw circles",
+      "grade_range": [
+        "Year 6"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "acc1d528a36fee9a",
+      "comprehended": false
+    },
+    {
+      "id": "my.y6.coordinates_ratio",
+      "label": "Coordinates and Ratio (Y6)",
+      "type": "concept",
+      "description": "Distance between coordinates, ratio, proportion",
+      "grade_range": [
+        "Year 6"
+      ],
+      "tags": [
+        "geometry",
+        "ratio"
+      ],
+      "external_id": "907b2eb6786cce9a",
+      "comprehended": false
+    },
+    {
+      "id": "my.y6.likelihood",
+      "label": "Likelihood",
+      "type": "concept",
+      "description": "Certain, impossible, equally likely, more/less likely events",
+      "grade_range": [
+        "Year 6"
+      ],
+      "tags": [
+        "statistics",
+        "probability"
+      ],
+      "external_id": "629b29ae8ebb2771",
+      "comprehended": false
+    },
+    {
+      "id": "my.f1.integers",
+      "label": "Integers",
+      "type": "concept",
+      "description": "Positive and negative integers, basic arithmetic operations with integers",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "720d442b87a97bf3",
+      "comprehended": false
+    },
+    {
+      "id": "my.f1.rational_numbers",
+      "label": "Rational Numbers",
+      "type": "concept",
+      "description": "Positive/negative fractions and decimals as rational numbers",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "f4c39e35e05f4712",
+      "comprehended": false
+    },
+    {
+      "id": "my.f1.factors_multiples",
+      "label": "Factors, Prime Factors and HCF",
+      "type": "concept",
+      "description": "Factors, prime factorisation, highest common factor",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "58268e0dee1b057d",
+      "comprehended": false
+    },
+    {
+      "id": "my.f1.multiples_lcm",
+      "label": "Multiples and LCM",
+      "type": "concept",
+      "description": "Common multiples and lowest common multiple",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "24f48c783250a279",
+      "comprehended": false
+    },
+    {
+      "id": "my.f1.squares_roots",
+      "label": "Squares and Square Roots",
+      "type": "concept",
+      "description": "Perfect squares, square roots of whole numbers and fractions",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "5ad105d2f2155319",
+      "comprehended": false
+    },
+    {
+      "id": "my.f1.cubes_roots",
+      "label": "Cubes and Cube Roots",
+      "type": "concept",
+      "description": "Perfect cubes and cube roots",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "0b08f8e7c7d5e936",
+      "comprehended": false
+    },
+    {
+      "id": "my.f1.ratios",
+      "label": "Ratios (F1)",
+      "type": "concept",
+      "description": "Ratios between quantities, equivalent ratios",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "ratio"
+      ],
+      "external_id": "0887d4df7d0f5925",
+      "comprehended": false
+    },
+    {
+      "id": "my.f1.rates",
+      "label": "Rates (F1)",
+      "type": "concept",
+      "description": "Rates and unit rates",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "ratio"
+      ],
+      "external_id": "e4ca147114fa4e39",
+      "comprehended": false
+    },
+    {
+      "id": "my.f1.proportions",
+      "label": "Proportions (F1)",
+      "type": "concept",
+      "description": "Direct proportion, relationship with percentages, fractions and decimals",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "ratio"
+      ],
+      "external_id": "d388713136617df9",
+      "comprehended": false
+    },
+    {
+      "id": "my.f1.algebraic_expressions",
+      "label": "Algebraic Expressions",
+      "type": "concept",
+      "description": "Variables, algebraic expressions, basic arithmetic operations on expressions",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "algebra"
+      ],
+      "external_id": "1ce3aa430ea980a8",
+      "comprehended": false
+    },
+    {
+      "id": "my.f1.linear_eq_one",
+      "label": "Linear Equations in One Variable",
+      "type": "concept",
+      "description": "Solve linear equations in one variable",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "algebra"
+      ],
+      "external_id": "f16a1be7cee6f2a1",
+      "comprehended": false
+    },
+    {
+      "id": "my.f2.linear_eq_two",
+      "label": "Linear Equations in Two Variables",
+      "type": "concept",
+      "description": "Form and solve linear equations in two variables",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "algebra"
+      ],
+      "external_id": "e9b993805a0f9593",
+      "comprehended": false
+    },
+    {
+      "id": "my.f2.simultaneous_linear",
+      "label": "Simultaneous Linear Equations",
+      "type": "concept",
+      "description": "Solve simultaneous linear equations in two variables",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "algebra"
+      ],
+      "external_id": "3a1e349784d8e00e",
+      "comprehended": false
+    },
+    {
+      "id": "my.f2.linear_inequalities",
+      "label": "Linear Inequalities in One Variable",
+      "type": "concept",
+      "description": "Inequalities and solving linear inequalities in one variable",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "algebra"
+      ],
+      "external_id": "ee2ce74f9dc3423f",
+      "comprehended": false
+    },
+    {
+      "id": "my.f1.lines_angles",
+      "label": "Lines and Angles",
+      "type": "concept",
+      "description": "Lines, angles, angles at intersecting lines, parallel lines and transversals",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "45fec273ebe2a1ca",
+      "comprehended": false
+    },
+    {
+      "id": "my.f1.polygons",
+      "label": "Basic Polygons",
+      "type": "concept",
+      "description": "Properties of triangles and quadrilaterals, interior and exterior angles",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "61458cc05b2cf6dc",
+      "comprehended": false
+    },
+    {
+      "id": "my.f1.perimeter_area",
+      "label": "Perimeter and Area (F1)",
+      "type": "concept",
+      "description": "Perimeter and area of triangles, parallelograms, kites and trapeziums",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "54421ca7d9c98c19",
+      "comprehended": false
+    },
+    {
+      "id": "my.f1.data_handling",
+      "label": "Data Handling (F1)",
+      "type": "concept",
+      "description": "Data collection, organisation, representation and interpretation",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "statistics"
+      ],
+      "external_id": "ead49f2404d14042",
+      "comprehended": false
+    },
+    {
+      "id": "my.f2.pythagoras",
+      "label": "Pythagoras' Theorem",
+      "type": "theorem",
+      "description": "The Pythagorean theorem and its converse for right-angled triangles",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "795e1d5955aea9d3",
+      "comprehended": false
+    },
+    {
+      "id": "my.f2.patterns_sequences",
+      "label": "Patterns and Sequences",
+      "type": "concept",
+      "description": "Recognise patterns, sequences, and predict terms",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "algebra"
+      ],
+      "external_id": "7272cfc583781630",
+      "comprehended": false
+    },
+    {
+      "id": "my.f2.expansion",
+      "label": "Expansion",
+      "type": "concept",
+      "description": "Expand algebraic expressions",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "algebra"
+      ],
+      "external_id": "45e43f391d1b2806",
+      "comprehended": false
+    },
+    {
+      "id": "my.f2.factorisation",
+      "label": "Factorisation",
+      "type": "concept",
+      "description": "Factorise algebraic expressions",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "algebra"
+      ],
+      "external_id": "b34060f44842c638",
+      "comprehended": false
+    },
+    {
+      "id": "my.f2.algebraic_formulae",
+      "label": "Algebraic Formulae",
+      "type": "concept",
+      "description": "Form and use algebraic formulae, change subject of formula",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "algebra"
+      ],
+      "external_id": "ffab87d07539e165",
+      "comprehended": false
+    },
+    {
+      "id": "my.f2.polygon_angles",
+      "label": "Interior and Exterior Angles of Polygons",
+      "type": "concept",
+      "description": "Calculate interior and exterior angles of regular polygons",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "0fb2e0f2bf2c944f",
+      "comprehended": false
+    },
+    {
+      "id": "my.f2.circle_properties",
+      "label": "Properties of Circles",
+      "type": "concept",
+      "description": "Symmetry, chords, circumference and area of circles",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "84d6a2c148666e67",
+      "comprehended": false
+    },
+    {
+      "id": "my.f2.3d_shapes",
+      "label": "Three-Dimensional Shapes (F2)",
+      "type": "concept",
+      "description": "Geometric properties, nets, surface area and volume of 3D shapes",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "ad83e7e8a9bac111",
+      "comprehended": false
+    },
+    {
+      "id": "my.f2.cartesian_coordinates",
+      "label": "Cartesian Coordinates",
+      "type": "concept",
+      "description": "Distance and midpoint in the Cartesian coordinate system",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "66db0e75fa7e98de",
+      "comprehended": false
+    },
+    {
+      "id": "my.f3.functions",
+      "label": "Functions and Graphs (F3)",
+      "type": "concept",
+      "description": "Functions and graphs of functions",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "algebra"
+      ],
+      "external_id": "98e3b77a517068aa",
+      "comprehended": false
+    },
+    {
+      "id": "my.f2.speed_acceleration",
+      "label": "Speed and Acceleration",
+      "type": "concept",
+      "description": "Speed and acceleration concepts",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "applied"
+      ],
+      "external_id": "1b8d131f6bbea58a",
+      "comprehended": false
+    },
+    {
+      "id": "my.f3.gradient",
+      "label": "Gradient of a Straight Line",
+      "type": "concept",
+      "description": "Calculate and interpret gradient",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "algebra",
+        "geometry"
+      ],
+      "external_id": "b3f0373d5cdc14d8",
+      "comprehended": false
+    },
+    {
+      "id": "my.f2.transformations",
+      "label": "Isometric Transformations",
+      "type": "concept",
+      "description": "Translation, reflection, rotation as isometries; rotational symmetry",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "886831b3d0dfffad",
+      "comprehended": false
+    },
+    {
+      "id": "my.f2.central_tendency",
+      "label": "Measures of Central Tendency",
+      "type": "concept",
+      "description": "Mean, median, mode for ungrouped data",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "statistics"
+      ],
+      "external_id": "743447fbbb50a33f",
+      "comprehended": false
+    },
+    {
+      "id": "my.f2.probability",
+      "label": "Simple Probability",
+      "type": "concept",
+      "description": "Experimental probability, theoretical probability, complement of events",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "probability"
+      ],
+      "external_id": "10f4e318a345bcf5",
+      "comprehended": false
+    },
+    {
+      "id": "my.f3.indices",
+      "label": "Indices",
+      "type": "concept",
+      "description": "Index notation and laws of indices",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "algebra"
+      ],
+      "external_id": "5206bbc00b4f3cc3",
+      "comprehended": false
+    },
+    {
+      "id": "my.f3.standard_form",
+      "label": "Standard Form",
+      "type": "concept",
+      "description": "Significant figures and standard form (scientific notation)",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "3523024571df9b1c",
+      "comprehended": false
+    },
+    {
+      "id": "my.f3.consumer_math",
+      "label": "Consumer Mathematics (F3)",
+      "type": "concept",
+      "description": "Savings, investments, credit and debt management",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "financial-literacy"
+      ],
+      "external_id": "47d92658544856a1",
+      "comprehended": false
+    },
+    {
+      "id": "my.f3.scale_drawings",
+      "label": "Scale Drawings",
+      "type": "concept",
+      "description": "Interpret and create scale drawings",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "56e314e05fb5334d",
+      "comprehended": false
+    },
+    {
+      "id": "my.f3.trigonometric_ratios",
+      "label": "Trigonometric Ratios",
+      "type": "concept",
+      "description": "Sine, cosine and tangent of acute angles in right-angled triangles",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "trigonometry"
+      ],
+      "external_id": "a326cdddbcf456aa",
+      "comprehended": false
+    },
+    {
+      "id": "my.f3.circle_angles",
+      "label": "Angles and Tangents of Circles",
+      "type": "concept",
+      "description": "Central angle, angle at circumference, cyclic quadrilaterals, tangents to circles",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "aacdd9061440654d",
+      "comprehended": false
+    },
+    {
+      "id": "my.f3.plans_elevations",
+      "label": "Plans and Elevations",
+      "type": "concept",
+      "description": "Orthogonal projections, plans and elevations of 3D objects",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "a611a339a6bcc2f0",
+      "comprehended": false
+    },
+    {
+      "id": "my.f3.loci",
+      "label": "Loci in Two Dimensions",
+      "type": "concept",
+      "description": "Understand and construct loci in 2D",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "48f7684e82d2660a",
+      "comprehended": false
+    },
+    {
+      "id": "my.f3.straight_lines",
+      "label": "Straight Lines",
+      "type": "concept",
+      "description": "Equation of straight lines, gradient-intercept form",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "algebra",
+        "geometry"
+      ],
+      "external_id": "eef9cede10dbce25",
+      "comprehended": false
+    },
+    {
+      "id": "my.f4.quadratic_functions",
+      "label": "Quadratic Functions and Equations",
+      "type": "concept",
+      "description": "Quadratic functions and equations in one variable",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "algebra"
+      ],
+      "external_id": "7e2075d07dad2065",
+      "comprehended": false
+    },
+    {
+      "id": "my.f4.set_operations",
+      "label": "Operations on Sets",
+      "type": "concept",
+      "description": "Intersection, union, and combined operations on sets",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "sets"
+      ],
+      "external_id": "9ee42b5cedd12040",
+      "comprehended": false
+    },
+    {
+      "id": "my.f4.graph_theory",
+      "label": "Network in Graph Theory",
+      "type": "concept",
+      "description": "Vertices, edges, degree, Euler paths in networks",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "discrete-math"
+      ],
+      "external_id": "4271335ccba9fa03",
+      "comprehended": false
+    },
+    {
+      "id": "my.f4.linear_ineq_two",
+      "label": "Linear Inequalities in Two Variables",
+      "type": "concept",
+      "description": "Linear inequalities and systems of linear inequalities in two variables",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "algebra"
+      ],
+      "external_id": "08ac25895f785a1f",
+      "comprehended": false
+    },
+    {
+      "id": "my.f4.graphs_of_motion",
+      "label": "Graphs of Motion",
+      "type": "concept",
+      "description": "Distance-time and speed-time graphs",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "applied"
+      ],
+      "external_id": "89b60e884d67eb16",
+      "comprehended": false
+    },
+    {
+      "id": "my.f4.dispersion",
+      "label": "Measures of Dispersion (Ungrouped)",
+      "type": "concept",
+      "description": "Range, interquartile range, variance, standard deviation for ungrouped data",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "statistics"
+      ],
+      "external_id": "3950ab5b0a68fa34",
+      "comprehended": false
+    },
+    {
+      "id": "my.f4.combined_probability",
+      "label": "Probability of Combined Events",
+      "type": "concept",
+      "description": "Combined events, dependent/independent events, mutually exclusive events",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "probability"
+      ],
+      "external_id": "7bf46406c8590b99",
+      "comprehended": false
+    },
+    {
+      "id": "my.f4.financial_management",
+      "label": "Financial Planning and Management",
+      "type": "concept",
+      "description": "Personal financial planning and management",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "financial-literacy"
+      ],
+      "external_id": "0303a6ff89234325",
+      "comprehended": false
+    },
+    {
+      "id": "my.f5.variation",
+      "label": "Variation",
+      "type": "concept",
+      "description": "Direct variation, inverse variation, combined variation",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "algebra"
+      ],
+      "external_id": "8ba57a0f3f779be2",
+      "comprehended": false
+    },
+    {
+      "id": "my.f4.matrices",
+      "label": "Matrices",
+      "type": "concept",
+      "description": "Matrix operations: addition, subtraction, scalar multiplication, matrix multiplication",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "algebra"
+      ],
+      "external_id": "5a9a8f550fdfc454",
+      "comprehended": false
+    },
+    {
+      "id": "my.f5.insurance",
+      "label": "Consumer Mathematics: Insurance",
+      "type": "concept",
+      "description": "Risk assessment and insurance coverage",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "financial-literacy"
+      ],
+      "external_id": "9bd036bba9d5850f",
+      "comprehended": false
+    },
+    {
+      "id": "my.f5.taxation",
+      "label": "Consumer Mathematics: Taxation",
+      "type": "concept",
+      "description": "Income tax and other forms of taxation",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "financial-literacy"
+      ],
+      "external_id": "a2cfc020f3f22b9f",
+      "comprehended": false
+    },
+    {
+      "id": "my.f5.congruency_enlargement",
+      "label": "Congruency and Enlargement",
+      "type": "concept",
+      "description": "Congruency, enlargement, combined transformations, tessellation",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "825caaeada89e4b4",
+      "comprehended": false
+    },
+    {
+      "id": "my.f5.trig_functions",
+      "label": "Trigonometric Functions (F5)",
+      "type": "concept",
+      "description": "Sine, cosine, tangent for 0°–360°; graphs of trig functions",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "trigonometry"
+      ],
+      "external_id": "19fd1454a2dcb751",
+      "comprehended": false
+    },
+    {
+      "id": "my.f5.dispersion_grouped",
+      "label": "Measures of Dispersion (Grouped)",
+      "type": "concept",
+      "description": "Dispersion and measures of dispersion for grouped data",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "statistics"
+      ],
+      "external_id": "1a05b6e8cd09371c",
+      "comprehended": false
+    },
+    {
+      "id": "my.f5.mathematical_modeling",
+      "label": "Mathematical Modeling",
+      "type": "concept",
+      "description": "Build and interpret mathematical models",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "applied"
+      ],
+      "external_id": "7ab1a3ad6cfcf70a",
+      "comprehended": false
+    },
+    {
+      "id": "my.am4.functions",
+      "label": "Functions (Add Math)",
+      "type": "concept",
+      "description": "Functions, composite functions, inverse functions",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "add-math",
+        "algebra"
+      ],
+      "external_id": "9e43c7fc8747ac03",
+      "comprehended": false
+    },
+    {
+      "id": "my.am4.quadratic",
+      "label": "Quadratic Functions (Add Math)",
+      "type": "concept",
+      "description": "Quadratic equations, discriminant, types of roots, quadratic inequalities",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "add-math",
+        "algebra"
+      ],
+      "external_id": "37f249719f3a22dc",
+      "comprehended": false
+    },
+    {
+      "id": "my.am4.systems_equations",
+      "label": "Systems of Equations (Add Math)",
+      "type": "concept",
+      "description": "Systems of 3 linear equations; simultaneous linear and non-linear equations",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "add-math",
+        "algebra"
+      ],
+      "external_id": "0fc49bf9d8abb083",
+      "comprehended": false
+    },
+    {
+      "id": "my.am4.indices_surds_log",
+      "label": "Indices, Surds and Logarithms",
+      "type": "concept",
+      "description": "Laws of indices, surds, logarithms and their applications",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "add-math",
+        "algebra"
+      ],
+      "external_id": "726826d33310a463",
+      "comprehended": false
+    },
+    {
+      "id": "my.am4.progressions",
+      "label": "Arithmetic and Geometric Progressions",
+      "type": "concept",
+      "description": "Arithmetic progressions (AP) and geometric progressions (GP), nth term and sum",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "add-math",
+        "algebra"
+      ],
+      "external_id": "01e9e6ae847cafa7",
+      "comprehended": false
+    },
+    {
+      "id": "my.am4.linear_law",
+      "label": "Linear Law",
+      "type": "concept",
+      "description": "Linear and non-linear relations, applying linear law",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "add-math",
+        "algebra"
+      ],
+      "external_id": "548a4a834e2b2452",
+      "comprehended": false
+    },
+    {
+      "id": "my.am4.coordinate_geometry",
+      "label": "Coordinate Geometry (Add Math)",
+      "type": "concept",
+      "description": "Divisor of line segment, parallel/perpendicular lines, area of polygons, equations of loci",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "add-math",
+        "geometry"
+      ],
+      "external_id": "ce650d40110f9429",
+      "comprehended": false
+    },
+    {
+      "id": "my.am4.vectors",
+      "label": "Vectors",
+      "type": "concept",
+      "description": "Vectors, vector addition/subtraction, vectors in Cartesian plane",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "add-math",
+        "geometry"
+      ],
+      "external_id": "f06c094839daeb67",
+      "comprehended": false
+    },
+    {
+      "id": "my.am4.solution_triangles",
+      "label": "Solution of Triangles",
+      "type": "concept",
+      "description": "Sine rule, cosine rule, area of triangle",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "add-math",
+        "trigonometry"
+      ],
+      "external_id": "5b6bc94a95b2bfd4",
+      "comprehended": false
+    },
+    {
+      "id": "my.am5.index_number",
+      "label": "Index Numbers (Add Math F5)",
+      "type": "concept",
+      "description": "Index numbers and composite index",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "add-math",
+        "statistics"
+      ],
+      "external_id": "5b858d4ceafd4c45",
+      "comprehended": false
+    },
+    {
+      "id": "my.am5.circular_measure",
+      "label": "Circular Measure",
+      "type": "concept",
+      "description": "Radians, arc length, area of sector",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "add-math",
+        "trigonometry"
+      ],
+      "external_id": "70a369dad2b4f3d1",
+      "comprehended": false
+    },
+    {
+      "id": "my.am5.differentiation",
+      "label": "Differentiation (Add Math)",
+      "type": "concept",
+      "description": "Limits, first and second derivatives, applications of differentiation",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "add-math",
+        "calculus"
+      ],
+      "external_id": "434e8312d290cdbf",
+      "comprehended": false
+    },
+    {
+      "id": "my.am5.integration",
+      "label": "Integration (Add Math)",
+      "type": "concept",
+      "description": "Indefinite and definite integrals, applications of integration",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "add-math",
+        "calculus"
+      ],
+      "external_id": "7cbff9e557b70ce8",
+      "comprehended": false
+    },
+    {
+      "id": "my.am5.permutation_combination",
+      "label": "Permutation and Combination",
+      "type": "concept",
+      "description": "Counting principles: permutations and combinations",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "add-math",
+        "probability"
+      ],
+      "external_id": "8af6659594d4b85c",
+      "comprehended": false
+    },
+    {
+      "id": "my.am5.probability_distribution",
+      "label": "Probability Distribution (Add Math)",
+      "type": "concept",
+      "description": "Random variables, binomial distribution, normal distribution",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "add-math",
+        "probability"
+      ],
+      "external_id": "8ac7767313364fd2",
+      "comprehended": false
+    },
+    {
+      "id": "my.am5.trig_functions",
+      "label": "Trigonometric Functions (Add Math)",
+      "type": "concept",
+      "description": "Trig ratios for all angles, graphs, identities, addition and double angle formulae",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "add-math",
+        "trigonometry"
+      ],
+      "external_id": "88d953e3f89e6d17",
+      "comprehended": false
+    },
+    {
+      "id": "my.am5.linear_programming",
+      "label": "Linear Programming",
+      "type": "concept",
+      "description": "Linear programming models and applications",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "add-math",
+        "algebra"
+      ],
+      "external_id": "372a31704fcfe565",
+      "comprehended": false
+    },
+    {
+      "id": "my.am5.kinematics",
+      "label": "Kinematics of Linear Motion",
+      "type": "concept",
+      "description": "Displacement, velocity, acceleration as functions of time; differentiation and integration in kinematics",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "add-math",
+        "calculus",
+        "applied"
+      ],
+      "external_id": "19fc6a3f67aeae10",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm1.functions",
+      "label": "Functions (STPM)",
+      "type": "topic",
+      "description": "Polynomial, rational, exponential, logarithmic, and trigonometric functions",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university"
+      ],
+      "external_id": "9f27b0ac75e12838",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm1.sequences_series",
+      "label": "Sequences and Series (STPM)",
+      "type": "topic",
+      "description": "Sequences, series, and binomial expansions",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university"
+      ],
+      "external_id": "094afe0004ccd108",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm1.matrices",
+      "label": "Matrices (STPM)",
+      "type": "topic",
+      "description": "Matrices and systems of linear equations",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university"
+      ],
+      "external_id": "6b9a87609e267e9f",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm2.limits_continuity",
+      "label": "Limits and Continuity",
+      "type": "topic",
+      "description": "Limits of functions and continuity",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university",
+        "calculus"
+      ],
+      "external_id": "7b4915b8f354a3b6",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm2.differentiation",
+      "label": "Differentiation (STPM)",
+      "type": "topic",
+      "description": "Derivatives and applications of differentiation",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university",
+        "calculus"
+      ],
+      "external_id": "a45b8dbd1b12a400",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm2.integration",
+      "label": "Integration (STPM)",
+      "type": "topic",
+      "description": "Indefinite and definite integrals",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university",
+        "calculus"
+      ],
+      "external_id": "b549a9b8ce166afe",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm2.diff_equations",
+      "label": "Differential Equations",
+      "type": "topic",
+      "description": "First order differential equations, separable variables, linear DEs",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university",
+        "calculus"
+      ],
+      "external_id": "0331b70d1f3299cb",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm2.maclaurin",
+      "label": "Maclaurin Series",
+      "type": "topic",
+      "description": "Maclaurin series expansions and applications",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university",
+        "calculus"
+      ],
+      "external_id": "0bc8ba3e8aaa7824",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm2.numerical_methods",
+      "label": "Numerical Methods",
+      "type": "topic",
+      "description": "Numerical solutions of equations and numerical integration",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university"
+      ],
+      "external_id": "c3bb0791f44a0e13",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm3.data_description",
+      "label": "Data Description (STPM)",
+      "type": "topic",
+      "description": "Data representation, central tendency, dispersion, distribution shape",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university",
+        "statistics"
+      ],
+      "external_id": "6added31f1a665c6",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm3.probability",
+      "label": "Probability (STPM)",
+      "type": "topic",
+      "description": "Counting techniques and probability theory",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university",
+        "probability"
+      ],
+      "external_id": "68d25cbb6e119055",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm3.distributions",
+      "label": "Probability Distributions (STPM)",
+      "type": "topic",
+      "description": "Discrete/continuous random variables, binomial, Poisson, normal distributions",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university",
+        "probability"
+      ],
+      "external_id": "28fa20b4689cfcd8",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm3.sampling_estimation",
+      "label": "Sampling and Estimation",
+      "type": "topic",
+      "description": "Sampling methods and estimation of population parameters",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university",
+        "statistics"
+      ],
+      "external_id": "7297d01c35554735",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm3.hypothesis_testing",
+      "label": "Hypothesis Testing",
+      "type": "topic",
+      "description": "Testing population mean and proportion",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university",
+        "statistics"
+      ],
+      "external_id": "e7890199cdd6dac5",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm3.chi_squared",
+      "label": "Chi-Squared Tests",
+      "type": "topic",
+      "description": "Goodness-of-fit tests and tests of independence",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university",
+        "statistics"
+      ],
+      "external_id": "eead5a350c21186f",
+      "comprehended": false
+    },
+    {
+      "id": "my.y2.rounding",
+      "label": "Rounding Off (Y2)",
+      "type": "concept",
+      "description": "Round off numbers to the nearest ten and hundred",
+      "grade_range": [
+        "Year 2"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "3f185340f68bcd2f",
+      "comprehended": false
+    },
+    {
+      "id": "my.y2.fractions_intro",
+      "label": "Fractions Introduction (Y2)",
+      "type": "concept",
+      "description": "Recognise halves, quarters — parts of a whole",
+      "grade_range": [
+        "Year 2"
+      ],
+      "tags": [
+        "fractions"
+      ],
+      "external_id": "3af0a347a81c6dad",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.location",
+      "label": "Location (Y4)",
+      "type": "concept",
+      "description": "Recognise and determine location on simple maps and grids",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "2f830a9c17ebe53a",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.volume_3d",
+      "label": "Volume of 3D Shapes (Y5)",
+      "type": "concept",
+      "description": "Calculate volume of cubes and cuboids",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "geometry",
+        "measurement"
+      ],
+      "external_id": "7ce0991ec9a7f3bc",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.estimation_rounding",
+      "label": "Estimation and Rounding (Y4)",
+      "type": "concept",
+      "description": "Estimate and round off numbers up to 100 000",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "numbers"
+      ],
+      "external_id": "36fc88feacef908c",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.number_patterns",
+      "label": "Number Patterns (Y4)",
+      "type": "concept",
+      "description": "Recognise and extend number patterns up to 100 000",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "numbers",
+        "patterns"
+      ],
+      "external_id": "5cec9ddc2fbc50cd",
+      "comprehended": false
+    },
+    {
+      "id": "my.y4.pie_charts",
+      "label": "Pie Charts (Y4)",
+      "type": "concept",
+      "description": "Recognise and interpret pie charts",
+      "grade_range": [
+        "Year 4"
+      ],
+      "tags": [
+        "statistics"
+      ],
+      "external_id": "63ed99913ac6c3c5",
+      "comprehended": false
+    },
+    {
+      "id": "my.y6.composite_volume",
+      "label": "Volume of Composite Shapes (Y6)",
+      "type": "concept",
+      "description": "Calculate volume of composite 3D shapes",
+      "grade_range": [
+        "Year 6"
+      ],
+      "tags": [
+        "geometry"
+      ],
+      "external_id": "2a5dda6212297002",
+      "comprehended": false
+    },
+    {
+      "id": "my.y5.add_sub_mixed_fractions",
+      "label": "Addition/Subtraction of Fractions with Mixed Numbers (Y5)",
+      "type": "concept",
+      "description": "Add and subtract fractions including mixed numbers",
+      "grade_range": [
+        "Year 5"
+      ],
+      "tags": [
+        "fractions"
+      ],
+      "external_id": "2dab1f78fc8744c6",
+      "comprehended": false
+    },
+    {
+      "id": "my.y6.speed_distance_time",
+      "label": "Speed, Distance and Time",
+      "type": "concept",
+      "description": "Understand relationship between speed, distance and time; solve problems",
+      "grade_range": [
+        "Year 6"
+      ],
+      "tags": [
+        "measurement",
+        "applied"
+      ],
+      "external_id": "b2af37d92b68038b",
+      "comprehended": false
+    },
+    {
+      "id": "my.y6.data_statistics",
+      "label": "Data Handling and Statistics (Y6)",
+      "type": "concept",
+      "description": "Collect, organise and interpret data; calculate mean",
+      "grade_range": [
+        "Year 6"
+      ],
+      "tags": [
+        "statistics"
+      ],
+      "external_id": "5d4fded1ca2bf840",
+      "comprehended": false
+    },
+    {
+      "id": "my.f4.sets",
+      "label": "Introduction to Sets (F4)",
+      "type": "concept",
+      "description": "Sets, Venn diagrams, universal sets, complement, subsets",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "sets"
+      ],
+      "external_id": "a474bd4173b26ec2",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm1.complex_numbers",
+      "label": "Complex Numbers",
+      "type": "topic",
+      "description": "Complex number system, operations, Argand diagram, De Moivre's theorem",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university"
+      ],
+      "external_id": "e6fe642a58c3f494",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm1.conic_sections",
+      "label": "Analytic Geometry / Conic Sections",
+      "type": "topic",
+      "description": "Equations and properties of circles, ellipses, parabolas and hyperbolas",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university",
+        "geometry"
+      ],
+      "external_id": "9c28f93b5bec822a",
+      "comprehended": false
+    },
+    {
+      "id": "my.stpm3.correlation_regression",
+      "label": "Correlation and Regression",
+      "type": "topic",
+      "description": "Scatter diagrams, Pearson correlation coefficient, linear regression",
+      "grade_range": [
+        "STPM"
+      ],
+      "tags": [
+        "pre-university",
+        "statistics"
+      ],
+      "external_id": "752170c02fc68d2d",
+      "comprehended": false
+    }
   ],
   "edges": [
-    {"source": "my", "target": "my.primary", "relation": "contains"},
-    {"source": "my", "target": "my.secondary", "relation": "contains"},
-    {"source": "my", "target": "my.addmath", "relation": "contains"},
-    {"source": "my", "target": "my.stpm", "relation": "contains"},
-
-    {"source": "my.primary", "target": "my.y1.numbers100", "relation": "contains"},
-    {"source": "my.y1.numbers100", "target": "my.y1.counting", "relation": "contains"},
-    {"source": "my.y1.numbers100", "target": "my.y1.recognize_0_10", "relation": "contains"},
-    {"source": "my.y1.numbers100", "target": "my.y1.write_0_10", "relation": "contains"},
-    {"source": "my.y1.numbers100", "target": "my.y1.recognize_11_20", "relation": "contains"},
-    {"source": "my.y1.numbers100", "target": "my.y1.recognize_21_100", "relation": "contains"},
-    {"source": "my.y1.numbers100", "target": "my.y1.place_value", "relation": "contains"},
-    {"source": "my.y1.numbers100", "target": "my.y1.number_order", "relation": "contains"},
-    {"source": "my.y1.numbers100", "target": "my.y1.number_patterns", "relation": "contains"},
-    {"source": "my.y1.numbers100", "target": "my.y1.estimation", "relation": "contains"},
-    {"source": "my.y1.numbers100", "target": "my.y1.rounding", "relation": "contains"},
-
-    {"source": "my.y1.counting", "target": "my.y1.recognize_0_10", "relation": "prerequisite_for"},
-    {"source": "my.y1.recognize_0_10", "target": "my.y1.write_0_10", "relation": "prerequisite_for"},
-    {"source": "my.y1.write_0_10", "target": "my.y1.recognize_11_20", "relation": "prerequisite_for"},
-    {"source": "my.y1.recognize_11_20", "target": "my.y1.recognize_21_100", "relation": "prerequisite_for"},
-    {"source": "my.y1.recognize_21_100", "target": "my.y1.place_value", "relation": "prerequisite_for"},
-    {"source": "my.y1.place_value", "target": "my.y1.number_order", "relation": "prerequisite_for"},
-    {"source": "my.y1.number_order", "target": "my.y1.number_patterns", "relation": "prerequisite_for"},
-    {"source": "my.y1.recognize_21_100", "target": "my.y1.estimation", "relation": "prerequisite_for"},
-    {"source": "my.y1.estimation", "target": "my.y1.rounding", "relation": "prerequisite_for"},
-
-    {"source": "my.y1.recognize_0_10", "target": "my.y1.addition", "relation": "prerequisite_for"},
-    {"source": "my.y1.addition", "target": "my.y1.subtraction", "relation": "prerequisite_for"},
-    {"source": "my.y1.addition", "target": "my.y1.repeated_addition", "relation": "prerequisite_for"},
-    {"source": "my.y1.subtraction", "target": "my.y1.repeated_subtraction", "relation": "prerequisite_for"},
-
-    {"source": "my.y1.addition", "target": "my.y1.fractions_intro", "relation": "prerequisite_for"},
-    {"source": "my.y1.recognize_0_10", "target": "my.y1.money", "relation": "prerequisite_for"},
-    {"source": "my.y1.counting", "target": "my.y1.time", "relation": "prerequisite_for"},
-    {"source": "my.y1.number_order", "target": "my.y1.length_mass_volume", "relation": "prerequisite_for"},
-    {"source": "my.y1.counting", "target": "my.y1.3d_shapes", "relation": "prerequisite_for"},
-    {"source": "my.y1.counting", "target": "my.y1.2d_shapes", "relation": "prerequisite_for"},
-    {"source": "my.y1.counting", "target": "my.y1.data", "relation": "prerequisite_for"},
-
-    {"source": "my.y1.numbers100", "target": "my.y2.numbers1000", "relation": "prerequisite_for"},
-    {"source": "my.y2.numbers1000", "target": "my.y2.place_value", "relation": "contains"},
-    {"source": "my.y2.numbers1000", "target": "my.y2.partition", "relation": "contains"},
-    {"source": "my.y2.numbers1000", "target": "my.y2.number_patterns", "relation": "contains"},
-
-    {"source": "my.y1.addition", "target": "my.y2.addition", "relation": "prerequisite_for"},
-    {"source": "my.y1.subtraction", "target": "my.y2.subtraction", "relation": "prerequisite_for"},
-    {"source": "my.y1.repeated_addition", "target": "my.y2.multiplication", "relation": "prerequisite_for"},
-    {"source": "my.y1.repeated_subtraction", "target": "my.y2.division", "relation": "prerequisite_for"},
-    {"source": "my.y2.addition", "target": "my.y2.subtraction", "relation": "related_to"},
-    {"source": "my.y2.multiplication", "target": "my.y2.division", "relation": "related_to"},
-
-    {"source": "my.y1.fractions_intro", "target": "my.y2.fractions", "relation": "prerequisite_for"},
-    {"source": "my.y2.fractions", "target": "my.y2.decimals_intro", "relation": "prerequisite_for"},
-
-    {"source": "my.y1.money", "target": "my.y2.money", "relation": "prerequisite_for"},
-    {"source": "my.y1.time", "target": "my.y2.time", "relation": "prerequisite_for"},
-    {"source": "my.y1.length_mass_volume", "target": "my.y2.length_mass_volume", "relation": "prerequisite_for"},
-    {"source": "my.y1.3d_shapes", "target": "my.y2.3d_2d_shapes", "relation": "prerequisite_for"},
-    {"source": "my.y1.2d_shapes", "target": "my.y2.3d_2d_shapes", "relation": "prerequisite_for"},
-    {"source": "my.y1.data", "target": "my.y2.bar_charts", "relation": "prerequisite_for"},
-
-    {"source": "my.y2.numbers1000", "target": "my.y3.numbers10000", "relation": "prerequisite_for"},
-    {"source": "my.y2.addition", "target": "my.y3.addition_subtraction", "relation": "prerequisite_for"},
-    {"source": "my.y2.subtraction", "target": "my.y3.addition_subtraction", "relation": "prerequisite_for"},
-    {"source": "my.y2.multiplication", "target": "my.y3.multiplication", "relation": "prerequisite_for"},
-    {"source": "my.y2.division", "target": "my.y3.division", "relation": "prerequisite_for"},
-    {"source": "my.y3.addition_subtraction", "target": "my.y3.unknown", "relation": "prerequisite_for"},
-
-    {"source": "my.y2.fractions", "target": "my.y3.proper_fractions", "relation": "prerequisite_for"},
-    {"source": "my.y3.proper_fractions", "target": "my.y3.equivalent_fractions", "relation": "prerequisite_for"},
-    {"source": "my.y3.equivalent_fractions", "target": "my.y3.improper_mixed", "relation": "prerequisite_for"},
-    {"source": "my.y3.proper_fractions", "target": "my.y3.add_sub_fractions", "relation": "prerequisite_for"},
-    {"source": "my.y3.equivalent_fractions", "target": "my.y3.add_sub_fractions", "relation": "prerequisite_for"},
-
-    {"source": "my.y2.decimals_intro", "target": "my.y3.hundredths_decimals", "relation": "prerequisite_for"},
-    {"source": "my.y3.hundredths_decimals", "target": "my.y3.add_sub_decimals", "relation": "prerequisite_for"},
-    {"source": "my.y3.hundredths_decimals", "target": "my.y3.percentages_intro", "relation": "prerequisite_for"},
-
-    {"source": "my.y2.money", "target": "my.y3.money", "relation": "prerequisite_for"},
-    {"source": "my.y2.time", "target": "my.y3.time", "relation": "prerequisite_for"},
-    {"source": "my.y2.length_mass_volume", "target": "my.y3.measurement", "relation": "prerequisite_for"},
-    {"source": "my.y2.3d_2d_shapes", "target": "my.y3.prisms", "relation": "prerequisite_for"},
-    {"source": "my.y3.prisms", "target": "my.y3.symmetry", "relation": "related_to"},
-    {"source": "my.y2.bar_charts", "target": "my.y3.pie_chart", "relation": "prerequisite_for"},
-
-    {"source": "my.y3.numbers10000", "target": "my.y4.numbers100000", "relation": "prerequisite_for"},
-    {"source": "my.y3.addition_subtraction", "target": "my.y4.addition", "relation": "prerequisite_for"},
-    {"source": "my.y3.addition_subtraction", "target": "my.y4.subtraction", "relation": "prerequisite_for"},
-    {"source": "my.y3.multiplication", "target": "my.y4.multiplication", "relation": "prerequisite_for"},
-    {"source": "my.y3.division", "target": "my.y4.division", "relation": "prerequisite_for"},
-    {"source": "my.y4.addition", "target": "my.y4.mixed_operations", "relation": "prerequisite_for"},
-    {"source": "my.y4.subtraction", "target": "my.y4.mixed_operations", "relation": "prerequisite_for"},
-    {"source": "my.y4.multiplication", "target": "my.y4.mixed_operations", "relation": "prerequisite_for"},
-    {"source": "my.y4.division", "target": "my.y4.mixed_operations", "relation": "prerequisite_for"},
-
-    {"source": "my.y3.improper_mixed", "target": "my.y4.improper_mixed", "relation": "prerequisite_for"},
-    {"source": "my.y3.add_sub_fractions", "target": "my.y4.add_sub_fractions", "relation": "prerequisite_for"},
-    {"source": "my.y3.add_sub_decimals", "target": "my.y4.decimals", "relation": "prerequisite_for"},
-    {"source": "my.y3.percentages_intro", "target": "my.y4.percentages", "relation": "prerequisite_for"},
-
-    {"source": "my.y3.money", "target": "my.y4.money", "relation": "prerequisite_for"},
-    {"source": "my.y3.time", "target": "my.y4.time", "relation": "prerequisite_for"},
-    {"source": "my.y3.measurement", "target": "my.y4.length", "relation": "prerequisite_for"},
-    {"source": "my.y3.measurement", "target": "my.y4.mass", "relation": "prerequisite_for"},
-    {"source": "my.y3.measurement", "target": "my.y4.volume_liquid", "relation": "prerequisite_for"},
-
-    {"source": "my.y3.prisms", "target": "my.y4.angles", "relation": "prerequisite_for"},
-    {"source": "my.y4.angles", "target": "my.y4.lines", "relation": "prerequisite_for"},
-    {"source": "my.y4.lines", "target": "my.y4.perimeter", "relation": "prerequisite_for"},
-    {"source": "my.y4.perimeter", "target": "my.y4.area", "relation": "prerequisite_for"},
-    {"source": "my.y4.area", "target": "my.y4.volume_space", "relation": "prerequisite_for"},
-    {"source": "my.y3.location", "target": "my.y4.coordinates", "relation": "prerequisite_for"},
-    {"source": "my.y4.division", "target": "my.y4.rates", "relation": "prerequisite_for"},
-    {"source": "my.y3.pie_chart", "target": "my.y4.data_handling", "relation": "prerequisite_for"},
-
-    {"source": "my.y4.numbers100000", "target": "my.y5.numbers_million", "relation": "prerequisite_for"},
-    {"source": "my.y4.division", "target": "my.y5.prime_numbers", "relation": "prerequisite_for"},
-    {"source": "my.y4.mixed_operations", "target": "my.y5.mixed_operations", "relation": "prerequisite_for"},
-
-    {"source": "my.y4.add_sub_fractions", "target": "my.y5.multiply_fractions", "relation": "prerequisite_for"},
-    {"source": "my.y4.decimals", "target": "my.y5.rounding_decimals", "relation": "prerequisite_for"},
-    {"source": "my.y4.decimals", "target": "my.y5.operations_decimals", "relation": "prerequisite_for"},
-    {"source": "my.y4.percentages", "target": "my.y5.percentages", "relation": "prerequisite_for"},
-
-    {"source": "my.y4.money", "target": "my.y5.money", "relation": "prerequisite_for"},
-    {"source": "my.y5.percentages", "target": "my.y5.interest", "relation": "prerequisite_for"},
-    {"source": "my.y4.time", "target": "my.y5.time", "relation": "prerequisite_for"},
-    {"source": "my.y4.length", "target": "my.y5.measurement", "relation": "prerequisite_for"},
-    {"source": "my.y4.mass", "target": "my.y5.measurement", "relation": "prerequisite_for"},
-    {"source": "my.y4.volume_liquid", "target": "my.y5.measurement", "relation": "prerequisite_for"},
-
-    {"source": "my.y4.angles", "target": "my.y5.regular_polygons", "relation": "prerequisite_for"},
-    {"source": "my.y4.perimeter", "target": "my.y5.composite_perimeter", "relation": "prerequisite_for"},
-    {"source": "my.y4.area", "target": "my.y5.composite_area", "relation": "prerequisite_for"},
-    {"source": "my.y4.volume_space", "target": "my.y5.composite_volume", "relation": "prerequisite_for"},
-    {"source": "my.y4.coordinates", "target": "my.y5.coordinates_distance", "relation": "prerequisite_for"},
-    {"source": "my.y4.rates", "target": "my.y5.ratio", "relation": "prerequisite_for"},
-    {"source": "my.y5.ratio", "target": "my.y5.proportion", "relation": "prerequisite_for"},
-    {"source": "my.y4.data_handling", "target": "my.y5.mode_mean_median", "relation": "prerequisite_for"},
-
-    {"source": "my.y5.numbers_million", "target": "my.y6.numbers_operations", "relation": "prerequisite_for"},
-    {"source": "my.y5.prime_numbers", "target": "my.y6.composite_numbers", "relation": "prerequisite_for"},
-    {"source": "my.y5.multiply_fractions", "target": "my.y6.divide_fractions", "relation": "prerequisite_for"},
-    {"source": "my.y5.operations_decimals", "target": "my.y6.mixed_ops_decimals", "relation": "prerequisite_for"},
-    {"source": "my.y5.percentages", "target": "my.y6.percentages", "relation": "prerequisite_for"},
-
-    {"source": "my.y5.money", "target": "my.y6.profit_loss", "relation": "prerequisite_for"},
-    {"source": "my.y6.profit_loss", "target": "my.y6.discount", "relation": "prerequisite_for"},
-    {"source": "my.y6.discount", "target": "my.y6.invoice_bill", "relation": "prerequisite_for"},
-    {"source": "my.y5.interest", "target": "my.y6.interest_dividend", "relation": "prerequisite_for"},
-    {"source": "my.y6.interest_dividend", "target": "my.y6.assets_insurance", "relation": "prerequisite_for"},
-
-    {"source": "my.y5.time", "target": "my.y6.time_zones", "relation": "prerequisite_for"},
-    {"source": "my.y5.measurement", "target": "my.y6.measurement", "relation": "prerequisite_for"},
-    {"source": "my.y5.regular_polygons", "target": "my.y6.interior_angles", "relation": "prerequisite_for"},
-    {"source": "my.y5.composite_perimeter", "target": "my.y6.circles", "relation": "prerequisite_for"},
-    {"source": "my.y5.coordinates_distance", "target": "my.y6.coordinates_ratio", "relation": "prerequisite_for"},
-    {"source": "my.y5.proportion", "target": "my.y6.coordinates_ratio", "relation": "prerequisite_for"},
-    {"source": "my.y5.mode_mean_median", "target": "my.y6.likelihood", "relation": "prerequisite_for"},
-
-    {"source": "my.primary", "target": "my.secondary", "relation": "prerequisite_for", "description": "Primary mathematics is prerequisite for secondary"},
-
-    {"source": "my.y6.numbers_operations", "target": "my.f1.integers", "relation": "prerequisite_for"},
-    {"source": "my.y6.divide_fractions", "target": "my.f1.rational_numbers", "relation": "prerequisite_for"},
-    {"source": "my.y6.mixed_ops_decimals", "target": "my.f1.rational_numbers", "relation": "prerequisite_for"},
-    {"source": "my.f1.integers", "target": "my.f1.rational_numbers", "relation": "prerequisite_for"},
-    {"source": "my.y6.composite_numbers", "target": "my.f1.factors_multiples", "relation": "prerequisite_for"},
-    {"source": "my.f1.factors_multiples", "target": "my.f1.multiples_lcm", "relation": "related_to"},
-    {"source": "my.f1.integers", "target": "my.f1.squares_roots", "relation": "prerequisite_for"},
-    {"source": "my.f1.squares_roots", "target": "my.f1.cubes_roots", "relation": "prerequisite_for"},
-
-    {"source": "my.y6.coordinates_ratio", "target": "my.f1.ratios", "relation": "prerequisite_for"},
-    {"source": "my.f1.ratios", "target": "my.f1.rates", "relation": "prerequisite_for"},
-    {"source": "my.f1.rates", "target": "my.f1.proportions", "relation": "prerequisite_for"},
-
-    {"source": "my.y3.unknown", "target": "my.f1.algebraic_expressions", "relation": "prerequisite_for"},
-    {"source": "my.f1.algebraic_expressions", "target": "my.f1.linear_eq_one", "relation": "prerequisite_for"},
-    {"source": "my.f1.linear_eq_one", "target": "my.f1.linear_eq_two", "relation": "prerequisite_for"},
-    {"source": "my.f1.linear_eq_two", "target": "my.f1.simultaneous_linear", "relation": "prerequisite_for"},
-    {"source": "my.f1.linear_eq_one", "target": "my.f1.linear_inequalities", "relation": "prerequisite_for"},
-
-    {"source": "my.y6.interior_angles", "target": "my.f1.lines_angles", "relation": "prerequisite_for"},
-    {"source": "my.f1.lines_angles", "target": "my.f1.polygons", "relation": "prerequisite_for"},
-    {"source": "my.y6.circles", "target": "my.f1.perimeter_area", "relation": "prerequisite_for"},
-    {"source": "my.f1.polygons", "target": "my.f1.perimeter_area", "relation": "prerequisite_for"},
-    {"source": "my.f1.squares_roots", "target": "my.f1.pythagoras", "relation": "prerequisite_for"},
-    {"source": "my.f1.polygons", "target": "my.f1.pythagoras", "relation": "prerequisite_for"},
-
-    {"source": "my.y6.likelihood", "target": "my.f1.data_handling", "relation": "prerequisite_for"},
-    {"source": "my.f1.rational_numbers", "target": "my.f1.sets", "relation": "prerequisite_for"},
-
-    {"source": "my.f1.algebraic_expressions", "target": "my.f2.patterns_sequences", "relation": "prerequisite_for"},
-    {"source": "my.f1.algebraic_expressions", "target": "my.f2.expansion", "relation": "prerequisite_for"},
-    {"source": "my.f2.expansion", "target": "my.f2.factorisation", "relation": "prerequisite_for"},
-    {"source": "my.f1.linear_eq_one", "target": "my.f2.algebraic_formulae", "relation": "prerequisite_for"},
-    {"source": "my.f2.factorisation", "target": "my.f2.algebraic_formulae", "relation": "prerequisite_for"},
-
-    {"source": "my.f1.polygons", "target": "my.f2.polygon_angles", "relation": "prerequisite_for"},
-    {"source": "my.f1.perimeter_area", "target": "my.f2.circle_properties", "relation": "prerequisite_for"},
-    {"source": "my.f1.perimeter_area", "target": "my.f2.3d_shapes", "relation": "prerequisite_for"},
-
-    {"source": "my.f1.pythagoras", "target": "my.f2.cartesian_coordinates", "relation": "prerequisite_for"},
-    {"source": "my.f1.linear_eq_two", "target": "my.f2.functions", "relation": "prerequisite_for"},
-    {"source": "my.f1.proportions", "target": "my.f2.speed_acceleration", "relation": "prerequisite_for"},
-    {"source": "my.f2.functions", "target": "my.f2.gradient", "relation": "prerequisite_for"},
-
-    {"source": "my.f2.polygon_angles", "target": "my.f2.transformations", "relation": "prerequisite_for"},
-    {"source": "my.f1.data_handling", "target": "my.f2.central_tendency", "relation": "prerequisite_for"},
-    {"source": "my.y6.likelihood", "target": "my.f2.probability", "relation": "prerequisite_for"},
-
-    {"source": "my.f2.expansion", "target": "my.f3.indices", "relation": "prerequisite_for"},
-    {"source": "my.f1.rational_numbers", "target": "my.f3.standard_form", "relation": "prerequisite_for"},
-    {"source": "my.y6.assets_insurance", "target": "my.f3.consumer_math", "relation": "prerequisite_for"},
-    {"source": "my.f2.cartesian_coordinates", "target": "my.f3.scale_drawings", "relation": "prerequisite_for"},
-    {"source": "my.f1.pythagoras", "target": "my.f3.trigonometric_ratios", "relation": "prerequisite_for"},
-    {"source": "my.f2.circle_properties", "target": "my.f3.circle_angles", "relation": "prerequisite_for"},
-    {"source": "my.f2.3d_shapes", "target": "my.f3.plans_elevations", "relation": "prerequisite_for"},
-    {"source": "my.f3.circle_angles", "target": "my.f3.loci", "relation": "prerequisite_for"},
-    {"source": "my.f2.gradient", "target": "my.f3.straight_lines", "relation": "prerequisite_for"},
-
-    {"source": "my.f3.straight_lines", "target": "my.f4.quadratic_functions", "relation": "prerequisite_for"},
-    {"source": "my.f2.factorisation", "target": "my.f4.quadratic_functions", "relation": "prerequisite_for"},
-    {"source": "my.f3.indices", "target": "my.f4.number_bases", "relation": "prerequisite_for"},
-    {"source": "my.f1.sets", "target": "my.f4.set_operations", "relation": "prerequisite_for"},
-    {"source": "my.f4.set_operations", "target": "my.f4.graph_theory", "relation": "prerequisite_for"},
-    {"source": "my.f1.linear_inequalities", "target": "my.f4.linear_ineq_two", "relation": "prerequisite_for"},
-    {"source": "my.f2.speed_acceleration", "target": "my.f4.graphs_of_motion", "relation": "prerequisite_for"},
-    {"source": "my.f2.central_tendency", "target": "my.f4.dispersion", "relation": "prerequisite_for"},
-    {"source": "my.f2.probability", "target": "my.f4.combined_probability", "relation": "prerequisite_for"},
-    {"source": "my.f3.consumer_math", "target": "my.f4.financial_management", "relation": "prerequisite_for"},
-    {"source": "my.f4.set_operations", "target": "my.f4.logical_reasoning", "relation": "related_to"},
-
-    {"source": "my.f1.proportions", "target": "my.f5.variation", "relation": "prerequisite_for"},
-    {"source": "my.f1.simultaneous_linear", "target": "my.f5.matrices", "relation": "prerequisite_for"},
-    {"source": "my.f4.financial_management", "target": "my.f5.insurance", "relation": "prerequisite_for"},
-    {"source": "my.f4.financial_management", "target": "my.f5.taxation", "relation": "prerequisite_for"},
-    {"source": "my.f2.transformations", "target": "my.f5.congruency_enlargement", "relation": "prerequisite_for"},
-    {"source": "my.f3.trigonometric_ratios", "target": "my.f5.trig_functions", "relation": "prerequisite_for"},
-    {"source": "my.f4.dispersion", "target": "my.f5.dispersion_grouped", "relation": "prerequisite_for"},
-    {"source": "my.f4.graphs_of_motion", "target": "my.f5.mathematical_modeling", "relation": "prerequisite_for"},
-
-    {"source": "my.secondary", "target": "my.addmath", "relation": "prerequisite_for", "description": "Core secondary math required before Additional Mathematics"},
-
-    {"source": "my.f2.functions", "target": "my.am4.functions", "relation": "prerequisite_for"},
-    {"source": "my.f4.quadratic_functions", "target": "my.am4.quadratic", "relation": "prerequisite_for"},
-    {"source": "my.f1.simultaneous_linear", "target": "my.am4.systems_equations", "relation": "prerequisite_for"},
-    {"source": "my.f3.indices", "target": "my.am4.indices_surds_log", "relation": "prerequisite_for"},
-    {"source": "my.f2.patterns_sequences", "target": "my.am4.progressions", "relation": "prerequisite_for"},
-    {"source": "my.f3.straight_lines", "target": "my.am4.linear_law", "relation": "prerequisite_for"},
-    {"source": "my.f2.cartesian_coordinates", "target": "my.am4.coordinate_geometry", "relation": "prerequisite_for"},
-    {"source": "my.f2.speed_acceleration", "target": "my.am4.vectors", "relation": "prerequisite_for"},
-    {"source": "my.f3.trigonometric_ratios", "target": "my.am4.solution_triangles", "relation": "prerequisite_for"},
-    {"source": "my.f4.dispersion", "target": "my.am4.index_number", "relation": "prerequisite_for"},
-
-    {"source": "my.am4.functions", "target": "my.am4.quadratic", "relation": "prerequisite_for"},
-    {"source": "my.am4.quadratic", "target": "my.am4.systems_equations", "relation": "prerequisite_for"},
-    {"source": "my.am4.indices_surds_log", "target": "my.am4.progressions", "relation": "prerequisite_for"},
-    {"source": "my.am4.progressions", "target": "my.am4.linear_law", "relation": "prerequisite_for"},
-    {"source": "my.am4.coordinate_geometry", "target": "my.am4.vectors", "relation": "prerequisite_for"},
-
-    {"source": "my.am4.solution_triangles", "target": "my.am5.circular_measure", "relation": "prerequisite_for"},
-    {"source": "my.am4.functions", "target": "my.am5.differentiation", "relation": "prerequisite_for"},
-    {"source": "my.am4.indices_surds_log", "target": "my.am5.differentiation", "relation": "prerequisite_for"},
-    {"source": "my.am5.differentiation", "target": "my.am5.integration", "relation": "prerequisite_for"},
-    {"source": "my.f4.combined_probability", "target": "my.am5.permutation_combination", "relation": "prerequisite_for"},
-    {"source": "my.am5.permutation_combination", "target": "my.am5.probability_distribution", "relation": "prerequisite_for"},
-    {"source": "my.f5.trig_functions", "target": "my.am5.trig_functions", "relation": "prerequisite_for"},
-    {"source": "my.am4.coordinate_geometry", "target": "my.am5.trig_functions", "relation": "prerequisite_for"},
-    {"source": "my.f4.linear_ineq_two", "target": "my.am5.linear_programming", "relation": "prerequisite_for"},
-    {"source": "my.am5.differentiation", "target": "my.am5.kinematics", "relation": "prerequisite_for"},
-    {"source": "my.am5.integration", "target": "my.am5.kinematics", "relation": "prerequisite_for"},
-
-    {"source": "my.addmath", "target": "my.stpm", "relation": "prerequisite_for", "description": "Additional Mathematics is prerequisite for STPM Mathematics"},
-
-    {"source": "my.am4.functions", "target": "my.stpm1.functions", "relation": "prerequisite_for"},
-    {"source": "my.am4.progressions", "target": "my.stpm1.sequences_series", "relation": "prerequisite_for"},
-    {"source": "my.f5.matrices", "target": "my.stpm1.matrices", "relation": "prerequisite_for"},
-
-    {"source": "my.am5.differentiation", "target": "my.stpm2.limits_continuity", "relation": "prerequisite_for"},
-    {"source": "my.stpm2.limits_continuity", "target": "my.stpm2.differentiation", "relation": "prerequisite_for"},
-    {"source": "my.stpm2.differentiation", "target": "my.stpm2.integration", "relation": "prerequisite_for"},
-    {"source": "my.stpm2.integration", "target": "my.stpm2.diff_equations", "relation": "prerequisite_for"},
-    {"source": "my.stpm2.differentiation", "target": "my.stpm2.maclaurin", "relation": "prerequisite_for"},
-    {"source": "my.stpm1.sequences_series", "target": "my.stpm2.maclaurin", "relation": "prerequisite_for"},
-    {"source": "my.stpm2.integration", "target": "my.stpm2.numerical_methods", "relation": "prerequisite_for"},
-
-    {"source": "my.f5.dispersion_grouped", "target": "my.stpm3.data_description", "relation": "prerequisite_for"},
-    {"source": "my.am5.permutation_combination", "target": "my.stpm3.probability", "relation": "prerequisite_for"},
-    {"source": "my.am5.probability_distribution", "target": "my.stpm3.distributions", "relation": "prerequisite_for"},
-    {"source": "my.stpm3.distributions", "target": "my.stpm3.sampling_estimation", "relation": "prerequisite_for"},
-    {"source": "my.stpm3.sampling_estimation", "target": "my.stpm3.hypothesis_testing", "relation": "prerequisite_for"},
-    {"source": "my.stpm3.distributions", "target": "my.stpm3.chi_squared", "relation": "prerequisite_for"},
-    {"source": "my.stpm3.hypothesis_testing", "target": "my.stpm3.chi_squared", "relation": "prerequisite_for"}
+    {
+      "source": "my",
+      "target": "my.primary",
+      "relation": "contains"
+    },
+    {
+      "source": "my",
+      "target": "my.secondary",
+      "relation": "contains"
+    },
+    {
+      "source": "my",
+      "target": "my.addmath",
+      "relation": "contains"
+    },
+    {
+      "source": "my",
+      "target": "my.stpm",
+      "relation": "contains"
+    },
+    {
+      "source": "my.primary",
+      "target": "my.y1.numbers100",
+      "relation": "contains"
+    },
+    {
+      "source": "my.y1.numbers100",
+      "target": "my.y1.counting",
+      "relation": "contains"
+    },
+    {
+      "source": "my.y1.numbers100",
+      "target": "my.y1.recognize_0_10",
+      "relation": "contains"
+    },
+    {
+      "source": "my.y1.numbers100",
+      "target": "my.y1.write_0_10",
+      "relation": "contains"
+    },
+    {
+      "source": "my.y1.numbers100",
+      "target": "my.y1.recognize_11_20",
+      "relation": "contains"
+    },
+    {
+      "source": "my.y1.numbers100",
+      "target": "my.y1.recognize_21_100",
+      "relation": "contains"
+    },
+    {
+      "source": "my.y1.numbers100",
+      "target": "my.y1.place_value",
+      "relation": "contains"
+    },
+    {
+      "source": "my.y1.numbers100",
+      "target": "my.y1.number_order",
+      "relation": "contains"
+    },
+    {
+      "source": "my.y1.numbers100",
+      "target": "my.y1.number_patterns",
+      "relation": "contains"
+    },
+    {
+      "source": "my.y1.counting",
+      "target": "my.y1.recognize_0_10",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.recognize_0_10",
+      "target": "my.y1.write_0_10",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.write_0_10",
+      "target": "my.y1.recognize_11_20",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.recognize_11_20",
+      "target": "my.y1.recognize_21_100",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.recognize_21_100",
+      "target": "my.y1.place_value",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.place_value",
+      "target": "my.y1.number_order",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.number_order",
+      "target": "my.y1.number_patterns",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.recognize_0_10",
+      "target": "my.y1.addition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.addition",
+      "target": "my.y1.subtraction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.addition",
+      "target": "my.y1.repeated_addition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.subtraction",
+      "target": "my.y1.repeated_subtraction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.recognize_0_10",
+      "target": "my.y1.money",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.counting",
+      "target": "my.y1.time",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.number_order",
+      "target": "my.y1.length_mass_volume",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.counting",
+      "target": "my.y1.3d_shapes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.counting",
+      "target": "my.y1.2d_shapes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.counting",
+      "target": "my.y1.data",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.numbers100",
+      "target": "my.y2.numbers1000",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.numbers1000",
+      "target": "my.y2.place_value",
+      "relation": "contains"
+    },
+    {
+      "source": "my.y2.numbers1000",
+      "target": "my.y2.partition",
+      "relation": "contains"
+    },
+    {
+      "source": "my.y2.numbers1000",
+      "target": "my.y2.number_patterns",
+      "relation": "contains"
+    },
+    {
+      "source": "my.y1.addition",
+      "target": "my.y2.addition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.subtraction",
+      "target": "my.y2.subtraction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.repeated_addition",
+      "target": "my.y2.multiplication",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.repeated_subtraction",
+      "target": "my.y2.division",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.addition",
+      "target": "my.y2.subtraction",
+      "relation": "related_to"
+    },
+    {
+      "source": "my.y2.multiplication",
+      "target": "my.y2.division",
+      "relation": "related_to"
+    },
+    {
+      "source": "my.y1.money",
+      "target": "my.y2.money",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.time",
+      "target": "my.y2.time",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.length_mass_volume",
+      "target": "my.y2.length_mass_volume",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.3d_shapes",
+      "target": "my.y2.3d_2d_shapes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.2d_shapes",
+      "target": "my.y2.3d_2d_shapes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.data",
+      "target": "my.y2.bar_charts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.numbers1000",
+      "target": "my.y3.numbers10000",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.addition",
+      "target": "my.y3.addition_subtraction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.subtraction",
+      "target": "my.y3.addition_subtraction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.multiplication",
+      "target": "my.y3.multiplication",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.division",
+      "target": "my.y3.division",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.addition_subtraction",
+      "target": "my.y3.unknown",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.fractions",
+      "target": "my.y3.proper_fractions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.proper_fractions",
+      "target": "my.y3.equivalent_fractions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.proper_fractions",
+      "target": "my.y3.add_sub_fractions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.equivalent_fractions",
+      "target": "my.y3.add_sub_fractions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.money",
+      "target": "my.y3.money",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.time",
+      "target": "my.y3.time",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.length_mass_volume",
+      "target": "my.y3.measurement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.3d_2d_shapes",
+      "target": "my.y3.prisms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.prisms",
+      "target": "my.y3.symmetry",
+      "relation": "related_to"
+    },
+    {
+      "source": "my.y3.numbers10000",
+      "target": "my.y4.numbers100000",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.addition_subtraction",
+      "target": "my.y4.addition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.addition_subtraction",
+      "target": "my.y4.subtraction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.multiplication",
+      "target": "my.y4.multiplication",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.division",
+      "target": "my.y4.division",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.addition",
+      "target": "my.y4.mixed_operations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.subtraction",
+      "target": "my.y4.mixed_operations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.multiplication",
+      "target": "my.y4.mixed_operations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.division",
+      "target": "my.y4.mixed_operations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.add_sub_fractions",
+      "target": "my.y4.add_sub_fractions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.money",
+      "target": "my.y4.money",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.time",
+      "target": "my.y4.time",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.measurement",
+      "target": "my.y4.length",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.measurement",
+      "target": "my.y4.mass",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.measurement",
+      "target": "my.y4.volume_liquid",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.prisms",
+      "target": "my.y4.angles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.angles",
+      "target": "my.y4.lines",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.lines",
+      "target": "my.y4.perimeter",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.perimeter",
+      "target": "my.y4.area",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.numbers100000",
+      "target": "my.y5.numbers_million",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.division",
+      "target": "my.y5.prime_numbers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.mixed_operations",
+      "target": "my.y5.mixed_operations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.add_sub_fractions",
+      "target": "my.y5.multiply_fractions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.decimals",
+      "target": "my.y5.rounding_decimals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.decimals",
+      "target": "my.y5.operations_decimals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.money",
+      "target": "my.y5.money",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.time",
+      "target": "my.y5.time",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.length",
+      "target": "my.y5.measurement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.mass",
+      "target": "my.y5.measurement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.volume_liquid",
+      "target": "my.y5.measurement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.angles",
+      "target": "my.y5.regular_polygons",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.perimeter",
+      "target": "my.y5.composite_perimeter",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.area",
+      "target": "my.y5.composite_area",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.coordinates",
+      "target": "my.y5.coordinates_distance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.ratio",
+      "target": "my.y5.proportion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.numbers_million",
+      "target": "my.y6.numbers_operations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.prime_numbers",
+      "target": "my.y6.composite_numbers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.multiply_fractions",
+      "target": "my.y5.divide_fractions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.operations_decimals",
+      "target": "my.y6.mixed_ops_decimals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.percentages",
+      "target": "my.y6.percentages",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.money",
+      "target": "my.y6.profit_loss",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y6.profit_loss",
+      "target": "my.y6.discount",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y6.discount",
+      "target": "my.y6.invoice_bill",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.time",
+      "target": "my.y6.time_zones",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.measurement",
+      "target": "my.y6.measurement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.regular_polygons",
+      "target": "my.y6.interior_angles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.composite_perimeter",
+      "target": "my.y6.circles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.coordinates_distance",
+      "target": "my.y6.coordinates_ratio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.proportion",
+      "target": "my.y6.coordinates_ratio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.primary",
+      "target": "my.secondary",
+      "relation": "prerequisite_for",
+      "description": "Primary mathematics is prerequisite for secondary"
+    },
+    {
+      "source": "my.y6.numbers_operations",
+      "target": "my.f1.integers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.divide_fractions",
+      "target": "my.f1.rational_numbers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y6.mixed_ops_decimals",
+      "target": "my.f1.rational_numbers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.integers",
+      "target": "my.f1.rational_numbers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y6.composite_numbers",
+      "target": "my.f1.factors_multiples",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.factors_multiples",
+      "target": "my.f1.multiples_lcm",
+      "relation": "related_to"
+    },
+    {
+      "source": "my.f1.integers",
+      "target": "my.f1.squares_roots",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.squares_roots",
+      "target": "my.f1.cubes_roots",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y6.coordinates_ratio",
+      "target": "my.f1.ratios",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.ratios",
+      "target": "my.f1.rates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.rates",
+      "target": "my.f1.proportions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.unknown",
+      "target": "my.f1.algebraic_expressions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.algebraic_expressions",
+      "target": "my.f1.linear_eq_one",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.linear_eq_one",
+      "target": "my.f2.linear_eq_two",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.linear_eq_two",
+      "target": "my.f2.simultaneous_linear",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.linear_eq_one",
+      "target": "my.f2.linear_inequalities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y6.interior_angles",
+      "target": "my.f1.lines_angles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.lines_angles",
+      "target": "my.f1.polygons",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y6.circles",
+      "target": "my.f1.perimeter_area",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.polygons",
+      "target": "my.f1.perimeter_area",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.squares_roots",
+      "target": "my.f2.pythagoras",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.polygons",
+      "target": "my.f2.pythagoras",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y6.likelihood",
+      "target": "my.f1.data_handling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.algebraic_expressions",
+      "target": "my.f2.patterns_sequences",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.algebraic_expressions",
+      "target": "my.f2.expansion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.expansion",
+      "target": "my.f2.factorisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.linear_eq_one",
+      "target": "my.f2.algebraic_formulae",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.factorisation",
+      "target": "my.f2.algebraic_formulae",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.polygons",
+      "target": "my.f2.polygon_angles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.perimeter_area",
+      "target": "my.f2.circle_properties",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.perimeter_area",
+      "target": "my.f2.3d_shapes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.pythagoras",
+      "target": "my.f2.cartesian_coordinates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.linear_eq_two",
+      "target": "my.f3.functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.proportions",
+      "target": "my.f2.speed_acceleration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f3.functions",
+      "target": "my.f3.gradient",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.polygon_angles",
+      "target": "my.f2.transformations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.data_handling",
+      "target": "my.f2.central_tendency",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y6.likelihood",
+      "target": "my.f2.probability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.expansion",
+      "target": "my.f3.indices",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.rational_numbers",
+      "target": "my.f3.standard_form",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.cartesian_coordinates",
+      "target": "my.f3.scale_drawings",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.pythagoras",
+      "target": "my.f3.trigonometric_ratios",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.circle_properties",
+      "target": "my.f3.circle_angles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.3d_shapes",
+      "target": "my.f3.plans_elevations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f3.circle_angles",
+      "target": "my.f3.loci",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f3.gradient",
+      "target": "my.f3.straight_lines",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f3.straight_lines",
+      "target": "my.f4.quadratic_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.factorisation",
+      "target": "my.f4.quadratic_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f4.set_operations",
+      "target": "my.f4.graph_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.linear_inequalities",
+      "target": "my.f4.linear_ineq_two",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.speed_acceleration",
+      "target": "my.f4.graphs_of_motion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.central_tendency",
+      "target": "my.f4.dispersion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.probability",
+      "target": "my.f4.combined_probability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f3.consumer_math",
+      "target": "my.f4.financial_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.proportions",
+      "target": "my.f5.variation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.simultaneous_linear",
+      "target": "my.f4.matrices",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f4.financial_management",
+      "target": "my.f5.insurance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f4.financial_management",
+      "target": "my.f5.taxation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.transformations",
+      "target": "my.f5.congruency_enlargement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f3.trigonometric_ratios",
+      "target": "my.f5.trig_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f4.dispersion",
+      "target": "my.f5.dispersion_grouped",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f4.graphs_of_motion",
+      "target": "my.f5.mathematical_modeling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.secondary",
+      "target": "my.addmath",
+      "relation": "prerequisite_for",
+      "description": "Core secondary math required before Additional Mathematics"
+    },
+    {
+      "source": "my.f3.functions",
+      "target": "my.am4.functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f4.quadratic_functions",
+      "target": "my.am4.quadratic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.simultaneous_linear",
+      "target": "my.am4.systems_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f3.indices",
+      "target": "my.am4.indices_surds_log",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.patterns_sequences",
+      "target": "my.am4.progressions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f3.straight_lines",
+      "target": "my.am4.linear_law",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.cartesian_coordinates",
+      "target": "my.am4.coordinate_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f2.speed_acceleration",
+      "target": "my.am4.vectors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f3.trigonometric_ratios",
+      "target": "my.am4.solution_triangles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f4.dispersion",
+      "target": "my.am5.index_number",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am4.functions",
+      "target": "my.am4.quadratic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am4.quadratic",
+      "target": "my.am4.systems_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am4.indices_surds_log",
+      "target": "my.am4.progressions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am4.progressions",
+      "target": "my.am4.linear_law",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am4.coordinate_geometry",
+      "target": "my.am4.vectors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am4.solution_triangles",
+      "target": "my.am5.circular_measure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am4.functions",
+      "target": "my.am5.differentiation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am4.indices_surds_log",
+      "target": "my.am5.differentiation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am5.differentiation",
+      "target": "my.am5.integration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f4.combined_probability",
+      "target": "my.am5.permutation_combination",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am5.permutation_combination",
+      "target": "my.am5.probability_distribution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f5.trig_functions",
+      "target": "my.am5.trig_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am4.coordinate_geometry",
+      "target": "my.am5.trig_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f4.linear_ineq_two",
+      "target": "my.am5.linear_programming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am5.differentiation",
+      "target": "my.am5.kinematics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am5.integration",
+      "target": "my.am5.kinematics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.addmath",
+      "target": "my.stpm",
+      "relation": "prerequisite_for",
+      "description": "Additional Mathematics is prerequisite for STPM Mathematics"
+    },
+    {
+      "source": "my.am4.functions",
+      "target": "my.stpm1.functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am4.progressions",
+      "target": "my.stpm1.sequences_series",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f4.matrices",
+      "target": "my.stpm1.matrices",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am5.differentiation",
+      "target": "my.stpm2.limits_continuity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.stpm2.limits_continuity",
+      "target": "my.stpm2.differentiation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.stpm2.differentiation",
+      "target": "my.stpm2.integration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.stpm2.integration",
+      "target": "my.stpm2.diff_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.stpm2.differentiation",
+      "target": "my.stpm2.maclaurin",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.stpm1.sequences_series",
+      "target": "my.stpm2.maclaurin",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.stpm2.integration",
+      "target": "my.stpm2.numerical_methods",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f5.dispersion_grouped",
+      "target": "my.stpm3.data_description",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am5.permutation_combination",
+      "target": "my.stpm3.probability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am5.probability_distribution",
+      "target": "my.stpm3.distributions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.stpm3.distributions",
+      "target": "my.stpm3.sampling_estimation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.stpm3.sampling_estimation",
+      "target": "my.stpm3.hypothesis_testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.stpm3.distributions",
+      "target": "my.stpm3.chi_squared",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.stpm3.hypothesis_testing",
+      "target": "my.stpm3.chi_squared",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.numbers1000",
+      "target": "my.y2.rounding",
+      "relation": "contains"
+    },
+    {
+      "source": "my.y2.place_value",
+      "target": "my.y2.rounding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y1.addition",
+      "target": "my.y2.fractions_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.fractions_intro",
+      "target": "my.y2.fractions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y3.equivalent_fractions",
+      "target": "my.y4.improper_mixed",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.bar_charts",
+      "target": "my.y4.data_handling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.3d_2d_shapes",
+      "target": "my.y4.location",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.location",
+      "target": "my.y4.coordinates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.division",
+      "target": "my.y5.ratio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.area",
+      "target": "my.y5.volume_3d",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.decimals",
+      "target": "my.y5.percentages",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.rounding",
+      "target": "my.y4.estimation_rounding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.numbers100000",
+      "target": "my.y4.estimation_rounding",
+      "relation": "contains"
+    },
+    {
+      "source": "my.y2.number_patterns",
+      "target": "my.y4.number_patterns",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.numbers100000",
+      "target": "my.y4.number_patterns",
+      "relation": "contains"
+    },
+    {
+      "source": "my.y2.fractions",
+      "target": "my.y4.decimals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y2.bar_charts",
+      "target": "my.y4.pie_charts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.pie_charts",
+      "target": "my.y4.data_handling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.volume_3d",
+      "target": "my.y6.composite_volume",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.add_sub_fractions",
+      "target": "my.y5.add_sub_mixed_fractions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.improper_mixed",
+      "target": "my.y5.add_sub_mixed_fractions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.operations_decimals",
+      "target": "my.y6.speed_distance_time",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y5.measurement",
+      "target": "my.y6.speed_distance_time",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y4.data_handling",
+      "target": "my.y6.data_statistics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.y6.invoice_bill",
+      "target": "my.f3.consumer_math",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f1.rational_numbers",
+      "target": "my.f4.sets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.f4.sets",
+      "target": "my.f4.set_operations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.stpm1.functions",
+      "target": "my.stpm1.complex_numbers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.am4.coordinate_geometry",
+      "target": "my.stpm1.conic_sections",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.stpm1.functions",
+      "target": "my.stpm1.conic_sections",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "my.stpm3.data_description",
+      "target": "my.stpm3.correlation_regression",
+      "relation": "prerequisite_for"
+    }
   ]
 }

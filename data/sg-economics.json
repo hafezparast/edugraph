@@ -3,218 +3,1717 @@
     "domain": "economics",
     "curriculum": "Singapore Economics (H2)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
-    "description": "Singapore H2 Economics curriculum with prerequisite ordering",
+    "version": "0.2.0",
+    "description": "Singapore H2 Economics (9570) curriculum with full subtopic coverage and prerequisite ordering",
     "sources": [
-      "MOE Singapore H2 Economics Syllabus (9757)"
+      "MOE Singapore H2 Economics Syllabus (9570)"
     ],
     "last_updated": "2026-03-27"
   },
   "books": [
-    { "id": "sg.econ.central", "name": "The Central Economic Problem", "color": "#ef4444", "order": 1 },
-    { "id": "sg.econ.micro", "name": "Markets & Microeconomics", "color": "#f97316", "order": 2 },
-    { "id": "sg.econ.macro", "name": "Macroeconomics", "color": "#22c55e", "order": 3 }
+    {
+      "id": "sg.econ.central",
+      "name": "The Central Economic Problem",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "sg.econ.micro",
+      "name": "Markets & Microeconomics",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "sg.econ.macro",
+      "name": "Macroeconomics",
+      "color": "#22c55e",
+      "order": 3
+    }
   ],
   "nodes": [
     {
-      "id": "sg.econ.scarcity",
+      "id": "sg.econ.h2.scarcity_and_choice",
       "label": "Scarcity & Choice",
       "type": "concept",
-      "description": "Scarcity; opportunity cost; production possibility curve",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "The fundamental economic problem: unlimited wants vs limited resources; the need to make choices",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.econ.central",
       "bookName": "The Central Economic Problem",
       "bookColor": "#ef4444",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "57c4087d85cf671f",
+      "comprehended": false
     },
     {
-      "id": "sg.econ.resource_allocation",
-      "label": "Resource Allocation",
+      "id": "sg.econ.h2.opportunity_cost",
+      "label": "Opportunity Cost",
       "type": "concept",
-      "description": "Market mechanism; price mechanism; resource allocation in different economies",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "The next best alternative forgone when a choice is made; applies to individuals, firms and governments",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.econ.central",
       "bookName": "The Central Economic Problem",
       "bookColor": "#ef4444",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "94c08a9a5a3b364b",
+      "comprehended": false
     },
     {
-      "id": "sg.econ.demand_supply",
-      "label": "Demand & Supply",
+      "id": "sg.econ.h2.ppc",
+      "label": "Production Possibility Curve",
       "type": "concept",
-      "description": "Law of demand and supply; shifts; equilibrium price and quantity",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "PPC and its properties; constant vs increasing opportunity cost; shifts of the PPC; productive and allocative efficiency",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.central",
+      "bookName": "The Central Economic Problem",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "7ace10cc4a651c7f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.resource_allocation",
+      "label": "Resource Allocation Mechanisms",
+      "type": "concept",
+      "description": "Market mechanism, planned economy, and mixed economy approaches to answering what, how, and for whom to produce",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.central",
+      "bookName": "The Central Economic Problem",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "c9b167d5658c9c60",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.demand",
+      "label": "Demand",
+      "type": "concept",
+      "description": "Law of demand; individual and market demand; movement along vs shifts of the demand curve; determinants of demand",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.econ.micro",
       "bookName": "Markets & Microeconomics",
       "bookColor": "#f97316",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "d18d7f907a9dfa27",
+      "comprehended": false
     },
     {
-      "id": "sg.econ.elasticity",
-      "label": "Elasticity",
+      "id": "sg.econ.h2.supply",
+      "label": "Supply",
       "type": "concept",
-      "description": "Price elasticity of demand and supply; income and cross elasticity",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Law of supply; individual and market supply; movement along vs shifts of the supply curve; determinants of supply",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.econ.micro",
       "bookName": "Markets & Microeconomics",
       "bookColor": "#f97316",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "03a0d13d75e4cb91",
+      "comprehended": false
     },
     {
-      "id": "sg.econ.market_failure",
-      "label": "Market Failure",
+      "id": "sg.econ.h2.market_equilibrium",
+      "label": "Market Equilibrium",
       "type": "concept",
-      "description": "Externalities; public goods; merit goods; information failure",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Equilibrium price and quantity; effects of shifts in demand and supply; simultaneous shifts; price adjustment mechanism",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.econ.micro",
       "bookName": "Markets & Microeconomics",
       "bookColor": "#f97316",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "0d5f3dc95e0ade9c",
+      "comprehended": false
     },
     {
-      "id": "sg.econ.government_micro",
-      "label": "Government Microeconomic Intervention",
+      "id": "sg.econ.h2.consumer_surplus_producer_surplus",
+      "label": "Consumer & Producer Surplus",
       "type": "concept",
-      "description": "Taxes; subsidies; regulation; price controls; tradable permits",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Consumer surplus and producer surplus; total social surplus; deadweight loss; welfare analysis of markets",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.econ.micro",
       "bookName": "Markets & Microeconomics",
       "bookColor": "#f97316",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "9cd4bb91a2deadef",
+      "comprehended": false
     },
     {
-      "id": "sg.econ.firm_theory",
-      "label": "Theory of the Firm",
+      "id": "sg.econ.h2.ped",
+      "label": "Price Elasticity of Demand",
       "type": "concept",
-      "description": "Costs of production; revenue; profit maximisation; shut-down decisions",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Definition, formula and calculation of PED; determinants; elastic, inelastic and unit elastic demand; relationship with total revenue",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.econ.micro",
       "bookName": "Markets & Microeconomics",
       "bookColor": "#f97316",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "e854a7c6961b7adc",
+      "comprehended": false
     },
     {
-      "id": "sg.econ.market_structures",
-      "label": "Market Structures",
+      "id": "sg.econ.h2.pes",
+      "label": "Price Elasticity of Supply",
       "type": "concept",
-      "description": "Perfect competition; monopolistic competition; oligopoly; monopoly",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Definition, formula and calculation of PES; determinants; factors affecting time horizon and production flexibility",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.econ.micro",
       "bookName": "Markets & Microeconomics",
       "bookColor": "#f97316",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "046be2e3a9b669ff",
+      "comprehended": false
     },
     {
-      "id": "sg.econ.national_income",
-      "label": "National Income",
+      "id": "sg.econ.h2.yed",
+      "label": "Income Elasticity of Demand",
       "type": "concept",
-      "description": "GDP measurement; real vs nominal; standard of living; limitations",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Definition, formula and calculation of YED; normal goods vs inferior goods; necessities vs luxuries; applications",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "921c615a852853a4",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.xed",
+      "label": "Cross Elasticity of Demand",
+      "type": "concept",
+      "description": "Definition, formula and calculation of XED; substitutes (positive XED) vs complements (negative XED); applications to firm strategy",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "22ec1f8e1c246463",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.elasticity_applications",
+      "label": "Applications of Elasticity",
+      "type": "concept",
+      "description": "Using elasticity concepts for government policy (tax incidence), business pricing decisions, and revenue analysis",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "0a47baee05ec27e2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.market_failure_intro",
+      "label": "Market Failure: Overview",
+      "type": "concept",
+      "description": "Definition of market failure; allocative inefficiency; divergence between private and social costs/benefits; reasons why free markets may fail",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "de94ee6ec9359232",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.externalities",
+      "label": "Externalities",
+      "type": "concept",
+      "description": "Positive and negative externalities in consumption and production; MPC, MSC, MPB, MSB analysis; welfare loss diagrams",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "fb1c403c07cbe2b6",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.public_goods",
+      "label": "Public Goods",
+      "type": "concept",
+      "description": "Non-excludability and non-rivalry; free-rider problem; why private markets under-provide public goods; quasi-public goods",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "68dc75dcc2e2ba9f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.merit_demerit_goods",
+      "label": "Merit & Demerit Goods",
+      "type": "concept",
+      "description": "Under-consumption of merit goods and over-consumption of demerit goods; imperfect information; paternalistic intervention",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "e406a3639f197d75",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.information_failure",
+      "label": "Information Failure",
+      "type": "concept",
+      "description": "Imperfect and asymmetric information; moral hazard; adverse selection; impact on market outcomes",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "a7e0144b556d5d57",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.market_dominance",
+      "label": "Market Dominance & Abuse of Market Power",
+      "type": "concept",
+      "description": "Monopoly power leading to market failure; deadweight loss from restricted output; X-inefficiency; barriers to entry",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "ec91c5a8454b8d14",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.income_inequality",
+      "label": "Factor Immobility & Income Inequality",
+      "type": "concept",
+      "description": "Occupational and geographical immobility of factors; equity vs efficiency; income and wealth inequality as market outcome",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "bd1a7b8f71bc6987",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.taxes_intervention",
+      "label": "Taxes as Government Intervention",
+      "type": "concept",
+      "description": "Indirect taxes to correct negative externalities; ad valorem vs specific taxes; tax incidence; effectiveness and limitations",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "e809104dc2cc8366",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.subsidies_intervention",
+      "label": "Subsidies as Government Intervention",
+      "type": "concept",
+      "description": "Subsidies to correct positive externalities and encourage merit goods; effectiveness; potential government failure",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "a7e67b669aed319f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.regulation_legislation",
+      "label": "Regulation & Legislation",
+      "type": "concept",
+      "description": "Rules and standards; bans; pollution permits; tradable permits; command-and-control vs market-based regulation",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "0059472cd6d618dd",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.direct_provision",
+      "label": "Direct Provision & Nationalisation",
+      "type": "concept",
+      "description": "Government as producer of public goods and essential services; direct provision for merit goods; pros and cons",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "e1fbc421068a0256",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.price_controls",
+      "label": "Price Controls",
+      "type": "concept",
+      "description": "Price ceilings (maximum prices) and price floors (minimum prices); shortages and surpluses; welfare analysis; examples",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "bf3048ae12b9a499",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.government_failure",
+      "label": "Government Failure",
+      "type": "concept",
+      "description": "When government intervention leads to a net welfare loss; unintended consequences; information gaps; administrative costs; political considerations",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "dd7cee9c65ca614b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.costs_of_production",
+      "label": "Costs of Production",
+      "type": "concept",
+      "description": "Fixed and variable costs; total, average and marginal costs; short-run and long-run cost curves; economies and diseconomies of scale",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "a21792a1a6144c37",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.revenue_and_profit",
+      "label": "Revenue & Profit",
+      "type": "concept",
+      "description": "Total, average and marginal revenue; normal vs supernormal profit; profit maximisation condition (MC=MR); shut-down decision",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "1306f53b996a38e8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.economies_of_scale",
+      "label": "Economies & Diseconomies of Scale",
+      "type": "concept",
+      "description": "Internal economies of scale (technical, managerial, financial, marketing, risk-bearing); external economies; diseconomies of scale; MES",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "af4111ca955573a8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.perfect_competition",
+      "label": "Perfect Competition",
+      "type": "concept",
+      "description": "Characteristics; price-taking behaviour; short-run and long-run equilibrium; allocative and productive efficiency; diagrams",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "6b0cec6659852e5e",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.monopoly",
+      "label": "Monopoly",
+      "type": "concept",
+      "description": "Sources of monopoly power; barriers to entry; price and output determination; welfare loss; natural monopoly; price discrimination",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "d62fcf2ecd9cf2a1",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.monopolistic_competition",
+      "label": "Monopolistic Competition",
+      "type": "concept",
+      "description": "Characteristics; product differentiation; short-run and long-run equilibrium; excess capacity; non-price competition",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "9a0a10e9f76c5d93",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.oligopoly",
+      "label": "Oligopoly",
+      "type": "concept",
+      "description": "Characteristics; mutual interdependence; game theory and prisoners' dilemma; kinked demand curve; collusion vs competition; cartels",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "880635628454ee08",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.price_discrimination",
+      "label": "Price Discrimination",
+      "type": "concept",
+      "description": "First, second and third degree price discrimination; conditions necessary; welfare effects; real-world examples",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "8a20097320f2473c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.contestable_markets",
+      "label": "Contestable Markets",
+      "type": "concept",
+      "description": "Theory of contestable markets; sunk costs; hit-and-run entry; implications for efficiency and pricing behaviour",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "6aea69665f1d55d4",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.competition_policy",
+      "label": "Competition Policy",
+      "type": "concept",
+      "description": "Anti-trust legislation; regulation of monopoly; merger policy; Singapore's Competition Commission (CCCS); promoting contestability",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.micro",
+      "bookName": "Markets & Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "d5bcf291f2cc4446",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.national_income_measurement",
+      "label": "Measuring National Income",
+      "type": "concept",
+      "description": "GDP, GNI, NNI; expenditure, income and output approaches; nominal vs real GDP; GDP deflator",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.econ.macro",
       "bookName": "Macroeconomics",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "3bd90106771f8328",
+      "comprehended": false
     },
     {
-      "id": "sg.econ.ad_as",
-      "label": "AD-AS Model",
+      "id": "sg.econ.h2.standard_of_living",
+      "label": "Standard of Living",
       "type": "concept",
-      "description": "Aggregate demand and supply; macroeconomic equilibrium; multiplier",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Material vs non-material living standards; GDP per capita as indicator; limitations of GDP; alternative measures (HDI, Gini coefficient)",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.econ.macro",
       "bookName": "Macroeconomics",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "e0e93812465d8251",
+      "comprehended": false
     },
     {
-      "id": "sg.econ.inflation",
-      "label": "Inflation & Deflation",
+      "id": "sg.econ.h2.circular_flow",
+      "label": "Circular Flow of Income",
       "type": "concept",
-      "description": "Causes of inflation; consequences; measurement; CPI",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Two-sector, three-sector and four-sector circular flow models; injections and withdrawals; equilibrium national income",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.econ.macro",
       "bookName": "Macroeconomics",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "c4de04c9b8150906",
+      "comprehended": false
     },
     {
-      "id": "sg.econ.unemployment",
-      "label": "Unemployment",
+      "id": "sg.econ.h2.aggregate_demand",
+      "label": "Aggregate Demand",
       "type": "concept",
-      "description": "Types of unemployment; natural rate; consequences; policies",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Components of AD (C + I + G + X - M); determinants of each component; reasons for downward-sloping AD; shifts of AD",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.econ.macro",
       "bookName": "Macroeconomics",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "7e64956debacdcbb",
+      "comprehended": false
     },
     {
-      "id": "sg.econ.fiscal_monetary",
-      "label": "Fiscal & Monetary Policy",
+      "id": "sg.econ.h2.aggregate_supply",
+      "label": "Aggregate Supply",
       "type": "concept",
-      "description": "Government budget; money supply; interest rates; exchange rate policy",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Short-run AS vs long-run AS; Keynesian vs Classical AS; factors shifting SRAS and LRAS; productive capacity",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.econ.macro",
       "bookName": "Macroeconomics",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "5f0a191864aaeef2",
+      "comprehended": false
     },
     {
-      "id": "sg.econ.trade",
-      "label": "International Trade",
+      "id": "sg.econ.h2.macro_equilibrium",
+      "label": "Macroeconomic Equilibrium",
       "type": "concept",
-      "description": "Comparative advantage; free trade vs protectionism; balance of payments",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Determination of equilibrium national income, price level and employment via AD-AS model; inflationary and deflationary gaps",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.econ.macro",
       "bookName": "Macroeconomics",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "9025444fc9c12c1d",
+      "comprehended": false
     },
     {
-      "id": "sg.econ.growth",
-      "label": "Economic Growth & Development",
+      "id": "sg.econ.h2.multiplier",
+      "label": "Multiplier Effect",
       "type": "concept",
-      "description": "Sources of growth; sustainable development; supply-side policies; Singapore context",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "The Keynesian multiplier; MPC, MPS, MPT, MPM; size of the multiplier; limitations and real-world applicability",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.econ.macro",
       "bookName": "Macroeconomics",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "a3f0cb75414d9e92",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.inflation_causes",
+      "label": "Causes of Inflation",
+      "type": "concept",
+      "description": "Demand-pull inflation; cost-push inflation; imported inflation; excessive monetary growth; inflationary expectations",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "f2e31e0c08aa04d7",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.inflation_consequences",
+      "label": "Consequences of Inflation & Deflation",
+      "type": "concept",
+      "description": "Effects on consumers, firms, government, debtors/creditors; shoe-leather and menu costs; deflation risks; measuring inflation (CPI)",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "3eb7ab348afc58c8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.unemployment_types",
+      "label": "Types of Unemployment",
+      "type": "concept",
+      "description": "Cyclical (demand-deficient); structural; frictional; seasonal; classical (real wage) unemployment; natural rate of unemployment",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "24414a9e426e93aa",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.unemployment_consequences",
+      "label": "Consequences of Unemployment",
+      "type": "concept",
+      "description": "Individual, social and economic costs; loss of output; fiscal burden; hysteresis; relationship between unemployment and inflation (Phillips curve)",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "5f0faa482220f6cb",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.economic_growth",
+      "label": "Economic Growth",
+      "type": "concept",
+      "description": "Actual vs potential growth; short-run vs long-run growth; sources of growth (labour, capital, technology, institutions)",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "43e86584015f198b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.sustainable_development",
+      "label": "Sustainable & Inclusive Growth",
+      "type": "concept",
+      "description": "Costs and benefits of growth; environmental sustainability; inclusive growth; income distribution; Singapore's growth strategy",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "f45e3b0c4a7cfb6b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.bop_structure",
+      "label": "Balance of Payments: Structure",
+      "type": "concept",
+      "description": "Current account (trade in goods, services, primary income, secondary income); capital and financial account; BOP must balance",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "a4194eae53672c0c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.bop_issues",
+      "label": "Balance of Payments: Issues & Policies",
+      "type": "concept",
+      "description": "Causes of current account deficits/surpluses; consequences; Marshall-Lerner condition; J-curve effect; corrective policies",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "898f3a1dfffe0140",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.exchange_rates",
+      "label": "Exchange Rates",
+      "type": "concept",
+      "description": "Determination of exchange rates; demand and supply of currencies; appreciation and depreciation; factors affecting exchange rates",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "da7ec63094b6dab4",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.exchange_rate_systems",
+      "label": "Exchange Rate Systems",
+      "type": "concept",
+      "description": "Fixed, floating and managed float systems; advantages and disadvantages; Singapore's managed float (BBC) regime under MAS",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "bae65a2744816cbb",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.fiscal_policy",
+      "label": "Fiscal Policy",
+      "type": "concept",
+      "description": "Government expenditure and taxation; expansionary vs contractionary; budget deficit/surplus; automatic stabilisers; limitations",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "16eb50c05a246260",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.monetary_policy",
+      "label": "Monetary Policy",
+      "type": "concept",
+      "description": "Interest rate targeting; money supply management; transmission mechanism; Singapore's exchange rate-centred monetary policy via MAS",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "0b55db6979db745f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.supply_side_policies",
+      "label": "Supply-Side Policies",
+      "type": "concept",
+      "description": "Market-based and interventionist supply-side policies; education and training; R&D incentives; deregulation; labour market reforms; Singapore context",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "d98d57529d4f400f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.policy_conflicts_tradeoffs",
+      "label": "Policy Conflicts & Trade-offs",
+      "type": "concept",
+      "description": "Conflicts between macroeconomic objectives; inflation vs unemployment; growth vs environment; short-run vs long-run trade-offs; policy mix",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "8ff02842d91613c9",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.comparative_advantage",
+      "label": "Comparative Advantage & Basis for Trade",
+      "type": "concept",
+      "description": "Absolute and comparative advantage; gains from specialisation and trade; assumptions and limitations of the theory",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "089bffe51ede814f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.free_trade_benefits",
+      "label": "Benefits of Free Trade",
+      "type": "concept",
+      "description": "Consumer benefits (lower prices, greater variety); producer benefits (larger markets, economies of scale); dynamic efficiency gains",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "b8a010467b89b818",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.protectionism",
+      "label": "Protectionism",
+      "type": "concept",
+      "description": "Tariffs, quotas, subsidies, embargoes and other trade barriers; arguments for and against protectionism; welfare analysis of tariffs",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "75409f49e6ac8103",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.terms_of_trade",
+      "label": "Terms of Trade",
+      "type": "concept",
+      "description": "Definition and calculation; causes of changes in terms of trade; impact on the balance of payments and living standards",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "005179fb38d4208f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.economic_integration",
+      "label": "Economic Integration & Trade Agreements",
+      "type": "concept",
+      "description": "Free trade areas, customs unions, common markets; WTO; bilateral and regional FTAs; Singapore's FTA network (ASEAN, CPTPP, RCEP)",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "d30152192197766c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.globalisation",
+      "label": "Globalisation",
+      "type": "concept",
+      "description": "Drivers of globalisation; trade, capital and labour flows; TNCs/MNCs; benefits and costs of globalisation for developed and developing countries",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "e41fb6d62ead788b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.econ.h2.globalisation_sg",
+      "label": "Globalisation & the Singapore Economy",
+      "type": "concept",
+      "description": "Singapore as a small open economy; vulnerability to external shocks; trade dependence; FDI strategy; policy responses to globalisation",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.econ.macro",
+      "bookName": "Macroeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "a22401f4dc5e7dbe",
+      "comprehended": false
     }
   ],
   "edges": [
-    { "source": "sg.econ.scarcity", "target": "sg.econ.resource_allocation", "relation": "prerequisite_for" },
-    { "source": "sg.econ.resource_allocation", "target": "sg.econ.demand_supply", "relation": "prerequisite_for" },
-    { "source": "sg.econ.demand_supply", "target": "sg.econ.elasticity", "relation": "prerequisite_for" },
-    { "source": "sg.econ.demand_supply", "target": "sg.econ.market_failure", "relation": "prerequisite_for" },
-    { "source": "sg.econ.market_failure", "target": "sg.econ.government_micro", "relation": "prerequisite_for" },
-    { "source": "sg.econ.elasticity", "target": "sg.econ.firm_theory", "relation": "prerequisite_for" },
-    { "source": "sg.econ.firm_theory", "target": "sg.econ.market_structures", "relation": "prerequisite_for" },
-    { "source": "sg.econ.scarcity", "target": "sg.econ.national_income", "relation": "prerequisite_for" },
-    { "source": "sg.econ.demand_supply", "target": "sg.econ.ad_as", "relation": "prerequisite_for" },
-    { "source": "sg.econ.national_income", "target": "sg.econ.ad_as", "relation": "prerequisite_for" },
-    { "source": "sg.econ.ad_as", "target": "sg.econ.inflation", "relation": "prerequisite_for" },
-    { "source": "sg.econ.ad_as", "target": "sg.econ.unemployment", "relation": "prerequisite_for" },
-    { "source": "sg.econ.inflation", "target": "sg.econ.fiscal_monetary", "relation": "prerequisite_for" },
-    { "source": "sg.econ.unemployment", "target": "sg.econ.fiscal_monetary", "relation": "prerequisite_for" },
-    { "source": "sg.econ.elasticity", "target": "sg.econ.trade", "relation": "prerequisite_for" },
-    { "source": "sg.econ.fiscal_monetary", "target": "sg.econ.trade", "relation": "prerequisite_for" },
-    { "source": "sg.econ.trade", "target": "sg.econ.growth", "relation": "prerequisite_for" },
-    { "source": "sg.econ.fiscal_monetary", "target": "sg.econ.growth", "relation": "prerequisite_for" }
+    {
+      "source": "sg.econ.h2.scarcity_and_choice",
+      "target": "sg.econ.h2.opportunity_cost",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.opportunity_cost",
+      "target": "sg.econ.h2.ppc",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.scarcity_and_choice",
+      "target": "sg.econ.h2.resource_allocation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.ppc",
+      "target": "sg.econ.h2.resource_allocation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.resource_allocation",
+      "target": "sg.econ.h2.demand",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.resource_allocation",
+      "target": "sg.econ.h2.supply",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.demand",
+      "target": "sg.econ.h2.market_equilibrium",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.supply",
+      "target": "sg.econ.h2.market_equilibrium",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.market_equilibrium",
+      "target": "sg.econ.h2.consumer_surplus_producer_surplus",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.demand",
+      "target": "sg.econ.h2.ped",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.supply",
+      "target": "sg.econ.h2.pes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.demand",
+      "target": "sg.econ.h2.yed",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.demand",
+      "target": "sg.econ.h2.xed",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.ped",
+      "target": "sg.econ.h2.elasticity_applications",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.pes",
+      "target": "sg.econ.h2.elasticity_applications",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.yed",
+      "target": "sg.econ.h2.elasticity_applications",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.xed",
+      "target": "sg.econ.h2.elasticity_applications",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.consumer_surplus_producer_surplus",
+      "target": "sg.econ.h2.market_failure_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.market_equilibrium",
+      "target": "sg.econ.h2.market_failure_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.market_failure_intro",
+      "target": "sg.econ.h2.externalities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.market_failure_intro",
+      "target": "sg.econ.h2.public_goods",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.market_failure_intro",
+      "target": "sg.econ.h2.merit_demerit_goods",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.market_failure_intro",
+      "target": "sg.econ.h2.information_failure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.market_failure_intro",
+      "target": "sg.econ.h2.market_dominance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.market_failure_intro",
+      "target": "sg.econ.h2.income_inequality",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.externalities",
+      "target": "sg.econ.h2.taxes_intervention",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.externalities",
+      "target": "sg.econ.h2.subsidies_intervention",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.externalities",
+      "target": "sg.econ.h2.regulation_legislation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.public_goods",
+      "target": "sg.econ.h2.direct_provision",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.merit_demerit_goods",
+      "target": "sg.econ.h2.subsidies_intervention",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.merit_demerit_goods",
+      "target": "sg.econ.h2.direct_provision",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.elasticity_applications",
+      "target": "sg.econ.h2.taxes_intervention",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.market_equilibrium",
+      "target": "sg.econ.h2.price_controls",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.consumer_surplus_producer_surplus",
+      "target": "sg.econ.h2.price_controls",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.taxes_intervention",
+      "target": "sg.econ.h2.government_failure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.subsidies_intervention",
+      "target": "sg.econ.h2.government_failure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.regulation_legislation",
+      "target": "sg.econ.h2.government_failure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.direct_provision",
+      "target": "sg.econ.h2.government_failure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.market_equilibrium",
+      "target": "sg.econ.h2.costs_of_production",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.costs_of_production",
+      "target": "sg.econ.h2.revenue_and_profit",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.costs_of_production",
+      "target": "sg.econ.h2.economies_of_scale",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.revenue_and_profit",
+      "target": "sg.econ.h2.perfect_competition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.economies_of_scale",
+      "target": "sg.econ.h2.perfect_competition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.revenue_and_profit",
+      "target": "sg.econ.h2.monopoly",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.economies_of_scale",
+      "target": "sg.econ.h2.monopoly",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.perfect_competition",
+      "target": "sg.econ.h2.monopolistic_competition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.monopoly",
+      "target": "sg.econ.h2.monopolistic_competition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.monopoly",
+      "target": "sg.econ.h2.oligopoly",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.monopoly",
+      "target": "sg.econ.h2.price_discrimination",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.ped",
+      "target": "sg.econ.h2.price_discrimination",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.perfect_competition",
+      "target": "sg.econ.h2.contestable_markets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.monopoly",
+      "target": "sg.econ.h2.contestable_markets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.market_dominance",
+      "target": "sg.econ.h2.competition_policy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.oligopoly",
+      "target": "sg.econ.h2.competition_policy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.contestable_markets",
+      "target": "sg.econ.h2.competition_policy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.scarcity_and_choice",
+      "target": "sg.econ.h2.national_income_measurement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.national_income_measurement",
+      "target": "sg.econ.h2.standard_of_living",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.national_income_measurement",
+      "target": "sg.econ.h2.circular_flow",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.circular_flow",
+      "target": "sg.econ.h2.aggregate_demand",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.demand",
+      "target": "sg.econ.h2.aggregate_demand",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.supply",
+      "target": "sg.econ.h2.aggregate_supply",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.ppc",
+      "target": "sg.econ.h2.aggregate_supply",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.aggregate_demand",
+      "target": "sg.econ.h2.macro_equilibrium",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.aggregate_supply",
+      "target": "sg.econ.h2.macro_equilibrium",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.aggregate_demand",
+      "target": "sg.econ.h2.multiplier",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.circular_flow",
+      "target": "sg.econ.h2.multiplier",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.macro_equilibrium",
+      "target": "sg.econ.h2.inflation_causes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.inflation_causes",
+      "target": "sg.econ.h2.inflation_consequences",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.macro_equilibrium",
+      "target": "sg.econ.h2.unemployment_types",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.unemployment_types",
+      "target": "sg.econ.h2.unemployment_consequences",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.macro_equilibrium",
+      "target": "sg.econ.h2.economic_growth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.ppc",
+      "target": "sg.econ.h2.economic_growth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.economic_growth",
+      "target": "sg.econ.h2.sustainable_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.standard_of_living",
+      "target": "sg.econ.h2.sustainable_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.exchange_rates",
+      "target": "sg.econ.h2.bop_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.macro_equilibrium",
+      "target": "sg.econ.h2.bop_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.bop_structure",
+      "target": "sg.econ.h2.bop_issues",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.ped",
+      "target": "sg.econ.h2.bop_issues",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.demand",
+      "target": "sg.econ.h2.exchange_rates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.supply",
+      "target": "sg.econ.h2.exchange_rates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.exchange_rates",
+      "target": "sg.econ.h2.exchange_rate_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.inflation_consequences",
+      "target": "sg.econ.h2.fiscal_policy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.unemployment_consequences",
+      "target": "sg.econ.h2.fiscal_policy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.multiplier",
+      "target": "sg.econ.h2.fiscal_policy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.inflation_consequences",
+      "target": "sg.econ.h2.monetary_policy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.exchange_rate_systems",
+      "target": "sg.econ.h2.monetary_policy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.economic_growth",
+      "target": "sg.econ.h2.supply_side_policies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.aggregate_supply",
+      "target": "sg.econ.h2.supply_side_policies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.unemployment_types",
+      "target": "sg.econ.h2.supply_side_policies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.fiscal_policy",
+      "target": "sg.econ.h2.policy_conflicts_tradeoffs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.monetary_policy",
+      "target": "sg.econ.h2.policy_conflicts_tradeoffs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.supply_side_policies",
+      "target": "sg.econ.h2.policy_conflicts_tradeoffs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.opportunity_cost",
+      "target": "sg.econ.h2.comparative_advantage",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.ppc",
+      "target": "sg.econ.h2.comparative_advantage",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.comparative_advantage",
+      "target": "sg.econ.h2.free_trade_benefits",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.free_trade_benefits",
+      "target": "sg.econ.h2.protectionism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.consumer_surplus_producer_surplus",
+      "target": "sg.econ.h2.protectionism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.comparative_advantage",
+      "target": "sg.econ.h2.terms_of_trade",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.bop_structure",
+      "target": "sg.econ.h2.terms_of_trade",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.free_trade_benefits",
+      "target": "sg.econ.h2.economic_integration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.protectionism",
+      "target": "sg.econ.h2.economic_integration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.economic_integration",
+      "target": "sg.econ.h2.globalisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.exchange_rates",
+      "target": "sg.econ.h2.globalisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.globalisation",
+      "target": "sg.econ.h2.globalisation_sg",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.monetary_policy",
+      "target": "sg.econ.h2.globalisation_sg",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.econ.h2.sustainable_development",
+      "target": "sg.econ.h2.globalisation_sg",
+      "relation": "prerequisite_for"
+    }
   ]
 }

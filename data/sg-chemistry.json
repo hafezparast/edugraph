@@ -3,7 +3,7 @@
     "domain": "chemistry",
     "curriculum": "Singapore Chemistry (O-Level + A-Level H2)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Singapore Chemistry curriculum covering O-Level and JC H2 A-Level, with prerequisite ordering",
     "sources": [
       "MOE Singapore Chemistry Syllabus (6092, 9729)"
@@ -11,476 +11,2514 @@
     "last_updated": "2026-03-27"
   },
   "books": [
-    { "id": "sg.chem.ol.matter", "name": "O-Level Matter & Structure", "color": "#14b8a6", "order": 1 },
-    { "id": "sg.chem.ol.reactions", "name": "O-Level Chemical Reactions", "color": "#f59e0b", "order": 2 },
-    { "id": "sg.chem.ol.context", "name": "O-Level Chemistry in Context", "color": "#22c55e", "order": 3 },
-    { "id": "sg.chem.jc.physical", "name": "JC Physical Chemistry", "color": "#0d9488", "order": 4 },
-    { "id": "sg.chem.jc.inorganic", "name": "JC Inorganic Chemistry", "color": "#d97706", "order": 5 },
-    { "id": "sg.chem.jc.organic", "name": "JC Organic Chemistry", "color": "#8b5cf6", "order": 6 }
+    {
+      "id": "sg.chem.ol.matter",
+      "name": "O-Level Matter & Structure",
+      "color": "#14b8a6",
+      "order": 1
+    },
+    {
+      "id": "sg.chem.ol.reactions",
+      "name": "O-Level Chemical Reactions",
+      "color": "#f59e0b",
+      "order": 2
+    },
+    {
+      "id": "sg.chem.ol.context",
+      "name": "O-Level Chemistry in Context",
+      "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "sg.chem.jc.physical",
+      "name": "JC Physical Chemistry",
+      "color": "#0d9488",
+      "order": 4
+    },
+    {
+      "id": "sg.chem.jc.inorganic",
+      "name": "JC Inorganic Chemistry",
+      "color": "#d97706",
+      "order": 5
+    },
+    {
+      "id": "sg.chem.jc.organic",
+      "name": "JC Organic Chemistry",
+      "color": "#8b5cf6",
+      "order": 6
+    }
   ],
   "nodes": [
     {
-      "id": "sg.chem.ol.particulate_nature",
-      "label": "Particulate Nature of Matter",
+      "id": "sg.chem.ol.kinetic_particle_theory",
+      "label": "Kinetic Particle Theory",
       "type": "concept",
-      "description": "Kinetic particle theory; states of matter; diffusion",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "States of matter explained by kinetic particle theory; arrangement and movement of particles in solids, liquids and gases",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.ol.matter",
       "bookName": "O-Level Matter & Structure",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "baff5ea9878fa2c8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.states_of_matter",
+      "label": "Changes of State",
+      "type": "concept",
+      "description": "Melting, boiling, evaporation, condensation, freezing, sublimation; heating and cooling curves",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.matter",
+      "bookName": "O-Level Matter & Structure",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "61184d1cc290b61d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.diffusion",
+      "label": "Diffusion",
+      "type": "concept",
+      "description": "Diffusion in gases and liquids; factors affecting rate of diffusion; evidence for kinetic particle theory",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.matter",
+      "bookName": "O-Level Matter & Structure",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "77364fd5bbeb25ea",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.measurement",
+      "label": "Measurement & Experimental Techniques",
+      "type": "concept",
+      "description": "Collection and measurement of gases; use of apparatus; measurement of time, temperature, mass, volume",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.matter",
+      "bookName": "O-Level Matter & Structure",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "6c8643587d0a40df",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.purity",
+      "label": "Purity & Mixtures",
+      "type": "concept",
+      "description": "Pure substances vs mixtures; criteria of purity (melting and boiling points); types of mixtures",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.matter",
+      "bookName": "O-Level Matter & Structure",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "52475bf94ffab459",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.separation_techniques",
+      "label": "Separation Techniques",
+      "type": "concept",
+      "description": "Filtration, evaporation, crystallisation, simple and fractional distillation, paper chromatography, separating funnel",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.matter",
+      "bookName": "O-Level Matter & Structure",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "69c1a37e3266d9cd",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.elements_compounds_mixtures",
+      "label": "Elements, Compounds & Mixtures",
+      "type": "concept",
+      "description": "Distinguishing between elements, compounds and mixtures; atoms and molecules",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.matter",
+      "bookName": "O-Level Matter & Structure",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "89a6670df8693024",
+      "comprehended": false
     },
     {
       "id": "sg.chem.ol.atomic_structure",
       "label": "Atomic Structure",
       "type": "concept",
-      "description": "Protons, neutrons, electrons; isotopes; electronic configuration",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Protons, neutrons, electrons; proton number and nucleon number; electronic configuration (2,8,8)",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.ol.matter",
       "bookName": "O-Level Matter & Structure",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "1bc907a66bc9c380",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.ol.bonding",
-      "label": "Chemical Bonding",
+      "id": "sg.chem.ol.isotopes",
+      "label": "Isotopes",
       "type": "concept",
-      "description": "Ionic, covalent, metallic bonding; dot-and-cross diagrams",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Definition of isotopes; relative atomic mass; uses of radioisotopes",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.ol.matter",
       "bookName": "O-Level Matter & Structure",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "d9a84045f40b2ca9",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.ol.formulae",
-      "label": "Formulae & Equations",
+      "id": "sg.chem.ol.ionic_bonding",
+      "label": "Ionic Bonding",
       "type": "concept",
-      "description": "Writing chemical formulae; balancing equations; mole concept",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Transfer of electrons; formation of ionic compounds; properties of ionic compounds; dot-and-cross diagrams",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.ol.matter",
       "bookName": "O-Level Matter & Structure",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "6c29bdbf2c5ac52a",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.ol.separation",
-      "label": "Separation Techniques",
+      "id": "sg.chem.ol.covalent_bonding",
+      "label": "Covalent Bonding",
       "type": "concept",
-      "description": "Filtration, distillation, chromatography; purity",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Sharing of electrons; single, double, triple bonds; properties of simple and giant covalent structures",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.ol.matter",
       "bookName": "O-Level Matter & Structure",
       "bookColor": "#14b8a6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "dd39d0dc00a171a3",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.ol.acids_bases",
-      "label": "Acids, Bases & Salts",
+      "id": "sg.chem.ol.metallic_bonding",
+      "label": "Metallic Bonding",
       "type": "concept",
-      "description": "Properties of acids and bases; pH; preparation of salts; indicators",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Sea of delocalised electrons; properties of metals explained by metallic bonding",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.matter",
+      "bookName": "O-Level Matter & Structure",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "0c7bb51543fc7d0a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.writing_formulae",
+      "label": "Writing Chemical Formulae",
+      "type": "concept",
+      "description": "Formulae of ionic and covalent compounds; valency; polyatomic ions",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.matter",
+      "bookName": "O-Level Matter & Structure",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "a68d4764dd6b9b1e",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.balancing_equations",
+      "label": "Balancing Chemical Equations",
+      "type": "concept",
+      "description": "Word equations; balanced symbol equations; state symbols; ionic equations",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.matter",
+      "bookName": "O-Level Matter & Structure",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "eddc6f412be40cf5",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.mole_concept",
+      "label": "Mole Concept (O-Level)",
+      "type": "concept",
+      "description": "Avogadro's number; molar mass; moles of gases at r.t.p.; concentration of solutions; stoichiometric calculations",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.matter",
+      "bookName": "O-Level Matter & Structure",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "6d0c6f583d5a187b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.acids",
+      "label": "Acids",
+      "type": "concept",
+      "description": "Properties of acids; reactions with metals, bases, carbonates; strong and weak acids; H+ ions in aqueous solution",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.ol.reactions",
       "bookName": "O-Level Chemical Reactions",
       "bookColor": "#f59e0b",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "704aa853601c2b94",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.ol.redox",
+      "id": "sg.chem.ol.bases_alkalis",
+      "label": "Bases & Alkalis",
+      "type": "concept",
+      "description": "Properties of bases and alkalis; neutralisation; OH- ions; ammonia as a base",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.reactions",
+      "bookName": "O-Level Chemical Reactions",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "704c770de4a7fbdb",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.ph_indicators",
+      "label": "pH Scale & Indicators",
+      "type": "concept",
+      "description": "pH scale 0-14; universal indicator; litmus; methyl orange; phenolphthalein; use of pH meter",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.reactions",
+      "bookName": "O-Level Chemical Reactions",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "ddae56360187f51d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.salts",
+      "label": "Preparation of Salts",
+      "type": "concept",
+      "description": "Soluble and insoluble salts; methods of preparation (titration, excess reagent, precipitation); solubility rules",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.reactions",
+      "bookName": "O-Level Chemical Reactions",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "c7eb265ef75df0fd",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.oxidation_reduction",
       "label": "Oxidation & Reduction",
       "type": "concept",
-      "description": "Redox reactions; oxidation states; electrochemical cells",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Definitions of oxidation and reduction (oxygen, hydrogen, electron transfer); oxidation states; redox equations",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.ol.reactions",
       "bookName": "O-Level Chemical Reactions",
       "bookColor": "#f59e0b",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "a91ea86dc2b029b1",
+      "comprehended": false
     },
     {
       "id": "sg.chem.ol.electrolysis",
       "label": "Electrolysis",
       "type": "concept",
-      "description": "Electrolysis of molten and aqueous substances; electroplating",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Electrolysis of molten and aqueous compounds; selective discharge of ions; electroplating; industrial electrolysis",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.ol.reactions",
       "bookName": "O-Level Chemical Reactions",
       "bookColor": "#f59e0b",
-      "bookOrder": 2
-    },
-    {
-      "id": "sg.chem.ol.rates",
-      "label": "Rate of Reaction",
-      "type": "concept",
-      "description": "Factors affecting rate; collision theory; catalysts",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
-      "book": "sg.chem.ol.reactions",
-      "bookName": "O-Level Chemical Reactions",
-      "bookColor": "#f59e0b",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "59a56efeb96cfeef",
+      "comprehended": false
     },
     {
       "id": "sg.chem.ol.energy_changes",
       "label": "Energy Changes",
       "type": "concept",
-      "description": "Exothermic and endothermic reactions; energy profile diagrams",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Exothermic and endothermic reactions; energy level diagrams; bond breaking and making; activation energy",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.ol.reactions",
       "bookName": "O-Level Chemical Reactions",
       "bookColor": "#f59e0b",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "5debbfffb63fe6c0",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.rate_of_reaction",
+      "label": "Rate of Reaction",
+      "type": "concept",
+      "description": "Measuring rate; factors affecting rate (concentration, temperature, particle size, catalyst); collision theory",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.reactions",
+      "bookName": "O-Level Chemical Reactions",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "750d0b67737a925a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.catalysts",
+      "label": "Catalysts",
+      "type": "concept",
+      "description": "Effect of catalysts on rate; enzymes as biological catalysts; catalytic converters",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.reactions",
+      "bookName": "O-Level Chemical Reactions",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "7dd62d35e325efc3",
+      "comprehended": false
     },
     {
       "id": "sg.chem.ol.periodic_table",
-      "label": "Periodic Table",
+      "label": "The Periodic Table",
       "type": "concept",
-      "description": "Groups and periods; trends; metals and non-metals",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Groups and periods; metals vs non-metals; relationship between electronic configuration and position",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.ol.reactions",
       "bookName": "O-Level Chemical Reactions",
       "bookColor": "#f59e0b",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "b5a765785bec805c",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.ol.metals",
-      "label": "Metals",
+      "id": "sg.chem.ol.group1",
+      "label": "Group I Alkali Metals",
       "type": "concept",
-      "description": "Reactivity series; extraction of metals; alloys; rusting",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Properties and reactions of lithium, sodium, potassium; trends down the group",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.reactions",
+      "bookName": "O-Level Chemical Reactions",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "0289d69b34b082ed",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.group17",
+      "label": "Group VII Halogens",
+      "type": "concept",
+      "description": "Properties and reactions of chlorine, bromine, iodine; displacement reactions; trends down the group",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.reactions",
+      "bookName": "O-Level Chemical Reactions",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "2d42aaf0204d29f2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.noble_gases",
+      "label": "Group 0 Noble Gases",
+      "type": "concept",
+      "description": "Inertness of noble gases; uses; electronic configuration with full outer shells",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.reactions",
+      "bookName": "O-Level Chemical Reactions",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "1a7e36345f76a864",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.transition_elements",
+      "label": "Transition Elements (O-Level)",
+      "type": "concept",
+      "description": "Properties of transition elements; variable valency; coloured compounds; use as catalysts",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.reactions",
+      "bookName": "O-Level Chemical Reactions",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "5481aab466290fd7",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.reactivity_series",
+      "label": "Reactivity Series",
+      "type": "concept",
+      "description": "Order of reactivity of metals; reactions with water, dilute acids, metal ion solutions; displacement reactions",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.ol.context",
       "bookName": "O-Level Chemistry in Context",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "75f8f3268d9d9ae5",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.ol.atmosphere",
-      "label": "Air & Atmosphere",
+      "id": "sg.chem.ol.extraction_of_metals",
+      "label": "Extraction of Metals",
       "type": "concept",
-      "description": "Composition of air; pollution; carbon cycle; global warming",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Extraction related to reactivity; carbon reduction; electrolytic extraction of aluminium; recycling of metals",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.ol.context",
       "bookName": "O-Level Chemistry in Context",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "4122a7a8817b7679",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.ol.organic_chem",
-      "label": "Organic Chemistry (O-Level)",
+      "id": "sg.chem.ol.iron_steel",
+      "label": "Iron & Steel",
       "type": "concept",
-      "description": "Alkanes, alkenes, alcohols; polymers; fuels",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Blast furnace; conversion of iron to steel; properties and uses of steel alloys",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.ol.context",
       "bookName": "O-Level Chemistry in Context",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "bed0eb7ecec08b44",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.ol.experimental",
-      "label": "Experimental Chemistry",
+      "id": "sg.chem.ol.rusting",
+      "label": "Rusting & Corrosion",
       "type": "concept",
-      "description": "Experimental design; qualitative analysis; identification of ions and gases",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Conditions for rusting; methods of rust prevention (galvanising, sacrificial protection, painting, oiling)",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.ol.context",
       "bookName": "O-Level Chemistry in Context",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "b508046375861d3b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.alloys",
+      "label": "Alloys",
+      "type": "concept",
+      "description": "Definition of alloys; properties compared to pure metals; examples (brass, bronze, stainless steel)",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.context",
+      "bookName": "O-Level Chemistry in Context",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "bd7eda401c4a0bbf",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.composition_of_air",
+      "label": "Composition of Air",
+      "type": "concept",
+      "description": "Percentage composition of clean dry air; separation of gases from air by fractional distillation of liquid air",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.context",
+      "bookName": "O-Level Chemistry in Context",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "0c09a20a19b742c6",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.air_pollution",
+      "label": "Air Pollution",
+      "type": "concept",
+      "description": "Pollutants (CO, SO2, NO2, unburnt hydrocarbons, particulates); acid rain; ozone depletion; global warming",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.context",
+      "bookName": "O-Level Chemistry in Context",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "6548b76b6db7373c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.carbon_cycle",
+      "label": "Carbon Cycle & Greenhouse Effect",
+      "type": "concept",
+      "description": "Carbon cycle; greenhouse gases (CO2, CH4); enhanced greenhouse effect; climate change",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.context",
+      "bookName": "O-Level Chemistry in Context",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "c58d6576f2a15d77",
+      "comprehended": false
     },
     {
       "id": "sg.chem.ol.water",
       "label": "Water",
       "type": "concept",
-      "description": "Water treatment; hardness of water; hydrogen bonding basics",
-      "grade_range": ["O-Level"],
-      "tags": ["subtopic"],
+      "description": "Water treatment and purification; tests for water; hardness of water; fluoridation",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.ol.context",
       "bookName": "O-Level Chemistry in Context",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "d61833539e7134a1",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.jc.atomic_h2",
+      "id": "sg.chem.ol.fuels",
+      "label": "Fuels & Crude Oil",
+      "type": "concept",
+      "description": "Fossil fuels; fractional distillation of petroleum; cracking; petrochemical industry",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.context",
+      "bookName": "O-Level Chemistry in Context",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "cec0eb9767a0ae38",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.alkanes",
+      "label": "Alkanes",
+      "type": "concept",
+      "description": "Homologous series; general formula CnH2n+2; naming; substitution reactions; combustion",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.context",
+      "bookName": "O-Level Chemistry in Context",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "72da6e7b1c8fff27",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.alkenes",
+      "label": "Alkenes",
+      "type": "concept",
+      "description": "General formula CnH2n; C=C double bond; addition reactions (H2, Br2, H2O, HBr); test with bromine water",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.context",
+      "bookName": "O-Level Chemistry in Context",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "6992e57ee93a8b57",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.alcohols",
+      "label": "Alcohols (O-Level)",
+      "type": "concept",
+      "description": "Ethanol; production by fermentation and hydration of ethene; properties; combustion; social effects",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.context",
+      "bookName": "O-Level Chemistry in Context",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "ec017c4174f2af3b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.carboxylic_acids",
+      "label": "Carboxylic Acids (O-Level)",
+      "type": "concept",
+      "description": "Ethanoic acid; properties as weak acid; reactions; esterification",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.context",
+      "bookName": "O-Level Chemistry in Context",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "4a73d36dd7c0c279",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.esters",
+      "label": "Esters (O-Level)",
+      "type": "concept",
+      "description": "Formation by esterification; naming esters; uses (flavourings, solvents)",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.context",
+      "bookName": "O-Level Chemistry in Context",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "3eaaedbdcb95f28f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.polymers",
+      "label": "Polymers (O-Level)",
+      "type": "concept",
+      "description": "Addition polymerisation (polyethene, PVC); condensation polymerisation; uses of plastics; environmental issues",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.context",
+      "bookName": "O-Level Chemistry in Context",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "9edd771d6b9dae8c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.qualitative_analysis",
+      "label": "Qualitative Analysis",
+      "type": "concept",
+      "description": "Tests for cations (flame tests, NaOH/NH3); tests for anions (carbonate, sulfate, halides); tests for gases",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.context",
+      "bookName": "O-Level Chemistry in Context",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "04a2e08cfadd1952",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.ol.experimental_design",
+      "label": "Experimental Design",
+      "type": "concept",
+      "description": "Planning experiments; identifying variables; collecting reliable data; drawing conclusions from data",
+      "grade_range": [
+        "O-Level"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.ol.context",
+      "bookName": "O-Level Chemistry in Context",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "e567751576330338",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.atomic_structure",
       "label": "Atomic Structure (H2)",
       "type": "concept",
-      "description": "Orbitals; quantum numbers; electronic configuration of ions",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Orbitals (s, p, d); quantum numbers; Aufbau principle; Hund's rule; Pauli exclusion; electronic configuration of atoms and ions",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.physical",
       "bookName": "JC Physical Chemistry",
       "bookColor": "#0d9488",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "4b90140b8280be9e",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.jc.bonding_h2",
-      "label": "Chemical Bonding (H2)",
+      "id": "sg.chem.jc.ionisation_energy",
+      "label": "Ionisation Energy",
       "type": "concept",
-      "description": "Hybridisation; delocalisation; intermolecular forces; bond energies",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Successive ionisation energies; factors affecting IE; evidence for electronic structure from IE data",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.physical",
       "bookName": "JC Physical Chemistry",
       "bookColor": "#0d9488",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "36d3ea1949041ac7",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.jc.energetics",
-      "label": "Energetics & Thermochemistry",
+      "id": "sg.chem.jc.ionic_bonding",
+      "label": "Ionic Bonding (H2)",
       "type": "concept",
-      "description": "Hess's law; Born-Haber cycles; entropy and Gibbs free energy",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Lattice structure; lattice energy; factors affecting lattice energy; properties of ionic compounds",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.physical",
       "bookName": "JC Physical Chemistry",
       "bookColor": "#0d9488",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "ff4472eefd88f6e9",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.jc.kinetics",
-      "label": "Chemical Kinetics",
+      "id": "sg.chem.jc.covalent_bonding",
+      "label": "Covalent Bonding (H2)",
       "type": "concept",
-      "description": "Rate equations; order of reaction; Arrhenius equation; mechanisms",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Sigma and pi bonds; bond energy; bond length; dative (coordinate) bonds; VSEPR theory; shapes of molecules",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.physical",
       "bookName": "JC Physical Chemistry",
       "bookColor": "#0d9488",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "8e6998ce4a136955",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.jc.equilibria",
-      "label": "Chemical Equilibria",
+      "id": "sg.chem.jc.hybridisation",
+      "label": "Hybridisation",
       "type": "concept",
-      "description": "Equilibrium constant; Le Chatelier's principle; ionic equilibria; Ksp",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "sp, sp2, sp3 hybridisation; relationship to molecular geometry; delocalisation of electrons",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.physical",
       "bookName": "JC Physical Chemistry",
       "bookColor": "#0d9488",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "0ead228219de2718",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.jc.electrochemistry",
-      "label": "Electrochemistry",
+      "id": "sg.chem.jc.intermolecular_forces",
+      "label": "Intermolecular Forces",
       "type": "concept",
-      "description": "Standard electrode potentials; Nernst equation; electrochemical cells",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Van der Waals forces (instantaneous dipole-induced dipole); permanent dipole-dipole; hydrogen bonding; effect on physical properties",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.physical",
       "bookName": "JC Physical Chemistry",
       "bookColor": "#0d9488",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "9f5ee9e44bff2626",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.jc.mole_h2",
+      "id": "sg.chem.jc.metallic_bonding",
+      "label": "Metallic Bonding (H2)",
+      "type": "concept",
+      "description": "Metallic bonding model; strength related to charge density and ion size; properties of metals",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.physical",
+      "bookName": "JC Physical Chemistry",
+      "bookColor": "#0d9488",
+      "bookOrder": 4,
+      "external_id": "c5c11da036a6e649",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.gaseous_state",
+      "label": "The Gaseous State",
+      "type": "concept",
+      "description": "Ideal gas equation (pV=nRT); Dalton's law of partial pressures; deviations from ideal behaviour; real gases",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.physical",
+      "bookName": "JC Physical Chemistry",
+      "bookColor": "#0d9488",
+      "bookOrder": 4,
+      "external_id": "e66ac898bb73d9dd",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.mole_concept",
       "label": "Mole Concept (H2)",
       "type": "concept",
-      "description": "Stoichiometry; concentration; volumetric analysis",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Stoichiometry; reacting volumes of gases; concentration; volumetric analysis; back and double titrations",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.physical",
       "bookName": "JC Physical Chemistry",
       "bookColor": "#0d9488",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "d8855464dfb2d536",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.enthalpy_changes",
+      "label": "Enthalpy Changes",
+      "type": "concept",
+      "description": "Standard enthalpy changes (formation, combustion, neutralisation, atomisation); Hess's law; calorimetry",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.physical",
+      "bookName": "JC Physical Chemistry",
+      "bookColor": "#0d9488",
+      "bookOrder": 4,
+      "external_id": "cff96caa2c38e4b8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.born_haber",
+      "label": "Born-Haber Cycles",
+      "type": "concept",
+      "description": "Lattice energy; electron affinity; Born-Haber cycle construction; comparing theoretical and experimental lattice energies",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.physical",
+      "bookName": "JC Physical Chemistry",
+      "bookColor": "#0d9488",
+      "bookOrder": 4,
+      "external_id": "08f635271cc3843a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.entropy_gibbs",
+      "label": "Entropy & Gibbs Free Energy",
+      "type": "concept",
+      "description": "Entropy; second law of thermodynamics; Gibbs free energy (G = H - TS); spontaneity of reactions; Ellingham diagrams",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.physical",
+      "bookName": "JC Physical Chemistry",
+      "bookColor": "#0d9488",
+      "bookOrder": 4,
+      "external_id": "0b56cda1397e929f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.rate_equations",
+      "label": "Rate Equations",
+      "type": "concept",
+      "description": "Rate law; order of reaction (zero, first, second); rate constant; half-life; determining order from data",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.physical",
+      "bookName": "JC Physical Chemistry",
+      "bookColor": "#0d9488",
+      "bookOrder": 4,
+      "external_id": "829163d0b9c82db2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.arrhenius",
+      "label": "Arrhenius Equation & Catalysis",
+      "type": "concept",
+      "description": "Arrhenius equation (k = Ae^(-Ea/RT)); effect of temperature on rate constant; homogeneous and heterogeneous catalysis; reaction mechanisms",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.physical",
+      "bookName": "JC Physical Chemistry",
+      "bookColor": "#0d9488",
+      "bookOrder": 4,
+      "external_id": "d1df027c4aa7c3cf",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.chemical_equilibria",
+      "label": "Chemical Equilibria",
+      "type": "concept",
+      "description": "Dynamic equilibrium; equilibrium constant Kc and Kp; Le Chatelier's principle; effect of conditions on equilibrium",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.physical",
+      "bookName": "JC Physical Chemistry",
+      "bookColor": "#0d9488",
+      "bookOrder": 4,
+      "external_id": "7c960d76754f71b2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.acid_base_equilibria",
+      "label": "Acid-Base Equilibria",
+      "type": "concept",
+      "description": "Bronsted-Lowry theory; Ka and Kb; pH calculations for strong and weak acids/bases; buffer solutions; titration curves; indicators",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.physical",
+      "bookName": "JC Physical Chemistry",
+      "bookColor": "#0d9488",
+      "bookOrder": 4,
+      "external_id": "0c8bc5aaa989c907",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.buffer_solutions",
+      "label": "Buffer Solutions",
+      "type": "concept",
+      "description": "Composition of acidic and basic buffers; mechanism of buffer action; Henderson-Hasselbalch equation; biological buffers",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.physical",
+      "bookName": "JC Physical Chemistry",
+      "bookColor": "#0d9488",
+      "bookOrder": 4,
+      "external_id": "2507b73835ac8be0",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.solubility_equilibria",
+      "label": "Solubility Equilibria",
+      "type": "concept",
+      "description": "Solubility product Ksp; common ion effect; predicting precipitation; relationship between Ksp and solubility",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.physical",
+      "bookName": "JC Physical Chemistry",
+      "bookColor": "#0d9488",
+      "bookOrder": 4,
+      "external_id": "b17b1c967293ef45",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.redox_reactions",
+      "label": "Redox Reactions (H2)",
+      "type": "concept",
+      "description": "Oxidation states; balancing redox equations; disproportionation; use of oxidising and reducing agents",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.physical",
+      "bookName": "JC Physical Chemistry",
+      "bookColor": "#0d9488",
+      "bookOrder": 4,
+      "external_id": "46ab1de63c0dc6a9",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.electrode_potentials",
+      "label": "Standard Electrode Potentials",
+      "type": "concept",
+      "description": "Standard hydrogen electrode; standard electrode potential E; electrochemical series; predicting feasibility of reactions",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.physical",
+      "bookName": "JC Physical Chemistry",
+      "bookColor": "#0d9488",
+      "bookOrder": 4,
+      "external_id": "fcb2e73b0ab3109a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.electrochemical_cells",
+      "label": "Electrochemical Cells",
+      "type": "concept",
+      "description": "Galvanic and electrolytic cells; cell diagrams; calculating cell EMF; Nernst equation; fuel cells; batteries",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.physical",
+      "bookName": "JC Physical Chemistry",
+      "bookColor": "#0d9488",
+      "bookOrder": 4,
+      "external_id": "3733357696213c37",
+      "comprehended": false
     },
     {
       "id": "sg.chem.jc.periodicity",
       "label": "Periodicity",
       "type": "concept",
-      "description": "Periodic trends; ionisation energy; electronegativity; atomic radius",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Periodic trends in ionisation energy, electronegativity, atomic radius; variation in oxide and chloride properties across Period 3",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.inorganic",
       "bookName": "JC Inorganic Chemistry",
       "bookColor": "#d97706",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "ba7b89c38dbaa1a1",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.period3_oxides",
+      "label": "Period 3 Oxides & Chlorides",
+      "type": "concept",
+      "description": "Reactions of Na2O to P4O10 with water; bonding trends; acid-base character of oxides; Period 3 chlorides",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.inorganic",
+      "bookName": "JC Inorganic Chemistry",
+      "bookColor": "#d97706",
+      "bookOrder": 5,
+      "external_id": "aa35b61ff2bff548",
+      "comprehended": false
     },
     {
       "id": "sg.chem.jc.group2",
-      "label": "Group 2",
+      "label": "Group 2 Elements",
       "type": "concept",
-      "description": "Reactions of Group 2 elements and compounds; trends",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Reactions with water and oxygen; thermal decomposition of carbonates and nitrates; solubility trends of sulfates and hydroxides",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.inorganic",
       "bookName": "JC Inorganic Chemistry",
       "bookColor": "#d97706",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "cad052d5534edb8b",
+      "comprehended": false
     },
     {
       "id": "sg.chem.jc.group17",
-      "label": "Group 17",
+      "label": "Group 17 Elements",
       "type": "concept",
-      "description": "Reactions of halogens; hydrogen halides; interhalogen compounds",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Trends in physical properties; oxidising ability; reactions of halogens and halide ions; disproportionation of chlorine; hydrogen halides",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.inorganic",
       "bookName": "JC Inorganic Chemistry",
       "bookColor": "#d97706",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "235bd0042a71a487",
+      "comprehended": false
     },
     {
       "id": "sg.chem.jc.transition_metals",
       "label": "Transition Metals",
       "type": "concept",
-      "description": "Properties; variable oxidation states; coloured compounds; complex ions; catalysis",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Definition; variable oxidation states; coloured ions; catalytic activity; comparison with s-block metals",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.inorganic",
       "bookName": "JC Inorganic Chemistry",
       "bookColor": "#d97706",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "dca1b30f1ac867ca",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.complex_ions",
+      "label": "Complex Ions & Ligands",
+      "type": "concept",
+      "description": "Coordinate bonding in complexes; ligands (H2O, NH3, Cl-, CN-); coordination number; shapes of complexes; ligand exchange",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.inorganic",
+      "bookName": "JC Inorganic Chemistry",
+      "bookColor": "#d97706",
+      "bookOrder": 5,
+      "external_id": "aee2c64b7de632b1",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.colour_of_complexes",
+      "label": "Colour of Transition Metal Complexes",
+      "type": "concept",
+      "description": "d-d transitions; crystal field splitting; factors affecting colour (ligand, oxidation state, coordination number)",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.inorganic",
+      "bookName": "JC Inorganic Chemistry",
+      "bookColor": "#d97706",
+      "bookOrder": 5,
+      "external_id": "ea9a505143db1b96",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.tm_reactions",
+      "label": "Reactions of Transition Metal Ions",
+      "type": "concept",
+      "description": "Reactions of Cr, Mn, Fe, Cu, Co compounds; redox titrations (MnO4-, Cr2O72-); qualitative analysis of TM ions",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.inorganic",
+      "bookName": "JC Inorganic Chemistry",
+      "bookColor": "#d97706",
+      "bookOrder": 5,
+      "external_id": "b5178e97f118e6ec",
+      "comprehended": false
     },
     {
       "id": "sg.chem.jc.intro_organic",
       "label": "Introduction to Organic Chemistry",
       "type": "concept",
-      "description": "Nomenclature; functional groups; isomerism; reaction mechanisms",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "IUPAC nomenclature; functional groups; homologous series; structural, geometric and optical isomerism",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.organic",
       "bookName": "JC Organic Chemistry",
       "bookColor": "#8b5cf6",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "external_id": "8022dd85f912d6f4",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.jc.hydrocarbons",
-      "label": "Hydrocarbons",
+      "id": "sg.chem.jc.isomerism",
+      "label": "Isomerism",
       "type": "concept",
-      "description": "Alkanes, alkenes, arenes; electrophilic addition and substitution",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Structural isomerism (chain, positional, functional group); stereoisomerism (cis-trans, optical); chirality; enantiomers",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.organic",
       "bookName": "JC Organic Chemistry",
       "bookColor": "#8b5cf6",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "external_id": "1338f0e9a45c817d",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.jc.halogen_deriv",
-      "label": "Halogen Derivatives",
+      "id": "sg.chem.jc.reaction_mechanisms",
+      "label": "Organic Reaction Mechanisms",
       "type": "concept",
-      "description": "Halogenoalkanes; nucleophilic substitution; elimination",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Free radical substitution; electrophilic addition; electrophilic substitution; nucleophilic substitution (SN1, SN2); elimination",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.organic",
       "bookName": "JC Organic Chemistry",
       "bookColor": "#8b5cf6",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "external_id": "84577477c7082fe5",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.jc.hydroxyl",
-      "label": "Hydroxyl Compounds",
+      "id": "sg.chem.jc.alkanes",
+      "label": "Alkanes (H2)",
       "type": "concept",
-      "description": "Alcohols and phenols; reactions and preparations",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Free radical substitution of alkanes; combustion; unreactivity due to non-polar C-H bonds",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.organic",
       "bookName": "JC Organic Chemistry",
       "bookColor": "#8b5cf6",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "external_id": "844ffb407ccb0caf",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.jc.carbonyl",
-      "label": "Carbonyl Compounds",
+      "id": "sg.chem.jc.alkenes",
+      "label": "Alkenes (H2)",
       "type": "concept",
-      "description": "Aldehydes and ketones; nucleophilic addition; Tollens' and Fehling's tests",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Electrophilic addition reactions; Markovnikov's rule; polymerisation; oxidation with KMnO4; cis-trans isomerism",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.organic",
       "bookName": "JC Organic Chemistry",
       "bookColor": "#8b5cf6",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "external_id": "561536ca598edded",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.jc.carboxylic",
-      "label": "Carboxylic Acids & Derivatives",
+      "id": "sg.chem.jc.arenes",
+      "label": "Arenes",
       "type": "concept",
-      "description": "Carboxylic acids; esters; acyl chlorides",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Benzene structure and stability; electrophilic substitution (nitration, halogenation, Friedel-Crafts); side-chain oxidation",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.organic",
       "bookName": "JC Organic Chemistry",
       "bookColor": "#8b5cf6",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "external_id": "a1ba22c726d6c474",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.jc.nitrogen",
-      "label": "Nitrogen Compounds",
+      "id": "sg.chem.jc.halogenoalkanes",
+      "label": "Halogenoalkanes",
       "type": "concept",
-      "description": "Amines and amides; amino acids; proteins; polyamides",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Nucleophilic substitution (SN1 vs SN2); elimination; relative reactivity of C-Cl, C-Br, C-I bonds; Grignard reagents",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.organic",
       "bookName": "JC Organic Chemistry",
       "bookColor": "#8b5cf6",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "external_id": "f73570eb99391a39",
+      "comprehended": false
     },
     {
-      "id": "sg.chem.jc.macromolecules",
-      "label": "Macromolecules",
+      "id": "sg.chem.jc.alcohols",
+      "label": "Alcohols (H2)",
       "type": "concept",
-      "description": "Polymers; polyesters; polyamides; proteins and DNA structure",
-      "grade_range": ["JC"],
-      "tags": ["subtopic"],
+      "description": "Classification (primary, secondary, tertiary); oxidation; dehydration; esterification; reaction with Na; distinguishing tests",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.chem.jc.organic",
       "bookName": "JC Organic Chemistry",
       "bookColor": "#8b5cf6",
-      "bookOrder": 6
+      "bookOrder": 6,
+      "external_id": "bcebbd5bc450e340",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.phenols",
+      "label": "Phenols",
+      "type": "concept",
+      "description": "Acidity of phenol; reactions with NaOH and Na; bromination; nitration; comparison with alcohols; FeCl3 test",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.organic",
+      "bookName": "JC Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "54581dab8d30ec3b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.aldehydes",
+      "label": "Aldehydes",
+      "type": "concept",
+      "description": "Oxidation from primary alcohols; nucleophilic addition with HCN; reduction; Tollens' test; Fehling's test; 2,4-DNPH test",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.organic",
+      "bookName": "JC Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "377c01343770859c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.ketones",
+      "label": "Ketones",
+      "type": "concept",
+      "description": "Oxidation from secondary alcohols; nucleophilic addition; reduction; iodoform test; distinguishing from aldehydes",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.organic",
+      "bookName": "JC Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "90bee0a05f3f8ba9",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.carboxylic_acids",
+      "label": "Carboxylic Acids (H2)",
+      "type": "concept",
+      "description": "Acidity; reactions with bases, carbonates, alcohols; reduction; acyl chloride formation; relative acid strength",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.organic",
+      "bookName": "JC Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "5e9694491ca4cc2c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.acyl_chlorides",
+      "label": "Acyl Chlorides",
+      "type": "concept",
+      "description": "Nucleophilic substitution with water, alcohols, ammonia, amines; more reactive than carboxylic acids",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.organic",
+      "bookName": "JC Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "4870c0b8c313571c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.esters",
+      "label": "Esters (H2)",
+      "type": "concept",
+      "description": "Formation from acids/acyl chlorides; hydrolysis (acid and base); uses; transesterification; fats and oils",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.organic",
+      "bookName": "JC Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "023b4a1670364a18",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.amines",
+      "label": "Amines",
+      "type": "concept",
+      "description": "Classification; basicity; preparation from halogenoalkanes and nitriles; reactions with acyl chlorides; comparison of aliphatic vs aromatic amines",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.organic",
+      "bookName": "JC Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "59af66ca78a3864a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.amides",
+      "label": "Amides",
+      "type": "concept",
+      "description": "Formation from acyl chlorides and amines; hydrolysis; Hofmann degradation; properties of the amide bond",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.organic",
+      "bookName": "JC Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "6a888c9ffe8129a8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.amino_acids",
+      "label": "Amino Acids",
+      "type": "concept",
+      "description": "Amphoteric nature; zwitterions; isoelectric point; electrophoresis; peptide bond; optical activity",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.organic",
+      "bookName": "JC Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "6c10026ff34d876e",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.proteins",
+      "label": "Proteins",
+      "type": "concept",
+      "description": "Primary, secondary, tertiary, quaternary structure; denaturation; hydrolysis of proteins; enzymes",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.organic",
+      "bookName": "JC Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "dbee207105f80e3b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.nitriles",
+      "label": "Nitriles",
+      "type": "concept",
+      "description": "Formation from halogenoalkanes; hydrolysis to carboxylic acids; reduction to amines; use in carbon chain extension",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.organic",
+      "bookName": "JC Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "b52619378b0ed771",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.addition_polymers",
+      "label": "Addition Polymers",
+      "type": "concept",
+      "description": "Formation from alkenes; examples (polyethene, PVC, polystyrene, PTFE); properties and uses; environmental impact",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.organic",
+      "bookName": "JC Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "0cec9d6876317b34",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.condensation_polymers",
+      "label": "Condensation Polymers",
+      "type": "concept",
+      "description": "Polyesters (from diols and dicarboxylic acids); polyamides (nylon, Kevlar); hydrolysis of condensation polymers",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.organic",
+      "bookName": "JC Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "1668be140df76756",
+      "comprehended": false
+    },
+    {
+      "id": "sg.chem.jc.organic_synthesis",
+      "label": "Organic Synthesis & Deduction",
+      "type": "concept",
+      "description": "Multi-step synthesis pathways; retrosynthetic analysis; functional group interconversions; deducing structures from reactions and spectra",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.chem.jc.organic",
+      "bookName": "JC Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "c1cb74e8cdc2b232",
+      "comprehended": false
     }
   ],
   "edges": [
-    { "source": "sg.chem.ol.particulate_nature", "target": "sg.chem.ol.atomic_structure", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.atomic_structure", "target": "sg.chem.ol.bonding", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.bonding", "target": "sg.chem.ol.formulae", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.particulate_nature", "target": "sg.chem.ol.separation", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.formulae", "target": "sg.chem.ol.acids_bases", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.acids_bases", "target": "sg.chem.ol.redox", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.redox", "target": "sg.chem.ol.electrolysis", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.formulae", "target": "sg.chem.ol.rates", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.bonding", "target": "sg.chem.ol.energy_changes", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.atomic_structure", "target": "sg.chem.ol.periodic_table", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.periodic_table", "target": "sg.chem.ol.metals", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.redox", "target": "sg.chem.ol.metals", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.energy_changes", "target": "sg.chem.ol.atmosphere", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.bonding", "target": "sg.chem.ol.organic_chem", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.separation", "target": "sg.chem.ol.experimental", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.acids_bases", "target": "sg.chem.ol.experimental", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.acids_bases", "target": "sg.chem.ol.water", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.atomic_structure", "target": "sg.chem.jc.atomic_h2", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.bonding", "target": "sg.chem.jc.bonding_h2", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.atomic_h2", "target": "sg.chem.jc.bonding_h2", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.energy_changes", "target": "sg.chem.jc.energetics", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.bonding_h2", "target": "sg.chem.jc.energetics", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.rates", "target": "sg.chem.jc.kinetics", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.energetics", "target": "sg.chem.jc.equilibria", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.electrolysis", "target": "sg.chem.jc.electrochemistry", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.equilibria", "target": "sg.chem.jc.electrochemistry", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.formulae", "target": "sg.chem.jc.mole_h2", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.atomic_h2", "target": "sg.chem.jc.periodicity", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.periodicity", "target": "sg.chem.jc.group2", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.periodicity", "target": "sg.chem.jc.group17", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.group2", "target": "sg.chem.jc.transition_metals", "relation": "prerequisite_for" },
-    { "source": "sg.chem.ol.organic_chem", "target": "sg.chem.jc.intro_organic", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.intro_organic", "target": "sg.chem.jc.hydrocarbons", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.hydrocarbons", "target": "sg.chem.jc.halogen_deriv", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.halogen_deriv", "target": "sg.chem.jc.hydroxyl", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.hydroxyl", "target": "sg.chem.jc.carbonyl", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.carbonyl", "target": "sg.chem.jc.carboxylic", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.carboxylic", "target": "sg.chem.jc.nitrogen", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.nitrogen", "target": "sg.chem.jc.macromolecules", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.group17", "target": "sg.chem.jc.halogen_deriv", "relation": "prerequisite_for" },
-    { "source": "sg.chem.jc.kinetics", "target": "sg.chem.jc.equilibria", "relation": "prerequisite_for" }
+    {
+      "source": "sg.chem.ol.kinetic_particle_theory",
+      "target": "sg.chem.ol.states_of_matter",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.kinetic_particle_theory",
+      "target": "sg.chem.ol.diffusion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.kinetic_particle_theory",
+      "target": "sg.chem.ol.purity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.purity",
+      "target": "sg.chem.ol.separation_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.purity",
+      "target": "sg.chem.ol.elements_compounds_mixtures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.elements_compounds_mixtures",
+      "target": "sg.chem.ol.atomic_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.atomic_structure",
+      "target": "sg.chem.ol.isotopes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.atomic_structure",
+      "target": "sg.chem.ol.ionic_bonding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.atomic_structure",
+      "target": "sg.chem.ol.covalent_bonding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.atomic_structure",
+      "target": "sg.chem.ol.metallic_bonding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.ionic_bonding",
+      "target": "sg.chem.ol.writing_formulae",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.covalent_bonding",
+      "target": "sg.chem.ol.writing_formulae",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.writing_formulae",
+      "target": "sg.chem.ol.balancing_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.balancing_equations",
+      "target": "sg.chem.ol.mole_concept",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.measurement",
+      "target": "sg.chem.ol.separation_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.measurement",
+      "target": "sg.chem.ol.experimental_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.mole_concept",
+      "target": "sg.chem.ol.acids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.ionic_bonding",
+      "target": "sg.chem.ol.acids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.acids",
+      "target": "sg.chem.ol.bases_alkalis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.acids",
+      "target": "sg.chem.ol.ph_indicators",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.bases_alkalis",
+      "target": "sg.chem.ol.ph_indicators",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.bases_alkalis",
+      "target": "sg.chem.ol.salts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.acids",
+      "target": "sg.chem.ol.salts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.balancing_equations",
+      "target": "sg.chem.ol.oxidation_reduction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.oxidation_reduction",
+      "target": "sg.chem.ol.electrolysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.covalent_bonding",
+      "target": "sg.chem.ol.energy_changes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.mole_concept",
+      "target": "sg.chem.ol.rate_of_reaction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.energy_changes",
+      "target": "sg.chem.ol.rate_of_reaction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.rate_of_reaction",
+      "target": "sg.chem.ol.catalysts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.atomic_structure",
+      "target": "sg.chem.ol.periodic_table",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.periodic_table",
+      "target": "sg.chem.ol.group1",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.periodic_table",
+      "target": "sg.chem.ol.group17",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.periodic_table",
+      "target": "sg.chem.ol.noble_gases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.periodic_table",
+      "target": "sg.chem.ol.transition_elements",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.periodic_table",
+      "target": "sg.chem.ol.reactivity_series",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.oxidation_reduction",
+      "target": "sg.chem.ol.reactivity_series",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.reactivity_series",
+      "target": "sg.chem.ol.extraction_of_metals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.extraction_of_metals",
+      "target": "sg.chem.ol.iron_steel",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.reactivity_series",
+      "target": "sg.chem.ol.rusting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.metallic_bonding",
+      "target": "sg.chem.ol.alloys",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.iron_steel",
+      "target": "sg.chem.ol.alloys",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.elements_compounds_mixtures",
+      "target": "sg.chem.ol.composition_of_air",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.energy_changes",
+      "target": "sg.chem.ol.air_pollution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.composition_of_air",
+      "target": "sg.chem.ol.air_pollution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.air_pollution",
+      "target": "sg.chem.ol.carbon_cycle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.acids",
+      "target": "sg.chem.ol.water",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.separation_techniques",
+      "target": "sg.chem.ol.water",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.composition_of_air",
+      "target": "sg.chem.ol.fuels",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.covalent_bonding",
+      "target": "sg.chem.ol.alkanes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.fuels",
+      "target": "sg.chem.ol.alkanes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.alkanes",
+      "target": "sg.chem.ol.alkenes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.alkenes",
+      "target": "sg.chem.ol.alcohols",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.alcohols",
+      "target": "sg.chem.ol.carboxylic_acids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.carboxylic_acids",
+      "target": "sg.chem.ol.esters",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.alkenes",
+      "target": "sg.chem.ol.polymers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.salts",
+      "target": "sg.chem.ol.qualitative_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.separation_techniques",
+      "target": "sg.chem.ol.qualitative_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.measurement",
+      "target": "sg.chem.ol.qualitative_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.atomic_structure",
+      "target": "sg.chem.jc.atomic_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.atomic_structure",
+      "target": "sg.chem.jc.ionisation_energy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.ionic_bonding",
+      "target": "sg.chem.jc.ionic_bonding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.atomic_structure",
+      "target": "sg.chem.jc.ionic_bonding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.covalent_bonding",
+      "target": "sg.chem.jc.covalent_bonding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.atomic_structure",
+      "target": "sg.chem.jc.covalent_bonding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.covalent_bonding",
+      "target": "sg.chem.jc.hybridisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.covalent_bonding",
+      "target": "sg.chem.jc.intermolecular_forces",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.metallic_bonding",
+      "target": "sg.chem.jc.metallic_bonding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.ionic_bonding",
+      "target": "sg.chem.jc.metallic_bonding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.mole_concept",
+      "target": "sg.chem.jc.gaseous_state",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.intermolecular_forces",
+      "target": "sg.chem.jc.gaseous_state",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.mole_concept",
+      "target": "sg.chem.jc.mole_concept",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.energy_changes",
+      "target": "sg.chem.jc.enthalpy_changes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.mole_concept",
+      "target": "sg.chem.jc.enthalpy_changes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.enthalpy_changes",
+      "target": "sg.chem.jc.born_haber",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.ionic_bonding",
+      "target": "sg.chem.jc.born_haber",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.enthalpy_changes",
+      "target": "sg.chem.jc.entropy_gibbs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.rate_of_reaction",
+      "target": "sg.chem.jc.rate_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.rate_equations",
+      "target": "sg.chem.jc.arrhenius",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.entropy_gibbs",
+      "target": "sg.chem.jc.chemical_equilibria",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.rate_equations",
+      "target": "sg.chem.jc.chemical_equilibria",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.chemical_equilibria",
+      "target": "sg.chem.jc.acid_base_equilibria",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.acids",
+      "target": "sg.chem.jc.acid_base_equilibria",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.acid_base_equilibria",
+      "target": "sg.chem.jc.buffer_solutions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.chemical_equilibria",
+      "target": "sg.chem.jc.solubility_equilibria",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.oxidation_reduction",
+      "target": "sg.chem.jc.redox_reactions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.redox_reactions",
+      "target": "sg.chem.jc.electrode_potentials",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.electrode_potentials",
+      "target": "sg.chem.jc.electrochemical_cells",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.electrolysis",
+      "target": "sg.chem.jc.electrochemical_cells",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.entropy_gibbs",
+      "target": "sg.chem.jc.electrochemical_cells",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.atomic_structure",
+      "target": "sg.chem.jc.periodicity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.ionisation_energy",
+      "target": "sg.chem.jc.periodicity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.periodicity",
+      "target": "sg.chem.jc.period3_oxides",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.periodicity",
+      "target": "sg.chem.jc.group2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.periodicity",
+      "target": "sg.chem.jc.group17",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.group2",
+      "target": "sg.chem.jc.transition_metals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.transition_metals",
+      "target": "sg.chem.jc.complex_ions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.covalent_bonding",
+      "target": "sg.chem.jc.complex_ions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.complex_ions",
+      "target": "sg.chem.jc.colour_of_complexes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.transition_metals",
+      "target": "sg.chem.jc.tm_reactions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.redox_reactions",
+      "target": "sg.chem.jc.tm_reactions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.alkanes",
+      "target": "sg.chem.jc.intro_organic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.alkenes",
+      "target": "sg.chem.jc.intro_organic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.intro_organic",
+      "target": "sg.chem.jc.isomerism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.intro_organic",
+      "target": "sg.chem.jc.reaction_mechanisms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.intro_organic",
+      "target": "sg.chem.jc.alkanes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.reaction_mechanisms",
+      "target": "sg.chem.jc.alkanes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.intro_organic",
+      "target": "sg.chem.jc.alkenes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.reaction_mechanisms",
+      "target": "sg.chem.jc.alkenes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.hybridisation",
+      "target": "sg.chem.jc.arenes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.alkenes",
+      "target": "sg.chem.jc.arenes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.reaction_mechanisms",
+      "target": "sg.chem.jc.arenes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.alkanes",
+      "target": "sg.chem.jc.halogenoalkanes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.group17",
+      "target": "sg.chem.jc.halogenoalkanes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.reaction_mechanisms",
+      "target": "sg.chem.jc.halogenoalkanes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.halogenoalkanes",
+      "target": "sg.chem.jc.alcohols",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.alcohols",
+      "target": "sg.chem.jc.alcohols",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.arenes",
+      "target": "sg.chem.jc.phenols",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.alcohols",
+      "target": "sg.chem.jc.phenols",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.alcohols",
+      "target": "sg.chem.jc.aldehydes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.alcohols",
+      "target": "sg.chem.jc.ketones",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.aldehydes",
+      "target": "sg.chem.jc.carboxylic_acids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.carboxylic_acids",
+      "target": "sg.chem.jc.carboxylic_acids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.carboxylic_acids",
+      "target": "sg.chem.jc.acyl_chlorides",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.carboxylic_acids",
+      "target": "sg.chem.jc.esters",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.acyl_chlorides",
+      "target": "sg.chem.jc.esters",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.halogenoalkanes",
+      "target": "sg.chem.jc.nitriles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.nitriles",
+      "target": "sg.chem.jc.amines",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.acyl_chlorides",
+      "target": "sg.chem.jc.amides",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.amines",
+      "target": "sg.chem.jc.amides",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.amines",
+      "target": "sg.chem.jc.amino_acids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.carboxylic_acids",
+      "target": "sg.chem.jc.amino_acids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.amino_acids",
+      "target": "sg.chem.jc.proteins",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.alkenes",
+      "target": "sg.chem.jc.addition_polymers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.ol.polymers",
+      "target": "sg.chem.jc.addition_polymers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.esters",
+      "target": "sg.chem.jc.condensation_polymers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.amides",
+      "target": "sg.chem.jc.condensation_polymers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.addition_polymers",
+      "target": "sg.chem.jc.condensation_polymers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.alcohols",
+      "target": "sg.chem.jc.organic_synthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.carboxylic_acids",
+      "target": "sg.chem.jc.organic_synthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.halogenoalkanes",
+      "target": "sg.chem.jc.organic_synthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.chem.jc.nitriles",
+      "target": "sg.chem.jc.organic_synthesis",
+      "relation": "prerequisite_for"
+    }
   ]
 }

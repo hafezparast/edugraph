@@ -1,230 +1,1478 @@
 {
   "metadata": {
     "domain": "science",
-    "curriculum": "Singapore Primary Science (P3-P6)",
+    "curriculum": "Singapore Lower Secondary Science (Sec 1-2)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
-    "description": "Singapore Primary Science curriculum from P3 to P6, with prerequisite ordering",
+    "version": "0.2.0",
+    "description": "Singapore Lower Secondary Science curriculum (Sec 1-2) covering Physics, Chemistry and Biology strands before specialisation, with prerequisite ordering",
     "sources": [
-      "MOE Singapore Primary Science Syllabus"
+      "MOE Singapore Lower Secondary Science Syllabus"
     ],
     "last_updated": "2026-03-27"
   },
   "books": [
-    { "id": "sg.sci.p3", "name": "Primary 3 Science", "color": "#86efac", "order": 1 },
-    { "id": "sg.sci.p4", "name": "Primary 4 Science", "color": "#4ade80", "order": 2 },
-    { "id": "sg.sci.p5", "name": "Primary 5 Science", "color": "#22c55e", "order": 3 },
-    { "id": "sg.sci.p6", "name": "Primary 6 Science", "color": "#166534", "order": 4 }
+    {
+      "id": "sg.sci.ls.physics",
+      "name": "Lower Sec Physics",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "sg.sci.ls.chemistry",
+      "name": "Lower Sec Chemistry",
+      "color": "#f59e0b",
+      "order": 2
+    },
+    {
+      "id": "sg.sci.ls.biology",
+      "name": "Lower Sec Biology",
+      "color": "#22c55e",
+      "order": 3
+    }
   ],
   "nodes": [
     {
-      "id": "sg.sci.p3.diversity_living",
-      "label": "Diversity of Living Things",
+      "id": "sg.sci.ls.physical_quantities",
+      "label": "Physical Quantities & SI Units",
       "type": "concept",
-      "description": "Classifying living things; similarities and differences among organisms",
-      "grade_range": ["P3"],
-      "tags": ["subtopic"],
-      "book": "sg.sci.p3",
-      "bookName": "Primary 3 Science",
-      "bookColor": "#86efac",
-      "bookOrder": 1
+      "description": "Base and derived physical quantities; SI units and prefixes; importance of standardised measurement",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "8f830b500400617a",
+      "comprehended": false
     },
     {
-      "id": "sg.sci.p3.diversity_materials",
-      "label": "Diversity of Materials",
+      "id": "sg.sci.ls.measurement_length",
+      "label": "Measurement of Length",
       "type": "concept",
-      "description": "Properties of materials; classifying materials",
-      "grade_range": ["P3"],
-      "tags": ["subtopic"],
-      "book": "sg.sci.p3",
-      "bookName": "Primary 3 Science",
-      "bookColor": "#86efac",
-      "bookOrder": 1
+      "description": "Measuring length with rulers, vernier calipers and micrometers; choosing appropriate instruments; reading scales accurately",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "d1274e2e89a9d38c",
+      "comprehended": false
     },
     {
-      "id": "sg.sci.p4.life_cycles",
-      "label": "Life Cycles",
+      "id": "sg.sci.ls.measurement_mass_volume",
+      "label": "Measurement of Mass & Volume",
       "type": "concept",
-      "description": "Life cycles of plants and animals; stages of growth",
-      "grade_range": ["P4"],
-      "tags": ["subtopic"],
-      "book": "sg.sci.p4",
-      "bookName": "Primary 4 Science",
-      "bookColor": "#4ade80",
-      "bookOrder": 2
+      "description": "Measuring mass with balances; measuring volume of regular and irregular objects; displacement method",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "0265c18c5b38b808",
+      "comprehended": false
     },
     {
-      "id": "sg.sci.p4.magnets",
-      "label": "Magnets",
+      "id": "sg.sci.ls.measurement_time",
+      "label": "Measurement of Time",
       "type": "concept",
-      "description": "Properties of magnets; magnetic and non-magnetic materials",
-      "grade_range": ["P4"],
-      "tags": ["subtopic"],
-      "book": "sg.sci.p4",
-      "bookName": "Primary 4 Science",
-      "bookColor": "#4ade80",
-      "bookOrder": 2
+      "description": "Measuring time intervals with stopwatches and pendulums; period and frequency",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "91b96c5fe10ec48b",
+      "comprehended": false
     },
     {
-      "id": "sg.sci.p4.plant_system",
-      "label": "Plant System",
+      "id": "sg.sci.ls.density",
+      "label": "Density",
       "type": "concept",
-      "description": "Parts of a plant and their functions; photosynthesis basics",
-      "grade_range": ["P4"],
-      "tags": ["subtopic"],
-      "book": "sg.sci.p4",
-      "bookName": "Primary 4 Science",
-      "bookColor": "#4ade80",
-      "bookOrder": 2
+      "description": "Concept of density as mass per unit volume; calculating density; floating and sinking in terms of density",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "8546893a073c440e",
+      "comprehended": false
     },
     {
-      "id": "sg.sci.p4.digestive_system",
+      "id": "sg.sci.ls.states_of_matter",
+      "label": "Three States of Matter",
+      "type": "concept",
+      "description": "Solids, liquids and gases; observable properties and particle arrangement in each state",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "ae0a8e6659854d6a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.kinetic_particle_model",
+      "label": "Kinetic Particle Model",
+      "type": "concept",
+      "description": "Particles in constant random motion; explaining properties of solids, liquids and gases using the kinetic model",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "78c807e9e2a4bd20",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.changes_of_state",
+      "label": "Changes of State",
+      "type": "concept",
+      "description": "Melting, boiling, evaporation, condensation, freezing; heating and cooling curves; latent heat concept",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "946b94ac47045aa3",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.diffusion",
+      "label": "Diffusion",
+      "type": "concept",
+      "description": "Diffusion in gases and liquids; explaining diffusion using the kinetic particle model; factors affecting rate of diffusion",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "5606796c01371ea1",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.energy_forms",
+      "label": "Forms & Sources of Energy",
+      "type": "concept",
+      "description": "Kinetic, potential, chemical, electrical, thermal, light and sound energy; renewable and non-renewable energy sources",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "9faea2cf14ada6a8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.energy_conversion",
+      "label": "Energy Conversion & Conservation",
+      "type": "concept",
+      "description": "Principle of conservation of energy; energy conversion in everyday devices; efficiency of energy conversion",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "9a9172daf968ed26",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.heat_temperature",
+      "label": "Heat & Temperature",
+      "type": "concept",
+      "description": "Difference between heat and temperature; measuring temperature; heat as energy transfer from hot to cold",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "357f541439748e90",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.heat_transfer_conduction",
+      "label": "Heat Transfer — Conduction",
+      "type": "concept",
+      "description": "Conduction through solids; conductors and insulators; molecular explanation of conduction",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "8566f36650a88bc6",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.heat_transfer_convection",
+      "label": "Heat Transfer — Convection",
+      "type": "concept",
+      "description": "Convection in liquids and gases; convection currents; everyday applications of convection",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "5ddfd042a53c82be",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.heat_transfer_radiation",
+      "label": "Heat Transfer — Radiation",
+      "type": "concept",
+      "description": "Infrared radiation; emission and absorption; effects of colour and surface texture; applications such as thermos flask",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "e79e0e1a291d0b66",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.light_reflection",
+      "label": "Light — Reflection",
+      "type": "concept",
+      "description": "Rectilinear propagation of light; laws of reflection; plane mirrors; formation of images in plane mirrors",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "a1d00d1a25acc2a0",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.light_refraction",
+      "label": "Light — Refraction",
+      "type": "concept",
+      "description": "Refraction of light passing between media of different optical density; explaining everyday phenomena such as apparent depth",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "24e8ef18b102bf80",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.light_dispersion",
+      "label": "Light — Dispersion & Colour",
+      "type": "concept",
+      "description": "White light and the visible spectrum; dispersion by a prism; primary and secondary colours of light; filters",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.physics",
+      "bookName": "Lower Sec Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "74f7b3c7cefb8503",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.elements_compounds_mixtures",
+      "label": "Elements, Compounds & Mixtures",
+      "type": "concept",
+      "description": "Distinguishing elements, compounds and mixtures; pure substances vs impure substances; differences in properties",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "93ba897ee5ab16a7",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.atoms_molecules",
+      "label": "Atoms & Molecules",
+      "type": "concept",
+      "description": "Atoms as the basic building blocks of matter; molecules; simple atomic structure — protons, neutrons, electrons",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "79e0ed9c2b836342",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.atomic_structure",
+      "label": "Atomic Structure & Electron Arrangement",
+      "type": "concept",
+      "description": "Proton number and nucleon number; isotopes; electron shell configuration for the first 20 elements",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "43b3b8f1166897e2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.periodic_table",
+      "label": "The Periodic Table",
+      "type": "concept",
+      "description": "Organisation of elements by proton number; groups and periods; metals and non-metals; relationship between electron arrangement and group number",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "fc57634499df5a13",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.chemical_formulae",
+      "label": "Chemical Formulae & Naming",
+      "type": "concept",
+      "description": "Writing chemical formulae for common compounds; naming simple compounds; valency and ion charges",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "3d9c13009e4cb021",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.separation_filtration_evaporation",
+      "label": "Separation — Filtration & Evaporation",
+      "type": "concept",
+      "description": "Separating insoluble solids from liquids by filtration; recovering dissolved solids by evaporation to dryness",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "53ebc18e1381bd61",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.separation_distillation",
+      "label": "Separation — Distillation",
+      "type": "concept",
+      "description": "Simple distillation to obtain pure solvent; fractional distillation to separate miscible liquids with different boiling points",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "bd4f476ad3159f9c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.separation_chromatography",
+      "label": "Separation — Chromatography",
+      "type": "concept",
+      "description": "Paper chromatography to separate mixtures of dyes; interpreting chromatograms; Rf values",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "57f05ede20ce3abe",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.separation_magnetic_sublimation",
+      "label": "Separation — Other Methods",
+      "type": "concept",
+      "description": "Magnetic separation for magnetic materials; sublimation; use of separating funnel for immiscible liquids",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "3b082b4c3b913d69",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.solutions_solubility",
+      "label": "Solutions & Solubility",
+      "type": "concept",
+      "description": "Solute, solvent and solution; saturated solutions; factors affecting solubility; solubility curves",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "69e1d3363db1dbdf",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.acids_alkalis_indicators",
+      "label": "Acids, Alkalis & Indicators",
+      "type": "concept",
+      "description": "Properties of acids and alkalis; using indicators and universal indicator to determine pH; the pH scale",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "3ea133ccad2c923d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.neutralisation",
+      "label": "Neutralisation",
+      "type": "concept",
+      "description": "Reaction between acids and alkalis; formation of salt and water; everyday applications of neutralisation",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "b0f8a46c4cb07e0d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.acids_reactions",
+      "label": "Reactions of Acids",
+      "type": "concept",
+      "description": "Reactions of acids with metals, metal oxides, metal hydroxides and metal carbonates; word equations for these reactions",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "b7ca58b2cd305695",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.chemical_changes",
+      "label": "Chemical Changes vs Physical Changes",
+      "type": "concept",
+      "description": "Distinguishing chemical changes from physical changes; evidence of chemical reactions; reversible and irreversible changes",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "3bf2b8f4907331a8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.word_equations",
+      "label": "Word Equations",
+      "type": "concept",
+      "description": "Representing chemical reactions using word equations; identifying reactants and products",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "e4537322eb285640",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.chemical_equations",
+      "label": "Chemical Equations & Balancing",
+      "type": "concept",
+      "description": "Writing balanced chemical equations using chemical formulae; conservation of mass in chemical reactions",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "ebc4e6edbef4589c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.oxidation_combustion",
+      "label": "Oxidation & Combustion",
+      "type": "concept",
+      "description": "Oxidation as gain of oxygen; combustion of fuels; complete and incomplete combustion; fire triangle",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "1190315ccfe080b4",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.rusting",
+      "label": "Rusting & Corrosion",
+      "type": "concept",
+      "description": "Conditions for rusting of iron; methods of rust prevention — painting, oiling, galvanising; everyday relevance",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.chemistry",
+      "bookName": "Lower Sec Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "54955cbb451f05e0",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.cells",
+      "label": "Cell Structure",
+      "type": "concept",
+      "description": "Animal and plant cell structures; functions of cell membrane, nucleus, cytoplasm, cell wall, chloroplast and vacuole; use of microscopes",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "c889a3d9d1ab13e6",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.cell_organisation",
+      "label": "Cell Organisation",
+      "type": "concept",
+      "description": "Levels of organisation — cells, tissues, organs, organ systems, organisms; specialised cells and their functions",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "70f5211535a2082d",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.movement_of_substances",
+      "label": "Movement of Substances",
+      "type": "concept",
+      "description": "Diffusion and osmosis across cell membranes; importance of transport of substances in living organisms",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "ca328e851d4a9bca",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.classification_living_things",
+      "label": "Classification of Living Things",
+      "type": "concept",
+      "description": "Need for classification; the five kingdoms; classifying organisms based on observable characteristics",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "07c3dfbfff40a686",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.classification_plants",
+      "label": "Classification of Plants",
+      "type": "concept",
+      "description": "Flowering and non-flowering plants; monocotyledons and dicotyledons; ferns, mosses and conifers",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "ef4c2d34874c7da9",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.classification_animals",
+      "label": "Classification of Animals",
+      "type": "concept",
+      "description": "Vertebrates and invertebrates; classifying vertebrates into fish, amphibians, reptiles, birds and mammals; key distinguishing features",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "d5e8bbf503358c29",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.nutrients",
+      "label": "Nutrients",
+      "type": "concept",
+      "description": "Classes of nutrients — carbohydrates, fats, proteins, vitamins, minerals, water and dietary fibre; their functions; food tests",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "0c1be0cdfb4d6855",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.digestive_system",
       "label": "Human Digestive System",
       "type": "concept",
-      "description": "Organs of the digestive system; digestion process",
-      "grade_range": ["P4"],
-      "tags": ["subtopic"],
-      "book": "sg.sci.p4",
-      "bookName": "Primary 4 Science",
-      "bookColor": "#4ade80",
-      "bookOrder": 2
-    },
-    {
-      "id": "sg.sci.p5.matter_water",
-      "label": "Matter & Water Cycle",
-      "type": "concept",
-      "description": "States of matter; water cycle; evaporation and condensation",
-      "grade_range": ["P5"],
-      "tags": ["subtopic"],
-      "book": "sg.sci.p5",
-      "bookName": "Primary 5 Science",
+      "description": "Organs of the digestive system; physical and chemical digestion; role of enzymes; absorption of digested food in the small intestine",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "9a6da5dec36b7589",
+      "comprehended": false
     },
     {
-      "id": "sg.sci.p5.light",
-      "label": "Light",
+      "id": "sg.sci.ls.balanced_diet",
+      "label": "Balanced Diet & Health",
       "type": "concept",
-      "description": "Light sources; reflection; shadows; how we see",
-      "grade_range": ["P5"],
-      "tags": ["subtopic"],
-      "book": "sg.sci.p5",
-      "bookName": "Primary 5 Science",
+      "description": "Importance of a balanced diet; malnutrition and deficiency diseases; healthy eating guidelines",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "a97fc80e1a325a08",
+      "comprehended": false
     },
     {
-      "id": "sg.sci.p5.heat",
-      "label": "Heat",
+      "id": "sg.sci.ls.respiratory_system",
+      "label": "Human Respiratory System",
       "type": "concept",
-      "description": "Heat and temperature; conduction, convection, radiation",
-      "grade_range": ["P5"],
-      "tags": ["subtopic"],
-      "book": "sg.sci.p5",
-      "bookName": "Primary 5 Science",
+      "description": "Structure and function of the respiratory system; breathing mechanism; gas exchange in the alveoli; composition of inhaled and exhaled air",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "35228be312c1bc0f",
+      "comprehended": false
     },
     {
-      "id": "sg.sci.p5.electricity",
-      "label": "Electricity",
+      "id": "sg.sci.ls.circulatory_system",
+      "label": "Human Circulatory System",
       "type": "concept",
-      "description": "Simple circuits; conductors and insulators; open and closed circuits",
-      "grade_range": ["P5"],
-      "tags": ["subtopic"],
-      "book": "sg.sci.p5",
-      "bookName": "Primary 5 Science",
+      "description": "Heart structure and function; arteries, veins and capillaries; double circulation; composition and functions of blood",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "bfbe57d1fd96eede",
+      "comprehended": false
     },
     {
-      "id": "sg.sci.p5.plant_transport",
-      "label": "Plant Transport System",
+      "id": "sg.sci.ls.blood_components",
+      "label": "Blood & Its Components",
       "type": "concept",
-      "description": "Transport of water and minerals in plants; transpiration",
-      "grade_range": ["P5"],
-      "tags": ["subtopic"],
-      "book": "sg.sci.p5",
-      "bookName": "Primary 5 Science",
+      "description": "Red blood cells, white blood cells, platelets and plasma; their roles in transport, defence and clotting",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
       "bookColor": "#22c55e",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "75b8bd784fb9e159",
+      "comprehended": false
     },
     {
-      "id": "sg.sci.p6.reproduction",
-      "label": "Reproduction in Plants & Humans",
+      "id": "sg.sci.ls.excretory_system",
+      "label": "Excretory System",
       "type": "concept",
-      "description": "Pollination; fertilisation; reproductive system in humans",
-      "grade_range": ["P6"],
-      "tags": ["subtopic"],
-      "book": "sg.sci.p6",
-      "bookName": "Primary 6 Science",
-      "bookColor": "#166534",
-      "bookOrder": 4
+      "description": "Excretion and its importance; structure and function of the kidneys; formation of urine; role of skin in excretion",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "76d2582eea2ff0e9",
+      "comprehended": false
     },
     {
-      "id": "sg.sci.p6.respiratory_circulatory",
-      "label": "Respiratory & Circulatory System",
+      "id": "sg.sci.ls.human_reproduction",
+      "label": "Human Reproductive System",
       "type": "concept",
-      "description": "Breathing; gas exchange; heart and blood circulation",
-      "grade_range": ["P6"],
-      "tags": ["subtopic"],
-      "book": "sg.sci.p6",
-      "bookName": "Primary 6 Science",
-      "bookColor": "#166534",
-      "bookOrder": 4
+      "description": "Male and female reproductive organs; puberty and secondary sexual characteristics; menstrual cycle; fertilisation and implantation",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "be18448e71f96891",
+      "comprehended": false
     },
     {
-      "id": "sg.sci.p6.food_chains",
+      "id": "sg.sci.ls.pregnancy_birth",
+      "label": "Pregnancy & Birth",
+      "type": "concept",
+      "description": "Development of the foetus; role of the placenta and umbilical cord; stages of birth; care during pregnancy",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "3014a9b126ca7249",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.plant_parts",
+      "label": "Parts of a Flowering Plant",
+      "type": "concept",
+      "description": "Structure and function of roots, stems, leaves and flowers; adaptations of plant organs",
+      "grade_range": [
+        "S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "444b21ab976204c0",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.photosynthesis",
+      "label": "Photosynthesis",
+      "type": "concept",
+      "description": "Word equation for photosynthesis; conditions needed — light, carbon dioxide, water, chlorophyll; testing leaves for starch",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "e6b038a36e18db2a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.plant_transport",
+      "label": "Transport in Plants",
+      "type": "concept",
+      "description": "Transport of water and mineral salts through xylem; transport of food through phloem; transpiration and its factors",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "a7672a7a317e1fa2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.plant_reproduction",
+      "label": "Plant Reproduction",
+      "type": "concept",
+      "description": "Structure of a flower; pollination — self and cross; fertilisation; seed and fruit formation; seed dispersal methods",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "11d06a68efe1098b",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.seed_germination",
+      "label": "Seed Germination",
+      "type": "concept",
+      "description": "Conditions necessary for germination — water, oxygen, warmth; structure of a seed; stages of germination",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "37a8b63e64e07d42",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.respiration",
+      "label": "Cellular Respiration",
+      "type": "concept",
+      "description": "Aerobic respiration word equation; comparing respiration with photosynthesis; respiration as energy release in all living cells",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "c13da16a25f2d602",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.ecosystem",
+      "label": "Ecosystems",
+      "type": "concept",
+      "description": "Biotic and abiotic components; habitat, population and community; interdependence of organisms in an ecosystem",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "553d6cb8d2a5b19e",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.food_chains_webs",
       "label": "Food Chains & Food Webs",
       "type": "concept",
-      "description": "Producers, consumers, decomposers; energy flow; adaptations",
-      "grade_range": ["P6"],
-      "tags": ["subtopic"],
-      "book": "sg.sci.p6",
-      "bookName": "Primary 6 Science",
-      "bookColor": "#166534",
-      "bookOrder": 4
+      "description": "Producers, consumers and decomposers; constructing food chains and food webs; trophic levels; energy flow",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "cc865f6f2aefb4e5",
+      "comprehended": false
     },
     {
-      "id": "sg.sci.p6.forces",
-      "label": "Forces",
+      "id": "sg.sci.ls.adaptations",
+      "label": "Adaptations",
       "type": "concept",
-      "description": "Types of forces; effects of forces; friction; gravity",
-      "grade_range": ["P6"],
-      "tags": ["subtopic"],
-      "book": "sg.sci.p6",
-      "bookName": "Primary 6 Science",
-      "bookColor": "#166534",
-      "bookOrder": 4
+      "description": "Structural, behavioural and physiological adaptations; how adaptations help organisms survive in their habitats",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "35529794b6195825",
+      "comprehended": false
     },
     {
-      "id": "sg.sci.p6.electrical_systems",
-      "label": "Electrical Systems",
+      "id": "sg.sci.ls.population_changes",
+      "label": "Population Changes & Interactions",
       "type": "concept",
-      "description": "Series and parallel circuits; effects of electricity; electrical safety",
-      "grade_range": ["P6"],
-      "tags": ["subtopic"],
-      "book": "sg.sci.p6",
-      "bookName": "Primary 6 Science",
-      "bookColor": "#166534",
-      "bookOrder": 4
+      "description": "Predator-prey relationships; competition; effects of changes in population on an ecosystem; ecological balance",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "2c879fcef384e498",
+      "comprehended": false
+    },
+    {
+      "id": "sg.sci.ls.human_impact",
+      "label": "Human Impact on the Environment",
+      "type": "concept",
+      "description": "Deforestation, pollution, global warming and loss of biodiversity; conservation efforts; sustainable practices",
+      "grade_range": [
+        "S2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.sci.ls.biology",
+      "bookName": "Lower Sec Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "6a4cdd1d7d6e5ab9",
+      "comprehended": false
     }
   ],
   "edges": [
-    { "source": "sg.sci.p3.diversity_living", "target": "sg.sci.p4.life_cycles", "relation": "prerequisite_for" },
-    { "source": "sg.sci.p3.diversity_living", "target": "sg.sci.p4.plant_system", "relation": "prerequisite_for" },
-    { "source": "sg.sci.p3.diversity_living", "target": "sg.sci.p4.digestive_system", "relation": "prerequisite_for" },
-    { "source": "sg.sci.p3.diversity_materials", "target": "sg.sci.p4.magnets", "relation": "prerequisite_for" },
-    { "source": "sg.sci.p3.diversity_materials", "target": "sg.sci.p5.matter_water", "relation": "prerequisite_for" },
-    { "source": "sg.sci.p4.magnets", "target": "sg.sci.p5.electricity", "relation": "prerequisite_for" },
-    { "source": "sg.sci.p4.plant_system", "target": "sg.sci.p5.plant_transport", "relation": "prerequisite_for" },
-    { "source": "sg.sci.p5.matter_water", "target": "sg.sci.p5.heat", "relation": "prerequisite_for" },
-    { "source": "sg.sci.p5.matter_water", "target": "sg.sci.p5.light", "relation": "prerequisite_for" },
-    { "source": "sg.sci.p4.life_cycles", "target": "sg.sci.p6.reproduction", "relation": "prerequisite_for" },
-    { "source": "sg.sci.p5.plant_transport", "target": "sg.sci.p6.reproduction", "relation": "prerequisite_for" },
-    { "source": "sg.sci.p4.digestive_system", "target": "sg.sci.p6.respiratory_circulatory", "relation": "prerequisite_for" },
-    { "source": "sg.sci.p3.diversity_living", "target": "sg.sci.p6.food_chains", "relation": "prerequisite_for" },
-    { "source": "sg.sci.p5.heat", "target": "sg.sci.p6.forces", "relation": "prerequisite_for" },
-    { "source": "sg.sci.p5.electricity", "target": "sg.sci.p6.electrical_systems", "relation": "prerequisite_for" }
+    {
+      "source": "sg.sci.ls.physical_quantities",
+      "target": "sg.sci.ls.measurement_length",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.physical_quantities",
+      "target": "sg.sci.ls.measurement_mass_volume",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.physical_quantities",
+      "target": "sg.sci.ls.measurement_time",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.measurement_mass_volume",
+      "target": "sg.sci.ls.density",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.states_of_matter",
+      "target": "sg.sci.ls.kinetic_particle_model",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.kinetic_particle_model",
+      "target": "sg.sci.ls.changes_of_state",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.kinetic_particle_model",
+      "target": "sg.sci.ls.diffusion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.kinetic_particle_model",
+      "target": "sg.sci.ls.heat_temperature",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.changes_of_state",
+      "target": "sg.sci.ls.heat_temperature",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.energy_forms",
+      "target": "sg.sci.ls.energy_conversion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.energy_forms",
+      "target": "sg.sci.ls.heat_temperature",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.heat_temperature",
+      "target": "sg.sci.ls.heat_transfer_conduction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.heat_temperature",
+      "target": "sg.sci.ls.heat_transfer_convection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.heat_temperature",
+      "target": "sg.sci.ls.heat_transfer_radiation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.light_reflection",
+      "target": "sg.sci.ls.light_refraction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.light_refraction",
+      "target": "sg.sci.ls.light_dispersion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.elements_compounds_mixtures",
+      "target": "sg.sci.ls.atoms_molecules",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.elements_compounds_mixtures",
+      "target": "sg.sci.ls.solutions_solubility",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.elements_compounds_mixtures",
+      "target": "sg.sci.ls.separation_filtration_evaporation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.solutions_solubility",
+      "target": "sg.sci.ls.separation_distillation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.separation_filtration_evaporation",
+      "target": "sg.sci.ls.separation_distillation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.separation_filtration_evaporation",
+      "target": "sg.sci.ls.separation_chromatography",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.separation_filtration_evaporation",
+      "target": "sg.sci.ls.separation_magnetic_sublimation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.atoms_molecules",
+      "target": "sg.sci.ls.atomic_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.atomic_structure",
+      "target": "sg.sci.ls.periodic_table",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.atomic_structure",
+      "target": "sg.sci.ls.chemical_formulae",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.chemical_formulae",
+      "target": "sg.sci.ls.word_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.chemical_formulae",
+      "target": "sg.sci.ls.chemical_changes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.elements_compounds_mixtures",
+      "target": "sg.sci.ls.acids_alkalis_indicators",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.acids_alkalis_indicators",
+      "target": "sg.sci.ls.neutralisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.acids_alkalis_indicators",
+      "target": "sg.sci.ls.acids_reactions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.chemical_changes",
+      "target": "sg.sci.ls.word_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.word_equations",
+      "target": "sg.sci.ls.chemical_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.chemical_changes",
+      "target": "sg.sci.ls.oxidation_combustion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.oxidation_combustion",
+      "target": "sg.sci.ls.rusting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.cells",
+      "target": "sg.sci.ls.cell_organisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.cells",
+      "target": "sg.sci.ls.movement_of_substances",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.diffusion",
+      "target": "sg.sci.ls.movement_of_substances",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.classification_living_things",
+      "target": "sg.sci.ls.classification_plants",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.classification_living_things",
+      "target": "sg.sci.ls.classification_animals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.nutrients",
+      "target": "sg.sci.ls.digestive_system",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.nutrients",
+      "target": "sg.sci.ls.balanced_diet",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.cell_organisation",
+      "target": "sg.sci.ls.digestive_system",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.cell_organisation",
+      "target": "sg.sci.ls.respiratory_system",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.cell_organisation",
+      "target": "sg.sci.ls.circulatory_system",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.respiratory_system",
+      "target": "sg.sci.ls.circulatory_system",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.circulatory_system",
+      "target": "sg.sci.ls.blood_components",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.circulatory_system",
+      "target": "sg.sci.ls.excretory_system",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.cell_organisation",
+      "target": "sg.sci.ls.human_reproduction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.human_reproduction",
+      "target": "sg.sci.ls.pregnancy_birth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.plant_parts",
+      "target": "sg.sci.ls.photosynthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.plant_parts",
+      "target": "sg.sci.ls.plant_transport",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.plant_parts",
+      "target": "sg.sci.ls.plant_reproduction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.plant_reproduction",
+      "target": "sg.sci.ls.seed_germination",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.photosynthesis",
+      "target": "sg.sci.ls.respiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.digestive_system",
+      "target": "sg.sci.ls.respiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.classification_living_things",
+      "target": "sg.sci.ls.ecosystem",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.ecosystem",
+      "target": "sg.sci.ls.food_chains_webs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.photosynthesis",
+      "target": "sg.sci.ls.food_chains_webs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.ecosystem",
+      "target": "sg.sci.ls.adaptations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.food_chains_webs",
+      "target": "sg.sci.ls.population_changes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.adaptations",
+      "target": "sg.sci.ls.population_changes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.population_changes",
+      "target": "sg.sci.ls.human_impact",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.energy_conversion",
+      "target": "sg.sci.ls.respiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.sci.ls.density",
+      "target": "sg.sci.ls.states_of_matter",
+      "relation": "prerequisite_for"
+    }
   ]
 }

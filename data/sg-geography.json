@@ -1,125 +1,1180 @@
 {
   "metadata": {
     "domain": "geography",
-    "curriculum": "Singapore Geography (Secondary)",
+    "curriculum": "Singapore Geography (Secondary & JC)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
-    "description": "Singapore Secondary Geography curriculum covering Lower and Upper Secondary, with prerequisite ordering",
+    "version": "0.2.0",
+    "description": "Singapore Geography curriculum covering Lower Secondary, Upper Secondary (O-Level 2236), and JC H2 Geography (9751) with prerequisite ordering",
     "sources": [
-      "MOE Singapore Geography Syllabus"
+      "MOE Singapore Geography Syllabus",
+      "O-Level Geography Syllabus 2236",
+      "H2 Geography Syllabus 9751"
     ],
     "last_updated": "2026-03-27"
   },
   "books": [
-    { "id": "sg.geog.lower", "name": "Lower Secondary Geography", "color": "#22c55e", "order": 1 },
-    { "id": "sg.geog.upper", "name": "Upper Secondary Geography", "color": "#0d9488", "order": 2 }
+    {
+      "id": "sg.geog.lower",
+      "name": "Lower Secondary Geography",
+      "color": "#22c55e",
+      "order": 1
+    },
+    {
+      "id": "sg.geog.upper",
+      "name": "Upper Secondary Geography (O-Level 2236)",
+      "color": "#0d9488",
+      "order": 2
+    },
+    {
+      "id": "sg.geog.jc",
+      "name": "JC H2 Geography (9751)",
+      "color": "#7c3aed",
+      "order": 3
+    }
   ],
   "nodes": [
     {
-      "id": "sg.geog.lower.water",
-      "label": "Water Resources",
+      "id": "sg.geo.lower.water_cycle",
+      "label": "Water Cycle",
       "type": "concept",
-      "description": "Water cycle; water supply; water management in Singapore",
-      "grade_range": ["Sec 1-2"],
-      "tags": ["subtopic"],
+      "description": "The hydrological cycle; processes of evaporation, condensation, precipitation, infiltration, and runoff",
+      "grade_range": [
+        "Sec 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.geog.lower",
       "bookName": "Lower Secondary Geography",
       "bookColor": "#22c55e",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "ac57596012aae18d",
+      "comprehended": false
     },
     {
-      "id": "sg.geog.lower.tropical_rainforests",
+      "id": "sg.geo.lower.water_supply_management",
+      "label": "Water Supply & Management",
+      "type": "concept",
+      "description": "Water supply challenges; water management strategies; Singapore's Four National Taps",
+      "grade_range": [
+        "Sec 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.lower",
+      "bookName": "Lower Secondary Geography",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "511c9de5b5b429bc",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.lower.tropical_rainforests",
       "label": "Tropical Rainforests",
       "type": "concept",
-      "description": "Characteristics; biodiversity; deforestation; conservation",
-      "grade_range": ["Sec 1-2"],
-      "tags": ["subtopic"],
+      "description": "Characteristics of equatorial climate; structure and features of tropical rainforests; biodiversity",
+      "grade_range": [
+        "Sec 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.geog.lower",
       "bookName": "Lower Secondary Geography",
       "bookColor": "#22c55e",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "4dae333ae293ca68",
+      "comprehended": false
     },
     {
-      "id": "sg.geog.lower.housing",
+      "id": "sg.geo.lower.deforestation_conservation",
+      "label": "Deforestation & Conservation",
+      "type": "concept",
+      "description": "Causes and impacts of deforestation; conservation strategies; sustainable forestry practices",
+      "grade_range": [
+        "Sec 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.lower",
+      "bookName": "Lower Secondary Geography",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "454ff792053e788a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.lower.housing",
       "label": "Housing",
       "type": "concept",
-      "description": "Housing issues; urban planning; Singapore's housing policies",
-      "grade_range": ["Sec 1-2"],
-      "tags": ["subtopic"],
+      "description": "Housing issues in urban areas; Singapore's public housing policies; HDB planning",
+      "grade_range": [
+        "Sec 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.geog.lower",
       "bookName": "Lower Secondary Geography",
       "bookColor": "#22c55e",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "53637d39ee22740a",
+      "comprehended": false
     },
     {
-      "id": "sg.geog.lower.transport",
+      "id": "sg.geo.lower.transport",
       "label": "Transport",
       "type": "concept",
-      "description": "Transport systems; sustainable transport; congestion management",
-      "grade_range": ["Sec 1-2"],
-      "tags": ["subtopic"],
+      "description": "Transport systems and networks; sustainable transport; traffic congestion management in Singapore",
+      "grade_range": [
+        "Sec 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.geog.lower",
       "bookName": "Lower Secondary Geography",
       "bookColor": "#22c55e",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "2d9a7bd82bb3fa24",
+      "comprehended": false
     },
     {
-      "id": "sg.geog.upper.climate",
-      "label": "Weather & Climate",
+      "id": "sg.geo.lower.geographical_skills",
+      "label": "Geographical Skills & Fieldwork",
       "type": "concept",
-      "description": "Elements of weather; climate zones; climate change; greenhouse effect",
-      "grade_range": ["Sec 3-4"],
-      "tags": ["subtopic"],
-      "book": "sg.geog.upper",
-      "bookName": "Upper Secondary Geography",
-      "bookColor": "#0d9488",
-      "bookOrder": 2
+      "description": "Map reading; compass directions; scale; geographical enquiry; data collection and presentation methods",
+      "grade_range": [
+        "Sec 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.lower",
+      "bookName": "Lower Secondary Geography",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "084cc61450d9056b",
+      "comprehended": false
     },
     {
-      "id": "sg.geog.upper.tectonics",
-      "label": "Plate Tectonics",
+      "id": "sg.geo.lower.population",
+      "label": "Population & Settlement",
       "type": "concept",
-      "description": "Tectonic plates; earthquakes; volcanoes; living with tectonic hazards",
-      "grade_range": ["Sec 3-4"],
-      "tags": ["subtopic"],
-      "book": "sg.geog.upper",
-      "bookName": "Upper Secondary Geography",
-      "bookColor": "#0d9488",
-      "bookOrder": 2
+      "description": "Population distribution and density; population growth; urbanisation; settlement patterns",
+      "grade_range": [
+        "Sec 1-2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.lower",
+      "bookName": "Lower Secondary Geography",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "7f6ffc72606a4d2f",
+      "comprehended": false
     },
     {
-      "id": "sg.geog.upper.tourism",
-      "label": "Tourism",
+      "id": "sg.geo.upper.earths_structure",
+      "label": "Earth's Structure",
       "type": "concept",
-      "description": "Tourism industry; impacts; sustainable tourism; Singapore as a tourist destination",
-      "grade_range": ["Sec 3-4"],
-      "tags": ["subtopic"],
+      "description": "Internal structure of the Earth; crust, mantle, outer core, inner core; types of crust (oceanic and continental)",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.geog.upper",
-      "bookName": "Upper Secondary Geography",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "2bd19aeef3e7b2a8",
+      "comprehended": false
     },
     {
-      "id": "sg.geog.upper.food_resources",
-      "label": "Food Resources",
+      "id": "sg.geo.upper.plate_tectonics_theory",
+      "label": "Plate Tectonics Theory",
       "type": "concept",
-      "description": "Food production; food security; Singapore's food supply strategies",
-      "grade_range": ["Sec 3-4"],
-      "tags": ["subtopic"],
+      "description": "Theory of plate tectonics; evidence for continental drift; convection currents and plate movement mechanisms",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "book": "sg.geog.upper",
-      "bookName": "Upper Secondary Geography",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
       "bookColor": "#0d9488",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "dbf2ce1eb42886c4",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.plate_boundaries",
+      "label": "Plate Boundaries",
+      "type": "concept",
+      "description": "Divergent, convergent, and transform plate boundaries; landforms at each boundary type; subduction and collision zones",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "a931dd82b2aa7fff",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.volcanoes",
+      "label": "Volcanoes",
+      "type": "concept",
+      "description": "Types of volcanoes (shield, composite, cinder cone); volcanic eruptions; volcanic landforms; distribution of volcanoes",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "eb0dac88ce56979f",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.earthquakes",
+      "label": "Earthquakes",
+      "type": "concept",
+      "description": "Causes of earthquakes; seismic waves; focus and epicentre; measuring earthquakes (Richter and Mercalli scales); earthquake distribution",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "99ee7b841d969b89",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.tectonic_hazard_management",
+      "label": "Living with Tectonic Hazards",
+      "type": "concept",
+      "description": "Impacts of tectonic hazards on people and environment; prediction, prevention, and preparedness; risk management strategies",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "f9af7194d1485899",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.weather_elements",
+      "label": "Elements of Weather",
+      "type": "concept",
+      "description": "Temperature, rainfall, humidity, air pressure, wind; measuring and recording weather elements; weather instruments",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "408d9f1a743a75f0",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.weather_processes",
+      "label": "Weather Processes",
+      "type": "concept",
+      "description": "Atmospheric heating; land and sea breezes; convectional, relief, and frontal rainfall; formation of clouds and precipitation",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "9c8b1069b3c02c27",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.climate_zones",
+      "label": "Climate Zones & Types",
+      "type": "concept",
+      "description": "Factors affecting climate; equatorial, monsoon, tropical, arid, temperate, and polar climates; climate graphs",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "bc8f27b7df4cfd58",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.greenhouse_effect",
+      "label": "Greenhouse Effect & Global Warming",
+      "type": "concept",
+      "description": "Natural and enhanced greenhouse effect; causes and evidence of global warming; impacts on sea levels, weather patterns, and ecosystems",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "3ed7c26fdb2b5fd8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.climate_change_responses",
+      "label": "Responses to Climate Change",
+      "type": "concept",
+      "description": "Mitigation strategies (reducing emissions, carbon capture); adaptation strategies; international agreements (Kyoto, Paris); individual and national actions",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "441e79559ec8203a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.tourism_growth",
+      "label": "Growth of Tourism",
+      "type": "concept",
+      "description": "Factors contributing to tourism growth; types of tourism (mass, niche, ecotourism); global tourism trends and patterns",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "37f8f8a116f62730",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.tourism_impacts",
+      "label": "Impacts of Tourism",
+      "type": "concept",
+      "description": "Economic impacts (employment, revenue, leakage); social impacts (cultural exchange, overcrowding); environmental impacts (pollution, habitat destruction)",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "47426d96f472acad",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.sustainable_tourism",
+      "label": "Sustainable Tourism",
+      "type": "concept",
+      "description": "Principles of sustainable tourism; ecotourism; managing tourism sustainably; case studies of sustainable tourism practices",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "a42e9fac1720fee3",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.food_production",
+      "label": "Food Production",
+      "type": "concept",
+      "description": "Factors affecting food production; types of farming (subsistence, commercial); intensive and extensive farming; agricultural technology",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "ce8c55f8dbfca6ae",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.food_security",
+      "label": "Food Security & Shortage",
+      "type": "concept",
+      "description": "Causes of food shortage (natural disasters, conflict, population growth); food security challenges; global hunger and malnutrition",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "b04878aab838c2ab",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.food_strategies",
+      "label": "Strategies for Food Security",
+      "type": "concept",
+      "description": "Green Revolution; genetic modification; sustainable agriculture; Singapore's food supply strategies (import diversification, local farming, food technology)",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "8659386ca3ddbe40",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.health_diseases",
+      "label": "Health & Diseases",
+      "type": "concept",
+      "description": "Spread and distribution of infectious diseases; factors affecting health (physical, socio-economic); epidemics and pandemics",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "e5e247194977fa47",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.infectious_diseases",
+      "label": "Infectious Diseases",
+      "type": "concept",
+      "description": "Malaria, dengue, HIV/AIDS; vectors and transmission; geographic distribution of diseases; case studies",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "bc6e38aeb30d0c3e",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.disease_management",
+      "label": "Managing Diseases",
+      "type": "concept",
+      "description": "Prevention and control strategies; healthcare infrastructure; role of governments and international organisations (WHO); vaccination programmes",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "b37156d7290f9d18",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.coastal_processes",
+      "label": "Coastal Processes",
+      "type": "concept",
+      "description": "Waves (constructive and destructive); coastal erosion processes (hydraulic action, abrasion, attrition, solution); coastal transport and deposition",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "8f67fa96f3507be8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.coastal_landforms",
+      "label": "Coastal Landforms",
+      "type": "concept",
+      "description": "Erosional landforms (cliffs, wave-cut platforms, headlands, bays, caves, arches, stacks); depositional landforms (beaches, spits, bars, tombolos)",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "656b382e87f34901",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.coastal_management",
+      "label": "Coastal Management",
+      "type": "concept",
+      "description": "Coastal protection strategies (hard engineering: sea walls, groynes; soft engineering: beach nourishment, managed retreat); conflicts over coastal use",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "57a42857ec0cc8e4",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.development_indicators",
+      "label": "Development & Indicators",
+      "type": "concept",
+      "description": "Defining development; measuring development (GDP, GNI, HDI, literacy rate, life expectancy); developed vs developing countries",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "d8e588b13dc051ce",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.development_gap",
+      "label": "The Development Gap",
+      "type": "concept",
+      "description": "Causes of uneven development (physical, economic, social, political factors); consequences of the development gap; trade and globalisation",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "8c4089f4e2bff9bd",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.reducing_development_gap",
+      "label": "Reducing the Development Gap",
+      "type": "concept",
+      "description": "Strategies to reduce the gap (aid, trade, debt relief, fair trade, microfinance); role of TNCs; case studies of development strategies",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "e64633e1f56759db",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.upper.geographical_investigation",
+      "label": "Geographical Investigation",
+      "type": "concept",
+      "description": "Fieldwork methodology; hypothesis formulation; data collection (primary and secondary); data presentation and analysis; evaluation and conclusion",
+      "grade_range": [
+        "Sec 3-4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.upper",
+      "bookName": "Upper Secondary Geography (O-Level 2236)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2,
+      "external_id": "2c15cfca8cc2ff93",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.jc.tropical_climate",
+      "label": "Tropical Climate",
+      "type": "concept",
+      "description": "Characteristics of tropical climates; ITCZ and Hadley Cell; monsoon systems; El Nino and La Nina",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.jc",
+      "bookName": "JC H2 Geography (9751)",
+      "bookColor": "#7c3aed",
+      "bookOrder": 3,
+      "external_id": "a263e70a7d173689",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.jc.tropical_forests",
+      "label": "Tropical Forests",
+      "type": "concept",
+      "description": "Structure and functioning of tropical forest ecosystems; nutrient cycling; soils; human impacts on tropical forests",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.jc",
+      "bookName": "JC H2 Geography (9751)",
+      "bookColor": "#7c3aed",
+      "bookOrder": 3,
+      "external_id": "950178670ff17c90",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.jc.tropical_coasts",
+      "label": "Tropical Coasts",
+      "type": "concept",
+      "description": "Coral reefs; mangroves; coastal processes in tropical environments; sea level change and impacts",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.jc",
+      "bookName": "JC H2 Geography (9751)",
+      "bookColor": "#7c3aed",
+      "bookOrder": 3,
+      "external_id": "2b056535024b57a8",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.jc.tropical_hazards",
+      "label": "Tropical Hazards",
+      "type": "concept",
+      "description": "Tropical cyclones (formation, structure, impacts); flooding in tropical regions; drought; hazard management in the tropics",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.jc",
+      "bookName": "JC H2 Geography (9751)",
+      "bookColor": "#7c3aed",
+      "bookOrder": 3,
+      "external_id": "21c03a0c27b78e79",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.jc.development_geography",
+      "label": "Development Geography",
+      "type": "concept",
+      "description": "Theories of development (modernisation, dependency, world-systems); measuring development; patterns of global inequality",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.jc",
+      "bookName": "JC H2 Geography (9751)",
+      "bookColor": "#7c3aed",
+      "bookOrder": 3,
+      "external_id": "53aa43f32ef04d2a",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.jc.globalisation",
+      "label": "Globalisation",
+      "type": "concept",
+      "description": "Economic globalisation; TNCs and global production networks; impacts on developing countries; cultural globalisation",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.jc",
+      "bookName": "JC H2 Geography (9751)",
+      "bookColor": "#7c3aed",
+      "bookOrder": 3,
+      "external_id": "94854e3559ca9f4c",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.jc.urbanisation",
+      "label": "Urbanisation & Development",
+      "type": "concept",
+      "description": "Urbanisation trends in developing countries; urban challenges (housing, transport, services); urban planning and governance",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.jc",
+      "bookName": "JC H2 Geography (9751)",
+      "bookColor": "#7c3aed",
+      "bookOrder": 3,
+      "external_id": "a976329d71ae9bbf",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.jc.sustainable_development",
+      "label": "Sustainable Development",
+      "type": "concept",
+      "description": "Concept of sustainability; UN Sustainable Development Goals; balancing economic growth with environmental protection; sustainability strategies",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.jc",
+      "bookName": "JC H2 Geography (9751)",
+      "bookColor": "#7c3aed",
+      "bookOrder": 3,
+      "external_id": "5ebe7bf2775eb974",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.jc.climate_change_governance",
+      "label": "Climate Change & Governance",
+      "type": "concept",
+      "description": "Science of climate change at advanced level; international climate governance (UNFCCC, Paris Agreement); national climate policies; Singapore's climate strategy",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.jc",
+      "bookName": "JC H2 Geography (9751)",
+      "bookColor": "#7c3aed",
+      "bookOrder": 3,
+      "external_id": "d1ea2b2e04681de2",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.jc.food_resource_management",
+      "label": "Food Resource Management",
+      "type": "concept",
+      "description": "Global food systems; food production challenges in the tropics; food security in a changing climate; sustainable agriculture at scale",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.jc",
+      "bookName": "JC H2 Geography (9751)",
+      "bookColor": "#7c3aed",
+      "bookOrder": 3,
+      "external_id": "d15808b8b5002ef7",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.jc.water_resource_management",
+      "label": "Water Resource Management",
+      "type": "concept",
+      "description": "Global water scarcity; water conflicts; integrated water resource management; transboundary water issues",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.jc",
+      "bookName": "JC H2 Geography (9751)",
+      "bookColor": "#7c3aed",
+      "bookOrder": 3,
+      "external_id": "2a3ebff725b034e7",
+      "comprehended": false
+    },
+    {
+      "id": "sg.geo.jc.geographical_skills_investigation",
+      "label": "Geographical Skills & Investigation",
+      "type": "concept",
+      "description": "Advanced fieldwork methodology; statistical techniques; GIS and spatial analysis; independent geographical investigation",
+      "grade_range": [
+        "JC"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "book": "sg.geog.jc",
+      "bookName": "JC H2 Geography (9751)",
+      "bookColor": "#7c3aed",
+      "bookOrder": 3,
+      "external_id": "902de011b194e421",
+      "comprehended": false
     }
   ],
   "edges": [
-    { "source": "sg.geog.lower.water", "target": "sg.geog.upper.climate", "relation": "prerequisite_for" },
-    { "source": "sg.geog.lower.tropical_rainforests", "target": "sg.geog.upper.climate", "relation": "prerequisite_for" },
-    { "source": "sg.geog.lower.water", "target": "sg.geog.upper.tectonics", "relation": "prerequisite_for" },
-    { "source": "sg.geog.lower.housing", "target": "sg.geog.upper.tourism", "relation": "prerequisite_for" },
-    { "source": "sg.geog.lower.transport", "target": "sg.geog.upper.tourism", "relation": "prerequisite_for" },
-    { "source": "sg.geog.lower.tropical_rainforests", "target": "sg.geog.upper.food_resources", "relation": "prerequisite_for" },
-    { "source": "sg.geog.upper.climate", "target": "sg.geog.upper.food_resources", "relation": "prerequisite_for" },
-    { "source": "sg.geog.upper.tectonics", "target": "sg.geog.upper.tourism", "relation": "prerequisite_for" }
+    {
+      "source": "sg.geo.lower.water_cycle",
+      "target": "sg.geo.lower.water_supply_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.lower.tropical_rainforests",
+      "target": "sg.geo.lower.deforestation_conservation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.lower.geographical_skills",
+      "target": "sg.geo.upper.geographical_investigation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.lower.water_cycle",
+      "target": "sg.geo.upper.weather_elements",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.lower.water_cycle",
+      "target": "sg.geo.upper.weather_processes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.lower.tropical_rainforests",
+      "target": "sg.geo.upper.climate_zones",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.lower.housing",
+      "target": "sg.geo.upper.tourism_growth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.lower.transport",
+      "target": "sg.geo.upper.tourism_growth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.lower.population",
+      "target": "sg.geo.upper.development_indicators",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.lower.population",
+      "target": "sg.geo.upper.food_security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.lower.deforestation_conservation",
+      "target": "sg.geo.upper.food_production",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.lower.water_supply_management",
+      "target": "sg.geo.upper.food_strategies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.earths_structure",
+      "target": "sg.geo.upper.plate_tectonics_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.plate_tectonics_theory",
+      "target": "sg.geo.upper.plate_boundaries",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.plate_boundaries",
+      "target": "sg.geo.upper.volcanoes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.plate_boundaries",
+      "target": "sg.geo.upper.earthquakes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.volcanoes",
+      "target": "sg.geo.upper.tectonic_hazard_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.earthquakes",
+      "target": "sg.geo.upper.tectonic_hazard_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.weather_elements",
+      "target": "sg.geo.upper.weather_processes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.weather_processes",
+      "target": "sg.geo.upper.climate_zones",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.climate_zones",
+      "target": "sg.geo.upper.greenhouse_effect",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.greenhouse_effect",
+      "target": "sg.geo.upper.climate_change_responses",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.tourism_growth",
+      "target": "sg.geo.upper.tourism_impacts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.tourism_impacts",
+      "target": "sg.geo.upper.sustainable_tourism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.food_production",
+      "target": "sg.geo.upper.food_security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.food_security",
+      "target": "sg.geo.upper.food_strategies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.climate_zones",
+      "target": "sg.geo.upper.food_production",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.health_diseases",
+      "target": "sg.geo.upper.infectious_diseases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.infectious_diseases",
+      "target": "sg.geo.upper.disease_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.climate_zones",
+      "target": "sg.geo.upper.health_diseases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.coastal_processes",
+      "target": "sg.geo.upper.coastal_landforms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.coastal_landforms",
+      "target": "sg.geo.upper.coastal_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.development_indicators",
+      "target": "sg.geo.upper.development_gap",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.development_gap",
+      "target": "sg.geo.upper.reducing_development_gap",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.climate_zones",
+      "target": "sg.geo.jc.tropical_climate",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.greenhouse_effect",
+      "target": "sg.geo.jc.climate_change_governance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.climate_change_responses",
+      "target": "sg.geo.jc.climate_change_governance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.lower.deforestation_conservation",
+      "target": "sg.geo.jc.tropical_forests",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.jc.tropical_climate",
+      "target": "sg.geo.jc.tropical_forests",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.coastal_processes",
+      "target": "sg.geo.jc.tropical_coasts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.coastal_landforms",
+      "target": "sg.geo.jc.tropical_coasts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.jc.tropical_climate",
+      "target": "sg.geo.jc.tropical_coasts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.jc.tropical_climate",
+      "target": "sg.geo.jc.tropical_hazards",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.tectonic_hazard_management",
+      "target": "sg.geo.jc.tropical_hazards",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.development_indicators",
+      "target": "sg.geo.jc.development_geography",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.development_gap",
+      "target": "sg.geo.jc.development_geography",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.jc.development_geography",
+      "target": "sg.geo.jc.globalisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.reducing_development_gap",
+      "target": "sg.geo.jc.globalisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.jc.globalisation",
+      "target": "sg.geo.jc.urbanisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.lower.housing",
+      "target": "sg.geo.jc.urbanisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.lower.population",
+      "target": "sg.geo.jc.urbanisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.jc.development_geography",
+      "target": "sg.geo.jc.sustainable_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.jc.climate_change_governance",
+      "target": "sg.geo.jc.sustainable_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.food_strategies",
+      "target": "sg.geo.jc.food_resource_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.jc.tropical_climate",
+      "target": "sg.geo.jc.food_resource_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.food_security",
+      "target": "sg.geo.jc.food_resource_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.lower.water_supply_management",
+      "target": "sg.geo.jc.water_resource_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.jc.sustainable_development",
+      "target": "sg.geo.jc.water_resource_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sg.geo.upper.geographical_investigation",
+      "target": "sg.geo.jc.geographical_skills_investigation",
+      "relation": "prerequisite_for"
+    }
   ]
 }

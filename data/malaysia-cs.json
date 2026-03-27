@@ -3,7 +3,7 @@
     "domain": "computer_science",
     "curriculum": "Malaysia ASK/Sains Komputer (KSSM)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "Malaysia secondary computer science subtopics with prerequisite ordering, colored by textbook",
     "sources": [
       "KSSM ASK & Sains Komputer Curriculum"
@@ -48,897 +48,1957 @@
       "label": "Decomposition",
       "type": "concept",
       "description": "Decomposition — Chapter 1: Computational Thinking, ASK Form 1",
-      "grade_range": ["Form 1"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f1",
       "bookName": "Form 1 (ASK)",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "850ec046b7a92611",
+      "comprehended": false
     },
     {
       "id": "mycs.f1.ch1.pattern_recognition",
       "label": "Pattern Recognition",
       "type": "concept",
       "description": "Pattern Recognition — Chapter 1: Computational Thinking, ASK Form 1",
-      "grade_range": ["Form 1"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f1",
       "bookName": "Form 1 (ASK)",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "ef94e5276d3f567b",
+      "comprehended": false
     },
     {
       "id": "mycs.f1.ch1.abstraction",
       "label": "Abstraction",
       "type": "concept",
       "description": "Abstraction — Chapter 1: Computational Thinking, ASK Form 1",
-      "grade_range": ["Form 1"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f1",
       "bookName": "Form 1 (ASK)",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "bc0a0728d305edc1",
+      "comprehended": false
     },
     {
-      "id": "mycs.f1.ch1.generalization",
-      "label": "Generalization",
+      "id": "mycs.f1.ch1.algorithmic_thinking",
+      "label": "Algorithmic Thinking",
       "type": "concept",
-      "description": "Generalization — Chapter 1: Computational Thinking, ASK Form 1",
-      "grade_range": ["Form 1"],
-      "tags": ["subtopic"],
+      "description": "Algorithmic Thinking — Chapter 1: Computational Thinking, ASK Form 1",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f1",
       "bookName": "Form 1 (ASK)",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "cbe8c16a8c9447d3",
+      "comprehended": false
     },
     {
       "id": "mycs.f1.ch2.binary",
       "label": "Binary Number System",
       "type": "concept",
       "description": "Binary Number System — Chapter 2: Data Representation, ASK Form 1",
-      "grade_range": ["Form 1"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f1",
       "bookName": "Form 1 (ASK)",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "9c209bb5a162e1de",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f1.ch2.binary_decimal_conversion",
+      "label": "Binary-Decimal Conversion",
+      "type": "concept",
+      "description": "Number System Conversions (Binary to Decimal and Decimal to Binary) — Chapter 2: Data Representation, ASK Form 1",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f1",
+      "bookName": "Form 1 (ASK)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "8d97097c4ae2dc72",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f1.ch2.ascii_encoding",
+      "label": "ASCII / Character Encoding",
+      "type": "concept",
+      "description": "ASCII and Character Encoding — Chapter 2: Data Representation, ASK Form 1",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f1",
+      "bookName": "Form 1 (ASK)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "57ec725d7cf118c9",
+      "comprehended": false
     },
     {
       "id": "mycs.f1.ch2.data_measurement",
       "label": "Data Measurement",
       "type": "concept",
-      "description": "Data Measurement — Chapter 2: Data Representation, ASK Form 1",
-      "grade_range": ["Form 1"],
-      "tags": ["subtopic"],
+      "description": "Data Measurement (bit, byte, KB, MB, GB, TB) — Chapter 2: Data Representation, ASK Form 1",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f1",
       "bookName": "Form 1 (ASK)",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "520be30333856430",
+      "comprehended": false
     },
     {
       "id": "mycs.f1.ch3.pseudocode",
       "label": "Pseudocode",
       "type": "concept",
       "description": "Pseudocode — Chapter 3: Algorithms, ASK Form 1",
-      "grade_range": ["Form 1"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f1",
       "bookName": "Form 1 (ASK)",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "01823d7b07d67848",
+      "comprehended": false
     },
     {
       "id": "mycs.f1.ch3.flowcharts",
       "label": "Flowcharts",
       "type": "concept",
       "description": "Flowcharts — Chapter 3: Algorithms, ASK Form 1",
-      "grade_range": ["Form 1"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f1",
       "bookName": "Form 1 (ASK)",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "4faac69003af24bc",
+      "comprehended": false
     },
     {
-      "id": "mycs.f1.ch3.loops",
-      "label": "Loops in Algorithms",
+      "id": "mycs.f1.ch3.sequences",
+      "label": "Sequences in Algorithms",
       "type": "concept",
-      "description": "Loops — Chapter 3: Algorithms, ASK Form 1",
-      "grade_range": ["Form 1"],
-      "tags": ["subtopic"],
+      "description": "Sequences — Chapter 3: Algorithms, ASK Form 1",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f1",
       "bookName": "Form 1 (ASK)",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "2a4b8857b1e47bf2",
+      "comprehended": false
     },
     {
       "id": "mycs.f1.ch3.selections",
       "label": "Selections in Algorithms",
       "type": "concept",
       "description": "Selections — Chapter 3: Algorithms, ASK Form 1",
-      "grade_range": ["Form 1"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f1",
       "bookName": "Form 1 (ASK)",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "be0839e228494f7e",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f1.ch3.loops",
+      "label": "Loops in Algorithms",
+      "type": "concept",
+      "description": "Loops — Chapter 3: Algorithms, ASK Form 1",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f1",
+      "bookName": "Form 1 (ASK)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "906a483143ee2b8d",
+      "comprehended": false
     },
     {
       "id": "mycs.f1.ch4.variables",
       "label": "Variables",
       "type": "concept",
       "description": "Variables — Chapter 4: Code Instructions, ASK Form 1",
-      "grade_range": ["Form 1"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f1",
       "bookName": "Form 1 (ASK)",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "7898f4a70fcc4bb3",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f1.ch4.data_types_intro",
+      "label": "Data Types (Introduction)",
+      "type": "concept",
+      "description": "Basic Data Types (integer, real, string, boolean) — Chapter 4: Code Instructions, ASK Form 1",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f1",
+      "bookName": "Form 1 (ASK)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "3f38584a91aaa63b",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f1.ch4.input_output_intro",
+      "label": "Input / Output Concepts",
+      "type": "concept",
+      "description": "Input and Output Concepts — Chapter 4: Code Instructions, ASK Form 1",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f1",
+      "bookName": "Form 1 (ASK)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "fc55e8d1b8edd628",
+      "comprehended": false
     },
     {
       "id": "mycs.f1.ch4.math_operators",
       "label": "Math Operators",
       "type": "concept",
       "description": "Math Operators — Chapter 4: Code Instructions, ASK Form 1",
-      "grade_range": ["Form 1"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f1",
       "bookName": "Form 1 (ASK)",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "cc039c2768836066",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f1.ch4.logical_relational_operators",
+      "label": "Logical and Relational Operators",
+      "type": "concept",
+      "description": "Logical Operators (AND, OR, NOT) and Relational Operators (>, <, ==, !=) — Chapter 4: Code Instructions, ASK Form 1",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f1",
+      "bookName": "Form 1 (ASK)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "fcaaed14e9d3dc46",
+      "comprehended": false
     },
     {
       "id": "mycs.f1.ch4.decisions",
       "label": "Decisions in Code",
       "type": "concept",
       "description": "Decisions — Chapter 4: Code Instructions, ASK Form 1",
-      "grade_range": ["Form 1"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f1",
       "bookName": "Form 1 (ASK)",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "12266921d64e425a",
+      "comprehended": false
     },
     {
       "id": "mycs.f1.ch4.loops_code",
       "label": "Loops in Code",
       "type": "concept",
       "description": "Loops — Chapter 4: Code Instructions, ASK Form 1",
-      "grade_range": ["Form 1"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f1",
       "bookName": "Form 1 (ASK)",
       "bookColor": "#3b82f6",
-      "bookOrder": 1
-    },
-    {
-      "id": "mycs.f1.ch4.html_tags",
-      "label": "HTML Tags",
-      "type": "concept",
-      "description": "HTML Tags — Chapter 4: Code Instructions, ASK Form 1",
-      "grade_range": ["Form 1"],
-      "tags": ["subtopic"],
-      "pages": "",
-      "book": "book.f1",
-      "bookName": "Form 1 (ASK)",
-      "bookColor": "#3b82f6",
-      "bookOrder": 1
-    },
-    {
-      "id": "mycs.f1.ch4.web_page_elements",
-      "label": "Web Page Elements",
-      "type": "concept",
-      "description": "Web Page Elements — Chapter 4: Code Instructions, ASK Form 1",
-      "grade_range": ["Form 1"],
-      "tags": ["subtopic"],
-      "pages": "",
-      "book": "book.f1",
-      "bookName": "Form 1 (ASK)",
-      "bookColor": "#3b82f6",
-      "bookOrder": 1
+      "bookOrder": 1,
+      "external_id": "6b0f904719c9ecc8",
+      "comprehended": false
     },
     {
       "id": "mycs.f2.ch1.octal",
       "label": "Octal Number System",
       "type": "concept",
       "description": "Octal Number System — Chapter 1: Data Representation, ASK Form 2",
-      "grade_range": ["Form 2"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f2",
       "bookName": "Form 2 (ASK)",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "f1b92a1e29989666",
+      "comprehended": false
     },
     {
       "id": "mycs.f2.ch1.hexadecimal",
       "label": "Hexadecimal Number System",
       "type": "concept",
       "description": "Hexadecimal Number System — Chapter 1: Data Representation, ASK Form 2",
-      "grade_range": ["Form 2"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f2",
       "bookName": "Form 2 (ASK)",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "ed627aff8a07a9fb",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f2.ch1.number_system_conversions",
+      "label": "Number System Conversions (Octal/Hex)",
+      "type": "concept",
+      "description": "Number System Conversions — Octal, Hexadecimal, Binary, Decimal inter-conversions — Chapter 1: Data Representation, ASK Form 2",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f2",
+      "bookName": "Form 2 (ASK)",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "f540b6c89f51a890",
+      "comprehended": false
     },
     {
       "id": "mycs.f2.ch2.pseudocode_adv",
       "label": "Advanced Pseudocode",
       "type": "concept",
       "description": "Pseudocode with Nested Structures — Chapter 2: Algorithms, ASK Form 2",
-      "grade_range": ["Form 2"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f2",
       "bookName": "Form 2 (ASK)",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "319b969d320fb83d",
+      "comprehended": false
     },
     {
       "id": "mycs.f2.ch2.flowcharts_adv",
       "label": "Advanced Flowcharts",
       "type": "concept",
       "description": "Flowcharts with Nested Structures — Chapter 2: Algorithms, ASK Form 2",
-      "grade_range": ["Form 2"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f2",
       "bookName": "Form 2 (ASK)",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "d2769854c7ff4c14",
+      "comprehended": false
     },
     {
       "id": "mycs.f2.ch2.nested_selection",
       "label": "Nested Selection",
       "type": "concept",
       "description": "Nested Selection — Chapter 2: Algorithms, ASK Form 2",
-      "grade_range": ["Form 2"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f2",
       "bookName": "Form 2 (ASK)",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "6547b64f492e5866",
+      "comprehended": false
     },
     {
       "id": "mycs.f2.ch2.repetition_structures",
       "label": "Repetition Structures",
       "type": "concept",
       "description": "Repetition Structures — Chapter 2: Algorithms, ASK Form 2",
-      "grade_range": ["Form 2"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f2",
       "bookName": "Form 2 (ASK)",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "270e8a3ce6be37e4",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f2.ch2.boolean_logic_algorithms",
+      "label": "Boolean / Logic Operators in Algorithms",
+      "type": "concept",
+      "description": "Boolean and Logic Operators applied in algorithmic design — Chapter 2: Algorithms, ASK Form 2",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f2",
+      "bookName": "Form 2 (ASK)",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "a9f081ecbfc23e1e",
+      "comprehended": false
     },
     {
       "id": "mycs.f2.ch3.code_environment",
       "label": "Code Environment",
       "type": "concept",
       "description": "Code Environment — Chapter 3: Code Instructions, ASK Form 2",
-      "grade_range": ["Form 2"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f2",
       "bookName": "Form 2 (ASK)",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "a3eb5f70d64626e1",
+      "comprehended": false
     },
     {
       "id": "mycs.f2.ch3.code_structure",
       "label": "Code Structure",
       "type": "concept",
       "description": "Code Structure — Chapter 3: Code Instructions, ASK Form 2",
-      "grade_range": ["Form 2"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f2",
       "bookName": "Form 2 (ASK)",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "abb1ea1dafa9a1c6",
+      "comprehended": false
     },
     {
       "id": "mycs.f2.ch3.data_types",
       "label": "Data Types",
       "type": "concept",
       "description": "Data Types — Chapter 3: Code Instructions, ASK Form 2",
-      "grade_range": ["Form 2"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f2",
       "bookName": "Form 2 (ASK)",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "02e7aee9ea90a982",
+      "comprehended": false
     },
     {
       "id": "mycs.f2.ch3.variables_constants",
       "label": "Variables and Constants",
       "type": "concept",
       "description": "Variables and Constants — Chapter 3: Code Instructions, ASK Form 2",
-      "grade_range": ["Form 2"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f2",
       "bookName": "Form 2 (ASK)",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "854d32890ae4cc1c",
+      "comprehended": false
     },
     {
       "id": "mycs.f2.ch3.input_output",
       "label": "Input and Output",
       "type": "concept",
       "description": "Input and Output — Chapter 3: Code Instructions, ASK Form 2",
-      "grade_range": ["Form 2"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f2",
       "bookName": "Form 2 (ASK)",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "9e3b9267ec0f4693",
+      "comprehended": false
     },
     {
       "id": "mycs.f2.ch3.operators",
       "label": "Operators",
       "type": "concept",
       "description": "Operators — Chapter 3: Code Instructions, ASK Form 2",
-      "grade_range": ["Form 2"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f2",
       "bookName": "Form 2 (ASK)",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "b83b0bd3d259ae81",
+      "comprehended": false
     },
     {
       "id": "mycs.f2.ch3.control_structures",
       "label": "Control Structures",
       "type": "concept",
       "description": "Sequential, Selection, and Loop Control Structures — Chapter 3: Code Instructions, ASK Form 2",
-      "grade_range": ["Form 2"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f2",
       "bookName": "Form 2 (ASK)",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "53d64601d2609683",
+      "comprehended": false
     },
     {
       "id": "mycs.f2.ch3.testing_debugging",
       "label": "Testing and Debugging",
       "type": "concept",
       "description": "Testing and Debugging — Chapter 3: Code Instructions, ASK Form 2",
-      "grade_range": ["Form 2"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f2",
       "bookName": "Form 2 (ASK)",
       "bookColor": "#06b6d4",
-      "bookOrder": 2
+      "bookOrder": 2,
+      "external_id": "99d9114390129ab0",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f2.ch3.subprogram_intro",
+      "label": "Subprogram / Modular Concepts",
+      "type": "concept",
+      "description": "Introduction to Subprograms and Modular Programming — Chapter 3: Code Instructions, ASK Form 2",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f2",
+      "bookName": "Form 2 (ASK)",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "fc9402988073221b",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f2.ch4.html_tags",
+      "label": "HTML Tags",
+      "type": "concept",
+      "description": "HTML Tags — Chapter 4: Web Development, ASK Form 2",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f2",
+      "bookName": "Form 2 (ASK)",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "a59ad95bba3ee332",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f2.ch4.web_page_elements",
+      "label": "Web Page Elements",
+      "type": "concept",
+      "description": "Web Page Elements — Chapter 4: Web Development, ASK Form 2",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f2",
+      "bookName": "Form 2 (ASK)",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "011a666d2659bc76",
+      "comprehended": false
     },
     {
       "id": "mycs.f3.ch1.analysis",
       "label": "Program Analysis",
       "type": "concept",
       "description": "Program Analysis — Chapter 1: Computational Thinking / Program Development, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "5be807217197af76",
+      "comprehended": false
     },
     {
       "id": "mycs.f3.ch1.design",
       "label": "Program Design",
       "type": "concept",
       "description": "Program Design — Chapter 1: Computational Thinking / Program Development, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "9f7a07193144234b",
+      "comprehended": false
     },
     {
       "id": "mycs.f3.ch1.coding",
       "label": "Program Coding",
       "type": "concept",
       "description": "Program Coding — Chapter 1: Computational Thinking / Program Development, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "071fdd5051161a46",
+      "comprehended": false
     },
     {
       "id": "mycs.f3.ch1.testing_documentation",
       "label": "Testing and Documentation",
       "type": "concept",
       "description": "Testing, Debugging, and Documentation — Chapter 1: Computational Thinking / Program Development, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "17d6eb7c8e5c5649",
+      "comprehended": false
     },
     {
-      "id": "mycs.f3.ch2.reverse_cipher",
-      "label": "Reverse Cipher",
+      "id": "mycs.f3.ch2.cryptography",
+      "label": "Cryptography (Cipher Techniques)",
       "type": "concept",
-      "description": "Reverse Cipher — Chapter 2: Data Representation / Cryptography, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "description": "Cryptography — Substitution Cipher and Transposition Cipher — Chapter 2: Data Representation / Cryptography, ASK Form 3",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "6414b326727aae5d",
+      "comprehended": false
     },
     {
-      "id": "mycs.f3.ch2.substitution_cipher",
-      "label": "Substitution Cipher",
+      "id": "mycs.f3.ch2.encryption_decryption",
+      "label": "Encryption and Decryption",
       "type": "concept",
-      "description": "Substitution Cipher — Chapter 2: Data Representation / Cryptography, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "description": "Encryption and Decryption processes — Chapter 2: Data Representation / Cryptography, ASK Form 3",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "a4f6098b4d46c3c3",
+      "comprehended": false
     },
     {
-      "id": "mycs.f3.ch2.transposition_cipher",
-      "label": "Transposition Cipher",
+      "id": "mycs.f3.ch3.arrays",
+      "label": "Arrays (Tatasusunan)",
       "type": "concept",
-      "description": "Transposition Cipher — Chapter 2: Data Representation / Cryptography, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "description": "Arrays (Tatasusunan) — one-dimensional arrays — Chapter 3: Algorithms, ASK Form 3",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "31f22e6e7dcba83f",
+      "comprehended": false
     },
     {
       "id": "mycs.f3.ch3.linear_search",
       "label": "Linear Search",
       "type": "concept",
       "description": "Linear Search — Chapter 3: Algorithms, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "5d3049a9e7c3af7a",
+      "comprehended": false
     },
     {
       "id": "mycs.f3.ch3.binary_search",
       "label": "Binary Search",
       "type": "concept",
       "description": "Binary Search — Chapter 3: Algorithms, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "ca101480b6cc038d",
+      "comprehended": false
     },
     {
       "id": "mycs.f3.ch3.bubble_sort",
       "label": "Bubble Sort",
       "type": "concept",
       "description": "Bubble Sort — Chapter 3: Algorithms, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "8e09160756811f77",
+      "comprehended": false
     },
     {
-      "id": "mycs.f3.ch3.bucket_sort",
-      "label": "Bucket Sort",
+      "id": "mycs.f3.ch3.selection_sort",
+      "label": "Selection Sort",
       "type": "concept",
-      "description": "Bucket Sort — Chapter 3: Algorithms, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "description": "Selection Sort — Chapter 3: Algorithms, ASK Form 3",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "a65a24dda2a8f903",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f3.ch3.string_manipulation",
+      "label": "String Manipulation",
+      "type": "concept",
+      "description": "String Manipulation — Chapter 3: Algorithms, ASK Form 3",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f3",
+      "bookName": "Form 3 (ASK)",
+      "bookColor": "#6366f1",
+      "bookOrder": 3,
+      "external_id": "40117ede9aa53846",
+      "comprehended": false
     },
     {
       "id": "mycs.f3.ch3.pseudocode_search_sort",
       "label": "Pseudocode for Search and Sort",
       "type": "concept",
       "description": "Pseudocode for Search and Sort — Chapter 3: Algorithms, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "ed2a881958679608",
+      "comprehended": false
     },
     {
       "id": "mycs.f3.ch3.flowcharts_search_sort",
       "label": "Flowcharts for Search and Sort",
       "type": "concept",
       "description": "Flowcharts for Search and Sort — Chapter 3: Algorithms, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "69a65f92d410307d",
+      "comprehended": false
     },
     {
       "id": "mycs.f3.ch4.entities_attributes",
       "label": "Entities and Attributes",
       "type": "concept",
       "description": "Entities and Attributes — Chapter 4: Code Instructions / Databases and SQL, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "d4feb9227cf810d5",
+      "comprehended": false
     },
     {
       "id": "mycs.f3.ch4.keys_cardinality",
       "label": "Keys and Cardinality",
       "type": "concept",
       "description": "Keys and Cardinality — Chapter 4: Code Instructions / Databases and SQL, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "d16dda0ea68304d7",
+      "comprehended": false
     },
     {
       "id": "mycs.f3.ch4.sql_basics",
       "label": "SQL Basics",
       "type": "concept",
       "description": "SQL Basics — Chapter 4: Code Instructions / Databases and SQL, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "df88c3c2bdefe696",
+      "comprehended": false
     },
     {
       "id": "mycs.f3.ch4.functions_procedures",
       "label": "Functions and Procedures",
       "type": "concept",
       "description": "Functions and Procedures — Chapter 4: Code Instructions, ASK Form 3",
-      "grade_range": ["Form 3"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f3",
       "bookName": "Form 3 (ASK)",
       "bookColor": "#6366f1",
-      "bookOrder": 3
+      "bookOrder": 3,
+      "external_id": "470fbf6b236ebaac",
+      "comprehended": false
     },
     {
       "id": "mycs.f4.ch1.problem_solving",
       "label": "Problem-Solving Strategy",
       "type": "concept",
       "description": "Problem-Solving Strategy — Chapter 1: Programming, Sains Komputer Form 4",
-      "grade_range": ["Form 4"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f4",
       "bookName": "Form 4 (Sains Komputer)",
       "bookColor": "#0ea5e9",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "2b2751fc987d33f7",
+      "comprehended": false
     },
     {
       "id": "mycs.f4.ch1.algorithms_programming",
       "label": "Algorithms in Programming",
       "type": "concept",
       "description": "Algorithms in Programming — Chapter 1: Programming, Sains Komputer Form 4",
-      "grade_range": ["Form 4"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f4",
       "bookName": "Form 4 (Sains Komputer)",
       "bookColor": "#0ea5e9",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "fe20f24de077f17e",
+      "comprehended": false
     },
     {
       "id": "mycs.f4.ch1.variables_constants_data_types",
       "label": "Variables, Constants, and Data Types",
       "type": "concept",
       "description": "Variables, Constants, and Data Types — Chapter 1: Programming, Sains Komputer Form 4",
-      "grade_range": ["Form 4"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f4",
       "bookName": "Form 4 (Sains Komputer)",
       "bookColor": "#0ea5e9",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "2581eacaeae880c1",
+      "comprehended": false
     },
     {
       "id": "mycs.f4.ch1.control_structures_programming",
       "label": "Control Structures in Programming",
       "type": "concept",
       "description": "Control Structures — Chapter 1: Programming, Sains Komputer Form 4",
-      "grade_range": ["Form 4"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f4",
       "bookName": "Form 4 (Sains Komputer)",
       "bookColor": "#0ea5e9",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "1a42a743929dda83",
+      "comprehended": false
     },
     {
       "id": "mycs.f4.ch1.best_practices",
       "label": "Programming Best Practices",
       "type": "concept",
       "description": "Best Practices — Chapter 1: Programming, Sains Komputer Form 4",
-      "grade_range": ["Form 4"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f4",
       "bookName": "Form 4 (Sains Komputer)",
       "bookColor": "#0ea5e9",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "e0e08585fb3d70eb",
+      "comprehended": false
     },
     {
       "id": "mycs.f4.ch1.data_structures_modularity",
       "label": "Data Structures and Modularity",
       "type": "concept",
       "description": "Data Structures and Modularity — Chapter 1: Programming, Sains Komputer Form 4",
-      "grade_range": ["Form 4"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f4",
       "bookName": "Form 4 (Sains Komputer)",
       "bookColor": "#0ea5e9",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "86e2df3e37381262",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch1.oop_basics",
+      "label": "OOP Basics (Classes and Objects)",
+      "type": "concept",
+      "description": "Object-Oriented Programming basics — Classes and Objects — Chapter 1: Programming, Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "d4f28c826f189830",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch1.file_handling",
+      "label": "File Handling",
+      "type": "concept",
+      "description": "File Handling — reading and writing files — Chapter 1: Programming, Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "7936e265f8beca82",
+      "comprehended": false
     },
     {
       "id": "mycs.f4.ch1.application_development",
       "label": "Application Development",
       "type": "concept",
       "description": "Application Development — Chapter 1: Programming, Sains Komputer Form 4",
-      "grade_range": ["Form 4"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f4",
       "bookName": "Form 4 (Sains Komputer)",
       "bookColor": "#0ea5e9",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "48e89e72e9db9892",
+      "comprehended": false
     },
     {
       "id": "mycs.f4.ch2.relational_database",
       "label": "Relational Database",
       "type": "concept",
       "description": "Relational Database — Chapter 2: Database, Sains Komputer Form 4",
-      "grade_range": ["Form 4"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f4",
       "bookName": "Form 4 (Sains Komputer)",
       "bookColor": "#0ea5e9",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "10d564c01cf22676",
+      "comprehended": false
     },
     {
       "id": "mycs.f4.ch2.db_design",
       "label": "Database Design",
       "type": "concept",
       "description": "Database Design — Chapter 2: Database, Sains Komputer Form 4",
-      "grade_range": ["Form 4"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f4",
       "bookName": "Form 4 (Sains Komputer)",
       "bookColor": "#0ea5e9",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "65eef138478388cb",
+      "comprehended": false
     },
     {
       "id": "mycs.f4.ch2.db_development",
       "label": "Database Development",
       "type": "concept",
       "description": "Database Development — Chapter 2: Database, Sains Komputer Form 4",
-      "grade_range": ["Form 4"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f4",
       "bookName": "Form 4 (Sains Komputer)",
       "bookColor": "#0ea5e9",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "cfda0e915bb2cf3c",
+      "comprehended": false
     },
     {
       "id": "mycs.f4.ch2.db_system_development",
       "label": "Database System Development",
       "type": "concept",
       "description": "Database System Development — Chapter 2: Database, Sains Komputer Form 4",
-      "grade_range": ["Form 4"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f4",
       "bookName": "Form 4 (Sains Komputer)",
       "bookColor": "#0ea5e9",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "16b10298a4d7f863",
+      "comprehended": false
     },
     {
       "id": "mycs.f4.ch3.interaction_design",
       "label": "Interaction Design",
       "type": "concept",
       "description": "Interaction Design — Chapter 3: Human-Computer Interaction, Sains Komputer Form 4",
-      "grade_range": ["Form 4"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f4",
       "bookName": "Form 4 (Sains Komputer)",
       "bookColor": "#0ea5e9",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "d47ea67022ca5643",
+      "comprehended": false
     },
     {
       "id": "mycs.f4.ch3.display_screen_design",
       "label": "Display and Screen Design",
       "type": "concept",
       "description": "Display and Screen Design — Chapter 3: Human-Computer Interaction, Sains Komputer Form 4",
-      "grade_range": ["Form 4"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f4",
       "bookName": "Form 4 (Sains Komputer)",
       "bookColor": "#0ea5e9",
-      "bookOrder": 4
+      "bookOrder": 4,
+      "external_id": "cc1141bdb1d672ae",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch4.computer_components",
+      "label": "Computer Components",
+      "type": "concept",
+      "description": "Computer Components — input, output, processing, storage — Chapter 4: Organisasi Komputer, Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "6e855c74eca307ec",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch4.cpu_architecture",
+      "label": "CPU Architecture",
+      "type": "concept",
+      "description": "CPU Architecture — ALU, CU, registers, fetch-decode-execute cycle — Chapter 4: Organisasi Komputer, Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "050ea22256e0e57e",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch4.von_neumann",
+      "label": "Von Neumann Architecture",
+      "type": "concept",
+      "description": "Von Neumann Architecture — stored-program concept — Chapter 4: Organisasi Komputer, Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "758251321f2a0ccd",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch4.memory_types",
+      "label": "Memory Types (RAM / ROM / Cache)",
+      "type": "concept",
+      "description": "Memory Types — RAM, ROM, Cache memory — Chapter 4: Organisasi Komputer, Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "203a665c818d23e6",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch4.storage_devices",
+      "label": "Storage Devices",
+      "type": "concept",
+      "description": "Storage Devices — HDD, SSD, optical, flash — Chapter 4: Organisasi Komputer, Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "67aad0e172c58e36",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch4.io_devices",
+      "label": "I/O Devices",
+      "type": "concept",
+      "description": "Input/Output Devices — Chapter 4: Organisasi Komputer, Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "02c7d4101e5233f6",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch4.system_application_software",
+      "label": "System Software vs Application Software",
+      "type": "concept",
+      "description": "System Software vs Application Software, Operating Systems — Chapter 4: Organisasi Komputer, Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "789c880a07021eca",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch5.network_types",
+      "label": "Network Types (LAN / WAN / PAN)",
+      "type": "concept",
+      "description": "Network Types — LAN, WAN, PAN — Chapter 5: Rangkaian Komputer, Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "b8d8097683ac8eb5",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch5.network_topologies",
+      "label": "Network Topologies",
+      "type": "concept",
+      "description": "Network Topologies — star, bus, ring, mesh — Chapter 5: Rangkaian Komputer, Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "4ae3f1ed1ddf11b7",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch5.network_hardware",
+      "label": "Network Hardware",
+      "type": "concept",
+      "description": "Network Hardware — router, switch, hub, modem, NIC — Chapter 5: Rangkaian Komputer, Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "ad90aed3808bef4c",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch5.protocols_tcpip",
+      "label": "Protocols and TCP/IP",
+      "type": "concept",
+      "description": "Network Protocols — TCP/IP model — Chapter 5: Rangkaian Komputer, Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "f7c6cf7c79778de8",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch5.ip_addressing",
+      "label": "IP Addressing",
+      "type": "concept",
+      "description": "IP Addressing — IPv4, subnetting basics — Chapter 5: Rangkaian Komputer, Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "1f99aa3988224f6a",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch5.internet",
+      "label": "Internet",
+      "type": "concept",
+      "description": "Internet — how the internet works, services — Chapter 5: Rangkaian Komputer, Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "4e688d52ad9cb7dd",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch5.network_security",
+      "label": "Network Security",
+      "type": "concept",
+      "description": "Network Security — firewalls, encryption, threats — Chapter 5: Rangkaian Komputer, Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "f2a14ae081da5d1a",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f4.ch6.ethics_ict_law",
+      "label": "Ethics and ICT Law",
+      "type": "concept",
+      "description": "Ethics and ICT Law — intellectual property, cyber law, responsible use — Sains Komputer Form 4",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f4",
+      "bookName": "Form 4 (Sains Komputer)",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4,
+      "external_id": "f0ca808805d491e5",
+      "comprehended": false
     },
     {
       "id": "mycs.f5.ch1.computers_impact",
       "label": "Computers and Impact",
       "type": "concept",
       "description": "Computers and Impact — Chapter 1: Computing, Sains Komputer Form 5",
-      "grade_range": ["Form 5"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f5",
       "bookName": "Form 5 (Sains Komputer)",
       "bookColor": "#4f46e5",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "ddca5186a41c2902",
+      "comprehended": false
     },
     {
-      "id": "mycs.f5.ch1.computer_architecture",
-      "label": "Computer Architecture (Von Neumann)",
+      "id": "mycs.f5.ch1.boolean_algebra_karnaugh",
+      "label": "Boolean Algebra and Karnaugh Maps",
       "type": "concept",
-      "description": "Computer Architecture and Von Neumann Model — Chapter 1: Computing, Sains Komputer Form 5",
-      "grade_range": ["Form 5"],
-      "tags": ["subtopic"],
+      "description": "Boolean Algebra and Karnaugh Maps — simplification of logic expressions — Chapter 1: Computing, Sains Komputer Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f5",
       "bookName": "Form 5 (Sains Komputer)",
       "bookColor": "#4f46e5",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "9765d7b364126665",
+      "comprehended": false
     },
     {
       "id": "mycs.f5.ch1.logic_gates",
       "label": "Logic Gates",
       "type": "concept",
       "description": "Logic Gates — Symbols, Truth Tables, Boolean Expressions — Chapter 1: Computing, Sains Komputer Form 5",
-      "grade_range": ["Form 5"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f5",
       "bookName": "Form 5 (Sains Komputer)",
       "bookColor": "#4f46e5",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "1fa81ddf052f6a63",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f5.ch1.floating_point_twos_complement",
+      "label": "Floating Point and Two's Complement",
+      "type": "concept",
+      "description": "Floating Point Representation and Two's Complement — Chapter 1: Computing, Sains Komputer Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f5",
+      "bookName": "Form 5 (Sains Komputer)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 5,
+      "external_id": "d32f466157744660",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f5.ch1.oop_advanced",
+      "label": "Advanced OOP (Inheritance, Polymorphism, Encapsulation)",
+      "type": "concept",
+      "description": "Advanced OOP — Inheritance, Polymorphism, Encapsulation — Chapter 1: Programming, Sains Komputer Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f5",
+      "bookName": "Form 5 (Sains Komputer)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 5,
+      "external_id": "37408c15d4caa563",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f5.ch1.exception_handling",
+      "label": "Exception Handling",
+      "type": "concept",
+      "description": "Exception Handling — try/catch, error management — Sains Komputer Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f5",
+      "bookName": "Form 5 (Sains Komputer)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 5,
+      "external_id": "c2e7d91a2390b95a",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f5.ch1.complex_data_structures",
+      "label": "Complex Data Structures (Linked Lists, Stacks, Queues)",
+      "type": "concept",
+      "description": "Complex Data Structures — Linked Lists, Stacks, Queues — Sains Komputer Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f5",
+      "bookName": "Form 5 (Sains Komputer)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 5,
+      "external_id": "51b0440a507c21aa",
+      "comprehended": false
     },
     {
       "id": "mycs.f5.ch2.sql_advanced",
       "label": "Advanced SQL",
       "type": "concept",
       "description": "Advanced SQL — Chapter 2: Advanced Database, Sains Komputer Form 5",
-      "grade_range": ["Form 5"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f5",
       "bookName": "Form 5 (Sains Komputer)",
       "bookColor": "#4f46e5",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "d7c00ffbcd01c68f",
+      "comprehended": false
     },
     {
       "id": "mycs.f5.ch2.erd",
       "label": "Entity-Relationship Diagram (ERD)",
       "type": "concept",
       "description": "ERD — Chapter 2: Advanced Database, Sains Komputer Form 5",
-      "grade_range": ["Form 5"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f5",
       "bookName": "Form 5 (Sains Komputer)",
       "bookColor": "#4f46e5",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "b4d58cd73c103e72",
+      "comprehended": false
     },
     {
       "id": "mycs.f5.ch2.normalization",
       "label": "Normalization",
       "type": "concept",
       "description": "Normalization — Chapter 2: Advanced Database, Sains Komputer Form 5",
-      "grade_range": ["Form 5"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f5",
       "bookName": "Form 5 (Sains Komputer)",
       "bookColor": "#4f46e5",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "429961a9806db6ce",
+      "comprehended": false
     },
     {
       "id": "mycs.f5.ch3.client_side_scripting",
       "label": "Client-Side Scripting",
       "type": "concept",
       "description": "Client-Side Scripting — Chapter 3: Web-Based Programming, Sains Komputer Form 5",
-      "grade_range": ["Form 5"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f5",
       "bookName": "Form 5 (Sains Komputer)",
       "bookColor": "#4f46e5",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "83521bfaf7b39e08",
+      "comprehended": false
     },
     {
       "id": "mycs.f5.ch3.server_side_scripting",
       "label": "Server-Side Scripting",
       "type": "concept",
       "description": "Server-Side Scripting — Chapter 3: Web-Based Programming, Sains Komputer Form 5",
-      "grade_range": ["Form 5"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f5",
       "bookName": "Form 5 (Sains Komputer)",
       "bookColor": "#4f46e5",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "4cf890d94b898075",
+      "comprehended": false
     },
     {
       "id": "mycs.f5.ch3.interactive_web_pages",
       "label": "Interactive Web Pages",
       "type": "concept",
       "description": "Interactive Web Pages — Chapter 3: Web-Based Programming, Sains Komputer Form 5",
-      "grade_range": ["Form 5"],
-      "tags": ["subtopic"],
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
       "pages": "",
       "book": "book.f5",
       "bookName": "Form 5 (Sains Komputer)",
       "bookColor": "#4f46e5",
-      "bookOrder": 5
+      "bookOrder": 5,
+      "external_id": "4bb564022618acdc",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f5.ch4.sdlc",
+      "label": "SDLC / System Development",
+      "type": "concept",
+      "description": "System Development Life Cycle (SDLC) — planning, analysis, design, implementation, maintenance — Sains Komputer Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f5",
+      "bookName": "Form 5 (Sains Komputer)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 5,
+      "external_id": "523b00a479b3e5df",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f5.ch4.cloud_computing_iot",
+      "label": "Cloud Computing and IoT",
+      "type": "concept",
+      "description": "Cloud Computing and Internet of Things (IoT) — Sains Komputer Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f5",
+      "bookName": "Form 5 (Sains Komputer)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 5,
+      "external_id": "7d3128fd34344138",
+      "comprehended": false
+    },
+    {
+      "id": "mycs.f5.ch4.digital_entrepreneurship",
+      "label": "Digital Entrepreneurship",
+      "type": "concept",
+      "description": "Digital Entrepreneurship — e-commerce, digital business models — Sains Komputer Form 5",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "book.f5",
+      "bookName": "Form 5 (Sains Komputer)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 5,
+      "external_id": "85a6f2d7713e61d2",
+      "comprehended": false
     }
   ],
   "edges": [
@@ -954,62 +2014,72 @@
     },
     {
       "source": "mycs.f1.ch1.abstraction",
-      "target": "mycs.f1.ch1.generalization",
+      "target": "mycs.f1.ch1.algorithmic_thinking",
       "relation": "prerequisite_for"
     },
     {
-      "source": "mycs.f1.ch1.generalization",
+      "source": "mycs.f1.ch1.algorithmic_thinking",
       "target": "mycs.f3.ch1.analysis",
       "relation": "prerequisite_for"
     },
     {
-      "source": "mycs.f3.ch1.analysis",
-      "target": "mycs.f3.ch1.design",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mycs.f3.ch1.design",
-      "target": "mycs.f3.ch1.coding",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mycs.f3.ch1.coding",
-      "target": "mycs.f3.ch1.testing_documentation",
+      "source": "mycs.f1.ch2.binary",
+      "target": "mycs.f1.ch2.binary_decimal_conversion",
       "relation": "prerequisite_for"
     },
     {
       "source": "mycs.f1.ch2.binary",
+      "target": "mycs.f1.ch2.ascii_encoding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f1.ch2.binary_decimal_conversion",
       "target": "mycs.f1.ch2.data_measurement",
       "relation": "prerequisite_for"
     },
     {
-      "source": "mycs.f1.ch2.binary",
+      "source": "mycs.f1.ch2.binary_decimal_conversion",
       "target": "mycs.f2.ch1.octal",
       "relation": "prerequisite_for"
     },
     {
-      "source": "mycs.f1.ch2.binary",
+      "source": "mycs.f1.ch2.binary_decimal_conversion",
+      "target": "mycs.f2.ch1.hexadecimal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f2.ch1.octal",
+      "target": "mycs.f2.ch1.number_system_conversions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f2.ch1.hexadecimal",
+      "target": "mycs.f2.ch1.number_system_conversions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f2.ch1.octal",
       "target": "mycs.f2.ch1.hexadecimal",
       "relation": "prerequisite_for"
     },
     {
       "source": "mycs.f1.ch2.binary",
-      "target": "mycs.f3.ch2.reverse_cipher",
+      "target": "mycs.f3.ch2.cryptography",
       "relation": "prerequisite_for"
     },
     {
-      "source": "mycs.f3.ch2.reverse_cipher",
-      "target": "mycs.f3.ch2.substitution_cipher",
+      "source": "mycs.f1.ch2.data_measurement",
+      "target": "mycs.f3.ch2.cryptography",
       "relation": "prerequisite_for"
     },
     {
-      "source": "mycs.f3.ch2.substitution_cipher",
-      "target": "mycs.f3.ch2.transposition_cipher",
+      "source": "mycs.f3.ch2.cryptography",
+      "target": "mycs.f3.ch2.encryption_decryption",
       "relation": "prerequisite_for"
     },
     {
-      "source": "mycs.f1.ch2.binary",
-      "target": "mycs.f5.ch1.computer_architecture",
+      "source": "mycs.f1.ch2.binary_decimal_conversion",
+      "target": "mycs.f4.ch4.von_neumann",
       "relation": "prerequisite_for"
     },
     {
@@ -1018,8 +2088,8 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "mycs.f5.ch1.computer_architecture",
-      "target": "mycs.f5.ch1.computers_impact",
+      "source": "mycs.f2.ch1.hexadecimal",
+      "target": "mycs.f4.ch4.von_neumann",
       "relation": "prerequisite_for"
     },
     {
@@ -1029,11 +2099,16 @@
     },
     {
       "source": "mycs.f1.ch3.pseudocode",
+      "target": "mycs.f1.ch3.sequences",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f1.ch3.sequences",
       "target": "mycs.f1.ch3.selections",
       "relation": "prerequisite_for"
     },
     {
-      "source": "mycs.f1.ch3.pseudocode",
+      "source": "mycs.f1.ch3.sequences",
       "target": "mycs.f1.ch3.loops",
       "relation": "prerequisite_for"
     },
@@ -1058,6 +2133,16 @@
       "relation": "prerequisite_for"
     },
     {
+      "source": "mycs.f1.ch4.logical_relational_operators",
+      "target": "mycs.f2.ch2.boolean_logic_algorithms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f2.ch2.nested_selection",
+      "target": "mycs.f2.ch2.boolean_logic_algorithms",
+      "relation": "prerequisite_for"
+    },
+    {
       "source": "mycs.f2.ch2.pseudocode_adv",
       "target": "mycs.f3.ch3.pseudocode_search_sort",
       "relation": "prerequisite_for"
@@ -1078,6 +2163,16 @@
       "relation": "prerequisite_for"
     },
     {
+      "source": "mycs.f2.ch2.repetition_structures",
+      "target": "mycs.f3.ch3.arrays",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f3.ch3.arrays",
+      "target": "mycs.f3.ch3.linear_search",
+      "relation": "prerequisite_for"
+    },
+    {
       "source": "mycs.f3.ch3.linear_search",
       "target": "mycs.f3.ch3.binary_search",
       "relation": "prerequisite_for"
@@ -1088,33 +2183,58 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "mycs.f3.ch3.linear_search",
-      "target": "mycs.f3.ch3.bucket_sort",
+      "source": "mycs.f3.ch3.bubble_sort",
+      "target": "mycs.f3.ch3.selection_sort",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f3.ch3.arrays",
+      "target": "mycs.f3.ch3.string_manipulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f3.ch1.analysis",
+      "target": "mycs.f3.ch1.design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f3.ch1.design",
+      "target": "mycs.f3.ch1.coding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f3.ch1.coding",
+      "target": "mycs.f3.ch1.testing_documentation",
       "relation": "prerequisite_for"
     },
     {
       "source": "mycs.f1.ch4.variables",
+      "target": "mycs.f1.ch4.data_types_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f1.ch4.variables",
+      "target": "mycs.f1.ch4.input_output_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f1.ch4.data_types_intro",
       "target": "mycs.f1.ch4.math_operators",
       "relation": "prerequisite_for"
     },
     {
       "source": "mycs.f1.ch4.math_operators",
+      "target": "mycs.f1.ch4.logical_relational_operators",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f1.ch4.logical_relational_operators",
       "target": "mycs.f1.ch4.decisions",
       "relation": "prerequisite_for"
     },
     {
       "source": "mycs.f1.ch4.decisions",
       "target": "mycs.f1.ch4.loops_code",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mycs.f1.ch4.variables",
-      "target": "mycs.f1.ch4.html_tags",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mycs.f1.ch4.html_tags",
-      "target": "mycs.f1.ch4.web_page_elements",
       "relation": "prerequisite_for"
     },
     {
@@ -1159,6 +2279,16 @@
     },
     {
       "source": "mycs.f2.ch3.control_structures",
+      "target": "mycs.f2.ch3.subprogram_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f2.ch3.subprogram_intro",
+      "target": "mycs.f3.ch4.functions_procedures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f2.ch3.control_structures",
       "target": "mycs.f3.ch4.functions_procedures",
       "relation": "prerequisite_for"
     },
@@ -1168,7 +2298,27 @@
       "relation": "prerequisite_for"
     },
     {
+      "source": "mycs.f1.ch4.input_output_intro",
+      "target": "mycs.f2.ch4.html_tags",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f2.ch4.html_tags",
+      "target": "mycs.f2.ch4.web_page_elements",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f2.ch4.web_page_elements",
+      "target": "mycs.f5.ch3.client_side_scripting",
+      "relation": "prerequisite_for"
+    },
+    {
       "source": "mycs.f3.ch4.functions_procedures",
+      "target": "mycs.f4.ch1.problem_solving",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f3.ch1.testing_documentation",
       "target": "mycs.f4.ch1.problem_solving",
       "relation": "prerequisite_for"
     },
@@ -1199,16 +2349,26 @@
     },
     {
       "source": "mycs.f4.ch1.data_structures_modularity",
+      "target": "mycs.f4.ch1.oop_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch1.data_structures_modularity",
+      "target": "mycs.f4.ch1.file_handling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch1.oop_basics",
+      "target": "mycs.f4.ch1.application_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch1.file_handling",
       "target": "mycs.f4.ch1.application_development",
       "relation": "prerequisite_for"
     },
     {
       "source": "mycs.f4.ch1.application_development",
-      "target": "mycs.f5.ch3.client_side_scripting",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mycs.f1.ch4.web_page_elements",
       "target": "mycs.f5.ch3.client_side_scripting",
       "relation": "prerequisite_for"
     },
@@ -1220,6 +2380,36 @@
     {
       "source": "mycs.f5.ch3.server_side_scripting",
       "target": "mycs.f5.ch3.interactive_web_pages",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f3.ch3.binary_search",
+      "target": "mycs.f4.ch1.algorithms_programming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f3.ch3.bubble_sort",
+      "target": "mycs.f4.ch1.algorithms_programming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f3.ch3.pseudocode_search_sort",
+      "target": "mycs.f4.ch1.algorithms_programming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f3.ch3.flowcharts_search_sort",
+      "target": "mycs.f4.ch1.algorithms_programming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f2.ch3.testing_debugging",
+      "target": "mycs.f3.ch1.coding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f2.ch3.input_output",
+      "target": "mycs.f3.ch4.entities_attributes",
       "relation": "prerequisite_for"
     },
     {
@@ -1268,56 +2458,6 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "mycs.f2.ch1.octal",
-      "target": "mycs.f2.ch1.hexadecimal",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mycs.f1.ch2.data_measurement",
-      "target": "mycs.f3.ch2.reverse_cipher",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mycs.f3.ch1.testing_documentation",
-      "target": "mycs.f4.ch1.problem_solving",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mycs.f3.ch3.binary_search",
-      "target": "mycs.f4.ch1.algorithms_programming",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mycs.f3.ch3.bubble_sort",
-      "target": "mycs.f4.ch1.algorithms_programming",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mycs.f3.ch3.bucket_sort",
-      "target": "mycs.f4.ch1.algorithms_programming",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mycs.f3.ch3.pseudocode_search_sort",
-      "target": "mycs.f4.ch1.algorithms_programming",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mycs.f3.ch3.flowcharts_search_sort",
-      "target": "mycs.f4.ch1.algorithms_programming",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mycs.f2.ch3.testing_debugging",
-      "target": "mycs.f3.ch1.coding",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "mycs.f2.ch3.input_output",
-      "target": "mycs.f3.ch4.entities_attributes",
-      "relation": "prerequisite_for"
-    },
-    {
       "source": "mycs.f4.ch3.interaction_design",
       "target": "mycs.f4.ch3.display_screen_design",
       "relation": "prerequisite_for"
@@ -1328,18 +2468,153 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "mycs.f5.ch1.logic_gates",
-      "target": "mycs.f5.ch1.computers_impact",
-      "relation": "prerequisite_for"
-    },
-    {
       "source": "mycs.f4.ch3.display_screen_design",
       "target": "mycs.f5.ch3.client_side_scripting",
       "relation": "prerequisite_for"
     },
     {
-      "source": "mycs.f2.ch1.hexadecimal",
-      "target": "mycs.f5.ch1.computer_architecture",
+      "source": "mycs.f4.ch4.computer_components",
+      "target": "mycs.f4.ch4.cpu_architecture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch4.cpu_architecture",
+      "target": "mycs.f4.ch4.von_neumann",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch4.von_neumann",
+      "target": "mycs.f4.ch4.memory_types",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch4.memory_types",
+      "target": "mycs.f4.ch4.storage_devices",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch4.computer_components",
+      "target": "mycs.f4.ch4.io_devices",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch4.storage_devices",
+      "target": "mycs.f4.ch4.system_application_software",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch4.io_devices",
+      "target": "mycs.f4.ch4.system_application_software",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch4.von_neumann",
+      "target": "mycs.f5.ch1.computers_impact",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch5.network_types",
+      "target": "mycs.f4.ch5.network_topologies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch5.network_topologies",
+      "target": "mycs.f4.ch5.network_hardware",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch5.network_hardware",
+      "target": "mycs.f4.ch5.protocols_tcpip",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch5.protocols_tcpip",
+      "target": "mycs.f4.ch5.ip_addressing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch5.ip_addressing",
+      "target": "mycs.f4.ch5.internet",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch5.internet",
+      "target": "mycs.f4.ch5.network_security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch5.network_security",
+      "target": "mycs.f4.ch6.ethics_ict_law",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch4.system_application_software",
+      "target": "mycs.f4.ch5.network_types",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f5.ch1.logic_gates",
+      "target": "mycs.f5.ch1.boolean_algebra_karnaugh",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f5.ch1.logic_gates",
+      "target": "mycs.f5.ch1.computers_impact",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f1.ch2.binary_decimal_conversion",
+      "target": "mycs.f5.ch1.floating_point_twos_complement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f5.ch1.logic_gates",
+      "target": "mycs.f5.ch1.floating_point_twos_complement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch1.oop_basics",
+      "target": "mycs.f5.ch1.oop_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f5.ch1.oop_advanced",
+      "target": "mycs.f5.ch1.exception_handling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch1.data_structures_modularity",
+      "target": "mycs.f5.ch1.complex_data_structures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f5.ch1.oop_advanced",
+      "target": "mycs.f5.ch1.complex_data_structures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch1.application_development",
+      "target": "mycs.f5.ch4.sdlc",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch5.internet",
+      "target": "mycs.f5.ch4.cloud_computing_iot",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f5.ch4.sdlc",
+      "target": "mycs.f5.ch4.digital_entrepreneurship",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f5.ch4.cloud_computing_iot",
+      "target": "mycs.f5.ch4.digital_entrepreneurship",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "mycs.f4.ch6.ethics_ict_law",
+      "target": "mycs.f5.ch4.digital_entrepreneurship",
       "relation": "prerequisite_for"
     }
   ]
