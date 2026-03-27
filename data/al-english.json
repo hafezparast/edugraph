@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "domain": "english_language",
+    "curriculum": "Cambridge A-Level English Language (9093)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "A-Level English Language topics with prerequisite ordering, colored by component",
+    "sources": [
+      "Cambridge International AS & A Level English Language 9093 Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "al.eng.as",
+      "name": "English Language AS (Year 1)",
+      "color": "#ec4899",
+      "order": 1
+    },
+    {
+      "id": "al.eng.a2",
+      "name": "English Language A2 (Year 2)",
+      "color": "#be185d",
+      "order": 2
+    }
+  ],
+  "nodes": [
+    {
+      "id": "al.eng.text_analysis",
+      "label": "Text Analysis Fundamentals",
+      "type": "concept",
+      "description": "Identifying audience, purpose, context, register, tone; annotation techniques",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.eng.lexis_semantics",
+      "label": "Lexis & Semantics",
+      "type": "concept",
+      "description": "Word classes, connotation, denotation, figurative language, semantic fields",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.eng.grammar_syntax",
+      "label": "Grammar & Syntax",
+      "type": "concept",
+      "description": "Sentence structures, clause types, tense, mood, voice, cohesion devices",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.eng.phonology",
+      "label": "Phonology & Prosody",
+      "type": "concept",
+      "description": "Sound patterns, rhythm, intonation, phonetic representation, accent features",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.eng.writing_skills",
+      "label": "Directed Writing",
+      "type": "concept",
+      "description": "Writing for specific audiences and purposes, persuasion, argumentation, style adaptation",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.eng.spoken_language",
+      "label": "Spoken Language & Discourse",
+      "type": "concept",
+      "description": "Conversation analysis, turn-taking, pragmatics, politeness, spoken vs written language",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.eng.as",
+      "bookName": "English Language AS (Year 1)",
+      "bookColor": "#ec4899",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.eng.language_change",
+      "label": "Language Change",
+      "type": "concept",
+      "description": "Historical development of English, standardisation, neologisms, etymology",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.eng.child_language",
+      "label": "Child Language Acquisition",
+      "type": "concept",
+      "description": "Stages of acquisition, theories (Skinner, Chomsky, Bruner), phonological/lexical/syntactic development",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.eng.english_world",
+      "label": "English in the World",
+      "type": "concept",
+      "description": "World Englishes, lingua franca, pidgins, creoles, language and identity, globalisation of English",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.eng.language_society",
+      "label": "Language & Society",
+      "type": "concept",
+      "description": "Language and power, gender, social class, taboo language, political correctness",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.eng.a2",
+      "bookName": "English Language A2 (Year 2)",
+      "bookColor": "#be185d",
+      "bookOrder": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": "al.eng.text_analysis",
+      "target": "al.eng.lexis_semantics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.text_analysis",
+      "target": "al.eng.grammar_syntax",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.text_analysis",
+      "target": "al.eng.phonology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.lexis_semantics",
+      "target": "al.eng.writing_skills",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.grammar_syntax",
+      "target": "al.eng.writing_skills",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.phonology",
+      "target": "al.eng.spoken_language",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.grammar_syntax",
+      "target": "al.eng.spoken_language",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.lexis_semantics",
+      "target": "al.eng.language_change",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.grammar_syntax",
+      "target": "al.eng.language_change",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.phonology",
+      "target": "al.eng.child_language",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.lexis_semantics",
+      "target": "al.eng.child_language",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.grammar_syntax",
+      "target": "al.eng.child_language",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.language_change",
+      "target": "al.eng.english_world",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.spoken_language",
+      "target": "al.eng.english_world",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.spoken_language",
+      "target": "al.eng.language_society",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.eng.writing_skills",
+      "target": "al.eng.language_society",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

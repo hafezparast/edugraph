@@ -1,0 +1,504 @@
+{
+  "metadata": {
+    "domain": "chemistry",
+    "curriculum": "Cambridge A-Level Chemistry (9701)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "A-Level Chemistry topics with prerequisite ordering, colored by component",
+    "sources": [
+      "Cambridge International AS & A Level Chemistry 9701 Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "al.chem.as",
+      "name": "Chemistry AS (Year 1)",
+      "color": "#14b8a6",
+      "order": 1
+    },
+    {
+      "id": "al.chem.a2",
+      "name": "Chemistry A2 (Year 2)",
+      "color": "#0d9488",
+      "order": 2
+    }
+  ],
+  "nodes": [
+    {
+      "id": "al.chem.stoichiometry",
+      "label": "Atoms, Molecules & Stoichiometry",
+      "type": "concept",
+      "description": "Relative masses, moles, empirical/molecular formulae, chemical equations",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.chem.as",
+      "bookName": "Chemistry AS (Year 1)",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.chem.atomic_structure",
+      "label": "Atomic Structure",
+      "type": "concept",
+      "description": "Protons, neutrons, electrons, isotopes, electron configurations, ionisation energies",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.chem.as",
+      "bookName": "Chemistry AS (Year 1)",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.chem.chemical_bonding",
+      "label": "Chemical Bonding",
+      "type": "concept",
+      "description": "Ionic, covalent, metallic bonding, shapes of molecules, electronegativity",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.chem.as",
+      "bookName": "Chemistry AS (Year 1)",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.chem.states_of_matter",
+      "label": "States of Matter",
+      "type": "concept",
+      "description": "Gases, liquids, solids, intermolecular forces, phase diagrams",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.chem.as",
+      "bookName": "Chemistry AS (Year 1)",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.chem.energetics",
+      "label": "Chemical Energetics",
+      "type": "concept",
+      "description": "Enthalpy changes, Hess's law, bond energies, calorimetry",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.chem.as",
+      "bookName": "Chemistry AS (Year 1)",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.chem.electrochemistry",
+      "label": "Electrochemistry",
+      "type": "concept",
+      "description": "Redox reactions, electrolysis, electrode potentials",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.chem.as",
+      "bookName": "Chemistry AS (Year 1)",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.chem.equilibria",
+      "label": "Equilibria",
+      "type": "concept",
+      "description": "Dynamic equilibrium, Le Chatelier's principle, equilibrium constant Kc",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.chem.as",
+      "bookName": "Chemistry AS (Year 1)",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.chem.reaction_kinetics",
+      "label": "Reaction Kinetics",
+      "type": "concept",
+      "description": "Rates of reaction, collision theory, activation energy, catalysts",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.chem.as",
+      "bookName": "Chemistry AS (Year 1)",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.chem.periodic_table",
+      "label": "The Periodic Table",
+      "type": "concept",
+      "description": "Periodicity, trends in physical and chemical properties",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.chem.as",
+      "bookName": "Chemistry AS (Year 1)",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.chem.group2",
+      "label": "Group 2",
+      "type": "concept",
+      "description": "Properties and reactions of Group 2 elements and compounds",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.chem.as",
+      "bookName": "Chemistry AS (Year 1)",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.chem.group17",
+      "label": "Group 17",
+      "type": "concept",
+      "description": "Properties and reactions of halogens and halide ions",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.chem.as",
+      "bookName": "Chemistry AS (Year 1)",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.chem.nitrogen_sulfur",
+      "label": "Nitrogen & Sulfur",
+      "type": "concept",
+      "description": "Chemistry of nitrogen and sulfur, environmental chemistry, industrial processes",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.chem.as",
+      "bookName": "Chemistry AS (Year 1)",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.chem.lattice_energy",
+      "label": "Lattice Energy",
+      "type": "concept",
+      "description": "Born-Haber cycles, lattice energy calculations, ion polarisation",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.chem.a2",
+      "bookName": "Chemistry A2 (Year 2)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.chem.entropy",
+      "label": "Entropy & Gibbs Free Energy",
+      "type": "concept",
+      "description": "Entropy changes, Gibbs free energy, spontaneity of reactions",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.chem.a2",
+      "bookName": "Chemistry A2 (Year 2)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.chem.equilibria_kp",
+      "label": "Equilibria (Kp)",
+      "type": "concept",
+      "description": "Equilibrium constant Kp, calculations involving gaseous equilibria",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.chem.a2",
+      "bookName": "Chemistry A2 (Year 2)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.chem.acid_base",
+      "label": "Acid-Base Equilibria",
+      "type": "concept",
+      "description": "Bronsted-Lowry theory, pH, Ka, buffer solutions, titration curves",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.chem.a2",
+      "bookName": "Chemistry A2 (Year 2)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.chem.solubility_product",
+      "label": "Solubility Product",
+      "type": "concept",
+      "description": "Ksp, common ion effect, predicting precipitation",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.chem.a2",
+      "bookName": "Chemistry A2 (Year 2)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.chem.kinetics_a2",
+      "label": "Reaction Kinetics (A2)",
+      "type": "concept",
+      "description": "Rate equations, order of reaction, rate constant, Arrhenius equation",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.chem.a2",
+      "bookName": "Chemistry A2 (Year 2)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.chem.transition_elements",
+      "label": "Transition Elements",
+      "type": "concept",
+      "description": "d-block elements, complex ions, colour, catalysis, variable oxidation states",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.chem.a2",
+      "bookName": "Chemistry A2 (Year 2)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.chem.organic_frameworks",
+      "label": "Organic Chemistry Frameworks",
+      "type": "concept",
+      "description": "Functional groups, nomenclature, isomerism, reaction mechanisms",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.chem.as",
+      "bookName": "Chemistry AS (Year 1)",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.chem.hydrocarbons",
+      "label": "Hydrocarbons",
+      "type": "concept",
+      "description": "Alkanes, alkenes, addition reactions, polymerisation, cracking",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.chem.as",
+      "bookName": "Chemistry AS (Year 1)",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.chem.halogenoalkanes",
+      "label": "Halogenoalkanes",
+      "type": "concept",
+      "description": "Nucleophilic substitution, elimination, CFCs and ozone",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.chem.as",
+      "bookName": "Chemistry AS (Year 1)",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.chem.organic_a2",
+      "label": "Organic Chemistry (A2)",
+      "type": "concept",
+      "description": "Carboxylic acids, esters, acyl chlorides, amines, amides, amino acids, polyesters/polyamides",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.chem.a2",
+      "bookName": "Chemistry A2 (Year 2)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.chem.analytical",
+      "label": "Analytical Techniques",
+      "type": "concept",
+      "description": "Mass spectrometry, IR spectroscopy, NMR, chromatography",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.chem.a2",
+      "bookName": "Chemistry A2 (Year 2)",
+      "bookColor": "#0d9488",
+      "bookOrder": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": "al.chem.stoichiometry",
+      "target": "al.chem.atomic_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.atomic_structure",
+      "target": "al.chem.chemical_bonding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.chemical_bonding",
+      "target": "al.chem.states_of_matter",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.stoichiometry",
+      "target": "al.chem.energetics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.chemical_bonding",
+      "target": "al.chem.energetics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.stoichiometry",
+      "target": "al.chem.electrochemistry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.atomic_structure",
+      "target": "al.chem.electrochemistry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.stoichiometry",
+      "target": "al.chem.equilibria",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.energetics",
+      "target": "al.chem.equilibria",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.stoichiometry",
+      "target": "al.chem.reaction_kinetics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.energetics",
+      "target": "al.chem.reaction_kinetics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.atomic_structure",
+      "target": "al.chem.periodic_table",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.chemical_bonding",
+      "target": "al.chem.periodic_table",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.periodic_table",
+      "target": "al.chem.group2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.periodic_table",
+      "target": "al.chem.group17",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.periodic_table",
+      "target": "al.chem.nitrogen_sulfur",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.chemical_bonding",
+      "target": "al.chem.organic_frameworks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.organic_frameworks",
+      "target": "al.chem.hydrocarbons",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.organic_frameworks",
+      "target": "al.chem.halogenoalkanes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.group17",
+      "target": "al.chem.halogenoalkanes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.energetics",
+      "target": "al.chem.lattice_energy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.chemical_bonding",
+      "target": "al.chem.lattice_energy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.energetics",
+      "target": "al.chem.entropy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.lattice_energy",
+      "target": "al.chem.entropy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.equilibria",
+      "target": "al.chem.equilibria_kp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.states_of_matter",
+      "target": "al.chem.equilibria_kp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.equilibria",
+      "target": "al.chem.acid_base",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.equilibria_kp",
+      "target": "al.chem.acid_base",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.acid_base",
+      "target": "al.chem.solubility_product",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.equilibria",
+      "target": "al.chem.solubility_product",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.reaction_kinetics",
+      "target": "al.chem.kinetics_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.periodic_table",
+      "target": "al.chem.transition_elements",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.electrochemistry",
+      "target": "al.chem.transition_elements",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.halogenoalkanes",
+      "target": "al.chem.organic_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.hydrocarbons",
+      "target": "al.chem.organic_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.organic_a2",
+      "target": "al.chem.analytical",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.chem.atomic_structure",
+      "target": "al.chem.analytical",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

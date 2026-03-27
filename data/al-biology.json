@@ -1,0 +1,436 @@
+{
+  "metadata": {
+    "domain": "biology",
+    "curriculum": "Cambridge A-Level Biology (9700)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "A-Level Biology topics with prerequisite ordering, colored by component",
+    "sources": [
+      "Cambridge International AS & A Level Biology 9700 Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "al.bio.as",
+      "name": "Biology AS (Year 1)",
+      "color": "#22c55e",
+      "order": 1
+    },
+    {
+      "id": "al.bio.a2",
+      "name": "Biology A2 (Year 2)",
+      "color": "#15803d",
+      "order": 2
+    }
+  ],
+  "nodes": [
+    {
+      "id": "al.bio.cell_structure",
+      "label": "Cell Structure",
+      "type": "concept",
+      "description": "Cell organelles, prokaryotic/eukaryotic cells, microscopy, cell measurements",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bio.as",
+      "bookName": "Biology AS (Year 1)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bio.biological_molecules",
+      "label": "Biological Molecules",
+      "type": "concept",
+      "description": "Carbohydrates, lipids, proteins, nucleic acids, water",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bio.as",
+      "bookName": "Biology AS (Year 1)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bio.enzymes",
+      "label": "Enzymes",
+      "type": "concept",
+      "description": "Enzyme structure, active site, factors affecting rate, inhibition",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bio.as",
+      "bookName": "Biology AS (Year 1)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bio.cell_membranes",
+      "label": "Cell Membranes & Transport",
+      "type": "concept",
+      "description": "Fluid mosaic model, diffusion, osmosis, active transport, endocytosis/exocytosis",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bio.as",
+      "bookName": "Biology AS (Year 1)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bio.mitosis_meiosis",
+      "label": "Mitosis & Meiosis",
+      "type": "concept",
+      "description": "Cell cycle, mitosis, meiosis, chromosome behaviour, significance",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bio.as",
+      "bookName": "Biology AS (Year 1)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bio.genetic_control",
+      "label": "Genetic Control",
+      "type": "concept",
+      "description": "DNA replication, protein synthesis, gene expression, mutations",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bio.as",
+      "bookName": "Biology AS (Year 1)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bio.transport_plants",
+      "label": "Transport in Plants",
+      "type": "concept",
+      "description": "Xylem, phloem, transpiration, translocation, root pressure",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bio.as",
+      "bookName": "Biology AS (Year 1)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bio.transport_animals",
+      "label": "Transport in Animals",
+      "type": "concept",
+      "description": "Circulatory system, heart structure, blood vessels, haemoglobin",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bio.as",
+      "bookName": "Biology AS (Year 1)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bio.gas_exchange",
+      "label": "Gas Exchange",
+      "type": "concept",
+      "description": "Gas exchange surfaces, lungs, ventilation, smoking and disease",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bio.as",
+      "bookName": "Biology AS (Year 1)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bio.infectious_diseases",
+      "label": "Infectious Diseases",
+      "type": "concept",
+      "description": "Pathogens, transmission, defence mechanisms, antibiotics",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bio.as",
+      "bookName": "Biology AS (Year 1)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bio.immunity",
+      "label": "Immunity",
+      "type": "concept",
+      "description": "Immune response, antibodies, vaccination, active/passive immunity",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bio.as",
+      "bookName": "Biology AS (Year 1)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bio.respiration",
+      "label": "Energy & Respiration",
+      "type": "concept",
+      "description": "Glycolysis, Krebs cycle, oxidative phosphorylation, ATP, anaerobic respiration",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.bio.a2",
+      "bookName": "Biology A2 (Year 2)",
+      "bookColor": "#15803d",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.bio.photosynthesis",
+      "label": "Photosynthesis",
+      "type": "concept",
+      "description": "Light-dependent reactions, Calvin cycle, limiting factors, C4 plants",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.bio.a2",
+      "bookName": "Biology A2 (Year 2)",
+      "bookColor": "#15803d",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.bio.homeostasis",
+      "label": "Homeostasis",
+      "type": "concept",
+      "description": "Negative feedback, thermoregulation, blood glucose regulation, kidney function",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.bio.a2",
+      "bookName": "Biology A2 (Year 2)",
+      "bookColor": "#15803d",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.bio.coordination",
+      "label": "Coordination",
+      "type": "concept",
+      "description": "Nervous system, synapses, hormones, plant growth regulators",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.bio.a2",
+      "bookName": "Biology A2 (Year 2)",
+      "bookColor": "#15803d",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.bio.inherited_change",
+      "label": "Inherited Change",
+      "type": "concept",
+      "description": "Mendelian genetics, linkage, epistasis, chi-squared test",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.bio.a2",
+      "bookName": "Biology A2 (Year 2)",
+      "bookColor": "#15803d",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.bio.selection_evolution",
+      "label": "Selection & Evolution",
+      "type": "concept",
+      "description": "Natural selection, speciation, evolution, Hardy-Weinberg principle",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.bio.a2",
+      "bookName": "Biology A2 (Year 2)",
+      "bookColor": "#15803d",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.bio.biodiversity",
+      "label": "Biodiversity, Classification & Conservation",
+      "type": "concept",
+      "description": "Species diversity, taxonomy, conservation, endangered species",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.bio.a2",
+      "bookName": "Biology A2 (Year 2)",
+      "bookColor": "#15803d",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.bio.genetic_technology",
+      "label": "Genetic Technology",
+      "type": "concept",
+      "description": "Genetic engineering, PCR, gel electrophoresis, gene therapy, GMOs",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.bio.a2",
+      "bookName": "Biology A2 (Year 2)",
+      "bookColor": "#15803d",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.bio.ecology",
+      "label": "Ecology",
+      "type": "concept",
+      "description": "Ecosystems, energy flow, nutrient cycling, succession, population dynamics",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.bio.a2",
+      "bookName": "Biology A2 (Year 2)",
+      "bookColor": "#15803d",
+      "bookOrder": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": "al.bio.cell_structure",
+      "target": "al.bio.biological_molecules",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.biological_molecules",
+      "target": "al.bio.enzymes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.cell_structure",
+      "target": "al.bio.cell_membranes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.biological_molecules",
+      "target": "al.bio.cell_membranes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.cell_structure",
+      "target": "al.bio.mitosis_meiosis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.biological_molecules",
+      "target": "al.bio.genetic_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.mitosis_meiosis",
+      "target": "al.bio.genetic_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.cell_membranes",
+      "target": "al.bio.transport_plants",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.cell_membranes",
+      "target": "al.bio.transport_animals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.cell_membranes",
+      "target": "al.bio.gas_exchange",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.transport_animals",
+      "target": "al.bio.gas_exchange",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.cell_structure",
+      "target": "al.bio.infectious_diseases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.infectious_diseases",
+      "target": "al.bio.immunity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.biological_molecules",
+      "target": "al.bio.immunity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.enzymes",
+      "target": "al.bio.respiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.cell_membranes",
+      "target": "al.bio.respiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.biological_molecules",
+      "target": "al.bio.respiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.respiration",
+      "target": "al.bio.photosynthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.enzymes",
+      "target": "al.bio.photosynthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.transport_animals",
+      "target": "al.bio.homeostasis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.enzymes",
+      "target": "al.bio.homeostasis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.cell_membranes",
+      "target": "al.bio.homeostasis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.homeostasis",
+      "target": "al.bio.coordination",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.cell_membranes",
+      "target": "al.bio.coordination",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.genetic_control",
+      "target": "al.bio.inherited_change",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.mitosis_meiosis",
+      "target": "al.bio.inherited_change",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.inherited_change",
+      "target": "al.bio.selection_evolution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.selection_evolution",
+      "target": "al.bio.biodiversity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.genetic_control",
+      "target": "al.bio.genetic_technology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.inherited_change",
+      "target": "al.bio.genetic_technology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.photosynthesis",
+      "target": "al.bio.ecology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.biodiversity",
+      "target": "al.bio.ecology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bio.transport_plants",
+      "target": "al.bio.ecology",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

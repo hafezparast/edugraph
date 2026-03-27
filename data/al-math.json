@@ -1,0 +1,803 @@
+{
+  "metadata": {
+    "domain": "mathematics",
+    "curriculum": "Cambridge A-Level Mathematics (9709)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "A-Level Mathematics topics with prerequisite ordering, colored by component",
+    "sources": [
+      "Cambridge International AS & A Level Mathematics 9709 Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "al.math.p1",
+      "name": "Pure Mathematics 1 (AS)",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "al.math.p2",
+      "name": "Pure Mathematics 2 (A2)",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "al.math.p3",
+      "name": "Pure Mathematics 3 (A2)",
+      "color": "#eab308",
+      "order": 3
+    },
+    {
+      "id": "al.math.s1",
+      "name": "Statistics 1 (AS)",
+      "color": "#22c55e",
+      "order": 4
+    },
+    {
+      "id": "al.math.s2",
+      "name": "Statistics 2 (A2)",
+      "color": "#3b82f6",
+      "order": 5
+    },
+    {
+      "id": "al.math.m1",
+      "name": "Mechanics 1 (AS)",
+      "color": "#8b5cf6",
+      "order": 6
+    }
+  ],
+  "nodes": [
+    {
+      "id": "al.math.p1.quadratics",
+      "label": "Quadratics",
+      "type": "concept",
+      "description": "Quadratic equations, inequalities, graphs and the discriminant",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.math.p1.functions",
+      "label": "Functions",
+      "type": "concept",
+      "description": "Domain, range, composite functions, inverse functions and transformations",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.math.p1.coordinate_geometry",
+      "label": "Coordinate Geometry",
+      "type": "concept",
+      "description": "Equations of lines, circles, gradients, distance and midpoint",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.math.p1.circular_measure",
+      "label": "Circular Measure",
+      "type": "concept",
+      "description": "Radians, arc length and sector area",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.math.p1.trigonometry",
+      "label": "Trigonometry (AS)",
+      "type": "concept",
+      "description": "Trigonometric ratios, identities, equations and graphs",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.math.p1.series",
+      "label": "Series",
+      "type": "concept",
+      "description": "Arithmetic and geometric progressions, binomial expansion",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.math.p1.differentiation",
+      "label": "Differentiation (AS)",
+      "type": "concept",
+      "description": "Derivatives of powers, gradients, tangents, normals, stationary points",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.math.p1.integration",
+      "label": "Integration (AS)",
+      "type": "concept",
+      "description": "Integration as reverse of differentiation, definite integrals, areas under curves",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.math.p2.algebra",
+      "label": "Algebra (A2)",
+      "type": "concept",
+      "description": "Factor theorem, remainder theorem, partial fractions and modulus functions",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.math.p2.logarithms",
+      "label": "Logarithmic & Exponential Functions",
+      "type": "concept",
+      "description": "Laws of logarithms, exponential growth/decay, natural logarithms",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.math.p2.trigonometry",
+      "label": "Trigonometry (A2)",
+      "type": "concept",
+      "description": "Addition formulae, double angle, harmonic form, inverse trig functions",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.math.p2.differentiation",
+      "label": "Differentiation (A2)",
+      "type": "concept",
+      "description": "Chain rule, product rule, quotient rule, implicit and parametric differentiation",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.math.p2.integration_a2",
+      "label": "Integration (A2)",
+      "type": "concept",
+      "description": "Integration by substitution, by parts, partial fractions, volumes of revolution",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.math.p2.numerical_methods",
+      "label": "Numerical Methods",
+      "type": "concept",
+      "description": "Location of roots, iterative methods, Newton-Raphson, trapezium rule",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.math.p3.vectors",
+      "label": "Vectors",
+      "type": "concept",
+      "description": "Vector equations of lines, scalar and vector products, intersections",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3
+    },
+    {
+      "id": "al.math.p3.differential_equations",
+      "label": "Differential Equations",
+      "type": "concept",
+      "description": "Separable variables, first-order differential equations, modelling",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3
+    },
+    {
+      "id": "al.math.p3.complex_numbers",
+      "label": "Complex Numbers",
+      "type": "concept",
+      "description": "Argand diagrams, modulus-argument form, loci, de Moivre's theorem",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3
+    },
+    {
+      "id": "al.math.s1.probability",
+      "label": "Probability",
+      "type": "concept",
+      "description": "Conditional probability, independent events, tree diagrams, Venn diagrams",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.s1",
+      "bookName": "Statistics 1 (AS)",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "al.math.s1.permutations_combinations",
+      "label": "Permutations & Combinations",
+      "type": "concept",
+      "description": "Arrangements, selections, factorials and binomial coefficients",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.s1",
+      "bookName": "Statistics 1 (AS)",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "al.math.s1.discrete_random_variables",
+      "label": "Discrete Random Variables",
+      "type": "concept",
+      "description": "Probability distributions, expectation, variance, binomial distribution",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.s1",
+      "bookName": "Statistics 1 (AS)",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "al.math.s1.normal_distribution",
+      "label": "Normal Distribution",
+      "type": "concept",
+      "description": "Standard normal, z-scores, probability calculations, inverse normal",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.s1",
+      "bookName": "Statistics 1 (AS)",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "al.math.s2.poisson",
+      "label": "Poisson Distribution",
+      "type": "concept",
+      "description": "Poisson distribution, mean and variance, approximation to binomial",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.s2",
+      "bookName": "Statistics 2 (A2)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5
+    },
+    {
+      "id": "al.math.s2.linear_combinations",
+      "label": "Linear Combinations of Random Variables",
+      "type": "concept",
+      "description": "E(aX+bY), Var(aX+bY) for independent random variables",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.s2",
+      "bookName": "Statistics 2 (A2)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5
+    },
+    {
+      "id": "al.math.s2.clt",
+      "label": "Central Limit Theorem",
+      "type": "concept",
+      "description": "Sampling distributions, CLT for means, normal approximation",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.s2",
+      "bookName": "Statistics 2 (A2)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5
+    },
+    {
+      "id": "al.math.s2.confidence_intervals",
+      "label": "Confidence Intervals",
+      "type": "concept",
+      "description": "Confidence intervals for population mean, interpretation",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.s2",
+      "bookName": "Statistics 2 (A2)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5
+    },
+    {
+      "id": "al.math.s2.hypothesis_testing",
+      "label": "Hypothesis Testing",
+      "type": "concept",
+      "description": "Null/alternative hypotheses, significance levels, Type I/II errors",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.s2",
+      "bookName": "Statistics 2 (A2)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5
+    },
+    {
+      "id": "al.math.m1.forces_equilibrium",
+      "label": "Forces & Equilibrium",
+      "type": "concept",
+      "description": "Force diagrams, resolving forces, equilibrium of a particle, friction",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6
+    },
+    {
+      "id": "al.math.m1.kinematics",
+      "label": "Kinematics of Motion in a Straight Line",
+      "type": "concept",
+      "description": "Displacement, velocity, acceleration, suvat equations, graphs",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6
+    },
+    {
+      "id": "al.math.m1.newtons_laws",
+      "label": "Newton's Laws of Motion",
+      "type": "concept",
+      "description": "Newton's first, second and third laws, connected particles, pulleys",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6
+    },
+    {
+      "id": "al.math.m1.energy",
+      "label": "Energy, Work & Power",
+      "type": "concept",
+      "description": "Kinetic and potential energy, work-energy theorem, power",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6
+    },
+    {
+      "id": "al.math.p1.binomial_expansion",
+      "label": "Binomial Expansion",
+      "type": "concept",
+      "description": "Binomial theorem for positive integer powers",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.math.s1.data_representation",
+      "label": "Data Representation",
+      "type": "concept",
+      "description": "Histograms, cumulative frequency, box plots, measures of central tendency and spread",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.s1",
+      "bookName": "Statistics 1 (AS)",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "al.math.p3.further_algebra",
+      "label": "Further Algebra",
+      "type": "concept",
+      "description": "Binomial expansion for rational powers, partial fractions decomposition",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3
+    },
+    {
+      "id": "al.math.p2.parametric_equations",
+      "label": "Parametric Equations",
+      "type": "concept",
+      "description": "Parametric curves, conversion to Cartesian form, calculus with parametric equations",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.p2",
+      "bookName": "Pure Mathematics 2 (A2)",
+      "bookColor": "#f97316",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.math.s2.continuous_random_variables",
+      "label": "Continuous Random Variables",
+      "type": "concept",
+      "description": "Probability density functions, cumulative distribution functions, median and quartiles",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.s2",
+      "bookName": "Statistics 2 (A2)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5
+    },
+    {
+      "id": "al.math.m1.projectiles",
+      "label": "Projectile Motion",
+      "type": "concept",
+      "description": "Projectile motion in two dimensions, range, maximum height, trajectory",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6
+    },
+    {
+      "id": "al.math.p1.inequalities",
+      "label": "Inequalities",
+      "type": "concept",
+      "description": "Linear and quadratic inequalities, graphical solutions, modulus inequalities",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.p1",
+      "bookName": "Pure Mathematics 1 (AS)",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.math.p3.further_calculus",
+      "label": "Further Calculus",
+      "type": "concept",
+      "description": "Integration of rational functions, trigonometric integrals, reduction formulae",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.math.p3",
+      "bookName": "Pure Mathematics 3 (A2)",
+      "bookColor": "#eab308",
+      "bookOrder": 3
+    },
+    {
+      "id": "al.math.m1.moments",
+      "label": "Moments",
+      "type": "concept",
+      "description": "Moment of a force, equilibrium of rigid bodies, centres of mass",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.math.m1",
+      "bookName": "Mechanics 1 (AS)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6
+    }
+  ],
+  "edges": [
+    {
+      "source": "al.math.p1.quadratics",
+      "target": "al.math.p1.functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.quadratics",
+      "target": "al.math.p1.inequalities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.quadratics",
+      "target": "al.math.p1.coordinate_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.coordinate_geometry",
+      "target": "al.math.p1.circular_measure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.circular_measure",
+      "target": "al.math.p1.trigonometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.functions",
+      "target": "al.math.p1.series",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.series",
+      "target": "al.math.p1.binomial_expansion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.quadratics",
+      "target": "al.math.p1.differentiation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.functions",
+      "target": "al.math.p1.differentiation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.coordinate_geometry",
+      "target": "al.math.p1.differentiation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.differentiation",
+      "target": "al.math.p1.integration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.quadratics",
+      "target": "al.math.p2.algebra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.functions",
+      "target": "al.math.p2.algebra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.series",
+      "target": "al.math.p2.logarithms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.functions",
+      "target": "al.math.p2.logarithms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.trigonometry",
+      "target": "al.math.p2.trigonometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.differentiation",
+      "target": "al.math.p2.differentiation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.logarithms",
+      "target": "al.math.p2.differentiation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.trigonometry",
+      "target": "al.math.p2.differentiation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.integration",
+      "target": "al.math.p2.integration_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.differentiation",
+      "target": "al.math.p2.integration_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.algebra",
+      "target": "al.math.p2.integration_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.differentiation",
+      "target": "al.math.p2.numerical_methods",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.integration",
+      "target": "al.math.p2.numerical_methods",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.differentiation",
+      "target": "al.math.p2.parametric_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.coordinate_geometry",
+      "target": "al.math.p3.vectors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.algebra",
+      "target": "al.math.p3.vectors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.integration_a2",
+      "target": "al.math.p3.differential_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.logarithms",
+      "target": "al.math.p3.differential_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.quadratics",
+      "target": "al.math.p3.complex_numbers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.trigonometry",
+      "target": "al.math.p3.complex_numbers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.algebra",
+      "target": "al.math.p3.further_algebra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.binomial_expansion",
+      "target": "al.math.p3.further_algebra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.integration_a2",
+      "target": "al.math.p3.further_calculus",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p2.trigonometry",
+      "target": "al.math.p3.further_calculus",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.data_representation",
+      "target": "al.math.s1.probability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.probability",
+      "target": "al.math.s1.permutations_combinations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.probability",
+      "target": "al.math.s1.discrete_random_variables",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.permutations_combinations",
+      "target": "al.math.s1.discrete_random_variables",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.discrete_random_variables",
+      "target": "al.math.s1.normal_distribution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.discrete_random_variables",
+      "target": "al.math.s2.poisson",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.normal_distribution",
+      "target": "al.math.s2.linear_combinations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s2.poisson",
+      "target": "al.math.s2.linear_combinations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s1.normal_distribution",
+      "target": "al.math.s2.continuous_random_variables",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.integration",
+      "target": "al.math.s2.continuous_random_variables",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s2.linear_combinations",
+      "target": "al.math.s2.clt",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s2.clt",
+      "target": "al.math.s2.confidence_intervals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.s2.confidence_intervals",
+      "target": "al.math.s2.hypothesis_testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.differentiation",
+      "target": "al.math.m1.kinematics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.trigonometry",
+      "target": "al.math.m1.forces_equilibrium",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.forces_equilibrium",
+      "target": "al.math.m1.newtons_laws",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.kinematics",
+      "target": "al.math.m1.newtons_laws",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.newtons_laws",
+      "target": "al.math.m1.energy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.kinematics",
+      "target": "al.math.m1.projectiles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.p1.trigonometry",
+      "target": "al.math.m1.projectiles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.math.m1.forces_equilibrium",
+      "target": "al.math.m1.moments",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

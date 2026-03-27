@@ -1,0 +1,319 @@
+{
+  "metadata": {
+    "domain": "psychology",
+    "curriculum": "Cambridge A-Level Psychology (9990)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "A-Level Psychology topics with prerequisite ordering, colored by component",
+    "sources": [
+      "Cambridge International AS & A Level Psychology 9990 Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "al.psy.as",
+      "name": "Psychology AS (Year 1)",
+      "color": "#8b5cf6",
+      "order": 1
+    },
+    {
+      "id": "al.psy.a2",
+      "name": "Psychology A2 (Year 2)",
+      "color": "#6d28d9",
+      "order": 2
+    }
+  ],
+  "nodes": [
+    {
+      "id": "al.psy.research_methods",
+      "label": "Research Methods",
+      "type": "concept",
+      "description": "Experiments, observations, self-reports, sampling, ethics, data analysis",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.psy.biological",
+      "label": "Biological Approach",
+      "type": "concept",
+      "description": "Brain structure, neurons, neurotransmitters, genetics and behaviour, localisation of function",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.psy.cognitive",
+      "label": "Cognitive Approach",
+      "type": "concept",
+      "description": "Memory models, attention, perception, cognitive development, schema theory",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.psy.learning",
+      "label": "Learning Approach",
+      "type": "concept",
+      "description": "Classical conditioning, operant conditioning, social learning theory",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.psy.social",
+      "label": "Social Approach",
+      "type": "concept",
+      "description": "Obedience, conformity, social identity theory, bystander behaviour",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.psy.developmental",
+      "label": "Developmental Psychology",
+      "type": "concept",
+      "description": "Attachment theory, cognitive development stages, moral development",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.psy.abnormality",
+      "label": "Abnormal Psychology",
+      "type": "concept",
+      "description": "Definitions of abnormality, depression, anxiety disorders, treatments",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.psy.health",
+      "label": "Health Psychology",
+      "type": "concept",
+      "description": "Stress, coping strategies, health promotion, substance abuse, adherence to treatment",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.psy.organisations",
+      "label": "Psychology of Organisations",
+      "type": "concept",
+      "description": "Motivation at work, leadership, group dynamics, selection and training",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.psy.consumer",
+      "label": "Consumer Psychology",
+      "type": "concept",
+      "description": "Advertising, brand loyalty, consumer decision making, persuasion techniques",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.psy.research_a2",
+      "label": "Research Methods (A2)",
+      "type": "concept",
+      "description": "Inferential statistics, chi-squared, Mann-Whitney, Wilcoxon, Spearman's, research design evaluation",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.psy.individual_differences",
+      "label": "Individual Differences",
+      "type": "concept",
+      "description": "Intelligence, personality, psychometrics, nature-nurture debate",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.psy.as",
+      "bookName": "Psychology AS (Year 1)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.psy.forensic",
+      "label": "Forensic Psychology",
+      "type": "concept",
+      "description": "Criminal behaviour, eyewitness testimony, offender profiling, punishment and rehabilitation",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.psy.environmental",
+      "label": "Environmental Psychology",
+      "type": "concept",
+      "description": "Personal space, crowding, environmental stress, pro-environmental behaviour",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.psy.a2",
+      "bookName": "Psychology A2 (Year 2)",
+      "bookColor": "#6d28d9",
+      "bookOrder": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": "al.psy.research_methods",
+      "target": "al.psy.biological",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.research_methods",
+      "target": "al.psy.cognitive",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.research_methods",
+      "target": "al.psy.learning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.research_methods",
+      "target": "al.psy.social",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.cognitive",
+      "target": "al.psy.developmental",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.learning",
+      "target": "al.psy.developmental",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.biological",
+      "target": "al.psy.individual_differences",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.cognitive",
+      "target": "al.psy.individual_differences",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.biological",
+      "target": "al.psy.abnormality",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.cognitive",
+      "target": "al.psy.abnormality",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.learning",
+      "target": "al.psy.abnormality",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.biological",
+      "target": "al.psy.health",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.cognitive",
+      "target": "al.psy.health",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.social",
+      "target": "al.psy.organisations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.learning",
+      "target": "al.psy.organisations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.cognitive",
+      "target": "al.psy.consumer",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.social",
+      "target": "al.psy.consumer",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.research_methods",
+      "target": "al.psy.research_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.individual_differences",
+      "target": "al.psy.research_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.social",
+      "target": "al.psy.forensic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.abnormality",
+      "target": "al.psy.forensic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.cognitive",
+      "target": "al.psy.environmental",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.social",
+      "target": "al.psy.environmental",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.psy.developmental",
+      "target": "al.psy.abnormality",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

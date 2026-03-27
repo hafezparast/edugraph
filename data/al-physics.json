@@ -1,0 +1,499 @@
+{
+  "metadata": {
+    "domain": "physics",
+    "curriculum": "Cambridge A-Level Physics (9702)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "A-Level Physics topics with prerequisite ordering, colored by component",
+    "sources": [
+      "Cambridge International AS & A Level Physics 9702 Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "al.phy.as",
+      "name": "Physics AS (Year 1)",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "al.phy.a2",
+      "name": "Physics A2 (Year 2)",
+      "color": "#1d4ed8",
+      "order": 2
+    }
+  ],
+  "nodes": [
+    {
+      "id": "al.phy.physical_quantities",
+      "label": "Physical Quantities & Units",
+      "type": "concept",
+      "description": "SI units, dimensional analysis, scalars and vectors, measurement errors",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.phy.as",
+      "bookName": "Physics AS (Year 1)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.phy.kinematics",
+      "label": "Kinematics",
+      "type": "concept",
+      "description": "Displacement, velocity, acceleration, motion graphs, equations of motion",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.phy.as",
+      "bookName": "Physics AS (Year 1)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.phy.dynamics",
+      "label": "Dynamics",
+      "type": "concept",
+      "description": "Newton's laws, momentum, impulse, conservation of momentum, collisions",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.phy.as",
+      "bookName": "Physics AS (Year 1)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.phy.forces",
+      "label": "Forces, Density & Pressure",
+      "type": "concept",
+      "description": "Types of forces, turning effects, equilibrium, density and pressure",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.phy.as",
+      "bookName": "Physics AS (Year 1)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.phy.work_energy_power",
+      "label": "Work, Energy & Power",
+      "type": "concept",
+      "description": "Work done, kinetic/potential energy, power, efficiency, energy conservation",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.phy.as",
+      "bookName": "Physics AS (Year 1)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.phy.deformation",
+      "label": "Deformation of Solids",
+      "type": "concept",
+      "description": "Stress, strain, Young modulus, elastic and plastic deformation",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.phy.as",
+      "bookName": "Physics AS (Year 1)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.phy.waves",
+      "label": "Waves",
+      "type": "concept",
+      "description": "Progressive waves, transverse/longitudinal, wave equation, electromagnetic spectrum",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.phy.as",
+      "bookName": "Physics AS (Year 1)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.phy.superposition",
+      "label": "Superposition",
+      "type": "concept",
+      "description": "Interference, diffraction, stationary waves, two-source interference",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.phy.as",
+      "bookName": "Physics AS (Year 1)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.phy.electricity",
+      "label": "Electricity",
+      "type": "concept",
+      "description": "Charge, current, potential difference, resistance, resistivity, I-V characteristics",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.phy.as",
+      "bookName": "Physics AS (Year 1)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.phy.dc_circuits",
+      "label": "DC Circuits",
+      "type": "concept",
+      "description": "Kirchhoff's laws, series/parallel circuits, potential dividers, EMF and internal resistance",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.phy.as",
+      "bookName": "Physics AS (Year 1)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.phy.nuclear_physics_as",
+      "label": "Nuclear Physics (AS)",
+      "type": "concept",
+      "description": "Atomic structure, isotopes, nuclear reactions, radioactive decay, half-life",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.phy.as",
+      "bookName": "Physics AS (Year 1)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.phy.circular_motion",
+      "label": "Motion in a Circle",
+      "type": "concept",
+      "description": "Angular velocity, centripetal acceleration and force, circular orbits",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.phy.a2",
+      "bookName": "Physics A2 (Year 2)",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.phy.gravitational_fields",
+      "label": "Gravitational Fields",
+      "type": "concept",
+      "description": "Newton's law of gravitation, gravitational field strength, potential, orbits",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.phy.a2",
+      "bookName": "Physics A2 (Year 2)",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.phy.temperature",
+      "label": "Temperature",
+      "type": "concept",
+      "description": "Thermal equilibrium, temperature scales, thermometers",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.phy.a2",
+      "bookName": "Physics A2 (Year 2)",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.phy.ideal_gases",
+      "label": "Ideal Gases",
+      "type": "concept",
+      "description": "Gas laws, kinetic theory, ideal gas equation, molecular kinetic energy",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.phy.a2",
+      "bookName": "Physics A2 (Year 2)",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.phy.thermodynamics",
+      "label": "Thermodynamics",
+      "type": "concept",
+      "description": "Internal energy, first law of thermodynamics, specific heat capacity, specific latent heat",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.phy.a2",
+      "bookName": "Physics A2 (Year 2)",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.phy.oscillations",
+      "label": "Oscillations",
+      "type": "concept",
+      "description": "Simple harmonic motion, damping, resonance, forced oscillations",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.phy.a2",
+      "bookName": "Physics A2 (Year 2)",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.phy.electric_fields",
+      "label": "Electric Fields",
+      "type": "concept",
+      "description": "Coulomb's law, electric field strength, potential, uniform and radial fields",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.phy.a2",
+      "bookName": "Physics A2 (Year 2)",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.phy.capacitance",
+      "label": "Capacitance",
+      "type": "concept",
+      "description": "Capacitors, energy stored, charging/discharging, time constant",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.phy.a2",
+      "bookName": "Physics A2 (Year 2)",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.phy.magnetic_fields",
+      "label": "Magnetic Fields",
+      "type": "concept",
+      "description": "Magnetic flux density, force on current-carrying conductor, force on moving charge",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.phy.a2",
+      "bookName": "Physics A2 (Year 2)",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.phy.em_induction",
+      "label": "Electromagnetic Induction",
+      "type": "concept",
+      "description": "Faraday's law, Lenz's law, magnetic flux, EMF induction",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.phy.a2",
+      "bookName": "Physics A2 (Year 2)",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.phy.alternating_currents",
+      "label": "Alternating Currents",
+      "type": "concept",
+      "description": "RMS values, transformers, rectification, smoothing",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.phy.a2",
+      "bookName": "Physics A2 (Year 2)",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.phy.quantum_physics",
+      "label": "Quantum Physics",
+      "type": "concept",
+      "description": "Photons, photoelectric effect, wave-particle duality, energy levels, line spectra",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.phy.a2",
+      "bookName": "Physics A2 (Year 2)",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.phy.nuclear_physics_a2",
+      "label": "Nuclear Physics (A2)",
+      "type": "concept",
+      "description": "Mass-energy equivalence, binding energy, nuclear fission/fusion, radioactive decay law",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.phy.a2",
+      "bookName": "Physics A2 (Year 2)",
+      "bookColor": "#1d4ed8",
+      "bookOrder": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": "al.phy.physical_quantities",
+      "target": "al.phy.kinematics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.kinematics",
+      "target": "al.phy.dynamics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.physical_quantities",
+      "target": "al.phy.forces",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.dynamics",
+      "target": "al.phy.forces",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.forces",
+      "target": "al.phy.work_energy_power",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.dynamics",
+      "target": "al.phy.work_energy_power",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.forces",
+      "target": "al.phy.deformation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.physical_quantities",
+      "target": "al.phy.waves",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.waves",
+      "target": "al.phy.superposition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.physical_quantities",
+      "target": "al.phy.electricity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.work_energy_power",
+      "target": "al.phy.electricity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.electricity",
+      "target": "al.phy.dc_circuits",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.physical_quantities",
+      "target": "al.phy.nuclear_physics_as",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.dynamics",
+      "target": "al.phy.circular_motion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.kinematics",
+      "target": "al.phy.circular_motion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.circular_motion",
+      "target": "al.phy.gravitational_fields",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.work_energy_power",
+      "target": "al.phy.gravitational_fields",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.physical_quantities",
+      "target": "al.phy.temperature",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.temperature",
+      "target": "al.phy.ideal_gases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.work_energy_power",
+      "target": "al.phy.ideal_gases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.ideal_gases",
+      "target": "al.phy.thermodynamics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.waves",
+      "target": "al.phy.oscillations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.dynamics",
+      "target": "al.phy.oscillations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.electricity",
+      "target": "al.phy.electric_fields",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.forces",
+      "target": "al.phy.electric_fields",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.electric_fields",
+      "target": "al.phy.capacitance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.dc_circuits",
+      "target": "al.phy.capacitance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.electricity",
+      "target": "al.phy.magnetic_fields",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.forces",
+      "target": "al.phy.magnetic_fields",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.magnetic_fields",
+      "target": "al.phy.em_induction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.em_induction",
+      "target": "al.phy.alternating_currents",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.dc_circuits",
+      "target": "al.phy.alternating_currents",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.waves",
+      "target": "al.phy.quantum_physics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.nuclear_physics_as",
+      "target": "al.phy.quantum_physics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.nuclear_physics_as",
+      "target": "al.phy.nuclear_physics_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.phy.quantum_physics",
+      "target": "al.phy.nuclear_physics_a2",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

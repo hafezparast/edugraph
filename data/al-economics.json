@@ -1,0 +1,416 @@
+{
+  "metadata": {
+    "domain": "economics",
+    "curriculum": "Cambridge A-Level Economics (9708)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "A-Level Economics topics with prerequisite ordering, colored by component",
+    "sources": [
+      "Cambridge International AS & A Level Economics 9708 Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "al.econ.as_micro",
+      "name": "AS Microeconomics",
+      "color": "#f97316",
+      "order": 1
+    },
+    {
+      "id": "al.econ.as_macro",
+      "name": "AS Macroeconomics",
+      "color": "#eab308",
+      "order": 2
+    },
+    {
+      "id": "al.econ.a2_micro",
+      "name": "A2 Microeconomics",
+      "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "al.econ.a2_macro",
+      "name": "A2 Macroeconomics",
+      "color": "#3b82f6",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "al.econ.basic_problem",
+      "label": "Basic Economic Problem",
+      "type": "concept",
+      "description": "Scarcity, choice, opportunity cost, production possibility curves, economic systems",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.econ.as_micro",
+      "bookName": "AS Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.econ.price_mechanism",
+      "label": "Price Mechanism",
+      "type": "concept",
+      "description": "Demand, supply, price determination, elasticity, consumer/producer surplus",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.econ.as_micro",
+      "bookName": "AS Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.econ.market_failure",
+      "label": "Market Failure",
+      "type": "concept",
+      "description": "Externalities, public goods, merit/demerit goods, information failure",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.econ.as_micro",
+      "bookName": "AS Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.econ.govt_intervention",
+      "label": "Government Intervention",
+      "type": "concept",
+      "description": "Taxes, subsidies, price controls, regulation, government failure",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.econ.as_micro",
+      "bookName": "AS Microeconomics",
+      "bookColor": "#f97316",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.econ.ad_as",
+      "label": "Aggregate Demand & Supply",
+      "type": "concept",
+      "description": "AD/AS model, components of AD, shifts, macroeconomic equilibrium",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.econ.as_macro",
+      "bookName": "AS Macroeconomics",
+      "bookColor": "#eab308",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.econ.macro_policy",
+      "label": "Macroeconomic Policy",
+      "type": "concept",
+      "description": "Fiscal, monetary and supply-side policies, policy objectives and conflicts",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.econ.as_macro",
+      "bookName": "AS Macroeconomics",
+      "bookColor": "#eab308",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.econ.indicators",
+      "label": "Economic Indicators",
+      "type": "concept",
+      "description": "GDP, inflation, unemployment, balance of payments, national income statistics",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.econ.as_macro",
+      "bookName": "AS Macroeconomics",
+      "bookColor": "#eab308",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.econ.theory_firm",
+      "label": "Theory of the Firm",
+      "type": "concept",
+      "description": "Costs, revenues, profit, short-run and long-run production, economies of scale",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.econ.a2_micro",
+      "bookName": "A2 Microeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "al.econ.perfect_competition",
+      "label": "Perfect Competition",
+      "type": "concept",
+      "description": "Assumptions, short-run and long-run equilibrium, efficiency",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.econ.a2_micro",
+      "bookName": "A2 Microeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "al.econ.monopoly",
+      "label": "Monopoly",
+      "type": "concept",
+      "description": "Barriers to entry, price-setting, price discrimination, natural monopoly",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.econ.a2_micro",
+      "bookName": "A2 Microeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "al.econ.oligopoly",
+      "label": "Oligopoly",
+      "type": "concept",
+      "description": "Interdependence, game theory, kinked demand, collusion, contestable markets",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.econ.a2_micro",
+      "bookName": "A2 Microeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "al.econ.labour_markets",
+      "label": "Labour Markets",
+      "type": "concept",
+      "description": "Wage determination, monopsony, trade unions, wage differentials",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.econ.a2_micro",
+      "bookName": "A2 Microeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "al.econ.macro_problems",
+      "label": "Macroeconomic Problems",
+      "type": "concept",
+      "description": "Inflation, deflation, unemployment, inequality, poverty",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.econ.a2_macro",
+      "bookName": "A2 Macroeconomics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "al.econ.a2_policies",
+      "label": "Macroeconomic Policies (A2)",
+      "type": "concept",
+      "description": "Policy evaluation, conflicts, Phillips curve, Laffer curve, monetary transmission",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.econ.a2_macro",
+      "bookName": "A2 Macroeconomics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "al.econ.international_trade",
+      "label": "International Trade",
+      "type": "concept",
+      "description": "Comparative advantage, free trade, protectionism, WTO, trading blocs, exchange rates",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.econ.a2_macro",
+      "bookName": "A2 Macroeconomics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "al.econ.developing_economies",
+      "label": "Developing Economies",
+      "type": "concept",
+      "description": "Indicators of development, barriers to development, strategies for development",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.econ.a2_macro",
+      "bookName": "A2 Macroeconomics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4
+    },
+    {
+      "id": "al.econ.monopolistic_competition",
+      "label": "Monopolistic Competition",
+      "type": "concept",
+      "description": "Product differentiation, short-run and long-run equilibrium, non-price competition",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.econ.a2_micro",
+      "bookName": "A2 Microeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "al.econ.money_banking",
+      "label": "Money & Banking",
+      "type": "concept",
+      "description": "Functions of money, commercial banks, central banks, money supply, credit creation",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.econ.as_macro",
+      "bookName": "AS Macroeconomics",
+      "bookColor": "#eab308",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.econ.market_efficiency",
+      "label": "Market Efficiency & Welfare",
+      "type": "concept",
+      "description": "Allocative, productive and dynamic efficiency, deadweight loss, welfare analysis",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.econ.a2_micro",
+      "bookName": "A2 Microeconomics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    }
+  ],
+  "edges": [
+    {
+      "source": "al.econ.basic_problem",
+      "target": "al.econ.price_mechanism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.price_mechanism",
+      "target": "al.econ.market_failure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.market_failure",
+      "target": "al.econ.govt_intervention",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.basic_problem",
+      "target": "al.econ.ad_as",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.price_mechanism",
+      "target": "al.econ.ad_as",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.ad_as",
+      "target": "al.econ.indicators",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.ad_as",
+      "target": "al.econ.macro_policy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.indicators",
+      "target": "al.econ.macro_policy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.ad_as",
+      "target": "al.econ.money_banking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.price_mechanism",
+      "target": "al.econ.theory_firm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.basic_problem",
+      "target": "al.econ.theory_firm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.theory_firm",
+      "target": "al.econ.perfect_competition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.theory_firm",
+      "target": "al.econ.monopoly",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.theory_firm",
+      "target": "al.econ.monopolistic_competition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.monopoly",
+      "target": "al.econ.oligopoly",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.perfect_competition",
+      "target": "al.econ.oligopoly",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.price_mechanism",
+      "target": "al.econ.labour_markets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.theory_firm",
+      "target": "al.econ.labour_markets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.indicators",
+      "target": "al.econ.macro_problems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.macro_policy",
+      "target": "al.econ.macro_problems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.macro_problems",
+      "target": "al.econ.a2_policies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.money_banking",
+      "target": "al.econ.a2_policies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.macro_policy",
+      "target": "al.econ.international_trade",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.price_mechanism",
+      "target": "al.econ.international_trade",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.international_trade",
+      "target": "al.econ.developing_economies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.macro_problems",
+      "target": "al.econ.developing_economies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.perfect_competition",
+      "target": "al.econ.market_efficiency",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.monopoly",
+      "target": "al.econ.market_efficiency",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.econ.govt_intervention",
+      "target": "al.econ.market_efficiency",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

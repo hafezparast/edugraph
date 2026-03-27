@@ -1,0 +1,309 @@
+{
+  "metadata": {
+    "domain": "business",
+    "curriculum": "Cambridge A-Level Business (9609)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "A-Level Business topics with prerequisite ordering, colored by component",
+    "sources": [
+      "Cambridge International AS & A Level Business 9609 Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "al.bus.as",
+      "name": "Business AS (Year 1)",
+      "color": "#f97316",
+      "order": 1
+    },
+    {
+      "id": "al.bus.a2",
+      "name": "Business A2 (Year 2)",
+      "color": "#ea580c",
+      "order": 2
+    }
+  ],
+  "nodes": [
+    {
+      "id": "al.bus.enterprise",
+      "label": "Business & its Environment",
+      "type": "concept",
+      "description": "Enterprise, business structure, stakeholders, business objectives, external environment",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bus.people",
+      "label": "People in Organisations",
+      "type": "concept",
+      "description": "HR planning, recruitment, motivation theories, leadership styles, organisational structure",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bus.marketing",
+      "label": "Marketing",
+      "type": "concept",
+      "description": "Market research, marketing mix (4Ps), segmentation, positioning, elasticity of demand",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bus.operations",
+      "label": "Operations & Project Management",
+      "type": "concept",
+      "description": "Production methods, quality management, capacity utilisation, lean production",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bus.finance_as",
+      "label": "Finance & Accounting (AS)",
+      "type": "concept",
+      "description": "Sources of finance, cash flow, income statements, balance sheets, break-even",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bus.external",
+      "label": "External Influences (AS)",
+      "type": "concept",
+      "description": "Economic environment, legal constraints, technological change, globalisation basics",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bus.strategic_management",
+      "label": "Strategic Management",
+      "type": "concept",
+      "description": "Strategic analysis (SWOT, PESTLE, Porter's Five Forces), strategic choice, implementation",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.bus.marketing_a2",
+      "label": "Marketing Strategy (A2)",
+      "type": "concept",
+      "description": "Marketing planning, international marketing, digital marketing, Ansoff matrix",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.bus.operations_a2",
+      "label": "Operations Strategy (A2)",
+      "type": "concept",
+      "description": "Supply chain management, enterprise resource planning, Kaizen, Six Sigma",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.bus.finance_a2",
+      "label": "Finance & Accounting (A2)",
+      "type": "concept",
+      "description": "Ratio analysis, investment appraisal (NPV, IRR, payback), budgets, variance analysis",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.bus.hr_a2",
+      "label": "Human Resource Strategy (A2)",
+      "type": "concept",
+      "description": "Workforce planning, change management, corporate culture, employer-employee relations",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.bus.globalisation",
+      "label": "Globalisation & Multinational Strategy",
+      "type": "concept",
+      "description": "International trade, multinational companies, entry strategies, cultural differences",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.bus.decision_making",
+      "label": "Business Decision Making",
+      "type": "concept",
+      "description": "Decision trees, critical path analysis, data analytics for decision making",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.bus.as",
+      "bookName": "Business AS (Year 1)",
+      "bookColor": "#f97316",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.bus.business_growth",
+      "label": "Business Growth & Strategy",
+      "type": "concept",
+      "description": "Organic/inorganic growth, mergers, takeovers, joint ventures, franchises",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.bus.a2",
+      "bookName": "Business A2 (Year 2)",
+      "bookColor": "#ea580c",
+      "bookOrder": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": "al.bus.enterprise",
+      "target": "al.bus.people",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.enterprise",
+      "target": "al.bus.marketing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.enterprise",
+      "target": "al.bus.operations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.enterprise",
+      "target": "al.bus.finance_as",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.enterprise",
+      "target": "al.bus.external",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.finance_as",
+      "target": "al.bus.decision_making",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.operations",
+      "target": "al.bus.decision_making",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.external",
+      "target": "al.bus.strategic_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.marketing",
+      "target": "al.bus.strategic_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.finance_as",
+      "target": "al.bus.strategic_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.marketing",
+      "target": "al.bus.marketing_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.strategic_management",
+      "target": "al.bus.marketing_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.operations",
+      "target": "al.bus.operations_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.strategic_management",
+      "target": "al.bus.operations_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.finance_as",
+      "target": "al.bus.finance_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.decision_making",
+      "target": "al.bus.finance_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.people",
+      "target": "al.bus.hr_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.strategic_management",
+      "target": "al.bus.hr_a2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.external",
+      "target": "al.bus.globalisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.strategic_management",
+      "target": "al.bus.globalisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.strategic_management",
+      "target": "al.bus.business_growth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.bus.finance_a2",
+      "target": "al.bus.business_growth",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+{
+  "metadata": {
+    "domain": "computer_science",
+    "curriculum": "Cambridge A-Level Computer Science (9618)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "A-Level Computer Science topics with prerequisite ordering, colored by component",
+    "sources": [
+      "Cambridge International AS & A Level Computer Science 9618 Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "al.cs.as",
+      "name": "Computer Science AS (Year 1)",
+      "color": "#6366f1",
+      "order": 1
+    },
+    {
+      "id": "al.cs.a2",
+      "name": "Computer Science A2 (Year 2)",
+      "color": "#4f46e5",
+      "order": 2
+    }
+  ],
+  "nodes": [
+    {
+      "id": "al.cs.data_representation",
+      "label": "Data Representation",
+      "type": "concept",
+      "description": "Number systems, binary, hexadecimal, two's complement, floating point, character sets",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.cs.communication",
+      "label": "Communication & Networking",
+      "type": "concept",
+      "description": "Networks, protocols, TCP/IP, packet switching, network topologies",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.cs.hardware",
+      "label": "Hardware",
+      "type": "concept",
+      "description": "Input/output devices, storage devices, logic gates, flip-flops",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.cs.processor",
+      "label": "Processor Fundamentals",
+      "type": "concept",
+      "description": "CPU architecture, fetch-decode-execute cycle, registers, instruction sets",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.cs.system_software",
+      "label": "System Software",
+      "type": "concept",
+      "description": "Operating systems, utility software, translators, compilers, interpreters",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.cs.security",
+      "label": "Security, Privacy & Integrity",
+      "type": "concept",
+      "description": "Encryption, malware, firewalls, authentication, data integrity",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.cs.ethics",
+      "label": "Ethics & Ownership",
+      "type": "concept",
+      "description": "Ethical issues, intellectual property, software licensing, digital divide",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.cs.algorithm_design",
+      "label": "Algorithm Design & Problem Solving",
+      "type": "concept",
+      "description": "Pseudocode, flowcharts, decomposition, abstraction, searching, sorting",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.cs.programming",
+      "label": "Programming",
+      "type": "concept",
+      "description": "Variables, selection, iteration, procedures, functions, file handling",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.cs.data_types",
+      "label": "Data Types & Structures",
+      "type": "concept",
+      "description": "Arrays, records, stacks, queues, linked lists, file organisation",
+      "grade_range": ["AS"],
+      "tags": ["subtopic"],
+      "book": "al.cs.as",
+      "bookName": "Computer Science AS (Year 1)",
+      "bookColor": "#6366f1",
+      "bookOrder": 1
+    },
+    {
+      "id": "al.cs.computational_thinking",
+      "label": "Computational Thinking",
+      "type": "concept",
+      "description": "Abstraction, pattern recognition, algorithm complexity, Big-O notation",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.cs.abstract_data_structures",
+      "label": "Abstract Data Structures",
+      "type": "concept",
+      "description": "Trees, binary trees, hash tables, graphs, traversal algorithms",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.cs.recursion",
+      "label": "Recursion",
+      "type": "concept",
+      "description": "Recursive algorithms, base case, call stack, comparison with iteration",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.cs.oop",
+      "label": "Object-Oriented Programming",
+      "type": "concept",
+      "description": "Classes, objects, inheritance, polymorphism, encapsulation",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.cs.databases",
+      "label": "Databases",
+      "type": "concept",
+      "description": "Relational databases, normalisation, SQL, entity-relationship diagrams",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.cs.boolean_algebra",
+      "label": "Boolean Algebra",
+      "type": "concept",
+      "description": "Boolean expressions, Karnaugh maps, logic circuit simplification",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.cs.processor_arch",
+      "label": "Processor Architecture (A2)",
+      "type": "concept",
+      "description": "RISC/CISC, pipelining, parallel processing, virtual machines",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.cs.networking_protocols",
+      "label": "Networking Protocols (A2)",
+      "type": "concept",
+      "description": "OSI model, TCP/IP in depth, circuit/packet switching, wireless networking",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2
+    },
+    {
+      "id": "al.cs.ai",
+      "label": "Artificial Intelligence",
+      "type": "concept",
+      "description": "Machine learning, neural networks, backpropagation, deep learning concepts",
+      "grade_range": ["A2"],
+      "tags": ["subtopic"],
+      "book": "al.cs.a2",
+      "bookName": "Computer Science A2 (Year 2)",
+      "bookColor": "#4f46e5",
+      "bookOrder": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": "al.cs.data_representation",
+      "target": "al.cs.hardware",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.data_representation",
+      "target": "al.cs.communication",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.hardware",
+      "target": "al.cs.processor",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.processor",
+      "target": "al.cs.system_software",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.communication",
+      "target": "al.cs.security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.security",
+      "target": "al.cs.ethics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.data_representation",
+      "target": "al.cs.algorithm_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.algorithm_design",
+      "target": "al.cs.programming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.programming",
+      "target": "al.cs.data_types",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.algorithm_design",
+      "target": "al.cs.computational_thinking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.programming",
+      "target": "al.cs.computational_thinking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.data_types",
+      "target": "al.cs.abstract_data_structures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.computational_thinking",
+      "target": "al.cs.abstract_data_structures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.programming",
+      "target": "al.cs.recursion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.computational_thinking",
+      "target": "al.cs.recursion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.programming",
+      "target": "al.cs.oop",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.data_types",
+      "target": "al.cs.oop",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.data_types",
+      "target": "al.cs.databases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.algorithm_design",
+      "target": "al.cs.databases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.hardware",
+      "target": "al.cs.boolean_algebra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.data_representation",
+      "target": "al.cs.boolean_algebra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.processor",
+      "target": "al.cs.processor_arch",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.system_software",
+      "target": "al.cs.processor_arch",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.communication",
+      "target": "al.cs.networking_protocols",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.security",
+      "target": "al.cs.networking_protocols",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.abstract_data_structures",
+      "target": "al.cs.ai",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "al.cs.computational_thinking",
+      "target": "al.cs.ai",
+      "relation": "prerequisite_for"
+    }
+  ]
+}
