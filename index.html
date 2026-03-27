@@ -790,6 +790,50 @@ function toggle(id) {
   const el = document.getElementById(id);
   el.classList.toggle('open');
 }
+
+// Dynamic counts: fetch each JSON and update topic/edge numbers
+(async function() {
+  const links = document.querySelectorAll('a.subject[href*="graph.html?f="]');
+  const catTotals = {}; // category element -> {nodes, edges}
+
+  await Promise.all(Array.from(links).map(async (link) => {
+    const m = link.href.match(/[?&]f=([\w-]+)/);
+    if (!m) return;
+    const key = m[1];
+    try {
+      const r = await fetch('data/' + key + '.json');
+      if (!r.ok) return;
+      const data = await r.json();
+      const nodes = (data.nodes || []).length;
+      const edges = (data.edges || []).length;
+
+      // Update subject count
+      const statEl = link.querySelector('.subj-stat span');
+      if (statEl) statEl.textContent = nodes;
+
+      // Accumulate for category totals
+      const cat = link.closest('.cat-body');
+      if (cat) {
+        const catEl = cat.closest('.category');
+        if (catEl) {
+          const id = catEl.id;
+          if (!catTotals[id]) catTotals[id] = { nodes: 0, edges: 0 };
+          catTotals[id].nodes += nodes;
+          catTotals[id].edges += edges;
+        }
+      }
+    } catch(e) {}
+  }));
+
+  // Update category header totals
+  Object.entries(catTotals).forEach(([id, t]) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const statNs = el.querySelectorAll('.cat-stat-n');
+    if (statNs[0]) statNs[0].textContent = t.nodes.toLocaleString();
+    if (statNs[1]) statNs[1].textContent = t.edges.toLocaleString();
+  });
+})();
 </script>
 </body>
 </html>
