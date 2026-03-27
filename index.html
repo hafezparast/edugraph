@@ -3,539 +3,792 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduGraph</title>
-<script src="https://d3js.org/d3.v7.min.js"></script>
+<title>EduGraph — Knowledge Graphs for Education</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-:root {
-  --bg: #08090e;
-  --surface: rgba(12,14,24,0.94);
-  --border: rgba(255,255,255,0.06);
-  --text: #e8e4dc;
-  --text2: #8a8697;
-  --text3: #55516a;
-  --gold: #ffc857;
-  --topbar: 52px;
-  --sidebar: 230px;
-  --detail: 300px;
+html, body { height: 100%; background: #08090e; color: #e8e4dc; font-family: 'DM Sans', sans-serif; overflow-x: hidden; }
+
+body::after {
+  content: ''; position: fixed; inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  opacity: 0.035; pointer-events: none; z-index: 9999;
 }
-html, body { height: 100%; background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 13px; overflow: hidden; }
-body::after { content: ''; position: fixed; inset: 0; opacity: 0.035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9999; }
 
-.topbar { position: fixed; top: 0; left: 0; right: 0; height: var(--topbar); display: flex; align-items: center; justify-content: space-between; padding: 0 18px; background: rgba(8,9,14,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); z-index: 200; }
-.topbar-left { display: flex; align-items: baseline; gap: 12px; }
-.topbar h1 { font-family: 'Instrument Serif', serif; font-size: 22px; font-weight: 400; color: var(--gold); }
-.topbar .sub { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; max-width: 400px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.topbar-right { display: flex; align-items: center; gap: 6px; }
-.stats { display: flex; gap: 14px; margin-right: 12px; }
-.stat-n { font-family: 'Instrument Serif', serif; font-size: 17px; color: var(--gold); }
-.stat-l { font-size: 9px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; margin-left: 3px; }
-.nav-btn { background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text2); padding: 4px 10px; border-radius: 5px; font-size: 10px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.15s; }
-.nav-btn:hover { background: rgba(255,200,87,0.08); border-color: rgba(255,200,87,0.15); color: var(--gold); }
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 40px;
+  position: relative;
+}
 
-.sidebar { position: fixed; top: var(--topbar); left: 0; bottom: 0; width: var(--sidebar); background: var(--surface); border-right: 1px solid var(--border); overflow-y: auto; z-index: 100; padding: 12px; display: flex; flex-direction: column; gap: 10px; }
-.sidebar::-webkit-scrollbar { width: 3px; }
-.sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
-.sec-title { font-family: 'Instrument Serif', serif; font-size: 13px; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
-.sec-title::before { content: ''; width: 2px; height: 11px; background: var(--gold); border-radius: 1px; }
+.page::before {
+  content: '';
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255,200,87,0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
 
-.search-box { width: 100%; padding: 7px 10px 7px 28px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 12px; outline: none; }
-.search-box::placeholder { color: var(--text3); }
-.search-box:focus { border-color: rgba(255,200,87,0.25); }
-.search-wrap { position: relative; }
-.search-wrap::before { content: '⌕'; position: absolute; left: 9px; top: 50%; transform: translateY(-50%); color: var(--text3); font-size: 13px; }
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
 
-.tab-bar { display: flex; gap: 0; margin-bottom: 8px; border-bottom: 1px solid var(--border); }
-.tab-btn { flex: 1; background: none; border: none; border-bottom: 2px solid transparent; color: var(--text3); padding: 6px 4px; font-size: 10px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-transform: uppercase; letter-spacing: 0.8px; transition: all 0.15s; }
-.tab-btn:hover { color: var(--text2); }
-.tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
-.tab-content { display: none; }
-.tab-content.active { display: block; }
+.header h1 {
+  font-family: 'Instrument Serif', serif;
+  font-size: clamp(48px, 8vw, 72px);
+  font-weight: 400;
+  color: #ffc857;
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 14px;
+}
 
-.book-btns { display: flex; gap: 3px; margin-bottom: 6px; }
-.book-btn { flex: 1; background: rgba(255,255,255,0.03); border: 1px solid var(--border); color: var(--text3); padding: 3px; border-radius: 4px; font-size: 9px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
-.book-btn:hover { color: var(--text2); }
+.header p {
+  font-size: 13px;
+  color: #8a8697;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
 
-.group-header { display: flex; align-items: center; gap: 5px; padding: 5px 4px; cursor: pointer; user-select: none; border-radius: 4px; margin-top: 4px; transition: background 0.12s; }
-.group-header:hover { background: rgba(255,255,255,0.03); }
-.group-arrow { font-size: 8px; color: var(--text3); transition: transform 0.2s; width: 12px; text-align: center; }
-.group-header.collapsed .group-arrow { transform: rotate(-90deg); }
-.group-label { font-size: 10px; color: var(--text2); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; flex: 1; }
-.group-cnt { font-size: 9px; color: var(--text3); }
-.group-body { overflow: hidden; transition: max-height 0.25s ease; }
-.group-header.collapsed + .group-body { max-height: 0 !important; overflow: hidden; }
+.categories {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 
-.book-list { display: flex; flex-direction: column; gap: 1px; }
-.book-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px 3px 16px; border-radius: 4px; cursor: pointer; transition: all 0.12s; user-select: none; }
-.book-item:hover { background: rgba(255,255,255,0.03); }
-.book-item.off { opacity: 0.2; }
-.book-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; transition: transform 0.15s; }
-.book-item:not(.off) .book-dot { box-shadow: 0 0 5px currentColor; }
-.book-name { font-size: 10px; color: var(--text2); flex: 1; }
-.book-item:not(.off) .book-name { color: var(--text); }
-.book-cnt { font-size: 9px; color: var(--text3); }
+/* Category card (collapsed) */
+.category {
+  background: rgba(14, 16, 26, 0.7);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
 
-.strand-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px 3px 16px; border-radius: 4px; cursor: pointer; transition: all 0.12s; user-select: none; }
-.strand-item:hover { background: rgba(255,255,255,0.03); }
-.strand-item.off { opacity: 0.2; }
-.strand-dot { width: 7px; height: 7px; border-radius: 3px; flex-shrink: 0; }
-.strand-name { font-size: 10px; color: var(--text2); flex: 1; }
-.strand-item:not(.off) .strand-name { color: var(--text); }
-.strand-cnt { font-size: 9px; color: var(--text3); }
+.category:hover {
+  border-color: rgba(255,255,255,0.1);
+}
 
-.controls { padding-top: 8px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 6px; }
-.ctrl-row { display: flex; align-items: center; justify-content: space-between; }
-.ctrl-label { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; }
-.ctrl-slider { -webkit-appearance: none; width: 90px; height: 3px; background: rgba(255,255,255,0.1); border-radius: 2px; outline: none; }
-.ctrl-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; background: var(--gold); border-radius: 50%; cursor: pointer; }
+.category.open {
+  border-color: rgba(255,200,87,0.12);
+  background: rgba(14, 16, 26, 0.85);
+}
 
-.hint { font-size: 9px; color: var(--text3); line-height: 1.6; padding-top: 8px; border-top: 1px solid var(--border); }
-.hint b { color: var(--text2); font-weight: 500; }
+.cat-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 28px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s;
+}
 
-#graph-container { position: fixed; top: var(--topbar); left: var(--sidebar); right: 0; bottom: 0; transition: right 0.3s; }
-#graph-container.detail-open { right: var(--detail); }
-svg { width: 100%; height: 100%; display: block; }
+.cat-header:hover {
+  background: rgba(255,255,255,0.02);
+}
 
-.detail { position: fixed; top: var(--topbar); right: calc(-1 * var(--detail)); bottom: 0; width: var(--detail); background: var(--surface); border-left: 1px solid var(--border); z-index: 100; overflow-y: auto; padding: 20px 16px; transition: right 0.3s; }
-.detail.open { right: 0; }
-.detail::-webkit-scrollbar { width: 3px; }
-.detail::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
-.detail-close { position: absolute; top: 12px; right: 12px; width: 24px; height: 24px; border-radius: 5px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text3); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 12px; }
-.detail-close:hover { color: var(--text); }
-.detail-badge { display: inline-flex; align-items: center; gap: 5px; padding: 2px 8px; border-radius: 12px; font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
-.detail-title { font-family: 'Instrument Serif', serif; font-size: 20px; line-height: 1.2; margin-bottom: 14px; }
-.detail-desc { font-size: 11px; color: var(--text2); line-height: 1.5; margin-bottom: 10px; }
-.conn-section { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
-.conn-head { font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text3); margin-bottom: 6px; }
-.conn-head.prereq { color: #e07a5f; }
-.conn-head.leads { color: #81b29a; }
-.conn-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px; border-radius: 4px; cursor: pointer; transition: background 0.12s; }
-.conn-item:hover { background: rgba(255,255,255,0.04); }
-.conn-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
-.conn-label { font-size: 11px; color: var(--text2); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.conn-book { font-size: 8px; color: var(--text3); flex-shrink: 0; }
+.cat-flag {
+  font-size: 28px;
+  flex-shrink: 0;
+}
 
-#loading { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: var(--bg); z-index: 9998; }
-#loading span { font-family: 'Instrument Serif', serif; font-size: 24px; color: var(--gold); }
+.cat-info {
+  flex: 1;
+}
 
-@media (max-width: 800px) {
-  .sidebar { display: none; }
-  :root { --sidebar: 0px; }
-  .topbar .sub, .stats { display: none; }
+.cat-title {
+  font-family: 'Instrument Serif', serif;
+  font-size: 24px;
+  color: #e8e4dc;
+  line-height: 1.2;
+}
+
+.cat-subtitle {
+  font-size: 11px;
+  color: #55516a;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-top: 3px;
+}
+
+.cat-stats {
+  display: flex;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.cat-stat-n {
+  font-family: 'Instrument Serif', serif;
+  font-size: 18px;
+  color: #ffc857;
+}
+
+.cat-stat-l {
+  font-size: 9px;
+  color: #55516a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-left: 3px;
+}
+
+.cat-arrow {
+  font-size: 16px;
+  color: #55516a;
+  transition: transform 0.3s;
+  flex-shrink: 0;
+}
+
+.category.open .cat-arrow {
+  transform: rotate(180deg);
+  color: #ffc857;
+}
+
+/* Color strip */
+.cat-strip {
+  height: 2px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.category.open .cat-strip { opacity: 1; }
+.cat-strip.malaysia { background: linear-gradient(90deg, #ef4444, #f97316, #eab308, #22c55e, #3b82f6, #8b5cf6); }
+.cat-strip.igcse { background: linear-gradient(90deg, #3b82f6, #ef4444, #22c55e, #f59e0b, #8b5cf6, #ec4899); }
+.cat-strip.lang { background: linear-gradient(90deg, #06b6d4, #ec4899, #f59e0b, #22c55e, #ef4444, #8b5cf6, #3b82f6, #d946ef); }
+
+/* Subject grid (expanded) */
+.cat-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.category.open .cat-body {
+  max-height: 1200px;
+}
+
+.subjects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px;
+  padding: 0 20px 20px;
+}
+
+.subject {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.04);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.subject:hover {
+  background: rgba(255,255,255,0.05);
+  border-color: rgba(255,200,87,0.15);
+  transform: translateY(-1px);
+}
+
+.subject.coming-soon {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.subj-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.subj-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.subj-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #e8e4dc;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.subj-detail {
+  font-size: 10px;
+  color: #55516a;
+  margin-top: 2px;
+}
+
+.subj-stats {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.subj-stat {
+  font-size: 10px;
+  color: #8a8697;
+}
+
+.subj-stat span {
+  font-family: 'Instrument Serif', serif;
+  font-size: 14px;
+  color: #ffc857;
+}
+
+.subj-arrow {
+  color: #55516a;
+  font-size: 13px;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+
+.subject:hover .subj-arrow {
+  color: #ffc857;
+  transform: translateX(2px);
+}
+
+.subj-badge {
+  font-size: 8px;
+  color: #55516a;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background: rgba(255,255,255,0.04);
+  padding: 2px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #55516a;
+  font-size: 12px;
+}
+.footer a { color: #8a8697; text-decoration: none; transition: color 0.2s; }
+.footer a:hover { color: #ffc857; }
+
+@media (max-width: 600px) {
+  .subjects { grid-template-columns: 1fr; }
+  .cat-stats { display: none; }
+  .cat-header { padding: 16px 20px; }
 }
 </style>
 </head>
 <body>
 
-<div id="loading"><span>Loading…</span></div>
-
-<header class="topbar">
-  <div class="topbar-left">
+<div class="page">
+  <div class="header">
     <h1>EduGraph</h1>
-    <span class="sub" id="subtitle"></span>
+    <p>Interactive Knowledge Graphs for Education</p>
   </div>
-  <div class="topbar-right">
-    <div class="stats">
-      <span><span class="stat-n" id="s-nodes">0</span><span class="stat-l">nodes</span></span>
-      <span><span class="stat-n" id="s-edges">0</span><span class="stat-l">edges</span></span>
-    </div>
-  </div>
-</header>
 
-<aside class="sidebar">
-  <div class="search-wrap">
-    <input type="text" class="search-box" id="search" placeholder="Search topics..." autocomplete="off">
-  </div>
-  <div class="tab-bar">
-    <button class="tab-btn active" data-tab="grades">Grades</button>
-    <button class="tab-btn" data-tab="topics">Topics</button>
-    <button class="tab-btn" data-tab="forces">Forces</button>
-  </div>
-  <div class="tab-content active" id="tab-grades">
-    <div class="book-btns">
-      <button class="book-btn" id="b-all">All</button>
-      <button class="book-btn" id="b-none">None</button>
-    </div>
-    <div id="grades-list"></div>
-  </div>
-  <div class="tab-content" id="tab-topics">
-    <div class="book-btns">
-      <button class="book-btn" id="t-all">All</button>
-      <button class="book-btn" id="t-none">None</button>
-    </div>
-    <div id="topics-list"></div>
-  </div>
-  <div class="tab-content" id="tab-forces">
-    <div class="sec-title">Physics</div>
-    <div class="controls">
-      <div class="ctrl-row"><span class="ctrl-label">Repulsion</span><input type="range" class="ctrl-slider" id="sl-charge" min="-600" max="-20" value="-120"></div>
-      <div class="ctrl-row"><span class="ctrl-label">Link Dist</span><input type="range" class="ctrl-slider" id="sl-dist" min="15" max="200" value="55"></div>
-      <div class="ctrl-row"><span class="ctrl-label">Gravity</span><input type="range" class="ctrl-slider" id="sl-gravity" min="0" max="100" value="8"></div>
-      <div class="ctrl-row"><span class="ctrl-label">Collision</span><input type="range" class="ctrl-slider" id="sl-collide" min="1" max="30" value="10"></div>
-    </div>
-    <div class="hint">
-      <b>Drag</b> nodes — physics responds live<br>
-      <b>Scroll</b> to zoom, drag canvas to pan<br>
-      <b>Click</b> node for details &amp; neighbors<br>
-      <b>Sliders</b> tune forces in real-time
-    </div>
-  </div>
-</aside>
+  <div class="categories">
 
-<div id="graph-container"><svg id="svg"></svg></div>
+    <!-- MALAYSIA -->
+    <div class="category open" id="cat-malaysia">
+      <div class="cat-strip malaysia"></div>
+      <div class="cat-header" onclick="toggle('cat-malaysia')">
+        <span class="cat-flag">&#127474;&#127486;</span>
+        <div class="cat-info">
+          <div class="cat-title">Malaysia Curriculum</div>
+          <div class="cat-subtitle">KSSR &middot; KSSM &middot; STPM</div>
+        </div>
+        <div class="cat-stats">
+          <span><span class="cat-stat-n">1,076</span><span class="cat-stat-l">topics</span></span>
+          <span><span class="cat-stat-n">1,265</span><span class="cat-stat-l">edges</span></span>
+        </div>
+        <span class="cat-arrow">&#9662;</span>
+      </div>
+      <div class="cat-body">
+        <div class="subjects">
+          <a href="graph.html?f=malaysia-math" class="subject">
+            <span class="subj-dot" style="background:#f97316"></span>
+            <div class="subj-info"><div class="subj-name">Mathematics</div><div class="subj-detail">Year 1 — STPM (T + M)</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>207</span> topics</span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=malaysia-science" class="subject">
+            <span class="subj-dot" style="background:#22c55e"></span>
+            <div class="subj-info"><div class="subj-name">Science</div><div class="subj-detail">Year 1 — Form 3</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>114</span> topics</span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=malaysia-physics" class="subject">
+            <span class="subj-dot" style="background:#3b82f6"></span>
+            <div class="subj-info"><div class="subj-name">Physics</div><div class="subj-detail">Form 4-5 + STPM</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>104</span> topics</span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=malaysia-chemistry" class="subject">
+            <span class="subj-dot" style="background:#14b8a6"></span>
+            <div class="subj-info"><div class="subj-name">Chemistry</div><div class="subj-detail">Form 4-5 + STPM</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>118</span> topics</span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=malaysia-biology" class="subject">
+            <span class="subj-dot" style="background:#22c55e"></span>
+            <div class="subj-info"><div class="subj-name">Biology</div><div class="subj-detail">Form 4-5 + STPM</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>153</span> topics</span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=malaysia-sejarah" class="subject">
+            <span class="subj-dot" style="background:#d97706"></span>
+            <div class="subj-info"><div class="subj-name">History (Sejarah)</div><div class="subj-detail">Year 4 — STPM</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>109</span> topics</span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=malaysia-cs" class="subject">
+            <span class="subj-dot" style="background:#6366f1"></span>
+            <div class="subj-info"><div class="subj-name">Computer Science</div><div class="subj-detail">ASK (F1-3) + SK (F4-5)</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>103</span> topics</span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=malaysia-economics" class="subject">
+            <span class="subj-dot" style="background:#f97316"></span>
+            <div class="subj-info"><div class="subj-name">Economics</div><div class="subj-detail">STPM (944)</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>22</span> topics</span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=malaysia-accounting" class="subject">
+            <span class="subj-dot" style="background:#8b5cf6"></span>
+            <div class="subj-info"><div class="subj-name">Accounting</div><div class="subj-detail">STPM (948)</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>22</span> topics</span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=malaysia-geography" class="subject">
+            <span class="subj-dot" style="background:#06b6d4"></span>
+            <div class="subj-info"><div class="subj-name">Geography</div><div class="subj-detail">Form 1-5</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>15</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=malaysia-pengajian-am" class="subject">
+            <span class="subj-dot" style="background:#d97706"></span>
+            <div class="subj-info"><div class="subj-name">Pengajian Am</div><div class="subj-detail">STPM (900)</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>18</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=malaysia-islamic" class="subject">
+            <span class="subj-dot" style="background:#22c55e"></span>
+            <div class="subj-info"><div class="subj-name">Islamic Studies</div><div class="subj-detail">P. Islam + STPM Syariah/Usuluddin</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>53</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=malaysia-sport-science" class="subject">
+            <span class="subj-dot" style="background:#f43f5e"></span>
+            <div class="subj-info"><div class="subj-name">Sport Science</div><div class="subj-detail">STPM</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>9</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=malaysia-malay-lit" class="subject">
+            <span class="subj-dot" style="background:#ec4899"></span>
+            <div class="subj-info"><div class="subj-name">Kesusasteraan Melayu</div><div class="subj-detail">STPM (922)</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>11</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
 
-<div class="detail" id="detail">
-  <button class="detail-close" id="detail-close">✕</button>
-  <div id="detail-content"></div>
+    <!-- IGCSE -->
+    <div class="category" id="cat-igcse">
+      <div class="cat-strip igcse"></div>
+      <div class="cat-header" onclick="toggle('cat-igcse')">
+        <span class="cat-flag">&#127468;&#127463;</span>
+        <div class="cat-info">
+          <div class="cat-title">Cambridge IGCSE</div>
+          <div class="cat-subtitle">International General Certificate of Secondary Education</div>
+        </div>
+        <div class="cat-stats">
+          <span><span class="cat-stat-n">961</span><span class="cat-stat-l">topics</span></span>
+          <span><span class="cat-stat-n">1,225</span><span class="cat-stat-l">edges</span></span>
+        </div>
+        <span class="cat-arrow">&#9662;</span>
+      </div>
+      <div class="cat-body">
+        <div class="subjects">
+          <a href="graph.html?f=igcse-math" class="subject">
+            <span class="subj-dot" style="background:#f97316"></span>
+            <div class="subj-info"><div class="subj-name">Mathematics</div><div class="subj-detail">Primary + Lower Secondary + IGCSE + Add Math</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>22</span> topics</span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=igcse-physics" class="subject">
+            <span class="subj-dot" style="background:#3b82f6"></span>
+            <div class="subj-info"><div class="subj-name">Physics</div><div class="subj-detail">0625</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>232</span> topics</span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=igcse-chemistry" class="subject">
+            <span class="subj-dot" style="background:#14b8a6"></span>
+            <div class="subj-info"><div class="subj-name">Chemistry</div><div class="subj-detail">0620</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>74</span> topics</span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=igcse-biology" class="subject">
+            <span class="subj-dot" style="background:#22c55e"></span>
+            <div class="subj-info"><div class="subj-name">Biology</div><div class="subj-detail">0610</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>72</span> topics</span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=igcse-compsci" class="subject">
+            <span class="subj-dot" style="background:#6366f1"></span>
+            <div class="subj-info"><div class="subj-name">Computer Science &amp; ICT</div><div class="subj-detail">0478 + 0417</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>139</span> topics</span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=igcse-business" class="subject">
+            <span class="subj-dot" style="background:#f97316"></span>
+            <div class="subj-info"><div class="subj-name">Business Studies</div><div class="subj-detail">0450</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>28</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=igcse-economics" class="subject">
+            <span class="subj-dot" style="background:#eab308"></span>
+            <div class="subj-info"><div class="subj-name">Economics</div><div class="subj-detail">0455</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>27</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=igcse-accounting" class="subject">
+            <span class="subj-dot" style="background:#8b5cf6"></span>
+            <div class="subj-info"><div class="subj-name">Accounting</div><div class="subj-detail">0452</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>17</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=igcse-geography" class="subject">
+            <span class="subj-dot" style="background:#22c55e"></span>
+            <div class="subj-info"><div class="subj-name">Geography</div><div class="subj-detail">0460</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>17</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=igcse-history" class="subject">
+            <span class="subj-dot" style="background:#d97706"></span>
+            <div class="subj-info"><div class="subj-name">History</div><div class="subj-detail">0470</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>17</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=igcse-esl" class="subject">
+            <span class="subj-dot" style="background:#3b82f6"></span>
+            <div class="subj-info"><div class="subj-name">English (ESL)</div><div class="subj-detail">0510</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>15</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=igcse-eng-lit" class="subject">
+            <span class="subj-dot" style="background:#ec4899"></span>
+            <div class="subj-info"><div class="subj-name">English Literature</div><div class="subj-detail">0475</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>14</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=igcse-global" class="subject">
+            <span class="subj-dot" style="background:#14b8a6"></span>
+            <div class="subj-info"><div class="subj-name">Global Perspectives</div><div class="subj-detail">0457</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>15</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SINGAPORE -->
+    <div class="category" id="cat-sg">
+      <div class="cat-strip lang"></div>
+      <div class="cat-header" onclick="toggle('cat-sg')">
+        <span class="cat-flag">&#127480;&#127468;</span>
+        <div class="cat-info">
+          <div class="cat-title">Singapore Curriculum</div>
+          <div class="cat-subtitle">MOE &middot; PSLE &middot; O-Level &middot; A-Level</div>
+        </div>
+        <div class="cat-stats">
+          <span><span class="cat-stat-n">888</span><span class="cat-stat-l">topics</span></span>
+          <span><span class="cat-stat-n">244</span><span class="cat-stat-l">edges</span></span>
+        </div>
+        <span class="cat-arrow">&#9662;</span>
+      </div>
+      <div class="cat-body">
+        <div class="subjects">
+          <a href="graph.html?f=sg-math" class="subject"><span class="subj-dot" style="background:#ef4444"></span><div class="subj-info"><div class="subj-name">Mathematics</div><div class="subj-detail">P1 — JC H2</div></div><div class="subj-stats"><span class="subj-stat"><span>46</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=sg-science" class="subject"><span class="subj-dot" style="background:#22c55e"></span><div class="subj-info"><div class="subj-name">Primary Science</div><div class="subj-detail">P3-P6</div></div><div class="subj-stats"><span class="subj-stat"><span>16</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=sg-physics" class="subject"><span class="subj-dot" style="background:#3b82f6"></span><div class="subj-info"><div class="subj-name">Physics</div><div class="subj-detail">O-Level + H2</div></div><div class="subj-stats"><span class="subj-stat"><span>40</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=sg-chemistry" class="subject"><span class="subj-dot" style="background:#14b8a6"></span><div class="subj-info"><div class="subj-name">Chemistry</div><div class="subj-detail">O-Level + H2</div></div><div class="subj-stats"><span class="subj-stat"><span>35</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=sg-biology" class="subject"><span class="subj-dot" style="background:#22c55e"></span><div class="subj-info"><div class="subj-name">Biology</div><div class="subj-detail">O-Level + H2</div></div><div class="subj-stats"><span class="subj-stat"><span>34</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=sg-economics" class="subject"><span class="subj-dot" style="background:#f59e0b"></span><div class="subj-info"><div class="subj-name">Economics</div><div class="subj-detail">A-Level H2</div></div><div class="subj-stats"><span class="subj-stat"><span>15</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=sg-computing" class="subject"><span class="subj-dot" style="background:#6366f1"></span><div class="subj-info"><div class="subj-name">Computing</div><div class="subj-detail">O-Level + H2</div></div><div class="subj-stats"><span class="subj-stat"><span>31</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=sg-history" class="subject"><span class="subj-dot" style="background:#d97706"></span><div class="subj-info"><div class="subj-name">History</div><div class="subj-detail">Secondary</div></div><div class="subj-stats"><span class="subj-stat"><span>8</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=sg-geography" class="subject"><span class="subj-dot" style="background:#06b6d4"></span><div class="subj-info"><div class="subj-name">Geography</div><div class="subj-detail">Secondary</div></div><div class="subj-stats"><span class="subj-stat"><span>8</span></span></div><span class="subj-arrow">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- IB DIPLOMA -->
+    <div class="category" id="cat-ib">
+      <div class="cat-strip igcse"></div>
+      <div class="cat-header" onclick="toggle('cat-ib')">
+        <span class="cat-flag">&#127760;</span>
+        <div class="cat-info">
+          <div class="cat-title">IB Diploma Programme</div>
+          <div class="cat-subtitle">International Baccalaureate &middot; SL &amp; HL</div>
+        </div>
+        <div class="cat-stats">
+          <span><span class="cat-stat-n">303</span><span class="cat-stat-l">topics</span></span>
+          <span><span class="cat-stat-n">355</span><span class="cat-stat-l">edges</span></span>
+        </div>
+        <span class="cat-arrow">&#9662;</span>
+      </div>
+      <div class="cat-body">
+        <div class="subjects">
+          <a href="graph.html?f=ib-math-aa" class="subject"><span class="subj-dot" style="background:#ef4444"></span><div class="subj-info"><div class="subj-name">Math: Analysis &amp; Approaches</div><div class="subj-detail">SL/HL</div></div><div class="subj-stats"><span class="subj-stat"><span>44</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ib-math-ai" class="subject"><span class="subj-dot" style="background:#f97316"></span><div class="subj-info"><div class="subj-name">Math: Applications &amp; Interpretation</div><div class="subj-detail">SL/HL</div></div><div class="subj-stats"><span class="subj-stat"><span>38</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ib-physics" class="subject"><span class="subj-dot" style="background:#3b82f6"></span><div class="subj-info"><div class="subj-name">Physics</div><div class="subj-detail">SL/HL</div></div><div class="subj-stats"><span class="subj-stat"><span>29</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ib-chemistry" class="subject"><span class="subj-dot" style="background:#14b8a6"></span><div class="subj-info"><div class="subj-name">Chemistry</div><div class="subj-detail">SL/HL</div></div><div class="subj-stats"><span class="subj-stat"><span>29</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ib-biology" class="subject"><span class="subj-dot" style="background:#22c55e"></span><div class="subj-info"><div class="subj-name">Biology</div><div class="subj-detail">SL/HL</div></div><div class="subj-stats"><span class="subj-stat"><span>33</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ib-economics" class="subject"><span class="subj-dot" style="background:#eab308"></span><div class="subj-info"><div class="subj-name">Economics</div><div class="subj-detail">SL/HL</div></div><div class="subj-stats"><span class="subj-stat"><span>24</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ib-business" class="subject"><span class="subj-dot" style="background:#f97316"></span><div class="subj-info"><div class="subj-name">Business Management</div><div class="subj-detail">SL/HL</div></div><div class="subj-stats"><span class="subj-stat"><span>24</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ib-history" class="subject"><span class="subj-dot" style="background:#d97706"></span><div class="subj-info"><div class="subj-name">History</div><div class="subj-detail">SL/HL</div></div><div class="subj-stats"><span class="subj-stat"><span>20</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ib-geography" class="subject"><span class="subj-dot" style="background:#06b6d4"></span><div class="subj-info"><div class="subj-name">Geography</div><div class="subj-detail">SL/HL</div></div><div class="subj-stats"><span class="subj-stat"><span>15</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ib-psychology" class="subject"><span class="subj-dot" style="background:#8b5cf6"></span><div class="subj-info"><div class="subj-name">Psychology</div><div class="subj-detail">SL/HL</div></div><div class="subj-stats"><span class="subj-stat"><span>15</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ib-compsci" class="subject"><span class="subj-dot" style="background:#6366f1"></span><div class="subj-info"><div class="subj-name">Computer Science</div><div class="subj-detail">SL/HL</div></div><div class="subj-stats"><span class="subj-stat"><span>20</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ib-english" class="subject"><span class="subj-dot" style="background:#ec4899"></span><div class="subj-info"><div class="subj-name">English A: Lang &amp; Lit</div><div class="subj-detail">SL/HL</div></div><div class="subj-stats"><span class="subj-stat"><span>12</span></span></div><span class="subj-arrow">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- A-LEVELS -->
+    <div class="category" id="cat-al">
+      <div class="cat-strip igcse"></div>
+      <div class="cat-header" onclick="toggle('cat-al')">
+        <span class="cat-flag">&#127468;&#127463;</span>
+        <div class="cat-info">
+          <div class="cat-title">Cambridge A-Levels</div>
+          <div class="cat-subtitle">AS &amp; A2 &middot; Post-IGCSE</div>
+        </div>
+        <div class="cat-stats">
+          <span><span class="cat-stat-n">811</span><span class="cat-stat-l">topics</span></span>
+          <span><span class="cat-stat-n">10</span><span class="cat-stat-l">subjects</span></span>
+        </div>
+        <span class="cat-arrow">&#9662;</span>
+      </div>
+      <div class="cat-body">
+        <div class="subjects">
+          <a href="graph.html?f=al-math" class="subject"><span class="subj-dot" style="background:#ef4444"></span><div class="subj-info"><div class="subj-name">Mathematics</div><div class="subj-detail">9709 — Pure, Stats, Mechanics</div></div><div class="subj-stats"><span class="subj-stat"><span>39</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=al-physics" class="subject"><span class="subj-dot" style="background:#3b82f6"></span><div class="subj-info"><div class="subj-name">Physics</div><div class="subj-detail">9702</div></div><div class="subj-stats"><span class="subj-stat"><span>24</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=al-chemistry" class="subject"><span class="subj-dot" style="background:#14b8a6"></span><div class="subj-info"><div class="subj-name">Chemistry</div><div class="subj-detail">9701</div></div><div class="subj-stats"><span class="subj-stat"><span>24</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=al-biology" class="subject"><span class="subj-dot" style="background:#22c55e"></span><div class="subj-info"><div class="subj-name">Biology</div><div class="subj-detail">9700</div></div><div class="subj-stats"><span class="subj-stat"><span>20</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=al-economics" class="subject"><span class="subj-dot" style="background:#f97316"></span><div class="subj-info"><div class="subj-name">Economics</div><div class="subj-detail">9708</div></div><div class="subj-stats"><span class="subj-stat"><span>19</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=al-compsci" class="subject"><span class="subj-dot" style="background:#6366f1"></span><div class="subj-info"><div class="subj-name">Computer Science</div><div class="subj-detail">9618</div></div><div class="subj-stats"><span class="subj-stat"><span>19</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=al-business" class="subject"><span class="subj-dot" style="background:#f97316"></span><div class="subj-info"><div class="subj-name">Business</div><div class="subj-detail">9609</div></div><div class="subj-stats"><span class="subj-stat"><span>14</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=al-psychology" class="subject"><span class="subj-dot" style="background:#8b5cf6"></span><div class="subj-info"><div class="subj-name">Psychology</div><div class="subj-detail">9990</div></div><div class="subj-stats"><span class="subj-stat"><span>14</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=al-english" class="subject"><span class="subj-dot" style="background:#ec4899"></span><div class="subj-info"><div class="subj-name">English Language</div><div class="subj-detail">9093</div></div><div class="subj-stats"><span class="subj-stat"><span>10</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=al-accounting" class="subject"><span class="subj-dot" style="background:#8b5cf6"></span><div class="subj-info"><div class="subj-name">Accounting</div><div class="subj-detail">9706</div></div><div class="subj-stats"><span class="subj-stat"><span>12</span></span></div><span class="subj-arrow">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- AP -->
+    <div class="category" id="cat-ap">
+      <div class="cat-strip malaysia"></div>
+      <div class="cat-header" onclick="toggle('cat-ap')">
+        <span class="cat-flag">&#127482;&#127480;</span>
+        <div class="cat-info">
+          <div class="cat-title">AP (Advanced Placement)</div>
+          <div class="cat-subtitle">College Board &middot; College-Level Courses</div>
+        </div>
+        <div class="cat-stats">
+          <span><span class="cat-stat-n">343</span><span class="cat-stat-l">topics</span></span>
+          <span><span class="cat-stat-n">21</span><span class="cat-stat-l">courses</span></span>
+        </div>
+        <span class="cat-arrow">&#9662;</span>
+      </div>
+      <div class="cat-body">
+        <div class="subjects">
+          <a href="graph.html?f=ap-calc-ab" class="subject"><span class="subj-dot" style="background:#ef4444"></span><div class="subj-info"><div class="subj-name">Calculus AB</div></div><div class="subj-stats"><span class="subj-stat"><span>25</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-calc-bc" class="subject"><span class="subj-dot" style="background:#f97316"></span><div class="subj-info"><div class="subj-name">Calculus BC</div></div><div class="subj-stats"><span class="subj-stat"><span>32</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-statistics" class="subject"><span class="subj-dot" style="background:#eab308"></span><div class="subj-info"><div class="subj-name">Statistics</div></div><div class="subj-stats"><span class="subj-stat"><span>19</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-physics-1" class="subject"><span class="subj-dot" style="background:#3b82f6"></span><div class="subj-info"><div class="subj-name">Physics 1</div></div><div class="subj-stats"><span class="subj-stat"><span>17</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-physics-2" class="subject"><span class="subj-dot" style="background:#1d4ed8"></span><div class="subj-info"><div class="subj-name">Physics 2</div></div><div class="subj-stats"><span class="subj-stat"><span>16</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-physics-c-mech" class="subject"><span class="subj-dot" style="background:#6366f1"></span><div class="subj-info"><div class="subj-name">Physics C: Mechanics</div></div><div class="subj-stats"><span class="subj-stat"><span>16</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-physics-c-em" class="subject"><span class="subj-dot" style="background:#8b5cf6"></span><div class="subj-info"><div class="subj-name">Physics C: E&amp;M</div></div><div class="subj-stats"><span class="subj-stat"><span>14</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-chemistry" class="subject"><span class="subj-dot" style="background:#14b8a6"></span><div class="subj-info"><div class="subj-name">Chemistry</div></div><div class="subj-stats"><span class="subj-stat"><span>19</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-biology" class="subject"><span class="subj-dot" style="background:#22c55e"></span><div class="subj-info"><div class="subj-name">Biology</div></div><div class="subj-stats"><span class="subj-stat"><span>19</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-cs-a" class="subject"><span class="subj-dot" style="background:#6366f1"></span><div class="subj-info"><div class="subj-name">Computer Science A</div></div><div class="subj-stats"><span class="subj-stat"><span>13</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-cs-principles" class="subject"><span class="subj-dot" style="background:#a855f7"></span><div class="subj-info"><div class="subj-name">CS Principles</div></div><div class="subj-stats"><span class="subj-stat"><span>11</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-us-history" class="subject"><span class="subj-dot" style="background:#d97706"></span><div class="subj-info"><div class="subj-name">US History</div></div><div class="subj-stats"><span class="subj-stat"><span>15</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-world-history" class="subject"><span class="subj-dot" style="background:#b45309"></span><div class="subj-info"><div class="subj-name">World History</div></div><div class="subj-stats"><span class="subj-stat"><span>14</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-euro-history" class="subject"><span class="subj-dot" style="background:#92400e"></span><div class="subj-info"><div class="subj-name">European History</div></div><div class="subj-stats"><span class="subj-stat"><span>14</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-english-lang" class="subject"><span class="subj-dot" style="background:#ec4899"></span><div class="subj-info"><div class="subj-name">English Language</div></div><div class="subj-stats"><span class="subj-stat"><span>11</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-english-lit" class="subject"><span class="subj-dot" style="background:#f43f5e"></span><div class="subj-info"><div class="subj-name">English Literature</div></div><div class="subj-stats"><span class="subj-stat"><span>12</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-micro" class="subject"><span class="subj-dot" style="background:#f59e0b"></span><div class="subj-info"><div class="subj-name">Microeconomics</div></div><div class="subj-stats"><span class="subj-stat"><span>15</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-macro" class="subject"><span class="subj-dot" style="background:#eab308"></span><div class="subj-info"><div class="subj-name">Macroeconomics</div></div><div class="subj-stats"><span class="subj-stat"><span>15</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-psychology" class="subject"><span class="subj-dot" style="background:#8b5cf6"></span><div class="subj-info"><div class="subj-name">Psychology</div></div><div class="subj-stats"><span class="subj-stat"><span>14</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-environmental" class="subject"><span class="subj-dot" style="background:#22c55e"></span><div class="subj-info"><div class="subj-name">Environmental Science</div></div><div class="subj-stats"><span class="subj-stat"><span>18</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=ap-human-geo" class="subject"><span class="subj-dot" style="background:#06b6d4"></span><div class="subj-info"><div class="subj-name">Human Geography</div></div><div class="subj-stats"><span class="subj-stat"><span>14</span></span></div><span class="subj-arrow">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COMPETITIONS & TESTS -->
+    <div class="category" id="cat-comp">
+      <div class="cat-strip malaysia"></div>
+      <div class="cat-header" onclick="toggle('cat-comp')">
+        <span class="cat-flag">&#127942;</span>
+        <div class="cat-info">
+          <div class="cat-title">Competitions &amp; Tests</div>
+          <div class="cat-subtitle">Olympiads &middot; Standardized Tests &middot; Competitive Programming</div>
+        </div>
+        <div class="cat-stats">
+          <span><span class="cat-stat-n">307</span><span class="cat-stat-l">topics</span></span>
+          <span><span class="cat-stat-n">14</span><span class="cat-stat-l">exams</span></span>
+        </div>
+        <span class="cat-arrow">&#9662;</span>
+      </div>
+      <div class="cat-body">
+        <div class="subjects">
+          <a href="graph.html?f=comp-imo" class="subject"><span class="subj-dot" style="background:#ef4444"></span><div class="subj-info"><div class="subj-name">IMO</div><div class="subj-detail">Math Olympiad</div></div><div class="subj-stats"><span class="subj-stat"><span>28</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=comp-amc" class="subject"><span class="subj-dot" style="background:#f97316"></span><div class="subj-info"><div class="subj-name">AMC / AIME / USAMO</div><div class="subj-detail">US Math Pathway</div></div><div class="subj-stats"><span class="subj-stat"><span>22</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=comp-ioi" class="subject"><span class="subj-dot" style="background:#22c55e"></span><div class="subj-info"><div class="subj-name">IOI</div><div class="subj-detail">Informatics Olympiad</div></div><div class="subj-stats"><span class="subj-stat"><span>30</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=comp-usaco" class="subject"><span class="subj-dot" style="background:#84cc16"></span><div class="subj-info"><div class="subj-name">USACO</div><div class="subj-detail">Bronze → Platinum</div></div><div class="subj-stats"><span class="subj-stat"><span>24</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=comp-icpc" class="subject"><span class="subj-dot" style="background:#14b8a6"></span><div class="subj-info"><div class="subj-name">ICPC</div><div class="subj-detail">Competitive Programming</div></div><div class="subj-stats"><span class="subj-stat"><span>31</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=comp-ipho" class="subject"><span class="subj-dot" style="background:#3b82f6"></span><div class="subj-info"><div class="subj-name">IPhO</div><div class="subj-detail">Physics Olympiad</div></div><div class="subj-stats"><span class="subj-stat"><span>25</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=comp-icho" class="subject"><span class="subj-dot" style="background:#6366f1"></span><div class="subj-info"><div class="subj-name">IChO</div><div class="subj-detail">Chemistry Olympiad</div></div><div class="subj-stats"><span class="subj-stat"><span>22</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=comp-ibo" class="subject"><span class="subj-dot" style="background:#8b5cf6"></span><div class="subj-info"><div class="subj-name">IBO</div><div class="subj-detail">Biology Olympiad</div></div><div class="subj-stats"><span class="subj-stat"><span>23</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=test-sat" class="subject"><span class="subj-dot" style="background:#d97706"></span><div class="subj-info"><div class="subj-name">SAT</div><div class="subj-detail">College Board</div></div><div class="subj-stats"><span class="subj-stat"><span>20</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=test-act" class="subject"><span class="subj-dot" style="background:#b45309"></span><div class="subj-info"><div class="subj-name">ACT</div><div class="subj-detail">ACT Inc.</div></div><div class="subj-stats"><span class="subj-stat"><span>18</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=test-gre" class="subject"><span class="subj-dot" style="background:#ec4899"></span><div class="subj-info"><div class="subj-name">GRE</div><div class="subj-detail">Graduate Record Exam</div></div><div class="subj-stats"><span class="subj-stat"><span>16</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=test-gmat" class="subject"><span class="subj-dot" style="background:#f43f5e"></span><div class="subj-info"><div class="subj-name">GMAT</div><div class="subj-detail">MBA Admission</div></div><div class="subj-stats"><span class="subj-stat"><span>16</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=test-toefl" class="subject"><span class="subj-dot" style="background:#06b6d4"></span><div class="subj-info"><div class="subj-name">TOEFL iBT</div><div class="subj-detail">English Proficiency</div></div><div class="subj-stats"><span class="subj-stat"><span>16</span></span></div><span class="subj-arrow">&rarr;</span></a>
+          <a href="graph.html?f=test-ielts" class="subject"><span class="subj-dot" style="background:#0ea5e9"></span><div class="subj-info"><div class="subj-name">IELTS</div><div class="subj-detail">English Proficiency</div></div><div class="subj-stats"><span class="subj-stat"><span>16</span></span></div><span class="subj-arrow">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- LANGUAGES -->
+    <div class="category" id="cat-languages">
+      <div class="cat-strip lang"></div>
+      <div class="cat-header" onclick="toggle('cat-languages')">
+        <span class="cat-flag">&#127760;</span>
+        <div class="cat-info">
+          <div class="cat-title">Languages</div>
+          <div class="cat-subtitle">Grammar &middot; Vocabulary &middot; Reading &middot; Writing &middot; Speaking</div>
+        </div>
+        <div class="cat-stats">
+          <span><span class="cat-stat-n">2,264</span><span class="cat-stat-l">topics</span></span>
+          <span><span class="cat-stat-n">13</span><span class="cat-stat-l">languages</span></span>
+        </div>
+        <span class="cat-arrow">&#9662;</span>
+      </div>
+      <div class="cat-body">
+        <div class="subjects">
+          <a href="graph.html?f=lang-en" class="subject">
+            <span class="subj-dot" style="background:#3b82f6"></span>
+            <div class="subj-info"><div class="subj-name">English</div><div class="subj-detail">CEFR A1.1 — C2.2</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>171</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=lang-ms" class="subject">
+            <span class="subj-dot" style="background:#06b6d4"></span>
+            <div class="subj-info"><div class="subj-name">Bahasa Malaysia</div><div class="subj-detail">CEFR A1.1 — C2.2</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>172</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=lang-de" class="subject">
+            <span class="subj-dot" style="background:#f59e0b"></span>
+            <div class="subj-info"><div class="subj-name">Deutsch</div><div class="subj-detail">German &middot; CEFR</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>177</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=lang-fa" class="subject">
+            <span class="subj-dot" style="background:#22c55e"></span>
+            <div class="subj-info"><div class="subj-name">&#1601;&#1575;&#1585;&#1587;&#1740;</div><div class="subj-detail">Farsi &middot; CEFR</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>174</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=lang-ar" class="subject">
+            <span class="subj-dot" style="background:#ef4444"></span>
+            <div class="subj-info"><div class="subj-name">&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</div><div class="subj-detail">Arabic &middot; CEFR</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>124</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=lang-es" class="subject">
+            <span class="subj-dot" style="background:#ec4899"></span>
+            <div class="subj-info"><div class="subj-name">Espa&ntilde;ol</div><div class="subj-detail">Spanish &middot; CEFR</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>122</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=lang-fr" class="subject">
+            <span class="subj-dot" style="background:#8b5cf6"></span>
+            <div class="subj-info"><div class="subj-name">Fran&ccedil;ais</div><div class="subj-detail">French &middot; CEFR</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>122</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=lang-ru" class="subject">
+            <span class="subj-dot" style="background:#d946ef"></span>
+            <div class="subj-info"><div class="subj-name">&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;</div><div class="subj-detail">Russian &middot; CEFR</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>121</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=lang-ja" class="subject">
+            <span class="subj-dot" style="background:#f43f5e"></span>
+            <div class="subj-info"><div class="subj-name">&#26085;&#26412;&#35486;</div><div class="subj-detail">Japanese &middot; CEFR</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>123</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=lang-ko" class="subject">
+            <span class="subj-dot" style="background:#0ea5e9"></span>
+            <div class="subj-info"><div class="subj-name">&#54620;&#44397;&#50612;</div><div class="subj-detail">Korean &middot; CEFR</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>120</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=lang-tr" class="subject">
+            <span class="subj-dot" style="background:#14b8a6"></span>
+            <div class="subj-info"><div class="subj-name">T&uuml;rk&ccedil;e</div><div class="subj-detail">Turkish &middot; CEFR</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>121</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=lang-zh" class="subject">
+            <span class="subj-dot" style="background:#ef4444"></span>
+            <div class="subj-info"><div class="subj-name">&#20013;&#25991;</div><div class="subj-detail">Mandarin &middot; CEFR</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>119</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+          <a href="graph.html?f=lang-ta" class="subject">
+            <span class="subj-dot" style="background:#f97316"></span>
+            <div class="subj-info"><div class="subj-name">&#2980;&#2990;&#3007;&#2996;&#3021;</div><div class="subj-detail">Tamil &middot; CEFR</div></div>
+            <div class="subj-stats"><span class="subj-stat"><span>121</span></span></div>
+            <span class="subj-arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>Open source &middot; <a href="https://github.com/hafezparast/edugraph">GitHub</a> &middot; Data contributions welcome</p>
+  </div>
 </div>
 
 <script>
-// --- Determine which JSON file to load ---
-const params = new URLSearchParams(window.location.search);
-const fileParam = params.get('f') || 'sg-math';
-const dataUrl = 'data/' + encodeURIComponent(fileParam) + '.json';
-
-fetch(dataUrl)
-  .then(r => { if (!r.ok) throw new Error('Failed to load ' + dataUrl); return r.json(); })
-  .then(data => init(data))
-  .catch(err => {
-    document.getElementById('loading').innerHTML = '<span style="color:#e07a5f">' + err.message + '</span>';
-  });
-
-function init(data) {
-  document.getElementById('loading').style.display = 'none';
-
-  const metadata = data.metadata || {};
-  const booksData = data.books || [];
-  const bookMap = {};
-  booksData.forEach(b => { bookMap[b.id] = b; });
-
-  // Set title
-  const curriculum = metadata.curriculum || metadata.domain || fileParam;
-  document.title = 'EduGraph \u2014 ' + curriculum;
-  document.getElementById('subtitle').textContent = metadata.description || curriculum;
-
-  // Transform JSON nodes to graph nodes
-  const nodes = (data.nodes || []).map(n => {
-    const book = bookMap[n.book] || {};
-    return {
-      id: n.id,
-      label: n.label,
-      color: n.bookColor || book.color || '#888',
-      book: n.book,
-      bookName: n.bookName || book.name || '',
-      bookOrder: n.bookOrder || book.order || 0,
-      r: 4 + (book.order || 1) * 0.8,
-      description: n.description || '',
-      type: n.type || 'concept',
-      external_id: n.external_id || '',
-      comprehended: n.comprehended || false
-    };
-  });
-
-  const edges = (data.edges || []).map(e => ({
-    source: e.source,
-    target: e.target,
-    relation: e.relation || 'prerequisite_for'
-  }));
-
-  const nodeMap = {};
-  nodes.forEach(n => { nodeMap[n.id] = n; });
-
-  // Build strands from books (group nodes by bookName)
-  const strandMap = {};
-  nodes.forEach(n => {
-    const key = n.bookName || 'Other';
-    if (!strandMap[key]) strandMap[key] = { name: key, color: n.color, nodeIds: [] };
-    strandMap[key].nodeIds.push(n.id);
-  });
-  const strandsData = Object.values(strandMap);
-
-  // --- State ---
-  const activeBooks = new Set(booksData.map(b => b.id));
-  const activeStrands = new Set(strandsData.map(s => s.name));
-  let filterMode = 'grades';
-  let selectedNode = null;
-
-  // --- D3 ---
-  const container = document.getElementById('graph-container');
-  const svg = d3.select('#svg');
-  const g = svg.append('g');
-
-  svg.append('defs').append('marker')
-    .attr('id', 'arrow').attr('viewBox', '0 -4 8 8').attr('refX', 18).attr('refY', 0)
-    .attr('markerWidth', 5).attr('markerHeight', 5).attr('orient', 'auto')
-    .append('path').attr('d', 'M0,-3L7,0L0,3').attr('fill', '#6b6590');
-
-  svg.select('defs').append('marker')
-    .attr('id', 'arrow-hl').attr('viewBox', '0 -4 8 8').attr('refX', 18).attr('refY', 0)
-    .attr('markerWidth', 6).attr('markerHeight', 6).attr('orient', 'auto')
-    .append('path').attr('d', 'M0,-3L7,0L0,3').attr('fill', '#ffc857');
-
-  const linkGroup = g.append('g').attr('class', 'links');
-  const nodeGroup = g.append('g').attr('class', 'nodes');
-  const labelGroup = g.append('g').attr('class', 'labels');
-  let linkEls, nodeEls, labelEls;
-
-  function eid(e, field) { return typeof e[field] === 'object' ? e[field].id : e[field]; }
-
-  function renderGraph() {
-    let visibleIds;
-    if (filterMode === 'topics') {
-      visibleIds = new Set();
-      strandsData.filter(s => activeStrands.has(s.name)).forEach(s => s.nodeIds.forEach(id => visibleIds.add(id)));
-    } else {
-      visibleIds = new Set(nodes.filter(n => activeBooks.has(n.book)).map(n => n.id));
-    }
-    const vNodes = nodes.filter(n => visibleIds.has(n.id));
-    const vEdges = edges.filter(e => visibleIds.has(eid(e,'source')) && visibleIds.has(eid(e,'target')));
-
-    linkEls = linkGroup.selectAll('line').data(vEdges, d => eid(d,'source')+'->'+eid(d,'target'));
-    linkEls.exit().remove();
-    linkEls = linkEls.enter().append('line')
-      .attr('stroke', '#5a5480').attr('stroke-width', 0.7).attr('stroke-opacity', 0.5)
-      .attr('marker-end', 'url(#arrow)').merge(linkEls);
-
-    nodeEls = nodeGroup.selectAll('circle').data(vNodes, d => d.id);
-    nodeEls.exit().remove();
-    nodeEls = nodeEls.enter().append('circle')
-      .attr('r', d => d.r).attr('fill', d => d.color).attr('fill-opacity', 0.85)
-      .attr('stroke', 'none').attr('stroke-width', 2).attr('cursor', 'pointer')
-      .on('click', (ev, d) => { ev.stopPropagation(); selectNode(d); })
-      .call(d3.drag().on('start', dragStart).on('drag', dragging).on('end', dragEnd))
-      .merge(nodeEls).attr('fill', d => d.color);
-
-    labelEls = labelGroup.selectAll('text').data(vNodes, d => d.id);
-    labelEls.exit().remove();
-    labelEls = labelEls.enter().append('text')
-      .attr('font-size', d => Math.max(6, d.r * 0.85))
-      .attr('font-family', "'DM Sans', sans-serif").attr('fill', '#a09cac')
-      .attr('text-anchor', 'middle').attr('dy', d => d.r + 10).attr('pointer-events', 'none')
-      .text(d => d.label.length > 22 ? d.label.slice(0, 20) + '\u2026' : d.label)
-      .merge(labelEls);
-
-    simulation.nodes(vNodes);
-    simulation.force('link').links(vEdges);
-    simulation.alpha(0.6).restart();
-    updateStats(vNodes.length, vEdges.length);
-  }
-
-  const simulation = d3.forceSimulation()
-    .force('link', d3.forceLink().id(d => d.id).distance(55).strength(0.3))
-    .force('charge', d3.forceManyBody().strength(-120).distanceMax(400))
-    .force('center', d3.forceCenter())
-    .force('collide', d3.forceCollide().radius(10).strength(0.7))
-    .force('x', d3.forceX().strength(0.02))
-    .force('y', d3.forceY().strength(0.02))
-    .alphaDecay(0.015).velocityDecay(0.35)
-    .on('tick', () => {
-      linkEls.attr('x1', d => d.source.x).attr('y1', d => d.source.y).attr('x2', d => d.target.x).attr('y2', d => d.target.y);
-      nodeEls.attr('cx', d => d.x).attr('cy', d => d.y);
-      labelEls.attr('x', d => d.x).attr('y', d => d.y);
-    });
-
-  const zoom = d3.zoom().scaleExtent([0.05, 8]).on('zoom', ev => g.attr('transform', ev.transform));
-  svg.call(zoom);
-
-  function resize() {
-    const w = container.clientWidth, h = container.clientHeight;
-    svg.attr('viewBox', [-w/2, -h/2, w, h]);
-    simulation.force('center', d3.forceCenter(0, 0));
-  }
-  window.addEventListener('resize', resize);
-  resize();
-
-  function dragStart(ev, d) { if (!ev.active) simulation.alphaTarget(0.3).restart(); d.fx = d.x; d.fy = d.y; }
-  function dragging(ev, d) { d.fx = ev.x; d.fy = ev.y; }
-  function dragEnd(ev, d) { if (!ev.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }
-
-  function selectNode(d) {
-    selectedNode = d;
-    const neighbors = new Set([d.id]);
-    const prereqEdges = new Set(), leadsEdges = new Set();
-    edges.forEach(e => {
-      const s = eid(e,'source'), t = eid(e,'target');
-      if (s === d.id) { neighbors.add(t); leadsEdges.add(s+'->'+t); }
-      if (t === d.id) { neighbors.add(s); prereqEdges.add(s+'->'+t); }
-    });
-    nodeEls.attr('fill-opacity', n => neighbors.has(n.id) ? 1 : 0.06)
-      .attr('stroke', n => n.id === d.id ? '#ffc857' : 'none')
-      .attr('stroke-width', n => n.id === d.id ? 2.5 : 0);
-    labelEls.attr('fill', n => neighbors.has(n.id) ? '#e8e4dc' : '#1a1830')
-      .attr('font-weight', n => n.id === d.id ? 600 : 400);
-    linkEls.each(function(e) {
-      const k = eid(e,'source')+'->'+eid(e,'target');
-      const hl = prereqEdges.has(k) || leadsEdges.has(k);
-      d3.select(this)
-        .attr('stroke', prereqEdges.has(k) ? '#e07a5f' : leadsEdges.has(k) ? '#81b29a' : '#5a5480')
-        .attr('stroke-opacity', hl ? 0.9 : 0.04)
-        .attr('stroke-width', hl ? 1.8 : 0.7)
-        .attr('marker-end', hl ? 'url(#arrow-hl)' : 'url(#arrow)');
-    });
-    showDetail(d);
-  }
-
-  function clearSelection() {
-    selectedNode = null;
-    nodeEls.attr('fill-opacity', 0.85).attr('stroke', 'none');
-    labelEls.attr('fill', '#a09cac').attr('font-weight', 400);
-    linkEls.attr('stroke', '#5a5480').attr('stroke-opacity', 0.5).attr('stroke-width', 0.7).attr('marker-end', 'url(#arrow)');
-    document.getElementById('detail').classList.remove('open');
-    document.getElementById('graph-container').classList.remove('detail-open');
-  }
-  svg.on('click', () => clearSelection());
-
-  function showDetail(d) {
-    document.getElementById('graph-container').classList.add('detail-open');
-    const prereqs = [], leads = [];
-    edges.forEach(e => {
-      const s = eid(e,'source'), t = eid(e,'target');
-      if (t === d.id && nodeMap[s]) prereqs.push(nodeMap[s]);
-      if (s === d.id && nodeMap[t]) leads.push(nodeMap[t]);
-    });
-    const content = document.getElementById('detail-content');
-    content.innerHTML =
-      '<div class="detail-badge" style="background:'+d.color+'18;color:'+d.color+';border:1px solid '+d.color+'30">' +
-        '<span style="width:5px;height:5px;border-radius:50%;background:'+d.color+';display:inline-block"></span> ' +
-        d.bookName +
-      '</div>' +
-      '<div class="detail-title">' + d.label + '</div>' +
-      (d.description ? '<div class="detail-desc">' + d.description + '</div>' : '') +
-      (prereqs.length ?
-        '<div class="conn-section"><div class="conn-head prereq">\u25B2 Prerequisites (' + prereqs.length + ')</div>' +
-        prereqs.map(n => '<div class="conn-item" data-id="'+n.id+'"><span class="conn-dot" style="background:'+n.color+'"></span><span class="conn-label">'+n.label+'</span><span class="conn-book">'+n.bookName+'</span></div>').join('') +
-        '</div>'
-        : '<div class="conn-section"><div class="conn-head" style="color:var(--gold)">\u2605 Starting point</div></div>') +
-      (leads.length ?
-        '<div class="conn-section"><div class="conn-head leads">\u25BC Leads to (' + leads.length + ')</div>' +
-        leads.map(n => '<div class="conn-item" data-id="'+n.id+'"><span class="conn-dot" style="background:'+n.color+'"></span><span class="conn-label">'+n.label+'</span><span class="conn-book">'+n.bookName+'</span></div>').join('') +
-        '</div>' : '');
-    content.querySelectorAll('.conn-item').forEach(el => {
-      el.addEventListener('click', () => { const n = nodeMap[el.dataset.id]; if (n) selectNode(n); });
-    });
-    document.getElementById('detail').classList.add('open');
-  }
-
-  document.getElementById('detail-close').addEventListener('click', clearSelection);
-
-  // Tabs
-  document.querySelectorAll('.tab-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
-      btn.classList.add('active');
-      document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
-    });
-  });
-
-  // Grades sidebar
-  const bookCounts = {};
-  nodes.forEach(n => { bookCounts[n.book] = (bookCounts[n.book] || 0) + 1; });
-  const gradesEl = document.getElementById('grades-list');
-  const totalNodes = booksData.reduce((s, b) => s + (bookCounts[b.id] || 0), 0);
-  const header = document.createElement('div');
-  header.className = 'group-header';
-  header.innerHTML = '<span class="group-arrow">\u25BC</span><span class="group-label">All</span><span class="group-cnt">' + totalNodes + '</span>';
-  const body = document.createElement('div');
-  body.className = 'group-body';
-  body.style.maxHeight = '2000px';
-  const list = document.createElement('div');
-  list.className = 'book-list';
-  booksData.forEach(b => {
-    const el = document.createElement('div');
-    el.className = 'book-item'; el.dataset.id = b.id;
-    el.innerHTML = '<span class="book-dot" style="background:'+b.color+';color:'+b.color+'"></span><span class="book-name">'+b.name+'</span><span class="book-cnt">'+(bookCounts[b.id]||0)+'</span>';
-    el.addEventListener('click', ev => {
-      ev.stopPropagation();
-      if (activeBooks.has(b.id)) { activeBooks.delete(b.id); el.classList.add('off'); }
-      else { activeBooks.add(b.id); el.classList.remove('off'); }
-      filterMode = 'grades'; renderGraph();
-    });
-    list.appendChild(el);
-  });
-  body.appendChild(list);
-  header.addEventListener('click', () => header.classList.toggle('collapsed'));
-  gradesEl.appendChild(header);
-  gradesEl.appendChild(body);
-
-  document.getElementById('b-all').addEventListener('click', () => {
-    booksData.forEach(b => activeBooks.add(b.id));
-    document.querySelectorAll('#grades-list .book-item').forEach(el => el.classList.remove('off'));
-    filterMode = 'grades'; renderGraph();
-  });
-  document.getElementById('b-none').addEventListener('click', () => {
-    activeBooks.clear();
-    document.querySelectorAll('#grades-list .book-item').forEach(el => el.classList.add('off'));
-    filterMode = 'grades'; renderGraph();
-  });
-
-  // Topics sidebar
-  const topicsEl = document.getElementById('topics-list');
-  strandsData.forEach(s => {
-    const el = document.createElement('div');
-    el.className = 'strand-item'; el.dataset.strand = s.name;
-    el.innerHTML = '<span class="strand-dot" style="background:'+s.color+'"></span><span class="strand-name">'+s.name+'</span><span class="strand-cnt">'+s.nodeIds.length+'</span>';
-    el.addEventListener('click', ev => {
-      ev.stopPropagation();
-      if (activeStrands.has(s.name)) { activeStrands.delete(s.name); el.classList.add('off'); }
-      else { activeStrands.add(s.name); el.classList.remove('off'); }
-      filterMode = 'topics'; renderGraph();
-    });
-    topicsEl.appendChild(el);
-  });
-  document.getElementById('t-all').addEventListener('click', () => {
-    strandsData.forEach(s => activeStrands.add(s.name));
-    document.querySelectorAll('.strand-item').forEach(el => el.classList.remove('off'));
-    filterMode = 'topics'; renderGraph();
-  });
-  document.getElementById('t-none').addEventListener('click', () => {
-    activeStrands.clear();
-    document.querySelectorAll('.strand-item').forEach(el => el.classList.add('off'));
-    filterMode = 'topics'; renderGraph();
-  });
-
-  // Force sliders
-  document.getElementById('sl-charge').addEventListener('input', function() { simulation.force('charge').strength(+this.value); simulation.alpha(0.4).restart(); });
-  document.getElementById('sl-dist').addEventListener('input', function() { simulation.force('link').distance(+this.value); simulation.alpha(0.4).restart(); });
-  document.getElementById('sl-gravity').addEventListener('input', function() { const v=+this.value/1000; simulation.force('x').strength(v); simulation.force('y').strength(v); simulation.alpha(0.4).restart(); });
-  document.getElementById('sl-collide').addEventListener('input', function() { simulation.force('collide').radius(+this.value); simulation.alpha(0.4).restart(); });
-
-  // Search
-  let searchTimeout;
-  document.getElementById('search').addEventListener('input', function() {
-    clearTimeout(searchTimeout);
-    searchTimeout = setTimeout(() => {
-      const q = this.value.trim().toLowerCase();
-      if (!q) { clearSelection(); return; }
-      const matches = nodes.filter(n => activeBooks.has(n.book) && (n.label.toLowerCase().includes(q) || n.id.toLowerCase().includes(q)));
-      if (matches.length) {
-        const m = matches[0];
-        if (m.x != null) {
-          const t = d3.zoomIdentity.translate(-m.x*2+container.clientWidth/2, -m.y*2+container.clientHeight/2).scale(2);
-          svg.transition().duration(500).call(zoom.transform, t);
-        }
-        const matchIds = new Set(matches.map(n => n.id));
-        nodeEls.attr('fill-opacity', n => matchIds.has(n.id) ? 1 : 0.06)
-          .attr('stroke', n => matchIds.has(n.id) ? '#ffc857' : 'none')
-          .attr('stroke-width', n => matchIds.has(n.id) ? 2 : 0);
-        labelEls.attr('fill', n => matchIds.has(n.id) ? '#fff' : '#1a1830');
-      }
-    }, 250);
-  });
-
-  function updateStats(n, e) {
-    document.getElementById('s-nodes').textContent = n;
-    document.getElementById('s-edges').textContent = e;
-  }
-
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') { clearSelection(); document.getElementById('search').value = ''; }
-    if (e.key === '/' && document.activeElement.tagName !== 'INPUT') { e.preventDefault(); document.getElementById('search').focus(); }
-  });
-
-  renderGraph();
+function toggle(id) {
+  const el = document.getElementById(id);
+  el.classList.toggle('open');
 }
 </script>
 </body>
