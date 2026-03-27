@@ -244,14 +244,84 @@ function init(data) {
   const nodeMap = {};
   nodes.forEach(n => { nodeMap[n.id] = n; });
 
-  // Build strands from books (group nodes by bookName)
+  // Build topic strands by analyzing node labels, descriptions, and IDs
+  // These keyword rules classify nodes into subject-area topics across all year levels
+  const topicRules = [
+    // Mathematics
+    { name: 'Numbers & Arithmetic', color: '#ef4444', kw: /\bnumber|counting|integers|whole number|place value|digit|addition|subtraction|multiply|division|four operations|arithmetic|rounding|estimation|prime number|factor|multiple|hcf|lcm|square root|cube root|index number|indices|standard form|number base|operation/i },
+    { name: 'Fractions & Decimals', color: '#f97316', kw: /\bfraction|decimal|percent|ratio|proportion|rate\b/i },
+    { name: 'Algebra', color: '#f59e0b', kw: /\balgebra|equation|expression|inequalit|formula|simultaneous|quadratic|polynomial|expansion|factori[sz]|variation|linear law|function|surds?|logarithm|exponential|indices.*log|binomial/i },
+    { name: 'Sequences & Series', color: '#eab308', kw: /\bsequence|series|pattern|progression|ap\b|gp\b|arithmetic progression|geometric progression|summation|maclaurin|convergence/i },
+    { name: 'Geometry', color: '#84cc16', kw: /\bgeometry|angle|triangle|polygon|circle|line|parallel|perpendicular|symmetry|congruence|similar|coordinate|locus|loci|transformation|reflection|rotation|enlargement|plan.*elevation|bearing|shape|2d|3d|prism|net\b/i },
+    { name: 'Measurement', color: '#22c55e', kw: /\bmeasur|length|mass|volume|area|perimeter|surface area|mensuration|time\b|money|speed|distance|unit|density|capacity/i },
+    { name: 'Trigonometry', color: '#10b981', kw: /\btrigonometr|sine|cosine|tangent|circular measure|radian/i },
+    { name: 'Calculus', color: '#14b8a6', kw: /\bcalculus|differentiat|integrat|limit|continuity|gradient|tangent line|rate of change|kinematics|differential equation/i },
+    { name: 'Vectors & Matrices', color: '#06b6d4', kw: /\bvector|matri[cx]|determinant|inverse matrix|cross product|scalar product/i },
+    { name: 'Statistics & Data', color: '#0ea5e9', kw: /\bstatistic|data|graph|chart|pictograph|bar graph|pie chart|histogram|frequency|mean|median|mode|average|standard deviation|dispersion|cumulative|sampling|estimation|correlation|regression/i },
+    { name: 'Probability', color: '#3b82f6', kw: /\bprobabilit|combinat|permutation|likelihood|random variable|distribution|binomial|poisson|normal distribution|hypothesis|chi-squared|expected value/i },
+    { name: 'Sets & Logic', color: '#6366f1', kw: /\bset\b|sets\b|venn|logic|reasoning|boolean|truth table|network|graph theory/i },
+    { name: 'Complex Numbers', color: '#8b5cf6', kw: /\bcomplex number|argand|polar form|de moivre/i },
+    { name: 'Financial Maths', color: '#a855f7', kw: /\bfinancial|interest|profit|loss|tax|insurance|invoice|bill|budget|discount|asset|liabilit|dividend|money management/i },
+    // Sciences - Physics
+    { name: 'Mechanics', color: '#ef4444', kw: /\bmechanic|motion|kinematic|force|newton|momentum|impulse|inertia|friction|dynamics|velocity|acceleration|free fall|gravit|weight|torque|moment|equilibrium|pressure|archimedes|bernoulli|pascal|circular motion|satellite|kepler|projectile/i },
+    { name: 'Energy & Work', color: '#f97316', kw: /\benergy|work\b|power\b|conservation of energy|kinetic energy|potential energy|efficiency|elastic/i },
+    { name: 'Waves & Optics', color: '#f59e0b', kw: /\bwave|optic|light|refraction|reflection|diffraction|interference|superposition|lens|mirror|sound|electromagnetic|spectrum|polarisation|resonance|oscillation|shm|damping/i },
+    { name: 'Thermal Physics', color: '#eab308', kw: /\bthermal|heat|temperature|specific heat|latent heat|gas law|ideal gas|kinetic theory|thermodynamic|conduction|convection|radiation|boiling|melting|state of matter/i },
+    { name: 'Electricity & Magnetism', color: '#84cc16', kw: /\belectri|circuit|current|voltage|resistance|ohm|capacit|magnet|electromagnetic|induction|transformer|alternating|dc\b|ac\b|motor|generator|coulomb|electric field|charge/i },
+    { name: 'Modern Physics', color: '#22c55e', kw: /\bquantum|photoelectric|nuclear|radioact|atom|fission|fusion|relativity|x-ray|particle physics|wave-particle|electron|cathode|logic gate|semiconductor|transistor|diode/i },
+    // Sciences - Chemistry
+    { name: 'Atomic Structure & Bonding', color: '#3b82f6', kw: /\batomic|atom|electron config|isotope|ion|bonding|ionic|covalent|metallic|intermolecular|van der waals|hydrogen bond|electronegativity|orbital|periodic table|period\b|group\b.*element/i },
+    { name: 'Chemical Reactions', color: '#06b6d4', kw: /\breaction|equation|stoichiometry|mole\b|formula|oxidation|reduction|redox|electrolysis|electrochemistry|reactivity|rate of reaction|collision theory|catalyst|equilibri/i },
+    { name: 'Acids, Bases & Salts', color: '#10b981', kw: /\bacid|base|alkali|salt|ph\b|neutrali[sz]|titration|buffer|indicator/i },
+    { name: 'Organic Chemistry', color: '#8b5cf6', kw: /\borganic|carbon compound|hydrocarbon|alkane|alkene|alcohol|ester|polymer|carboxylic|amine|benzene|aromatic|halogen.*alkane|functional group|isomer|saponif/i },
+    { name: 'Energetics & Thermochemistry', color: '#a855f7', kw: /\benthalpyenergetics|thermochemi|hess|born-haber|lattice energy|entropy|gibbs|calorimetry|exothermic|endothermic/i },
+    // Sciences - Biology
+    { name: 'Cell Biology', color: '#22c55e', kw: /\bcell\b|membrane|organelle|mitosis|meiosis|cell division|cell cycle|microscope|prokaryot|eukaryot|osmosis|diffusion|active transport/i },
+    { name: 'Genetics & Evolution', color: '#6366f1', kw: /\bgenet|dna|rna|gene\b|inherit|mutation|natural selection|evolution|speciation|variation|allele|mendel|codominance|sex.linked|hardy-weinberg|chromosome|protein synthesis|transcription|translation/i },
+    { name: 'Human Biology', color: '#ef4444', kw: /\bdigest|nutrition|respir|circulat|heart|blood|nervous|brain|hormone|endocrine|excret|kidney|homeostasis|immun|vaccine|skeleton|muscle|reproduct|disease|health|psychoactive/i },
+    { name: 'Plant Biology', color: '#84cc16', kw: /\bplant|photosynthe|transpir|xylem|phloem|leaf|root|seed|germination|pollination|tropism|meristem/i },
+    { name: 'Ecology', color: '#10b981', kw: /\becolog|ecosystem|food chain|food web|biodiversity|conservation|population|habitat|environment|pollution|sustainability|nutrient cycl|energy flow|succession|climate change|deforestation/i },
+    // General / CS
+    { name: 'Algorithms & Programming', color: '#3b82f6', kw: /\balgorithm|programming|pseudocode|flowchart|variable|loop|array|function|procedure|data type|control structure|sorting|searching|recursion|oop|class|object|inheritance|polymorphism|encapsulation/i },
+    { name: 'Computer Systems', color: '#06b6d4', kw: /\bcpu|processor|memory|storage|hardware|software|operating system|von neumann|architecture|binary|hexadecimal|ascii|logic gate|boolean/i },
+    { name: 'Networks & Security', color: '#f59e0b', kw: /\bnetwork|internet|protocol|tcp|ip address|security|encryption|firewall|malware|cyber|topolog/i },
+    { name: 'Databases', color: '#8b5cf6', kw: /\bdatabase|sql|entity|normalisation|relational|erd\b|key.*cardinality/i },
+    // History
+    { name: 'Ancient & Medieval', color: '#d97706', kw: /\bciviliz|tamadun|prehistoric|ice age|mesopotam|egypt|roman|greek|dynasty|sultan|melaka|kingdom|kerajaan/i },
+    { name: 'Colonial & Modern', color: '#ef4444', kw: /\bcoloni|penjajah|british|independence|merdeka|world war|cold war|revolution|nationalism|communist|constitution|perlembagaan|democracy|parliament/i },
+    { name: 'Society & Culture', color: '#8b5cf6', kw: /\breligion|islam|culture|ethnic|language|education|social|economic development|trade|globalisation|diplomati/i },
+    // Languages
+    { name: 'Listening & Speaking', color: '#3b82f6', kw: /\blistening|speaking|oral|pronunciation|phonetic|conversation|dialogue/i },
+    { name: 'Reading & Writing', color: '#22c55e', kw: /\breading|writing|composition|essay|comprehension|grammar|syntax|vocabulary|spelling|paragraph/i },
+    { name: 'Language Knowledge', color: '#f59e0b', kw: /\bmorpholog|lexis|semantic|pragmatic|discourse|phonolog|language change|sociolinguistic|acquisition|bilingual/i },
+  ];
+
+  // Classify each node into a topic strand
+  function classifyNode(n) {
+    const text = (n.label + ' ' + n.description + ' ' + n.id).toLowerCase();
+    for (const rule of topicRules) {
+      if (rule.kw.test(text)) return rule.name;
+    }
+    return 'Other';
+  }
+
+  // Assign strand to each node
+  nodes.forEach(n => { n.strand = classifyNode(n); });
+
+  // Build strands data (only include strands that have nodes)
+  const strandColors = {};
+  topicRules.forEach(r => { strandColors[r.name] = r.color; });
+  strandColors['Other'] = '#888';
+
   const strandMap = {};
   nodes.forEach(n => {
-    const key = n.bookName || 'Other';
-    if (!strandMap[key]) strandMap[key] = { name: key, color: n.color, nodeIds: [] };
+    const key = n.strand;
+    if (!strandMap[key]) strandMap[key] = { name: key, color: strandColors[key] || '#888', nodeIds: [] };
     strandMap[key].nodeIds.push(n.id);
   });
-  const strandsData = Object.values(strandMap);
+  // Sort by count descending, put "Other" last
+  const strandsData = Object.values(strandMap)
+    .sort((a, b) => a.name === 'Other' ? 1 : b.name === 'Other' ? -1 : b.nodeIds.length - a.nodeIds.length);
 
   // --- State ---
   const activeBooks = new Set(booksData.map(b => b.id));
