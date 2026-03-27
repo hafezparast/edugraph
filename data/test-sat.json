@@ -1,0 +1,356 @@
+{
+  "metadata": {
+    "domain": "standardized_testing",
+    "curriculum": "SAT (College Board)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "SAT skill areas with prerequisite ordering, colored by section",
+    "sources": [
+      "College Board SAT Suite"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "sat.rw",
+      "name": "Reading & Writing",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "sat.math",
+      "name": "Math",
+      "color": "#ef4444",
+      "order": 2
+    }
+  ],
+  "nodes": [
+    {
+      "id": "sat.rw.craft_and_structure",
+      "label": "Craft and Structure",
+      "type": "concept",
+      "description": "Analyzing word choice, text structure, and author purpose",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.rw",
+      "bookName": "Reading & Writing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "sat.rw.information_and_ideas",
+      "label": "Information and Ideas",
+      "type": "concept",
+      "description": "Comprehending central ideas, details, and evidence in texts",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.rw",
+      "bookName": "Reading & Writing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "sat.rw.standard_english_conventions",
+      "label": "Standard English Conventions",
+      "type": "concept",
+      "description": "Grammar, punctuation, and sentence formation rules",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.rw",
+      "bookName": "Reading & Writing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "sat.rw.expression_of_ideas",
+      "label": "Expression of Ideas",
+      "type": "concept",
+      "description": "Revising texts for clarity, focus, and effective rhetoric",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.rw",
+      "bookName": "Reading & Writing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "sat.math.linear_equations",
+      "label": "Linear Equations",
+      "type": "concept",
+      "description": "Solving and graphing linear equations and expressions",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "sat.math.systems_of_equations",
+      "label": "Systems of Equations",
+      "type": "concept",
+      "description": "Solving systems of linear equations algebraically and graphically",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "sat.math.linear_inequalities",
+      "label": "Linear Inequalities",
+      "type": "concept",
+      "description": "Solving and graphing linear inequalities and systems of inequalities",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "sat.math.ratios_and_percentages",
+      "label": "Ratios and Percentages",
+      "type": "concept",
+      "description": "Working with ratios, proportions, and percentages",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "sat.math.statistics",
+      "label": "Statistics",
+      "type": "concept",
+      "description": "Mean, median, mode, standard deviation, and data distributions",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "sat.math.probability",
+      "label": "Probability",
+      "type": "concept",
+      "description": "Basic probability and conditional probability concepts",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "sat.math.quadratics",
+      "label": "Quadratics",
+      "type": "concept",
+      "description": "Solving quadratic equations by factoring, completing the square, and the quadratic formula",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "sat.math.polynomials",
+      "label": "Polynomials",
+      "type": "concept",
+      "description": "Operations with polynomials, factoring, and polynomial identities",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "sat.math.functions",
+      "label": "Functions",
+      "type": "concept",
+      "description": "Function notation, domain/range, transformations, and composition",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "sat.math.radicals_and_exponents",
+      "label": "Radicals and Exponents",
+      "type": "concept",
+      "description": "Simplifying radicals, rational exponents, and exponential expressions",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "sat.math.geometry",
+      "label": "Geometry",
+      "type": "concept",
+      "description": "Lines, angles, triangles, circles, area, and volume",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "sat.math.trigonometry",
+      "label": "Trigonometry",
+      "type": "concept",
+      "description": "Right triangle trigonometry, unit circle, and radian measure",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "sat.math.complex_numbers",
+      "label": "Complex Numbers",
+      "type": "concept",
+      "description": "Operations with complex numbers and the imaginary unit i",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "sat.rw.command_of_evidence",
+      "label": "Command of Evidence",
+      "type": "concept",
+      "description": "Using textual evidence to support claims and analyze arguments",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.rw",
+      "bookName": "Reading & Writing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "sat.math.absolute_value",
+      "label": "Absolute Value",
+      "type": "concept",
+      "description": "Solving equations and inequalities involving absolute value",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "sat.math.scatterplots_and_modeling",
+      "label": "Scatterplots and Modeling",
+      "type": "concept",
+      "description": "Interpreting scatterplots, lines of best fit, and modeling data",
+      "grade_range": ["SAT"],
+      "tags": ["subtopic"],
+      "book": "sat.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    }
+  ],
+  "edges": [
+    {
+      "source": "sat.rw.craft_and_structure",
+      "target": "sat.rw.information_and_ideas",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sat.rw.information_and_ideas",
+      "target": "sat.rw.expression_of_ideas",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sat.rw.standard_english_conventions",
+      "target": "sat.rw.expression_of_ideas",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sat.math.linear_equations",
+      "target": "sat.math.systems_of_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sat.math.linear_equations",
+      "target": "sat.math.linear_inequalities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sat.math.ratios_and_percentages",
+      "target": "sat.math.statistics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sat.math.statistics",
+      "target": "sat.math.probability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sat.math.linear_equations",
+      "target": "sat.math.quadratics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sat.math.quadratics",
+      "target": "sat.math.polynomials",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sat.math.polynomials",
+      "target": "sat.math.functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sat.math.quadratics",
+      "target": "sat.math.radicals_and_exponents",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sat.math.radicals_and_exponents",
+      "target": "sat.math.complex_numbers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sat.math.geometry",
+      "target": "sat.math.trigonometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sat.math.ratios_and_percentages",
+      "target": "sat.math.geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sat.rw.information_and_ideas",
+      "target": "sat.rw.command_of_evidence",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sat.math.linear_equations",
+      "target": "sat.math.absolute_value",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "sat.math.statistics",
+      "target": "sat.math.scatterplots_and_modeling",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

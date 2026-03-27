@@ -1,0 +1,315 @@
+{
+  "metadata": {
+    "domain": "standardized_testing",
+    "curriculum": "TOEFL iBT (ETS)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "TOEFL iBT skill areas with prerequisite ordering, colored by section",
+    "sources": [
+      "ETS TOEFL iBT Test Content"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "toefl.read",
+      "name": "Reading",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "toefl.listen",
+      "name": "Listening",
+      "color": "#f59e0b",
+      "order": 2
+    },
+    {
+      "id": "toefl.speak",
+      "name": "Speaking",
+      "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "toefl.write",
+      "name": "Writing",
+      "color": "#ec4899",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "toefl.read.vocabulary_in_context",
+      "label": "Vocabulary in Context",
+      "type": "concept",
+      "description": "Determining meaning of words and phrases from passage context",
+      "grade_range": ["TOEFL"],
+      "tags": ["subtopic"],
+      "book": "toefl.read",
+      "bookName": "Reading",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "toefl.read.factual_information",
+      "label": "Factual Information",
+      "type": "concept",
+      "description": "Identifying explicitly stated facts and details in academic passages",
+      "grade_range": ["TOEFL"],
+      "tags": ["subtopic"],
+      "book": "toefl.read",
+      "bookName": "Reading",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "toefl.read.inference",
+      "label": "Inference",
+      "type": "concept",
+      "description": "Drawing conclusions and making inferences from passage content",
+      "grade_range": ["TOEFL"],
+      "tags": ["subtopic"],
+      "book": "toefl.read",
+      "bookName": "Reading",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "toefl.read.rhetorical_purpose",
+      "label": "Rhetorical Purpose",
+      "type": "concept",
+      "description": "Understanding why the author uses specific information or language",
+      "grade_range": ["TOEFL"],
+      "tags": ["subtopic"],
+      "book": "toefl.read",
+      "bookName": "Reading",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "toefl.read.insert_text",
+      "label": "Insert Text",
+      "type": "concept",
+      "description": "Placing a sentence into the correct position within a passage",
+      "grade_range": ["TOEFL"],
+      "tags": ["subtopic"],
+      "book": "toefl.read",
+      "bookName": "Reading",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "toefl.read.summary",
+      "label": "Summary",
+      "type": "concept",
+      "description": "Selecting major ideas to complete a summary of the passage",
+      "grade_range": ["TOEFL"],
+      "tags": ["subtopic"],
+      "book": "toefl.read",
+      "bookName": "Reading",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1
+    },
+    {
+      "id": "toefl.listen.main_idea",
+      "label": "Main Idea",
+      "type": "concept",
+      "description": "Identifying the main topic or purpose of a lecture or conversation",
+      "grade_range": ["TOEFL"],
+      "tags": ["subtopic"],
+      "book": "toefl.listen",
+      "bookName": "Listening",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2
+    },
+    {
+      "id": "toefl.listen.detail",
+      "label": "Detail",
+      "type": "concept",
+      "description": "Recognizing specific details and facts in spoken passages",
+      "grade_range": ["TOEFL"],
+      "tags": ["subtopic"],
+      "book": "toefl.listen",
+      "bookName": "Listening",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2
+    },
+    {
+      "id": "toefl.listen.function",
+      "label": "Function",
+      "type": "concept",
+      "description": "Understanding the purpose behind a speaker's statement",
+      "grade_range": ["TOEFL"],
+      "tags": ["subtopic"],
+      "book": "toefl.listen",
+      "bookName": "Listening",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2
+    },
+    {
+      "id": "toefl.listen.attitude",
+      "label": "Attitude",
+      "type": "concept",
+      "description": "Identifying the speaker's opinion, feeling, or degree of certainty",
+      "grade_range": ["TOEFL"],
+      "tags": ["subtopic"],
+      "book": "toefl.listen",
+      "bookName": "Listening",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2
+    },
+    {
+      "id": "toefl.speak.independent_tasks",
+      "label": "Independent Speaking Tasks",
+      "type": "concept",
+      "description": "Expressing and supporting a personal opinion on a familiar topic",
+      "grade_range": ["TOEFL"],
+      "tags": ["subtopic"],
+      "book": "toefl.speak",
+      "bookName": "Speaking",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "toefl.speak.integrated_tasks",
+      "label": "Integrated Speaking Tasks",
+      "type": "concept",
+      "description": "Reading, listening, then speaking to synthesize information",
+      "grade_range": ["TOEFL"],
+      "tags": ["subtopic"],
+      "book": "toefl.speak",
+      "bookName": "Speaking",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "toefl.listen.lectures",
+      "label": "Lectures",
+      "type": "concept",
+      "description": "Comprehending extended academic lectures on various subjects",
+      "grade_range": ["TOEFL"],
+      "tags": ["subtopic"],
+      "book": "toefl.listen",
+      "bookName": "Listening",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2
+    },
+    {
+      "id": "toefl.listen.conversations",
+      "label": "Conversations",
+      "type": "concept",
+      "description": "Understanding campus-related conversations between students and staff",
+      "grade_range": ["TOEFL"],
+      "tags": ["subtopic"],
+      "book": "toefl.listen",
+      "bookName": "Listening",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2
+    },
+    {
+      "id": "toefl.write.independent_essay",
+      "label": "Independent Essay",
+      "type": "concept",
+      "description": "Writing an essay expressing and supporting a personal opinion",
+      "grade_range": ["TOEFL"],
+      "tags": ["subtopic"],
+      "book": "toefl.write",
+      "bookName": "Writing",
+      "bookColor": "#ec4899",
+      "bookOrder": 4
+    },
+    {
+      "id": "toefl.write.integrated_task",
+      "label": "Integrated Writing Task",
+      "type": "concept",
+      "description": "Reading a passage, listening to a lecture, then writing a response",
+      "grade_range": ["TOEFL"],
+      "tags": ["subtopic"],
+      "book": "toefl.write",
+      "bookName": "Writing",
+      "bookColor": "#ec4899",
+      "bookOrder": 4
+    }
+  ],
+  "edges": [
+    {
+      "source": "toefl.read.vocabulary_in_context",
+      "target": "toefl.read.factual_information",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "toefl.read.factual_information",
+      "target": "toefl.read.inference",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "toefl.read.inference",
+      "target": "toefl.read.rhetorical_purpose",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "toefl.read.rhetorical_purpose",
+      "target": "toefl.read.insert_text",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "toefl.read.inference",
+      "target": "toefl.read.summary",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "toefl.listen.main_idea",
+      "target": "toefl.listen.detail",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "toefl.listen.detail",
+      "target": "toefl.listen.function",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "toefl.listen.function",
+      "target": "toefl.listen.attitude",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "toefl.speak.independent_tasks",
+      "target": "toefl.speak.integrated_tasks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "toefl.read.factual_information",
+      "target": "toefl.speak.integrated_tasks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "toefl.listen.detail",
+      "target": "toefl.speak.integrated_tasks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "toefl.speak.independent_tasks",
+      "target": "toefl.write.independent_essay",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "toefl.read.summary",
+      "target": "toefl.write.integrated_task",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "toefl.listen.attitude",
+      "target": "toefl.write.integrated_task",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "toefl.listen.conversations",
+      "target": "toefl.listen.lectures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "toefl.listen.lectures",
+      "target": "toefl.listen.main_idea",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

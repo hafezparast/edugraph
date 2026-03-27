@@ -1,0 +1,310 @@
+{
+  "metadata": {
+    "domain": "standardized_testing",
+    "curriculum": "IELTS (British Council / IDP / Cambridge)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "IELTS skill areas with prerequisite ordering, colored by section",
+    "sources": [
+      "IELTS Official Test Format"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "ielts.listen",
+      "name": "Listening",
+      "color": "#f59e0b",
+      "order": 1
+    },
+    {
+      "id": "ielts.read",
+      "name": "Reading",
+      "color": "#3b82f6",
+      "order": 2
+    },
+    {
+      "id": "ielts.write",
+      "name": "Writing",
+      "color": "#ec4899",
+      "order": 3
+    },
+    {
+      "id": "ielts.speak",
+      "name": "Speaking",
+      "color": "#22c55e",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ielts.listen.section1",
+      "label": "Section 1: Conversation",
+      "type": "concept",
+      "description": "Everyday social conversation between two speakers",
+      "grade_range": ["IELTS"],
+      "tags": ["subtopic"],
+      "book": "ielts.listen",
+      "bookName": "Listening",
+      "bookColor": "#f59e0b",
+      "bookOrder": 1
+    },
+    {
+      "id": "ielts.listen.section2",
+      "label": "Section 2: Monologue",
+      "type": "concept",
+      "description": "Monologue in an everyday social context",
+      "grade_range": ["IELTS"],
+      "tags": ["subtopic"],
+      "book": "ielts.listen",
+      "bookName": "Listening",
+      "bookColor": "#f59e0b",
+      "bookOrder": 1
+    },
+    {
+      "id": "ielts.listen.section3",
+      "label": "Section 3: Academic Discussion",
+      "type": "concept",
+      "description": "Conversation between up to four people in an academic setting",
+      "grade_range": ["IELTS"],
+      "tags": ["subtopic"],
+      "book": "ielts.listen",
+      "bookName": "Listening",
+      "bookColor": "#f59e0b",
+      "bookOrder": 1
+    },
+    {
+      "id": "ielts.listen.section4",
+      "label": "Section 4: Academic Lecture",
+      "type": "concept",
+      "description": "Monologue on an academic subject such as a university lecture",
+      "grade_range": ["IELTS"],
+      "tags": ["subtopic"],
+      "book": "ielts.listen",
+      "bookName": "Listening",
+      "bookColor": "#f59e0b",
+      "bookOrder": 1
+    },
+    {
+      "id": "ielts.read.matching",
+      "label": "Matching",
+      "type": "concept",
+      "description": "Matching information, headings, features, or sentence endings",
+      "grade_range": ["IELTS"],
+      "tags": ["subtopic"],
+      "book": "ielts.read",
+      "bookName": "Reading",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2
+    },
+    {
+      "id": "ielts.read.true_false_not_given",
+      "label": "True/False/Not Given",
+      "type": "concept",
+      "description": "Determining if statements agree with, contradict, or are absent from the text",
+      "grade_range": ["IELTS"],
+      "tags": ["subtopic"],
+      "book": "ielts.read",
+      "bookName": "Reading",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2
+    },
+    {
+      "id": "ielts.read.multiple_choice",
+      "label": "Multiple Choice",
+      "type": "concept",
+      "description": "Selecting correct answers from given options based on the passage",
+      "grade_range": ["IELTS"],
+      "tags": ["subtopic"],
+      "book": "ielts.read",
+      "bookName": "Reading",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2
+    },
+    {
+      "id": "ielts.read.summary_completion",
+      "label": "Summary Completion",
+      "type": "concept",
+      "description": "Completing a summary of the passage with words from the text or a list",
+      "grade_range": ["IELTS"],
+      "tags": ["subtopic"],
+      "book": "ielts.read",
+      "bookName": "Reading",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2
+    },
+    {
+      "id": "ielts.read.heading_matching",
+      "label": "Heading Matching",
+      "type": "concept",
+      "description": "Selecting the most suitable heading for each paragraph or section",
+      "grade_range": ["IELTS"],
+      "tags": ["subtopic"],
+      "book": "ielts.read",
+      "bookName": "Reading",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2
+    },
+    {
+      "id": "ielts.read.short_answer",
+      "label": "Short Answer Questions",
+      "type": "concept",
+      "description": "Answering questions using words from the reading passage",
+      "grade_range": ["IELTS"],
+      "tags": ["subtopic"],
+      "book": "ielts.read",
+      "bookName": "Reading",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2
+    },
+    {
+      "id": "ielts.write.grammar_and_vocabulary",
+      "label": "Grammar and Vocabulary Range",
+      "type": "concept",
+      "description": "Demonstrating varied grammatical structures and precise vocabulary in writing",
+      "grade_range": ["IELTS"],
+      "tags": ["subtopic"],
+      "book": "ielts.write",
+      "bookName": "Writing",
+      "bookColor": "#ec4899",
+      "bookOrder": 3
+    },
+    {
+      "id": "ielts.write.task1",
+      "label": "Task 1: Data Description / Letter",
+      "type": "concept",
+      "description": "Describing visual data (Academic) or writing a letter (General Training)",
+      "grade_range": ["IELTS"],
+      "tags": ["subtopic"],
+      "book": "ielts.write",
+      "bookName": "Writing",
+      "bookColor": "#ec4899",
+      "bookOrder": 3
+    },
+    {
+      "id": "ielts.write.task2",
+      "label": "Task 2: Essay",
+      "type": "concept",
+      "description": "Writing an essay: argument, discussion, or problem-solution format",
+      "grade_range": ["IELTS"],
+      "tags": ["subtopic"],
+      "book": "ielts.write",
+      "bookName": "Writing",
+      "bookColor": "#ec4899",
+      "bookOrder": 3
+    },
+    {
+      "id": "ielts.speak.part1",
+      "label": "Part 1: Introduction",
+      "type": "concept",
+      "description": "Answering general questions about familiar topics and personal experience",
+      "grade_range": ["IELTS"],
+      "tags": ["subtopic"],
+      "book": "ielts.speak",
+      "bookName": "Speaking",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "ielts.speak.part2",
+      "label": "Part 2: Long Turn / Cue Card",
+      "type": "concept",
+      "description": "Speaking for 1-2 minutes on a given topic with preparation time",
+      "grade_range": ["IELTS"],
+      "tags": ["subtopic"],
+      "book": "ielts.speak",
+      "bookName": "Speaking",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "ielts.speak.part3",
+      "label": "Part 3: Discussion",
+      "type": "concept",
+      "description": "In-depth discussion of abstract issues related to the Part 2 topic",
+      "grade_range": ["IELTS"],
+      "tags": ["subtopic"],
+      "book": "ielts.speak",
+      "bookName": "Speaking",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    }
+  ],
+  "edges": [
+    {
+      "source": "ielts.listen.section1",
+      "target": "ielts.listen.section2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ielts.listen.section2",
+      "target": "ielts.listen.section3",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ielts.listen.section3",
+      "target": "ielts.listen.section4",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ielts.read.matching",
+      "target": "ielts.read.true_false_not_given",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ielts.read.true_false_not_given",
+      "target": "ielts.read.multiple_choice",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ielts.read.multiple_choice",
+      "target": "ielts.read.summary_completion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ielts.read.multiple_choice",
+      "target": "ielts.read.heading_matching",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ielts.read.summary_completion",
+      "target": "ielts.write.task1",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ielts.write.task1",
+      "target": "ielts.write.task2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ielts.listen.section1",
+      "target": "ielts.speak.part1",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ielts.speak.part1",
+      "target": "ielts.speak.part2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ielts.speak.part2",
+      "target": "ielts.speak.part3",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ielts.read.heading_matching",
+      "target": "ielts.write.task2",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ielts.read.summary_completion",
+      "target": "ielts.read.short_answer",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ielts.write.grammar_and_vocabulary",
+      "target": "ielts.write.task1",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

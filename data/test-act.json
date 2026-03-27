@@ -1,0 +1,329 @@
+{
+  "metadata": {
+    "domain": "standardized_testing",
+    "curriculum": "ACT",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "ACT skill areas with prerequisite ordering, colored by section",
+    "sources": [
+      "ACT Test Framework"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "act.eng",
+      "name": "English",
+      "color": "#ec4899",
+      "order": 1
+    },
+    {
+      "id": "act.math",
+      "name": "Math",
+      "color": "#ef4444",
+      "order": 2
+    },
+    {
+      "id": "act.read",
+      "name": "Reading",
+      "color": "#3b82f6",
+      "order": 3
+    },
+    {
+      "id": "act.sci",
+      "name": "Science",
+      "color": "#22c55e",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "act.eng.grammar_usage",
+      "label": "Grammar and Usage",
+      "type": "concept",
+      "description": "Subject-verb agreement, pronoun usage, verb tense, and modifiers",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.eng",
+      "bookName": "English",
+      "bookColor": "#ec4899",
+      "bookOrder": 1
+    },
+    {
+      "id": "act.eng.punctuation",
+      "label": "Punctuation",
+      "type": "concept",
+      "description": "Commas, semicolons, colons, apostrophes, and dashes",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.eng",
+      "bookName": "English",
+      "bookColor": "#ec4899",
+      "bookOrder": 1
+    },
+    {
+      "id": "act.eng.sentence_structure",
+      "label": "Sentence Structure",
+      "type": "concept",
+      "description": "Clause relationships, run-ons, fragments, and parallelism",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.eng",
+      "bookName": "English",
+      "bookColor": "#ec4899",
+      "bookOrder": 1
+    },
+    {
+      "id": "act.eng.rhetorical_skills",
+      "label": "Rhetorical Skills",
+      "type": "concept",
+      "description": "Strategy, organization, and style in written passages",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.eng",
+      "bookName": "English",
+      "bookColor": "#ec4899",
+      "bookOrder": 1
+    },
+    {
+      "id": "act.math.pre_algebra",
+      "label": "Pre-Algebra",
+      "type": "concept",
+      "description": "Fractions, decimals, integers, order of operations, and basic number properties",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "act.math.algebra",
+      "label": "Algebra",
+      "type": "concept",
+      "description": "Equations, inequalities, expressions, and functions",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "act.math.coordinate_geometry",
+      "label": "Coordinate Geometry",
+      "type": "concept",
+      "description": "Graphing equations, slope, midpoint, distance, and conic sections",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "act.math.plane_geometry",
+      "label": "Plane Geometry",
+      "type": "concept",
+      "description": "Properties of shapes, angles, area, perimeter, and volume",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "act.math.trigonometry",
+      "label": "Trigonometry",
+      "type": "concept",
+      "description": "Trig ratios, identities, equations, and graphing trig functions",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "act.read.prose_fiction",
+      "label": "Prose Fiction",
+      "type": "concept",
+      "description": "Reading and analyzing literary narratives and short stories",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.read",
+      "bookName": "Reading",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "act.read.social_science",
+      "label": "Social Science",
+      "type": "concept",
+      "description": "Comprehending passages on psychology, sociology, history, and economics",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.read",
+      "bookName": "Reading",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "act.read.humanities",
+      "label": "Humanities",
+      "type": "concept",
+      "description": "Analyzing texts on art, music, philosophy, and culture",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.read",
+      "bookName": "Reading",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "act.read.natural_science",
+      "label": "Natural Science",
+      "type": "concept",
+      "description": "Reading scientific passages on biology, chemistry, physics, and earth science",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.read",
+      "bookName": "Reading",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3
+    },
+    {
+      "id": "act.sci.data_representation",
+      "label": "Data Representation",
+      "type": "concept",
+      "description": "Interpreting graphs, tables, and charts from scientific experiments",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.sci",
+      "bookName": "Science",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "act.sci.research_summaries",
+      "label": "Research Summaries",
+      "type": "concept",
+      "description": "Understanding experimental design, methods, and results",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.sci",
+      "bookName": "Science",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "act.sci.conflicting_viewpoints",
+      "label": "Conflicting Viewpoints",
+      "type": "concept",
+      "description": "Comparing and evaluating different scientific hypotheses or theories",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.sci",
+      "bookName": "Science",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    },
+    {
+      "id": "act.math.statistics_and_probability",
+      "label": "Statistics and Probability",
+      "type": "concept",
+      "description": "Mean, median, mode, standard deviation, counting, and probability",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.math",
+      "bookName": "Math",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "act.eng.organization_and_style",
+      "label": "Organization and Style",
+      "type": "concept",
+      "description": "Paragraph ordering, transitions, tone, and writing strategy",
+      "grade_range": ["ACT"],
+      "tags": ["subtopic"],
+      "book": "act.eng",
+      "bookName": "English",
+      "bookColor": "#ec4899",
+      "bookOrder": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "act.eng.grammar_usage",
+      "target": "act.eng.sentence_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "act.eng.punctuation",
+      "target": "act.eng.sentence_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "act.eng.sentence_structure",
+      "target": "act.eng.rhetorical_skills",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "act.math.pre_algebra",
+      "target": "act.math.algebra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "act.math.algebra",
+      "target": "act.math.coordinate_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "act.math.pre_algebra",
+      "target": "act.math.plane_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "act.math.plane_geometry",
+      "target": "act.math.trigonometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "act.read.prose_fiction",
+      "target": "act.read.humanities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "act.read.social_science",
+      "target": "act.read.natural_science",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "act.read.prose_fiction",
+      "target": "act.read.social_science",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "act.sci.data_representation",
+      "target": "act.sci.research_summaries",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "act.sci.research_summaries",
+      "target": "act.sci.conflicting_viewpoints",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "act.math.algebra",
+      "target": "act.math.statistics_and_probability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "act.eng.rhetorical_skills",
+      "target": "act.eng.organization_and_style",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

@@ -1,0 +1,299 @@
+{
+  "metadata": {
+    "domain": "standardized_testing",
+    "curriculum": "GRE General Test (ETS)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "GRE skill areas with prerequisite ordering, colored by section",
+    "sources": [
+      "ETS GRE General Test Content"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "gre.verbal",
+      "name": "Verbal Reasoning",
+      "color": "#8b5cf6",
+      "order": 1
+    },
+    {
+      "id": "gre.quant",
+      "name": "Quantitative Reasoning",
+      "color": "#ef4444",
+      "order": 2
+    },
+    {
+      "id": "gre.aw",
+      "name": "Analytical Writing",
+      "color": "#22c55e",
+      "order": 3
+    }
+  ],
+  "nodes": [
+    {
+      "id": "gre.verbal.vocabulary_in_context",
+      "label": "Vocabulary in Context",
+      "type": "concept",
+      "description": "Understanding word meaning from surrounding context",
+      "grade_range": ["GRE"],
+      "tags": ["subtopic"],
+      "book": "gre.verbal",
+      "bookName": "Verbal Reasoning",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "gre.verbal.text_completion",
+      "label": "Text Completion",
+      "type": "concept",
+      "description": "Filling in blanks to complete passages using vocabulary and logic",
+      "grade_range": ["GRE"],
+      "tags": ["subtopic"],
+      "book": "gre.verbal",
+      "bookName": "Verbal Reasoning",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "gre.verbal.sentence_equivalence",
+      "label": "Sentence Equivalence",
+      "type": "concept",
+      "description": "Selecting two words that produce sentences with equivalent meaning",
+      "grade_range": ["GRE"],
+      "tags": ["subtopic"],
+      "book": "gre.verbal",
+      "bookName": "Verbal Reasoning",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "gre.verbal.reading_comprehension",
+      "label": "Reading Comprehension",
+      "type": "concept",
+      "description": "Analyzing and interpreting academic passages across disciplines",
+      "grade_range": ["GRE"],
+      "tags": ["subtopic"],
+      "book": "gre.verbal",
+      "bookName": "Verbal Reasoning",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "gre.verbal.critical_reasoning",
+      "label": "Critical Reasoning",
+      "type": "concept",
+      "description": "Evaluating arguments, identifying assumptions, and drawing conclusions",
+      "grade_range": ["GRE"],
+      "tags": ["subtopic"],
+      "book": "gre.verbal",
+      "bookName": "Verbal Reasoning",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "gre.quant.arithmetic",
+      "label": "Arithmetic",
+      "type": "concept",
+      "description": "Properties of integers, fractions, decimals, and percents",
+      "grade_range": ["GRE"],
+      "tags": ["subtopic"],
+      "book": "gre.quant",
+      "bookName": "Quantitative Reasoning",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "gre.quant.number_properties",
+      "label": "Number Properties",
+      "type": "concept",
+      "description": "Divisibility, primes, remainders, and number theory",
+      "grade_range": ["GRE"],
+      "tags": ["subtopic"],
+      "book": "gre.quant",
+      "bookName": "Quantitative Reasoning",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "gre.quant.algebra",
+      "label": "Algebra",
+      "type": "concept",
+      "description": "Equations, inequalities, exponents, and functions",
+      "grade_range": ["GRE"],
+      "tags": ["subtopic"],
+      "book": "gre.quant",
+      "bookName": "Quantitative Reasoning",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "gre.quant.geometry",
+      "label": "Geometry",
+      "type": "concept",
+      "description": "Lines, angles, triangles, circles, quadrilaterals, and coordinate geometry",
+      "grade_range": ["GRE"],
+      "tags": ["subtopic"],
+      "book": "gre.quant",
+      "bookName": "Quantitative Reasoning",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "gre.quant.data_analysis",
+      "label": "Data Analysis",
+      "type": "concept",
+      "description": "Statistics, probability, distributions, and data interpretation",
+      "grade_range": ["GRE"],
+      "tags": ["subtopic"],
+      "book": "gre.quant",
+      "bookName": "Quantitative Reasoning",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "gre.quant.word_problems",
+      "label": "Word Problems",
+      "type": "concept",
+      "description": "Rate, work, mixture, and applied quantitative reasoning problems",
+      "grade_range": ["GRE"],
+      "tags": ["subtopic"],
+      "book": "gre.quant",
+      "bookName": "Quantitative Reasoning",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "gre.quant.probability",
+      "label": "Probability",
+      "type": "concept",
+      "description": "Counting methods, permutations, combinations, and probability",
+      "grade_range": ["GRE"],
+      "tags": ["subtopic"],
+      "book": "gre.quant",
+      "bookName": "Quantitative Reasoning",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "gre.verbal.analytical_passages",
+      "label": "Analytical Passages",
+      "type": "concept",
+      "description": "Analyzing complex multi-paragraph academic and argumentative texts",
+      "grade_range": ["GRE"],
+      "tags": ["subtopic"],
+      "book": "gre.verbal",
+      "bookName": "Verbal Reasoning",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1
+    },
+    {
+      "id": "gre.quant.quantitative_comparison",
+      "label": "Quantitative Comparison",
+      "type": "concept",
+      "description": "Comparing two mathematical quantities to determine their relationship",
+      "grade_range": ["GRE"],
+      "tags": ["subtopic"],
+      "book": "gre.quant",
+      "bookName": "Quantitative Reasoning",
+      "bookColor": "#ef4444",
+      "bookOrder": 2
+    },
+    {
+      "id": "gre.aw.issue_essay",
+      "label": "Issue Essay",
+      "type": "concept",
+      "description": "Presenting and supporting a position on a broad topic",
+      "grade_range": ["GRE"],
+      "tags": ["subtopic"],
+      "book": "gre.aw",
+      "bookName": "Analytical Writing",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    },
+    {
+      "id": "gre.aw.argument_essay",
+      "label": "Argument Essay",
+      "type": "concept",
+      "description": "Critically evaluating and responding to a given argument",
+      "grade_range": ["GRE"],
+      "tags": ["subtopic"],
+      "book": "gre.aw",
+      "bookName": "Analytical Writing",
+      "bookColor": "#22c55e",
+      "bookOrder": 3
+    }
+  ],
+  "edges": [
+    {
+      "source": "gre.verbal.vocabulary_in_context",
+      "target": "gre.verbal.text_completion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gre.verbal.vocabulary_in_context",
+      "target": "gre.verbal.sentence_equivalence",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gre.verbal.text_completion",
+      "target": "gre.verbal.reading_comprehension",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gre.verbal.reading_comprehension",
+      "target": "gre.verbal.critical_reasoning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gre.quant.arithmetic",
+      "target": "gre.quant.number_properties",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gre.quant.arithmetic",
+      "target": "gre.quant.algebra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gre.quant.algebra",
+      "target": "gre.quant.geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gre.quant.arithmetic",
+      "target": "gre.quant.data_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gre.quant.algebra",
+      "target": "gre.quant.word_problems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gre.verbal.critical_reasoning",
+      "target": "gre.aw.argument_essay",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gre.aw.issue_essay",
+      "target": "gre.aw.argument_essay",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gre.quant.data_analysis",
+      "target": "gre.quant.probability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gre.verbal.reading_comprehension",
+      "target": "gre.verbal.analytical_passages",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gre.quant.algebra",
+      "target": "gre.quant.quantitative_comparison",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

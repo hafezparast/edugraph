@@ -1,0 +1,300 @@
+{
+  "metadata": {
+    "domain": "standardized_testing",
+    "curriculum": "GMAT (GMAC)",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "GMAT skill areas with prerequisite ordering, colored by section",
+    "sources": [
+      "GMAC GMAT Exam Content"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "gmat.quant",
+      "name": "Quantitative",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "gmat.verbal",
+      "name": "Verbal",
+      "color": "#8b5cf6",
+      "order": 2
+    },
+    {
+      "id": "gmat.ir",
+      "name": "Integrated Reasoning",
+      "color": "#f59e0b",
+      "order": 3
+    },
+    {
+      "id": "gmat.aw",
+      "name": "Analytical Writing",
+      "color": "#22c55e",
+      "order": 4
+    }
+  ],
+  "nodes": [
+    {
+      "id": "gmat.quant.arithmetic",
+      "label": "Arithmetic",
+      "type": "concept",
+      "description": "Number properties, fractions, decimals, percents, and ratios",
+      "grade_range": ["GMAT"],
+      "tags": ["subtopic"],
+      "book": "gmat.quant",
+      "bookName": "Quantitative",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "gmat.quant.algebra",
+      "label": "Algebra",
+      "type": "concept",
+      "description": "Equations, inequalities, exponents, and algebraic expressions",
+      "grade_range": ["GMAT"],
+      "tags": ["subtopic"],
+      "book": "gmat.quant",
+      "bookName": "Quantitative",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "gmat.quant.geometry",
+      "label": "Geometry",
+      "type": "concept",
+      "description": "Lines, angles, triangles, circles, and coordinate geometry",
+      "grade_range": ["GMAT"],
+      "tags": ["subtopic"],
+      "book": "gmat.quant",
+      "bookName": "Quantitative",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "gmat.quant.word_problems",
+      "label": "Word Problems",
+      "type": "concept",
+      "description": "Rate, work, mixture, profit, and combinatorics problems",
+      "grade_range": ["GMAT"],
+      "tags": ["subtopic"],
+      "book": "gmat.quant",
+      "bookName": "Quantitative",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "gmat.quant.problem_solving",
+      "label": "Problem Solving",
+      "type": "concept",
+      "description": "Standard multiple-choice quantitative questions",
+      "grade_range": ["GMAT"],
+      "tags": ["subtopic"],
+      "book": "gmat.quant",
+      "bookName": "Quantitative",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "gmat.quant.data_sufficiency",
+      "label": "Data Sufficiency",
+      "type": "concept",
+      "description": "Determining whether given data is sufficient to answer a question",
+      "grade_range": ["GMAT"],
+      "tags": ["subtopic"],
+      "book": "gmat.quant",
+      "bookName": "Quantitative",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "gmat.verbal.reading_comprehension",
+      "label": "Reading Comprehension",
+      "type": "concept",
+      "description": "Analyzing business, science, and social science passages",
+      "grade_range": ["GMAT"],
+      "tags": ["subtopic"],
+      "book": "gmat.verbal",
+      "bookName": "Verbal",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2
+    },
+    {
+      "id": "gmat.verbal.critical_reasoning",
+      "label": "Critical Reasoning",
+      "type": "concept",
+      "description": "Evaluating arguments, assumptions, and logical structure",
+      "grade_range": ["GMAT"],
+      "tags": ["subtopic"],
+      "book": "gmat.verbal",
+      "bookName": "Verbal",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2
+    },
+    {
+      "id": "gmat.verbal.sentence_correction",
+      "label": "Sentence Correction",
+      "type": "concept",
+      "description": "Identifying and correcting grammatical and structural errors",
+      "grade_range": ["GMAT"],
+      "tags": ["subtopic"],
+      "book": "gmat.verbal",
+      "bookName": "Verbal",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2
+    },
+    {
+      "id": "gmat.ir.multi_source_reasoning",
+      "label": "Multi-Source Reasoning",
+      "type": "concept",
+      "description": "Synthesizing information from multiple tabs or sources",
+      "grade_range": ["GMAT"],
+      "tags": ["subtopic"],
+      "book": "gmat.ir",
+      "bookName": "Integrated Reasoning",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3
+    },
+    {
+      "id": "gmat.ir.graphics_interpretation",
+      "label": "Graphics Interpretation",
+      "type": "concept",
+      "description": "Interpreting graphs, charts, and visual data displays",
+      "grade_range": ["GMAT"],
+      "tags": ["subtopic"],
+      "book": "gmat.ir",
+      "bookName": "Integrated Reasoning",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3
+    },
+    {
+      "id": "gmat.ir.two_part_analysis",
+      "label": "Two-Part Analysis",
+      "type": "concept",
+      "description": "Solving problems requiring two interrelated components",
+      "grade_range": ["GMAT"],
+      "tags": ["subtopic"],
+      "book": "gmat.ir",
+      "bookName": "Integrated Reasoning",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3
+    },
+    {
+      "id": "gmat.ir.table_analysis",
+      "label": "Table Analysis",
+      "type": "concept",
+      "description": "Sorting and analyzing data presented in tables",
+      "grade_range": ["GMAT"],
+      "tags": ["subtopic"],
+      "book": "gmat.ir",
+      "bookName": "Integrated Reasoning",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3
+    },
+    {
+      "id": "gmat.quant.statistics_and_probability",
+      "label": "Statistics and Probability",
+      "type": "concept",
+      "description": "Mean, median, mode, standard deviation, and basic probability",
+      "grade_range": ["GMAT"],
+      "tags": ["subtopic"],
+      "book": "gmat.quant",
+      "bookName": "Quantitative",
+      "bookColor": "#ef4444",
+      "bookOrder": 1
+    },
+    {
+      "id": "gmat.verbal.vocabulary_and_idioms",
+      "label": "Vocabulary and Idioms",
+      "type": "concept",
+      "description": "Recognizing correct idiomatic expressions and precise word usage",
+      "grade_range": ["GMAT"],
+      "tags": ["subtopic"],
+      "book": "gmat.verbal",
+      "bookName": "Verbal",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2
+    },
+    {
+      "id": "gmat.aw.analysis_of_argument",
+      "label": "Analysis of an Argument",
+      "type": "concept",
+      "description": "Writing a critique of a given argument's reasoning and evidence",
+      "grade_range": ["GMAT"],
+      "tags": ["subtopic"],
+      "book": "gmat.aw",
+      "bookName": "Analytical Writing",
+      "bookColor": "#22c55e",
+      "bookOrder": 4
+    }
+  ],
+  "edges": [
+    {
+      "source": "gmat.quant.arithmetic",
+      "target": "gmat.quant.algebra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gmat.quant.algebra",
+      "target": "gmat.quant.geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gmat.quant.algebra",
+      "target": "gmat.quant.word_problems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gmat.quant.word_problems",
+      "target": "gmat.quant.problem_solving",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gmat.quant.problem_solving",
+      "target": "gmat.quant.data_sufficiency",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gmat.verbal.reading_comprehension",
+      "target": "gmat.verbal.critical_reasoning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gmat.verbal.sentence_correction",
+      "target": "gmat.verbal.critical_reasoning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gmat.ir.graphics_interpretation",
+      "target": "gmat.ir.table_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gmat.ir.table_analysis",
+      "target": "gmat.ir.multi_source_reasoning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gmat.ir.multi_source_reasoning",
+      "target": "gmat.ir.two_part_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gmat.verbal.critical_reasoning",
+      "target": "gmat.aw.analysis_of_argument",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gmat.quant.arithmetic",
+      "target": "gmat.quant.statistics_and_probability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gmat.verbal.vocabulary_and_idioms",
+      "target": "gmat.verbal.sentence_correction",
+      "relation": "prerequisite_for"
+    }
+  ]
+}
