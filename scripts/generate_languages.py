@@ -170,6 +170,69 @@ TEMPLATE_NODES = [
     ("c2_2", "s", "write_any_genre", "Can write in any genre", ["writing"]),
     ("c2_2", "s", "teach_language", "Can teach the language", ["metalinguistic"]),
     ("c2_2", "s", "translate_interpret", "Can translate/interpret professionally", ["interaction"]),
+
+    # ---- VOCABULARY DOMAINS ----
+    ("a1_1", "v", "family_people", "Family and People", ["vocabulary-domain"]),
+    ("a1_1", "v", "classroom_school", "Classroom and School", ["vocabulary-domain"]),
+    ("a1_1", "v", "colors_body", "Colors and Body Parts", ["vocabulary-domain"]),
+    ("a1_2", "v", "food_drink", "Food and Drink", ["vocabulary-domain"]),
+    ("a1_2", "v", "house_furniture", "House and Furniture", ["vocabulary-domain"]),
+    ("a2_1", "v", "daily_routine", "Daily Routine and Household", ["vocabulary-domain"]),
+    ("a2_1", "v", "weather_nature", "Weather and Nature", ["vocabulary-domain"]),
+    ("a2_1", "v", "city_transport", "City and Transport", ["vocabulary-domain"]),
+    ("a2_2", "v", "travel_tourism", "Travel and Tourism", ["vocabulary-domain"]),
+    ("a2_2", "v", "health_body", "Health and the Body", ["vocabulary-domain"]),
+    ("a2_2", "v", "hobbies_sport", "Hobbies and Sport", ["vocabulary-domain"]),
+    ("b1_1", "v", "work_career", "Work and Career", ["vocabulary-domain"]),
+    ("b1_1", "v", "media_news", "Media and News", ["vocabulary-domain"]),
+    ("b1_1", "v", "environment", "Environment", ["vocabulary-domain"]),
+    ("b1_2", "v", "education", "Education and Learning", ["vocabulary-domain"]),
+    ("b1_2", "v", "technology", "Technology and Internet", ["vocabulary-domain"]),
+    ("b1_2", "v", "relationships", "Relationships and Emotions", ["vocabulary-domain"]),
+    ("b2_1", "v", "politics_society", "Politics and Society", ["vocabulary-domain"]),
+    ("b2_1", "v", "economy_business", "Economy and Business", ["vocabulary-domain"]),
+    ("b2_1", "v", "science_research", "Science and Research", ["vocabulary-domain"]),
+    ("b2_2", "v", "law_justice", "Law and Justice", ["vocabulary-domain"]),
+    ("b2_2", "v", "philosophy_ethics", "Philosophy and Ethics", ["vocabulary-domain"]),
+    ("b2_2", "v", "arts_culture", "Arts and Culture", ["vocabulary-domain"]),
+    ("c1_1", "v", "academic_discourse", "Academic Discourse", ["vocabulary-domain"]),
+
+    # ---- PRONUNCIATION / PHONOLOGY PROGRESSION ----
+    ("a1_2", "p", "word_stress", "Word Stress and Basic Intonation", ["pronunciation"]),
+    ("a2_1", "p", "sentence_rhythm", "Sentence Rhythm and Connected Speech", ["pronunciation"]),
+    ("b1_1", "p", "reduction_weak_forms", "Reduction and Weak Forms", ["pronunciation"]),
+    ("b2_1", "p", "accent_comprehension", "Regional Accent Comprehension", ["pronunciation"]),
+    ("c1_1", "p", "prosody_delivery", "Prosody for Professional Delivery", ["pronunciation"]),
+
+    # ---- CULTURAL COMPETENCE ----
+    ("a1_2", "c", "basic_norms", "Basic Cultural Norms and Etiquette", ["culture"]),
+    ("a2_2", "c", "social_conventions", "Social Conventions and Customs", ["culture"]),
+    ("b1_2", "c", "humor_formality", "Humor, Formality and Social Rules", ["culture"]),
+    ("b2_2", "c", "values_worldview", "Cultural Values and Worldview", ["culture"]),
+    ("c1_2", "c", "deep_cultural_literacy", "Deep Cultural and Historical Literacy", ["culture"]),
+    ("c2_1", "c", "cultural_mediation", "Cross-Cultural Mediation", ["culture"]),
+
+    # ---- TEXT TYPES (Reading/Writing) ----
+    ("a1_1", "t", "signs_labels", "Signs, Labels and Simple Notices", ["text-type"]),
+    ("a1_2", "t", "forms_postcards", "Forms, Postcards and Short Notes", ["text-type"]),
+    ("a2_1", "t", "menus_timetables", "Menus, Timetables and SMS", ["text-type"]),
+    ("a2_2", "t", "personal_emails", "Personal Emails and Short Letters", ["text-type"]),
+    ("b1_1", "t", "articles_blogs", "Articles and Blog Posts", ["text-type"]),
+    ("b1_2", "t", "formal_letters", "Formal Letters and Applications", ["text-type"]),
+    ("b2_1", "t", "essays_reviews", "Essays, Reviews and Opinions", ["text-type"]),
+    ("b2_2", "t", "reports_proposals", "Reports, Proposals and Analyses", ["text-type"]),
+    ("c1_1", "t", "academic_papers", "Academic Papers and Contracts", ["text-type"]),
+    ("c1_2", "t", "editorials_critique", "Editorials and Critical Reviews", ["text-type"]),
+    ("c2_1", "t", "literature_legal", "Literature and Legal Documents", ["text-type"]),
+    ("c2_2", "t", "any_genre_text", "Any Text Genre or Register", ["text-type"]),
+
+    # ---- LISTENING SOURCES ----
+    ("a1_1", "l", "slow_clear_speech", "Slow, Clear Single Speaker", ["listening-source"]),
+    ("a2_1", "l", "announcements_dialogues", "Announcements and Short Dialogues", ["listening-source"]),
+    ("b1_1", "l", "news_phone_presentations", "News, Phone Calls, Presentations", ["listening-source"]),
+    ("b2_1", "l", "lectures_debates_films", "Lectures, Debates and Films", ["listening-source"]),
+    ("c1_1", "l", "fast_natural_accents", "Fast Natural Speech, Multiple Accents", ["listening-source"]),
+    ("c2_1", "l", "any_spoken_input", "Any Spoken Input Including Dialect", ["listening-source"]),
 ]
 
 # ============================================================
@@ -321,6 +384,130 @@ TEMPLATE_EDGES = [
     ("c2_1.s.interpret_subtlety", "c2_2.s.translate_interpret"),
     ("c1_2.s.follow_complex_interaction", "c2_1.s.simultaneous_mediation"),
     ("c2_1.s.extended_monologue", "c2_2.s.native_fluency"),
+
+    # ---- VOCABULARY DOMAIN EDGES ----
+    # Vocab domains → skills they enable
+    ("a1_1.v.family_people", "a1_1.s.introduce_self"),
+    ("a1_1.v.classroom_school", "a1_1.s.understand_simple_instructions"),
+    ("a1_1.v.colors_body", "a1_2.s.describe_objects_people"),
+    ("a1_2.v.food_drink", "a1_2.s.order_food"),
+    ("a1_2.v.house_furniture", "a1_2.s.describe_objects_people"),
+    ("a2_1.v.daily_routine", "a2_1.s.narrate_past_events"),
+    ("a2_1.v.weather_nature", "a2_1.s.make_suggestions"),
+    ("a2_1.v.city_transport", "a2_1.s.understand_short_text"),
+    ("a2_2.v.travel_tourism", "a2_2.s.give_directions"),
+    ("a2_2.v.health_body", "a2_2.s.describe_experiences"),
+    ("a2_2.v.hobbies_sport", "a2_2.s.make_plans"),
+    ("b1_1.v.work_career", "b1_1.s.handle_travel_situations"),
+    ("b1_1.v.media_news", "b1_1.s.understand_main_points"),
+    ("b1_1.v.environment", "b1_1.s.express_opinions"),
+    ("b1_2.v.education", "b1_2.s.participate_discussion"),
+    ("b1_2.v.technology", "b1_2.s.write_formal_email"),
+    ("b1_2.v.relationships", "b1_2.s.tell_story_detail"),
+    ("b2_1.v.politics_society", "b2_1.s.present_argument"),
+    ("b2_1.v.economy_business", "b2_1.s.negotiate"),
+    ("b2_1.v.science_research", "b2_1.s.write_essay"),
+    ("b2_2.v.law_justice", "b2_2.s.write_report"),
+    ("b2_2.v.philosophy_ethics", "b2_2.s.discuss_complex_topics"),
+    ("b2_2.v.arts_culture", "b2_2.s.read_authentic_texts"),
+    ("c1_1.v.academic_discourse", "c1_1.s.write_academic_text"),
+
+    # Vocab domain progression (earlier → later)
+    ("a1_1.v.family_people", "a2_2.v.health_body"),
+    ("a1_1.v.colors_body", "a2_2.v.health_body"),
+    ("a1_2.v.food_drink", "b1_1.v.environment"),
+    ("a1_2.v.house_furniture", "a2_1.v.city_transport"),
+    ("a2_1.v.city_transport", "a2_2.v.travel_tourism"),
+    ("a2_1.v.daily_routine", "b1_1.v.work_career"),
+    ("a2_2.v.hobbies_sport", "b1_1.v.media_news"),
+    ("b1_1.v.work_career", "b1_2.v.education"),
+    ("b1_1.v.media_news", "b2_1.v.politics_society"),
+    ("b1_1.v.environment", "b2_1.v.science_research"),
+    ("b1_2.v.technology", "b2_1.v.economy_business"),
+    ("b2_1.v.politics_society", "b2_2.v.law_justice"),
+    ("b2_1.v.economy_business", "b2_2.v.philosophy_ethics"),
+    ("b2_1.v.science_research", "c1_1.v.academic_discourse"),
+    ("b2_2.v.arts_culture", "c1_1.v.academic_discourse"),
+
+    # Grammar → vocab domain connections
+    ("a1_1.k.basic_nouns", "a1_1.v.family_people"),
+    ("a1_1.k.basic_nouns", "a1_1.v.classroom_school"),
+    ("a1_1.k.basic_nouns", "a1_1.v.colors_body"),
+    ("a1_2.k.articles_demonstratives", "a1_2.v.food_drink"),
+    ("a1_2.k.prepositions_place", "a1_2.v.house_furniture"),
+    ("a2_1.k.adverbs_frequency", "a2_1.v.daily_routine"),
+    ("a2_2.k.imperative_mood", "a2_2.v.travel_tourism"),
+    ("b1_1.k.connectors_discourse", "b1_1.v.media_news"),
+
+    # ---- PRONUNCIATION EDGES ----
+    ("a1_1.k.alphabet_phonics", "a1_2.p.word_stress"),
+    ("a1_2.p.word_stress", "a2_1.p.sentence_rhythm"),
+    ("a2_1.p.sentence_rhythm", "b1_1.p.reduction_weak_forms"),
+    ("b1_1.p.reduction_weak_forms", "b2_1.p.accent_comprehension"),
+    ("b2_1.p.accent_comprehension", "c1_1.p.prosody_delivery"),
+    # Pronunciation → speaking skills
+    ("a1_2.p.word_stress", "a1_2.s.describe_objects_people"),
+    ("a2_1.p.sentence_rhythm", "a2_1.s.narrate_past_events"),
+    ("b1_1.p.reduction_weak_forms", "b1_1.s.understand_main_points"),
+    ("b2_1.p.accent_comprehension", "b2_1.s.understand_extended_speech"),
+    ("c1_1.p.prosody_delivery", "c1_1.s.present_complex_ideas"),
+
+    # ---- CULTURAL COMPETENCE EDGES ----
+    ("a1_1.k.greetings_farewells", "a1_2.c.basic_norms"),
+    ("a1_2.c.basic_norms", "a2_2.c.social_conventions"),
+    ("a2_2.c.social_conventions", "b1_2.c.humor_formality"),
+    ("b1_2.c.humor_formality", "b2_2.c.values_worldview"),
+    ("b2_2.c.values_worldview", "c1_2.c.deep_cultural_literacy"),
+    ("c1_2.c.deep_cultural_literacy", "c2_1.c.cultural_mediation"),
+    # Culture → skills
+    ("a1_2.c.basic_norms", "a1_2.s.order_food"),
+    ("a2_2.c.social_conventions", "a2_2.s.write_personal_letter"),
+    ("b1_2.c.humor_formality", "b1_2.s.participate_discussion"),
+    ("b2_2.c.values_worldview", "b2_2.s.mediate_conversation"),
+    ("c1_2.c.deep_cultural_literacy", "c1_2.s.critique_text"),
+    ("c2_1.c.cultural_mediation", "c2_1.s.simultaneous_mediation"),
+
+    # ---- TEXT TYPE EDGES ----
+    # Text type progression
+    ("a1_1.t.signs_labels", "a1_2.t.forms_postcards"),
+    ("a1_2.t.forms_postcards", "a2_1.t.menus_timetables"),
+    ("a2_1.t.menus_timetables", "a2_2.t.personal_emails"),
+    ("a2_2.t.personal_emails", "b1_1.t.articles_blogs"),
+    ("b1_1.t.articles_blogs", "b1_2.t.formal_letters"),
+    ("b1_2.t.formal_letters", "b2_1.t.essays_reviews"),
+    ("b2_1.t.essays_reviews", "b2_2.t.reports_proposals"),
+    ("b2_2.t.reports_proposals", "c1_1.t.academic_papers"),
+    ("c1_1.t.academic_papers", "c1_2.t.editorials_critique"),
+    ("c1_2.t.editorials_critique", "c2_1.t.literature_legal"),
+    ("c2_1.t.literature_legal", "c2_2.t.any_genre_text"),
+    # Text types → reading/writing skills
+    ("a1_1.t.signs_labels", "a1_1.s.understand_simple_instructions"),
+    ("a1_2.t.forms_postcards", "a1_2.s.fill_simple_form"),
+    ("a2_1.t.menus_timetables", "a2_1.s.understand_short_text"),
+    ("a2_2.t.personal_emails", "a2_2.s.write_personal_letter"),
+    ("b1_1.t.articles_blogs", "b1_1.s.understand_main_points"),
+    ("b1_2.t.formal_letters", "b1_2.s.write_formal_email"),
+    ("b2_1.t.essays_reviews", "b2_1.s.write_essay"),
+    ("b2_2.t.reports_proposals", "b2_2.s.write_report"),
+    ("c1_1.t.academic_papers", "c1_1.s.write_academic_text"),
+    ("c1_2.t.editorials_critique", "c1_2.s.write_persuasive_text"),
+    ("c2_1.t.literature_legal", "c2_1.s.write_publishable"),
+    ("c2_2.t.any_genre_text", "c2_2.s.write_any_genre"),
+
+    # ---- LISTENING SOURCE EDGES ----
+    # Listening source progression
+    ("a1_1.l.slow_clear_speech", "a2_1.l.announcements_dialogues"),
+    ("a2_1.l.announcements_dialogues", "b1_1.l.news_phone_presentations"),
+    ("b1_1.l.news_phone_presentations", "b2_1.l.lectures_debates_films"),
+    ("b2_1.l.lectures_debates_films", "c1_1.l.fast_natural_accents"),
+    ("c1_1.l.fast_natural_accents", "c2_1.l.any_spoken_input"),
+    # Listening sources → listening skills
+    ("a1_1.l.slow_clear_speech", "a1_1.s.understand_simple_instructions"),
+    ("a2_1.l.announcements_dialogues", "a2_1.s.understand_short_text"),
+    ("b1_1.l.news_phone_presentations", "b1_1.s.understand_main_points"),
+    ("b2_1.l.lectures_debates_films", "b2_1.s.understand_extended_speech"),
+    ("c1_1.l.fast_natural_accents", "c1_1.s.understand_implicit"),
+    ("c2_1.l.any_spoken_input", "c2_1.s.interpret_subtlety"),
 ]
 
 # ============================================================
@@ -605,12 +792,12 @@ def generate_language(lang_code):
         nid = f"{lang_code}.{level}.{tp}.{slug}"
         book_id = f"book.{level}"
         b = BOOK_MAP[book_id]
-        ntype = "concept" if tp == "k" else "technique"
+        ntype = {"k": "concept", "s": "technique", "v": "concept", "p": "concept", "c": "concept", "t": "concept", "l": "concept"}.get(tp, "concept")
         nodes.append({
             "id": nid, "label": label, "type": ntype,
             "description": f"{label} — {b['name']}",
             "grade_range": [level.upper().replace("_", ".")],
-            "tags": [("knowledge" if tp == "k" else "skill")] + tags,
+            "tags": [{"k":"knowledge","s":"skill","v":"vocabulary","p":"pronunciation","c":"culture","t":"text-type","l":"listening"}.get(tp,"knowledge")] + tags,
             "pages": "", "book": book_id,
             "bookName": b["name"], "bookColor": b["color"], "bookOrder": b["order"],
         })
@@ -621,12 +808,12 @@ def generate_language(lang_code):
         nid = f"{lang_code}.{level}.{tp}.{slug}"
         book_id = f"book.{level}"
         b = BOOK_MAP[book_id]
-        ntype = "concept" if tp == "k" else "technique"
+        ntype = {"k": "concept", "s": "technique", "v": "concept", "p": "concept", "c": "concept", "t": "concept", "l": "concept"}.get(tp, "concept")
         nodes.append({
             "id": nid, "label": label, "type": ntype,
             "description": f"{label} — {b['name']}",
             "grade_range": [level.upper().replace("_", ".")],
-            "tags": [("knowledge" if tp == "k" else "skill")] + tags,
+            "tags": [{"k":"knowledge","s":"skill","v":"vocabulary","p":"pronunciation","c":"culture","t":"text-type","l":"listening"}.get(tp,"knowledge")] + tags,
             "pages": "", "book": book_id,
             "bookName": b["name"], "bookColor": b["color"], "bookOrder": b["order"],
         })
