@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduGraph — German (Deutsch)</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #08090e;
+  --surface: rgba(12,14,24,0.94);
+  --border: rgba(255,255,255,0.06);
+  --text: #e8e4dc;
+  --text2: #8a8697;
+  --text3: #55516a;
+  --gold: #ffc857;
+  --topbar: 52px;
+  --sidebar: 230px;
+  --detail: 300px;
+}
+html, body { height: 100%; background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 13px; overflow: hidden; }
+
+/* Grain */
+body::after { content: ''; position: fixed; inset: 0; opacity: 0.035; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); pointer-events: none; z-index: 9999; }
+
+/* Topbar */
+.topbar { position: fixed; top: 0; left: 0; right: 0; height: var(--topbar); display: flex; align-items: center; justify-content: space-between; padding: 0 18px; background: rgba(8,9,14,0.92); backdrop-filter: blur(16px); border-bottom: 1px solid var(--border); z-index: 200; }
+.topbar-left { display: flex; align-items: baseline; gap: 12px; }
+.topbar h1 { font-family: 'Instrument Serif', serif; font-size: 22px; font-weight: 400; color: var(--gold); }
+.topbar .sub { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 1px; }
+.topbar-right { display: flex; align-items: center; gap: 6px; }
+.stats { display: flex; gap: 14px; margin-right: 12px; }
+.stat-n { font-family: 'Instrument Serif', serif; font-size: 17px; color: var(--gold); }
+.stat-l { font-size: 9px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; margin-left: 3px; }
+.nav-btn { background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text2); padding: 4px 10px; border-radius: 5px; font-size: 10px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; transition: all 0.15s; }
+.nav-btn:hover { background: rgba(255,200,87,0.08); border-color: rgba(255,200,87,0.15); color: var(--gold); }
+
+/* Sidebar */
+.sidebar { position: fixed; top: var(--topbar); left: 0; bottom: 0; width: var(--sidebar); background: var(--surface); border-right: 1px solid var(--border); overflow-y: auto; z-index: 100; padding: 12px; display: flex; flex-direction: column; gap: 10px; }
+.sidebar::-webkit-scrollbar { width: 3px; }
+.sidebar::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
+.sec-title { font-family: 'Instrument Serif', serif; font-size: 13px; margin-bottom: 6px; display: flex; align-items: center; gap: 6px; }
+.sec-title::before { content: ''; width: 2px; height: 11px; background: var(--gold); border-radius: 1px; }
+
+.search-box { width: 100%; padding: 7px 10px 7px 28px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 6px; color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 12px; outline: none; }
+.search-box::placeholder { color: var(--text3); }
+.search-box:focus { border-color: rgba(255,200,87,0.25); }
+.search-wrap { position: relative; }
+.search-wrap::before { content: '⌕'; position: absolute; left: 9px; top: 50%; transform: translateY(-50%); color: var(--text3); font-size: 13px; }
+
+/* Tabs */
+.tab-bar { display: flex; gap: 0; margin-bottom: 8px; border-bottom: 1px solid var(--border); }
+.tab-btn { flex: 1; background: none; border: none; border-bottom: 2px solid transparent; color: var(--text3); padding: 6px 4px; font-size: 10px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-transform: uppercase; letter-spacing: 0.8px; transition: all 0.15s; }
+.tab-btn:hover { color: var(--text2); }
+.tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+.tab-content { display: none; }
+.tab-content.active { display: block; }
+
+.book-btns { display: flex; gap: 3px; margin-bottom: 6px; }
+.book-btn { flex: 1; background: rgba(255,255,255,0.03); border: 1px solid var(--border); color: var(--text3); padding: 3px; border-radius: 4px; font-size: 9px; font-family: 'DM Sans', sans-serif; cursor: pointer; text-transform: uppercase; letter-spacing: 0.5px; }
+.book-btn:hover { color: var(--text2); }
+
+/* Collapsible groups */
+.group-header { display: flex; align-items: center; gap: 5px; padding: 5px 4px; cursor: pointer; user-select: none; border-radius: 4px; margin-top: 4px; transition: background 0.12s; }
+.group-header:hover { background: rgba(255,255,255,0.03); }
+.group-arrow { font-size: 8px; color: var(--text3); transition: transform 0.2s; width: 12px; text-align: center; }
+.group-header.collapsed .group-arrow { transform: rotate(-90deg); }
+.group-label { font-size: 10px; color: var(--text2); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; flex: 1; }
+.group-cnt { font-size: 9px; color: var(--text3); }
+.group-body { overflow: hidden; transition: max-height 0.25s ease; }
+.group-header.collapsed + .group-body { max-height: 0 !important; overflow: hidden; }
+
+.book-list { display: flex; flex-direction: column; gap: 1px; }
+.book-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px 3px 16px; border-radius: 4px; cursor: pointer; transition: all 0.12s; user-select: none; }
+.book-item:hover { background: rgba(255,255,255,0.03); }
+.book-item.off { opacity: 0.2; }
+.book-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; transition: transform 0.15s; }
+.book-item:not(.off) .book-dot { box-shadow: 0 0 5px currentColor; }
+.book-name { font-size: 10px; color: var(--text2); flex: 1; }
+.book-item:not(.off) .book-name { color: var(--text); }
+.book-cnt { font-size: 9px; color: var(--text3); }
+
+/* Strand items */
+.strand-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px 3px 16px; border-radius: 4px; cursor: pointer; transition: all 0.12s; user-select: none; }
+.strand-item:hover { background: rgba(255,255,255,0.03); }
+.strand-item.off { opacity: 0.2; }
+.strand-dot { width: 7px; height: 7px; border-radius: 3px; flex-shrink: 0; }
+.strand-name { font-size: 10px; color: var(--text2); flex: 1; }
+.strand-item:not(.off) .strand-name { color: var(--text); }
+.strand-cnt { font-size: 9px; color: var(--text3); }
+
+.controls { padding-top: 8px; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: 6px; }
+.ctrl-row { display: flex; align-items: center; justify-content: space-between; }
+.ctrl-label { font-size: 10px; color: var(--text3); text-transform: uppercase; letter-spacing: 0.5px; }
+.ctrl-slider { -webkit-appearance: none; width: 90px; height: 3px; background: rgba(255,255,255,0.1); border-radius: 2px; outline: none; }
+.ctrl-slider::-webkit-slider-thumb { -webkit-appearance: none; width: 12px; height: 12px; background: var(--gold); border-radius: 50%; cursor: pointer; }
+
+.hint { font-size: 9px; color: var(--text3); line-height: 1.6; padding-top: 8px; border-top: 1px solid var(--border); }
+.hint b { color: var(--text2); font-weight: 500; }
+
+/* Graph SVG */
+#graph-container { position: fixed; top: var(--topbar); left: var(--sidebar); right: 0; bottom: 0; transition: right 0.3s; }
+#graph-container.detail-open { right: var(--detail); }
+svg { width: 100%; height: 100%; display: block; }
+
+/* Detail panel */
+.detail { position: fixed; top: var(--topbar); right: calc(-1 * var(--detail)); bottom: 0; width: var(--detail); background: var(--surface); border-left: 1px solid var(--border); z-index: 100; overflow-y: auto; padding: 20px 16px; transition: right 0.3s; }
+.detail.open { right: 0; }
+.detail::-webkit-scrollbar { width: 3px; }
+.detail::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.08); border-radius: 2px; }
+.detail-close { position: absolute; top: 12px; right: 12px; width: 24px; height: 24px; border-radius: 5px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text3); cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+.detail-close:hover { color: var(--text); }
+.detail-badge { display: inline-flex; align-items: center; gap: 5px; padding: 2px 8px; border-radius: 12px; font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
+.detail-pages { display: inline-block; padding: 3px 10px; border-radius: 5px; font-family: 'Instrument Serif', serif; font-size: 16px; background: rgba(255,200,87,0.08); color: var(--gold); border: 1px solid rgba(255,200,87,0.12); margin-bottom: 10px; }
+.detail-title { font-family: 'Instrument Serif', serif; font-size: 20px; line-height: 1.2; margin-bottom: 14px; }
+.conn-section { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
+.conn-head { font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text3); margin-bottom: 6px; }
+.conn-head.prereq { color: #e07a5f; }
+.conn-head.leads { color: #81b29a; }
+.conn-item { display: flex; align-items: center; gap: 6px; padding: 3px 5px; border-radius: 4px; cursor: pointer; transition: background 0.12s; }
+.conn-item:hover { background: rgba(255,255,255,0.04); }
+.conn-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+.conn-label { font-size: 11px; color: var(--text2); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.conn-book { font-size: 8px; color: var(--text3); flex-shrink: 0; }
+
+@media (max-width: 800px) {
+  .sidebar { display: none; }
+  :root { --sidebar: 0px; }
+  .topbar .sub, .stats { display: none; }
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-left">
+    <h1>EduGraph</h1>
+    <span class="sub">CEFR A1.1 — C2.2</span>
+  </div>
+  <div class="topbar-right">
+    <div class="stats">
+      <span><span class="stat-n" id="s-nodes">0</span><span class="stat-l">nodes</span></span>
+      <span><span class="stat-n" id="s-edges">0</span><span class="stat-l">edges</span></span>
+    </div>
+    <a href="index.html" class="nav-btn">Home</a>
+  </div>
+</header>
+
+<aside class="sidebar">
+  <div class="search-wrap">
+    <input type="text" class="search-box" id="search" placeholder="Search topics..." autocomplete="off">
+  </div>
+
+  <div class="tab-bar">
+    <button class="tab-btn active" data-tab="grades">Grades</button>
+    <button class="tab-btn" data-tab="topics">Topics</button>
+    <button class="tab-btn" data-tab="forces">Forces</button>
+  </div>
+
+  <!-- Grades Tab -->
+  <div class="tab-content active" id="tab-grades">
+    <div class="book-btns">
+      <button class="book-btn" id="b-all">All</button>
+      <button class="book-btn" id="b-none">None</button>
+    </div>
+    <div id="grades-list"></div>
+  </div>
+
+  <!-- Topics Tab -->
+  <div class="tab-content" id="tab-topics">
+    <div class="book-btns">
+      <button class="book-btn" id="t-all">All</button>
+      <button class="book-btn" id="t-none">None</button>
+    </div>
+    <div id="topics-list"></div>
+  </div>
+
+  <!-- Forces Tab -->
+  <div class="tab-content" id="tab-forces">
+    <div class="sec-title">Physics</div>
+    <div class="controls">
+      <div class="ctrl-row">
+        <span class="ctrl-label">Repulsion</span>
+        <input type="range" class="ctrl-slider" id="sl-charge" min="-600" max="-20" value="-120">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Link Dist</span>
+        <input type="range" class="ctrl-slider" id="sl-dist" min="15" max="200" value="55">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Gravity</span>
+        <input type="range" class="ctrl-slider" id="sl-gravity" min="0" max="100" value="8">
+      </div>
+      <div class="ctrl-row">
+        <span class="ctrl-label">Collision</span>
+        <input type="range" class="ctrl-slider" id="sl-collide" min="1" max="30" value="10">
+      </div>
+    </div>
+    <div class="hint">
+      <b>Drag</b> nodes — physics responds live<br>
+      <b>Scroll</b> to zoom, drag canvas to pan<br>
+      <b>Click</b> node for details &amp; neighbors<br>
+      <b>Sliders</b> tune forces in real-time
+    </div>
+  </div>
+</aside>
+
+<div id="graph-container">
+  <svg id="svg"></svg>
+</div>
+
+<div class="detail" id="detail">
+  <button class="detail-close" id="detail-close">✕</button>
+  <div id="detail-content"></div>
+</div>
+
+<script>
+const rawNodes = [{"id": "de.a1_1.k.alphabet_phonics", "label": "Alphabet and Phonics", "color": "#ef4444", "book": "book.a1_1", "bookName": "A1.1 Breakthrough Lower", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Alphabet and Phonics \u2014 A1.1 Breakthrough Lower", "strand": "Other"}, {"id": "de.a1_1.k.greetings_farewells", "label": "Greetings and Farewells", "color": "#ef4444", "book": "book.a1_1", "bookName": "A1.1 Breakthrough Lower", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Greetings and Farewells \u2014 A1.1 Breakthrough Lower", "strand": "Other"}, {"id": "de.a1_1.k.personal_pronouns", "label": "Personal Pronouns", "color": "#ef4444", "book": "book.a1_1", "bookName": "A1.1 Breakthrough Lower", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Personal Pronouns \u2014 A1.1 Breakthrough Lower", "strand": "Other"}, {"id": "de.a1_1.k.present_simple_be", "label": "Present Tense: 'to be'", "color": "#ef4444", "book": "book.a1_1", "bookName": "A1.1 Breakthrough Lower", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Present Tense: 'to be' \u2014 A1.1 Breakthrough Lower", "strand": "Other"}, {"id": "de.a1_1.k.numbers_1_20", "label": "Numbers 1-20", "color": "#ef4444", "book": "book.a1_1", "bookName": "A1.1 Breakthrough Lower", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Numbers 1-20 \u2014 A1.1 Breakthrough Lower", "strand": "Numbers & Counting"}, {"id": "de.a1_1.k.basic_nouns", "label": "Basic Concrete Nouns", "color": "#ef4444", "book": "book.a1_1", "bookName": "A1.1 Breakthrough Lower", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Basic Concrete Nouns \u2014 A1.1 Breakthrough Lower", "strand": "Other"}, {"id": "de.a1_1.s.introduce_self", "label": "Can introduce self", "color": "#ef4444", "book": "book.a1_1", "bookName": "A1.1 Breakthrough Lower", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Can introduce self \u2014 A1.1 Breakthrough Lower", "strand": "Other"}, {"id": "de.a1_1.s.understand_simple_instructions", "label": "Can understand simple instructions", "color": "#ef4444", "book": "book.a1_1", "bookName": "A1.1 Breakthrough Lower", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Can understand simple instructions \u2014 A1.1 Breakthrough Lower", "strand": "Other"}, {"id": "de.a1_1.s.ask_yes_no", "label": "Can ask/answer yes-no questions", "color": "#ef4444", "book": "book.a1_1", "bookName": "A1.1 Breakthrough Lower", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Can ask/answer yes-no questions \u2014 A1.1 Breakthrough Lower", "strand": "Other"}, {"id": "de.a1_1.s.copy_words", "label": "Can copy familiar words", "color": "#ef4444", "book": "book.a1_1", "bookName": "A1.1 Breakthrough Lower", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Can copy familiar words \u2014 A1.1 Breakthrough Lower", "strand": "Other"}, {"id": "de.a1_2.k.present_simple_regular", "label": "Present Simple: Regular Verbs", "color": "#f97316", "book": "book.a1_2", "bookName": "A1.2 Breakthrough Upper", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Present Simple: Regular Verbs \u2014 A1.2 Breakthrough Upper", "strand": "Other"}, {"id": "de.a1_2.k.articles_demonstratives", "label": "Articles and Demonstratives", "color": "#f97316", "book": "book.a1_2", "bookName": "A1.2 Breakthrough Upper", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Articles and Demonstratives \u2014 A1.2 Breakthrough Upper", "strand": "Other"}, {"id": "de.a1_2.k.basic_adjectives", "label": "Basic Adjectives", "color": "#f97316", "book": "book.a1_2", "bookName": "A1.2 Breakthrough Upper", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Basic Adjectives \u2014 A1.2 Breakthrough Upper", "strand": "Other"}, {"id": "de.a1_2.k.prepositions_place", "label": "Prepositions of Place", "color": "#f97316", "book": "book.a1_2", "bookName": "A1.2 Breakthrough Upper", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Prepositions of Place \u2014 A1.2 Breakthrough Upper", "strand": "Other"}, {"id": "de.a1_2.k.numbers_dates_time", "label": "Numbers, Dates and Time", "color": "#f97316", "book": "book.a1_2", "bookName": "A1.2 Breakthrough Upper", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Numbers, Dates and Time \u2014 A1.2 Breakthrough Upper", "strand": "Numbers & Counting"}, {"id": "de.a1_2.k.food_drink_vocab", "label": "Food, Drink and Shopping", "color": "#f97316", "book": "book.a1_2", "bookName": "A1.2 Breakthrough Upper", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Food, Drink and Shopping \u2014 A1.2 Breakthrough Upper", "strand": "Other"}, {"id": "de.a1_2.s.describe_objects_people", "label": "Can describe objects and people", "color": "#f97316", "book": "book.a1_2", "bookName": "A1.2 Breakthrough Upper", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Can describe objects and people \u2014 A1.2 Breakthrough Upper", "strand": "Other"}, {"id": "de.a1_2.s.ask_where_when", "label": "Can ask where/when questions", "color": "#f97316", "book": "book.a1_2", "bookName": "A1.2 Breakthrough Upper", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Can ask where/when questions \u2014 A1.2 Breakthrough Upper", "strand": "Other"}, {"id": "de.a1_2.s.order_food", "label": "Can order food and drink", "color": "#f97316", "book": "book.a1_2", "bookName": "A1.2 Breakthrough Upper", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Can order food and drink \u2014 A1.2 Breakthrough Upper", "strand": "Other"}, {"id": "de.a1_2.s.fill_simple_form", "label": "Can fill in a simple form", "color": "#f97316", "book": "book.a1_2", "bookName": "A1.2 Breakthrough Upper", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Can fill in a simple form \u2014 A1.2 Breakthrough Upper", "strand": "Other"}, {"id": "de.a2_1.k.past_simple", "label": "Past Simple", "color": "#f59e0b", "book": "book.a2_1", "bookName": "A2.1 Waystage Lower", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Past Simple \u2014 A2.1 Waystage Lower", "strand": "Other"}, {"id": "de.a2_1.k.possessives", "label": "Possessives", "color": "#f59e0b", "book": "book.a2_1", "bookName": "A2.1 Waystage Lower", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Possessives \u2014 A2.1 Waystage Lower", "strand": "Other"}, {"id": "de.a2_1.k.adverbs_frequency", "label": "Adverbs of Frequency", "color": "#f59e0b", "book": "book.a2_1", "bookName": "A2.1 Waystage Lower", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Adverbs of Frequency \u2014 A2.1 Waystage Lower", "strand": "Statistics"}, {"id": "de.a2_1.k.conjunctions_basic", "label": "Basic Conjunctions", "color": "#f59e0b", "book": "book.a2_1", "bookName": "A2.1 Waystage Lower", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Basic Conjunctions \u2014 A2.1 Waystage Lower", "strand": "Other"}, {"id": "de.a2_1.k.daily_routine_vocab", "label": "Daily Routine Vocabulary", "color": "#f59e0b", "book": "book.a2_1", "bookName": "A2.1 Waystage Lower", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Daily Routine Vocabulary \u2014 A2.1 Waystage Lower", "strand": "Other"}, {"id": "de.a2_1.k.countable_uncountable", "label": "Countable and Uncountable Nouns", "color": "#f59e0b", "book": "book.a2_1", "bookName": "A2.1 Waystage Lower", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Countable and Uncountable Nouns \u2014 A2.1 Waystage Lower", "strand": "Other"}, {"id": "de.a2_1.s.narrate_past_events", "label": "Can narrate past events simply", "color": "#f59e0b", "book": "book.a2_1", "bookName": "A2.1 Waystage Lower", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Can narrate past events simply \u2014 A2.1 Waystage Lower", "strand": "Ratio & Proportion"}, {"id": "de.a2_1.s.make_suggestions", "label": "Can make suggestions", "color": "#f59e0b", "book": "book.a2_1", "bookName": "A2.1 Waystage Lower", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Can make suggestions \u2014 A2.1 Waystage Lower", "strand": "Other"}, {"id": "de.a2_1.s.write_short_message", "label": "Can write a short message", "color": "#f59e0b", "book": "book.a2_1", "bookName": "A2.1 Waystage Lower", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Can write a short message \u2014 A2.1 Waystage Lower", "strand": "Other"}, {"id": "de.a2_1.s.understand_short_text", "label": "Can understand short texts", "color": "#f59e0b", "book": "book.a2_1", "bookName": "A2.1 Waystage Lower", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Can understand short texts \u2014 A2.1 Waystage Lower", "strand": "Other"}, {"id": "de.a2_2.k.future_forms", "label": "Future Forms", "color": "#eab308", "book": "book.a2_2", "bookName": "A2.2 Waystage Upper", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Future Forms \u2014 A2.2 Waystage Upper", "strand": "Other"}, {"id": "de.a2_2.k.comparatives_superlatives", "label": "Comparatives and Superlatives", "color": "#eab308", "book": "book.a2_2", "bookName": "A2.2 Waystage Upper", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Comparatives and Superlatives \u2014 A2.2 Waystage Upper", "strand": "Other"}, {"id": "de.a2_2.k.modal_verbs_basic", "label": "Basic Modal Verbs", "color": "#eab308", "book": "book.a2_2", "bookName": "A2.2 Waystage Upper", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Basic Modal Verbs \u2014 A2.2 Waystage Upper", "strand": "Other"}, {"id": "de.a2_2.k.object_pronouns", "label": "Object Pronouns and Reflexives", "color": "#eab308", "book": "book.a2_2", "bookName": "A2.2 Waystage Upper", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Object Pronouns and Reflexives \u2014 A2.2 Waystage Upper", "strand": "Other"}, {"id": "de.a2_2.k.travel_directions_vocab", "label": "Travel and Directions Vocabulary", "color": "#eab308", "book": "book.a2_2", "bookName": "A2.2 Waystage Upper", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Travel and Directions Vocabulary \u2014 A2.2 Waystage Upper", "strand": "Other"}, {"id": "de.a2_2.k.imperative_mood", "label": "Imperative Mood", "color": "#eab308", "book": "book.a2_2", "bookName": "A2.2 Waystage Upper", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Imperative Mood \u2014 A2.2 Waystage Upper", "strand": "Other"}, {"id": "de.a2_2.s.give_directions", "label": "Can give and follow directions", "color": "#eab308", "book": "book.a2_2", "bookName": "A2.2 Waystage Upper", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Can give and follow directions \u2014 A2.2 Waystage Upper", "strand": "Other"}, {"id": "de.a2_2.s.make_plans", "label": "Can make future plans", "color": "#eab308", "book": "book.a2_2", "bookName": "A2.2 Waystage Upper", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Can make future plans \u2014 A2.2 Waystage Upper", "strand": "Other"}, {"id": "de.a2_2.s.write_personal_letter", "label": "Can write a personal letter", "color": "#eab308", "book": "book.a2_2", "bookName": "A2.2 Waystage Upper", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Can write a personal letter \u2014 A2.2 Waystage Upper", "strand": "Other"}, {"id": "de.a2_2.s.describe_experiences", "label": "Can describe experiences", "color": "#eab308", "book": "book.a2_2", "bookName": "A2.2 Waystage Upper", "bookOrder": 4, "r": 7.2, "pages": "", "description": "Can describe experiences \u2014 A2.2 Waystage Upper", "strand": "Other"}, {"id": "de.b1_1.k.present_perfect", "label": "Present Perfect", "color": "#84cc16", "book": "book.b1_1", "bookName": "B1.1 Threshold Lower", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Present Perfect \u2014 B1.1 Threshold Lower", "strand": "Other"}, {"id": "de.b1_1.k.relative_clauses", "label": "Relative Clauses (Defining)", "color": "#84cc16", "book": "book.b1_1", "bookName": "B1.1 Threshold Lower", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Relative Clauses (Defining) \u2014 B1.1 Threshold Lower", "strand": "Other"}, {"id": "de.b1_1.k.first_conditional", "label": "First Conditional", "color": "#84cc16", "book": "book.b1_1", "bookName": "B1.1 Threshold Lower", "bookOrder": 5, "r": 8.0, "pages": "", "description": "First Conditional \u2014 B1.1 Threshold Lower", "strand": "Probability"}, {"id": "de.b1_1.k.passive_voice", "label": "Passive Voice (Present/Past)", "color": "#84cc16", "book": "book.b1_1", "bookName": "B1.1 Threshold Lower", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Passive Voice (Present/Past) \u2014 B1.1 Threshold Lower", "strand": "Other"}, {"id": "de.b1_1.k.phrasal_verbs", "label": "Common Phrasal Verbs", "color": "#84cc16", "book": "book.b1_1", "bookName": "B1.1 Threshold Lower", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Common Phrasal Verbs \u2014 B1.1 Threshold Lower", "strand": "Other"}, {"id": "de.b1_1.k.connectors_discourse", "label": "Discourse Connectors", "color": "#84cc16", "book": "book.b1_1", "bookName": "B1.1 Threshold Lower", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Discourse Connectors \u2014 B1.1 Threshold Lower", "strand": "Other"}, {"id": "de.b1_1.s.express_opinions", "label": "Can express and justify opinions", "color": "#84cc16", "book": "book.b1_1", "bookName": "B1.1 Threshold Lower", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Can express and justify opinions \u2014 B1.1 Threshold Lower", "strand": "Other"}, {"id": "de.b1_1.s.understand_main_points", "label": "Can understand main points of speech", "color": "#84cc16", "book": "book.b1_1", "bookName": "B1.1 Threshold Lower", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Can understand main points of speech \u2014 B1.1 Threshold Lower", "strand": "Other"}, {"id": "de.b1_1.s.write_structured_paragraph", "label": "Can write structured paragraphs", "color": "#84cc16", "book": "book.b1_1", "bookName": "B1.1 Threshold Lower", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Can write structured paragraphs \u2014 B1.1 Threshold Lower", "strand": "Functions & Graphs"}, {"id": "de.b1_1.s.handle_travel_situations", "label": "Can handle most travel situations", "color": "#84cc16", "book": "book.b1_1", "bookName": "B1.1 Threshold Lower", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Can handle most travel situations \u2014 B1.1 Threshold Lower", "strand": "Other"}, {"id": "de.b1_2.k.past_perfect", "label": "Past Perfect", "color": "#22c55e", "book": "book.b1_2", "bookName": "B1.2 Threshold Upper", "bookOrder": 6, "r": 8.8, "pages": "", "description": "Past Perfect \u2014 B1.2 Threshold Upper", "strand": "Other"}, {"id": "de.b1_2.k.second_conditional", "label": "Second Conditional", "color": "#22c55e", "book": "book.b1_2", "bookName": "B1.2 Threshold Upper", "bookOrder": 6, "r": 8.8, "pages": "", "description": "Second Conditional \u2014 B1.2 Threshold Upper", "strand": "Probability"}, {"id": "de.b1_2.k.reported_speech_basic", "label": "Reported Speech (Basic)", "color": "#22c55e", "book": "book.b1_2", "bookName": "B1.2 Threshold Upper", "bookOrder": 6, "r": 8.8, "pages": "", "description": "Reported Speech (Basic) \u2014 B1.2 Threshold Upper", "strand": "Other"}, {"id": "de.b1_2.k.gerunds_infinitives", "label": "Gerunds and Infinitives", "color": "#22c55e", "book": "book.b1_2", "bookName": "B1.2 Threshold Upper", "bookOrder": 6, "r": 8.8, "pages": "", "description": "Gerunds and Infinitives \u2014 B1.2 Threshold Upper", "strand": "Other"}, {"id": "de.b1_2.k.quantifiers", "label": "Quantifiers and Determiners", "color": "#22c55e", "book": "book.b1_2", "bookName": "B1.2 Threshold Upper", "bookOrder": 6, "r": 8.8, "pages": "", "description": "Quantifiers and Determiners \u2014 B1.2 Threshold Upper", "strand": "Other"}, {"id": "de.b1_2.k.work_education_vocab", "label": "Work and Education Vocabulary", "color": "#22c55e", "book": "book.b1_2", "bookName": "B1.2 Threshold Upper", "bookOrder": 6, "r": 8.8, "pages": "", "description": "Work and Education Vocabulary \u2014 B1.2 Threshold Upper", "strand": "Other"}, {"id": "de.b1_2.s.tell_story_detail", "label": "Can tell a story in detail", "color": "#22c55e", "book": "book.b1_2", "bookName": "B1.2 Threshold Upper", "bookOrder": 6, "r": 8.8, "pages": "", "description": "Can tell a story in detail \u2014 B1.2 Threshold Upper", "strand": "Other"}, {"id": "de.b1_2.s.write_formal_email", "label": "Can write a formal email", "color": "#22c55e", "book": "book.b1_2", "bookName": "B1.2 Threshold Upper", "bookOrder": 6, "r": 8.8, "pages": "", "description": "Can write a formal email \u2014 B1.2 Threshold Upper", "strand": "Other"}, {"id": "de.b1_2.s.summarize_text", "label": "Can summarize a text", "color": "#22c55e", "book": "book.b1_2", "bookName": "B1.2 Threshold Upper", "bookOrder": 6, "r": 8.8, "pages": "", "description": "Can summarize a text \u2014 B1.2 Threshold Upper", "strand": "Other"}, {"id": "de.b1_2.s.participate_discussion", "label": "Can participate in discussions", "color": "#22c55e", "book": "book.b1_2", "bookName": "B1.2 Threshold Upper", "bookOrder": 6, "r": 8.8, "pages": "", "description": "Can participate in discussions \u2014 B1.2 Threshold Upper", "strand": "Other"}, {"id": "de.b2_1.k.third_conditional", "label": "Third Conditional", "color": "#14b8a6", "book": "book.b2_1", "bookName": "B2.1 Vantage Lower", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "Third Conditional \u2014 B2.1 Vantage Lower", "strand": "Probability"}, {"id": "de.b2_1.k.passive_advanced", "label": "Advanced Passive Constructions", "color": "#14b8a6", "book": "book.b2_1", "bookName": "B2.1 Vantage Lower", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "Advanced Passive Constructions \u2014 B2.1 Vantage Lower", "strand": "Geometry"}, {"id": "de.b2_1.k.modal_perfects", "label": "Modal Perfects", "color": "#14b8a6", "book": "book.b2_1", "bookName": "B2.1 Vantage Lower", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "Modal Perfects \u2014 B2.1 Vantage Lower", "strand": "Other"}, {"id": "de.b2_1.k.cleft_sentences", "label": "Cleft and Emphasis Structures", "color": "#14b8a6", "book": "book.b2_1", "bookName": "B2.1 Vantage Lower", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "Cleft and Emphasis Structures \u2014 B2.1 Vantage Lower", "strand": "Other"}, {"id": "de.b2_1.k.collocations_idioms", "label": "Collocations and Idioms", "color": "#14b8a6", "book": "book.b2_1", "bookName": "B2.1 Vantage Lower", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "Collocations and Idioms \u2014 B2.1 Vantage Lower", "strand": "Other"}, {"id": "de.b2_1.k.abstract_vocab", "label": "Abstract and Academic Vocabulary", "color": "#14b8a6", "book": "book.b2_1", "bookName": "B2.1 Vantage Lower", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "Abstract and Academic Vocabulary \u2014 B2.1 Vantage Lower", "strand": "Other"}, {"id": "de.b2_1.s.present_argument", "label": "Can present a clear argument", "color": "#14b8a6", "book": "book.b2_1", "bookName": "B2.1 Vantage Lower", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "Can present a clear argument \u2014 B2.1 Vantage Lower", "strand": "Sets & Logic"}, {"id": "de.b2_1.s.understand_extended_speech", "label": "Can understand extended speech", "color": "#14b8a6", "book": "book.b2_1", "bookName": "B2.1 Vantage Lower", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "Can understand extended speech \u2014 B2.1 Vantage Lower", "strand": "Other"}, {"id": "de.b2_1.s.write_essay", "label": "Can write a clear essay", "color": "#14b8a6", "book": "book.b2_1", "bookName": "B2.1 Vantage Lower", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "Can write a clear essay \u2014 B2.1 Vantage Lower", "strand": "Other"}, {"id": "de.b2_1.s.negotiate", "label": "Can negotiate and compromise", "color": "#14b8a6", "book": "book.b2_1", "bookName": "B2.1 Vantage Lower", "bookOrder": 7, "r": 9.600000000000001, "pages": "", "description": "Can negotiate and compromise \u2014 B2.1 Vantage Lower", "strand": "Other"}, {"id": "de.b2_2.k.mixed_conditionals", "label": "Mixed Conditionals", "color": "#06b6d4", "book": "book.b2_2", "bookName": "B2.2 Vantage Upper", "bookOrder": 8, "r": 10.4, "pages": "", "description": "Mixed Conditionals \u2014 B2.2 Vantage Upper", "strand": "Probability"}, {"id": "de.b2_2.k.subjunctive_mood", "label": "Subjunctive and Formal Structures", "color": "#06b6d4", "book": "book.b2_2", "bookName": "B2.2 Vantage Upper", "bookOrder": 8, "r": 10.4, "pages": "", "description": "Subjunctive and Formal Structures \u2014 B2.2 Vantage Upper", "strand": "Other"}, {"id": "de.b2_2.k.inversion", "label": "Inversion for Emphasis", "color": "#06b6d4", "book": "book.b2_2", "bookName": "B2.2 Vantage Upper", "bookOrder": 8, "r": 10.4, "pages": "", "description": "Inversion for Emphasis \u2014 B2.2 Vantage Upper", "strand": "Other"}, {"id": "de.b2_2.k.reported_speech_advanced", "label": "Advanced Reported Speech", "color": "#06b6d4", "book": "book.b2_2", "bookName": "B2.2 Vantage Upper", "bookOrder": 8, "r": 10.4, "pages": "", "description": "Advanced Reported Speech \u2014 B2.2 Vantage Upper", "strand": "Other"}, {"id": "de.b2_2.k.register_formality", "label": "Register and Formality", "color": "#06b6d4", "book": "book.b2_2", "bookName": "B2.2 Vantage Upper", "bookOrder": 8, "r": 10.4, "pages": "", "description": "Register and Formality \u2014 B2.2 Vantage Upper", "strand": "Other"}, {"id": "de.b2_2.k.word_formation", "label": "Word Formation (Affixes)", "color": "#06b6d4", "book": "book.b2_2", "bookName": "B2.2 Vantage Upper", "bookOrder": 8, "r": 10.4, "pages": "", "description": "Word Formation (Affixes) \u2014 B2.2 Vantage Upper", "strand": "Other"}, {"id": "de.b2_2.s.discuss_complex_topics", "label": "Can discuss complex topics fluently", "color": "#06b6d4", "book": "book.b2_2", "bookName": "B2.2 Vantage Upper", "bookOrder": 8, "r": 10.4, "pages": "", "description": "Can discuss complex topics fluently \u2014 B2.2 Vantage Upper", "strand": "Other"}, {"id": "de.b2_2.s.write_report", "label": "Can write a detailed report", "color": "#06b6d4", "book": "book.b2_2", "bookName": "B2.2 Vantage Upper", "bookOrder": 8, "r": 10.4, "pages": "", "description": "Can write a detailed report \u2014 B2.2 Vantage Upper", "strand": "Other"}, {"id": "de.b2_2.s.read_authentic_texts", "label": "Can read authentic texts with ease", "color": "#06b6d4", "book": "book.b2_2", "bookName": "B2.2 Vantage Upper", "bookOrder": 8, "r": 10.4, "pages": "", "description": "Can read authentic texts with ease \u2014 B2.2 Vantage Upper", "strand": "Other"}, {"id": "de.b2_2.s.mediate_conversation", "label": "Can mediate in a conversation", "color": "#06b6d4", "book": "book.b2_2", "bookName": "B2.2 Vantage Upper", "bookOrder": 8, "r": 10.4, "pages": "", "description": "Can mediate in a conversation \u2014 B2.2 Vantage Upper", "strand": "Other"}, {"id": "de.c1_1.k.advanced_tense_aspect", "label": "Advanced Tense and Aspect", "color": "#3b82f6", "book": "book.c1_1", "bookName": "C1.1 Effective Lower", "bookOrder": 9, "r": 11.2, "pages": "", "description": "Advanced Tense and Aspect \u2014 C1.1 Effective Lower", "strand": "Other"}, {"id": "de.c1_1.k.discourse_pragmatics", "label": "Discourse and Pragmatics", "color": "#3b82f6", "book": "book.c1_1", "bookName": "C1.1 Effective Lower", "bookOrder": 9, "r": 11.2, "pages": "", "description": "Discourse and Pragmatics \u2014 C1.1 Effective Lower", "strand": "Other"}, {"id": "de.c1_1.k.ellipsis_substitution", "label": "Ellipsis and Substitution", "color": "#3b82f6", "book": "book.c1_1", "bookName": "C1.1 Effective Lower", "bookOrder": 9, "r": 11.2, "pages": "", "description": "Ellipsis and Substitution \u2014 C1.1 Effective Lower", "strand": "Algebra"}, {"id": "de.c1_1.k.advanced_relative_clauses", "label": "Advanced Relative/Noun Clauses", "color": "#3b82f6", "book": "book.c1_1", "bookName": "C1.1 Effective Lower", "bookOrder": 9, "r": 11.2, "pages": "", "description": "Advanced Relative/Noun Clauses \u2014 C1.1 Effective Lower", "strand": "Other"}, {"id": "de.c1_1.k.specialized_vocab", "label": "Specialized Domain Vocabulary", "color": "#3b82f6", "book": "book.c1_1", "bookName": "C1.1 Effective Lower", "bookOrder": 9, "r": 11.2, "pages": "", "description": "Specialized Domain Vocabulary \u2014 C1.1 Effective Lower", "strand": "Other"}, {"id": "de.c1_1.k.figurative_language", "label": "Figurative Language", "color": "#3b82f6", "book": "book.c1_1", "bookName": "C1.1 Effective Lower", "bookOrder": 9, "r": 11.2, "pages": "", "description": "Figurative Language \u2014 C1.1 Effective Lower", "strand": "Other"}, {"id": "de.c1_1.s.present_complex_ideas", "label": "Can present complex ideas precisely", "color": "#3b82f6", "book": "book.c1_1", "bookName": "C1.1 Effective Lower", "bookOrder": 9, "r": 11.2, "pages": "", "description": "Can present complex ideas precisely \u2014 C1.1 Effective Lower", "strand": "Other"}, {"id": "de.c1_1.s.write_academic_text", "label": "Can write academic text", "color": "#3b82f6", "book": "book.c1_1", "bookName": "C1.1 Effective Lower", "bookOrder": 9, "r": 11.2, "pages": "", "description": "Can write academic text \u2014 C1.1 Effective Lower", "strand": "Other"}, {"id": "de.c1_1.s.understand_implicit", "label": "Can understand implicit meanings", "color": "#3b82f6", "book": "book.c1_1", "bookName": "C1.1 Effective Lower", "bookOrder": 9, "r": 11.2, "pages": "", "description": "Can understand implicit meanings \u2014 C1.1 Effective Lower", "strand": "Statistics"}, {"id": "de.c1_1.s.professional_discourse", "label": "Can engage in professional discourse", "color": "#3b82f6", "book": "book.c1_1", "bookName": "C1.1 Effective Lower", "bookOrder": 9, "r": 11.2, "pages": "", "description": "Can engage in professional discourse \u2014 C1.1 Effective Lower", "strand": "Other"}, {"id": "de.c1_2.k.stylistic_variation", "label": "Stylistic Variation", "color": "#6366f1", "book": "book.c1_2", "bookName": "C1.2 Effective Upper", "bookOrder": 10, "r": 12.0, "pages": "", "description": "Stylistic Variation \u2014 C1.2 Effective Upper", "strand": "Ratio & Proportion"}, {"id": "de.c1_2.k.advanced_cohesion", "label": "Advanced Cohesion Devices", "color": "#6366f1", "book": "book.c1_2", "bookName": "C1.2 Effective Upper", "bookOrder": 10, "r": 12.0, "pages": "", "description": "Advanced Cohesion Devices \u2014 C1.2 Effective Upper", "strand": "Other"}, {"id": "de.c1_2.k.sociolinguistic_awareness", "label": "Sociolinguistic Awareness", "color": "#6366f1", "book": "book.c1_2", "bookName": "C1.2 Effective Upper", "bookOrder": 10, "r": 12.0, "pages": "", "description": "Sociolinguistic Awareness \u2014 C1.2 Effective Upper", "strand": "Other"}, {"id": "de.c1_2.k.etymology_word_roots", "label": "Etymology and Word Roots", "color": "#6366f1", "book": "book.c1_2", "bookName": "C1.2 Effective Upper", "bookOrder": 10, "r": 12.0, "pages": "", "description": "Etymology and Word Roots \u2014 C1.2 Effective Upper", "strand": "Indices & Logarithms"}, {"id": "de.c1_2.k.complex_sentence_patterns", "label": "Complex Sentence Patterns", "color": "#6366f1", "book": "book.c1_2", "bookName": "C1.2 Effective Upper", "bookOrder": 10, "r": 12.0, "pages": "", "description": "Complex Sentence Patterns \u2014 C1.2 Effective Upper", "strand": "Sequences & Series"}, {"id": "de.c1_2.s.write_persuasive_text", "label": "Can write persuasive text", "color": "#6366f1", "book": "book.c1_2", "bookName": "C1.2 Effective Upper", "bookOrder": 10, "r": 12.0, "pages": "", "description": "Can write persuasive text \u2014 C1.2 Effective Upper", "strand": "Other"}, {"id": "de.c1_2.s.follow_complex_interaction", "label": "Can follow complex interaction", "color": "#6366f1", "book": "book.c1_2", "bookName": "C1.2 Effective Upper", "bookOrder": 10, "r": 12.0, "pages": "", "description": "Can follow complex interaction \u2014 C1.2 Effective Upper", "strand": "Other"}, {"id": "de.c1_2.s.reformulate_ideas", "label": "Can reformulate ideas flexibly", "color": "#6366f1", "book": "book.c1_2", "bookName": "C1.2 Effective Upper", "bookOrder": 10, "r": 12.0, "pages": "", "description": "Can reformulate ideas flexibly \u2014 C1.2 Effective Upper", "strand": "Equations"}, {"id": "de.c1_2.s.critique_text", "label": "Can critically evaluate texts", "color": "#6366f1", "book": "book.c1_2", "bookName": "C1.2 Effective Upper", "bookOrder": 10, "r": 12.0, "pages": "", "description": "Can critically evaluate texts \u2014 C1.2 Effective Upper", "strand": "Other"}, {"id": "de.c1_2.s.deliver_spontaneous_speech", "label": "Can deliver spontaneous speech", "color": "#6366f1", "book": "book.c1_2", "bookName": "C1.2 Effective Upper", "bookOrder": 10, "r": 12.0, "pages": "", "description": "Can deliver spontaneous speech \u2014 C1.2 Effective Upper", "strand": "Other"}, {"id": "de.c2_1.k.near_native_grammar", "label": "Near-native Grammatical Precision", "color": "#8b5cf6", "book": "book.c2_1", "bookName": "C2.1 Mastery Lower", "bookOrder": 11, "r": 12.8, "pages": "", "description": "Near-native Grammatical Precision \u2014 C2.1 Mastery Lower", "strand": "Measurement"}, {"id": "de.c2_1.k.pragmatic_competence", "label": "Pragmatic Competence", "color": "#8b5cf6", "book": "book.c2_1", "bookName": "C2.1 Mastery Lower", "bookOrder": 11, "r": 12.8, "pages": "", "description": "Pragmatic Competence \u2014 C2.1 Mastery Lower", "strand": "Other"}, {"id": "de.c2_1.k.literary_analysis", "label": "Literary and Textual Analysis", "color": "#8b5cf6", "book": "book.c2_1", "bookName": "C2.1 Mastery Lower", "bookOrder": 11, "r": 12.8, "pages": "", "description": "Literary and Textual Analysis \u2014 C2.1 Mastery Lower", "strand": "Other"}, {"id": "de.c2_1.k.technical_writing", "label": "Technical Writing Conventions", "color": "#8b5cf6", "book": "book.c2_1", "bookName": "C2.1 Mastery Lower", "bookOrder": 11, "r": 12.8, "pages": "", "description": "Technical Writing Conventions \u2014 C2.1 Mastery Lower", "strand": "Other"}, {"id": "de.c2_1.k.humor_wordplay", "label": "Humor, Wordplay, Cultural Nuance", "color": "#8b5cf6", "book": "book.c2_1", "bookName": "C2.1 Mastery Lower", "bookOrder": 11, "r": 12.8, "pages": "", "description": "Humor, Wordplay, Cultural Nuance \u2014 C2.1 Mastery Lower", "strand": "Other"}, {"id": "de.c2_1.s.write_publishable", "label": "Can produce publication-quality text", "color": "#8b5cf6", "book": "book.c2_1", "bookName": "C2.1 Mastery Lower", "bookOrder": 11, "r": 12.8, "pages": "", "description": "Can produce publication-quality text \u2014 C2.1 Mastery Lower", "strand": "Other"}, {"id": "de.c2_1.s.interpret_subtlety", "label": "Can interpret all subtleties", "color": "#8b5cf6", "book": "book.c2_1", "bookName": "C2.1 Mastery Lower", "bookOrder": 11, "r": 12.8, "pages": "", "description": "Can interpret all subtleties \u2014 C2.1 Mastery Lower", "strand": "Other"}, {"id": "de.c2_1.s.simultaneous_mediation", "label": "Can mediate complex situations", "color": "#8b5cf6", "book": "book.c2_1", "bookName": "C2.1 Mastery Lower", "bookOrder": 11, "r": 12.8, "pages": "", "description": "Can mediate complex situations \u2014 C2.1 Mastery Lower", "strand": "Other"}, {"id": "de.c2_1.s.adapt_any_audience", "label": "Can adapt to any audience", "color": "#8b5cf6", "book": "book.c2_1", "bookName": "C2.1 Mastery Lower", "bookOrder": 11, "r": 12.8, "pages": "", "description": "Can adapt to any audience \u2014 C2.1 Mastery Lower", "strand": "Other"}, {"id": "de.c2_1.s.extended_monologue", "label": "Can sustain extended monologue", "color": "#8b5cf6", "book": "book.c2_1", "bookName": "C2.1 Mastery Lower", "bookOrder": 11, "r": 12.8, "pages": "", "description": "Can sustain extended monologue \u2014 C2.1 Mastery Lower", "strand": "Other"}, {"id": "de.c2_2.k.language_as_system", "label": "Language as a System", "color": "#a855f7", "book": "book.c2_2", "bookName": "C2.2 Mastery Upper", "bookOrder": 12, "r": 13.600000000000001, "pages": "", "description": "Language as a System \u2014 C2.2 Mastery Upper", "strand": "Other"}, {"id": "de.c2_2.k.historical_change", "label": "Historical Language Change", "color": "#a855f7", "book": "book.c2_2", "bookName": "C2.2 Mastery Upper", "bookOrder": 12, "r": 13.600000000000001, "pages": "", "description": "Historical Language Change \u2014 C2.2 Mastery Upper", "strand": "Other"}, {"id": "de.c2_2.k.creative_mastery", "label": "Creative Language Mastery", "color": "#a855f7", "book": "book.c2_2", "bookName": "C2.2 Mastery Upper", "bookOrder": 12, "r": 13.600000000000001, "pages": "", "description": "Creative Language Mastery \u2014 C2.2 Mastery Upper", "strand": "Other"}, {"id": "de.c2_2.k.professional_specialization", "label": "Professional Specialization", "color": "#a855f7", "book": "book.c2_2", "bookName": "C2.2 Mastery Upper", "bookOrder": 12, "r": 13.600000000000001, "pages": "", "description": "Professional Specialization \u2014 C2.2 Mastery Upper", "strand": "Other"}, {"id": "de.c2_2.s.native_fluency", "label": "Native-equivalent fluency", "color": "#a855f7", "book": "book.c2_2", "bookName": "C2.2 Mastery Upper", "bookOrder": 12, "r": 13.600000000000001, "pages": "", "description": "Native-equivalent fluency \u2014 C2.2 Mastery Upper", "strand": "Other"}, {"id": "de.c2_2.s.write_any_genre", "label": "Can write in any genre", "color": "#a855f7", "book": "book.c2_2", "bookName": "C2.2 Mastery Upper", "bookOrder": 12, "r": 13.600000000000001, "pages": "", "description": "Can write in any genre \u2014 C2.2 Mastery Upper", "strand": "Other"}, {"id": "de.c2_2.s.teach_language", "label": "Can teach the language", "color": "#a855f7", "book": "book.c2_2", "bookName": "C2.2 Mastery Upper", "bookOrder": 12, "r": 13.600000000000001, "pages": "", "description": "Can teach the language \u2014 C2.2 Mastery Upper", "strand": "Other"}, {"id": "de.c2_2.s.translate_interpret", "label": "Can translate/interpret professionally", "color": "#a855f7", "book": "book.c2_2", "bookName": "C2.2 Mastery Upper", "bookOrder": 12, "r": 13.600000000000001, "pages": "", "description": "Can translate/interpret professionally \u2014 C2.2 Mastery Upper", "strand": "Other"}, {"id": "de.a1_1.k.noun_gender_cases", "label": "Noun Gender and Cases (Nominative)", "color": "#ef4444", "book": "book.a1_1", "bookName": "A1.1 Breakthrough Lower", "bookOrder": 1, "r": 4.8, "pages": "", "description": "Noun Gender and Cases (Nominative) \u2014 A1.1 Breakthrough Lower", "strand": "Other"}, {"id": "de.a1_2.k.accusative_case", "label": "Accusative Case", "color": "#f97316", "book": "book.a1_2", "bookName": "A1.2 Breakthrough Upper", "bookOrder": 2, "r": 5.6, "pages": "", "description": "Accusative Case \u2014 A1.2 Breakthrough Upper", "strand": "Other"}, {"id": "de.a2_1.k.dative_case", "label": "Dative Case", "color": "#f59e0b", "book": "book.a2_1", "bookName": "A2.1 Waystage Lower", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Dative Case \u2014 A2.1 Waystage Lower", "strand": "Other"}, {"id": "de.a2_1.k.separable_verbs", "label": "Separable Verbs", "color": "#f59e0b", "book": "book.a2_1", "bookName": "A2.1 Waystage Lower", "bookOrder": 3, "r": 6.4, "pages": "", "description": "Separable Verbs \u2014 A2.1 Waystage Lower", "strand": "Other"}, {"id": "de.b1_1.k.genitive_case", "label": "Genitive Case", "color": "#84cc16", "book": "book.b1_1", "bookName": "B1.1 Threshold Lower", "bookOrder": 5, "r": 8.0, "pages": "", "description": "Genitive Case \u2014 B1.1 Threshold Lower", "strand": "Other"}, {"id": "de.b1_2.k.konjunktiv_ii", "label": "Konjunktiv II (Subjunctive)", "color": "#22c55e", "book": "book.b1_2", "bookName": "B1.2 Threshold Upper", "bookOrder": 6, "r": 8.8, "pages": "", "description": "Konjunktiv II (Subjunctive) \u2014 B1.2 Threshold Upper", "strand": "Other"}];
+const rawEdges = [{"source": "de.a1_1.k.greetings_farewells", "target": "de.a1_1.s.introduce_self"}, {"source": "de.a1_1.k.personal_pronouns", "target": "de.a1_1.s.introduce_self"}, {"source": "de.a1_1.k.present_simple_be", "target": "de.a1_1.s.ask_yes_no"}, {"source": "de.a1_1.k.basic_nouns", "target": "de.a1_1.s.understand_simple_instructions"}, {"source": "de.a1_1.k.alphabet_phonics", "target": "de.a1_1.s.copy_words"}, {"source": "de.a1_1.k.numbers_1_20", "target": "de.a1_1.s.understand_simple_instructions"}, {"source": "de.a1_2.k.present_simple_regular", "target": "de.a1_2.s.describe_objects_people"}, {"source": "de.a1_2.k.basic_adjectives", "target": "de.a1_2.s.describe_objects_people"}, {"source": "de.a1_2.k.prepositions_place", "target": "de.a1_2.s.ask_where_when"}, {"source": "de.a1_2.k.food_drink_vocab", "target": "de.a1_2.s.order_food"}, {"source": "de.a1_2.k.numbers_dates_time", "target": "de.a1_2.s.fill_simple_form"}, {"source": "de.a1_2.k.articles_demonstratives", "target": "de.a1_2.s.describe_objects_people"}, {"source": "de.a2_1.k.past_simple", "target": "de.a2_1.s.narrate_past_events"}, {"source": "de.a2_1.k.daily_routine_vocab", "target": "de.a2_1.s.narrate_past_events"}, {"source": "de.a2_1.k.conjunctions_basic", "target": "de.a2_1.s.write_short_message"}, {"source": "de.a2_1.k.countable_uncountable", "target": "de.a2_1.s.understand_short_text"}, {"source": "de.a2_1.k.possessives", "target": "de.a2_1.s.write_short_message"}, {"source": "de.a2_1.k.adverbs_frequency", "target": "de.a2_1.s.make_suggestions"}, {"source": "de.a2_2.k.future_forms", "target": "de.a2_2.s.make_plans"}, {"source": "de.a2_2.k.comparatives_superlatives", "target": "de.a2_2.s.describe_experiences"}, {"source": "de.a2_2.k.travel_directions_vocab", "target": "de.a2_2.s.give_directions"}, {"source": "de.a2_2.k.imperative_mood", "target": "de.a2_2.s.give_directions"}, {"source": "de.a2_2.k.modal_verbs_basic", "target": "de.a2_2.s.make_plans"}, {"source": "de.a2_2.k.object_pronouns", "target": "de.a2_2.s.write_personal_letter"}, {"source": "de.b1_1.k.present_perfect", "target": "de.b1_1.s.express_opinions"}, {"source": "de.b1_1.k.connectors_discourse", "target": "de.b1_1.s.write_structured_paragraph"}, {"source": "de.b1_1.k.passive_voice", "target": "de.b1_1.s.understand_main_points"}, {"source": "de.b1_1.k.first_conditional", "target": "de.b1_1.s.handle_travel_situations"}, {"source": "de.b1_1.k.phrasal_verbs", "target": "de.b1_1.s.understand_main_points"}, {"source": "de.b1_1.k.relative_clauses", "target": "de.b1_1.s.write_structured_paragraph"}, {"source": "de.b1_2.k.past_perfect", "target": "de.b1_2.s.tell_story_detail"}, {"source": "de.b1_2.k.reported_speech_basic", "target": "de.b1_2.s.summarize_text"}, {"source": "de.b1_2.k.gerunds_infinitives", "target": "de.b1_2.s.write_formal_email"}, {"source": "de.b1_2.k.work_education_vocab", "target": "de.b1_2.s.participate_discussion"}, {"source": "de.b1_2.k.quantifiers", "target": "de.b1_2.s.participate_discussion"}, {"source": "de.b2_1.k.third_conditional", "target": "de.b2_1.s.present_argument"}, {"source": "de.b2_1.k.modal_perfects", "target": "de.b2_1.s.present_argument"}, {"source": "de.b2_1.k.collocations_idioms", "target": "de.b2_1.s.negotiate"}, {"source": "de.b2_1.k.abstract_vocab", "target": "de.b2_1.s.write_essay"}, {"source": "de.b2_1.k.cleft_sentences", "target": "de.b2_1.s.understand_extended_speech"}, {"source": "de.b2_1.k.passive_advanced", "target": "de.b2_1.s.write_essay"}, {"source": "de.b2_2.k.mixed_conditionals", "target": "de.b2_2.s.discuss_complex_topics"}, {"source": "de.b2_2.k.register_formality", "target": "de.b2_2.s.write_report"}, {"source": "de.b2_2.k.word_formation", "target": "de.b2_2.s.read_authentic_texts"}, {"source": "de.b2_2.k.inversion", "target": "de.b2_2.s.discuss_complex_topics"}, {"source": "de.b2_2.k.subjunctive_mood", "target": "de.b2_2.s.discuss_complex_topics"}, {"source": "de.b2_2.k.reported_speech_advanced", "target": "de.b2_2.s.mediate_conversation"}, {"source": "de.c1_1.k.discourse_pragmatics", "target": "de.c1_1.s.professional_discourse"}, {"source": "de.c1_1.k.figurative_language", "target": "de.c1_1.s.understand_implicit"}, {"source": "de.c1_1.k.specialized_vocab", "target": "de.c1_1.s.write_academic_text"}, {"source": "de.c1_1.k.advanced_tense_aspect", "target": "de.c1_1.s.present_complex_ideas"}, {"source": "de.c1_1.k.ellipsis_substitution", "target": "de.c1_1.s.professional_discourse"}, {"source": "de.c1_1.k.advanced_relative_clauses", "target": "de.c1_1.s.write_academic_text"}, {"source": "de.c1_2.k.stylistic_variation", "target": "de.c1_2.s.write_persuasive_text"}, {"source": "de.c1_2.k.advanced_cohesion", "target": "de.c1_2.s.write_persuasive_text"}, {"source": "de.c1_2.k.sociolinguistic_awareness", "target": "de.c1_2.s.follow_complex_interaction"}, {"source": "de.c1_2.k.etymology_word_roots", "target": "de.c1_2.s.critique_text"}, {"source": "de.c1_2.k.complex_sentence_patterns", "target": "de.c1_2.s.deliver_spontaneous_speech"}, {"source": "de.c2_1.k.pragmatic_competence", "target": "de.c2_1.s.adapt_any_audience"}, {"source": "de.c2_1.k.literary_analysis", "target": "de.c2_1.s.interpret_subtlety"}, {"source": "de.c2_1.k.humor_wordplay", "target": "de.c2_1.s.interpret_subtlety"}, {"source": "de.c2_1.k.technical_writing", "target": "de.c2_1.s.write_publishable"}, {"source": "de.c2_1.k.near_native_grammar", "target": "de.c2_1.s.extended_monologue"}, {"source": "de.c2_2.k.creative_mastery", "target": "de.c2_2.s.write_any_genre"}, {"source": "de.c2_2.k.language_as_system", "target": "de.c2_2.s.teach_language"}, {"source": "de.c2_2.k.historical_change", "target": "de.c2_2.s.teach_language"}, {"source": "de.c2_2.k.professional_specialization", "target": "de.c2_2.s.native_fluency"}, {"source": "de.a1_1.k.present_simple_be", "target": "de.a1_2.k.present_simple_regular"}, {"source": "de.a1_1.k.numbers_1_20", "target": "de.a1_2.k.numbers_dates_time"}, {"source": "de.a1_1.k.basic_nouns", "target": "de.a1_2.k.articles_demonstratives"}, {"source": "de.a1_1.k.basic_nouns", "target": "de.a2_1.k.countable_uncountable"}, {"source": "de.a1_1.k.personal_pronouns", "target": "de.a2_1.k.possessives"}, {"source": "de.a1_1.k.personal_pronouns", "target": "de.a2_2.k.object_pronouns"}, {"source": "de.a1_2.k.present_simple_regular", "target": "de.a2_1.k.past_simple"}, {"source": "de.a1_2.k.present_simple_regular", "target": "de.a2_1.k.adverbs_frequency"}, {"source": "de.a1_2.k.basic_adjectives", "target": "de.a2_2.k.comparatives_superlatives"}, {"source": "de.a1_2.k.prepositions_place", "target": "de.a2_2.k.travel_directions_vocab"}, {"source": "de.a2_1.k.past_simple", "target": "de.a2_2.k.future_forms"}, {"source": "de.a2_1.k.conjunctions_basic", "target": "de.b1_1.k.connectors_discourse"}, {"source": "de.a2_2.k.modal_verbs_basic", "target": "de.b2_1.k.modal_perfects"}, {"source": "de.a2_2.k.future_forms", "target": "de.b1_1.k.first_conditional"}, {"source": "de.a2_1.k.past_simple", "target": "de.b1_1.k.present_perfect"}, {"source": "de.b1_1.k.present_perfect", "target": "de.b1_2.k.past_perfect"}, {"source": "de.b1_1.k.first_conditional", "target": "de.b1_2.k.second_conditional"}, {"source": "de.b1_1.k.passive_voice", "target": "de.b2_1.k.passive_advanced"}, {"source": "de.b1_1.k.relative_clauses", "target": "de.c1_1.k.advanced_relative_clauses"}, {"source": "de.b1_2.k.second_conditional", "target": "de.b2_1.k.third_conditional"}, {"source": "de.b1_2.k.reported_speech_basic", "target": "de.b2_2.k.reported_speech_advanced"}, {"source": "de.b2_1.k.third_conditional", "target": "de.b2_2.k.mixed_conditionals"}, {"source": "de.b2_1.k.collocations_idioms", "target": "de.c2_1.k.humor_wordplay"}, {"source": "de.b2_1.k.abstract_vocab", "target": "de.c1_1.k.specialized_vocab"}, {"source": "de.b2_2.k.register_formality", "target": "de.c1_1.k.discourse_pragmatics"}, {"source": "de.b2_2.k.word_formation", "target": "de.c1_2.k.etymology_word_roots"}, {"source": "de.b2_2.k.subjunctive_mood", "target": "de.c1_1.k.advanced_tense_aspect"}, {"source": "de.b2_2.k.inversion", "target": "de.c1_2.k.complex_sentence_patterns"}, {"source": "de.c1_1.k.figurative_language", "target": "de.c2_1.k.literary_analysis"}, {"source": "de.c1_1.k.discourse_pragmatics", "target": "de.c2_1.k.pragmatic_competence"}, {"source": "de.c1_2.k.sociolinguistic_awareness", "target": "de.c2_2.k.historical_change"}, {"source": "de.c1_2.k.stylistic_variation", "target": "de.c2_2.k.creative_mastery"}, {"source": "de.c2_1.k.technical_writing", "target": "de.c2_2.k.professional_specialization"}, {"source": "de.c2_1.k.near_native_grammar", "target": "de.c2_2.k.language_as_system"}, {"source": "de.a1_1.s.copy_words", "target": "de.a1_2.s.fill_simple_form"}, {"source": "de.a1_1.s.introduce_self", "target": "de.a1_2.s.describe_objects_people"}, {"source": "de.a1_2.s.describe_objects_people", "target": "de.a2_2.s.describe_experiences"}, {"source": "de.a1_2.s.order_food", "target": "de.a2_1.s.make_suggestions"}, {"source": "de.a2_1.s.write_short_message", "target": "de.a2_2.s.write_personal_letter"}, {"source": "de.a2_1.s.understand_short_text", "target": "de.b1_1.s.understand_main_points"}, {"source": "de.a2_2.s.write_personal_letter", "target": "de.b1_2.s.write_formal_email"}, {"source": "de.b1_1.s.express_opinions", "target": "de.b1_2.s.participate_discussion"}, {"source": "de.b1_1.s.write_structured_paragraph", "target": "de.b2_1.s.write_essay"}, {"source": "de.b1_2.s.tell_story_detail", "target": "de.b2_2.s.discuss_complex_topics"}, {"source": "de.b1_2.s.summarize_text", "target": "de.b2_2.s.read_authentic_texts"}, {"source": "de.b2_1.s.present_argument", "target": "de.b2_2.s.discuss_complex_topics"}, {"source": "de.b2_1.s.write_essay", "target": "de.b2_2.s.write_report"}, {"source": "de.b2_1.s.negotiate", "target": "de.b2_2.s.mediate_conversation"}, {"source": "de.b2_2.s.write_report", "target": "de.c1_1.s.write_academic_text"}, {"source": "de.b2_2.s.discuss_complex_topics", "target": "de.c1_1.s.present_complex_ideas"}, {"source": "de.b1_1.s.understand_main_points", "target": "de.b2_1.s.understand_extended_speech"}, {"source": "de.b2_1.s.understand_extended_speech", "target": "de.c1_1.s.understand_implicit"}, {"source": "de.c1_1.s.write_academic_text", "target": "de.c1_2.s.write_persuasive_text"}, {"source": "de.c1_1.s.present_complex_ideas", "target": "de.c1_2.s.deliver_spontaneous_speech"}, {"source": "de.c1_1.s.understand_implicit", "target": "de.c1_2.s.critique_text"}, {"source": "de.c1_2.s.write_persuasive_text", "target": "de.c2_1.s.write_publishable"}, {"source": "de.c1_2.s.deliver_spontaneous_speech", "target": "de.c2_1.s.extended_monologue"}, {"source": "de.c1_2.s.reformulate_ideas", "target": "de.c2_1.s.simultaneous_mediation"}, {"source": "de.c2_1.s.write_publishable", "target": "de.c2_2.s.write_any_genre"}, {"source": "de.c2_1.s.adapt_any_audience", "target": "de.c2_2.s.teach_language"}, {"source": "de.c2_1.s.interpret_subtlety", "target": "de.c2_2.s.translate_interpret"}, {"source": "de.c1_2.s.follow_complex_interaction", "target": "de.c2_1.s.simultaneous_mediation"}, {"source": "de.c2_1.s.extended_monologue", "target": "de.c2_2.s.native_fluency"}, {"source": "de.a1_1.k.basic_nouns", "target": "de.a1_1.k.noun_gender_cases"}, {"source": "de.a1_1.k.noun_gender_cases", "target": "de.a1_2.k.accusative_case"}, {"source": "de.a1_2.k.accusative_case", "target": "de.a2_1.k.dative_case"}, {"source": "de.a1_2.k.present_simple_regular", "target": "de.a2_1.k.separable_verbs"}, {"source": "de.a2_1.k.dative_case", "target": "de.b1_1.k.genitive_case"}, {"source": "de.b1_2.k.second_conditional", "target": "de.b1_2.k.konjunktiv_ii"}, {"source": "de.a1_1.k.noun_gender_cases", "target": "de.a1_2.s.describe_objects_people"}, {"source": "de.a2_1.k.separable_verbs", "target": "de.a2_1.s.narrate_past_events"}];
+const booksData = [{"id": "book.a1_1", "name": "A1.1 Breakthrough Lower", "color": "#ef4444", "order": 1}, {"id": "book.a1_2", "name": "A1.2 Breakthrough Upper", "color": "#f97316", "order": 2}, {"id": "book.a2_1", "name": "A2.1 Waystage Lower", "color": "#f59e0b", "order": 3}, {"id": "book.a2_2", "name": "A2.2 Waystage Upper", "color": "#eab308", "order": 4}, {"id": "book.b1_1", "name": "B1.1 Threshold Lower", "color": "#84cc16", "order": 5}, {"id": "book.b1_2", "name": "B1.2 Threshold Upper", "color": "#22c55e", "order": 6}, {"id": "book.b2_1", "name": "B2.1 Vantage Lower", "color": "#14b8a6", "order": 7}, {"id": "book.b2_2", "name": "B2.2 Vantage Upper", "color": "#06b6d4", "order": 8}, {"id": "book.c1_1", "name": "C1.1 Effective Lower", "color": "#3b82f6", "order": 9}, {"id": "book.c1_2", "name": "C1.2 Effective Upper", "color": "#6366f1", "order": 10}, {"id": "book.c2_1", "name": "C2.1 Mastery Lower", "color": "#8b5cf6", "order": 11}, {"id": "book.c2_2", "name": "C2.2 Mastery Upper", "color": "#a855f7", "order": 12}];
+const strandsData = [{"name": "Other", "color": "#ef4444", "nodeIds": ["de.a1_1.k.alphabet_phonics", "de.a1_1.k.greetings_farewells", "de.a1_1.k.personal_pronouns", "de.a1_1.k.present_simple_be", "de.a1_1.k.basic_nouns", "de.a1_1.s.introduce_self", "de.a1_1.s.understand_simple_instructions", "de.a1_1.s.ask_yes_no", "de.a1_1.s.copy_words", "de.a1_2.k.present_simple_regular", "de.a1_2.k.articles_demonstratives", "de.a1_2.k.basic_adjectives", "de.a1_2.k.prepositions_place", "de.a1_2.k.food_drink_vocab", "de.a1_2.s.describe_objects_people", "de.a1_2.s.ask_where_when", "de.a1_2.s.order_food", "de.a1_2.s.fill_simple_form", "de.a2_1.k.past_simple", "de.a2_1.k.possessives", "de.a2_1.k.conjunctions_basic", "de.a2_1.k.daily_routine_vocab", "de.a2_1.k.countable_uncountable", "de.a2_1.s.make_suggestions", "de.a2_1.s.write_short_message", "de.a2_1.s.understand_short_text", "de.a2_2.k.future_forms", "de.a2_2.k.comparatives_superlatives", "de.a2_2.k.modal_verbs_basic", "de.a2_2.k.object_pronouns", "de.a2_2.k.travel_directions_vocab", "de.a2_2.k.imperative_mood", "de.a2_2.s.give_directions", "de.a2_2.s.make_plans", "de.a2_2.s.write_personal_letter", "de.a2_2.s.describe_experiences", "de.b1_1.k.present_perfect", "de.b1_1.k.relative_clauses", "de.b1_1.k.passive_voice", "de.b1_1.k.phrasal_verbs", "de.b1_1.k.connectors_discourse", "de.b1_1.s.express_opinions", "de.b1_1.s.understand_main_points", "de.b1_1.s.handle_travel_situations", "de.b1_2.k.past_perfect", "de.b1_2.k.reported_speech_basic", "de.b1_2.k.gerunds_infinitives", "de.b1_2.k.quantifiers", "de.b1_2.k.work_education_vocab", "de.b1_2.s.tell_story_detail", "de.b1_2.s.write_formal_email", "de.b1_2.s.summarize_text", "de.b1_2.s.participate_discussion", "de.b2_1.k.modal_perfects", "de.b2_1.k.cleft_sentences", "de.b2_1.k.collocations_idioms", "de.b2_1.k.abstract_vocab", "de.b2_1.s.understand_extended_speech", "de.b2_1.s.write_essay", "de.b2_1.s.negotiate", "de.b2_2.k.subjunctive_mood", "de.b2_2.k.inversion", "de.b2_2.k.reported_speech_advanced", "de.b2_2.k.register_formality", "de.b2_2.k.word_formation", "de.b2_2.s.discuss_complex_topics", "de.b2_2.s.write_report", "de.b2_2.s.read_authentic_texts", "de.b2_2.s.mediate_conversation", "de.c1_1.k.advanced_tense_aspect", "de.c1_1.k.discourse_pragmatics", "de.c1_1.k.advanced_relative_clauses", "de.c1_1.k.specialized_vocab", "de.c1_1.k.figurative_language", "de.c1_1.s.present_complex_ideas", "de.c1_1.s.write_academic_text", "de.c1_1.s.professional_discourse", "de.c1_2.k.advanced_cohesion", "de.c1_2.k.sociolinguistic_awareness", "de.c1_2.s.write_persuasive_text", "de.c1_2.s.follow_complex_interaction", "de.c1_2.s.critique_text", "de.c1_2.s.deliver_spontaneous_speech", "de.c2_1.k.pragmatic_competence", "de.c2_1.k.literary_analysis", "de.c2_1.k.technical_writing", "de.c2_1.k.humor_wordplay", "de.c2_1.s.write_publishable", "de.c2_1.s.interpret_subtlety", "de.c2_1.s.simultaneous_mediation", "de.c2_1.s.adapt_any_audience", "de.c2_1.s.extended_monologue", "de.c2_2.k.language_as_system", "de.c2_2.k.historical_change", "de.c2_2.k.creative_mastery", "de.c2_2.k.professional_specialization", "de.c2_2.s.native_fluency", "de.c2_2.s.write_any_genre", "de.c2_2.s.teach_language", "de.c2_2.s.translate_interpret", "de.a1_1.k.noun_gender_cases", "de.a1_2.k.accusative_case", "de.a2_1.k.dative_case", "de.a2_1.k.separable_verbs", "de.b1_1.k.genitive_case", "de.b1_2.k.konjunktiv_ii"]}, {"name": "Numbers & Counting", "color": "#f97316", "nodeIds": ["de.a1_1.k.numbers_1_20", "de.a1_2.k.numbers_dates_time"]}, {"name": "Statistics", "color": "#f59e0b", "nodeIds": ["de.a2_1.k.adverbs_frequency", "de.c1_1.s.understand_implicit"]}, {"name": "Ratio & Proportion", "color": "#eab308", "nodeIds": ["de.a2_1.s.narrate_past_events", "de.c1_2.k.stylistic_variation"]}, {"name": "Probability", "color": "#84cc16", "nodeIds": ["de.b1_1.k.first_conditional", "de.b1_2.k.second_conditional", "de.b2_1.k.third_conditional", "de.b2_2.k.mixed_conditionals"]}, {"name": "Functions & Graphs", "color": "#22c55e", "nodeIds": ["de.b1_1.s.write_structured_paragraph"]}, {"name": "Geometry", "color": "#10b981", "nodeIds": ["de.b2_1.k.passive_advanced"]}, {"name": "Sets & Logic", "color": "#14b8a6", "nodeIds": ["de.b2_1.s.present_argument"]}, {"name": "Algebra", "color": "#06b6d4", "nodeIds": ["de.c1_1.k.ellipsis_substitution"]}, {"name": "Indices & Logarithms", "color": "#0ea5e9", "nodeIds": ["de.c1_2.k.etymology_word_roots"]}, {"name": "Sequences & Series", "color": "#3b82f6", "nodeIds": ["de.c1_2.k.complex_sentence_patterns"]}, {"name": "Equations", "color": "#6366f1", "nodeIds": ["de.c1_2.s.reformulate_ideas"]}, {"name": "Measurement", "color": "#8b5cf6", "nodeIds": ["de.c2_1.k.near_native_grammar"]}];
+const bookGroupsData = {"Other": [{"id": "book.a1_1", "name": "A1.1 Breakthrough Lower", "color": "#ef4444", "order": 1}, {"id": "book.a1_2", "name": "A1.2 Breakthrough Upper", "color": "#f97316", "order": 2}, {"id": "book.a2_1", "name": "A2.1 Waystage Lower", "color": "#f59e0b", "order": 3}, {"id": "book.a2_2", "name": "A2.2 Waystage Upper", "color": "#eab308", "order": 4}, {"id": "book.b1_1", "name": "B1.1 Threshold Lower", "color": "#84cc16", "order": 5}, {"id": "book.b1_2", "name": "B1.2 Threshold Upper", "color": "#22c55e", "order": 6}, {"id": "book.b2_1", "name": "B2.1 Vantage Lower", "color": "#14b8a6", "order": 7}, {"id": "book.b2_2", "name": "B2.2 Vantage Upper", "color": "#06b6d4", "order": 8}, {"id": "book.c1_1", "name": "C1.1 Effective Lower", "color": "#3b82f6", "order": 9}, {"id": "book.c1_2", "name": "C1.2 Effective Upper", "color": "#6366f1", "order": 10}, {"id": "book.c2_1", "name": "C2.1 Mastery Lower", "color": "#8b5cf6", "order": 11}, {"id": "book.c2_2", "name": "C2.2 Mastery Upper", "color": "#a855f7", "order": 12}]};
+
+// State
+const activeBooks = new Set(booksData.map(b => b.id));
+const activeStrands = new Set(strandsData.map(s => s.name));
+let filterMode = 'grades'; // 'grades' or 'topics'
+let selectedNode = null;
+
+// D3 setup
+const container = document.getElementById('graph-container');
+const svg = d3.select('#svg');
+const g = svg.append('g');
+
+// Arrow marker
+svg.append('defs').append('marker')
+  .attr('id', 'arrow')
+  .attr('viewBox', '0 -4 8 8')
+  .attr('refX', 18)
+  .attr('refY', 0)
+  .attr('markerWidth', 5)
+  .attr('markerHeight', 5)
+  .attr('orient', 'auto')
+  .append('path')
+  .attr('d', 'M0,-3L7,0L0,3')
+  .attr('fill', '#6b6590');
+
+// Glow marker for highlighted
+svg.select('defs').append('marker')
+  .attr('id', 'arrow-hl')
+  .attr('viewBox', '0 -4 8 8')
+  .attr('refX', 18)
+  .attr('refY', 0)
+  .attr('markerWidth', 6)
+  .attr('markerHeight', 6)
+  .attr('orient', 'auto')
+  .append('path')
+  .attr('d', 'M0,-3L7,0L0,3')
+  .attr('fill', '#ffc857');
+
+// Build graph data
+const nodes = rawNodes.map(d => ({...d}));
+const edges = rawEdges.map(d => ({...d}));
+
+// Index
+const nodeMap = {};
+nodes.forEach(n => { nodeMap[n.id] = n; });
+
+// Links
+const linkGroup = g.append('g').attr('class', 'links');
+const nodeGroup = g.append('g').attr('class', 'nodes');
+const labelGroup = g.append('g').attr('class', 'labels');
+
+let linkEls, nodeEls, labelEls;
+
+function renderGraph() {
+  // Filter
+  let visibleIds;
+  if (filterMode === 'topics') {
+    visibleIds = new Set(nodes.filter(n => activeStrands.has(n.strand)).map(n => n.id));
+  } else {
+    visibleIds = new Set(nodes.filter(n => activeBooks.has(n.book)).map(n => n.id));
+  }
+  const vNodes = nodes.filter(n => visibleIds.has(n.id));
+  const vEdges = edges.filter(e => {
+    const sid = typeof e.source === 'object' ? e.source.id : e.source;
+    const tid = typeof e.target === 'object' ? e.target.id : e.target;
+    return visibleIds.has(sid) && visibleIds.has(tid);
+  });
+
+  // Links
+  linkEls = linkGroup.selectAll('line').data(vEdges, d => {
+    const s = typeof d.source === 'object' ? d.source.id : d.source;
+    const t = typeof d.target === 'object' ? d.target.id : d.target;
+    return s + '->' + t;
+  });
+  linkEls.exit().remove();
+  linkEls = linkEls.enter().append('line')
+    .attr('stroke', '#5a5480')
+    .attr('stroke-width', 0.7)
+    .attr('stroke-opacity', 0.5)
+    .attr('marker-end', 'url(#arrow)')
+    .merge(linkEls);
+
+  // Nodes
+  nodeEls = nodeGroup.selectAll('circle').data(vNodes, d => d.id);
+  nodeEls.exit().remove();
+  nodeEls = nodeEls.enter().append('circle')
+    .attr('r', d => d.r)
+    .attr('fill', d => d.color)
+    .attr('fill-opacity', 0.85)
+    .attr('stroke', 'none')
+    .attr('stroke-width', 2)
+    .attr('cursor', 'pointer')
+    .on('click', (ev, d) => { ev.stopPropagation(); selectNode(d); })
+    .call(d3.drag()
+      .on('start', dragStart)
+      .on('drag', dragging)
+      .on('end', dragEnd))
+    .merge(nodeEls)
+    .attr('fill', d => d.color);
+
+  // Labels
+  labelEls = labelGroup.selectAll('text').data(vNodes, d => d.id);
+  labelEls.exit().remove();
+  labelEls = labelEls.enter().append('text')
+    .attr('font-size', d => Math.max(6, d.r * 0.85))
+    .attr('font-family', "'DM Sans', sans-serif")
+    .attr('fill', '#a09cac')
+    .attr('text-anchor', 'middle')
+    .attr('dy', d => d.r + 10)
+    .attr('pointer-events', 'none')
+    .text(d => d.label.length > 22 ? d.label.slice(0, 20) + '…' : d.label)
+    .merge(labelEls);
+
+  // Update simulation
+  simulation.nodes(vNodes);
+  simulation.force('link').links(vEdges);
+  simulation.alpha(0.6).restart();
+
+  updateStats(vNodes.length, vEdges.length);
+}
+
+// Force simulation
+const simulation = d3.forceSimulation()
+  .force('link', d3.forceLink().id(d => d.id).distance(55).strength(0.3))
+  .force('charge', d3.forceManyBody().strength(-120).distanceMax(400))
+  .force('center', d3.forceCenter())
+  .force('collide', d3.forceCollide().radius(10).strength(0.7))
+  .force('x', d3.forceX().strength(0.02))
+  .force('y', d3.forceY().strength(0.02))
+  .alphaDecay(0.015)
+  .velocityDecay(0.35)
+  .on('tick', ticked);
+
+function ticked() {
+  linkEls
+    .attr('x1', d => d.source.x)
+    .attr('y1', d => d.source.y)
+    .attr('x2', d => d.target.x)
+    .attr('y2', d => d.target.y);
+  nodeEls
+    .attr('cx', d => d.x)
+    .attr('cy', d => d.y);
+  labelEls
+    .attr('x', d => d.x)
+    .attr('y', d => d.y);
+}
+
+// Zoom
+const zoom = d3.zoom()
+  .scaleExtent([0.05, 8])
+  .on('zoom', (ev) => { g.attr('transform', ev.transform); });
+svg.call(zoom);
+
+// Resize
+function resize() {
+  const w = container.clientWidth;
+  const h = container.clientHeight;
+  svg.attr('viewBox', [-w/2, -h/2, w, h]);
+  simulation.force('center', d3.forceCenter(0, 0));
+}
+window.addEventListener('resize', resize);
+resize();
+
+// Drag
+function dragStart(ev, d) {
+  if (!ev.active) simulation.alphaTarget(0.3).restart();
+  d.fx = d.x; d.fy = d.y;
+}
+function dragging(ev, d) {
+  d.fx = ev.x; d.fy = ev.y;
+}
+function dragEnd(ev, d) {
+  if (!ev.active) simulation.alphaTarget(0);
+  d.fx = null; d.fy = null;
+}
+
+// Selection & highlighting
+function selectNode(d) {
+  selectedNode = d;
+  const neighbors = new Set([d.id]);
+  const prereqEdges = new Set();
+  const leadsEdges = new Set();
+
+  edges.forEach(e => {
+    const sid = typeof e.source === 'object' ? e.source.id : e.source;
+    const tid = typeof e.target === 'object' ? e.target.id : e.target;
+    if (sid === d.id) { neighbors.add(tid); leadsEdges.add(sid + '->' + tid); }
+    if (tid === d.id) { neighbors.add(sid); prereqEdges.add(sid + '->' + tid); }
+  });
+
+  nodeEls.attr('fill-opacity', n => neighbors.has(n.id) ? 1 : 0.06)
+    .attr('stroke', n => n.id === d.id ? '#ffc857' : 'none')
+    .attr('stroke-width', n => n.id === d.id ? 2.5 : 0);
+  labelEls.attr('fill', n => neighbors.has(n.id) ? '#e8e4dc' : '#1a1830')
+    .attr('font-weight', n => n.id === d.id ? 600 : 400);
+  linkEls.attr('stroke', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      if (prereqEdges.has(k)) return '#e07a5f';
+      if (leadsEdges.has(k)) return '#81b29a';
+      return '#5a5480';
+    })
+    .attr('stroke-opacity', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      return (prereqEdges.has(k) || leadsEdges.has(k)) ? 0.9 : 0.04;
+    })
+    .attr('stroke-width', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      return (prereqEdges.has(k) || leadsEdges.has(k)) ? 1.8 : 0.7;
+    })
+    .attr('marker-end', e => {
+      const k = (typeof e.source === 'object' ? e.source.id : e.source) + '->' + (typeof e.target === 'object' ? e.target.id : e.target);
+      return (prereqEdges.has(k) || leadsEdges.has(k)) ? 'url(#arrow-hl)' : 'url(#arrow)';
+    });
+
+  showDetail(d, prereqEdges, leadsEdges);
+}
+
+function clearSelection() {
+  selectedNode = null;
+  nodeEls.attr('fill-opacity', 0.85).attr('stroke', 'none');
+  labelEls.attr('fill', '#a09cac').attr('font-weight', 400);
+  linkEls.attr('stroke', '#5a5480').attr('stroke-opacity', 0.5).attr('stroke-width', 0.7).attr('marker-end', 'url(#arrow)');
+  document.getElementById('detail').classList.remove('open');
+  document.getElementById('graph-container').classList.remove('detail-open');
+}
+
+svg.on('click', () => clearSelection());
+
+// Detail panel
+function showDetail(d, prereqEdges, leadsEdges) {
+  const panel = document.getElementById('detail');
+  const content = document.getElementById('detail-content');
+  document.getElementById('graph-container').classList.add('detail-open');
+
+  const prereqs = [];
+  const leads = [];
+  edges.forEach(e => {
+    const sid = typeof e.source === 'object' ? e.source.id : e.source;
+    const tid = typeof e.target === 'object' ? e.target.id : e.target;
+    if (tid === d.id && nodeMap[sid]) prereqs.push(nodeMap[sid]);
+    if (sid === d.id && nodeMap[tid]) leads.push(nodeMap[tid]);
+  });
+
+  content.innerHTML = `
+    <div class="detail-badge" style="background:${d.color}18;color:${d.color};border:1px solid ${d.color}30">
+      <span style="width:5px;height:5px;border-radius:50%;background:${d.color};display:inline-block"></span>
+      ${d.bookName}
+    </div>
+    ${d.pages ? `<div class="detail-pages">p. ${d.pages}</div>` : ''}
+    <div class="detail-title">${d.label}</div>
+    ${prereqs.length ? `
+      <div class="conn-section">
+        <div class="conn-head prereq">▲ Prerequisites (${prereqs.length})</div>
+        ${prereqs.map(n => `<div class="conn-item" data-id="${n.id}"><span class="conn-dot" style="background:${n.color}"></span><span class="conn-label">${n.label}</span><span class="conn-book">${n.bookName}</span></div>`).join('')}
+      </div>
+    ` : '<div class="conn-section"><div class="conn-head" style="color:var(--gold)">★ Starting point</div></div>'}
+    ${leads.length ? `
+      <div class="conn-section">
+        <div class="conn-head leads">▼ Leads to (${leads.length})</div>
+        ${leads.map(n => `<div class="conn-item" data-id="${n.id}"><span class="conn-dot" style="background:${n.color}"></span><span class="conn-label">${n.label}</span><span class="conn-book">${n.bookName}</span></div>`).join('')}
+      </div>
+    ` : ''}
+  `;
+
+  content.querySelectorAll('.conn-item').forEach(el => {
+    el.addEventListener('click', () => {
+      const n = nodeMap[el.dataset.id];
+      if (n) { selectNode(n); }
+    });
+  });
+
+  panel.classList.add('open');
+}
+
+document.getElementById('detail-close').addEventListener('click', clearSelection);
+
+// Tab switching
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+// Book counts
+const bookCounts = {};
+nodes.forEach(n => { bookCounts[n.book] = (bookCounts[n.book] || 0) + 1; });
+
+// === GRADES TAB: books grouped by education level, collapsible ===
+const gradesListEl = document.getElementById('grades-list');
+Object.entries(bookGroupsData).forEach(([groupName, groupBooks]) => {
+  const totalInGroup = groupBooks.reduce((s, b) => s + (bookCounts[b.id] || 0), 0);
+  if (totalInGroup === 0) return;
+
+  // Group header
+  const header = document.createElement('div');
+  header.className = 'group-header';
+  header.innerHTML = `<span class="group-arrow">▼</span><span class="group-label">${groupName}</span><span class="group-cnt">${totalInGroup}</span>`;
+
+  // Group body
+  const body = document.createElement('div');
+  body.className = 'group-body';
+  body.style.maxHeight = '500px';
+
+  const list = document.createElement('div');
+  list.className = 'book-list';
+
+  groupBooks.forEach(b => {
+    const el = document.createElement('div');
+    el.className = 'book-item';
+    el.dataset.id = b.id;
+    el.innerHTML = `<span class="book-dot" style="background:${b.color};color:${b.color}"></span><span class="book-name">${b.name}</span><span class="book-cnt">${bookCounts[b.id] || 0}</span>`;
+    el.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      if (activeBooks.has(b.id)) { activeBooks.delete(b.id); el.classList.add('off'); }
+      else { activeBooks.add(b.id); el.classList.remove('off'); }
+      filterMode = 'grades';
+      renderGraph();
+    });
+    list.appendChild(el);
+  });
+
+  body.appendChild(list);
+  header.addEventListener('click', () => { header.classList.toggle('collapsed'); });
+
+  gradesListEl.appendChild(header);
+  gradesListEl.appendChild(body);
+});
+
+document.getElementById('b-all').addEventListener('click', () => {
+  booksData.forEach(b => activeBooks.add(b.id));
+  document.querySelectorAll('#grades-list .book-item').forEach(el => el.classList.remove('off'));
+  filterMode = 'grades';
+  renderGraph();
+});
+document.getElementById('b-none').addEventListener('click', () => {
+  activeBooks.clear();
+  document.querySelectorAll('#grades-list .book-item').forEach(el => el.classList.add('off'));
+  filterMode = 'grades';
+  renderGraph();
+});
+
+// === TOPICS TAB: strands grouped by math domain, collapsible ===
+const topicsListEl = document.getElementById('topics-list');
+const strandDomains = {
+  'Number & Arithmetic': ['Numbers & Counting', 'Arithmetic', 'Fractions', 'Decimals', 'Percentages', 'Number Bases'],
+  'Algebra': ['Algebra', 'Equations', 'Inequalities', 'Functions & Graphs', 'Indices & Logarithms', 'Sequences & Series'],
+  'Geometry & Measure': ['Geometry', 'Symmetry & Transformations', 'Perimeter, Area & Volume', 'Coordinate Geometry', 'Pythagoras & Similarity', 'Trigonometry'],
+  'Data & Probability': ['Statistics', 'Probability', 'Sets & Logic'],
+  'Applied': ['Money & Finance', 'Time', 'Measurement', 'Ratio & Proportion', 'Calculus', 'Kinematics', 'Vectors & Matrices', 'Graph Theory', 'Mathematical Modeling'],
+};
+
+// Build strand lookup
+const strandNodeIds = {};
+strandsData.forEach(s => { strandNodeIds[s.name] = new Set(s.nodeIds); });
+
+Object.entries(strandDomains).forEach(([domain, strandNames]) => {
+  const domainStrands = strandNames.filter(sn => strandNodeIds[sn] && strandNodeIds[sn].size > 0);
+  if (domainStrands.length === 0) return;
+
+  const totalInDomain = domainStrands.reduce((s, sn) => s + (strandNodeIds[sn] ? strandNodeIds[sn].size : 0), 0);
+
+  const header = document.createElement('div');
+  header.className = 'group-header';
+  header.innerHTML = `<span class="group-arrow">▼</span><span class="group-label">${domain}</span><span class="group-cnt">${totalInDomain}</span>`;
+
+  const body = document.createElement('div');
+  body.className = 'group-body';
+  body.style.maxHeight = '500px';
+
+  const list = document.createElement('div');
+  list.className = 'book-list';
+
+  domainStrands.forEach(sn => {
+    const strand = strandsData.find(s => s.name === sn);
+    if (!strand) return;
+    const el = document.createElement('div');
+    el.className = 'strand-item';
+    el.dataset.strand = sn;
+    el.innerHTML = `<span class="strand-dot" style="background:${strand.color}"></span><span class="strand-name">${sn}</span><span class="strand-cnt">${strand.nodeIds.length}</span>`;
+    el.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      if (activeStrands.has(sn)) { activeStrands.delete(sn); el.classList.add('off'); }
+      else { activeStrands.add(sn); el.classList.remove('off'); }
+      filterMode = 'topics';
+      renderGraph();
+    });
+    list.appendChild(el);
+  });
+
+  body.appendChild(list);
+  header.addEventListener('click', () => { header.classList.toggle('collapsed'); });
+
+  topicsListEl.appendChild(header);
+  topicsListEl.appendChild(body);
+});
+
+// Also add "Other" strand if it exists
+const otherStrand = strandsData.find(s => s.name === 'Other');
+if (otherStrand && otherStrand.nodeIds.length > 0) {
+  const el = document.createElement('div');
+  el.className = 'strand-item';
+  el.dataset.strand = 'Other';
+  el.innerHTML = `<span class="strand-dot" style="background:${otherStrand.color}"></span><span class="strand-name">Other</span><span class="strand-cnt">${otherStrand.nodeIds.length}</span>`;
+  el.addEventListener('click', (ev) => {
+    ev.stopPropagation();
+    if (activeStrands.has('Other')) { activeStrands.delete('Other'); el.classList.add('off'); }
+    else { activeStrands.add('Other'); el.classList.remove('off'); }
+    filterMode = 'topics';
+    renderGraph();
+  });
+  topicsListEl.appendChild(el);
+}
+
+document.getElementById('t-all').addEventListener('click', () => {
+  strandsData.forEach(s => activeStrands.add(s.name));
+  document.querySelectorAll('.strand-item').forEach(el => el.classList.remove('off'));
+  filterMode = 'topics';
+  renderGraph();
+});
+document.getElementById('t-none').addEventListener('click', () => {
+  activeStrands.clear();
+  document.querySelectorAll('.strand-item').forEach(el => el.classList.add('off'));
+  filterMode = 'topics';
+  renderGraph();
+});
+
+// Force sliders
+document.getElementById('sl-charge').addEventListener('input', function() {
+  simulation.force('charge').strength(+this.value);
+  simulation.alpha(0.4).restart();
+});
+document.getElementById('sl-dist').addEventListener('input', function() {
+  simulation.force('link').distance(+this.value);
+  simulation.alpha(0.4).restart();
+});
+document.getElementById('sl-gravity').addEventListener('input', function() {
+  const v = +this.value / 1000;
+  simulation.force('x').strength(v);
+  simulation.force('y').strength(v);
+  simulation.alpha(0.4).restart();
+});
+document.getElementById('sl-collide').addEventListener('input', function() {
+  simulation.force('collide').radius(+this.value);
+  simulation.alpha(0.4).restart();
+});
+
+// Search
+let searchTimeout;
+document.getElementById('search').addEventListener('input', function() {
+  clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(() => {
+    const q = this.value.trim().toLowerCase();
+    if (!q) { clearSelection(); return; }
+    const matches = nodes.filter(n => activeBooks.has(n.book) && (n.label.toLowerCase().includes(q) || n.id.toLowerCase().includes(q)));
+    if (matches.length) {
+      // Zoom to first match
+      const m = matches[0];
+      if (m.x != null) {
+        const t = d3.zoomIdentity.translate(-m.x * 2 + container.clientWidth/2, -m.y * 2 + container.clientHeight/2).scale(2);
+        svg.transition().duration(500).call(zoom.transform, t);
+      }
+      // Highlight all matches
+      const matchIds = new Set(matches.map(n => n.id));
+      nodeEls.attr('fill-opacity', n => matchIds.has(n.id) ? 1 : 0.06)
+        .attr('stroke', n => matchIds.has(n.id) ? '#ffc857' : 'none')
+        .attr('stroke-width', n => matchIds.has(n.id) ? 2 : 0);
+      labelEls.attr('fill', n => matchIds.has(n.id) ? '#fff' : '#1a1830');
+    }
+  }, 250);
+});
+
+function updateStats(n, e) {
+  document.getElementById('s-nodes').textContent = n;
+  document.getElementById('s-edges').textContent = e;
+}
+
+// Keyboard
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { clearSelection(); document.getElementById('search').value = ''; }
+  if (e.key === '/' && document.activeElement.tagName !== 'INPUT') { e.preventDefault(); document.getElementById('search').focus(); }
+});
+
+// Init
+renderGraph();
+</script>
+</body>
+</html>

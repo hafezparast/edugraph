@@ -111,6 +111,18 @@ GRAPHS = {
         "title": "IGCSE Business Studies",
         "subtitle": "Cambridge 0450",
     },
+    "lang-en": {"data": "data/lang-en.json", "output": "lang-en.html", "title": "English", "subtitle": "CEFR A1.1 — C2.2"},
+    "lang-ms": {"data": "data/lang-ms.json", "output": "lang-ms.html", "title": "Bahasa Malaysia", "subtitle": "CEFR A1.1 — C2.2"},
+    "lang-de": {"data": "data/lang-de.json", "output": "lang-de.html", "title": "German (Deutsch)", "subtitle": "CEFR A1.1 — C2.2"},
+    "lang-fa": {"data": "data/lang-fa.json", "output": "lang-fa.html", "title": "Farsi (فارسی)", "subtitle": "CEFR A1.1 — C2.2"},
+    "lang-ar": {"data": "data/lang-ar.json", "output": "lang-ar.html", "title": "Arabic (العربية)", "subtitle": "CEFR A1.1 — C2.2"},
+    "lang-es": {"data": "data/lang-es.json", "output": "lang-es.html", "title": "Spanish (Español)", "subtitle": "CEFR A1.1 — C2.2"},
+    "lang-fr": {"data": "data/lang-fr.json", "output": "lang-fr.html", "title": "French (Français)", "subtitle": "CEFR A1.1 — C2.2"},
+    "lang-ru": {"data": "data/lang-ru.json", "output": "lang-ru.html", "title": "Russian (Русский)", "subtitle": "CEFR A1.1 — C2.2"},
+    "lang-ja": {"data": "data/lang-ja.json", "output": "lang-ja.html", "title": "Japanese (日本語)", "subtitle": "CEFR A1.1 — C2.2"},
+    "lang-ko": {"data": "data/lang-ko.json", "output": "lang-ko.html", "title": "Korean (한국어)", "subtitle": "CEFR A1.1 — C2.2"},
+    "lang-tr": {"data": "data/lang-tr.json", "output": "lang-tr.html", "title": "Turkish (Türkçe)", "subtitle": "CEFR A1.1 — C2.2"},
+    "lang-zh": {"data": "data/lang-zh.json", "output": "lang-zh.html", "title": "Mandarin Chinese (中文)", "subtitle": "CEFR A1.1 — C2.2"},
 }
 
 
