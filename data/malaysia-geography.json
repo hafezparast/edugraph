@@ -1,0 +1,384 @@
+{
+  "metadata": {
+    "domain": "geography",
+    "curriculum": "Malaysia KSSM Geography",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "Malaysia secondary Geography (KSSM Form 1-5) topics with prerequisite ordering, colored by form",
+    "sources": [
+      "KSSM Geography Curriculum"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "book.geo_f1",
+      "name": "Form 1 Geography",
+      "color": "#0d9488",
+      "order": 1
+    },
+    {
+      "id": "book.geo_f2",
+      "name": "Form 2 Geography",
+      "color": "#14b8a6",
+      "order": 2
+    },
+    {
+      "id": "book.geo_f3",
+      "name": "Form 3 Geography",
+      "color": "#2dd4bf",
+      "order": 3
+    },
+    {
+      "id": "book.geo_f4",
+      "name": "Form 4 Geography",
+      "color": "#0ea5e9",
+      "order": 4
+    },
+    {
+      "id": "book.geo_f5",
+      "name": "Form 5 Geography",
+      "color": "#38bdf8",
+      "order": 5
+    }
+  ],
+  "nodes": [
+    {
+      "id": "geo.f1.ch1_kemahiran_geografi",
+      "label": "Kemahiran Geografi",
+      "type": "concept",
+      "description": "Geography Skills — map reading, compass directions, scale, grid references, and geographical tools",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.geo_f1",
+      "bookName": "Form 1 Geography",
+      "bookColor": "#0d9488",
+      "bookOrder": 1
+    },
+    {
+      "id": "geo.f1.ch2_bentuk_muka_bumi",
+      "label": "Bentuk Muka Bumi",
+      "type": "concept",
+      "description": "Landforms — types of landforms, weathering, erosion, and deposition processes",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.geo_f1",
+      "bookName": "Form 1 Geography",
+      "bookColor": "#0d9488",
+      "bookOrder": 1
+    },
+    {
+      "id": "geo.f1.ch3_cuaca_dan_iklim",
+      "label": "Cuaca dan Iklim",
+      "type": "concept",
+      "description": "Weather and Climate — elements of weather, climate zones, tropical climate characteristics",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.geo_f1",
+      "bookName": "Form 1 Geography",
+      "bookColor": "#0d9488",
+      "bookOrder": 1
+    },
+    {
+      "id": "geo.f1.ch4_sumber",
+      "label": "Sumber",
+      "type": "concept",
+      "description": "Resources — types of natural resources, resource management, and conservation",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.geo_f1",
+      "bookName": "Form 1 Geography",
+      "bookColor": "#0d9488",
+      "bookOrder": 1
+    },
+    {
+      "id": "geo.f2.ch1_penduduk",
+      "label": "Penduduk",
+      "type": "concept",
+      "description": "Population — population distribution, density, growth, migration, and demographic transition",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.geo_f2",
+      "bookName": "Form 2 Geography",
+      "bookColor": "#14b8a6",
+      "bookOrder": 2
+    },
+    {
+      "id": "geo.f2.ch2_petempatan",
+      "label": "Petempatan",
+      "type": "concept",
+      "description": "Settlement — types of settlements, settlement patterns, functions, and hierarchy",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.geo_f2",
+      "bookName": "Form 2 Geography",
+      "bookColor": "#14b8a6",
+      "bookOrder": 2
+    },
+    {
+      "id": "geo.f2.ch3_pengangkutan",
+      "label": "Pengangkutan",
+      "type": "concept",
+      "description": "Transportation — types of transport, transportation networks, and their impact on development",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.geo_f2",
+      "bookName": "Form 2 Geography",
+      "bookColor": "#14b8a6",
+      "bookOrder": 2
+    },
+    {
+      "id": "geo.f2.ch4_perbandaran",
+      "label": "Perbandaran",
+      "type": "concept",
+      "description": "Urbanization — urban growth, causes and effects of urbanization, urban problems and solutions",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.geo_f2",
+      "bookName": "Form 2 Geography",
+      "bookColor": "#14b8a6",
+      "bookOrder": 2
+    },
+    {
+      "id": "geo.f3.ch1_pembangunan_ekonomi",
+      "label": "Pembangunan Ekonomi",
+      "type": "concept",
+      "description": "Economic Development — indicators of development, factors affecting development, developed vs developing nations",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.geo_f3",
+      "bookName": "Form 3 Geography",
+      "bookColor": "#2dd4bf",
+      "bookOrder": 3
+    },
+    {
+      "id": "geo.f3.ch2_aktiviti_ekonomi",
+      "label": "Aktiviti Ekonomi",
+      "type": "concept",
+      "description": "Economic Activities — primary, secondary, tertiary, and quaternary sectors, economic activities in Malaysia",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.geo_f3",
+      "bookName": "Form 3 Geography",
+      "bookColor": "#2dd4bf",
+      "bookOrder": 3
+    },
+    {
+      "id": "geo.f3.ch3_kerjasama_ekonomi",
+      "label": "Kerjasama Ekonomi",
+      "type": "concept",
+      "description": "Economic Cooperation — regional and international economic cooperation, ASEAN, trade agreements",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.geo_f3",
+      "bookName": "Form 3 Geography",
+      "bookColor": "#2dd4bf",
+      "bookOrder": 3
+    },
+    {
+      "id": "geo.f4.ch1_alam_sekitar_fizikal",
+      "label": "Alam Sekitar Fizikal",
+      "type": "concept",
+      "description": "Physical Environment — earth structure, plate tectonics, geological processes, landform systems, and physical geography of Malaysia",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.geo_f4",
+      "bookName": "Form 4 Geography",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4
+    },
+    {
+      "id": "geo.f4.ch2_alam_sekitar_manusia",
+      "label": "Alam Sekitar Manusia",
+      "type": "concept",
+      "description": "Human Environment — human-environment interaction, land use, urbanization impacts, and human activities affecting the environment",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.geo_f4",
+      "bookName": "Form 4 Geography",
+      "bookColor": "#0ea5e9",
+      "bookOrder": 4
+    },
+    {
+      "id": "geo.f5.ch1_isu_alam_sekitar",
+      "label": "Isu Alam Sekitar",
+      "type": "concept",
+      "description": "Environmental Issues — pollution, deforestation, climate change, biodiversity loss, and their impacts",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.geo_f5",
+      "bookName": "Form 5 Geography",
+      "bookColor": "#38bdf8",
+      "bookOrder": 5
+    },
+    {
+      "id": "geo.f5.ch2_pembangunan_lestari",
+      "label": "Pembangunan Lestari",
+      "type": "concept",
+      "description": "Sustainable Development — principles, strategies, green technology, and Malaysia's sustainable development initiatives",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.geo_f5",
+      "bookName": "Form 5 Geography",
+      "bookColor": "#38bdf8",
+      "bookOrder": 5
+    }
+  ],
+  "edges": [
+    {
+      "source": "geo.f1.ch1_kemahiran_geografi",
+      "target": "geo.f1.ch2_bentuk_muka_bumi",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.f1.ch2_bentuk_muka_bumi",
+      "target": "geo.f1.ch3_cuaca_dan_iklim",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.f1.ch3_cuaca_dan_iklim",
+      "target": "geo.f1.ch4_sumber",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.f2.ch1_penduduk",
+      "target": "geo.f2.ch2_petempatan",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.f2.ch2_petempatan",
+      "target": "geo.f2.ch3_pengangkutan",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.f2.ch3_pengangkutan",
+      "target": "geo.f2.ch4_perbandaran",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.f3.ch1_pembangunan_ekonomi",
+      "target": "geo.f3.ch2_aktiviti_ekonomi",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.f3.ch2_aktiviti_ekonomi",
+      "target": "geo.f3.ch3_kerjasama_ekonomi",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.f4.ch1_alam_sekitar_fizikal",
+      "target": "geo.f4.ch2_alam_sekitar_manusia",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.f5.ch1_isu_alam_sekitar",
+      "target": "geo.f5.ch2_pembangunan_lestari",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.f1.ch4_sumber",
+      "target": "geo.f2.ch1_penduduk",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.f2.ch4_perbandaran",
+      "target": "geo.f3.ch1_pembangunan_ekonomi",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.f3.ch3_kerjasama_ekonomi",
+      "target": "geo.f4.ch1_alam_sekitar_fizikal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.f4.ch2_alam_sekitar_manusia",
+      "target": "geo.f5.ch1_isu_alam_sekitar",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.f1.ch2_bentuk_muka_bumi",
+      "target": "geo.f4.ch1_alam_sekitar_fizikal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "geo.f2.ch1_penduduk",
+      "target": "geo.f4.ch2_alam_sekitar_manusia",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

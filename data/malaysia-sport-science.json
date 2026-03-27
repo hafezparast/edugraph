@@ -1,0 +1,240 @@
+{
+  "metadata": {
+    "domain": "sport_science",
+    "curriculum": "Malaysia STPM Sport Science",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "Malaysia STPM Sport Science topics with prerequisite ordering, colored by semester",
+    "sources": [
+      "STPM Sport Science Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "book.ss_s1",
+      "name": "Sport Science Sem 1",
+      "color": "#0d9488",
+      "order": 1
+    },
+    {
+      "id": "book.ss_s2",
+      "name": "Sport Science Sem 2",
+      "color": "#14b8a6",
+      "order": 2
+    },
+    {
+      "id": "book.ss_s3",
+      "name": "Sport Science Sem 3",
+      "color": "#2dd4bf",
+      "order": 3
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ss.s1.ch1_anatomy",
+      "label": "Anatomi",
+      "type": "concept",
+      "description": "Anatomy — skeletal system, muscular system, body structure, joints, and movement analysis",
+      "grade_range": [
+        "STPM Sem 1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.ss_s1",
+      "bookName": "Sport Science Sem 1",
+      "bookColor": "#0d9488",
+      "bookOrder": 1
+    },
+    {
+      "id": "ss.s1.ch2_physiology",
+      "label": "Fisiologi",
+      "type": "concept",
+      "description": "Physiology — cardiovascular system, respiratory system, energy systems, and exercise physiology",
+      "grade_range": [
+        "STPM Sem 1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.ss_s1",
+      "bookName": "Sport Science Sem 1",
+      "bookColor": "#0d9488",
+      "bookOrder": 1
+    },
+    {
+      "id": "ss.s1.ch3_biomechanics",
+      "label": "Biomekanik",
+      "type": "concept",
+      "description": "Biomechanics — forces in sport, motion analysis, levers, projectile motion, and performance optimisation",
+      "grade_range": [
+        "STPM Sem 1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.ss_s1",
+      "bookName": "Sport Science Sem 1",
+      "bookColor": "#0d9488",
+      "bookOrder": 1
+    },
+    {
+      "id": "ss.s2.ch1_training_principles",
+      "label": "Prinsip Latihan",
+      "type": "concept",
+      "description": "Training Principles — principles of training (FITT, overload, specificity, reversibility), periodisation, and training methods",
+      "grade_range": [
+        "STPM Sem 2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.ss_s2",
+      "bookName": "Sport Science Sem 2",
+      "bookColor": "#14b8a6",
+      "bookOrder": 2
+    },
+    {
+      "id": "ss.s2.ch2_nutrition",
+      "label": "Pemakanan Sukan",
+      "type": "concept",
+      "description": "Sports Nutrition — macronutrients, micronutrients, hydration, dietary planning for athletes, and ergogenic aids",
+      "grade_range": [
+        "STPM Sem 2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.ss_s2",
+      "bookName": "Sport Science Sem 2",
+      "bookColor": "#14b8a6",
+      "bookOrder": 2
+    },
+    {
+      "id": "ss.s2.ch3_sports_psychology",
+      "label": "Psikologi Sukan",
+      "type": "concept",
+      "description": "Sports Psychology — motivation, anxiety, mental preparation, goal setting, and psychological skills training",
+      "grade_range": [
+        "STPM Sem 2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.ss_s2",
+      "bookName": "Sport Science Sem 2",
+      "bookColor": "#14b8a6",
+      "bookOrder": 2
+    },
+    {
+      "id": "ss.s3.ch1_organization",
+      "label": "Organisasi Sukan",
+      "type": "concept",
+      "description": "Sports Organization — sports bodies in Malaysia, event management, facility management, and sports administration",
+      "grade_range": [
+        "STPM Sem 3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.ss_s3",
+      "bookName": "Sport Science Sem 3",
+      "bookColor": "#2dd4bf",
+      "bookOrder": 3
+    },
+    {
+      "id": "ss.s3.ch2_coaching",
+      "label": "Kejurulatihan",
+      "type": "concept",
+      "description": "Coaching — coaching philosophy, planning training sessions, talent identification, and athlete development",
+      "grade_range": [
+        "STPM Sem 3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.ss_s3",
+      "bookName": "Sport Science Sem 3",
+      "bookColor": "#2dd4bf",
+      "bookOrder": 3
+    },
+    {
+      "id": "ss.s3.ch3_sports_in_malaysia",
+      "label": "Sukan di Malaysia",
+      "type": "concept",
+      "description": "Sports in Malaysia — history of Malaysian sports, national sports policy, sports development programmes, and achievements",
+      "grade_range": [
+        "STPM Sem 3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.ss_s3",
+      "bookName": "Sport Science Sem 3",
+      "bookColor": "#2dd4bf",
+      "bookOrder": 3
+    }
+  ],
+  "edges": [
+    {
+      "source": "ss.s1.ch1_anatomy",
+      "target": "ss.s1.ch2_physiology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ss.s1.ch2_physiology",
+      "target": "ss.s1.ch3_biomechanics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ss.s2.ch1_training_principles",
+      "target": "ss.s2.ch2_nutrition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ss.s2.ch2_nutrition",
+      "target": "ss.s2.ch3_sports_psychology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ss.s3.ch1_organization",
+      "target": "ss.s3.ch2_coaching",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ss.s3.ch2_coaching",
+      "target": "ss.s3.ch3_sports_in_malaysia",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ss.s1.ch3_biomechanics",
+      "target": "ss.s2.ch1_training_principles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ss.s1.ch1_anatomy",
+      "target": "ss.s2.ch1_training_principles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ss.s2.ch3_sports_psychology",
+      "target": "ss.s3.ch1_organization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ss.s2.ch1_training_principles",
+      "target": "ss.s3.ch2_coaching",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

@@ -1,0 +1,1408 @@
+{
+  "metadata": {
+    "domain": "islamic_studies",
+    "curriculum": "Malaysia Pendidikan Islam (KSSM) & STPM Syariah/Usuluddin",
+    "view": "k12-prerequisites",
+    "version": "0.1.0",
+    "description": "Malaysia Islamic Studies — Pendidikan Islam (Form 1-5) and STPM Syariah & Usuluddin, with prerequisite ordering",
+    "sources": [
+      "KSSM Pendidikan Islam Curriculum",
+      "STPM Syariah (930) Syllabus",
+      "STPM Usuluddin (931) Syllabus"
+    ],
+    "last_updated": "2026-03-27"
+  },
+  "books": [
+    {
+      "id": "book.pi_f1",
+      "name": "Pendidikan Islam F1",
+      "color": "#16a34a",
+      "order": 1
+    },
+    {
+      "id": "book.pi_f2",
+      "name": "Pendidikan Islam F2",
+      "color": "#22c55e",
+      "order": 2
+    },
+    {
+      "id": "book.pi_f3",
+      "name": "Pendidikan Islam F3",
+      "color": "#4ade80",
+      "order": 3
+    },
+    {
+      "id": "book.pi_f4",
+      "name": "Pendidikan Islam F4",
+      "color": "#86efac",
+      "order": 4
+    },
+    {
+      "id": "book.pi_f5",
+      "name": "Pendidikan Islam F5",
+      "color": "#bbf7d0",
+      "order": 5
+    },
+    {
+      "id": "book.syariah_s1",
+      "name": "STPM Syariah Sem 1",
+      "color": "#f59e0b",
+      "order": 6
+    },
+    {
+      "id": "book.syariah_s2",
+      "name": "STPM Syariah Sem 2",
+      "color": "#d97706",
+      "order": 7
+    },
+    {
+      "id": "book.syariah_s3",
+      "name": "STPM Syariah Sem 3",
+      "color": "#b45309",
+      "order": 8
+    },
+    {
+      "id": "book.usul_s1",
+      "name": "STPM Usuluddin Sem 1",
+      "color": "#a855f7",
+      "order": 9
+    },
+    {
+      "id": "book.usul_s2",
+      "name": "STPM Usuluddin Sem 2",
+      "color": "#8b5cf6",
+      "order": 10
+    },
+    {
+      "id": "book.usul_s3",
+      "name": "STPM Usuluddin Sem 3",
+      "color": "#7c3aed",
+      "order": 11
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pi.f1.tilawah",
+      "label": "Tilawah Al-Quran (F1)",
+      "type": "concept",
+      "description": "Form 1 Quran recitation, tajweed rules, and selected surah memorisation",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f1",
+      "bookName": "Pendidikan Islam F1",
+      "bookColor": "#16a34a",
+      "bookOrder": 1
+    },
+    {
+      "id": "pi.f1.hadith",
+      "label": "Hadith (F1)",
+      "type": "concept",
+      "description": "Form 1 Selected hadith studies, understanding, and application in daily life",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f1",
+      "bookName": "Pendidikan Islam F1",
+      "bookColor": "#16a34a",
+      "bookOrder": 1
+    },
+    {
+      "id": "pi.f1.aqidah",
+      "label": "Aqidah (F1)",
+      "type": "concept",
+      "description": "Form 1 Islamic creed — pillars of faith, tawhid, and belief system",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f1",
+      "bookName": "Pendidikan Islam F1",
+      "bookColor": "#16a34a",
+      "bookOrder": 1
+    },
+    {
+      "id": "pi.f1.ibadah",
+      "label": "Ibadah (F1)",
+      "type": "concept",
+      "description": "Form 1 Islamic worship — prayer, fasting, zakat, hajj, and daily practices",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f1",
+      "bookName": "Pendidikan Islam F1",
+      "bookColor": "#16a34a",
+      "bookOrder": 1
+    },
+    {
+      "id": "pi.f1.sirah",
+      "label": "Sirah (F1)",
+      "type": "concept",
+      "description": "Form 1 Prophetic biography — life of Prophet Muhammad SAW and early Islamic history",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f1",
+      "bookName": "Pendidikan Islam F1",
+      "bookColor": "#16a34a",
+      "bookOrder": 1
+    },
+    {
+      "id": "pi.f1.akhlak",
+      "label": "Akhlak (F1)",
+      "type": "concept",
+      "description": "Form 1 Islamic morality and ethics — personal conduct, social ethics, and character development",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f1",
+      "bookName": "Pendidikan Islam F1",
+      "bookColor": "#16a34a",
+      "bookOrder": 1
+    },
+    {
+      "id": "pi.f1.tamadun",
+      "label": "Tamadun Islam (F1)",
+      "type": "concept",
+      "description": "Form 1 Islamic civilisation — contributions to knowledge, culture, and society",
+      "grade_range": [
+        "Form 1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f1",
+      "bookName": "Pendidikan Islam F1",
+      "bookColor": "#16a34a",
+      "bookOrder": 1
+    },
+    {
+      "id": "pi.f2.tilawah",
+      "label": "Tilawah Al-Quran (F2)",
+      "type": "concept",
+      "description": "Form 2 Quran recitation, tajweed rules, and selected surah memorisation",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f2",
+      "bookName": "Pendidikan Islam F2",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "pi.f2.hadith",
+      "label": "Hadith (F2)",
+      "type": "concept",
+      "description": "Form 2 Selected hadith studies, understanding, and application in daily life",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f2",
+      "bookName": "Pendidikan Islam F2",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "pi.f2.aqidah",
+      "label": "Aqidah (F2)",
+      "type": "concept",
+      "description": "Form 2 Islamic creed — pillars of faith, tawhid, and belief system",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f2",
+      "bookName": "Pendidikan Islam F2",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "pi.f2.ibadah",
+      "label": "Ibadah (F2)",
+      "type": "concept",
+      "description": "Form 2 Islamic worship — prayer, fasting, zakat, hajj, and daily practices",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f2",
+      "bookName": "Pendidikan Islam F2",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "pi.f2.sirah",
+      "label": "Sirah (F2)",
+      "type": "concept",
+      "description": "Form 2 Prophetic biography — life of Prophet Muhammad SAW and early Islamic history",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f2",
+      "bookName": "Pendidikan Islam F2",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "pi.f2.akhlak",
+      "label": "Akhlak (F2)",
+      "type": "concept",
+      "description": "Form 2 Islamic morality and ethics — personal conduct, social ethics, and character development",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f2",
+      "bookName": "Pendidikan Islam F2",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "pi.f2.tamadun",
+      "label": "Tamadun Islam (F2)",
+      "type": "concept",
+      "description": "Form 2 Islamic civilisation — contributions to knowledge, culture, and society",
+      "grade_range": [
+        "Form 2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f2",
+      "bookName": "Pendidikan Islam F2",
+      "bookColor": "#22c55e",
+      "bookOrder": 2
+    },
+    {
+      "id": "pi.f3.tilawah",
+      "label": "Tilawah Al-Quran (F3)",
+      "type": "concept",
+      "description": "Form 3 Quran recitation, tajweed rules, and selected surah memorisation",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f3",
+      "bookName": "Pendidikan Islam F3",
+      "bookColor": "#4ade80",
+      "bookOrder": 3
+    },
+    {
+      "id": "pi.f3.hadith",
+      "label": "Hadith (F3)",
+      "type": "concept",
+      "description": "Form 3 Selected hadith studies, understanding, and application in daily life",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f3",
+      "bookName": "Pendidikan Islam F3",
+      "bookColor": "#4ade80",
+      "bookOrder": 3
+    },
+    {
+      "id": "pi.f3.aqidah",
+      "label": "Aqidah (F3)",
+      "type": "concept",
+      "description": "Form 3 Islamic creed — pillars of faith, tawhid, and belief system",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f3",
+      "bookName": "Pendidikan Islam F3",
+      "bookColor": "#4ade80",
+      "bookOrder": 3
+    },
+    {
+      "id": "pi.f3.ibadah",
+      "label": "Ibadah (F3)",
+      "type": "concept",
+      "description": "Form 3 Islamic worship — prayer, fasting, zakat, hajj, and daily practices",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f3",
+      "bookName": "Pendidikan Islam F3",
+      "bookColor": "#4ade80",
+      "bookOrder": 3
+    },
+    {
+      "id": "pi.f3.sirah",
+      "label": "Sirah (F3)",
+      "type": "concept",
+      "description": "Form 3 Prophetic biography — life of Prophet Muhammad SAW and early Islamic history",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f3",
+      "bookName": "Pendidikan Islam F3",
+      "bookColor": "#4ade80",
+      "bookOrder": 3
+    },
+    {
+      "id": "pi.f3.akhlak",
+      "label": "Akhlak (F3)",
+      "type": "concept",
+      "description": "Form 3 Islamic morality and ethics — personal conduct, social ethics, and character development",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f3",
+      "bookName": "Pendidikan Islam F3",
+      "bookColor": "#4ade80",
+      "bookOrder": 3
+    },
+    {
+      "id": "pi.f3.tamadun",
+      "label": "Tamadun Islam (F3)",
+      "type": "concept",
+      "description": "Form 3 Islamic civilisation — contributions to knowledge, culture, and society",
+      "grade_range": [
+        "Form 3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f3",
+      "bookName": "Pendidikan Islam F3",
+      "bookColor": "#4ade80",
+      "bookOrder": 3
+    },
+    {
+      "id": "pi.f4.tilawah",
+      "label": "Tilawah Al-Quran (F4)",
+      "type": "concept",
+      "description": "Form 4 Quran recitation, tajweed rules, and selected surah memorisation",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f4",
+      "bookName": "Pendidikan Islam F4",
+      "bookColor": "#86efac",
+      "bookOrder": 4
+    },
+    {
+      "id": "pi.f4.hadith",
+      "label": "Hadith (F4)",
+      "type": "concept",
+      "description": "Form 4 Selected hadith studies, understanding, and application in daily life",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f4",
+      "bookName": "Pendidikan Islam F4",
+      "bookColor": "#86efac",
+      "bookOrder": 4
+    },
+    {
+      "id": "pi.f4.aqidah",
+      "label": "Aqidah (F4)",
+      "type": "concept",
+      "description": "Form 4 Islamic creed — pillars of faith, tawhid, and belief system",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f4",
+      "bookName": "Pendidikan Islam F4",
+      "bookColor": "#86efac",
+      "bookOrder": 4
+    },
+    {
+      "id": "pi.f4.ibadah",
+      "label": "Ibadah (F4)",
+      "type": "concept",
+      "description": "Form 4 Islamic worship — prayer, fasting, zakat, hajj, and daily practices",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f4",
+      "bookName": "Pendidikan Islam F4",
+      "bookColor": "#86efac",
+      "bookOrder": 4
+    },
+    {
+      "id": "pi.f4.sirah",
+      "label": "Sirah (F4)",
+      "type": "concept",
+      "description": "Form 4 Prophetic biography — life of Prophet Muhammad SAW and early Islamic history",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f4",
+      "bookName": "Pendidikan Islam F4",
+      "bookColor": "#86efac",
+      "bookOrder": 4
+    },
+    {
+      "id": "pi.f4.akhlak",
+      "label": "Akhlak (F4)",
+      "type": "concept",
+      "description": "Form 4 Islamic morality and ethics — personal conduct, social ethics, and character development",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f4",
+      "bookName": "Pendidikan Islam F4",
+      "bookColor": "#86efac",
+      "bookOrder": 4
+    },
+    {
+      "id": "pi.f4.tamadun",
+      "label": "Tamadun Islam (F4)",
+      "type": "concept",
+      "description": "Form 4 Islamic civilisation — contributions to knowledge, culture, and society",
+      "grade_range": [
+        "Form 4"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f4",
+      "bookName": "Pendidikan Islam F4",
+      "bookColor": "#86efac",
+      "bookOrder": 4
+    },
+    {
+      "id": "pi.f5.tilawah",
+      "label": "Tilawah Al-Quran (F5)",
+      "type": "concept",
+      "description": "Form 5 Quran recitation, tajweed rules, and selected surah memorisation",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f5",
+      "bookName": "Pendidikan Islam F5",
+      "bookColor": "#bbf7d0",
+      "bookOrder": 5
+    },
+    {
+      "id": "pi.f5.hadith",
+      "label": "Hadith (F5)",
+      "type": "concept",
+      "description": "Form 5 Selected hadith studies, understanding, and application in daily life",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f5",
+      "bookName": "Pendidikan Islam F5",
+      "bookColor": "#bbf7d0",
+      "bookOrder": 5
+    },
+    {
+      "id": "pi.f5.aqidah",
+      "label": "Aqidah (F5)",
+      "type": "concept",
+      "description": "Form 5 Islamic creed — pillars of faith, tawhid, and belief system",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f5",
+      "bookName": "Pendidikan Islam F5",
+      "bookColor": "#bbf7d0",
+      "bookOrder": 5
+    },
+    {
+      "id": "pi.f5.ibadah",
+      "label": "Ibadah (F5)",
+      "type": "concept",
+      "description": "Form 5 Islamic worship — prayer, fasting, zakat, hajj, and daily practices",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f5",
+      "bookName": "Pendidikan Islam F5",
+      "bookColor": "#bbf7d0",
+      "bookOrder": 5
+    },
+    {
+      "id": "pi.f5.sirah",
+      "label": "Sirah (F5)",
+      "type": "concept",
+      "description": "Form 5 Prophetic biography — life of Prophet Muhammad SAW and early Islamic history",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f5",
+      "bookName": "Pendidikan Islam F5",
+      "bookColor": "#bbf7d0",
+      "bookOrder": 5
+    },
+    {
+      "id": "pi.f5.akhlak",
+      "label": "Akhlak (F5)",
+      "type": "concept",
+      "description": "Form 5 Islamic morality and ethics — personal conduct, social ethics, and character development",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f5",
+      "bookName": "Pendidikan Islam F5",
+      "bookColor": "#bbf7d0",
+      "bookOrder": 5
+    },
+    {
+      "id": "pi.f5.tamadun",
+      "label": "Tamadun Islam (F5)",
+      "type": "concept",
+      "description": "Form 5 Islamic civilisation — contributions to knowledge, culture, and society",
+      "grade_range": [
+        "Form 5"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.pi_f5",
+      "bookName": "Pendidikan Islam F5",
+      "bookColor": "#bbf7d0",
+      "bookOrder": 5
+    },
+    {
+      "id": "syariah.s1.ch1_usul_fiqh",
+      "label": "Usul al-Fiqh",
+      "type": "concept",
+      "description": "Principles of Islamic jurisprudence — sources of law, ijtihad, qiyas, and ijma",
+      "grade_range": [
+        "STPM S1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.syariah_s1",
+      "bookName": "STPM Syariah Sem 1",
+      "bookColor": "#f59e0b",
+      "bookOrder": 6
+    },
+    {
+      "id": "syariah.s1.ch2_fiqh_ibadah",
+      "label": "Fiqh Ibadah",
+      "type": "concept",
+      "description": "Jurisprudence of worship — detailed rulings on prayer, fasting, zakat, and hajj",
+      "grade_range": [
+        "STPM S1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.syariah_s1",
+      "bookName": "STPM Syariah Sem 1",
+      "bookColor": "#f59e0b",
+      "bookOrder": 6
+    },
+    {
+      "id": "syariah.s1.ch3_fiqh_munakahat",
+      "label": "Fiqh Munakahat",
+      "type": "concept",
+      "description": "Family law — marriage, divorce, custody, and inheritance in Islamic law",
+      "grade_range": [
+        "STPM S1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.syariah_s1",
+      "bookName": "STPM Syariah Sem 1",
+      "bookColor": "#f59e0b",
+      "bookOrder": 6
+    },
+    {
+      "id": "syariah.s2.ch1_fiqh_muamalat",
+      "label": "Fiqh Muamalat",
+      "type": "concept",
+      "description": "Commercial law — Islamic transactions, contracts, banking, and financial instruments",
+      "grade_range": [
+        "STPM S2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.syariah_s2",
+      "bookName": "STPM Syariah Sem 2",
+      "bookColor": "#d97706",
+      "bookOrder": 7
+    },
+    {
+      "id": "syariah.s2.ch2_fiqh_jinayat",
+      "label": "Fiqh Jinayat",
+      "type": "concept",
+      "description": "Criminal law — hudud, qisas, ta'zir, and principles of Islamic criminal justice",
+      "grade_range": [
+        "STPM S2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.syariah_s2",
+      "bookName": "STPM Syariah Sem 2",
+      "bookColor": "#d97706",
+      "bookOrder": 7
+    },
+    {
+      "id": "syariah.s2.ch3_siyasah_syariyyah",
+      "label": "Siyasah Syar'iyyah",
+      "type": "concept",
+      "description": "Islamic governance — political theory, leadership, shura, and administration in Islam",
+      "grade_range": [
+        "STPM S2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.syariah_s2",
+      "bookName": "STPM Syariah Sem 2",
+      "bookColor": "#d97706",
+      "bookOrder": 7
+    },
+    {
+      "id": "syariah.s3.ch1_maqasid_shariah",
+      "label": "Maqasid al-Shariah",
+      "type": "concept",
+      "description": "Objectives of Islamic law — preservation of religion, life, intellect, lineage, and property",
+      "grade_range": [
+        "STPM S3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.syariah_s3",
+      "bookName": "STPM Syariah Sem 3",
+      "bookColor": "#b45309",
+      "bookOrder": 8
+    },
+    {
+      "id": "syariah.s3.ch2_islamic_law_malaysia",
+      "label": "Undang-undang Islam di Malaysia",
+      "type": "concept",
+      "description": "Islamic law in Malaysia — Syariah courts, enactments, and administration of Islamic law",
+      "grade_range": [
+        "STPM S3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.syariah_s3",
+      "bookName": "STPM Syariah Sem 3",
+      "bookColor": "#b45309",
+      "bookOrder": 8
+    },
+    {
+      "id": "syariah.s3.ch3_contemporary_issues",
+      "label": "Isu Kontemporari Syariah",
+      "type": "concept",
+      "description": "Contemporary Syariah issues — bioethics, fintech, and modern jurisprudential challenges",
+      "grade_range": [
+        "STPM S3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.syariah_s3",
+      "bookName": "STPM Syariah Sem 3",
+      "bookColor": "#b45309",
+      "bookOrder": 8
+    },
+    {
+      "id": "usul.s1.ch1_ulum_quran",
+      "label": "Ulum al-Quran",
+      "type": "concept",
+      "description": "Quranic sciences — revelation, compilation, abrogation, interpretation methodology",
+      "grade_range": [
+        "STPM S1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.usul_s1",
+      "bookName": "STPM Usuluddin Sem 1",
+      "bookColor": "#a855f7",
+      "bookOrder": 9
+    },
+    {
+      "id": "usul.s1.ch2_ulum_hadith",
+      "label": "Ulum al-Hadith",
+      "type": "concept",
+      "description": "Hadith sciences — classification, narrators, authentication, and hadith methodology",
+      "grade_range": [
+        "STPM S1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.usul_s1",
+      "bookName": "STPM Usuluddin Sem 1",
+      "bookColor": "#a855f7",
+      "bookOrder": 9
+    },
+    {
+      "id": "usul.s1.ch3_aqidah_islamiyyah",
+      "label": "Aqidah Islamiyyah",
+      "type": "concept",
+      "description": "Islamic theology — theological schools, attributes of God, prophethood, and eschatology",
+      "grade_range": [
+        "STPM S1"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.usul_s1",
+      "bookName": "STPM Usuluddin Sem 1",
+      "bookColor": "#a855f7",
+      "bookOrder": 9
+    },
+    {
+      "id": "usul.s2.ch1_tafsir",
+      "label": "Tafsir",
+      "type": "concept",
+      "description": "Quranic exegesis — methods of interpretation, selected surah analysis, and thematic tafsir",
+      "grade_range": [
+        "STPM S2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.usul_s2",
+      "bookName": "STPM Usuluddin Sem 2",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 10
+    },
+    {
+      "id": "usul.s2.ch2_hadith_studies",
+      "label": "Pengajian Hadith",
+      "type": "concept",
+      "description": "Advanced hadith studies — major hadith collections, critical analysis, and application",
+      "grade_range": [
+        "STPM S2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.usul_s2",
+      "bookName": "STPM Usuluddin Sem 2",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 10
+    },
+    {
+      "id": "usul.s2.ch3_falsafah_islam",
+      "label": "Falsafah Islam",
+      "type": "concept",
+      "description": "Islamic philosophy — epistemology, ontology, major Muslim philosophers, and philosophical discourse",
+      "grade_range": [
+        "STPM S2"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.usul_s2",
+      "bookName": "STPM Usuluddin Sem 2",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 10
+    },
+    {
+      "id": "usul.s3.ch1_dakwah",
+      "label": "Dakwah",
+      "type": "concept",
+      "description": "Islamic propagation — methodology, history of dakwah, contemporary approaches, and challenges",
+      "grade_range": [
+        "STPM S3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.usul_s3",
+      "bookName": "STPM Usuluddin Sem 3",
+      "bookColor": "#7c3aed",
+      "bookOrder": 11
+    },
+    {
+      "id": "usul.s3.ch2_tasawuf",
+      "label": "Tasawuf",
+      "type": "concept",
+      "description": "Islamic mysticism — sufism, spiritual purification, major sufi orders, and their contributions",
+      "grade_range": [
+        "STPM S3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.usul_s3",
+      "bookName": "STPM Usuluddin Sem 3",
+      "bookColor": "#7c3aed",
+      "bookOrder": 11
+    },
+    {
+      "id": "usul.s3.ch3_comparative_religion",
+      "label": "Perbandingan Agama",
+      "type": "concept",
+      "description": "Comparative religion — major world religions, interfaith dialogue, and Islamic perspectives",
+      "grade_range": [
+        "STPM S3"
+      ],
+      "tags": [
+        "chapter"
+      ],
+      "pages": "",
+      "book": "book.usul_s3",
+      "bookName": "STPM Usuluddin Sem 3",
+      "bookColor": "#7c3aed",
+      "bookOrder": 11
+    }
+  ],
+  "edges": [
+    {
+      "source": "pi.f1.tilawah",
+      "target": "pi.f1.hadith",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f1.hadith",
+      "target": "pi.f1.aqidah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f1.aqidah",
+      "target": "pi.f1.ibadah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f1.ibadah",
+      "target": "pi.f1.sirah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f1.sirah",
+      "target": "pi.f1.akhlak",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f1.akhlak",
+      "target": "pi.f1.tamadun",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f2.tilawah",
+      "target": "pi.f2.hadith",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f2.hadith",
+      "target": "pi.f2.aqidah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f2.aqidah",
+      "target": "pi.f2.ibadah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f2.ibadah",
+      "target": "pi.f2.sirah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f2.sirah",
+      "target": "pi.f2.akhlak",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f2.akhlak",
+      "target": "pi.f2.tamadun",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f3.tilawah",
+      "target": "pi.f3.hadith",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f3.hadith",
+      "target": "pi.f3.aqidah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f3.aqidah",
+      "target": "pi.f3.ibadah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f3.ibadah",
+      "target": "pi.f3.sirah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f3.sirah",
+      "target": "pi.f3.akhlak",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f3.akhlak",
+      "target": "pi.f3.tamadun",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f4.tilawah",
+      "target": "pi.f4.hadith",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f4.hadith",
+      "target": "pi.f4.aqidah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f4.aqidah",
+      "target": "pi.f4.ibadah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f4.ibadah",
+      "target": "pi.f4.sirah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f4.sirah",
+      "target": "pi.f4.akhlak",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f4.akhlak",
+      "target": "pi.f4.tamadun",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f5.tilawah",
+      "target": "pi.f5.hadith",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f5.hadith",
+      "target": "pi.f5.aqidah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f5.aqidah",
+      "target": "pi.f5.ibadah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f5.ibadah",
+      "target": "pi.f5.sirah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f5.sirah",
+      "target": "pi.f5.akhlak",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f5.akhlak",
+      "target": "pi.f5.tamadun",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f1.tilawah",
+      "target": "pi.f2.tilawah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f1.hadith",
+      "target": "pi.f2.hadith",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f1.aqidah",
+      "target": "pi.f2.aqidah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f1.ibadah",
+      "target": "pi.f2.ibadah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f1.sirah",
+      "target": "pi.f2.sirah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f1.akhlak",
+      "target": "pi.f2.akhlak",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f1.tamadun",
+      "target": "pi.f2.tamadun",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f2.tilawah",
+      "target": "pi.f3.tilawah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f2.hadith",
+      "target": "pi.f3.hadith",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f2.aqidah",
+      "target": "pi.f3.aqidah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f2.ibadah",
+      "target": "pi.f3.ibadah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f2.sirah",
+      "target": "pi.f3.sirah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f2.akhlak",
+      "target": "pi.f3.akhlak",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f2.tamadun",
+      "target": "pi.f3.tamadun",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f3.tilawah",
+      "target": "pi.f4.tilawah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f3.hadith",
+      "target": "pi.f4.hadith",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f3.aqidah",
+      "target": "pi.f4.aqidah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f3.ibadah",
+      "target": "pi.f4.ibadah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f3.sirah",
+      "target": "pi.f4.sirah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f3.akhlak",
+      "target": "pi.f4.akhlak",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f3.tamadun",
+      "target": "pi.f4.tamadun",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f4.tilawah",
+      "target": "pi.f5.tilawah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f4.hadith",
+      "target": "pi.f5.hadith",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f4.aqidah",
+      "target": "pi.f5.aqidah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f4.ibadah",
+      "target": "pi.f5.ibadah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f4.sirah",
+      "target": "pi.f5.sirah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f4.akhlak",
+      "target": "pi.f5.akhlak",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f4.tamadun",
+      "target": "pi.f5.tamadun",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "syariah.s1.ch1_usul_fiqh",
+      "target": "syariah.s1.ch2_fiqh_ibadah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "syariah.s1.ch2_fiqh_ibadah",
+      "target": "syariah.s1.ch3_fiqh_munakahat",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "syariah.s2.ch1_fiqh_muamalat",
+      "target": "syariah.s2.ch2_fiqh_jinayat",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "syariah.s2.ch2_fiqh_jinayat",
+      "target": "syariah.s2.ch3_siyasah_syariyyah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "syariah.s3.ch1_maqasid_shariah",
+      "target": "syariah.s3.ch2_islamic_law_malaysia",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "syariah.s3.ch2_islamic_law_malaysia",
+      "target": "syariah.s3.ch3_contemporary_issues",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "syariah.s1.ch3_fiqh_munakahat",
+      "target": "syariah.s2.ch1_fiqh_muamalat",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "syariah.s2.ch3_siyasah_syariyyah",
+      "target": "syariah.s3.ch1_maqasid_shariah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "syariah.s1.ch1_usul_fiqh",
+      "target": "syariah.s3.ch1_maqasid_shariah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usul.s1.ch1_ulum_quran",
+      "target": "usul.s1.ch2_ulum_hadith",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usul.s1.ch2_ulum_hadith",
+      "target": "usul.s1.ch3_aqidah_islamiyyah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usul.s2.ch1_tafsir",
+      "target": "usul.s2.ch2_hadith_studies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usul.s2.ch2_hadith_studies",
+      "target": "usul.s2.ch3_falsafah_islam",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usul.s3.ch1_dakwah",
+      "target": "usul.s3.ch2_tasawuf",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usul.s3.ch2_tasawuf",
+      "target": "usul.s3.ch3_comparative_religion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usul.s1.ch3_aqidah_islamiyyah",
+      "target": "usul.s2.ch1_tafsir",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usul.s1.ch1_ulum_quran",
+      "target": "usul.s2.ch1_tafsir",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usul.s1.ch2_ulum_hadith",
+      "target": "usul.s2.ch2_hadith_studies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usul.s2.ch3_falsafah_islam",
+      "target": "usul.s3.ch1_dakwah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usul.s2.ch1_tafsir",
+      "target": "usul.s3.ch1_dakwah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f5.ibadah",
+      "target": "syariah.s1.ch1_usul_fiqh",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f5.ibadah",
+      "target": "syariah.s1.ch2_fiqh_ibadah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f5.tilawah",
+      "target": "usul.s1.ch1_ulum_quran",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f5.hadith",
+      "target": "usul.s1.ch2_ulum_hadith",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f5.aqidah",
+      "target": "usul.s1.ch3_aqidah_islamiyyah",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pi.f5.tamadun",
+      "target": "syariah.s2.ch3_siyasah_syariyyah",
+      "relation": "prerequisite_for"
+    }
+  ]
+}
