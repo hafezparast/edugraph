@@ -223,7 +223,7 @@ function init(data) {
     return {
       id: n.id,
       label: n.label,
-      color: n.bookColor || book.color || '#888',
+      gradeColor: n.bookColor || book.color || '#888',
       book: n.book,
       bookName: n.bookName || book.name || '',
       bookOrder: n.bookOrder || book.order || 0,
@@ -306,7 +306,10 @@ function init(data) {
   }
 
   // Assign strand to each node
-  nodes.forEach(n => { n.strand = classifyNode(n); });
+  nodes.forEach(n => {
+    n.strand = classifyNode(n);
+    n.topicColor = (topicRules.find(r => r.name === n.strand) || {}).color || '#888';
+  });
 
   // Build strands data (only include strands that have nodes)
   const strandColors = {};
@@ -371,11 +374,12 @@ function init(data) {
     nodeEls = nodeGroup.selectAll('circle').data(vNodes, d => d.id);
     nodeEls.exit().remove();
     nodeEls = nodeEls.enter().append('circle')
-      .attr('r', d => d.r).attr('fill', d => d.color).attr('fill-opacity', 0.85)
-      .attr('stroke', 'none').attr('stroke-width', 2).attr('cursor', 'pointer')
+      .attr('r', d => d.r).attr('fill', d => d.topicColor).attr('fill-opacity', 0.85)
+      .attr('stroke', d => d.gradeColor).attr('stroke-width', 2).attr('stroke-opacity', 0.8)
+      .attr('cursor', 'pointer')
       .on('click', (ev, d) => { ev.stopPropagation(); selectNode(d); })
       .call(d3.drag().on('start', dragStart).on('drag', dragging).on('end', dragEnd))
-      .merge(nodeEls).attr('fill', d => d.color);
+      .merge(nodeEls).attr('fill', d => d.topicColor).attr('stroke', d => d.gradeColor);
 
     labelEls = labelGroup.selectAll('text').data(vNodes, d => d.id);
     labelEls.exit().remove();
@@ -431,8 +435,9 @@ function init(data) {
       if (t === d.id) { neighbors.add(s); prereqEdges.add(s+'->'+t); }
     });
     nodeEls.attr('fill-opacity', n => neighbors.has(n.id) ? 1 : 0.06)
-      .attr('stroke', n => n.id === d.id ? '#ffc857' : 'none')
-      .attr('stroke-width', n => n.id === d.id ? 2.5 : 0);
+      .attr('stroke', n => n.id === d.id ? '#ffc857' : neighbors.has(n.id) ? n.gradeColor : n.gradeColor)
+      .attr('stroke-width', n => n.id === d.id ? 3 : 2)
+      .attr('stroke-opacity', n => neighbors.has(n.id) ? 1 : 0.06);
     labelEls.attr('fill', n => neighbors.has(n.id) ? '#e8e4dc' : '#1a1830')
       .attr('font-weight', n => n.id === d.id ? 600 : 400);
     linkEls.each(function(e) {
@@ -449,7 +454,7 @@ function init(data) {
 
   function clearSelection() {
     selectedNode = null;
-    nodeEls.attr('fill-opacity', 0.85).attr('stroke', 'none');
+    nodeEls.attr('fill-opacity', 0.85).attr('stroke', d => d.gradeColor).attr('stroke-width', 2).attr('stroke-opacity', 0.8);
     labelEls.attr('fill', '#a09cac').attr('font-weight', 400);
     linkEls.attr('stroke', '#5a5480').attr('stroke-opacity', 0.5).attr('stroke-width', 0.7).attr('marker-end', 'url(#arrow)');
     document.getElementById('detail').classList.remove('open');
@@ -467,20 +472,24 @@ function init(data) {
     });
     const content = document.getElementById('detail-content');
     content.innerHTML =
-      '<div class="detail-badge" style="background:'+d.color+'18;color:'+d.color+';border:1px solid '+d.color+'30">' +
-        '<span style="width:5px;height:5px;border-radius:50%;background:'+d.color+';display:inline-block"></span> ' +
+      '<div class="detail-badge" style="background:'+d.gradeColor+'18;color:'+d.gradeColor+';border:1px solid '+d.gradeColor+'30">' +
+        '<span style="width:5px;height:5px;border-radius:50%;background:'+d.gradeColor+';display:inline-block"></span> ' +
         d.bookName +
+      '</div>' +
+      '<div class="detail-badge" style="background:'+d.topicColor+'18;color:'+d.topicColor+';border:1px solid '+d.topicColor+'30;margin-left:4px">' +
+        '<span style="width:5px;height:5px;border-radius:50%;background:'+d.topicColor+';display:inline-block"></span> ' +
+        d.strand +
       '</div>' +
       '<div class="detail-title">' + d.label + '</div>' +
       (d.description ? '<div class="detail-desc">' + d.description + '</div>' : '') +
       (prereqs.length ?
         '<div class="conn-section"><div class="conn-head prereq">\u25B2 Prerequisites (' + prereqs.length + ')</div>' +
-        prereqs.map(n => '<div class="conn-item" data-id="'+n.id+'"><span class="conn-dot" style="background:'+n.color+'"></span><span class="conn-label">'+n.label+'</span><span class="conn-book">'+n.bookName+'</span></div>').join('') +
+        prereqs.map(n => '<div class="conn-item" data-id="'+n.id+'"><span class="conn-dot" style="background:'+n.topicColor+';box-shadow:0 0 0 1.5px '+n.gradeColor+'"></span><span class="conn-label">'+n.label+'</span><span class="conn-book">'+n.bookName+'</span></div>').join('') +
         '</div>'
         : '<div class="conn-section"><div class="conn-head" style="color:var(--gold)">\u2605 Starting point</div></div>') +
       (leads.length ?
         '<div class="conn-section"><div class="conn-head leads">\u25BC Leads to (' + leads.length + ')</div>' +
-        leads.map(n => '<div class="conn-item" data-id="'+n.id+'"><span class="conn-dot" style="background:'+n.color+'"></span><span class="conn-label">'+n.label+'</span><span class="conn-book">'+n.bookName+'</span></div>').join('') +
+        leads.map(n => '<div class="conn-item" data-id="'+n.id+'"><span class="conn-dot" style="background:'+n.topicColor+';box-shadow:0 0 0 1.5px '+n.gradeColor+'"></span><span class="conn-label">'+n.label+'</span><span class="conn-book">'+n.bookName+'</span></div>').join('') +
         '</div>' : '');
     content.querySelectorAll('.conn-item').forEach(el => {
       el.addEventListener('click', () => { const n = nodeMap[el.dataset.id]; if (n) selectNode(n); });
@@ -588,8 +597,9 @@ function init(data) {
         }
         const matchIds = new Set(matches.map(n => n.id));
         nodeEls.attr('fill-opacity', n => matchIds.has(n.id) ? 1 : 0.06)
-          .attr('stroke', n => matchIds.has(n.id) ? '#ffc857' : 'none')
-          .attr('stroke-width', n => matchIds.has(n.id) ? 2 : 0);
+          .attr('stroke', n => matchIds.has(n.id) ? '#ffc857' : n.gradeColor)
+          .attr('stroke-width', n => matchIds.has(n.id) ? 3 : 2)
+          .attr('stroke-opacity', n => matchIds.has(n.id) ? 1 : 0.06);
         labelEls.attr('fill', n => matchIds.has(n.id) ? '#fff' : '#1a1830');
       }
     }, 250);
