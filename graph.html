@@ -322,7 +322,7 @@ function init(data, videoMapping, videoMeta) {
       visibleIds = new Set();
       strandsData.filter(s => activeStrands.has(s.name)).forEach(s => s.nodeIds.forEach(id => visibleIds.add(id)));
     } else {
-      visibleIds = new Set(nodes.filter(n => activeBooks.has(n.book)).map(n => n.id));
+      visibleIds = new Set(nodes.filter(n => !n.book || activeBooks.has(n.book)).map(n => n.id));
     }
     const vNodes = nodes.filter(n => visibleIds.has(n.id));
     const vEdges = edges.filter(e => visibleIds.has(eid(e,'source')) && visibleIds.has(eid(e,'target')));
