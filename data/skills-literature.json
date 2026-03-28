@@ -1,0 +1,1887 @@
+{
+  "metadata": {
+    "domain": "literature",
+    "curriculum": "Literature & Literary Studies",
+    "view": "skill-track",
+    "version": "0.2.0",
+    "description": "Literature and literary studies skills with prerequisite ordering, organized by area of study",
+    "sources": [],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "lit.found",
+      "name": "Literary Foundations",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "lit.narr",
+      "name": "Narrative Elements",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "lit.poetry",
+      "name": "Poetry",
+      "color": "#eab308",
+      "order": 3
+    },
+    {
+      "id": "lit.prose",
+      "name": "Prose Fiction",
+      "color": "#22c55e",
+      "order": 4
+    },
+    {
+      "id": "lit.drama",
+      "name": "Drama",
+      "color": "#3b82f6",
+      "order": 5
+    },
+    {
+      "id": "lit.nonfic",
+      "name": "Non-Fiction & Essay",
+      "color": "#8b5cf6",
+      "order": 6
+    },
+    {
+      "id": "lit.theory",
+      "name": "Literary Theory",
+      "color": "#ec4899",
+      "order": 7
+    },
+    {
+      "id": "lit.world",
+      "name": "World Literature",
+      "color": "#6b7280",
+      "order": 8
+    }
+  ],
+  "strands": [
+    {
+      "id": "reading-analysis",
+      "name": "Reading & Analysis",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "poetry",
+      "name": "Poetry",
+      "color": "#F39C12"
+    },
+    {
+      "id": "prose",
+      "name": "Prose",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "drama",
+      "name": "Drama",
+      "color": "#3498DB"
+    },
+    {
+      "id": "theory",
+      "name": "Theory",
+      "color": "#9B59B6"
+    },
+    {
+      "id": "world-literature",
+      "name": "World Literature",
+      "color": "#7F8C8D"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "lit.what_is_literature",
+      "label": "What Is Literature",
+      "type": "concept",
+      "description": "Defining literature: aesthetic use of language, the literary canon, high vs. popular culture debates, and why we study literature.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.found",
+      "bookName": "Literary Foundations",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "6f475e55d4449cca",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.reading_strategies",
+      "label": "Reading Strategies",
+      "type": "concept",
+      "description": "Active reading techniques: previewing, questioning, summarizing, making connections, and monitoring comprehension.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.found",
+      "bookName": "Literary Foundations",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "f57a3545449efcc1",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.close_reading",
+      "label": "Close Reading",
+      "type": "concept",
+      "description": "Careful, sustained analysis of a short passage: attending to word choice, syntax, imagery, tone, and formal features.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.found",
+      "bookName": "Literary Foundations",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "6a4c4f1b212a4917",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.annotation",
+      "label": "Annotation",
+      "type": "concept",
+      "description": "Marking up texts: highlighting, marginal notes, coding systems, and building a dialogue with the text on the page.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.found",
+      "bookName": "Literary Foundations",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "f03df63a2b11b2c5",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.literary_vs_genre",
+      "label": "Literary vs. Genre Fiction",
+      "type": "concept",
+      "description": "Distinctions and overlaps between literary fiction and genre fiction (mystery, sci-fi, romance). Marketing categories vs. artistic merit.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.found",
+      "bookName": "Literary Foundations",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "d3d079f3d3b8ab3c",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.plot_structure",
+      "label": "Plot Structure",
+      "type": "concept",
+      "description": "Freytag's pyramid: exposition, rising action, climax, falling action, denouement. Variations in non-linear and episodic narratives.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.narr",
+      "bookName": "Narrative Elements",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "9cc372fda0069e0d",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.character_types",
+      "label": "Character Types",
+      "type": "concept",
+      "description": "Protagonist, antagonist, foil, stock characters. Round vs. flat, static vs. dynamic characters and their narrative functions.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.narr",
+      "bookName": "Narrative Elements",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "9d4b272cbea85bc3",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.point_of_view",
+      "label": "Point of View",
+      "type": "concept",
+      "description": "First person, second person, third person limited and omniscient. Narrative distance, reliability, and focalization.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.narr",
+      "bookName": "Narrative Elements",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "4566348db9cb37f8",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.setting",
+      "label": "Setting",
+      "type": "concept",
+      "description": "Time, place, and social environment in narrative. How setting shapes mood, constrains characters, and carries thematic weight.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.narr",
+      "bookName": "Narrative Elements",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "7473016fd06c4497",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.theme",
+      "label": "Theme",
+      "type": "concept",
+      "description": "Central ideas and underlying meanings in a literary work. Distinguishing theme from subject, and how theme emerges from narrative elements.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.narr",
+      "bookName": "Narrative Elements",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "e52c63ec4a6d3fe7",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.symbolism",
+      "label": "Symbolism",
+      "type": "concept",
+      "description": "Objects, characters, or events that represent abstract ideas beyond their literal meaning. Conventional vs. literary symbols.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.narr",
+      "bookName": "Narrative Elements",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "85350c3aeea18635",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.motif",
+      "label": "Motif",
+      "type": "concept",
+      "description": "Recurring elements (images, phrases, situations) that develop or reinforce a theme throughout a literary work.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.narr",
+      "bookName": "Narrative Elements",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "242f573dfd8fd300",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.irony",
+      "label": "Irony",
+      "type": "concept",
+      "description": "Verbal, situational, and dramatic irony. How the gap between appearance and reality creates meaning, humor, or pathos.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.narr",
+      "bookName": "Narrative Elements",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "c0e147fe7d5c9afc",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.foreshadowing",
+      "label": "Foreshadowing",
+      "type": "concept",
+      "description": "Hints or clues planted early in a narrative that anticipate later events. Direct, indirect, and symbolic foreshadowing techniques.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.narr",
+      "bookName": "Narrative Elements",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "977280ba35a655ce",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.meter",
+      "label": "Meter",
+      "type": "concept",
+      "description": "Rhythmic patterns in poetry: iamb, trochee, anapest, dactyl, spondee. Scansion and how meter creates musical effects.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "27f9b25de2988378",
+      "comprehended": false,
+      "strand": "poetry"
+    },
+    {
+      "id": "lit.rhyme",
+      "label": "Rhyme",
+      "type": "concept",
+      "description": "End rhyme, internal rhyme, slant rhyme, and rhyme schemes (ABAB, ABBA, couplets). How rhyme creates structure and emphasis.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "40a11513272026c2",
+      "comprehended": false,
+      "strand": "poetry"
+    },
+    {
+      "id": "lit.free_verse",
+      "label": "Free Verse",
+      "type": "concept",
+      "description": "Poetry without regular meter or rhyme scheme. Line breaks, white space, and organic form as structural elements.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "50ac0636ac388f4a",
+      "comprehended": false,
+      "strand": "poetry"
+    },
+    {
+      "id": "lit.sonnets",
+      "label": "Sonnets",
+      "type": "concept",
+      "description": "Petrarchan (Italian) and Shakespearean (English) sonnet forms: 14 lines, volta, and the interplay of structure and argument.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "51674020af7dbc5e",
+      "comprehended": false,
+      "strand": "poetry"
+    },
+    {
+      "id": "lit.haiku",
+      "label": "Haiku",
+      "type": "concept",
+      "description": "Japanese poetic form: 5-7-5 syllable structure, seasonal references (kigo), cutting words (kireji), and capturing a moment in nature.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "ad3506005d785599",
+      "comprehended": false,
+      "strand": "poetry"
+    },
+    {
+      "id": "lit.imagery",
+      "label": "Imagery",
+      "type": "concept",
+      "description": "Sensory language that appeals to sight, sound, taste, touch, and smell. Creating vivid mental pictures through concrete detail.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "ef08107303bb7e65",
+      "comprehended": false,
+      "strand": "poetry"
+    },
+    {
+      "id": "lit.figurative_language",
+      "label": "Figurative Language",
+      "type": "concept",
+      "description": "Metaphor, simile, personification, hyperbole, metonymy, synecdoche, and other figures of speech that create layered meaning.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "754ae6f18e14ce53",
+      "comprehended": false,
+      "strand": "poetry"
+    },
+    {
+      "id": "lit.enjambment",
+      "label": "Enjambment",
+      "type": "concept",
+      "description": "Running a sentence or phrase across line breaks without punctuation. Creating tension, momentum, and surprise in poetry.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "8ae37a42a50e6d29",
+      "comprehended": false,
+      "strand": "poetry"
+    },
+    {
+      "id": "lit.poetic_voice",
+      "label": "Poetic Voice",
+      "type": "concept",
+      "description": "The speaker's persona, tone, and attitude in a poem. Distinguishing the speaker from the poet, and how voice shapes meaning.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "ee4653ce1ff4fb4d",
+      "comprehended": false,
+      "strand": "poetry"
+    },
+    {
+      "id": "lit.major_poets",
+      "label": "Major Poets",
+      "type": "concept",
+      "description": "Key figures across traditions: Shakespeare, Dickinson, Whitman, Keats, Neruda, Rumi, Bishop, Hughes, Plath, Walcott, and their contributions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "ad616f8a4feff256",
+      "comprehended": false,
+      "strand": "poetry"
+    },
+    {
+      "id": "lit.short_story",
+      "label": "Short Story",
+      "type": "concept",
+      "description": "The short story form: compression, unity of effect (Poe), epiphany (Joyce), and structural conventions from Chekhov to the present.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.prose",
+      "bookName": "Prose Fiction",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "09cc6e433937b90c",
+      "comprehended": false,
+      "strand": "prose"
+    },
+    {
+      "id": "lit.novel",
+      "label": "The Novel",
+      "type": "concept",
+      "description": "Long-form prose fiction: origins (Cervantes, Defoe), the bildungsroman, epic scope, and the novel as a flexible, evolving form.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.prose",
+      "bookName": "Prose Fiction",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "c248c8bc8676c7ed",
+      "comprehended": false,
+      "strand": "prose"
+    },
+    {
+      "id": "lit.novella",
+      "label": "Novella",
+      "type": "concept",
+      "description": "Mid-length fiction between story and novel: concentrated focus, limited cast, single central conflict. Conrad, Kafka, Steinbeck.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.prose",
+      "bookName": "Prose Fiction",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "fa879932cd737ad7",
+      "comprehended": false,
+      "strand": "prose"
+    },
+    {
+      "id": "lit.flash_fiction",
+      "label": "Flash Fiction",
+      "type": "concept",
+      "description": "Extremely short fiction (under 1000 words): micro-narratives, sudden fiction, implication, and economy of language.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.prose",
+      "bookName": "Prose Fiction",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "8ee01d7b9111955c",
+      "comprehended": false,
+      "strand": "prose"
+    },
+    {
+      "id": "lit.narrative_techniques",
+      "label": "Narrative Techniques",
+      "type": "concept",
+      "description": "Frame narratives, epistolary form, in medias res, non-linear chronology, multiple perspectives, and metafiction.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.prose",
+      "bookName": "Prose Fiction",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "a419f48a2f2abe62",
+      "comprehended": false,
+      "strand": "prose"
+    },
+    {
+      "id": "lit.stream_of_consciousness",
+      "label": "Stream of Consciousness",
+      "type": "concept",
+      "description": "Interior monologue that mimics the flow of thought: Joyce, Woolf, Faulkner. Free association, fragmented syntax, and psychological depth.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.prose",
+      "bookName": "Prose Fiction",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "043ffda89aba0249",
+      "comprehended": false,
+      "strand": "prose"
+    },
+    {
+      "id": "lit.unreliable_narrator",
+      "label": "Unreliable Narrator",
+      "type": "concept",
+      "description": "Narrators whose credibility is compromised: intentional deception, naivety, or mental instability. Reader as detective.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.prose",
+      "bookName": "Prose Fiction",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "9b190f22a71f35e4",
+      "comprehended": false,
+      "strand": "prose"
+    },
+    {
+      "id": "lit.magical_realism",
+      "label": "Magical Realism",
+      "type": "concept",
+      "description": "The matter-of-fact incorporation of fantastical elements into realistic fiction. García Márquez, Allende, Rushdie, Okri.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.prose",
+      "bookName": "Prose Fiction",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "ebd7f1933e1deb59",
+      "comprehended": false,
+      "strand": "prose"
+    },
+    {
+      "id": "lit.tragedy",
+      "label": "Tragedy",
+      "type": "concept",
+      "description": "From Greek tragedy to modern: hamartia, catharsis, the fall of the great. Sophocles, Shakespeare, Miller, and the tragic vision.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.drama",
+      "bookName": "Drama",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "6f819e3eb595ffc1",
+      "comprehended": false,
+      "strand": "drama"
+    },
+    {
+      "id": "lit.comedy",
+      "label": "Comedy",
+      "type": "concept",
+      "description": "Comic forms from Aristophanes to sitcom: satire, farce, romantic comedy, comedy of manners, and the social function of laughter.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.drama",
+      "bookName": "Drama",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "bee09237ef5e79a6",
+      "comprehended": false,
+      "strand": "drama"
+    },
+    {
+      "id": "lit.tragicomedy",
+      "label": "Tragicomedy",
+      "type": "concept",
+      "description": "Blending tragic and comic elements: Chekhov, Beckett, Stoppard. The ambiguity of tone and the complexity of human experience.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.drama",
+      "bookName": "Drama",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "6d52a7576043eded",
+      "comprehended": false,
+      "strand": "drama"
+    },
+    {
+      "id": "lit.theatre_of_absurd",
+      "label": "Theatre of the Absurd",
+      "type": "concept",
+      "description": "Beckett, Ionesco, Pinter: meaninglessness, circular dialogue, breakdown of logic, and existentialist themes on stage.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.drama",
+      "bookName": "Drama",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "b9620b3b6384141b",
+      "comprehended": false,
+      "strand": "drama"
+    },
+    {
+      "id": "lit.aristotle_poetics",
+      "label": "Aristotle's Poetics",
+      "type": "concept",
+      "description": "The foundational text of dramatic theory: mimesis, plot as soul of tragedy, unity of action, recognition, reversal, and catharsis.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.drama",
+      "bookName": "Drama",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "69f89d90918a2aeb",
+      "comprehended": false,
+      "strand": "drama"
+    },
+    {
+      "id": "lit.shakespearean_drama",
+      "label": "Shakespearean Drama",
+      "type": "concept",
+      "description": "Shakespeare's tragedies, comedies, histories, and romances. Blank verse, soliloquy, dramatic structure, and enduring influence.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.drama",
+      "bookName": "Drama",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "95841171904b12d0",
+      "comprehended": false,
+      "strand": "drama"
+    },
+    {
+      "id": "lit.modern_drama",
+      "label": "Modern Drama",
+      "type": "concept",
+      "description": "Ibsen, Chekhov, Brecht, Williams, Miller: realism, epic theatre, the well-made play, and drama as social commentary.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.drama",
+      "bookName": "Drama",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "adb04915c106e2ea",
+      "comprehended": false,
+      "strand": "drama"
+    },
+    {
+      "id": "lit.stage_directions",
+      "label": "Stage Directions",
+      "type": "concept",
+      "description": "Reading and interpreting stage directions: blocking, set descriptions, character entrances/exits, and authorial intent in dramatic texts.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.drama",
+      "bookName": "Drama",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "e21b5392ac746f7e",
+      "comprehended": false,
+      "strand": "drama"
+    },
+    {
+      "id": "lit.dramatic_irony",
+      "label": "Dramatic Irony",
+      "type": "concept",
+      "description": "When the audience knows something characters do not: creating suspense, pathos, and engagement across dramatic and narrative forms.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.drama",
+      "bookName": "Drama",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "0f3b4be86b4fbe16",
+      "comprehended": false,
+      "strand": "drama"
+    },
+    {
+      "id": "lit.personal_essay",
+      "label": "Personal Essay",
+      "type": "concept",
+      "description": "The essay as exploration of self: Montaigne's tradition, personal voice, reflection, and the essayist's contract with the reader.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.nonfic",
+      "bookName": "Non-Fiction & Essay",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "fb015be2d36c4be6",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.literary_criticism_writing",
+      "label": "Literary Criticism (Writing)",
+      "type": "concept",
+      "description": "Writing analytical essays about literature: thesis development, textual evidence, argument structure, and scholarly conventions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.nonfic",
+      "bookName": "Non-Fiction & Essay",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "de4aad82fc2edfee",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.memoir",
+      "label": "Memoir",
+      "type": "concept",
+      "description": "Life writing focused on specific periods or themes: memory, truth, narrative shaping of experience, and the memoir boom.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.nonfic",
+      "bookName": "Non-Fiction & Essay",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "7a7f901153977f08",
+      "comprehended": false,
+      "strand": "prose"
+    },
+    {
+      "id": "lit.biography",
+      "label": "Biography",
+      "type": "concept",
+      "description": "Writing the lives of others: research, narrative structure, ethical considerations, and the relationship between life and work.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.nonfic",
+      "bookName": "Non-Fiction & Essay",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "c9eab3bf3d1060e3",
+      "comprehended": false,
+      "strand": "prose"
+    },
+    {
+      "id": "lit.new_journalism",
+      "label": "New Journalism",
+      "type": "concept",
+      "description": "Literary non-fiction: Wolfe, Didion, Capote, Mailer. Applying novelistic techniques to reportage and blurring fact/fiction boundaries.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.nonfic",
+      "bookName": "Non-Fiction & Essay",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "75c252068b9f868a",
+      "comprehended": false,
+      "strand": "prose"
+    },
+    {
+      "id": "lit.essay_forms",
+      "label": "Essay Forms",
+      "type": "concept",
+      "description": "Lyric essay, hermit crab essay, braided essay, and other experimental non-fiction forms that push the boundaries of the genre.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.nonfic",
+      "bookName": "Non-Fiction & Essay",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "c83117a5a9d00ba9",
+      "comprehended": false,
+      "strand": "reading-analysis"
+    },
+    {
+      "id": "lit.formalism",
+      "label": "Formalism",
+      "type": "concept",
+      "description": "New Criticism and Russian Formalism: the text as self-contained object, defamiliarization, close reading as methodology.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.theory",
+      "bookName": "Literary Theory",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "21515c79f1a0b1fe",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "lit.structuralism",
+      "label": "Structuralism",
+      "type": "concept",
+      "description": "Saussure, Lévi-Strauss, Barthes: underlying systems and codes, binary oppositions, narrative grammar, and deep structures of meaning.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.theory",
+      "bookName": "Literary Theory",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "08c0f85021001e77",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "lit.post_structuralism",
+      "label": "Post-Structuralism",
+      "type": "concept",
+      "description": "Derrida, Foucault, Barthes (late): instability of meaning, the death of the author, power/knowledge, and textual play.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.theory",
+      "bookName": "Literary Theory",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "7c880cecd65810bb",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "lit.marxist_criticism",
+      "label": "Marxist Criticism",
+      "type": "concept",
+      "description": "Literature and class: ideology, base/superstructure, cultural hegemony (Gramsci), and the Frankfurt School on culture industry.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.theory",
+      "bookName": "Literary Theory",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "141b8de041d77edb",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "lit.feminist_criticism",
+      "label": "Feminist Criticism",
+      "type": "concept",
+      "description": "Gender and literature: Woolf, Beauvoir, Showalter, Gilbert & Gubar. Recovering women's writing and analyzing gender representation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.theory",
+      "bookName": "Literary Theory",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "780c60fba895e517",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "lit.postcolonial_criticism",
+      "label": "Postcolonial Criticism",
+      "type": "concept",
+      "description": "Said's Orientalism, Spivak's subaltern, Bhabha's hybridity: literature, empire, identity, and writing back to the center.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.theory",
+      "bookName": "Literary Theory",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "5fe81dbbf4111dbe",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "lit.psychoanalytic_criticism",
+      "label": "Psychoanalytic Criticism",
+      "type": "concept",
+      "description": "Freud, Lacan, and literature: the unconscious, desire, repression, the mirror stage, and reading texts as dreams or symptoms.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.theory",
+      "bookName": "Literary Theory",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "cdfe188afa3f7f83",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "lit.reader_response",
+      "label": "Reader-Response Theory",
+      "type": "concept",
+      "description": "Iser, Fish, Jauss: meaning as co-created by reader and text, interpretive communities, horizons of expectation, and reception aesthetics.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.theory",
+      "bookName": "Literary Theory",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "3c93e18c86f7bc99",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "lit.deconstruction",
+      "label": "Deconstruction",
+      "type": "concept",
+      "description": "Derrida's method: revealing internal contradictions in texts, differance, logocentrism, and the undecidability of meaning.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.theory",
+      "bookName": "Literary Theory",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "419e70fdfa51b6a2",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "lit.new_historicism",
+      "label": "New Historicism",
+      "type": "concept",
+      "description": "Greenblatt and the circulation of social energy: literature as embedded in historical context, anecdotes, and cultural negotiations.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.theory",
+      "bookName": "Literary Theory",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "31b7015d1abcfafc",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "lit.classical",
+      "label": "Classical Literature (Greek & Roman)",
+      "type": "concept",
+      "description": "Homer, Virgil, Ovid, Sappho, Greek drama. Epic, lyric, and dramatic foundations of the Western literary tradition.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.world",
+      "bookName": "World Literature",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "3d33fde31f4bb60a",
+      "comprehended": false,
+      "strand": "world-literature"
+    },
+    {
+      "id": "lit.medieval",
+      "label": "Medieval Literature",
+      "type": "concept",
+      "description": "Beowulf, Dante, Chaucer, The Tale of Genji. Allegory, romance, religious writing, and courtly love traditions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.world",
+      "bookName": "World Literature",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "e480ae1d8428ef03",
+      "comprehended": false,
+      "strand": "world-literature"
+    },
+    {
+      "id": "lit.renaissance",
+      "label": "Renaissance Literature",
+      "type": "concept",
+      "description": "Shakespeare, Cervantes, Montaigne, Milton. Humanism, the printing press, vernacular literature, and the birth of the modern self.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.world",
+      "bookName": "World Literature",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "c27a665f439706fb",
+      "comprehended": false,
+      "strand": "world-literature"
+    },
+    {
+      "id": "lit.romantic",
+      "label": "Romantic Literature",
+      "type": "concept",
+      "description": "Wordsworth, Coleridge, Shelley, Keats, Byron, Goethe. Imagination, nature, the sublime, individualism, and emotional intensity.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.world",
+      "bookName": "World Literature",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "664d78e106ee51b3",
+      "comprehended": false,
+      "strand": "world-literature"
+    },
+    {
+      "id": "lit.victorian",
+      "label": "Victorian Literature",
+      "type": "concept",
+      "description": "Dickens, Brontës, Eliot, Hardy, Tennyson. Social realism, the condition-of-England novel, empire, and moral earnestness.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.world",
+      "bookName": "World Literature",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "cf31af2620722780",
+      "comprehended": false,
+      "strand": "world-literature"
+    },
+    {
+      "id": "lit.modernism",
+      "label": "Modernism",
+      "type": "concept",
+      "description": "Joyce, Woolf, Eliot, Kafka, Faulkner. Fragmentation, stream of consciousness, mythic method, and the crisis of representation.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.world",
+      "bookName": "World Literature",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "cf4ab7cff6d9b970",
+      "comprehended": false,
+      "strand": "world-literature"
+    },
+    {
+      "id": "lit.postmodernism",
+      "label": "Postmodernism",
+      "type": "concept",
+      "description": "Pynchon, Borges, DeLillo, Calvino. Metafiction, pastiche, irony, historiographic metafiction, and the collapse of grand narratives.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.world",
+      "bookName": "World Literature",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "f5ef878e55056204",
+      "comprehended": false,
+      "strand": "world-literature"
+    },
+    {
+      "id": "lit.latin_american_boom",
+      "label": "Latin American Boom",
+      "type": "concept",
+      "description": "García Márquez, Cortázar, Vargas Llosa, Fuentes. Magical realism, political engagement, and the explosion of Latin American fiction in the 1960s–70s.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.world",
+      "bookName": "World Literature",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "8d076476e46466dc",
+      "comprehended": false,
+      "strand": "world-literature"
+    },
+    {
+      "id": "lit.african_literature",
+      "label": "African Literature",
+      "type": "concept",
+      "description": "Achebe, Ngũgĩ, Soyinka, Adichie. Decolonization, language politics, oral tradition's influence, and pan-African literary movements.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.world",
+      "bookName": "World Literature",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "a4e0ca0d5bed8f8f",
+      "comprehended": false,
+      "strand": "world-literature"
+    },
+    {
+      "id": "lit.asian_literature",
+      "label": "Asian Literature",
+      "type": "concept",
+      "description": "Classical Chinese poetry, Japanese aesthetics (mono no aware), Indian epics, modern Asian fiction: Murakami, Tagore, Lu Xun, Mishima.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.world",
+      "bookName": "World Literature",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "80d32053319609c9",
+      "comprehended": false,
+      "strand": "world-literature"
+    },
+    {
+      "id": "lit.oral_traditions",
+      "label": "Oral Traditions",
+      "type": "concept",
+      "description": "Epic recitation, griots, oral formulaic theory (Parry-Lord), folklore, mythology, and the transition from oral to written literature.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "lit.world",
+      "bookName": "World Literature",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "9d5252e24e4ea678",
+      "comprehended": false,
+      "strand": "world-literature"
+    }
+  ],
+  "edges": [
+    {
+      "source": "lit.what_is_literature",
+      "target": "lit.reading_strategies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.reading_strategies",
+      "target": "lit.close_reading",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.reading_strategies",
+      "target": "lit.annotation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.what_is_literature",
+      "target": "lit.literary_vs_genre",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.close_reading",
+      "target": "lit.plot_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.close_reading",
+      "target": "lit.character_types",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.close_reading",
+      "target": "lit.point_of_view",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.close_reading",
+      "target": "lit.setting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.plot_structure",
+      "target": "lit.theme",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.character_types",
+      "target": "lit.theme",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.theme",
+      "target": "lit.symbolism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.symbolism",
+      "target": "lit.motif",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.point_of_view",
+      "target": "lit.irony",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.plot_structure",
+      "target": "lit.foreshadowing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.close_reading",
+      "target": "lit.meter",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.meter",
+      "target": "lit.rhyme",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.meter",
+      "target": "lit.free_verse",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.rhyme",
+      "target": "lit.sonnets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.meter",
+      "target": "lit.sonnets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.close_reading",
+      "target": "lit.haiku",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.close_reading",
+      "target": "lit.imagery",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.imagery",
+      "target": "lit.figurative_language",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.free_verse",
+      "target": "lit.enjambment",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.figurative_language",
+      "target": "lit.poetic_voice",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.enjambment",
+      "target": "lit.poetic_voice",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.poetic_voice",
+      "target": "lit.major_poets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.sonnets",
+      "target": "lit.major_poets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.plot_structure",
+      "target": "lit.short_story",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.character_types",
+      "target": "lit.short_story",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.short_story",
+      "target": "lit.novel",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.short_story",
+      "target": "lit.novella",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.short_story",
+      "target": "lit.flash_fiction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.point_of_view",
+      "target": "lit.narrative_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.novel",
+      "target": "lit.narrative_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.narrative_techniques",
+      "target": "lit.stream_of_consciousness",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.point_of_view",
+      "target": "lit.unreliable_narrator",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.narrative_techniques",
+      "target": "lit.unreliable_narrator",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.novel",
+      "target": "lit.magical_realism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.symbolism",
+      "target": "lit.magical_realism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.plot_structure",
+      "target": "lit.tragedy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.plot_structure",
+      "target": "lit.comedy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.tragedy",
+      "target": "lit.tragicomedy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.comedy",
+      "target": "lit.tragicomedy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.tragicomedy",
+      "target": "lit.theatre_of_absurd",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.tragedy",
+      "target": "lit.aristotle_poetics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.tragedy",
+      "target": "lit.shakespearean_drama",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.comedy",
+      "target": "lit.shakespearean_drama",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.shakespearean_drama",
+      "target": "lit.modern_drama",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.aristotle_poetics",
+      "target": "lit.modern_drama",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.close_reading",
+      "target": "lit.stage_directions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.irony",
+      "target": "lit.dramatic_irony",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.tragedy",
+      "target": "lit.dramatic_irony",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.close_reading",
+      "target": "lit.personal_essay",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.personal_essay",
+      "target": "lit.literary_criticism_writing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.close_reading",
+      "target": "lit.literary_criticism_writing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.personal_essay",
+      "target": "lit.memoir",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.memoir",
+      "target": "lit.biography",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.novel",
+      "target": "lit.new_journalism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.memoir",
+      "target": "lit.new_journalism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.personal_essay",
+      "target": "lit.essay_forms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.literary_criticism_writing",
+      "target": "lit.essay_forms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.close_reading",
+      "target": "lit.formalism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.formalism",
+      "target": "lit.structuralism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.structuralism",
+      "target": "lit.post_structuralism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.formalism",
+      "target": "lit.marxist_criticism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.formalism",
+      "target": "lit.feminist_criticism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.post_structuralism",
+      "target": "lit.postcolonial_criticism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.feminist_criticism",
+      "target": "lit.postcolonial_criticism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.formalism",
+      "target": "lit.psychoanalytic_criticism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.formalism",
+      "target": "lit.reader_response",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.post_structuralism",
+      "target": "lit.deconstruction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.marxist_criticism",
+      "target": "lit.new_historicism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.post_structuralism",
+      "target": "lit.new_historicism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.classical",
+      "target": "lit.medieval",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.medieval",
+      "target": "lit.renaissance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.renaissance",
+      "target": "lit.romantic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.romantic",
+      "target": "lit.victorian",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.victorian",
+      "target": "lit.modernism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.modernism",
+      "target": "lit.postmodernism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.modernism",
+      "target": "lit.latin_american_boom",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.postcolonial_criticism",
+      "target": "lit.african_literature",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.modernism",
+      "target": "lit.african_literature",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.classical",
+      "target": "lit.asian_literature",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.classical",
+      "target": "lit.oral_traditions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.oral_traditions",
+      "target": "lit.african_literature",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "lit.latin_american_boom",
+      "target": "lit.magical_realism",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

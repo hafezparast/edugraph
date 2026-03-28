@@ -1,0 +1,1727 @@
+{
+  "metadata": {
+    "domain": "cinema",
+    "curriculum": "Cinema & Filmmaking",
+    "view": "skill-track",
+    "version": "0.2.0",
+    "description": "Cinema and filmmaking skills with prerequisite ordering, organized by craft area",
+    "sources": [],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "cinema.lang",
+      "name": "Film Language",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "cinema.screen",
+      "name": "Screenwriting",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "cinema.dir",
+      "name": "Directing",
+      "color": "#eab308",
+      "order": 3
+    },
+    {
+      "id": "cinema.cine",
+      "name": "Cinematography",
+      "color": "#22c55e",
+      "order": 4
+    },
+    {
+      "id": "cinema.edit",
+      "name": "Editing",
+      "color": "#3b82f6",
+      "order": 5
+    },
+    {
+      "id": "cinema.sound",
+      "name": "Sound Design",
+      "color": "#8b5cf6",
+      "order": 6
+    },
+    {
+      "id": "cinema.prod",
+      "name": "Production",
+      "color": "#ec4899",
+      "order": 7
+    },
+    {
+      "id": "cinema.hist",
+      "name": "Film History & Theory",
+      "color": "#6b7280",
+      "order": 8
+    }
+  ],
+  "strands": [
+    {
+      "id": "visual-storytelling",
+      "name": "Visual Storytelling",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "narrative",
+      "name": "Narrative",
+      "color": "#F39C12"
+    },
+    {
+      "id": "technical-craft",
+      "name": "Technical Craft",
+      "color": "#3498DB"
+    },
+    {
+      "id": "sound",
+      "name": "Sound",
+      "color": "#9B59B6"
+    },
+    {
+      "id": "production",
+      "name": "Production",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "theory-history",
+      "name": "Theory & History",
+      "color": "#7F8C8D"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "cinema.shot_types",
+      "label": "Shot Types",
+      "type": "concept",
+      "description": "Fundamental shot classifications: extreme close-up, close-up, medium shot, wide shot, extreme wide shot, and their narrative functions.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.lang",
+      "bookName": "Film Language",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "24088d79c1a9e952",
+      "comprehended": false,
+      "strand": "visual-storytelling"
+    },
+    {
+      "id": "cinema.camera_angles",
+      "label": "Camera Angles",
+      "type": "concept",
+      "description": "Eye-level, low angle, high angle, Dutch angle, bird's eye, and worm's eye views and their psychological effects on the viewer.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.lang",
+      "bookName": "Film Language",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "11a006129b8c0b89",
+      "comprehended": false,
+      "strand": "visual-storytelling"
+    },
+    {
+      "id": "cinema.camera_movement",
+      "label": "Camera Movement",
+      "type": "concept",
+      "description": "Pan, tilt, dolly, tracking, crane, Steadicam, and handheld techniques and when to deploy each for narrative effect.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.lang",
+      "bookName": "Film Language",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "1dda17de3d5aee12",
+      "comprehended": false,
+      "strand": "visual-storytelling"
+    },
+    {
+      "id": "cinema.composition",
+      "label": "Composition",
+      "type": "concept",
+      "description": "Arranging visual elements within the frame: leading lines, framing, balance, negative space, and foreground/background relationships.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.lang",
+      "bookName": "Film Language",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "abfa457e34a56804",
+      "comprehended": false,
+      "strand": "visual-storytelling"
+    },
+    {
+      "id": "cinema.rule_of_thirds",
+      "label": "Rule of Thirds",
+      "type": "concept",
+      "description": "Dividing the frame into a 3×3 grid and placing key subjects along the lines or intersections for dynamic, balanced compositions.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.lang",
+      "bookName": "Film Language",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "48b3f42fd838622b",
+      "comprehended": false,
+      "strand": "visual-storytelling"
+    },
+    {
+      "id": "cinema.depth_of_field",
+      "label": "Depth of Field",
+      "type": "concept",
+      "description": "Shallow vs. deep focus, rack focus, and how aperture, focal length, and sensor size control what remains sharp in the image.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.lang",
+      "bookName": "Film Language",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "2c315c161d669fce",
+      "comprehended": false,
+      "strand": "technical-craft"
+    },
+    {
+      "id": "cinema.aspect_ratio",
+      "label": "Aspect Ratio",
+      "type": "concept",
+      "description": "Common ratios (1.33:1, 1.85:1, 2.39:1) and how the shape of the frame affects storytelling, mood, and viewer perception.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.lang",
+      "bookName": "Film Language",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "96995094c5a52bcd",
+      "comprehended": false,
+      "strand": "technical-craft"
+    },
+    {
+      "id": "cinema.three_act_structure",
+      "label": "Three-Act Structure",
+      "type": "concept",
+      "description": "Setup, confrontation, and resolution: the foundational paradigm for feature-length screenwriting with turning points and midpoint.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.screen",
+      "bookName": "Screenwriting",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "b3d2b1b338d98229",
+      "comprehended": false,
+      "strand": "narrative"
+    },
+    {
+      "id": "cinema.heros_journey",
+      "label": "Hero's Journey",
+      "type": "concept",
+      "description": "Joseph Campbell's monomyth adapted for film: the call to adventure, threshold crossing, ordeal, and return with the elixir.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.screen",
+      "bookName": "Screenwriting",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "e0bb6ab5e6dd5bd2",
+      "comprehended": false,
+      "strand": "narrative"
+    },
+    {
+      "id": "cinema.save_the_cat",
+      "label": "Save the Cat",
+      "type": "concept",
+      "description": "Blake Snyder's beat sheet: 15 story beats from opening image to final image, a practical template for commercial screenwriting.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.screen",
+      "bookName": "Screenwriting",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "32c7a867452ccbdd",
+      "comprehended": false,
+      "strand": "narrative"
+    },
+    {
+      "id": "cinema.character_arcs",
+      "label": "Character Arcs",
+      "type": "concept",
+      "description": "Positive, negative, and flat arcs: how characters transform (or resist transformation) over the course of a story.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.screen",
+      "bookName": "Screenwriting",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "3f118fc4af88c00c",
+      "comprehended": false,
+      "strand": "narrative"
+    },
+    {
+      "id": "cinema.dialogue",
+      "label": "Dialogue",
+      "type": "concept",
+      "description": "Writing naturalistic and purposeful dialogue: exposition without info-dumps, voice differentiation, and subtext in conversation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.screen",
+      "bookName": "Screenwriting",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "1d2d67e3a87bd42b",
+      "comprehended": false,
+      "strand": "narrative"
+    },
+    {
+      "id": "cinema.scene_construction",
+      "label": "Scene Construction",
+      "type": "concept",
+      "description": "Building scenes with clear objectives, conflict, beats, and turning points. Entering late, leaving early.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.screen",
+      "bookName": "Screenwriting",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "8a5d86be568841c4",
+      "comprehended": false,
+      "strand": "narrative"
+    },
+    {
+      "id": "cinema.screenplay_format",
+      "label": "Screenplay Format",
+      "type": "concept",
+      "description": "Industry-standard formatting: sluglines, action lines, character cues, parentheticals, transitions, and proper page layout.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.screen",
+      "bookName": "Screenwriting",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "9bd8816ef7d9739e",
+      "comprehended": false,
+      "strand": "narrative"
+    },
+    {
+      "id": "cinema.subtext",
+      "label": "Subtext",
+      "type": "concept",
+      "description": "The unspoken meaning beneath dialogue and action. Creating layers where what characters say differs from what they mean.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.screen",
+      "bookName": "Screenwriting",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "7c227987468f35da",
+      "comprehended": false,
+      "strand": "narrative"
+    },
+    {
+      "id": "cinema.theme",
+      "label": "Theme",
+      "type": "concept",
+      "description": "Identifying and weaving a central thematic argument throughout a screenplay using character, plot, and imagery.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.screen",
+      "bookName": "Screenwriting",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "9a2f8d5c5801f3d3",
+      "comprehended": false,
+      "strand": "narrative"
+    },
+    {
+      "id": "cinema.working_with_actors",
+      "label": "Working with Actors",
+      "type": "concept",
+      "description": "Communicating vision, giving actionable direction, understanding acting methods (Stanislavski, Meisner), and building trust on set.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.dir",
+      "bookName": "Directing",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "d9d1b5de2c2e303c",
+      "comprehended": false,
+      "strand": "narrative"
+    },
+    {
+      "id": "cinema.blocking",
+      "label": "Blocking",
+      "type": "concept",
+      "description": "Staging actors' movements within a scene to convey relationships, power dynamics, and emotional subtext through physical space.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.dir",
+      "bookName": "Directing",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "11d5fd3c43fe1f76",
+      "comprehended": false,
+      "strand": "visual-storytelling"
+    },
+    {
+      "id": "cinema.visual_storytelling",
+      "label": "Visual Storytelling",
+      "type": "concept",
+      "description": "Conveying narrative information through images rather than words: show don't tell, visual motifs, and symbolic imagery.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.dir",
+      "bookName": "Directing",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "a26a5dcb4a52b23d",
+      "comprehended": false,
+      "strand": "visual-storytelling"
+    },
+    {
+      "id": "cinema.tone",
+      "label": "Tone & Mood",
+      "type": "concept",
+      "description": "Establishing and maintaining a consistent emotional atmosphere through lighting, color, music, pacing, and performance choices.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.dir",
+      "bookName": "Directing",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "5be7fe98b8c5a1cc",
+      "comprehended": false,
+      "strand": "visual-storytelling"
+    },
+    {
+      "id": "cinema.pacing_dir",
+      "label": "Pacing (Directing)",
+      "type": "concept",
+      "description": "Controlling the rhythm of a film through scene length, shot duration, performance tempo, and narrative momentum.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.dir",
+      "bookName": "Directing",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "36d7f670b8c1574c",
+      "comprehended": false,
+      "strand": "visual-storytelling"
+    },
+    {
+      "id": "cinema.mise_en_scene",
+      "label": "Mise-en-Scène",
+      "type": "concept",
+      "description": "Everything placed within the frame: set design, props, costumes, lighting, and actor placement as expressive tools.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.dir",
+      "bookName": "Directing",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "864961748808c0b0",
+      "comprehended": false,
+      "strand": "visual-storytelling"
+    },
+    {
+      "id": "cinema.auteur_theory",
+      "label": "Auteur Theory",
+      "type": "concept",
+      "description": "The director as author: recurring themes, visual style, and personal vision across a body of work. Cahiers du Cinéma origins.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.dir",
+      "bookName": "Directing",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "6ecd23cd040b17b8",
+      "comprehended": false,
+      "strand": "theory-history"
+    },
+    {
+      "id": "cinema.three_point_lighting",
+      "label": "Three-Point Lighting",
+      "type": "concept",
+      "description": "Key light, fill light, and back light: the foundational lighting setup for interviews, dialogue scenes, and controlled environments.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.cine",
+      "bookName": "Cinematography",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "5e25044ea0b28c1d",
+      "comprehended": false,
+      "strand": "technical-craft"
+    },
+    {
+      "id": "cinema.natural_lighting",
+      "label": "Natural Lighting",
+      "type": "concept",
+      "description": "Working with available light: golden hour, overcast diffusion, window light, bouncing, and using reflectors and negative fill.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.cine",
+      "bookName": "Cinematography",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "b721ebeef9cd056a",
+      "comprehended": false,
+      "strand": "technical-craft"
+    },
+    {
+      "id": "cinema.motivated_lighting",
+      "label": "Motivated Lighting",
+      "type": "concept",
+      "description": "Designing light that appears to originate from a source within the scene (lamps, windows, screens) for naturalistic yet controlled results.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.cine",
+      "bookName": "Cinematography",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "3b76ce4f3f091be7",
+      "comprehended": false,
+      "strand": "technical-craft"
+    },
+    {
+      "id": "cinema.lens_selection",
+      "label": "Lens Selection",
+      "type": "concept",
+      "description": "Wide, normal, and telephoto lenses: focal length effects on perspective, compression, distortion, and emotional tone.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.cine",
+      "bookName": "Cinematography",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "ae14fbc2fdc4b4dd",
+      "comprehended": false,
+      "strand": "technical-craft"
+    },
+    {
+      "id": "cinema.color_grading",
+      "label": "Color Grading",
+      "type": "concept",
+      "description": "Post-production color manipulation: LUTs, color wheels, curves, and establishing a unified visual palette for the film.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.cine",
+      "bookName": "Cinematography",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "cdfa6ef0377a544f",
+      "comprehended": false,
+      "strand": "technical-craft"
+    },
+    {
+      "id": "cinema.color_theory",
+      "label": "Color Theory in Film",
+      "type": "concept",
+      "description": "Warm vs. cool tones, complementary and analogous palettes, color symbolism, and using color to convey emotion and narrative.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.cine",
+      "bookName": "Cinematography",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "6f1efccbbb738506",
+      "comprehended": false,
+      "strand": "visual-storytelling"
+    },
+    {
+      "id": "cinema.exposure",
+      "label": "Exposure",
+      "type": "concept",
+      "description": "Controlling image brightness via aperture, shutter speed/angle, and ISO/gain. Reading histograms, zebras, and false color.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.cine",
+      "bookName": "Cinematography",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "84e2e831cd1c233f",
+      "comprehended": false,
+      "strand": "technical-craft"
+    },
+    {
+      "id": "cinema.white_balance",
+      "label": "White Balance",
+      "type": "concept",
+      "description": "Color temperature (Kelvin), matching white balance to light sources, and creative use of mismatched white balance.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.cine",
+      "bookName": "Cinematography",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "00542dc554312044",
+      "comprehended": false,
+      "strand": "technical-craft"
+    },
+    {
+      "id": "cinema.continuity_editing",
+      "label": "Continuity Editing",
+      "type": "concept",
+      "description": "Maintaining spatial and temporal coherence: the 180-degree rule, 30-degree rule, eyeline match, and screen direction.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.edit",
+      "bookName": "Editing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "6cb9fabd67791d38",
+      "comprehended": false,
+      "strand": "technical-craft"
+    },
+    {
+      "id": "cinema.montage_theory",
+      "label": "Montage Theory",
+      "type": "concept",
+      "description": "Eisenstein's five methods of montage: metric, rhythmic, tonal, overtonal, and intellectual. Soviet montage school principles.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.edit",
+      "bookName": "Editing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "ca1ee72f871e85eb",
+      "comprehended": false,
+      "strand": "theory-history"
+    },
+    {
+      "id": "cinema.pacing_edit",
+      "label": "Pacing (Editing)",
+      "type": "concept",
+      "description": "Controlling rhythm through cut length, shot duration, and the interplay between fast and slow cutting to shape tension and emotion.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.edit",
+      "bookName": "Editing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "a8e42fe4aefa9769",
+      "comprehended": false,
+      "strand": "technical-craft"
+    },
+    {
+      "id": "cinema.transitions",
+      "label": "Transitions",
+      "type": "concept",
+      "description": "Cuts, dissolves, fades, wipes, and smash cuts: how transitions signal time passage, location changes, and thematic connections.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.edit",
+      "bookName": "Editing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "68d20ab798f23ca3",
+      "comprehended": false,
+      "strand": "technical-craft"
+    },
+    {
+      "id": "cinema.kuleshov_effect",
+      "label": "Kuleshov Effect",
+      "type": "concept",
+      "description": "The phenomenon where viewers derive meaning from the juxtaposition of two shots rather than from either shot alone.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.edit",
+      "bookName": "Editing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "b342835ca5c9dae6",
+      "comprehended": false,
+      "strand": "theory-history"
+    },
+    {
+      "id": "cinema.match_cuts",
+      "label": "Match Cuts",
+      "type": "concept",
+      "description": "Graphic match, action match, and sound match cuts that create visual or thematic continuity across different scenes or time periods.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.edit",
+      "bookName": "Editing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "d9ed24be3505fd54",
+      "comprehended": false,
+      "strand": "technical-craft"
+    },
+    {
+      "id": "cinema.jl_cuts",
+      "label": "J-Cuts & L-Cuts",
+      "type": "concept",
+      "description": "Overlapping audio and video transitions: J-cuts (audio leads video) and L-cuts (video leads audio) for seamless scene flow.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.edit",
+      "bookName": "Editing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "80cc975df7a47869",
+      "comprehended": false,
+      "strand": "technical-craft"
+    },
+    {
+      "id": "cinema.rhythm",
+      "label": "Editing Rhythm",
+      "type": "concept",
+      "description": "The musical quality of editing: creating patterns, syncopation, and flow through the timing and cadence of cuts.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.edit",
+      "bookName": "Editing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "4561ec52d6d120b9",
+      "comprehended": false,
+      "strand": "technical-craft"
+    },
+    {
+      "id": "cinema.diegetic_sound",
+      "label": "Diegetic & Non-Diegetic Sound",
+      "type": "concept",
+      "description": "Sound originating within the story world (diegetic) vs. sound added for the audience only (non-diegetic), and blurring the boundary.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.sound",
+      "bookName": "Sound Design",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "6c610f4c7bd06248",
+      "comprehended": false,
+      "strand": "sound"
+    },
+    {
+      "id": "cinema.foley",
+      "label": "Foley",
+      "type": "concept",
+      "description": "Recreating everyday sound effects in post-production: footsteps, cloth movement, prop handling, and environmental textures.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.sound",
+      "bookName": "Sound Design",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "f69e02309c69f3e8",
+      "comprehended": false,
+      "strand": "sound"
+    },
+    {
+      "id": "cinema.adr",
+      "label": "ADR (Automated Dialogue Replacement)",
+      "type": "concept",
+      "description": "Re-recording dialogue in a controlled studio environment to replace on-set audio, matching lip sync and performance.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.sound",
+      "bookName": "Sound Design",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "7a6f7ed0ff97cd81",
+      "comprehended": false,
+      "strand": "sound"
+    },
+    {
+      "id": "cinema.sound_mixing",
+      "label": "Sound Mixing",
+      "type": "concept",
+      "description": "Balancing dialogue, music, and effects tracks: levels, panning, EQ, compression, and creating the final surround mix.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.sound",
+      "bookName": "Sound Design",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "50875e0a36296e89",
+      "comprehended": false,
+      "strand": "sound"
+    },
+    {
+      "id": "cinema.music_scoring",
+      "label": "Music Scoring",
+      "type": "concept",
+      "description": "Composing or selecting music to underscore emotion, leitmotifs, spotting sessions, and the relationship between score and narrative.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.sound",
+      "bookName": "Sound Design",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "8872e498924a1894",
+      "comprehended": false,
+      "strand": "sound"
+    },
+    {
+      "id": "cinema.ambient_sound",
+      "label": "Ambient Sound",
+      "type": "concept",
+      "description": "Room tone, atmosphere tracks, and environmental sound beds that establish location and create an immersive sonic space.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.sound",
+      "bookName": "Sound Design",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "9da4aa8883cda738",
+      "comprehended": false,
+      "strand": "sound"
+    },
+    {
+      "id": "cinema.sound_perspective",
+      "label": "Sound Perspective",
+      "type": "concept",
+      "description": "Matching audio characteristics (reverb, volume, EQ) to the visual distance and environment of the sound source on screen.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.sound",
+      "bookName": "Sound Design",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "03fad2ca8a06cc2f",
+      "comprehended": false,
+      "strand": "sound"
+    },
+    {
+      "id": "cinema.pre_production",
+      "label": "Pre-Production Planning",
+      "type": "concept",
+      "description": "Script breakdowns, storyboarding, shot lists, scheduling, and assembling the creative and logistical elements before principal photography.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.prod",
+      "bookName": "Production",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "33ba73d8fa86ed1e",
+      "comprehended": false,
+      "strand": "production"
+    },
+    {
+      "id": "cinema.budgeting",
+      "label": "Budgeting",
+      "type": "concept",
+      "description": "Creating above-the-line and below-the-line budgets, contingency planning, cost reporting, and managing financial resources.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.prod",
+      "bookName": "Production",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "05ed2450e1c5e26f",
+      "comprehended": false,
+      "strand": "production"
+    },
+    {
+      "id": "cinema.scheduling",
+      "label": "Scheduling",
+      "type": "concept",
+      "description": "Stripboard scheduling, day-out-of-days, managing cast availability, weather, and location constraints for efficient shooting.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.prod",
+      "bookName": "Production",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "f0ca1f96dee48760",
+      "comprehended": false,
+      "strand": "production"
+    },
+    {
+      "id": "cinema.crew_roles",
+      "label": "Crew Roles",
+      "type": "concept",
+      "description": "Key departments and positions: director, DP, AD, gaffer, grip, sound mixer, script supervisor, and their responsibilities.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.prod",
+      "bookName": "Production",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "361233096e9bf4ea",
+      "comprehended": false,
+      "strand": "production"
+    },
+    {
+      "id": "cinema.location_scouting",
+      "label": "Location Scouting",
+      "type": "concept",
+      "description": "Finding and evaluating shooting locations: permits, logistics, sound conditions, light availability, and visual suitability.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.prod",
+      "bookName": "Production",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "f61f98edcb30be90",
+      "comprehended": false,
+      "strand": "production"
+    },
+    {
+      "id": "cinema.production_design",
+      "label": "Production Design",
+      "type": "concept",
+      "description": "Creating the visual world of the film: sets, color palettes, architectural style, and visual coherence across all departments.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.prod",
+      "bookName": "Production",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "f0b4acf6c2b6c976",
+      "comprehended": false,
+      "strand": "visual-storytelling"
+    },
+    {
+      "id": "cinema.costume",
+      "label": "Costume Design",
+      "type": "concept",
+      "description": "Designing character wardrobes that convey personality, status, period, and arc. Color coordination with the overall visual design.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.prod",
+      "bookName": "Production",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "bc203f0ebd38aaab",
+      "comprehended": false,
+      "strand": "production"
+    },
+    {
+      "id": "cinema.props",
+      "label": "Props",
+      "type": "concept",
+      "description": "Sourcing, creating, and managing props: hero props, background dressing, continuity tracking, and narrative significance of objects.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.prod",
+      "bookName": "Production",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "1ab3543a93baa987",
+      "comprehended": false,
+      "strand": "production"
+    },
+    {
+      "id": "cinema.silent_era",
+      "label": "Silent Era",
+      "type": "concept",
+      "description": "Early cinema from the Lumière Brothers through German Expressionism: visual storytelling before synchronized sound (1890s–1920s).",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.hist",
+      "bookName": "Film History & Theory",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "2fed00520044955f",
+      "comprehended": false,
+      "strand": "theory-history"
+    },
+    {
+      "id": "cinema.golden_age_hollywood",
+      "label": "Golden Age Hollywood",
+      "type": "concept",
+      "description": "The studio system era (1930s–1960s): star system, Hays Code, genre conventions, Technicolor, and the rise of the classical Hollywood style.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.hist",
+      "bookName": "Film History & Theory",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "a4bcef79bc90f23e",
+      "comprehended": false,
+      "strand": "theory-history"
+    },
+    {
+      "id": "cinema.french_new_wave",
+      "label": "French New Wave",
+      "type": "concept",
+      "description": "La Nouvelle Vague: Godard, Truffaut, Varda, jump cuts, location shooting, improvisation, and breaking classical rules (1950s–1960s).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.hist",
+      "bookName": "Film History & Theory",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "cf54289926a7b7c6",
+      "comprehended": false,
+      "strand": "theory-history"
+    },
+    {
+      "id": "cinema.italian_neorealism",
+      "label": "Italian Neorealism",
+      "type": "concept",
+      "description": "Post-WWII Italian cinema: non-professional actors, real locations, social themes. De Sica, Rossellini, Visconti (1940s–1950s).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.hist",
+      "bookName": "Film History & Theory",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "0b935189c7cb4e00",
+      "comprehended": false,
+      "strand": "theory-history"
+    },
+    {
+      "id": "cinema.asian_cinema",
+      "label": "Asian Cinema",
+      "type": "concept",
+      "description": "Major movements and filmmakers: Japanese golden age (Kurosawa, Ozu), Hong Kong action, Korean new wave, Bollywood, and Iranian cinema.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.hist",
+      "bookName": "Film History & Theory",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "87c391ebd81c9288",
+      "comprehended": false,
+      "strand": "theory-history"
+    },
+    {
+      "id": "cinema.documentary",
+      "label": "Documentary",
+      "type": "concept",
+      "description": "Non-fiction filmmaking modes: observational, participatory, expository, poetic, performative. Ethics, truth, and representation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.hist",
+      "bookName": "Film History & Theory",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "a9d898bcd4f2905a",
+      "comprehended": false,
+      "strand": "theory-history"
+    },
+    {
+      "id": "cinema.animation_history",
+      "label": "Animation History",
+      "type": "concept",
+      "description": "From early experiments through Disney, stop-motion, anime, Pixar, and independent animation. Techniques and artistic evolution.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.hist",
+      "bookName": "Film History & Theory",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "a5ef0cfd86879318",
+      "comprehended": false,
+      "strand": "theory-history"
+    },
+    {
+      "id": "cinema.genre_theory",
+      "label": "Genre Theory",
+      "type": "concept",
+      "description": "Classifying films by conventions, iconography, and audience expectations. Genre evolution, hybridity, and subversion.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.hist",
+      "bookName": "Film History & Theory",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "0d4e314fd8aefe87",
+      "comprehended": false,
+      "strand": "theory-history"
+    },
+    {
+      "id": "cinema.film_criticism",
+      "label": "Film Criticism",
+      "type": "concept",
+      "description": "Writing about film: analytical frameworks, review vs. criticism, building arguments, and engaging with a film's formal and thematic elements.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.hist",
+      "bookName": "Film History & Theory",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "94f51e477dcdb14f",
+      "comprehended": false,
+      "strand": "theory-history"
+    },
+    {
+      "id": "cinema.semiotics",
+      "label": "Semiotics in Film",
+      "type": "concept",
+      "description": "Signs, signifiers, and meaning-making in cinema. Metz's film semiotics, codes, and how audiences decode cinematic language.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cinema.hist",
+      "bookName": "Film History & Theory",
+      "bookColor": "#6b7280",
+      "bookOrder": 8,
+      "external_id": "2d721997cfeb49f0",
+      "comprehended": false,
+      "strand": "theory-history"
+    }
+  ],
+  "edges": [
+    {
+      "source": "cinema.shot_types",
+      "target": "cinema.camera_angles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.shot_types",
+      "target": "cinema.composition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.composition",
+      "target": "cinema.rule_of_thirds",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.shot_types",
+      "target": "cinema.camera_movement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.camera_angles",
+      "target": "cinema.visual_storytelling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.composition",
+      "target": "cinema.visual_storytelling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.composition",
+      "target": "cinema.depth_of_field",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.shot_types",
+      "target": "cinema.aspect_ratio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.three_act_structure",
+      "target": "cinema.heros_journey",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.three_act_structure",
+      "target": "cinema.save_the_cat",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.three_act_structure",
+      "target": "cinema.character_arcs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.character_arcs",
+      "target": "cinema.dialogue",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.three_act_structure",
+      "target": "cinema.scene_construction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.screenplay_format",
+      "target": "cinema.scene_construction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.dialogue",
+      "target": "cinema.subtext",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.character_arcs",
+      "target": "cinema.theme",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.scene_construction",
+      "target": "cinema.theme",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.character_arcs",
+      "target": "cinema.working_with_actors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.visual_storytelling",
+      "target": "cinema.blocking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.working_with_actors",
+      "target": "cinema.blocking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.visual_storytelling",
+      "target": "cinema.tone",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.tone",
+      "target": "cinema.pacing_dir",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.visual_storytelling",
+      "target": "cinema.mise_en_scene",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.blocking",
+      "target": "cinema.mise_en_scene",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.mise_en_scene",
+      "target": "cinema.auteur_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.french_new_wave",
+      "target": "cinema.auteur_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.exposure",
+      "target": "cinema.three_point_lighting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.three_point_lighting",
+      "target": "cinema.natural_lighting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.three_point_lighting",
+      "target": "cinema.motivated_lighting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.depth_of_field",
+      "target": "cinema.lens_selection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.exposure",
+      "target": "cinema.lens_selection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.white_balance",
+      "target": "cinema.color_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.color_theory",
+      "target": "cinema.color_grading",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.exposure",
+      "target": "cinema.white_balance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.continuity_editing",
+      "target": "cinema.transitions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.continuity_editing",
+      "target": "cinema.match_cuts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.continuity_editing",
+      "target": "cinema.jl_cuts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.continuity_editing",
+      "target": "cinema.pacing_edit",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.continuity_editing",
+      "target": "cinema.kuleshov_effect",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.kuleshov_effect",
+      "target": "cinema.montage_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.pacing_edit",
+      "target": "cinema.rhythm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.match_cuts",
+      "target": "cinema.rhythm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.jl_cuts",
+      "target": "cinema.rhythm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.diegetic_sound",
+      "target": "cinema.foley",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.diegetic_sound",
+      "target": "cinema.adr",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.diegetic_sound",
+      "target": "cinema.ambient_sound",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.foley",
+      "target": "cinema.sound_mixing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.adr",
+      "target": "cinema.sound_mixing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.ambient_sound",
+      "target": "cinema.sound_mixing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.sound_mixing",
+      "target": "cinema.music_scoring",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.sound_mixing",
+      "target": "cinema.sound_perspective",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.pre_production",
+      "target": "cinema.budgeting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.pre_production",
+      "target": "cinema.scheduling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.crew_roles",
+      "target": "cinema.scheduling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.pre_production",
+      "target": "cinema.location_scouting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.location_scouting",
+      "target": "cinema.production_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.production_design",
+      "target": "cinema.costume",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.production_design",
+      "target": "cinema.props",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.silent_era",
+      "target": "cinema.golden_age_hollywood",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.silent_era",
+      "target": "cinema.italian_neorealism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.golden_age_hollywood",
+      "target": "cinema.french_new_wave",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.italian_neorealism",
+      "target": "cinema.french_new_wave",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.golden_age_hollywood",
+      "target": "cinema.genre_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.golden_age_hollywood",
+      "target": "cinema.asian_cinema",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.silent_era",
+      "target": "cinema.animation_history",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.silent_era",
+      "target": "cinema.documentary",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.genre_theory",
+      "target": "cinema.film_criticism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.auteur_theory",
+      "target": "cinema.film_criticism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.film_criticism",
+      "target": "cinema.semiotics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cinema.montage_theory",
+      "target": "cinema.semiotics",
+      "relation": "prerequisite_for"
+    }
+  ]
+}
