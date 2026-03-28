@@ -1,0 +1,1414 @@
+{
+  "metadata": {
+    "domain": "technology",
+    "curriculum": "Internet of Things (IoT)",
+    "view": "skill-track",
+    "version": "0.1.0",
+    "description": "IoT skill track covering foundations, sensors, microcontrollers, communication, cloud platforms, data analytics, security, and projects",
+    "sources": [
+      "IoT industry best practices and curricula"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "iot.foundations",
+      "name": "Foundations",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "iot.sensors",
+      "name": "Sensors & Actuators",
+      "color": "#22c55e",
+      "order": 2
+    },
+    {
+      "id": "iot.microcontrollers",
+      "name": "Microcontrollers",
+      "color": "#f97316",
+      "order": 3
+    },
+    {
+      "id": "iot.communication",
+      "name": "Communication",
+      "color": "#8b5cf6",
+      "order": 4
+    },
+    {
+      "id": "iot.cloud",
+      "name": "Cloud & Platform",
+      "color": "#06b6d4",
+      "order": 5
+    },
+    {
+      "id": "iot.data",
+      "name": "Data & Analytics",
+      "color": "#ec4899",
+      "order": 6
+    },
+    {
+      "id": "iot.security",
+      "name": "Security",
+      "color": "#ef4444",
+      "order": 7
+    },
+    {
+      "id": "iot.projects",
+      "name": "Projects",
+      "color": "#eab308",
+      "order": 8
+    }
+  ],
+  "strands": [
+    {
+      "id": "hardware",
+      "name": "Hardware",
+      "color": "#F97316"
+    },
+    {
+      "id": "software",
+      "name": "Software",
+      "color": "#3B82F6"
+    },
+    {
+      "id": "networking",
+      "name": "Networking",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "data",
+      "name": "Data",
+      "color": "#EC4899"
+    },
+    {
+      "id": "security",
+      "name": "Security",
+      "color": "#EF4444"
+    },
+    {
+      "id": "application",
+      "name": "Application",
+      "color": "#22C55E"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "iot.what_is_iot",
+      "label": "What is IoT",
+      "type": "concept",
+      "description": "Introduction to the Internet of Things: connecting physical devices to the internet to collect, exchange, and act on data. History, evolution, and current landscape.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "9099606a1579a6d9",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "iot.iot_architecture",
+      "label": "IoT Architecture",
+      "type": "concept",
+      "description": "Layered architecture of IoT systems: perception layer (sensors), network layer (communication), and application layer (services). Edge, fog, and cloud tiers.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "818a768c7a8636c9",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "iot.use_cases",
+      "label": "IoT Use Cases",
+      "type": "concept",
+      "description": "Real-world applications of IoT: smart homes, healthcare, agriculture, manufacturing, transportation, and smart cities. Understanding problem-solution fit.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "a87370e7909bdaad",
+      "comprehended": false,
+      "strand": "application"
+    },
+    {
+      "id": "iot.protocols_overview",
+      "label": "Protocols Overview",
+      "type": "concept",
+      "description": "Survey of IoT communication protocols: MQTT, CoAP, HTTP, WebSocket, Bluetooth, Zigbee, LoRa. When to use which protocol based on constraints.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "8f8e3bc975eea8fb",
+      "comprehended": false,
+      "strand": "networking"
+    },
+    {
+      "id": "iot.embedded_basics",
+      "label": "Embedded Systems Basics",
+      "type": "concept",
+      "description": "Fundamentals of embedded systems: microprocessors vs microcontrollers, real-time constraints, memory-limited environments, and development toolchains.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "acf3c845f12a7233",
+      "comprehended": false,
+      "strand": "hardware"
+    },
+    {
+      "id": "iot.temperature_sensors",
+      "label": "Temperature Sensors",
+      "type": "concept",
+      "description": "Working with temperature sensors: DHT11, DHT22, DS18B20, thermocouples. Reading analog and digital temperature data, calibration, and accuracy.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.sensors",
+      "bookName": "Sensors & Actuators",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "24298347249d4c06",
+      "comprehended": false,
+      "strand": "hardware"
+    },
+    {
+      "id": "iot.humidity_sensors",
+      "label": "Humidity Sensors",
+      "type": "concept",
+      "description": "Measuring relative humidity using capacitive and resistive sensors. DHT series, BME280. Dew point calculation and environmental monitoring.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.sensors",
+      "bookName": "Sensors & Actuators",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "74846a32c9118477",
+      "comprehended": false,
+      "strand": "hardware"
+    },
+    {
+      "id": "iot.motion_sensors",
+      "label": "Motion Sensors",
+      "type": "concept",
+      "description": "PIR sensors, ultrasonic distance sensors (HC-SR04), accelerometers (MPU6050). Detecting movement, measuring distance, and orientation sensing.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.sensors",
+      "bookName": "Sensors & Actuators",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "b0a853e7fef371aa",
+      "comprehended": false,
+      "strand": "hardware"
+    },
+    {
+      "id": "iot.light_sensors",
+      "label": "Light Sensors",
+      "type": "concept",
+      "description": "Photoresistors (LDR), photodiodes, BH1750 lux sensor. Measuring ambient light levels for automation and environmental monitoring.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.sensors",
+      "bookName": "Sensors & Actuators",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "ff7c52c222d87617",
+      "comprehended": false,
+      "strand": "hardware"
+    },
+    {
+      "id": "iot.gas_sensors",
+      "label": "Gas Sensors",
+      "type": "concept",
+      "description": "MQ series gas sensors for detecting CO, CO2, methane, smoke, and air quality. Calibration, warm-up time, and safety thresholds.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.sensors",
+      "bookName": "Sensors & Actuators",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "583e790b19b78eda",
+      "comprehended": false,
+      "strand": "hardware"
+    },
+    {
+      "id": "iot.relay_control",
+      "label": "Relay Control",
+      "type": "concept",
+      "description": "Using relays to control high-voltage devices from microcontrollers. Relay modules, solid-state relays, flyback diodes, and safety considerations.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.sensors",
+      "bookName": "Sensors & Actuators",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "5d05d4bf544bf0e9",
+      "comprehended": false,
+      "strand": "hardware"
+    },
+    {
+      "id": "iot.motor_control",
+      "label": "Motor Control",
+      "type": "concept",
+      "description": "Driving DC motors, stepper motors, and servos. H-bridge drivers (L298N), motor shields, PWM speed control, and position feedback.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.sensors",
+      "bookName": "Sensors & Actuators",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "4074da4774640a0f",
+      "comprehended": false,
+      "strand": "hardware"
+    },
+    {
+      "id": "iot.esp32",
+      "label": "ESP32",
+      "type": "concept",
+      "description": "ESP32 microcontroller: dual-core processor, built-in WiFi and Bluetooth, deep sleep modes. Programming with Arduino IDE and ESP-IDF framework.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.microcontrollers",
+      "bookName": "Microcontrollers",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "df5c63f38095deb7",
+      "comprehended": false,
+      "strand": "hardware"
+    },
+    {
+      "id": "iot.arduino",
+      "label": "Arduino",
+      "type": "concept",
+      "description": "Arduino platform: Uno, Nano, Mega boards. Arduino IDE, sketch structure (setup/loop), libraries, and the Arduino ecosystem.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.microcontrollers",
+      "bookName": "Microcontrollers",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "427c96efc34123f1",
+      "comprehended": false,
+      "strand": "hardware"
+    },
+    {
+      "id": "iot.raspberry_pi",
+      "label": "Raspberry Pi",
+      "type": "concept",
+      "description": "Raspberry Pi as an IoT gateway: Linux-based, Python/Node.js programming, GPIO access. Differences from microcontrollers, when to use Pi vs Arduino.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.microcontrollers",
+      "bookName": "Microcontrollers",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "b247011758200d21",
+      "comprehended": false,
+      "strand": "hardware"
+    },
+    {
+      "id": "iot.gpio",
+      "label": "GPIO Pins",
+      "type": "concept",
+      "description": "General Purpose Input/Output: digital read/write, pull-up/pull-down resistors, interrupt handling. Pin mapping and electrical characteristics.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.microcontrollers",
+      "bookName": "Microcontrollers",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "3287286438eeff43",
+      "comprehended": false,
+      "strand": "hardware"
+    },
+    {
+      "id": "iot.adc",
+      "label": "ADC (Analog-to-Digital)",
+      "type": "concept",
+      "description": "Analog-to-digital conversion: reading analog sensor values, resolution (10-bit, 12-bit), reference voltage, and signal conditioning.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.microcontrollers",
+      "bookName": "Microcontrollers",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "395ea0fb5dae1e83",
+      "comprehended": false,
+      "strand": "hardware"
+    },
+    {
+      "id": "iot.pwm",
+      "label": "PWM (Pulse Width Modulation)",
+      "type": "concept",
+      "description": "PWM for controlling LED brightness, motor speed, and servo position. Duty cycle, frequency selection, and timer configuration.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.microcontrollers",
+      "bookName": "Microcontrollers",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "d50a994066268928",
+      "comprehended": false,
+      "strand": "hardware"
+    },
+    {
+      "id": "iot.i2c_spi",
+      "label": "I2C & SPI Protocols",
+      "type": "concept",
+      "description": "Serial communication between microcontrollers and peripherals. I2C addressing, SPI chip select, bus speed, and when to use each protocol.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.microcontrollers",
+      "bookName": "Microcontrollers",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "a1fa4faaf68a34bc",
+      "comprehended": false,
+      "strand": "hardware"
+    },
+    {
+      "id": "iot.wifi",
+      "label": "WiFi Connectivity",
+      "type": "concept",
+      "description": "Connecting IoT devices via WiFi: station and access point modes, WPA2 security, SSID management, reconnection strategies, and power consumption.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.communication",
+      "bookName": "Communication",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "4c18914e968a489f",
+      "comprehended": false,
+      "strand": "networking"
+    },
+    {
+      "id": "iot.bluetooth",
+      "label": "Bluetooth & BLE",
+      "type": "concept",
+      "description": "Bluetooth Classic and Bluetooth Low Energy for short-range IoT. GATT profiles, services and characteristics, beacons, and pairing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.communication",
+      "bookName": "Communication",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "eea26f724cb4a573",
+      "comprehended": false,
+      "strand": "networking"
+    },
+    {
+      "id": "iot.lora",
+      "label": "LoRa & LoRaWAN",
+      "type": "concept",
+      "description": "Long-range, low-power communication with LoRa. LoRaWAN network architecture, gateways, spreading factors, and The Things Network.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.communication",
+      "bookName": "Communication",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "5582143661ff7253",
+      "comprehended": false,
+      "strand": "networking"
+    },
+    {
+      "id": "iot.zigbee",
+      "label": "Zigbee",
+      "type": "concept",
+      "description": "Zigbee mesh networking for home and industrial IoT. Coordinators, routers, end devices, Zigbee profiles, and integration with smart home hubs.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.communication",
+      "bookName": "Communication",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "967e70220c0bcdca",
+      "comprehended": false,
+      "strand": "networking"
+    },
+    {
+      "id": "iot.mqtt",
+      "label": "MQTT Protocol",
+      "type": "concept",
+      "description": "MQTT publish-subscribe messaging: brokers (Mosquitto), topics, QoS levels, retained messages, last will, and persistent sessions.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.communication",
+      "bookName": "Communication",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "43b2e31a4c5b6a08",
+      "comprehended": false,
+      "strand": "networking"
+    },
+    {
+      "id": "iot.http_rest",
+      "label": "HTTP & REST APIs",
+      "type": "concept",
+      "description": "Using HTTP for IoT communication: GET/POST requests, RESTful API design, JSON payloads, authentication headers, and rate limiting.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.communication",
+      "bookName": "Communication",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "a2a16fa845436281",
+      "comprehended": false,
+      "strand": "networking"
+    },
+    {
+      "id": "iot.websocket",
+      "label": "WebSocket",
+      "type": "concept",
+      "description": "Real-time bidirectional communication with WebSocket. Persistent connections, event-driven data streaming, and comparison with HTTP polling.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.communication",
+      "bookName": "Communication",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "7bd37966c03460a1",
+      "comprehended": false,
+      "strand": "networking"
+    },
+    {
+      "id": "iot.aws_iot",
+      "label": "AWS IoT Core",
+      "type": "concept",
+      "description": "Amazon Web Services IoT: device shadows, rules engine, message broker, device provisioning, and integration with Lambda and DynamoDB.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.cloud",
+      "bookName": "Cloud & Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 5,
+      "external_id": "27080ca5c158dc58",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "iot.azure_iot",
+      "label": "Azure IoT Hub",
+      "type": "concept",
+      "description": "Microsoft Azure IoT Hub: device twins, direct methods, device-to-cloud messaging, IoT Edge modules, and integration with Stream Analytics.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.cloud",
+      "bookName": "Cloud & Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 5,
+      "external_id": "85a3b298071d6782",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "iot.thingspeak",
+      "label": "ThingSpeak",
+      "type": "concept",
+      "description": "ThingSpeak platform for IoT data collection and visualization. Channels, fields, MATLAB analysis, and triggering actions based on data.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.cloud",
+      "bookName": "Cloud & Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 5,
+      "external_id": "650a17203eddea5a",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "iot.node_red",
+      "label": "Node-RED",
+      "type": "concept",
+      "description": "Flow-based visual programming for IoT. Wiring together devices, APIs, and services. Custom nodes, dashboards, and deployment strategies.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.cloud",
+      "bookName": "Cloud & Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 5,
+      "external_id": "1a531324103d7338",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "iot.dashboards",
+      "label": "IoT Dashboards",
+      "type": "concept",
+      "description": "Building real-time dashboards with Grafana, Blynk, and custom web interfaces. Visualizing sensor data, alerts, and device status monitoring.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.cloud",
+      "bookName": "Cloud & Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 5,
+      "external_id": "588c717d544ae628",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "iot.device_provisioning",
+      "label": "Device Provisioning",
+      "type": "concept",
+      "description": "Onboarding new IoT devices at scale: certificate-based provisioning, fleet management, device registries, and zero-touch enrollment.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.cloud",
+      "bookName": "Cloud & Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 5,
+      "external_id": "eea21b2ed9b5911f",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "iot.time_series",
+      "label": "Time Series Data",
+      "type": "concept",
+      "description": "Storing and querying time-stamped IoT data. InfluxDB, TimescaleDB, data retention policies, downsampling, and efficient queries.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.data",
+      "bookName": "Data & Analytics",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "9bafd52dd60a1799",
+      "comprehended": false,
+      "strand": "data"
+    },
+    {
+      "id": "iot.edge_computing",
+      "label": "Edge Computing",
+      "type": "concept",
+      "description": "Processing data at the network edge close to sensors. Reducing latency and bandwidth, edge AI, fog computing, and edge-cloud orchestration.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.data",
+      "bookName": "Data & Analytics",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "fcf5569101f86cf1",
+      "comprehended": false,
+      "strand": "data"
+    },
+    {
+      "id": "iot.anomaly_detection",
+      "label": "Anomaly Detection",
+      "type": "concept",
+      "description": "Identifying unusual patterns in IoT sensor data. Statistical methods, threshold-based alerts, machine learning approaches, and false positive management.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.data",
+      "bookName": "Data & Analytics",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "143961e1fa916ee3",
+      "comprehended": false,
+      "strand": "data"
+    },
+    {
+      "id": "iot.predictive_maintenance",
+      "label": "Predictive Maintenance",
+      "type": "concept",
+      "description": "Using IoT sensor data and ML models to predict equipment failures before they occur. Vibration analysis, remaining useful life estimation, and maintenance scheduling.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.data",
+      "bookName": "Data & Analytics",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "c00794c0f11effbb",
+      "comprehended": false,
+      "strand": "data"
+    },
+    {
+      "id": "iot.data_pipeline",
+      "label": "IoT Data Pipeline",
+      "type": "concept",
+      "description": "Ingesting, transforming, and routing IoT data. Message queues (Kafka), stream processing, ETL pipelines, and data lake architectures.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.data",
+      "bookName": "Data & Analytics",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "3f61c907e1e5b61f",
+      "comprehended": false,
+      "strand": "data"
+    },
+    {
+      "id": "iot.sensor_fusion",
+      "label": "Sensor Fusion",
+      "type": "concept",
+      "description": "Combining data from multiple sensors to produce more accurate results. Kalman filters, complementary filters, and multi-sensor calibration.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.data",
+      "bookName": "Data & Analytics",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "6771fa8e3b960b75",
+      "comprehended": false,
+      "strand": "data"
+    },
+    {
+      "id": "iot.device_security",
+      "label": "Device Security",
+      "type": "concept",
+      "description": "Securing IoT hardware: secure boot, hardware security modules (HSM), tamper detection, physical security, and secure element chips.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.security",
+      "bookName": "Security",
+      "bookColor": "#ef4444",
+      "bookOrder": 7,
+      "external_id": "390180684bbf841b",
+      "comprehended": false,
+      "strand": "security"
+    },
+    {
+      "id": "iot.encryption",
+      "label": "IoT Encryption",
+      "type": "concept",
+      "description": "Encrypting data in transit and at rest for IoT devices. TLS/DTLS, AES on constrained devices, lightweight cryptography, and key management.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.security",
+      "bookName": "Security",
+      "bookColor": "#ef4444",
+      "bookOrder": 7,
+      "external_id": "97696978c7b40e83",
+      "comprehended": false,
+      "strand": "security"
+    },
+    {
+      "id": "iot.authentication",
+      "label": "Device Authentication",
+      "type": "concept",
+      "description": "Authenticating IoT devices: X.509 certificates, token-based auth, mutual TLS, OAuth2 for devices, and device identity management.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.security",
+      "bookName": "Security",
+      "bookColor": "#ef4444",
+      "bookOrder": 7,
+      "external_id": "7da320eb436986e1",
+      "comprehended": false,
+      "strand": "security"
+    },
+    {
+      "id": "iot.firmware_updates",
+      "label": "Firmware Updates (OTA)",
+      "type": "concept",
+      "description": "Over-the-air firmware updates: update mechanisms, rollback strategies, signed firmware images, delta updates, and update orchestration.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.security",
+      "bookName": "Security",
+      "bookColor": "#ef4444",
+      "bookOrder": 7,
+      "external_id": "a91e3e20cf295227",
+      "comprehended": false,
+      "strand": "security"
+    },
+    {
+      "id": "iot.privacy",
+      "label": "IoT Privacy",
+      "type": "concept",
+      "description": "Privacy considerations for IoT: data minimization, consent management, anonymization, GDPR/PDPA compliance, and privacy by design.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.security",
+      "bookName": "Security",
+      "bookColor": "#ef4444",
+      "bookOrder": 7,
+      "external_id": "32673617398510ec",
+      "comprehended": false,
+      "strand": "security"
+    },
+    {
+      "id": "iot.network_security",
+      "label": "IoT Network Security",
+      "type": "concept",
+      "description": "Securing IoT networks: network segmentation, VLANs for IoT devices, firewall rules, intrusion detection, and monitoring network traffic.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.security",
+      "bookName": "Security",
+      "bookColor": "#ef4444",
+      "bookOrder": 7,
+      "external_id": "f72c8e4cfd334606",
+      "comprehended": false,
+      "strand": "security"
+    },
+    {
+      "id": "iot.smart_home",
+      "label": "Smart Home Project",
+      "type": "concept",
+      "description": "Building a smart home system: automated lighting, climate control, door locks, and voice assistant integration using Home Assistant or similar platforms.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.projects",
+      "bookName": "Projects",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "a39dcab8831666a9",
+      "comprehended": false,
+      "strand": "application"
+    },
+    {
+      "id": "iot.weather_station",
+      "label": "Weather Station Project",
+      "type": "concept",
+      "description": "Building a connected weather station: temperature, humidity, pressure, wind, and rain sensors. Data logging, cloud upload, and web dashboard.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.projects",
+      "bookName": "Projects",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "c18cf4b59a688a7b",
+      "comprehended": false,
+      "strand": "application"
+    },
+    {
+      "id": "iot.agriculture",
+      "label": "Agriculture Monitoring Project",
+      "type": "concept",
+      "description": "Smart agriculture: soil moisture sensors, automated irrigation, crop health monitoring, weather integration, and LoRa-based field networks.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.projects",
+      "bookName": "Projects",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "a3db85c9fa726c9a",
+      "comprehended": false,
+      "strand": "application"
+    },
+    {
+      "id": "iot.wearables",
+      "label": "Wearables Project",
+      "type": "concept",
+      "description": "Building IoT wearables: heart rate monitoring, step counting, GPS tracking, BLE data sync, and battery optimization for wearable devices.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.projects",
+      "bookName": "Projects",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "a2977ef2ed202b9f",
+      "comprehended": false,
+      "strand": "application"
+    },
+    {
+      "id": "iot.industrial_iot",
+      "label": "Industrial IoT Project",
+      "type": "concept",
+      "description": "IIoT applications: machine monitoring, SCADA integration, OPC-UA protocol, digital twins, and factory floor data collection and visualization.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.projects",
+      "bookName": "Projects",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "8cd0a081c51d3c5f",
+      "comprehended": false,
+      "strand": "application"
+    },
+    {
+      "id": "iot.energy_monitoring",
+      "label": "Energy Monitoring Project",
+      "type": "concept",
+      "description": "Building an energy monitoring system: current sensors (SCT-013), voltage measurement, power calculation, and tracking energy consumption over time.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.projects",
+      "bookName": "Projects",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "ff2d9be3a48cd5be",
+      "comprehended": false,
+      "strand": "application"
+    },
+    {
+      "id": "iot.power_management",
+      "label": "Power Management",
+      "type": "concept",
+      "description": "Battery-powered IoT devices: deep sleep modes, solar charging, energy harvesting, power budgeting, and maximizing battery life.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "iot.microcontrollers",
+      "bookName": "Microcontrollers",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "85180b5629ff8409",
+      "comprehended": false,
+      "strand": "hardware"
+    }
+  ],
+  "edges": [
+    {
+      "source": "iot.what_is_iot",
+      "target": "iot.iot_architecture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.what_is_iot",
+      "target": "iot.use_cases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.iot_architecture",
+      "target": "iot.protocols_overview",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.iot_architecture",
+      "target": "iot.embedded_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.embedded_basics",
+      "target": "iot.temperature_sensors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.embedded_basics",
+      "target": "iot.humidity_sensors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.embedded_basics",
+      "target": "iot.motion_sensors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.embedded_basics",
+      "target": "iot.light_sensors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.temperature_sensors",
+      "target": "iot.gas_sensors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.embedded_basics",
+      "target": "iot.relay_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.relay_control",
+      "target": "iot.motor_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.embedded_basics",
+      "target": "iot.arduino",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.embedded_basics",
+      "target": "iot.esp32",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.embedded_basics",
+      "target": "iot.raspberry_pi",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.arduino",
+      "target": "iot.gpio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.gpio",
+      "target": "iot.adc",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.gpio",
+      "target": "iot.pwm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.adc",
+      "target": "iot.i2c_spi",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.esp32",
+      "target": "iot.power_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.protocols_overview",
+      "target": "iot.wifi",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.protocols_overview",
+      "target": "iot.bluetooth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.protocols_overview",
+      "target": "iot.lora",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.protocols_overview",
+      "target": "iot.zigbee",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.protocols_overview",
+      "target": "iot.mqtt",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.protocols_overview",
+      "target": "iot.http_rest",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.mqtt",
+      "target": "iot.websocket",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.mqtt",
+      "target": "iot.aws_iot",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.mqtt",
+      "target": "iot.azure_iot",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.http_rest",
+      "target": "iot.thingspeak",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.mqtt",
+      "target": "iot.node_red",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.thingspeak",
+      "target": "iot.dashboards",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.node_red",
+      "target": "iot.dashboards",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.aws_iot",
+      "target": "iot.device_provisioning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.dashboards",
+      "target": "iot.time_series",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.time_series",
+      "target": "iot.edge_computing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.time_series",
+      "target": "iot.anomaly_detection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.anomaly_detection",
+      "target": "iot.predictive_maintenance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.time_series",
+      "target": "iot.data_pipeline",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.edge_computing",
+      "target": "iot.sensor_fusion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.wifi",
+      "target": "iot.device_security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.device_security",
+      "target": "iot.encryption",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.encryption",
+      "target": "iot.authentication",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.authentication",
+      "target": "iot.firmware_updates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.device_security",
+      "target": "iot.privacy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.encryption",
+      "target": "iot.network_security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.temperature_sensors",
+      "target": "iot.weather_station",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.humidity_sensors",
+      "target": "iot.weather_station",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.dashboards",
+      "target": "iot.weather_station",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.relay_control",
+      "target": "iot.smart_home",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.mqtt",
+      "target": "iot.smart_home",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.dashboards",
+      "target": "iot.smart_home",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.lora",
+      "target": "iot.agriculture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.dashboards",
+      "target": "iot.agriculture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.bluetooth",
+      "target": "iot.wearables",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.power_management",
+      "target": "iot.wearables",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.predictive_maintenance",
+      "target": "iot.industrial_iot",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.data_pipeline",
+      "target": "iot.industrial_iot",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.adc",
+      "target": "iot.energy_monitoring",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "iot.dashboards",
+      "target": "iot.energy_monitoring",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

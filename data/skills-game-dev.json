@@ -1,0 +1,1895 @@
+{
+  "metadata": {
+    "domain": "software-engineering",
+    "curriculum": "Game Development",
+    "view": "skill-prerequisites",
+    "version": "0.2.0",
+    "description": "Game development skill track with prerequisite ordering, colored by discipline",
+    "sources": [
+      "Game Programming Patterns",
+      "Unity Documentation",
+      "Godot Documentation"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "gamedev.design",
+      "name": "Game Design",
+      "color": "#f59e0b",
+      "order": 1
+    },
+    {
+      "id": "gamedev.2d",
+      "name": "2D Game Development",
+      "color": "#10b981",
+      "order": 2
+    },
+    {
+      "id": "gamedev.3d",
+      "name": "3D Game Development",
+      "color": "#6366f1",
+      "order": 3
+    },
+    {
+      "id": "gamedev.engine",
+      "name": "Game Engines",
+      "color": "#ef4444",
+      "order": 4
+    },
+    {
+      "id": "gamedev.prog",
+      "name": "Game Programming",
+      "color": "#3b82f6",
+      "order": 5
+    },
+    {
+      "id": "gamedev.audio",
+      "name": "Audio & Polish",
+      "color": "#ec4899",
+      "order": 6
+    },
+    {
+      "id": "gamedev.publish",
+      "name": "Publishing",
+      "color": "#8b5cf6",
+      "order": 7
+    }
+  ],
+  "strands": [
+    {
+      "id": "design",
+      "name": "Design & Theory",
+      "color": "#F59E0B"
+    },
+    {
+      "id": "graphics-2d",
+      "name": "2D Graphics & Physics",
+      "color": "#10B981"
+    },
+    {
+      "id": "graphics-3d",
+      "name": "3D Graphics & Rendering",
+      "color": "#6366F1"
+    },
+    {
+      "id": "engine",
+      "name": "Engine & Tools",
+      "color": "#EF4444"
+    },
+    {
+      "id": "programming",
+      "name": "Programming & Systems",
+      "color": "#3B82F6"
+    },
+    {
+      "id": "polish",
+      "name": "Audio & Polish",
+      "color": "#EC4899"
+    },
+    {
+      "id": "business",
+      "name": "Business & Publishing",
+      "color": "#8B5CF6"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "gamedev.game_mechanics",
+      "label": "Game Mechanics",
+      "type": "concept",
+      "description": "Core game mechanics: rules, goals, challenges, feedback loops. Mechanics vs dynamics vs aesthetics (MDA) framework.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.design",
+      "bookName": "Game Design",
+      "bookColor": "#f59e0b",
+      "bookOrder": 1,
+      "external_id": "b54a193a31216090",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "gamedev.game_loops",
+      "label": "Game Loops",
+      "type": "concept",
+      "description": "Core game loop: input, update, render. Fixed vs variable timestep. Delta time. Frame rate independence. Game state management.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.design",
+      "bookName": "Game Design",
+      "bookColor": "#f59e0b",
+      "bookOrder": 1,
+      "external_id": "b793909a9ce7a562",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "gamedev.level_design",
+      "label": "Level Design",
+      "type": "concept",
+      "description": "Level layout principles, pacing, difficulty curves. Player guidance through environment. Gating mechanics. Playtesting levels.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.design",
+      "bookName": "Game Design",
+      "bookColor": "#f59e0b",
+      "bookOrder": 1,
+      "external_id": "146a816536d1e815",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "gamedev.narrative",
+      "label": "Narrative Design",
+      "type": "concept",
+      "description": "Storytelling in games: linear vs branching narratives. Environmental storytelling. Dialogue systems. Lore and world-building.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.design",
+      "bookName": "Game Design",
+      "bookColor": "#f59e0b",
+      "bookOrder": 1,
+      "external_id": "274bb60fae8ae615",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "gamedev.player_psychology",
+      "label": "Player Psychology",
+      "type": "concept",
+      "description": "Flow state and engagement. Motivation (intrinsic vs extrinsic). Bartle player types. Reward schedules. Difficulty and player skill.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.design",
+      "bookName": "Game Design",
+      "bookColor": "#f59e0b",
+      "bookOrder": 1,
+      "external_id": "596e798b8e1fc893",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "gamedev.prototyping",
+      "label": "Prototyping",
+      "type": "concept",
+      "description": "Rapid prototyping techniques. Paper prototyping. Digital prototypes. Minimum viable product for games. Iterative design process.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.design",
+      "bookName": "Game Design",
+      "bookColor": "#f59e0b",
+      "bookOrder": 1,
+      "external_id": "0c32a58580965a69",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "gamedev.genre_analysis",
+      "label": "Genre Analysis",
+      "type": "concept",
+      "description": "Studying game genres: platformer, RPG, puzzle, strategy, roguelike. Genre conventions and player expectations. Genre blending.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.design",
+      "bookName": "Game Design",
+      "bookColor": "#f59e0b",
+      "bookOrder": 1,
+      "external_id": "06edddd5e6082894",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "gamedev.balance",
+      "label": "Game Balance",
+      "type": "concept",
+      "description": "Balancing game systems: resource economies, character stats, weapon damage. Spreadsheet modeling. Playtesting for balance.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.design",
+      "bookName": "Game Design",
+      "bookColor": "#f59e0b",
+      "bookOrder": 1,
+      "external_id": "6b7ee06b8ebe9bf6",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "gamedev.sprites",
+      "label": "Sprites & Sprite Sheets",
+      "type": "concept",
+      "description": "Loading and displaying sprites. Sprite sheets and texture atlases. Sprite rendering order. Pixel art basics and resolution.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.2d",
+      "bookName": "2D Game Development",
+      "bookColor": "#10b981",
+      "bookOrder": 2,
+      "external_id": "67676329e6a9f648",
+      "comprehended": false,
+      "strand": "graphics-2d"
+    },
+    {
+      "id": "gamedev.animation_2d",
+      "label": "2D Animation",
+      "type": "concept",
+      "description": "Frame-by-frame animation. Animation controllers and state machines. Skeletal animation (Spine, DragonBones). Tweening and easing.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.2d",
+      "bookName": "2D Game Development",
+      "bookColor": "#10b981",
+      "bookOrder": 2,
+      "external_id": "08db97da5ae7c443",
+      "comprehended": false,
+      "strand": "graphics-2d"
+    },
+    {
+      "id": "gamedev.collision_detection",
+      "label": "Collision Detection",
+      "type": "concept",
+      "description": "AABB (axis-aligned bounding box) collision. Circle collision. Pixel-perfect collision. Collision layers and masks. Trigger zones.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.2d",
+      "bookName": "2D Game Development",
+      "bookColor": "#10b981",
+      "bookOrder": 2,
+      "external_id": "32fc8e0ced71d4ce",
+      "comprehended": false,
+      "strand": "graphics-2d"
+    },
+    {
+      "id": "gamedev.tilemaps",
+      "label": "Tilemaps",
+      "type": "concept",
+      "description": "Tile-based level design. Tilemap editors and formats. Auto-tiling. Isometric and hexagonal tilemaps. Tilemap collision.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.2d",
+      "bookName": "2D Game Development",
+      "bookColor": "#10b981",
+      "bookOrder": 2,
+      "external_id": "04cae2d07351a39e",
+      "comprehended": false,
+      "strand": "graphics-2d"
+    },
+    {
+      "id": "gamedev.physics_2d",
+      "label": "2D Physics",
+      "type": "concept",
+      "description": "Rigidbodies and colliders. Gravity, velocity, acceleration. Forces and impulses. Joints and constraints. Physics materials (bounce, friction).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.2d",
+      "bookName": "2D Game Development",
+      "bookColor": "#10b981",
+      "bookOrder": 2,
+      "external_id": "fca82c5e8c263c37",
+      "comprehended": false,
+      "strand": "graphics-2d"
+    },
+    {
+      "id": "gamedev.ui_2d",
+      "label": "Game UI (2D)",
+      "type": "concept",
+      "description": "HUD elements: health bars, score, minimap. Menu systems: main menu, pause, settings. UI anchoring and scaling. Input handling for UI.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.2d",
+      "bookName": "2D Game Development",
+      "bookColor": "#10b981",
+      "bookOrder": 2,
+      "external_id": "7c68b3c5fd91c908",
+      "comprehended": false,
+      "strand": "graphics-2d"
+    },
+    {
+      "id": "gamedev.camera_2d",
+      "label": "2D Camera Systems",
+      "type": "concept",
+      "description": "Camera follow and smoothing. Camera bounds and dead zones. Screen shake. Parallax scrolling backgrounds. Split-screen.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.2d",
+      "bookName": "2D Game Development",
+      "bookColor": "#10b981",
+      "bookOrder": 2,
+      "external_id": "968de4ed6bd8d333",
+      "comprehended": false,
+      "strand": "graphics-2d"
+    },
+    {
+      "id": "gamedev.input_handling",
+      "label": "Input Handling",
+      "type": "concept",
+      "description": "Keyboard, mouse, and gamepad input. Input mapping and rebinding. Touch input for mobile. Input buffering. Dead zones for analog sticks.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.2d",
+      "bookName": "2D Game Development",
+      "bookColor": "#10b981",
+      "bookOrder": 2,
+      "external_id": "ae9d919d4e3fd646",
+      "comprehended": false,
+      "strand": "graphics-2d"
+    },
+    {
+      "id": "gamedev.math_3d",
+      "label": "3D Math",
+      "type": "concept",
+      "description": "Vectors (2D/3D), dot product, cross product. Matrices for transformations. Quaternions for rotation. Coordinate systems and spaces.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.3d",
+      "bookName": "3D Game Development",
+      "bookColor": "#6366f1",
+      "bookOrder": 3,
+      "external_id": "9ee6df1c2ad8c769",
+      "comprehended": false,
+      "strand": "graphics-3d"
+    },
+    {
+      "id": "gamedev.meshes",
+      "label": "3D Meshes & Models",
+      "type": "concept",
+      "description": "Vertices, edges, faces. Mesh formats (FBX, OBJ, glTF). Importing 3D models. LOD (level of detail). Mesh optimization.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.3d",
+      "bookName": "3D Game Development",
+      "bookColor": "#6366f1",
+      "bookOrder": 3,
+      "external_id": "5a330869cf75747d",
+      "comprehended": false,
+      "strand": "graphics-3d"
+    },
+    {
+      "id": "gamedev.textures",
+      "label": "Textures & Materials",
+      "type": "concept",
+      "description": "UV mapping, texture coordinates. Diffuse, normal, specular maps. PBR materials (albedo, metallic, roughness). Texture atlases.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.3d",
+      "bookName": "3D Game Development",
+      "bookColor": "#6366f1",
+      "bookOrder": 3,
+      "external_id": "5428e5b3a24a7dca",
+      "comprehended": false,
+      "strand": "graphics-3d"
+    },
+    {
+      "id": "gamedev.lighting",
+      "label": "Lighting",
+      "type": "concept",
+      "description": "Light types: directional, point, spot. Ambient lighting. Real-time vs baked lighting. Shadows: shadow maps, cascaded shadows. Global illumination.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.3d",
+      "bookName": "3D Game Development",
+      "bookColor": "#6366f1",
+      "bookOrder": 3,
+      "external_id": "297f5cc2349da990",
+      "comprehended": false,
+      "strand": "graphics-3d"
+    },
+    {
+      "id": "gamedev.cameras_3d",
+      "label": "3D Cameras",
+      "type": "concept",
+      "description": "Perspective vs orthographic projection. First-person, third-person, and orbital cameras. Camera collision. Cinemachine / virtual cameras.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.3d",
+      "bookName": "3D Game Development",
+      "bookColor": "#6366f1",
+      "bookOrder": 3,
+      "external_id": "7fbcbd7429a517b5",
+      "comprehended": false,
+      "strand": "graphics-3d"
+    },
+    {
+      "id": "gamedev.shaders",
+      "label": "Shaders",
+      "type": "concept",
+      "description": "Vertex and fragment shaders. Shader languages (HLSL, GLSL). Shader Graph / visual shader editors. Common effects: toon, dissolve, water.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.3d",
+      "bookName": "3D Game Development",
+      "bookColor": "#6366f1",
+      "bookOrder": 3,
+      "external_id": "1e0f83e72a57551d",
+      "comprehended": false,
+      "strand": "graphics-3d"
+    },
+    {
+      "id": "gamedev.animation_3d",
+      "label": "3D Animation",
+      "type": "concept",
+      "description": "Skeletal animation, rigging, skinning. Animation blending and layers. Inverse kinematics. Root motion. Animation state machines.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.3d",
+      "bookName": "3D Game Development",
+      "bookColor": "#6366f1",
+      "bookOrder": 3,
+      "external_id": "c33b027b18841d84",
+      "comprehended": false,
+      "strand": "graphics-3d"
+    },
+    {
+      "id": "gamedev.physics_3d",
+      "label": "3D Physics",
+      "type": "concept",
+      "description": "3D rigidbodies and colliders (box, sphere, capsule, mesh). Raycasting. Physics layers. Character controllers. Vehicle physics basics.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.3d",
+      "bookName": "3D Game Development",
+      "bookColor": "#6366f1",
+      "bookOrder": 3,
+      "external_id": "1a9df34e6e3d9f86",
+      "comprehended": false,
+      "strand": "graphics-3d"
+    },
+    {
+      "id": "gamedev.unity_scenes",
+      "label": "Unity: Scenes & Hierarchy",
+      "type": "concept",
+      "description": "Unity Editor layout. Scenes, hierarchy, and inspector. Scene management and loading. Prefabs. Project organization and folder structure.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.engine",
+      "bookName": "Game Engines",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "e7434f505893ce84",
+      "comprehended": false,
+      "strand": "engine"
+    },
+    {
+      "id": "gamedev.unity_gameobjects",
+      "label": "Unity: GameObjects & Components",
+      "type": "concept",
+      "description": "GameObject-Component architecture. Transform component. Adding/removing components. Tags and layers. Enabling/disabling objects.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.engine",
+      "bookName": "Game Engines",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "613fdd5811d4d0f8",
+      "comprehended": false,
+      "strand": "engine"
+    },
+    {
+      "id": "gamedev.unity_scripting",
+      "label": "Unity: C# Scripting",
+      "type": "concept",
+      "description": "MonoBehaviour lifecycle: Awake, Start, Update, FixedUpdate. GetComponent, Find. Coroutines. SerializeField and Inspector values. ScriptableObjects.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.engine",
+      "bookName": "Game Engines",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "3fbbe217bae6d02a",
+      "comprehended": false,
+      "strand": "engine"
+    },
+    {
+      "id": "gamedev.unity_physics",
+      "label": "Unity: Physics System",
+      "type": "concept",
+      "description": "Unity Rigidbody and Collider components. OnCollision and OnTrigger events. Physics materials. Raycasting in Unity. Layer-based collision.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.engine",
+      "bookName": "Game Engines",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "1d9a61427d3da89a",
+      "comprehended": false,
+      "strand": "engine"
+    },
+    {
+      "id": "gamedev.unity_ui",
+      "label": "Unity: UI System",
+      "type": "concept",
+      "description": "Unity UI (uGUI): Canvas, panels, buttons, text. UI Toolkit basics. Event system. Anchoring and responsive layouts. UI animations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.engine",
+      "bookName": "Game Engines",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "78fed297948362ad",
+      "comprehended": false,
+      "strand": "engine"
+    },
+    {
+      "id": "gamedev.unity_animation",
+      "label": "Unity: Animation System",
+      "type": "concept",
+      "description": "Animator Controller, animation clips. Blend trees. Animation events. Avatar and humanoid rig. Timeline for cutscenes.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.engine",
+      "bookName": "Game Engines",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "0100204884802323",
+      "comprehended": false,
+      "strand": "engine"
+    },
+    {
+      "id": "gamedev.unity_audio",
+      "label": "Unity: Audio System",
+      "type": "concept",
+      "description": "AudioSource and AudioListener. Audio clips and mixers. 3D spatial audio. Audio triggers. Background music management.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.engine",
+      "bookName": "Game Engines",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "b3fca25ac662f199",
+      "comprehended": false,
+      "strand": "engine"
+    },
+    {
+      "id": "gamedev.unity_particles",
+      "label": "Unity: Particle System",
+      "type": "concept",
+      "description": "Particle System and VFX Graph. Emission, shape, lifetime modules. Sub-emitters. Particle collision. Common effects: fire, smoke, sparks.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.engine",
+      "bookName": "Game Engines",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "c01ef05f6f0d13e5",
+      "comprehended": false,
+      "strand": "engine"
+    },
+    {
+      "id": "gamedev.state_machines",
+      "label": "State Machines",
+      "type": "concept",
+      "description": "Finite state machines for game logic. States, transitions, conditions. Enemy AI states. Player state management. Hierarchical state machines.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.prog",
+      "bookName": "Game Programming",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "ec31522e1eedb21d",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "gamedev.pathfinding",
+      "label": "Pathfinding",
+      "type": "concept",
+      "description": "A* algorithm. Navigation meshes (NavMesh). Waypoint systems. Obstacle avoidance. Dynamic pathfinding. Grid-based vs mesh-based navigation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.prog",
+      "bookName": "Game Programming",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "fa9d9abc8feb049d",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "gamedev.ai_behaviors",
+      "label": "AI Behaviors",
+      "type": "concept",
+      "description": "Behavior trees. Steering behaviors (seek, flee, wander). Perception systems (sight, hearing). Decision making. Enemy AI patterns.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.prog",
+      "bookName": "Game Programming",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "2b22b017d8ac95de",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "gamedev.multiplayer",
+      "label": "Multiplayer Basics",
+      "type": "concept",
+      "description": "Client-server vs peer-to-peer architecture. Lobbies and matchmaking. Player synchronization. Authoritative servers. Local multiplayer.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.prog",
+      "bookName": "Game Programming",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "2737f0e5f34137d0",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "gamedev.networking",
+      "label": "Game Networking",
+      "type": "concept",
+      "description": "TCP vs UDP for games. Latency compensation: prediction, interpolation, lag compensation. Network serialization. Anti-cheat basics.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.prog",
+      "bookName": "Game Programming",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "8b2e66422012934a",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "gamedev.save_systems",
+      "label": "Save Systems",
+      "type": "concept",
+      "description": "Serialization for game saves. Save file formats (JSON, binary). Auto-save and checkpoints. Cloud saves. Save data migration.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.prog",
+      "bookName": "Game Programming",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "3678bc70997a2113",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "gamedev.object_pooling",
+      "label": "Object Pooling & Optimization",
+      "type": "concept",
+      "description": "Object pooling for performance. Memory management. Draw call batching. Profiling and bottleneck identification. LOD and culling.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.prog",
+      "bookName": "Game Programming",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "77c5d536821c314b",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "gamedev.event_systems",
+      "label": "Event Systems",
+      "type": "concept",
+      "description": "Observer pattern for game events. Event buses. Decoupling systems with events. Signal/slot patterns. Publish-subscribe in games.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.prog",
+      "bookName": "Game Programming",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "77dda89acd8ca754",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "gamedev.sound_effects",
+      "label": "Sound Effects",
+      "type": "concept",
+      "description": "Sound effect sourcing and creation. Foley basics. Audio file formats and compression. Positional audio. Sound effect variation and randomization.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.audio",
+      "bookName": "Audio & Polish",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "20c8c310c7cf2c16",
+      "comprehended": false,
+      "strand": "polish"
+    },
+    {
+      "id": "gamedev.music",
+      "label": "Game Music",
+      "type": "concept",
+      "description": "Music loops and layers. Adaptive/dynamic music systems. Music transitions between scenes. Licensing and royalty-free music. FMOD/Wwise basics.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.audio",
+      "bookName": "Audio & Polish",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "2e86ad4b3967c24b",
+      "comprehended": false,
+      "strand": "polish"
+    },
+    {
+      "id": "gamedev.particle_effects",
+      "label": "Particle Effects",
+      "type": "concept",
+      "description": "Particle systems for visual feedback. Emitter shapes and behaviors. Particle textures and colors. Common effects: explosions, trails, magic.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.audio",
+      "bookName": "Audio & Polish",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "2c41b02b64c43a4d",
+      "comprehended": false,
+      "strand": "polish"
+    },
+    {
+      "id": "gamedev.screen_shake",
+      "label": "Screen Shake & Feedback",
+      "type": "concept",
+      "description": "Camera shake for impact. Hitstop/freeze frames. Haptic feedback. Visual damage indicators. Knockback and recoil effects.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.audio",
+      "bookName": "Audio & Polish",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "6276914a270f77dc",
+      "comprehended": false,
+      "strand": "polish"
+    },
+    {
+      "id": "gamedev.juice",
+      "label": "Game Juice & Feel",
+      "type": "concept",
+      "description": "Making games feel good: squash and stretch, anticipation, follow-through. Easing functions. Tweening. Responsive controls. Satisfying feedback loops.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.audio",
+      "bookName": "Audio & Polish",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "d0d1d4779b37b290",
+      "comprehended": false,
+      "strand": "polish"
+    },
+    {
+      "id": "gamedev.post_processing",
+      "label": "Post-Processing",
+      "type": "concept",
+      "description": "Post-processing effects: bloom, vignette, color grading, depth of field. Anti-aliasing. Screen-space reflections. Tonemapping.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.audio",
+      "bookName": "Audio & Polish",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "a2d5fcdd031e16bc",
+      "comprehended": false,
+      "strand": "polish"
+    },
+    {
+      "id": "gamedev.platforms",
+      "label": "Target Platforms",
+      "type": "concept",
+      "description": "Platform considerations: PC, console, mobile, web. Platform-specific requirements. Build settings. Performance targets per platform.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.publish",
+      "bookName": "Publishing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 7,
+      "external_id": "7f12b454dbcda967",
+      "comprehended": false,
+      "strand": "business"
+    },
+    {
+      "id": "gamedev.monetization",
+      "label": "Monetization",
+      "type": "concept",
+      "description": "Revenue models: premium, free-to-play, ads, DLC, subscriptions. In-app purchases. Ethical monetization. Pricing strategies.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.publish",
+      "bookName": "Publishing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 7,
+      "external_id": "ea783a15f173623d",
+      "comprehended": false,
+      "strand": "business"
+    },
+    {
+      "id": "gamedev.marketing",
+      "label": "Game Marketing",
+      "type": "concept",
+      "description": "Steam page optimization. Trailers and screenshots. Social media presence. Press outreach. Wishlists and community building. Launch timing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.publish",
+      "bookName": "Publishing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 7,
+      "external_id": "1e0276a966b91959",
+      "comprehended": false,
+      "strand": "business"
+    },
+    {
+      "id": "gamedev.game_jams",
+      "label": "Game Jams",
+      "type": "concept",
+      "description": "Participating in game jams (Ludum Dare, GMTK). Scoping for a jam. Rapid development workflow. Post-jam polish and iteration.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.publish",
+      "bookName": "Publishing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 7,
+      "external_id": "8e68729f7d06c799",
+      "comprehended": false,
+      "strand": "business"
+    },
+    {
+      "id": "gamedev.portfolio",
+      "label": "Portfolio & Career",
+      "type": "concept",
+      "description": "Building a game dev portfolio. Itch.io and portfolio websites. Documenting your process. Networking in the industry. Career paths in game dev.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.publish",
+      "bookName": "Publishing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 7,
+      "external_id": "aeb00ab349705026",
+      "comprehended": false,
+      "strand": "business"
+    },
+    {
+      "id": "gamedev.store_publishing",
+      "label": "Store Publishing",
+      "type": "concept",
+      "description": "Publishing to Steam, App Store, Google Play, itch.io. Store requirements and guidelines. Age ratings. Storefront assets and descriptions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.publish",
+      "bookName": "Publishing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 7,
+      "external_id": "777523ebbe02a651",
+      "comprehended": false,
+      "strand": "business"
+    },
+    {
+      "id": "gamedev.qa_testing",
+      "label": "QA & Playtesting",
+      "type": "concept",
+      "description": "Bug tracking and reporting. Playtesting methodology. Alpha and beta testing. Automated testing for games. Regression testing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.publish",
+      "bookName": "Publishing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 7,
+      "external_id": "36a94caaf377f51f",
+      "comprehended": false,
+      "strand": "business"
+    },
+    {
+      "id": "gamedev.player_movement",
+      "label": "Player Movement",
+      "type": "concept",
+      "description": "Character controllers for 2D and 3D. Platformer movement (jump, dash, wall slide). Top-down and side-scrolling movement. Coyote time and input buffering.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.2d",
+      "bookName": "2D Game Development",
+      "bookColor": "#10b981",
+      "bookOrder": 2,
+      "external_id": "d9162000821a461d",
+      "comprehended": false,
+      "strand": "graphics-2d"
+    },
+    {
+      "id": "gamedev.procedural_gen",
+      "label": "Procedural Generation",
+      "type": "concept",
+      "description": "Random level generation algorithms. Perlin/simplex noise. Wave function collapse. Procedural content: dungeons, terrain, items. Seeded randomness.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.prog",
+      "bookName": "Game Programming",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "2cf0320399bde531",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "gamedev.inventory_systems",
+      "label": "Inventory Systems",
+      "type": "concept",
+      "description": "Item data structures and databases. Inventory UI: grid, list, weight-based. Item stacking, sorting, filtering. Equipment and slot systems.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.prog",
+      "bookName": "Game Programming",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "581400785440c15a",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "gamedev.dialogue_systems",
+      "label": "Dialogue Systems",
+      "type": "concept",
+      "description": "Dialogue trees and branching conversations. Dialogue markup formats (Yarn, Ink). Typewriter text effects. Choice-consequence tracking.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.prog",
+      "bookName": "Game Programming",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "dd067638e0e0f21a",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "gamedev.combat_systems",
+      "label": "Combat Systems",
+      "type": "concept",
+      "description": "Real-time vs turn-based combat. Hit detection and hitboxes. Damage calculation. Combo systems. Health and damage feedback.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.prog",
+      "bookName": "Game Programming",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "ff0a5f46b5f58bab",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "gamedev.terrain",
+      "label": "Terrain & Environment",
+      "type": "concept",
+      "description": "Heightmap-based terrain. Terrain texturing and splatmaps. Vegetation and detail objects. Terrain LOD. Environmental storytelling in 3D.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.3d",
+      "bookName": "3D Game Development",
+      "bookColor": "#6366f1",
+      "bookOrder": 3,
+      "external_id": "68683807fb73fc38",
+      "comprehended": false,
+      "strand": "graphics-3d"
+    },
+    {
+      "id": "gamedev.render_pipeline",
+      "label": "Rendering Pipeline",
+      "type": "concept",
+      "description": "Forward vs deferred rendering. Render pipeline stages. Draw calls and batching. Occlusion culling. Rendering profiling and optimization.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.3d",
+      "bookName": "3D Game Development",
+      "bookColor": "#6366f1",
+      "bookOrder": 3,
+      "external_id": "f2508db7d3504bd4",
+      "comprehended": false,
+      "strand": "graphics-3d"
+    },
+    {
+      "id": "gamedev.ux_accessibility",
+      "label": "Game UX & Accessibility",
+      "type": "concept",
+      "description": "Game accessibility features: colorblind modes, remappable controls, subtitle options. Difficulty options. Onboarding and tutorials. UX testing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.design",
+      "bookName": "Game Design",
+      "bookColor": "#f59e0b",
+      "bookOrder": 1,
+      "external_id": "54e3b41193a91819",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "gamedev.scene_management",
+      "label": "Scene Management",
+      "type": "concept",
+      "description": "Loading and unloading scenes. Scene transitions and loading screens. Additive scene loading. Persistent data across scenes. Scene streaming.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.engine",
+      "bookName": "Game Engines",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "f1f9c02aaf2839e8",
+      "comprehended": false,
+      "strand": "engine"
+    },
+    {
+      "id": "gamedev.version_control",
+      "label": "Version Control for Games",
+      "type": "concept",
+      "description": "Git for game projects. Git LFS for large assets. .gitignore for engine-specific files. Branching strategies for game teams. Perforce basics.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.publish",
+      "bookName": "Publishing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 7,
+      "external_id": "894d2daba096eef5",
+      "comprehended": false,
+      "strand": "business"
+    },
+    {
+      "id": "gamedev.localization",
+      "label": "Game Localization",
+      "type": "concept",
+      "description": "Text localization and string tables. Font support for different scripts. Cultural considerations. Localization testing. Translation workflows.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.publish",
+      "bookName": "Publishing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 7,
+      "external_id": "f0bbb6de7d2d37fe",
+      "comprehended": false,
+      "strand": "business"
+    },
+    {
+      "id": "gamedev.analytics",
+      "label": "Game Analytics",
+      "type": "concept",
+      "description": "Player analytics and telemetry. Heatmaps and session tracking. Funnel analysis for progression. A/B testing in games. Data-driven design decisions.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.publish",
+      "bookName": "Publishing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 7,
+      "external_id": "85963b11146dc0a8",
+      "comprehended": false,
+      "strand": "business"
+    },
+    {
+      "id": "gamedev.lighting_2d",
+      "label": "2D Lighting & Effects",
+      "type": "concept",
+      "description": "2D light sources and shadows. Normal maps for 2D sprites. Glow and bloom effects. Day/night cycles. Fog of war.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gamedev.2d",
+      "bookName": "2D Game Development",
+      "bookColor": "#10b981",
+      "bookOrder": 2,
+      "external_id": "a61023327c64de6b",
+      "comprehended": false,
+      "strand": "graphics-2d"
+    }
+  ],
+  "edges": [
+    {
+      "source": "gamedev.game_mechanics",
+      "target": "gamedev.game_loops",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.game_mechanics",
+      "target": "gamedev.level_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.game_mechanics",
+      "target": "gamedev.genre_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.game_mechanics",
+      "target": "gamedev.prototyping",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.level_design",
+      "target": "gamedev.narrative",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.game_mechanics",
+      "target": "gamedev.player_psychology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.player_psychology",
+      "target": "gamedev.balance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.game_mechanics",
+      "target": "gamedev.balance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.game_loops",
+      "target": "gamedev.sprites",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.game_loops",
+      "target": "gamedev.input_handling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.sprites",
+      "target": "gamedev.animation_2d",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.sprites",
+      "target": "gamedev.collision_detection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.sprites",
+      "target": "gamedev.tilemaps",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.collision_detection",
+      "target": "gamedev.physics_2d",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.sprites",
+      "target": "gamedev.ui_2d",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.input_handling",
+      "target": "gamedev.ui_2d",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.sprites",
+      "target": "gamedev.camera_2d",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.collision_detection",
+      "target": "gamedev.math_3d",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.math_3d",
+      "target": "gamedev.meshes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.meshes",
+      "target": "gamedev.textures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.textures",
+      "target": "gamedev.lighting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.math_3d",
+      "target": "gamedev.cameras_3d",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.lighting",
+      "target": "gamedev.shaders",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.textures",
+      "target": "gamedev.shaders",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.meshes",
+      "target": "gamedev.animation_3d",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.math_3d",
+      "target": "gamedev.physics_3d",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.collision_detection",
+      "target": "gamedev.physics_3d",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.game_loops",
+      "target": "gamedev.unity_scenes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_scenes",
+      "target": "gamedev.unity_gameobjects",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_gameobjects",
+      "target": "gamedev.unity_scripting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_scripting",
+      "target": "gamedev.unity_physics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.physics_2d",
+      "target": "gamedev.unity_physics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_scripting",
+      "target": "gamedev.unity_ui",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.ui_2d",
+      "target": "gamedev.unity_ui",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_scripting",
+      "target": "gamedev.unity_animation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.animation_2d",
+      "target": "gamedev.unity_animation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_scripting",
+      "target": "gamedev.unity_audio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_scripting",
+      "target": "gamedev.unity_particles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_scripting",
+      "target": "gamedev.state_machines",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.state_machines",
+      "target": "gamedev.pathfinding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.math_3d",
+      "target": "gamedev.pathfinding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.state_machines",
+      "target": "gamedev.ai_behaviors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.pathfinding",
+      "target": "gamedev.ai_behaviors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_scripting",
+      "target": "gamedev.multiplayer",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.multiplayer",
+      "target": "gamedev.networking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_scripting",
+      "target": "gamedev.save_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_scripting",
+      "target": "gamedev.object_pooling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_scripting",
+      "target": "gamedev.event_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_audio",
+      "target": "gamedev.sound_effects",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_audio",
+      "target": "gamedev.music",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_particles",
+      "target": "gamedev.particle_effects",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.camera_2d",
+      "target": "gamedev.screen_shake",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.animation_2d",
+      "target": "gamedev.juice",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.screen_shake",
+      "target": "gamedev.juice",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.sound_effects",
+      "target": "gamedev.juice",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.particle_effects",
+      "target": "gamedev.juice",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.lighting",
+      "target": "gamedev.post_processing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.shaders",
+      "target": "gamedev.post_processing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.prototyping",
+      "target": "gamedev.game_jams",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_scripting",
+      "target": "gamedev.game_jams",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.juice",
+      "target": "gamedev.platforms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.platforms",
+      "target": "gamedev.monetization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.platforms",
+      "target": "gamedev.marketing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.platforms",
+      "target": "gamedev.store_publishing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.game_jams",
+      "target": "gamedev.portfolio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.store_publishing",
+      "target": "gamedev.portfolio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.juice",
+      "target": "gamedev.qa_testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.balance",
+      "target": "gamedev.qa_testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.input_handling",
+      "target": "gamedev.player_movement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.collision_detection",
+      "target": "gamedev.player_movement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.physics_2d",
+      "target": "gamedev.player_movement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.tilemaps",
+      "target": "gamedev.procedural_gen",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.math_3d",
+      "target": "gamedev.procedural_gen",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_scripting",
+      "target": "gamedev.inventory_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.ui_2d",
+      "target": "gamedev.inventory_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.narrative",
+      "target": "gamedev.dialogue_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_ui",
+      "target": "gamedev.dialogue_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.collision_detection",
+      "target": "gamedev.combat_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.state_machines",
+      "target": "gamedev.combat_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.player_movement",
+      "target": "gamedev.combat_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.meshes",
+      "target": "gamedev.terrain",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.textures",
+      "target": "gamedev.terrain",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.lighting",
+      "target": "gamedev.render_pipeline",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.shaders",
+      "target": "gamedev.render_pipeline",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.player_psychology",
+      "target": "gamedev.ux_accessibility",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.ui_2d",
+      "target": "gamedev.ux_accessibility",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_scenes",
+      "target": "gamedev.scene_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_scripting",
+      "target": "gamedev.scene_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.prototyping",
+      "target": "gamedev.version_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.dialogue_systems",
+      "target": "gamedev.localization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.unity_ui",
+      "target": "gamedev.localization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.store_publishing",
+      "target": "gamedev.analytics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.qa_testing",
+      "target": "gamedev.analytics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.sprites",
+      "target": "gamedev.lighting_2d",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gamedev.camera_2d",
+      "target": "gamedev.lighting_2d",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

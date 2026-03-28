@@ -1,0 +1,1427 @@
+{
+  "metadata": {
+    "domain": "creative-arts",
+    "curriculum": "Graphic Design Skills",
+    "view": "skill-prerequisites",
+    "version": "0.2.0",
+    "description": "Graphic design skill track with prerequisite ordering, from foundations to motion graphics",
+    "sources": [
+      "Industry-standard graphic design curriculum"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "gdesign.foundations",
+      "name": "Foundations",
+      "color": "#8b5cf6",
+      "order": 1
+    },
+    {
+      "id": "gdesign.tools",
+      "name": "Digital Tools",
+      "color": "#3b82f6",
+      "order": 2
+    },
+    {
+      "id": "gdesign.identity",
+      "name": "Identity Design",
+      "color": "#ef4444",
+      "order": 3
+    },
+    {
+      "id": "gdesign.print",
+      "name": "Print Design",
+      "color": "#f97316",
+      "order": 4
+    },
+    {
+      "id": "gdesign.uiux",
+      "name": "UI/UX Design",
+      "color": "#22c55e",
+      "order": 5
+    },
+    {
+      "id": "gdesign.motion",
+      "name": "Motion Graphics",
+      "color": "#ec4899",
+      "order": 6
+    }
+  ],
+  "strands": [
+    {
+      "id": "visual-fundamentals",
+      "name": "Visual Fundamentals",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "software-tools",
+      "name": "Software & Tools",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "branding",
+      "name": "Branding & Identity",
+      "color": "#ef4444"
+    },
+    {
+      "id": "layout-print",
+      "name": "Layout & Print",
+      "color": "#f97316"
+    },
+    {
+      "id": "user-experience",
+      "name": "User Experience",
+      "color": "#22c55e"
+    },
+    {
+      "id": "animation",
+      "name": "Animation & Motion",
+      "color": "#ec4899"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "gdesign.elements_of_design",
+      "label": "Elements of Design",
+      "type": "concept",
+      "description": "Core visual building blocks: line, shape, form, texture, space, and value. Understanding how each element contributes to visual communication.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "3f634e8aa980a358",
+      "comprehended": false,
+      "strand": "visual-fundamentals"
+    },
+    {
+      "id": "gdesign.color_theory",
+      "label": "Color Theory",
+      "type": "concept",
+      "description": "Color wheel, primary/secondary/tertiary colors, hue, saturation, brightness. Warm vs cool colors and their emotional impact.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "22f5a24d006da1d2",
+      "comprehended": false,
+      "strand": "visual-fundamentals"
+    },
+    {
+      "id": "gdesign.color_palettes",
+      "label": "Color Palettes & Schemes",
+      "type": "concept",
+      "description": "Complementary, analogous, triadic, and split-complementary schemes. Building cohesive palettes for projects and brands.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "844685ccd7632678",
+      "comprehended": false,
+      "strand": "visual-fundamentals"
+    },
+    {
+      "id": "gdesign.typography_basics",
+      "label": "Typography Basics",
+      "type": "concept",
+      "description": "Typeface anatomy, serif vs sans-serif, font families, tracking, kerning, and leading. Readability and legibility fundamentals.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "8288b0aab6675c31",
+      "comprehended": false,
+      "strand": "visual-fundamentals"
+    },
+    {
+      "id": "gdesign.typographic_hierarchy",
+      "label": "Typographic Hierarchy",
+      "type": "concept",
+      "description": "Using size, weight, style, and spacing to create visual hierarchy in text. Headlines, subheads, body copy, and captions.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "3ddf5f8f1d6d7b37",
+      "comprehended": false,
+      "strand": "visual-fundamentals"
+    },
+    {
+      "id": "gdesign.composition",
+      "label": "Composition & Layout",
+      "type": "concept",
+      "description": "Rule of thirds, golden ratio, balance, symmetry, and asymmetry. Arranging elements to guide the viewer's eye.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "d1fed534956a37ee",
+      "comprehended": false,
+      "strand": "visual-fundamentals"
+    },
+    {
+      "id": "gdesign.visual_hierarchy",
+      "label": "Visual Hierarchy",
+      "type": "concept",
+      "description": "Directing attention through size, color, contrast, and placement. Establishing focal points and reading order in designs.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "0db65d46a27017d9",
+      "comprehended": false,
+      "strand": "visual-fundamentals"
+    },
+    {
+      "id": "gdesign.contrast_alignment",
+      "label": "Contrast & Alignment",
+      "type": "concept",
+      "description": "Using contrast to create emphasis and visual interest. Alignment principles for clean, professional layouts.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "1e3fda2dc335e0b0",
+      "comprehended": false,
+      "strand": "visual-fundamentals"
+    },
+    {
+      "id": "gdesign.grid_systems",
+      "label": "Grid Systems",
+      "type": "concept",
+      "description": "Column grids, modular grids, and baseline grids. Using grids to create consistent, structured layouts across multi-page designs.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "23c329b8e872f830",
+      "comprehended": false,
+      "strand": "visual-fundamentals"
+    },
+    {
+      "id": "gdesign.photoshop",
+      "label": "Adobe Photoshop",
+      "type": "concept",
+      "description": "Raster image editing: layers, masks, selections, retouching, compositing, and photo manipulation. Non-destructive editing workflows.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.tools",
+      "bookName": "Digital Tools",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "9e9db331bf58ccc8",
+      "comprehended": false,
+      "strand": "software-tools"
+    },
+    {
+      "id": "gdesign.illustrator",
+      "label": "Adobe Illustrator",
+      "type": "concept",
+      "description": "Vector graphics creation: pen tool, pathfinder, shape builder, artboards. Creating scalable logos, icons, and illustrations.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.tools",
+      "bookName": "Digital Tools",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "4cd29bab7bac10ca",
+      "comprehended": false,
+      "strand": "software-tools"
+    },
+    {
+      "id": "gdesign.figma",
+      "label": "Figma",
+      "type": "concept",
+      "description": "Collaborative interface design tool: frames, components, auto-layout, prototyping, design tokens, and team libraries.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.tools",
+      "bookName": "Digital Tools",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "cd82fe1a37b32e5a",
+      "comprehended": false,
+      "strand": "software-tools"
+    },
+    {
+      "id": "gdesign.canva",
+      "label": "Canva",
+      "type": "concept",
+      "description": "Accessible design platform for quick graphics: templates, drag-and-drop editing, brand kits, and social media content creation.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.tools",
+      "bookName": "Digital Tools",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "e4e1f812349e353f",
+      "comprehended": false,
+      "strand": "software-tools"
+    },
+    {
+      "id": "gdesign.vector_vs_raster",
+      "label": "Vector vs Raster",
+      "type": "concept",
+      "description": "Understanding the difference between vector and raster formats, when to use each, and resolution/DPI considerations for print vs screen.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.tools",
+      "bookName": "Digital Tools",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "d902fc73b969a43f",
+      "comprehended": false,
+      "strand": "software-tools"
+    },
+    {
+      "id": "gdesign.file_formats",
+      "label": "File Formats & Export",
+      "type": "concept",
+      "description": "PNG, JPEG, SVG, PDF, EPS, TIFF. Choosing the right format for web, print, and collaboration. Export settings and optimization.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.tools",
+      "bookName": "Digital Tools",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "8f1f8ce691818593",
+      "comprehended": false,
+      "strand": "software-tools"
+    },
+    {
+      "id": "gdesign.indesign",
+      "label": "Adobe InDesign",
+      "type": "concept",
+      "description": "Page layout and publishing tool: master pages, paragraph/character styles, text flow, tables, and multi-page document design.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.tools",
+      "bookName": "Digital Tools",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "09e36d8577041816",
+      "comprehended": false,
+      "strand": "software-tools"
+    },
+    {
+      "id": "gdesign.logo_design",
+      "label": "Logo Design",
+      "type": "concept",
+      "description": "Principles of effective logo creation: simplicity, memorability, versatility, and appropriateness. Sketching, iteration, and refinement.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.identity",
+      "bookName": "Identity Design",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "6af1cd51902599b0",
+      "comprehended": false,
+      "strand": "branding"
+    },
+    {
+      "id": "gdesign.logo_types",
+      "label": "Logo Types & Marks",
+      "type": "concept",
+      "description": "Wordmarks, lettermarks, pictorial marks, abstract marks, mascots, and combination marks. Choosing the right type for a brand.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.identity",
+      "bookName": "Identity Design",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "fb03a55c0042cdd7",
+      "comprehended": false,
+      "strand": "branding"
+    },
+    {
+      "id": "gdesign.brand_strategy",
+      "label": "Brand Strategy",
+      "type": "concept",
+      "description": "Defining brand values, mission, target audience, and positioning. Translating strategy into visual identity decisions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.identity",
+      "bookName": "Identity Design",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "2928332d3b75c08e",
+      "comprehended": false,
+      "strand": "branding"
+    },
+    {
+      "id": "gdesign.style_guides",
+      "label": "Brand Style Guides",
+      "type": "concept",
+      "description": "Creating comprehensive brand guidelines: logo usage rules, color specifications, typography standards, imagery style, and tone of voice.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.identity",
+      "bookName": "Identity Design",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "d369f6746b250374",
+      "comprehended": false,
+      "strand": "branding"
+    },
+    {
+      "id": "gdesign.business_cards",
+      "label": "Business Cards & Stationery",
+      "type": "concept",
+      "description": "Designing business cards, letterheads, envelopes, and branded collateral. Print specifications and finishing techniques.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.identity",
+      "bookName": "Identity Design",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "b4ff3c81457f8110",
+      "comprehended": false,
+      "strand": "branding"
+    },
+    {
+      "id": "gdesign.brand_systems",
+      "label": "Brand Systems",
+      "type": "concept",
+      "description": "Building flexible, scalable brand systems that work across media. Sub-brands, brand architecture, and maintaining consistency at scale.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.identity",
+      "bookName": "Identity Design",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "823c709267f05823",
+      "comprehended": false,
+      "strand": "branding"
+    },
+    {
+      "id": "gdesign.brand_mockups",
+      "label": "Brand Mockups & Presentations",
+      "type": "concept",
+      "description": "Creating realistic mockups to present brand identity work. Mockup tools, templates, and client presentation techniques.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.identity",
+      "bookName": "Identity Design",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "5b69ebdc93cc945d",
+      "comprehended": false,
+      "strand": "branding"
+    },
+    {
+      "id": "gdesign.poster_design",
+      "label": "Poster Design",
+      "type": "concept",
+      "description": "Creating impactful posters: bold typography, imagery, visual hierarchy, and communication at a glance. Event, promotional, and artistic posters.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.print",
+      "bookName": "Print Design",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "28ff588cda9503f7",
+      "comprehended": false,
+      "strand": "layout-print"
+    },
+    {
+      "id": "gdesign.brochure_design",
+      "label": "Brochure & Flyer Design",
+      "type": "concept",
+      "description": "Multi-panel layouts, fold types (bi-fold, tri-fold, gate-fold), content hierarchy, and print-ready file preparation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.print",
+      "bookName": "Print Design",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "4391123c8b15ae3b",
+      "comprehended": false,
+      "strand": "layout-print"
+    },
+    {
+      "id": "gdesign.packaging",
+      "label": "Packaging Design",
+      "type": "concept",
+      "description": "Product packaging: dielines, structural design, shelf appeal, material considerations, and regulatory label requirements.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.print",
+      "bookName": "Print Design",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "4c8ca93aadf5365b",
+      "comprehended": false,
+      "strand": "layout-print"
+    },
+    {
+      "id": "gdesign.editorial_layout",
+      "label": "Editorial & Magazine Layout",
+      "type": "concept",
+      "description": "Magazine spreads, article layouts, pull quotes, image placement, and multi-page storytelling through design.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.print",
+      "bookName": "Print Design",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "448b7d2e4b26fe54",
+      "comprehended": false,
+      "strand": "layout-print"
+    },
+    {
+      "id": "gdesign.print_production",
+      "label": "Print Production",
+      "type": "concept",
+      "description": "CMYK color mode, bleed, trim, crop marks, paper stocks, and print finishing. Preparing files for commercial printing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.print",
+      "bookName": "Print Design",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "30bdf9f33e710674",
+      "comprehended": false,
+      "strand": "layout-print"
+    },
+    {
+      "id": "gdesign.infographics",
+      "label": "Infographic Design",
+      "type": "concept",
+      "description": "Data visualization, information hierarchy, iconography, and storytelling with data. Creating clear, engaging infographics.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.print",
+      "bookName": "Print Design",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "85119cf9542d40ee",
+      "comprehended": false,
+      "strand": "layout-print"
+    },
+    {
+      "id": "gdesign.wireframing",
+      "label": "Wireframing",
+      "type": "concept",
+      "description": "Low-fidelity and high-fidelity wireframes. Structuring page layouts, content placement, and navigation flows before visual design.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.uiux",
+      "bookName": "UI/UX Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 5,
+      "external_id": "c0305d8e659499dd",
+      "comprehended": false,
+      "strand": "user-experience"
+    },
+    {
+      "id": "gdesign.prototyping",
+      "label": "Prototyping",
+      "type": "concept",
+      "description": "Interactive prototypes that simulate user flows. Click-through mockups, micro-interactions, and testing prototypes with users.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.uiux",
+      "bookName": "UI/UX Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 5,
+      "external_id": "28eca44439e1268a",
+      "comprehended": false,
+      "strand": "user-experience"
+    },
+    {
+      "id": "gdesign.user_research",
+      "label": "User Research",
+      "type": "concept",
+      "description": "User interviews, surveys, personas, journey mapping, and empathy maps. Understanding user needs to inform design decisions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.uiux",
+      "bookName": "UI/UX Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 5,
+      "external_id": "db8db079db9fad0a",
+      "comprehended": false,
+      "strand": "user-experience"
+    },
+    {
+      "id": "gdesign.usability",
+      "label": "Usability & Testing",
+      "type": "concept",
+      "description": "Usability heuristics, A/B testing, task analysis, and iterative design. Evaluating and improving user experience through testing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.uiux",
+      "bookName": "UI/UX Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 5,
+      "external_id": "78ee2adc2f1f7fe7",
+      "comprehended": false,
+      "strand": "user-experience"
+    },
+    {
+      "id": "gdesign.design_systems",
+      "label": "Design Systems",
+      "type": "concept",
+      "description": "Component libraries, design tokens, pattern documentation, and atomic design methodology. Building and maintaining scalable design systems.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.uiux",
+      "bookName": "UI/UX Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 5,
+      "external_id": "48aa52ca023d7e54",
+      "comprehended": false,
+      "strand": "user-experience"
+    },
+    {
+      "id": "gdesign.accessibility",
+      "label": "Accessibility (a11y)",
+      "type": "concept",
+      "description": "WCAG guidelines, color contrast, screen reader compatibility, keyboard navigation, and inclusive design principles.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.uiux",
+      "bookName": "UI/UX Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 5,
+      "external_id": "e75743babe787b28",
+      "comprehended": false,
+      "strand": "user-experience"
+    },
+    {
+      "id": "gdesign.responsive_design",
+      "label": "Responsive Design",
+      "type": "concept",
+      "description": "Designing for multiple screen sizes and devices. Breakpoints, fluid layouts, mobile-first approach, and adaptive components.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.uiux",
+      "bookName": "UI/UX Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 5,
+      "external_id": "a724f7c130c752b0",
+      "comprehended": false,
+      "strand": "user-experience"
+    },
+    {
+      "id": "gdesign.ui_patterns",
+      "label": "UI Patterns & Components",
+      "type": "concept",
+      "description": "Common UI patterns: navigation, forms, cards, modals, tooltips, and dashboards. Best practices for consistent interface design.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.uiux",
+      "bookName": "UI/UX Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 5,
+      "external_id": "228d1ded0c38b714",
+      "comprehended": false,
+      "strand": "user-experience"
+    },
+    {
+      "id": "gdesign.information_architecture",
+      "label": "Information Architecture",
+      "type": "concept",
+      "description": "Organizing and structuring content: sitemaps, card sorting, navigation structures, and content strategy for digital products.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.uiux",
+      "bookName": "UI/UX Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 5,
+      "external_id": "5f87a87586c0bef2",
+      "comprehended": false,
+      "strand": "user-experience"
+    },
+    {
+      "id": "gdesign.animation_principles",
+      "label": "Animation Principles",
+      "type": "concept",
+      "description": "The 12 principles of animation applied to motion graphics: squash & stretch, anticipation, easing, staging, and timing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.motion",
+      "bookName": "Motion Graphics",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "32576c9b876bb028",
+      "comprehended": false,
+      "strand": "animation"
+    },
+    {
+      "id": "gdesign.after_effects",
+      "label": "After Effects Basics",
+      "type": "concept",
+      "description": "Adobe After Effects interface, compositions, keyframes, layer properties, effects, and rendering. Creating basic motion graphics.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.motion",
+      "bookName": "Motion Graphics",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "2935aff400cc3423",
+      "comprehended": false,
+      "strand": "animation"
+    },
+    {
+      "id": "gdesign.kinetic_typography",
+      "label": "Kinetic Typography",
+      "type": "concept",
+      "description": "Animating text to convey emotion and emphasis. Text reveals, transitions, and expressive typographic motion sequences.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.motion",
+      "bookName": "Motion Graphics",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "f5ada2f485bfaaec",
+      "comprehended": false,
+      "strand": "animation"
+    },
+    {
+      "id": "gdesign.social_media_motion",
+      "label": "Social Media Motion",
+      "type": "concept",
+      "description": "Creating animated content for social platforms: stories, reels, GIFs, and looping animations. Platform-specific requirements and trends.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.motion",
+      "bookName": "Motion Graphics",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "079a61ce85bf7d49",
+      "comprehended": false,
+      "strand": "animation"
+    },
+    {
+      "id": "gdesign.motion_transitions",
+      "label": "Transitions & Effects",
+      "type": "concept",
+      "description": "Scene transitions, particle effects, shape morphing, and visual effects in motion graphics. Creating polished, professional animations.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.motion",
+      "bookName": "Motion Graphics",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "dc1a62aa26fe2e45",
+      "comprehended": false,
+      "strand": "animation"
+    },
+    {
+      "id": "gdesign.motion_branding",
+      "label": "Animated Brand Identity",
+      "type": "concept",
+      "description": "Logo animations, animated brand elements, and motion language for brands. Creating brand motion guidelines.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.motion",
+      "bookName": "Motion Graphics",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "4b55fd19749c4767",
+      "comprehended": false,
+      "strand": "animation"
+    },
+    {
+      "id": "gdesign.whitespace",
+      "label": "Whitespace & Proximity",
+      "type": "concept",
+      "description": "Strategic use of negative space to improve readability and elegance. Proximity principle for grouping related elements.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "93cab3b9cba9edca",
+      "comprehended": false,
+      "strand": "visual-fundamentals"
+    },
+    {
+      "id": "gdesign.design_critique",
+      "label": "Design Critique & Feedback",
+      "type": "concept",
+      "description": "Giving and receiving constructive design feedback. Critique frameworks, presenting design rationale, and iterating based on feedback.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "56399c16d83ccf94",
+      "comprehended": false,
+      "strand": "visual-fundamentals"
+    },
+    {
+      "id": "gdesign.image_editing",
+      "label": "Image Editing & Retouching",
+      "type": "concept",
+      "description": "Photo correction, retouching, compositing, and color adjustment. Working with stock photography and original imagery.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.tools",
+      "bookName": "Digital Tools",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "4dd146b49001da8b",
+      "comprehended": false,
+      "strand": "software-tools"
+    },
+    {
+      "id": "gdesign.social_media_design",
+      "label": "Social Media Graphics",
+      "type": "concept",
+      "description": "Designing for social platforms: post templates, story formats, cover images, and ad creatives. Platform size specifications and best practices.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.print",
+      "bookName": "Print Design",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "531adf7ffa33e01c",
+      "comprehended": false,
+      "strand": "layout-print"
+    },
+    {
+      "id": "gdesign.icon_design",
+      "label": "Icon & Illustration",
+      "type": "concept",
+      "description": "Designing icons, spot illustrations, and custom graphics. Consistency in style, grid-based icon design, and scalable illustrations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.tools",
+      "bookName": "Digital Tools",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "19a2a16cdee0e630",
+      "comprehended": false,
+      "strand": "software-tools"
+    },
+    {
+      "id": "gdesign.portfolio",
+      "label": "Design Portfolio",
+      "type": "concept",
+      "description": "Curating and presenting design work: case studies, project narratives, online portfolios, and personal branding for designers.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "gdesign.identity",
+      "bookName": "Identity Design",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "8df9f7044407d01e",
+      "comprehended": false,
+      "strand": "branding"
+    }
+  ],
+  "edges": [
+    {
+      "source": "gdesign.elements_of_design",
+      "target": "gdesign.color_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.elements_of_design",
+      "target": "gdesign.composition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.elements_of_design",
+      "target": "gdesign.contrast_alignment",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.color_theory",
+      "target": "gdesign.color_palettes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.typography_basics",
+      "target": "gdesign.typographic_hierarchy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.composition",
+      "target": "gdesign.visual_hierarchy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.composition",
+      "target": "gdesign.grid_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.contrast_alignment",
+      "target": "gdesign.visual_hierarchy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.composition",
+      "target": "gdesign.whitespace",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.elements_of_design",
+      "target": "gdesign.vector_vs_raster",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.vector_vs_raster",
+      "target": "gdesign.photoshop",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.vector_vs_raster",
+      "target": "gdesign.illustrator",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.elements_of_design",
+      "target": "gdesign.canva",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.elements_of_design",
+      "target": "gdesign.figma",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.vector_vs_raster",
+      "target": "gdesign.file_formats",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.photoshop",
+      "target": "gdesign.image_editing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.illustrator",
+      "target": "gdesign.icon_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.grid_systems",
+      "target": "gdesign.indesign",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.typography_basics",
+      "target": "gdesign.indesign",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.illustrator",
+      "target": "gdesign.logo_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.color_palettes",
+      "target": "gdesign.logo_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.typography_basics",
+      "target": "gdesign.logo_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.logo_design",
+      "target": "gdesign.logo_types",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.logo_design",
+      "target": "gdesign.brand_strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.brand_strategy",
+      "target": "gdesign.style_guides",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.color_palettes",
+      "target": "gdesign.style_guides",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.typographic_hierarchy",
+      "target": "gdesign.style_guides",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.style_guides",
+      "target": "gdesign.business_cards",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.style_guides",
+      "target": "gdesign.brand_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.style_guides",
+      "target": "gdesign.brand_mockups",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.brand_systems",
+      "target": "gdesign.portfolio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.visual_hierarchy",
+      "target": "gdesign.poster_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.typographic_hierarchy",
+      "target": "gdesign.poster_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.grid_systems",
+      "target": "gdesign.brochure_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.poster_design",
+      "target": "gdesign.brochure_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.brochure_design",
+      "target": "gdesign.packaging",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.grid_systems",
+      "target": "gdesign.editorial_layout",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.indesign",
+      "target": "gdesign.editorial_layout",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.file_formats",
+      "target": "gdesign.print_production",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.brochure_design",
+      "target": "gdesign.print_production",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.visual_hierarchy",
+      "target": "gdesign.infographics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.icon_design",
+      "target": "gdesign.infographics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.canva",
+      "target": "gdesign.social_media_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.visual_hierarchy",
+      "target": "gdesign.social_media_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.figma",
+      "target": "gdesign.wireframing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.visual_hierarchy",
+      "target": "gdesign.wireframing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.wireframing",
+      "target": "gdesign.information_architecture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.wireframing",
+      "target": "gdesign.prototyping",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.prototyping",
+      "target": "gdesign.usability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.wireframing",
+      "target": "gdesign.user_research",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.user_research",
+      "target": "gdesign.usability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.figma",
+      "target": "gdesign.ui_patterns",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.wireframing",
+      "target": "gdesign.ui_patterns",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.ui_patterns",
+      "target": "gdesign.design_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.style_guides",
+      "target": "gdesign.design_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.ui_patterns",
+      "target": "gdesign.responsive_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.color_palettes",
+      "target": "gdesign.accessibility",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.usability",
+      "target": "gdesign.accessibility",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.composition",
+      "target": "gdesign.animation_principles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.animation_principles",
+      "target": "gdesign.after_effects",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.typographic_hierarchy",
+      "target": "gdesign.kinetic_typography",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.after_effects",
+      "target": "gdesign.kinetic_typography",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.after_effects",
+      "target": "gdesign.social_media_motion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.social_media_design",
+      "target": "gdesign.social_media_motion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.after_effects",
+      "target": "gdesign.motion_transitions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.kinetic_typography",
+      "target": "gdesign.motion_branding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.brand_systems",
+      "target": "gdesign.motion_branding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "gdesign.visual_hierarchy",
+      "target": "gdesign.design_critique",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

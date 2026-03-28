@@ -1,0 +1,2004 @@
+{
+  "metadata": {
+    "domain": "artificial-intelligence",
+    "curriculum": "AI & Machine Learning",
+    "view": "skill-track",
+    "version": "0.2.0",
+    "description": "AI and Machine Learning skill track from Python foundations through deep learning, NLP, computer vision, reinforcement learning, and MLOps",
+    "sources": [
+      "AI & Machine Learning Curriculum"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "aiml.python",
+      "name": "Python Foundations",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "aiml.math",
+      "name": "Mathematics for ML",
+      "color": "#8b5cf6",
+      "order": 2
+    },
+    {
+      "id": "aiml.classical",
+      "name": "Classical ML",
+      "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "aiml.dl",
+      "name": "Deep Learning",
+      "color": "#ef4444",
+      "order": 4
+    },
+    {
+      "id": "aiml.cv",
+      "name": "Computer Vision",
+      "color": "#f97316",
+      "order": 5
+    },
+    {
+      "id": "aiml.nlp",
+      "name": "NLP",
+      "color": "#06b6d4",
+      "order": 6
+    },
+    {
+      "id": "aiml.rl",
+      "name": "Reinforcement Learning",
+      "color": "#ec4899",
+      "order": 7
+    },
+    {
+      "id": "aiml.practical",
+      "name": "Practical ML",
+      "color": "#eab308",
+      "order": 8
+    }
+  ],
+  "strands": [
+    {
+      "id": "foundations",
+      "name": "Foundations",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "classical-ml",
+      "name": "Classical ML",
+      "color": "#22c55e"
+    },
+    {
+      "id": "deep-learning",
+      "name": "Deep Learning",
+      "color": "#ef4444"
+    },
+    {
+      "id": "computer-vision",
+      "name": "Computer Vision",
+      "color": "#f97316"
+    },
+    {
+      "id": "nlp",
+      "name": "NLP",
+      "color": "#06b6d4"
+    },
+    {
+      "id": "rl",
+      "name": "RL",
+      "color": "#ec4899"
+    },
+    {
+      "id": "mlops",
+      "name": "MLOps",
+      "color": "#eab308"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "aiml.python.variables_types",
+      "label": "Variables & Data Types",
+      "type": "concept",
+      "description": "Python variables, primitive types (int, float, str, bool), type casting, and dynamic typing fundamentals.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.python",
+      "bookName": "Python Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "dc43d5bddc6c59e9",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "aiml.python.control_flow",
+      "label": "Control Flow",
+      "type": "concept",
+      "description": "Conditionals (if/elif/else), for and while loops, break/continue, list comprehensions, and iterators.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.python",
+      "bookName": "Python Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "b4dc29c56e2374ed",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "aiml.python.functions",
+      "label": "Functions & Modules",
+      "type": "concept",
+      "description": "Defining functions, arguments, return values, lambda expressions, modules, and packages in Python.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.python",
+      "bookName": "Python Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "a51f1e3c8a2c8dad",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "aiml.python.data_structures",
+      "label": "Data Structures",
+      "type": "concept",
+      "description": "Lists, tuples, dictionaries, sets, and their methods. Choosing the right data structure for a task.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.python",
+      "bookName": "Python Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "c364c09b6c1d9691",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "aiml.python.numpy",
+      "label": "NumPy",
+      "type": "concept",
+      "description": "NumPy arrays, broadcasting, vectorized operations, linear algebra routines, and random number generation.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.python",
+      "bookName": "Python Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "fcb103d2f8e40697",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "aiml.python.pandas",
+      "label": "Pandas",
+      "type": "concept",
+      "description": "DataFrames, Series, indexing, groupby, merging, reshaping, and handling missing data with Pandas.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.python",
+      "bookName": "Python Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "8c903a359734752b",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "aiml.python.matplotlib",
+      "label": "Matplotlib & Visualization",
+      "type": "concept",
+      "description": "Creating plots with Matplotlib: line, bar, scatter, histograms, subplots, and customization.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.python",
+      "bookName": "Python Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "003f07a4d891e708",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "aiml.python.jupyter",
+      "label": "Jupyter Notebooks",
+      "type": "concept",
+      "description": "Working with Jupyter notebooks: cells, markdown, magic commands, and reproducible data analysis workflows.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.python",
+      "bookName": "Python Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "176ef804a9acd154",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "aiml.math.vectors_matrices",
+      "label": "Vectors & Matrices",
+      "type": "concept",
+      "description": "Vector spaces, matrix operations, dot products, matrix multiplication, and their geometric interpretations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.math",
+      "bookName": "Mathematics for ML",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "f39ace0fc20c38c7",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "aiml.math.eigenvalues",
+      "label": "Eigenvalues & Eigenvectors",
+      "type": "concept",
+      "description": "Eigendecomposition, spectral theorem, and applications of eigenvalues to PCA and dimensionality reduction.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.math",
+      "bookName": "Mathematics for ML",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "891dfe165cee1454",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "aiml.math.svd",
+      "label": "Singular Value Decomposition",
+      "type": "concept",
+      "description": "SVD factorization, low-rank approximations, and applications in recommendation systems and data compression.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.math",
+      "bookName": "Mathematics for ML",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "7283dfd730f57f29",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "aiml.math.derivatives",
+      "label": "Derivatives & Gradients",
+      "type": "concept",
+      "description": "Partial derivatives, gradients, the chain rule, and Jacobians relevant to backpropagation in neural networks.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.math",
+      "bookName": "Mathematics for ML",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "806da79373aa7476",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "aiml.math.probability",
+      "label": "Probability Theory",
+      "type": "concept",
+      "description": "Sample spaces, conditional probability, Bayes' theorem, common distributions (Gaussian, Bernoulli, Poisson).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.math",
+      "bookName": "Mathematics for ML",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "f2492f4ac4735726",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "aiml.math.statistics",
+      "label": "Descriptive & Inferential Statistics",
+      "type": "concept",
+      "description": "Mean, variance, hypothesis testing, confidence intervals, maximum likelihood estimation, and statistical significance.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.math",
+      "bookName": "Mathematics for ML",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "8a200220ee513277",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "aiml.math.optimization",
+      "label": "Optimization",
+      "type": "concept",
+      "description": "Gradient descent, stochastic gradient descent, learning rates, convexity, and convergence properties.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.math",
+      "bookName": "Mathematics for ML",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "e6256126ae269e60",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "aiml.math.info_theory",
+      "label": "Information Theory Basics",
+      "type": "concept",
+      "description": "Entropy, cross-entropy, KL divergence, and mutual information as used in ML loss functions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.math",
+      "bookName": "Mathematics for ML",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "17cdbd01745b6124",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "aiml.classical.linear_regression",
+      "label": "Linear Regression",
+      "type": "concept",
+      "description": "Simple and multiple linear regression, ordinary least squares, cost functions, and the normal equation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.classical",
+      "bookName": "Classical ML",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "7306499930081954",
+      "comprehended": false,
+      "strand": "classical-ml"
+    },
+    {
+      "id": "aiml.classical.polynomial_regression",
+      "label": "Polynomial & Regularized Regression",
+      "type": "concept",
+      "description": "Polynomial features, Ridge (L2), Lasso (L1), and Elastic Net regularization to control overfitting.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.classical",
+      "bookName": "Classical ML",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "0cfb37bcc6e6ecd9",
+      "comprehended": false,
+      "strand": "classical-ml"
+    },
+    {
+      "id": "aiml.classical.logistic_regression",
+      "label": "Logistic Regression",
+      "type": "concept",
+      "description": "Binary and multinomial logistic regression, sigmoid function, decision boundaries, and log-loss.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.classical",
+      "bookName": "Classical ML",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "7ac59ac5cfe51745",
+      "comprehended": false,
+      "strand": "classical-ml"
+    },
+    {
+      "id": "aiml.classical.knn",
+      "label": "K-Nearest Neighbors",
+      "type": "concept",
+      "description": "KNN for classification and regression, distance metrics, curse of dimensionality, and choosing k.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.classical",
+      "bookName": "Classical ML",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "e23634a6b7d7cfd8",
+      "comprehended": false,
+      "strand": "classical-ml"
+    },
+    {
+      "id": "aiml.classical.svm",
+      "label": "Support Vector Machines",
+      "type": "concept",
+      "description": "Maximum margin classifiers, kernel trick, RBF and polynomial kernels, soft margin classification.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.classical",
+      "bookName": "Classical ML",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "0cc03b85a0ea677c",
+      "comprehended": false,
+      "strand": "classical-ml"
+    },
+    {
+      "id": "aiml.classical.naive_bayes",
+      "label": "Naive Bayes",
+      "type": "concept",
+      "description": "Gaussian, multinomial, and Bernoulli Naive Bayes classifiers. Conditional independence assumption and text classification.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.classical",
+      "bookName": "Classical ML",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "03cb04cb4fce9e09",
+      "comprehended": false,
+      "strand": "classical-ml"
+    },
+    {
+      "id": "aiml.classical.decision_trees",
+      "label": "Decision Trees",
+      "type": "concept",
+      "description": "CART algorithm, Gini impurity, entropy-based splits, pruning strategies, and interpretability.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.classical",
+      "bookName": "Classical ML",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "752c9d863bf2e3a4",
+      "comprehended": false,
+      "strand": "classical-ml"
+    },
+    {
+      "id": "aiml.classical.random_forests",
+      "label": "Random Forests",
+      "type": "concept",
+      "description": "Bagging, bootstrap aggregation, feature randomness, out-of-bag error, and feature importance.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.classical",
+      "bookName": "Classical ML",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "27f4ae5e3d972e90",
+      "comprehended": false,
+      "strand": "classical-ml"
+    },
+    {
+      "id": "aiml.classical.boosting",
+      "label": "Gradient Boosting & Ensembles",
+      "type": "concept",
+      "description": "AdaBoost, Gradient Boosting, XGBoost, LightGBM, stacking, and ensemble methods for improved prediction.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.classical",
+      "bookName": "Classical ML",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "756585c08bd6b3bb",
+      "comprehended": false,
+      "strand": "classical-ml"
+    },
+    {
+      "id": "aiml.classical.kmeans",
+      "label": "K-Means Clustering",
+      "type": "concept",
+      "description": "K-means algorithm, elbow method, silhouette score, K-means++ initialization, and limitations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.classical",
+      "bookName": "Classical ML",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "c07adea1cde55649",
+      "comprehended": false,
+      "strand": "classical-ml"
+    },
+    {
+      "id": "aiml.classical.hierarchical",
+      "label": "Hierarchical & Density Clustering",
+      "type": "concept",
+      "description": "Agglomerative clustering, dendrograms, DBSCAN, HDBSCAN, and cluster validation techniques.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.classical",
+      "bookName": "Classical ML",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "fdac126b00e7301b",
+      "comprehended": false,
+      "strand": "classical-ml"
+    },
+    {
+      "id": "aiml.classical.pca",
+      "label": "PCA & Dimensionality Reduction",
+      "type": "concept",
+      "description": "Principal Component Analysis, explained variance, t-SNE, UMAP, and feature selection techniques.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.classical",
+      "bookName": "Classical ML",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "6cc633a45d942f81",
+      "comprehended": false,
+      "strand": "classical-ml"
+    },
+    {
+      "id": "aiml.dl.perceptron",
+      "label": "Perceptrons",
+      "type": "concept",
+      "description": "Single-layer perceptron, linear separability, perceptron learning rule, and XOR problem motivation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.dl",
+      "bookName": "Deep Learning",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "d144d1dcf980827a",
+      "comprehended": false,
+      "strand": "deep-learning"
+    },
+    {
+      "id": "aiml.dl.mlp",
+      "label": "Multi-Layer Perceptrons",
+      "type": "concept",
+      "description": "Feedforward neural networks, hidden layers, universal approximation theorem, and network architecture design.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.dl",
+      "bookName": "Deep Learning",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "4944321ad4a4fdaa",
+      "comprehended": false,
+      "strand": "deep-learning"
+    },
+    {
+      "id": "aiml.dl.activation_functions",
+      "label": "Activation Functions",
+      "type": "concept",
+      "description": "Sigmoid, tanh, ReLU, Leaky ReLU, ELU, GELU, Swish, and their impact on gradient flow.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.dl",
+      "bookName": "Deep Learning",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "1541781464619660",
+      "comprehended": false,
+      "strand": "deep-learning"
+    },
+    {
+      "id": "aiml.dl.backpropagation",
+      "label": "Backpropagation",
+      "type": "concept",
+      "description": "Computational graphs, chain rule application, gradient computation, and automatic differentiation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.dl",
+      "bookName": "Deep Learning",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "ffdb0b7bd9f8eac1",
+      "comprehended": false,
+      "strand": "deep-learning"
+    },
+    {
+      "id": "aiml.dl.optimizers",
+      "label": "Optimizers",
+      "type": "concept",
+      "description": "SGD with momentum, Adam, AdaGrad, RMSProp, learning rate scheduling, and warm-up strategies.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.dl",
+      "bookName": "Deep Learning",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "da189708fb8c6bb3",
+      "comprehended": false,
+      "strand": "deep-learning"
+    },
+    {
+      "id": "aiml.dl.regularization",
+      "label": "Regularization Techniques",
+      "type": "concept",
+      "description": "Dropout, weight decay, early stopping, data augmentation, and label smoothing to prevent overfitting.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.dl",
+      "bookName": "Deep Learning",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "691ff64a6b6249b8",
+      "comprehended": false,
+      "strand": "deep-learning"
+    },
+    {
+      "id": "aiml.dl.batch_norm",
+      "label": "Batch Normalization",
+      "type": "concept",
+      "description": "Batch normalization, layer normalization, group normalization, and their effects on training stability.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.dl",
+      "bookName": "Deep Learning",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "1b2aa88682dc0aca",
+      "comprehended": false,
+      "strand": "deep-learning"
+    },
+    {
+      "id": "aiml.dl.loss_functions",
+      "label": "Loss Functions",
+      "type": "concept",
+      "description": "MSE, cross-entropy, hinge loss, focal loss, contrastive loss, and choosing appropriate loss functions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.dl",
+      "bookName": "Deep Learning",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "558bccc188bf5af8",
+      "comprehended": false,
+      "strand": "deep-learning"
+    },
+    {
+      "id": "aiml.dl.frameworks",
+      "label": "Deep Learning Frameworks",
+      "type": "concept",
+      "description": "PyTorch and TensorFlow basics: tensors, autograd, model definition, training loops, and GPU acceleration.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.dl",
+      "bookName": "Deep Learning",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "cd0f42b5e2b465aa",
+      "comprehended": false,
+      "strand": "deep-learning"
+    },
+    {
+      "id": "aiml.cv.convolutions",
+      "label": "Convolutions & Filters",
+      "type": "concept",
+      "description": "Convolutional layers, kernels, stride, padding, feature maps, and the convolution operation for images.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.cv",
+      "bookName": "Computer Vision",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "50b5e312108badab",
+      "comprehended": false,
+      "strand": "computer-vision"
+    },
+    {
+      "id": "aiml.cv.pooling",
+      "label": "Pooling & CNN Architecture",
+      "type": "concept",
+      "description": "Max pooling, average pooling, global average pooling, and building CNN architectures with conv-pool stacks.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.cv",
+      "bookName": "Computer Vision",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "83d2c8457382cee6",
+      "comprehended": false,
+      "strand": "computer-vision"
+    },
+    {
+      "id": "aiml.cv.classic_architectures",
+      "label": "Classic CNN Architectures",
+      "type": "concept",
+      "description": "LeNet, AlexNet, VGGNet, GoogLeNet/Inception, ResNet, and the evolution of image classification networks.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.cv",
+      "bookName": "Computer Vision",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "87734cab8644c7c9",
+      "comprehended": false,
+      "strand": "computer-vision"
+    },
+    {
+      "id": "aiml.cv.image_classification",
+      "label": "Image Classification",
+      "type": "concept",
+      "description": "End-to-end image classification pipelines, data loading, training, top-k accuracy, and confusion matrices.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.cv",
+      "bookName": "Computer Vision",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "700df788f55b7c67",
+      "comprehended": false,
+      "strand": "computer-vision"
+    },
+    {
+      "id": "aiml.cv.object_detection",
+      "label": "Object Detection",
+      "type": "concept",
+      "description": "R-CNN family, YOLO, SSD, anchor boxes, non-max suppression, and mAP evaluation metrics.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.cv",
+      "bookName": "Computer Vision",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "35e77e54e7eecbc4",
+      "comprehended": false,
+      "strand": "computer-vision"
+    },
+    {
+      "id": "aiml.cv.segmentation",
+      "label": "Image Segmentation",
+      "type": "concept",
+      "description": "Semantic segmentation, instance segmentation, U-Net, Mask R-CNN, and pixel-level classification.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.cv",
+      "bookName": "Computer Vision",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "62308aed5052fb42",
+      "comprehended": false,
+      "strand": "computer-vision"
+    },
+    {
+      "id": "aiml.cv.transfer_learning",
+      "label": "Transfer Learning",
+      "type": "concept",
+      "description": "Pretrained models, fine-tuning strategies, feature extraction, domain adaptation, and when to use transfer learning.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.cv",
+      "bookName": "Computer Vision",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "9b86446220864499",
+      "comprehended": false,
+      "strand": "computer-vision"
+    },
+    {
+      "id": "aiml.cv.data_augmentation",
+      "label": "Data Augmentation",
+      "type": "concept",
+      "description": "Geometric transforms, color jittering, Cutout, Mixup, CutMix, and augmentation libraries (Albumentations).",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.cv",
+      "bookName": "Computer Vision",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "ad0811c31b41d5d8",
+      "comprehended": false,
+      "strand": "computer-vision"
+    },
+    {
+      "id": "aiml.cv.generative_models",
+      "label": "Generative Models for Vision",
+      "type": "concept",
+      "description": "GANs, VAEs, diffusion models, and image generation/synthesis techniques.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.cv",
+      "bookName": "Computer Vision",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "3973808526db6f72",
+      "comprehended": false,
+      "strand": "computer-vision"
+    },
+    {
+      "id": "aiml.nlp.text_preprocessing",
+      "label": "Text Preprocessing",
+      "type": "concept",
+      "description": "Tokenization, stemming, lemmatization, stop word removal, TF-IDF, and text cleaning pipelines.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.nlp",
+      "bookName": "NLP",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "001921ee8c5125d3",
+      "comprehended": false,
+      "strand": "nlp"
+    },
+    {
+      "id": "aiml.nlp.word_embeddings",
+      "label": "Word Embeddings",
+      "type": "concept",
+      "description": "Word2Vec (CBOW, Skip-gram), GloVe, FastText, and learned dense vector representations of words.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.nlp",
+      "bookName": "NLP",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "86273a939d3ed2b8",
+      "comprehended": false,
+      "strand": "nlp"
+    },
+    {
+      "id": "aiml.nlp.rnn",
+      "label": "Recurrent Neural Networks",
+      "type": "concept",
+      "description": "Vanilla RNNs, vanishing gradient problem, sequence modeling, and many-to-one / many-to-many architectures.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.nlp",
+      "bookName": "NLP",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "90425f6722330b92",
+      "comprehended": false,
+      "strand": "nlp"
+    },
+    {
+      "id": "aiml.nlp.lstm_gru",
+      "label": "LSTM & GRU",
+      "type": "concept",
+      "description": "Long Short-Term Memory networks, gated recurrent units, cell states, gates, and bidirectional variants.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.nlp",
+      "bookName": "NLP",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "d1b28b6ae09b108d",
+      "comprehended": false,
+      "strand": "nlp"
+    },
+    {
+      "id": "aiml.nlp.seq2seq",
+      "label": "Sequence-to-Sequence Models",
+      "type": "concept",
+      "description": "Encoder-decoder architecture, teacher forcing, beam search, and applications to translation and summarization.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.nlp",
+      "bookName": "NLP",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "b09756a8815d8748",
+      "comprehended": false,
+      "strand": "nlp"
+    },
+    {
+      "id": "aiml.nlp.attention",
+      "label": "Attention Mechanism",
+      "type": "concept",
+      "description": "Bahdanau and Luong attention, self-attention, multi-head attention, and scaled dot-product attention.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.nlp",
+      "bookName": "NLP",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "11604acc57f437d2",
+      "comprehended": false,
+      "strand": "nlp"
+    },
+    {
+      "id": "aiml.nlp.transformers",
+      "label": "Transformer Architecture",
+      "type": "concept",
+      "description": "The Transformer model: positional encoding, multi-head self-attention, feedforward layers, and layer normalization.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.nlp",
+      "bookName": "NLP",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "df4257dffe9c2901",
+      "comprehended": false,
+      "strand": "nlp"
+    },
+    {
+      "id": "aiml.nlp.bert",
+      "label": "BERT & Encoder Models",
+      "type": "concept",
+      "description": "BERT pretraining (MLM, NSP), fine-tuning for downstream tasks, RoBERTa, and encoder-only architectures.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.nlp",
+      "bookName": "NLP",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "b3047862393d79d4",
+      "comprehended": false,
+      "strand": "nlp"
+    },
+    {
+      "id": "aiml.nlp.gpt",
+      "label": "GPT & Decoder Models",
+      "type": "concept",
+      "description": "GPT family, autoregressive language modeling, causal attention, prompt engineering, and in-context learning.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.nlp",
+      "bookName": "NLP",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "39f98ab4ed92c028",
+      "comprehended": false,
+      "strand": "nlp"
+    },
+    {
+      "id": "aiml.nlp.llm_finetuning",
+      "label": "LLM Fine-Tuning",
+      "type": "concept",
+      "description": "Instruction tuning, RLHF, LoRA, adapter methods, and efficient fine-tuning of large language models.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.nlp",
+      "bookName": "NLP",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "b4928ff6ba4f79da",
+      "comprehended": false,
+      "strand": "nlp"
+    },
+    {
+      "id": "aiml.rl.mdp",
+      "label": "Markov Decision Processes",
+      "type": "concept",
+      "description": "States, actions, rewards, transitions, discount factor, Bellman equations, and the MDP framework.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.rl",
+      "bookName": "Reinforcement Learning",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "24f9a4aa4862d70e",
+      "comprehended": false,
+      "strand": "rl"
+    },
+    {
+      "id": "aiml.rl.dynamic_programming",
+      "label": "Dynamic Programming",
+      "type": "concept",
+      "description": "Value iteration, policy iteration, and solving MDPs when the model is known.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.rl",
+      "bookName": "Reinforcement Learning",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "27db7c0b6c1c2f2b",
+      "comprehended": false,
+      "strand": "rl"
+    },
+    {
+      "id": "aiml.rl.q_learning",
+      "label": "Q-Learning",
+      "type": "concept",
+      "description": "Temporal difference learning, Q-table, epsilon-greedy exploration, SARSA, and model-free control.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.rl",
+      "bookName": "Reinforcement Learning",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "0709a1ede5d66d6c",
+      "comprehended": false,
+      "strand": "rl"
+    },
+    {
+      "id": "aiml.rl.policy_gradient",
+      "label": "Policy Gradient Methods",
+      "type": "concept",
+      "description": "REINFORCE algorithm, baseline subtraction, actor-critic methods, and advantage estimation.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.rl",
+      "bookName": "Reinforcement Learning",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "7a67c0391dd34de3",
+      "comprehended": false,
+      "strand": "rl"
+    },
+    {
+      "id": "aiml.rl.deep_rl",
+      "label": "Deep Reinforcement Learning",
+      "type": "concept",
+      "description": "DQN, experience replay, target networks, PPO, SAC, and combining deep learning with RL.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.rl",
+      "bookName": "Reinforcement Learning",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "8af474aef56476d8",
+      "comprehended": false,
+      "strand": "rl"
+    },
+    {
+      "id": "aiml.rl.multi_agent",
+      "label": "Multi-Agent & Advanced RL",
+      "type": "concept",
+      "description": "Multi-agent RL, cooperative and competitive settings, model-based RL, and real-world RL challenges.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.rl",
+      "bookName": "Reinforcement Learning",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "390f1d1240410bb0",
+      "comprehended": false,
+      "strand": "rl"
+    },
+    {
+      "id": "aiml.practical.data_pipelines",
+      "label": "Data Pipelines",
+      "type": "concept",
+      "description": "Data collection, storage, ingestion pipelines, data versioning (DVC), and dataset management.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.practical",
+      "bookName": "Practical ML",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "5486f5eeb9472c88",
+      "comprehended": false,
+      "strand": "mlops"
+    },
+    {
+      "id": "aiml.practical.feature_engineering",
+      "label": "Feature Engineering",
+      "type": "concept",
+      "description": "Feature scaling, encoding categorical variables, feature selection, feature stores, and automated feature engineering.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.practical",
+      "bookName": "Practical ML",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "540dd32859c4cd4b",
+      "comprehended": false,
+      "strand": "mlops"
+    },
+    {
+      "id": "aiml.practical.model_evaluation",
+      "label": "Model Evaluation",
+      "type": "concept",
+      "description": "Cross-validation, precision/recall/F1, ROC-AUC, confusion matrices, bias-variance tradeoff, and evaluation strategies.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.practical",
+      "bookName": "Practical ML",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "65b374050183af7e",
+      "comprehended": false,
+      "strand": "mlops"
+    },
+    {
+      "id": "aiml.practical.hyperparameter_tuning",
+      "label": "Hyperparameter Tuning",
+      "type": "concept",
+      "description": "Grid search, random search, Bayesian optimization, Optuna, and automated hyperparameter tuning.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.practical",
+      "bookName": "Practical ML",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "2bb1c682fc581fe9",
+      "comprehended": false,
+      "strand": "mlops"
+    },
+    {
+      "id": "aiml.practical.experiment_tracking",
+      "label": "Experiment Tracking",
+      "type": "concept",
+      "description": "MLflow, Weights & Biases, experiment logging, model registry, and reproducibility practices.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.practical",
+      "bookName": "Practical ML",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "506abe6cab5a8eef",
+      "comprehended": false,
+      "strand": "mlops"
+    },
+    {
+      "id": "aiml.practical.deployment",
+      "label": "Model Deployment",
+      "type": "concept",
+      "description": "Model serving (Flask, FastAPI, TorchServe), containerization with Docker, REST APIs, and batch inference.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.practical",
+      "bookName": "Practical ML",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "b5f89e46525011b1",
+      "comprehended": false,
+      "strand": "mlops"
+    },
+    {
+      "id": "aiml.practical.mlops_cicd",
+      "label": "MLOps & CI/CD",
+      "type": "concept",
+      "description": "Continuous integration/deployment for ML, model monitoring, drift detection, A/B testing in production.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.practical",
+      "bookName": "Practical ML",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "0e8caa4d71ecab96",
+      "comprehended": false,
+      "strand": "mlops"
+    },
+    {
+      "id": "aiml.practical.scalability",
+      "label": "Scalability & Distributed Training",
+      "type": "concept",
+      "description": "Data parallelism, model parallelism, distributed training with Horovod/DeepSpeed, and cloud ML platforms.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.practical",
+      "bookName": "Practical ML",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "8f7b8131814ddaa9",
+      "comprehended": false,
+      "strand": "mlops"
+    },
+    {
+      "id": "aiml.practical.ethics",
+      "label": "AI Ethics & Responsible AI",
+      "type": "concept",
+      "description": "Fairness, bias in ML, explainability (SHAP, LIME), privacy (differential privacy), and responsible AI frameworks.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "aiml.practical",
+      "bookName": "Practical ML",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "16366abc755504be",
+      "comprehended": false,
+      "strand": "mlops"
+    }
+  ],
+  "edges": [
+    {
+      "source": "aiml.python.variables_types",
+      "target": "aiml.python.control_flow",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.python.control_flow",
+      "target": "aiml.python.functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.python.control_flow",
+      "target": "aiml.python.data_structures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.python.functions",
+      "target": "aiml.python.numpy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.python.data_structures",
+      "target": "aiml.python.numpy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.python.numpy",
+      "target": "aiml.python.pandas",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.python.numpy",
+      "target": "aiml.python.matplotlib",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.python.pandas",
+      "target": "aiml.python.jupyter",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.python.matplotlib",
+      "target": "aiml.python.jupyter",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.python.numpy",
+      "target": "aiml.math.vectors_matrices",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.vectors_matrices",
+      "target": "aiml.math.eigenvalues",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.eigenvalues",
+      "target": "aiml.math.svd",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.python.functions",
+      "target": "aiml.math.derivatives",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.vectors_matrices",
+      "target": "aiml.math.derivatives",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.derivatives",
+      "target": "aiml.math.optimization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.python.numpy",
+      "target": "aiml.math.probability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.probability",
+      "target": "aiml.math.statistics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.probability",
+      "target": "aiml.math.info_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.statistics",
+      "target": "aiml.classical.linear_regression",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.optimization",
+      "target": "aiml.classical.linear_regression",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.python.pandas",
+      "target": "aiml.classical.linear_regression",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.classical.linear_regression",
+      "target": "aiml.classical.polynomial_regression",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.classical.linear_regression",
+      "target": "aiml.classical.logistic_regression",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.probability",
+      "target": "aiml.classical.logistic_regression",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.classical.linear_regression",
+      "target": "aiml.classical.knn",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.classical.logistic_regression",
+      "target": "aiml.classical.svm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.optimization",
+      "target": "aiml.classical.svm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.probability",
+      "target": "aiml.classical.naive_bayes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.classical.logistic_regression",
+      "target": "aiml.classical.naive_bayes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.classical.logistic_regression",
+      "target": "aiml.classical.decision_trees",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.info_theory",
+      "target": "aiml.classical.decision_trees",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.classical.decision_trees",
+      "target": "aiml.classical.random_forests",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.classical.random_forests",
+      "target": "aiml.classical.boosting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.classical.knn",
+      "target": "aiml.classical.kmeans",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.classical.kmeans",
+      "target": "aiml.classical.hierarchical",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.eigenvalues",
+      "target": "aiml.classical.pca",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.svd",
+      "target": "aiml.classical.pca",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.classical.kmeans",
+      "target": "aiml.classical.pca",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.classical.logistic_regression",
+      "target": "aiml.dl.perceptron",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.optimization",
+      "target": "aiml.dl.perceptron",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.dl.perceptron",
+      "target": "aiml.dl.mlp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.dl.mlp",
+      "target": "aiml.dl.activation_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.derivatives",
+      "target": "aiml.dl.backpropagation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.dl.activation_functions",
+      "target": "aiml.dl.backpropagation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.dl.backpropagation",
+      "target": "aiml.dl.optimizers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.optimization",
+      "target": "aiml.dl.optimizers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.dl.optimizers",
+      "target": "aiml.dl.regularization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.dl.regularization",
+      "target": "aiml.dl.batch_norm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.info_theory",
+      "target": "aiml.dl.loss_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.dl.backpropagation",
+      "target": "aiml.dl.loss_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.dl.batch_norm",
+      "target": "aiml.dl.frameworks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.dl.loss_functions",
+      "target": "aiml.dl.frameworks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.dl.frameworks",
+      "target": "aiml.cv.convolutions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.cv.convolutions",
+      "target": "aiml.cv.pooling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.cv.pooling",
+      "target": "aiml.cv.classic_architectures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.cv.classic_architectures",
+      "target": "aiml.cv.image_classification",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.cv.image_classification",
+      "target": "aiml.cv.object_detection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.cv.image_classification",
+      "target": "aiml.cv.segmentation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.cv.classic_architectures",
+      "target": "aiml.cv.transfer_learning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.cv.image_classification",
+      "target": "aiml.cv.data_augmentation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.cv.transfer_learning",
+      "target": "aiml.cv.generative_models",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.dl.regularization",
+      "target": "aiml.cv.generative_models",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.dl.frameworks",
+      "target": "aiml.nlp.text_preprocessing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.nlp.text_preprocessing",
+      "target": "aiml.nlp.word_embeddings",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.nlp.word_embeddings",
+      "target": "aiml.nlp.rnn",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.dl.backpropagation",
+      "target": "aiml.nlp.rnn",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.nlp.rnn",
+      "target": "aiml.nlp.lstm_gru",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.nlp.lstm_gru",
+      "target": "aiml.nlp.seq2seq",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.nlp.seq2seq",
+      "target": "aiml.nlp.attention",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.nlp.attention",
+      "target": "aiml.nlp.transformers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.vectors_matrices",
+      "target": "aiml.nlp.transformers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.nlp.transformers",
+      "target": "aiml.nlp.bert",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.nlp.transformers",
+      "target": "aiml.nlp.gpt",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.nlp.bert",
+      "target": "aiml.nlp.llm_finetuning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.nlp.gpt",
+      "target": "aiml.nlp.llm_finetuning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.probability",
+      "target": "aiml.rl.mdp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.optimization",
+      "target": "aiml.rl.mdp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.rl.mdp",
+      "target": "aiml.rl.dynamic_programming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.rl.dynamic_programming",
+      "target": "aiml.rl.q_learning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.rl.q_learning",
+      "target": "aiml.rl.policy_gradient",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.dl.backpropagation",
+      "target": "aiml.rl.policy_gradient",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.rl.policy_gradient",
+      "target": "aiml.rl.deep_rl",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.dl.frameworks",
+      "target": "aiml.rl.deep_rl",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.rl.deep_rl",
+      "target": "aiml.rl.multi_agent",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.python.pandas",
+      "target": "aiml.practical.data_pipelines",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.classical.linear_regression",
+      "target": "aiml.practical.feature_engineering",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.practical.data_pipelines",
+      "target": "aiml.practical.feature_engineering",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.math.statistics",
+      "target": "aiml.practical.model_evaluation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.practical.feature_engineering",
+      "target": "aiml.practical.model_evaluation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.practical.model_evaluation",
+      "target": "aiml.practical.hyperparameter_tuning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.practical.hyperparameter_tuning",
+      "target": "aiml.practical.experiment_tracking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.practical.experiment_tracking",
+      "target": "aiml.practical.deployment",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.practical.deployment",
+      "target": "aiml.practical.mlops_cicd",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.practical.mlops_cicd",
+      "target": "aiml.practical.scalability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.practical.model_evaluation",
+      "target": "aiml.practical.ethics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "aiml.practical.deployment",
+      "target": "aiml.practical.ethics",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

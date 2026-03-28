@@ -1,0 +1,1200 @@
+{
+  "metadata": {
+    "domain": "creative-arts",
+    "curriculum": "Video Production Skills",
+    "view": "skill-prerequisites",
+    "version": "0.2.0",
+    "description": "Video production skill track from cinematography foundations to content creation",
+    "sources": [
+      "Industry-standard video production curriculum"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "vidprod.foundations",
+      "name": "Foundations",
+      "color": "#6366f1",
+      "order": 1
+    },
+    {
+      "id": "vidprod.production",
+      "name": "Production",
+      "color": "#f59e0b",
+      "order": 2
+    },
+    {
+      "id": "vidprod.post",
+      "name": "Post-Production",
+      "color": "#10b981",
+      "order": 3
+    },
+    {
+      "id": "vidprod.content",
+      "name": "Content Creation",
+      "color": "#ef4444",
+      "order": 4
+    }
+  ],
+  "strands": [
+    {
+      "id": "cinematography",
+      "name": "Cinematography",
+      "color": "#6366f1"
+    },
+    {
+      "id": "production-workflow",
+      "name": "Production Workflow",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "post-production",
+      "name": "Post-Production",
+      "color": "#10b981"
+    },
+    {
+      "id": "content-strategy",
+      "name": "Content Strategy",
+      "color": "#ef4444"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "vidprod.cinematography_basics",
+      "label": "Cinematography Basics",
+      "type": "concept",
+      "description": "Fundamentals of visual storytelling through camera work: exposure triangle (aperture, shutter speed, ISO), depth of field, and focal length.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "0913b63f00e433f1",
+      "comprehended": false,
+      "strand": "cinematography"
+    },
+    {
+      "id": "vidprod.camera_types",
+      "label": "Camera Types & Gear",
+      "type": "concept",
+      "description": "DSLRs, mirrorless, cinema cameras, action cameras, and smartphones. Lenses, tripods, gimbals, and essential accessories.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "5d255d026bcb071b",
+      "comprehended": false,
+      "strand": "cinematography"
+    },
+    {
+      "id": "vidprod.framing",
+      "label": "Framing & Shot Types",
+      "type": "concept",
+      "description": "Wide shots, medium shots, close-ups, extreme close-ups, and establishing shots. Shot size and its narrative impact.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "5c2dc1afc3a18939",
+      "comprehended": false,
+      "strand": "cinematography"
+    },
+    {
+      "id": "vidprod.rule_of_thirds",
+      "label": "Rule of Thirds & Composition",
+      "type": "concept",
+      "description": "Compositional guidelines for balanced frames: rule of thirds, leading lines, headroom, lead room, and symmetry.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "1f0c4dc040417e24",
+      "comprehended": false,
+      "strand": "cinematography"
+    },
+    {
+      "id": "vidprod.lighting_basics",
+      "label": "Lighting Fundamentals",
+      "type": "concept",
+      "description": "Three-point lighting, natural vs artificial light, hard vs soft light, color temperature, and basic lighting setups.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "33d5a73c3790ee33",
+      "comprehended": false,
+      "strand": "cinematography"
+    },
+    {
+      "id": "vidprod.camera_movement",
+      "label": "Camera Movement",
+      "type": "concept",
+      "description": "Pans, tilts, dollies, tracking shots, crane shots, and handheld techniques. When and why to move the camera.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "695703bae8e63ed8",
+      "comprehended": false,
+      "strand": "cinematography"
+    },
+    {
+      "id": "vidprod.white_balance",
+      "label": "White Balance & Color Temperature",
+      "type": "concept",
+      "description": "Setting white balance for accurate colors. Understanding Kelvin scale, mixed lighting scenarios, and creative white balance choices.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "77cfe27617fa877c",
+      "comprehended": false,
+      "strand": "cinematography"
+    },
+    {
+      "id": "vidprod.video_formats",
+      "label": "Video Formats & Codecs",
+      "type": "concept",
+      "description": "Resolution (720p, 1080p, 4K), frame rates, codecs (H.264, ProRes, RAW), bitrate, and container formats (MP4, MOV).",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "c4ee29b74b76abb7",
+      "comprehended": false,
+      "strand": "cinematography"
+    },
+    {
+      "id": "vidprod.preproduction",
+      "label": "Pre-Production Planning",
+      "type": "concept",
+      "description": "Project planning: concept development, scheduling, location scouting, budgeting, permits, and crew roles.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "b119d560e58f20a2",
+      "comprehended": false,
+      "strand": "production-workflow"
+    },
+    {
+      "id": "vidprod.scripting",
+      "label": "Scripting & Screenwriting",
+      "type": "concept",
+      "description": "Writing scripts for video: narrative structure, dialogue, scene descriptions, voiceover scripts, and script formatting conventions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "e44315370f9f0a4d",
+      "comprehended": false,
+      "strand": "production-workflow"
+    },
+    {
+      "id": "vidprod.storyboarding",
+      "label": "Storyboarding",
+      "type": "concept",
+      "description": "Visual pre-visualization: drawing shot sequences, planning transitions, camera angles, and pacing before filming begins.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "1f9035a8964de3ad",
+      "comprehended": false,
+      "strand": "production-workflow"
+    },
+    {
+      "id": "vidprod.shooting_techniques",
+      "label": "Shooting Techniques",
+      "type": "concept",
+      "description": "On-set workflow: coverage strategy, continuity, matching action, shooting for the edit, and managing talent on camera.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "5406c4414f0823f4",
+      "comprehended": false,
+      "strand": "production-workflow"
+    },
+    {
+      "id": "vidprod.audio_recording",
+      "label": "Audio Recording",
+      "type": "concept",
+      "description": "On-set audio: shotgun mics, lavaliers, boom operation, audio recorders, monitoring levels, and reducing ambient noise.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "f0977591eef376d3",
+      "comprehended": false,
+      "strand": "production-workflow"
+    },
+    {
+      "id": "vidprod.interview_techniques",
+      "label": "Interview Techniques",
+      "type": "concept",
+      "description": "Filming interviews: two-camera setups, B-roll coverage, question framing, lighting for interviews, and directing non-actors.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "85626ba83e5e08d5",
+      "comprehended": false,
+      "strand": "production-workflow"
+    },
+    {
+      "id": "vidprod.advanced_lighting",
+      "label": "Advanced Lighting",
+      "type": "concept",
+      "description": "Cinematic lighting setups: motivated lighting, practicals, color gels, diffusion, and creating mood through light and shadow.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "a92a8b277fa69dfa",
+      "comprehended": false,
+      "strand": "production-workflow"
+    },
+    {
+      "id": "vidprod.broll",
+      "label": "B-Roll & Cutaways",
+      "type": "concept",
+      "description": "Shooting supplementary footage to enrich storytelling: detail shots, environmental context, reaction shots, and visual metaphors.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "2de75d00dac948bb",
+      "comprehended": false,
+      "strand": "production-workflow"
+    },
+    {
+      "id": "vidprod.editing_premiere",
+      "label": "Editing with Premiere Pro",
+      "type": "concept",
+      "description": "Adobe Premiere Pro workflow: importing, timeline editing, cutting, trimming, multi-track editing, and keyboard shortcuts.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.post",
+      "bookName": "Post-Production",
+      "bookColor": "#10b981",
+      "bookOrder": 3,
+      "external_id": "1c06d31f7fb70055",
+      "comprehended": false,
+      "strand": "post-production"
+    },
+    {
+      "id": "vidprod.editing_davinci",
+      "label": "Editing with DaVinci Resolve",
+      "type": "concept",
+      "description": "DaVinci Resolve editing: cut page, edit page, Fusion integration, and free professional-grade editing capabilities.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.post",
+      "bookName": "Post-Production",
+      "bookColor": "#10b981",
+      "bookOrder": 3,
+      "external_id": "1a88649f47c2f656",
+      "comprehended": false,
+      "strand": "post-production"
+    },
+    {
+      "id": "vidprod.color_grading",
+      "label": "Color Grading",
+      "type": "concept",
+      "description": "Color correction and creative grading: scopes, curves, color wheels, LUTs, secondary corrections, and establishing a visual look.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.post",
+      "bookName": "Post-Production",
+      "bookColor": "#10b981",
+      "bookOrder": 3,
+      "external_id": "32a1cbf4173d3088",
+      "comprehended": false,
+      "strand": "post-production"
+    },
+    {
+      "id": "vidprod.sound_design",
+      "label": "Sound Design & Mixing",
+      "type": "concept",
+      "description": "Audio post-production: dialogue editing, sound effects (Foley), ambient sounds, music placement, and mixing for balanced audio.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.post",
+      "bookName": "Post-Production",
+      "bookColor": "#10b981",
+      "bookOrder": 3,
+      "external_id": "d053e9f84534c638",
+      "comprehended": false,
+      "strand": "post-production"
+    },
+    {
+      "id": "vidprod.transitions",
+      "label": "Transitions & Pacing",
+      "type": "concept",
+      "description": "Cut types (hard cut, J-cut, L-cut, match cut), dissolves, wipes, and fade transitions. Controlling rhythm and pacing through editing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.post",
+      "bookName": "Post-Production",
+      "bookColor": "#10b981",
+      "bookOrder": 3,
+      "external_id": "f452d0a9f012258c",
+      "comprehended": false,
+      "strand": "post-production"
+    },
+    {
+      "id": "vidprod.vfx_basics",
+      "label": "VFX Basics",
+      "type": "concept",
+      "description": "Green screen/chroma keying, compositing, motion tracking, screen replacements, and basic visual effects integration.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.post",
+      "bookName": "Post-Production",
+      "bookColor": "#10b981",
+      "bookOrder": 3,
+      "external_id": "4ba07217bbf8a78a",
+      "comprehended": false,
+      "strand": "post-production"
+    },
+    {
+      "id": "vidprod.titles_graphics",
+      "label": "Titles & Graphics",
+      "type": "concept",
+      "description": "Title design, lower thirds, end cards, and on-screen graphics. Using motion graphics templates and creating custom titles.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.post",
+      "bookName": "Post-Production",
+      "bookColor": "#10b981",
+      "bookOrder": 3,
+      "external_id": "71b9b8749ae13854",
+      "comprehended": false,
+      "strand": "post-production"
+    },
+    {
+      "id": "vidprod.music_licensing",
+      "label": "Music & Licensing",
+      "type": "concept",
+      "description": "Finding and licensing music for video: royalty-free libraries, Creative Commons, sync licensing, and copyright considerations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.post",
+      "bookName": "Post-Production",
+      "bookColor": "#10b981",
+      "bookOrder": 3,
+      "external_id": "d0492b2701d68883",
+      "comprehended": false,
+      "strand": "post-production"
+    },
+    {
+      "id": "vidprod.export_delivery",
+      "label": "Export & Delivery",
+      "type": "concept",
+      "description": "Render settings, export presets, codec selection for different platforms, file size optimization, and delivery specifications.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.post",
+      "bookName": "Post-Production",
+      "bookColor": "#10b981",
+      "bookOrder": 3,
+      "external_id": "9c12b397b3fd334b",
+      "comprehended": false,
+      "strand": "post-production"
+    },
+    {
+      "id": "vidprod.youtube",
+      "label": "YouTube Content",
+      "type": "concept",
+      "description": "YouTube channel strategy: video formats, SEO, titles, descriptions, tags, playlists, and building an audience through consistent content.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.content",
+      "bookName": "Content Creation",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "0cec1edcdcb0cb8d",
+      "comprehended": false,
+      "strand": "content-strategy"
+    },
+    {
+      "id": "vidprod.short_form",
+      "label": "Short-Form Video",
+      "type": "concept",
+      "description": "Creating for TikTok, Reels, and Shorts: vertical framing, hook-driven openings, trending formats, and platform-specific best practices.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.content",
+      "bookName": "Content Creation",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "bdce55d76a7e3c19",
+      "comprehended": false,
+      "strand": "content-strategy"
+    },
+    {
+      "id": "vidprod.live_streaming",
+      "label": "Live Streaming",
+      "type": "concept",
+      "description": "Live broadcast setup: OBS, streaming software, multi-camera switching, chat interaction, and live production workflow.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.content",
+      "bookName": "Content Creation",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "5d4493cde4898347",
+      "comprehended": false,
+      "strand": "content-strategy"
+    },
+    {
+      "id": "vidprod.thumbnails",
+      "label": "Thumbnails & Titles",
+      "type": "concept",
+      "description": "Designing click-worthy thumbnails: bold text, expressive faces, contrast, and A/B testing. Writing compelling video titles.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.content",
+      "bookName": "Content Creation",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "1843a4dcbb9245e3",
+      "comprehended": false,
+      "strand": "content-strategy"
+    },
+    {
+      "id": "vidprod.engagement",
+      "label": "Audience Engagement",
+      "type": "concept",
+      "description": "Retention strategies, calls to action, community building, analytics interpretation, and growing a loyal viewer base.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.content",
+      "bookName": "Content Creation",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "2df0c37e5d8876c6",
+      "comprehended": false,
+      "strand": "content-strategy"
+    },
+    {
+      "id": "vidprod.documentary",
+      "label": "Documentary Filmmaking",
+      "type": "concept",
+      "description": "Documentary storytelling: observational, participatory, and expository modes. Research, ethics, structuring real-world narratives.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "73b99c458b1cd9e1",
+      "comprehended": false,
+      "strand": "production-workflow"
+    },
+    {
+      "id": "vidprod.drone",
+      "label": "Drone Videography",
+      "type": "concept",
+      "description": "Aerial cinematography: drone types, flight controls, FAA regulations, cinematic drone movements, and aerial composition.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "92bcec96b2c2d9f6",
+      "comprehended": false,
+      "strand": "production-workflow"
+    },
+    {
+      "id": "vidprod.storytelling",
+      "label": "Visual Storytelling",
+      "type": "concept",
+      "description": "Narrative techniques in video: story arcs, emotional beats, show-don't-tell, montage, and building tension through editing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.post",
+      "bookName": "Post-Production",
+      "bookColor": "#10b981",
+      "bookOrder": 3,
+      "external_id": "03cc723ac22b0218",
+      "comprehended": false,
+      "strand": "post-production"
+    },
+    {
+      "id": "vidprod.monetization",
+      "label": "Video Monetization",
+      "type": "concept",
+      "description": "Revenue streams: ad revenue, sponsorships, affiliate marketing, merchandise, memberships, and building a sustainable creator business.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.content",
+      "bookName": "Content Creation",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "850555706b695ac3",
+      "comprehended": false,
+      "strand": "content-strategy"
+    },
+    {
+      "id": "vidprod.screen_recording",
+      "label": "Screen Recording & Tutorials",
+      "type": "concept",
+      "description": "Capturing screen content: OBS, Camtasia, screen recording tools, voiceover narration, and creating educational video content.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.content",
+      "bookName": "Content Creation",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "aaa2e0696babeef2",
+      "comprehended": false,
+      "strand": "content-strategy"
+    },
+    {
+      "id": "vidprod.color_science",
+      "label": "Color Science & LOG",
+      "type": "concept",
+      "description": "LOG and RAW recording profiles, color spaces (Rec.709, Rec.2020), dynamic range, and shooting flat for maximum grading flexibility.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#6366f1",
+      "bookOrder": 1,
+      "external_id": "db1fcff51d36d305",
+      "comprehended": false,
+      "strand": "cinematography"
+    },
+    {
+      "id": "vidprod.slow_motion",
+      "label": "Slow Motion & Time-Lapse",
+      "type": "concept",
+      "description": "High frame rate shooting for slow motion, time-lapse techniques, hyperlapse, and creative manipulation of time in video.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "1ae61b5e3201077e",
+      "comprehended": false,
+      "strand": "production-workflow"
+    },
+    {
+      "id": "vidprod.multicam",
+      "label": "Multi-Camera Editing",
+      "type": "concept",
+      "description": "Syncing and editing footage from multiple cameras: multi-cam sequences, switching angles, and maintaining continuity across camera sources.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.post",
+      "bookName": "Post-Production",
+      "bookColor": "#10b981",
+      "bookOrder": 3,
+      "external_id": "b3712bf3afec6f17",
+      "comprehended": false,
+      "strand": "post-production"
+    },
+    {
+      "id": "vidprod.captions_subtitles",
+      "label": "Captions & Subtitles",
+      "type": "concept",
+      "description": "Adding closed captions and subtitles: SRT files, burned-in captions, accessibility compliance, and multilingual subtitle workflows.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.post",
+      "bookName": "Post-Production",
+      "bookColor": "#10b981",
+      "bookOrder": 3,
+      "external_id": "f06dcef426bd6d68",
+      "comprehended": false,
+      "strand": "post-production"
+    },
+    {
+      "id": "vidprod.podcast_video",
+      "label": "Video Podcasts",
+      "type": "concept",
+      "description": "Recording and producing video podcasts: multi-guest setups, remote recording, repurposing clips, and podcast-specific editing techniques.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.content",
+      "bookName": "Content Creation",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "3e6f03dee34c021b",
+      "comprehended": false,
+      "strand": "content-strategy"
+    },
+    {
+      "id": "vidprod.music_video",
+      "label": "Music Video Production",
+      "type": "concept",
+      "description": "Creating music videos: concept development, performance vs narrative videos, sync editing to music, and visual storytelling in the music genre.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "vidprod.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "7ed58c8aa4d7cf9c",
+      "comprehended": false,
+      "strand": "production-workflow"
+    }
+  ],
+  "edges": [
+    {
+      "source": "vidprod.cinematography_basics",
+      "target": "vidprod.camera_types",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.cinematography_basics",
+      "target": "vidprod.framing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.framing",
+      "target": "vidprod.rule_of_thirds",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.cinematography_basics",
+      "target": "vidprod.lighting_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.framing",
+      "target": "vidprod.camera_movement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.cinematography_basics",
+      "target": "vidprod.white_balance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.cinematography_basics",
+      "target": "vidprod.video_formats",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.white_balance",
+      "target": "vidprod.color_science",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.video_formats",
+      "target": "vidprod.color_science",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.rule_of_thirds",
+      "target": "vidprod.preproduction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.preproduction",
+      "target": "vidprod.scripting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.scripting",
+      "target": "vidprod.storyboarding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.framing",
+      "target": "vidprod.storyboarding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.storyboarding",
+      "target": "vidprod.shooting_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.camera_movement",
+      "target": "vidprod.shooting_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.camera_types",
+      "target": "vidprod.audio_recording",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.shooting_techniques",
+      "target": "vidprod.interview_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.audio_recording",
+      "target": "vidprod.interview_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.lighting_basics",
+      "target": "vidprod.advanced_lighting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.shooting_techniques",
+      "target": "vidprod.broll",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.shooting_techniques",
+      "target": "vidprod.slow_motion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.video_formats",
+      "target": "vidprod.slow_motion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.interview_techniques",
+      "target": "vidprod.documentary",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.broll",
+      "target": "vidprod.documentary",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.camera_movement",
+      "target": "vidprod.drone",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.shooting_techniques",
+      "target": "vidprod.drone",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.video_formats",
+      "target": "vidprod.editing_premiere",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.shooting_techniques",
+      "target": "vidprod.editing_premiere",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.video_formats",
+      "target": "vidprod.editing_davinci",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.shooting_techniques",
+      "target": "vidprod.editing_davinci",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.editing_premiere",
+      "target": "vidprod.transitions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.editing_davinci",
+      "target": "vidprod.color_grading",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.white_balance",
+      "target": "vidprod.color_grading",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.audio_recording",
+      "target": "vidprod.sound_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.editing_premiere",
+      "target": "vidprod.sound_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.editing_premiere",
+      "target": "vidprod.vfx_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.color_grading",
+      "target": "vidprod.vfx_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.editing_premiere",
+      "target": "vidprod.titles_graphics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.sound_design",
+      "target": "vidprod.music_licensing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.transitions",
+      "target": "vidprod.storytelling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.broll",
+      "target": "vidprod.storytelling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.editing_premiere",
+      "target": "vidprod.export_delivery",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.video_formats",
+      "target": "vidprod.export_delivery",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.export_delivery",
+      "target": "vidprod.youtube",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.storytelling",
+      "target": "vidprod.youtube",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.editing_premiere",
+      "target": "vidprod.short_form",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.framing",
+      "target": "vidprod.short_form",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.camera_types",
+      "target": "vidprod.live_streaming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.audio_recording",
+      "target": "vidprod.live_streaming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.youtube",
+      "target": "vidprod.thumbnails",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.youtube",
+      "target": "vidprod.engagement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.short_form",
+      "target": "vidprod.engagement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.engagement",
+      "target": "vidprod.monetization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.editing_premiere",
+      "target": "vidprod.screen_recording",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.audio_recording",
+      "target": "vidprod.screen_recording",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.editing_premiere",
+      "target": "vidprod.multicam",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.interview_techniques",
+      "target": "vidprod.multicam",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.editing_premiere",
+      "target": "vidprod.captions_subtitles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.interview_techniques",
+      "target": "vidprod.podcast_video",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.audio_recording",
+      "target": "vidprod.podcast_video",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.advanced_lighting",
+      "target": "vidprod.music_video",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.color_grading",
+      "target": "vidprod.music_video",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "vidprod.storyboarding",
+      "target": "vidprod.music_video",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

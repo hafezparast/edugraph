@@ -1,0 +1,2300 @@
+{
+  "metadata": {
+    "domain": "software-engineering",
+    "curriculum": "Web Development",
+    "view": "skill-prerequisites",
+    "version": "0.2.0",
+    "description": "Web development skill track with prerequisite ordering, colored by topic area",
+    "sources": [
+      "MDN Web Docs",
+      "The Odin Project",
+      "freeCodeCamp"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "webdev.html_css",
+      "name": "HTML & CSS Basics",
+      "color": "#e34c26",
+      "order": 1
+    },
+    {
+      "id": "webdev.js",
+      "name": "JavaScript",
+      "color": "#f7df1e",
+      "order": 2
+    },
+    {
+      "id": "webdev.frontend",
+      "name": "Frontend Frameworks",
+      "color": "#61dafb",
+      "order": 3
+    },
+    {
+      "id": "webdev.backend",
+      "name": "Backend Development",
+      "color": "#68a063",
+      "order": 4
+    },
+    {
+      "id": "webdev.db",
+      "name": "Databases",
+      "color": "#336791",
+      "order": 5
+    },
+    {
+      "id": "webdev.devops",
+      "name": "DevOps & Deployment",
+      "color": "#2496ed",
+      "order": 6
+    },
+    {
+      "id": "webdev.advanced",
+      "name": "Advanced",
+      "color": "#9333ea",
+      "order": 7
+    }
+  ],
+  "strands": [
+    {
+      "id": "markup",
+      "name": "Markup & Styling",
+      "color": "#E34C26"
+    },
+    {
+      "id": "scripting",
+      "name": "Scripting & Interactivity",
+      "color": "#F7DF1E"
+    },
+    {
+      "id": "frameworks",
+      "name": "Frameworks & Libraries",
+      "color": "#61DAFB"
+    },
+    {
+      "id": "server",
+      "name": "Server & APIs",
+      "color": "#68A063"
+    },
+    {
+      "id": "data",
+      "name": "Data & Storage",
+      "color": "#336791"
+    },
+    {
+      "id": "ops",
+      "name": "Operations & Deployment",
+      "color": "#2496ED"
+    },
+    {
+      "id": "quality",
+      "name": "Quality & Performance",
+      "color": "#9333EA"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "webdev.html_elements",
+      "label": "HTML Elements",
+      "type": "concept",
+      "description": "Core HTML tags: headings, paragraphs, links, images, lists, divs, spans. Document structure with head and body.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.html_css",
+      "bookName": "HTML & CSS Basics",
+      "bookColor": "#e34c26",
+      "bookOrder": 1,
+      "external_id": "c7b209b1109953b8",
+      "comprehended": false,
+      "strand": "markup"
+    },
+    {
+      "id": "webdev.html_forms",
+      "label": "HTML Forms",
+      "type": "concept",
+      "description": "Form elements: input types, textareas, selects, checkboxes, radio buttons. Form submission, action, and method attributes.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.html_css",
+      "bookName": "HTML & CSS Basics",
+      "bookColor": "#e34c26",
+      "bookOrder": 1,
+      "external_id": "5641a78bb2de6648",
+      "comprehended": false,
+      "strand": "markup"
+    },
+    {
+      "id": "webdev.semantic_html",
+      "label": "Semantic HTML",
+      "type": "concept",
+      "description": "Semantic elements: header, nav, main, article, section, aside, footer. Importance for accessibility and SEO.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.html_css",
+      "bookName": "HTML & CSS Basics",
+      "bookColor": "#e34c26",
+      "bookOrder": 1,
+      "external_id": "e077e54ec42059f0",
+      "comprehended": false,
+      "strand": "markup"
+    },
+    {
+      "id": "webdev.html_tables_media",
+      "label": "Tables & Media",
+      "type": "concept",
+      "description": "HTML tables for tabular data. Embedding media: audio, video, iframe. Picture element and srcset for responsive images.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.html_css",
+      "bookName": "HTML & CSS Basics",
+      "bookColor": "#e34c26",
+      "bookOrder": 1,
+      "external_id": "51212a63378a5171",
+      "comprehended": false,
+      "strand": "markup"
+    },
+    {
+      "id": "webdev.css_selectors",
+      "label": "CSS Selectors",
+      "type": "concept",
+      "description": "CSS selector types: element, class, ID, attribute, pseudo-class, pseudo-element. Specificity rules and the cascade.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.html_css",
+      "bookName": "HTML & CSS Basics",
+      "bookColor": "#e34c26",
+      "bookOrder": 1,
+      "external_id": "b1e03d60c79c561f",
+      "comprehended": false,
+      "strand": "markup"
+    },
+    {
+      "id": "webdev.css_box_model",
+      "label": "CSS Box Model",
+      "type": "concept",
+      "description": "Content, padding, border, margin. Box-sizing property. Display types: block, inline, inline-block. Overflow handling.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.html_css",
+      "bookName": "HTML & CSS Basics",
+      "bookColor": "#e34c26",
+      "bookOrder": 1,
+      "external_id": "4b74401f749bf663",
+      "comprehended": false,
+      "strand": "markup"
+    },
+    {
+      "id": "webdev.css_typography",
+      "label": "CSS Typography",
+      "type": "concept",
+      "description": "Font properties, web fonts, Google Fonts. Text alignment, spacing, decoration. Line height and readability best practices.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.html_css",
+      "bookName": "HTML & CSS Basics",
+      "bookColor": "#e34c26",
+      "bookOrder": 1,
+      "external_id": "65e3af4a0fb61d84",
+      "comprehended": false,
+      "strand": "markup"
+    },
+    {
+      "id": "webdev.css_colors_backgrounds",
+      "label": "Colors & Backgrounds",
+      "type": "concept",
+      "description": "Color formats: hex, rgb, hsl. Background images, gradients, and shorthand. CSS custom properties (variables) for theming.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.html_css",
+      "bookName": "HTML & CSS Basics",
+      "bookColor": "#e34c26",
+      "bookOrder": 1,
+      "external_id": "db1c7d2462240ba4",
+      "comprehended": false,
+      "strand": "markup"
+    },
+    {
+      "id": "webdev.css_flexbox",
+      "label": "CSS Flexbox",
+      "type": "concept",
+      "description": "Flex container and items. Main axis and cross axis. Justify-content, align-items, flex-wrap, gap. Common layout patterns.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.html_css",
+      "bookName": "HTML & CSS Basics",
+      "bookColor": "#e34c26",
+      "bookOrder": 1,
+      "external_id": "9edc1901bc115988",
+      "comprehended": false,
+      "strand": "markup"
+    },
+    {
+      "id": "webdev.css_grid",
+      "label": "CSS Grid",
+      "type": "concept",
+      "description": "Grid container, rows, columns, template areas. Fr units, minmax, auto-fit/auto-fill. Two-dimensional layout patterns.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.html_css",
+      "bookName": "HTML & CSS Basics",
+      "bookColor": "#e34c26",
+      "bookOrder": 1,
+      "external_id": "b753dfb2563bee80",
+      "comprehended": false,
+      "strand": "markup"
+    },
+    {
+      "id": "webdev.css_responsive",
+      "label": "Responsive Design",
+      "type": "concept",
+      "description": "Media queries, breakpoints, mobile-first approach. Fluid typography, relative units (em, rem, vw, vh). Responsive images.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.html_css",
+      "bookName": "HTML & CSS Basics",
+      "bookColor": "#e34c26",
+      "bookOrder": 1,
+      "external_id": "9833992cc9854878",
+      "comprehended": false,
+      "strand": "markup"
+    },
+    {
+      "id": "webdev.css_animations",
+      "label": "CSS Transitions & Animations",
+      "type": "concept",
+      "description": "CSS transitions for smooth property changes. Keyframe animations. Transform property: translate, rotate, scale. Performance considerations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.html_css",
+      "bookName": "HTML & CSS Basics",
+      "bookColor": "#e34c26",
+      "bookOrder": 1,
+      "external_id": "fcad15955a7b8bb7",
+      "comprehended": false,
+      "strand": "markup"
+    },
+    {
+      "id": "webdev.js_variables",
+      "label": "Variables & Data Types",
+      "type": "concept",
+      "description": "let, const, var declarations. Primitive types: string, number, boolean, null, undefined, symbol. Type coercion and typeof.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.js",
+      "bookName": "JavaScript",
+      "bookColor": "#f7df1e",
+      "bookOrder": 2,
+      "external_id": "2746a95b29a52581",
+      "comprehended": false,
+      "strand": "scripting"
+    },
+    {
+      "id": "webdev.js_operators_control",
+      "label": "Operators & Control Flow",
+      "type": "concept",
+      "description": "Arithmetic, comparison, logical operators. If/else, switch, ternary. For, while, for...of, for...in loops. Break and continue.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.js",
+      "bookName": "JavaScript",
+      "bookColor": "#f7df1e",
+      "bookOrder": 2,
+      "external_id": "8615377d593b5591",
+      "comprehended": false,
+      "strand": "scripting"
+    },
+    {
+      "id": "webdev.js_functions",
+      "label": "Functions",
+      "type": "concept",
+      "description": "Function declarations, expressions, arrow functions. Parameters, arguments, default values. Return values. Scope and closures.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.js",
+      "bookName": "JavaScript",
+      "bookColor": "#f7df1e",
+      "bookOrder": 2,
+      "external_id": "742f5f8fd3b42695",
+      "comprehended": false,
+      "strand": "scripting"
+    },
+    {
+      "id": "webdev.js_arrays",
+      "label": "Arrays & Array Methods",
+      "type": "concept",
+      "description": "Creating and accessing arrays. Methods: push, pop, map, filter, reduce, find, forEach, sort, slice, splice. Spread operator.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.js",
+      "bookName": "JavaScript",
+      "bookColor": "#f7df1e",
+      "bookOrder": 2,
+      "external_id": "30b51c0718f83606",
+      "comprehended": false,
+      "strand": "scripting"
+    },
+    {
+      "id": "webdev.js_objects",
+      "label": "Objects & JSON",
+      "type": "concept",
+      "description": "Object literals, properties, methods. Dot and bracket notation. Destructuring. JSON.parse and JSON.stringify. Nested objects.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.js",
+      "bookName": "JavaScript",
+      "bookColor": "#f7df1e",
+      "bookOrder": 2,
+      "external_id": "5b949df080ae9c4c",
+      "comprehended": false,
+      "strand": "scripting"
+    },
+    {
+      "id": "webdev.js_dom",
+      "label": "DOM Manipulation",
+      "type": "concept",
+      "description": "Selecting elements: getElementById, querySelector. Creating, modifying, removing elements. InnerHTML vs textContent. DOM traversal.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.js",
+      "bookName": "JavaScript",
+      "bookColor": "#f7df1e",
+      "bookOrder": 2,
+      "external_id": "96a61fffe45f4ea0",
+      "comprehended": false,
+      "strand": "scripting"
+    },
+    {
+      "id": "webdev.js_events",
+      "label": "Events & Event Handling",
+      "type": "concept",
+      "description": "Event listeners, event object, event bubbling and capturing. Common events: click, submit, keydown, load. Event delegation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.js",
+      "bookName": "JavaScript",
+      "bookColor": "#f7df1e",
+      "bookOrder": 2,
+      "external_id": "f40ea73add093755",
+      "comprehended": false,
+      "strand": "scripting"
+    },
+    {
+      "id": "webdev.js_es6",
+      "label": "ES6+ Features",
+      "type": "concept",
+      "description": "Template literals, destructuring, spread/rest operators. Modules (import/export). Optional chaining, nullish coalescing. Map and Set.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.js",
+      "bookName": "JavaScript",
+      "bookColor": "#f7df1e",
+      "bookOrder": 2,
+      "external_id": "1db9d7a136b84476",
+      "comprehended": false,
+      "strand": "scripting"
+    },
+    {
+      "id": "webdev.js_async",
+      "label": "Async/Await & Promises",
+      "type": "concept",
+      "description": "Callbacks, callback hell. Promises: then, catch, finally. Async/await syntax. Promise.all, Promise.race. Error handling in async code.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.js",
+      "bookName": "JavaScript",
+      "bookColor": "#f7df1e",
+      "bookOrder": 2,
+      "external_id": "1aac5b8262689689",
+      "comprehended": false,
+      "strand": "scripting"
+    },
+    {
+      "id": "webdev.js_fetch",
+      "label": "Fetch API & HTTP",
+      "type": "concept",
+      "description": "Fetch API for HTTP requests. GET, POST, PUT, DELETE methods. Headers, request/response objects. Handling JSON responses. CORS basics.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.js",
+      "bookName": "JavaScript",
+      "bookColor": "#f7df1e",
+      "bookOrder": 2,
+      "external_id": "b68efeb2ba1a91bf",
+      "comprehended": false,
+      "strand": "scripting"
+    },
+    {
+      "id": "webdev.js_classes",
+      "label": "Classes & OOP",
+      "type": "concept",
+      "description": "Class syntax, constructors, methods. Inheritance with extends. Getters and setters. Static methods. Prototypal inheritance under the hood.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.js",
+      "bookName": "JavaScript",
+      "bookColor": "#f7df1e",
+      "bookOrder": 2,
+      "external_id": "4a95fac5a3d8dd10",
+      "comprehended": false,
+      "strand": "scripting"
+    },
+    {
+      "id": "webdev.js_error_handling",
+      "label": "Error Handling",
+      "type": "concept",
+      "description": "Try/catch/finally blocks. Throwing custom errors. Error types. Debugging with console methods and browser DevTools.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.js",
+      "bookName": "JavaScript",
+      "bookColor": "#f7df1e",
+      "bookOrder": 2,
+      "external_id": "f5cc51f94402fbf9",
+      "comprehended": false,
+      "strand": "scripting"
+    },
+    {
+      "id": "webdev.js_storage",
+      "label": "Browser Storage",
+      "type": "concept",
+      "description": "LocalStorage and sessionStorage APIs. Cookies: setting, reading, expiration. IndexedDB basics. Choosing the right storage mechanism.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.js",
+      "bookName": "JavaScript",
+      "bookColor": "#f7df1e",
+      "bookOrder": 2,
+      "external_id": "da0fb55d5565a22d",
+      "comprehended": false,
+      "strand": "scripting"
+    },
+    {
+      "id": "webdev.react_components",
+      "label": "React Components",
+      "type": "concept",
+      "description": "Functional components, JSX syntax. Props for data passing. Component composition and reusability. Children prop. Fragment syntax.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.frontend",
+      "bookName": "Frontend Frameworks",
+      "bookColor": "#61dafb",
+      "bookOrder": 3,
+      "external_id": "e7effd13986b8b6e",
+      "comprehended": false,
+      "strand": "frameworks"
+    },
+    {
+      "id": "webdev.react_state",
+      "label": "React State",
+      "type": "concept",
+      "description": "useState hook for local state. Immutable state updates. Lifting state up. Controlled vs uncontrolled components. Form state management.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.frontend",
+      "bookName": "Frontend Frameworks",
+      "bookColor": "#61dafb",
+      "bookOrder": 3,
+      "external_id": "ada4a4dee40481ef",
+      "comprehended": false,
+      "strand": "frameworks"
+    },
+    {
+      "id": "webdev.react_hooks",
+      "label": "React Hooks",
+      "type": "concept",
+      "description": "useEffect for side effects. useRef for DOM references. useMemo and useCallback for optimization. Custom hooks for reusable logic.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.frontend",
+      "bookName": "Frontend Frameworks",
+      "bookColor": "#61dafb",
+      "bookOrder": 3,
+      "external_id": "2822e3389e3b2656",
+      "comprehended": false,
+      "strand": "frameworks"
+    },
+    {
+      "id": "webdev.react_routing",
+      "label": "Client-Side Routing",
+      "type": "concept",
+      "description": "React Router: BrowserRouter, Routes, Route, Link. Dynamic routes and URL parameters. Nested routes. Programmatic navigation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.frontend",
+      "bookName": "Frontend Frameworks",
+      "bookColor": "#61dafb",
+      "bookOrder": 3,
+      "external_id": "76880335088d51a5",
+      "comprehended": false,
+      "strand": "frameworks"
+    },
+    {
+      "id": "webdev.react_context",
+      "label": "React Context & State Management",
+      "type": "concept",
+      "description": "Context API for global state. useContext hook. When to use context vs prop drilling. Introduction to state libraries (Redux, Zustand).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.frontend",
+      "bookName": "Frontend Frameworks",
+      "bookColor": "#61dafb",
+      "bookOrder": 3,
+      "external_id": "fc94c3dd637f6e8f",
+      "comprehended": false,
+      "strand": "frameworks"
+    },
+    {
+      "id": "webdev.react_data_fetching",
+      "label": "Data Fetching in React",
+      "type": "concept",
+      "description": "Fetching data with useEffect. Loading and error states. React Query / SWR for server state. Suspense for data fetching.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.frontend",
+      "bookName": "Frontend Frameworks",
+      "bookColor": "#61dafb",
+      "bookOrder": 3,
+      "external_id": "ff6498a1904d6073",
+      "comprehended": false,
+      "strand": "frameworks"
+    },
+    {
+      "id": "webdev.react_forms",
+      "label": "React Forms & Validation",
+      "type": "concept",
+      "description": "Controlled form inputs in React. Form libraries (React Hook Form, Formik). Client-side validation. Handling form submission.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.frontend",
+      "bookName": "Frontend Frameworks",
+      "bookColor": "#61dafb",
+      "bookOrder": 3,
+      "external_id": "c66d0c9475ad6d2d",
+      "comprehended": false,
+      "strand": "frameworks"
+    },
+    {
+      "id": "webdev.component_styling",
+      "label": "Component Styling",
+      "type": "concept",
+      "description": "CSS Modules, styled-components, Tailwind CSS. CSS-in-JS patterns. Theming and design tokens. Component library usage (MUI, shadcn).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.frontend",
+      "bookName": "Frontend Frameworks",
+      "bookColor": "#61dafb",
+      "bookOrder": 3,
+      "external_id": "ff9728db5c7bd4b0",
+      "comprehended": false,
+      "strand": "frameworks"
+    },
+    {
+      "id": "webdev.build_tools",
+      "label": "Build Tools & Bundlers",
+      "type": "concept",
+      "description": "npm/yarn package management. Vite, Webpack basics. Code splitting and lazy loading. Environment variables. Development vs production builds.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.frontend",
+      "bookName": "Frontend Frameworks",
+      "bookColor": "#61dafb",
+      "bookOrder": 3,
+      "external_id": "a952ee13a053ad77",
+      "comprehended": false,
+      "strand": "frameworks"
+    },
+    {
+      "id": "webdev.nextjs_intro",
+      "label": "Next.js / Meta-Frameworks",
+      "type": "concept",
+      "description": "Server-side rendering (SSR) vs static site generation (SSG). Next.js pages, API routes, and app router. File-based routing. ISR.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.frontend",
+      "bookName": "Frontend Frameworks",
+      "bookColor": "#61dafb",
+      "bookOrder": 3,
+      "external_id": "d9de053a76feaeba",
+      "comprehended": false,
+      "strand": "frameworks"
+    },
+    {
+      "id": "webdev.node_intro",
+      "label": "Node.js Fundamentals",
+      "type": "concept",
+      "description": "Node.js runtime, event loop, non-blocking I/O. npm ecosystem. CommonJS vs ES modules. File system and path modules.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.backend",
+      "bookName": "Backend Development",
+      "bookColor": "#68a063",
+      "bookOrder": 4,
+      "external_id": "2f700d066119f8f7",
+      "comprehended": false,
+      "strand": "server"
+    },
+    {
+      "id": "webdev.express",
+      "label": "Express.js",
+      "type": "concept",
+      "description": "Setting up an Express server. Routing, route parameters, query strings. Request and response objects. Serving static files.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.backend",
+      "bookName": "Backend Development",
+      "bookColor": "#68a063",
+      "bookOrder": 4,
+      "external_id": "49662e7995529c1d",
+      "comprehended": false,
+      "strand": "server"
+    },
+    {
+      "id": "webdev.middleware",
+      "label": "Middleware",
+      "type": "concept",
+      "description": "Express middleware pattern. Built-in middleware (json, urlencoded, static). Custom middleware. Error-handling middleware. Third-party middleware (cors, morgan).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.backend",
+      "bookName": "Backend Development",
+      "bookColor": "#68a063",
+      "bookOrder": 4,
+      "external_id": "6ded27d7fb289445",
+      "comprehended": false,
+      "strand": "server"
+    },
+    {
+      "id": "webdev.rest_api",
+      "label": "REST API Design",
+      "type": "concept",
+      "description": "REST principles, resource naming, HTTP methods. Status codes. Request/response formats. API versioning. CRUD operations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.backend",
+      "bookName": "Backend Development",
+      "bookColor": "#68a063",
+      "bookOrder": 4,
+      "external_id": "27df33c291c02b08",
+      "comprehended": false,
+      "strand": "server"
+    },
+    {
+      "id": "webdev.auth",
+      "label": "Authentication & Authorization",
+      "type": "concept",
+      "description": "Password hashing (bcrypt). JWT tokens: creation, verification, refresh. Session-based auth. OAuth 2.0 basics. Role-based access control.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.backend",
+      "bookName": "Backend Development",
+      "bookColor": "#68a063",
+      "bookOrder": 4,
+      "external_id": "f76f8450e172d433",
+      "comprehended": false,
+      "strand": "server"
+    },
+    {
+      "id": "webdev.validation_sanitization",
+      "label": "Input Validation & Sanitization",
+      "type": "concept",
+      "description": "Server-side validation with libraries (Joi, Zod, express-validator). Sanitizing user input. Preventing injection attacks.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.backend",
+      "bookName": "Backend Development",
+      "bookColor": "#68a063",
+      "bookOrder": 4,
+      "external_id": "020baafe17f4a070",
+      "comprehended": false,
+      "strand": "server"
+    },
+    {
+      "id": "webdev.file_uploads",
+      "label": "File Uploads & Storage",
+      "type": "concept",
+      "description": "Handling multipart form data (Multer). File validation and limits. Cloud storage (S3, Cloudinary). Streaming large files.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.backend",
+      "bookName": "Backend Development",
+      "bookColor": "#68a063",
+      "bookOrder": 4,
+      "external_id": "b53c11477cb6bdef",
+      "comprehended": false,
+      "strand": "server"
+    },
+    {
+      "id": "webdev.env_config",
+      "label": "Environment & Configuration",
+      "type": "concept",
+      "description": "Environment variables with dotenv. Configuration management. Secrets management. Development vs production settings.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.backend",
+      "bookName": "Backend Development",
+      "bookColor": "#68a063",
+      "bookOrder": 4,
+      "external_id": "b552d63cd38421ae",
+      "comprehended": false,
+      "strand": "server"
+    },
+    {
+      "id": "webdev.sql_basics",
+      "label": "SQL Fundamentals",
+      "type": "concept",
+      "description": "SELECT, INSERT, UPDATE, DELETE queries. WHERE clauses, ordering, limiting. Data types. CREATE TABLE, ALTER TABLE. Primary keys.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.db",
+      "bookName": "Databases",
+      "bookColor": "#336791",
+      "bookOrder": 5,
+      "external_id": "f3ba654b1865554b",
+      "comprehended": false,
+      "strand": "data"
+    },
+    {
+      "id": "webdev.sql_joins",
+      "label": "SQL Joins & Relations",
+      "type": "concept",
+      "description": "INNER JOIN, LEFT JOIN, RIGHT JOIN. One-to-one, one-to-many, many-to-many relationships. Foreign keys. Junction tables.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.db",
+      "bookName": "Databases",
+      "bookColor": "#336791",
+      "bookOrder": 5,
+      "external_id": "87c919b0fdf41bbd",
+      "comprehended": false,
+      "strand": "data"
+    },
+    {
+      "id": "webdev.sql_advanced",
+      "label": "Advanced SQL",
+      "type": "concept",
+      "description": "Aggregations (GROUP BY, HAVING). Subqueries. Indexes for performance. Transactions and ACID properties. Views and stored procedures.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.db",
+      "bookName": "Databases",
+      "bookColor": "#336791",
+      "bookOrder": 5,
+      "external_id": "dff02075df3d556c",
+      "comprehended": false,
+      "strand": "data"
+    },
+    {
+      "id": "webdev.postgresql",
+      "label": "PostgreSQL",
+      "type": "concept",
+      "description": "PostgreSQL setup and CLI (psql). Data types including JSONB. Full-text search. Connection pooling. PostgreSQL-specific features.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.db",
+      "bookName": "Databases",
+      "bookColor": "#336791",
+      "bookOrder": 5,
+      "external_id": "f191c69a9ca1aa2f",
+      "comprehended": false,
+      "strand": "data"
+    },
+    {
+      "id": "webdev.nosql_mongodb",
+      "label": "NoSQL & MongoDB",
+      "type": "concept",
+      "description": "Document-based data model. Collections and documents. CRUD with MongoDB. Mongoose ODM: schemas, models, validation. Aggregation pipeline.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.db",
+      "bookName": "Databases",
+      "bookColor": "#336791",
+      "bookOrder": 5,
+      "external_id": "83068dfed629569d",
+      "comprehended": false,
+      "strand": "data"
+    },
+    {
+      "id": "webdev.orm",
+      "label": "ORMs & Query Builders",
+      "type": "concept",
+      "description": "Object-Relational Mapping with Prisma or Sequelize. Schema definition, migrations. Query builders (Knex). Type-safe database access.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.db",
+      "bookName": "Databases",
+      "bookColor": "#336791",
+      "bookOrder": 5,
+      "external_id": "a1b768cba3e47317",
+      "comprehended": false,
+      "strand": "data"
+    },
+    {
+      "id": "webdev.data_modeling",
+      "label": "Data Modeling",
+      "type": "concept",
+      "description": "Entity-relationship diagrams. Normalization (1NF, 2NF, 3NF). Denormalization tradeoffs. Schema design patterns for web applications.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.db",
+      "bookName": "Databases",
+      "bookColor": "#336791",
+      "bookOrder": 5,
+      "external_id": "391df889211c7f93",
+      "comprehended": false,
+      "strand": "data"
+    },
+    {
+      "id": "webdev.db_migrations",
+      "label": "Database Migrations",
+      "type": "concept",
+      "description": "Schema migration tools and workflows. Up and down migrations. Seeding data. Managing migrations in team environments.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.db",
+      "bookName": "Databases",
+      "bookColor": "#336791",
+      "bookOrder": 5,
+      "external_id": "11fc2bd7b989d8e9",
+      "comprehended": false,
+      "strand": "data"
+    },
+    {
+      "id": "webdev.git",
+      "label": "Git Version Control",
+      "type": "concept",
+      "description": "Git init, add, commit, push, pull. Branching and merging. Resolving merge conflicts. Git log and diff. .gitignore. GitHub workflow.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.devops",
+      "bookName": "DevOps & Deployment",
+      "bookColor": "#2496ed",
+      "bookOrder": 6,
+      "external_id": "7512cd2e575e7be9",
+      "comprehended": false,
+      "strand": "ops"
+    },
+    {
+      "id": "webdev.git_collaboration",
+      "label": "Git Collaboration",
+      "type": "concept",
+      "description": "Pull requests and code review. Forking workflow. Branch naming conventions. Rebasing vs merging. Git stash. Cherry-pick.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.devops",
+      "bookName": "DevOps & Deployment",
+      "bookColor": "#2496ed",
+      "bookOrder": 6,
+      "external_id": "2d5a23aa012087ad",
+      "comprehended": false,
+      "strand": "ops"
+    },
+    {
+      "id": "webdev.cicd",
+      "label": "CI/CD Pipelines",
+      "type": "concept",
+      "description": "Continuous integration and deployment concepts. GitHub Actions workflows. Automated testing, linting, building. Deployment triggers.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.devops",
+      "bookName": "DevOps & Deployment",
+      "bookColor": "#2496ed",
+      "bookOrder": 6,
+      "external_id": "f79e7183c0f1a396",
+      "comprehended": false,
+      "strand": "ops"
+    },
+    {
+      "id": "webdev.docker",
+      "label": "Docker Basics",
+      "type": "concept",
+      "description": "Containers vs VMs. Dockerfile: FROM, COPY, RUN, CMD. Building images. Docker Compose for multi-service apps. Volumes and networking.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.devops",
+      "bookName": "DevOps & Deployment",
+      "bookColor": "#2496ed",
+      "bookOrder": 6,
+      "external_id": "d1694064cf88a946",
+      "comprehended": false,
+      "strand": "ops"
+    },
+    {
+      "id": "webdev.cloud_hosting",
+      "label": "Cloud Hosting",
+      "type": "concept",
+      "description": "Platform-as-a-Service (Vercel, Railway, Render). AWS/GCP/Azure basics. Serverless functions. Static site hosting. Environment configuration.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.devops",
+      "bookName": "DevOps & Deployment",
+      "bookColor": "#2496ed",
+      "bookOrder": 6,
+      "external_id": "8279771e086e7346",
+      "comprehended": false,
+      "strand": "ops"
+    },
+    {
+      "id": "webdev.domain_ssl",
+      "label": "Domains & SSL",
+      "type": "concept",
+      "description": "Domain registration and DNS configuration. A records, CNAME, nameservers. SSL/TLS certificates. HTTPS setup. Let's Encrypt.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.devops",
+      "bookName": "DevOps & Deployment",
+      "bookColor": "#2496ed",
+      "bookOrder": 6,
+      "external_id": "a20d76517e66b122",
+      "comprehended": false,
+      "strand": "ops"
+    },
+    {
+      "id": "webdev.monitoring",
+      "label": "Monitoring & Logging",
+      "type": "concept",
+      "description": "Application monitoring (uptime, errors). Logging strategies and tools. Error tracking (Sentry). Performance monitoring. Alerting.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.devops",
+      "bookName": "DevOps & Deployment",
+      "bookColor": "#2496ed",
+      "bookOrder": 6,
+      "external_id": "773df1ce14992362",
+      "comprehended": false,
+      "strand": "ops"
+    },
+    {
+      "id": "webdev.typescript",
+      "label": "TypeScript",
+      "type": "concept",
+      "description": "Type annotations, interfaces, type aliases. Generics. Union and intersection types. Type narrowing. TypeScript with React and Node.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#9333ea",
+      "bookOrder": 7,
+      "external_id": "d51be5b255609d19",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "webdev.testing",
+      "label": "Testing",
+      "type": "concept",
+      "description": "Unit testing with Jest/Vitest. Integration testing. React Testing Library for component tests. Test-driven development basics. Mocking.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#9333ea",
+      "bookOrder": 7,
+      "external_id": "e35b75e1f626d431",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "webdev.e2e_testing",
+      "label": "End-to-End Testing",
+      "type": "concept",
+      "description": "E2E testing with Playwright or Cypress. Test scenarios and user flows. Visual regression testing. CI integration for E2E tests.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#9333ea",
+      "bookOrder": 7,
+      "external_id": "3b8b3f8b6a7042c8",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "webdev.performance",
+      "label": "Web Performance",
+      "type": "concept",
+      "description": "Core Web Vitals (LCP, FID, CLS). Lazy loading, code splitting. Image optimization. Caching strategies. Lighthouse audits. Bundle analysis.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#9333ea",
+      "bookOrder": 7,
+      "external_id": "e7a334302ac8ef3d",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "webdev.accessibility",
+      "label": "Web Accessibility",
+      "type": "concept",
+      "description": "WCAG guidelines. ARIA roles and attributes. Keyboard navigation. Screen reader compatibility. Color contrast. Focus management.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#9333ea",
+      "bookOrder": 7,
+      "external_id": "9f898c309c3f0416",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "webdev.seo",
+      "label": "SEO Fundamentals",
+      "type": "concept",
+      "description": "Meta tags, Open Graph, structured data. Sitemap and robots.txt. Semantic HTML for SEO. Page speed impact. Social media previews.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#9333ea",
+      "bookOrder": 7,
+      "external_id": "33ad0ab18107bfa8",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "webdev.pwa",
+      "label": "Progressive Web Apps",
+      "type": "concept",
+      "description": "Service workers for offline support. Web app manifest. Push notifications. Caching strategies (Cache API). Installable web apps.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#9333ea",
+      "bookOrder": 7,
+      "external_id": "a2475635fdc5110e",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "webdev.websockets",
+      "label": "WebSockets & Real-Time",
+      "type": "concept",
+      "description": "WebSocket protocol and API. Socket.IO for real-time communication. Server-Sent Events. Real-time app patterns: chat, notifications, live updates.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#9333ea",
+      "bookOrder": 7,
+      "external_id": "b39161771b8e2186",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "webdev.security",
+      "label": "Web Security",
+      "type": "concept",
+      "description": "XSS prevention, CSRF protection. Content Security Policy. HTTPS everywhere. Dependency vulnerability scanning. OWASP Top 10 awareness.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#9333ea",
+      "bookOrder": 7,
+      "external_id": "54c7621d30ae4f69",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "webdev.graphql",
+      "label": "GraphQL",
+      "type": "concept",
+      "description": "GraphQL schema, queries, mutations. Resolvers. Apollo Client and Server. GraphQL vs REST tradeoffs. Subscriptions for real-time data.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#9333ea",
+      "bookOrder": 7,
+      "external_id": "86ce9065b2447e9d",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "webdev.npm_scripts",
+      "label": "npm Scripts & Task Runners",
+      "type": "concept",
+      "description": "Package.json scripts. Running dev servers, build tasks, and linting. npx for one-off commands. Workspaces and monorepos.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.devops",
+      "bookName": "DevOps & Deployment",
+      "bookColor": "#2496ed",
+      "bookOrder": 6,
+      "external_id": "4bcbc8b077d790d9",
+      "comprehended": false,
+      "strand": "ops"
+    },
+    {
+      "id": "webdev.css_positioning",
+      "label": "CSS Positioning",
+      "type": "concept",
+      "description": "Position property: static, relative, absolute, fixed, sticky. Z-index and stacking context. Centering techniques. Float and clear.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.html_css",
+      "bookName": "HTML & CSS Basics",
+      "bookColor": "#e34c26",
+      "bookOrder": 1,
+      "external_id": "1d9d443c99042dec",
+      "comprehended": false,
+      "strand": "markup"
+    },
+    {
+      "id": "webdev.js_regex",
+      "label": "Regular Expressions",
+      "type": "concept",
+      "description": "Regex syntax and patterns. Character classes, quantifiers, anchors. String methods: match, replace, search, split. Regex testing tools.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.js",
+      "bookName": "JavaScript",
+      "bookColor": "#f7df1e",
+      "bookOrder": 2,
+      "external_id": "e41cef04c26a643e",
+      "comprehended": false,
+      "strand": "scripting"
+    },
+    {
+      "id": "webdev.api_rate_limiting",
+      "label": "Rate Limiting & Caching",
+      "type": "concept",
+      "description": "API rate limiting strategies. In-memory caching with Redis. HTTP caching headers. CDN caching. Cache invalidation patterns.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.backend",
+      "bookName": "Backend Development",
+      "bookColor": "#68a063",
+      "bookOrder": 4,
+      "external_id": "5fcb6249f47d2a2e",
+      "comprehended": false,
+      "strand": "server"
+    },
+    {
+      "id": "webdev.linting_formatting",
+      "label": "Linting & Formatting",
+      "type": "concept",
+      "description": "ESLint configuration and rules. Prettier for code formatting. Stylelint for CSS. Editor integration. Pre-commit hooks with Husky.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.devops",
+      "bookName": "DevOps & Deployment",
+      "bookColor": "#2496ed",
+      "bookOrder": 6,
+      "external_id": "bf00e40cba21a824",
+      "comprehended": false,
+      "strand": "ops"
+    },
+    {
+      "id": "webdev.css_preprocessors",
+      "label": "CSS Preprocessors",
+      "type": "concept",
+      "description": "Sass/SCSS syntax: variables, nesting, mixins, functions. Partials and imports. PostCSS and autoprefixer. CSS-in-JS alternatives.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.html_css",
+      "bookName": "HTML & CSS Basics",
+      "bookColor": "#e34c26",
+      "bookOrder": 1,
+      "external_id": "11221ba7f947f274",
+      "comprehended": false,
+      "strand": "markup"
+    },
+    {
+      "id": "webdev.js_iterators",
+      "label": "Iterators & Generators",
+      "type": "concept",
+      "description": "Symbol.iterator protocol. Generator functions with yield. Async generators. Practical uses: lazy evaluation, infinite sequences, async iteration.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.js",
+      "bookName": "JavaScript",
+      "bookColor": "#f7df1e",
+      "bookOrder": 2,
+      "external_id": "413568251af08349",
+      "comprehended": false,
+      "strand": "scripting"
+    },
+    {
+      "id": "webdev.web_components",
+      "label": "Web Components",
+      "type": "concept",
+      "description": "Custom Elements API. Shadow DOM encapsulation. HTML templates and slots. Lit library. Framework-agnostic component sharing.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#9333ea",
+      "bookOrder": 7,
+      "external_id": "9a157510667f4565",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "webdev.caching_strategies",
+      "label": "Browser Caching",
+      "type": "concept",
+      "description": "HTTP cache headers: Cache-Control, ETag, Last-Modified. Service worker caching strategies. Cache busting with hashed filenames.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#9333ea",
+      "bookOrder": 7,
+      "external_id": "2cc4ccecfaf7fe06",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "webdev.design_systems",
+      "label": "Design Systems",
+      "type": "concept",
+      "description": "Building reusable component libraries. Design tokens. Storybook for component documentation. Atomic design methodology. Theming systems.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.frontend",
+      "bookName": "Frontend Frameworks",
+      "bookColor": "#61dafb",
+      "bookOrder": 3,
+      "external_id": "6c29e824ca81dee1",
+      "comprehended": false,
+      "strand": "frameworks"
+    },
+    {
+      "id": "webdev.error_monitoring",
+      "label": "Error Boundaries & Monitoring",
+      "type": "concept",
+      "description": "React error boundaries. Global error handling. Error tracking services (Sentry). Source maps for debugging production. User feedback on errors.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.frontend",
+      "bookName": "Frontend Frameworks",
+      "bookColor": "#61dafb",
+      "bookOrder": 3,
+      "external_id": "162b5c614a12509e",
+      "comprehended": false,
+      "strand": "frameworks"
+    },
+    {
+      "id": "webdev.db_redis",
+      "label": "Redis & Caching Layer",
+      "type": "concept",
+      "description": "Redis data structures. Session storage with Redis. Pub/sub messaging. Cache-aside pattern. TTL and eviction policies.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "webdev.db",
+      "bookName": "Databases",
+      "bookColor": "#336791",
+      "bookOrder": 5,
+      "external_id": "af7f63f485f65fbd",
+      "comprehended": false,
+      "strand": "data"
+    }
+  ],
+  "edges": [
+    {
+      "source": "webdev.html_elements",
+      "target": "webdev.html_forms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.html_elements",
+      "target": "webdev.semantic_html",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.html_elements",
+      "target": "webdev.html_tables_media",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.html_elements",
+      "target": "webdev.css_selectors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.css_selectors",
+      "target": "webdev.css_box_model",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.css_selectors",
+      "target": "webdev.css_typography",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.css_selectors",
+      "target": "webdev.css_colors_backgrounds",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.css_box_model",
+      "target": "webdev.css_flexbox",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.css_box_model",
+      "target": "webdev.css_grid",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.css_flexbox",
+      "target": "webdev.css_responsive",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.css_grid",
+      "target": "webdev.css_responsive",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.css_colors_backgrounds",
+      "target": "webdev.css_animations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.css_box_model",
+      "target": "webdev.css_animations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.html_elements",
+      "target": "webdev.js_variables",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_variables",
+      "target": "webdev.js_operators_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_operators_control",
+      "target": "webdev.js_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_functions",
+      "target": "webdev.js_arrays",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_functions",
+      "target": "webdev.js_objects",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_objects",
+      "target": "webdev.js_dom",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.css_selectors",
+      "target": "webdev.js_dom",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_dom",
+      "target": "webdev.js_events",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_arrays",
+      "target": "webdev.js_es6",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_objects",
+      "target": "webdev.js_es6",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_functions",
+      "target": "webdev.js_async",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_es6",
+      "target": "webdev.js_async",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_async",
+      "target": "webdev.js_fetch",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_objects",
+      "target": "webdev.js_classes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_functions",
+      "target": "webdev.js_classes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_functions",
+      "target": "webdev.js_error_handling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_dom",
+      "target": "webdev.js_storage",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_es6",
+      "target": "webdev.react_components",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_dom",
+      "target": "webdev.react_components",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.react_components",
+      "target": "webdev.react_state",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.react_state",
+      "target": "webdev.react_hooks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.react_components",
+      "target": "webdev.react_routing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.react_state",
+      "target": "webdev.react_context",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.react_hooks",
+      "target": "webdev.react_context",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.react_hooks",
+      "target": "webdev.react_data_fetching",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_fetch",
+      "target": "webdev.react_data_fetching",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.react_state",
+      "target": "webdev.react_forms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.html_forms",
+      "target": "webdev.react_forms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.css_responsive",
+      "target": "webdev.component_styling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.react_components",
+      "target": "webdev.component_styling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.react_components",
+      "target": "webdev.build_tools",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_es6",
+      "target": "webdev.build_tools",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.react_routing",
+      "target": "webdev.nextjs_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.react_data_fetching",
+      "target": "webdev.nextjs_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.build_tools",
+      "target": "webdev.nextjs_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_es6",
+      "target": "webdev.node_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_async",
+      "target": "webdev.node_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.node_intro",
+      "target": "webdev.express",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.express",
+      "target": "webdev.middleware",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.express",
+      "target": "webdev.rest_api",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_fetch",
+      "target": "webdev.rest_api",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.rest_api",
+      "target": "webdev.auth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.middleware",
+      "target": "webdev.auth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.middleware",
+      "target": "webdev.validation_sanitization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.rest_api",
+      "target": "webdev.validation_sanitization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.middleware",
+      "target": "webdev.file_uploads",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.node_intro",
+      "target": "webdev.env_config",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_variables",
+      "target": "webdev.sql_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.sql_basics",
+      "target": "webdev.sql_joins",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.sql_joins",
+      "target": "webdev.sql_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.sql_basics",
+      "target": "webdev.postgresql",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.sql_joins",
+      "target": "webdev.postgresql",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_objects",
+      "target": "webdev.nosql_mongodb",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.sql_joins",
+      "target": "webdev.orm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.node_intro",
+      "target": "webdev.orm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.sql_joins",
+      "target": "webdev.data_modeling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.nosql_mongodb",
+      "target": "webdev.data_modeling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.orm",
+      "target": "webdev.db_migrations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.html_elements",
+      "target": "webdev.git",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.git",
+      "target": "webdev.git_collaboration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.git_collaboration",
+      "target": "webdev.cicd",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.node_intro",
+      "target": "webdev.docker",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.env_config",
+      "target": "webdev.docker",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.docker",
+      "target": "webdev.cloud_hosting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.cicd",
+      "target": "webdev.cloud_hosting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.cloud_hosting",
+      "target": "webdev.domain_ssl",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.cloud_hosting",
+      "target": "webdev.monitoring",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_es6",
+      "target": "webdev.typescript",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_classes",
+      "target": "webdev.typescript",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_functions",
+      "target": "webdev.testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.react_components",
+      "target": "webdev.testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.testing",
+      "target": "webdev.e2e_testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.react_routing",
+      "target": "webdev.e2e_testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.css_responsive",
+      "target": "webdev.performance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.build_tools",
+      "target": "webdev.performance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.semantic_html",
+      "target": "webdev.accessibility",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.css_responsive",
+      "target": "webdev.accessibility",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.semantic_html",
+      "target": "webdev.seo",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.nextjs_intro",
+      "target": "webdev.seo",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_storage",
+      "target": "webdev.pwa",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.performance",
+      "target": "webdev.pwa",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_async",
+      "target": "webdev.websockets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.node_intro",
+      "target": "webdev.websockets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.auth",
+      "target": "webdev.security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.validation_sanitization",
+      "target": "webdev.security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.rest_api",
+      "target": "webdev.graphql",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.typescript",
+      "target": "webdev.graphql",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.node_intro",
+      "target": "webdev.npm_scripts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.npm_scripts",
+      "target": "webdev.build_tools",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.css_box_model",
+      "target": "webdev.css_positioning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.css_positioning",
+      "target": "webdev.css_flexbox",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_functions",
+      "target": "webdev.js_regex",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_regex",
+      "target": "webdev.validation_sanitization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.rest_api",
+      "target": "webdev.api_rate_limiting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.git",
+      "target": "webdev.linting_formatting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.npm_scripts",
+      "target": "webdev.linting_formatting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.css_responsive",
+      "target": "webdev.css_preprocessors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_async",
+      "target": "webdev.js_iterators",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_es6",
+      "target": "webdev.web_components",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_dom",
+      "target": "webdev.web_components",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.performance",
+      "target": "webdev.caching_strategies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.component_styling",
+      "target": "webdev.design_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.react_components",
+      "target": "webdev.design_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.react_hooks",
+      "target": "webdev.error_monitoring",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.js_error_handling",
+      "target": "webdev.error_monitoring",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.postgresql",
+      "target": "webdev.db_redis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "webdev.db_redis",
+      "target": "webdev.api_rate_limiting",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

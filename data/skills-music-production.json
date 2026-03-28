@@ -1,0 +1,1185 @@
+{
+  "metadata": {
+    "domain": "creative-arts",
+    "curriculum": "Music Production Skills",
+    "view": "skill-prerequisites",
+    "version": "0.2.0",
+    "description": "Music production skill track from theory foundations to advanced production and business",
+    "sources": [
+      "Industry-standard music production curriculum"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "music.theory",
+      "name": "Music Theory",
+      "color": "#8b5cf6",
+      "order": 1
+    },
+    {
+      "id": "music.digital",
+      "name": "Digital Audio",
+      "color": "#3b82f6",
+      "order": 2
+    },
+    {
+      "id": "music.production",
+      "name": "Production",
+      "color": "#f59e0b",
+      "order": 3
+    },
+    {
+      "id": "music.advanced",
+      "name": "Advanced",
+      "color": "#ef4444",
+      "order": 4
+    }
+  ],
+  "strands": [
+    {
+      "id": "theory",
+      "name": "Music Theory",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "digital-audio",
+      "name": "Digital Audio",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "mixing-mastering",
+      "name": "Mixing & Mastering",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "advanced-production",
+      "name": "Advanced Production",
+      "color": "#ef4444"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "music.notes",
+      "label": "Notes & Pitch",
+      "type": "concept",
+      "description": "Musical notes, the chromatic scale, octaves, sharps and flats, enharmonic equivalents, and reading notes on a staff.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.theory",
+      "bookName": "Music Theory",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "d953feb8b4462b0f",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "music.scales",
+      "label": "Scales",
+      "type": "concept",
+      "description": "Major and minor scales, pentatonic scales, modes (Dorian, Mixolydian, etc.), and scale degrees. Building melodies from scales.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.theory",
+      "bookName": "Music Theory",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "b21df0a34c3d560d",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "music.chords",
+      "label": "Chords",
+      "type": "concept",
+      "description": "Triads (major, minor, diminished, augmented), seventh chords, inversions, and voicings. Building chords from scale degrees.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.theory",
+      "bookName": "Music Theory",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "3f98a031d8c51f05",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "music.chord_progressions",
+      "label": "Chord Progressions",
+      "type": "concept",
+      "description": "Common progressions (I-IV-V, ii-V-I, I-V-vi-IV), Nashville number system, and how progressions create emotion and movement.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.theory",
+      "bookName": "Music Theory",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "67795ca888433218",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "music.rhythm",
+      "label": "Rhythm & Beat",
+      "type": "concept",
+      "description": "Note durations (whole, half, quarter, eighth, sixteenth), rests, dots, ties, syncopation, and rhythmic patterns.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.theory",
+      "bookName": "Music Theory",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "ce66a7f2f7830cd2",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "music.time_signatures",
+      "label": "Time Signatures",
+      "type": "concept",
+      "description": "Common time (4/4), waltz time (3/4), compound meters (6/8, 12/8), odd meters, and how time signatures shape feel and groove.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.theory",
+      "bookName": "Music Theory",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "547498fdc911ea52",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "music.harmony",
+      "label": "Harmony",
+      "type": "concept",
+      "description": "Intervals, consonance and dissonance, voice leading, counterpoint basics, and harmonic function (tonic, dominant, subdominant).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.theory",
+      "bookName": "Music Theory",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "e571e4b4779a13bc",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "music.melody",
+      "label": "Melody Writing",
+      "type": "concept",
+      "description": "Crafting memorable melodies: contour, motifs, repetition, variation, phrasing, and the relationship between melody and harmony.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.theory",
+      "bookName": "Music Theory",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "64efcc44771cfd16",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "music.keys_modulation",
+      "label": "Keys & Modulation",
+      "type": "concept",
+      "description": "Key signatures, the circle of fifths, relative major/minor, modulation techniques, and borrowed chords.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.theory",
+      "bookName": "Music Theory",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "defe021ff9104101",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "music.daw_overview",
+      "label": "DAW Overview",
+      "type": "concept",
+      "description": "Introduction to Digital Audio Workstations: interface layout, tracks, mixer, transport controls, and basic workflow across platforms.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.digital",
+      "bookName": "Digital Audio",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "e9c99e34d3698a5e",
+      "comprehended": false,
+      "strand": "digital-audio"
+    },
+    {
+      "id": "music.garageband",
+      "label": "GarageBand",
+      "type": "concept",
+      "description": "Apple's free DAW: smart instruments, loops, recording, basic editing, and exporting. An accessible entry point for beginners.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.digital",
+      "bookName": "Digital Audio",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "7f475b636bde4d8f",
+      "comprehended": false,
+      "strand": "digital-audio"
+    },
+    {
+      "id": "music.fl_studio",
+      "label": "FL Studio",
+      "type": "concept",
+      "description": "Image-Line's FL Studio: step sequencer, piano roll, pattern-based workflow, mixer routing, and plugin management.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.digital",
+      "bookName": "Digital Audio",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "c34c55dd4ae3c97a",
+      "comprehended": false,
+      "strand": "digital-audio"
+    },
+    {
+      "id": "music.ableton",
+      "label": "Ableton Live",
+      "type": "concept",
+      "description": "Ableton Live's Session and Arrangement views, clips, scenes, warping, and live performance capabilities. Ideal for electronic music.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.digital",
+      "bookName": "Digital Audio",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "ed17a9dc0277f040",
+      "comprehended": false,
+      "strand": "digital-audio"
+    },
+    {
+      "id": "music.midi",
+      "label": "MIDI",
+      "type": "concept",
+      "description": "MIDI protocol: notes, velocity, CC messages, MIDI controllers, quantization, and using MIDI to control virtual instruments.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.digital",
+      "bookName": "Digital Audio",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "dec3c8caeefcfec1",
+      "comprehended": false,
+      "strand": "digital-audio"
+    },
+    {
+      "id": "music.audio_recording",
+      "label": "Audio Recording",
+      "type": "concept",
+      "description": "Microphone types (condenser, dynamic), audio interfaces, gain staging, recording vocals and instruments, and monitoring.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.digital",
+      "bookName": "Digital Audio",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "6a15fc0f900cf2c3",
+      "comprehended": false,
+      "strand": "digital-audio"
+    },
+    {
+      "id": "music.sampling",
+      "label": "Sampling",
+      "type": "concept",
+      "description": "Sample-based production: chopping, time-stretching, pitch-shifting, sample packs, and the creative and legal aspects of sampling.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.digital",
+      "bookName": "Digital Audio",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "d8ae8437dec8a73d",
+      "comprehended": false,
+      "strand": "digital-audio"
+    },
+    {
+      "id": "music.virtual_instruments",
+      "label": "Virtual Instruments & Plugins",
+      "type": "concept",
+      "description": "VST/AU plugins, virtual synths, samplers, drum machines, and orchestral libraries. Installing, managing, and using plugins in a DAW.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.digital",
+      "bookName": "Digital Audio",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "ea7b01e2aa1822c1",
+      "comprehended": false,
+      "strand": "digital-audio"
+    },
+    {
+      "id": "music.audio_fundamentals",
+      "label": "Audio Fundamentals",
+      "type": "concept",
+      "description": "Sound waves, frequency, amplitude, waveforms, sample rate, bit depth, and how digital audio represents analog sound.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.digital",
+      "bookName": "Digital Audio",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "1490577b82a66ccc",
+      "comprehended": false,
+      "strand": "digital-audio"
+    },
+    {
+      "id": "music.mixing",
+      "label": "Mixing Fundamentals",
+      "type": "concept",
+      "description": "Balancing levels, panning, gain staging, bus routing, and creating a cohesive mix. The mixing workflow from rough to final.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "4014a009b6245d02",
+      "comprehended": false,
+      "strand": "mixing-mastering"
+    },
+    {
+      "id": "music.eq",
+      "label": "EQ (Equalization)",
+      "type": "concept",
+      "description": "Frequency spectrum, EQ types (parametric, graphic, shelving), cutting vs boosting, removing mud, and carving space for each element.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "d81019578a5dc36b",
+      "comprehended": false,
+      "strand": "mixing-mastering"
+    },
+    {
+      "id": "music.compression",
+      "label": "Compression",
+      "type": "concept",
+      "description": "Dynamic range control: threshold, ratio, attack, release, knee. Parallel compression, sidechain compression, and multiband compression.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "9e3a59307d9e108f",
+      "comprehended": false,
+      "strand": "mixing-mastering"
+    },
+    {
+      "id": "music.reverb",
+      "label": "Reverb & Delay",
+      "type": "concept",
+      "description": "Spatial effects: reverb types (hall, plate, room, spring), delay (echo, ping-pong, tape), and creating depth and space in a mix.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "e1fce77f3b8db0f0",
+      "comprehended": false,
+      "strand": "mixing-mastering"
+    },
+    {
+      "id": "music.mastering",
+      "label": "Mastering",
+      "type": "concept",
+      "description": "Final polish: loudness (LUFS), limiting, stereo width, EQ sweetening, sequencing an album, and preparing for distribution.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "1fe3371c5b8e9fbf",
+      "comprehended": false,
+      "strand": "mixing-mastering"
+    },
+    {
+      "id": "music.arrangement",
+      "label": "Arrangement",
+      "type": "concept",
+      "description": "Organizing a song: intro, verse, chorus, bridge, outro. Building energy, creating dynamics, and keeping the listener engaged.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "84955d89a8fe6630",
+      "comprehended": false,
+      "strand": "mixing-mastering"
+    },
+    {
+      "id": "music.song_structure",
+      "label": "Song Structure",
+      "type": "concept",
+      "description": "Common song forms (AABA, verse-chorus, through-composed), genre-specific structures, and analyzing hit song arrangements.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "e209ed533aef5805",
+      "comprehended": false,
+      "strand": "mixing-mastering"
+    },
+    {
+      "id": "music.automation",
+      "label": "Automation",
+      "type": "concept",
+      "description": "Automating volume, panning, effects parameters, and plugin settings over time to add movement and dynamics to a mix.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "1199f5f705242741",
+      "comprehended": false,
+      "strand": "mixing-mastering"
+    },
+    {
+      "id": "music.vocal_production",
+      "label": "Vocal Production",
+      "type": "concept",
+      "description": "Recording, comping, tuning (Auto-Tune, Melodyne), layering, ad-libs, vocal effects chains, and achieving polished vocal tracks.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "59f207b092831795",
+      "comprehended": false,
+      "strand": "mixing-mastering"
+    },
+    {
+      "id": "music.synthesis",
+      "label": "Synthesis",
+      "type": "concept",
+      "description": "Subtractive, additive, FM, wavetable, and granular synthesis. Oscillators, filters, envelopes, LFOs, and creating sounds from scratch.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "5320d9d28dc0499e",
+      "comprehended": false,
+      "strand": "advanced-production"
+    },
+    {
+      "id": "music.sound_design",
+      "label": "Sound Design",
+      "type": "concept",
+      "description": "Creating unique sounds for music, games, and film: layering, processing, resampling, and developing a signature sonic palette.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "b406b44789cdadcf",
+      "comprehended": false,
+      "strand": "advanced-production"
+    },
+    {
+      "id": "music.beatmaking",
+      "label": "Beatmaking",
+      "type": "concept",
+      "description": "Crafting beats: drum programming, hi-hat patterns, 808s, swing/groove, chopping samples, and genre-specific beat styles (hip-hop, trap, lo-fi).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "b48699571fd213d3",
+      "comprehended": false,
+      "strand": "advanced-production"
+    },
+    {
+      "id": "music.film_scoring",
+      "label": "Film Scoring",
+      "type": "concept",
+      "description": "Composing music for film and media: spotting, sync, orchestration, building tension, leitmotifs, and working with directors.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "b1f8145d9f3f390d",
+      "comprehended": false,
+      "strand": "advanced-production"
+    },
+    {
+      "id": "music.music_business",
+      "label": "Music Business",
+      "type": "concept",
+      "description": "Distribution (DistroKid, TuneCore), royalties, publishing, sync licensing, building an artist brand, and music marketing strategies.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "74789a89dc50d3ea",
+      "comprehended": false,
+      "strand": "advanced-production"
+    },
+    {
+      "id": "music.electronic_genres",
+      "label": "Electronic Music Genres",
+      "type": "concept",
+      "description": "Understanding genre conventions: house, techno, dubstep, drum & bass, ambient, and lo-fi. BPM ranges, sound palettes, and structures.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "4f123160ffaa495a",
+      "comprehended": false,
+      "strand": "advanced-production"
+    },
+    {
+      "id": "music.live_performance",
+      "label": "Live Performance & DJing",
+      "type": "concept",
+      "description": "Performing with Ableton, DJing basics, beatmatching, setlists, live looping, and integrating hardware controllers for live shows.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "49c3d6fd4fdcf6ac",
+      "comprehended": false,
+      "strand": "advanced-production"
+    },
+    {
+      "id": "music.ear_training",
+      "label": "Ear Training",
+      "type": "concept",
+      "description": "Developing musical ear: interval recognition, chord identification, rhythmic dictation, and critical listening for production quality.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.theory",
+      "bookName": "Music Theory",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "0f8adba1a1f8fdff",
+      "comprehended": false,
+      "strand": "theory"
+    },
+    {
+      "id": "music.effects_processing",
+      "label": "Effects Processing",
+      "type": "concept",
+      "description": "Distortion, saturation, chorus, flanger, phaser, and creative effects. Signal chain order and using effects musically.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "30ff5c57db8d721b",
+      "comprehended": false,
+      "strand": "mixing-mastering"
+    },
+    {
+      "id": "music.audio_editing",
+      "label": "Audio Editing",
+      "type": "concept",
+      "description": "Cutting, trimming, crossfading, comping takes, noise removal, and time-stretching audio clips within a DAW.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.digital",
+      "bookName": "Digital Audio",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "d28f1a6319483ab3",
+      "comprehended": false,
+      "strand": "digital-audio"
+    },
+    {
+      "id": "music.collaboration",
+      "label": "Remote Collaboration",
+      "type": "concept",
+      "description": "Collaborating with other musicians online: stem sharing, project files, Splice, BandLab, and managing remote sessions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "072af6ef81f87684",
+      "comprehended": false,
+      "strand": "advanced-production"
+    },
+    {
+      "id": "music.field_recording",
+      "label": "Field Recording",
+      "type": "concept",
+      "description": "Capturing sounds in the real world: portable recorders, microphone selection, ambient recording, and using field recordings in production.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.digital",
+      "bookName": "Digital Audio",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "d59d15156c0bebc0",
+      "comprehended": false,
+      "strand": "digital-audio"
+    },
+    {
+      "id": "music.podcast_audio",
+      "label": "Podcast & Voice Production",
+      "type": "concept",
+      "description": "Recording and producing spoken-word audio: voice processing chains, room treatment, noise gates, and podcast editing workflow.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "music.production",
+      "bookName": "Production",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "781e0f17ed92d575",
+      "comprehended": false,
+      "strand": "mixing-mastering"
+    }
+  ],
+  "edges": [
+    {
+      "source": "music.notes",
+      "target": "music.scales",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.notes",
+      "target": "music.rhythm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.scales",
+      "target": "music.chords",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.chords",
+      "target": "music.chord_progressions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.rhythm",
+      "target": "music.time_signatures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.chord_progressions",
+      "target": "music.harmony",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.scales",
+      "target": "music.melody",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.harmony",
+      "target": "music.melody",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.scales",
+      "target": "music.keys_modulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.chord_progressions",
+      "target": "music.keys_modulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.notes",
+      "target": "music.ear_training",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.scales",
+      "target": "music.ear_training",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.audio_fundamentals",
+      "target": "music.daw_overview",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.daw_overview",
+      "target": "music.garageband",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.daw_overview",
+      "target": "music.fl_studio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.daw_overview",
+      "target": "music.ableton",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.notes",
+      "target": "music.midi",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.daw_overview",
+      "target": "music.midi",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.audio_fundamentals",
+      "target": "music.audio_recording",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.daw_overview",
+      "target": "music.audio_recording",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.audio_recording",
+      "target": "music.sampling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.midi",
+      "target": "music.virtual_instruments",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.daw_overview",
+      "target": "music.virtual_instruments",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.audio_recording",
+      "target": "music.mixing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.daw_overview",
+      "target": "music.mixing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.audio_fundamentals",
+      "target": "music.eq",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.mixing",
+      "target": "music.eq",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.mixing",
+      "target": "music.compression",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.mixing",
+      "target": "music.reverb",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.eq",
+      "target": "music.mastering",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.compression",
+      "target": "music.mastering",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.melody",
+      "target": "music.arrangement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.chord_progressions",
+      "target": "music.arrangement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.arrangement",
+      "target": "music.song_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.mixing",
+      "target": "music.automation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.audio_recording",
+      "target": "music.vocal_production",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.eq",
+      "target": "music.vocal_production",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.compression",
+      "target": "music.vocal_production",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.eq",
+      "target": "music.effects_processing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.reverb",
+      "target": "music.effects_processing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.virtual_instruments",
+      "target": "music.synthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.audio_fundamentals",
+      "target": "music.synthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.synthesis",
+      "target": "music.sound_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.effects_processing",
+      "target": "music.sound_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.rhythm",
+      "target": "music.beatmaking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.sampling",
+      "target": "music.beatmaking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.midi",
+      "target": "music.beatmaking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.harmony",
+      "target": "music.film_scoring",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.arrangement",
+      "target": "music.film_scoring",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.virtual_instruments",
+      "target": "music.film_scoring",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.mastering",
+      "target": "music.music_business",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.song_structure",
+      "target": "music.music_business",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.beatmaking",
+      "target": "music.electronic_genres",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.synthesis",
+      "target": "music.electronic_genres",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.ableton",
+      "target": "music.live_performance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.electronic_genres",
+      "target": "music.live_performance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.daw_overview",
+      "target": "music.audio_editing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.audio_recording",
+      "target": "music.audio_editing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.mixing",
+      "target": "music.collaboration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.arrangement",
+      "target": "music.collaboration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.audio_recording",
+      "target": "music.field_recording",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.audio_recording",
+      "target": "music.podcast_audio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.eq",
+      "target": "music.podcast_audio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "music.compression",
+      "target": "music.podcast_audio",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

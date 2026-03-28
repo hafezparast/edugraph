@@ -1,0 +1,1158 @@
+{
+  "metadata": {
+    "domain": "financial-literacy",
+    "curriculum": "Financial Literacy Skills Track",
+    "view": "skill-prerequisites",
+    "version": "0.1.0",
+    "description": "Financial literacy skill track from basics to Islamic finance, with prerequisite ordering",
+    "sources": [
+      "Personal Finance fundamentals",
+      "Islamic Finance principles"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "finlit.basics",
+      "name": "Basics",
+      "color": "#22c55e",
+      "order": 1
+    },
+    {
+      "id": "finlit.investing",
+      "name": "Investing",
+      "color": "#3b82f6",
+      "order": 2
+    },
+    {
+      "id": "finlit.credit",
+      "name": "Credit & Debt",
+      "color": "#ef4444",
+      "order": 3
+    },
+    {
+      "id": "finlit.insurance",
+      "name": "Insurance & Protection",
+      "color": "#f59e0b",
+      "order": 4
+    },
+    {
+      "id": "finlit.tax",
+      "name": "Tax & Planning",
+      "color": "#8b5cf6",
+      "order": 5
+    },
+    {
+      "id": "finlit.islamic",
+      "name": "Islamic Finance",
+      "color": "#059669",
+      "order": 6
+    }
+  ],
+  "strands": [
+    {
+      "id": "money-basics",
+      "name": "Money Basics",
+      "color": "#22c55e"
+    },
+    {
+      "id": "investing",
+      "name": "Investing & Wealth",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "credit-debt",
+      "name": "Credit & Debt",
+      "color": "#ef4444"
+    },
+    {
+      "id": "protection",
+      "name": "Insurance & Protection",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "tax-planning",
+      "name": "Tax & Planning",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "islamic-finance",
+      "name": "Islamic Finance",
+      "color": "#059669"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "finlit.income",
+      "label": "Understanding Income",
+      "type": "concept",
+      "description": "Types of income: earned, passive, and portfolio income. Gross vs net income, pay stubs, and income sources.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.basics",
+      "bookName": "Basics",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "2313faa9b5b4d4d1",
+      "comprehended": false,
+      "strand": "money-basics"
+    },
+    {
+      "id": "finlit.expenses",
+      "label": "Tracking Expenses",
+      "type": "concept",
+      "description": "Categorizing and tracking expenses: fixed vs variable, needs vs wants, and expense tracking tools and methods.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.basics",
+      "bookName": "Basics",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "95e1be4c93c5bb1e",
+      "comprehended": false,
+      "strand": "money-basics"
+    },
+    {
+      "id": "finlit.budgeting",
+      "label": "Budgeting",
+      "type": "concept",
+      "description": "Creating and maintaining a budget: 50/30/20 rule, zero-based budgeting, envelope method, and budgeting apps.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.basics",
+      "bookName": "Basics",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "3c6cf4e732bcde8b",
+      "comprehended": false,
+      "strand": "money-basics"
+    },
+    {
+      "id": "finlit.saving",
+      "label": "Saving Strategies",
+      "type": "concept",
+      "description": "Building savings habits: emergency fund, pay-yourself-first, savings goals, high-yield savings accounts, and automating savings.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.basics",
+      "bookName": "Basics",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "41f6928a7754af7c",
+      "comprehended": false,
+      "strand": "money-basics"
+    },
+    {
+      "id": "finlit.banking",
+      "label": "Banking Essentials",
+      "type": "concept",
+      "description": "Understanding banking: checking vs savings accounts, online banking, fees, direct deposit, and choosing a bank.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.basics",
+      "bookName": "Basics",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "64a309f0d80ceda1",
+      "comprehended": false,
+      "strand": "money-basics"
+    },
+    {
+      "id": "finlit.financial_goals",
+      "label": "Setting Financial Goals",
+      "type": "concept",
+      "description": "Setting SMART financial goals: short-term, medium-term, and long-term goals. Prioritizing and tracking progress.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.basics",
+      "bookName": "Basics",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "51403c29cc10f1c4",
+      "comprehended": false,
+      "strand": "money-basics"
+    },
+    {
+      "id": "finlit.time_value_money",
+      "label": "Time Value of Money",
+      "type": "concept",
+      "description": "Understanding that money today is worth more than money tomorrow. Present value, future value, and opportunity cost.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.basics",
+      "bookName": "Basics",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "52de43aabd7158bc",
+      "comprehended": false,
+      "strand": "investing"
+    },
+    {
+      "id": "finlit.inflation",
+      "label": "Inflation",
+      "type": "concept",
+      "description": "Understanding inflation: how it erodes purchasing power, CPI, real vs nominal returns, and protecting against inflation.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.basics",
+      "bookName": "Basics",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "48f633f5636bfb35",
+      "comprehended": false,
+      "strand": "money-basics"
+    },
+    {
+      "id": "finlit.compound_interest",
+      "label": "Compound Interest",
+      "type": "concept",
+      "description": "The power of compound interest: how compounding works, Rule of 72, compound vs simple interest, and starting early.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.investing",
+      "bookName": "Investing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "622b957bf3ea72d1",
+      "comprehended": false,
+      "strand": "investing"
+    },
+    {
+      "id": "finlit.risk_return",
+      "label": "Risk & Return",
+      "type": "concept",
+      "description": "Understanding risk-return tradeoff: types of investment risk, risk tolerance, risk capacity, and risk profiling.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.investing",
+      "bookName": "Investing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "00852494986bb887",
+      "comprehended": false,
+      "strand": "investing"
+    },
+    {
+      "id": "finlit.stocks",
+      "label": "Stocks",
+      "type": "concept",
+      "description": "Stock market basics: what stocks are, how stock exchanges work, buying and selling shares, dividends, and market indices.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.investing",
+      "bookName": "Investing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "a4581240fdcd6647",
+      "comprehended": false,
+      "strand": "investing"
+    },
+    {
+      "id": "finlit.bonds",
+      "label": "Bonds",
+      "type": "concept",
+      "description": "Understanding bonds: how bonds work, coupon rates, yield, maturity, government vs corporate bonds, and bond ratings.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.investing",
+      "bookName": "Investing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "4707150826a2ee00",
+      "comprehended": false,
+      "strand": "investing"
+    },
+    {
+      "id": "finlit.mutual_funds",
+      "label": "Mutual Funds",
+      "type": "concept",
+      "description": "Mutual fund basics: how they work, types (equity, bond, balanced), NAV, expense ratios, and active management.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.investing",
+      "bookName": "Investing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "9793dea4a49ef5ab",
+      "comprehended": false,
+      "strand": "investing"
+    },
+    {
+      "id": "finlit.etfs",
+      "label": "ETFs",
+      "type": "concept",
+      "description": "Exchange-Traded Funds: how ETFs work, ETFs vs mutual funds, index ETFs, sector ETFs, and cost advantages.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.investing",
+      "bookName": "Investing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "6c9aa9e246b9f5e9",
+      "comprehended": false,
+      "strand": "investing"
+    },
+    {
+      "id": "finlit.diversification",
+      "label": "Diversification",
+      "type": "concept",
+      "description": "Portfolio diversification: asset allocation, correlation, rebalancing, and building a diversified investment portfolio.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.investing",
+      "bookName": "Investing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "7c716ae93badc648",
+      "comprehended": false,
+      "strand": "investing"
+    },
+    {
+      "id": "finlit.real_estate",
+      "label": "Real Estate Investing",
+      "type": "concept",
+      "description": "Real estate as investment: rental properties, REITs, property valuation, leverage, and real estate crowdfunding.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.investing",
+      "bookName": "Investing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "4fa58d2de3302e26",
+      "comprehended": false,
+      "strand": "investing"
+    },
+    {
+      "id": "finlit.investment_accounts",
+      "label": "Investment Accounts",
+      "type": "concept",
+      "description": "Types of investment accounts: brokerage accounts, retirement accounts (EPF, PRS), tax-advantaged accounts, and robo-advisors.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.investing",
+      "bookName": "Investing",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "74ee4c324acf99e2",
+      "comprehended": false,
+      "strand": "investing"
+    },
+    {
+      "id": "finlit.credit_score",
+      "label": "Credit Score",
+      "type": "concept",
+      "description": "Understanding credit scores: how they are calculated, factors affecting scores, CCRIS/CTOS reports, and improving your score.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.credit",
+      "bookName": "Credit & Debt",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "d5201b2a0229116c",
+      "comprehended": false,
+      "strand": "credit-debt"
+    },
+    {
+      "id": "finlit.loans",
+      "label": "Loans",
+      "type": "concept",
+      "description": "Types of loans: personal, auto, student, and business loans. Interest rates, terms, collateral, and loan comparison.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.credit",
+      "bookName": "Credit & Debt",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "304beb9aacb1a4eb",
+      "comprehended": false,
+      "strand": "credit-debt"
+    },
+    {
+      "id": "finlit.mortgages",
+      "label": "Mortgages",
+      "type": "concept",
+      "description": "Home financing: mortgage types, down payments, fixed vs variable rates, refinancing, and home affordability calculations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.credit",
+      "bookName": "Credit & Debt",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "ff902927cf31b49f",
+      "comprehended": false,
+      "strand": "credit-debt"
+    },
+    {
+      "id": "finlit.credit_cards",
+      "label": "Credit Cards",
+      "type": "concept",
+      "description": "Using credit cards wisely: how credit cards work, interest charges, minimum payments, rewards, and avoiding debt traps.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.credit",
+      "bookName": "Credit & Debt",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "56b73256a782c348",
+      "comprehended": false,
+      "strand": "credit-debt"
+    },
+    {
+      "id": "finlit.debt_management",
+      "label": "Debt Management",
+      "type": "concept",
+      "description": "Strategies for managing and eliminating debt: snowball vs avalanche methods, debt consolidation, negotiation, and avoiding over-leverage.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.credit",
+      "bookName": "Credit & Debt",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "d2262d94d737563c",
+      "comprehended": false,
+      "strand": "credit-debt"
+    },
+    {
+      "id": "finlit.good_vs_bad_debt",
+      "label": "Good Debt vs Bad Debt",
+      "type": "concept",
+      "description": "Distinguishing productive debt (education, property) from destructive debt (consumer, high-interest). Debt-to-income ratios.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.credit",
+      "bookName": "Credit & Debt",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "4ad720ddb953c0a7",
+      "comprehended": false,
+      "strand": "credit-debt"
+    },
+    {
+      "id": "finlit.life_insurance",
+      "label": "Life Insurance",
+      "type": "concept",
+      "description": "Life insurance fundamentals: term vs whole life, coverage needs, beneficiaries, premiums, and policy comparison.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.insurance",
+      "bookName": "Insurance & Protection",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "03f5fd84d0f9e523",
+      "comprehended": false,
+      "strand": "protection"
+    },
+    {
+      "id": "finlit.health_insurance",
+      "label": "Health Insurance",
+      "type": "concept",
+      "description": "Health insurance: medical cards, hospitalization plans, critical illness coverage, co-pays, and choosing the right plan.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.insurance",
+      "bookName": "Insurance & Protection",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "98c46be7d8e0b2c9",
+      "comprehended": false,
+      "strand": "protection"
+    },
+    {
+      "id": "finlit.property_insurance",
+      "label": "Property Insurance",
+      "type": "concept",
+      "description": "Property and casualty insurance: homeowner's, renter's, auto insurance, liability coverage, and claims process.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.insurance",
+      "bookName": "Insurance & Protection",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "1017f0c3e3f97d7a",
+      "comprehended": false,
+      "strand": "protection"
+    },
+    {
+      "id": "finlit.takaful",
+      "label": "Takaful (Islamic Insurance)",
+      "type": "concept",
+      "description": "Takaful as Shariah-compliant insurance: mutual assistance concept, family takaful, general takaful, and takaful vs conventional insurance.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.insurance",
+      "bookName": "Insurance & Protection",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "2817280f98714154",
+      "comprehended": false,
+      "strand": "islamic-finance"
+    },
+    {
+      "id": "finlit.emergency_planning",
+      "label": "Emergency Financial Planning",
+      "type": "concept",
+      "description": "Preparing for financial emergencies: emergency fund sizing, insurance coverage gaps, and financial safety nets.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.insurance",
+      "bookName": "Insurance & Protection",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "1cd6d2394c15e341",
+      "comprehended": false,
+      "strand": "protection"
+    },
+    {
+      "id": "finlit.income_tax",
+      "label": "Income Tax",
+      "type": "concept",
+      "description": "Understanding income tax: tax brackets, taxable income, deductions, reliefs, and how taxes are calculated.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.tax",
+      "bookName": "Tax & Planning",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "032f7fb2814fe55e",
+      "comprehended": false,
+      "strand": "tax-planning"
+    },
+    {
+      "id": "finlit.tax_filing",
+      "label": "Tax Filing",
+      "type": "concept",
+      "description": "Filing taxes: documentation, deadlines, e-filing, common mistakes, and working with tax professionals.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.tax",
+      "bookName": "Tax & Planning",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "c562fa6fe6bed29e",
+      "comprehended": false,
+      "strand": "tax-planning"
+    },
+    {
+      "id": "finlit.tax_optimization",
+      "label": "Tax Optimization",
+      "type": "concept",
+      "description": "Legal tax optimization: maximizing deductions, tax reliefs, tax-efficient investing, and strategic financial planning.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.tax",
+      "bookName": "Tax & Planning",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "263d3dd98af2f555",
+      "comprehended": false,
+      "strand": "tax-planning"
+    },
+    {
+      "id": "finlit.retirement_planning",
+      "label": "Retirement Planning",
+      "type": "concept",
+      "description": "Planning for retirement: EPF, PRS, private retirement schemes, calculating retirement needs, and withdrawal strategies.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.tax",
+      "bookName": "Tax & Planning",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "0b26d27f5654080d",
+      "comprehended": false,
+      "strand": "tax-planning"
+    },
+    {
+      "id": "finlit.estate_planning",
+      "label": "Estate Planning",
+      "type": "concept",
+      "description": "Estate planning essentials: wills, trusts, power of attorney, beneficiary designations, and inheritance (faraid) planning.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.tax",
+      "bookName": "Tax & Planning",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "bd59f472958a53c9",
+      "comprehended": false,
+      "strand": "tax-planning"
+    },
+    {
+      "id": "finlit.net_worth",
+      "label": "Net Worth Tracking",
+      "type": "concept",
+      "description": "Calculating and tracking net worth: assets vs liabilities, net worth statements, and benchmarking financial progress.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.tax",
+      "bookName": "Tax & Planning",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "7e5f977a53c97bc7",
+      "comprehended": false,
+      "strand": "money-basics"
+    },
+    {
+      "id": "finlit.islamic_banking",
+      "label": "Islamic Banking Principles",
+      "type": "concept",
+      "description": "Foundations of Islamic banking: prohibition of riba (interest), gharar (uncertainty), and maysir (gambling). Profit-loss sharing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.islamic",
+      "bookName": "Islamic Finance",
+      "bookColor": "#059669",
+      "bookOrder": 6,
+      "external_id": "0be7a12b647e7053",
+      "comprehended": false,
+      "strand": "islamic-finance"
+    },
+    {
+      "id": "finlit.islamic_contracts",
+      "label": "Islamic Financial Contracts",
+      "type": "concept",
+      "description": "Key Islamic contracts: murabahah (cost-plus), musharakah (partnership), mudarabah (profit-sharing), ijarah (lease), and istisna.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.islamic",
+      "bookName": "Islamic Finance",
+      "bookColor": "#059669",
+      "bookOrder": 6,
+      "external_id": "4556b1948888d79f",
+      "comprehended": false,
+      "strand": "islamic-finance"
+    },
+    {
+      "id": "finlit.sukuk",
+      "label": "Sukuk (Islamic Bonds)",
+      "type": "concept",
+      "description": "Understanding sukuk: asset-backed securities, types of sukuk, sukuk vs conventional bonds, and sukuk market.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.islamic",
+      "bookName": "Islamic Finance",
+      "bookColor": "#059669",
+      "bookOrder": 6,
+      "external_id": "39cfe6a2859d8ff5",
+      "comprehended": false,
+      "strand": "islamic-finance"
+    },
+    {
+      "id": "finlit.shariah_compliance",
+      "label": "Shariah Compliance",
+      "type": "concept",
+      "description": "Shariah compliance in finance: Shariah advisory councils, screening criteria, Shariah-compliant investments, and halal investing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.islamic",
+      "bookName": "Islamic Finance",
+      "bookColor": "#059669",
+      "bookOrder": 6,
+      "external_id": "77e7a9f5e14eda35",
+      "comprehended": false,
+      "strand": "islamic-finance"
+    },
+    {
+      "id": "finlit.islamic_wealth",
+      "label": "Islamic Wealth Management",
+      "type": "concept",
+      "description": "Wealth management in Islam: zakat, waqf, sadaqah, hibah, and wasiyyah. Integrating Islamic principles into financial planning.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.islamic",
+      "bookName": "Islamic Finance",
+      "bookColor": "#059669",
+      "bookOrder": 6,
+      "external_id": "6fd4ac03ae55eca4",
+      "comprehended": false,
+      "strand": "islamic-finance"
+    },
+    {
+      "id": "finlit.behavioral_finance",
+      "label": "Behavioral Finance",
+      "type": "concept",
+      "description": "Common behavioral biases in finance: loss aversion, anchoring, herd mentality, overconfidence, and emotional spending.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.basics",
+      "bookName": "Basics",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "722c7574c07be099",
+      "comprehended": false,
+      "strand": "money-basics"
+    },
+    {
+      "id": "finlit.scams_fraud",
+      "label": "Financial Scams & Fraud",
+      "type": "concept",
+      "description": "Recognizing financial scams: Ponzi schemes, phishing, identity theft, investment fraud, and protecting yourself.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "finlit.basics",
+      "bookName": "Basics",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "f6e4755fb718bf40",
+      "comprehended": false,
+      "strand": "protection"
+    }
+  ],
+  "edges": [
+    {
+      "source": "finlit.income",
+      "target": "finlit.expenses",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.expenses",
+      "target": "finlit.budgeting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.budgeting",
+      "target": "finlit.saving",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.income",
+      "target": "finlit.banking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.saving",
+      "target": "finlit.financial_goals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.saving",
+      "target": "finlit.time_value_money",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.time_value_money",
+      "target": "finlit.inflation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.time_value_money",
+      "target": "finlit.compound_interest",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.compound_interest",
+      "target": "finlit.risk_return",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.risk_return",
+      "target": "finlit.stocks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.risk_return",
+      "target": "finlit.bonds",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.stocks",
+      "target": "finlit.mutual_funds",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.bonds",
+      "target": "finlit.mutual_funds",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.mutual_funds",
+      "target": "finlit.etfs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.stocks",
+      "target": "finlit.diversification",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.bonds",
+      "target": "finlit.diversification",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.etfs",
+      "target": "finlit.diversification",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.diversification",
+      "target": "finlit.real_estate",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.saving",
+      "target": "finlit.investment_accounts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.risk_return",
+      "target": "finlit.investment_accounts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.banking",
+      "target": "finlit.credit_score",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.credit_score",
+      "target": "finlit.loans",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.credit_score",
+      "target": "finlit.credit_cards",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.loans",
+      "target": "finlit.mortgages",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.credit_cards",
+      "target": "finlit.good_vs_bad_debt",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.loans",
+      "target": "finlit.good_vs_bad_debt",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.good_vs_bad_debt",
+      "target": "finlit.debt_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.saving",
+      "target": "finlit.emergency_planning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.emergency_planning",
+      "target": "finlit.life_insurance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.emergency_planning",
+      "target": "finlit.health_insurance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.mortgages",
+      "target": "finlit.property_insurance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.life_insurance",
+      "target": "finlit.takaful",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.income",
+      "target": "finlit.income_tax",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.income_tax",
+      "target": "finlit.tax_filing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.tax_filing",
+      "target": "finlit.tax_optimization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.financial_goals",
+      "target": "finlit.retirement_planning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.investment_accounts",
+      "target": "finlit.retirement_planning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.retirement_planning",
+      "target": "finlit.estate_planning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.budgeting",
+      "target": "finlit.net_worth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.saving",
+      "target": "finlit.net_worth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.banking",
+      "target": "finlit.islamic_banking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.islamic_banking",
+      "target": "finlit.islamic_contracts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.islamic_contracts",
+      "target": "finlit.sukuk",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.bonds",
+      "target": "finlit.sukuk",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.islamic_banking",
+      "target": "finlit.shariah_compliance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.shariah_compliance",
+      "target": "finlit.islamic_wealth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.estate_planning",
+      "target": "finlit.islamic_wealth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.budgeting",
+      "target": "finlit.behavioral_finance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.banking",
+      "target": "finlit.scams_fraud",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "finlit.risk_return",
+      "target": "finlit.behavioral_finance",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

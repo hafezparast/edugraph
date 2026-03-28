@@ -1,0 +1,1036 @@
+{
+  "metadata": {
+    "domain": "creative-arts",
+    "curriculum": "Creative Writing Skills",
+    "view": "skill-prerequisites",
+    "version": "0.2.0",
+    "description": "Creative writing skill track from storytelling foundations to publishing",
+    "sources": [
+      "Industry-standard creative writing curriculum"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "cwriting.foundations",
+      "name": "Foundations",
+      "color": "#8b5cf6",
+      "order": 1
+    },
+    {
+      "id": "cwriting.fiction",
+      "name": "Fiction",
+      "color": "#ef4444",
+      "order": 2
+    },
+    {
+      "id": "cwriting.nonfiction",
+      "name": "Non-Fiction",
+      "color": "#3b82f6",
+      "order": 3
+    },
+    {
+      "id": "cwriting.poetry",
+      "name": "Poetry",
+      "color": "#22c55e",
+      "order": 4
+    },
+    {
+      "id": "cwriting.publishing",
+      "name": "Publishing",
+      "color": "#f59e0b",
+      "order": 5
+    }
+  ],
+  "strands": [
+    {
+      "id": "craft",
+      "name": "Writing Craft",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "fiction-writing",
+      "name": "Fiction Writing",
+      "color": "#ef4444"
+    },
+    {
+      "id": "nonfiction-writing",
+      "name": "Non-Fiction Writing",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "poetic-craft",
+      "name": "Poetic Craft",
+      "color": "#22c55e"
+    },
+    {
+      "id": "publishing-career",
+      "name": "Publishing & Career",
+      "color": "#f59e0b"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "cwriting.storytelling",
+      "label": "Storytelling Fundamentals",
+      "type": "concept",
+      "description": "The art of narrative: beginning-middle-end structure, conflict, stakes, tension, and the universal elements that make stories compelling.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "bdd8780418028eb6",
+      "comprehended": false,
+      "strand": "craft"
+    },
+    {
+      "id": "cwriting.narrative_structure",
+      "label": "Narrative Structure",
+      "type": "concept",
+      "description": "Story frameworks: three-act structure, Hero's Journey, Freytag's Pyramid, in medias res, and non-linear narrative techniques.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "25f2100fc04fce84",
+      "comprehended": false,
+      "strand": "craft"
+    },
+    {
+      "id": "cwriting.character_dev",
+      "label": "Character Development",
+      "type": "concept",
+      "description": "Creating compelling characters: motivation, flaws, arcs, backstory, character voice, and the distinction between flat and round characters.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "5bc10eab71ab2847",
+      "comprehended": false,
+      "strand": "craft"
+    },
+    {
+      "id": "cwriting.dialogue",
+      "label": "Dialogue",
+      "type": "concept",
+      "description": "Writing natural dialogue: subtext, voice distinction between characters, dialogue tags, pacing conversations, and using dialogue to advance plot.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "7b2a42d386ac4cda",
+      "comprehended": false,
+      "strand": "craft"
+    },
+    {
+      "id": "cwriting.setting",
+      "label": "Setting & Description",
+      "type": "concept",
+      "description": "Creating vivid settings: sensory details, world-building, atmosphere, using setting to reflect mood, and avoiding info-dumps.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "31b0059490c4abd8",
+      "comprehended": false,
+      "strand": "craft"
+    },
+    {
+      "id": "cwriting.voice",
+      "label": "Voice & Style",
+      "type": "concept",
+      "description": "Developing a distinctive authorial voice: tone, diction, sentence rhythm, point of view choices, and finding your unique style.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "1cbd47b9f346d32d",
+      "comprehended": false,
+      "strand": "craft"
+    },
+    {
+      "id": "cwriting.pov",
+      "label": "Point of View",
+      "type": "concept",
+      "description": "First person, second person, third person limited and omniscient. Choosing POV for effect, maintaining consistency, and unreliable narrators.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "2c03e81052f0e5ad",
+      "comprehended": false,
+      "strand": "craft"
+    },
+    {
+      "id": "cwriting.show_dont_tell",
+      "label": "Show, Don't Tell",
+      "type": "concept",
+      "description": "Conveying emotion and information through action, dialogue, and sensory detail rather than exposition. When telling is appropriate.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "142c0933a5a85b6e",
+      "comprehended": false,
+      "strand": "craft"
+    },
+    {
+      "id": "cwriting.short_stories",
+      "label": "Short Story Writing",
+      "type": "concept",
+      "description": "Craft of the short form: economy of language, single-effect principle, epiphanic moments, and submitting to literary magazines.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.fiction",
+      "bookName": "Fiction",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "23d34867f993c66c",
+      "comprehended": false,
+      "strand": "fiction-writing"
+    },
+    {
+      "id": "cwriting.novel_writing",
+      "label": "Novel Writing",
+      "type": "concept",
+      "description": "Long-form fiction: outlining vs pantsing, chapter structure, subplots, pacing across 60-100K words, and sustaining a narrative over months.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.fiction",
+      "bookName": "Fiction",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "234c01795614e1ad",
+      "comprehended": false,
+      "strand": "fiction-writing"
+    },
+    {
+      "id": "cwriting.world_building",
+      "label": "World-Building",
+      "type": "concept",
+      "description": "Creating fictional worlds: magic systems, governments, cultures, economies, and integrating world details without overwhelming the reader.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.fiction",
+      "bookName": "Fiction",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "c1675cbbef1f9771",
+      "comprehended": false,
+      "strand": "fiction-writing"
+    },
+    {
+      "id": "cwriting.genre_conventions",
+      "label": "Genre Conventions",
+      "type": "concept",
+      "description": "Understanding genre expectations: mystery, romance, sci-fi, fantasy, thriller, horror. Meeting reader expectations while offering surprises.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.fiction",
+      "bookName": "Fiction",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "cf92d95ef9bdb367",
+      "comprehended": false,
+      "strand": "fiction-writing"
+    },
+    {
+      "id": "cwriting.plot_techniques",
+      "label": "Plot Techniques",
+      "type": "concept",
+      "description": "Advanced plotting: foreshadowing, red herrings, plot twists, parallel storylines, Chekhov's gun, and managing multiple plot threads.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.fiction",
+      "bookName": "Fiction",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "7168587c6d053325",
+      "comprehended": false,
+      "strand": "fiction-writing"
+    },
+    {
+      "id": "cwriting.conflict",
+      "label": "Conflict & Tension",
+      "type": "concept",
+      "description": "Types of conflict (internal, interpersonal, societal, environmental), raising stakes, building suspense, and maintaining tension throughout a story.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.fiction",
+      "bookName": "Fiction",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "7885d3a02c84239c",
+      "comprehended": false,
+      "strand": "fiction-writing"
+    },
+    {
+      "id": "cwriting.flash_fiction",
+      "label": "Flash Fiction",
+      "type": "concept",
+      "description": "Ultra-short stories (under 1000 words): extreme compression, implied narrative, powerful endings, and micro-fiction techniques.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.fiction",
+      "bookName": "Fiction",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "24deca14f91dec0d",
+      "comprehended": false,
+      "strand": "fiction-writing"
+    },
+    {
+      "id": "cwriting.essays",
+      "label": "Essay Writing",
+      "type": "concept",
+      "description": "Personal essays, argumentative essays, and literary essays. Thesis development, evidence, persuasion, and the essay as a thinking tool.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.nonfiction",
+      "bookName": "Non-Fiction",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "1c2c1aaf29d70eff",
+      "comprehended": false,
+      "strand": "nonfiction-writing"
+    },
+    {
+      "id": "cwriting.journalism",
+      "label": "Journalism",
+      "type": "concept",
+      "description": "News writing, feature articles, investigative journalism, interviewing, fact-checking, ethics, and the inverted pyramid structure.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.nonfiction",
+      "bookName": "Non-Fiction",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "10cb82e40fef7d2b",
+      "comprehended": false,
+      "strand": "nonfiction-writing"
+    },
+    {
+      "id": "cwriting.blogging",
+      "label": "Blogging & Online Writing",
+      "type": "concept",
+      "description": "Writing for the web: SEO basics, readability, headlines, content strategy, building an audience, and platforms (Medium, Substack, WordPress).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.nonfiction",
+      "bookName": "Non-Fiction",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "926bcd963d8d8487",
+      "comprehended": false,
+      "strand": "nonfiction-writing"
+    },
+    {
+      "id": "cwriting.memoir",
+      "label": "Memoir & Personal Narrative",
+      "type": "concept",
+      "description": "Writing from life: selecting defining moments, emotional truth vs factual accuracy, vulnerability, and shaping lived experience into narrative.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.nonfiction",
+      "bookName": "Non-Fiction",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "14d5428ef998a9ff",
+      "comprehended": false,
+      "strand": "nonfiction-writing"
+    },
+    {
+      "id": "cwriting.research_writing",
+      "label": "Research Writing",
+      "type": "concept",
+      "description": "Research-based non-fiction: source evaluation, citation, synthesis of information, and making complex topics accessible to general audiences.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.nonfiction",
+      "bookName": "Non-Fiction",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "7b6108a9b83233bb",
+      "comprehended": false,
+      "strand": "nonfiction-writing"
+    },
+    {
+      "id": "cwriting.poetry_forms",
+      "label": "Poetic Forms",
+      "type": "concept",
+      "description": "Sonnets, haiku, villanelles, ghazals, limericks, and other structured forms. Constraints as creative catalysts.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "f3ceb6dc29a9162c",
+      "comprehended": false,
+      "strand": "poetic-craft"
+    },
+    {
+      "id": "cwriting.meter",
+      "label": "Meter & Rhythm",
+      "type": "concept",
+      "description": "Iambic, trochaic, anapestic, and dactylic meters. Scansion, stressed and unstressed syllables, and rhythm as a tool for meaning.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "6d259fc86b9794cc",
+      "comprehended": false,
+      "strand": "poetic-craft"
+    },
+    {
+      "id": "cwriting.imagery",
+      "label": "Imagery & Sensory Detail",
+      "type": "concept",
+      "description": "Creating vivid images through the five senses. Concrete vs abstract language, and the power of specific, sensory-rich writing.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "584af3700dfb7248",
+      "comprehended": false,
+      "strand": "poetic-craft"
+    },
+    {
+      "id": "cwriting.figurative_language",
+      "label": "Figurative Language",
+      "type": "concept",
+      "description": "Simile, metaphor, personification, hyperbole, synecdoche, metonymy, and other figures of speech. Using figurative language with precision.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "11a59fdaeab8e6cb",
+      "comprehended": false,
+      "strand": "poetic-craft"
+    },
+    {
+      "id": "cwriting.free_verse",
+      "label": "Free Verse",
+      "type": "concept",
+      "description": "Writing without fixed meter or rhyme: line breaks, enjambment, white space, and creating rhythm and form through intentional choices.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "99f8ceb186588dfc",
+      "comprehended": false,
+      "strand": "poetic-craft"
+    },
+    {
+      "id": "cwriting.spoken_word",
+      "label": "Spoken Word & Performance",
+      "type": "concept",
+      "description": "Poetry for performance: vocal delivery, stage presence, memorization, slam poetry conventions, and writing for the ear rather than the page.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "45d77108d90bb072",
+      "comprehended": false,
+      "strand": "poetic-craft"
+    },
+    {
+      "id": "cwriting.sound_devices",
+      "label": "Sound Devices",
+      "type": "concept",
+      "description": "Alliteration, assonance, consonance, onomatopoeia, rhyme (end, internal, slant), and using sound to reinforce meaning in poetry and prose.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.poetry",
+      "bookName": "Poetry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "ee00d1dce68dea2b",
+      "comprehended": false,
+      "strand": "poetic-craft"
+    },
+    {
+      "id": "cwriting.editing",
+      "label": "Self-Editing & Revision",
+      "type": "concept",
+      "description": "Revision strategies: macro editing (structure, plot), line editing (prose quality), copyediting, and developing a critical eye for your own work.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.publishing",
+      "bookName": "Publishing",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "bf36dc504a2ff34b",
+      "comprehended": false,
+      "strand": "publishing-career"
+    },
+    {
+      "id": "cwriting.feedback",
+      "label": "Workshops & Feedback",
+      "type": "concept",
+      "description": "Writing workshops, critique groups, beta readers, and giving/receiving constructive feedback. The revision cycle and incorporating notes.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.publishing",
+      "bookName": "Publishing",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "c78c70e02a3f5bad",
+      "comprehended": false,
+      "strand": "publishing-career"
+    },
+    {
+      "id": "cwriting.querying",
+      "label": "Querying Agents",
+      "type": "concept",
+      "description": "The traditional publishing path: writing query letters, synopses, finding literary agents, submission etiquette, and handling rejection.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.publishing",
+      "bookName": "Publishing",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "4bf9495b606e30ab",
+      "comprehended": false,
+      "strand": "publishing-career"
+    },
+    {
+      "id": "cwriting.self_publishing",
+      "label": "Self-Publishing",
+      "type": "concept",
+      "description": "Independent publishing: Amazon KDP, formatting, cover design, pricing, marketing, and building a direct relationship with readers.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.publishing",
+      "bookName": "Publishing",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "7f55a1326faf3ba7",
+      "comprehended": false,
+      "strand": "publishing-career"
+    },
+    {
+      "id": "cwriting.portfolio",
+      "label": "Writing Portfolio",
+      "type": "concept",
+      "description": "Building a body of work: selecting pieces, creating a writer website, submitting to publications, and developing a professional writing presence.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.publishing",
+      "bookName": "Publishing",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "c15a30c063034165",
+      "comprehended": false,
+      "strand": "publishing-career"
+    },
+    {
+      "id": "cwriting.writing_habits",
+      "label": "Writing Habits & Discipline",
+      "type": "concept",
+      "description": "Building a writing practice: daily word counts, overcoming writer's block, routines, accountability, and treating writing as a craft.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "4a889037c7f6b1d6",
+      "comprehended": false,
+      "strand": "craft"
+    },
+    {
+      "id": "cwriting.reading_as_writer",
+      "label": "Reading as a Writer",
+      "type": "concept",
+      "description": "Analytical reading: studying craft choices in published work, identifying techniques, and learning from both great and flawed writing.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cwriting.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "4bfef7ed3cac49c5",
+      "comprehended": false,
+      "strand": "craft"
+    }
+  ],
+  "edges": [
+    {
+      "source": "cwriting.storytelling",
+      "target": "cwriting.narrative_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.storytelling",
+      "target": "cwriting.character_dev",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.character_dev",
+      "target": "cwriting.dialogue",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.storytelling",
+      "target": "cwriting.setting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.storytelling",
+      "target": "cwriting.voice",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.voice",
+      "target": "cwriting.pov",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.setting",
+      "target": "cwriting.show_dont_tell",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.dialogue",
+      "target": "cwriting.show_dont_tell",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.storytelling",
+      "target": "cwriting.writing_habits",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.storytelling",
+      "target": "cwriting.reading_as_writer",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.narrative_structure",
+      "target": "cwriting.short_stories",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.show_dont_tell",
+      "target": "cwriting.short_stories",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.pov",
+      "target": "cwriting.short_stories",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.short_stories",
+      "target": "cwriting.flash_fiction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.short_stories",
+      "target": "cwriting.novel_writing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.narrative_structure",
+      "target": "cwriting.novel_writing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.setting",
+      "target": "cwriting.world_building",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.novel_writing",
+      "target": "cwriting.world_building",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.reading_as_writer",
+      "target": "cwriting.genre_conventions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.novel_writing",
+      "target": "cwriting.genre_conventions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.narrative_structure",
+      "target": "cwriting.plot_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.short_stories",
+      "target": "cwriting.plot_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.storytelling",
+      "target": "cwriting.conflict",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.character_dev",
+      "target": "cwriting.conflict",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.voice",
+      "target": "cwriting.essays",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.show_dont_tell",
+      "target": "cwriting.essays",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.essays",
+      "target": "cwriting.journalism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.essays",
+      "target": "cwriting.blogging",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.voice",
+      "target": "cwriting.blogging",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.character_dev",
+      "target": "cwriting.memoir",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.essays",
+      "target": "cwriting.memoir",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.show_dont_tell",
+      "target": "cwriting.memoir",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.journalism",
+      "target": "cwriting.research_writing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.essays",
+      "target": "cwriting.research_writing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.setting",
+      "target": "cwriting.imagery",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.show_dont_tell",
+      "target": "cwriting.imagery",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.imagery",
+      "target": "cwriting.figurative_language",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.figurative_language",
+      "target": "cwriting.poetry_forms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.voice",
+      "target": "cwriting.meter",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.poetry_forms",
+      "target": "cwriting.meter",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.figurative_language",
+      "target": "cwriting.free_verse",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.imagery",
+      "target": "cwriting.free_verse",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.imagery",
+      "target": "cwriting.sound_devices",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.meter",
+      "target": "cwriting.sound_devices",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.free_verse",
+      "target": "cwriting.spoken_word",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.sound_devices",
+      "target": "cwriting.spoken_word",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.short_stories",
+      "target": "cwriting.editing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.reading_as_writer",
+      "target": "cwriting.editing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.editing",
+      "target": "cwriting.feedback",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.feedback",
+      "target": "cwriting.querying",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.novel_writing",
+      "target": "cwriting.querying",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.editing",
+      "target": "cwriting.self_publishing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.feedback",
+      "target": "cwriting.self_publishing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.querying",
+      "target": "cwriting.portfolio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.self_publishing",
+      "target": "cwriting.portfolio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cwriting.blogging",
+      "target": "cwriting.portfolio",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

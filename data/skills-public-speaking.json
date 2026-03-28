@@ -1,0 +1,910 @@
+{
+  "metadata": {
+    "domain": "public-speaking",
+    "curriculum": "Public Speaking Skills Track",
+    "view": "skill-prerequisites",
+    "version": "0.1.0",
+    "description": "Public speaking skill track from foundations to advanced performance, with prerequisite ordering",
+    "sources": [
+      "Toastmasters International curriculum",
+      "Communication studies"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "speak.foundations",
+      "name": "Foundations",
+      "color": "#8b5cf6",
+      "order": 1
+    },
+    {
+      "id": "speak.structure",
+      "name": "Structure",
+      "color": "#3b82f6",
+      "order": 2
+    },
+    {
+      "id": "speak.advanced",
+      "name": "Advanced",
+      "color": "#ef4444",
+      "order": 3
+    }
+  ],
+  "strands": [
+    {
+      "id": "delivery",
+      "name": "Delivery & Presence",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "content",
+      "name": "Content & Structure",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "performance",
+      "name": "Advanced Performance",
+      "color": "#ef4444"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "speak.overcoming_fear",
+      "label": "Overcoming Fear of Speaking",
+      "type": "concept",
+      "description": "Understanding and managing glossophobia: breathing techniques, visualization, gradual exposure, and reframing anxiety as excitement.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "6a4e08ee97fd8d52",
+      "comprehended": false,
+      "strand": "delivery"
+    },
+    {
+      "id": "speak.body_language",
+      "label": "Body Language",
+      "type": "concept",
+      "description": "Non-verbal communication: posture, gestures, movement on stage, open vs closed body language, and conveying confidence.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "13c484860164682a",
+      "comprehended": false,
+      "strand": "delivery"
+    },
+    {
+      "id": "speak.voice_projection",
+      "label": "Voice Projection & Control",
+      "type": "concept",
+      "description": "Using your voice effectively: volume, pace, pitch variation, pausing, articulation, and vocal warm-up exercises.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "003c1d0f44095dfe",
+      "comprehended": false,
+      "strand": "delivery"
+    },
+    {
+      "id": "speak.eye_contact",
+      "label": "Eye Contact",
+      "type": "concept",
+      "description": "Making effective eye contact: scanning techniques, connecting with audience segments, and building rapport through gaze.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "7a308e6a1cd2cbe9",
+      "comprehended": false,
+      "strand": "delivery"
+    },
+    {
+      "id": "speak.confidence",
+      "label": "Building Confidence",
+      "type": "concept",
+      "description": "Developing speaker confidence through preparation, practice routines, positive self-talk, and embracing vulnerability.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "d633be895a206d64",
+      "comprehended": false,
+      "strand": "delivery"
+    },
+    {
+      "id": "speak.audience_awareness",
+      "label": "Audience Awareness",
+      "type": "concept",
+      "description": "Understanding your audience: demographics, expectations, knowledge level, and adapting your message accordingly.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "24e1a83890831c35",
+      "comprehended": false,
+      "strand": "content"
+    },
+    {
+      "id": "speak.active_listening",
+      "label": "Active Listening",
+      "type": "concept",
+      "description": "Listening skills for speakers: reading audience cues, responding to feedback, and adapting in real-time.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "70df38b541364c1b",
+      "comprehended": false,
+      "strand": "delivery"
+    },
+    {
+      "id": "speak.filler_words",
+      "label": "Eliminating Filler Words",
+      "type": "concept",
+      "description": "Identifying and reducing filler words (um, uh, like): pausing techniques, self-awareness exercises, and practice drills.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "08b1bcbeee7547e8",
+      "comprehended": false,
+      "strand": "delivery"
+    },
+    {
+      "id": "speak.microphone_technique",
+      "label": "Microphone Technique",
+      "type": "concept",
+      "description": "Using microphones: handheld, lapel, and headset mics. Distance, angle, handling, and avoiding feedback.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "b54802c856f029d5",
+      "comprehended": false,
+      "strand": "delivery"
+    },
+    {
+      "id": "speak.speech_structure",
+      "label": "Speech Structure",
+      "type": "concept",
+      "description": "Organizing a speech: introduction, body, conclusion. Hook, thesis, main points, transitions, and memorable closings.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.structure",
+      "bookName": "Structure",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "5384a5d63b59bccc",
+      "comprehended": false,
+      "strand": "content"
+    },
+    {
+      "id": "speak.storytelling",
+      "label": "Storytelling",
+      "type": "concept",
+      "description": "The art of storytelling in speeches: narrative arcs, personal anecdotes, emotional engagement, and story selection.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.structure",
+      "bookName": "Structure",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "a62aafbd83d0f54d",
+      "comprehended": false,
+      "strand": "content"
+    },
+    {
+      "id": "speak.persuasion",
+      "label": "Persuasion Techniques",
+      "type": "concept",
+      "description": "Persuasive speaking: ethos, pathos, logos. Call to action, social proof, and influencing audience beliefs and behaviors.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.structure",
+      "bookName": "Structure",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "44c61a8329f498a5",
+      "comprehended": false,
+      "strand": "content"
+    },
+    {
+      "id": "speak.rhetoric",
+      "label": "Rhetoric & Rhetorical Devices",
+      "type": "concept",
+      "description": "Classical rhetoric: anaphora, tricolon, antithesis, metaphor, chiasmus, and other devices that make speeches memorable.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.structure",
+      "bookName": "Structure",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "c42679c55bc80c42",
+      "comprehended": false,
+      "strand": "content"
+    },
+    {
+      "id": "speak.humor",
+      "label": "Using Humor",
+      "type": "concept",
+      "description": "Incorporating humor into speeches: timing, self-deprecation, callbacks, and knowing your audience's humor preferences.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.structure",
+      "bookName": "Structure",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "a0d61942fa9114d7",
+      "comprehended": false,
+      "strand": "content"
+    },
+    {
+      "id": "speak.opening_closing",
+      "label": "Powerful Openings & Closings",
+      "type": "concept",
+      "description": "Crafting memorable openings (questions, quotes, stories, startling facts) and strong closings (callbacks, calls to action).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.structure",
+      "bookName": "Structure",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "40aa0a9ac8e418e1",
+      "comprehended": false,
+      "strand": "content"
+    },
+    {
+      "id": "speak.audience_interaction",
+      "label": "Audience Interaction",
+      "type": "concept",
+      "description": "Engaging the audience: Q&A sessions, polls, show of hands, group activities, and handling difficult questions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.structure",
+      "bookName": "Structure",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "0f6f0f6525431fcb",
+      "comprehended": false,
+      "strand": "delivery"
+    },
+    {
+      "id": "speak.visual_aids",
+      "label": "Visual Aids & Props",
+      "type": "concept",
+      "description": "Using visual aids effectively: when to use slides, props, flip charts, and how to support (not replace) your message.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.structure",
+      "bookName": "Structure",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "765ce5efcd9e1953",
+      "comprehended": false,
+      "strand": "content"
+    },
+    {
+      "id": "speak.speech_writing",
+      "label": "Speech Writing",
+      "type": "concept",
+      "description": "Writing speeches for oral delivery: conversational tone, word choice, sentence length, and writing for the ear vs the eye.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.structure",
+      "bookName": "Structure",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "5fee7a8429e3434a",
+      "comprehended": false,
+      "strand": "content"
+    },
+    {
+      "id": "speak.debate",
+      "label": "Debate",
+      "type": "concept",
+      "description": "Debate skills: constructing arguments, rebuttals, cross-examination, parliamentary and competitive debate formats.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "67413bf2500b25ef",
+      "comprehended": false,
+      "strand": "performance"
+    },
+    {
+      "id": "speak.impromptu",
+      "label": "Impromptu Speaking",
+      "type": "concept",
+      "description": "Speaking without preparation: frameworks (PREP, past-present-future), thinking on your feet, and structured improvisation.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "caf42b6156167699",
+      "comprehended": false,
+      "strand": "performance"
+    },
+    {
+      "id": "speak.presentation_design",
+      "label": "Presentation Design",
+      "type": "concept",
+      "description": "Designing effective presentations: slide design principles, data visualization, minimal text, and tools (PowerPoint, Keynote, Canva).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "f0f9ec5cf0f1b17e",
+      "comprehended": false,
+      "strand": "content"
+    },
+    {
+      "id": "speak.ted_style",
+      "label": "TED-Style Talks",
+      "type": "concept",
+      "description": "Delivering TED-style presentations: idea worth spreading, 18-minute format, rehearsal process, and storytelling-driven structure.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "68837a0b72d2fde6",
+      "comprehended": false,
+      "strand": "performance"
+    },
+    {
+      "id": "speak.mc_skills",
+      "label": "MC & Emcee Skills",
+      "type": "concept",
+      "description": "Hosting events: introductions, transitions, time management, energy management, and keeping audiences engaged between segments.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "b1a671afc66d5e85",
+      "comprehended": false,
+      "strand": "performance"
+    },
+    {
+      "id": "speak.virtual_speaking",
+      "label": "Virtual Speaking",
+      "type": "concept",
+      "description": "Speaking in virtual settings: camera presence, lighting, engagement in Zoom/Teams, and adapting techniques for online delivery.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "e3d9a82bfcfbc8b3",
+      "comprehended": false,
+      "strand": "delivery"
+    },
+    {
+      "id": "speak.panel_discussions",
+      "label": "Panel Discussions",
+      "type": "concept",
+      "description": "Participating in and moderating panel discussions: preparation, concise answers, building on others' points, and moderation skills.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "ed1f3835534d28b9",
+      "comprehended": false,
+      "strand": "performance"
+    },
+    {
+      "id": "speak.speech_evaluation",
+      "label": "Speech Evaluation & Feedback",
+      "type": "concept",
+      "description": "Evaluating speeches: constructive feedback, self-assessment, recording and reviewing, and continuous improvement.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "9e51f1d457695bf0",
+      "comprehended": false,
+      "strand": "delivery"
+    },
+    {
+      "id": "speak.emotional_intelligence",
+      "label": "Emotional Intelligence for Speakers",
+      "type": "concept",
+      "description": "Using emotional intelligence: empathy, self-awareness, reading the room, and connecting emotionally with your audience.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.structure",
+      "bookName": "Structure",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "cfdddf8346ea3dea",
+      "comprehended": false,
+      "strand": "delivery"
+    },
+    {
+      "id": "speak.handling_mistakes",
+      "label": "Handling Mistakes & Recovery",
+      "type": "concept",
+      "description": "Recovering from mistakes: forgotten lines, technical failures, hecklers, and maintaining composure under pressure.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "8f66bee86a38597a",
+      "comprehended": false,
+      "strand": "performance"
+    },
+    {
+      "id": "speak.storytelling_advanced",
+      "label": "Advanced Storytelling",
+      "type": "concept",
+      "description": "Advanced narrative techniques: nested stories, callbacks, suspense, sensory details, and story banks for speakers.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "dacd6fad0eb66432",
+      "comprehended": false,
+      "strand": "content"
+    },
+    {
+      "id": "speak.stage_presence",
+      "label": "Stage Presence & Charisma",
+      "type": "concept",
+      "description": "Developing commanding stage presence: owning the stage, energy management, charisma techniques, and authentic presence.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "b510e9b3de787b9a",
+      "comprehended": false,
+      "strand": "performance"
+    },
+    {
+      "id": "speak.preparation_rehearsal",
+      "label": "Preparation & Rehearsal",
+      "type": "concept",
+      "description": "Effective preparation: rehearsal techniques, memorization vs notes, timing practice, and venue preparation.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "speak.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "9d416cce8802447c",
+      "comprehended": false,
+      "strand": "content"
+    }
+  ],
+  "edges": [
+    {
+      "source": "speak.overcoming_fear",
+      "target": "speak.body_language",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.overcoming_fear",
+      "target": "speak.voice_projection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.overcoming_fear",
+      "target": "speak.eye_contact",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.overcoming_fear",
+      "target": "speak.confidence",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.body_language",
+      "target": "speak.audience_awareness",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.voice_projection",
+      "target": "speak.filler_words",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.voice_projection",
+      "target": "speak.microphone_technique",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.eye_contact",
+      "target": "speak.active_listening",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.confidence",
+      "target": "speak.preparation_rehearsal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.audience_awareness",
+      "target": "speak.speech_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.preparation_rehearsal",
+      "target": "speak.speech_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.filler_words",
+      "target": "speak.speech_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.speech_structure",
+      "target": "speak.opening_closing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.speech_structure",
+      "target": "speak.storytelling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.speech_structure",
+      "target": "speak.speech_writing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.storytelling",
+      "target": "speak.persuasion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.persuasion",
+      "target": "speak.rhetoric",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.storytelling",
+      "target": "speak.humor",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.active_listening",
+      "target": "speak.audience_interaction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.audience_awareness",
+      "target": "speak.audience_interaction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.speech_structure",
+      "target": "speak.visual_aids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.audience_awareness",
+      "target": "speak.emotional_intelligence",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.active_listening",
+      "target": "speak.emotional_intelligence",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.confidence",
+      "target": "speak.speech_evaluation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.speech_evaluation",
+      "target": "speak.speech_structure",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.rhetoric",
+      "target": "speak.debate",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.persuasion",
+      "target": "speak.debate",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.audience_interaction",
+      "target": "speak.impromptu",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.filler_words",
+      "target": "speak.impromptu",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.visual_aids",
+      "target": "speak.presentation_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.storytelling",
+      "target": "speak.ted_style",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.presentation_design",
+      "target": "speak.ted_style",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.opening_closing",
+      "target": "speak.ted_style",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.audience_interaction",
+      "target": "speak.mc_skills",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.impromptu",
+      "target": "speak.mc_skills",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.humor",
+      "target": "speak.mc_skills",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.microphone_technique",
+      "target": "speak.virtual_speaking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.eye_contact",
+      "target": "speak.virtual_speaking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.impromptu",
+      "target": "speak.panel_discussions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.audience_interaction",
+      "target": "speak.panel_discussions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.confidence",
+      "target": "speak.handling_mistakes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.impromptu",
+      "target": "speak.handling_mistakes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.storytelling",
+      "target": "speak.storytelling_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.humor",
+      "target": "speak.storytelling_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.body_language",
+      "target": "speak.stage_presence",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.emotional_intelligence",
+      "target": "speak.stage_presence",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "speak.confidence",
+      "target": "speak.stage_presence",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

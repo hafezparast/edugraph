@@ -1,0 +1,1276 @@
+{
+  "metadata": {
+    "domain": "creative-arts",
+    "curriculum": "Digital Art Skills",
+    "view": "skill-prerequisites",
+    "version": "0.2.0",
+    "description": "Digital art skill track from drawing foundations to animation and concept art",
+    "sources": [
+      "Industry-standard digital art curriculum"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "digart.drawing",
+      "name": "Drawing Foundations",
+      "color": "#8b5cf6",
+      "order": 1
+    },
+    {
+      "id": "digart.painting",
+      "name": "Digital Painting",
+      "color": "#3b82f6",
+      "order": 2
+    },
+    {
+      "id": "digart.character",
+      "name": "Character Design",
+      "color": "#ef4444",
+      "order": 3
+    },
+    {
+      "id": "digart.environment",
+      "name": "Environment & Concept Art",
+      "color": "#22c55e",
+      "order": 4
+    },
+    {
+      "id": "digart.animation",
+      "name": "Animation",
+      "color": "#f59e0b",
+      "order": 5
+    }
+  ],
+  "strands": [
+    {
+      "id": "fundamentals",
+      "name": "Drawing Fundamentals",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "digital-painting",
+      "name": "Digital Painting",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "character-art",
+      "name": "Character Art",
+      "color": "#ef4444"
+    },
+    {
+      "id": "environment-art",
+      "name": "Environment Art",
+      "color": "#22c55e"
+    },
+    {
+      "id": "animation-motion",
+      "name": "Animation & Motion",
+      "color": "#f59e0b"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "digart.line",
+      "label": "Line & Mark-Making",
+      "type": "concept",
+      "description": "Qualities of line: weight, direction, texture, and expression. Contour drawing, hatching, cross-hatching, and building confidence in mark-making.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.drawing",
+      "bookName": "Drawing Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "64ec8ac9e77c32bb",
+      "comprehended": false,
+      "strand": "fundamentals"
+    },
+    {
+      "id": "digart.shape",
+      "label": "Shape & Silhouette",
+      "type": "concept",
+      "description": "Using basic shapes (circles, squares, triangles) as building blocks. Silhouette readability and designing with clear shape language.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.drawing",
+      "bookName": "Drawing Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "213c99521dc21bd4",
+      "comprehended": false,
+      "strand": "fundamentals"
+    },
+    {
+      "id": "digart.form",
+      "label": "Form & Volume",
+      "type": "concept",
+      "description": "Turning 2D shapes into 3D forms: spheres, cubes, cylinders. Understanding light on form, shading, and creating the illusion of depth.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.drawing",
+      "bookName": "Drawing Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "e297770f17d3dcad",
+      "comprehended": false,
+      "strand": "fundamentals"
+    },
+    {
+      "id": "digart.perspective",
+      "label": "Perspective",
+      "type": "concept",
+      "description": "One-point, two-point, and three-point perspective. Vanishing points, horizon lines, foreshortening, and drawing objects in space.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.drawing",
+      "bookName": "Drawing Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "ca9f35bcf6b867d1",
+      "comprehended": false,
+      "strand": "fundamentals"
+    },
+    {
+      "id": "digart.proportion",
+      "label": "Proportion & Measurement",
+      "type": "concept",
+      "description": "Measuring and comparing proportions: sight-sizing, comparative measurement, head-to-body ratios, and maintaining consistent scale.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.drawing",
+      "bookName": "Drawing Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "cd3cc8374fbbf3a1",
+      "comprehended": false,
+      "strand": "fundamentals"
+    },
+    {
+      "id": "digart.gesture",
+      "label": "Gesture Drawing",
+      "type": "concept",
+      "description": "Capturing movement, energy, and flow in quick sketches. Line of action, rhythm, and timed gesture practice for dynamic poses.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.drawing",
+      "bookName": "Drawing Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "364a7443db341977",
+      "comprehended": false,
+      "strand": "fundamentals"
+    },
+    {
+      "id": "digart.anatomy_basics",
+      "label": "Anatomy Basics",
+      "type": "concept",
+      "description": "Skeletal structure, major muscle groups, body landmarks, and simplified anatomy for artists. Drawing the human figure with anatomical accuracy.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.drawing",
+      "bookName": "Drawing Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "7f5bae4f32b13d75",
+      "comprehended": false,
+      "strand": "fundamentals"
+    },
+    {
+      "id": "digart.value_shading",
+      "label": "Value & Shading",
+      "type": "concept",
+      "description": "Value scales, light and shadow (cast shadow, core shadow, reflected light, highlight), and using value to create depth and mood.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.drawing",
+      "bookName": "Drawing Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "da9417109b55b779",
+      "comprehended": false,
+      "strand": "fundamentals"
+    },
+    {
+      "id": "digart.composition_drawing",
+      "label": "Composition for Artists",
+      "type": "concept",
+      "description": "Arranging elements in a frame: focal point, rule of thirds, tangent avoidance, leading the eye, and thumbnail sketching.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.drawing",
+      "bookName": "Drawing Foundations",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "770001c4a10ee06c",
+      "comprehended": false,
+      "strand": "fundamentals"
+    },
+    {
+      "id": "digart.procreate",
+      "label": "Procreate",
+      "type": "concept",
+      "description": "iPad drawing app: canvas setup, gesture controls, brush library, layers, blend modes, clipping masks, and exporting artwork.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.painting",
+      "bookName": "Digital Painting",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "21b26aab3fe40214",
+      "comprehended": false,
+      "strand": "digital-painting"
+    },
+    {
+      "id": "digart.photoshop_painting",
+      "label": "Photoshop for Painting",
+      "type": "concept",
+      "description": "Digital painting in Photoshop: brush engine, custom brushes, layer management, adjustment layers, and painting workflow.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.painting",
+      "bookName": "Digital Painting",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "9f3ae81e7baa74d8",
+      "comprehended": false,
+      "strand": "digital-painting"
+    },
+    {
+      "id": "digart.krita",
+      "label": "Krita",
+      "type": "concept",
+      "description": "Free open-source painting application: brush presets, pop-up palette, assistants, vector layers, and animation timeline.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.painting",
+      "bookName": "Digital Painting",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "a910a5c46880c454",
+      "comprehended": false,
+      "strand": "digital-painting"
+    },
+    {
+      "id": "digart.brushes",
+      "label": "Brushes & Textures",
+      "type": "concept",
+      "description": "Understanding brush settings: opacity, flow, spacing, scatter. Creating custom brushes, using texture brushes, and brush economy.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.painting",
+      "bookName": "Digital Painting",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "7eca80342a119f59",
+      "comprehended": false,
+      "strand": "digital-painting"
+    },
+    {
+      "id": "digart.layers",
+      "label": "Layers & Blend Modes",
+      "type": "concept",
+      "description": "Layer types, blend modes (multiply, screen, overlay, color dodge), clipping masks, layer groups, and non-destructive workflow.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.painting",
+      "bookName": "Digital Painting",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "35fef200087699ff",
+      "comprehended": false,
+      "strand": "digital-painting"
+    },
+    {
+      "id": "digart.blending",
+      "label": "Blending & Rendering",
+      "type": "concept",
+      "description": "Blending techniques: hard vs soft edges, smudging, color picking, and rendering materials (skin, metal, fabric, glass).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.painting",
+      "bookName": "Digital Painting",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "f6b59a02bf00dd08",
+      "comprehended": false,
+      "strand": "digital-painting"
+    },
+    {
+      "id": "digart.digital_lighting",
+      "label": "Lighting in Digital Art",
+      "type": "concept",
+      "description": "Painting light: direct light, ambient light, rim light, subsurface scattering, and mood through lighting choices. Lighting scenarios and studies.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.painting",
+      "bookName": "Digital Painting",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "df9472f76bf82e0f",
+      "comprehended": false,
+      "strand": "digital-painting"
+    },
+    {
+      "id": "digart.digital_color",
+      "label": "Color for Digital Artists",
+      "type": "concept",
+      "description": "Color theory applied to digital painting: hue shifting in shadows, warm/cool contrast, limited palettes, and color harmony in illustrations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.painting",
+      "bookName": "Digital Painting",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "3e7d96602f29d012",
+      "comprehended": false,
+      "strand": "digital-painting"
+    },
+    {
+      "id": "digart.painting_process",
+      "label": "Painting Process & Workflow",
+      "type": "concept",
+      "description": "Step-by-step painting process: thumbnail, sketch, block-in, refine, detail, and polish. Time management and iterative refinement.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.painting",
+      "bookName": "Digital Painting",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "3fc095ac322c7140",
+      "comprehended": false,
+      "strand": "digital-painting"
+    },
+    {
+      "id": "digart.character_concepts",
+      "label": "Character Concepts",
+      "type": "concept",
+      "description": "Developing original characters: backstory, personality traits, visual archetypes, research, and iterative concept exploration.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.character",
+      "bookName": "Character Design",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "13747f67f432c5aa",
+      "comprehended": false,
+      "strand": "character-art"
+    },
+    {
+      "id": "digart.expressions",
+      "label": "Facial Expressions",
+      "type": "concept",
+      "description": "Drawing emotions: facial action coding, expression sheets, exaggeration for style, and conveying personality through the face.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.character",
+      "bookName": "Character Design",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "b000e3a540e26e0c",
+      "comprehended": false,
+      "strand": "character-art"
+    },
+    {
+      "id": "digart.poses",
+      "label": "Dynamic Poses",
+      "type": "concept",
+      "description": "Action poses, contrapposto, weight distribution, foreshortened limbs, and creating energy through pose design.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.character",
+      "bookName": "Character Design",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "dc5a9d9453d853ea",
+      "comprehended": false,
+      "strand": "character-art"
+    },
+    {
+      "id": "digart.turnarounds",
+      "label": "Turnarounds & Model Sheets",
+      "type": "concept",
+      "description": "Drawing characters from front, side, three-quarter, and back views. Maintaining proportions across views for production consistency.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.character",
+      "bookName": "Character Design",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "645ff2e0f8763eab",
+      "comprehended": false,
+      "strand": "character-art"
+    },
+    {
+      "id": "digart.character_sheets",
+      "label": "Character Sheets",
+      "type": "concept",
+      "description": "Comprehensive character documentation: outfit variations, accessories, color callouts, expression sheets, and production notes.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.character",
+      "bookName": "Character Design",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "4700c7baadf801f9",
+      "comprehended": false,
+      "strand": "character-art"
+    },
+    {
+      "id": "digart.costume_design",
+      "label": "Costume & Outfit Design",
+      "type": "concept",
+      "description": "Designing clothing and armor: fabric behavior, historical reference, functional design, and using costume to communicate character.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.character",
+      "bookName": "Character Design",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "3ee0f6123ea95f50",
+      "comprehended": false,
+      "strand": "character-art"
+    },
+    {
+      "id": "digart.creature_design",
+      "label": "Creature Design",
+      "type": "concept",
+      "description": "Designing believable creatures: combining animal references, functional anatomy, personality in non-human characters, and visual plausibility.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.character",
+      "bookName": "Character Design",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "5f79991a4f5e03f9",
+      "comprehended": false,
+      "strand": "character-art"
+    },
+    {
+      "id": "digart.landscapes",
+      "label": "Landscape Painting",
+      "type": "concept",
+      "description": "Digital landscape art: atmospheric perspective, sky and clouds, water, foliage, terrain, and creating depth in natural scenes.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.environment",
+      "bookName": "Environment & Concept Art",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "aeb2006679eccf15",
+      "comprehended": false,
+      "strand": "environment-art"
+    },
+    {
+      "id": "digart.architecture",
+      "label": "Architectural Drawing",
+      "type": "concept",
+      "description": "Drawing buildings and structures: architectural styles, perspective grids, scale, detail levels, and integrating structures into scenes.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.environment",
+      "bookName": "Environment & Concept Art",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "02710a756cdd7eec",
+      "comprehended": false,
+      "strand": "environment-art"
+    },
+    {
+      "id": "digart.mood",
+      "label": "Mood & Atmosphere",
+      "type": "concept",
+      "description": "Creating emotional tone through color, lighting, weather, and composition. Color scripts, mood boards, and atmospheric effects.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.environment",
+      "bookName": "Environment & Concept Art",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "6fbaf907e6b1f6b5",
+      "comprehended": false,
+      "strand": "environment-art"
+    },
+    {
+      "id": "digart.visual_storytelling",
+      "label": "Visual Storytelling",
+      "type": "concept",
+      "description": "Telling stories through single images: narrative composition, environmental storytelling, visual clues, and cinematic framing.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.environment",
+      "bookName": "Environment & Concept Art",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "9cb42e1e896ca596",
+      "comprehended": false,
+      "strand": "environment-art"
+    },
+    {
+      "id": "digart.prop_design",
+      "label": "Prop & Object Design",
+      "type": "concept",
+      "description": "Designing props, vehicles, and objects: functional design, material indication, callout sheets, and world-building through objects.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.environment",
+      "bookName": "Environment & Concept Art",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "4ca57374618c1537",
+      "comprehended": false,
+      "strand": "environment-art"
+    },
+    {
+      "id": "digart.world_building",
+      "label": "World-Building Art",
+      "type": "concept",
+      "description": "Creating cohesive fictional worlds: culture, technology level, ecology, maps, and maintaining visual consistency across a setting.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.environment",
+      "bookName": "Environment & Concept Art",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "846b79adf3b5b4dd",
+      "comprehended": false,
+      "strand": "environment-art"
+    },
+    {
+      "id": "digart.twelve_principles",
+      "label": "12 Principles of Animation",
+      "type": "concept",
+      "description": "Disney's 12 principles: squash & stretch, anticipation, staging, follow-through, slow in/slow out, arcs, timing, and appeal.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.animation",
+      "bookName": "Animation",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "92f72d7e6dc54bdf",
+      "comprehended": false,
+      "strand": "animation-motion"
+    },
+    {
+      "id": "digart.frame_by_frame",
+      "label": "Frame-by-Frame Animation",
+      "type": "concept",
+      "description": "Traditional hand-drawn animation: keyframes, in-betweens, onion skinning, timing charts, and creating fluid frame-by-frame motion.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.animation",
+      "bookName": "Animation",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "65da9ca575434978",
+      "comprehended": false,
+      "strand": "animation-motion"
+    },
+    {
+      "id": "digart.rigging",
+      "label": "Rigging & Puppets",
+      "type": "concept",
+      "description": "Creating digital puppet rigs: bone systems, inverse kinematics, mesh deformation, and animating with rigs for efficiency.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.animation",
+      "bookName": "Animation",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "7c4ef1f39159c20e",
+      "comprehended": false,
+      "strand": "animation-motion"
+    },
+    {
+      "id": "digart.animation_tools",
+      "label": "2D Animation Tools",
+      "type": "concept",
+      "description": "Software for 2D animation: Toon Boom Harmony, OpenToonz, Clip Studio Paint, and animation features in Procreate and Krita.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.animation",
+      "bookName": "Animation",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "e66792e432448b04",
+      "comprehended": false,
+      "strand": "animation-motion"
+    },
+    {
+      "id": "digart.motion_design",
+      "label": "Motion Design for Artists",
+      "type": "concept",
+      "description": "Applying illustration skills to motion: animated illustrations, explainer animations, and bridging still art with animated content.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.animation",
+      "bookName": "Animation",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "d1468c3021e8f0c2",
+      "comprehended": false,
+      "strand": "animation-motion"
+    },
+    {
+      "id": "digart.walk_cycles",
+      "label": "Walk Cycles & Locomotion",
+      "type": "concept",
+      "description": "Animating walk, run, and jump cycles. Weight, balance, personality in movement, and looping animation fundamentals.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.animation",
+      "bookName": "Animation",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "5ce38b943b6f3016",
+      "comprehended": false,
+      "strand": "animation-motion"
+    },
+    {
+      "id": "digart.lip_sync",
+      "label": "Lip Sync & Acting",
+      "type": "concept",
+      "description": "Animating dialogue: phoneme shapes, mouth charts, emotional acting, body language, and bringing characters to life through performance.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.animation",
+      "bookName": "Animation",
+      "bookColor": "#f59e0b",
+      "bookOrder": 5,
+      "external_id": "97ea2377b653fc98",
+      "comprehended": false,
+      "strand": "animation-motion"
+    },
+    {
+      "id": "digart.portfolio_art",
+      "label": "Art Portfolio",
+      "type": "concept",
+      "description": "Building a professional art portfolio: piece selection, presentation, online platforms (ArtStation, Behance), and tailoring work for target industries.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.environment",
+      "bookName": "Environment & Concept Art",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "49555d7c321640b0",
+      "comprehended": false,
+      "strand": "environment-art"
+    },
+    {
+      "id": "digart.photo_studies",
+      "label": "Photo Studies & References",
+      "type": "concept",
+      "description": "Painting from photo reference: analyzing photos for value, color, and composition. Using reference ethically and developing observational skills.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.painting",
+      "bookName": "Digital Painting",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "b7fdca489b4b0850",
+      "comprehended": false,
+      "strand": "digital-painting"
+    },
+    {
+      "id": "digart.stylization",
+      "label": "Stylization & Art Direction",
+      "type": "concept",
+      "description": "Developing a personal art style: simplification, exaggeration, consistent visual language, and studying diverse artistic traditions.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "digart.painting",
+      "bookName": "Digital Painting",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "59d45188473d793d",
+      "comprehended": false,
+      "strand": "digital-painting"
+    }
+  ],
+  "edges": [
+    {
+      "source": "digart.line",
+      "target": "digart.shape",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.shape",
+      "target": "digart.form",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.form",
+      "target": "digart.perspective",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.shape",
+      "target": "digart.proportion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.line",
+      "target": "digart.gesture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.proportion",
+      "target": "digart.gesture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.gesture",
+      "target": "digart.anatomy_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.proportion",
+      "target": "digart.anatomy_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.form",
+      "target": "digart.value_shading",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.shape",
+      "target": "digart.composition_drawing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.value_shading",
+      "target": "digart.composition_drawing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.line",
+      "target": "digart.procreate",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.value_shading",
+      "target": "digart.procreate",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.value_shading",
+      "target": "digart.photoshop_painting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.line",
+      "target": "digart.krita",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.value_shading",
+      "target": "digart.krita",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.procreate",
+      "target": "digart.brushes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.photoshop_painting",
+      "target": "digart.brushes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.procreate",
+      "target": "digart.layers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.layers",
+      "target": "digart.blending",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.brushes",
+      "target": "digart.blending",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.value_shading",
+      "target": "digart.digital_lighting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.blending",
+      "target": "digart.digital_lighting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.layers",
+      "target": "digart.digital_color",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.value_shading",
+      "target": "digart.digital_color",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.digital_lighting",
+      "target": "digart.painting_process",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.digital_color",
+      "target": "digart.painting_process",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.composition_drawing",
+      "target": "digart.painting_process",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.anatomy_basics",
+      "target": "digart.character_concepts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.shape",
+      "target": "digart.character_concepts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.painting_process",
+      "target": "digart.character_concepts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.anatomy_basics",
+      "target": "digart.expressions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.character_concepts",
+      "target": "digart.expressions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.gesture",
+      "target": "digart.poses",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.anatomy_basics",
+      "target": "digart.poses",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.character_concepts",
+      "target": "digart.turnarounds",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.proportion",
+      "target": "digart.turnarounds",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.turnarounds",
+      "target": "digart.character_sheets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.expressions",
+      "target": "digart.character_sheets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.poses",
+      "target": "digart.character_sheets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.character_concepts",
+      "target": "digart.costume_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.anatomy_basics",
+      "target": "digart.creature_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.character_concepts",
+      "target": "digart.creature_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.perspective",
+      "target": "digart.landscapes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.painting_process",
+      "target": "digart.landscapes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.perspective",
+      "target": "digart.architecture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.form",
+      "target": "digart.architecture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.digital_lighting",
+      "target": "digart.mood",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.digital_color",
+      "target": "digart.mood",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.landscapes",
+      "target": "digart.mood",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.mood",
+      "target": "digart.visual_storytelling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.composition_drawing",
+      "target": "digart.visual_storytelling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.perspective",
+      "target": "digart.prop_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.form",
+      "target": "digart.prop_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.architecture",
+      "target": "digart.world_building",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.visual_storytelling",
+      "target": "digart.world_building",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.prop_design",
+      "target": "digart.world_building",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.world_building",
+      "target": "digart.portfolio_art",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.character_sheets",
+      "target": "digart.portfolio_art",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.gesture",
+      "target": "digart.twelve_principles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.form",
+      "target": "digart.twelve_principles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.twelve_principles",
+      "target": "digart.frame_by_frame",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.twelve_principles",
+      "target": "digart.rigging",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.frame_by_frame",
+      "target": "digart.animation_tools",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.rigging",
+      "target": "digart.animation_tools",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.twelve_principles",
+      "target": "digart.walk_cycles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.anatomy_basics",
+      "target": "digart.walk_cycles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.frame_by_frame",
+      "target": "digart.walk_cycles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.expressions",
+      "target": "digart.lip_sync",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.frame_by_frame",
+      "target": "digart.lip_sync",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.animation_tools",
+      "target": "digart.motion_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.painting_process",
+      "target": "digart.motion_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.digital_color",
+      "target": "digart.photo_studies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.digital_lighting",
+      "target": "digart.photo_studies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.painting_process",
+      "target": "digart.stylization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "digart.photo_studies",
+      "target": "digart.stylization",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

@@ -1,0 +1,2501 @@
+{
+  "metadata": {
+    "domain": "robotics",
+    "curriculum": "Robotics A-Z",
+    "view": "skill-track",
+    "version": "0.2.0",
+    "description": "Comprehensive robotics skill track from foundations through advanced systems, with prerequisite ordering",
+    "sources": [
+      "Robotics Engineering Curriculum",
+      "ROS Documentation",
+      "FIRST Robotics Resources"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "robo.found",
+      "name": "Foundations",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "robo.mech",
+      "name": "Mechanical Systems",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "robo.elec",
+      "name": "Electronics for Robotics",
+      "color": "#eab308",
+      "order": 3
+    },
+    {
+      "id": "robo.prog",
+      "name": "Programming",
+      "color": "#22c55e",
+      "order": 4
+    },
+    {
+      "id": "robo.auto",
+      "name": "Autonomous Systems",
+      "color": "#3b82f6",
+      "order": 5
+    },
+    {
+      "id": "robo.ros",
+      "name": "Robot Operating System",
+      "color": "#8b5cf6",
+      "order": 6
+    },
+    {
+      "id": "robo.adv",
+      "name": "Advanced Robotics",
+      "color": "#ec4899",
+      "order": 7
+    },
+    {
+      "id": "robo.comp",
+      "name": "Competition Robotics",
+      "color": "#14b8a6",
+      "order": 8
+    }
+  ],
+  "strands": [
+    {
+      "id": "mechanical",
+      "name": "Mechanical",
+      "color": "#f97316"
+    },
+    {
+      "id": "electrical",
+      "name": "Electrical",
+      "color": "#eab308"
+    },
+    {
+      "id": "software",
+      "name": "Software",
+      "color": "#22c55e"
+    },
+    {
+      "id": "perception",
+      "name": "Perception",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "navigation",
+      "name": "Navigation",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "competition",
+      "name": "Competition",
+      "color": "#14b8a6"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "robo.found.what_is_robot",
+      "label": "What Is a Robot?",
+      "type": "concept",
+      "description": "Definition of a robot: sense-think-act paradigm. Distinguishing robots from automated machines, key components, and degrees of autonomy.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.found",
+      "bookName": "Foundations",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "9e4bd55931513d58",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.found.types_of_robots",
+      "label": "Types of Robots",
+      "type": "concept",
+      "description": "Mobile robots, manipulators, humanoids, drones, underwater ROVs, industrial arms, collaborative robots (cobots), and soft robots.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.found",
+      "bookName": "Foundations",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "108dc703770038b1",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.found.history",
+      "label": "History of Robotics",
+      "type": "concept",
+      "description": "From ancient automata to modern robotics. Key milestones: Unimate, Stanford Arm, Mars rovers, Boston Dynamics, and the evolution of AI in robotics.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.found",
+      "bookName": "Foundations",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "8e235395fa1ec49a",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.found.safety",
+      "label": "Robot Safety",
+      "type": "concept",
+      "description": "Safety protocols for working with robots. E-stop mechanisms, safe operating zones, battery safety, mechanical hazards, and ISO safety standards.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.found",
+      "bookName": "Foundations",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "e09454bc43c7fc26",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.found.design_process",
+      "label": "Robot Design Process",
+      "type": "concept",
+      "description": "Engineering design cycle for robots: define requirements, brainstorm, prototype, test, iterate. Systems engineering and trade-off analysis.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.found",
+      "bookName": "Foundations",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "1863709c312e148c",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.found.coordinate_systems",
+      "label": "Coordinate Systems & Frames",
+      "type": "concept",
+      "description": "Cartesian, polar, and spherical coordinates. Reference frames, right-hand rule, rotation matrices basics, and spatial reasoning for robotics.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.found",
+      "bookName": "Foundations",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "fe76b1440c87e2c6",
+      "comprehended": false,
+      "strand": "navigation"
+    },
+    {
+      "id": "robo.mech.gears",
+      "label": "Gears & Gear Ratios",
+      "type": "concept",
+      "description": "Spur, bevel, worm, and planetary gears. Gear ratio calculations, torque multiplication, speed reduction, and gear train design.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.mech",
+      "bookName": "Mechanical Systems",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "442292b04192d897",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.mech.dc_motors",
+      "label": "DC Motors",
+      "type": "concept",
+      "description": "Brushed DC motor operation, torque-speed curves, stall current, back-EMF, gear motors, and motor selection for robot applications.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.mech",
+      "bookName": "Mechanical Systems",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "99a23764908ae9f0",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.mech.servos",
+      "label": "Servo Motors",
+      "type": "concept",
+      "description": "Hobby servos, PWM control signal, angular positioning, continuous rotation servos, servo horns, and torque specifications.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.mech",
+      "bookName": "Mechanical Systems",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "dda8867ad6df9a02",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.mech.stepper_motors",
+      "label": "Stepper Motors",
+      "type": "concept",
+      "description": "Stepper motor types (unipolar, bipolar), step angle, microstepping, driver ICs (A4988, DRV8825), and precision positioning.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.mech",
+      "bookName": "Mechanical Systems",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "80a98d3016dc62db",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.mech.actuators",
+      "label": "Actuators & Solenoids",
+      "type": "concept",
+      "description": "Linear actuators, pneumatic cylinders, solenoids, shape memory alloys, and selecting actuators for specific robotic tasks.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.mech",
+      "bookName": "Mechanical Systems",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "6a37117af29d633b",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.mech.linkages",
+      "label": "Linkages & Mechanisms",
+      "type": "concept",
+      "description": "Four-bar linkages, crank-slider mechanisms, cam followers, pantographs, and converting rotary to linear motion for robot appendages.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.mech",
+      "bookName": "Mechanical Systems",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "28ca11c963eb353e",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.mech.bearings_shafts",
+      "label": "Bearings, Shafts & Couplings",
+      "type": "concept",
+      "description": "Ball bearings, bushings, shaft collars, flexible couplings, and managing rotational loads in robot chassis and joints.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.mech",
+      "bookName": "Mechanical Systems",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "e33d6ee55016a205",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.mech.wheels_tracks",
+      "label": "Wheels, Tracks & Locomotion",
+      "type": "concept",
+      "description": "Differential drive, skid steer, omniwheels, mecanum wheels, tank tracks, and comparing locomotion strategies for terrain.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.mech",
+      "bookName": "Mechanical Systems",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "4a194c399e4dd5b3",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.mech.chassis_design",
+      "label": "Chassis Design",
+      "type": "concept",
+      "description": "Robot frame materials (aluminum, acrylic, carbon fiber), structural design, weight distribution, center of gravity, and modularity.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.mech",
+      "bookName": "Mechanical Systems",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "ff2e1d0bb77c244a",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.mech.3d_printing",
+      "label": "3D Printing for Robotics",
+      "type": "concept",
+      "description": "FDM 3D printing, PLA vs PETG vs ABS, designing for 3D printing, tolerances, support structures, and printing custom robot parts.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.mech",
+      "bookName": "Mechanical Systems",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "af7f7099225eba31",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.mech.cad_basics",
+      "label": "CAD for Robot Design",
+      "type": "concept",
+      "description": "Computer-Aided Design basics. Using Fusion 360 or OnShape for robot parts, assemblies, constraints, and exporting STL files.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.mech",
+      "bookName": "Mechanical Systems",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "d876686953e2a980",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.elec.ir_sensors",
+      "label": "IR Sensors",
+      "type": "concept",
+      "description": "Infrared proximity and distance sensors. IR emitter-detector pairs, line-following sensors, analog vs digital output, and reflectance arrays.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.elec",
+      "bookName": "Electronics for Robotics",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "7aa46941cd1724f5",
+      "comprehended": false,
+      "strand": "perception"
+    },
+    {
+      "id": "robo.elec.ultrasonic",
+      "label": "Ultrasonic Sensors",
+      "type": "concept",
+      "description": "HC-SR04 and similar ultrasonic rangefinders. Time-of-flight distance measurement, trigger/echo timing, and obstacle detection.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.elec",
+      "bookName": "Electronics for Robotics",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "ee8231bd01661f35",
+      "comprehended": false,
+      "strand": "perception"
+    },
+    {
+      "id": "robo.elec.imu",
+      "label": "IMU (Accelerometer & Gyroscope)",
+      "type": "concept",
+      "description": "Inertial Measurement Units (MPU6050, BNO055). Accelerometer, gyroscope, and magnetometer data. Sensor fusion and complementary filters.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.elec",
+      "bookName": "Electronics for Robotics",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "52a2be2dc8503239",
+      "comprehended": false,
+      "strand": "perception"
+    },
+    {
+      "id": "robo.elec.encoders",
+      "label": "Encoders",
+      "type": "concept",
+      "description": "Rotary encoders (optical, magnetic). Quadrature decoding, counts per revolution, odometry calculation, and wheel speed measurement.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.elec",
+      "bookName": "Electronics for Robotics",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "de76157270df6d93",
+      "comprehended": false,
+      "strand": "perception"
+    },
+    {
+      "id": "robo.elec.camera",
+      "label": "Camera Modules",
+      "type": "concept",
+      "description": "USB cameras, Raspberry Pi Camera, OV7670. Resolution, frame rate, field of view, and interfacing cameras with robot controllers.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.elec",
+      "bookName": "Electronics for Robotics",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "5d5c42c1051de1f8",
+      "comprehended": false,
+      "strand": "perception"
+    },
+    {
+      "id": "robo.elec.lidar",
+      "label": "LiDAR Sensors",
+      "type": "concept",
+      "description": "Light Detection and Ranging. 2D LiDAR (RPLiDAR), time-of-flight, point clouds, and range scanning for mapping and obstacle detection.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.elec",
+      "bookName": "Electronics for Robotics",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "857eead17604b838",
+      "comprehended": false,
+      "strand": "perception"
+    },
+    {
+      "id": "robo.elec.motor_drivers",
+      "label": "Motor Drivers",
+      "type": "concept",
+      "description": "H-bridge motor driver ICs and modules (L298N, TB6612, BTS7960). Direction control, PWM speed control, and current sensing.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.elec",
+      "bookName": "Electronics for Robotics",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "36514524b8ae15b3",
+      "comprehended": false,
+      "strand": "electrical"
+    },
+    {
+      "id": "robo.elec.power_management",
+      "label": "Power Management",
+      "type": "concept",
+      "description": "Battery selection (LiPo, NiMH), voltage regulators, power distribution boards, fuses, and managing power budgets for robots.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.elec",
+      "bookName": "Electronics for Robotics",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "7e8a8e081f3d62da",
+      "comprehended": false,
+      "strand": "electrical"
+    },
+    {
+      "id": "robo.elec.wiring",
+      "label": "Wiring & Connectors",
+      "type": "concept",
+      "description": "Wire gauges, crimping, JST/Dupont/XT60 connectors, wire management, strain relief, and building reliable robot wiring harnesses.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.elec",
+      "bookName": "Electronics for Robotics",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "becb707568b3f84c",
+      "comprehended": false,
+      "strand": "electrical"
+    },
+    {
+      "id": "robo.elec.force_touch",
+      "label": "Force & Touch Sensors",
+      "type": "concept",
+      "description": "Force-sensitive resistors, limit switches, bumper sensors, load cells, and tactile feedback for robotic grippers and collision detection.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.elec",
+      "bookName": "Electronics for Robotics",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "2c257a643a59a64a",
+      "comprehended": false,
+      "strand": "perception"
+    },
+    {
+      "id": "robo.elec.gps",
+      "label": "GPS Modules",
+      "type": "concept",
+      "description": "GPS/GNSS receivers for outdoor robotics. NMEA sentences, latitude/longitude parsing, waypoint navigation, and GPS accuracy limitations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.elec",
+      "bookName": "Electronics for Robotics",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "96356cc61687c95b",
+      "comprehended": false,
+      "strand": "navigation"
+    },
+    {
+      "id": "robo.prog.arduino_prog",
+      "label": "Arduino Programming",
+      "type": "concept",
+      "description": "C/C++ for Arduino. Variables, loops, conditionals, functions, libraries, serial debugging, and structuring robot control code.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.prog",
+      "bookName": "Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "82b14e73b2319ba8",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.prog.python_basics",
+      "label": "Python for Robotics",
+      "type": "concept",
+      "description": "Python fundamentals for robotics. Data types, control flow, functions, classes, pip packages, and Raspberry Pi GPIO with Python.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.prog",
+      "bookName": "Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "0dbdd3eae0fb58c1",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.prog.state_machines",
+      "label": "State Machines",
+      "type": "concept",
+      "description": "Finite state machines for robot behavior. States, transitions, event-driven programming, and implementing FSMs for autonomous tasks.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.prog",
+      "bookName": "Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "c96f44760f7c9e11",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.prog.pid_control",
+      "label": "PID Control",
+      "type": "concept",
+      "description": "Proportional-Integral-Derivative controller. Tuning Kp, Ki, Kd gains, error correction, setpoint tracking, and PID for line following and balancing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.prog",
+      "bookName": "Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "324ffc5d4e7fe751",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.prog.sensor_fusion",
+      "label": "Sensor Fusion Basics",
+      "type": "concept",
+      "description": "Combining multiple sensor readings. Complementary filters, weighted averaging, Kalman filter introduction, and improving measurement reliability.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.prog",
+      "bookName": "Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "3184791b506669d3",
+      "comprehended": false,
+      "strand": "perception"
+    },
+    {
+      "id": "robo.prog.serial_protocols",
+      "label": "Serial Protocols in Robotics",
+      "type": "concept",
+      "description": "UART, I2C, and SPI communication between robot subsystems. Multi-board architectures and sensor bus management.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.prog",
+      "bookName": "Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "d3e6a3134c6a5ce0",
+      "comprehended": false,
+      "strand": "electrical"
+    },
+    {
+      "id": "robo.prog.wireless_control",
+      "label": "Wireless Remote Control",
+      "type": "concept",
+      "description": "RC transmitter/receiver, Bluetooth joystick control, WiFi teleoperation, and building custom remote control systems for robots.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.prog",
+      "bookName": "Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "7720697888229956",
+      "comprehended": false,
+      "strand": "electrical"
+    },
+    {
+      "id": "robo.prog.raspberry_pi",
+      "label": "Raspberry Pi as Robot Brain",
+      "type": "concept",
+      "description": "Using Raspberry Pi for robotics. Linux basics, GPIO control, camera interface, running Python scripts, and Pi-Arduino communication.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.prog",
+      "bookName": "Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "284c6065966fb53b",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.auto.line_following",
+      "label": "Line Following",
+      "type": "concept",
+      "description": "IR reflectance sensor arrays for line following. PID-based steering, intersection detection, and optimizing speed on curved tracks.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.auto",
+      "bookName": "Autonomous Systems",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "d227c7a91377557d",
+      "comprehended": false,
+      "strand": "navigation"
+    },
+    {
+      "id": "robo.auto.obstacle_avoidance",
+      "label": "Obstacle Avoidance",
+      "type": "concept",
+      "description": "Reactive obstacle avoidance using ultrasonic and IR sensors. Bug algorithms, potential fields, and real-time decision making.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.auto",
+      "bookName": "Autonomous Systems",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "e19c8b46f56c1eb7",
+      "comprehended": false,
+      "strand": "navigation"
+    },
+    {
+      "id": "robo.auto.odometry",
+      "label": "Odometry & Dead Reckoning",
+      "type": "concept",
+      "description": "Estimating robot position from wheel encoders. Differential drive kinematics, odometry equations, drift, and error accumulation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.auto",
+      "bookName": "Autonomous Systems",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "d095904fde608b46",
+      "comprehended": false,
+      "strand": "navigation"
+    },
+    {
+      "id": "robo.auto.slam_basics",
+      "label": "SLAM Basics",
+      "type": "concept",
+      "description": "Simultaneous Localization and Mapping. Core concept, occupancy grids, scan matching, and introductory SLAM algorithms (GMapping).",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.auto",
+      "bookName": "Autonomous Systems",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "abe6ec1ea12387c4",
+      "comprehended": false,
+      "strand": "navigation"
+    },
+    {
+      "id": "robo.auto.path_planning",
+      "label": "Path Planning",
+      "type": "concept",
+      "description": "A* algorithm, Dijkstra's algorithm, RRT (Rapidly-exploring Random Trees), and planning collision-free paths on known maps.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.auto",
+      "bookName": "Autonomous Systems",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "d0f653cc29c79cad",
+      "comprehended": false,
+      "strand": "navigation"
+    },
+    {
+      "id": "robo.auto.cv_basics",
+      "label": "Computer Vision Basics",
+      "type": "concept",
+      "description": "OpenCV fundamentals. Image capture, color spaces, thresholding, contour detection, object tracking, and color-based object following.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.auto",
+      "bookName": "Autonomous Systems",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "ca2bb59a1f91faf9",
+      "comprehended": false,
+      "strand": "perception"
+    },
+    {
+      "id": "robo.auto.apriltags",
+      "label": "Fiducial Markers (AprilTags)",
+      "type": "concept",
+      "description": "AprilTag and ArUco marker detection. Pose estimation from markers, camera calibration, and using fiducials for localization.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.auto",
+      "bookName": "Autonomous Systems",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "ccc6c27bb1924e5d",
+      "comprehended": false,
+      "strand": "perception"
+    },
+    {
+      "id": "robo.auto.wall_following",
+      "label": "Wall Following",
+      "type": "concept",
+      "description": "Maintaining constant distance from walls using range sensors. PID wall following, corner handling, and maze-solving strategies.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.auto",
+      "bookName": "Autonomous Systems",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "f6dd4a40357b0c05",
+      "comprehended": false,
+      "strand": "navigation"
+    },
+    {
+      "id": "robo.auto.localization",
+      "label": "Localization",
+      "type": "concept",
+      "description": "Determining robot position in a known map. Monte Carlo localization (particle filters), beacon-based localization, and sensor-map matching.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.auto",
+      "bookName": "Autonomous Systems",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "7eb00790fd835e3d",
+      "comprehended": false,
+      "strand": "navigation"
+    },
+    {
+      "id": "robo.ros.ros_intro",
+      "label": "ROS Introduction",
+      "type": "concept",
+      "description": "Robot Operating System overview. Installation, workspace setup, catkin/colcon build system, ROS 1 vs ROS 2, and core philosophy.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.ros",
+      "bookName": "Robot Operating System",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "d5b614e7dd96d907",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.ros.topics_services",
+      "label": "Topics & Services",
+      "type": "concept",
+      "description": "ROS publish-subscribe (topics) and request-response (services) communication. Message types, custom messages, and QoS settings.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.ros",
+      "bookName": "Robot Operating System",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "eab19306c1d30aab",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.ros.tf_transforms",
+      "label": "TF Transforms",
+      "type": "concept",
+      "description": "ROS tf2 library for coordinate frame management. Broadcasting and listening to transforms, static vs dynamic transforms, and URDF models.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.ros",
+      "bookName": "Robot Operating System",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "da7a39334a59539b",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.ros.urdf",
+      "label": "URDF Robot Models",
+      "type": "concept",
+      "description": "Unified Robot Description Format. Defining links, joints, visual/collision geometry, and creating robot models for simulation and visualization.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.ros",
+      "bookName": "Robot Operating System",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "7c44a20258d4402b",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.ros.navigation",
+      "label": "Navigation Stack",
+      "type": "concept",
+      "description": "ROS navigation stack (move_base / Nav2). Costmaps, global and local planners, recovery behaviors, and autonomous goal-based navigation.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.ros",
+      "bookName": "Robot Operating System",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "986091ff8d0b22fd",
+      "comprehended": false,
+      "strand": "navigation"
+    },
+    {
+      "id": "robo.ros.simulation",
+      "label": "Gazebo Simulation",
+      "type": "concept",
+      "description": "Gazebo robot simulator. World files, spawning robots, sensor plugins, physics simulation, and testing algorithms before deployment.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.ros",
+      "bookName": "Robot Operating System",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "eaaf17738d79a7d5",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.ros.rviz",
+      "label": "RViz Visualization",
+      "type": "concept",
+      "description": "ROS 3D visualization tool. Displaying sensor data, robot models, maps, paths, and debugging robot state in real time.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.ros",
+      "bookName": "Robot Operating System",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "66821807ec7a2fd2",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.ros.launch_files",
+      "label": "Launch Files & Parameters",
+      "type": "concept",
+      "description": "ROS launch system for starting multiple nodes. Launch file syntax, parameter server, YAML config files, and composable node containers.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.ros",
+      "bookName": "Robot Operating System",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "b6c37b32a0dba95c",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.ros.actions",
+      "label": "ROS Actions",
+      "type": "concept",
+      "description": "Long-running goal-oriented tasks. Action servers/clients, feedback, preemption, and using actions for navigation and manipulation goals.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.ros",
+      "bookName": "Robot Operating System",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "1c54a4809506bebe",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.adv.inverse_kinematics",
+      "label": "Inverse Kinematics",
+      "type": "concept",
+      "description": "Computing joint angles to reach a desired end-effector position. DH parameters, forward kinematics, analytical and numerical IK solutions.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.adv",
+      "bookName": "Advanced Robotics",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "11055f9a23965150",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.adv.robotic_arms",
+      "label": "Robotic Arms & Manipulators",
+      "type": "concept",
+      "description": "Multi-DOF robot arms, joint types, workspace analysis, gripper design, pick-and-place operations, and arm control with MoveIt.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.adv",
+      "bookName": "Advanced Robotics",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "7f3f1a5dd31d88f0",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.adv.swarm_robotics",
+      "label": "Swarm Robotics",
+      "type": "concept",
+      "description": "Multi-robot coordination without central control. Emergent behavior, flocking algorithms, task allocation, and communication between swarm agents.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.adv",
+      "bookName": "Advanced Robotics",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "dd8aa7313e642810",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.adv.drone_systems",
+      "label": "Drone Systems",
+      "type": "concept",
+      "description": "Quadcopter mechanics, flight controllers (Pixhawk, Betaflight), PID tuning for flight, autonomous waypoint missions, and MAVLink protocol.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.adv",
+      "bookName": "Advanced Robotics",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "72f6d217da0fb1d7",
+      "comprehended": false,
+      "strand": "navigation"
+    },
+    {
+      "id": "robo.adv.ml_robotics",
+      "label": "Machine Learning for Robotics",
+      "type": "concept",
+      "description": "Neural networks for perception (object detection, classification), reinforcement learning for control, sim-to-real transfer, and training pipelines.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.adv",
+      "bookName": "Advanced Robotics",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "5906239f71d86669",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.adv.legged_robots",
+      "label": "Legged Locomotion",
+      "type": "concept",
+      "description": "Bipedal and quadrupedal walking. Gait patterns, dynamic balance, zero moment point (ZMP), and compliant leg mechanisms.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.adv",
+      "bookName": "Advanced Robotics",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "bbecd1cf4ac919d3",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.adv.motion_planning",
+      "label": "Advanced Motion Planning",
+      "type": "concept",
+      "description": "Trajectory optimization, time-optimal paths, dynamic obstacle avoidance, and motion planning in high-dimensional configuration spaces.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.adv",
+      "bookName": "Advanced Robotics",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "39786d330e5fde40",
+      "comprehended": false,
+      "strand": "navigation"
+    },
+    {
+      "id": "robo.adv.depth_vision",
+      "label": "Depth Cameras & 3D Vision",
+      "type": "concept",
+      "description": "Stereo cameras, structured light (Intel RealSense), time-of-flight depth sensors, point cloud processing, and 3D object recognition.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.adv",
+      "bookName": "Advanced Robotics",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "1ad5098543a4ce1b",
+      "comprehended": false,
+      "strand": "perception"
+    },
+    {
+      "id": "robo.adv.human_robot",
+      "label": "Human-Robot Interaction",
+      "type": "concept",
+      "description": "Speech recognition, gesture control, collaborative manipulation, safety around humans, social robotics, and user interface design.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.adv",
+      "bookName": "Advanced Robotics",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "8a88560109ebd9a3",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.comp.fll",
+      "label": "FIRST LEGO League",
+      "type": "concept",
+      "description": "FLL competition format. LEGO Mindstorms/Spike, mission strategy, attachment design, programming missions, and innovation project.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.comp",
+      "bookName": "Competition Robotics",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "83b53f63e72958ef",
+      "comprehended": false,
+      "strand": "competition"
+    },
+    {
+      "id": "robo.comp.vex",
+      "label": "VEX Robotics",
+      "type": "concept",
+      "description": "VEX competition system. V5 electronics, VEXcode programming, game analysis, robot design constraints, and alliance strategy.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.comp",
+      "bookName": "Competition Robotics",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "19bfb5374ecd3f26",
+      "comprehended": false,
+      "strand": "competition"
+    },
+    {
+      "id": "robo.comp.frc",
+      "label": "FIRST Robotics Competition",
+      "type": "concept",
+      "description": "FRC team structure, game kickoff analysis, robot design in 6 weeks, roboRIO programming (Java/C++), scouting, and match strategy.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.comp",
+      "bookName": "Competition Robotics",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "727db84e4d3e2924",
+      "comprehended": false,
+      "strand": "competition"
+    },
+    {
+      "id": "robo.comp.robocup",
+      "label": "RoboCup",
+      "type": "concept",
+      "description": "RoboCup leagues: soccer, rescue, @home. Autonomous robot teams, multi-agent coordination, computer vision on field, and competition rules.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.comp",
+      "bookName": "Competition Robotics",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "22448694ba276ceb",
+      "comprehended": false,
+      "strand": "competition"
+    },
+    {
+      "id": "robo.comp.battlebots",
+      "label": "Combat Robotics",
+      "type": "concept",
+      "description": "Battle bot design: weapon types (spinners, flippers, crushers), armor materials, drive systems, weight classes, and safety regulations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.comp",
+      "bookName": "Competition Robotics",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "f7c1f20716537680",
+      "comprehended": false,
+      "strand": "competition"
+    },
+    {
+      "id": "robo.comp.strategy",
+      "label": "Competition Strategy",
+      "type": "concept",
+      "description": "Game analysis, scoring optimization, alliance selection, scouting systems, match replays, driver practice, and iterative improvement.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.comp",
+      "bookName": "Competition Robotics",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "9a1c2a1d9d205421",
+      "comprehended": false,
+      "strand": "competition"
+    },
+    {
+      "id": "robo.comp.sumo",
+      "label": "Sumo Robotics",
+      "type": "concept",
+      "description": "Sumo robot competition. Edge detection, opponent detection, pushing strategies, weight and size constraints, and speed vs traction trade-offs.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.comp",
+      "bookName": "Competition Robotics",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "5f507d0181d07448",
+      "comprehended": false,
+      "strand": "competition"
+    },
+    {
+      "id": "robo.comp.maze_solving",
+      "label": "Maze Solving Robots",
+      "type": "concept",
+      "description": "Autonomous maze navigation. Wall-following algorithms, flood-fill algorithm, dead-end detection, and speed optimization for micromouse competitions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.comp",
+      "bookName": "Competition Robotics",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "4db56b6ce98aef25",
+      "comprehended": false,
+      "strand": "competition"
+    },
+    {
+      "id": "robo.found.ethics",
+      "label": "Robot Ethics & Society",
+      "type": "concept",
+      "description": "Ethical considerations in robotics: autonomous weapons, job displacement, privacy, algorithmic bias, and responsible innovation.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.found",
+      "bookName": "Foundations",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "e084995d1bce669e",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.mech.belt_chain",
+      "label": "Belts & Chain Drives",
+      "type": "concept",
+      "description": "Timing belts, V-belts, roller chains, and sprockets. Power transmission over distance, tension adjustment, and comparing belts vs gears.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.mech",
+      "bookName": "Mechanical Systems",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "d4e1bec3c1c4be82",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.elec.current_sensing",
+      "label": "Current Sensing",
+      "type": "concept",
+      "description": "Shunt resistors, Hall-effect current sensors (ACS712), and measuring motor current for stall detection and power monitoring.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.elec",
+      "bookName": "Electronics for Robotics",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "d7fdd968a9ec75e4",
+      "comprehended": false,
+      "strand": "electrical"
+    },
+    {
+      "id": "robo.elec.level_shifting",
+      "label": "Logic Level Shifting",
+      "type": "concept",
+      "description": "Interfacing 3.3V and 5V devices. Voltage dividers, MOSFET level shifters, bidirectional level converters, and I2C pull-up considerations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.elec",
+      "bookName": "Electronics for Robotics",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "e78e661162b6e0d3",
+      "comprehended": false,
+      "strand": "electrical"
+    },
+    {
+      "id": "robo.prog.debugging",
+      "label": "Debugging Robot Systems",
+      "type": "concept",
+      "description": "Serial print debugging, LED indicators, logic analyzers, systematic fault isolation, and common failure modes in robotic systems.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.prog",
+      "bookName": "Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "44c4d1c91dc7c16a",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.prog.data_logging",
+      "label": "Data Logging & Telemetry",
+      "type": "concept",
+      "description": "Logging sensor data to SD cards, real-time telemetry over wireless, data visualization, and post-run analysis for tuning.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.prog",
+      "bookName": "Programming",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "8b6f29cd8787a276",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.auto.behavior_trees",
+      "label": "Behavior Trees",
+      "type": "concept",
+      "description": "Hierarchical task execution model. Selector, sequence, and decorator nodes. Advantages over FSMs for complex robot behaviors.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.auto",
+      "bookName": "Autonomous Systems",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "34f087deae367a55",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.auto.mapping",
+      "label": "Occupancy Grid Mapping",
+      "type": "concept",
+      "description": "Building 2D grid maps from range sensors. Bayesian occupancy updates, map resolution, and storing/loading maps for navigation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.auto",
+      "bookName": "Autonomous Systems",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "95340f08bc7c8324",
+      "comprehended": false,
+      "strand": "navigation"
+    },
+    {
+      "id": "robo.ros.ros2_concepts",
+      "label": "ROS 2 Key Concepts",
+      "type": "concept",
+      "description": "DDS middleware, lifecycle nodes, component composition, executors, QoS profiles, and migrating from ROS 1 to ROS 2.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.ros",
+      "bookName": "Robot Operating System",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "562f5d8c92126f4a",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.adv.soft_robotics",
+      "label": "Soft Robotics",
+      "type": "concept",
+      "description": "Compliant and deformable robot bodies. Pneumatic soft actuators, silicone casting, bio-inspired designs, and soft grippers.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.adv",
+      "bookName": "Advanced Robotics",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "3e1b5af5e8d53e75",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.adv.underwater_robots",
+      "label": "Underwater Robotics (ROV/AUV)",
+      "type": "concept",
+      "description": "Remotely Operated Vehicles and Autonomous Underwater Vehicles. Waterproofing, buoyancy, thruster control, and underwater communication.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.adv",
+      "bookName": "Advanced Robotics",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "f917bac66f499a79",
+      "comprehended": false,
+      "strand": "mechanical"
+    },
+    {
+      "id": "robo.adv.sim_to_real",
+      "label": "Simulation to Real Transfer",
+      "type": "concept",
+      "description": "Training in simulation and deploying on real robots. Domain randomization, reality gap, digital twins, and validation strategies.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.adv",
+      "bookName": "Advanced Robotics",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "114d7e16113fa52d",
+      "comprehended": false,
+      "strand": "software"
+    },
+    {
+      "id": "robo.comp.documentation",
+      "label": "Engineering Notebooks & Documentation",
+      "type": "concept",
+      "description": "Maintaining engineering notebooks for competitions. Design rationale, test logs, CAD screenshots, code documentation, and judge presentations.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.comp",
+      "bookName": "Competition Robotics",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "1956e5bced523410",
+      "comprehended": false,
+      "strand": "competition"
+    },
+    {
+      "id": "robo.comp.driver_skills",
+      "label": "Driver Practice & Skills",
+      "type": "concept",
+      "description": "Teleop driving proficiency. Controller mapping, practice routines, field awareness, reaction time drills, and driver-operator communication.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "robo.comp",
+      "bookName": "Competition Robotics",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "fcbd595d9f5b8af7",
+      "comprehended": false,
+      "strand": "competition"
+    }
+  ],
+  "edges": [
+    {
+      "source": "robo.found.what_is_robot",
+      "target": "robo.found.types_of_robots",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.what_is_robot",
+      "target": "robo.found.history",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.what_is_robot",
+      "target": "robo.found.safety",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.types_of_robots",
+      "target": "robo.found.design_process",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.safety",
+      "target": "robo.found.design_process",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.what_is_robot",
+      "target": "robo.found.coordinate_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.design_process",
+      "target": "robo.mech.gears",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.gears",
+      "target": "robo.mech.dc_motors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.dc_motors",
+      "target": "robo.mech.servos",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.dc_motors",
+      "target": "robo.mech.stepper_motors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.dc_motors",
+      "target": "robo.mech.actuators",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.gears",
+      "target": "robo.mech.linkages",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.linkages",
+      "target": "robo.mech.bearings_shafts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.dc_motors",
+      "target": "robo.mech.wheels_tracks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.bearings_shafts",
+      "target": "robo.mech.wheels_tracks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.wheels_tracks",
+      "target": "robo.mech.chassis_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.design_process",
+      "target": "robo.mech.cad_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.cad_basics",
+      "target": "robo.mech.3d_printing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.chassis_design",
+      "target": "robo.mech.3d_printing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.design_process",
+      "target": "robo.elec.ir_sensors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.design_process",
+      "target": "robo.elec.ultrasonic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.ir_sensors",
+      "target": "robo.elec.imu",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.ultrasonic",
+      "target": "robo.elec.imu",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.imu",
+      "target": "robo.elec.encoders",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.ultrasonic",
+      "target": "robo.elec.camera",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.camera",
+      "target": "robo.elec.lidar",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.dc_motors",
+      "target": "robo.elec.motor_drivers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.motor_drivers",
+      "target": "robo.elec.power_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.safety",
+      "target": "robo.elec.wiring",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.wiring",
+      "target": "robo.elec.power_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.ir_sensors",
+      "target": "robo.elec.force_touch",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.imu",
+      "target": "robo.elec.gps",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.motor_drivers",
+      "target": "robo.prog.arduino_prog",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.ir_sensors",
+      "target": "robo.prog.arduino_prog",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.arduino_prog",
+      "target": "robo.prog.python_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.arduino_prog",
+      "target": "robo.prog.state_machines",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.state_machines",
+      "target": "robo.prog.pid_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.encoders",
+      "target": "robo.prog.pid_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.imu",
+      "target": "robo.prog.sensor_fusion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.pid_control",
+      "target": "robo.prog.sensor_fusion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.arduino_prog",
+      "target": "robo.prog.serial_protocols",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.serial_protocols",
+      "target": "robo.prog.wireless_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.python_basics",
+      "target": "robo.prog.raspberry_pi",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.ir_sensors",
+      "target": "robo.auto.line_following",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.pid_control",
+      "target": "robo.auto.line_following",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.ultrasonic",
+      "target": "robo.auto.obstacle_avoidance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.state_machines",
+      "target": "robo.auto.obstacle_avoidance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.encoders",
+      "target": "robo.auto.odometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.coordinate_systems",
+      "target": "robo.auto.odometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.odometry",
+      "target": "robo.auto.slam_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.lidar",
+      "target": "robo.auto.slam_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.slam_basics",
+      "target": "robo.auto.path_planning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.obstacle_avoidance",
+      "target": "robo.auto.path_planning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.camera",
+      "target": "robo.auto.cv_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.python_basics",
+      "target": "robo.auto.cv_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.cv_basics",
+      "target": "robo.auto.apriltags",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.obstacle_avoidance",
+      "target": "robo.auto.wall_following",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.pid_control",
+      "target": "robo.auto.wall_following",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.odometry",
+      "target": "robo.auto.localization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.sensor_fusion",
+      "target": "robo.auto.localization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.python_basics",
+      "target": "robo.ros.ros_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.raspberry_pi",
+      "target": "robo.ros.ros_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.ros.ros_intro",
+      "target": "robo.ros.topics_services",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.ros.topics_services",
+      "target": "robo.ros.tf_transforms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.coordinate_systems",
+      "target": "robo.ros.tf_transforms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.ros.tf_transforms",
+      "target": "robo.ros.urdf",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.ros.tf_transforms",
+      "target": "robo.ros.navigation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.slam_basics",
+      "target": "robo.ros.navigation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.path_planning",
+      "target": "robo.ros.navigation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.ros.urdf",
+      "target": "robo.ros.simulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.ros.topics_services",
+      "target": "robo.ros.simulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.ros.topics_services",
+      "target": "robo.ros.rviz",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.ros.ros_intro",
+      "target": "robo.ros.launch_files",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.ros.topics_services",
+      "target": "robo.ros.actions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.linkages",
+      "target": "robo.adv.inverse_kinematics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.coordinate_systems",
+      "target": "robo.adv.inverse_kinematics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.adv.inverse_kinematics",
+      "target": "robo.adv.robotic_arms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.servos",
+      "target": "robo.adv.robotic_arms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.wireless_control",
+      "target": "robo.adv.swarm_robotics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.path_planning",
+      "target": "robo.adv.swarm_robotics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.pid_control",
+      "target": "robo.adv.drone_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.imu",
+      "target": "robo.adv.drone_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.gps",
+      "target": "robo.adv.drone_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.cv_basics",
+      "target": "robo.adv.ml_robotics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.python_basics",
+      "target": "robo.adv.ml_robotics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.adv.inverse_kinematics",
+      "target": "robo.adv.legged_robots",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.wheels_tracks",
+      "target": "robo.adv.legged_robots",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.path_planning",
+      "target": "robo.adv.motion_planning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.adv.inverse_kinematics",
+      "target": "robo.adv.motion_planning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.cv_basics",
+      "target": "robo.adv.depth_vision",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.lidar",
+      "target": "robo.adv.depth_vision",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.adv.ml_robotics",
+      "target": "robo.adv.human_robot",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.cv_basics",
+      "target": "robo.adv.human_robot",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.design_process",
+      "target": "robo.comp.fll",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.arduino_prog",
+      "target": "robo.comp.fll",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.comp.fll",
+      "target": "robo.comp.vex",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.chassis_design",
+      "target": "robo.comp.vex",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.comp.vex",
+      "target": "robo.comp.frc",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.power_management",
+      "target": "robo.comp.frc",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.cv_basics",
+      "target": "robo.comp.robocup",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.path_planning",
+      "target": "robo.comp.robocup",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.chassis_design",
+      "target": "robo.comp.battlebots",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.motor_drivers",
+      "target": "robo.comp.battlebots",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.safety",
+      "target": "robo.comp.battlebots",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.comp.fll",
+      "target": "robo.comp.strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.design_process",
+      "target": "robo.comp.strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.ir_sensors",
+      "target": "robo.comp.sumo",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.motor_drivers",
+      "target": "robo.comp.sumo",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.safety",
+      "target": "robo.comp.sumo",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.wall_following",
+      "target": "robo.comp.maze_solving",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.obstacle_avoidance",
+      "target": "robo.comp.maze_solving",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.history",
+      "target": "robo.found.ethics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.safety",
+      "target": "robo.found.ethics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.gears",
+      "target": "robo.mech.belt_chain",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.belt_chain",
+      "target": "robo.mech.chassis_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.motor_drivers",
+      "target": "robo.elec.current_sensing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.power_management",
+      "target": "robo.elec.current_sensing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.wiring",
+      "target": "robo.elec.level_shifting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.serial_protocols",
+      "target": "robo.elec.level_shifting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.arduino_prog",
+      "target": "robo.prog.debugging",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.debugging",
+      "target": "robo.prog.data_logging",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.wireless_control",
+      "target": "robo.prog.data_logging",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.state_machines",
+      "target": "robo.auto.behavior_trees",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.obstacle_avoidance",
+      "target": "robo.auto.behavior_trees",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.lidar",
+      "target": "robo.auto.mapping",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.odometry",
+      "target": "robo.auto.mapping",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.auto.mapping",
+      "target": "robo.auto.slam_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.ros.topics_services",
+      "target": "robo.ros.ros2_concepts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.ros.launch_files",
+      "target": "robo.ros.ros2_concepts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.actuators",
+      "target": "robo.adv.soft_robotics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.3d_printing",
+      "target": "robo.adv.soft_robotics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.elec.power_management",
+      "target": "robo.adv.underwater_robots",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.mech.chassis_design",
+      "target": "robo.adv.underwater_robots",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.wireless_control",
+      "target": "robo.adv.underwater_robots",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.ros.simulation",
+      "target": "robo.adv.sim_to_real",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.adv.ml_robotics",
+      "target": "robo.adv.sim_to_real",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.found.design_process",
+      "target": "robo.comp.documentation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.comp.fll",
+      "target": "robo.comp.documentation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.prog.wireless_control",
+      "target": "robo.comp.driver_skills",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "robo.comp.strategy",
+      "target": "robo.comp.driver_skills",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

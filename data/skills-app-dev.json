@@ -1,0 +1,1614 @@
+{
+  "metadata": {
+    "domain": "software-engineering",
+    "curriculum": "App Development",
+    "view": "skill-prerequisites",
+    "version": "0.2.0",
+    "description": "Mobile and cross-platform app development skill track with prerequisite ordering",
+    "sources": [
+      "Flutter Documentation",
+      "React Native Documentation",
+      "Apple Developer Documentation",
+      "Android Developer Documentation"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "appdev.foundations",
+      "name": "Mobile Foundations",
+      "color": "#f97316",
+      "order": 1
+    },
+    {
+      "id": "appdev.crossplatform",
+      "name": "Cross-Platform",
+      "color": "#06b6d4",
+      "order": 2
+    },
+    {
+      "id": "appdev.native",
+      "name": "Native Features",
+      "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "appdev.backend",
+      "name": "Backend Integration",
+      "color": "#8b5cf6",
+      "order": 4
+    },
+    {
+      "id": "appdev.advanced",
+      "name": "Advanced",
+      "color": "#ef4444",
+      "order": 5
+    }
+  ],
+  "strands": [
+    {
+      "id": "foundations",
+      "name": "Foundations & UX",
+      "color": "#F97316"
+    },
+    {
+      "id": "cross-platform",
+      "name": "Cross-Platform Development",
+      "color": "#06B6D4"
+    },
+    {
+      "id": "device",
+      "name": "Device & Native APIs",
+      "color": "#22C55E"
+    },
+    {
+      "id": "backend",
+      "name": "Backend & Data",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "quality",
+      "name": "Quality & Deployment",
+      "color": "#EF4444"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "appdev.mobile_ux",
+      "label": "Mobile UX Principles",
+      "type": "concept",
+      "description": "Mobile-first design thinking. Touch targets and gestures. Thumb zones. Mobile navigation patterns (tabs, drawers, bottom sheets). Platform design guidelines.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.foundations",
+      "bookName": "Mobile Foundations",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "72c5e717006087d8",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "appdev.platform_differences",
+      "label": "Platform Differences",
+      "type": "concept",
+      "description": "iOS vs Android conventions. Material Design vs Human Interface Guidelines. Platform-specific behaviors. Screen sizes and densities.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.foundations",
+      "bookName": "Mobile Foundations",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "1036e63311d9200e",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "appdev.dev_environment",
+      "label": "Development Environment",
+      "type": "concept",
+      "description": "Setting up IDE (VS Code, Android Studio, Xcode). Emulators and simulators. Device debugging. Hot reload and development workflow.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.foundations",
+      "bookName": "Mobile Foundations",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "c1c536e210785b72",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "appdev.app_architecture",
+      "label": "App Architecture",
+      "type": "concept",
+      "description": "MVC, MVVM, and clean architecture for mobile. Separation of concerns. Repository pattern. Dependency injection basics.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.foundations",
+      "bookName": "Mobile Foundations",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "e63a01f2c77bcede",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "appdev.app_lifecycle",
+      "label": "App Lifecycle",
+      "type": "concept",
+      "description": "App states: foreground, background, terminated. Lifecycle callbacks. Handling app suspension and resume. Background tasks.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.foundations",
+      "bookName": "Mobile Foundations",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "9d55a40f231982d9",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "appdev.responsive_layouts",
+      "label": "Responsive Layouts",
+      "type": "concept",
+      "description": "Adapting UI to different screen sizes. Safe areas and notches. Orientation handling. Tablet layouts. Adaptive vs responsive design.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.foundations",
+      "bookName": "Mobile Foundations",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "7be0659e8378f706",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "appdev.dart_basics",
+      "label": "Dart Language Basics",
+      "type": "concept",
+      "description": "Dart syntax, variables, types. Functions and classes. Null safety. Async/await in Dart. Collections (List, Map, Set). Mixins.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.crossplatform",
+      "bookName": "Cross-Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "60e592cc1c36109e",
+      "comprehended": false,
+      "strand": "cross-platform"
+    },
+    {
+      "id": "appdev.flutter_widgets",
+      "label": "Flutter Widgets",
+      "type": "concept",
+      "description": "Widget tree and composition. StatelessWidget and StatefulWidget. Common widgets: Container, Column, Row, Stack, ListView, Text, Image.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.crossplatform",
+      "bookName": "Cross-Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "1ed5771b2a46aabf",
+      "comprehended": false,
+      "strand": "cross-platform"
+    },
+    {
+      "id": "appdev.flutter_layouts",
+      "label": "Flutter Layouts",
+      "type": "concept",
+      "description": "Layout widgets: Padding, Expanded, Flexible, SizedBox, Wrap. Constraints system. Scrollable layouts (SingleChildScrollView, CustomScrollView). Slivers.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.crossplatform",
+      "bookName": "Cross-Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "58188067a792e9f7",
+      "comprehended": false,
+      "strand": "cross-platform"
+    },
+    {
+      "id": "appdev.flutter_navigation",
+      "label": "Navigation & Routing",
+      "type": "concept",
+      "description": "Navigator and routes. Named routes. GoRouter for declarative routing. Passing data between screens. Deep linking. Bottom navigation and tabs.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.crossplatform",
+      "bookName": "Cross-Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "ee2d7a729c7a6e5d",
+      "comprehended": false,
+      "strand": "cross-platform"
+    },
+    {
+      "id": "appdev.state_management",
+      "label": "State Management",
+      "type": "concept",
+      "description": "setState for local state. Provider/Riverpod for app-wide state. Bloc pattern. State management comparison. Reactive programming basics.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.crossplatform",
+      "bookName": "Cross-Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "174cbeb14b5b9c8e",
+      "comprehended": false,
+      "strand": "cross-platform"
+    },
+    {
+      "id": "appdev.forms_input",
+      "label": "Forms & User Input",
+      "type": "concept",
+      "description": "TextFields and form widgets. Form validation. Input formatters. Keyboard management. Pickers (date, time, color). Gesture detectors.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.crossplatform",
+      "bookName": "Cross-Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "8e5fafbbac7e4a05",
+      "comprehended": false,
+      "strand": "cross-platform"
+    },
+    {
+      "id": "appdev.theming",
+      "label": "Theming & Styling",
+      "type": "concept",
+      "description": "ThemeData and custom themes. Light and dark mode. Material and Cupertino widgets. Custom fonts and icons. Platform-adaptive styling.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.crossplatform",
+      "bookName": "Cross-Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "6576f51bf8ebef79",
+      "comprehended": false,
+      "strand": "cross-platform"
+    },
+    {
+      "id": "appdev.lists_grids",
+      "label": "Lists & Grids",
+      "type": "concept",
+      "description": "ListView.builder for efficient lists. GridView. Pull-to-refresh. Infinite scrolling and pagination. List item interactions (swipe, dismiss).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.crossplatform",
+      "bookName": "Cross-Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "d345b83d9272b82a",
+      "comprehended": false,
+      "strand": "cross-platform"
+    },
+    {
+      "id": "appdev.packages",
+      "label": "Packages & Plugins",
+      "type": "concept",
+      "description": "pub.dev package repository. Adding dependencies. Popular packages. Creating packages. Platform channels for native code integration.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.crossplatform",
+      "bookName": "Cross-Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "5dba1d148360860a",
+      "comprehended": false,
+      "strand": "cross-platform"
+    },
+    {
+      "id": "appdev.camera",
+      "label": "Camera & Media",
+      "type": "concept",
+      "description": "Camera access and photo capture. Video recording. Image picking from gallery. Image cropping and editing. QR/barcode scanning.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.native",
+      "bookName": "Native Features",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "4812af6c02bca2a3",
+      "comprehended": false,
+      "strand": "device"
+    },
+    {
+      "id": "appdev.gps_location",
+      "label": "GPS & Location",
+      "type": "concept",
+      "description": "Location services and permissions. Getting current position. Geocoding and reverse geocoding. Map integration (Google Maps, Mapbox). Geofencing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.native",
+      "bookName": "Native Features",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "fffa24319e1ca7ee",
+      "comprehended": false,
+      "strand": "device"
+    },
+    {
+      "id": "appdev.notifications",
+      "label": "Push Notifications",
+      "type": "concept",
+      "description": "Local notifications. Push notification services (FCM, APNs). Notification channels and categories. Deep linking from notifications. Scheduling.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.native",
+      "bookName": "Native Features",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "f969856586c67d3b",
+      "comprehended": false,
+      "strand": "device"
+    },
+    {
+      "id": "appdev.local_storage",
+      "label": "Local Storage",
+      "type": "concept",
+      "description": "SharedPreferences for key-value storage. SQLite databases. Hive or Isar for local NoSQL. File system access. Secure storage for sensitive data.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.native",
+      "bookName": "Native Features",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "f56ec8ef90dc986f",
+      "comprehended": false,
+      "strand": "device"
+    },
+    {
+      "id": "appdev.sensors",
+      "label": "Device Sensors",
+      "type": "concept",
+      "description": "Accelerometer and gyroscope. Compass/magnetometer. Proximity and ambient light sensors. Biometric authentication (fingerprint, face ID).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.native",
+      "bookName": "Native Features",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "038f9155e4576669",
+      "comprehended": false,
+      "strand": "device"
+    },
+    {
+      "id": "appdev.permissions",
+      "label": "Permissions",
+      "type": "concept",
+      "description": "Runtime permissions model. Requesting and handling permissions. Permission rationale. Graceful degradation when permissions denied. Platform differences.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.native",
+      "bookName": "Native Features",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "cf0f3f147fa55655",
+      "comprehended": false,
+      "strand": "device"
+    },
+    {
+      "id": "appdev.connectivity",
+      "label": "Connectivity & Bluetooth",
+      "type": "concept",
+      "description": "Network status detection. WiFi information. Bluetooth Low Energy (BLE) communication. NFC basics. Handling offline/online transitions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.native",
+      "bookName": "Native Features",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "2efb534cb4e0c30c",
+      "comprehended": false,
+      "strand": "device"
+    },
+    {
+      "id": "appdev.sharing",
+      "label": "Sharing & Platform Integration",
+      "type": "concept",
+      "description": "Share sheet integration. Clipboard access. URL schemes and universal links. App shortcuts and widgets. Platform-specific integrations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.native",
+      "bookName": "Native Features",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "1d9e99ead1a7fbfd",
+      "comprehended": false,
+      "strand": "device"
+    },
+    {
+      "id": "appdev.rest_apis",
+      "label": "REST API Integration",
+      "type": "concept",
+      "description": "HTTP client setup (Dio, http package). Making GET/POST/PUT/DELETE requests. JSON serialization/deserialization. Error handling. API authentication.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.backend",
+      "bookName": "Backend Integration",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "a3cff5c7934d8276",
+      "comprehended": false,
+      "strand": "backend"
+    },
+    {
+      "id": "appdev.firebase",
+      "label": "Firebase Integration",
+      "type": "concept",
+      "description": "Firebase setup and configuration. Firestore for cloud database. Firebase Authentication. Cloud Functions. Firebase Analytics. Crashlytics.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.backend",
+      "bookName": "Backend Integration",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "76f4b6c1e97fa3f0",
+      "comprehended": false,
+      "strand": "backend"
+    },
+    {
+      "id": "appdev.realtime_sync",
+      "label": "Real-Time Sync",
+      "type": "concept",
+      "description": "Firestore real-time listeners. WebSocket connections. Server-sent events. Optimistic UI updates. Conflict resolution strategies.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.backend",
+      "bookName": "Backend Integration",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "62cba7202e2eb222",
+      "comprehended": false,
+      "strand": "backend"
+    },
+    {
+      "id": "appdev.offline_support",
+      "label": "Offline Support",
+      "type": "concept",
+      "description": "Offline-first architecture. Local caching strategies. Sync queues for pending operations. Conflict resolution. Optimistic updates.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.backend",
+      "bookName": "Backend Integration",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "a8461f8a62ae0775",
+      "comprehended": false,
+      "strand": "backend"
+    },
+    {
+      "id": "appdev.image_caching",
+      "label": "Image Loading & Caching",
+      "type": "concept",
+      "description": "Efficient image loading from network. Image caching strategies. Placeholder and error images. Image resizing and compression. SVG support.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.backend",
+      "bookName": "Backend Integration",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "560d77d6384db54a",
+      "comprehended": false,
+      "strand": "backend"
+    },
+    {
+      "id": "appdev.auth_patterns",
+      "label": "Authentication Patterns",
+      "type": "concept",
+      "description": "Login/signup flows. Social login (Google, Apple, Facebook). Token management and refresh. Secure token storage. Biometric login integration.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.backend",
+      "bookName": "Backend Integration",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "4030021a3ac2a188",
+      "comprehended": false,
+      "strand": "backend"
+    },
+    {
+      "id": "appdev.animations",
+      "label": "Animations",
+      "type": "concept",
+      "description": "Implicit animations (AnimatedContainer, AnimatedOpacity). Explicit animations (AnimationController, Tween). Hero transitions. Staggered animations. Lottie.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "5823e91e2499709b",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "appdev.performance",
+      "label": "Performance Optimization",
+      "type": "concept",
+      "description": "Widget rebuild optimization (const, keys). Profiling with DevTools. Reducing jank. Memory leak detection. Lazy loading and deferred components.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "0dfe46ce7dae47b7",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "appdev.testing",
+      "label": "Testing",
+      "type": "concept",
+      "description": "Unit testing with test package. Widget testing. Integration testing. Mocking dependencies. Test coverage. Golden tests for UI verification.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "40ecf6be7939a81d",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "appdev.cicd",
+      "label": "CI/CD for Mobile",
+      "type": "concept",
+      "description": "Automated builds with GitHub Actions or Codemagic. Fastlane for deployment automation. Code signing and provisioning. Beta distribution (TestFlight, Firebase Distribution).",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "ff488c25c7884b99",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "appdev.app_store_publishing",
+      "label": "App Store Publishing",
+      "type": "concept",
+      "description": "Apple App Store and Google Play Store submission. App review guidelines. Screenshots and store listing. App signing and certificates. Release management.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "4e75949258d29cf1",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "appdev.accessibility",
+      "label": "Mobile Accessibility",
+      "type": "concept",
+      "description": "Semantics widget for screen readers. Dynamic font sizes. Color contrast. TalkBack and VoiceOver testing. Accessible touch targets.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "1b7ac6b4f26a34e3",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "appdev.internationalization",
+      "label": "Internationalization",
+      "type": "concept",
+      "description": "Localization setup (intl package, ARB files). RTL layout support. Date, number, and currency formatting. Pluralization. Dynamic locale switching.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "a99129da2080d533",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "appdev.app_size",
+      "label": "App Size Optimization",
+      "type": "concept",
+      "description": "Analyzing app bundle size. Tree shaking and dead code elimination. Deferred components. Asset optimization. Platform-specific build variants.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "79ceceab64318117",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "appdev.gestures",
+      "label": "Gesture Recognition",
+      "type": "concept",
+      "description": "Tap, swipe, pinch, long press, drag gestures. GestureDetector widget. Custom gesture recognizers. Gesture conflicts and arena.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.crossplatform",
+      "bookName": "Cross-Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "4ddc7fb7c4e9e98f",
+      "comprehended": false,
+      "strand": "cross-platform"
+    },
+    {
+      "id": "appdev.custom_painting",
+      "label": "Custom Painting & Canvas",
+      "type": "concept",
+      "description": "CustomPainter for drawing. Canvas API: paths, arcs, gradients. Custom chart rendering. Clipping and masking. Animated custom paint.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.crossplatform",
+      "bookName": "Cross-Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "71db28ef5b0bd535",
+      "comprehended": false,
+      "strand": "cross-platform"
+    },
+    {
+      "id": "appdev.platform_channels",
+      "label": "Platform Channels",
+      "type": "concept",
+      "description": "MethodChannel for calling native code. EventChannel for streaming. Platform-specific implementations (Swift/Kotlin). Pigeon code generation.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.native",
+      "bookName": "Native Features",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "1af6224d4efc9b4f",
+      "comprehended": false,
+      "strand": "device"
+    },
+    {
+      "id": "appdev.background_tasks",
+      "label": "Background Processing",
+      "type": "concept",
+      "description": "Background fetch and processing. WorkManager integration. Isolates for heavy computation. Background location tracking. Background notifications.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.native",
+      "bookName": "Native Features",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "2d76dec3deb82a56",
+      "comprehended": false,
+      "strand": "device"
+    },
+    {
+      "id": "appdev.maps_integration",
+      "label": "Maps Integration",
+      "type": "concept",
+      "description": "Google Maps or Apple Maps integration. Custom markers and overlays. Polylines and polygons. Clustering for many markers. Map styling.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.native",
+      "bookName": "Native Features",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "9f27c4af6b415ad3",
+      "comprehended": false,
+      "strand": "device"
+    },
+    {
+      "id": "appdev.cloud_storage",
+      "label": "Cloud Storage & Files",
+      "type": "concept",
+      "description": "Firebase Storage for file uploads. Progress tracking. Image compression before upload. File download and caching. Signed URLs.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.backend",
+      "bookName": "Backend Integration",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "b1c156bfe1f308f2",
+      "comprehended": false,
+      "strand": "backend"
+    },
+    {
+      "id": "appdev.graphql_client",
+      "label": "GraphQL Client",
+      "type": "concept",
+      "description": "GraphQL queries and mutations in mobile. Code generation for type safety. Caching with normalized stores. Optimistic UI with GraphQL.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.backend",
+      "bookName": "Backend Integration",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "bcf7ef13894bf1e7",
+      "comprehended": false,
+      "strand": "backend"
+    },
+    {
+      "id": "appdev.error_handling",
+      "label": "Error Handling & Crashes",
+      "type": "concept",
+      "description": "Structured error handling. Crashlytics integration. User-friendly error messages. Error boundaries. Retry strategies for network failures.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "53f8222b7d3064e3",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "appdev.analytics_tracking",
+      "label": "Analytics & Tracking",
+      "type": "concept",
+      "description": "Firebase Analytics events and user properties. Screen tracking. Conversion funnels. A/B testing with Remote Config. Privacy compliance.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "e3ee5a8614c96bc2",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "appdev.deep_linking",
+      "label": "Deep Linking",
+      "type": "concept",
+      "description": "URL schemes and custom protocols. Universal Links (iOS) and App Links (Android). Dynamic Links with Firebase. Deferred deep linking for installs.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.native",
+      "bookName": "Native Features",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "7b734a53a606e3b7",
+      "comprehended": false,
+      "strand": "device"
+    },
+    {
+      "id": "appdev.in_app_purchase",
+      "label": "In-App Purchases",
+      "type": "concept",
+      "description": "Consumable and non-consumable purchases. Subscriptions. Store APIs (StoreKit, Google Play Billing). Receipt validation. Restore purchases.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "fe69c645032972e6",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "appdev.security",
+      "label": "App Security",
+      "type": "concept",
+      "description": "Secure storage for sensitive data. Certificate pinning. Code obfuscation. Jailbreak/root detection. Encryption for local data. API key protection.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "a5027b8f054e5d4a",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "appdev.state_restoration",
+      "label": "State Restoration",
+      "type": "concept",
+      "description": "Saving and restoring app state. Navigation state persistence. Form data preservation. RestorationMixin in Flutter. Handling process death.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.crossplatform",
+      "bookName": "Cross-Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "7871157bb9d03269",
+      "comprehended": false,
+      "strand": "cross-platform"
+    },
+    {
+      "id": "appdev.web_views",
+      "label": "WebViews & Hybrid Content",
+      "type": "concept",
+      "description": "Embedding web content in apps. WebView configuration and security. JavaScript-Flutter communication. In-app browsers. Rendering HTML content.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.crossplatform",
+      "bookName": "Cross-Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "f3f488f40cd20a47",
+      "comprehended": false,
+      "strand": "cross-platform"
+    },
+    {
+      "id": "appdev.app_icons_splash",
+      "label": "App Icons & Splash Screens",
+      "type": "concept",
+      "description": "Generating app icons for all sizes. Adaptive icons on Android. Splash screen configuration. Launch screen design. Branded loading experience.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.foundations",
+      "bookName": "Mobile Foundations",
+      "bookColor": "#f97316",
+      "bookOrder": 1,
+      "external_id": "26276330eb97fa0d",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "appdev.flutter_web_desktop",
+      "label": "Flutter Web & Desktop",
+      "type": "concept",
+      "description": "Flutter for web deployment. Desktop support (Windows, macOS, Linux). Platform-specific adaptations. Responsive layouts across form factors.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.advanced",
+      "bookName": "Advanced",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "b9f69f52d33bdbdc",
+      "comprehended": false,
+      "strand": "quality"
+    },
+    {
+      "id": "appdev.dependency_injection",
+      "label": "Dependency Injection",
+      "type": "concept",
+      "description": "DI principles for mobile apps. get_it service locator. Injectable code generation. Scoped dependencies. Testing with mock dependencies.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.crossplatform",
+      "bookName": "Cross-Platform",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "3fb45efe648cb8ca",
+      "comprehended": false,
+      "strand": "cross-platform"
+    },
+    {
+      "id": "appdev.pagination",
+      "label": "Pagination & Infinite Scroll",
+      "type": "concept",
+      "description": "Cursor-based vs offset pagination. Infinite scroll implementation. Loading indicators. Pull-to-refresh with pagination. Caching paginated data.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "appdev.backend",
+      "bookName": "Backend Integration",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "d4724cf2f6ed985f",
+      "comprehended": false,
+      "strand": "backend"
+    }
+  ],
+  "edges": [
+    {
+      "source": "appdev.mobile_ux",
+      "target": "appdev.platform_differences",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.mobile_ux",
+      "target": "appdev.responsive_layouts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.platform_differences",
+      "target": "appdev.dev_environment",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.mobile_ux",
+      "target": "appdev.app_lifecycle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.dev_environment",
+      "target": "appdev.app_architecture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.dev_environment",
+      "target": "appdev.dart_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.dart_basics",
+      "target": "appdev.flutter_widgets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.flutter_widgets",
+      "target": "appdev.flutter_layouts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.responsive_layouts",
+      "target": "appdev.flutter_layouts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.flutter_widgets",
+      "target": "appdev.flutter_navigation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.flutter_widgets",
+      "target": "appdev.forms_input",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.flutter_widgets",
+      "target": "appdev.theming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.platform_differences",
+      "target": "appdev.theming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.flutter_layouts",
+      "target": "appdev.lists_grids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.flutter_widgets",
+      "target": "appdev.state_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.dart_basics",
+      "target": "appdev.state_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.flutter_navigation",
+      "target": "appdev.state_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.flutter_widgets",
+      "target": "appdev.packages",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.packages",
+      "target": "appdev.camera",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.packages",
+      "target": "appdev.gps_location",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.packages",
+      "target": "appdev.notifications",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.packages",
+      "target": "appdev.local_storage",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.packages",
+      "target": "appdev.sensors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.packages",
+      "target": "appdev.permissions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.permissions",
+      "target": "appdev.camera",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.permissions",
+      "target": "appdev.gps_location",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.permissions",
+      "target": "appdev.sensors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.packages",
+      "target": "appdev.connectivity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.packages",
+      "target": "appdev.sharing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.dart_basics",
+      "target": "appdev.rest_apis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.state_management",
+      "target": "appdev.rest_apis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.rest_apis",
+      "target": "appdev.firebase",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.firebase",
+      "target": "appdev.realtime_sync",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.local_storage",
+      "target": "appdev.offline_support",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.rest_apis",
+      "target": "appdev.offline_support",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.realtime_sync",
+      "target": "appdev.offline_support",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.rest_apis",
+      "target": "appdev.image_caching",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.firebase",
+      "target": "appdev.auth_patterns",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.local_storage",
+      "target": "appdev.auth_patterns",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.flutter_widgets",
+      "target": "appdev.animations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.state_management",
+      "target": "appdev.animations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.animations",
+      "target": "appdev.performance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.lists_grids",
+      "target": "appdev.performance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.dart_basics",
+      "target": "appdev.testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.state_management",
+      "target": "appdev.testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.testing",
+      "target": "appdev.cicd",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.cicd",
+      "target": "appdev.app_store_publishing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.platform_differences",
+      "target": "appdev.app_store_publishing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.flutter_widgets",
+      "target": "appdev.accessibility",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.mobile_ux",
+      "target": "appdev.accessibility",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.theming",
+      "target": "appdev.internationalization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.performance",
+      "target": "appdev.app_size",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.forms_input",
+      "target": "appdev.gestures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.flutter_widgets",
+      "target": "appdev.gestures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.flutter_layouts",
+      "target": "appdev.custom_painting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.animations",
+      "target": "appdev.custom_painting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.packages",
+      "target": "appdev.platform_channels",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.dart_basics",
+      "target": "appdev.platform_channels",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.app_lifecycle",
+      "target": "appdev.background_tasks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.permissions",
+      "target": "appdev.background_tasks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.gps_location",
+      "target": "appdev.maps_integration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.firebase",
+      "target": "appdev.cloud_storage",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.camera",
+      "target": "appdev.cloud_storage",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.rest_apis",
+      "target": "appdev.graphql_client",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.state_management",
+      "target": "appdev.graphql_client",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.rest_apis",
+      "target": "appdev.error_handling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.dart_basics",
+      "target": "appdev.error_handling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.firebase",
+      "target": "appdev.analytics_tracking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.app_store_publishing",
+      "target": "appdev.analytics_tracking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.flutter_navigation",
+      "target": "appdev.deep_linking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.notifications",
+      "target": "appdev.deep_linking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.app_store_publishing",
+      "target": "appdev.in_app_purchase",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.auth_patterns",
+      "target": "appdev.in_app_purchase",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.auth_patterns",
+      "target": "appdev.security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.local_storage",
+      "target": "appdev.security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.state_management",
+      "target": "appdev.state_restoration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.local_storage",
+      "target": "appdev.state_restoration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.flutter_navigation",
+      "target": "appdev.web_views",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.packages",
+      "target": "appdev.web_views",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.dev_environment",
+      "target": "appdev.app_icons_splash",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.theming",
+      "target": "appdev.app_icons_splash",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.responsive_layouts",
+      "target": "appdev.flutter_web_desktop",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.performance",
+      "target": "appdev.flutter_web_desktop",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.app_architecture",
+      "target": "appdev.dependency_injection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.state_management",
+      "target": "appdev.dependency_injection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.lists_grids",
+      "target": "appdev.pagination",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "appdev.rest_apis",
+      "target": "appdev.pagination",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

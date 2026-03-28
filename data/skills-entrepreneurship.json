@@ -1,0 +1,1716 @@
+{
+  "metadata": {
+    "domain": "entrepreneurship",
+    "curriculum": "Entrepreneurship Skills Track",
+    "view": "skill-prerequisites",
+    "version": "0.1.0",
+    "description": "Entrepreneurship skill track from ideation to scaling, with prerequisite ordering",
+    "sources": [
+      "Lean Startup methodology",
+      "Business Model Generation",
+      "Y Combinator curriculum"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "entrep.mindset",
+      "name": "Mindset & Ideation",
+      "color": "#8b5cf6",
+      "order": 1
+    },
+    {
+      "id": "entrep.validation",
+      "name": "Validation",
+      "color": "#06b6d4",
+      "order": 2
+    },
+    {
+      "id": "entrep.bizmodel",
+      "name": "Business Model",
+      "color": "#f59e0b",
+      "order": 3
+    },
+    {
+      "id": "entrep.building",
+      "name": "Building",
+      "color": "#10b981",
+      "order": 4
+    },
+    {
+      "id": "entrep.finance",
+      "name": "Finance",
+      "color": "#ef4444",
+      "order": 5
+    },
+    {
+      "id": "entrep.growth",
+      "name": "Growth",
+      "color": "#3b82f6",
+      "order": 6
+    },
+    {
+      "id": "entrep.legal",
+      "name": "Legal & Operations",
+      "color": "#64748b",
+      "order": 7
+    },
+    {
+      "id": "entrep.social",
+      "name": "Social Enterprise",
+      "color": "#22c55e",
+      "order": 8
+    }
+  ],
+  "strands": [
+    {
+      "id": "mindset",
+      "name": "Mindset & Creativity",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "customer",
+      "name": "Customer & Market",
+      "color": "#06b6d4"
+    },
+    {
+      "id": "business",
+      "name": "Business Strategy",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "product",
+      "name": "Product & Engineering",
+      "color": "#10b981"
+    },
+    {
+      "id": "finance",
+      "name": "Finance & Fundraising",
+      "color": "#ef4444"
+    },
+    {
+      "id": "growth",
+      "name": "Growth & Marketing",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "operations",
+      "name": "Legal & Operations",
+      "color": "#64748b"
+    },
+    {
+      "id": "impact",
+      "name": "Social Impact",
+      "color": "#22c55e"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "entrep.entrepreneurial_thinking",
+      "label": "Entrepreneurial Thinking",
+      "type": "concept",
+      "description": "Developing an entrepreneurial mindset: opportunity recognition, risk tolerance, resilience, and growth orientation.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.mindset",
+      "bookName": "Mindset & Ideation",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "90ada4489ed6ea62",
+      "comprehended": false,
+      "strand": "mindset"
+    },
+    {
+      "id": "entrep.creativity",
+      "label": "Creativity & Innovation",
+      "type": "concept",
+      "description": "Techniques for creative thinking: brainstorming, lateral thinking, SCAMPER, and fostering an innovative mindset.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.mindset",
+      "bookName": "Mindset & Ideation",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "e59b9a3fcf12c0c3",
+      "comprehended": false,
+      "strand": "mindset"
+    },
+    {
+      "id": "entrep.problem_identification",
+      "label": "Problem Identification",
+      "type": "concept",
+      "description": "Identifying real-world problems worth solving. Distinguishing pain points from nice-to-haves. Problem-solution fit.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.mindset",
+      "bookName": "Mindset & Ideation",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "08df860c0594a978",
+      "comprehended": false,
+      "strand": "mindset"
+    },
+    {
+      "id": "entrep.ideation_techniques",
+      "label": "Ideation Techniques",
+      "type": "concept",
+      "description": "Structured methods for generating business ideas: mind mapping, reverse brainstorming, idea matrices, and trend analysis.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.mindset",
+      "bookName": "Mindset & Ideation",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "8eb40f60e7702175",
+      "comprehended": false,
+      "strand": "mindset"
+    },
+    {
+      "id": "entrep.design_thinking",
+      "label": "Design Thinking",
+      "type": "concept",
+      "description": "Human-centered design process: empathize, define, ideate, prototype, and test. Applying design thinking to entrepreneurship.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.mindset",
+      "bookName": "Mindset & Ideation",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "8088b20b568bdcb9",
+      "comprehended": false,
+      "strand": "mindset"
+    },
+    {
+      "id": "entrep.opportunity_evaluation",
+      "label": "Opportunity Evaluation",
+      "type": "concept",
+      "description": "Frameworks for evaluating business opportunities: market size, timing, feasibility, and personal fit assessment.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.mindset",
+      "bookName": "Mindset & Ideation",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "89a425ed19302342",
+      "comprehended": false,
+      "strand": "mindset"
+    },
+    {
+      "id": "entrep.market_trends",
+      "label": "Market Trends & Analysis",
+      "type": "concept",
+      "description": "Identifying and analyzing market trends, emerging technologies, and shifting consumer behaviors to spot opportunities.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.mindset",
+      "bookName": "Mindset & Ideation",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "3836b533bed25e60",
+      "comprehended": false,
+      "strand": "customer"
+    },
+    {
+      "id": "entrep.customer_discovery",
+      "label": "Customer Discovery",
+      "type": "concept",
+      "description": "Steve Blank's customer discovery process: getting out of the building, identifying target customers, and understanding their needs.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.validation",
+      "bookName": "Validation",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "abf59be9af7622f7",
+      "comprehended": false,
+      "strand": "customer"
+    },
+    {
+      "id": "entrep.customer_interviews",
+      "label": "Customer Interviews",
+      "type": "concept",
+      "description": "Conducting effective customer interviews: asking open-ended questions, avoiding leading questions, extracting honest feedback.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.validation",
+      "bookName": "Validation",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "ac4bb646f39c8191",
+      "comprehended": false,
+      "strand": "customer"
+    },
+    {
+      "id": "entrep.surveys",
+      "label": "Surveys & Market Research",
+      "type": "concept",
+      "description": "Designing surveys, analyzing quantitative data, and conducting market research to validate assumptions at scale.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.validation",
+      "bookName": "Validation",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "6a65f7bafdb05d74",
+      "comprehended": false,
+      "strand": "customer"
+    },
+    {
+      "id": "entrep.mvp",
+      "label": "Minimum Viable Product",
+      "type": "concept",
+      "description": "Building the simplest version of a product to test core assumptions. Types of MVPs: landing pages, concierge, Wizard of Oz.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.validation",
+      "bookName": "Validation",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "0e78a83d3582e15a",
+      "comprehended": false,
+      "strand": "product"
+    },
+    {
+      "id": "entrep.lean_startup",
+      "label": "Lean Startup Methodology",
+      "type": "concept",
+      "description": "Build-Measure-Learn loop. Validated learning, innovation accounting, and the lean startup framework by Eric Ries.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.validation",
+      "bookName": "Validation",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "95a9eab0fa01799d",
+      "comprehended": false,
+      "strand": "product"
+    },
+    {
+      "id": "entrep.pivoting",
+      "label": "Pivoting",
+      "type": "concept",
+      "description": "Recognizing when to pivot: types of pivots (zoom-in, zoom-out, customer segment, platform). Making data-driven pivot decisions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.validation",
+      "bookName": "Validation",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "c5c071a89145e5bb",
+      "comprehended": false,
+      "strand": "business"
+    },
+    {
+      "id": "entrep.product_market_fit",
+      "label": "Product-Market Fit",
+      "type": "concept",
+      "description": "Identifying and measuring product-market fit. Sean Ellis test, retention metrics, and signs of achieving PMF.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.validation",
+      "bookName": "Validation",
+      "bookColor": "#06b6d4",
+      "bookOrder": 2,
+      "external_id": "c1c011cf884252b2",
+      "comprehended": false,
+      "strand": "customer"
+    },
+    {
+      "id": "entrep.business_model_canvas",
+      "label": "Business Model Canvas",
+      "type": "concept",
+      "description": "Osterwalder's Business Model Canvas: 9 building blocks covering key partners, activities, resources, value propositions, channels, customer segments, cost structure, and revenue streams.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.bizmodel",
+      "bookName": "Business Model",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "6e1b349c839d5f8b",
+      "comprehended": false,
+      "strand": "business"
+    },
+    {
+      "id": "entrep.value_proposition",
+      "label": "Value Proposition Design",
+      "type": "concept",
+      "description": "Crafting compelling value propositions. Value proposition canvas, jobs-to-be-done framework, and differentiation strategies.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.bizmodel",
+      "bookName": "Business Model",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "286ff60133cea332",
+      "comprehended": false,
+      "strand": "business"
+    },
+    {
+      "id": "entrep.revenue_models",
+      "label": "Revenue Models",
+      "type": "concept",
+      "description": "Types of revenue models: subscription, freemium, marketplace, licensing, advertising, transaction fees, and hybrid models.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.bizmodel",
+      "bookName": "Business Model",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "5cfa836d29e25235",
+      "comprehended": false,
+      "strand": "finance"
+    },
+    {
+      "id": "entrep.pricing_strategy",
+      "label": "Pricing Strategy",
+      "type": "concept",
+      "description": "Pricing approaches: cost-plus, value-based, competitive, penetration, skimming. Price sensitivity and willingness to pay.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.bizmodel",
+      "bookName": "Business Model",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "145ea63ce5fc47ed",
+      "comprehended": false,
+      "strand": "finance"
+    },
+    {
+      "id": "entrep.competitive_analysis",
+      "label": "Competitive Analysis",
+      "type": "concept",
+      "description": "Analyzing competitors: Porter's Five Forces, SWOT analysis, competitive positioning maps, and identifying sustainable advantages.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.bizmodel",
+      "bookName": "Business Model",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "4b4993fc5d8e25aa",
+      "comprehended": false,
+      "strand": "business"
+    },
+    {
+      "id": "entrep.market_sizing",
+      "label": "Market Sizing (TAM/SAM/SOM)",
+      "type": "concept",
+      "description": "Estimating market size using top-down and bottom-up approaches. Total Addressable Market, Serviceable Addressable Market, and Serviceable Obtainable Market.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.bizmodel",
+      "bookName": "Business Model",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "65375e5d011e9606",
+      "comprehended": false,
+      "strand": "business"
+    },
+    {
+      "id": "entrep.customer_segments",
+      "label": "Customer Segmentation",
+      "type": "concept",
+      "description": "Identifying and segmenting target customers. Demographics, psychographics, behavioral segmentation, and creating customer personas.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.bizmodel",
+      "bookName": "Business Model",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "ee6e07238a2dbba1",
+      "comprehended": false,
+      "strand": "customer"
+    },
+    {
+      "id": "entrep.channels",
+      "label": "Distribution Channels",
+      "type": "concept",
+      "description": "Choosing and optimizing distribution channels: direct, indirect, online, retail, partnerships. Channel-market fit.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.bizmodel",
+      "bookName": "Business Model",
+      "bookColor": "#f59e0b",
+      "bookOrder": 3,
+      "external_id": "4d5add61544f074f",
+      "comprehended": false,
+      "strand": "growth"
+    },
+    {
+      "id": "entrep.team_building",
+      "label": "Team Building",
+      "type": "concept",
+      "description": "Building a founding team: complementary skills, equity splitting, co-founder dynamics, hiring first employees, and culture setting.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.building",
+      "bookName": "Building",
+      "bookColor": "#10b981",
+      "bookOrder": 4,
+      "external_id": "e276f94e93ec838c",
+      "comprehended": false,
+      "strand": "product"
+    },
+    {
+      "id": "entrep.product_development",
+      "label": "Product Development",
+      "type": "concept",
+      "description": "Taking a product from concept to launch: product roadmaps, feature prioritization, user experience design, and iteration cycles.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.building",
+      "bookName": "Building",
+      "bookColor": "#10b981",
+      "bookOrder": 4,
+      "external_id": "31481e19948d9290",
+      "comprehended": false,
+      "strand": "product"
+    },
+    {
+      "id": "entrep.agile_scrum",
+      "label": "Agile & Scrum for Startups",
+      "type": "concept",
+      "description": "Applying agile methodology in startup context: sprints, iterative development, stand-ups, and rapid shipping culture.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.building",
+      "bookName": "Building",
+      "bookColor": "#10b981",
+      "bookOrder": 4,
+      "external_id": "8d9278bd225494e9",
+      "comprehended": false,
+      "strand": "product"
+    },
+    {
+      "id": "entrep.tech_stack",
+      "label": "Tech Stack Decisions",
+      "type": "concept",
+      "description": "Choosing the right technology stack for your startup: build vs buy, no-code/low-code options, scalability considerations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.building",
+      "bookName": "Building",
+      "bookColor": "#10b981",
+      "bookOrder": 4,
+      "external_id": "046c9fcff8e211e2",
+      "comprehended": false,
+      "strand": "product"
+    },
+    {
+      "id": "entrep.outsourcing",
+      "label": "Outsourcing & Freelancers",
+      "type": "concept",
+      "description": "When and how to outsource: finding freelancers, managing remote contractors, quality control, and cost management.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.building",
+      "bookName": "Building",
+      "bookColor": "#10b981",
+      "bookOrder": 4,
+      "external_id": "f6da05301672f8a3",
+      "comprehended": false,
+      "strand": "operations"
+    },
+    {
+      "id": "entrep.user_testing",
+      "label": "User Testing & Feedback",
+      "type": "concept",
+      "description": "Conducting usability tests, gathering user feedback, A/B testing, and incorporating feedback into product iterations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.building",
+      "bookName": "Building",
+      "bookColor": "#10b981",
+      "bookOrder": 4,
+      "external_id": "074704be4b3eed85",
+      "comprehended": false,
+      "strand": "customer"
+    },
+    {
+      "id": "entrep.prototyping",
+      "label": "Prototyping",
+      "type": "concept",
+      "description": "Creating prototypes to test ideas: wireframes, mockups, interactive prototypes, and rapid prototyping tools.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.building",
+      "bookName": "Building",
+      "bookColor": "#10b981",
+      "bookOrder": 4,
+      "external_id": "9941054f8e33082f",
+      "comprehended": false,
+      "strand": "product"
+    },
+    {
+      "id": "entrep.bootstrapping",
+      "label": "Bootstrapping",
+      "type": "concept",
+      "description": "Self-funding a startup: revenue-first approach, managing cash flow, lean operations, and profitable growth without external funding.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.finance",
+      "bookName": "Finance",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "341d33426caf8e24",
+      "comprehended": false,
+      "strand": "finance"
+    },
+    {
+      "id": "entrep.fundraising",
+      "label": "Fundraising Fundamentals",
+      "type": "concept",
+      "description": "Understanding fundraising stages: pre-seed, seed, Series A/B/C. Valuation methods, term sheets, dilution, and cap tables.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.finance",
+      "bookName": "Finance",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "e9821ec74761e9e2",
+      "comprehended": false,
+      "strand": "finance"
+    },
+    {
+      "id": "entrep.pitch_decks",
+      "label": "Pitch Decks",
+      "type": "concept",
+      "description": "Creating compelling pitch decks: storytelling, key slides (problem, solution, traction, team, ask), and presentation delivery.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.finance",
+      "bookName": "Finance",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "b1892c38cdcd2f3d",
+      "comprehended": false,
+      "strand": "finance"
+    },
+    {
+      "id": "entrep.angel_investors",
+      "label": "Angel Investors",
+      "type": "concept",
+      "description": "Working with angel investors: finding angels, angel networks, negotiating terms, SAFE notes, and convertible notes.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.finance",
+      "bookName": "Finance",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "b6e0a8be61fd708d",
+      "comprehended": false,
+      "strand": "finance"
+    },
+    {
+      "id": "entrep.venture_capital",
+      "label": "Venture Capital",
+      "type": "concept",
+      "description": "Understanding VC ecosystem: how VCs work, what they look for, due diligence process, board seats, and VC-founder relationships.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.finance",
+      "bookName": "Finance",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "1e2f354008d0b86a",
+      "comprehended": false,
+      "strand": "finance"
+    },
+    {
+      "id": "entrep.crowdfunding",
+      "label": "Crowdfunding",
+      "type": "concept",
+      "description": "Crowdfunding platforms and strategies: Kickstarter, Indiegogo, equity crowdfunding. Campaign planning and community building.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.finance",
+      "bookName": "Finance",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "e576f5900a51d740",
+      "comprehended": false,
+      "strand": "finance"
+    },
+    {
+      "id": "entrep.financial_projections",
+      "label": "Financial Projections",
+      "type": "concept",
+      "description": "Building financial models: revenue projections, cost forecasting, cash flow statements, break-even analysis, and unit economics.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.finance",
+      "bookName": "Finance",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "54113628b829706b",
+      "comprehended": false,
+      "strand": "finance"
+    },
+    {
+      "id": "entrep.unit_economics",
+      "label": "Unit Economics",
+      "type": "concept",
+      "description": "Understanding unit economics: CAC, LTV, LTV/CAC ratio, payback period, margins, and their role in business viability.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.finance",
+      "bookName": "Finance",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "33f5e1f3ae28674f",
+      "comprehended": false,
+      "strand": "finance"
+    },
+    {
+      "id": "entrep.marketing_strategy",
+      "label": "Marketing Strategy",
+      "type": "concept",
+      "description": "Developing a marketing strategy: positioning, messaging, brand identity, marketing mix (4Ps), and go-to-market planning.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.growth",
+      "bookName": "Growth",
+      "bookColor": "#3b82f6",
+      "bookOrder": 6,
+      "external_id": "cdb7d99668f7cc02",
+      "comprehended": false,
+      "strand": "growth"
+    },
+    {
+      "id": "entrep.digital_marketing",
+      "label": "Digital Marketing",
+      "type": "concept",
+      "description": "Digital marketing channels: SEO, SEM, social media marketing, content marketing, email marketing, and influencer marketing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.growth",
+      "bookName": "Growth",
+      "bookColor": "#3b82f6",
+      "bookOrder": 6,
+      "external_id": "310e0fcff81b15b8",
+      "comprehended": false,
+      "strand": "growth"
+    },
+    {
+      "id": "entrep.content_marketing",
+      "label": "Content Marketing",
+      "type": "concept",
+      "description": "Creating valuable content to attract and retain customers: blogging, video, podcasts, thought leadership, and content strategy.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.growth",
+      "bookName": "Growth",
+      "bookColor": "#3b82f6",
+      "bookOrder": 6,
+      "external_id": "e9d6ad8c02e30c81",
+      "comprehended": false,
+      "strand": "growth"
+    },
+    {
+      "id": "entrep.sales",
+      "label": "Sales Fundamentals",
+      "type": "concept",
+      "description": "Sales processes for startups: consultative selling, sales funnels, CRM usage, closing techniques, and founder-led sales.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.growth",
+      "bookName": "Growth",
+      "bookColor": "#3b82f6",
+      "bookOrder": 6,
+      "external_id": "453575181efad4cf",
+      "comprehended": false,
+      "strand": "growth"
+    },
+    {
+      "id": "entrep.partnerships",
+      "label": "Strategic Partnerships",
+      "type": "concept",
+      "description": "Building strategic partnerships: identifying partners, structuring deals, co-marketing, distribution partnerships, and alliances.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.growth",
+      "bookName": "Growth",
+      "bookColor": "#3b82f6",
+      "bookOrder": 6,
+      "external_id": "dd8cde810b2e5fdc",
+      "comprehended": false,
+      "strand": "growth"
+    },
+    {
+      "id": "entrep.scaling",
+      "label": "Scaling a Business",
+      "type": "concept",
+      "description": "Strategies for scaling: systems and processes, hiring, automation, international expansion, and managing hypergrowth.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.growth",
+      "bookName": "Growth",
+      "bookColor": "#3b82f6",
+      "bookOrder": 6,
+      "external_id": "347510d00782e030",
+      "comprehended": false,
+      "strand": "growth"
+    },
+    {
+      "id": "entrep.metrics_kpis",
+      "label": "Metrics & KPIs",
+      "type": "concept",
+      "description": "Defining and tracking key metrics: north star metric, OKRs, vanity vs actionable metrics, dashboards, and data-driven decisions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.growth",
+      "bookName": "Growth",
+      "bookColor": "#3b82f6",
+      "bookOrder": 6,
+      "external_id": "b2a2b225e58903ca",
+      "comprehended": false,
+      "strand": "growth"
+    },
+    {
+      "id": "entrep.growth_hacking",
+      "label": "Growth Hacking",
+      "type": "concept",
+      "description": "Growth hacking techniques: viral loops, referral programs, product-led growth, A/B testing, and conversion optimization.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.growth",
+      "bookName": "Growth",
+      "bookColor": "#3b82f6",
+      "bookOrder": 6,
+      "external_id": "78b23719c3502e2a",
+      "comprehended": false,
+      "strand": "growth"
+    },
+    {
+      "id": "entrep.customer_retention",
+      "label": "Customer Retention",
+      "type": "concept",
+      "description": "Strategies for retaining customers: churn analysis, loyalty programs, customer success, NPS, and community building.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.growth",
+      "bookName": "Growth",
+      "bookColor": "#3b82f6",
+      "bookOrder": 6,
+      "external_id": "bf45e75d2928a508",
+      "comprehended": false,
+      "strand": "customer"
+    },
+    {
+      "id": "entrep.company_registration",
+      "label": "Company Registration",
+      "type": "concept",
+      "description": "Legal structures: sole proprietorship, partnership, LLC, corporation. Registration process, choosing a jurisdiction.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.legal",
+      "bookName": "Legal & Operations",
+      "bookColor": "#64748b",
+      "bookOrder": 7,
+      "external_id": "133e1251135c930b",
+      "comprehended": false,
+      "strand": "operations"
+    },
+    {
+      "id": "entrep.ip_patents",
+      "label": "Intellectual Property & Patents",
+      "type": "concept",
+      "description": "Protecting intellectual property: patents, trademarks, copyrights, trade secrets, and IP strategy for startups.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.legal",
+      "bookName": "Legal & Operations",
+      "bookColor": "#64748b",
+      "bookOrder": 7,
+      "external_id": "f18ef0499ada0bcc",
+      "comprehended": false,
+      "strand": "operations"
+    },
+    {
+      "id": "entrep.contracts",
+      "label": "Contracts & Agreements",
+      "type": "concept",
+      "description": "Essential startup contracts: NDAs, employment agreements, service agreements, founder agreements, and term sheets.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.legal",
+      "bookName": "Legal & Operations",
+      "bookColor": "#64748b",
+      "bookOrder": 7,
+      "external_id": "c57eda7992c30081",
+      "comprehended": false,
+      "strand": "operations"
+    },
+    {
+      "id": "entrep.compliance",
+      "label": "Compliance & Regulations",
+      "type": "concept",
+      "description": "Regulatory compliance: data privacy (GDPR/PDPA), industry regulations, permits, licenses, and legal risk management.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.legal",
+      "bookName": "Legal & Operations",
+      "bookColor": "#64748b",
+      "bookOrder": 7,
+      "external_id": "8aaefff576f7a507",
+      "comprehended": false,
+      "strand": "operations"
+    },
+    {
+      "id": "entrep.accounting_basics",
+      "label": "Accounting Basics",
+      "type": "concept",
+      "description": "Fundamental accounting for startups: bookkeeping, P&L statements, balance sheets, cash flow management, and tax obligations.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.legal",
+      "bookName": "Legal & Operations",
+      "bookColor": "#64748b",
+      "bookOrder": 7,
+      "external_id": "9ca453a9d735853a",
+      "comprehended": false,
+      "strand": "finance"
+    },
+    {
+      "id": "entrep.operations_management",
+      "label": "Operations Management",
+      "type": "concept",
+      "description": "Day-to-day operations: supply chain, inventory, vendor management, quality assurance, and operational efficiency.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.legal",
+      "bookName": "Legal & Operations",
+      "bookColor": "#64748b",
+      "bookOrder": 7,
+      "external_id": "fa7b90da659fd3a9",
+      "comprehended": false,
+      "strand": "operations"
+    },
+    {
+      "id": "entrep.equity_vesting",
+      "label": "Equity & Vesting",
+      "type": "concept",
+      "description": "Understanding equity distribution: vesting schedules, cliff periods, ESOP, cap table management, and dilution.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.legal",
+      "bookName": "Legal & Operations",
+      "bookColor": "#64748b",
+      "bookOrder": 7,
+      "external_id": "4d006f14bb34b28a",
+      "comprehended": false,
+      "strand": "finance"
+    },
+    {
+      "id": "entrep.social_impact",
+      "label": "Social Impact Entrepreneurship",
+      "type": "concept",
+      "description": "Building businesses that solve social problems. Social entrepreneurship models, impact-first vs profit-first approaches.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.social",
+      "bookName": "Social Enterprise",
+      "bookColor": "#22c55e",
+      "bookOrder": 8,
+      "external_id": "8364f78461ea23e4",
+      "comprehended": false,
+      "strand": "impact"
+    },
+    {
+      "id": "entrep.sustainability",
+      "label": "Sustainability & Green Business",
+      "type": "concept",
+      "description": "Building sustainable businesses: environmental impact, circular economy, sustainable supply chains, and green innovation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.social",
+      "bookName": "Social Enterprise",
+      "bookColor": "#22c55e",
+      "bookOrder": 8,
+      "external_id": "7080a3fd4b8b0b48",
+      "comprehended": false,
+      "strand": "impact"
+    },
+    {
+      "id": "entrep.bcorp",
+      "label": "B-Corp Certification",
+      "type": "concept",
+      "description": "B-Corp certification process, benefits, and requirements. Balancing profit with purpose and stakeholder governance.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.social",
+      "bookName": "Social Enterprise",
+      "bookColor": "#22c55e",
+      "bookOrder": 8,
+      "external_id": "e256164f82d81ac1",
+      "comprehended": false,
+      "strand": "impact"
+    },
+    {
+      "id": "entrep.csr",
+      "label": "Corporate Social Responsibility",
+      "type": "concept",
+      "description": "Implementing CSR strategies: philanthropy, volunteerism, ethical sourcing, community engagement, and ESG reporting.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.social",
+      "bookName": "Social Enterprise",
+      "bookColor": "#22c55e",
+      "bookOrder": 8,
+      "external_id": "eca94df62cda97ee",
+      "comprehended": false,
+      "strand": "impact"
+    },
+    {
+      "id": "entrep.impact_measurement",
+      "label": "Impact Measurement",
+      "type": "concept",
+      "description": "Measuring social and environmental impact: theory of change, impact metrics, SROI, SDG alignment, and impact reporting.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.social",
+      "bookName": "Social Enterprise",
+      "bookColor": "#22c55e",
+      "bookOrder": 8,
+      "external_id": "466c60509953dbd3",
+      "comprehended": false,
+      "strand": "impact"
+    },
+    {
+      "id": "entrep.social_business_models",
+      "label": "Social Business Models",
+      "type": "concept",
+      "description": "Business models for social enterprises: cross-subsidy, fee-for-service, cooperative, microfinance, and hybrid models.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.social",
+      "bookName": "Social Enterprise",
+      "bookColor": "#22c55e",
+      "bookOrder": 8,
+      "external_id": "58d0dc47f59d33f6",
+      "comprehended": false,
+      "strand": "impact"
+    },
+    {
+      "id": "entrep.networking",
+      "label": "Networking & Mentorship",
+      "type": "concept",
+      "description": "Building a professional network: attending events, finding mentors, advisory boards, accelerators, and incubators.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.mindset",
+      "bookName": "Mindset & Ideation",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 1,
+      "external_id": "655b1b704fe31578",
+      "comprehended": false,
+      "strand": "mindset"
+    },
+    {
+      "id": "entrep.personal_branding",
+      "label": "Personal Branding",
+      "type": "concept",
+      "description": "Building a personal brand as a founder: thought leadership, social media presence, public speaking, and reputation management.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.growth",
+      "bookName": "Growth",
+      "bookColor": "#3b82f6",
+      "bookOrder": 6,
+      "external_id": "3d0befdfd0bea860",
+      "comprehended": false,
+      "strand": "growth"
+    },
+    {
+      "id": "entrep.exit_strategy",
+      "label": "Exit Strategy",
+      "type": "concept",
+      "description": "Planning exit strategies: acquisition, IPO, merger, management buyout. Timing, valuation, and preparing for exit.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "entrep.finance",
+      "bookName": "Finance",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "dec1409e1343ff5a",
+      "comprehended": false,
+      "strand": "finance"
+    }
+  ],
+  "edges": [
+    {
+      "source": "entrep.entrepreneurial_thinking",
+      "target": "entrep.creativity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.entrepreneurial_thinking",
+      "target": "entrep.problem_identification",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.creativity",
+      "target": "entrep.ideation_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.problem_identification",
+      "target": "entrep.ideation_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.ideation_techniques",
+      "target": "entrep.design_thinking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.problem_identification",
+      "target": "entrep.opportunity_evaluation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.opportunity_evaluation",
+      "target": "entrep.market_trends",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.design_thinking",
+      "target": "entrep.customer_discovery",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.market_trends",
+      "target": "entrep.customer_discovery",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.customer_discovery",
+      "target": "entrep.customer_interviews",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.customer_discovery",
+      "target": "entrep.surveys",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.customer_interviews",
+      "target": "entrep.mvp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.surveys",
+      "target": "entrep.mvp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.mvp",
+      "target": "entrep.lean_startup",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.lean_startup",
+      "target": "entrep.pivoting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.lean_startup",
+      "target": "entrep.product_market_fit",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.customer_discovery",
+      "target": "entrep.customer_segments",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.customer_segments",
+      "target": "entrep.value_proposition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.value_proposition",
+      "target": "entrep.business_model_canvas",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.business_model_canvas",
+      "target": "entrep.revenue_models",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.revenue_models",
+      "target": "entrep.pricing_strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.business_model_canvas",
+      "target": "entrep.competitive_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.competitive_analysis",
+      "target": "entrep.market_sizing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.business_model_canvas",
+      "target": "entrep.channels",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.product_market_fit",
+      "target": "entrep.team_building",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.team_building",
+      "target": "entrep.product_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.product_development",
+      "target": "entrep.agile_scrum",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.product_development",
+      "target": "entrep.tech_stack",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.team_building",
+      "target": "entrep.outsourcing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.mvp",
+      "target": "entrep.prototyping",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.prototyping",
+      "target": "entrep.user_testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.user_testing",
+      "target": "entrep.product_development",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.pricing_strategy",
+      "target": "entrep.bootstrapping",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.revenue_models",
+      "target": "entrep.financial_projections",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.financial_projections",
+      "target": "entrep.unit_economics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.market_sizing",
+      "target": "entrep.fundraising",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.financial_projections",
+      "target": "entrep.fundraising",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.fundraising",
+      "target": "entrep.pitch_decks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.pitch_decks",
+      "target": "entrep.angel_investors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.angel_investors",
+      "target": "entrep.venture_capital",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.fundraising",
+      "target": "entrep.crowdfunding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.unit_economics",
+      "target": "entrep.metrics_kpis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.product_market_fit",
+      "target": "entrep.marketing_strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.channels",
+      "target": "entrep.marketing_strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.marketing_strategy",
+      "target": "entrep.digital_marketing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.digital_marketing",
+      "target": "entrep.content_marketing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.marketing_strategy",
+      "target": "entrep.sales",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.sales",
+      "target": "entrep.partnerships",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.metrics_kpis",
+      "target": "entrep.scaling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.partnerships",
+      "target": "entrep.scaling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.digital_marketing",
+      "target": "entrep.growth_hacking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.metrics_kpis",
+      "target": "entrep.growth_hacking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.sales",
+      "target": "entrep.customer_retention",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.marketing_strategy",
+      "target": "entrep.personal_branding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.entrepreneurial_thinking",
+      "target": "entrep.company_registration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.company_registration",
+      "target": "entrep.ip_patents",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.company_registration",
+      "target": "entrep.contracts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.contracts",
+      "target": "entrep.compliance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.company_registration",
+      "target": "entrep.accounting_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.accounting_basics",
+      "target": "entrep.financial_projections",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.company_registration",
+      "target": "entrep.operations_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.contracts",
+      "target": "entrep.equity_vesting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.equity_vesting",
+      "target": "entrep.fundraising",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.entrepreneurial_thinking",
+      "target": "entrep.networking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.entrepreneurial_thinking",
+      "target": "entrep.social_impact",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.social_impact",
+      "target": "entrep.sustainability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.social_impact",
+      "target": "entrep.social_business_models",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.sustainability",
+      "target": "entrep.bcorp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.social_impact",
+      "target": "entrep.csr",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.social_business_models",
+      "target": "entrep.impact_measurement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.csr",
+      "target": "entrep.impact_measurement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.venture_capital",
+      "target": "entrep.exit_strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "entrep.scaling",
+      "target": "entrep.exit_strategy",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

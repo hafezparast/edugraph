@@ -1,0 +1,1128 @@
+{
+  "metadata": {
+    "domain": "project-management",
+    "curriculum": "Project Management Skills Track",
+    "view": "skill-prerequisites",
+    "version": "0.1.0",
+    "description": "Project management skill track from fundamentals to leadership, with prerequisite ordering",
+    "sources": [
+      "PMBOK Guide",
+      "Scrum Guide",
+      "Agile Manifesto"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "pm.fundamentals",
+      "name": "Fundamentals",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "pm.planning",
+      "name": "Planning",
+      "color": "#f59e0b",
+      "order": 2
+    },
+    {
+      "id": "pm.agile",
+      "name": "Agile",
+      "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "pm.tools",
+      "name": "Tools & Execution",
+      "color": "#8b5cf6",
+      "order": 4
+    },
+    {
+      "id": "pm.leadership",
+      "name": "Leadership",
+      "color": "#ef4444",
+      "order": 5
+    }
+  ],
+  "strands": [
+    {
+      "id": "foundations",
+      "name": "PM Foundations",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "planning",
+      "name": "Planning & Control",
+      "color": "#f59e0b"
+    },
+    {
+      "id": "agile",
+      "name": "Agile & Iterative",
+      "color": "#22c55e"
+    },
+    {
+      "id": "execution",
+      "name": "Tools & Execution",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "leadership",
+      "name": "Leadership & People",
+      "color": "#ef4444"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "pm.project_lifecycle",
+      "label": "Project Lifecycle",
+      "type": "concept",
+      "description": "The five phases of a project: initiation, planning, execution, monitoring & controlling, and closing. Understanding phase gates.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.fundamentals",
+      "bookName": "Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "b05e8b632a5a179f",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "pm.scope",
+      "label": "Scope Management",
+      "type": "concept",
+      "description": "Defining and managing project scope: scope statement, inclusions/exclusions, scope creep prevention, and change control.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.fundamentals",
+      "bookName": "Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "7bd5a3c73ce16da6",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "pm.stakeholders",
+      "label": "Stakeholder Management",
+      "type": "concept",
+      "description": "Identifying and managing stakeholders: stakeholder analysis, power-interest grid, engagement strategies, and communication plans.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.fundamentals",
+      "bookName": "Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "e60e0bd49b231794",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "pm.requirements",
+      "label": "Requirements Gathering",
+      "type": "concept",
+      "description": "Eliciting and documenting project requirements: interviews, workshops, user stories, use cases, and requirements traceability.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.fundamentals",
+      "bookName": "Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "c46711e5fed76548",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "pm.wbs",
+      "label": "Work Breakdown Structure",
+      "type": "concept",
+      "description": "Creating a WBS: decomposing deliverables into work packages, WBS dictionary, and using WBS for estimation and planning.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.fundamentals",
+      "bookName": "Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "f9af07768051a100",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "pm.project_charter",
+      "label": "Project Charter",
+      "type": "concept",
+      "description": "Creating a project charter: purpose, objectives, high-level requirements, milestones, budget, and sponsor authorization.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.fundamentals",
+      "bookName": "Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "2b6f7cc7ab5f07d7",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "pm.constraints",
+      "label": "Triple Constraint",
+      "type": "concept",
+      "description": "Understanding the triple constraint (scope, time, cost) and quality. Trade-offs and balancing competing project demands.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.fundamentals",
+      "bookName": "Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "eef407a58df59e14",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "pm.methodologies",
+      "label": "PM Methodologies Overview",
+      "type": "concept",
+      "description": "Overview of project management methodologies: Waterfall, Agile, Hybrid, PRINCE2, and choosing the right approach.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.fundamentals",
+      "bookName": "Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "1304030fac45a4ef",
+      "comprehended": false,
+      "strand": "foundations"
+    },
+    {
+      "id": "pm.scheduling",
+      "label": "Scheduling",
+      "type": "concept",
+      "description": "Project scheduling: activity sequencing, dependencies (FS, SS, FF, SF), critical path method, and schedule compression.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.planning",
+      "bookName": "Planning",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "76dda31ff5ffe1d5",
+      "comprehended": false,
+      "strand": "planning"
+    },
+    {
+      "id": "pm.gantt_charts",
+      "label": "Gantt Charts",
+      "type": "concept",
+      "description": "Creating and reading Gantt charts: task bars, milestones, dependencies, progress tracking, and Gantt chart tools.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.planning",
+      "bookName": "Planning",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "73be8f25dcfd3e6d",
+      "comprehended": false,
+      "strand": "planning"
+    },
+    {
+      "id": "pm.resource_allocation",
+      "label": "Resource Allocation",
+      "type": "concept",
+      "description": "Allocating and managing resources: resource leveling, resource calendars, capacity planning, and avoiding over-allocation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.planning",
+      "bookName": "Planning",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "c8275961153805a5",
+      "comprehended": false,
+      "strand": "planning"
+    },
+    {
+      "id": "pm.budgeting",
+      "label": "Project Budgeting",
+      "type": "concept",
+      "description": "Estimating and managing project budgets: cost estimation techniques, budget baselines, earned value management, and cost control.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.planning",
+      "bookName": "Planning",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "53e458a357c0daa8",
+      "comprehended": false,
+      "strand": "planning"
+    },
+    {
+      "id": "pm.risk_management",
+      "label": "Risk Management",
+      "type": "concept",
+      "description": "Identifying and managing project risks: risk register, probability-impact matrix, risk response strategies, and contingency planning.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.planning",
+      "bookName": "Planning",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "83e74da4342c50a7",
+      "comprehended": false,
+      "strand": "planning"
+    },
+    {
+      "id": "pm.estimation",
+      "label": "Estimation Techniques",
+      "type": "concept",
+      "description": "Project estimation methods: analogous, parametric, three-point (PERT), bottom-up estimation, and estimation accuracy.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.planning",
+      "bookName": "Planning",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "4b1da4b1d3f47ee1",
+      "comprehended": false,
+      "strand": "planning"
+    },
+    {
+      "id": "pm.quality_management",
+      "label": "Quality Management",
+      "type": "concept",
+      "description": "Managing project quality: quality planning, quality assurance, quality control, acceptance criteria, and continuous improvement.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.planning",
+      "bookName": "Planning",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "bbe1333af92966df",
+      "comprehended": false,
+      "strand": "planning"
+    },
+    {
+      "id": "pm.critical_path",
+      "label": "Critical Path Method",
+      "type": "concept",
+      "description": "Critical path analysis: identifying the longest path, float/slack, schedule optimization, and fast-tracking vs crashing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.planning",
+      "bookName": "Planning",
+      "bookColor": "#f59e0b",
+      "bookOrder": 2,
+      "external_id": "de29202c2267636e",
+      "comprehended": false,
+      "strand": "planning"
+    },
+    {
+      "id": "pm.scrum",
+      "label": "Scrum Framework",
+      "type": "concept",
+      "description": "Scrum fundamentals: roles (Product Owner, Scrum Master, Dev Team), artifacts (product backlog, sprint backlog, increment), and events.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.agile",
+      "bookName": "Agile",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "407aab7d72c81202",
+      "comprehended": false,
+      "strand": "agile"
+    },
+    {
+      "id": "pm.kanban",
+      "label": "Kanban",
+      "type": "concept",
+      "description": "Kanban methodology: visual boards, WIP limits, flow management, pull system, and continuous delivery approach.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.agile",
+      "bookName": "Agile",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "71aabfbab8f244a8",
+      "comprehended": false,
+      "strand": "agile"
+    },
+    {
+      "id": "pm.sprints",
+      "label": "Sprint Planning & Execution",
+      "type": "concept",
+      "description": "Running sprints: sprint planning, sprint goals, daily work, sprint review, and delivering potentially shippable increments.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.agile",
+      "bookName": "Agile",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "9c3d93687c219c86",
+      "comprehended": false,
+      "strand": "agile"
+    },
+    {
+      "id": "pm.standups",
+      "label": "Stand-ups & Daily Scrum",
+      "type": "concept",
+      "description": "Effective daily stand-ups: three questions format, timeboxing, identifying blockers, and keeping meetings focused.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.agile",
+      "bookName": "Agile",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "5e13873ad763ce74",
+      "comprehended": false,
+      "strand": "agile"
+    },
+    {
+      "id": "pm.retrospectives",
+      "label": "Retrospectives",
+      "type": "concept",
+      "description": "Running effective retrospectives: formats (Start-Stop-Continue, 4Ls, sailboat), action items, and fostering continuous improvement.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.agile",
+      "bookName": "Agile",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "030513b8b9efa19e",
+      "comprehended": false,
+      "strand": "agile"
+    },
+    {
+      "id": "pm.user_stories",
+      "label": "User Stories",
+      "type": "concept",
+      "description": "Writing effective user stories: format (As a... I want... So that...), acceptance criteria, INVEST criteria, and story splitting.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.agile",
+      "bookName": "Agile",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "a4a3d5e5ffb13c34",
+      "comprehended": false,
+      "strand": "agile"
+    },
+    {
+      "id": "pm.backlog_management",
+      "label": "Backlog Management",
+      "type": "concept",
+      "description": "Managing product and sprint backlogs: prioritization (MoSCoW, WSJF), grooming/refinement, and maintaining a healthy backlog.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.agile",
+      "bookName": "Agile",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "1e0ce32c1cc100b6",
+      "comprehended": false,
+      "strand": "agile"
+    },
+    {
+      "id": "pm.agile_estimation",
+      "label": "Agile Estimation",
+      "type": "concept",
+      "description": "Estimation in agile: story points, planning poker, velocity tracking, t-shirt sizing, and relative estimation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.agile",
+      "bookName": "Agile",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "f1cd75787d1f4af0",
+      "comprehended": false,
+      "strand": "agile"
+    },
+    {
+      "id": "pm.tools_jira",
+      "label": "Project Management Tools",
+      "type": "concept",
+      "description": "Using PM tools: Jira, Trello, Asana, Monday.com. Setting up boards, workflows, tracking progress, and reporting.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.tools",
+      "bookName": "Tools & Execution",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "6021a4a922a7e190",
+      "comprehended": false,
+      "strand": "execution"
+    },
+    {
+      "id": "pm.communication",
+      "label": "Project Communication",
+      "type": "concept",
+      "description": "Communication planning: status reports, meeting management, stakeholder updates, communication channels, and documentation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.tools",
+      "bookName": "Tools & Execution",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "183199e7ca9f31a0",
+      "comprehended": false,
+      "strand": "execution"
+    },
+    {
+      "id": "pm.conflict_resolution",
+      "label": "Conflict Resolution",
+      "type": "concept",
+      "description": "Handling project conflicts: Thomas-Kilmann model, negotiation, mediation, and turning conflicts into productive discussions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.tools",
+      "bookName": "Tools & Execution",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "c29130d249a549a7",
+      "comprehended": false,
+      "strand": "leadership"
+    },
+    {
+      "id": "pm.change_management",
+      "label": "Change Management",
+      "type": "concept",
+      "description": "Managing changes: change request process, impact assessment, change control board, and organizational change management.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.tools",
+      "bookName": "Tools & Execution",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "ac41ef150853d83f",
+      "comprehended": false,
+      "strand": "execution"
+    },
+    {
+      "id": "pm.status_reporting",
+      "label": "Status Reporting & Dashboards",
+      "type": "concept",
+      "description": "Creating effective status reports: RAG status, burn-down/burn-up charts, dashboards, and keeping stakeholders informed.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.tools",
+      "bookName": "Tools & Execution",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "19aaae260ea12c95",
+      "comprehended": false,
+      "strand": "execution"
+    },
+    {
+      "id": "pm.procurement",
+      "label": "Procurement Management",
+      "type": "concept",
+      "description": "Managing project procurement: vendor selection, RFP/RFQ process, contract types, and vendor relationship management.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.tools",
+      "bookName": "Tools & Execution",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "8cc0c3b7fa06948d",
+      "comprehended": false,
+      "strand": "execution"
+    },
+    {
+      "id": "pm.lessons_learned",
+      "label": "Lessons Learned",
+      "type": "concept",
+      "description": "Capturing lessons learned: project post-mortems, knowledge management, documenting successes and failures, and organizational learning.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.tools",
+      "bookName": "Tools & Execution",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "6b86a1695f557df4",
+      "comprehended": false,
+      "strand": "execution"
+    },
+    {
+      "id": "pm.team_motivation",
+      "label": "Team Motivation",
+      "type": "concept",
+      "description": "Motivating project teams: intrinsic vs extrinsic motivation, recognition, team morale, and creating a positive team environment.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.leadership",
+      "bookName": "Leadership",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "0afb580023bf5626",
+      "comprehended": false,
+      "strand": "leadership"
+    },
+    {
+      "id": "pm.delegation",
+      "label": "Delegation",
+      "type": "concept",
+      "description": "Effective delegation: choosing what to delegate, matching tasks to skills, providing authority, and accountability frameworks.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.leadership",
+      "bookName": "Leadership",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "dd9b3edb9172e334",
+      "comprehended": false,
+      "strand": "leadership"
+    },
+    {
+      "id": "pm.mentoring",
+      "label": "Mentoring & Coaching",
+      "type": "concept",
+      "description": "Mentoring team members: coaching techniques, skill development, feedback delivery, and growing future project managers.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.leadership",
+      "bookName": "Leadership",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "9873a483041000ba",
+      "comprehended": false,
+      "strand": "leadership"
+    },
+    {
+      "id": "pm.decision_making",
+      "label": "Decision Making",
+      "type": "concept",
+      "description": "Making project decisions: decision matrices, consensus building, RACI charts, and balancing speed with thoroughness.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.leadership",
+      "bookName": "Leadership",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "d3959ffd5c7a9b2d",
+      "comprehended": false,
+      "strand": "leadership"
+    },
+    {
+      "id": "pm.emotional_intelligence",
+      "label": "Emotional Intelligence for PMs",
+      "type": "concept",
+      "description": "Emotional intelligence in project management: self-awareness, empathy, relationship management, and leading through influence.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.leadership",
+      "bookName": "Leadership",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "c366460d7619c139",
+      "comprehended": false,
+      "strand": "leadership"
+    },
+    {
+      "id": "pm.leadership_styles",
+      "label": "Leadership Styles",
+      "type": "concept",
+      "description": "Understanding leadership styles: servant leadership, transformational, situational leadership, and adapting style to context.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.leadership",
+      "bookName": "Leadership",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "5ec8890b0d423293",
+      "comprehended": false,
+      "strand": "leadership"
+    },
+    {
+      "id": "pm.remote_teams",
+      "label": "Managing Remote Teams",
+      "type": "concept",
+      "description": "Leading distributed teams: remote communication, timezone management, virtual collaboration tools, and building remote team culture.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.leadership",
+      "bookName": "Leadership",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "de1cc6e90a70c6f5",
+      "comprehended": false,
+      "strand": "leadership"
+    },
+    {
+      "id": "pm.time_management",
+      "label": "Time Management",
+      "type": "concept",
+      "description": "Personal and project time management: prioritization frameworks (Eisenhower matrix), timeboxing, and avoiding multitasking.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "pm.fundamentals",
+      "bookName": "Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "d3dc72ad495c39d1",
+      "comprehended": false,
+      "strand": "foundations"
+    }
+  ],
+  "edges": [
+    {
+      "source": "pm.project_lifecycle",
+      "target": "pm.scope",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.project_lifecycle",
+      "target": "pm.stakeholders",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.project_lifecycle",
+      "target": "pm.project_charter",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.project_lifecycle",
+      "target": "pm.constraints",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.project_lifecycle",
+      "target": "pm.methodologies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.project_lifecycle",
+      "target": "pm.time_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.scope",
+      "target": "pm.requirements",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.stakeholders",
+      "target": "pm.requirements",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.requirements",
+      "target": "pm.wbs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.wbs",
+      "target": "pm.scheduling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.wbs",
+      "target": "pm.estimation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.scheduling",
+      "target": "pm.gantt_charts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.scheduling",
+      "target": "pm.critical_path",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.estimation",
+      "target": "pm.budgeting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.estimation",
+      "target": "pm.resource_allocation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.scheduling",
+      "target": "pm.resource_allocation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.wbs",
+      "target": "pm.risk_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.constraints",
+      "target": "pm.risk_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.requirements",
+      "target": "pm.quality_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.methodologies",
+      "target": "pm.scrum",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.methodologies",
+      "target": "pm.kanban",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.requirements",
+      "target": "pm.user_stories",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.scrum",
+      "target": "pm.sprints",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.scrum",
+      "target": "pm.standups",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.sprints",
+      "target": "pm.retrospectives",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.user_stories",
+      "target": "pm.backlog_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.scrum",
+      "target": "pm.backlog_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.user_stories",
+      "target": "pm.agile_estimation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.estimation",
+      "target": "pm.agile_estimation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.gantt_charts",
+      "target": "pm.tools_jira",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.kanban",
+      "target": "pm.tools_jira",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.scrum",
+      "target": "pm.tools_jira",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.stakeholders",
+      "target": "pm.communication",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.project_charter",
+      "target": "pm.communication",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.communication",
+      "target": "pm.conflict_resolution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.scope",
+      "target": "pm.change_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.risk_management",
+      "target": "pm.change_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.tools_jira",
+      "target": "pm.status_reporting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.communication",
+      "target": "pm.status_reporting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.budgeting",
+      "target": "pm.procurement",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.project_lifecycle",
+      "target": "pm.lessons_learned",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.retrospectives",
+      "target": "pm.lessons_learned",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.communication",
+      "target": "pm.team_motivation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.resource_allocation",
+      "target": "pm.delegation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.team_motivation",
+      "target": "pm.delegation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.delegation",
+      "target": "pm.mentoring",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.conflict_resolution",
+      "target": "pm.decision_making",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.stakeholders",
+      "target": "pm.decision_making",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.team_motivation",
+      "target": "pm.emotional_intelligence",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.conflict_resolution",
+      "target": "pm.emotional_intelligence",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.emotional_intelligence",
+      "target": "pm.leadership_styles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.decision_making",
+      "target": "pm.leadership_styles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.communication",
+      "target": "pm.remote_teams",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "pm.tools_jira",
+      "target": "pm.remote_teams",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

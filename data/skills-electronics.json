@@ -1,0 +1,2281 @@
+{
+  "metadata": {
+    "domain": "electronics",
+    "curriculum": "Electronics A-Z",
+    "view": "skill-track",
+    "version": "0.2.0",
+    "description": "Comprehensive electronics skill track from fundamentals through advanced topics, with prerequisite ordering",
+    "sources": [
+      "Electronics Engineering Curriculum",
+      "Arduino & Embedded Systems Guides"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "elec.fund",
+      "name": "Fundamentals",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "elec.passive",
+      "name": "Passive Components",
+      "color": "#f97316",
+      "order": 2
+    },
+    {
+      "id": "elec.semi",
+      "name": "Semiconductor Devices",
+      "color": "#eab308",
+      "order": 3
+    },
+    {
+      "id": "elec.analog",
+      "name": "Analog Circuits",
+      "color": "#22c55e",
+      "order": 4
+    },
+    {
+      "id": "elec.digital",
+      "name": "Digital Electronics",
+      "color": "#3b82f6",
+      "order": 5
+    },
+    {
+      "id": "elec.mcu",
+      "name": "Microcontrollers",
+      "color": "#8b5cf6",
+      "order": 6
+    },
+    {
+      "id": "elec.comm",
+      "name": "Communication & Protocols",
+      "color": "#ec4899",
+      "order": 7
+    },
+    {
+      "id": "elec.pcb",
+      "name": "PCB Design & Fabrication",
+      "color": "#14b8a6",
+      "order": 8
+    },
+    {
+      "id": "elec.adv",
+      "name": "Advanced",
+      "color": "#6366f1",
+      "order": 9
+    }
+  ],
+  "strands": [
+    {
+      "id": "circuit-theory",
+      "name": "Circuit Theory",
+      "color": "#ef4444"
+    },
+    {
+      "id": "analog-design",
+      "name": "Analog Design",
+      "color": "#22c55e"
+    },
+    {
+      "id": "digital-design",
+      "name": "Digital Design",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "embedded-systems",
+      "name": "Embedded Systems",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "communication",
+      "name": "Communication",
+      "color": "#ec4899"
+    },
+    {
+      "id": "fabrication",
+      "name": "Fabrication",
+      "color": "#14b8a6"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "elec.fund.voltage",
+      "label": "Voltage",
+      "type": "concept",
+      "description": "Electric potential difference between two points. Measured in volts (V). Voltage sources, ground reference, and polarity conventions.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "b2fc824de019d621",
+      "comprehended": false,
+      "strand": "circuit-theory"
+    },
+    {
+      "id": "elec.fund.current",
+      "label": "Current",
+      "type": "concept",
+      "description": "Flow of electric charge through a conductor. Measured in amperes (A). Conventional vs electron flow, DC vs AC current.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "bf0c203b9b7d6f2d",
+      "comprehended": false,
+      "strand": "circuit-theory"
+    },
+    {
+      "id": "elec.fund.resistance",
+      "label": "Resistance",
+      "type": "concept",
+      "description": "Opposition to current flow. Measured in ohms. Material resistivity, conductors vs insulators, temperature effects on resistance.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "d09813b410431ef4",
+      "comprehended": false,
+      "strand": "circuit-theory"
+    },
+    {
+      "id": "elec.fund.ohms_law",
+      "label": "Ohm's Law",
+      "type": "concept",
+      "description": "V = IR relationship between voltage, current, and resistance. Applying Ohm's law to calculate unknown quantities in simple circuits.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "c50e90d3192ed363",
+      "comprehended": false,
+      "strand": "circuit-theory"
+    },
+    {
+      "id": "elec.fund.power",
+      "label": "Electrical Power",
+      "type": "concept",
+      "description": "Power dissipation in circuits: P = VI = I²R = V²/R. Watts, energy consumption, and thermal considerations.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "b8349acd25b45e06",
+      "comprehended": false,
+      "strand": "circuit-theory"
+    },
+    {
+      "id": "elec.fund.series_parallel",
+      "label": "Series & Parallel Circuits",
+      "type": "concept",
+      "description": "Series circuits share current; parallel circuits share voltage. Calculating equivalent resistance, voltage dividers, and current dividers.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "c7e2f25bf8f1543a",
+      "comprehended": false,
+      "strand": "circuit-theory"
+    },
+    {
+      "id": "elec.fund.kirchhoff",
+      "label": "Kirchhoff's Laws",
+      "type": "concept",
+      "description": "KVL: sum of voltages around a loop equals zero. KCL: sum of currents at a node equals zero. Systematic circuit analysis.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "04e172d91bf9c547",
+      "comprehended": false,
+      "strand": "circuit-theory"
+    },
+    {
+      "id": "elec.fund.dc_ac",
+      "label": "DC vs AC",
+      "type": "concept",
+      "description": "Direct current vs alternating current. Frequency, amplitude, phase, RMS values, and peak-to-peak measurements.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "f16a079a93cb5dae",
+      "comprehended": false,
+      "strand": "circuit-theory"
+    },
+    {
+      "id": "elec.fund.multimeter",
+      "label": "Using a Multimeter",
+      "type": "concept",
+      "description": "Measuring voltage, current, and resistance with a digital multimeter. Continuity testing, proper probe placement, and safety.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "069c9d79e8aa501c",
+      "comprehended": false,
+      "strand": "fabrication"
+    },
+    {
+      "id": "elec.fund.breadboard",
+      "label": "Breadboard Prototyping",
+      "type": "concept",
+      "description": "Solderless breadboard layout and connections. Building basic circuits, power rails, and common prototyping practices.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "883a2a3a7393c30e",
+      "comprehended": false,
+      "strand": "fabrication"
+    },
+    {
+      "id": "elec.passive.resistors",
+      "label": "Resistors",
+      "type": "concept",
+      "description": "Resistor types (carbon, metal film, wirewound), color code reading, power ratings, tolerance, and applications in circuits.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.passive",
+      "bookName": "Passive Components",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "d84c81cf6577c381",
+      "comprehended": false,
+      "strand": "circuit-theory"
+    },
+    {
+      "id": "elec.passive.potentiometers",
+      "label": "Potentiometers & Variable Resistors",
+      "type": "concept",
+      "description": "Variable resistance devices. Linear vs logarithmic taper, trimpots, rheostats, and voltage divider applications.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.passive",
+      "bookName": "Passive Components",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "2071d0e6d148f49c",
+      "comprehended": false,
+      "strand": "circuit-theory"
+    },
+    {
+      "id": "elec.passive.capacitors",
+      "label": "Capacitors",
+      "type": "concept",
+      "description": "Energy storage in electric fields. Capacitance (farads), types (ceramic, electrolytic, film), charging/discharging behavior, and RC time constants.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.passive",
+      "bookName": "Passive Components",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "5ed74bb3fba3eee4",
+      "comprehended": false,
+      "strand": "circuit-theory"
+    },
+    {
+      "id": "elec.passive.inductors",
+      "label": "Inductors",
+      "type": "concept",
+      "description": "Energy storage in magnetic fields. Inductance (henrys), coil construction, RL time constants, and back-EMF.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.passive",
+      "bookName": "Passive Components",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "6edd908debbf0fb9",
+      "comprehended": false,
+      "strand": "circuit-theory"
+    },
+    {
+      "id": "elec.passive.transformers",
+      "label": "Transformers",
+      "type": "concept",
+      "description": "Electromagnetic induction between coils. Turns ratio, step-up/step-down, isolation transformers, and power transfer efficiency.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.passive",
+      "bookName": "Passive Components",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "02a5d258c9b29954",
+      "comprehended": false,
+      "strand": "circuit-theory"
+    },
+    {
+      "id": "elec.passive.impedance",
+      "label": "Impedance & Reactance",
+      "type": "concept",
+      "description": "AC resistance of capacitors and inductors. Capacitive and inductive reactance, impedance as complex quantity, phasor diagrams.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.passive",
+      "bookName": "Passive Components",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "c490e8c3818a5517",
+      "comprehended": false,
+      "strand": "circuit-theory"
+    },
+    {
+      "id": "elec.passive.resonance",
+      "label": "Resonance",
+      "type": "concept",
+      "description": "LC resonant circuits. Natural frequency, series vs parallel resonance, quality factor (Q), and bandwidth.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.passive",
+      "bookName": "Passive Components",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "23fa9d78ee0a3379",
+      "comprehended": false,
+      "strand": "circuit-theory"
+    },
+    {
+      "id": "elec.semi.diodes",
+      "label": "Diodes",
+      "type": "concept",
+      "description": "PN junction operation. Forward/reverse bias, forward voltage drop, rectification, signal diodes vs power diodes.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.semi",
+      "bookName": "Semiconductor Devices",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "f50dbe7be20cb283",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.semi.special_diodes",
+      "label": "Special Diodes",
+      "type": "concept",
+      "description": "Zener diodes (voltage regulation), Schottky diodes (fast switching), LEDs (light emission), photodiodes (light detection), and varactor diodes.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.semi",
+      "bookName": "Semiconductor Devices",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "7306cdf80e9a21b3",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.semi.bjt",
+      "label": "Bipolar Junction Transistors (BJT)",
+      "type": "concept",
+      "description": "NPN and PNP transistors. Current gain (hFE/beta), saturation and cutoff regions, transistor as switch, and biasing techniques.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.semi",
+      "bookName": "Semiconductor Devices",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "88e3435242729491",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.semi.mosfet",
+      "label": "MOSFETs",
+      "type": "concept",
+      "description": "Metal-Oxide-Semiconductor FETs. N-channel and P-channel, enhancement vs depletion mode, gate threshold voltage, high-speed switching.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.semi",
+      "bookName": "Semiconductor Devices",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "1b3ab077a9f47654",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.semi.opamp_intro",
+      "label": "Op-Amp Basics",
+      "type": "concept",
+      "description": "Operational amplifier fundamentals. Ideal op-amp model, open-loop gain, input impedance, virtual short concept, and common IC packages (LM741, LM358).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.semi",
+      "bookName": "Semiconductor Devices",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "e7b100cb4a163a48",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.semi.opamp_configs",
+      "label": "Op-Amp Configurations",
+      "type": "concept",
+      "description": "Inverting, non-inverting, voltage follower, summing, and difference amplifier configurations. Gain calculations and feedback networks.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.semi",
+      "bookName": "Semiconductor Devices",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "87a17efb32fcd3f2",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.semi.thyristors",
+      "label": "Thyristors & Triacs",
+      "type": "concept",
+      "description": "SCR (Silicon Controlled Rectifier) operation and triggering. Triacs for AC switching, gate control, and phase angle control.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.semi",
+      "bookName": "Semiconductor Devices",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "6ddbb3fe445f7939",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.semi.voltage_regulators",
+      "label": "Voltage Regulators",
+      "type": "concept",
+      "description": "Linear regulators (78xx, LDO), dropout voltage, thermal management, and basic regulation concepts.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.semi",
+      "bookName": "Semiconductor Devices",
+      "bookColor": "#eab308",
+      "bookOrder": 3,
+      "external_id": "5704ed3fdcb401d2",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.analog.amplifiers",
+      "label": "Transistor Amplifiers",
+      "type": "concept",
+      "description": "Common emitter, common collector (emitter follower), and common base amplifier topologies. Voltage gain, input/output impedance, and coupling capacitors.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.analog",
+      "bookName": "Analog Circuits",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "9bc97b6fedc82ec8",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.analog.diff_amp",
+      "label": "Differential Amplifiers",
+      "type": "concept",
+      "description": "Differential pair topology, common-mode rejection ratio (CMRR), instrumentation amplifiers, and balanced signal processing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.analog",
+      "bookName": "Analog Circuits",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "4d1586382da05a62",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.analog.filters_passive",
+      "label": "Passive Filters",
+      "type": "concept",
+      "description": "RC, RL, and RLC low-pass, high-pass, band-pass, and band-stop filters. Cutoff frequency, roll-off, and Bode plots.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.analog",
+      "bookName": "Analog Circuits",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "21beeb2b436d8a1f",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.analog.filters_active",
+      "label": "Active Filters",
+      "type": "concept",
+      "description": "Op-amp based Sallen-Key, Butterworth, and Chebyshev filter designs. Higher-order filters, filter design tools, and frequency response tuning.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.analog",
+      "bookName": "Analog Circuits",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "1131fb49a6b715dc",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.analog.oscillators",
+      "label": "Oscillators",
+      "type": "concept",
+      "description": "RC oscillators (Wien bridge, phase shift), LC oscillators (Colpitts, Hartley), crystal oscillators, and Barkhausen stability criterion.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.analog",
+      "bookName": "Analog Circuits",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "fdfd81c06e9b29bc",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.analog.timer_555",
+      "label": "555 Timer Circuits",
+      "type": "concept",
+      "description": "555 timer IC in astable, monostable, and bistable modes. Duty cycle control, frequency calculation, and practical applications.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.analog",
+      "bookName": "Analog Circuits",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "a7345562f8b47d3f",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.analog.power_supply",
+      "label": "Linear Power Supplies",
+      "type": "concept",
+      "description": "Transformer, rectifier (half/full bridge), filter capacitor, and regulator stages. Ripple calculation and load regulation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.analog",
+      "bookName": "Analog Circuits",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "031d31b9602e1075",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.analog.audio_amp",
+      "label": "Audio Amplifier Circuits",
+      "type": "concept",
+      "description": "Class A, B, AB, and D audio amplifiers. Pre-amplifier stages, power output stages, speaker matching, and distortion minimization.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.analog",
+      "bookName": "Analog Circuits",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "8b410187b7a49b38",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.analog.comparators",
+      "label": "Comparators & Schmitt Triggers",
+      "type": "concept",
+      "description": "Voltage comparator circuits, hysteresis with Schmitt triggers, window comparators, and level detection applications.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.analog",
+      "bookName": "Analog Circuits",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "e0047abe1306eb0d",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.digital.number_systems",
+      "label": "Number Systems",
+      "type": "concept",
+      "description": "Binary, octal, decimal, hexadecimal number systems. Conversions between bases, binary arithmetic, and two's complement representation.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.digital",
+      "bookName": "Digital Electronics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "3d278bea381e16c3",
+      "comprehended": false,
+      "strand": "digital-design"
+    },
+    {
+      "id": "elec.digital.logic_gates",
+      "label": "Logic Gates",
+      "type": "concept",
+      "description": "AND, OR, NOT, NAND, NOR, XOR, and XNOR gates. Truth tables, gate symbols, and TTL/CMOS IC implementations (74xx series).",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.digital",
+      "bookName": "Digital Electronics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "b9c97956f5c79fb7",
+      "comprehended": false,
+      "strand": "digital-design"
+    },
+    {
+      "id": "elec.digital.boolean_algebra",
+      "label": "Boolean Algebra",
+      "type": "concept",
+      "description": "Boolean laws and theorems (De Morgan's, absorption, distributive). Simplification of logic expressions and canonical forms (SOP, POS).",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.digital",
+      "bookName": "Digital Electronics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "ab003da3dafc5da2",
+      "comprehended": false,
+      "strand": "digital-design"
+    },
+    {
+      "id": "elec.digital.karnaugh",
+      "label": "Karnaugh Maps",
+      "type": "concept",
+      "description": "K-map method for simplifying Boolean expressions. 2, 3, and 4-variable maps, don't-care conditions, and minimal expressions.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.digital",
+      "bookName": "Digital Electronics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "fb6e5cc5a62438cc",
+      "comprehended": false,
+      "strand": "digital-design"
+    },
+    {
+      "id": "elec.digital.combinational",
+      "label": "Combinational Logic Circuits",
+      "type": "concept",
+      "description": "Adders (half, full, ripple carry), subtractors, encoders, decoders, and parity generators. Multi-level gate networks.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.digital",
+      "bookName": "Digital Electronics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "9ba868d64306cf6e",
+      "comprehended": false,
+      "strand": "digital-design"
+    },
+    {
+      "id": "elec.digital.multiplexers",
+      "label": "Multiplexers & Demultiplexers",
+      "type": "concept",
+      "description": "MUX and DEMUX circuits. Data selection, address lines, cascading multiplexers, and implementing Boolean functions with MUX.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.digital",
+      "bookName": "Digital Electronics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "b94a7ec96cb06d0c",
+      "comprehended": false,
+      "strand": "digital-design"
+    },
+    {
+      "id": "elec.digital.flip_flops",
+      "label": "Flip-Flops & Latches",
+      "type": "concept",
+      "description": "SR, D, JK, and T flip-flops. Latch vs flip-flop, edge triggering, setup/hold times, and clock signals.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.digital",
+      "bookName": "Digital Electronics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "c65d1b69ddb1caac",
+      "comprehended": false,
+      "strand": "digital-design"
+    },
+    {
+      "id": "elec.digital.counters",
+      "label": "Counters",
+      "type": "concept",
+      "description": "Asynchronous (ripple) and synchronous counters. Up/down counters, modulo-N counters, ring counters, and Johnson counters.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.digital",
+      "bookName": "Digital Electronics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "269c3ab64efab176",
+      "comprehended": false,
+      "strand": "digital-design"
+    },
+    {
+      "id": "elec.digital.shift_registers",
+      "label": "Shift Registers",
+      "type": "concept",
+      "description": "SISO, SIPO, PISO, and PIPO shift registers. Serial-to-parallel conversion, data buffering, and shift register applications.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.digital",
+      "bookName": "Digital Electronics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "33f75e3d9e252cfb",
+      "comprehended": false,
+      "strand": "digital-design"
+    },
+    {
+      "id": "elec.digital.memory",
+      "label": "Memory (RAM, ROM, Flash)",
+      "type": "concept",
+      "description": "Memory types: SRAM, DRAM, ROM, EEPROM, and Flash. Memory addressing, read/write cycles, and memory hierarchy basics.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.digital",
+      "bookName": "Digital Electronics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "02edc1873dda446b",
+      "comprehended": false,
+      "strand": "digital-design"
+    },
+    {
+      "id": "elec.digital.state_machines",
+      "label": "Finite State Machines",
+      "type": "concept",
+      "description": "Mealy and Moore state machines. State diagrams, state tables, state assignment, and sequential circuit design methodology.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.digital",
+      "bookName": "Digital Electronics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "5bac9364437092c2",
+      "comprehended": false,
+      "strand": "digital-design"
+    },
+    {
+      "id": "elec.mcu.arduino_intro",
+      "label": "Arduino Introduction",
+      "type": "concept",
+      "description": "Arduino platform overview. Board variants (Uno, Nano, Mega), IDE setup, sketch structure (setup/loop), and uploading code.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.mcu",
+      "bookName": "Microcontrollers",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "a0baf3580d0f7fba",
+      "comprehended": false,
+      "strand": "embedded-systems"
+    },
+    {
+      "id": "elec.mcu.gpio",
+      "label": "GPIO (Digital I/O)",
+      "type": "concept",
+      "description": "General purpose input/output pins. Digital read/write, pull-up/pull-down resistors, driving LEDs, reading buttons and switches.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.mcu",
+      "bookName": "Microcontrollers",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "63b303ae45d71940",
+      "comprehended": false,
+      "strand": "embedded-systems"
+    },
+    {
+      "id": "elec.mcu.adc",
+      "label": "ADC (Analog to Digital)",
+      "type": "concept",
+      "description": "Analog-to-digital conversion. Resolution (10-bit, 12-bit), reference voltage, sampling rate, reading analog sensors.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.mcu",
+      "bookName": "Microcontrollers",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "f4830ac4797a5c0c",
+      "comprehended": false,
+      "strand": "embedded-systems"
+    },
+    {
+      "id": "elec.mcu.dac",
+      "label": "DAC (Digital to Analog)",
+      "type": "concept",
+      "description": "Digital-to-analog conversion. R-2R ladder, external DAC modules, generating analog waveforms from digital signals.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.mcu",
+      "bookName": "Microcontrollers",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "30561cab3a950d93",
+      "comprehended": false,
+      "strand": "embedded-systems"
+    },
+    {
+      "id": "elec.mcu.pwm",
+      "label": "PWM (Pulse Width Modulation)",
+      "type": "concept",
+      "description": "PWM signal generation. Duty cycle, frequency control, LED dimming, motor speed control, and servo positioning.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.mcu",
+      "bookName": "Microcontrollers",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "3f37c2836c32da3a",
+      "comprehended": false,
+      "strand": "embedded-systems"
+    },
+    {
+      "id": "elec.mcu.interrupts",
+      "label": "Interrupts",
+      "type": "concept",
+      "description": "Hardware and software interrupts. ISR (Interrupt Service Routine), external interrupts, timer interrupts, priority, and debouncing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.mcu",
+      "bookName": "Microcontrollers",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "0404fbc3c086bbba",
+      "comprehended": false,
+      "strand": "embedded-systems"
+    },
+    {
+      "id": "elec.mcu.timers",
+      "label": "Timers & Counters",
+      "type": "concept",
+      "description": "Hardware timer/counter peripherals. Prescalers, timer modes (CTC, fast PWM), watchdog timer, and timing-critical applications.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.mcu",
+      "bookName": "Microcontrollers",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "56c24683abb0e8d2",
+      "comprehended": false,
+      "strand": "embedded-systems"
+    },
+    {
+      "id": "elec.mcu.serial_comm",
+      "label": "Serial Communication Basics",
+      "type": "concept",
+      "description": "Serial vs parallel communication. Baud rate, data framing, serial monitor debugging, and basic UART communication.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.mcu",
+      "bookName": "Microcontrollers",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "10732a3206ee418e",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "elec.mcu.lcd_display",
+      "label": "LCD & OLED Displays",
+      "type": "concept",
+      "description": "Character LCD (HD44780), graphic OLED (SSD1306), display libraries, custom characters, and I2C display interfaces.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.mcu",
+      "bookName": "Microcontrollers",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "9bbc60a8526986fd",
+      "comprehended": false,
+      "strand": "embedded-systems"
+    },
+    {
+      "id": "elec.mcu.motor_control",
+      "label": "Motor Control with MCU",
+      "type": "concept",
+      "description": "Driving DC motors, stepper motors, and servos from microcontrollers. H-bridge drivers (L298N, L293D), motor shields, and PID speed control.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.mcu",
+      "bookName": "Microcontrollers",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 6,
+      "external_id": "61b67707463dab90",
+      "comprehended": false,
+      "strand": "embedded-systems"
+    },
+    {
+      "id": "elec.comm.uart",
+      "label": "UART Protocol",
+      "type": "concept",
+      "description": "Universal Asynchronous Receiver-Transmitter. Frame format, baud rate, start/stop bits, parity, RS-232 and TTL levels.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.comm",
+      "bookName": "Communication & Protocols",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "7a9370cee5adf4b1",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "elec.comm.spi",
+      "label": "SPI Protocol",
+      "type": "concept",
+      "description": "Serial Peripheral Interface. Master/slave, MOSI/MISO/SCK/CS lines, clock polarity/phase modes, and daisy chaining.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.comm",
+      "bookName": "Communication & Protocols",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "b45383b64d968759",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "elec.comm.i2c",
+      "label": "I2C Protocol",
+      "type": "concept",
+      "description": "Inter-Integrated Circuit bus. SDA/SCL lines, addressing, start/stop conditions, clock stretching, and multi-device buses.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.comm",
+      "bookName": "Communication & Protocols",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "2525bb73ac0b1f9d",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "elec.comm.wifi",
+      "label": "WiFi (ESP8266/ESP32)",
+      "type": "concept",
+      "description": "WiFi connectivity with ESP modules. Station and AP modes, HTTP requests, MQTT protocol, and IoT cloud integration.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.comm",
+      "bookName": "Communication & Protocols",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "cd1fc053f626e0ce",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "elec.comm.bluetooth",
+      "label": "Bluetooth & BLE",
+      "type": "concept",
+      "description": "Bluetooth Classic and BLE (Bluetooth Low Energy). HC-05/HC-06 modules, BLE services/characteristics, and mobile app communication.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.comm",
+      "bookName": "Communication & Protocols",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "477a87191c0c9598",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "elec.comm.rf_basics",
+      "label": "RF Basics",
+      "type": "concept",
+      "description": "Radio frequency fundamentals. Frequency bands, modulation (AM, FM, digital), antennas, nRF24L01 modules, and LoRa for long range.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.comm",
+      "bookName": "Communication & Protocols",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "aedca4370ad79a0c",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "elec.comm.can_bus",
+      "label": "CAN Bus",
+      "type": "concept",
+      "description": "Controller Area Network protocol. Differential signaling, message IDs, arbitration, automotive and industrial applications.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.comm",
+      "bookName": "Communication & Protocols",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "3d07774048ed1bf8",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "elec.comm.usb_basics",
+      "label": "USB Fundamentals",
+      "type": "concept",
+      "description": "USB protocol overview. USB types (2.0, 3.0, Type-C), device classes, enumeration, HID devices, and CDC serial emulation.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.comm",
+      "bookName": "Communication & Protocols",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "ded4b385cc7593ae",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "elec.pcb.schematic_capture",
+      "label": "Schematic Capture",
+      "type": "concept",
+      "description": "Drawing circuit schematics in EDA tools (KiCad, Eagle). Component symbols, net labels, hierarchical sheets, and design rule checks.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.pcb",
+      "bookName": "PCB Design & Fabrication",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "c1a60fb3e3ac56e7",
+      "comprehended": false,
+      "strand": "fabrication"
+    },
+    {
+      "id": "elec.pcb.component_footprints",
+      "label": "Component Footprints",
+      "type": "concept",
+      "description": "PCB footprint libraries. Through-hole vs SMD packages, pad dimensions, courtyard areas, and creating custom footprints.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.pcb",
+      "bookName": "PCB Design & Fabrication",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "d7d163c654cdfa81",
+      "comprehended": false,
+      "strand": "fabrication"
+    },
+    {
+      "id": "elec.pcb.layout",
+      "label": "PCB Layout",
+      "type": "concept",
+      "description": "Component placement on PCB. Board outline, mounting holes, layer stackup, ground planes, and thermal relief pads.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.pcb",
+      "bookName": "PCB Design & Fabrication",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "14103a48d27f8703",
+      "comprehended": false,
+      "strand": "fabrication"
+    },
+    {
+      "id": "elec.pcb.routing",
+      "label": "Trace Routing",
+      "type": "concept",
+      "description": "Copper trace routing. Track width calculations, via types, differential pairs, impedance control, and auto-router vs manual routing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.pcb",
+      "bookName": "PCB Design & Fabrication",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "d141dc9a9a0b7206",
+      "comprehended": false,
+      "strand": "fabrication"
+    },
+    {
+      "id": "elec.pcb.design_rules",
+      "label": "Design Rules & DRC",
+      "type": "concept",
+      "description": "Design Rule Check configuration. Clearances, minimum trace widths, via constraints, manufacturer specifications, and Gerber output.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.pcb",
+      "bookName": "PCB Design & Fabrication",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "df4b2d0c064866a0",
+      "comprehended": false,
+      "strand": "fabrication"
+    },
+    {
+      "id": "elec.pcb.soldering",
+      "label": "Soldering Techniques",
+      "type": "concept",
+      "description": "Through-hole and basic SMD soldering. Iron temperature, flux, tinning, desoldering (solder wick, pump), and joint inspection.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.pcb",
+      "bookName": "PCB Design & Fabrication",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "e7f0e3010b993886",
+      "comprehended": false,
+      "strand": "fabrication"
+    },
+    {
+      "id": "elec.pcb.smd",
+      "label": "SMD Assembly",
+      "type": "concept",
+      "description": "Surface Mount Device assembly. Solder paste stenciling, pick-and-place basics, reflow soldering, hot air rework, and component sizes (0402, 0603, 0805).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.pcb",
+      "bookName": "PCB Design & Fabrication",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "8b54f5183711bcf5",
+      "comprehended": false,
+      "strand": "fabrication"
+    },
+    {
+      "id": "elec.pcb.testing",
+      "label": "Testing & Debugging PCBs",
+      "type": "concept",
+      "description": "Board bring-up process. Visual inspection, continuity testing, power rail verification, oscilloscope probing, and logic analyzers.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.pcb",
+      "bookName": "PCB Design & Fabrication",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "2be34ae6f6b9d4a6",
+      "comprehended": false,
+      "strand": "fabrication"
+    },
+    {
+      "id": "elec.pcb.fabrication_ordering",
+      "label": "PCB Fabrication & Ordering",
+      "type": "concept",
+      "description": "Generating Gerber files, BOM, and pick-and-place files. Ordering from manufacturers (JLCPCB, PCBWay), panelization, and assembly services.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.pcb",
+      "bookName": "PCB Design & Fabrication",
+      "bookColor": "#14b8a6",
+      "bookOrder": 8,
+      "external_id": "7743f47443785744",
+      "comprehended": false,
+      "strand": "fabrication"
+    },
+    {
+      "id": "elec.adv.dsp_basics",
+      "label": "Digital Signal Processing Basics",
+      "type": "concept",
+      "description": "Sampling theorem, Nyquist frequency, aliasing, quantization. FIR and IIR digital filters, FFT, and DSP on microcontrollers.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.adv",
+      "bookName": "Advanced",
+      "bookColor": "#6366f1",
+      "bookOrder": 9,
+      "external_id": "ba64d3dcdd608091",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.adv.emc_emi",
+      "label": "EMC / EMI",
+      "type": "concept",
+      "description": "Electromagnetic compatibility and interference. Shielding, grounding techniques, decoupling capacitors, PCB layout for EMC, and regulatory standards.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.adv",
+      "bookName": "Advanced",
+      "bookColor": "#6366f1",
+      "bookOrder": 9,
+      "external_id": "e137d47a6e688b4b",
+      "comprehended": false,
+      "strand": "fabrication"
+    },
+    {
+      "id": "elec.adv.smps",
+      "label": "Switching Power Supplies (SMPS)",
+      "type": "concept",
+      "description": "Buck, boost, and buck-boost converter topologies. PWM control, inductor selection, output filtering, efficiency, and IC-based designs.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.adv",
+      "bookName": "Advanced",
+      "bookColor": "#6366f1",
+      "bookOrder": 9,
+      "external_id": "5c7cf99755f80410",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.adv.motor_drives",
+      "label": "Motor Drives & Power Electronics",
+      "type": "concept",
+      "description": "BLDC motor control, VFDs (variable frequency drives), IGBT gate drivers, regenerative braking, and high-power switching.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.adv",
+      "bookName": "Advanced",
+      "bookColor": "#6366f1",
+      "bookOrder": 9,
+      "external_id": "4b08e9c8e557d1ec",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.adv.embedded_rtos",
+      "label": "RTOS & Embedded OS",
+      "type": "concept",
+      "description": "Real-Time Operating Systems (FreeRTOS). Tasks, scheduling, semaphores, mutexes, queues, and deterministic timing for embedded applications.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.adv",
+      "bookName": "Advanced",
+      "bookColor": "#6366f1",
+      "bookOrder": 9,
+      "external_id": "00311304754dfc71",
+      "comprehended": false,
+      "strand": "embedded-systems"
+    },
+    {
+      "id": "elec.adv.arm_processors",
+      "label": "ARM Cortex Processors",
+      "type": "concept",
+      "description": "ARM Cortex-M architecture. STM32 family, register-level programming, HAL libraries, debugging with SWD/JTAG, and bare-metal development.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.adv",
+      "bookName": "Advanced",
+      "bookColor": "#6366f1",
+      "bookOrder": 9,
+      "external_id": "f86fd8d19343c47f",
+      "comprehended": false,
+      "strand": "embedded-systems"
+    },
+    {
+      "id": "elec.adv.fpga_intro",
+      "label": "FPGA Introduction",
+      "type": "concept",
+      "description": "Field-Programmable Gate Arrays. HDL (Verilog/VHDL) basics, synthesis, look-up tables, and FPGA development boards.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.adv",
+      "bookName": "Advanced",
+      "bookColor": "#6366f1",
+      "bookOrder": 9,
+      "external_id": "45b0118b31c21e30",
+      "comprehended": false,
+      "strand": "digital-design"
+    },
+    {
+      "id": "elec.adv.battery_management",
+      "label": "Battery Management Systems",
+      "type": "concept",
+      "description": "Battery chemistries (Li-ion, LiPo, NiMH), charging circuits (CC-CV), cell balancing, protection circuits, and fuel gauging.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.adv",
+      "bookName": "Advanced",
+      "bookColor": "#6366f1",
+      "bookOrder": 9,
+      "external_id": "06be0f8e118fdf56",
+      "comprehended": false,
+      "strand": "analog-design"
+    },
+    {
+      "id": "elec.adv.iot_systems",
+      "label": "IoT System Design",
+      "type": "concept",
+      "description": "End-to-end IoT architecture. Sensor nodes, edge computing, cloud platforms (AWS IoT, ThingSpeak), OTA updates, and low-power design.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.adv",
+      "bookName": "Advanced",
+      "bookColor": "#6366f1",
+      "bookOrder": 9,
+      "external_id": "f92e284fc600c817",
+      "comprehended": false,
+      "strand": "embedded-systems"
+    },
+    {
+      "id": "elec.adv.mixed_signal",
+      "label": "Mixed-Signal Design",
+      "type": "concept",
+      "description": "Combining analog and digital on one PCB. Grounding strategies, signal integrity, guard traces, analog/digital partitioning, and noise reduction.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "elec.adv",
+      "bookName": "Advanced",
+      "bookColor": "#6366f1",
+      "bookOrder": 9,
+      "external_id": "d934165887563ee8",
+      "comprehended": false,
+      "strand": "fabrication"
+    }
+  ],
+  "edges": [
+    {
+      "source": "elec.fund.voltage",
+      "target": "elec.fund.ohms_law",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.current",
+      "target": "elec.fund.ohms_law",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.resistance",
+      "target": "elec.fund.ohms_law",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.ohms_law",
+      "target": "elec.fund.power",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.ohms_law",
+      "target": "elec.fund.series_parallel",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.series_parallel",
+      "target": "elec.fund.kirchhoff",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.voltage",
+      "target": "elec.fund.dc_ac",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.current",
+      "target": "elec.fund.dc_ac",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.ohms_law",
+      "target": "elec.fund.multimeter",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.multimeter",
+      "target": "elec.fund.breadboard",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.series_parallel",
+      "target": "elec.passive.resistors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.passive.resistors",
+      "target": "elec.passive.potentiometers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.dc_ac",
+      "target": "elec.passive.capacitors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.series_parallel",
+      "target": "elec.passive.capacitors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.passive.capacitors",
+      "target": "elec.passive.inductors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.passive.inductors",
+      "target": "elec.passive.transformers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.passive.capacitors",
+      "target": "elec.passive.impedance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.passive.inductors",
+      "target": "elec.passive.impedance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.passive.impedance",
+      "target": "elec.passive.resonance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.kirchhoff",
+      "target": "elec.semi.diodes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.passive.resistors",
+      "target": "elec.semi.diodes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.semi.diodes",
+      "target": "elec.semi.special_diodes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.semi.diodes",
+      "target": "elec.semi.bjt",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.semi.bjt",
+      "target": "elec.semi.mosfet",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.semi.bjt",
+      "target": "elec.semi.opamp_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.semi.opamp_intro",
+      "target": "elec.semi.opamp_configs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.semi.diodes",
+      "target": "elec.semi.thyristors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.semi.special_diodes",
+      "target": "elec.semi.voltage_regulators",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.semi.bjt",
+      "target": "elec.analog.amplifiers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.semi.opamp_configs",
+      "target": "elec.analog.diff_amp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.passive.impedance",
+      "target": "elec.analog.filters_passive",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.analog.filters_passive",
+      "target": "elec.analog.filters_active",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.semi.opamp_configs",
+      "target": "elec.analog.filters_active",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.passive.resonance",
+      "target": "elec.analog.oscillators",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.analog.amplifiers",
+      "target": "elec.analog.oscillators",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.semi.opamp_configs",
+      "target": "elec.analog.timer_555",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.passive.capacitors",
+      "target": "elec.analog.timer_555",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.semi.diodes",
+      "target": "elec.analog.power_supply",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.passive.transformers",
+      "target": "elec.analog.power_supply",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.semi.voltage_regulators",
+      "target": "elec.analog.power_supply",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.analog.amplifiers",
+      "target": "elec.analog.audio_amp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.analog.filters_passive",
+      "target": "elec.analog.audio_amp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.semi.opamp_configs",
+      "target": "elec.analog.comparators",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.digital.number_systems",
+      "target": "elec.digital.logic_gates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.digital.logic_gates",
+      "target": "elec.digital.boolean_algebra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.digital.boolean_algebra",
+      "target": "elec.digital.karnaugh",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.digital.karnaugh",
+      "target": "elec.digital.combinational",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.digital.combinational",
+      "target": "elec.digital.multiplexers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.digital.logic_gates",
+      "target": "elec.digital.flip_flops",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.digital.flip_flops",
+      "target": "elec.digital.counters",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.digital.flip_flops",
+      "target": "elec.digital.shift_registers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.digital.flip_flops",
+      "target": "elec.digital.memory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.digital.counters",
+      "target": "elec.digital.state_machines",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.digital.flip_flops",
+      "target": "elec.digital.state_machines",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.breadboard",
+      "target": "elec.mcu.arduino_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.digital.logic_gates",
+      "target": "elec.mcu.arduino_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.mcu.arduino_intro",
+      "target": "elec.mcu.gpio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.mcu.gpio",
+      "target": "elec.mcu.adc",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.mcu.adc",
+      "target": "elec.mcu.dac",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.mcu.gpio",
+      "target": "elec.mcu.pwm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.mcu.gpio",
+      "target": "elec.mcu.interrupts",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.mcu.interrupts",
+      "target": "elec.mcu.timers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.mcu.arduino_intro",
+      "target": "elec.mcu.serial_comm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.mcu.serial_comm",
+      "target": "elec.mcu.lcd_display",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.mcu.pwm",
+      "target": "elec.mcu.motor_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.mcu.gpio",
+      "target": "elec.mcu.motor_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.mcu.serial_comm",
+      "target": "elec.comm.uart",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.comm.uart",
+      "target": "elec.comm.spi",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.comm.uart",
+      "target": "elec.comm.i2c",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.comm.i2c",
+      "target": "elec.comm.wifi",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.comm.spi",
+      "target": "elec.comm.wifi",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.comm.uart",
+      "target": "elec.comm.bluetooth",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.comm.wifi",
+      "target": "elec.comm.rf_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.comm.spi",
+      "target": "elec.comm.can_bus",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.comm.uart",
+      "target": "elec.comm.usb_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.breadboard",
+      "target": "elec.pcb.schematic_capture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.kirchhoff",
+      "target": "elec.pcb.schematic_capture",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.pcb.schematic_capture",
+      "target": "elec.pcb.component_footprints",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.pcb.component_footprints",
+      "target": "elec.pcb.layout",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.pcb.layout",
+      "target": "elec.pcb.routing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.pcb.routing",
+      "target": "elec.pcb.design_rules",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.fund.breadboard",
+      "target": "elec.pcb.soldering",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.pcb.soldering",
+      "target": "elec.pcb.smd",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.pcb.design_rules",
+      "target": "elec.pcb.testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.pcb.soldering",
+      "target": "elec.pcb.testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.pcb.design_rules",
+      "target": "elec.pcb.fabrication_ordering",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.pcb.smd",
+      "target": "elec.pcb.fabrication_ordering",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.analog.filters_active",
+      "target": "elec.adv.dsp_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.mcu.adc",
+      "target": "elec.adv.dsp_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.pcb.routing",
+      "target": "elec.adv.emc_emi",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.comm.rf_basics",
+      "target": "elec.adv.emc_emi",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.analog.power_supply",
+      "target": "elec.adv.smps",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.semi.mosfet",
+      "target": "elec.adv.smps",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.adv.smps",
+      "target": "elec.adv.motor_drives",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.mcu.motor_control",
+      "target": "elec.adv.motor_drives",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.mcu.timers",
+      "target": "elec.adv.embedded_rtos",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.mcu.interrupts",
+      "target": "elec.adv.embedded_rtos",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.adv.embedded_rtos",
+      "target": "elec.adv.arm_processors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.digital.state_machines",
+      "target": "elec.adv.fpga_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.digital.memory",
+      "target": "elec.adv.fpga_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.adv.smps",
+      "target": "elec.adv.battery_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.semi.voltage_regulators",
+      "target": "elec.adv.battery_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.comm.wifi",
+      "target": "elec.adv.iot_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.adv.embedded_rtos",
+      "target": "elec.adv.iot_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.adv.emc_emi",
+      "target": "elec.adv.mixed_signal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.adv.dsp_basics",
+      "target": "elec.adv.mixed_signal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "elec.pcb.layout",
+      "target": "elec.adv.mixed_signal",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

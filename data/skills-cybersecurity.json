@@ -1,0 +1,1619 @@
+{
+  "metadata": {
+    "domain": "technology",
+    "curriculum": "Cybersecurity",
+    "view": "skill-track",
+    "version": "0.1.0",
+    "description": "Cybersecurity skill track covering fundamentals, networking, system security, cryptography, web security, ethical hacking, forensics, and governance",
+    "sources": [
+      "Cybersecurity industry frameworks and curricula"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "cyber.fundamentals",
+      "name": "Fundamentals",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "cyber.network",
+      "name": "Networking Security",
+      "color": "#22c55e",
+      "order": 2
+    },
+    {
+      "id": "cyber.system",
+      "name": "System Security",
+      "color": "#f97316",
+      "order": 3
+    },
+    {
+      "id": "cyber.crypto",
+      "name": "Cryptography",
+      "color": "#8b5cf6",
+      "order": 4
+    },
+    {
+      "id": "cyber.web",
+      "name": "Web Security",
+      "color": "#06b6d4",
+      "order": 5
+    },
+    {
+      "id": "cyber.hacking",
+      "name": "Ethical Hacking",
+      "color": "#ef4444",
+      "order": 6
+    },
+    {
+      "id": "cyber.forensics",
+      "name": "Forensics & Incident Response",
+      "color": "#ec4899",
+      "order": 7
+    },
+    {
+      "id": "cyber.governance",
+      "name": "Governance",
+      "color": "#eab308",
+      "order": 8
+    }
+  ],
+  "strands": [
+    {
+      "id": "defensive",
+      "name": "Defensive Security",
+      "color": "#3B82F6"
+    },
+    {
+      "id": "offensive",
+      "name": "Offensive Security",
+      "color": "#EF4444"
+    },
+    {
+      "id": "cryptography",
+      "name": "Cryptography",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "governance",
+      "name": "Governance & Compliance",
+      "color": "#EAB308"
+    },
+    {
+      "id": "forensics",
+      "name": "Forensics",
+      "color": "#EC4899"
+    },
+    {
+      "id": "networking",
+      "name": "Networking",
+      "color": "#22C55E"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "cyber.cia_triad",
+      "label": "CIA Triad",
+      "type": "concept",
+      "description": "Confidentiality, Integrity, and Availability — the three pillars of information security. Understanding trade-offs and how they guide security decisions.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.fundamentals",
+      "bookName": "Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "7753b145a98fdaeb",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.threat_landscape",
+      "label": "Threat Landscape",
+      "type": "concept",
+      "description": "Types of cyber threats: malware, ransomware, phishing, APTs, insider threats, and nation-state actors. Threat intelligence and current trends.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.fundamentals",
+      "bookName": "Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "fc38d216ec7c7935",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.security_principles",
+      "label": "Security Principles",
+      "type": "concept",
+      "description": "Least privilege, defense in depth, separation of duties, fail-safe defaults, and zero trust. Foundational principles guiding security architecture.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.fundamentals",
+      "bookName": "Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "146587595d1dcded",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.risk_assessment",
+      "label": "Risk Assessment",
+      "type": "concept",
+      "description": "Identifying, analyzing, and evaluating risks. Risk matrices, qualitative vs quantitative analysis, threat modeling, and risk treatment strategies.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.fundamentals",
+      "bookName": "Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "3507b8c72014721e",
+      "comprehended": false,
+      "strand": "governance"
+    },
+    {
+      "id": "cyber.attack_lifecycle",
+      "label": "Attack Lifecycle",
+      "type": "concept",
+      "description": "Cyber kill chain and MITRE ATT&CK framework. Stages of an attack: reconnaissance, weaponization, delivery, exploitation, installation, C2, and actions on objectives.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.fundamentals",
+      "bookName": "Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "01e672fa5ac35f97",
+      "comprehended": false,
+      "strand": "offensive"
+    },
+    {
+      "id": "cyber.security_domains",
+      "label": "Security Domains",
+      "type": "concept",
+      "description": "Overview of security domains: physical, network, application, data, identity, and operations security. How they interconnect in an organization.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.fundamentals",
+      "bookName": "Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "dd43097621e9103e",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.social_engineering",
+      "label": "Social Engineering",
+      "type": "concept",
+      "description": "Human-based attack vectors: phishing, spear phishing, pretexting, baiting, tailgating, and vishing. Security awareness training and countermeasures.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.fundamentals",
+      "bookName": "Fundamentals",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "1e7c5fbcdc655e8e",
+      "comprehended": false,
+      "strand": "offensive"
+    },
+    {
+      "id": "cyber.tcp_ip",
+      "label": "TCP/IP Fundamentals",
+      "type": "concept",
+      "description": "TCP/IP protocol suite: OSI model, IP addressing, subnetting, TCP handshake, UDP, DNS, DHCP. Understanding network traffic for security analysis.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.network",
+      "bookName": "Networking Security",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "b334b4cc70299dcc",
+      "comprehended": false,
+      "strand": "networking"
+    },
+    {
+      "id": "cyber.firewalls",
+      "label": "Firewalls",
+      "type": "concept",
+      "description": "Packet filtering, stateful inspection, application-layer firewalls, and next-gen firewalls (NGFW). Rule configuration, zones, and DMZ architecture.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.network",
+      "bookName": "Networking Security",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "2677da9d88906c95",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.vpn",
+      "label": "VPN",
+      "type": "concept",
+      "description": "Virtual Private Networks: IPSec, OpenVPN, WireGuard. Site-to-site and remote access VPNs, split tunneling, and VPN security considerations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.network",
+      "bookName": "Networking Security",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "972cc6df5d93aee0",
+      "comprehended": false,
+      "strand": "networking"
+    },
+    {
+      "id": "cyber.ids_ips",
+      "label": "IDS/IPS",
+      "type": "concept",
+      "description": "Intrusion Detection and Prevention Systems: signature-based vs anomaly-based detection, Snort, Suricata, placement strategies, and tuning false positives.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.network",
+      "bookName": "Networking Security",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "934d7013dc9cc19f",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.network_monitoring",
+      "label": "Network Monitoring",
+      "type": "concept",
+      "description": "Wireshark, tcpdump, NetFlow, and SNMP. Capturing and analyzing network traffic, identifying anomalies, and baseline establishment.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.network",
+      "bookName": "Networking Security",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "f9489f70ff579eec",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.wireless_security",
+      "label": "Wireless Security",
+      "type": "concept",
+      "description": "WiFi security: WPA2/WPA3, 802.1X, rogue access points, evil twin attacks, wireless IDS, and secure wireless network design.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.network",
+      "bookName": "Networking Security",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "585b0ba9deff0417",
+      "comprehended": false,
+      "strand": "networking"
+    },
+    {
+      "id": "cyber.network_segmentation",
+      "label": "Network Segmentation",
+      "type": "concept",
+      "description": "VLANs, subnetting, micro-segmentation, and zero trust network architecture. Limiting lateral movement and reducing attack surface.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.network",
+      "bookName": "Networking Security",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "e9e932242e7f0538",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.dns_security",
+      "label": "DNS Security",
+      "type": "concept",
+      "description": "DNS attacks (poisoning, tunneling, amplification), DNSSEC, DNS over HTTPS/TLS, and DNS-based threat detection and blocking.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.network",
+      "bookName": "Networking Security",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "13ee8d4b9fbb0449",
+      "comprehended": false,
+      "strand": "networking"
+    },
+    {
+      "id": "cyber.os_hardening",
+      "label": "OS Hardening",
+      "type": "concept",
+      "description": "Securing operating systems: disabling unnecessary services, CIS benchmarks, security baselines, kernel hardening, and minimal installations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.system",
+      "bookName": "System Security",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "73e1c2c4e3faaed5",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.access_control",
+      "label": "Access Control",
+      "type": "concept",
+      "description": "DAC, MAC, RBAC, and ABAC models. Identity management, authentication factors, single sign-on, and privilege management.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.system",
+      "bookName": "System Security",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "0a16e7b4e4d0651d",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.patch_management",
+      "label": "Patch Management",
+      "type": "concept",
+      "description": "Vulnerability patching lifecycle: discovery, testing, deployment, and verification. Patch management tools, policies, and handling zero-days.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.system",
+      "bookName": "System Security",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "ba17fa663aeba3fe",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.endpoint_security",
+      "label": "Endpoint Security",
+      "type": "concept",
+      "description": "Antivirus, EDR (Endpoint Detection and Response), application whitelisting, host-based firewalls, and device encryption.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.system",
+      "bookName": "System Security",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "2cdad6c05c67204c",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.linux_security",
+      "label": "Linux Security",
+      "type": "concept",
+      "description": "Linux-specific security: SELinux, AppArmor, file permissions, iptables/nftables, auditd, systemd hardening, and container security.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.system",
+      "bookName": "System Security",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "5c953f5d07a6f709",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.windows_security",
+      "label": "Windows Security",
+      "type": "concept",
+      "description": "Windows-specific security: Active Directory, Group Policy, Windows Defender, BitLocker, PowerShell security, and Event Log monitoring.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.system",
+      "bookName": "System Security",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "a753290b9cc4b236",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.cloud_security",
+      "label": "Cloud Security",
+      "type": "concept",
+      "description": "Securing cloud environments: shared responsibility model, IAM policies, security groups, cloud-native security tools, and cloud compliance.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.system",
+      "bookName": "System Security",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "cc1a945151ed5af9",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.container_security",
+      "label": "Container Security",
+      "type": "concept",
+      "description": "Docker and Kubernetes security: image scanning, runtime security, network policies, secrets management, and admission controllers.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.system",
+      "bookName": "System Security",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "453bd7368b3f5930",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.symmetric_crypto",
+      "label": "Symmetric Encryption",
+      "type": "concept",
+      "description": "Symmetric-key algorithms: AES, ChaCha20, DES (historical). Block cipher modes (CBC, GCM, CTR), key sizes, and performance characteristics.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.crypto",
+      "bookName": "Cryptography",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "86ab7840076ce516",
+      "comprehended": false,
+      "strand": "cryptography"
+    },
+    {
+      "id": "cyber.asymmetric_crypto",
+      "label": "Asymmetric Encryption",
+      "type": "concept",
+      "description": "Public-key cryptography: RSA, Elliptic Curve (ECC), Diffie-Hellman key exchange. Key pairs, key sizes, and computational trade-offs.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.crypto",
+      "bookName": "Cryptography",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "9e37596b404bf4f8",
+      "comprehended": false,
+      "strand": "cryptography"
+    },
+    {
+      "id": "cyber.hashing",
+      "label": "Hashing",
+      "type": "concept",
+      "description": "Cryptographic hash functions: SHA-256, SHA-3, bcrypt, Argon2. Properties (collision resistance, pre-image resistance), password hashing, and integrity verification.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.crypto",
+      "bookName": "Cryptography",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "0c657737e9928559",
+      "comprehended": false,
+      "strand": "cryptography"
+    },
+    {
+      "id": "cyber.digital_signatures",
+      "label": "Digital Signatures",
+      "type": "concept",
+      "description": "Creating and verifying digital signatures using RSA and ECDSA. Non-repudiation, message authentication, and code signing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.crypto",
+      "bookName": "Cryptography",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "eea8e428c2e54e33",
+      "comprehended": false,
+      "strand": "cryptography"
+    },
+    {
+      "id": "cyber.pki",
+      "label": "PKI",
+      "type": "concept",
+      "description": "Public Key Infrastructure: certificate authorities, certificate chains, X.509 certificates, certificate revocation (CRL, OCSP), and trust models.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.crypto",
+      "bookName": "Cryptography",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "de41f2224c26da1a",
+      "comprehended": false,
+      "strand": "cryptography"
+    },
+    {
+      "id": "cyber.tls_ssl",
+      "label": "TLS/SSL",
+      "type": "concept",
+      "description": "Transport Layer Security: TLS 1.3 handshake, cipher suites, certificate validation, perfect forward secrecy, and common misconfigurations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.crypto",
+      "bookName": "Cryptography",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "730158227c0c72a1",
+      "comprehended": false,
+      "strand": "cryptography"
+    },
+    {
+      "id": "cyber.key_management",
+      "label": "Key Management",
+      "type": "concept",
+      "description": "Generating, storing, distributing, and rotating cryptographic keys. HSMs, key escrow, key derivation functions, and secrets management tools.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.crypto",
+      "bookName": "Cryptography",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "688649e41d86f716",
+      "comprehended": false,
+      "strand": "cryptography"
+    },
+    {
+      "id": "cyber.owasp_top10",
+      "label": "OWASP Top 10",
+      "type": "concept",
+      "description": "Overview of the OWASP Top 10 web application security risks. Understanding each category, real-world examples, and mitigation strategies.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.web",
+      "bookName": "Web Security",
+      "bookColor": "#06b6d4",
+      "bookOrder": 5,
+      "external_id": "cde9dd8c1801b435",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.sql_injection",
+      "label": "SQL Injection",
+      "type": "concept",
+      "description": "SQL injection attack types: classic, blind, time-based, and second-order. Parameterized queries, ORM safety, WAF rules, and detection techniques.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.web",
+      "bookName": "Web Security",
+      "bookColor": "#06b6d4",
+      "bookOrder": 5,
+      "external_id": "656d5a2fa5d161f7",
+      "comprehended": false,
+      "strand": "offensive"
+    },
+    {
+      "id": "cyber.xss",
+      "label": "Cross-Site Scripting (XSS)",
+      "type": "concept",
+      "description": "Reflected, stored, and DOM-based XSS. Content Security Policy, output encoding, input sanitization, and browser-based protections.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.web",
+      "bookName": "Web Security",
+      "bookColor": "#06b6d4",
+      "bookOrder": 5,
+      "external_id": "69168ddd7df2eb8c",
+      "comprehended": false,
+      "strand": "offensive"
+    },
+    {
+      "id": "cyber.csrf",
+      "label": "CSRF",
+      "type": "concept",
+      "description": "Cross-Site Request Forgery: exploiting authenticated sessions. Anti-CSRF tokens, SameSite cookies, origin validation, and defense patterns.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.web",
+      "bookName": "Web Security",
+      "bookColor": "#06b6d4",
+      "bookOrder": 5,
+      "external_id": "49cc67b1470f7aff",
+      "comprehended": false,
+      "strand": "offensive"
+    },
+    {
+      "id": "cyber.auth_mechanisms",
+      "label": "Authentication Mechanisms",
+      "type": "concept",
+      "description": "Web authentication: password-based, multi-factor (MFA/2FA), OAuth2, OpenID Connect, SAML, passkeys, and passwordless authentication.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.web",
+      "bookName": "Web Security",
+      "bookColor": "#06b6d4",
+      "bookOrder": 5,
+      "external_id": "100c158e2faa71bd",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.session_management",
+      "label": "Session Management",
+      "type": "concept",
+      "description": "Secure session handling: session tokens, cookie security flags (HttpOnly, Secure, SameSite), session fixation, timeout policies, and JWT security.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.web",
+      "bookName": "Web Security",
+      "bookColor": "#06b6d4",
+      "bookOrder": 5,
+      "external_id": "b79281fa63b665be",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.api_security",
+      "label": "API Security",
+      "type": "concept",
+      "description": "Securing REST and GraphQL APIs: rate limiting, input validation, API keys, OAuth2 scopes, CORS policies, and API gateway security.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.web",
+      "bookName": "Web Security",
+      "bookColor": "#06b6d4",
+      "bookOrder": 5,
+      "external_id": "b3fcea974351d1d1",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.secure_coding",
+      "label": "Secure Coding Practices",
+      "type": "concept",
+      "description": "Writing secure code: input validation, output encoding, error handling, dependency management, SAST/DAST tools, and code review for security.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.web",
+      "bookName": "Web Security",
+      "bookColor": "#06b6d4",
+      "bookOrder": 5,
+      "external_id": "e10bedc496a3ae3b",
+      "comprehended": false,
+      "strand": "defensive"
+    },
+    {
+      "id": "cyber.reconnaissance",
+      "label": "Reconnaissance",
+      "type": "concept",
+      "description": "Information gathering: OSINT, Google dorking, Shodan, WHOIS, DNS enumeration, social media profiling, and attack surface mapping.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.hacking",
+      "bookName": "Ethical Hacking",
+      "bookColor": "#ef4444",
+      "bookOrder": 6,
+      "external_id": "5a83fa7caa0db451",
+      "comprehended": false,
+      "strand": "offensive"
+    },
+    {
+      "id": "cyber.scanning",
+      "label": "Scanning & Enumeration",
+      "type": "concept",
+      "description": "Network scanning with Nmap, vulnerability scanning with Nessus/OpenVAS, port scanning, service enumeration, and OS fingerprinting.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.hacking",
+      "bookName": "Ethical Hacking",
+      "bookColor": "#ef4444",
+      "bookOrder": 6,
+      "external_id": "8b28c9fb6ab3b6cd",
+      "comprehended": false,
+      "strand": "offensive"
+    },
+    {
+      "id": "cyber.exploitation",
+      "label": "Exploitation",
+      "type": "concept",
+      "description": "Exploiting vulnerabilities: Metasploit framework, buffer overflows, exploit development basics, payload generation, and post-exploitation.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.hacking",
+      "bookName": "Ethical Hacking",
+      "bookColor": "#ef4444",
+      "bookOrder": 6,
+      "external_id": "05683eb5e7b380f5",
+      "comprehended": false,
+      "strand": "offensive"
+    },
+    {
+      "id": "cyber.privilege_escalation",
+      "label": "Privilege Escalation",
+      "type": "concept",
+      "description": "Vertical and horizontal privilege escalation techniques: SUID exploitation, kernel exploits, misconfigurations, token manipulation, and UAC bypass.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.hacking",
+      "bookName": "Ethical Hacking",
+      "bookColor": "#ef4444",
+      "bookOrder": 6,
+      "external_id": "326d52e4aa5cf8e4",
+      "comprehended": false,
+      "strand": "offensive"
+    },
+    {
+      "id": "cyber.pentest_reporting",
+      "label": "Penetration Test Reporting",
+      "type": "concept",
+      "description": "Writing pentest reports: executive summary, findings with CVSS scoring, proof of concept, remediation recommendations, and retesting procedures.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.hacking",
+      "bookName": "Ethical Hacking",
+      "bookColor": "#ef4444",
+      "bookOrder": 6,
+      "external_id": "48bdfe8053a50fed",
+      "comprehended": false,
+      "strand": "offensive"
+    },
+    {
+      "id": "cyber.web_app_hacking",
+      "label": "Web App Penetration Testing",
+      "type": "concept",
+      "description": "Testing web applications: Burp Suite, OWASP ZAP, directory brute-forcing, parameter fuzzing, and automated vulnerability scanning.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.hacking",
+      "bookName": "Ethical Hacking",
+      "bookColor": "#ef4444",
+      "bookOrder": 6,
+      "external_id": "de9f30c61f310208",
+      "comprehended": false,
+      "strand": "offensive"
+    },
+    {
+      "id": "cyber.password_attacks",
+      "label": "Password Attacks",
+      "type": "concept",
+      "description": "Brute force, dictionary attacks, rainbow tables, credential stuffing, pass-the-hash, and tools like Hashcat and John the Ripper.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.hacking",
+      "bookName": "Ethical Hacking",
+      "bookColor": "#ef4444",
+      "bookOrder": 6,
+      "external_id": "e16bcfb9cbd5b8d7",
+      "comprehended": false,
+      "strand": "offensive"
+    },
+    {
+      "id": "cyber.digital_forensics",
+      "label": "Digital Forensics Fundamentals",
+      "type": "concept",
+      "description": "Forensic methodology: evidence preservation, chain of custody, forensic imaging, write blockers, and legal considerations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.forensics",
+      "bookName": "Forensics & Incident Response",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "75697c8e475eae46",
+      "comprehended": false,
+      "strand": "forensics"
+    },
+    {
+      "id": "cyber.log_analysis",
+      "label": "Log Analysis",
+      "type": "concept",
+      "description": "Analyzing system, application, and security logs. SIEM platforms (Splunk, ELK), log correlation, alerting rules, and log retention policies.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.forensics",
+      "bookName": "Forensics & Incident Response",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "436efffcdfd1c2af",
+      "comprehended": false,
+      "strand": "forensics"
+    },
+    {
+      "id": "cyber.malware_analysis",
+      "label": "Malware Analysis",
+      "type": "concept",
+      "description": "Static and dynamic malware analysis: sandboxing, reverse engineering basics, behavioral analysis, indicators of compromise (IOCs), and YARA rules.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.forensics",
+      "bookName": "Forensics & Incident Response",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "58f9e2b155416059",
+      "comprehended": false,
+      "strand": "forensics"
+    },
+    {
+      "id": "cyber.incident_handling",
+      "label": "Incident Handling",
+      "type": "concept",
+      "description": "Incident response lifecycle: preparation, identification, containment, eradication, recovery, and lessons learned. NIST SP 800-61 framework.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.forensics",
+      "bookName": "Forensics & Incident Response",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "13570b2a5e138eb6",
+      "comprehended": false,
+      "strand": "forensics"
+    },
+    {
+      "id": "cyber.memory_forensics",
+      "label": "Memory Forensics",
+      "type": "concept",
+      "description": "Analyzing volatile memory: Volatility framework, process analysis, network connections, registry hives, and detecting rootkits in memory dumps.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.forensics",
+      "bookName": "Forensics & Incident Response",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "22384635ae7911ec",
+      "comprehended": false,
+      "strand": "forensics"
+    },
+    {
+      "id": "cyber.disk_forensics",
+      "label": "Disk Forensics",
+      "type": "concept",
+      "description": "File system analysis: NTFS, ext4, FAT. File recovery, timeline analysis, artifact extraction (browser history, registry), and Autopsy/FTK tools.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.forensics",
+      "bookName": "Forensics & Incident Response",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "a442398d72638102",
+      "comprehended": false,
+      "strand": "forensics"
+    },
+    {
+      "id": "cyber.threat_hunting",
+      "label": "Threat Hunting",
+      "type": "concept",
+      "description": "Proactive threat detection: hypothesis-driven hunting, MITRE ATT&CK-based hunts, threat intelligence feeds, and hunting playbooks.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.forensics",
+      "bookName": "Forensics & Incident Response",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "0ae0e2584cc6ad63",
+      "comprehended": false,
+      "strand": "forensics"
+    },
+    {
+      "id": "cyber.compliance",
+      "label": "Compliance",
+      "type": "concept",
+      "description": "Regulatory compliance in cybersecurity: understanding obligations, audit preparation, evidence collection, compliance automation, and continuous monitoring.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.governance",
+      "bookName": "Governance",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "54916ce3d1a8d99d",
+      "comprehended": false,
+      "strand": "governance"
+    },
+    {
+      "id": "cyber.nist_framework",
+      "label": "NIST Cybersecurity Framework",
+      "type": "concept",
+      "description": "NIST CSF: Identify, Protect, Detect, Respond, Recover functions. Implementation tiers, profiles, and mapping controls to the framework.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.governance",
+      "bookName": "Governance",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "21672ab89845e262",
+      "comprehended": false,
+      "strand": "governance"
+    },
+    {
+      "id": "cyber.iso27001",
+      "label": "ISO 27001",
+      "type": "concept",
+      "description": "ISO/IEC 27001 information security management system: Annex A controls, risk treatment, Statement of Applicability, certification process.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.governance",
+      "bookName": "Governance",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "517ab1145f52ced7",
+      "comprehended": false,
+      "strand": "governance"
+    },
+    {
+      "id": "cyber.gdpr",
+      "label": "GDPR",
+      "type": "concept",
+      "description": "General Data Protection Regulation: data subject rights, lawful basis for processing, data protection officer, breach notification, and cross-border transfers.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.governance",
+      "bookName": "Governance",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "62fdcd57fe96817c",
+      "comprehended": false,
+      "strand": "governance"
+    },
+    {
+      "id": "cyber.pdpa",
+      "label": "PDPA",
+      "type": "concept",
+      "description": "Personal Data Protection Act: consent requirements, data protection obligations, do-not-call registry, breach management, and enforcement.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.governance",
+      "bookName": "Governance",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "15af7b352478b517",
+      "comprehended": false,
+      "strand": "governance"
+    },
+    {
+      "id": "cyber.security_policies",
+      "label": "Security Policies",
+      "type": "concept",
+      "description": "Developing security policies: acceptable use, incident response, data classification, password policies, BYOD policies, and policy lifecycle management.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.governance",
+      "bookName": "Governance",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "81fc3ad5660ab4c9",
+      "comprehended": false,
+      "strand": "governance"
+    },
+    {
+      "id": "cyber.security_awareness",
+      "label": "Security Awareness Training",
+      "type": "concept",
+      "description": "Building a security culture: phishing simulations, training programs, metrics and KPIs, gamification, and measuring behavioral change.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.governance",
+      "bookName": "Governance",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "b7fa283d37e20324",
+      "comprehended": false,
+      "strand": "governance"
+    },
+    {
+      "id": "cyber.business_continuity",
+      "label": "Business Continuity & DR",
+      "type": "concept",
+      "description": "Business continuity planning and disaster recovery: BIA, RTO/RPO, backup strategies, failover, tabletop exercises, and crisis communication.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "cyber.governance",
+      "bookName": "Governance",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "47f9c37691e0b5b4",
+      "comprehended": false,
+      "strand": "governance"
+    }
+  ],
+  "edges": [
+    {
+      "source": "cyber.cia_triad",
+      "target": "cyber.threat_landscape",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.cia_triad",
+      "target": "cyber.security_principles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.cia_triad",
+      "target": "cyber.risk_assessment",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.threat_landscape",
+      "target": "cyber.attack_lifecycle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.threat_landscape",
+      "target": "cyber.social_engineering",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.security_principles",
+      "target": "cyber.security_domains",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.security_domains",
+      "target": "cyber.tcp_ip",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.security_domains",
+      "target": "cyber.os_hardening",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.tcp_ip",
+      "target": "cyber.firewalls",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.tcp_ip",
+      "target": "cyber.vpn",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.tcp_ip",
+      "target": "cyber.network_monitoring",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.tcp_ip",
+      "target": "cyber.dns_security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.firewalls",
+      "target": "cyber.ids_ips",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.firewalls",
+      "target": "cyber.network_segmentation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.tcp_ip",
+      "target": "cyber.wireless_security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.os_hardening",
+      "target": "cyber.access_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.os_hardening",
+      "target": "cyber.patch_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.os_hardening",
+      "target": "cyber.endpoint_security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.os_hardening",
+      "target": "cyber.linux_security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.os_hardening",
+      "target": "cyber.windows_security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.linux_security",
+      "target": "cyber.cloud_security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.cloud_security",
+      "target": "cyber.container_security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.security_principles",
+      "target": "cyber.symmetric_crypto",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.symmetric_crypto",
+      "target": "cyber.asymmetric_crypto",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.symmetric_crypto",
+      "target": "cyber.hashing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.asymmetric_crypto",
+      "target": "cyber.digital_signatures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.digital_signatures",
+      "target": "cyber.pki",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.pki",
+      "target": "cyber.tls_ssl",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.asymmetric_crypto",
+      "target": "cyber.key_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.security_domains",
+      "target": "cyber.owasp_top10",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.owasp_top10",
+      "target": "cyber.sql_injection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.owasp_top10",
+      "target": "cyber.xss",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.owasp_top10",
+      "target": "cyber.csrf",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.owasp_top10",
+      "target": "cyber.auth_mechanisms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.auth_mechanisms",
+      "target": "cyber.session_management",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.owasp_top10",
+      "target": "cyber.api_security",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.owasp_top10",
+      "target": "cyber.secure_coding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.attack_lifecycle",
+      "target": "cyber.reconnaissance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.reconnaissance",
+      "target": "cyber.scanning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.scanning",
+      "target": "cyber.exploitation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.exploitation",
+      "target": "cyber.privilege_escalation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.privilege_escalation",
+      "target": "cyber.pentest_reporting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.owasp_top10",
+      "target": "cyber.web_app_hacking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.scanning",
+      "target": "cyber.web_app_hacking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.hashing",
+      "target": "cyber.password_attacks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.scanning",
+      "target": "cyber.password_attacks",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.security_domains",
+      "target": "cyber.digital_forensics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.digital_forensics",
+      "target": "cyber.log_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.digital_forensics",
+      "target": "cyber.malware_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.digital_forensics",
+      "target": "cyber.incident_handling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.digital_forensics",
+      "target": "cyber.memory_forensics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.digital_forensics",
+      "target": "cyber.disk_forensics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.log_analysis",
+      "target": "cyber.threat_hunting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.malware_analysis",
+      "target": "cyber.threat_hunting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.risk_assessment",
+      "target": "cyber.compliance",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.compliance",
+      "target": "cyber.nist_framework",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.compliance",
+      "target": "cyber.iso27001",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.compliance",
+      "target": "cyber.gdpr",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.compliance",
+      "target": "cyber.pdpa",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.compliance",
+      "target": "cyber.security_policies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.social_engineering",
+      "target": "cyber.security_awareness",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.security_policies",
+      "target": "cyber.security_awareness",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.incident_handling",
+      "target": "cyber.business_continuity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "cyber.risk_assessment",
+      "target": "cyber.business_continuity",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

@@ -1,0 +1,1141 @@
+{
+  "metadata": {
+    "domain": "technology",
+    "curriculum": "3D Printing",
+    "view": "skill-track",
+    "version": "0.1.0",
+    "description": "3D printing skill track covering foundations, CAD design, slicing and printing, advanced manufacturing, and design for function",
+    "sources": [
+      "3D printing community best practices and curricula"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "print3d.foundations",
+      "name": "Foundations",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "print3d.cad",
+      "name": "CAD Design",
+      "color": "#22c55e",
+      "order": 2
+    },
+    {
+      "id": "print3d.slicing",
+      "name": "Slicing & Printing",
+      "color": "#f97316",
+      "order": 3
+    },
+    {
+      "id": "print3d.advanced",
+      "name": "Advanced Manufacturing",
+      "color": "#8b5cf6",
+      "order": 4
+    },
+    {
+      "id": "print3d.functional",
+      "name": "Design for Function",
+      "color": "#ef4444",
+      "order": 5
+    }
+  ],
+  "strands": [
+    {
+      "id": "design",
+      "name": "Design",
+      "color": "#22C55E"
+    },
+    {
+      "id": "manufacturing",
+      "name": "Manufacturing",
+      "color": "#F97316"
+    },
+    {
+      "id": "materials",
+      "name": "Materials",
+      "color": "#8B5CF6"
+    },
+    {
+      "id": "engineering",
+      "name": "Engineering",
+      "color": "#EF4444"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "print3d.fdm",
+      "label": "FDM Printing",
+      "type": "concept",
+      "description": "Fused Deposition Modeling: how filament is melted and extruded layer by layer. Printer components (hotend, extruder, bed, frame), pros and limitations.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "0d072f81b0b67c48",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.sla",
+      "label": "SLA Printing",
+      "type": "concept",
+      "description": "Stereolithography: UV-curing liquid resin layer by layer. Resin types, build plate adhesion, LCD vs laser SLA, and post-curing requirements.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "5e16a46f9ccc6c70",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.sls",
+      "label": "SLS Printing",
+      "type": "concept",
+      "description": "Selective Laser Sintering: using a laser to fuse powdered material. Nylon, TPU powders, no support structures needed, and industrial applications.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "24aa39a092fbea5e",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.materials_overview",
+      "label": "Materials Overview",
+      "type": "concept",
+      "description": "Common 3D printing materials: PLA, ABS, PETG, TPU, Nylon, resins. Properties comparison — strength, flexibility, temperature resistance, and printability.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "56a524533a8fefe1",
+      "comprehended": false,
+      "strand": "materials"
+    },
+    {
+      "id": "print3d.applications",
+      "label": "3D Printing Applications",
+      "type": "concept",
+      "description": "Applications across industries: prototyping, custom parts, medical devices, architecture models, education, art, and consumer products.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "ddb622398d4bd929",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "print3d.safety",
+      "label": "Safety & Ventilation",
+      "type": "concept",
+      "description": "Safety considerations: fume extraction for ABS and resin, enclosure benefits, fire safety, handling uncured resin, PPE, and workspace setup.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "965d3f93282295fa",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.file_formats",
+      "label": "File Formats",
+      "type": "concept",
+      "description": "3D file formats: STL, OBJ, 3MF, STEP. Mesh vs solid models, file conversion, resolution settings, and when to use each format.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "49a4fe40e4e1e4ff",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "print3d.printer_anatomy",
+      "label": "Printer Anatomy",
+      "type": "concept",
+      "description": "Understanding printer components: frame types (Cartesian, CoreXY, Delta), motion systems, stepper motors, belts, lead screws, and electronics.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "852fb60120db554b",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.tinkercad",
+      "label": "TinkerCAD",
+      "type": "concept",
+      "description": "Browser-based 3D modeling for beginners: combining primitive shapes, grouping, alignment, holes, and exporting for printing.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.cad",
+      "bookName": "CAD Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "2a50272a1775347d",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "print3d.fusion360",
+      "label": "Fusion 360",
+      "type": "concept",
+      "description": "Autodesk Fusion 360: sketch-based modeling, extrude/revolve/loft, timeline, history-based editing, and collaboration features.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.cad",
+      "bookName": "CAD Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "52d62ed5424c71ce",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "print3d.onshape",
+      "label": "OnShape",
+      "type": "concept",
+      "description": "Cloud-native parametric CAD: part studios, feature tree, version control, branching, and real-time collaboration for team projects.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.cad",
+      "bookName": "CAD Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "3e5521515a353602",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "print3d.design_principles",
+      "label": "Design Principles for 3D Printing",
+      "type": "concept",
+      "description": "Designing for printability: overhang angles, bridging limits, minimum wall thickness, hole orientation, and avoiding common design pitfalls.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.cad",
+      "bookName": "CAD Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "1a0a012fa0fd0568",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "print3d.parametric_modeling",
+      "label": "Parametric Modeling",
+      "type": "concept",
+      "description": "Creating parameter-driven designs: variables, constraints, formulas, design tables, and updating dimensions to generate design variants.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.cad",
+      "bookName": "CAD Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "e3c34c95f94e89ae",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "print3d.assemblies",
+      "label": "Assemblies",
+      "type": "concept",
+      "description": "Multi-part assembly design: joints, mates, interference detection, exploded views, and designing parts that fit together after printing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.cad",
+      "bookName": "CAD Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "d41973b18f70105c",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "print3d.sketching",
+      "label": "2D Sketching",
+      "type": "concept",
+      "description": "Creating 2D sketches as the basis for 3D features: lines, arcs, splines, constraints (tangent, concentric, equal), dimensioning, and fully defined sketches.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.cad",
+      "bookName": "CAD Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "7892fb910db25bd6",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "print3d.mesh_editing",
+      "label": "Mesh Editing & Repair",
+      "type": "concept",
+      "description": "Repairing and editing mesh files: fixing non-manifold geometry, closing holes, smoothing, decimation. Tools like Meshmixer and MeshLab.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.cad",
+      "bookName": "CAD Design",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "218a951d7f8d43a3",
+      "comprehended": false,
+      "strand": "design"
+    },
+    {
+      "id": "print3d.slicer_intro",
+      "label": "Slicer Introduction",
+      "type": "concept",
+      "description": "What a slicer does: converting 3D models to G-code. Overview of Cura, PrusaSlicer, and OrcaSlicer. Navigating the slicer interface.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.slicing",
+      "bookName": "Slicing & Printing",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "cfcb08ffe7a0cb4a",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.layer_height",
+      "label": "Layer Height & Resolution",
+      "type": "concept",
+      "description": "Choosing layer height: trade-off between print speed and quality. Variable layer height, first layer settings, and visual quality impact.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.slicing",
+      "bookName": "Slicing & Printing",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "eb848f9686f037b5",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.supports",
+      "label": "Support Structures",
+      "type": "concept",
+      "description": "When and how to use supports: tree supports, linear supports, support interfaces, organic supports, and minimizing support contact.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.slicing",
+      "bookName": "Slicing & Printing",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "7768a5c4aea02284",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.infill",
+      "label": "Infill Patterns & Density",
+      "type": "concept",
+      "description": "Infill settings: grid, gyroid, honeycomb, cubic patterns. Density selection for strength vs weight, gradual infill, and solid infill regions.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.slicing",
+      "bookName": "Slicing & Printing",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "d8d8fe17caf46f6a",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.bed_adhesion",
+      "label": "Bed Adhesion",
+      "type": "concept",
+      "description": "First layer adhesion techniques: bed leveling, Z-offset, brims, rafts, skirts, bed surfaces (PEI, glass, BuildTak), and adhesion aids (glue, hairspray).",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.slicing",
+      "bookName": "Slicing & Printing",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "99027ce12ddb2154",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.print_speed",
+      "label": "Print Speed & Acceleration",
+      "type": "concept",
+      "description": "Tuning speed settings: perimeter speed, infill speed, travel speed, acceleration, jerk/junction deviation, and quality-speed trade-offs.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.slicing",
+      "bookName": "Slicing & Printing",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "c1b4d5c135c06863",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.temperature_tuning",
+      "label": "Temperature Tuning",
+      "type": "concept",
+      "description": "Nozzle and bed temperature optimization: temperature towers, material-specific temps, stringing reduction, and layer adhesion improvement.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.slicing",
+      "bookName": "Slicing & Printing",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "b384cc7b58284fac",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.retraction",
+      "label": "Retraction Settings",
+      "type": "concept",
+      "description": "Retraction distance and speed to prevent stringing and oozing. Direct drive vs Bowden differences, retraction tuning tests, and travel moves.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.slicing",
+      "bookName": "Slicing & Printing",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "adc69671dc86157c",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.troubleshooting",
+      "label": "Print Troubleshooting",
+      "type": "concept",
+      "description": "Diagnosing common print failures: warping, layer shifting, under/over extrusion, stringing, elephants foot, Z-banding, and clogged nozzles.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.slicing",
+      "bookName": "Slicing & Printing",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "0eec1cb487dee231",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.calibration",
+      "label": "Printer Calibration",
+      "type": "concept",
+      "description": "Essential calibrations: e-steps, flow rate, PID tuning, bed leveling (manual and auto), input shaping, and pressure advance.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.slicing",
+      "bookName": "Slicing & Printing",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "ecc03dc2377be094",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.multi_material",
+      "label": "Multi-Material Printing",
+      "type": "concept",
+      "description": "Printing with multiple materials: dual extruders, MMU systems, soluble supports (PVA), multi-color prints, and material compatibility.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.advanced",
+      "bookName": "Advanced Manufacturing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "b6909e3ebc4d817c",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.post_processing",
+      "label": "Post-Processing",
+      "type": "concept",
+      "description": "Finishing techniques: sanding, filling, acetone vapor smoothing, UV curing (resin), support removal, and achieving smooth surfaces.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.advanced",
+      "bookName": "Advanced Manufacturing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "72aad5b798df8778",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.painting",
+      "label": "Painting & Finishing",
+      "type": "concept",
+      "description": "Painting 3D prints: priming, spray painting, brush techniques, airbrushing, clear coating, and achieving professional-looking results.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.advanced",
+      "bookName": "Advanced Manufacturing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "4e8534f95e6ccb65",
+      "comprehended": false,
+      "strand": "manufacturing"
+    },
+    {
+      "id": "print3d.mechanical_properties",
+      "label": "Mechanical Properties",
+      "type": "concept",
+      "description": "Understanding print strength: layer orientation effects, tensile/compressive/shear strength, anisotropy, infill impact on strength, and testing methods.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.advanced",
+      "bookName": "Advanced Manufacturing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "b2dcd511cd163cf5",
+      "comprehended": false,
+      "strand": "materials"
+    },
+    {
+      "id": "print3d.tolerances",
+      "label": "Dimensional Tolerances",
+      "type": "concept",
+      "description": "Achieving dimensional accuracy: shrinkage compensation, tolerance testing, clearance fits, interference fits, and calibration for precision parts.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.advanced",
+      "bookName": "Advanced Manufacturing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "c74bca3b33bba5c6",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "print3d.advanced_materials",
+      "label": "Advanced Materials",
+      "type": "concept",
+      "description": "Engineering filaments: carbon fiber composites, ASA for UV resistance, polycarbonate, PEEK/PEI for high temperature, and metal-filled filaments.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.advanced",
+      "bookName": "Advanced Manufacturing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "0f80dd70d8969b36",
+      "comprehended": false,
+      "strand": "materials"
+    },
+    {
+      "id": "print3d.inserts_fasteners",
+      "label": "Inserts & Fasteners",
+      "type": "concept",
+      "description": "Adding metal hardware to prints: heat-set threaded inserts, embedded nuts, bolt bosses, and designing for mechanical fastening.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.advanced",
+      "bookName": "Advanced Manufacturing",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 4,
+      "external_id": "3d15e60813395e48",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "print3d.mechanical_design",
+      "label": "Mechanical Design",
+      "type": "concept",
+      "description": "Designing functional mechanical parts: load analysis, stress concentration, factor of safety, and optimizing geometry for 3D printed components.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.functional",
+      "bookName": "Design for Function",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "85eecd6b74150842",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "print3d.snap_fits",
+      "label": "Snap Fits",
+      "type": "concept",
+      "description": "Designing snap-fit joints: cantilever snaps, annular snaps, torsion snaps. Deflection calculations, material selection, and print orientation for flexibility.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.functional",
+      "bookName": "Design for Function",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "11a6e37a694d7465",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "print3d.hinges",
+      "label": "Hinges & Living Hinges",
+      "type": "concept",
+      "description": "Print-in-place hinges, living hinges with flexible filament, pin hinges, and designing rotational joints for 3D printed assemblies.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.functional",
+      "bookName": "Design for Function",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "0f4afd291e75660e",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "print3d.enclosures",
+      "label": "Enclosures & Cases",
+      "type": "concept",
+      "description": "Designing enclosures for electronics: wall thickness, ventilation, cable routing, mounting bosses, display cutouts, and IP rating considerations.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.functional",
+      "bookName": "Design for Function",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "6d109929d3423ae9",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "print3d.prototyping_workflow",
+      "label": "Prototyping Workflow",
+      "type": "concept",
+      "description": "Iterative prototyping: rapid design cycle, test-print-revise loop, version management, functional testing, and transitioning to production.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.functional",
+      "bookName": "Design for Function",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "52846a97fdf12530",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "print3d.gears_threads",
+      "label": "Gears & Threads",
+      "type": "concept",
+      "description": "3D printing functional gears (spur, helical, worm) and threads. Gear module selection, thread pitch, clearances, and print orientation for strength.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.functional",
+      "bookName": "Design for Function",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "98787e8a64933113",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "print3d.print_in_place",
+      "label": "Print-in-Place Mechanisms",
+      "type": "concept",
+      "description": "Designing mechanisms that print assembled: articulated joints, chains, ball joints, and captive assemblies with proper clearance design.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.functional",
+      "bookName": "Design for Function",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "2d95ecf1188238d6",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "print3d.topology_optimization",
+      "label": "Topology Optimization",
+      "type": "concept",
+      "description": "Using simulation to optimize part geometry: reducing material while maintaining strength, generative design, FEA-driven optimization for 3D printing.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "print3d.functional",
+      "bookName": "Design for Function",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "d1cea8ad26690804",
+      "comprehended": false,
+      "strand": "engineering"
+    }
+  ],
+  "edges": [
+    {
+      "source": "print3d.fdm",
+      "target": "print3d.materials_overview",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.fdm",
+      "target": "print3d.printer_anatomy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.fdm",
+      "target": "print3d.safety",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.fdm",
+      "target": "print3d.sla",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.sla",
+      "target": "print3d.sls",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.fdm",
+      "target": "print3d.applications",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.fdm",
+      "target": "print3d.file_formats",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.file_formats",
+      "target": "print3d.tinkercad",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.tinkercad",
+      "target": "print3d.sketching",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.tinkercad",
+      "target": "print3d.design_principles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.sketching",
+      "target": "print3d.fusion360",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.sketching",
+      "target": "print3d.onshape",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.fusion360",
+      "target": "print3d.parametric_modeling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.parametric_modeling",
+      "target": "print3d.assemblies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.file_formats",
+      "target": "print3d.mesh_editing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.printer_anatomy",
+      "target": "print3d.slicer_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.file_formats",
+      "target": "print3d.slicer_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.slicer_intro",
+      "target": "print3d.layer_height",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.slicer_intro",
+      "target": "print3d.supports",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.slicer_intro",
+      "target": "print3d.infill",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.slicer_intro",
+      "target": "print3d.bed_adhesion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.materials_overview",
+      "target": "print3d.temperature_tuning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.slicer_intro",
+      "target": "print3d.temperature_tuning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.layer_height",
+      "target": "print3d.print_speed",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.temperature_tuning",
+      "target": "print3d.retraction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.bed_adhesion",
+      "target": "print3d.troubleshooting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.temperature_tuning",
+      "target": "print3d.troubleshooting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.retraction",
+      "target": "print3d.troubleshooting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.printer_anatomy",
+      "target": "print3d.calibration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.troubleshooting",
+      "target": "print3d.calibration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.calibration",
+      "target": "print3d.multi_material",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.troubleshooting",
+      "target": "print3d.post_processing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.post_processing",
+      "target": "print3d.painting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.materials_overview",
+      "target": "print3d.mechanical_properties",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.infill",
+      "target": "print3d.mechanical_properties",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.calibration",
+      "target": "print3d.tolerances",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.mechanical_properties",
+      "target": "print3d.advanced_materials",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.tolerances",
+      "target": "print3d.inserts_fasteners",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.mechanical_properties",
+      "target": "print3d.mechanical_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.assemblies",
+      "target": "print3d.mechanical_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.mechanical_design",
+      "target": "print3d.snap_fits",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.mechanical_design",
+      "target": "print3d.hinges",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.mechanical_design",
+      "target": "print3d.enclosures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.mechanical_design",
+      "target": "print3d.gears_threads",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.tolerances",
+      "target": "print3d.print_in_place",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.hinges",
+      "target": "print3d.print_in_place",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.enclosures",
+      "target": "print3d.prototyping_workflow",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.snap_fits",
+      "target": "print3d.prototyping_workflow",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.mechanical_design",
+      "target": "print3d.topology_optimization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "print3d.advanced_materials",
+      "target": "print3d.topology_optimization",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

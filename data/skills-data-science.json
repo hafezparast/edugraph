@@ -1,0 +1,1844 @@
+{
+  "metadata": {
+    "domain": "data-science",
+    "curriculum": "Data Science",
+    "view": "skill-track",
+    "version": "0.2.0",
+    "description": "Data Science skill track from programming foundations through statistics, machine learning, big data engineering, visualization, and domain applications",
+    "sources": [
+      "Data Science Curriculum"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "ds.foundations",
+      "name": "Foundations",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "ds.wrangling",
+      "name": "Data Wrangling",
+      "color": "#22c55e",
+      "order": 2
+    },
+    {
+      "id": "ds.eda",
+      "name": "Exploratory Analysis",
+      "color": "#8b5cf6",
+      "order": 3
+    },
+    {
+      "id": "ds.stats",
+      "name": "Statistical Methods",
+      "color": "#ef4444",
+      "order": 4
+    },
+    {
+      "id": "ds.ml",
+      "name": "Machine Learning for DS",
+      "color": "#f97316",
+      "order": 5
+    },
+    {
+      "id": "ds.bigdata",
+      "name": "Big Data & Engineering",
+      "color": "#06b6d4",
+      "order": 6
+    },
+    {
+      "id": "ds.viz",
+      "name": "Visualization & Storytelling",
+      "color": "#ec4899",
+      "order": 7
+    },
+    {
+      "id": "ds.domain",
+      "name": "Domain Applications",
+      "color": "#eab308",
+      "order": 8
+    }
+  ],
+  "strands": [
+    {
+      "id": "programming",
+      "name": "Programming",
+      "color": "#3b82f6"
+    },
+    {
+      "id": "statistics",
+      "name": "Statistics",
+      "color": "#ef4444"
+    },
+    {
+      "id": "analysis",
+      "name": "Analysis",
+      "color": "#8b5cf6"
+    },
+    {
+      "id": "ml",
+      "name": "ML",
+      "color": "#f97316"
+    },
+    {
+      "id": "engineering",
+      "name": "Engineering",
+      "color": "#06b6d4"
+    },
+    {
+      "id": "communication",
+      "name": "Communication",
+      "color": "#ec4899"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "ds.foundations.python_basics",
+      "label": "Python Basics",
+      "type": "concept",
+      "description": "Python fundamentals: variables, data types, control flow, functions, and object-oriented basics for data science.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "736acc37e0d0420e",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "ds.foundations.r_basics",
+      "label": "R Basics",
+      "type": "concept",
+      "description": "R fundamentals: vectors, data frames, tidyverse, ggplot2, and R's statistical computing environment.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "1b8632e627bd492e",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "ds.foundations.sql",
+      "label": "SQL Fundamentals",
+      "type": "concept",
+      "description": "SQL queries: SELECT, JOIN, GROUP BY, subqueries, window functions, and database interaction for data retrieval.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "06b25f0bd847c6e2",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "ds.foundations.data_types",
+      "label": "Data Types & Structures",
+      "type": "concept",
+      "description": "Structured vs unstructured data, tabular data, JSON, CSV, time series, text, and image data formats.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "b6c70e0101f28cf1",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "ds.foundations.data_ethics",
+      "label": "Data Ethics",
+      "type": "concept",
+      "description": "Privacy, consent, bias in data collection, GDPR, anonymization, and responsible data handling practices.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "0d72ad7929a5a9e7",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "ds.foundations.numpy_pandas",
+      "label": "NumPy & Pandas",
+      "type": "concept",
+      "description": "NumPy arrays, Pandas DataFrames, indexing, groupby, and core data manipulation libraries in Python.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "d86ae205760b546b",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "ds.foundations.jupyter",
+      "label": "Jupyter & Notebooks",
+      "type": "concept",
+      "description": "Jupyter notebooks, markdown cells, magic commands, reproducible analysis, and notebook best practices.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "581f5915e7afe359",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "ds.foundations.command_line",
+      "label": "Command Line Basics",
+      "type": "concept",
+      "description": "Terminal navigation, file manipulation, shell scripting, environment variables, and CLI tools for data science.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "89391d2502190c3c",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "ds.foundations.version_control",
+      "label": "Version Control & Git",
+      "type": "concept",
+      "description": "Git fundamentals, branching, pull requests, and collaborative workflows for data science projects.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.foundations",
+      "bookName": "Foundations",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "b14e8e70f428548b",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "ds.wrangling.file_formats",
+      "label": "File Formats & I/O",
+      "type": "concept",
+      "description": "Reading and writing CSV, JSON, Parquet, Excel, and HDF5 files. Efficient I/O for large datasets.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.wrangling",
+      "bookName": "Data Wrangling",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "35bbca7f4e283290",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "ds.wrangling.data_cleaning",
+      "label": "Data Cleaning",
+      "type": "concept",
+      "description": "Handling duplicates, outliers, inconsistent formats, type coercion, and data quality assessment techniques.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.wrangling",
+      "bookName": "Data Wrangling",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "8d512498f7422542",
+      "comprehended": false,
+      "strand": "analysis"
+    },
+    {
+      "id": "ds.wrangling.missing_data",
+      "label": "Missing Data Handling",
+      "type": "concept",
+      "description": "Types of missingness (MCAR, MAR, MNAR), imputation strategies, deletion methods, and impact on analysis.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.wrangling",
+      "bookName": "Data Wrangling",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "84a59e252d2826cb",
+      "comprehended": false,
+      "strand": "analysis"
+    },
+    {
+      "id": "ds.wrangling.merging",
+      "label": "Merging & Joining Data",
+      "type": "concept",
+      "description": "Inner, outer, left, and right joins in Pandas and SQL. Concatenation, merge keys, and handling conflicts.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.wrangling",
+      "bookName": "Data Wrangling",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "762188a6caf0926d",
+      "comprehended": false,
+      "strand": "analysis"
+    },
+    {
+      "id": "ds.wrangling.reshaping",
+      "label": "Reshaping & Pivoting",
+      "type": "concept",
+      "description": "Wide vs long format, pivot tables, melt, stack/unstack, and tidy data principles.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.wrangling",
+      "bookName": "Data Wrangling",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "71070662bb9fb563",
+      "comprehended": false,
+      "strand": "analysis"
+    },
+    {
+      "id": "ds.wrangling.regex",
+      "label": "Regular Expressions",
+      "type": "concept",
+      "description": "Pattern matching, text extraction, substitution, and using regex in Python and R for data cleaning.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.wrangling",
+      "bookName": "Data Wrangling",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "d0a649a44e4e274a",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "ds.wrangling.apis",
+      "label": "APIs & Web Scraping",
+      "type": "concept",
+      "description": "REST APIs, JSON parsing, authentication, rate limiting, web scraping with BeautifulSoup, and ethical scraping.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.wrangling",
+      "bookName": "Data Wrangling",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "466e71e549235a63",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "ds.wrangling.string_manipulation",
+      "label": "String Manipulation",
+      "type": "concept",
+      "description": "String methods, text cleaning, encoding issues, string formatting, and working with categorical text data.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.wrangling",
+      "bookName": "Data Wrangling",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "2a0ab06e95f7cc2a",
+      "comprehended": false,
+      "strand": "programming"
+    },
+    {
+      "id": "ds.wrangling.datetime",
+      "label": "Date & Time Handling",
+      "type": "concept",
+      "description": "Parsing dates, time zones, date arithmetic, resampling temporal data, and time-based indexing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.wrangling",
+      "bookName": "Data Wrangling",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "921f46751f53748f",
+      "comprehended": false,
+      "strand": "analysis"
+    },
+    {
+      "id": "ds.eda.descriptive_stats",
+      "label": "Descriptive Statistics",
+      "type": "concept",
+      "description": "Mean, median, mode, variance, standard deviation, percentiles, skewness, and kurtosis.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.eda",
+      "bookName": "Exploratory Analysis",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "7c8b157d500e28d0",
+      "comprehended": false,
+      "strand": "statistics"
+    },
+    {
+      "id": "ds.eda.distributions",
+      "label": "Probability Distributions",
+      "type": "concept",
+      "description": "Normal, binomial, Poisson, exponential, and uniform distributions. QQ-plots and distribution fitting.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.eda",
+      "bookName": "Exploratory Analysis",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "5b86471fd9e33ce0",
+      "comprehended": false,
+      "strand": "statistics"
+    },
+    {
+      "id": "ds.eda.correlation",
+      "label": "Correlation Analysis",
+      "type": "concept",
+      "description": "Pearson, Spearman, and Kendall correlations. Correlation matrices, heatmaps, and correlation vs causation.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.eda",
+      "bookName": "Exploratory Analysis",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "997220fcebda4062",
+      "comprehended": false,
+      "strand": "statistics"
+    },
+    {
+      "id": "ds.eda.matplotlib_seaborn",
+      "label": "Matplotlib & Seaborn",
+      "type": "concept",
+      "description": "Line plots, scatter plots, histograms, box plots, violin plots, pair plots, and statistical visualizations.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.eda",
+      "bookName": "Exploratory Analysis",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "43033b4b8a4c4ad6",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "ds.eda.plotly_interactive",
+      "label": "Interactive Visualization (Plotly)",
+      "type": "concept",
+      "description": "Interactive charts with Plotly, hover tooltips, animations, and Plotly Express for rapid exploration.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.eda",
+      "bookName": "Exploratory Analysis",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "3bb5ab9dd8c857c4",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "ds.eda.groupby_aggregation",
+      "label": "GroupBy & Aggregation",
+      "type": "concept",
+      "description": "Split-apply-combine pattern, aggregation functions, pivot tables, and multi-level groupby operations.",
+      "grade_range": [
+        "Beginner"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.eda",
+      "bookName": "Exploratory Analysis",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "0481e01b9cc05d0c",
+      "comprehended": false,
+      "strand": "analysis"
+    },
+    {
+      "id": "ds.eda.outlier_detection",
+      "label": "Outlier Detection",
+      "type": "concept",
+      "description": "IQR method, Z-scores, isolation forests, and strategies for handling outliers in analysis.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.eda",
+      "bookName": "Exploratory Analysis",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "e35d38ae7ca589dd",
+      "comprehended": false,
+      "strand": "analysis"
+    },
+    {
+      "id": "ds.stats.hypothesis_testing",
+      "label": "Hypothesis Testing",
+      "type": "concept",
+      "description": "Null and alternative hypotheses, p-values, significance levels, Type I/II errors, t-tests, and chi-squared tests.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.stats",
+      "bookName": "Statistical Methods",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "dc0b92241c6f7243",
+      "comprehended": false,
+      "strand": "statistics"
+    },
+    {
+      "id": "ds.stats.confidence_intervals",
+      "label": "Confidence Intervals",
+      "type": "concept",
+      "description": "Constructing and interpreting confidence intervals, margin of error, sample size determination, and bootstrapping.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.stats",
+      "bookName": "Statistical Methods",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "a4532adc4c874341",
+      "comprehended": false,
+      "strand": "statistics"
+    },
+    {
+      "id": "ds.stats.ab_testing",
+      "label": "A/B Testing",
+      "type": "concept",
+      "description": "Experiment design, control and treatment groups, statistical power, sample size calculation, and interpreting results.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.stats",
+      "bookName": "Statistical Methods",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "33e29953cbc20edc",
+      "comprehended": false,
+      "strand": "statistics"
+    },
+    {
+      "id": "ds.stats.bayesian",
+      "label": "Bayesian Basics",
+      "type": "concept",
+      "description": "Bayes' theorem, prior and posterior distributions, Bayesian updating, and comparison with frequentist approaches.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.stats",
+      "bookName": "Statistical Methods",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "50b8be6e28d1e4c2",
+      "comprehended": false,
+      "strand": "statistics"
+    },
+    {
+      "id": "ds.stats.regression",
+      "label": "Regression Analysis",
+      "type": "concept",
+      "description": "Linear and multiple regression, assumptions, diagnostics, residual analysis, R-squared, and adjusted R-squared.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.stats",
+      "bookName": "Statistical Methods",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "2f2facaa0a37471f",
+      "comprehended": false,
+      "strand": "statistics"
+    },
+    {
+      "id": "ds.stats.anova",
+      "label": "ANOVA",
+      "type": "concept",
+      "description": "One-way and two-way ANOVA, F-test, post-hoc tests (Tukey, Bonferroni), and assumptions checking.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.stats",
+      "bookName": "Statistical Methods",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "863fd73116f5d22a",
+      "comprehended": false,
+      "strand": "statistics"
+    },
+    {
+      "id": "ds.stats.time_series",
+      "label": "Time Series Analysis",
+      "type": "concept",
+      "description": "Trend, seasonality, stationarity, ACF/PACF, ARIMA, exponential smoothing, and forecasting techniques.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.stats",
+      "bookName": "Statistical Methods",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "9946bc875f565131",
+      "comprehended": false,
+      "strand": "statistics"
+    },
+    {
+      "id": "ds.stats.sampling",
+      "label": "Sampling Methods",
+      "type": "concept",
+      "description": "Random sampling, stratified sampling, bootstrapping, resampling techniques, and survey design principles.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.stats",
+      "bookName": "Statistical Methods",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "5503f11e6e028ca2",
+      "comprehended": false,
+      "strand": "statistics"
+    },
+    {
+      "id": "ds.stats.nonparametric",
+      "label": "Non-Parametric Methods",
+      "type": "concept",
+      "description": "Mann-Whitney U, Kruskal-Wallis, Wilcoxon signed-rank, and when to use non-parametric alternatives.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.stats",
+      "bookName": "Statistical Methods",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "14766e51002a5d87",
+      "comprehended": false,
+      "strand": "statistics"
+    },
+    {
+      "id": "ds.ml.classification",
+      "label": "Classification",
+      "type": "concept",
+      "description": "Logistic regression, decision trees, random forests, gradient boosting, and classification metrics (precision, recall, F1).",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.ml",
+      "bookName": "Machine Learning for DS",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "13fe1d652a6f9d0d",
+      "comprehended": false,
+      "strand": "ml"
+    },
+    {
+      "id": "ds.ml.clustering",
+      "label": "Clustering",
+      "type": "concept",
+      "description": "K-means, hierarchical clustering, DBSCAN, silhouette analysis, and choosing the number of clusters.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.ml",
+      "bookName": "Machine Learning for DS",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "21d00666ec9c2720",
+      "comprehended": false,
+      "strand": "ml"
+    },
+    {
+      "id": "ds.ml.recommendation",
+      "label": "Recommendation Systems",
+      "type": "concept",
+      "description": "Collaborative filtering, content-based filtering, matrix factorization, and hybrid recommendation approaches.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.ml",
+      "bookName": "Machine Learning for DS",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "c8f8b1f4eb4eee07",
+      "comprehended": false,
+      "strand": "ml"
+    },
+    {
+      "id": "ds.ml.text_mining",
+      "label": "Text Mining",
+      "type": "concept",
+      "description": "Bag-of-words, TF-IDF, topic modeling (LDA), sentiment analysis, and NLP pipelines for data science.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.ml",
+      "bookName": "Machine Learning for DS",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "3feafe6f56c32d4a",
+      "comprehended": false,
+      "strand": "ml"
+    },
+    {
+      "id": "ds.ml.feature_engineering",
+      "label": "Feature Engineering",
+      "type": "concept",
+      "description": "Feature scaling, encoding, selection, extraction, polynomial features, and creating domain-specific features.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.ml",
+      "bookName": "Machine Learning for DS",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "d5cb58534e1063fc",
+      "comprehended": false,
+      "strand": "ml"
+    },
+    {
+      "id": "ds.ml.model_evaluation",
+      "label": "Model Selection & Evaluation",
+      "type": "concept",
+      "description": "Cross-validation, bias-variance tradeoff, ROC curves, learning curves, and model comparison strategies.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.ml",
+      "bookName": "Machine Learning for DS",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "97d72e9dc5b9af5d",
+      "comprehended": false,
+      "strand": "ml"
+    },
+    {
+      "id": "ds.ml.ensemble_methods",
+      "label": "Ensemble Methods",
+      "type": "concept",
+      "description": "Bagging, boosting (XGBoost, LightGBM), stacking, voting classifiers, and ensemble model strategies.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.ml",
+      "bookName": "Machine Learning for DS",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "cf4c13e35a325788",
+      "comprehended": false,
+      "strand": "ml"
+    },
+    {
+      "id": "ds.ml.anomaly_detection",
+      "label": "Anomaly Detection",
+      "type": "concept",
+      "description": "Statistical methods, isolation forests, autoencoders for anomaly detection, and fraud detection use cases.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.ml",
+      "bookName": "Machine Learning for DS",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "256ab98d5bae3a90",
+      "comprehended": false,
+      "strand": "ml"
+    },
+    {
+      "id": "ds.ml.dimensionality_reduction",
+      "label": "Dimensionality Reduction",
+      "type": "concept",
+      "description": "PCA, t-SNE, UMAP, feature selection methods, and visualizing high-dimensional data.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.ml",
+      "bookName": "Machine Learning for DS",
+      "bookColor": "#f97316",
+      "bookOrder": 5,
+      "external_id": "cb822377d900ee1c",
+      "comprehended": false,
+      "strand": "ml"
+    },
+    {
+      "id": "ds.bigdata.spark",
+      "label": "Apache Spark",
+      "type": "concept",
+      "description": "Spark architecture, RDDs, DataFrames, Spark SQL, PySpark, and distributed data processing.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.bigdata",
+      "bookName": "Big Data & Engineering",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "e27bf0c7caccfabf",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "ds.bigdata.hadoop",
+      "label": "Hadoop Ecosystem",
+      "type": "concept",
+      "description": "HDFS, MapReduce concepts, Hive, and the Hadoop ecosystem for large-scale data storage and processing.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.bigdata",
+      "bookName": "Big Data & Engineering",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "087bfb05b4e531d9",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "ds.bigdata.data_warehousing",
+      "label": "Data Warehousing",
+      "type": "concept",
+      "description": "Star and snowflake schemas, OLAP vs OLTP, data marts, Redshift, BigQuery, and Snowflake platforms.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.bigdata",
+      "bookName": "Big Data & Engineering",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "1185924d50817853",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "ds.bigdata.etl",
+      "label": "ETL Pipelines",
+      "type": "concept",
+      "description": "Extract-Transform-Load workflows, Airflow, dbt, data quality checks, and pipeline orchestration.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.bigdata",
+      "bookName": "Big Data & Engineering",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "f5047ddc6831839e",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "ds.bigdata.streaming",
+      "label": "Stream Processing",
+      "type": "concept",
+      "description": "Real-time data processing with Kafka, Spark Streaming, event-driven architectures, and windowing strategies.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.bigdata",
+      "bookName": "Big Data & Engineering",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "0179dea945d851c8",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "ds.bigdata.nosql",
+      "label": "NoSQL Databases",
+      "type": "concept",
+      "description": "MongoDB, Cassandra, Redis, document vs key-value vs columnar stores, and when to use NoSQL.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.bigdata",
+      "bookName": "Big Data & Engineering",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "d500842cd43218c4",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "ds.bigdata.cloud_platforms",
+      "label": "Cloud Data Platforms",
+      "type": "concept",
+      "description": "AWS, GCP, and Azure data services. S3, GCS, cloud-based ML, and infrastructure for data science.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.bigdata",
+      "bookName": "Big Data & Engineering",
+      "bookColor": "#06b6d4",
+      "bookOrder": 6,
+      "external_id": "1de3437462b54d09",
+      "comprehended": false,
+      "strand": "engineering"
+    },
+    {
+      "id": "ds.viz.dashboard_design",
+      "label": "Dashboard Design",
+      "type": "concept",
+      "description": "Dashboard layout principles, KPI selection, user-centered design, interactivity, and refresh strategies.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.viz",
+      "bookName": "Visualization & Storytelling",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "b5f68ed6291889e3",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "ds.viz.tableau_powerbi",
+      "label": "Tableau & Power BI",
+      "type": "concept",
+      "description": "Building dashboards in Tableau and Power BI, calculated fields, data connections, and publishing.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.viz",
+      "bookName": "Visualization & Storytelling",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "35c507faddfeca77",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "ds.viz.d3js",
+      "label": "D3.js",
+      "type": "concept",
+      "description": "Data-driven documents, SVG manipulation, scales, axes, transitions, and custom interactive web visualizations.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.viz",
+      "bookName": "Visualization & Storytelling",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "d326184971d413aa",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "ds.viz.narrative",
+      "label": "Narrative with Data",
+      "type": "concept",
+      "description": "Data storytelling, structuring presentations, choosing the right chart, annotation, and persuading with data.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.viz",
+      "bookName": "Visualization & Storytelling",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "ca193fad9736d62e",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "ds.viz.chart_types",
+      "label": "Advanced Chart Types",
+      "type": "concept",
+      "description": "Treemaps, Sankey diagrams, radar charts, waterfall charts, and choosing visualizations for different data stories.",
+      "grade_range": [
+        "Intermediate"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.viz",
+      "bookName": "Visualization & Storytelling",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "bc01651aa642d90f",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "ds.viz.geospatial",
+      "label": "Geospatial Visualization",
+      "type": "concept",
+      "description": "Mapping with Folium, GeoPandas, choropleth maps, and spatial data visualization techniques.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.viz",
+      "bookName": "Visualization & Storytelling",
+      "bookColor": "#ec4899",
+      "bookOrder": 7,
+      "external_id": "32ae7fc171bd2d79",
+      "comprehended": false,
+      "strand": "communication"
+    },
+    {
+      "id": "ds.domain.financial",
+      "label": "Financial Analytics",
+      "type": "concept",
+      "description": "Portfolio analysis, risk modeling, fraud detection, credit scoring, and financial time series forecasting.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.domain",
+      "bookName": "Domain Applications",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "64010378f521cbcf",
+      "comprehended": false,
+      "strand": "analysis"
+    },
+    {
+      "id": "ds.domain.business_analytics",
+      "label": "Business Analytics",
+      "type": "concept",
+      "description": "Customer segmentation, churn prediction, revenue forecasting, cohort analysis, and KPI dashboards.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.domain",
+      "bookName": "Domain Applications",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "bcc687d95251532d",
+      "comprehended": false,
+      "strand": "analysis"
+    },
+    {
+      "id": "ds.domain.healthcare",
+      "label": "Healthcare Analytics",
+      "type": "concept",
+      "description": "Clinical data analysis, survival analysis, epidemiological modeling, EHR data, and health outcome prediction.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.domain",
+      "bookName": "Domain Applications",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "a97e074b5368ef31",
+      "comprehended": false,
+      "strand": "analysis"
+    },
+    {
+      "id": "ds.domain.marketing",
+      "label": "Marketing Analytics",
+      "type": "concept",
+      "description": "Attribution modeling, CLV estimation, campaign analysis, funnel optimization, and marketing mix modeling.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.domain",
+      "bookName": "Domain Applications",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "bfecdd0e59817aa5",
+      "comprehended": false,
+      "strand": "analysis"
+    },
+    {
+      "id": "ds.domain.sports",
+      "label": "Sports Analytics",
+      "type": "concept",
+      "description": "Player performance metrics, win probability models, draft analysis, and sports data visualization.",
+      "grade_range": [
+        "Advanced"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ds.domain",
+      "bookName": "Domain Applications",
+      "bookColor": "#eab308",
+      "bookOrder": 8,
+      "external_id": "05c952a17bdf126d",
+      "comprehended": false,
+      "strand": "analysis"
+    }
+  ],
+  "edges": [
+    {
+      "source": "ds.foundations.python_basics",
+      "target": "ds.foundations.numpy_pandas",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.python_basics",
+      "target": "ds.foundations.data_types",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.python_basics",
+      "target": "ds.foundations.version_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.r_basics",
+      "target": "ds.foundations.data_types",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.sql",
+      "target": "ds.wrangling.merging",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.numpy_pandas",
+      "target": "ds.wrangling.data_cleaning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.data_types",
+      "target": "ds.wrangling.data_cleaning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.wrangling.data_cleaning",
+      "target": "ds.wrangling.missing_data",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.numpy_pandas",
+      "target": "ds.wrangling.merging",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.wrangling.merging",
+      "target": "ds.wrangling.reshaping",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.python_basics",
+      "target": "ds.wrangling.regex",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.wrangling.data_cleaning",
+      "target": "ds.wrangling.regex",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.python_basics",
+      "target": "ds.wrangling.apis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.data_types",
+      "target": "ds.wrangling.apis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.wrangling.data_cleaning",
+      "target": "ds.wrangling.datetime",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.numpy_pandas",
+      "target": "ds.eda.descriptive_stats",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.wrangling.data_cleaning",
+      "target": "ds.eda.descriptive_stats",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.descriptive_stats",
+      "target": "ds.eda.distributions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.descriptive_stats",
+      "target": "ds.eda.correlation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.numpy_pandas",
+      "target": "ds.eda.matplotlib_seaborn",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.descriptive_stats",
+      "target": "ds.eda.matplotlib_seaborn",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.matplotlib_seaborn",
+      "target": "ds.eda.plotly_interactive",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.descriptive_stats",
+      "target": "ds.eda.outlier_detection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.distributions",
+      "target": "ds.eda.outlier_detection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.distributions",
+      "target": "ds.stats.hypothesis_testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.descriptive_stats",
+      "target": "ds.stats.hypothesis_testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.hypothesis_testing",
+      "target": "ds.stats.confidence_intervals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.hypothesis_testing",
+      "target": "ds.stats.ab_testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.confidence_intervals",
+      "target": "ds.stats.ab_testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.distributions",
+      "target": "ds.stats.bayesian",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.hypothesis_testing",
+      "target": "ds.stats.bayesian",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.correlation",
+      "target": "ds.stats.regression",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.hypothesis_testing",
+      "target": "ds.stats.regression",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.hypothesis_testing",
+      "target": "ds.stats.anova",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.regression",
+      "target": "ds.stats.anova",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.regression",
+      "target": "ds.stats.time_series",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.wrangling.datetime",
+      "target": "ds.stats.time_series",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.hypothesis_testing",
+      "target": "ds.stats.nonparametric",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.regression",
+      "target": "ds.ml.classification",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.correlation",
+      "target": "ds.ml.classification",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.classification",
+      "target": "ds.ml.clustering",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.clustering",
+      "target": "ds.ml.recommendation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.classification",
+      "target": "ds.ml.recommendation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.wrangling.regex",
+      "target": "ds.ml.text_mining",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.classification",
+      "target": "ds.ml.text_mining",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.wrangling.data_cleaning",
+      "target": "ds.ml.feature_engineering",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.classification",
+      "target": "ds.ml.feature_engineering",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.feature_engineering",
+      "target": "ds.ml.model_evaluation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.hypothesis_testing",
+      "target": "ds.ml.model_evaluation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.clustering",
+      "target": "ds.ml.dimensionality_reduction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.correlation",
+      "target": "ds.ml.dimensionality_reduction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.sql",
+      "target": "ds.bigdata.spark",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.numpy_pandas",
+      "target": "ds.bigdata.spark",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.bigdata.spark",
+      "target": "ds.bigdata.hadoop",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.sql",
+      "target": "ds.bigdata.data_warehousing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.bigdata.hadoop",
+      "target": "ds.bigdata.data_warehousing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.bigdata.data_warehousing",
+      "target": "ds.bigdata.etl",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.wrangling.data_cleaning",
+      "target": "ds.bigdata.etl",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.bigdata.spark",
+      "target": "ds.bigdata.streaming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.bigdata.etl",
+      "target": "ds.bigdata.streaming",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.bigdata.data_warehousing",
+      "target": "ds.bigdata.cloud_platforms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.bigdata.etl",
+      "target": "ds.bigdata.cloud_platforms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.matplotlib_seaborn",
+      "target": "ds.viz.dashboard_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.plotly_interactive",
+      "target": "ds.viz.dashboard_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.viz.dashboard_design",
+      "target": "ds.viz.tableau_powerbi",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.plotly_interactive",
+      "target": "ds.viz.d3js",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.viz.dashboard_design",
+      "target": "ds.viz.d3js",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.viz.dashboard_design",
+      "target": "ds.viz.narrative",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.data_ethics",
+      "target": "ds.viz.narrative",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.plotly_interactive",
+      "target": "ds.viz.geospatial",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.viz.dashboard_design",
+      "target": "ds.viz.geospatial",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.classification",
+      "target": "ds.domain.business_analytics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.viz.tableau_powerbi",
+      "target": "ds.domain.business_analytics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.time_series",
+      "target": "ds.domain.business_analytics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.regression",
+      "target": "ds.domain.healthcare",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.classification",
+      "target": "ds.domain.healthcare",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.bayesian",
+      "target": "ds.domain.healthcare",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.ab_testing",
+      "target": "ds.domain.marketing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.classification",
+      "target": "ds.domain.marketing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.recommendation",
+      "target": "ds.domain.marketing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.regression",
+      "target": "ds.domain.sports",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.matplotlib_seaborn",
+      "target": "ds.domain.sports",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.classification",
+      "target": "ds.domain.sports",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.numpy_pandas",
+      "target": "ds.wrangling.file_formats",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.wrangling.file_formats",
+      "target": "ds.wrangling.data_cleaning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.numpy_pandas",
+      "target": "ds.eda.groupby_aggregation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.descriptive_stats",
+      "target": "ds.eda.groupby_aggregation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.distributions",
+      "target": "ds.stats.sampling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.sampling",
+      "target": "ds.stats.ab_testing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.classification",
+      "target": "ds.ml.ensemble_methods",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.ensemble_methods",
+      "target": "ds.ml.model_evaluation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.clustering",
+      "target": "ds.ml.anomaly_detection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.outlier_detection",
+      "target": "ds.ml.anomaly_detection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.sql",
+      "target": "ds.bigdata.nosql",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.bigdata.nosql",
+      "target": "ds.bigdata.data_warehousing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.eda.matplotlib_seaborn",
+      "target": "ds.viz.chart_types",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.viz.chart_types",
+      "target": "ds.viz.dashboard_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.python_basics",
+      "target": "ds.foundations.jupyter",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.numpy_pandas",
+      "target": "ds.foundations.jupyter",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.foundations.command_line",
+      "target": "ds.foundations.version_control",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.wrangling.data_cleaning",
+      "target": "ds.wrangling.string_manipulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.wrangling.string_manipulation",
+      "target": "ds.wrangling.regex",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.stats.time_series",
+      "target": "ds.domain.financial",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.classification",
+      "target": "ds.domain.financial",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ds.ml.anomaly_detection",
+      "target": "ds.domain.financial",
+      "relation": "prerequisite_for"
+    }
+  ]
+}
