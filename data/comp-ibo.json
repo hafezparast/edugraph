@@ -3,12 +3,12 @@
     "domain": "biology",
     "curriculum": "IBO (International Biology Olympiad)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "IBO topics with prerequisite ordering, colored by branch",
     "sources": [
       "IBO Syllabus"
     ],
-    "last_updated": "2026-03-27"
+    "last_updated": "2026-03-28"
   },
   "books": [
     {
@@ -18,28 +18,40 @@
       "order": 1
     },
     {
-      "id": "ibo.plant",
-      "name": "Plant Biology",
-      "color": "#84cc16",
+      "id": "ibo.biochem",
+      "name": "Biochemistry",
+      "color": "#14b8a6",
       "order": 2
     },
     {
-      "id": "ibo.animal",
-      "name": "Animal Biology",
-      "color": "#3b82f6",
+      "id": "ibo.genetics",
+      "name": "Genetics",
+      "color": "#ef4444",
       "order": 3
     },
     {
-      "id": "ibo.eco",
-      "name": "Ecology",
-      "color": "#f59e0b",
+      "id": "ibo.plant",
+      "name": "Plant Biology",
+      "color": "#84cc16",
       "order": 4
+    },
+    {
+      "id": "ibo.animal",
+      "name": "Animal Physiology",
+      "color": "#3b82f6",
+      "order": 5
+    },
+    {
+      "id": "ibo.eco",
+      "name": "Ecology & Evolution",
+      "color": "#f59e0b",
+      "order": 6
     },
     {
       "id": "ibo.biosys",
       "name": "Biosystematics",
       "color": "#8b5cf6",
-      "order": 5
+      "order": 7
     }
   ],
   "strands": [
@@ -49,18 +61,28 @@
       "color": "#4A90D9"
     },
     {
+      "id": "biochem",
+      "name": "Biochemistry",
+      "color": "#16A085"
+    },
+    {
+      "id": "genetics",
+      "name": "Genetics",
+      "color": "#E74C3C"
+    },
+    {
       "id": "plant",
       "name": "Plant Biology",
       "color": "#2ECC71"
     },
     {
       "id": "animal",
-      "name": "Animal Biology",
-      "color": "#E74C3C"
+      "name": "Animal Physiology",
+      "color": "#3498DB"
     },
     {
       "id": "ecology",
-      "name": "Ecology",
+      "name": "Ecology & Evolution",
       "color": "#F39C12"
     },
     {
@@ -74,7 +96,7 @@
       "id": "ibo.cell.structure",
       "label": "Cell Structure",
       "type": "concept",
-      "description": "Prokaryotic and eukaryotic cell structure, organelles, membranes",
+      "description": "Prokaryotic vs eukaryotic cells, organelles, endomembrane system, cytoskeleton",
       "grade_range": [
         "Olympiad"
       ],
@@ -91,10 +113,10 @@
       "strand": "cell"
     },
     {
-      "id": "ibo.cell.biochemistry",
-      "label": "Biochemistry",
+      "id": "ibo.cell.membrane_transport",
+      "label": "Membrane Transport",
       "type": "concept",
-      "description": "Proteins, carbohydrates, lipids, enzymes, metabolism",
+      "description": "Diffusion, osmosis, active transport, endocytosis, exocytosis, membrane potential",
       "grade_range": [
         "Olympiad"
       ],
@@ -106,15 +128,15 @@
       "bookName": "Cell Biology",
       "bookColor": "#22c55e",
       "bookOrder": 1,
-      "external_id": "86eeaf5d9c965ff6",
+      "external_id": "dc9df508484603b5",
       "comprehended": false,
       "strand": "cell"
     },
     {
-      "id": "ibo.cell.molecular",
-      "label": "Molecular Biology",
+      "id": "ibo.cell.signaling",
+      "label": "Cell Signaling",
       "type": "concept",
-      "description": "DNA replication, transcription, translation, gene regulation",
+      "description": "Signal transduction, receptors, second messengers, G-proteins, kinase cascades",
       "grade_range": [
         "Olympiad"
       ],
@@ -126,15 +148,15 @@
       "bookName": "Cell Biology",
       "bookColor": "#22c55e",
       "bookOrder": 1,
-      "external_id": "a63519eca9adec8f",
+      "external_id": "60b0be4afaf51c6f",
       "comprehended": false,
       "strand": "cell"
     },
     {
-      "id": "ibo.cell.genetics",
-      "label": "Genetics",
+      "id": "ibo.cell.cell_cycle",
+      "label": "Cell Cycle & Mitosis",
       "type": "concept",
-      "description": "Mendelian genetics, linkage, chromosomal inheritance, population genetics",
+      "description": "Cell cycle phases, mitosis, cytokinesis, checkpoints, cyclins/CDKs, cancer",
       "grade_range": [
         "Olympiad"
       ],
@@ -146,15 +168,15 @@
       "bookName": "Cell Biology",
       "bookColor": "#22c55e",
       "bookOrder": 1,
-      "external_id": "68c9ce8964203f7d",
+      "external_id": "cbc96684025d18a9",
       "comprehended": false,
       "strand": "cell"
     },
     {
-      "id": "ibo.cell.cell_division",
-      "label": "Cell Division",
+      "id": "ibo.cell.meiosis",
+      "label": "Meiosis",
       "type": "concept",
-      "description": "Mitosis, meiosis, cell cycle regulation",
+      "description": "Meiosis I and II, crossing over, independent assortment, genetic variation",
       "grade_range": [
         "Olympiad"
       ],
@@ -166,15 +188,455 @@
       "bookName": "Cell Biology",
       "bookColor": "#22c55e",
       "bookOrder": 1,
-      "external_id": "cd7140fd493fa515",
+      "external_id": "24eb309f9fc3564e",
       "comprehended": false,
       "strand": "cell"
+    },
+    {
+      "id": "ibo.cell.stem_cells",
+      "label": "Stem Cells & Differentiation",
+      "type": "concept",
+      "description": "Totipotency, pluripotency, embryonic/adult stem cells, cell fate determination",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.cell",
+      "bookName": "Cell Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "81af2665e122fafa",
+      "comprehended": false,
+      "strand": "cell"
+    },
+    {
+      "id": "ibo.cell.apoptosis",
+      "label": "Apoptosis",
+      "type": "concept",
+      "description": "Programmed cell death, caspases, intrinsic/extrinsic pathways, necrosis vs apoptosis",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.cell",
+      "bookName": "Cell Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "e9d3dd303cd84c55",
+      "comprehended": false,
+      "strand": "cell"
+    },
+    {
+      "id": "ibo.biochem.proteins",
+      "label": "Proteins",
+      "type": "concept",
+      "description": "Amino acids, protein structure (primary-quaternary), folding, denaturation",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.biochem",
+      "bookName": "Biochemistry",
+      "bookColor": "#14b8a6",
+      "bookOrder": 2,
+      "external_id": "b209d793215106fe",
+      "comprehended": false,
+      "strand": "biochem"
+    },
+    {
+      "id": "ibo.biochem.enzymes",
+      "label": "Enzymes",
+      "type": "concept",
+      "description": "Enzyme kinetics, Michaelis-Menten, inhibition types, allosteric regulation, cofactors",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.biochem",
+      "bookName": "Biochemistry",
+      "bookColor": "#14b8a6",
+      "bookOrder": 2,
+      "external_id": "2aeefbb0350b9313",
+      "comprehended": false,
+      "strand": "biochem"
+    },
+    {
+      "id": "ibo.biochem.nucleic_acids",
+      "label": "Nucleic Acids",
+      "type": "concept",
+      "description": "DNA/RNA structure, nucleotides, base pairing, double helix, chromatin",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.biochem",
+      "bookName": "Biochemistry",
+      "bookColor": "#14b8a6",
+      "bookOrder": 2,
+      "external_id": "101559d5b2320881",
+      "comprehended": false,
+      "strand": "biochem"
+    },
+    {
+      "id": "ibo.biochem.carbohydrates",
+      "label": "Carbohydrates",
+      "type": "concept",
+      "description": "Monosaccharides, disaccharides, polysaccharides, glycogen, starch, cellulose",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.biochem",
+      "bookName": "Biochemistry",
+      "bookColor": "#14b8a6",
+      "bookOrder": 2,
+      "external_id": "6381a2f7e67dbed2",
+      "comprehended": false,
+      "strand": "biochem"
+    },
+    {
+      "id": "ibo.biochem.lipids",
+      "label": "Lipids",
+      "type": "concept",
+      "description": "Fatty acids, phospholipids, steroids, triglycerides, membrane lipids",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.biochem",
+      "bookName": "Biochemistry",
+      "bookColor": "#14b8a6",
+      "bookOrder": 2,
+      "external_id": "9423d5fda787ca8b",
+      "comprehended": false,
+      "strand": "biochem"
+    },
+    {
+      "id": "ibo.biochem.glycolysis",
+      "label": "Glycolysis",
+      "type": "concept",
+      "description": "Glycolysis steps, regulation, ATP yield, fermentation (lactic acid, alcoholic)",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.biochem",
+      "bookName": "Biochemistry",
+      "bookColor": "#14b8a6",
+      "bookOrder": 2,
+      "external_id": "24175c74fda2d95b",
+      "comprehended": false,
+      "strand": "biochem"
+    },
+    {
+      "id": "ibo.biochem.krebs",
+      "label": "Krebs Cycle",
+      "type": "concept",
+      "description": "Citric acid cycle, acetyl-CoA, NADH/FADH2 production, regulation, anaplerotic reactions",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.biochem",
+      "bookName": "Biochemistry",
+      "bookColor": "#14b8a6",
+      "bookOrder": 2,
+      "external_id": "ba3e5110c0d2dda9",
+      "comprehended": false,
+      "strand": "biochem"
+    },
+    {
+      "id": "ibo.biochem.oxidative_phosph",
+      "label": "Oxidative Phosphorylation",
+      "type": "concept",
+      "description": "Electron transport chain, chemiosmosis, ATP synthase, proton motive force",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.biochem",
+      "bookName": "Biochemistry",
+      "bookColor": "#14b8a6",
+      "bookOrder": 2,
+      "external_id": "372ad18e54351055",
+      "comprehended": false,
+      "strand": "biochem"
+    },
+    {
+      "id": "ibo.biochem.beta_oxidation",
+      "label": "Beta-Oxidation",
+      "type": "concept",
+      "description": "Fatty acid oxidation, carnitine shuttle, energy yield from fat metabolism",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.biochem",
+      "bookName": "Biochemistry",
+      "bookColor": "#14b8a6",
+      "bookOrder": 2,
+      "external_id": "bf587f292b1f3f1f",
+      "comprehended": false,
+      "strand": "biochem"
+    },
+    {
+      "id": "ibo.genetics.mendelian",
+      "label": "Mendelian Genetics",
+      "type": "concept",
+      "description": "Dominance, segregation, independent assortment, monohybrid/dihybrid crosses, pedigrees",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.genetics",
+      "bookName": "Genetics",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "766b7f31c98d183f",
+      "comprehended": false,
+      "strand": "genetics"
+    },
+    {
+      "id": "ibo.genetics.linkage",
+      "label": "Linkage & Mapping",
+      "type": "concept",
+      "description": "Genetic linkage, recombination frequency, gene mapping, chi-square analysis",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.genetics",
+      "bookName": "Genetics",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "556d93336899efa8",
+      "comprehended": false,
+      "strand": "genetics"
+    },
+    {
+      "id": "ibo.genetics.population",
+      "label": "Population Genetics",
+      "type": "concept",
+      "description": "Hardy-Weinberg equilibrium, genetic drift, gene flow, mutation rate, selection",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.genetics",
+      "bookName": "Genetics",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "d4c56455b8d0aad5",
+      "comprehended": false,
+      "strand": "genetics"
+    },
+    {
+      "id": "ibo.genetics.molecular",
+      "label": "Molecular Genetics",
+      "type": "concept",
+      "description": "DNA replication, transcription, translation, genetic code, mutations",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.genetics",
+      "bookName": "Genetics",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "4148683f82c8dc19",
+      "comprehended": false,
+      "strand": "genetics"
+    },
+    {
+      "id": "ibo.genetics.gene_regulation",
+      "label": "Gene Regulation",
+      "type": "concept",
+      "description": "Operons, transcription factors, enhancers/silencers, epigenetics, chromatin remodeling",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.genetics",
+      "bookName": "Genetics",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "b96937ca0b2c88eb",
+      "comprehended": false,
+      "strand": "genetics"
+    },
+    {
+      "id": "ibo.genetics.epigenetics",
+      "label": "Epigenetics",
+      "type": "concept",
+      "description": "DNA methylation, histone modification, genomic imprinting, X-inactivation",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.genetics",
+      "bookName": "Genetics",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "ae6508a9de047272",
+      "comprehended": false,
+      "strand": "genetics"
+    },
+    {
+      "id": "ibo.genetics.genetic_engineering",
+      "label": "Genetic Engineering",
+      "type": "concept",
+      "description": "Restriction enzymes, PCR, gel electrophoresis, cloning, CRISPR, transgenic organisms",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.genetics",
+      "bookName": "Genetics",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "327b803340ebb07a",
+      "comprehended": false,
+      "strand": "genetics"
+    },
+    {
+      "id": "ibo.genetics.chromosomal",
+      "label": "Chromosomal Genetics",
+      "type": "concept",
+      "description": "Sex-linked inheritance, chromosomal aberrations, polyploidy, aneuploidy, karyotype",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.genetics",
+      "bookName": "Genetics",
+      "bookColor": "#ef4444",
+      "bookOrder": 3,
+      "external_id": "ba3b3631e4dc7011",
+      "comprehended": false,
+      "strand": "genetics"
+    },
+    {
+      "id": "ibo.plant.photosynthesis_light",
+      "label": "Photosynthesis: Light Reactions",
+      "type": "concept",
+      "description": "Photosystems I and II, electron transport, photophosphorylation, water splitting",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.plant",
+      "bookName": "Plant Biology",
+      "bookColor": "#84cc16",
+      "bookOrder": 4,
+      "external_id": "68b46dd50341bbfa",
+      "comprehended": false,
+      "strand": "plant"
+    },
+    {
+      "id": "ibo.plant.photosynthesis_dark",
+      "label": "Photosynthesis: Calvin Cycle",
+      "type": "concept",
+      "description": "Carbon fixation, RuBisCO, C3/C4/CAM pathways, photorespiration",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.plant",
+      "bookName": "Plant Biology",
+      "bookColor": "#84cc16",
+      "bookOrder": 4,
+      "external_id": "cb3bcd3fad25557f",
+      "comprehended": false,
+      "strand": "plant"
+    },
+    {
+      "id": "ibo.plant.hormones",
+      "label": "Plant Hormones",
+      "type": "concept",
+      "description": "Auxins, gibberellins, cytokinins, abscisic acid, ethylene, tropisms, photoperiodism",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.plant",
+      "bookName": "Plant Biology",
+      "bookColor": "#84cc16",
+      "bookOrder": 4,
+      "external_id": "eee96b116f85cbaa",
+      "comprehended": false,
+      "strand": "plant"
     },
     {
       "id": "ibo.plant.anatomy",
       "label": "Plant Anatomy",
       "type": "concept",
-      "description": "Root, stem, leaf structure, vascular tissues, meristems",
+      "description": "Root, stem, leaf structure, vascular tissues (xylem/phloem), meristems, dermal tissue",
       "grade_range": [
         "Olympiad"
       ],
@@ -185,16 +647,16 @@
       "book": "ibo.plant",
       "bookName": "Plant Biology",
       "bookColor": "#84cc16",
-      "bookOrder": 2,
+      "bookOrder": 4,
       "external_id": "7a7f14d9d284116b",
       "comprehended": false,
       "strand": "plant"
     },
     {
-      "id": "ibo.plant.physiology",
-      "label": "Plant Physiology",
+      "id": "ibo.plant.transpiration",
+      "label": "Transpiration & Water Transport",
       "type": "concept",
-      "description": "Photosynthesis, transpiration, mineral nutrition, hormones",
+      "description": "Cohesion-tension theory, stomatal regulation, root pressure, translocation (mass flow)",
       "grade_range": [
         "Olympiad"
       ],
@@ -205,8 +667,8 @@
       "book": "ibo.plant",
       "bookName": "Plant Biology",
       "bookColor": "#84cc16",
-      "bookOrder": 2,
-      "external_id": "99dbfaaa45d67282",
+      "bookOrder": 4,
+      "external_id": "3cdebdb11ce30885",
       "comprehended": false,
       "strand": "plant"
     },
@@ -214,7 +676,7 @@
       "id": "ibo.plant.reproduction",
       "label": "Plant Reproduction",
       "type": "concept",
-      "description": "Flower structure, pollination, seed development, vegetative propagation",
+      "description": "Flower structure, pollination, fertilization, seed development, fruit formation, vegetative propagation",
       "grade_range": [
         "Olympiad"
       ],
@@ -225,16 +687,16 @@
       "book": "ibo.plant",
       "bookName": "Plant Biology",
       "bookColor": "#84cc16",
-      "bookOrder": 2,
+      "bookOrder": 4,
       "external_id": "87cd4dd9ed4a1c50",
       "comprehended": false,
       "strand": "plant"
     },
     {
-      "id": "ibo.plant.ecology",
-      "label": "Plant Ecology",
+      "id": "ibo.plant.mineral_nutrition",
+      "label": "Mineral Nutrition",
       "type": "concept",
-      "description": "Plant adaptations, succession, plant-environment interactions",
+      "description": "Essential nutrients, nitrogen fixation, mycorrhizae, nutrient deficiency symptoms",
       "grade_range": [
         "Olympiad"
       ],
@@ -245,16 +707,16 @@
       "book": "ibo.plant",
       "bookName": "Plant Biology",
       "bookColor": "#84cc16",
-      "bookOrder": 2,
-      "external_id": "59d6116a1b309f01",
+      "bookOrder": 4,
+      "external_id": "e8e635f17b3f0010",
       "comprehended": false,
       "strand": "plant"
     },
     {
-      "id": "ibo.animal.anatomy",
-      "label": "Animal Anatomy",
+      "id": "ibo.animal.nervous",
+      "label": "Nervous System",
       "type": "concept",
-      "description": "Organ systems, comparative anatomy, histology",
+      "description": "Neurons, action potentials, synaptic transmission, CNS/PNS, reflex arcs, neurotransmitters",
       "grade_range": [
         "Olympiad"
       ],
@@ -263,18 +725,18 @@
       ],
       "pages": "",
       "book": "ibo.animal",
-      "bookName": "Animal Biology",
+      "bookName": "Animal Physiology",
       "bookColor": "#3b82f6",
-      "bookOrder": 3,
-      "external_id": "a444023172b0232e",
+      "bookOrder": 5,
+      "external_id": "1f2ae392bc4e223f",
       "comprehended": false,
       "strand": "animal"
     },
     {
-      "id": "ibo.animal.physiology",
-      "label": "Animal Physiology",
+      "id": "ibo.animal.sensory",
+      "label": "Sensory Systems",
       "type": "concept",
-      "description": "Nervous system, endocrine system, circulation, respiration, digestion, excretion",
+      "description": "Vision, hearing, taste, smell, touch, proprioception, sensory transduction",
       "grade_range": [
         "Olympiad"
       ],
@@ -283,18 +745,178 @@
       ],
       "pages": "",
       "book": "ibo.animal",
-      "bookName": "Animal Biology",
+      "bookName": "Animal Physiology",
       "bookColor": "#3b82f6",
-      "bookOrder": 3,
-      "external_id": "042f2c16ef90961b",
+      "bookOrder": 5,
+      "external_id": "28e4e11974ea5246",
+      "comprehended": false,
+      "strand": "animal"
+    },
+    {
+      "id": "ibo.animal.endocrine",
+      "label": "Endocrine System",
+      "type": "concept",
+      "description": "Hormones, feedback loops, pituitary, thyroid, adrenal, pancreas, reproductive hormones",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.animal",
+      "bookName": "Animal Physiology",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "7c5fef7a9ba5bc62",
+      "comprehended": false,
+      "strand": "animal"
+    },
+    {
+      "id": "ibo.animal.circulatory",
+      "label": "Circulatory System",
+      "type": "concept",
+      "description": "Heart structure, cardiac cycle, blood vessels, blood pressure, blood composition, hemoglobin",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.animal",
+      "bookName": "Animal Physiology",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "46ce94eb07dbe4e1",
+      "comprehended": false,
+      "strand": "animal"
+    },
+    {
+      "id": "ibo.animal.respiratory",
+      "label": "Respiratory System",
+      "type": "concept",
+      "description": "Gas exchange, ventilation mechanics, O2/CO2 transport, hemoglobin-O2 dissociation curve",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.animal",
+      "bookName": "Animal Physiology",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "44ca2949973b5d15",
+      "comprehended": false,
+      "strand": "animal"
+    },
+    {
+      "id": "ibo.animal.excretory",
+      "label": "Excretory System",
+      "type": "concept",
+      "description": "Kidney structure, nephron function, filtration, reabsorption, osmoregulation, ADH",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.animal",
+      "bookName": "Animal Physiology",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "762d73cdd1322a28",
+      "comprehended": false,
+      "strand": "animal"
+    },
+    {
+      "id": "ibo.animal.immune_innate",
+      "label": "Innate Immunity",
+      "type": "concept",
+      "description": "Physical barriers, phagocytes, complement system, inflammation, interferons, NK cells",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.animal",
+      "bookName": "Animal Physiology",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "91b2d63c65bbc13c",
+      "comprehended": false,
+      "strand": "animal"
+    },
+    {
+      "id": "ibo.animal.immune_adaptive",
+      "label": "Adaptive Immunity",
+      "type": "concept",
+      "description": "B cells, T cells, antibodies, MHC, clonal selection, memory cells, vaccination",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.animal",
+      "bookName": "Animal Physiology",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "c0b00acaa866a16f",
+      "comprehended": false,
+      "strand": "animal"
+    },
+    {
+      "id": "ibo.animal.muscle",
+      "label": "Muscle Physiology",
+      "type": "concept",
+      "description": "Sliding filament model, sarcomere, neuromuscular junction, muscle fiber types, cardiac muscle",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.animal",
+      "bookName": "Animal Physiology",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "983ad9f5f7402879",
+      "comprehended": false,
+      "strand": "animal"
+    },
+    {
+      "id": "ibo.animal.digestive",
+      "label": "Digestive System",
+      "type": "concept",
+      "description": "GI tract anatomy, mechanical/chemical digestion, absorption, gut microbiome",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.animal",
+      "bookName": "Animal Physiology",
+      "bookColor": "#3b82f6",
+      "bookOrder": 5,
+      "external_id": "7c5306d3ff2f2dca",
       "comprehended": false,
       "strand": "animal"
     },
     {
       "id": "ibo.animal.reproduction",
-      "label": "Animal Reproduction",
+      "label": "Animal Reproduction & Development",
       "type": "concept",
-      "description": "Reproductive systems, gametogenesis, fertilization",
+      "description": "Gametogenesis, fertilization, embryonic development, morphogenesis, reproductive systems",
       "grade_range": [
         "Olympiad"
       ],
@@ -303,50 +925,10 @@
       ],
       "pages": "",
       "book": "ibo.animal",
-      "bookName": "Animal Biology",
+      "bookName": "Animal Physiology",
       "bookColor": "#3b82f6",
-      "bookOrder": 3,
+      "bookOrder": 5,
       "external_id": "70d07ea9ff47d08e",
-      "comprehended": false,
-      "strand": "animal"
-    },
-    {
-      "id": "ibo.animal.development",
-      "label": "Animal Development",
-      "type": "concept",
-      "description": "Embryonic development, differentiation, morphogenesis",
-      "grade_range": [
-        "Olympiad"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "ibo.animal",
-      "bookName": "Animal Biology",
-      "bookColor": "#3b82f6",
-      "bookOrder": 3,
-      "external_id": "e53bd1ed7f6de066",
-      "comprehended": false,
-      "strand": "animal"
-    },
-    {
-      "id": "ibo.animal.immunology",
-      "label": "Immunology",
-      "type": "concept",
-      "description": "Innate and adaptive immunity, antibodies, immune response",
-      "grade_range": [
-        "Olympiad"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "ibo.animal",
-      "bookName": "Animal Biology",
-      "bookColor": "#3b82f6",
-      "bookOrder": 3,
-      "external_id": "adde63d11797e756",
       "comprehended": false,
       "strand": "animal"
     },
@@ -354,7 +936,7 @@
       "id": "ibo.eco.population",
       "label": "Population Ecology",
       "type": "concept",
-      "description": "Population growth, carrying capacity, life tables, demography",
+      "description": "Population growth models, carrying capacity, life tables, r/K selection, demography",
       "grade_range": [
         "Olympiad"
       ],
@@ -363,9 +945,9 @@
       ],
       "pages": "",
       "book": "ibo.eco",
-      "bookName": "Ecology",
+      "bookName": "Ecology & Evolution",
       "bookColor": "#f59e0b",
-      "bookOrder": 4,
+      "bookOrder": 6,
       "external_id": "8faa5117fa195514",
       "comprehended": false,
       "strand": "ecology"
@@ -374,7 +956,7 @@
       "id": "ibo.eco.community",
       "label": "Community Ecology",
       "type": "concept",
-      "description": "Species interactions, competition, predation, symbiosis, succession",
+      "description": "Species interactions, competition, predation, mutualism, keystone species, succession",
       "grade_range": [
         "Olympiad"
       ],
@@ -383,18 +965,18 @@
       ],
       "pages": "",
       "book": "ibo.eco",
-      "bookName": "Ecology",
+      "bookName": "Ecology & Evolution",
       "bookColor": "#f59e0b",
-      "bookOrder": 4,
+      "bookOrder": 6,
       "external_id": "4b2338dea319bb08",
       "comprehended": false,
       "strand": "ecology"
     },
     {
-      "id": "ibo.eco.ecosystems",
-      "label": "Ecosystems",
+      "id": "ibo.eco.ecosystem",
+      "label": "Ecosystem Ecology",
       "type": "concept",
-      "description": "Energy flow, nutrient cycles, trophic levels, biomes",
+      "description": "Energy flow, food webs, trophic levels, productivity, biomes, ecological efficiency",
       "grade_range": [
         "Olympiad"
       ],
@@ -403,10 +985,30 @@
       ],
       "pages": "",
       "book": "ibo.eco",
-      "bookName": "Ecology",
+      "bookName": "Ecology & Evolution",
       "bookColor": "#f59e0b",
-      "bookOrder": 4,
-      "external_id": "c03b3c013b922fdd",
+      "bookOrder": 6,
+      "external_id": "a02a80ce9910c914",
+      "comprehended": false,
+      "strand": "ecology"
+    },
+    {
+      "id": "ibo.eco.biogeochemical",
+      "label": "Biogeochemical Cycles",
+      "type": "concept",
+      "description": "Carbon, nitrogen, phosphorus, water cycles, human impacts on nutrient cycling",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.eco",
+      "bookName": "Ecology & Evolution",
+      "bookColor": "#f59e0b",
+      "bookOrder": 6,
+      "external_id": "f2a52e858eb19031",
       "comprehended": false,
       "strand": "ecology"
     },
@@ -414,7 +1016,7 @@
       "id": "ibo.eco.conservation",
       "label": "Conservation Biology",
       "type": "concept",
-      "description": "Biodiversity loss, habitat fragmentation, conservation strategies",
+      "description": "Biodiversity loss, habitat fragmentation, invasive species, conservation strategies, IUCN",
       "grade_range": [
         "Olympiad"
       ],
@@ -423,18 +1025,18 @@
       ],
       "pages": "",
       "book": "ibo.eco",
-      "bookName": "Ecology",
+      "bookName": "Ecology & Evolution",
       "bookColor": "#f59e0b",
-      "bookOrder": 4,
+      "bookOrder": 6,
       "external_id": "7179b3c50ebdd067",
       "comprehended": false,
       "strand": "ecology"
     },
     {
-      "id": "ibo.eco.biogeography",
-      "label": "Biogeography",
+      "id": "ibo.eco.biodiversity",
+      "label": "Biodiversity",
       "type": "concept",
-      "description": "Species distribution, island biogeography, continental drift effects",
+      "description": "Species diversity, genetic diversity, ecosystem diversity, measuring biodiversity indices",
       "grade_range": [
         "Olympiad"
       ],
@@ -443,10 +1045,110 @@
       ],
       "pages": "",
       "book": "ibo.eco",
-      "bookName": "Ecology",
+      "bookName": "Ecology & Evolution",
       "bookColor": "#f59e0b",
-      "bookOrder": 4,
-      "external_id": "ba48d4913c7b02ee",
+      "bookOrder": 6,
+      "external_id": "c76bd4517a311a7d",
+      "comprehended": false,
+      "strand": "ecology"
+    },
+    {
+      "id": "ibo.eco.natural_selection",
+      "label": "Natural Selection",
+      "type": "concept",
+      "description": "Darwin's theory, fitness, adaptation, types of selection (directional, stabilizing, disruptive)",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.eco",
+      "bookName": "Ecology & Evolution",
+      "bookColor": "#f59e0b",
+      "bookOrder": 6,
+      "external_id": "6602973ea9accec1",
+      "comprehended": false,
+      "strand": "ecology"
+    },
+    {
+      "id": "ibo.eco.speciation",
+      "label": "Speciation",
+      "type": "concept",
+      "description": "Allopatric/sympatric speciation, reproductive isolation, adaptive radiation, species concept",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.eco",
+      "bookName": "Ecology & Evolution",
+      "bookColor": "#f59e0b",
+      "bookOrder": 6,
+      "external_id": "b9aa6da4bcdaa468",
+      "comprehended": false,
+      "strand": "ecology"
+    },
+    {
+      "id": "ibo.eco.molecular_evolution",
+      "label": "Molecular Evolution",
+      "type": "concept",
+      "description": "Molecular clock, neutral theory, gene duplication, horizontal gene transfer, phylogenomics",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.eco",
+      "bookName": "Ecology & Evolution",
+      "bookColor": "#f59e0b",
+      "bookOrder": 6,
+      "external_id": "7c4ef157ee03d6e6",
+      "comprehended": false,
+      "strand": "ecology"
+    },
+    {
+      "id": "ibo.eco.evidence_evolution",
+      "label": "Evidence for Evolution",
+      "type": "concept",
+      "description": "Fossil record, comparative anatomy, biogeography, molecular evidence, vestigial structures",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.eco",
+      "bookName": "Ecology & Evolution",
+      "bookColor": "#f59e0b",
+      "bookOrder": 6,
+      "external_id": "68d65ac352184336",
+      "comprehended": false,
+      "strand": "ecology"
+    },
+    {
+      "id": "ibo.eco.behavioral",
+      "label": "Behavioral Ecology",
+      "type": "concept",
+      "description": "Foraging behavior, mating systems, social behavior, kin selection, altruism, communication",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.eco",
+      "bookName": "Ecology & Evolution",
+      "bookColor": "#f59e0b",
+      "bookOrder": 6,
+      "external_id": "f0be5d3fa543b0c5",
       "comprehended": false,
       "strand": "ecology"
     },
@@ -454,7 +1156,7 @@
       "id": "ibo.biosys.taxonomy",
       "label": "Taxonomy",
       "type": "concept",
-      "description": "Classification systems, binomial nomenclature, domains of life",
+      "description": "Classification systems, binomial nomenclature, domains, kingdoms, hierarchical ranks",
       "grade_range": [
         "Olympiad"
       ],
@@ -465,7 +1167,7 @@
       "book": "ibo.biosys",
       "bookName": "Biosystematics",
       "bookColor": "#8b5cf6",
-      "bookOrder": 5,
+      "bookOrder": 7,
       "external_id": "2e51dfe4099dda5e",
       "comprehended": false,
       "strand": "biosystematics"
@@ -474,7 +1176,7 @@
       "id": "ibo.biosys.phylogenetics",
       "label": "Phylogenetics",
       "type": "concept",
-      "description": "Cladistics, phylogenetic trees, molecular phylogeny",
+      "description": "Cladistics, phylogenetic trees, outgroups, parsimony, maximum likelihood, bootstrapping",
       "grade_range": [
         "Olympiad"
       ],
@@ -485,16 +1187,16 @@
       "book": "ibo.biosys",
       "bookName": "Biosystematics",
       "bookColor": "#8b5cf6",
-      "bookOrder": 5,
+      "bookOrder": 7,
       "external_id": "7a29e0de041c1b0f",
       "comprehended": false,
       "strand": "biosystematics"
     },
     {
-      "id": "ibo.biosys.evolution",
-      "label": "Evolution",
+      "id": "ibo.biosys.cladistics",
+      "label": "Cladistics & Classification",
       "type": "concept",
-      "description": "Natural selection, speciation, adaptive radiation, Hardy-Weinberg",
+      "description": "Synapomorphies, homology vs homoplasy, monophyletic/paraphyletic groups, character analysis",
       "grade_range": [
         "Olympiad"
       ],
@@ -505,16 +1207,16 @@
       "book": "ibo.biosys",
       "bookName": "Biosystematics",
       "bookColor": "#8b5cf6",
-      "bookOrder": 5,
-      "external_id": "51d22e0e6dc9121b",
+      "bookOrder": 7,
+      "external_id": "c8db65ba31e6c201",
       "comprehended": false,
       "strand": "biosystematics"
     },
     {
-      "id": "ibo.biosys.biodiversity",
-      "label": "Biodiversity",
+      "id": "ibo.biosys.diversity_prokaryotes",
+      "label": "Prokaryote Diversity",
       "type": "concept",
-      "description": "Species diversity, genetic diversity, ecosystem diversity",
+      "description": "Bacteria, Archaea, metabolic diversity, extremophiles, pathogenic bacteria",
       "grade_range": [
         "Olympiad"
       ],
@@ -525,8 +1227,68 @@
       "book": "ibo.biosys",
       "bookName": "Biosystematics",
       "bookColor": "#8b5cf6",
-      "bookOrder": 5,
-      "external_id": "4f9b198e7eb8b321",
+      "bookOrder": 7,
+      "external_id": "22ffa9b4f91b3f8b",
+      "comprehended": false,
+      "strand": "biosystematics"
+    },
+    {
+      "id": "ibo.biosys.diversity_protists",
+      "label": "Protist & Fungi Diversity",
+      "type": "concept",
+      "description": "Protist groups, fungal phyla, lichens, mycorrhizae, parasitic fungi, protist ecology",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.biosys",
+      "bookName": "Biosystematics",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 7,
+      "external_id": "624c9d06ad05853b",
+      "comprehended": false,
+      "strand": "biosystematics"
+    },
+    {
+      "id": "ibo.biosys.diversity_plants",
+      "label": "Plant Diversity",
+      "type": "concept",
+      "description": "Bryophytes, pteridophytes, gymnosperms, angiosperms, plant evolutionary trends",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.biosys",
+      "bookName": "Biosystematics",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 7,
+      "external_id": "090e31369b668740",
+      "comprehended": false,
+      "strand": "biosystematics"
+    },
+    {
+      "id": "ibo.biosys.diversity_animals",
+      "label": "Animal Diversity",
+      "type": "concept",
+      "description": "Major phyla, body plans, developmental patterns, invertebrate/vertebrate diversity",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ibo.biosys",
+      "bookName": "Biosystematics",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 7,
+      "external_id": "f949d5083d4ebb55",
       "comprehended": false,
       "strand": "biosystematics"
     }
@@ -534,27 +1296,137 @@
   "edges": [
     {
       "source": "ibo.cell.structure",
-      "target": "ibo.cell.biochemistry",
+      "target": "ibo.cell.membrane_transport",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.cell.biochemistry",
-      "target": "ibo.cell.molecular",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "ibo.cell.molecular",
-      "target": "ibo.cell.genetics",
+      "source": "ibo.cell.membrane_transport",
+      "target": "ibo.cell.signaling",
       "relation": "prerequisite_for"
     },
     {
       "source": "ibo.cell.structure",
-      "target": "ibo.cell.cell_division",
+      "target": "ibo.cell.cell_cycle",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.cell.cell_division",
-      "target": "ibo.cell.genetics",
+      "source": "ibo.cell.cell_cycle",
+      "target": "ibo.cell.meiosis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.cell_cycle",
+      "target": "ibo.cell.apoptosis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.signaling",
+      "target": "ibo.cell.apoptosis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.cell_cycle",
+      "target": "ibo.cell.stem_cells",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.signaling",
+      "target": "ibo.cell.stem_cells",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.structure",
+      "target": "ibo.biochem.proteins",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.biochem.proteins",
+      "target": "ibo.biochem.enzymes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.structure",
+      "target": "ibo.biochem.nucleic_acids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.structure",
+      "target": "ibo.biochem.carbohydrates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.structure",
+      "target": "ibo.biochem.lipids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.biochem.enzymes",
+      "target": "ibo.biochem.glycolysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.biochem.carbohydrates",
+      "target": "ibo.biochem.glycolysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.biochem.glycolysis",
+      "target": "ibo.biochem.krebs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.biochem.krebs",
+      "target": "ibo.biochem.oxidative_phosph",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.biochem.lipids",
+      "target": "ibo.biochem.beta_oxidation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.biochem.enzymes",
+      "target": "ibo.biochem.beta_oxidation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.meiosis",
+      "target": "ibo.genetics.mendelian",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.genetics.mendelian",
+      "target": "ibo.genetics.linkage",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.genetics.mendelian",
+      "target": "ibo.genetics.chromosomal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.genetics.mendelian",
+      "target": "ibo.genetics.population",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.biochem.nucleic_acids",
+      "target": "ibo.genetics.molecular",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.genetics.molecular",
+      "target": "ibo.genetics.gene_regulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.genetics.gene_regulation",
+      "target": "ibo.genetics.epigenetics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.genetics.molecular",
+      "target": "ibo.genetics.genetic_engineering",
       "relation": "prerequisite_for"
     },
     {
@@ -563,73 +1435,193 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.cell.biochemistry",
-      "target": "ibo.plant.physiology",
+      "source": "ibo.biochem.oxidative_phosph",
+      "target": "ibo.plant.photosynthesis_light",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.plant.photosynthesis_light",
+      "target": "ibo.plant.photosynthesis_dark",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.signaling",
+      "target": "ibo.plant.hormones",
       "relation": "prerequisite_for"
     },
     {
       "source": "ibo.plant.anatomy",
-      "target": "ibo.plant.physiology",
+      "target": "ibo.plant.hormones",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.cell.cell_division",
+      "source": "ibo.plant.anatomy",
+      "target": "ibo.plant.transpiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.membrane_transport",
+      "target": "ibo.plant.transpiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.plant.anatomy",
+      "target": "ibo.plant.mineral_nutrition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.meiosis",
       "target": "ibo.plant.reproduction",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.plant.physiology",
+      "source": "ibo.plant.anatomy",
       "target": "ibo.plant.reproduction",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.plant.physiology",
-      "target": "ibo.plant.ecology",
+      "source": "ibo.plant.hormones",
+      "target": "ibo.plant.reproduction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.membrane_transport",
+      "target": "ibo.animal.nervous",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.signaling",
+      "target": "ibo.animal.nervous",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.animal.nervous",
+      "target": "ibo.animal.sensory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.signaling",
+      "target": "ibo.animal.endocrine",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.animal.nervous",
+      "target": "ibo.animal.endocrine",
       "relation": "prerequisite_for"
     },
     {
       "source": "ibo.cell.structure",
-      "target": "ibo.animal.anatomy",
+      "target": "ibo.animal.circulatory",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.animal.anatomy",
-      "target": "ibo.animal.physiology",
+      "source": "ibo.biochem.proteins",
+      "target": "ibo.animal.circulatory",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.cell.cell_division",
+      "source": "ibo.animal.circulatory",
+      "target": "ibo.animal.respiratory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.membrane_transport",
+      "target": "ibo.animal.excretory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.animal.circulatory",
+      "target": "ibo.animal.excretory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.animal.endocrine",
+      "target": "ibo.animal.excretory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.biochem.proteins",
+      "target": "ibo.animal.immune_innate",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.animal.immune_innate",
+      "target": "ibo.animal.immune_adaptive",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.genetics.molecular",
+      "target": "ibo.animal.immune_adaptive",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.animal.nervous",
+      "target": "ibo.animal.muscle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.biochem.proteins",
+      "target": "ibo.animal.muscle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.biochem.enzymes",
+      "target": "ibo.animal.digestive",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.structure",
+      "target": "ibo.animal.digestive",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.cell.meiosis",
       "target": "ibo.animal.reproduction",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.animal.physiology",
+      "source": "ibo.animal.endocrine",
       "target": "ibo.animal.reproduction",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.animal.reproduction",
-      "target": "ibo.animal.development",
+      "source": "ibo.genetics.population",
+      "target": "ibo.eco.natural_selection",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.cell.molecular",
-      "target": "ibo.animal.immunology",
+      "source": "ibo.eco.natural_selection",
+      "target": "ibo.eco.speciation",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.animal.physiology",
-      "target": "ibo.animal.immunology",
+      "source": "ibo.eco.natural_selection",
+      "target": "ibo.eco.evidence_evolution",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.plant.ecology",
-      "target": "ibo.eco.population",
+      "source": "ibo.genetics.molecular",
+      "target": "ibo.eco.molecular_evolution",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.animal.physiology",
-      "target": "ibo.eco.population",
+      "source": "ibo.eco.speciation",
+      "target": "ibo.eco.molecular_evolution",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.eco.natural_selection",
+      "target": "ibo.eco.behavioral",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.animal.nervous",
+      "target": "ibo.eco.behavioral",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.plant.photosynthesis_dark",
+      "target": "ibo.eco.ecosystem",
       "relation": "prerequisite_for"
     },
     {
@@ -639,22 +1631,37 @@
     },
     {
       "source": "ibo.eco.community",
-      "target": "ibo.eco.ecosystems",
+      "target": "ibo.eco.ecosystem",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.eco.ecosystems",
+      "source": "ibo.eco.ecosystem",
+      "target": "ibo.eco.biogeochemical",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.eco.ecosystem",
       "target": "ibo.eco.conservation",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.eco.ecosystems",
-      "target": "ibo.eco.biogeography",
+      "source": "ibo.eco.conservation",
+      "target": "ibo.eco.biodiversity",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.cell.genetics",
-      "target": "ibo.biosys.evolution",
+      "source": "ibo.eco.speciation",
+      "target": "ibo.eco.biodiversity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.animal.circulatory",
+      "target": "ibo.eco.population",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.eco.speciation",
+      "target": "ibo.biosys.taxonomy",
       "relation": "prerequisite_for"
     },
     {
@@ -663,23 +1670,33 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.biosys.evolution",
+      "source": "ibo.eco.molecular_evolution",
       "target": "ibo.biosys.phylogenetics",
       "relation": "prerequisite_for"
     },
     {
       "source": "ibo.biosys.phylogenetics",
-      "target": "ibo.biosys.biodiversity",
+      "target": "ibo.biosys.cladistics",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.eco.conservation",
-      "target": "ibo.biosys.biodiversity",
+      "source": "ibo.biosys.taxonomy",
+      "target": "ibo.biosys.diversity_prokaryotes",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ibo.cell.genetics",
-      "target": "ibo.biosys.taxonomy",
+      "source": "ibo.biosys.taxonomy",
+      "target": "ibo.biosys.diversity_protists",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.biosys.taxonomy",
+      "target": "ibo.biosys.diversity_plants",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ibo.biosys.taxonomy",
+      "target": "ibo.biosys.diversity_animals",
       "relation": "prerequisite_for"
     }
   ]

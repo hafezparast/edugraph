@@ -3,12 +3,12 @@
     "domain": "chemistry",
     "curriculum": "IChO (International Chemistry Olympiad)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "IChO topics with prerequisite ordering, colored by branch",
     "sources": [
       "IChO Preparatory Problems Syllabus"
     ],
-    "last_updated": "2026-03-27"
+    "last_updated": "2026-03-28"
   },
   "books": [
     {
@@ -34,6 +34,12 @@
       "name": "Analytical Chemistry",
       "color": "#f59e0b",
       "order": 4
+    },
+    {
+      "id": "icho.biochem",
+      "name": "Biochemistry",
+      "color": "#22c55e",
+      "order": 5
     }
   ],
   "strands": [
@@ -56,6 +62,11 @@
       "id": "analytical",
       "name": "Analytical Chemistry",
       "color": "#F39C12"
+    },
+    {
+      "id": "biochemistry",
+      "name": "Biochemistry",
+      "color": "#9B59B6"
     }
   ],
   "nodes": [
@@ -63,7 +74,7 @@
       "id": "icho.phys.thermodynamics",
       "label": "Thermodynamics",
       "type": "concept",
-      "description": "Enthalpy, entropy, Gibbs free energy, Hess's law",
+      "description": "Enthalpy, entropy, Gibbs free energy, Hess's law, Born-Haber cycles",
       "grade_range": [
         "Olympiad"
       ],
@@ -80,10 +91,30 @@
       "strand": "physical"
     },
     {
+      "id": "icho.phys.thermodynamics_adv",
+      "label": "Advanced Thermodynamics",
+      "type": "concept",
+      "description": "Chemical potential, activity, fugacity, colligative properties, Raoult's/Henry's law",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.phys",
+      "bookName": "Physical Chemistry",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "6add1d81dfe115f6",
+      "comprehended": false,
+      "strand": "physical"
+    },
+    {
       "id": "icho.phys.kinetics",
       "label": "Chemical Kinetics",
       "type": "concept",
-      "description": "Rate laws, reaction mechanisms, activation energy, catalysis",
+      "description": "Rate laws, reaction order, Arrhenius equation, activation energy, catalysis",
       "grade_range": [
         "Olympiad"
       ],
@@ -100,10 +131,30 @@
       "strand": "physical"
     },
     {
+      "id": "icho.phys.kinetics_adv",
+      "label": "Advanced Kinetics",
+      "type": "concept",
+      "description": "Reaction mechanisms, steady-state approximation, chain reactions, enzyme kinetics (Michaelis-Menten)",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.phys",
+      "bookName": "Physical Chemistry",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "46e748e2e1d988cb",
+      "comprehended": false,
+      "strand": "physical"
+    },
+    {
       "id": "icho.phys.equilibria",
       "label": "Chemical Equilibria",
       "type": "concept",
-      "description": "Equilibrium constants, Le Chatelier's principle, solubility product",
+      "description": "Equilibrium constants, Le Chatelier's principle, solubility product, common ion effect",
       "grade_range": [
         "Olympiad"
       ],
@@ -120,10 +171,30 @@
       "strand": "physical"
     },
     {
+      "id": "icho.phys.acid_base",
+      "label": "Acid-Base Chemistry",
+      "type": "concept",
+      "description": "pH, buffers, polyprotic acids, Henderson-Hasselbalch, titration curves",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.phys",
+      "bookName": "Physical Chemistry",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "bb724d58933447b8",
+      "comprehended": false,
+      "strand": "physical"
+    },
+    {
       "id": "icho.phys.electrochemistry",
       "label": "Electrochemistry",
       "type": "concept",
-      "description": "Nernst equation, galvanic cells, electrolysis, electrode potentials",
+      "description": "Nernst equation, galvanic cells, electrolysis, standard electrode potentials, Faraday's laws",
       "grade_range": [
         "Olympiad"
       ],
@@ -143,7 +214,7 @@
       "id": "icho.phys.quantum",
       "label": "Quantum Chemistry",
       "type": "concept",
-      "description": "Molecular orbital theory, Hückel theory, spectroscopic transitions",
+      "description": "Molecular orbital theory, Huckel theory, spectroscopic transitions, term symbols",
       "grade_range": [
         "Olympiad"
       ],
@@ -160,10 +231,30 @@
       "strand": "physical"
     },
     {
+      "id": "icho.phys.photochemistry",
+      "label": "Photochemistry",
+      "type": "concept",
+      "description": "Beer-Lambert law (molecular basis), fluorescence, phosphorescence, quantum yield",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.phys",
+      "bookName": "Physical Chemistry",
+      "bookColor": "#14b8a6",
+      "bookOrder": 1,
+      "external_id": "09bfb67a4415fe29",
+      "comprehended": false,
+      "strand": "physical"
+    },
+    {
       "id": "icho.inorg.atomic_structure",
       "label": "Atomic Structure",
       "type": "concept",
-      "description": "Electron configuration, quantum numbers, shielding, effective nuclear charge",
+      "description": "Electron configuration, quantum numbers, shielding, effective nuclear charge, aufbau principle",
       "grade_range": [
         "Olympiad"
       ],
@@ -180,10 +271,10 @@
       "strand": "inorganic"
     },
     {
-      "id": "icho.inorg.periodicity",
-      "label": "Periodicity",
+      "id": "icho.inorg.periodic_trends",
+      "label": "Periodic Trends",
       "type": "concept",
-      "description": "Periodic trends, ionization energy, electronegativity, atomic radius",
+      "description": "Ionization energy, electronegativity, atomic/ionic radius, electron affinity",
       "grade_range": [
         "Olympiad"
       ],
@@ -195,7 +286,27 @@
       "bookName": "Inorganic Chemistry",
       "bookColor": "#3b82f6",
       "bookOrder": 2,
-      "external_id": "80f90c603d09520b",
+      "external_id": "303a66a7384e5a75",
+      "comprehended": false,
+      "strand": "inorganic"
+    },
+    {
+      "id": "icho.inorg.bonding",
+      "label": "Chemical Bonding",
+      "type": "concept",
+      "description": "Ionic, covalent, metallic bonding, VSEPR, hybridization, resonance, bond polarity",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.inorg",
+      "bookName": "Inorganic Chemistry",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "9219372b4bf1671f",
       "comprehended": false,
       "strand": "inorganic"
     },
@@ -203,7 +314,7 @@
       "id": "icho.inorg.coordination",
       "label": "Coordination Chemistry",
       "type": "concept",
-      "description": "Crystal field theory, ligand field theory, isomerism, nomenclature",
+      "description": "Nomenclature, isomerism, chelation, stability constants, spectrochemical series",
       "grade_range": [
         "Olympiad"
       ],
@@ -220,10 +331,30 @@
       "strand": "inorganic"
     },
     {
+      "id": "icho.inorg.crystal_field",
+      "label": "Crystal Field Theory",
+      "type": "concept",
+      "description": "Crystal field splitting, high-spin/low-spin, Jahn-Teller distortion, d-d transitions, color",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.inorg",
+      "bookName": "Inorganic Chemistry",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "962a7157dffb2c75",
+      "comprehended": false,
+      "strand": "inorganic"
+    },
+    {
       "id": "icho.inorg.solid_state",
       "label": "Solid State Chemistry",
       "type": "concept",
-      "description": "Crystal structures, unit cells, ionic radii, lattice energy",
+      "description": "Crystal structures, unit cells, ionic radii, lattice energy, Born-Lande equation",
       "grade_range": [
         "Olympiad"
       ],
@@ -240,10 +371,10 @@
       "strand": "inorganic"
     },
     {
-      "id": "icho.inorg.descriptive",
-      "label": "Descriptive Chemistry",
+      "id": "icho.inorg.descriptive_main",
+      "label": "Main Group Chemistry",
       "type": "concept",
-      "description": "Chemistry of main group and transition elements, industrial processes",
+      "description": "Chemistry of s-block, p-block elements, allotropy, oxides, hydrides, halides",
       "grade_range": [
         "Olympiad"
       ],
@@ -255,15 +386,95 @@
       "bookName": "Inorganic Chemistry",
       "bookColor": "#3b82f6",
       "bookOrder": 2,
-      "external_id": "61a29aaab4384253",
+      "external_id": "04e3068864cd86ed",
       "comprehended": false,
       "strand": "inorganic"
+    },
+    {
+      "id": "icho.inorg.descriptive_transition",
+      "label": "Transition Metal Chemistry",
+      "type": "concept",
+      "description": "Properties of d-block, oxidation states, catalysis, organometallics basics, bioinorganic",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.inorg",
+      "bookName": "Inorganic Chemistry",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "dc67b48769a3073c",
+      "comprehended": false,
+      "strand": "inorganic"
+    },
+    {
+      "id": "icho.inorg.redox",
+      "label": "Redox Chemistry",
+      "type": "concept",
+      "description": "Oxidation numbers, balancing redox reactions, Latimer/Frost diagrams, Ellingham diagrams",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.inorg",
+      "bookName": "Inorganic Chemistry",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "023a41468f0234da",
+      "comprehended": false,
+      "strand": "inorganic"
+    },
+    {
+      "id": "icho.inorg.symmetry",
+      "label": "Molecular Symmetry",
+      "type": "concept",
+      "description": "Point groups, symmetry elements, character tables basics, selection rules",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.inorg",
+      "bookName": "Inorganic Chemistry",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "d04c3d7aa5d45b98",
+      "comprehended": false,
+      "strand": "inorganic"
+    },
+    {
+      "id": "icho.org.structure_bonding",
+      "label": "Organic Structure & Bonding",
+      "type": "concept",
+      "description": "Hybridization, resonance, inductive/mesomeric effects, acidity/basicity in organic molecules",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.org",
+      "bookName": "Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "929eccfe035e0ed3",
+      "comprehended": false,
+      "strand": "organic"
     },
     {
       "id": "icho.org.stereochemistry",
       "label": "Stereochemistry",
       "type": "concept",
-      "description": "Chirality, R/S nomenclature, conformational analysis, optical activity",
+      "description": "Chirality, R/S nomenclature, E/Z isomerism, conformational analysis, optical activity, meso compounds",
       "grade_range": [
         "Olympiad"
       ],
@@ -280,10 +491,10 @@
       "strand": "organic"
     },
     {
-      "id": "icho.org.mechanisms",
-      "label": "Reaction Mechanisms",
+      "id": "icho.org.sn1_sn2",
+      "label": "Nucleophilic Substitution (SN1/SN2)",
       "type": "concept",
-      "description": "SN1, SN2, E1, E2, electrophilic/nucleophilic additions, radical reactions",
+      "description": "SN1 vs SN2 mechanisms, leaving groups, nucleophilicity, stereochemistry of substitution",
       "grade_range": [
         "Olympiad"
       ],
@@ -295,15 +506,15 @@
       "bookName": "Organic Chemistry",
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
-      "external_id": "ae9eb9e07f634e82",
+      "external_id": "d68f695a02c8eec7",
       "comprehended": false,
       "strand": "organic"
     },
     {
-      "id": "icho.org.functional_groups",
-      "label": "Functional Groups",
+      "id": "icho.org.e1_e2",
+      "label": "Elimination Reactions (E1/E2)",
       "type": "concept",
-      "description": "Alcohols, aldehydes, ketones, carboxylic acids, amines, aromatics",
+      "description": "E1 vs E2 mechanisms, Zaitsev/Hofmann rules, competition with substitution",
       "grade_range": [
         "Olympiad"
       ],
@@ -315,15 +526,15 @@
       "bookName": "Organic Chemistry",
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
-      "external_id": "ea3f33d3a1d96486",
+      "external_id": "70b7baae9323684f",
       "comprehended": false,
       "strand": "organic"
     },
     {
-      "id": "icho.org.synthesis",
-      "label": "Organic Synthesis",
+      "id": "icho.org.addition",
+      "label": "Addition Reactions",
       "type": "concept",
-      "description": "Retrosynthetic analysis, protecting groups, named reactions",
+      "description": "Electrophilic addition to alkenes/alkynes, Markovnikov's rule, hydroboration, hydrogenation",
       "grade_range": [
         "Olympiad"
       ],
@@ -335,15 +546,15 @@
       "bookName": "Organic Chemistry",
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
-      "external_id": "bce2e3d6d78e81de",
+      "external_id": "2c1639f979de0140",
       "comprehended": false,
       "strand": "organic"
     },
     {
-      "id": "icho.org.spectroscopy",
-      "label": "Spectroscopy (NMR, IR, MS)",
+      "id": "icho.org.aromatic",
+      "label": "Aromatic Chemistry",
       "type": "concept",
-      "description": "NMR, IR, mass spectrometry for structure determination",
+      "description": "Aromaticity, electrophilic aromatic substitution, directing effects, nucleophilic aromatic substitution",
       "grade_range": [
         "Olympiad"
       ],
@@ -355,15 +566,215 @@
       "bookName": "Organic Chemistry",
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
-      "external_id": "d40d62eb5dae2203",
+      "external_id": "231d490b80330561",
       "comprehended": false,
       "strand": "organic"
     },
     {
-      "id": "icho.anal.titrimetry",
-      "label": "Titrimetry",
+      "id": "icho.org.carbonyl",
+      "label": "Carbonyl Chemistry",
       "type": "concept",
-      "description": "Acid-base, redox, complexometric, precipitation titrations",
+      "description": "Aldehydes, ketones, nucleophilic addition, Grignard reactions, Wittig reaction, oxidation/reduction",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.org",
+      "bookName": "Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "4f95f8e0d6b5a6c2",
+      "comprehended": false,
+      "strand": "organic"
+    },
+    {
+      "id": "icho.org.carboxylic_acids",
+      "label": "Carboxylic Acid Derivatives",
+      "type": "concept",
+      "description": "Esters, amides, anhydrides, acyl chlorides, nucleophilic acyl substitution, Fischer esterification",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.org",
+      "bookName": "Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "401885de541fb261",
+      "comprehended": false,
+      "strand": "organic"
+    },
+    {
+      "id": "icho.org.enolate",
+      "label": "Enolate Chemistry",
+      "type": "concept",
+      "description": "Aldol condensation, Claisen condensation, Michael addition, enolate alkylation, Robinson annulation",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.org",
+      "bookName": "Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "4a6dafcacd4eb066",
+      "comprehended": false,
+      "strand": "organic"
+    },
+    {
+      "id": "icho.org.pericyclic",
+      "label": "Pericyclic Reactions",
+      "type": "concept",
+      "description": "Diels-Alder, electrocyclic reactions, sigmatropic rearrangements, Woodward-Hoffmann rules",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.org",
+      "bookName": "Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "6abf59f5581cd761",
+      "comprehended": false,
+      "strand": "organic"
+    },
+    {
+      "id": "icho.org.retrosynthesis",
+      "label": "Retrosynthesis",
+      "type": "concept",
+      "description": "Retrosynthetic analysis, disconnection approach, protecting groups, strategic bond disconnections",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.org",
+      "bookName": "Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "40ac913d648a0963",
+      "comprehended": false,
+      "strand": "organic"
+    },
+    {
+      "id": "icho.org.nmr",
+      "label": "NMR Spectroscopy",
+      "type": "concept",
+      "description": "1H and 13C NMR, chemical shift, coupling constants, splitting patterns, 2D NMR basics",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.org",
+      "bookName": "Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "d1bc0e4f78efb430",
+      "comprehended": false,
+      "strand": "organic"
+    },
+    {
+      "id": "icho.org.ir_spectroscopy",
+      "label": "IR Spectroscopy",
+      "type": "concept",
+      "description": "Functional group identification, characteristic absorption frequencies, fingerprint region",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.org",
+      "bookName": "Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "0635ad9fa9178efe",
+      "comprehended": false,
+      "strand": "organic"
+    },
+    {
+      "id": "icho.org.mass_spec",
+      "label": "Mass Spectrometry",
+      "type": "concept",
+      "description": "Molecular ion, fragmentation patterns, isotope patterns, high-resolution MS",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.org",
+      "bookName": "Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "4374cabf70720864",
+      "comprehended": false,
+      "strand": "organic"
+    },
+    {
+      "id": "icho.org.radicals",
+      "label": "Radical Reactions",
+      "type": "concept",
+      "description": "Radical halogenation, radical addition, radical polymerization, antioxidants",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.org",
+      "bookName": "Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "3f76846165718946",
+      "comprehended": false,
+      "strand": "organic"
+    },
+    {
+      "id": "icho.org.amines",
+      "label": "Amine Chemistry",
+      "type": "concept",
+      "description": "Amine basicity, diazonium salts, Hofmann/Curtius rearrangements, reductive amination",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.org",
+      "bookName": "Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "8a576c248d9ac0f5",
+      "comprehended": false,
+      "strand": "organic"
+    },
+    {
+      "id": "icho.anal.acid_base_titrations",
+      "label": "Acid-Base Titrations",
+      "type": "concept",
+      "description": "Strong/weak acid-base titrations, indicators, titration curves, equivalence point",
       "grade_range": [
         "Olympiad"
       ],
@@ -375,15 +786,55 @@
       "bookName": "Analytical Chemistry",
       "bookColor": "#f59e0b",
       "bookOrder": 4,
-      "external_id": "75db06f63cb48daa",
+      "external_id": "c30887c22960ad83",
+      "comprehended": false,
+      "strand": "analytical"
+    },
+    {
+      "id": "icho.anal.redox_titrations",
+      "label": "Redox Titrations",
+      "type": "concept",
+      "description": "Permanganometry, iodometry/iodimetry, cerimetry, dichromate titrations",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.anal",
+      "bookName": "Analytical Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "b876dd96bbdc15ce",
+      "comprehended": false,
+      "strand": "analytical"
+    },
+    {
+      "id": "icho.anal.complexometric",
+      "label": "Complexometric Titrations",
+      "type": "concept",
+      "description": "EDTA titrations, metal indicators, conditional formation constants, masking agents",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.anal",
+      "bookName": "Analytical Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "d95a39eb58a8e77e",
       "comprehended": false,
       "strand": "analytical"
     },
     {
       "id": "icho.anal.gravimetry",
-      "label": "Gravimetry",
+      "label": "Gravimetric Analysis",
       "type": "concept",
-      "description": "Gravimetric analysis, precipitation, filtration techniques",
+      "description": "Precipitation, filtration, gravimetric factor, co-precipitation, thermogravimetry",
       "grade_range": [
         "Olympiad"
       ],
@@ -403,7 +854,7 @@
       "id": "icho.anal.spectrophotometry",
       "label": "Spectrophotometry",
       "type": "concept",
-      "description": "Beer-Lambert law, UV-Vis spectroscopy, colorimetry",
+      "description": "Beer-Lambert law, UV-Vis spectroscopy, colorimetry, calibration curves",
       "grade_range": [
         "Olympiad"
       ],
@@ -423,7 +874,7 @@
       "id": "icho.anal.chromatography",
       "label": "Chromatography",
       "type": "concept",
-      "description": "TLC, column chromatography, GC, HPLC",
+      "description": "TLC, column chromatography, GC, HPLC, Rf values, separation principles",
       "grade_range": [
         "Olympiad"
       ],
@@ -441,9 +892,9 @@
     },
     {
       "id": "icho.anal.electroanalysis",
-      "label": "Electroanalysis",
+      "label": "Electroanalytical Methods",
       "type": "concept",
-      "description": "Potentiometry, voltammetry, conductometry",
+      "description": "Potentiometry, voltammetry, conductometry, pH meters, ion-selective electrodes",
       "grade_range": [
         "Olympiad"
       ],
@@ -460,10 +911,170 @@
       "strand": "analytical"
     },
     {
-      "id": "icho.phys.acid_base",
-      "label": "Acid-Base Chemistry",
+      "id": "icho.anal.separation",
+      "label": "Separation Techniques",
       "type": "concept",
-      "description": "pH, buffers, polyprotic acids, Henderson-Hasselbalch equation",
+      "description": "Distillation, extraction, recrystallization, electrophoresis, centrifugation",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.anal",
+      "bookName": "Analytical Chemistry",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "4b3e3feda4cd8dad",
+      "comprehended": false,
+      "strand": "analytical"
+    },
+    {
+      "id": "icho.biochem.amino_acids",
+      "label": "Amino Acids",
+      "type": "concept",
+      "description": "Structure of 20 amino acids, pKa values, isoelectric point, zwitterions, peptide bond",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.biochem",
+      "bookName": "Biochemistry",
+      "bookColor": "#22c55e",
+      "bookOrder": 5,
+      "external_id": "e298a200d660bc0c",
+      "comprehended": false,
+      "strand": "biochemistry"
+    },
+    {
+      "id": "icho.biochem.proteins",
+      "label": "Protein Structure",
+      "type": "concept",
+      "description": "Primary/secondary/tertiary/quaternary structure, folding, denaturation, disulfide bonds",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.biochem",
+      "bookName": "Biochemistry",
+      "bookColor": "#22c55e",
+      "bookOrder": 5,
+      "external_id": "acc0d84a171e8627",
+      "comprehended": false,
+      "strand": "biochemistry"
+    },
+    {
+      "id": "icho.biochem.enzymes",
+      "label": "Enzymes",
+      "type": "concept",
+      "description": "Enzyme kinetics, inhibition (competitive/noncompetitive), allosteric regulation, cofactors",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.biochem",
+      "bookName": "Biochemistry",
+      "bookColor": "#22c55e",
+      "bookOrder": 5,
+      "external_id": "a63d2be630312e0a",
+      "comprehended": false,
+      "strand": "biochemistry"
+    },
+    {
+      "id": "icho.biochem.nucleic_acids",
+      "label": "Nucleic Acids",
+      "type": "concept",
+      "description": "DNA/RNA structure, base pairing, replication, transcription, translation basics",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.biochem",
+      "bookName": "Biochemistry",
+      "bookColor": "#22c55e",
+      "bookOrder": 5,
+      "external_id": "8056576e88b9cfb3",
+      "comprehended": false,
+      "strand": "biochemistry"
+    },
+    {
+      "id": "icho.biochem.metabolism",
+      "label": "Metabolism",
+      "type": "concept",
+      "description": "Glycolysis, Krebs cycle, oxidative phosphorylation, ATP synthesis, metabolic regulation",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.biochem",
+      "bookName": "Biochemistry",
+      "bookColor": "#22c55e",
+      "bookOrder": 5,
+      "external_id": "e8b7090b520639da",
+      "comprehended": false,
+      "strand": "biochemistry"
+    },
+    {
+      "id": "icho.biochem.carbohydrates",
+      "label": "Carbohydrates",
+      "type": "concept",
+      "description": "Monosaccharides, disaccharides, polysaccharides, glycosidic bonds, Fischer projections",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.biochem",
+      "bookName": "Biochemistry",
+      "bookColor": "#22c55e",
+      "bookOrder": 5,
+      "external_id": "80b4c7d982c3198b",
+      "comprehended": false,
+      "strand": "biochemistry"
+    },
+    {
+      "id": "icho.biochem.lipids",
+      "label": "Lipids",
+      "type": "concept",
+      "description": "Fatty acids, triglycerides, phospholipids, steroids, membranes, beta-oxidation",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.biochem",
+      "bookName": "Biochemistry",
+      "bookColor": "#22c55e",
+      "bookOrder": 5,
+      "external_id": "458de75aba3cb0ae",
+      "comprehended": false,
+      "strand": "biochemistry"
+    },
+    {
+      "id": "icho.phys.surface_chem",
+      "label": "Surface Chemistry",
+      "type": "concept",
+      "description": "Adsorption isotherms, colloids, micelles, catalysis at surfaces, BET theory",
       "grade_range": [
         "Olympiad"
       ],
@@ -475,15 +1086,15 @@
       "bookName": "Physical Chemistry",
       "bookColor": "#14b8a6",
       "bookOrder": 1,
-      "external_id": "bb724d58933447b8",
+      "external_id": "2a3e1c3318ca5785",
       "comprehended": false,
       "strand": "physical"
     },
     {
-      "id": "icho.org.bonding",
-      "label": "Chemical Bonding",
+      "id": "icho.org.oxidation_reduction",
+      "label": "Organic Oxidation & Reduction",
       "type": "concept",
-      "description": "Covalent bonding, hybridization, VSEPR, resonance",
+      "description": "Oxidation of alcohols, reduction of carbonyls, selective oxidizing/reducing agents, Swern/PCC/Jones",
       "grade_range": [
         "Olympiad"
       ],
@@ -495,9 +1106,49 @@
       "bookName": "Organic Chemistry",
       "bookColor": "#8b5cf6",
       "bookOrder": 3,
-      "external_id": "94daca4a6ebace19",
+      "external_id": "c32352f03505504c",
       "comprehended": false,
       "strand": "organic"
+    },
+    {
+      "id": "icho.org.polymers",
+      "label": "Polymers",
+      "type": "concept",
+      "description": "Addition/condensation polymerization, copolymers, cross-linking, polymer properties",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.org",
+      "bookName": "Organic Chemistry",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 3,
+      "external_id": "e69387379ea20f80",
+      "comprehended": false,
+      "strand": "organic"
+    },
+    {
+      "id": "icho.inorg.industrial",
+      "label": "Industrial Chemistry",
+      "type": "concept",
+      "description": "Haber process, Contact process, electrolysis of brine, metallurgy, cement/glass",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "icho.inorg",
+      "bookName": "Inorganic Chemistry",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "af635a0010f27fd4",
+      "comprehended": false,
+      "strand": "inorganic"
     }
   ],
   "edges": [
@@ -512,8 +1163,13 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "icho.phys.equilibria",
-      "target": "icho.phys.electrochemistry",
+      "source": "icho.phys.thermodynamics",
+      "target": "icho.phys.thermodynamics_adv",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.phys.kinetics",
+      "target": "icho.phys.kinetics_adv",
       "relation": "prerequisite_for"
     },
     {
@@ -522,8 +1178,28 @@
       "relation": "prerequisite_for"
     },
     {
+      "source": "icho.phys.equilibria",
+      "target": "icho.phys.electrochemistry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.phys.thermodynamics_adv",
+      "target": "icho.phys.electrochemistry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.phys.thermodynamics",
+      "target": "icho.phys.surface_chem",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.phys.kinetics",
+      "target": "icho.phys.surface_chem",
+      "relation": "prerequisite_for"
+    },
+    {
       "source": "icho.inorg.atomic_structure",
-      "target": "icho.inorg.periodicity",
+      "target": "icho.inorg.periodic_trends",
       "relation": "prerequisite_for"
     },
     {
@@ -532,63 +1208,228 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "icho.inorg.periodicity",
+      "source": "icho.phys.quantum",
+      "target": "icho.phys.photochemistry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.inorg.periodic_trends",
+      "target": "icho.inorg.bonding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.inorg.bonding",
       "target": "icho.inorg.coordination",
       "relation": "prerequisite_for"
     },
     {
-      "source": "icho.inorg.periodicity",
+      "source": "icho.inorg.coordination",
+      "target": "icho.inorg.crystal_field",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.phys.quantum",
+      "target": "icho.inorg.crystal_field",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.inorg.bonding",
       "target": "icho.inorg.solid_state",
       "relation": "prerequisite_for"
     },
     {
-      "source": "icho.inorg.periodicity",
-      "target": "icho.inorg.descriptive",
+      "source": "icho.inorg.periodic_trends",
+      "target": "icho.inorg.descriptive_main",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.inorg.bonding",
+      "target": "icho.inorg.descriptive_main",
       "relation": "prerequisite_for"
     },
     {
       "source": "icho.inorg.coordination",
-      "target": "icho.inorg.descriptive",
+      "target": "icho.inorg.descriptive_transition",
       "relation": "prerequisite_for"
     },
     {
-      "source": "icho.inorg.atomic_structure",
-      "target": "icho.org.bonding",
+      "source": "icho.inorg.crystal_field",
+      "target": "icho.inorg.descriptive_transition",
       "relation": "prerequisite_for"
     },
     {
-      "source": "icho.org.bonding",
+      "source": "icho.inorg.periodic_trends",
+      "target": "icho.inorg.redox",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.phys.electrochemistry",
+      "target": "icho.inorg.redox",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.inorg.bonding",
+      "target": "icho.inorg.symmetry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.inorg.descriptive_main",
+      "target": "icho.inorg.industrial",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.inorg.redox",
+      "target": "icho.inorg.industrial",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.inorg.bonding",
+      "target": "icho.org.structure_bonding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.structure_bonding",
       "target": "icho.org.stereochemistry",
       "relation": "prerequisite_for"
     },
     {
       "source": "icho.org.stereochemistry",
-      "target": "icho.org.mechanisms",
+      "target": "icho.org.sn1_sn2",
       "relation": "prerequisite_for"
     },
     {
-      "source": "icho.org.bonding",
-      "target": "icho.org.functional_groups",
+      "source": "icho.org.stereochemistry",
+      "target": "icho.org.e1_e2",
       "relation": "prerequisite_for"
     },
     {
-      "source": "icho.org.mechanisms",
-      "target": "icho.org.synthesis",
+      "source": "icho.org.sn1_sn2",
+      "target": "icho.org.e1_e2",
       "relation": "prerequisite_for"
     },
     {
-      "source": "icho.org.functional_groups",
-      "target": "icho.org.synthesis",
+      "source": "icho.org.structure_bonding",
+      "target": "icho.org.addition",
       "relation": "prerequisite_for"
     },
     {
-      "source": "icho.org.functional_groups",
-      "target": "icho.org.spectroscopy",
+      "source": "icho.org.structure_bonding",
+      "target": "icho.org.aromatic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.addition",
+      "target": "icho.org.aromatic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.sn1_sn2",
+      "target": "icho.org.carbonyl",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.addition",
+      "target": "icho.org.carbonyl",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.carbonyl",
+      "target": "icho.org.carboxylic_acids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.carbonyl",
+      "target": "icho.org.enolate",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.carbonyl",
+      "target": "icho.org.oxidation_reduction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.aromatic",
+      "target": "icho.org.pericyclic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.addition",
+      "target": "icho.org.pericyclic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.enolate",
+      "target": "icho.org.retrosynthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.carboxylic_acids",
+      "target": "icho.org.retrosynthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.pericyclic",
+      "target": "icho.org.retrosynthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.structure_bonding",
+      "target": "icho.org.nmr",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.structure_bonding",
+      "target": "icho.org.ir_spectroscopy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.structure_bonding",
+      "target": "icho.org.mass_spec",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.structure_bonding",
+      "target": "icho.org.radicals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.sn1_sn2",
+      "target": "icho.org.amines",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.aromatic",
+      "target": "icho.org.amines",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.addition",
+      "target": "icho.org.polymers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.carboxylic_acids",
+      "target": "icho.org.polymers",
       "relation": "prerequisite_for"
     },
     {
       "source": "icho.phys.acid_base",
-      "target": "icho.anal.titrimetry",
+      "target": "icho.anal.acid_base_titrations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.inorg.redox",
+      "target": "icho.anal.redox_titrations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.phys.electrochemistry",
+      "target": "icho.anal.redox_titrations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.inorg.coordination",
+      "target": "icho.anal.complexometric",
       "relation": "prerequisite_for"
     },
     {
@@ -602,13 +1443,83 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "icho.anal.titrimetry",
+      "source": "icho.phys.photochemistry",
+      "target": "icho.anal.spectrophotometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.anal.acid_base_titrations",
       "target": "icho.anal.chromatography",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.anal.acid_base_titrations",
+      "target": "icho.anal.separation",
       "relation": "prerequisite_for"
     },
     {
       "source": "icho.phys.electrochemistry",
       "target": "icho.anal.electroanalysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.stereochemistry",
+      "target": "icho.biochem.amino_acids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.phys.acid_base",
+      "target": "icho.biochem.amino_acids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.biochem.amino_acids",
+      "target": "icho.biochem.proteins",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.biochem.proteins",
+      "target": "icho.biochem.enzymes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.phys.kinetics_adv",
+      "target": "icho.biochem.enzymes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.structure_bonding",
+      "target": "icho.biochem.nucleic_acids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.biochem.enzymes",
+      "target": "icho.biochem.metabolism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.phys.thermodynamics",
+      "target": "icho.biochem.metabolism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.stereochemistry",
+      "target": "icho.biochem.carbohydrates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.carbonyl",
+      "target": "icho.biochem.carbohydrates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.org.carboxylic_acids",
+      "target": "icho.biochem.lipids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "icho.biochem.metabolism",
+      "target": "icho.biochem.lipids",
       "relation": "prerequisite_for"
     }
   ]

@@ -3,12 +3,12 @@
     "domain": "mathematics",
     "curriculum": "AMC/AIME/USAMO (US Math Competition Pathway)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "US math competition topics with prerequisite ordering, colored by level",
     "sources": [
       "AMC/AIME/USAMO Syllabus"
     ],
-    "last_updated": "2026-03-27"
+    "last_updated": "2026-03-28"
   },
   "books": [
     {
@@ -71,10 +71,10 @@
   ],
   "nodes": [
     {
-      "id": "amc.amc8.arithmetic",
-      "label": "Arithmetic",
+      "id": "amc.amc8.arithmetic_tricks",
+      "label": "Arithmetic Tricks",
       "type": "concept",
-      "description": "Fractions, decimals, percents, ratios, rates",
+      "description": "Fractions, decimals, percents, ratios, rates, mental math shortcuts",
       "grade_range": [
         "AMC 8"
       ],
@@ -86,15 +86,35 @@
       "bookName": "AMC 8",
       "bookColor": "#86efac",
       "bookOrder": 1,
-      "external_id": "371830a3e8e8492a",
+      "external_id": "854214ade04ad053",
       "comprehended": false,
       "strand": "algebra"
+    },
+    {
+      "id": "amc.amc8.number_sense",
+      "label": "Number Sense",
+      "type": "concept",
+      "description": "Divisibility rules, prime factorization, GCD/LCM basics, estimation",
+      "grade_range": [
+        "AMC 8"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc8",
+      "bookName": "AMC 8",
+      "bookColor": "#86efac",
+      "bookOrder": 1,
+      "external_id": "f9c5b796d91257bf",
+      "comprehended": false,
+      "strand": "number-theory"
     },
     {
       "id": "amc.amc8.basic_geometry",
       "label": "Basic Geometry",
       "type": "concept",
-      "description": "Perimeter, area, volume, angles, basic coordinate geometry",
+      "description": "Perimeter, area, volume, angles, Pythagorean theorem",
       "grade_range": [
         "AMC 8"
       ],
@@ -111,10 +131,10 @@
       "strand": "geometry"
     },
     {
-      "id": "amc.amc8.counting",
-      "label": "Counting",
+      "id": "amc.amc8.basic_counting",
+      "label": "Basic Counting",
       "type": "concept",
-      "description": "Basic counting, permutations, combinations",
+      "description": "Multiplication principle, organized lists, basic permutations and combinations",
       "grade_range": [
         "AMC 8"
       ],
@@ -126,15 +146,15 @@
       "bookName": "AMC 8",
       "bookColor": "#86efac",
       "bookOrder": 1,
-      "external_id": "9de3c37e4838d322",
+      "external_id": "7026c588a8ff0805",
       "comprehended": false,
       "strand": "combinatorics"
     },
     {
-      "id": "amc.amc8.logical_reasoning",
-      "label": "Logical Reasoning",
+      "id": "amc.amc8.logic_puzzles",
+      "label": "Logic Puzzles",
       "type": "concept",
-      "description": "Logic puzzles, pattern recognition, systematic reasoning",
+      "description": "Logic tables, systematic reasoning, pattern recognition, process of elimination",
       "grade_range": [
         "AMC 8"
       ],
@@ -146,55 +166,75 @@
       "bookName": "AMC 8",
       "bookColor": "#86efac",
       "bookOrder": 1,
-      "external_id": "cc2ebd6ad219ae91",
+      "external_id": "99f02bbf4fbd4c91",
       "comprehended": false,
       "strand": "combinatorics"
     },
     {
-      "id": "amc.amc10.algebra",
-      "label": "Algebra",
+      "id": "amc.amc8.word_problems",
+      "label": "Word Problems",
       "type": "concept",
-      "description": "Equations, inequalities, functions, polynomials",
+      "description": "Rate/time/distance, work problems, age problems, mixture problems",
       "grade_range": [
-        "AMC 10"
+        "AMC 8"
       ],
       "tags": [
         "subtopic"
       ],
       "pages": "",
-      "book": "amc.amc10",
-      "bookName": "AMC 10",
-      "bookColor": "#22c55e",
-      "bookOrder": 2,
-      "external_id": "18a3a364e513139e",
+      "book": "amc.amc8",
+      "bookName": "AMC 8",
+      "bookColor": "#86efac",
+      "bookOrder": 1,
+      "external_id": "b6f58e215a3861c4",
       "comprehended": false,
       "strand": "algebra"
     },
     {
-      "id": "amc.amc10.geometry",
-      "label": "Geometry (Circles & Triangles)",
+      "id": "amc.amc8.basic_probability",
+      "label": "Basic Probability",
       "type": "concept",
-      "description": "Circle theorems, triangle properties, similarity, congruence",
+      "description": "Simple probability, sample spaces, equally likely outcomes",
       "grade_range": [
-        "AMC 10"
+        "AMC 8"
       ],
       "tags": [
         "subtopic"
       ],
       "pages": "",
-      "book": "amc.amc10",
-      "bookName": "AMC 10",
-      "bookColor": "#22c55e",
-      "bookOrder": 2,
-      "external_id": "cd62cc0bc501bd2d",
+      "book": "amc.amc8",
+      "bookName": "AMC 8",
+      "bookColor": "#86efac",
+      "bookOrder": 1,
+      "external_id": "fd8539d4bf8bf6e1",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "amc.amc8.basic_coordinate",
+      "label": "Basic Coordinate Geometry",
+      "type": "concept",
+      "description": "Plotting points, distance formula, midpoint, slope basics",
+      "grade_range": [
+        "AMC 8"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc8",
+      "bookName": "AMC 8",
+      "bookColor": "#86efac",
+      "bookOrder": 1,
+      "external_id": "8fa697ef1b2c494b",
       "comprehended": false,
       "strand": "geometry"
     },
     {
-      "id": "amc.amc10.nt_basics",
-      "label": "Number Theory Basics",
+      "id": "amc.amc10.algebraic_manipulation",
+      "label": "Algebraic Manipulation",
       "type": "concept",
-      "description": "Divisibility, primes, GCD/LCM, modular arithmetic basics",
+      "description": "Factoring, completing the square, Simon's Favorite Factoring Trick, substitution",
       "grade_range": [
         "AMC 10"
       ],
@@ -206,7 +246,167 @@
       "bookName": "AMC 10",
       "bookColor": "#22c55e",
       "bookOrder": 2,
-      "external_id": "65784aa28f400a42",
+      "external_id": "29b72baa7499f1b0",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "amc.amc10.equations_inequalities",
+      "label": "Equations & Inequalities",
+      "type": "concept",
+      "description": "Systems of equations, quadratic equations, AM-GM inequality basics",
+      "grade_range": [
+        "AMC 10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc10",
+      "bookName": "AMC 10",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "a954816adfeb8270",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "amc.amc10.sequences",
+      "label": "Sequences & Series Basics",
+      "type": "concept",
+      "description": "Arithmetic and geometric sequences, partial sums, recursive definitions",
+      "grade_range": [
+        "AMC 10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc10",
+      "bookName": "AMC 10",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "f158c89a6f88e922",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "amc.amc10.coordinate_geometry",
+      "label": "Coordinate Geometry",
+      "type": "concept",
+      "description": "Lines, circles in coordinate plane, distance, transformations, Shoelace formula",
+      "grade_range": [
+        "AMC 10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc10",
+      "bookName": "AMC 10",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "faf4a8802b8b2c2b",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "amc.amc10.triangle_properties",
+      "label": "Triangle Properties",
+      "type": "concept",
+      "description": "Congruence, similarity, triangle inequality, special triangles, area methods",
+      "grade_range": [
+        "AMC 10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc10",
+      "bookName": "AMC 10",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "a5d46017fdafdaba",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "amc.amc10.circle_properties",
+      "label": "Circle Properties",
+      "type": "concept",
+      "description": "Inscribed angles, tangent lines, arc length, sector area, cyclic quadrilaterals",
+      "grade_range": [
+        "AMC 10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc10",
+      "bookName": "AMC 10",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "62359d4ef1aa79aa",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "amc.amc10.polygon_properties",
+      "label": "Polygon Properties",
+      "type": "concept",
+      "description": "Regular polygons, interior/exterior angles, diagonals, area formulas",
+      "grade_range": [
+        "AMC 10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc10",
+      "bookName": "AMC 10",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "5d177832e387f4a3",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "amc.amc10.number_theory_basics",
+      "label": "Number Theory Basics",
+      "type": "concept",
+      "description": "Divisibility, primes, GCD/LCM, Euclidean algorithm, number bases",
+      "grade_range": [
+        "AMC 10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc10",
+      "bookName": "AMC 10",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "e470d3a3d7b47b6a",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "amc.amc10.modular_arithmetic",
+      "label": "Modular Arithmetic Basics",
+      "type": "concept",
+      "description": "Congruences, modular addition/multiplication, last digit problems, divisibility tests",
+      "grade_range": [
+        "AMC 10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc10",
+      "bookName": "AMC 10",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "a92c1b64b88e79fd",
       "comprehended": false,
       "strand": "number-theory"
     },
@@ -214,7 +414,7 @@
       "id": "amc.amc10.probability",
       "label": "Probability",
       "type": "concept",
-      "description": "Basic probability, conditional probability, expected value",
+      "description": "Conditional probability, expected value, geometric probability, complementary counting",
       "grade_range": [
         "AMC 10"
       ],
@@ -231,22 +431,42 @@
       "strand": "combinatorics"
     },
     {
-      "id": "amc.amc12.adv_algebra",
-      "label": "Advanced Algebra",
+      "id": "amc.amc10.counting_techniques",
+      "label": "Counting Techniques",
       "type": "concept",
-      "description": "Vieta's formulas, symmetric functions, advanced inequalities",
+      "description": "Permutations, combinations, stars and bars, PIE basics, casework",
       "grade_range": [
-        "AMC 12"
+        "AMC 10"
       ],
       "tags": [
         "subtopic"
       ],
       "pages": "",
-      "book": "amc.amc12",
-      "bookName": "AMC 12",
-      "bookColor": "#14b8a6",
-      "bookOrder": 3,
-      "external_id": "baf74f2dba798b74",
+      "book": "amc.amc10",
+      "bookName": "AMC 10",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "fa24feefc761e9e9",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "amc.amc10.functions",
+      "label": "Functions",
+      "type": "concept",
+      "description": "Function notation, composition, inverses, piecewise functions, transformations",
+      "grade_range": [
+        "AMC 10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc10",
+      "bookName": "AMC 10",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "712e81f73ca3cbb5",
       "comprehended": false,
       "strand": "algebra"
     },
@@ -254,7 +474,7 @@
       "id": "amc.amc12.trigonometry",
       "label": "Trigonometry",
       "type": "concept",
-      "description": "Trigonometric identities, equations, law of sines/cosines",
+      "description": "Trig identities, equations, law of sines/cosines, double/half angle formulas",
       "grade_range": [
         "AMC 12"
       ],
@@ -274,7 +494,7 @@
       "id": "amc.amc12.complex_numbers",
       "label": "Complex Numbers",
       "type": "concept",
-      "description": "Complex arithmetic, roots of unity, geometric interpretation",
+      "description": "Complex arithmetic, polar form, roots of unity, geometric interpretation",
       "grade_range": [
         "AMC 12"
       ],
@@ -291,30 +511,10 @@
       "strand": "algebra"
     },
     {
-      "id": "amc.amc12.sequences",
-      "label": "Sequences & Series",
-      "type": "concept",
-      "description": "Arithmetic, geometric, telescoping series, recursions",
-      "grade_range": [
-        "AMC 12"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "amc.amc12",
-      "bookName": "AMC 12",
-      "bookColor": "#14b8a6",
-      "bookOrder": 3,
-      "external_id": "77000249dc41ddbf",
-      "comprehended": false,
-      "strand": "algebra"
-    },
-    {
       "id": "amc.amc12.logarithms",
       "label": "Logarithms",
       "type": "concept",
-      "description": "Logarithmic identities, equations, change of base",
+      "description": "Logarithmic identities, equations, change of base, logarithmic scales",
       "grade_range": [
         "AMC 12"
       ],
@@ -331,50 +531,150 @@
       "strand": "algebra"
     },
     {
-      "id": "amc.aime.adv_counting",
-      "label": "Advanced Counting",
+      "id": "amc.amc12.polynomial_roots",
+      "label": "Polynomial Roots",
       "type": "concept",
-      "description": "Inclusion-exclusion, generating functions, bijections",
+      "description": "Vieta's formulas, rational root theorem, factor/remainder theorems, symmetric functions",
       "grade_range": [
-        "AIME"
+        "AMC 12"
       ],
       "tags": [
         "subtopic"
       ],
       "pages": "",
-      "book": "amc.aime",
-      "bookName": "AIME",
-      "bookColor": "#3b82f6",
-      "bookOrder": 4,
-      "external_id": "b918fc7fc3a1490a",
+      "book": "amc.amc12",
+      "bookName": "AMC 12",
+      "bookColor": "#14b8a6",
+      "bookOrder": 3,
+      "external_id": "9f36c2a64f6c667d",
       "comprehended": false,
       "strand": "algebra"
     },
     {
-      "id": "amc.aime.modular",
-      "label": "Modular Arithmetic",
+      "id": "amc.amc12.sequences_series",
+      "label": "Sequences & Series",
       "type": "concept",
-      "description": "CRT, Fermat's little theorem, Euler's theorem",
+      "description": "Telescoping series, infinite geometric series, recursions, sigma notation",
       "grade_range": [
-        "AIME"
+        "AMC 12"
       ],
       "tags": [
         "subtopic"
       ],
       "pages": "",
-      "book": "amc.aime",
-      "bookName": "AIME",
-      "bookColor": "#3b82f6",
-      "bookOrder": 4,
-      "external_id": "1737a0cbfdabb2f7",
+      "book": "amc.amc12",
+      "bookName": "AMC 12",
+      "bookColor": "#14b8a6",
+      "bookOrder": 3,
+      "external_id": "c0487fff9c1663b0",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "amc.amc12.advanced_counting",
+      "label": "Advanced Counting",
+      "type": "concept",
+      "description": "Inclusion-exclusion, derangements, Catalan numbers, bijections, overcounting",
+      "grade_range": [
+        "AMC 12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc12",
+      "bookName": "AMC 12",
+      "bookColor": "#14b8a6",
+      "bookOrder": 3,
+      "external_id": "87fe7ce754fca5a0",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "amc.amc12.advanced_geometry",
+      "label": "Advanced Geometry",
+      "type": "concept",
+      "description": "3D geometry, cross-sections, advanced circle theorems, Ptolemy's theorem",
+      "grade_range": [
+        "AMC 12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc12",
+      "bookName": "AMC 12",
+      "bookColor": "#14b8a6",
+      "bookOrder": 3,
+      "external_id": "eb0f52ae016740f3",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "amc.amc12.conic_sections",
+      "label": "Conic Sections",
+      "type": "concept",
+      "description": "Parabolas, ellipses, hyperbolas, focus-directrix, parametric forms",
+      "grade_range": [
+        "AMC 12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc12",
+      "bookName": "AMC 12",
+      "bookColor": "#14b8a6",
+      "bookOrder": 3,
+      "external_id": "f3fe413d26084bd0",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "amc.amc12.advanced_probability",
+      "label": "Advanced Probability",
+      "type": "concept",
+      "description": "Recursion in probability, states, geometric probability, expected value applications",
+      "grade_range": [
+        "AMC 12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc12",
+      "bookName": "AMC 12",
+      "bookColor": "#14b8a6",
+      "bookOrder": 3,
+      "external_id": "cb4f03ac997a4e04",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "amc.amc12.number_theory_intermediate",
+      "label": "Intermediate Number Theory",
+      "type": "concept",
+      "description": "Euler's totient, Fermat's little theorem, order, primitive roots basics",
+      "grade_range": [
+        "AMC 12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc12",
+      "bookName": "AMC 12",
+      "bookColor": "#14b8a6",
+      "bookOrder": 3,
+      "external_id": "963a9fe8a8277ce0",
       "comprehended": false,
       "strand": "number-theory"
     },
     {
-      "id": "amc.aime.poly_roots",
-      "label": "Polynomial Roots",
+      "id": "amc.aime.adv_number_theory",
+      "label": "Advanced Number Theory",
       "type": "concept",
-      "description": "Root finding, symmetric functions, Newton's sums",
+      "description": "CRT, lifting the exponent, Legendre's formula, multiplicative functions, p-adic valuations",
       "grade_range": [
         "AIME"
       ],
@@ -386,35 +686,15 @@
       "bookName": "AIME",
       "bookColor": "#3b82f6",
       "bookOrder": 4,
-      "external_id": "d5b2460d883b1ac9",
+      "external_id": "d47249a93e8ac905",
       "comprehended": false,
-      "strand": "algebra"
-    },
-    {
-      "id": "amc.aime.geo_constructions",
-      "label": "Geometric Constructions",
-      "type": "concept",
-      "description": "Power of a point, radical axes, inversive geometry",
-      "grade_range": [
-        "AIME"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "amc.aime",
-      "bookName": "AIME",
-      "bookColor": "#3b82f6",
-      "bookOrder": 4,
-      "external_id": "de79b6fda9b9dee5",
-      "comprehended": false,
-      "strand": "geometry"
+      "strand": "number-theory"
     },
     {
       "id": "amc.aime.diophantine",
       "label": "Diophantine Equations",
       "type": "concept",
-      "description": "Solving integer equations, Pell's equation, parametric solutions",
+      "description": "Integer solutions, Pell's equation, parametric solutions, Bezout's identity",
       "grade_range": [
         "AIME"
       ],
@@ -431,10 +711,230 @@
       "strand": "number-theory"
     },
     {
+      "id": "amc.aime.adv_combinatorics",
+      "label": "Advanced Combinatorics",
+      "type": "concept",
+      "description": "Generating functions, recurrence relations, counting with symmetry, Burnside's lemma",
+      "grade_range": [
+        "AIME"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.aime",
+      "bookName": "AIME",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "d1d479e4c4f26ae2",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "amc.aime.recursions",
+      "label": "Recursions & Recurrences",
+      "type": "concept",
+      "description": "Linear recurrences, characteristic equations, solving with generating functions",
+      "grade_range": [
+        "AIME"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.aime",
+      "bookName": "AIME",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "e9fefc34d317cd5d",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "amc.aime.floor_ceiling",
+      "label": "Floor & Ceiling Functions",
+      "type": "concept",
+      "description": "Floor/ceiling properties, fractional part, Hermite's identity, sum of floors",
+      "grade_range": [
+        "AIME"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.aime",
+      "bookName": "AIME",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "cf9fb2c41f0a81ca",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "amc.aime.power_of_point",
+      "label": "Power of a Point",
+      "type": "concept",
+      "description": "Power of a point theorem, radical axes, radical center, coaxial circles",
+      "grade_range": [
+        "AIME"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.aime",
+      "bookName": "AIME",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "48748aa1659cd176",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "amc.aime.stewarts_theorem",
+      "label": "Stewart's & Cevian Geometry",
+      "type": "concept",
+      "description": "Stewart's theorem, mass point geometry, cevians, Menelaus and Ceva's theorem",
+      "grade_range": [
+        "AIME"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.aime",
+      "bookName": "AIME",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "550c572324723789",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "amc.aime.trig_in_geometry",
+      "label": "Trigonometry in Geometry",
+      "type": "concept",
+      "description": "Trig cevians, area via sine, circumradius/inradius formulas, trig substitution in geometry",
+      "grade_range": [
+        "AIME"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.aime",
+      "bookName": "AIME",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "571b42ffa4582fa6",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "amc.aime.adv_algebra",
+      "label": "Advanced Algebra",
+      "type": "concept",
+      "description": "Newton's sums, symmetric polynomials, advanced Vieta's, resultants",
+      "grade_range": [
+        "AIME"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.aime",
+      "bookName": "AIME",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "ee983367871d4b7d",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "amc.aime.complex_geo",
+      "label": "Complex Numbers in Geometry",
+      "type": "concept",
+      "description": "Complex coordinates, rotations, spiral similarities via complex multiplication",
+      "grade_range": [
+        "AIME"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.aime",
+      "bookName": "AIME",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "f35bb8e8cf3604c3",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "amc.aime.advanced_probability",
+      "label": "AIME Probability",
+      "type": "concept",
+      "description": "Markov chains basics, recursion in probability, combinatorial probability, expected value",
+      "grade_range": [
+        "AIME"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.aime",
+      "bookName": "AIME",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "70280ec4068b9473",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "amc.aime.coordinate_bash",
+      "label": "Coordinate Bash",
+      "type": "concept",
+      "description": "Setting up coordinates for geometry problems, analytic geometry techniques",
+      "grade_range": [
+        "AIME"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.aime",
+      "bookName": "AIME",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "e08bd94a9abe7001",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "amc.aime.telescoping",
+      "label": "Telescoping & Summation",
+      "type": "concept",
+      "description": "Telescoping sums/products, partial fractions in sums, creative manipulation",
+      "grade_range": [
+        "AIME"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.aime",
+      "bookName": "AIME",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "0c58caea3f4ea694",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
       "id": "amc.usamo.proof_techniques",
       "label": "Proof Techniques",
       "type": "concept",
-      "description": "Induction, contradiction, construction, extremal principle",
+      "description": "Induction, contradiction, construction, extremal principle, pigeonhole, invariants",
       "grade_range": [
         "USAMO"
       ],
@@ -451,10 +951,50 @@
       "strand": "advanced"
     },
     {
+      "id": "amc.usamo.inequalities",
+      "label": "Inequalities",
+      "type": "concept",
+      "description": "AM-GM, Cauchy-Schwarz, Schur, SOS, Jensen's, Muirhead, power mean inequality",
+      "grade_range": [
+        "USAMO"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.usamo",
+      "bookName": "USAMO",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "eb1b3cc503af77f8",
+      "comprehended": false,
+      "strand": "advanced"
+    },
+    {
+      "id": "amc.usamo.functional_equations",
+      "label": "Functional Equations",
+      "type": "concept",
+      "description": "Cauchy's equation, substitution strategies, injectivity/surjectivity arguments",
+      "grade_range": [
+        "USAMO"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.usamo",
+      "bookName": "USAMO",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "6407713fca7f1657",
+      "comprehended": false,
+      "strand": "advanced"
+    },
+    {
       "id": "amc.usamo.olympiad_geo",
       "label": "Olympiad Geometry",
       "type": "concept",
-      "description": "Projective geometry, inversions, spiral similarities",
+      "description": "Projective geometry, inversions, spiral similarities, homothety, cross-ratio",
       "grade_range": [
         "USAMO"
       ],
@@ -468,13 +1008,33 @@
       "bookOrder": 5,
       "external_id": "cf4d09288990c7e5",
       "comprehended": false,
-      "strand": "advanced"
+      "strand": "geometry"
+    },
+    {
+      "id": "amc.usamo.olympiad_geo_proofs",
+      "label": "Geometry Proof Techniques",
+      "type": "concept",
+      "description": "Angle chasing, phantom points, radical axes in proofs, trigonometric cevian proofs",
+      "grade_range": [
+        "USAMO"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.usamo",
+      "bookName": "USAMO",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "acfa5917aefc2c51",
+      "comprehended": false,
+      "strand": "geometry"
     },
     {
       "id": "amc.usamo.olympiad_nt",
       "label": "Olympiad Number Theory",
       "type": "concept",
-      "description": "Quadratic residues, p-adic valuations, algebraic number theory",
+      "description": "Quadratic residues, Legendre symbol, orders, p-adic valuations, Zsygmondy's theorem",
       "grade_range": [
         "USAMO"
       ],
@@ -488,13 +1048,33 @@
       "bookOrder": 5,
       "external_id": "3ab53489d4b52b16",
       "comprehended": false,
-      "strand": "advanced"
+      "strand": "number-theory"
+    },
+    {
+      "id": "amc.usamo.olympiad_nt_proofs",
+      "label": "NT Proof Strategies",
+      "type": "concept",
+      "description": "Infinite descent, Vieta jumping, modular arithmetic in proofs, size arguments",
+      "grade_range": [
+        "USAMO"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.usamo",
+      "bookName": "USAMO",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "c02d47a12f991a2d",
+      "comprehended": false,
+      "strand": "number-theory"
     },
     {
       "id": "amc.usamo.olympiad_comb",
       "label": "Olympiad Combinatorics",
       "type": "concept",
-      "description": "Graph theory, probabilistic method, extremal combinatorics",
+      "description": "Graph theory, extremal combinatorics, probabilistic method, double counting",
       "grade_range": [
         "USAMO"
       ],
@@ -508,88 +1088,558 @@
       "bookOrder": 5,
       "external_id": "66fdc9b773c29d72",
       "comprehended": false,
-      "strand": "advanced"
+      "strand": "combinatorics"
+    },
+    {
+      "id": "amc.usamo.olympiad_comb_proofs",
+      "label": "Combinatorial Proof Strategies",
+      "type": "concept",
+      "description": "Algorithms, coloring arguments, invariants/monovariants, games, extremal principle in combinatorics",
+      "grade_range": [
+        "USAMO"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.usamo",
+      "bookName": "USAMO",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "3448880d9c0d9bc3",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "amc.usamo.algebraic_nt",
+      "label": "Algebraic Number Theory Intro",
+      "type": "concept",
+      "description": "Gaussian integers, Eisenstein integers, norms, unique factorization in rings",
+      "grade_range": [
+        "USAMO"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.usamo",
+      "bookName": "USAMO",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "72f6fc286fbaf063",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "amc.usamo.polynomials_olympiad",
+      "label": "Olympiad Polynomials",
+      "type": "concept",
+      "description": "Irreducibility, polynomial bounding, roots and coefficients in competition problems",
+      "grade_range": [
+        "USAMO"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.usamo",
+      "bookName": "USAMO",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "f41d446ec906f666",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "amc.amc10.three_d_geometry",
+      "label": "3D Geometry Basics",
+      "type": "concept",
+      "description": "Surface area and volume of solids, spatial reasoning, cross-sections",
+      "grade_range": [
+        "AMC 10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc10",
+      "bookName": "AMC 10",
+      "bookColor": "#22c55e",
+      "bookOrder": 2,
+      "external_id": "2adc959210bef2e3",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "amc.amc8.mean_median_mode",
+      "label": "Statistics Basics",
+      "type": "concept",
+      "description": "Mean, median, mode, range, weighted averages",
+      "grade_range": [
+        "AMC 8"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc8",
+      "bookName": "AMC 8",
+      "bookColor": "#86efac",
+      "bookOrder": 1,
+      "external_id": "05f0726cba4310d3",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "amc.amc8.proportional_reasoning",
+      "label": "Proportional Reasoning",
+      "type": "concept",
+      "description": "Ratios, proportions, unit rates, scaling, direct/inverse variation",
+      "grade_range": [
+        "AMC 8"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc8",
+      "bookName": "AMC 8",
+      "bookColor": "#86efac",
+      "bookOrder": 1,
+      "external_id": "34832347ad5748a2",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "amc.amc12.binomial_theorem",
+      "label": "Binomial Theorem",
+      "type": "concept",
+      "description": "Binomial expansion, Pascal's triangle, binomial coefficients, multinomial theorem",
+      "grade_range": [
+        "AMC 12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc12",
+      "bookName": "AMC 12",
+      "bookColor": "#14b8a6",
+      "bookOrder": 3,
+      "external_id": "36e4615e53982807",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "amc.aime.modular_advanced",
+      "label": "Advanced Modular Arithmetic",
+      "type": "concept",
+      "description": "CRT applications, order of elements, Hensel's lemma basics, modular inverses",
+      "grade_range": [
+        "AIME"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.aime",
+      "bookName": "AIME",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "1443e207fca0ae17",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "amc.amc12.matrices_determinants",
+      "label": "Matrices & Determinants",
+      "type": "concept",
+      "description": "2x2 and 3x3 determinants, matrix multiplication, Cramer's rule, transformations",
+      "grade_range": [
+        "AMC 12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.amc12",
+      "bookName": "AMC 12",
+      "bookColor": "#14b8a6",
+      "bookOrder": 3,
+      "external_id": "6d52492796e3e429",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "amc.aime.three_d_advanced",
+      "label": "Advanced 3D Geometry",
+      "type": "concept",
+      "description": "Distance between skew lines, solid angles, cross-sections of polyhedra, volume by Cavalieri",
+      "grade_range": [
+        "AIME"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.aime",
+      "bookName": "AIME",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "6aef27e0e35315ea",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "amc.usamo.inversion",
+      "label": "Inversion",
+      "type": "concept",
+      "description": "Circle inversion, inversive distance, applications to tangency and collinearity",
+      "grade_range": [
+        "USAMO"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.usamo",
+      "bookName": "USAMO",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "d103d88e4b840eca",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "amc.usamo.projective",
+      "label": "Projective Geometry",
+      "type": "concept",
+      "description": "Projective transformations, harmonic conjugates, poles and polars, cross-ratio",
+      "grade_range": [
+        "USAMO"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "amc.usamo",
+      "bookName": "USAMO",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "1b93849eab6294c6",
+      "comprehended": false,
+      "strand": "geometry"
     }
   ],
   "edges": [
     {
-      "source": "amc.amc8.arithmetic",
-      "target": "amc.amc10.algebra",
+      "source": "amc.amc8.arithmetic_tricks",
+      "target": "amc.amc10.algebraic_manipulation",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.amc8.arithmetic",
-      "target": "amc.amc10.nt_basics",
+      "source": "amc.amc8.arithmetic_tricks",
+      "target": "amc.amc10.equations_inequalities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc8.word_problems",
+      "target": "amc.amc10.algebraic_manipulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc8.proportional_reasoning",
+      "target": "amc.amc10.sequences",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc8.number_sense",
+      "target": "amc.amc10.number_theory_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc8.number_sense",
+      "target": "amc.amc10.modular_arithmetic",
       "relation": "prerequisite_for"
     },
     {
       "source": "amc.amc8.basic_geometry",
-      "target": "amc.amc10.geometry",
+      "target": "amc.amc10.triangle_properties",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.amc8.counting",
+      "source": "amc.amc8.basic_geometry",
+      "target": "amc.amc10.circle_properties",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc8.basic_geometry",
+      "target": "amc.amc10.polygon_properties",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc8.basic_coordinate",
+      "target": "amc.amc10.coordinate_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc8.basic_geometry",
+      "target": "amc.amc10.three_d_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc8.basic_counting",
+      "target": "amc.amc10.counting_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc8.basic_probability",
       "target": "amc.amc10.probability",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.amc8.logical_reasoning",
-      "target": "amc.amc10.algebra",
+      "source": "amc.amc8.logic_puzzles",
+      "target": "amc.amc10.counting_techniques",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.amc10.algebra",
-      "target": "amc.amc12.adv_algebra",
+      "source": "amc.amc8.mean_median_mode",
+      "target": "amc.amc10.probability",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.amc10.geometry",
-      "target": "amc.amc12.trigonometry",
+      "source": "amc.amc8.arithmetic_tricks",
+      "target": "amc.amc10.functions",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.amc10.algebra",
-      "target": "amc.amc12.complex_numbers",
+      "source": "amc.amc10.algebraic_manipulation",
+      "target": "amc.amc12.polynomial_roots",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.amc10.algebra",
-      "target": "amc.amc12.sequences",
+      "source": "amc.amc10.equations_inequalities",
+      "target": "amc.amc12.polynomial_roots",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.amc10.algebra",
+      "source": "amc.amc10.algebraic_manipulation",
       "target": "amc.amc12.logarithms",
       "relation": "prerequisite_for"
     },
     {
+      "source": "amc.amc10.functions",
+      "target": "amc.amc12.logarithms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc10.functions",
+      "target": "amc.amc12.trigonometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc10.triangle_properties",
+      "target": "amc.amc12.trigonometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc10.algebraic_manipulation",
+      "target": "amc.amc12.complex_numbers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc10.sequences",
+      "target": "amc.amc12.sequences_series",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc10.counting_techniques",
+      "target": "amc.amc12.advanced_counting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc10.counting_techniques",
+      "target": "amc.amc12.binomial_theorem",
+      "relation": "prerequisite_for"
+    },
+    {
       "source": "amc.amc10.probability",
-      "target": "amc.aime.adv_counting",
+      "target": "amc.amc12.advanced_probability",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.amc10.nt_basics",
-      "target": "amc.aime.modular",
+      "source": "amc.amc10.circle_properties",
+      "target": "amc.amc12.advanced_geometry",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.amc12.adv_algebra",
-      "target": "amc.aime.poly_roots",
+      "source": "amc.amc10.triangle_properties",
+      "target": "amc.amc12.advanced_geometry",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.amc12.trigonometry",
-      "target": "amc.aime.geo_constructions",
+      "source": "amc.amc10.coordinate_geometry",
+      "target": "amc.amc12.conic_sections",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.aime.modular",
+      "source": "amc.amc10.number_theory_basics",
+      "target": "amc.amc12.number_theory_intermediate",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc10.modular_arithmetic",
+      "target": "amc.amc12.number_theory_intermediate",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc10.equations_inequalities",
+      "target": "amc.amc12.matrices_determinants",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc12.polynomial_roots",
+      "target": "amc.aime.adv_algebra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc12.sequences_series",
+      "target": "amc.aime.recursions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc12.sequences_series",
+      "target": "amc.aime.telescoping",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc12.logarithms",
+      "target": "amc.aime.floor_ceiling",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc12.number_theory_intermediate",
+      "target": "amc.aime.adv_number_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc12.number_theory_intermediate",
+      "target": "amc.aime.modular_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.aime.adv_number_theory",
       "target": "amc.aime.diophantine",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.aime.adv_counting",
-      "target": "amc.usamo.olympiad_comb",
+      "source": "amc.amc12.advanced_counting",
+      "target": "amc.aime.adv_combinatorics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc12.binomial_theorem",
+      "target": "amc.aime.adv_combinatorics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc12.advanced_probability",
+      "target": "amc.aime.advanced_probability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.aime.recursions",
+      "target": "amc.aime.advanced_probability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc12.advanced_geometry",
+      "target": "amc.aime.power_of_point",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc12.advanced_geometry",
+      "target": "amc.aime.stewarts_theorem",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc12.trigonometry",
+      "target": "amc.aime.trig_in_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc12.complex_numbers",
+      "target": "amc.aime.complex_geo",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc12.conic_sections",
+      "target": "amc.aime.coordinate_bash",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc10.three_d_geometry",
+      "target": "amc.aime.three_d_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.amc12.advanced_geometry",
+      "target": "amc.aime.three_d_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.aime.adv_algebra",
+      "target": "amc.usamo.inequalities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.aime.adv_algebra",
+      "target": "amc.usamo.functional_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.aime.adv_algebra",
+      "target": "amc.usamo.polynomials_olympiad",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.aime.recursions",
+      "target": "amc.usamo.proof_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.aime.adv_combinatorics",
+      "target": "amc.usamo.proof_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.aime.power_of_point",
+      "target": "amc.usamo.olympiad_geo",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.aime.stewarts_theorem",
+      "target": "amc.usamo.olympiad_geo",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.aime.trig_in_geometry",
+      "target": "amc.usamo.olympiad_geo_proofs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.aime.complex_geo",
+      "target": "amc.usamo.olympiad_geo_proofs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.usamo.olympiad_geo",
+      "target": "amc.usamo.inversion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.usamo.olympiad_geo",
+      "target": "amc.usamo.projective",
       "relation": "prerequisite_for"
     },
     {
@@ -598,28 +1648,48 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.aime.geo_constructions",
-      "target": "amc.usamo.olympiad_geo",
+      "source": "amc.aime.modular_advanced",
+      "target": "amc.usamo.olympiad_nt",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.aime.poly_roots",
-      "target": "amc.usamo.proof_techniques",
+      "source": "amc.usamo.olympiad_nt",
+      "target": "amc.usamo.olympiad_nt_proofs",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.amc12.sequences",
-      "target": "amc.aime.adv_counting",
+      "source": "amc.usamo.olympiad_nt",
+      "target": "amc.usamo.algebraic_nt",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.amc12.complex_numbers",
-      "target": "amc.aime.poly_roots",
+      "source": "amc.usamo.proof_techniques",
+      "target": "amc.usamo.olympiad_nt_proofs",
       "relation": "prerequisite_for"
     },
     {
-      "source": "amc.amc12.logarithms",
-      "target": "amc.aime.modular",
+      "source": "amc.aime.adv_combinatorics",
+      "target": "amc.usamo.olympiad_comb",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.usamo.proof_techniques",
+      "target": "amc.usamo.olympiad_comb_proofs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.usamo.olympiad_comb",
+      "target": "amc.usamo.olympiad_comb_proofs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.usamo.proof_techniques",
+      "target": "amc.usamo.inequalities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "amc.usamo.proof_techniques",
+      "target": "amc.usamo.functional_equations",
       "relation": "prerequisite_for"
     }
   ]

@@ -1,0 +1,1225 @@
+{
+  "metadata": {
+    "domain": "mathematics",
+    "curriculum": "SEAMO (Southeast Asian Mathematical Olympiad)",
+    "view": "k12-prerequisites",
+    "version": "0.2.0",
+    "description": "SEAMO topics with prerequisite ordering, colored by paper level (Papers A–D)",
+    "sources": [
+      "Southeast Asian Mathematical Olympiad Syllabus"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "seamo.a",
+      "name": "Paper A (Y2-4)",
+      "color": "#22c55e",
+      "order": 1
+    },
+    {
+      "id": "seamo.b",
+      "name": "Paper B (Y5-7)",
+      "color": "#3b82f6",
+      "order": 2
+    },
+    {
+      "id": "seamo.c",
+      "name": "Paper C (Y8-10)",
+      "color": "#f97316",
+      "order": 3
+    },
+    {
+      "id": "seamo.d",
+      "name": "Paper D (Y10-12)",
+      "color": "#ef4444",
+      "order": 4
+    }
+  ],
+  "strands": [
+    {
+      "id": "number-theory",
+      "name": "Number Theory",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "algebra",
+      "name": "Algebra",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "geometry",
+      "name": "Geometry",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "combinatorics",
+      "name": "Combinatorics",
+      "color": "#F39C12"
+    },
+    {
+      "id": "logic-problem-solving",
+      "name": "Logic & Problem Solving",
+      "color": "#9B59B6"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "comp.seamo.number_patterns_basic",
+      "label": "Number Patterns (Basic)",
+      "type": "concept",
+      "description": "Recognising and extending simple number sequences: skip-counting, ascending/descending patterns, and repeating cycles.",
+      "grade_range": [
+        "Y2-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.a",
+      "bookName": "Paper A (Y2-4)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "e9ed3877d571641d",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.seamo.arithmetic_operations",
+      "label": "Arithmetic Operations",
+      "type": "concept",
+      "description": "Mental math strategies for the four operations. Efficient computation and estimation techniques for competition speed.",
+      "grade_range": [
+        "Y2-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.a",
+      "bookName": "Paper A (Y2-4)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "1ac1c9a131aca2a9",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.seamo.basic_geometry_shapes",
+      "label": "Basic Geometry & Shapes",
+      "type": "concept",
+      "description": "Identifying and classifying 2D and 3D shapes. Properties of triangles, quadrilaterals, and circles at an introductory level.",
+      "grade_range": [
+        "Y2-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.a",
+      "bookName": "Paper A (Y2-4)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "a2cfa8ad01291185",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.seamo.simple_logic",
+      "label": "Simple Logic & Reasoning",
+      "type": "concept",
+      "description": "Process-of-elimination, if-then reasoning, and simple deduction puzzles suited for younger students.",
+      "grade_range": [
+        "Y2-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.a",
+      "bookName": "Paper A (Y2-4)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "1edd4ae9b9a7dfe7",
+      "comprehended": false,
+      "strand": "logic-problem-solving"
+    },
+    {
+      "id": "comp.seamo.fractions_basic",
+      "label": "Fractions (Basic)",
+      "type": "concept",
+      "description": "Understanding fractions as parts of a whole. Comparing, ordering, and performing simple operations with fractions.",
+      "grade_range": [
+        "Y2-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.a",
+      "bookName": "Paper A (Y2-4)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "f250ed0a335d3674",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.seamo.measurement_units",
+      "label": "Measurement & Units",
+      "type": "concept",
+      "description": "Length, mass, volume, and time. Unit conversions and word problems involving measurements.",
+      "grade_range": [
+        "Y2-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.a",
+      "bookName": "Paper A (Y2-4)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "bd7fd28b6ff3b1b4",
+      "comprehended": false,
+      "strand": "logic-problem-solving"
+    },
+    {
+      "id": "comp.seamo.perimeter_area_basic",
+      "label": "Perimeter & Area (Basic)",
+      "type": "concept",
+      "description": "Calculating perimeter and area of rectangles, squares, and triangles. Simple composite figure problems.",
+      "grade_range": [
+        "Y2-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.a",
+      "bookName": "Paper A (Y2-4)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "729a7038e3b83115",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.seamo.systematic_counting",
+      "label": "Systematic Counting",
+      "type": "concept",
+      "description": "Organised listing and counting strategies. Tree diagrams and multiplication principle at a primary level.",
+      "grade_range": [
+        "Y2-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.a",
+      "bookName": "Paper A (Y2-4)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "04918d0e8c02e52c",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.seamo.odd_even_divisibility",
+      "label": "Odd/Even & Divisibility",
+      "type": "concept",
+      "description": "Parity reasoning and basic divisibility rules (2, 3, 5, 9, 10). Applying them to competition puzzle problems.",
+      "grade_range": [
+        "Y2-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.a",
+      "bookName": "Paper A (Y2-4)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "2ce870b89bde6cab",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.seamo.magic_squares",
+      "label": "Magic Squares & Grids",
+      "type": "concept",
+      "description": "Completing magic squares and number placement puzzles with row, column, and diagonal constraints.",
+      "grade_range": [
+        "Y2-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.a",
+      "bookName": "Paper A (Y2-4)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "bf66eb6d32a24d2c",
+      "comprehended": false,
+      "strand": "logic-problem-solving"
+    },
+    {
+      "id": "comp.seamo.factors_multiples_hcf_lcm",
+      "label": "Factors, Multiples, HCF & LCM",
+      "type": "concept",
+      "description": "Prime factorisation, finding HCF and LCM, number-of-divisors formula. Competition-style applications.",
+      "grade_range": [
+        "Y5-Y7"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.b",
+      "bookName": "Paper B (Y5-7)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "16bac203436cfd87",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.seamo.ratio_proportion_percentage",
+      "label": "Ratio, Proportion & Percentage",
+      "type": "concept",
+      "description": "Solving ratio word problems, direct and inverse proportion, and percentage increase/decrease problems.",
+      "grade_range": [
+        "Y5-Y7"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.b",
+      "bookName": "Paper B (Y5-7)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "d8df2d7fe84a5301",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.seamo.algebraic_expressions_equations",
+      "label": "Algebraic Expressions & Equations",
+      "type": "concept",
+      "description": "Forming expressions from word problems, solving linear equations and simple simultaneous equations.",
+      "grade_range": [
+        "Y5-Y7"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.b",
+      "bookName": "Paper B (Y5-7)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "be4472646507131e",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.seamo.speed_distance_time",
+      "label": "Speed, Distance & Time",
+      "type": "concept",
+      "description": "Meeting and chasing problems, average speed, relative motion, and upstream/downstream problems.",
+      "grade_range": [
+        "Y5-Y7"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.b",
+      "bookName": "Paper B (Y5-7)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "c239e7c4181703f4",
+      "comprehended": false,
+      "strand": "logic-problem-solving"
+    },
+    {
+      "id": "comp.seamo.angles_polygons",
+      "label": "Angles & Polygons",
+      "type": "concept",
+      "description": "Interior and exterior angle sums, angle chasing in complex figures, properties of regular polygons.",
+      "grade_range": [
+        "Y5-Y7"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.b",
+      "bookName": "Paper B (Y5-7)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "5d21c32a86ce412c",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.seamo.area_circles_composite",
+      "label": "Area: Circles & Composite Figures",
+      "type": "concept",
+      "description": "Circle area/circumference, shaded region problems, and decomposing complex shapes for area calculation.",
+      "grade_range": [
+        "Y5-Y7"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.b",
+      "bookName": "Paper B (Y5-7)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "f2a1a2a9fcc9dc3a",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.seamo.counting_permutations_combinations",
+      "label": "Counting, Permutations & Combinations",
+      "type": "concept",
+      "description": "Multiplication/addition principles, nPr, nCr, and systematic counting in competition word problems.",
+      "grade_range": [
+        "Y5-Y7"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.b",
+      "bookName": "Paper B (Y5-7)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "132ccf336368f7a0",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.seamo.work_rate",
+      "label": "Work Rate Problems",
+      "type": "concept",
+      "description": "Joint work, pipe-filling, and efficiency problems. Setting up rate equations from word problem contexts.",
+      "grade_range": [
+        "Y5-Y7"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.b",
+      "bookName": "Paper B (Y5-7)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "224d2d7c028d59f1",
+      "comprehended": false,
+      "strand": "logic-problem-solving"
+    },
+    {
+      "id": "comp.seamo.number_sequences",
+      "label": "Number Sequences",
+      "type": "concept",
+      "description": "Arithmetic and geometric sequences, triangular/square numbers, and pattern generalisation to the nth term.",
+      "grade_range": [
+        "Y5-Y7"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.b",
+      "bookName": "Paper B (Y5-7)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "0dc3ffd4ed5c538f",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.seamo.pigeonhole",
+      "label": "Pigeonhole Principle",
+      "type": "concept",
+      "description": "Basic and generalised pigeonhole principle applied to existence proofs and guarantee-type problems.",
+      "grade_range": [
+        "Y5-Y7"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.b",
+      "bookName": "Paper B (Y5-7)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "6882345f85a2a949",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.seamo.logic_puzzles_intermediate",
+      "label": "Logic Puzzles (Intermediate)",
+      "type": "concept",
+      "description": "Multi-step deduction, truth/liar problems, and constraint-satisfaction puzzles requiring organised case analysis.",
+      "grade_range": [
+        "Y5-Y7"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.b",
+      "bookName": "Paper B (Y5-7)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "c509247d7416ad06",
+      "comprehended": false,
+      "strand": "logic-problem-solving"
+    },
+    {
+      "id": "comp.seamo.volume_surface_area",
+      "label": "Volume & Surface Area",
+      "type": "concept",
+      "description": "Volume and surface area of prisms, cylinders, cones, and spheres. Cross-section and water-filling problems.",
+      "grade_range": [
+        "Y5-Y7"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.b",
+      "bookName": "Paper B (Y5-7)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "c9f536e219cd2099",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.seamo.quadratic_equations",
+      "label": "Quadratic Equations",
+      "type": "concept",
+      "description": "Solving quadratics by factoring and quadratic formula. Discriminant, roots-coefficient relations, and competition applications.",
+      "grade_range": [
+        "Y8-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.c",
+      "bookName": "Paper C (Y8-10)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "1d671dd56c2c9af1",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.seamo.modular_arithmetic",
+      "label": "Modular Arithmetic",
+      "type": "concept",
+      "description": "Congruences, modular operations, solving linear congruences. Applications to last-digit, remainder, and divisibility problems.",
+      "grade_range": [
+        "Y8-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.c",
+      "bookName": "Paper C (Y8-10)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "c5e540d02c9631fc",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.seamo.coordinate_geometry",
+      "label": "Coordinate Geometry",
+      "type": "concept",
+      "description": "Distance, midpoint, gradient, line equations. Intersection of lines, area via coordinates (shoelace formula).",
+      "grade_range": [
+        "Y8-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.c",
+      "bookName": "Paper C (Y8-10)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "603f475f80b8ebbe",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.seamo.similar_congruent_triangles",
+      "label": "Similar & Congruent Triangles",
+      "type": "concept",
+      "description": "Conditions for similarity/congruence, ratio of areas, and applying these in multi-step geometry proofs.",
+      "grade_range": [
+        "Y8-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.c",
+      "bookName": "Paper C (Y8-10)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "e5682d5fd98908b6",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.seamo.circle_theorems",
+      "label": "Circle Theorems",
+      "type": "concept",
+      "description": "Angles in circles, cyclic quadrilaterals, tangent properties, power of a point. Competition geometry applications.",
+      "grade_range": [
+        "Y8-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.c",
+      "bookName": "Paper C (Y8-10)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "b15546c164a5fed6",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.seamo.inequalities",
+      "label": "Inequalities",
+      "type": "concept",
+      "description": "AM-GM at an introductory level, quadratic inequalities, and estimation/bounding in competition problems.",
+      "grade_range": [
+        "Y8-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.c",
+      "bookName": "Paper C (Y8-10)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "43c3493a59a45d0a",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.seamo.inclusion_exclusion",
+      "label": "Inclusion-Exclusion",
+      "type": "concept",
+      "description": "Counting elements in unions of sets. Two-set and three-set Venn diagrams, overcounting correction.",
+      "grade_range": [
+        "Y8-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.c",
+      "bookName": "Paper C (Y8-10)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "e1fad864af7e214f",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.seamo.pythagoras_trigonometry",
+      "label": "Pythagoras & Trigonometry",
+      "type": "concept",
+      "description": "Pythagorean theorem and triples, sine/cosine/tangent, sine and cosine rules in competition triangle problems.",
+      "grade_range": [
+        "Y8-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.c",
+      "bookName": "Paper C (Y8-10)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "b90c1c32b0123a68",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.seamo.sequences_series",
+      "label": "Sequences & Series",
+      "type": "concept",
+      "description": "Arithmetic/geometric series sum formulas, telescoping sums, and finding closed forms for competition sequences.",
+      "grade_range": [
+        "Y8-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.c",
+      "bookName": "Paper C (Y8-10)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "470dec37496ac74a",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.seamo.probability",
+      "label": "Probability",
+      "type": "concept",
+      "description": "Classical, conditional, and geometric probability. Independent events and expected value at competition level.",
+      "grade_range": [
+        "Y8-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.c",
+      "bookName": "Paper C (Y8-10)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "212174ae405729a7",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.seamo.invariants_parity",
+      "label": "Invariants & Parity",
+      "type": "concept",
+      "description": "Using conserved quantities and parity arguments to prove impossibility or determine outcomes in processes.",
+      "grade_range": [
+        "Y8-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.c",
+      "bookName": "Paper C (Y8-10)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "3cec0a51b35e6dd1",
+      "comprehended": false,
+      "strand": "logic-problem-solving"
+    },
+    {
+      "id": "comp.seamo.diophantine_equations",
+      "label": "Diophantine Equations",
+      "type": "concept",
+      "description": "Finding integer solutions using modular arithmetic, factoring, and bounding. Linear and simple nonlinear Diophantine equations.",
+      "grade_range": [
+        "Y8-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.c",
+      "bookName": "Paper C (Y8-10)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "582a9e8522762131",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.seamo.polynomials",
+      "label": "Polynomials",
+      "type": "concept",
+      "description": "Polynomial long division, factor/remainder theorems, Vieta's formulas, and constructing polynomials from constraints.",
+      "grade_range": [
+        "Y10-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.d",
+      "bookName": "Paper D (Y10-12)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "e8f7505e28027092",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.seamo.advanced_inequalities",
+      "label": "Advanced Inequalities",
+      "type": "concept",
+      "description": "Cauchy-Schwarz, power mean inequality, Schur's inequality. Systematic approaches to proving competition inequalities.",
+      "grade_range": [
+        "Y10-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.d",
+      "bookName": "Paper D (Y10-12)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "e4e3a684a90087de",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.seamo.functional_equations",
+      "label": "Functional Equations",
+      "type": "concept",
+      "description": "Solving functional equations via substitution, injectivity/surjectivity arguments, and Cauchy-type approaches.",
+      "grade_range": [
+        "Y10-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.d",
+      "bookName": "Paper D (Y10-12)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "e63cc4bf7d4fbc0b",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.seamo.number_theory_advanced",
+      "label": "Number Theory (Advanced)",
+      "type": "concept",
+      "description": "Euler's totient, Fermat's little theorem, order and primitive roots, quadratic residues at a competition level.",
+      "grade_range": [
+        "Y10-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.d",
+      "bookName": "Paper D (Y10-12)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "374269dfb396ea0e",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.seamo.graph_theory",
+      "label": "Graph Theory",
+      "type": "concept",
+      "description": "Graphs, trees, Euler/Hamilton paths, graph colouring, and extremal graph problems in competition contexts.",
+      "grade_range": [
+        "Y10-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.d",
+      "bookName": "Paper D (Y10-12)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "60b6cbd1a96a7348",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.seamo.combinatorial_identities",
+      "label": "Combinatorial Identities",
+      "type": "concept",
+      "description": "Vandermonde's identity, hockey stick, double counting proofs, and binomial theorem applications.",
+      "grade_range": [
+        "Y10-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.d",
+      "bookName": "Paper D (Y10-12)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "f0727c7b950804f7",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.seamo.circle_geometry_advanced",
+      "label": "Circle Geometry (Advanced)",
+      "type": "concept",
+      "description": "Radical axes, power of a point (advanced), inversive geometry basics, and Ptolemy's theorem.",
+      "grade_range": [
+        "Y10-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.d",
+      "bookName": "Paper D (Y10-12)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "45339f1ba1cc551b",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.seamo.mathematical_induction",
+      "label": "Mathematical Induction",
+      "type": "concept",
+      "description": "Weak and strong induction, well-ordering principle. Proving inequalities, divisibility, and identities by induction.",
+      "grade_range": [
+        "Y10-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.d",
+      "bookName": "Paper D (Y10-12)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "fee2617b30f3cc6a",
+      "comprehended": false,
+      "strand": "logic-problem-solving"
+    },
+    {
+      "id": "comp.seamo.game_theory_strategy",
+      "label": "Game Theory & Strategy",
+      "type": "concept",
+      "description": "Winning strategies in combinatorial games: symmetry, pairing, Sprague-Grundy at an introductory level.",
+      "grade_range": [
+        "Y10-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.d",
+      "bookName": "Paper D (Y10-12)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "00036076b22dc30c",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.seamo.geometric_transformations",
+      "label": "Geometric Transformations",
+      "type": "concept",
+      "description": "Reflections, rotations, translations, homothety, and spiral similarity applied to competition geometry.",
+      "grade_range": [
+        "Y10-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.d",
+      "bookName": "Paper D (Y10-12)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "354cec65a83f785e",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.seamo.recurrence_relations",
+      "label": "Recurrence Relations",
+      "type": "concept",
+      "description": "Setting up and solving linear recurrences. Characteristic equation method and generating function intuition.",
+      "grade_range": [
+        "Y10-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.d",
+      "bookName": "Paper D (Y10-12)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "ab48bf036ed1b8b2",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.seamo.extremal_principle",
+      "label": "Extremal Principle",
+      "type": "concept",
+      "description": "Using maximum/minimum elements to construct proofs. Extremal arguments in combinatorics and geometry.",
+      "grade_range": [
+        "Y10-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.d",
+      "bookName": "Paper D (Y10-12)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "40bd2e91aa5df9e4",
+      "comprehended": false,
+      "strand": "logic-problem-solving"
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp.seamo.number_patterns_basic",
+      "target": "comp.seamo.number_sequences",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.arithmetic_operations",
+      "target": "comp.seamo.fractions_basic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.arithmetic_operations",
+      "target": "comp.seamo.odd_even_divisibility",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.basic_geometry_shapes",
+      "target": "comp.seamo.perimeter_area_basic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.basic_geometry_shapes",
+      "target": "comp.seamo.angles_polygons",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.simple_logic",
+      "target": "comp.seamo.logic_puzzles_intermediate",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.systematic_counting",
+      "target": "comp.seamo.counting_permutations_combinations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.fractions_basic",
+      "target": "comp.seamo.ratio_proportion_percentage",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.odd_even_divisibility",
+      "target": "comp.seamo.factors_multiples_hcf_lcm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.perimeter_area_basic",
+      "target": "comp.seamo.area_circles_composite",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.perimeter_area_basic",
+      "target": "comp.seamo.volume_surface_area",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.number_patterns_basic",
+      "target": "comp.seamo.algebraic_expressions_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.measurement_units",
+      "target": "comp.seamo.speed_distance_time",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.arithmetic_operations",
+      "target": "comp.seamo.speed_distance_time",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.ratio_proportion_percentage",
+      "target": "comp.seamo.work_rate",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.systematic_counting",
+      "target": "comp.seamo.pigeonhole",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.magic_squares",
+      "target": "comp.seamo.logic_puzzles_intermediate",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.algebraic_expressions_equations",
+      "target": "comp.seamo.quadratic_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.factors_multiples_hcf_lcm",
+      "target": "comp.seamo.modular_arithmetic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.angles_polygons",
+      "target": "comp.seamo.similar_congruent_triangles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.area_circles_composite",
+      "target": "comp.seamo.circle_theorems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.angles_polygons",
+      "target": "comp.seamo.circle_theorems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.algebraic_expressions_equations",
+      "target": "comp.seamo.coordinate_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.quadratic_equations",
+      "target": "comp.seamo.inequalities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.counting_permutations_combinations",
+      "target": "comp.seamo.inclusion_exclusion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.similar_congruent_triangles",
+      "target": "comp.seamo.pythagoras_trigonometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.number_sequences",
+      "target": "comp.seamo.sequences_series",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.counting_permutations_combinations",
+      "target": "comp.seamo.probability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.logic_puzzles_intermediate",
+      "target": "comp.seamo.invariants_parity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.modular_arithmetic",
+      "target": "comp.seamo.diophantine_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.quadratic_equations",
+      "target": "comp.seamo.polynomials",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.inequalities",
+      "target": "comp.seamo.advanced_inequalities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.polynomials",
+      "target": "comp.seamo.functional_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.modular_arithmetic",
+      "target": "comp.seamo.number_theory_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.diophantine_equations",
+      "target": "comp.seamo.number_theory_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.pigeonhole",
+      "target": "comp.seamo.graph_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.inclusion_exclusion",
+      "target": "comp.seamo.combinatorial_identities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.circle_theorems",
+      "target": "comp.seamo.circle_geometry_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.invariants_parity",
+      "target": "comp.seamo.mathematical_induction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.invariants_parity",
+      "target": "comp.seamo.game_theory_strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.similar_congruent_triangles",
+      "target": "comp.seamo.geometric_transformations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.sequences_series",
+      "target": "comp.seamo.recurrence_relations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.pigeonhole",
+      "target": "comp.seamo.extremal_principle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.mathematical_induction",
+      "target": "comp.seamo.extremal_principle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.probability",
+      "target": "comp.seamo.combinatorial_identities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.coordinate_geometry",
+      "target": "comp.seamo.geometric_transformations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.graph_theory",
+      "target": "comp.seamo.game_theory_strategy",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

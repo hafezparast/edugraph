@@ -3,12 +3,12 @@
     "domain": "computer_science",
     "curriculum": "IOI (International Olympiad in Informatics)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "IOI topics with prerequisite ordering, colored by difficulty tier",
     "sources": [
       "IOI Syllabus"
     ],
-    "last_updated": "2026-03-27"
+    "last_updated": "2026-03-28"
   },
   "books": [
     {
@@ -18,21 +18,21 @@
       "order": 1
     },
     {
+      "id": "ioi.ds",
+      "name": "Data Structures",
+      "color": "#8b5cf6",
+      "order": 2
+    },
+    {
       "id": "ioi.graph",
       "name": "Graph Algorithms",
       "color": "#3b82f6",
-      "order": 2
+      "order": 3
     },
     {
       "id": "ioi.dp",
       "name": "Dynamic Programming",
       "color": "#f97316",
-      "order": 3
-    },
-    {
-      "id": "ioi.ds",
-      "name": "Advanced Data Structures",
-      "color": "#8b5cf6",
       "order": 4
     },
     {
@@ -49,9 +49,24 @@
       "color": "#4A90D9"
     },
     {
+      "id": "sorting-searching",
+      "name": "Sorting & Searching",
+      "color": "#27AE60"
+    },
+    {
+      "id": "data-structures",
+      "name": "Data Structures",
+      "color": "#F39C12"
+    },
+    {
       "id": "graphs",
       "name": "Graph Algorithms",
       "color": "#2ECC71"
+    },
+    {
+      "id": "shortest-path",
+      "name": "Shortest Paths",
+      "color": "#1ABC9C"
     },
     {
       "id": "dp",
@@ -59,22 +74,42 @@
       "color": "#E74C3C"
     },
     {
-      "id": "data-structures",
-      "name": "Advanced Data Structures",
-      "color": "#F39C12"
+      "id": "dp-optimization",
+      "name": "DP Optimization",
+      "color": "#C0392B"
+    },
+    {
+      "id": "strings",
+      "name": "String Algorithms",
+      "color": "#8E44AD"
+    },
+    {
+      "id": "geometry",
+      "name": "Computational Geometry",
+      "color": "#2980B9"
+    },
+    {
+      "id": "number-theory",
+      "name": "Number Theory",
+      "color": "#D35400"
     },
     {
       "id": "advanced",
-      "name": "Advanced Algorithms",
+      "name": "Advanced Techniques",
       "color": "#9B59B6"
+    },
+    {
+      "id": "flow",
+      "name": "Network Flow & Matching",
+      "color": "#16A085"
     }
   ],
   "nodes": [
     {
       "id": "ioi.fund.time_complexity",
-      "label": "Time Complexity",
+      "label": "Time & Space Complexity",
       "type": "concept",
-      "description": "Big-O notation, time and space complexity analysis",
+      "description": "Big-O, Big-Theta, Big-Omega notation; analyzing time and space complexity of algorithms",
       "grade_range": [
         "Olympiad"
       ],
@@ -91,10 +126,10 @@
       "strand": "fundamentals"
     },
     {
-      "id": "ioi.fund.sorting",
-      "label": "Sorting",
+      "id": "ioi.fund.arrays_strings",
+      "label": "Arrays & Strings",
       "type": "concept",
-      "description": "Comparison-based and non-comparison sorting algorithms",
+      "description": "Array manipulation, string basics, character arrays, indexing",
       "grade_range": [
         "Olympiad"
       ],
@@ -106,15 +141,75 @@
       "bookName": "Fundamentals",
       "bookColor": "#22c55e",
       "bookOrder": 1,
-      "external_id": "f14c136090ef2b71",
+      "external_id": "8ebf7743c1ea6381",
       "comprehended": false,
       "strand": "fundamentals"
+    },
+    {
+      "id": "ioi.fund.recursion",
+      "label": "Recursion & Backtracking",
+      "type": "concept",
+      "description": "Recursive thinking, base cases, backtracking search, pruning",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "f63b2babc67f85ea",
+      "comprehended": false,
+      "strand": "fundamentals"
+    },
+    {
+      "id": "ioi.fund.sorting_comparison",
+      "label": "Comparison Sorting",
+      "type": "concept",
+      "description": "Merge sort, quick sort, heap sort; O(n log n) comparison-based sorting",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "be1572a84cc9f680",
+      "comprehended": false,
+      "strand": "sorting-searching"
+    },
+    {
+      "id": "ioi.fund.sorting_linear",
+      "label": "Linear-Time Sorting",
+      "type": "concept",
+      "description": "Counting sort, radix sort, bucket sort; non-comparison sorting in O(n)",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "dd29e16bb0be0dda",
+      "comprehended": false,
+      "strand": "sorting-searching"
     },
     {
       "id": "ioi.fund.binary_search",
       "label": "Binary Search",
       "type": "concept",
-      "description": "Binary search on arrays and binary search on the answer",
+      "description": "Binary search on sorted arrays; finding boundaries, lower/upper bound",
       "grade_range": [
         "Olympiad"
       ],
@@ -128,13 +223,33 @@
       "bookOrder": 1,
       "external_id": "b45e1d6d734904aa",
       "comprehended": false,
-      "strand": "fundamentals"
+      "strand": "sorting-searching"
+    },
+    {
+      "id": "ioi.fund.binary_search_answer",
+      "label": "Binary Search on Answer",
+      "type": "concept",
+      "description": "Binary search the answer space; monotonic predicate functions; parametric search",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "c160ce23bed9dcbe",
+      "comprehended": false,
+      "strand": "sorting-searching"
     },
     {
       "id": "ioi.fund.two_pointers",
       "label": "Two Pointers",
       "type": "concept",
-      "description": "Two-pointer technique and sliding window",
+      "description": "Two-pointer technique for sorted arrays, pair problems, merging",
       "grade_range": [
         "Olympiad"
       ],
@@ -148,13 +263,33 @@
       "bookOrder": 1,
       "external_id": "849e82db1e0aaf69",
       "comprehended": false,
-      "strand": "fundamentals"
+      "strand": "sorting-searching"
+    },
+    {
+      "id": "ioi.fund.sliding_window",
+      "label": "Sliding Window",
+      "type": "concept",
+      "description": "Fixed and variable-size sliding window; deque-based sliding minimum/maximum",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "6e40ea4ddcaed320",
+      "comprehended": false,
+      "strand": "sorting-searching"
     },
     {
       "id": "ioi.fund.prefix_sums",
       "label": "Prefix Sums",
       "type": "concept",
-      "description": "1D and 2D prefix sums for range queries",
+      "description": "1D and 2D prefix sums for O(1) range sum queries",
       "grade_range": [
         "Olympiad"
       ],
@@ -171,10 +306,350 @@
       "strand": "fundamentals"
     },
     {
-      "id": "ioi.graph.bfs",
-      "label": "BFS",
+      "id": "ioi.fund.difference_arrays",
+      "label": "Difference Arrays",
       "type": "concept",
-      "description": "Breadth-first search and shortest paths in unweighted graphs",
+      "description": "Difference array technique for range update queries in O(1) amortized",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "555b8f63657a790b",
+      "comprehended": false,
+      "strand": "fundamentals"
+    },
+    {
+      "id": "ioi.fund.greedy",
+      "label": "Greedy Algorithms",
+      "type": "concept",
+      "description": "Greedy strategies, exchange arguments, activity selection, scheduling",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "7442d327ebe3ca56",
+      "comprehended": false,
+      "strand": "fundamentals"
+    },
+    {
+      "id": "ioi.fund.bit_manipulation",
+      "label": "Bit Manipulation",
+      "type": "concept",
+      "description": "Bitwise operations, bitmasks, subset enumeration, XOR properties",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.fund",
+      "bookName": "Fundamentals",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "fc2d597c0d60c3dc",
+      "comprehended": false,
+      "strand": "fundamentals"
+    },
+    {
+      "id": "ioi.ds.stacks_queues",
+      "label": "Stacks & Queues",
+      "type": "concept",
+      "description": "Stack (LIFO), queue (FIFO), deque; monotonic stack and queue patterns",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.ds",
+      "bookName": "Data Structures",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "d104df4ab5a3bf99",
+      "comprehended": false,
+      "strand": "data-structures"
+    },
+    {
+      "id": "ioi.ds.linked_lists",
+      "label": "Linked Lists",
+      "type": "concept",
+      "description": "Singly and doubly linked lists; insertion, deletion, traversal in O(1)/O(n)",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.ds",
+      "bookName": "Data Structures",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "3b4228bbd89bc900",
+      "comprehended": false,
+      "strand": "data-structures"
+    },
+    {
+      "id": "ioi.ds.hash_tables",
+      "label": "Hash Tables & Hashing",
+      "type": "concept",
+      "description": "Hash maps, hash sets, collision handling; polynomial hashing for strings",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.ds",
+      "bookName": "Data Structures",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "e1c9b9b1e8b0c317",
+      "comprehended": false,
+      "strand": "data-structures"
+    },
+    {
+      "id": "ioi.ds.binary_heap",
+      "label": "Binary Heap & Priority Queue",
+      "type": "concept",
+      "description": "Min-heap, max-heap; priority queue operations; heapify in O(n)",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.ds",
+      "bookName": "Data Structures",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "20922ee1259c1ba5",
+      "comprehended": false,
+      "strand": "data-structures"
+    },
+    {
+      "id": "ioi.ds.bst",
+      "label": "Binary Search Trees",
+      "type": "concept",
+      "description": "BST property, insertion, deletion, search, in-order traversal",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.ds",
+      "bookName": "Data Structures",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "7c368142228bbe73",
+      "comprehended": false,
+      "strand": "data-structures"
+    },
+    {
+      "id": "ioi.ds.balanced_bst",
+      "label": "Balanced BST (AVL, Red-Black)",
+      "type": "concept",
+      "description": "Self-balancing BSTs: AVL trees, red-black trees; O(log n) guaranteed operations",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.ds",
+      "bookName": "Data Structures",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "c290333600d42367",
+      "comprehended": false,
+      "strand": "data-structures"
+    },
+    {
+      "id": "ioi.ds.dsu",
+      "label": "Disjoint Set Union (DSU)",
+      "type": "concept",
+      "description": "Union-Find with path compression and union by rank; near O(1) amortized",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.ds",
+      "bookName": "Data Structures",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "a265bfc75a2f170b",
+      "comprehended": false,
+      "strand": "data-structures"
+    },
+    {
+      "id": "ioi.ds.fenwick",
+      "label": "Fenwick Tree (BIT)",
+      "type": "concept",
+      "description": "Binary Indexed Tree for prefix sum queries and point updates in O(log n)",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.ds",
+      "bookName": "Data Structures",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "0e9cff338e895537",
+      "comprehended": false,
+      "strand": "data-structures"
+    },
+    {
+      "id": "ioi.ds.segment_tree",
+      "label": "Segment Tree",
+      "type": "concept",
+      "description": "Segment tree for point update and range query; build, update, query in O(log n)",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.ds",
+      "bookName": "Data Structures",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "56dbfe73c1eac066",
+      "comprehended": false,
+      "strand": "data-structures"
+    },
+    {
+      "id": "ioi.ds.segment_tree_lazy",
+      "label": "Segment Tree with Lazy Propagation",
+      "type": "concept",
+      "description": "Range updates with lazy propagation; range add, range set, range query",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.ds",
+      "bookName": "Data Structures",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "1127d75dae566af5",
+      "comprehended": false,
+      "strand": "data-structures"
+    },
+    {
+      "id": "ioi.ds.sparse_table",
+      "label": "Sparse Table & RMQ",
+      "type": "concept",
+      "description": "Sparse table for O(1) static range minimum/maximum queries with O(n log n) preprocessing",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.ds",
+      "bookName": "Data Structures",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "0967c52e92a1e536",
+      "comprehended": false,
+      "strand": "data-structures"
+    },
+    {
+      "id": "ioi.ds.trie",
+      "label": "Trie",
+      "type": "concept",
+      "description": "Prefix tree for string storage and lookup; XOR trie for maximum XOR queries",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.ds",
+      "bookName": "Data Structures",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "4d6f8e388f134898",
+      "comprehended": false,
+      "strand": "data-structures"
+    },
+    {
+      "id": "ioi.ds.persistent",
+      "label": "Persistent Data Structures",
+      "type": "concept",
+      "description": "Persistent segment tree and persistent arrays; accessing previous versions",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.ds",
+      "bookName": "Data Structures",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "dfc8488c6915135f",
+      "comprehended": false,
+      "strand": "data-structures"
+    },
+    {
+      "id": "ioi.ds.treap",
+      "label": "Treap / Implicit Treap",
+      "type": "concept",
+      "description": "Randomized BST combining heap and BST properties; implicit key treap for sequence operations",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.ds",
+      "bookName": "Data Structures",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 2,
+      "external_id": "7fe72455dc013dd9",
+      "comprehended": false,
+      "strand": "data-structures"
+    },
+    {
+      "id": "ioi.graph.representation",
+      "label": "Graph Representation",
+      "type": "concept",
+      "description": "Adjacency list, adjacency matrix, edge list; directed vs undirected, weighted graphs",
       "grade_range": [
         "Olympiad"
       ],
@@ -185,16 +660,36 @@
       "book": "ioi.graph",
       "bookName": "Graph Algorithms",
       "bookColor": "#3b82f6",
-      "bookOrder": 2,
+      "bookOrder": 3,
+      "external_id": "3bf9ad4ac7d13310",
+      "comprehended": false,
+      "strand": "graphs"
+    },
+    {
+      "id": "ioi.graph.bfs",
+      "label": "Breadth-First Search (BFS)",
+      "type": "concept",
+      "description": "BFS traversal, shortest path in unweighted graphs, level-order processing",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.graph",
+      "bookName": "Graph Algorithms",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
       "external_id": "315e00f1fee5b747",
       "comprehended": false,
       "strand": "graphs"
     },
     {
       "id": "ioi.graph.dfs",
-      "label": "DFS",
+      "label": "Depth-First Search (DFS)",
       "type": "concept",
-      "description": "Depth-first search, discovery/finish times, cycle detection",
+      "description": "DFS traversal, discovery/finish times, edge classification, cycle detection",
       "grade_range": [
         "Olympiad"
       ],
@@ -205,68 +700,8 @@
       "book": "ioi.graph",
       "bookName": "Graph Algorithms",
       "bookColor": "#3b82f6",
-      "bookOrder": 2,
+      "bookOrder": 3,
       "external_id": "a115dfa5fcad8a14",
-      "comprehended": false,
-      "strand": "graphs"
-    },
-    {
-      "id": "ioi.graph.dijkstra",
-      "label": "Dijkstra's Algorithm",
-      "type": "concept",
-      "description": "Shortest paths in weighted graphs with non-negative edges",
-      "grade_range": [
-        "Olympiad"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "ioi.graph",
-      "bookName": "Graph Algorithms",
-      "bookColor": "#3b82f6",
-      "bookOrder": 2,
-      "external_id": "4c04eaa101c9b714",
-      "comprehended": false,
-      "strand": "graphs"
-    },
-    {
-      "id": "ioi.graph.bellman_ford",
-      "label": "Bellman-Ford Algorithm",
-      "type": "concept",
-      "description": "Shortest paths with negative edges, negative cycle detection",
-      "grade_range": [
-        "Olympiad"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "ioi.graph",
-      "bookName": "Graph Algorithms",
-      "bookColor": "#3b82f6",
-      "bookOrder": 2,
-      "external_id": "0bb0c1b6ac9dac8a",
-      "comprehended": false,
-      "strand": "graphs"
-    },
-    {
-      "id": "ioi.graph.mst",
-      "label": "Minimum Spanning Tree",
-      "type": "concept",
-      "description": "Kruskal's and Prim's algorithms for MST",
-      "grade_range": [
-        "Olympiad"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "ioi.graph",
-      "bookName": "Graph Algorithms",
-      "bookColor": "#3b82f6",
-      "bookOrder": 2,
-      "external_id": "e65e590ce557d32c",
       "comprehended": false,
       "strand": "graphs"
     },
@@ -274,7 +709,7 @@
       "id": "ioi.graph.toposort",
       "label": "Topological Sort",
       "type": "concept",
-      "description": "Topological ordering of DAGs, Kahn's algorithm",
+      "description": "Topological ordering of DAGs via DFS or Kahn's algorithm (BFS with in-degree)",
       "grade_range": [
         "Olympiad"
       ],
@@ -285,8 +720,108 @@
       "book": "ioi.graph",
       "bookName": "Graph Algorithms",
       "bookColor": "#3b82f6",
-      "bookOrder": 2,
+      "bookOrder": 3,
       "external_id": "c3e4a61097cfe79f",
+      "comprehended": false,
+      "strand": "graphs"
+    },
+    {
+      "id": "ioi.graph.dijkstra",
+      "label": "Dijkstra's Algorithm",
+      "type": "concept",
+      "description": "Single-source shortest paths with non-negative weights; priority queue implementation",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.graph",
+      "bookName": "Graph Algorithms",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "4c04eaa101c9b714",
+      "comprehended": false,
+      "strand": "shortest-path"
+    },
+    {
+      "id": "ioi.graph.bellman_ford",
+      "label": "Bellman-Ford / SPFA",
+      "type": "concept",
+      "description": "Single-source shortest paths with negative edges; negative cycle detection; SPFA optimization",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.graph",
+      "bookName": "Graph Algorithms",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "0bb0c1b6ac9dac8a",
+      "comprehended": false,
+      "strand": "shortest-path"
+    },
+    {
+      "id": "ioi.graph.floyd_warshall",
+      "label": "Floyd-Warshall",
+      "type": "concept",
+      "description": "All-pairs shortest paths in O(V^3); transitive closure of a graph",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.graph",
+      "bookName": "Graph Algorithms",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "049d07b1fc07df18",
+      "comprehended": false,
+      "strand": "shortest-path"
+    },
+    {
+      "id": "ioi.graph.mst_kruskal",
+      "label": "MST - Kruskal's Algorithm",
+      "type": "concept",
+      "description": "Minimum spanning tree via greedy edge selection with DSU",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.graph",
+      "bookName": "Graph Algorithms",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "ca90daabf5eeb6a4",
+      "comprehended": false,
+      "strand": "graphs"
+    },
+    {
+      "id": "ioi.graph.mst_prim",
+      "label": "MST - Prim's Algorithm",
+      "type": "concept",
+      "description": "Minimum spanning tree via priority queue vertex expansion",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.graph",
+      "bookName": "Graph Algorithms",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "8419e43da57c0206",
       "comprehended": false,
       "strand": "graphs"
     },
@@ -294,7 +829,7 @@
       "id": "ioi.graph.scc",
       "label": "Strongly Connected Components",
       "type": "concept",
-      "description": "Tarjan's and Kosaraju's algorithms for SCC decomposition",
+      "description": "SCC decomposition via Tarjan's or Kosaraju's algorithm; condensation graph",
       "grade_range": [
         "Olympiad"
       ],
@@ -305,16 +840,176 @@
       "book": "ioi.graph",
       "bookName": "Graph Algorithms",
       "bookColor": "#3b82f6",
-      "bookOrder": 2,
+      "bookOrder": 3,
       "external_id": "b88d0c1b9fe8ccfe",
       "comprehended": false,
       "strand": "graphs"
     },
     {
-      "id": "ioi.dp.dp_1d",
-      "label": "1D Dynamic Programming",
+      "id": "ioi.graph.bridges_artpoints",
+      "label": "Bridges & Articulation Points",
       "type": "concept",
-      "description": "Classic 1D DP problems: LIS, coin change, knapsack",
+      "description": "Finding bridges and articulation points via DFS; biconnected components",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.graph",
+      "bookName": "Graph Algorithms",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "173b839576709e3f",
+      "comprehended": false,
+      "strand": "graphs"
+    },
+    {
+      "id": "ioi.graph.lca",
+      "label": "Lowest Common Ancestor (LCA)",
+      "type": "concept",
+      "description": "LCA via binary lifting, Euler tour + sparse table, or HLD; O(log n) per query",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.graph",
+      "bookName": "Graph Algorithms",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "b6f1eeacc9186379",
+      "comprehended": false,
+      "strand": "graphs"
+    },
+    {
+      "id": "ioi.graph.euler_path",
+      "label": "Euler Path & Circuit",
+      "type": "concept",
+      "description": "Eulerian path/circuit existence conditions; Hierholzer's algorithm",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.graph",
+      "bookName": "Graph Algorithms",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "21fd87f71545fb5f",
+      "comprehended": false,
+      "strand": "graphs"
+    },
+    {
+      "id": "ioi.graph.bipartite",
+      "label": "Bipartite Graphs & 2-Coloring",
+      "type": "concept",
+      "description": "Bipartiteness check via BFS/DFS; 2-coloring; odd cycle detection",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.graph",
+      "bookName": "Graph Algorithms",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "c978b84a1ca54141",
+      "comprehended": false,
+      "strand": "graphs"
+    },
+    {
+      "id": "ioi.graph.tree_diameter",
+      "label": "Tree Diameter & Center",
+      "type": "concept",
+      "description": "Finding diameter via two BFS/DFS; tree center, centroid decomposition basics",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.graph",
+      "bookName": "Graph Algorithms",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "8aee8a8771c35047",
+      "comprehended": false,
+      "strand": "graphs"
+    },
+    {
+      "id": "ioi.graph.hld",
+      "label": "Heavy-Light Decomposition",
+      "type": "concept",
+      "description": "HLD for path queries on trees combined with segment trees; O(log^2 n) per query",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.graph",
+      "bookName": "Graph Algorithms",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "2ba2f8415dde6ebf",
+      "comprehended": false,
+      "strand": "graphs"
+    },
+    {
+      "id": "ioi.graph.centroid_decomp",
+      "label": "Centroid Decomposition",
+      "type": "concept",
+      "description": "Centroid decomposition of trees; divide and conquer on tree paths; O(n log n)",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.graph",
+      "bookName": "Graph Algorithms",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "f332e8ad829b856b",
+      "comprehended": false,
+      "strand": "graphs"
+    },
+    {
+      "id": "ioi.graph.twosat",
+      "label": "2-SAT",
+      "type": "concept",
+      "description": "2-SAT reduction to implication graph; solving via SCC decomposition",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.graph",
+      "bookName": "Graph Algorithms",
+      "bookColor": "#3b82f6",
+      "bookOrder": 3,
+      "external_id": "67e8ee18f9f311c2",
+      "comprehended": false,
+      "strand": "graphs"
+    },
+    {
+      "id": "ioi.dp.dp_intro",
+      "label": "DP Introduction",
+      "type": "concept",
+      "description": "Optimal substructure, overlapping subproblems, memoization vs tabulation",
       "grade_range": [
         "Olympiad"
       ],
@@ -325,7 +1020,27 @@
       "book": "ioi.dp",
       "bookName": "Dynamic Programming",
       "bookColor": "#f97316",
-      "bookOrder": 3,
+      "bookOrder": 4,
+      "external_id": "e13b375ae3b92e7d",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "ioi.dp.dp_1d",
+      "label": "1D Dynamic Programming",
+      "type": "concept",
+      "description": "Fibonacci, coin change, staircase; single-parameter state DP",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.dp",
+      "bookName": "Dynamic Programming",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
       "external_id": "e424ab9bd560b282",
       "comprehended": false,
       "strand": "dp"
@@ -334,7 +1049,7 @@
       "id": "ioi.dp.dp_2d",
       "label": "2D Dynamic Programming",
       "type": "concept",
-      "description": "Grid DP, edit distance, interval DP",
+      "description": "Grid DP, edit distance, two-parameter state DP, matrix path problems",
       "grade_range": [
         "Olympiad"
       ],
@@ -345,8 +1060,108 @@
       "book": "ioi.dp",
       "bookName": "Dynamic Programming",
       "bookColor": "#f97316",
-      "bookOrder": 3,
+      "bookOrder": 4,
       "external_id": "c1ea2fdcac185997",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "ioi.dp.interval_dp",
+      "label": "Interval DP",
+      "type": "concept",
+      "description": "DP on intervals/ranges; matrix chain multiplication, optimal BST, balloon burst",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.dp",
+      "bookName": "Dynamic Programming",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "31730113dd9a2c03",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "ioi.dp.knapsack",
+      "label": "Knapsack Variants",
+      "type": "concept",
+      "description": "0/1 knapsack, unbounded knapsack, bounded knapsack; subset sum",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.dp",
+      "bookName": "Dynamic Programming",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "d130aad5d806f4ea",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "ioi.dp.lis",
+      "label": "Longest Increasing Subsequence",
+      "type": "concept",
+      "description": "LIS in O(n log n) via patience sorting / binary search; variations and counting",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.dp",
+      "bookName": "Dynamic Programming",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "5c3a5cc7f8783830",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "ioi.dp.lcs",
+      "label": "Longest Common Subsequence",
+      "type": "concept",
+      "description": "LCS via 2D DP; reconstructing the subsequence; space optimization",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.dp",
+      "bookName": "Dynamic Programming",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "dfe18f090ed636b0",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "ioi.dp.dp_dag",
+      "label": "DP on DAGs",
+      "type": "concept",
+      "description": "DP combined with topological sort on directed acyclic graphs; longest path in DAG",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.dp",
+      "bookName": "Dynamic Programming",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "d09eaf643c1450ba",
       "comprehended": false,
       "strand": "dp"
     },
@@ -354,7 +1169,7 @@
       "id": "ioi.dp.dp_trees",
       "label": "DP on Trees",
       "type": "concept",
-      "description": "Tree DP, rerooting technique",
+      "description": "Tree DP with subtree states; rerooting technique for computing answers for all roots",
       "grade_range": [
         "Olympiad"
       ],
@@ -365,7 +1180,7 @@
       "book": "ioi.dp",
       "bookName": "Dynamic Programming",
       "bookColor": "#f97316",
-      "bookOrder": 3,
+      "bookOrder": 4,
       "external_id": "e04b4ad3e657345c",
       "comprehended": false,
       "strand": "dp"
@@ -374,7 +1189,7 @@
       "id": "ioi.dp.bitmask_dp",
       "label": "Bitmask DP",
       "type": "concept",
-      "description": "DP over subsets using bitmask representation",
+      "description": "DP over subsets using bitmask representation; TSP, assignment problem, SOS DP",
       "grade_range": [
         "Olympiad"
       ],
@@ -385,7 +1200,7 @@
       "book": "ioi.dp",
       "bookName": "Dynamic Programming",
       "bookColor": "#f97316",
-      "bookOrder": 3,
+      "bookOrder": 4,
       "external_id": "a21e61515049a2dc",
       "comprehended": false,
       "strand": "dp"
@@ -394,7 +1209,7 @@
       "id": "ioi.dp.digit_dp",
       "label": "Digit DP",
       "type": "concept",
-      "description": "DP on digits of a number for counting problems",
+      "description": "DP on digits for counting numbers with constraints in a range [L, R]",
       "grade_range": [
         "Olympiad"
       ],
@@ -405,16 +1220,16 @@
       "book": "ioi.dp",
       "bookName": "Dynamic Programming",
       "bookColor": "#f97316",
-      "bookOrder": 3,
+      "bookOrder": 4,
       "external_id": "914436254756b8a1",
       "comprehended": false,
       "strand": "dp"
     },
     {
-      "id": "ioi.ds.segment_tree",
-      "label": "Segment Tree",
+      "id": "ioi.dp.probability_dp",
+      "label": "Probability & Expected Value DP",
       "type": "concept",
-      "description": "Segment tree with lazy propagation for range queries and updates",
+      "description": "DP for computing probabilities and expected values; linearity of expectation",
       "grade_range": [
         "Olympiad"
       ],
@@ -422,19 +1237,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "ioi.ds",
-      "bookName": "Advanced Data Structures",
-      "bookColor": "#8b5cf6",
+      "book": "ioi.dp",
+      "bookName": "Dynamic Programming",
+      "bookColor": "#f97316",
       "bookOrder": 4,
-      "external_id": "56dbfe73c1eac066",
+      "external_id": "d1b671145421cb4f",
       "comprehended": false,
-      "strand": "data-structures"
+      "strand": "dp"
     },
     {
-      "id": "ioi.ds.fenwick",
-      "label": "Fenwick Tree (BIT)",
+      "id": "ioi.dp.profile_dp",
+      "label": "Profile DP (Broken Profile)",
       "type": "concept",
-      "description": "Binary indexed tree for prefix sum queries and point updates",
+      "description": "DP on grid with bitmask profile; tiling problems, plug DP",
       "grade_range": [
         "Olympiad"
       ],
@@ -442,19 +1257,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "ioi.ds",
-      "bookName": "Advanced Data Structures",
-      "bookColor": "#8b5cf6",
+      "book": "ioi.dp",
+      "bookName": "Dynamic Programming",
+      "bookColor": "#f97316",
       "bookOrder": 4,
-      "external_id": "0e9cff338e895537",
+      "external_id": "391df152d3fae601",
       "comprehended": false,
-      "strand": "data-structures"
+      "strand": "dp"
     },
     {
-      "id": "ioi.ds.sparse_table",
-      "label": "Sparse Table",
+      "id": "ioi.dp.cht",
+      "label": "Convex Hull Trick",
       "type": "concept",
-      "description": "Sparse table for static range minimum/maximum queries",
+      "description": "Optimizing DP recurrences of the form dp[i] = min(dp[j] + b[j]*a[i]); Li Chao tree",
       "grade_range": [
         "Olympiad"
       ],
@@ -462,19 +1277,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "ioi.ds",
-      "bookName": "Advanced Data Structures",
-      "bookColor": "#8b5cf6",
+      "book": "ioi.dp",
+      "bookName": "Dynamic Programming",
+      "bookColor": "#f97316",
       "bookOrder": 4,
-      "external_id": "0967c52e92a1e536",
+      "external_id": "3f496bfde9d337bc",
       "comprehended": false,
-      "strand": "data-structures"
+      "strand": "dp-optimization"
     },
     {
-      "id": "ioi.ds.dsu",
-      "label": "Union-Find (DSU)",
+      "id": "ioi.dp.dnc_optimization",
+      "label": "Divide & Conquer DP Optimization",
       "type": "concept",
-      "description": "Disjoint set union with path compression and union by rank",
+      "description": "Optimizing DP when the optimal split point is monotone; reducing O(n^3) to O(n^2 log n)",
       "grade_range": [
         "Olympiad"
       ],
@@ -482,19 +1297,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "ioi.ds",
-      "bookName": "Advanced Data Structures",
-      "bookColor": "#8b5cf6",
+      "book": "ioi.dp",
+      "bookName": "Dynamic Programming",
+      "bookColor": "#f97316",
       "bookOrder": 4,
-      "external_id": "a265bfc75a2f170b",
+      "external_id": "e580adeae3616b94",
       "comprehended": false,
-      "strand": "data-structures"
+      "strand": "dp-optimization"
     },
     {
-      "id": "ioi.ds.balanced_bst",
-      "label": "Balanced BST",
+      "id": "ioi.dp.knuth_optimization",
+      "label": "Knuth's Optimization",
       "type": "concept",
-      "description": "AVL trees, red-black trees, treaps, splay trees",
+      "description": "Optimizing interval DP when cost satisfies quadrangle inequality; O(n^2) from O(n^3)",
       "grade_range": [
         "Olympiad"
       ],
@@ -502,39 +1317,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "ioi.ds",
-      "bookName": "Advanced Data Structures",
-      "bookColor": "#8b5cf6",
+      "book": "ioi.dp",
+      "bookName": "Dynamic Programming",
+      "bookColor": "#f97316",
       "bookOrder": 4,
-      "external_id": "c290333600d42367",
+      "external_id": "2484cbe9bd36d381",
       "comprehended": false,
-      "strand": "data-structures"
-    },
-    {
-      "id": "ioi.ds.persistent",
-      "label": "Persistent Data Structures",
-      "type": "concept",
-      "description": "Persistent segment tree and persistent arrays",
-      "grade_range": [
-        "Olympiad"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "ioi.ds",
-      "bookName": "Advanced Data Structures",
-      "bookColor": "#8b5cf6",
-      "bookOrder": 4,
-      "external_id": "dfc8488c6915135f",
-      "comprehended": false,
-      "strand": "data-structures"
+      "strand": "dp-optimization"
     },
     {
       "id": "ioi.adv.kmp",
-      "label": "KMP & Z-function",
+      "label": "KMP Algorithm",
       "type": "concept",
-      "description": "String matching: Knuth-Morris-Pratt and Z-function algorithms",
+      "description": "Knuth-Morris-Pratt pattern matching; failure function; O(n+m) string search",
       "grade_range": [
         "Olympiad"
       ],
@@ -548,13 +1343,53 @@
       "bookOrder": 5,
       "external_id": "631c278841bc104c",
       "comprehended": false,
-      "strand": "advanced"
+      "strand": "strings"
+    },
+    {
+      "id": "ioi.adv.z_function",
+      "label": "Z-Function",
+      "type": "concept",
+      "description": "Z-function for pattern matching and string periodicity; O(n) computation",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "59ced45d03f8304a",
+      "comprehended": false,
+      "strand": "strings"
+    },
+    {
+      "id": "ioi.adv.string_hashing",
+      "label": "String Hashing (Rabin-Karp)",
+      "type": "concept",
+      "description": "Polynomial rolling hash for substring comparison; Rabin-Karp pattern matching",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "94714d99d83e46fc",
+      "comprehended": false,
+      "strand": "strings"
     },
     {
       "id": "ioi.adv.suffix_array",
-      "label": "Suffix Array",
+      "label": "Suffix Array & LCP",
       "type": "concept",
-      "description": "Suffix array construction and LCP array",
+      "description": "Suffix array construction in O(n log n); LCP array; substring search and counting",
       "grade_range": [
         "Olympiad"
       ],
@@ -568,13 +1403,53 @@
       "bookOrder": 5,
       "external_id": "a1161edc46901c3e",
       "comprehended": false,
-      "strand": "advanced"
+      "strand": "strings"
+    },
+    {
+      "id": "ioi.adv.aho_corasick",
+      "label": "Aho-Corasick",
+      "type": "concept",
+      "description": "Multi-pattern string matching automaton; dictionary matching in O(n + m + z)",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "42630c5d222475eb",
+      "comprehended": false,
+      "strand": "strings"
+    },
+    {
+      "id": "ioi.adv.manacher",
+      "label": "Manacher's Algorithm",
+      "type": "concept",
+      "description": "Finding all palindromic substrings in O(n); longest palindromic substring",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "d2ce9cdc385d7aa9",
+      "comprehended": false,
+      "strand": "strings"
     },
     {
       "id": "ioi.adv.convex_hull",
       "label": "Convex Hull",
       "type": "concept",
-      "description": "Convex hull algorithms, sweep line techniques",
+      "description": "Convex hull algorithms: Graham scan, Andrew's monotone chain; O(n log n)",
       "grade_range": [
         "Olympiad"
       ],
@@ -588,13 +1463,13 @@
       "bookOrder": 5,
       "external_id": "2c10bbb3012fb286",
       "comprehended": false,
-      "strand": "advanced"
+      "strand": "geometry"
     },
     {
       "id": "ioi.adv.sweep_line",
       "label": "Sweep Line",
       "type": "concept",
-      "description": "Sweep line algorithms for computational geometry problems",
+      "description": "Sweep line technique for geometry problems; closest pair, rectangle union area",
       "grade_range": [
         "Olympiad"
       ],
@@ -608,13 +1483,193 @@
       "bookOrder": 5,
       "external_id": "65d4c485ae614533",
       "comprehended": false,
-      "strand": "advanced"
+      "strand": "geometry"
+    },
+    {
+      "id": "ioi.adv.point_in_polygon",
+      "label": "Point in Polygon",
+      "type": "concept",
+      "description": "Ray casting, winding number; point containment tests for simple polygons",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "3f4b21b36f9d664d",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "ioi.adv.geometry_basics",
+      "label": "Geometry Primitives",
+      "type": "concept",
+      "description": "Cross product, dot product, line intersection, segment intersection, polygon area",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "9e7cca89d188ba25",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "ioi.adv.modular_arithmetic",
+      "label": "Modular Arithmetic",
+      "type": "concept",
+      "description": "Modular addition, multiplication, exponentiation; modular inverse via Fermat/extended GCD",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "4f95069ace986a2d",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "ioi.adv.gcd_extended",
+      "label": "GCD & Extended Euclidean",
+      "type": "concept",
+      "description": "Euclidean algorithm, extended GCD, solving ax + by = gcd(a,b)",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "76d08d5d52a00549",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "ioi.adv.sieve",
+      "label": "Sieve of Eratosthenes",
+      "type": "concept",
+      "description": "Prime sieve, linear sieve, smallest prime factor; prime factorization",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "ba478348a70abcf0",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "ioi.adv.crt",
+      "label": "Chinese Remainder Theorem",
+      "type": "concept",
+      "description": "CRT for solving systems of modular equations; coprime and general case",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "7b8f6397b7ea61d3",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "ioi.adv.euler_totient",
+      "label": "Euler's Totient Function",
+      "type": "concept",
+      "description": "Euler's phi function; computing totient; Euler's theorem for modular exponentiation",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "f6656785d560c7f9",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "ioi.adv.combinatorics",
+      "label": "Combinatorics",
+      "type": "concept",
+      "description": "Binomial coefficients, Pascal's triangle, Catalan numbers, inclusion-exclusion",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "493be80f8abe4703",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "ioi.adv.matrix_expo",
+      "label": "Matrix Exponentiation",
+      "type": "concept",
+      "description": "Matrix power in O(n^3 log k) for linear recurrences; Fibonacci, graph path counting",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "9fb56d36ab66c8b4",
+      "comprehended": false,
+      "strand": "number-theory"
     },
     {
       "id": "ioi.adv.network_flow",
-      "label": "Network Flow",
+      "label": "Max Flow (Ford-Fulkerson, Dinic)",
       "type": "concept",
-      "description": "Max flow, min cut, Ford-Fulkerson, Dinic's algorithm",
+      "description": "Maximum flow: Ford-Fulkerson method, Edmonds-Karp BFS, Dinic's O(V^2 E) algorithm",
       "grade_range": [
         "Olympiad"
       ],
@@ -628,13 +1683,133 @@
       "bookOrder": 5,
       "external_id": "f54f51ecf4e3d948",
       "comprehended": false,
+      "strand": "flow"
+    },
+    {
+      "id": "ioi.adv.min_cut",
+      "label": "Min Cut",
+      "type": "concept",
+      "description": "Max-flow min-cut theorem; finding minimum cut from residual graph",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "b963159bb70fc7d7",
+      "comprehended": false,
+      "strand": "flow"
+    },
+    {
+      "id": "ioi.adv.bipartite_matching",
+      "label": "Bipartite Matching",
+      "type": "concept",
+      "description": "Maximum bipartite matching via Hopcroft-Karp or Kuhn's algorithm; Konig's theorem",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "d9f2819f32a22cd6",
+      "comprehended": false,
+      "strand": "flow"
+    },
+    {
+      "id": "ioi.adv.min_cost_flow",
+      "label": "Min-Cost Max-Flow",
+      "type": "concept",
+      "description": "Minimum cost maximum flow; successive shortest paths with SPFA/Bellman-Ford",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "1a5b95e2b5dae05d",
+      "comprehended": false,
+      "strand": "flow"
+    },
+    {
+      "id": "ioi.adv.game_theory",
+      "label": "Game Theory (Sprague-Grundy)",
+      "type": "concept",
+      "description": "Nim, Sprague-Grundy theorem, Grundy values, composite games with XOR",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "5c959ca9d2b9f5f2",
+      "comprehended": false,
+      "strand": "advanced"
+    },
+    {
+      "id": "ioi.adv.sqrt_decomp",
+      "label": "Sqrt Decomposition",
+      "type": "concept",
+      "description": "Block decomposition for range queries; O(sqrt(n)) per query; block updates",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "77e9e9852c4c736b",
+      "comprehended": false,
+      "strand": "advanced"
+    },
+    {
+      "id": "ioi.adv.mos_algorithm",
+      "label": "Mo's Algorithm",
+      "type": "concept",
+      "description": "Offline range query processing in O((n + q) sqrt(n)); Mo's algorithm with updates",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "9352b4ccf80c17b3",
+      "comprehended": false,
       "strand": "advanced"
     },
     {
       "id": "ioi.adv.fft",
-      "label": "FFT",
+      "label": "FFT / NTT",
       "type": "concept",
-      "description": "Fast Fourier Transform for polynomial multiplication",
+      "description": "Fast Fourier Transform for polynomial multiplication in O(n log n); Number Theoretic Transform",
       "grade_range": [
         "Olympiad"
       ],
@@ -651,10 +1826,10 @@
       "strand": "advanced"
     },
     {
-      "id": "ioi.fund.greedy",
-      "label": "Greedy Algorithms",
+      "id": "ioi.adv.offline_techniques",
+      "label": "Offline Query Techniques",
       "type": "concept",
-      "description": "Greedy strategies and exchange arguments",
+      "description": "Query sorting, CDQ divide and conquer, parallel binary search, offline deletions",
       "grade_range": [
         "Olympiad"
       ],
@@ -662,59 +1837,224 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "ioi.fund",
-      "bookName": "Fundamentals",
-      "bookColor": "#22c55e",
-      "bookOrder": 1,
-      "external_id": "7442d327ebe3ca56",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "ee672c6def4f1729",
       "comprehended": false,
-      "strand": "fundamentals"
+      "strand": "advanced"
+    },
+    {
+      "id": "ioi.adv.interactive",
+      "label": "Interactive Problems",
+      "type": "concept",
+      "description": "Adaptive strategies, query budgets, binary search in interactive settings",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "d0c8f3821becf9fc",
+      "comprehended": false,
+      "strand": "advanced"
+    },
+    {
+      "id": "ioi.adv.small_to_large",
+      "label": "Small-to-Large Merging",
+      "type": "concept",
+      "description": "DSU on tree (small-to-large merging); merging sets efficiently in O(n log n) total",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ioi.adv",
+      "bookName": "Advanced Algorithms",
+      "bookColor": "#ef4444",
+      "bookOrder": 5,
+      "external_id": "9e00bd26ba997a8b",
+      "comprehended": false,
+      "strand": "advanced"
     }
   ],
   "edges": [
     {
       "source": "ioi.fund.time_complexity",
-      "target": "ioi.fund.sorting",
+      "target": "ioi.fund.arrays_strings",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ioi.fund.sorting",
+      "source": "ioi.fund.arrays_strings",
+      "target": "ioi.fund.recursion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.time_complexity",
+      "target": "ioi.fund.sorting_comparison",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.arrays_strings",
+      "target": "ioi.fund.sorting_comparison",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.sorting_comparison",
+      "target": "ioi.fund.sorting_linear",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.sorting_comparison",
       "target": "ioi.fund.binary_search",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ioi.fund.sorting",
+      "source": "ioi.fund.binary_search",
+      "target": "ioi.fund.binary_search_answer",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.sorting_comparison",
       "target": "ioi.fund.two_pointers",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ioi.fund.sorting",
-      "target": "ioi.fund.greedy",
+      "source": "ioi.fund.two_pointers",
+      "target": "ioi.fund.sliding_window",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ioi.fund.two_pointers",
+      "source": "ioi.fund.arrays_strings",
       "target": "ioi.fund.prefix_sums",
       "relation": "prerequisite_for"
     },
     {
+      "source": "ioi.fund.prefix_sums",
+      "target": "ioi.fund.difference_arrays",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.sorting_comparison",
+      "target": "ioi.fund.greedy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.arrays_strings",
+      "target": "ioi.fund.bit_manipulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.arrays_strings",
+      "target": "ioi.ds.stacks_queues",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.arrays_strings",
+      "target": "ioi.ds.linked_lists",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.arrays_strings",
+      "target": "ioi.ds.hash_tables",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.sorting_comparison",
+      "target": "ioi.ds.binary_heap",
+      "relation": "prerequisite_for"
+    },
+    {
       "source": "ioi.fund.binary_search",
+      "target": "ioi.ds.bst",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.ds.bst",
+      "target": "ioi.ds.balanced_bst",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.ds.linked_lists",
+      "target": "ioi.ds.dsu",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.prefix_sums",
+      "target": "ioi.ds.fenwick",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.bit_manipulation",
+      "target": "ioi.ds.fenwick",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.recursion",
+      "target": "ioi.ds.segment_tree",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.ds.fenwick",
+      "target": "ioi.ds.segment_tree",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.ds.segment_tree",
+      "target": "ioi.ds.segment_tree_lazy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.prefix_sums",
+      "target": "ioi.ds.sparse_table",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.arrays_strings",
+      "target": "ioi.ds.trie",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.ds.segment_tree",
+      "target": "ioi.ds.persistent",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.ds.balanced_bst",
+      "target": "ioi.ds.treap",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.ds.binary_heap",
+      "target": "ioi.ds.treap",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.arrays_strings",
+      "target": "ioi.graph.representation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.representation",
       "target": "ioi.graph.bfs",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ioi.fund.binary_search",
+      "source": "ioi.graph.representation",
       "target": "ioi.graph.dfs",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ioi.graph.bfs",
-      "target": "ioi.graph.dijkstra",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "ioi.graph.bfs",
-      "target": "ioi.graph.bellman_ford",
+      "source": "ioi.fund.recursion",
+      "target": "ioi.graph.dfs",
       "relation": "prerequisite_for"
     },
     {
@@ -723,17 +2063,137 @@
       "relation": "prerequisite_for"
     },
     {
+      "source": "ioi.graph.bfs",
+      "target": "ioi.graph.toposort",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.bfs",
+      "target": "ioi.graph.dijkstra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.ds.binary_heap",
+      "target": "ioi.graph.dijkstra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.dijkstra",
+      "target": "ioi.graph.bellman_ford",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.bellman_ford",
+      "target": "ioi.graph.floyd_warshall",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.greedy",
+      "target": "ioi.graph.mst_kruskal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.ds.dsu",
+      "target": "ioi.graph.mst_kruskal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.sorting_comparison",
+      "target": "ioi.graph.mst_kruskal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.dijkstra",
+      "target": "ioi.graph.mst_prim",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.greedy",
+      "target": "ioi.graph.mst_prim",
+      "relation": "prerequisite_for"
+    },
+    {
       "source": "ioi.graph.dfs",
       "target": "ioi.graph.scc",
       "relation": "prerequisite_for"
     },
     {
+      "source": "ioi.graph.toposort",
+      "target": "ioi.graph.scc",
+      "relation": "prerequisite_for"
+    },
+    {
       "source": "ioi.graph.dfs",
-      "target": "ioi.graph.mst",
+      "target": "ioi.graph.bridges_artpoints",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.dfs",
+      "target": "ioi.graph.lca",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.ds.sparse_table",
+      "target": "ioi.graph.lca",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.dfs",
+      "target": "ioi.graph.euler_path",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.bfs",
+      "target": "ioi.graph.bipartite",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.dfs",
+      "target": "ioi.graph.tree_diameter",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.bfs",
+      "target": "ioi.graph.tree_diameter",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.lca",
+      "target": "ioi.graph.hld",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.ds.segment_tree",
+      "target": "ioi.graph.hld",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.tree_diameter",
+      "target": "ioi.graph.centroid_decomp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.recursion",
+      "target": "ioi.graph.centroid_decomp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.scc",
+      "target": "ioi.graph.twosat",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.recursion",
+      "target": "ioi.dp.dp_intro",
       "relation": "prerequisite_for"
     },
     {
       "source": "ioi.fund.prefix_sums",
+      "target": "ioi.dp.dp_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.dp.dp_intro",
       "target": "ioi.dp.dp_1d",
       "relation": "prerequisite_for"
     },
@@ -744,12 +2204,37 @@
     },
     {
       "source": "ioi.dp.dp_2d",
-      "target": "ioi.dp.bitmask_dp",
+      "target": "ioi.dp.interval_dp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.dp.dp_1d",
+      "target": "ioi.dp.knapsack",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.dp.dp_1d",
+      "target": "ioi.dp.lis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.binary_search",
+      "target": "ioi.dp.lis",
       "relation": "prerequisite_for"
     },
     {
       "source": "ioi.dp.dp_2d",
-      "target": "ioi.dp.digit_dp",
+      "target": "ioi.dp.lcs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.toposort",
+      "target": "ioi.dp.dp_dag",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.dp.dp_1d",
+      "target": "ioi.dp.dp_dag",
       "relation": "prerequisite_for"
     },
     {
@@ -763,38 +2248,73 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "ioi.fund.prefix_sums",
-      "target": "ioi.ds.fenwick",
+      "source": "ioi.dp.dp_2d",
+      "target": "ioi.dp.bitmask_dp",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ioi.ds.fenwick",
-      "target": "ioi.ds.segment_tree",
+      "source": "ioi.fund.bit_manipulation",
+      "target": "ioi.dp.bitmask_dp",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ioi.fund.prefix_sums",
-      "target": "ioi.ds.sparse_table",
+      "source": "ioi.dp.dp_2d",
+      "target": "ioi.dp.digit_dp",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ioi.graph.mst",
-      "target": "ioi.ds.dsu",
+      "source": "ioi.dp.dp_1d",
+      "target": "ioi.dp.probability_dp",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ioi.ds.segment_tree",
-      "target": "ioi.ds.balanced_bst",
+      "source": "ioi.dp.bitmask_dp",
+      "target": "ioi.dp.profile_dp",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ioi.ds.segment_tree",
-      "target": "ioi.ds.persistent",
+      "source": "ioi.dp.dp_2d",
+      "target": "ioi.dp.cht",
       "relation": "prerequisite_for"
     },
     {
       "source": "ioi.fund.binary_search",
+      "target": "ioi.dp.cht",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.dp.interval_dp",
+      "target": "ioi.dp.dnc_optimization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.dp.cht",
+      "target": "ioi.dp.dnc_optimization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.dp.interval_dp",
+      "target": "ioi.dp.knuth_optimization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.arrays_strings",
       "target": "ioi.adv.kmp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.arrays_strings",
+      "target": "ioi.adv.z_function",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.ds.hash_tables",
+      "target": "ioi.adv.string_hashing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.arrays_strings",
+      "target": "ioi.adv.string_hashing",
       "relation": "prerequisite_for"
     },
     {
@@ -803,13 +2323,103 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "ioi.fund.sorting",
+      "source": "ioi.fund.sorting_comparison",
+      "target": "ioi.adv.suffix_array",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.adv.kmp",
+      "target": "ioi.adv.aho_corasick",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.ds.trie",
+      "target": "ioi.adv.aho_corasick",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.adv.z_function",
+      "target": "ioi.adv.manacher",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.sorting_comparison",
+      "target": "ioi.adv.geometry_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.adv.geometry_basics",
       "target": "ioi.adv.convex_hull",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ioi.adv.convex_hull",
+      "source": "ioi.adv.geometry_basics",
       "target": "ioi.adv.sweep_line",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.sorting_comparison",
+      "target": "ioi.adv.sweep_line",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.adv.geometry_basics",
+      "target": "ioi.adv.point_in_polygon",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.arrays_strings",
+      "target": "ioi.adv.modular_arithmetic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.adv.modular_arithmetic",
+      "target": "ioi.adv.gcd_extended",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.adv.modular_arithmetic",
+      "target": "ioi.adv.sieve",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.adv.gcd_extended",
+      "target": "ioi.adv.crt",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.adv.sieve",
+      "target": "ioi.adv.euler_totient",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.adv.modular_arithmetic",
+      "target": "ioi.adv.euler_totient",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.adv.modular_arithmetic",
+      "target": "ioi.adv.combinatorics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.dp.dp_1d",
+      "target": "ioi.adv.combinatorics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.adv.modular_arithmetic",
+      "target": "ioi.adv.matrix_expo",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.dp.dp_1d",
+      "target": "ioi.adv.matrix_expo",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.bfs",
+      "target": "ioi.adv.network_flow",
       "relation": "prerequisite_for"
     },
     {
@@ -818,8 +2428,88 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "ioi.ds.segment_tree",
+      "source": "ioi.adv.network_flow",
+      "target": "ioi.adv.min_cut",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.adv.network_flow",
+      "target": "ioi.adv.bipartite_matching",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.bipartite",
+      "target": "ioi.adv.bipartite_matching",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.adv.network_flow",
+      "target": "ioi.adv.min_cost_flow",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.bellman_ford",
+      "target": "ioi.adv.min_cost_flow",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.dp.dp_1d",
+      "target": "ioi.adv.game_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.bit_manipulation",
+      "target": "ioi.adv.game_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.prefix_sums",
+      "target": "ioi.adv.sqrt_decomp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.adv.sqrt_decomp",
+      "target": "ioi.adv.mos_algorithm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.sorting_comparison",
+      "target": "ioi.adv.mos_algorithm",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.adv.modular_arithmetic",
       "target": "ioi.adv.fft",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.recursion",
+      "target": "ioi.adv.fft",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.sorting_comparison",
+      "target": "ioi.adv.offline_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.ds.fenwick",
+      "target": "ioi.adv.offline_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.fund.binary_search",
+      "target": "ioi.adv.interactive",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.ds.dsu",
+      "target": "ioi.adv.small_to_large",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ioi.graph.dfs",
+      "target": "ioi.adv.small_to_large",
       "relation": "prerequisite_for"
     }
   ]

@@ -3,12 +3,12 @@
     "domain": "mathematics",
     "curriculum": "IMO (International Mathematical Olympiad)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "IMO topics with prerequisite ordering, colored by branch",
     "sources": [
       "International Mathematical Olympiad Syllabus"
     ],
-    "last_updated": "2026-03-27"
+    "last_updated": "2026-03-28"
   },
   "books": [
     {
@@ -63,7 +63,7 @@
       "id": "imo.alg.inequalities_amgm",
       "label": "AM-GM Inequality",
       "type": "concept",
-      "description": "Arithmetic Mean–Geometric Mean inequality and its applications",
+      "description": "Arithmetic Mean–Geometric Mean inequality: for non-negative reals, AM >= GM. Weighted AM-GM, applications to optimization and bounding expressions.",
       "grade_range": [
         "Olympiad"
       ],
@@ -83,7 +83,7 @@
       "id": "imo.alg.inequalities_cauchy",
       "label": "Cauchy-Schwarz Inequality",
       "type": "concept",
-      "description": "Cauchy-Schwarz inequality and related techniques",
+      "description": "Cauchy-Schwarz inequality in Engel (Titu) form and standard form. Applications to bounding sums and proving inequalities.",
       "grade_range": [
         "Olympiad"
       ],
@@ -100,10 +100,10 @@
       "strand": "algebra"
     },
     {
-      "id": "imo.alg.advanced_inequalities",
-      "label": "Advanced Inequalities",
+      "id": "imo.alg.power_mean",
+      "label": "Power Mean Inequality",
       "type": "concept",
-      "description": "Schur, SOS, Jensen and other advanced inequality techniques",
+      "description": "Generalized mean inequality: M_r <= M_s for r <= s. QM-AM-GM-HM chain. Applications to homogeneous inequalities.",
       "grade_range": [
         "Olympiad"
       ],
@@ -115,15 +115,15 @@
       "bookName": "Algebra",
       "bookColor": "#ef4444",
       "bookOrder": 1,
-      "external_id": "932121d7784bc451",
+      "external_id": "fc8f67dbac187e5f",
       "comprehended": false,
       "strand": "algebra"
     },
     {
-      "id": "imo.alg.polynomials",
-      "label": "Polynomials",
+      "id": "imo.alg.inequalities_rearrangement",
+      "label": "Rearrangement & Chebyshev",
       "type": "concept",
-      "description": "Roots, factorization, symmetric polynomials, Vieta's formulas",
+      "description": "Rearrangement inequality: sum is maximized when sequences are similarly sorted. Chebyshev's sum inequality as corollary.",
       "grade_range": [
         "Olympiad"
       ],
@@ -135,15 +135,15 @@
       "bookName": "Algebra",
       "bookColor": "#ef4444",
       "bookOrder": 1,
-      "external_id": "845ec7be85b2b0d1",
+      "external_id": "62a231c774c20055",
       "comprehended": false,
       "strand": "algebra"
     },
     {
-      "id": "imo.alg.functional_equations",
-      "label": "Functional Equations",
+      "id": "imo.alg.schur",
+      "label": "Schur's Inequality",
       "type": "concept",
-      "description": "Solving functional equations with substitution, injectivity, Cauchy's equation",
+      "description": "Schur's inequality and its generalized forms. Applications to symmetric inequalities in three or more variables.",
       "grade_range": [
         "Olympiad"
       ],
@@ -155,15 +155,15 @@
       "bookName": "Algebra",
       "bookColor": "#ef4444",
       "bookOrder": 1,
-      "external_id": "1a176fb26cf7f0ef",
+      "external_id": "e4bbcb57e28551eb",
       "comprehended": false,
       "strand": "algebra"
     },
     {
-      "id": "imo.alg.sequences",
-      "label": "Sequences & Series",
+      "id": "imo.alg.sos",
+      "label": "SOS (Sum of Squares)",
       "type": "concept",
-      "description": "Recursive sequences, generating functions, convergence",
+      "description": "Sum of Squares decomposition method for proving inequalities. Systematic approach to writing expressions as sums of squares.",
       "grade_range": [
         "Olympiad"
       ],
@@ -175,15 +175,15 @@
       "bookName": "Algebra",
       "bookColor": "#ef4444",
       "bookOrder": 1,
-      "external_id": "e964bd1ab49dc1fe",
+      "external_id": "168fca0a8c9cb73a",
       "comprehended": false,
       "strand": "algebra"
     },
     {
-      "id": "imo.comb.counting",
-      "label": "Counting Principles",
+      "id": "imo.alg.jensen",
+      "label": "Jensen's Inequality",
       "type": "concept",
-      "description": "Permutations, combinations, inclusion-exclusion, double counting",
+      "description": "Jensen's inequality for convex and concave functions. Applications to inequalities involving trigonometric, logarithmic, and power functions.",
       "grade_range": [
         "Olympiad"
       ],
@@ -191,19 +191,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "imo.comb",
-      "bookName": "Combinatorics",
-      "bookColor": "#f97316",
-      "bookOrder": 2,
-      "external_id": "543af98426553f41",
+      "book": "imo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "530fdafa9f8f7a28",
       "comprehended": false,
-      "strand": "combinatorics"
+      "strand": "algebra"
     },
     {
-      "id": "imo.comb.pigeonhole",
-      "label": "Pigeonhole Principle",
+      "id": "imo.alg.tangent_line_trick",
+      "label": "Tangent Line Trick",
       "type": "concept",
-      "description": "Pigeonhole principle and its generalizations",
+      "description": "Using supporting lines of convex/concave functions to establish inequalities. Combining with Jensen's and smoothing/mixing variables.",
       "grade_range": [
         "Olympiad"
       ],
@@ -211,19 +211,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "imo.comb",
-      "bookName": "Combinatorics",
-      "bookColor": "#f97316",
-      "bookOrder": 2,
-      "external_id": "da44365e061a4404",
+      "book": "imo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "b1f9566ae2b83310",
       "comprehended": false,
-      "strand": "combinatorics"
+      "strand": "algebra"
     },
     {
-      "id": "imo.comb.graph_theory",
-      "label": "Graph Theory",
+      "id": "imo.alg.fe_cauchy",
+      "label": "Cauchy Functional Equation",
       "type": "concept",
-      "description": "Graphs, trees, coloring, Ramsey theory, extremal graph theory",
+      "description": "Cauchy's functional equation f(x+y)=f(x)+f(y) and its variants. Continuity conditions, pathological solutions, standard substitutions.",
       "grade_range": [
         "Olympiad"
       ],
@@ -231,19 +231,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "imo.comb",
-      "bookName": "Combinatorics",
-      "bookColor": "#f97316",
-      "bookOrder": 2,
-      "external_id": "8414954acce97e95",
+      "book": "imo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "8151ae8fbabf78cd",
       "comprehended": false,
-      "strand": "combinatorics"
+      "strand": "algebra"
     },
     {
-      "id": "imo.comb.comb_geometry",
-      "label": "Combinatorial Geometry",
+      "id": "imo.alg.fe_techniques",
+      "label": "Functional Equation Techniques",
       "type": "concept",
-      "description": "Convex sets, lattice points, tiling, geometric combinatorics",
+      "description": "Injectivity/surjectivity arguments, substitution strategies, fixed points, monotonicity. Solving competition-style functional equations.",
       "grade_range": [
         "Olympiad"
       ],
@@ -251,19 +251,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "imo.comb",
-      "bookName": "Combinatorics",
-      "bookColor": "#f97316",
-      "bookOrder": 2,
-      "external_id": "8504fd1533d51beb",
+      "book": "imo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "f5aab0a9e8e9cbfe",
       "comprehended": false,
-      "strand": "combinatorics"
+      "strand": "algebra"
     },
     {
-      "id": "imo.comb.probabilistic",
-      "label": "Probabilistic Method",
+      "id": "imo.alg.fe_advanced",
+      "label": "Advanced Functional Equations",
       "type": "concept",
-      "description": "Probabilistic arguments in combinatorics, expectation method",
+      "description": "Functional equations over integers, functional inequalities, equations with additional constraints. IMO P6-level functional equations.",
       "grade_range": [
         "Olympiad"
       ],
@@ -271,19 +271,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "imo.comb",
-      "bookName": "Combinatorics",
-      "bookColor": "#f97316",
-      "bookOrder": 2,
-      "external_id": "9465f216f3745c85",
+      "book": "imo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "a94603c5a1afe039",
       "comprehended": false,
-      "strand": "combinatorics"
+      "strand": "algebra"
     },
     {
-      "id": "imo.comb.invariants",
-      "label": "Invariants & Monovariants",
+      "id": "imo.alg.polynomials_roots",
+      "label": "Polynomials & Roots",
       "type": "concept",
-      "description": "Using invariants and monovariants in combinatorial arguments",
+      "description": "Factor theorem, root-finding, irreducibility criteria (Eisenstein, rational root). Polynomial division and remainder theorem.",
       "grade_range": [
         "Olympiad"
       ],
@@ -291,19 +291,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "imo.comb",
-      "bookName": "Combinatorics",
-      "bookColor": "#f97316",
-      "bookOrder": 2,
-      "external_id": "2b61efac8e9ed363",
+      "book": "imo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "67f19268854a6215",
       "comprehended": false,
-      "strand": "combinatorics"
+      "strand": "algebra"
     },
     {
-      "id": "imo.geo.triangle",
-      "label": "Triangle Geometry",
+      "id": "imo.alg.vieta",
+      "label": "Vieta's Formulas",
       "type": "concept",
-      "description": "Cevians, special points, area methods, Stewart's theorem",
+      "description": "Relations between roots and coefficients. Vieta jumping technique. Newton's sums connecting power sums and symmetric polynomials.",
       "grade_range": [
         "Olympiad"
       ],
@@ -311,19 +311,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "imo.geo",
-      "bookName": "Geometry",
-      "bookColor": "#22c55e",
-      "bookOrder": 3,
-      "external_id": "f009a781cb9e2402",
+      "book": "imo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "f072d3e7991306b4",
       "comprehended": false,
-      "strand": "geometry"
+      "strand": "algebra"
     },
     {
-      "id": "imo.geo.circle",
-      "label": "Circle Geometry",
+      "id": "imo.alg.symmetric_polynomials",
+      "label": "Symmetric Polynomials",
       "type": "concept",
-      "description": "Cyclic quadrilaterals, power of a point, radical axes",
+      "description": "Elementary symmetric polynomials, Newton's identities. Fundamental theorem of symmetric polynomials. Applications to competition problems.",
       "grade_range": [
         "Olympiad"
       ],
@@ -331,19 +331,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "imo.geo",
-      "bookName": "Geometry",
-      "bookColor": "#22c55e",
-      "bookOrder": 3,
-      "external_id": "aa25fa9ab01483cc",
+      "book": "imo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "bdd4604736b7278c",
       "comprehended": false,
-      "strand": "geometry"
+      "strand": "algebra"
     },
     {
-      "id": "imo.geo.transformations",
-      "label": "Transformations",
+      "id": "imo.alg.sequences_recurrences",
+      "label": "Sequences & Recurrences",
       "type": "concept",
-      "description": "Reflections, rotations, homotheties, inversions",
+      "description": "Linear recurrence relations, characteristic equation method. Nonlinear recurrences, periodicity, boundedness arguments.",
       "grade_range": [
         "Olympiad"
       ],
@@ -351,19 +351,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "imo.geo",
-      "bookName": "Geometry",
-      "bookColor": "#22c55e",
-      "bookOrder": 3,
-      "external_id": "ed5e5904f404638a",
+      "book": "imo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "1d7b8d9a3cab9c56",
       "comprehended": false,
-      "strand": "geometry"
+      "strand": "algebra"
     },
     {
-      "id": "imo.geo.projective",
-      "label": "Projective Geometry",
+      "id": "imo.alg.telescoping",
+      "label": "Telescoping & Summation",
       "type": "concept",
-      "description": "Cross-ratio, harmonic division, poles and polars, projective transformations",
+      "description": "Telescoping sums and products. Abel summation. Partial fractions for series evaluation.",
       "grade_range": [
         "Olympiad"
       ],
@@ -371,19 +371,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "imo.geo",
-      "bookName": "Geometry",
-      "bookColor": "#22c55e",
-      "bookOrder": 3,
-      "external_id": "a94fd18b0ed38051",
+      "book": "imo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "82b74447a2b60260",
       "comprehended": false,
-      "strand": "geometry"
+      "strand": "algebra"
     },
     {
-      "id": "imo.geo.trig_methods",
-      "label": "Trigonometric Methods",
+      "id": "imo.alg.generating_functions_intro",
+      "label": "Generating Functions (Intro)",
       "type": "concept",
-      "description": "Trigonometric identities and substitutions in geometry",
+      "description": "Ordinary and exponential generating functions. Using generating functions to solve recurrences and counting problems at olympiad level.",
       "grade_range": [
         "Olympiad"
       ],
@@ -391,39 +391,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "imo.geo",
-      "bookName": "Geometry",
-      "bookColor": "#22c55e",
-      "bookOrder": 3,
-      "external_id": "2f04cb7e85474c96",
+      "book": "imo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "48bd073b26258e8d",
       "comprehended": false,
-      "strand": "geometry"
-    },
-    {
-      "id": "imo.geo.coord_geometry",
-      "label": "Coordinate Geometry",
-      "type": "concept",
-      "description": "Analytic methods, barycentric and Cartesian coordinates",
-      "grade_range": [
-        "Olympiad"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "imo.geo",
-      "bookName": "Geometry",
-      "bookColor": "#22c55e",
-      "bookOrder": 3,
-      "external_id": "1b14e6f4048ea4f3",
-      "comprehended": false,
-      "strand": "geometry"
+      "strand": "algebra"
     },
     {
       "id": "imo.nt.divisibility",
-      "label": "Divisibility",
+      "label": "Divisibility & GCD/LCM",
       "type": "concept",
-      "description": "GCD, LCM, Euclidean algorithm, divisibility rules",
+      "description": "Divisibility rules, GCD, LCM, Euclidean algorithm. Bezout's identity, properties of divisibility in the integers.",
       "grade_range": [
         "Olympiad"
       ],
@@ -443,7 +423,7 @@
       "id": "imo.nt.primes",
       "label": "Primes & Factorization",
       "type": "concept",
-      "description": "Prime numbers, fundamental theorem of arithmetic, prime distribution",
+      "description": "Prime numbers, Fundamental Theorem of Arithmetic. Infinitude of primes, prime factorization techniques, properties of primes.",
       "grade_range": [
         "Olympiad"
       ],
@@ -463,7 +443,7 @@
       "id": "imo.nt.modular",
       "label": "Modular Arithmetic",
       "type": "concept",
-      "description": "Congruences, Chinese remainder theorem, modular inverses",
+      "description": "Congruences, modular inverses, solving linear congruences. Residue systems and properties of congruence arithmetic.",
       "grade_range": [
         "Olympiad"
       ],
@@ -480,10 +460,10 @@
       "strand": "number-theory"
     },
     {
-      "id": "imo.nt.fermat_euler",
-      "label": "Fermat & Euler Theorems",
+      "id": "imo.nt.crt",
+      "label": "Chinese Remainder Theorem",
       "type": "concept",
-      "description": "Fermat's little theorem, Euler's theorem, order of elements",
+      "description": "Chinese Remainder Theorem: existence and uniqueness of solutions to systems of congruences with coprime moduli. Constructive algorithms.",
       "grade_range": [
         "Olympiad"
       ],
@@ -495,7 +475,67 @@
       "bookName": "Number Theory",
       "bookColor": "#3b82f6",
       "bookOrder": 4,
-      "external_id": "2a3716aa2eddf0df",
+      "external_id": "02e44580655f8eae",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "imo.nt.fermat_little",
+      "label": "Fermat's Little Theorem",
+      "type": "concept",
+      "description": "Fermat's Little Theorem: a^(p-1) ≡ 1 (mod p) for gcd(a,p)=1. Applications to computing powers and modular inverses.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "cc3fb0c8beb19c40",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "imo.nt.euler_theorem",
+      "label": "Euler's Theorem & Totient",
+      "type": "concept",
+      "description": "Euler's totient function phi(n), Euler's theorem a^phi(n) ≡ 1 (mod n). Multiplicativity of phi, formula for phi(n).",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "2cccf7f9fe84c049",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "imo.nt.order_primitive_roots",
+      "label": "Order & Primitive Roots",
+      "type": "concept",
+      "description": "Multiplicative order of an element mod n. Primitive roots: existence, counting, and applications. Index calculus.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "88f574dabd89e8fd",
       "comprehended": false,
       "strand": "number-theory"
     },
@@ -503,7 +543,7 @@
       "id": "imo.nt.quadratic_residues",
       "label": "Quadratic Residues",
       "type": "concept",
-      "description": "Legendre symbol, quadratic reciprocity, primitive roots",
+      "description": "Quadratic residues mod p, Legendre symbol. Euler's criterion. Quadratic reciprocity law and its applications.",
       "grade_range": [
         "Olympiad"
       ],
@@ -520,10 +560,10 @@
       "strand": "number-theory"
     },
     {
-      "id": "imo.nt.diophantine",
-      "label": "Diophantine Equations",
+      "id": "imo.nt.diophantine_linear",
+      "label": "Linear Diophantine Equations",
       "type": "concept",
-      "description": "Linear and nonlinear Diophantine equations, Pell's equation, descent",
+      "description": "Linear Diophantine equations ax + by = c. Existence conditions via gcd, parametric solutions. Systems of linear Diophantine equations.",
       "grade_range": [
         "Olympiad"
       ],
@@ -535,7 +575,67 @@
       "bookName": "Number Theory",
       "bookColor": "#3b82f6",
       "bookOrder": 4,
-      "external_id": "d5f6c597203936ca",
+      "external_id": "c71764c7f4711918",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "imo.nt.diophantine_pythagorean",
+      "label": "Pythagorean & Sum-of-Squares",
+      "type": "concept",
+      "description": "Pythagorean triples parametrization. Sums of two and four squares theorems. Representing integers as sums of squares.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "5dcdfe2204345828",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "imo.nt.diophantine_pell",
+      "label": "Pell's Equation",
+      "type": "concept",
+      "description": "Pell's equation x^2 - Dy^2 = 1. Continued fraction method, fundamental solutions, recurrence for all solutions.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "d6177f138ec3e683",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "imo.nt.diophantine_advanced",
+      "label": "Advanced Diophantine Equations",
+      "type": "concept",
+      "description": "Infinite descent, Vieta jumping on Diophantine equations. Nonlinear Diophantine equations, Fermat-type problems, modular obstructions.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "aa45b54717319a57",
       "comprehended": false,
       "strand": "number-theory"
     },
@@ -543,7 +643,7 @@
       "id": "imo.nt.p_adic",
       "label": "p-adic Valuations",
       "type": "concept",
-      "description": "p-adic valuations, lifting the exponent lemma (LTE)",
+      "description": "p-adic (v_p) valuation of integers. Properties: v_p(ab) = v_p(a)+v_p(b), v_p(a+b) >= min. Legendre's formula for v_p(n!).",
       "grade_range": [
         "Olympiad"
       ],
@@ -560,10 +660,10 @@
       "strand": "number-theory"
     },
     {
-      "id": "imo.alg.inequalities_rearrangement",
-      "label": "Rearrangement & Chebyshev",
+      "id": "imo.nt.lte",
+      "label": "Lifting the Exponent Lemma",
       "type": "concept",
-      "description": "Rearrangement inequality, Chebyshev's sum inequality",
+      "description": "LTE lemma: computing v_p(a^n - b^n) and v_p(a^n + b^n). Applications to divisibility problems in competition number theory.",
       "grade_range": [
         "Olympiad"
       ],
@@ -571,19 +671,279 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "imo.alg",
-      "bookName": "Algebra",
-      "bookColor": "#ef4444",
-      "bookOrder": 1,
-      "external_id": "62a231c774c20055",
+      "book": "imo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "4c1d2bea57bc0205",
       "comprehended": false,
-      "strand": "algebra"
+      "strand": "number-theory"
+    },
+    {
+      "id": "imo.nt.arithmetic_functions",
+      "label": "Arithmetic Functions",
+      "type": "concept",
+      "description": "Multiplicative functions: sigma, tau, phi, Mobius mu. Mobius inversion formula. Dirichlet convolution basics.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "9fc8d2f0546cc14d",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "imo.nt.number_bases",
+      "label": "Number Bases & Digit Arguments",
+      "type": "concept",
+      "description": "Representations in different bases, digit sum properties, base-dependent divisibility. Digital root arguments.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 4,
+      "external_id": "53993939c19bca8b",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "imo.comb.counting_basics",
+      "label": "Counting Principles",
+      "type": "concept",
+      "description": "Addition and multiplication principles. Permutations, combinations, multisets. Inclusion-exclusion principle.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "21df54395f21f2f3",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "imo.comb.binomial",
+      "label": "Binomial Coefficients",
+      "type": "concept",
+      "description": "Binomial theorem, Pascal's identity, Vandermonde's identity. Hockey stick identity, binomial coefficient identities and their proofs.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "f35fbe97849caf9f",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "imo.comb.double_counting",
+      "label": "Double Counting",
+      "type": "concept",
+      "description": "Counting the same quantity in two ways to derive identities or bounds. Handshake lemma. Combinatorial proofs.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "21b857a9c5b757a5",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "imo.comb.bijections",
+      "label": "Bijections & Correspondences",
+      "type": "concept",
+      "description": "Establishing bijections to prove equinumerosity. Involutions, sign-reversing involutions, canonical bijections in combinatorics.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "26f3e77a927a74e3",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "imo.comb.pigeonhole",
+      "label": "Pigeonhole Principle",
+      "type": "concept",
+      "description": "Basic and generalized pigeonhole principle. Applications: Erdos-Szekeres theorem, sequences, covering arguments, Dirichlet's approximation.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "da44365e061a4404",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "imo.comb.pigeonhole_advanced",
+      "label": "Advanced Pigeonhole Applications",
+      "type": "concept",
+      "description": "Pigeonhole in geometry (lattice points, convex sets), pigeonhole with modular arithmetic, infinite pigeonhole (Ramsey-flavored).",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "39c0134b9e65d0f8",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "imo.comb.combinatorial_identities",
+      "label": "Combinatorial Identities",
+      "type": "concept",
+      "description": "Proving and applying identities: Vandermonde, Chu-Vandermonde, Catalan numbers, Stirling numbers. Combinatorial vs algebraic proofs.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "6f13fe84fc3aba5e",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "imo.comb.recurrence_relations",
+      "label": "Recurrence Relations",
+      "type": "concept",
+      "description": "Setting up and solving recurrences for counting problems. Characteristic equation method, generating function approach for linear recurrences.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "668ea15c57faf5c6",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "imo.comb.graph_basics",
+      "label": "Graph Theory Basics",
+      "type": "concept",
+      "description": "Graphs, trees, bipartite graphs, connectivity. Handshaking lemma, Eulerian/Hamiltonian paths and cycles. Degree sequences.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "d1164acef35573ad",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "imo.comb.graph_coloring",
+      "label": "Graph Coloring",
+      "type": "concept",
+      "description": "Vertex and edge coloring, chromatic number. Greedy coloring, Brooks' theorem. Coloring arguments in competition problems.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "72a2a800a1287972",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "imo.comb.ramsey",
+      "label": "Ramsey Theory",
+      "type": "concept",
+      "description": "Ramsey numbers R(s,t), Ramsey's theorem. Party problem, Schur's theorem. Bounds on Ramsey numbers, Hales-Jewett type results.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "df9cfd27a49bfb77",
+      "comprehended": false,
+      "strand": "combinatorics"
     },
     {
       "id": "imo.comb.extremal",
       "label": "Extremal Combinatorics",
       "type": "concept",
-      "description": "Extremal problems, Turán-type results, extremal set theory",
+      "description": "Turan's theorem, extremal set theory (Sperner, Dilworth). Kruskal-Katona theorem. Extremal problems on graphs and hypergraphs.",
       "grade_range": [
         "Olympiad"
       ],
@@ -600,10 +960,150 @@
       "strand": "combinatorics"
     },
     {
+      "id": "imo.comb.invariants",
+      "label": "Invariants",
+      "type": "concept",
+      "description": "Identifying quantities preserved under operations to prove impossibility or determine outcomes. Parity, coloring, modular invariants.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "2b61efac8e9ed363",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "imo.comb.monovariants",
+      "label": "Monovariants",
+      "type": "concept",
+      "description": "Quantities that change monotonically under operations. Proving termination of processes, bounding number of steps. Energy/potential arguments.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "f16f56b32745cd56",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "imo.comb.probabilistic",
+      "label": "Probabilistic Method",
+      "type": "concept",
+      "description": "Existence proofs via probability: expectation argument, first moment method, alteration. Lovász Local Lemma basics.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "9465f216f3745c85",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "imo.comb.comb_geometry",
+      "label": "Combinatorial Geometry",
+      "type": "concept",
+      "description": "Convex hull, lattice points (Pick's theorem), tiling problems. Helly's theorem, ham sandwich theorem, geometric Ramsey-type results.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "8504fd1533d51beb",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "imo.comb.games",
+      "label": "Combinatorial Games",
+      "type": "concept",
+      "description": "Nim and Sprague-Grundy theory. Winning/losing positions, game strategy. Symmetric strategies, strategy stealing.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "ef3b248880f0ca9b",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "imo.comb.algorithms_processes",
+      "label": "Algorithms & Processes",
+      "type": "concept",
+      "description": "Greedy algorithms, exchange arguments. Analyzing iterative processes: termination, eventual periodicity, limiting behavior.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 2,
+      "external_id": "6b85e43254c795b2",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "imo.geo.angle_chasing",
+      "label": "Angle Chasing",
+      "type": "concept",
+      "description": "Systematic angle chasing in geometric configurations. Inscribed angle theorem, angles in circles, angle bisector properties.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "79a7b3812b9515e6",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
       "id": "imo.geo.similarity_congruence",
       "label": "Similarity & Congruence",
       "type": "concept",
-      "description": "Triangle similarity and congruence criteria, spiral similarities",
+      "description": "Triangle congruence (SSS, SAS, ASA, AAS) and similarity criteria. Ratio and proportion in similar figures.",
       "grade_range": [
         "Olympiad"
       ],
@@ -618,6 +1118,366 @@
       "external_id": "1c7d2ec6879ab398",
       "comprehended": false,
       "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.triangle_centers",
+      "label": "Triangle Centers",
+      "type": "concept",
+      "description": "Incenter, circumcenter, orthocenter, centroid. Nine-point circle, Euler line. Excenters and excircles. Properties and relations.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "93155eb2443f4c9a",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.ceva_menelaus",
+      "label": "Ceva's & Menelaus' Theorems",
+      "type": "concept",
+      "description": "Ceva's theorem for concurrent cevians. Menelaus' theorem for collinear points on triangle sides. Trigonometric forms.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "ee8913bb600756d3",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.cyclic_quadrilaterals",
+      "label": "Cyclic Quadrilaterals",
+      "type": "concept",
+      "description": "Properties of cyclic quadrilaterals: opposite angles supplement, Ptolemy's theorem. Characterizations and applications.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "ef858c7a4e4ffdd9",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.power_of_a_point",
+      "label": "Power of a Point",
+      "type": "concept",
+      "description": "Power of a point with respect to a circle. Intersecting chords, secant-secant, secant-tangent relations. Signed power.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "5ff8f710c7739380",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.radical_axes",
+      "label": "Radical Axes & Radical Center",
+      "type": "concept",
+      "description": "Radical axis of two circles: locus of equal power. Radical center of three circles. Applications to concyclicity and collinearity.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "0f250f40cdb28ee2",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.homothety",
+      "label": "Homothety",
+      "type": "concept",
+      "description": "Homotheties (dilations) centered at a point. Homothety mapping circles to circles, finding tangent circles. Composition of homotheties.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "21089bf28400de01",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.spiral_similarity",
+      "label": "Spiral Similarities",
+      "type": "concept",
+      "description": "Spiral similarities (rotation + dilation). Identifying spiral centers, composition. Applications to proving concyclicity and collinearity.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "e2500351e78850a8",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.inversion",
+      "label": "Inversive Geometry",
+      "type": "concept",
+      "description": "Circle inversion: mapping circles and lines, preserving angles. Choosing inversion center/radius strategically. Solving hard problems via inversion.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "a57ad82025349be6",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.projective",
+      "label": "Projective Geometry",
+      "type": "concept",
+      "description": "Cross-ratio and its invariance under projection. Harmonic conjugates and harmonic bundles. Poles and polars with respect to conics.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "a94fd18b0ed38051",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.trig_ceva",
+      "label": "Trigonometric Cevians",
+      "type": "concept",
+      "description": "Trigonometric form of Ceva's theorem. Stewart's theorem. Using trigonometry to compute lengths, angles, and areas in triangle configurations.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "37a66fe098074131",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.trig_identities",
+      "label": "Trigonometric Identities in Geometry",
+      "type": "concept",
+      "description": "Law of sines, law of cosines. Product-to-sum and sum-to-product formulas. Applying trig identities to prove geometric results.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "19e3959929d01b92",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.area_methods",
+      "label": "Area Methods",
+      "type": "concept",
+      "description": "Using signed areas and area ratios to prove collinearity, concurrency, and length relations. Shoelace formula, cross product areas.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "92bbae678baab69a",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.barycentric",
+      "label": "Barycentric Coordinates",
+      "type": "concept",
+      "description": "Barycentric coordinate system for triangles. Representing points, lines, circles. Distance formula, equation of circumcircle. Computational approach.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "f74d53902791b66e",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.complex_numbers",
+      "label": "Complex Numbers in Geometry",
+      "type": "concept",
+      "description": "Representing points as complex numbers. Rotation, reflection, translation via complex arithmetic. Unit circle technique for cyclic polygons.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "57c3292611e987d4",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.cartesian",
+      "label": "Cartesian Coordinates",
+      "type": "concept",
+      "description": "Analytic geometry approach: setting up coordinate systems strategically. Distance, midpoint, line equations. When to use coordinates vs synthetic.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "40ee920216284db4",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.simson_line",
+      "label": "Simson Line & Pedal Triangles",
+      "type": "concept",
+      "description": "Simson line (pedal line) of a point on circumcircle. Pedal triangles, anti-pedal triangles. Applications to collinearity problems.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "28849e5a896c741f",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.isogonal_conjugates",
+      "label": "Isogonal & Isotomic Conjugates",
+      "type": "concept",
+      "description": "Isogonal conjugate points, isotomic conjugate points. Symmedian point as isogonal conjugate of centroid. Applications to locus problems.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "7da6c1f804acbf74",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "imo.geo.tangent_circles",
+      "label": "Tangent Lines & Tangent Circles",
+      "type": "concept",
+      "description": "Tangent lines to circles, tangent length. Internally/externally tangent circles. Mixtilinear incircles. Monge's theorem.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "imo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "58db5d139d313839",
+      "comprehended": false,
+      "strand": "geometry"
     }
   ],
   "edges": [
@@ -628,97 +1488,97 @@
     },
     {
       "source": "imo.alg.inequalities_amgm",
+      "target": "imo.alg.power_mean",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.alg.inequalities_amgm",
       "target": "imo.alg.inequalities_rearrangement",
       "relation": "prerequisite_for"
     },
     {
       "source": "imo.alg.inequalities_cauchy",
-      "target": "imo.alg.advanced_inequalities",
+      "target": "imo.alg.schur",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.alg.inequalities_cauchy",
+      "target": "imo.alg.sos",
       "relation": "prerequisite_for"
     },
     {
       "source": "imo.alg.inequalities_rearrangement",
-      "target": "imo.alg.advanced_inequalities",
+      "target": "imo.alg.schur",
       "relation": "prerequisite_for"
     },
     {
-      "source": "imo.alg.polynomials",
-      "target": "imo.alg.functional_equations",
+      "source": "imo.alg.power_mean",
+      "target": "imo.alg.jensen",
       "relation": "prerequisite_for"
     },
     {
-      "source": "imo.alg.polynomials",
-      "target": "imo.alg.sequences",
+      "source": "imo.alg.jensen",
+      "target": "imo.alg.tangent_line_trick",
       "relation": "prerequisite_for"
     },
     {
-      "source": "imo.comb.counting",
-      "target": "imo.comb.pigeonhole",
+      "source": "imo.alg.schur",
+      "target": "imo.alg.tangent_line_trick",
       "relation": "prerequisite_for"
     },
     {
-      "source": "imo.comb.counting",
-      "target": "imo.comb.graph_theory",
+      "source": "imo.alg.fe_cauchy",
+      "target": "imo.alg.fe_techniques",
       "relation": "prerequisite_for"
     },
     {
-      "source": "imo.comb.counting",
-      "target": "imo.comb.invariants",
+      "source": "imo.alg.fe_techniques",
+      "target": "imo.alg.fe_advanced",
       "relation": "prerequisite_for"
     },
     {
-      "source": "imo.comb.pigeonhole",
-      "target": "imo.comb.comb_geometry",
+      "source": "imo.alg.polynomials_roots",
+      "target": "imo.alg.vieta",
       "relation": "prerequisite_for"
     },
     {
-      "source": "imo.comb.graph_theory",
-      "target": "imo.comb.extremal",
+      "source": "imo.alg.vieta",
+      "target": "imo.alg.symmetric_polynomials",
       "relation": "prerequisite_for"
     },
     {
-      "source": "imo.comb.graph_theory",
-      "target": "imo.comb.probabilistic",
+      "source": "imo.alg.polynomials_roots",
+      "target": "imo.alg.fe_cauchy",
       "relation": "prerequisite_for"
     },
     {
-      "source": "imo.comb.counting",
-      "target": "imo.comb.probabilistic",
+      "source": "imo.alg.polynomials_roots",
+      "target": "imo.alg.sequences_recurrences",
       "relation": "prerequisite_for"
     },
     {
-      "source": "imo.geo.similarity_congruence",
-      "target": "imo.geo.triangle",
+      "source": "imo.alg.sequences_recurrences",
+      "target": "imo.alg.telescoping",
       "relation": "prerequisite_for"
     },
     {
-      "source": "imo.geo.triangle",
-      "target": "imo.geo.circle",
+      "source": "imo.alg.sequences_recurrences",
+      "target": "imo.alg.generating_functions_intro",
       "relation": "prerequisite_for"
     },
     {
-      "source": "imo.geo.circle",
-      "target": "imo.geo.transformations",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "imo.geo.transformations",
-      "target": "imo.geo.projective",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "imo.geo.triangle",
-      "target": "imo.geo.trig_methods",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "imo.geo.triangle",
-      "target": "imo.geo.coord_geometry",
+      "source": "imo.alg.telescoping",
+      "target": "imo.alg.generating_functions_intro",
       "relation": "prerequisite_for"
     },
     {
       "source": "imo.nt.divisibility",
       "target": "imo.nt.primes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.nt.divisibility",
+      "target": "imo.nt.number_bases",
       "relation": "prerequisite_for"
     },
     {
@@ -728,17 +1588,57 @@
     },
     {
       "source": "imo.nt.modular",
-      "target": "imo.nt.fermat_euler",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "imo.nt.fermat_euler",
-      "target": "imo.nt.quadratic_residues",
+      "target": "imo.nt.crt",
       "relation": "prerequisite_for"
     },
     {
       "source": "imo.nt.modular",
-      "target": "imo.nt.diophantine",
+      "target": "imo.nt.fermat_little",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.nt.fermat_little",
+      "target": "imo.nt.euler_theorem",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.nt.euler_theorem",
+      "target": "imo.nt.order_primitive_roots",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.nt.order_primitive_roots",
+      "target": "imo.nt.quadratic_residues",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.nt.divisibility",
+      "target": "imo.nt.diophantine_linear",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.nt.modular",
+      "target": "imo.nt.diophantine_linear",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.nt.diophantine_linear",
+      "target": "imo.nt.diophantine_pythagorean",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.nt.diophantine_pythagorean",
+      "target": "imo.nt.diophantine_pell",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.nt.diophantine_pell",
+      "target": "imo.nt.diophantine_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.nt.modular",
+      "target": "imo.nt.diophantine_advanced",
       "relation": "prerequisite_for"
     },
     {
@@ -747,8 +1647,258 @@
       "relation": "prerequisite_for"
     },
     {
+      "source": "imo.nt.p_adic",
+      "target": "imo.nt.lte",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.nt.primes",
+      "target": "imo.nt.arithmetic_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.nt.euler_theorem",
+      "target": "imo.nt.arithmetic_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.counting_basics",
+      "target": "imo.comb.binomial",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.counting_basics",
+      "target": "imo.comb.double_counting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.counting_basics",
+      "target": "imo.comb.bijections",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.counting_basics",
+      "target": "imo.comb.pigeonhole",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.binomial",
+      "target": "imo.comb.combinatorial_identities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.double_counting",
+      "target": "imo.comb.combinatorial_identities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.bijections",
+      "target": "imo.comb.combinatorial_identities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.binomial",
+      "target": "imo.comb.recurrence_relations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.pigeonhole",
+      "target": "imo.comb.pigeonhole_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.pigeonhole_advanced",
+      "target": "imo.comb.comb_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.counting_basics",
+      "target": "imo.comb.graph_basics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.graph_basics",
+      "target": "imo.comb.graph_coloring",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.graph_coloring",
+      "target": "imo.comb.ramsey",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.graph_basics",
+      "target": "imo.comb.extremal",
+      "relation": "prerequisite_for"
+    },
+    {
       "source": "imo.comb.pigeonhole",
       "target": "imo.comb.extremal",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.counting_basics",
+      "target": "imo.comb.invariants",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.invariants",
+      "target": "imo.comb.monovariants",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.graph_basics",
+      "target": "imo.comb.probabilistic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.counting_basics",
+      "target": "imo.comb.probabilistic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.invariants",
+      "target": "imo.comb.games",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.monovariants",
+      "target": "imo.comb.algorithms_processes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.comb.graph_basics",
+      "target": "imo.comb.algorithms_processes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.angle_chasing",
+      "target": "imo.geo.similarity_congruence",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.similarity_congruence",
+      "target": "imo.geo.triangle_centers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.similarity_congruence",
+      "target": "imo.geo.ceva_menelaus",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.angle_chasing",
+      "target": "imo.geo.cyclic_quadrilaterals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.cyclic_quadrilaterals",
+      "target": "imo.geo.power_of_a_point",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.power_of_a_point",
+      "target": "imo.geo.radical_axes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.similarity_congruence",
+      "target": "imo.geo.homothety",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.homothety",
+      "target": "imo.geo.spiral_similarity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.power_of_a_point",
+      "target": "imo.geo.inversion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.radical_axes",
+      "target": "imo.geo.inversion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.inversion",
+      "target": "imo.geo.projective",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.ceva_menelaus",
+      "target": "imo.geo.trig_ceva",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.trig_identities",
+      "target": "imo.geo.trig_ceva",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.angle_chasing",
+      "target": "imo.geo.trig_identities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.similarity_congruence",
+      "target": "imo.geo.area_methods",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.area_methods",
+      "target": "imo.geo.barycentric",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.triangle_centers",
+      "target": "imo.geo.barycentric",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.angle_chasing",
+      "target": "imo.geo.cartesian",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.spiral_similarity",
+      "target": "imo.geo.complex_numbers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.cartesian",
+      "target": "imo.geo.complex_numbers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.cyclic_quadrilaterals",
+      "target": "imo.geo.simson_line",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.triangle_centers",
+      "target": "imo.geo.simson_line",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.triangle_centers",
+      "target": "imo.geo.isogonal_conjugates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.ceva_menelaus",
+      "target": "imo.geo.isogonal_conjugates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.power_of_a_point",
+      "target": "imo.geo.tangent_circles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "imo.geo.homothety",
+      "target": "imo.geo.tangent_circles",
       "relation": "prerequisite_for"
     }
   ]

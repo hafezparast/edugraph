@@ -1,0 +1,1586 @@
+{
+  "metadata": {
+    "domain": "mathematics",
+    "curriculum": "SASMO (Singapore and Asian Schools Math Olympiad)",
+    "view": "k12-prerequisites",
+    "version": "0.2.0",
+    "description": "SASMO topics with prerequisite ordering, colored by level (Grades 2–10)",
+    "sources": [
+      "Singapore and Asian Schools Math Olympiad Syllabus"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "sasmo.p23",
+      "name": "Primary 2-3",
+      "color": "#22c55e",
+      "order": 1
+    },
+    {
+      "id": "sasmo.p45",
+      "name": "Primary 4-5",
+      "color": "#3b82f6",
+      "order": 2
+    },
+    {
+      "id": "sasmo.p6s1",
+      "name": "Primary 6-Secondary 1",
+      "color": "#f97316",
+      "order": 3
+    },
+    {
+      "id": "sasmo.s23",
+      "name": "Secondary 2-3",
+      "color": "#ef4444",
+      "order": 4
+    },
+    {
+      "id": "sasmo.s4",
+      "name": "Secondary 4",
+      "color": "#8b5cf6",
+      "order": 5
+    }
+  ],
+  "strands": [
+    {
+      "id": "arithmetic-number-sense",
+      "name": "Arithmetic & Number Sense",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "algebra-patterns",
+      "name": "Algebra & Patterns",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "geometry-spatial",
+      "name": "Geometry & Spatial",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "logic-combinatorics",
+      "name": "Logic & Combinatorics",
+      "color": "#F39C12"
+    },
+    {
+      "id": "problem-solving",
+      "name": "Problem Solving",
+      "color": "#9B59B6"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "comp.sasmo.whole_number_patterns",
+      "label": "Whole Number Patterns",
+      "type": "concept",
+      "description": "Recognising and continuing simple number patterns such as skip-counting, increasing/decreasing sequences, and repeating cycles.",
+      "grade_range": [
+        "P2-P3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p23",
+      "bookName": "Primary 2-3",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "485a49c569216cf2",
+      "comprehended": false,
+      "strand": "arithmetic-number-sense"
+    },
+    {
+      "id": "comp.sasmo.addition_subtraction_strategies",
+      "label": "Addition & Subtraction Strategies",
+      "type": "concept",
+      "description": "Mental math techniques for adding and subtracting, including compensation, making tens, and breaking apart numbers.",
+      "grade_range": [
+        "P2-P3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p23",
+      "bookName": "Primary 2-3",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "00f95d7d1fd24a90",
+      "comprehended": false,
+      "strand": "arithmetic-number-sense"
+    },
+    {
+      "id": "comp.sasmo.basic_multiplication_division",
+      "label": "Basic Multiplication & Division",
+      "type": "concept",
+      "description": "Multiplication and division facts, relationship between operations, and simple word-problem applications.",
+      "grade_range": [
+        "P2-P3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p23",
+      "bookName": "Primary 2-3",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "c7ac1b524810afe6",
+      "comprehended": false,
+      "strand": "arithmetic-number-sense"
+    },
+    {
+      "id": "comp.sasmo.simple_logic_puzzles",
+      "label": "Simple Logic Puzzles",
+      "type": "concept",
+      "description": "Basic logic puzzles including who-is-who, simple truth/liar problems, and process-of-elimination reasoning.",
+      "grade_range": [
+        "P2-P3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p23",
+      "bookName": "Primary 2-3",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "32c218ce15e3cc0e",
+      "comprehended": false,
+      "strand": "logic-combinatorics"
+    },
+    {
+      "id": "comp.sasmo.basic_shapes_perimeter",
+      "label": "Basic Shapes & Perimeter",
+      "type": "concept",
+      "description": "Identifying 2D shapes, calculating perimeters of simple figures, and understanding properties of squares, rectangles, and triangles.",
+      "grade_range": [
+        "P2-P3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p23",
+      "bookName": "Primary 2-3",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "c8615e920e11ff62",
+      "comprehended": false,
+      "strand": "geometry-spatial"
+    },
+    {
+      "id": "comp.sasmo.magic_squares_intro",
+      "label": "Magic Squares (Intro)",
+      "type": "concept",
+      "description": "Completing 3x3 and 4x4 magic squares. Understanding the constant sum property and systematic approaches to filling missing entries.",
+      "grade_range": [
+        "P2-P3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p23",
+      "bookName": "Primary 2-3",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "8fdf5879b43b3ddb",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.sasmo.picture_graphs_tables",
+      "label": "Picture Graphs & Tables",
+      "type": "concept",
+      "description": "Reading and interpreting picture graphs, bar charts, and simple tables to answer comparison and total questions.",
+      "grade_range": [
+        "P2-P3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p23",
+      "bookName": "Primary 2-3",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "34e78dea6758b130",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.sasmo.spatial_visualisation_basic",
+      "label": "Spatial Visualisation (Basic)",
+      "type": "concept",
+      "description": "Counting cubes in 3D stacks, folding/unfolding nets of cubes, and recognising views from different directions.",
+      "grade_range": [
+        "P2-P3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p23",
+      "bookName": "Primary 2-3",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "d3888628ab1e41c7",
+      "comprehended": false,
+      "strand": "geometry-spatial"
+    },
+    {
+      "id": "comp.sasmo.odd_even_reasoning",
+      "label": "Odd & Even Reasoning",
+      "type": "concept",
+      "description": "Using parity (odd/even properties) to solve problems and determine whether outcomes are possible.",
+      "grade_range": [
+        "P2-P3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p23",
+      "bookName": "Primary 2-3",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "f38da0c054326a9b",
+      "comprehended": false,
+      "strand": "arithmetic-number-sense"
+    },
+    {
+      "id": "comp.sasmo.systematic_listing",
+      "label": "Systematic Listing",
+      "type": "concept",
+      "description": "Listing outcomes in an organised way to ensure all cases are counted. Foundation for counting principles.",
+      "grade_range": [
+        "P2-P3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p23",
+      "bookName": "Primary 2-3",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "553cdf9289c6759c",
+      "comprehended": false,
+      "strand": "logic-combinatorics"
+    },
+    {
+      "id": "comp.sasmo.number_patterns_advanced",
+      "label": "Number Patterns (Advanced)",
+      "type": "concept",
+      "description": "Fibonacci-like sequences, triangular numbers, square numbers, and pattern generalisation to find the nth term.",
+      "grade_range": [
+        "P4-P5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p45",
+      "bookName": "Primary 4-5",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "d4fe7d1650598919",
+      "comprehended": false,
+      "strand": "algebra-patterns"
+    },
+    {
+      "id": "comp.sasmo.factors_multiples",
+      "label": "Factors & Multiples",
+      "type": "concept",
+      "description": "Finding factors, multiples, HCF and LCM. Applying factor-based reasoning to competition word problems.",
+      "grade_range": [
+        "P4-P5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p45",
+      "bookName": "Primary 4-5",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "cd9f88ac9a56293b",
+      "comprehended": false,
+      "strand": "arithmetic-number-sense"
+    },
+    {
+      "id": "comp.sasmo.fractions_operations",
+      "label": "Fractions Operations",
+      "type": "concept",
+      "description": "Adding, subtracting, multiplying, and dividing fractions. Converting between mixed numbers and improper fractions in problem contexts.",
+      "grade_range": [
+        "P4-P5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p45",
+      "bookName": "Primary 4-5",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "c1e97536f9d9a4ea",
+      "comprehended": false,
+      "strand": "arithmetic-number-sense"
+    },
+    {
+      "id": "comp.sasmo.area_composite_figures",
+      "label": "Area of Composite Figures",
+      "type": "concept",
+      "description": "Calculating areas by decomposing complex shapes into rectangles, triangles, and other standard figures. Overlap and subtraction methods.",
+      "grade_range": [
+        "P4-P5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p45",
+      "bookName": "Primary 4-5",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "9aefc1ada71818c9",
+      "comprehended": false,
+      "strand": "geometry-spatial"
+    },
+    {
+      "id": "comp.sasmo.angles_triangles",
+      "label": "Angles in Triangles & Polygons",
+      "type": "concept",
+      "description": "Angle sum properties, exterior angles, and finding unknown angles in triangles and quadrilaterals.",
+      "grade_range": [
+        "P4-P5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p45",
+      "bookName": "Primary 4-5",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "ea0ba77fc917752d",
+      "comprehended": false,
+      "strand": "geometry-spatial"
+    },
+    {
+      "id": "comp.sasmo.model_drawing",
+      "label": "Model Drawing (Bar Models)",
+      "type": "concept",
+      "description": "Singapore bar-model method for solving word problems involving comparison, part-whole, before-after, and ratio scenarios.",
+      "grade_range": [
+        "P4-P5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p45",
+      "bookName": "Primary 4-5",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "7434c84239a20e62",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.sasmo.speed_distance_time_basic",
+      "label": "Speed, Distance & Time (Basic)",
+      "type": "concept",
+      "description": "Using the relationship speed = distance / time. Simple problems involving constant speed, meeting problems, and unit conversion.",
+      "grade_range": [
+        "P4-P5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p45",
+      "bookName": "Primary 4-5",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "856a783d0ce48296",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.sasmo.counting_principles",
+      "label": "Counting Principles",
+      "type": "concept",
+      "description": "Addition and multiplication principles of counting. Organised approaches to combinatorial counting at a primary level.",
+      "grade_range": [
+        "P4-P5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p45",
+      "bookName": "Primary 4-5",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "46df58385f9f3f13",
+      "comprehended": false,
+      "strand": "logic-combinatorics"
+    },
+    {
+      "id": "comp.sasmo.divisibility_rules",
+      "label": "Divisibility Rules",
+      "type": "concept",
+      "description": "Divisibility tests for 2, 3, 4, 5, 6, 7, 8, 9, 11. Application to digit problems and number construction puzzles.",
+      "grade_range": [
+        "P4-P5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p45",
+      "bookName": "Primary 4-5",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "5e79497b58a465f2",
+      "comprehended": false,
+      "strand": "arithmetic-number-sense"
+    },
+    {
+      "id": "comp.sasmo.magic_squares_advanced",
+      "label": "Magic Squares & Number Grids",
+      "type": "concept",
+      "description": "Larger magic squares (5x5), magic hexagons, and number-placement puzzles with row/column/diagonal constraints.",
+      "grade_range": [
+        "P4-P5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p45",
+      "bookName": "Primary 4-5",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "32c7c29e63541bd6",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.sasmo.symmetry_transformations",
+      "label": "Symmetry & Transformations",
+      "type": "concept",
+      "description": "Line symmetry, rotational symmetry, reflections, and simple rotations. Identifying symmetry in shapes and patterns.",
+      "grade_range": [
+        "P4-P5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p45",
+      "bookName": "Primary 4-5",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "632ae764f893b945",
+      "comprehended": false,
+      "strand": "geometry-spatial"
+    },
+    {
+      "id": "comp.sasmo.logic_puzzles_intermediate",
+      "label": "Logic Puzzles (Intermediate)",
+      "type": "concept",
+      "description": "Grid-based logic puzzles, Sudoku-type reasoning, truth-teller/liar problems with multiple characters, and deduction chains.",
+      "grade_range": [
+        "P4-P5"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p45",
+      "bookName": "Primary 4-5",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "9a9fb5506d515af7",
+      "comprehended": false,
+      "strand": "logic-combinatorics"
+    },
+    {
+      "id": "comp.sasmo.decimals_percentages",
+      "label": "Decimals & Percentages",
+      "type": "concept",
+      "description": "Converting between fractions, decimals, and percentages. Percentage increase/decrease, discounts, and profit/loss problems.",
+      "grade_range": [
+        "P6-S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p6s1",
+      "bookName": "Primary 6-Secondary 1",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "789c7ec5a579838d",
+      "comprehended": false,
+      "strand": "arithmetic-number-sense"
+    },
+    {
+      "id": "comp.sasmo.ratio_proportion",
+      "label": "Ratio & Proportion",
+      "type": "concept",
+      "description": "Solving ratio problems including changing ratios, combining ratios, and proportional reasoning in multi-step contexts.",
+      "grade_range": [
+        "P6-S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p6s1",
+      "bookName": "Primary 6-Secondary 1",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "eafaa9b9137961e3",
+      "comprehended": false,
+      "strand": "arithmetic-number-sense"
+    },
+    {
+      "id": "comp.sasmo.algebraic_expressions",
+      "label": "Algebraic Expressions",
+      "type": "concept",
+      "description": "Forming and simplifying algebraic expressions. Substitution, collecting like terms, and translating word problems into algebra.",
+      "grade_range": [
+        "P6-S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p6s1",
+      "bookName": "Primary 6-Secondary 1",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "5d86e6eed46e7675",
+      "comprehended": false,
+      "strand": "algebra-patterns"
+    },
+    {
+      "id": "comp.sasmo.linear_equations",
+      "label": "Linear Equations",
+      "type": "concept",
+      "description": "Solving one-variable and simultaneous linear equations. Setting up equations from competition word problems.",
+      "grade_range": [
+        "P6-S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p6s1",
+      "bookName": "Primary 6-Secondary 1",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "09c370d58c136f51",
+      "comprehended": false,
+      "strand": "algebra-patterns"
+    },
+    {
+      "id": "comp.sasmo.speed_distance_time_advanced",
+      "label": "Speed, Distance & Time (Advanced)",
+      "type": "concept",
+      "description": "Chasing problems, round-trip with different speeds, average speed, relative speed, and escalator/river-current problems.",
+      "grade_range": [
+        "P6-S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p6s1",
+      "bookName": "Primary 6-Secondary 1",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "10fc76421a166436",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.sasmo.circles_area_circumference",
+      "label": "Circles: Area & Circumference",
+      "type": "concept",
+      "description": "Calculating area and circumference of circles. Shaded region problems involving overlapping circles, semicircles, and quadrants.",
+      "grade_range": [
+        "P6-S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p6s1",
+      "bookName": "Primary 6-Secondary 1",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "81c4fd7841dbba74",
+      "comprehended": false,
+      "strand": "geometry-spatial"
+    },
+    {
+      "id": "comp.sasmo.volume_surface_area",
+      "label": "Volume & Surface Area",
+      "type": "concept",
+      "description": "Volume and surface area of prisms, cylinders, and composite solids. Water-filling and cross-section problems.",
+      "grade_range": [
+        "P6-S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p6s1",
+      "bookName": "Primary 6-Secondary 1",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "febfd7cd332a037e",
+      "comprehended": false,
+      "strand": "geometry-spatial"
+    },
+    {
+      "id": "comp.sasmo.permutations_combinations_basic",
+      "label": "Permutations & Combinations (Basic)",
+      "type": "concept",
+      "description": "Distinguishing between arrangements (permutations) and selections (combinations). Simple competition counting problems.",
+      "grade_range": [
+        "P6-S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p6s1",
+      "bookName": "Primary 6-Secondary 1",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "149c219658414600",
+      "comprehended": false,
+      "strand": "logic-combinatorics"
+    },
+    {
+      "id": "comp.sasmo.pigeonhole_principle",
+      "label": "Pigeonhole Principle",
+      "type": "concept",
+      "description": "Basic and generalised pigeonhole principle. Guaranteeing certain outcomes in distribution and selection problems.",
+      "grade_range": [
+        "P6-S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p6s1",
+      "bookName": "Primary 6-Secondary 1",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "75e4fcc8a5111cd3",
+      "comprehended": false,
+      "strand": "logic-combinatorics"
+    },
+    {
+      "id": "comp.sasmo.work_rate_problems",
+      "label": "Work Rate Problems",
+      "type": "concept",
+      "description": "Problems involving workers or machines completing tasks together or in sequence. Pipe-filling, joint-work, and efficiency problems.",
+      "grade_range": [
+        "P6-S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p6s1",
+      "bookName": "Primary 6-Secondary 1",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "7bae4f446c10369a",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.sasmo.number_bases",
+      "label": "Number Bases",
+      "type": "concept",
+      "description": "Representing numbers in different bases (binary, ternary, etc.). Converting between bases and solving base-related puzzles.",
+      "grade_range": [
+        "P6-S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p6s1",
+      "bookName": "Primary 6-Secondary 1",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "dbc5947e90d4cfa9",
+      "comprehended": false,
+      "strand": "arithmetic-number-sense"
+    },
+    {
+      "id": "comp.sasmo.prime_factorisation",
+      "label": "Prime Factorisation",
+      "type": "concept",
+      "description": "Unique factorisation, finding number of divisors, sum of divisors, and applications to HCF/LCM competition problems.",
+      "grade_range": [
+        "P6-S1"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.p6s1",
+      "bookName": "Primary 6-Secondary 1",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "e03cf13b226ecd4c",
+      "comprehended": false,
+      "strand": "arithmetic-number-sense"
+    },
+    {
+      "id": "comp.sasmo.quadratic_equations",
+      "label": "Quadratic Equations",
+      "type": "concept",
+      "description": "Solving quadratics by factoring, completing the square, and the quadratic formula. Discriminant analysis and word problems.",
+      "grade_range": [
+        "S2-S3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s23",
+      "bookName": "Secondary 2-3",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "f034ce61add93131",
+      "comprehended": false,
+      "strand": "algebra-patterns"
+    },
+    {
+      "id": "comp.sasmo.indices_surds",
+      "label": "Indices & Surds",
+      "type": "concept",
+      "description": "Laws of indices, simplifying surds, rationalising denominators, and solving equations involving powers and roots.",
+      "grade_range": [
+        "S2-S3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s23",
+      "bookName": "Secondary 2-3",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "8a5b537b336cd9b5",
+      "comprehended": false,
+      "strand": "algebra-patterns"
+    },
+    {
+      "id": "comp.sasmo.coordinate_geometry",
+      "label": "Coordinate Geometry",
+      "type": "concept",
+      "description": "Distance, midpoint, gradient, equations of lines. Intersection of lines and regions defined by linear inequalities.",
+      "grade_range": [
+        "S2-S3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s23",
+      "bookName": "Secondary 2-3",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "eb69274644c80ed6",
+      "comprehended": false,
+      "strand": "geometry-spatial"
+    },
+    {
+      "id": "comp.sasmo.similar_congruent_triangles",
+      "label": "Similar & Congruent Triangles",
+      "type": "concept",
+      "description": "Conditions for similarity and congruence (SSS, SAS, ASA, AA). Ratio of areas and corresponding sides in competition geometry.",
+      "grade_range": [
+        "S2-S3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s23",
+      "bookName": "Secondary 2-3",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "fb83fcf0f63d912d",
+      "comprehended": false,
+      "strand": "geometry-spatial"
+    },
+    {
+      "id": "comp.sasmo.pythagoras_applications",
+      "label": "Pythagoras & Applications",
+      "type": "concept",
+      "description": "Pythagorean theorem, Pythagorean triples, and applications to distance, 3D diagonals, and competition geometry problems.",
+      "grade_range": [
+        "S2-S3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s23",
+      "bookName": "Secondary 2-3",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "303322410d70fb6b",
+      "comprehended": false,
+      "strand": "geometry-spatial"
+    },
+    {
+      "id": "comp.sasmo.modular_arithmetic",
+      "label": "Modular Arithmetic",
+      "type": "concept",
+      "description": "Remainders, congruences, operations mod n. Solving linear congruences and finding last digits / remainders.",
+      "grade_range": [
+        "S2-S3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s23",
+      "bookName": "Secondary 2-3",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "f9747ebf3cfbb1f4",
+      "comprehended": false,
+      "strand": "arithmetic-number-sense"
+    },
+    {
+      "id": "comp.sasmo.inclusion_exclusion",
+      "label": "Inclusion-Exclusion Principle",
+      "type": "concept",
+      "description": "Counting elements in unions of sets using inclusion-exclusion. Two-set and three-set Venn diagram problems.",
+      "grade_range": [
+        "S2-S3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s23",
+      "bookName": "Secondary 2-3",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "c0af53c323b06034",
+      "comprehended": false,
+      "strand": "logic-combinatorics"
+    },
+    {
+      "id": "comp.sasmo.sequences_series",
+      "label": "Sequences & Series",
+      "type": "concept",
+      "description": "Arithmetic and geometric sequences and series. Sum formulas, finding terms, and competition-style sequence problems.",
+      "grade_range": [
+        "S2-S3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s23",
+      "bookName": "Secondary 2-3",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "7c5c1ca053841ee2",
+      "comprehended": false,
+      "strand": "algebra-patterns"
+    },
+    {
+      "id": "comp.sasmo.inequality_reasoning",
+      "label": "Inequality Reasoning",
+      "type": "concept",
+      "description": "Solving linear and quadratic inequalities. Estimating and bounding in competition problems. Sign analysis.",
+      "grade_range": [
+        "S2-S3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s23",
+      "bookName": "Secondary 2-3",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "b909d94d978713d3",
+      "comprehended": false,
+      "strand": "algebra-patterns"
+    },
+    {
+      "id": "comp.sasmo.circle_theorems",
+      "label": "Circle Theorems",
+      "type": "concept",
+      "description": "Angle at centre, angles in same segment, cyclic quadrilateral, tangent properties. Competition-style circle geometry.",
+      "grade_range": [
+        "S2-S3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s23",
+      "bookName": "Secondary 2-3",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "441b34b997f3eac1",
+      "comprehended": false,
+      "strand": "geometry-spatial"
+    },
+    {
+      "id": "comp.sasmo.invariants_parity",
+      "label": "Invariants & Parity",
+      "type": "concept",
+      "description": "Identifying quantities that remain unchanged under operations. Using parity, colouring, and other invariants in proofs.",
+      "grade_range": [
+        "S2-S3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s23",
+      "bookName": "Secondary 2-3",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "bae081ea66b5905b",
+      "comprehended": false,
+      "strand": "logic-combinatorics"
+    },
+    {
+      "id": "comp.sasmo.digit_problems",
+      "label": "Digit Problems",
+      "type": "concept",
+      "description": "Cryptarithmetic, digit sums, digit products, and problems requiring careful case analysis on individual digits.",
+      "grade_range": [
+        "S2-S3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s23",
+      "bookName": "Secondary 2-3",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "79c7ab3888429ca6",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.sasmo.combinatorial_geometry",
+      "label": "Combinatorial Geometry",
+      "type": "concept",
+      "description": "Counting regions formed by lines, intersections, and partitions. Maximum/minimum geometric configurations.",
+      "grade_range": [
+        "S2-S3"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s23",
+      "bookName": "Secondary 2-3",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "cd5b184e22ff6b79",
+      "comprehended": false,
+      "strand": "logic-combinatorics"
+    },
+    {
+      "id": "comp.sasmo.polynomials",
+      "label": "Polynomials",
+      "type": "concept",
+      "description": "Polynomial division, factor/remainder theorems, roots-coefficients relationships, and constructing polynomials from conditions.",
+      "grade_range": [
+        "S4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s4",
+      "bookName": "Secondary 4",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "25d2622803982138",
+      "comprehended": false,
+      "strand": "algebra-patterns"
+    },
+    {
+      "id": "comp.sasmo.trigonometry",
+      "label": "Trigonometry",
+      "type": "concept",
+      "description": "Sine, cosine, tangent and their inverses. Sine rule, cosine rule, area formula. Solving triangles in competition contexts.",
+      "grade_range": [
+        "S4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s4",
+      "bookName": "Secondary 4",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "bda68b22aad0674b",
+      "comprehended": false,
+      "strand": "geometry-spatial"
+    },
+    {
+      "id": "comp.sasmo.functions_graphs",
+      "label": "Functions & Graphs",
+      "type": "concept",
+      "description": "Domain, range, composition, inverse functions. Graphical transformations and interpreting graphs in problem contexts.",
+      "grade_range": [
+        "S4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s4",
+      "bookName": "Secondary 4",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "9e970c0f97483929",
+      "comprehended": false,
+      "strand": "algebra-patterns"
+    },
+    {
+      "id": "comp.sasmo.probability",
+      "label": "Probability",
+      "type": "concept",
+      "description": "Classical probability, conditional probability, independent events, expected value. Competition probability problems.",
+      "grade_range": [
+        "S4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s4",
+      "bookName": "Secondary 4",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "71af179c33488dfe",
+      "comprehended": false,
+      "strand": "logic-combinatorics"
+    },
+    {
+      "id": "comp.sasmo.number_theory_competition",
+      "label": "Number Theory (Competition)",
+      "type": "concept",
+      "description": "Euler's totient, Fermat's little theorem, Chinese Remainder Theorem at an introductory level. Diophantine equations.",
+      "grade_range": [
+        "S4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s4",
+      "bookName": "Secondary 4",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "57e42ffb3a2d7adb",
+      "comprehended": false,
+      "strand": "arithmetic-number-sense"
+    },
+    {
+      "id": "comp.sasmo.advanced_counting",
+      "label": "Advanced Counting",
+      "type": "concept",
+      "description": "Stars and bars, derangements, Catalan numbers, and advanced applications of permutations and combinations.",
+      "grade_range": [
+        "S4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s4",
+      "bookName": "Secondary 4",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "aa0f4a588fab5e94",
+      "comprehended": false,
+      "strand": "logic-combinatorics"
+    },
+    {
+      "id": "comp.sasmo.geometric_transformations",
+      "label": "Geometric Transformations",
+      "type": "concept",
+      "description": "Reflections, rotations, translations, and enlargements applied to competition geometry. Invariance under transformations.",
+      "grade_range": [
+        "S4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s4",
+      "bookName": "Secondary 4",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "2cd9f466f3712d0a",
+      "comprehended": false,
+      "strand": "geometry-spatial"
+    },
+    {
+      "id": "comp.sasmo.optimisation_problems",
+      "label": "Optimisation Problems",
+      "type": "concept",
+      "description": "Finding maximum/minimum values using algebraic, geometric, and logical reasoning. AM-GM at an introductory level.",
+      "grade_range": [
+        "S4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s4",
+      "bookName": "Secondary 4",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "84bb5d85158804bb",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.sasmo.graph_theory_intro",
+      "label": "Graph Theory (Intro)",
+      "type": "concept",
+      "description": "Vertices, edges, degree, paths, and Euler/Hamilton paths. Simple graph-colouring and network problems.",
+      "grade_range": [
+        "S4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s4",
+      "bookName": "Secondary 4",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "982d2797a6320554",
+      "comprehended": false,
+      "strand": "logic-combinatorics"
+    },
+    {
+      "id": "comp.sasmo.proof_techniques",
+      "label": "Proof Techniques",
+      "type": "concept",
+      "description": "Direct proof, proof by contradiction, proof by cases, and mathematical induction at a secondary competition level.",
+      "grade_range": [
+        "S4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s4",
+      "bookName": "Secondary 4",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "a67443a8c08fc451",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.sasmo.diophantine_equations",
+      "label": "Diophantine Equations",
+      "type": "concept",
+      "description": "Finding integer solutions to equations. Systematic approaches using modular arithmetic, factoring, and bounding.",
+      "grade_range": [
+        "S4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s4",
+      "bookName": "Secondary 4",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "ca306fc4ddf3193b",
+      "comprehended": false,
+      "strand": "arithmetic-number-sense"
+    },
+    {
+      "id": "comp.sasmo.game_strategy",
+      "label": "Game Strategy",
+      "type": "concept",
+      "description": "Winning strategies in two-player combinatorial games. Symmetry strategy, pairing strategy, and invariant-based approaches.",
+      "grade_range": [
+        "S4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "sasmo.s4",
+      "bookName": "Secondary 4",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "f5c5adec93ee644b",
+      "comprehended": false,
+      "strand": "problem-solving"
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp.sasmo.whole_number_patterns",
+      "target": "comp.sasmo.number_patterns_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.addition_subtraction_strategies",
+      "target": "comp.sasmo.basic_multiplication_division",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.basic_multiplication_division",
+      "target": "comp.sasmo.factors_multiples",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.basic_multiplication_division",
+      "target": "comp.sasmo.fractions_operations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.basic_shapes_perimeter",
+      "target": "comp.sasmo.area_composite_figures",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.basic_shapes_perimeter",
+      "target": "comp.sasmo.angles_triangles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.simple_logic_puzzles",
+      "target": "comp.sasmo.logic_puzzles_intermediate",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.magic_squares_intro",
+      "target": "comp.sasmo.magic_squares_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.systematic_listing",
+      "target": "comp.sasmo.counting_principles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.odd_even_reasoning",
+      "target": "comp.sasmo.divisibility_rules",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.spatial_visualisation_basic",
+      "target": "comp.sasmo.symmetry_transformations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.addition_subtraction_strategies",
+      "target": "comp.sasmo.speed_distance_time_basic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.basic_multiplication_division",
+      "target": "comp.sasmo.speed_distance_time_basic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.fractions_operations",
+      "target": "comp.sasmo.decimals_percentages",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.fractions_operations",
+      "target": "comp.sasmo.ratio_proportion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.number_patterns_advanced",
+      "target": "comp.sasmo.algebraic_expressions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.model_drawing",
+      "target": "comp.sasmo.algebraic_expressions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.algebraic_expressions",
+      "target": "comp.sasmo.linear_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.speed_distance_time_basic",
+      "target": "comp.sasmo.speed_distance_time_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.linear_equations",
+      "target": "comp.sasmo.speed_distance_time_advanced",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.area_composite_figures",
+      "target": "comp.sasmo.circles_area_circumference",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.area_composite_figures",
+      "target": "comp.sasmo.volume_surface_area",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.counting_principles",
+      "target": "comp.sasmo.permutations_combinations_basic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.logic_puzzles_intermediate",
+      "target": "comp.sasmo.pigeonhole_principle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.factors_multiples",
+      "target": "comp.sasmo.prime_factorisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.divisibility_rules",
+      "target": "comp.sasmo.prime_factorisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.ratio_proportion",
+      "target": "comp.sasmo.work_rate_problems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.divisibility_rules",
+      "target": "comp.sasmo.number_bases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.linear_equations",
+      "target": "comp.sasmo.quadratic_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.linear_equations",
+      "target": "comp.sasmo.indices_surds",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.angles_triangles",
+      "target": "comp.sasmo.similar_congruent_triangles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.angles_triangles",
+      "target": "comp.sasmo.pythagoras_applications",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.circles_area_circumference",
+      "target": "comp.sasmo.coordinate_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.linear_equations",
+      "target": "comp.sasmo.coordinate_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.prime_factorisation",
+      "target": "comp.sasmo.modular_arithmetic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.permutations_combinations_basic",
+      "target": "comp.sasmo.inclusion_exclusion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.number_patterns_advanced",
+      "target": "comp.sasmo.sequences_series",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.algebraic_expressions",
+      "target": "comp.sasmo.sequences_series",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.quadratic_equations",
+      "target": "comp.sasmo.inequality_reasoning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.similar_congruent_triangles",
+      "target": "comp.sasmo.circle_theorems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.circles_area_circumference",
+      "target": "comp.sasmo.circle_theorems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.odd_even_reasoning",
+      "target": "comp.sasmo.invariants_parity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.pigeonhole_principle",
+      "target": "comp.sasmo.invariants_parity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.divisibility_rules",
+      "target": "comp.sasmo.digit_problems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.counting_principles",
+      "target": "comp.sasmo.combinatorial_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.angles_triangles",
+      "target": "comp.sasmo.combinatorial_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.quadratic_equations",
+      "target": "comp.sasmo.polynomials",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.pythagoras_applications",
+      "target": "comp.sasmo.trigonometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.similar_congruent_triangles",
+      "target": "comp.sasmo.trigonometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.quadratic_equations",
+      "target": "comp.sasmo.functions_graphs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.coordinate_geometry",
+      "target": "comp.sasmo.functions_graphs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.permutations_combinations_basic",
+      "target": "comp.sasmo.probability",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.modular_arithmetic",
+      "target": "comp.sasmo.number_theory_competition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.prime_factorisation",
+      "target": "comp.sasmo.number_theory_competition",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.permutations_combinations_basic",
+      "target": "comp.sasmo.advanced_counting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.inclusion_exclusion",
+      "target": "comp.sasmo.advanced_counting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.symmetry_transformations",
+      "target": "comp.sasmo.geometric_transformations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.similar_congruent_triangles",
+      "target": "comp.sasmo.geometric_transformations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.inequality_reasoning",
+      "target": "comp.sasmo.optimisation_problems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.sequences_series",
+      "target": "comp.sasmo.optimisation_problems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.combinatorial_geometry",
+      "target": "comp.sasmo.graph_theory_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.invariants_parity",
+      "target": "comp.sasmo.proof_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.modular_arithmetic",
+      "target": "comp.sasmo.diophantine_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.linear_equations",
+      "target": "comp.sasmo.diophantine_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.invariants_parity",
+      "target": "comp.sasmo.game_strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.sasmo.proof_techniques",
+      "target": "comp.sasmo.game_strategy",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

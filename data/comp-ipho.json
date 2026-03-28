@@ -3,12 +3,12 @@
     "domain": "physics",
     "curriculum": "IPhO (International Physics Olympiad)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "IPhO topics with prerequisite ordering, colored by area",
     "sources": [
       "IPhO Syllabus"
     ],
-    "last_updated": "2026-03-27"
+    "last_updated": "2026-03-28"
   },
   "books": [
     {
@@ -24,15 +24,15 @@
       "order": 2
     },
     {
-      "id": "ipho.em",
-      "name": "Electromagnetism",
-      "color": "#f59e0b",
-      "order": 3
-    },
-    {
       "id": "ipho.waves",
       "name": "Waves & Optics",
       "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "ipho.em",
+      "name": "Electromagnetism",
+      "color": "#f59e0b",
       "order": 4
     },
     {
@@ -40,6 +40,12 @@
       "name": "Modern Physics",
       "color": "#8b5cf6",
       "order": 5
+    },
+    {
+      "id": "ipho.exp",
+      "name": "Experimental",
+      "color": "#ec4899",
+      "order": 6
     }
   ],
   "strands": [
@@ -54,27 +60,32 @@
       "color": "#E74C3C"
     },
     {
-      "id": "em",
-      "name": "Electromagnetism",
-      "color": "#F39C12"
-    },
-    {
       "id": "waves",
       "name": "Waves & Optics",
       "color": "#2ECC71"
     },
     {
+      "id": "em",
+      "name": "Electromagnetism",
+      "color": "#F39C12"
+    },
+    {
       "id": "modern",
       "name": "Modern Physics",
       "color": "#9B59B6"
+    },
+    {
+      "id": "experimental",
+      "name": "Experimental",
+      "color": "#E91E63"
     }
   ],
   "nodes": [
     {
-      "id": "ipho.mech.classical",
-      "label": "Classical Mechanics",
+      "id": "ipho.mech.kinematics",
+      "label": "Kinematics",
       "type": "concept",
-      "description": "Newton's laws, conservation laws, energy, momentum, Lagrangian basics",
+      "description": "Displacement, velocity, acceleration, projectile motion, relative motion, frames of reference",
       "grade_range": [
         "Olympiad"
       ],
@@ -86,15 +97,15 @@
       "bookName": "Mechanics",
       "bookColor": "#3b82f6",
       "bookOrder": 1,
-      "external_id": "e37ce096815c52b5",
+      "external_id": "c3497358f4f6247f",
       "comprehended": false,
       "strand": "mechanics"
     },
     {
-      "id": "ipho.mech.rigid_body",
-      "label": "Rigid Body Dynamics",
+      "id": "ipho.mech.newtons_laws",
+      "label": "Newton's Laws",
       "type": "concept",
-      "description": "Moment of inertia, torque, angular momentum, rotational dynamics",
+      "description": "Force, mass, free-body diagrams, friction, normal force, tension, constraint equations",
       "grade_range": [
         "Olympiad"
       ],
@@ -106,15 +117,15 @@
       "bookName": "Mechanics",
       "bookColor": "#3b82f6",
       "bookOrder": 1,
-      "external_id": "4b4a0091cf7588cd",
+      "external_id": "d1ba1836a0243f53",
       "comprehended": false,
       "strand": "mechanics"
     },
     {
-      "id": "ipho.mech.fluid",
-      "label": "Fluid Mechanics",
+      "id": "ipho.mech.work_energy",
+      "label": "Work & Energy",
       "type": "concept",
-      "description": "Hydrostatics, buoyancy, Bernoulli's equation, viscosity",
+      "description": "Work-energy theorem, kinetic/potential energy, conservative forces, power",
       "grade_range": [
         "Olympiad"
       ],
@@ -126,7 +137,67 @@
       "bookName": "Mechanics",
       "bookColor": "#3b82f6",
       "bookOrder": 1,
-      "external_id": "2a6a0bd7e6355af3",
+      "external_id": "aacaa4b0dbd7f7ef",
+      "comprehended": false,
+      "strand": "mechanics"
+    },
+    {
+      "id": "ipho.mech.momentum",
+      "label": "Momentum & Collisions",
+      "type": "concept",
+      "description": "Linear momentum, impulse, elastic/inelastic collisions, center of mass, rocket equation",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.mech",
+      "bookName": "Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "53f3e5fc03dae294",
+      "comprehended": false,
+      "strand": "mechanics"
+    },
+    {
+      "id": "ipho.mech.rotational",
+      "label": "Rotational Motion",
+      "type": "concept",
+      "description": "Moment of inertia, torque, angular momentum, rolling, precession",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.mech",
+      "bookName": "Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "4eb143a58fcff6a6",
+      "comprehended": false,
+      "strand": "mechanics"
+    },
+    {
+      "id": "ipho.mech.gravitation",
+      "label": "Gravitation",
+      "type": "concept",
+      "description": "Newton's law of gravitation, Kepler's laws, orbital mechanics, escape velocity, tidal forces",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.mech",
+      "bookName": "Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "03c06eaa714a799b",
       "comprehended": false,
       "strand": "mechanics"
     },
@@ -134,7 +205,7 @@
       "id": "ipho.mech.oscillations",
       "label": "Oscillations",
       "type": "concept",
-      "description": "Simple harmonic motion, damped and forced oscillations, coupled oscillators",
+      "description": "Simple harmonic motion, damped/forced oscillations, resonance, coupled oscillators, pendulums",
       "grade_range": [
         "Olympiad"
       ],
@@ -151,10 +222,10 @@
       "strand": "mechanics"
     },
     {
-      "id": "ipho.mech.relativity",
-      "label": "Special Relativity",
+      "id": "ipho.mech.fluid",
+      "label": "Fluid Mechanics",
       "type": "concept",
-      "description": "Lorentz transformations, time dilation, length contraction, relativistic dynamics",
+      "description": "Hydrostatics, buoyancy, Bernoulli's equation, viscosity, surface tension",
       "grade_range": [
         "Olympiad"
       ],
@@ -166,15 +237,95 @@
       "bookName": "Mechanics",
       "bookColor": "#3b82f6",
       "bookOrder": 1,
-      "external_id": "be596f8c98286b73",
+      "external_id": "2a6a0bd7e6355af3",
       "comprehended": false,
       "strand": "mechanics"
     },
     {
-      "id": "ipho.thermo.kinetic",
-      "label": "Kinetic Theory",
+      "id": "ipho.mech.non_inertial",
+      "label": "Non-Inertial Frames",
       "type": "concept",
-      "description": "Ideal gas, Maxwell-Boltzmann distribution, mean free path",
+      "description": "Pseudo forces, Coriolis effect, centrifugal force, rotating frames",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.mech",
+      "bookName": "Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "ac519797521543d1",
+      "comprehended": false,
+      "strand": "mechanics"
+    },
+    {
+      "id": "ipho.mech.lagrangian",
+      "label": "Lagrangian Mechanics Intro",
+      "type": "concept",
+      "description": "Generalized coordinates, Lagrangian, Euler-Lagrange equations, constraints",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.mech",
+      "bookName": "Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "c017d10e6f2c6d30",
+      "comprehended": false,
+      "strand": "mechanics"
+    },
+    {
+      "id": "ipho.mech.statics",
+      "label": "Statics & Equilibrium",
+      "type": "concept",
+      "description": "Conditions for equilibrium, torque balance, stability, trusses",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.mech",
+      "bookName": "Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "7b8480c41b7277fd",
+      "comprehended": false,
+      "strand": "mechanics"
+    },
+    {
+      "id": "ipho.mech.elasticity",
+      "label": "Elasticity",
+      "type": "concept",
+      "description": "Stress, strain, Young's modulus, Hooke's law for solids, elastic energy",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.mech",
+      "bookName": "Mechanics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "cbf84f4bb6af9876",
+      "comprehended": false,
+      "strand": "mechanics"
+    },
+    {
+      "id": "ipho.thermo.kinetic_theory",
+      "label": "Kinetic Theory of Gases",
+      "type": "concept",
+      "description": "Ideal gas law, Maxwell-Boltzmann distribution, mean free path, molecular speeds",
       "grade_range": [
         "Olympiad"
       ],
@@ -186,15 +337,15 @@
       "bookName": "Thermodynamics",
       "bookColor": "#ef4444",
       "bookOrder": 2,
-      "external_id": "9aab1edcf914ed03",
+      "external_id": "825a68a19f9ab522",
       "comprehended": false,
       "strand": "thermo"
     },
     {
-      "id": "ipho.thermo.laws",
-      "label": "Laws of Thermodynamics",
+      "id": "ipho.thermo.first_law",
+      "label": "First Law of Thermodynamics",
       "type": "concept",
-      "description": "First and second law, entropy, Carnot cycle, heat engines",
+      "description": "Internal energy, heat, work, thermodynamic processes (isothermal, adiabatic, isobaric, isochoric)",
       "grade_range": [
         "Olympiad"
       ],
@@ -206,15 +357,55 @@
       "bookName": "Thermodynamics",
       "bookColor": "#ef4444",
       "bookOrder": 2,
-      "external_id": "94ddf7a0dde8cf42",
+      "external_id": "0579a1bacb613f0b",
       "comprehended": false,
       "strand": "thermo"
     },
     {
-      "id": "ipho.thermo.phase",
+      "id": "ipho.thermo.heat_engines",
+      "label": "Heat Engines & Cycles",
+      "type": "concept",
+      "description": "Carnot cycle, Otto/Diesel cycles, efficiency, refrigerators, heat pumps",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.thermo",
+      "bookName": "Thermodynamics",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "322adae336b272c2",
+      "comprehended": false,
+      "strand": "thermo"
+    },
+    {
+      "id": "ipho.thermo.entropy",
+      "label": "Entropy & Second Law",
+      "type": "concept",
+      "description": "Entropy, second law, irreversibility, entropy calculations, free energy",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.thermo",
+      "bookName": "Thermodynamics",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "4f3b8506c4856790",
+      "comprehended": false,
+      "strand": "thermo"
+    },
+    {
+      "id": "ipho.thermo.phase_transitions",
       "label": "Phase Transitions",
       "type": "concept",
-      "description": "Phase diagrams, latent heat, Clausius-Clapeyron equation",
+      "description": "Phase diagrams, latent heat, Clausius-Clapeyron, triple point, critical point",
       "grade_range": [
         "Olympiad"
       ],
@@ -226,15 +417,35 @@
       "bookName": "Thermodynamics",
       "bookColor": "#ef4444",
       "bookOrder": 2,
-      "external_id": "6b6e5b633000656d",
+      "external_id": "4caabe039b6012f0",
+      "comprehended": false,
+      "strand": "thermo"
+    },
+    {
+      "id": "ipho.thermo.heat_transfer",
+      "label": "Heat Transfer",
+      "type": "concept",
+      "description": "Conduction, convection, radiation, Stefan-Boltzmann law, Newton's law of cooling",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.thermo",
+      "bookName": "Thermodynamics",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "e3c74ba74f0d4988",
       "comprehended": false,
       "strand": "thermo"
     },
     {
       "id": "ipho.thermo.statistical",
-      "label": "Statistical Physics",
+      "label": "Statistical Mechanics Intro",
       "type": "concept",
-      "description": "Boltzmann statistics, partition functions, equipartition theorem",
+      "description": "Boltzmann statistics, partition functions, equipartition theorem, microstate counting",
       "grade_range": [
         "Olympiad"
       ],
@@ -251,10 +462,170 @@
       "strand": "thermo"
     },
     {
+      "id": "ipho.thermo.real_gases",
+      "label": "Real Gases",
+      "type": "concept",
+      "description": "Van der Waals equation, virial expansion, compressibility factor, Joule-Thomson effect",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.thermo",
+      "bookName": "Thermodynamics",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "b5b7b7b1c9111140",
+      "comprehended": false,
+      "strand": "thermo"
+    },
+    {
+      "id": "ipho.waves.wave_mechanics",
+      "label": "Wave Mechanics",
+      "type": "concept",
+      "description": "Wave equation, superposition, standing waves, wave speed, energy in waves",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.waves",
+      "bookName": "Waves & Optics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "6802847772d97456",
+      "comprehended": false,
+      "strand": "waves"
+    },
+    {
+      "id": "ipho.waves.sound",
+      "label": "Sound Waves",
+      "type": "concept",
+      "description": "Sound propagation, Doppler effect, beats, resonance in pipes and strings",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.waves",
+      "bookName": "Waves & Optics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "153864a29f3ccbb8",
+      "comprehended": false,
+      "strand": "waves"
+    },
+    {
+      "id": "ipho.waves.interference",
+      "label": "Interference",
+      "type": "concept",
+      "description": "Young's double slit, thin film interference, Michelson interferometer, coherence",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.waves",
+      "bookName": "Waves & Optics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "d033808a32c7f549",
+      "comprehended": false,
+      "strand": "waves"
+    },
+    {
+      "id": "ipho.waves.diffraction",
+      "label": "Diffraction",
+      "type": "concept",
+      "description": "Single slit, diffraction gratings, resolving power, Fraunhofer and Fresnel diffraction",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.waves",
+      "bookName": "Waves & Optics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "ea9351d538c905aa",
+      "comprehended": false,
+      "strand": "waves"
+    },
+    {
+      "id": "ipho.waves.geometrical_optics",
+      "label": "Geometrical Optics",
+      "type": "concept",
+      "description": "Reflection, refraction, Snell's law, lenses, mirrors, optical instruments, Fermat's principle",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.waves",
+      "bookName": "Waves & Optics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "a55bf8076e8baa0f",
+      "comprehended": false,
+      "strand": "waves"
+    },
+    {
+      "id": "ipho.waves.polarization",
+      "label": "Polarization",
+      "type": "concept",
+      "description": "Linear/circular polarization, Malus's law, Brewster's angle, birefringence",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.waves",
+      "bookName": "Waves & Optics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "3b19ae2edffb2c5f",
+      "comprehended": false,
+      "strand": "waves"
+    },
+    {
+      "id": "ipho.waves.physical_optics",
+      "label": "Physical Optics",
+      "type": "concept",
+      "description": "Huygens' principle, optical path length, coherence length, holography basics",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.waves",
+      "bookName": "Waves & Optics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "e968635e3ee6ae8a",
+      "comprehended": false,
+      "strand": "waves"
+    },
+    {
       "id": "ipho.em.electrostatics",
       "label": "Electrostatics",
       "type": "concept",
-      "description": "Coulomb's law, Gauss's law, electric potential, capacitance",
+      "description": "Coulomb's law, Gauss's law, electric field, electric potential, conductors, capacitance",
       "grade_range": [
         "Olympiad"
       ],
@@ -265,8 +636,48 @@
       "book": "ipho.em",
       "bookName": "Electromagnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 3,
+      "bookOrder": 4,
       "external_id": "1adea80845b86b26",
+      "comprehended": false,
+      "strand": "em"
+    },
+    {
+      "id": "ipho.em.dielectrics",
+      "label": "Dielectrics",
+      "type": "concept",
+      "description": "Polarization, dielectric constant, capacitors with dielectrics, bound charges",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.em",
+      "bookName": "Electromagnetism",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "8df5dd1dc2f9162e",
+      "comprehended": false,
+      "strand": "em"
+    },
+    {
+      "id": "ipho.em.dc_circuits",
+      "label": "DC Circuits",
+      "type": "concept",
+      "description": "Ohm's law, Kirchhoff's laws, RC/RL transients, Thevenin/Norton theorems, Wheatstone bridge",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.em",
+      "bookName": "Electromagnetism",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "c5fbbf666158fb24",
       "comprehended": false,
       "strand": "em"
     },
@@ -274,7 +685,7 @@
       "id": "ipho.em.magnetostatics",
       "label": "Magnetostatics",
       "type": "concept",
-      "description": "Biot-Savart law, Ampere's law, magnetic force, magnetic materials",
+      "description": "Biot-Savart law, Ampere's law, magnetic force, Lorentz force, magnetic dipoles",
       "grade_range": [
         "Olympiad"
       ],
@@ -285,8 +696,28 @@
       "book": "ipho.em",
       "bookName": "Electromagnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 3,
+      "bookOrder": 4,
       "external_id": "09a5d68320cc5acb",
+      "comprehended": false,
+      "strand": "em"
+    },
+    {
+      "id": "ipho.em.magnetic_materials",
+      "label": "Magnetic Materials",
+      "type": "concept",
+      "description": "Diamagnetism, paramagnetism, ferromagnetism, hysteresis, magnetic permeability",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.em",
+      "bookName": "Electromagnetism",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "283334e3cd094a94",
       "comprehended": false,
       "strand": "em"
     },
@@ -294,7 +725,7 @@
       "id": "ipho.em.induction",
       "label": "Electromagnetic Induction",
       "type": "concept",
-      "description": "Faraday's law, Lenz's law, inductance, eddy currents",
+      "description": "Faraday's law, Lenz's law, motional EMF, inductance, eddy currents, mutual inductance",
       "grade_range": [
         "Olympiad"
       ],
@@ -305,7 +736,7 @@
       "book": "ipho.em",
       "bookName": "Electromagnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 3,
+      "bookOrder": 4,
       "external_id": "a0f3c5f3dfd01edc",
       "comprehended": false,
       "strand": "em"
@@ -314,7 +745,7 @@
       "id": "ipho.em.ac_circuits",
       "label": "AC Circuits",
       "type": "concept",
-      "description": "Impedance, resonance, RLC circuits, filters, phasors",
+      "description": "Impedance, phasors, resonance, RLC circuits, filters, power factor, transformers",
       "grade_range": [
         "Olympiad"
       ],
@@ -325,7 +756,7 @@
       "book": "ipho.em",
       "bookName": "Electromagnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 3,
+      "bookOrder": 4,
       "external_id": "63814fe5fbea8d03",
       "comprehended": false,
       "strand": "em"
@@ -334,7 +765,7 @@
       "id": "ipho.em.maxwell",
       "label": "Maxwell's Equations",
       "type": "concept",
-      "description": "Maxwell's equations in integral and differential form, EM waves",
+      "description": "Maxwell's equations, displacement current, electromagnetic waves, Poynting vector",
       "grade_range": [
         "Olympiad"
       ],
@@ -345,16 +776,16 @@
       "book": "ipho.em",
       "bookName": "Electromagnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 3,
+      "bookOrder": 4,
       "external_id": "68c9b33ce29d3c90",
       "comprehended": false,
       "strand": "em"
     },
     {
-      "id": "ipho.waves.wave_phenomena",
-      "label": "Wave Phenomena",
+      "id": "ipho.em.em_waves",
+      "label": "Electromagnetic Waves",
       "type": "concept",
-      "description": "Wave equation, superposition, standing waves, Doppler effect",
+      "description": "EM wave propagation, radiation pressure, antenna basics, EM spectrum",
       "grade_range": [
         "Olympiad"
       ],
@@ -362,79 +793,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "ipho.waves",
-      "bookName": "Waves & Optics",
-      "bookColor": "#22c55e",
+      "book": "ipho.em",
+      "bookName": "Electromagnetism",
+      "bookColor": "#f59e0b",
       "bookOrder": 4,
-      "external_id": "f1db482aca7240ae",
+      "external_id": "eec264e55aef5637",
       "comprehended": false,
-      "strand": "waves"
+      "strand": "em"
     },
     {
-      "id": "ipho.waves.interference",
-      "label": "Interference & Diffraction",
+      "id": "ipho.modern.special_relativity",
+      "label": "Special Relativity",
       "type": "concept",
-      "description": "Young's double slit, diffraction gratings, thin films, single slit",
-      "grade_range": [
-        "Olympiad"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "ipho.waves",
-      "bookName": "Waves & Optics",
-      "bookColor": "#22c55e",
-      "bookOrder": 4,
-      "external_id": "d033808a32c7f549",
-      "comprehended": false,
-      "strand": "waves"
-    },
-    {
-      "id": "ipho.waves.geometrical",
-      "label": "Geometrical Optics",
-      "type": "concept",
-      "description": "Reflection, refraction, lenses, mirrors, optical instruments",
-      "grade_range": [
-        "Olympiad"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "ipho.waves",
-      "bookName": "Waves & Optics",
-      "bookColor": "#22c55e",
-      "bookOrder": 4,
-      "external_id": "f395a455300c7036",
-      "comprehended": false,
-      "strand": "waves"
-    },
-    {
-      "id": "ipho.waves.wave_optics",
-      "label": "Wave Optics",
-      "type": "concept",
-      "description": "Polarization, coherence, Fraunhofer and Fresnel diffraction",
-      "grade_range": [
-        "Olympiad"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "ipho.waves",
-      "bookName": "Waves & Optics",
-      "bookColor": "#22c55e",
-      "bookOrder": 4,
-      "external_id": "5ca9d4f32abf5226",
-      "comprehended": false,
-      "strand": "waves"
-    },
-    {
-      "id": "ipho.modern.quantum",
-      "label": "Quantum Mechanics Basics",
-      "type": "concept",
-      "description": "Photoelectric effect, de Broglie waves, uncertainty principle, Bohr model",
+      "description": "Lorentz transformations, time dilation, length contraction, relativistic dynamics, four-vectors",
       "grade_range": [
         "Olympiad"
       ],
@@ -446,7 +817,47 @@
       "bookName": "Modern Physics",
       "bookColor": "#8b5cf6",
       "bookOrder": 5,
-      "external_id": "725de12f48251383",
+      "external_id": "14b584e588b1eeed",
+      "comprehended": false,
+      "strand": "modern"
+    },
+    {
+      "id": "ipho.modern.relativistic_energy",
+      "label": "Relativistic Energy & Momentum",
+      "type": "concept",
+      "description": "E=mc^2, relativistic momentum, invariant mass, Compton scattering, pair production",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.modern",
+      "bookName": "Modern Physics",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "56fed1e02569a724",
+      "comprehended": false,
+      "strand": "modern"
+    },
+    {
+      "id": "ipho.modern.quantum_intro",
+      "label": "Quantum Mechanics Intro",
+      "type": "concept",
+      "description": "Photoelectric effect, de Broglie waves, uncertainty principle, wave-particle duality",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.modern",
+      "bookName": "Modern Physics",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "982eae533df38dc0",
       "comprehended": false,
       "strand": "modern"
     },
@@ -454,7 +865,7 @@
       "id": "ipho.modern.atomic",
       "label": "Atomic Physics",
       "type": "concept",
-      "description": "Energy levels, spectra, selection rules, multi-electron atoms",
+      "description": "Bohr model, energy levels, spectra, selection rules, multi-electron atoms, X-rays",
       "grade_range": [
         "Olympiad"
       ],
@@ -474,7 +885,7 @@
       "id": "ipho.modern.nuclear",
       "label": "Nuclear Physics",
       "type": "concept",
-      "description": "Radioactive decay, binding energy, fission, fusion",
+      "description": "Radioactive decay, binding energy, fission, fusion, nuclear reactions, decay chains",
       "grade_range": [
         "Olympiad"
       ],
@@ -491,10 +902,30 @@
       "strand": "modern"
     },
     {
+      "id": "ipho.modern.particle",
+      "label": "Particle Physics Basics",
+      "type": "concept",
+      "description": "Standard model overview, conservation laws, leptons, quarks, fundamental interactions",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.modern",
+      "bookName": "Modern Physics",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "684b3800120824f2",
+      "comprehended": false,
+      "strand": "modern"
+    },
+    {
       "id": "ipho.modern.solid_state",
       "label": "Solid State Physics",
       "type": "concept",
-      "description": "Crystal structure, band theory, semiconductors, superconductivity basics",
+      "description": "Crystal structure, band theory, semiconductors, superconductivity basics, lattice vibrations",
       "grade_range": [
         "Olympiad"
       ],
@@ -511,10 +942,110 @@
       "strand": "modern"
     },
     {
-      "id": "ipho.mech.gravitation",
-      "label": "Gravitation",
+      "id": "ipho.modern.lasers",
+      "label": "Lasers & Stimulated Emission",
       "type": "concept",
-      "description": "Newton's law of gravitation, Kepler's laws, orbital mechanics",
+      "description": "Stimulated emission, population inversion, laser operation, coherence, applications",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.modern",
+      "bookName": "Modern Physics",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "f4956f6964ed910c",
+      "comprehended": false,
+      "strand": "modern"
+    },
+    {
+      "id": "ipho.exp.measurement",
+      "label": "Measurement Techniques",
+      "type": "concept",
+      "description": "Vernier calipers, micrometers, oscilloscopes, multimeters, precision instruments",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.exp",
+      "bookName": "Experimental",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "b792fbfc2e502b8a",
+      "comprehended": false,
+      "strand": "experimental"
+    },
+    {
+      "id": "ipho.exp.error_analysis",
+      "label": "Error Analysis",
+      "type": "concept",
+      "description": "Systematic/random errors, error propagation, significant figures, standard deviation",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.exp",
+      "bookName": "Experimental",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "cb22cc18ec4ca849",
+      "comprehended": false,
+      "strand": "experimental"
+    },
+    {
+      "id": "ipho.exp.data_analysis",
+      "label": "Data Analysis",
+      "type": "concept",
+      "description": "Graphing, curve fitting, linearization, least squares, interpolation/extrapolation",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.exp",
+      "bookName": "Experimental",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "ddce2916f66d7851",
+      "comprehended": false,
+      "strand": "experimental"
+    },
+    {
+      "id": "ipho.exp.experimental_design",
+      "label": "Experimental Design",
+      "type": "concept",
+      "description": "Controlling variables, planning experiments, hypothesis testing, reproducibility",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.exp",
+      "bookName": "Experimental",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "a0708c76a33ddc20",
+      "comprehended": false,
+      "strand": "experimental"
+    },
+    {
+      "id": "ipho.mech.circular_motion",
+      "label": "Circular Motion",
+      "type": "concept",
+      "description": "Uniform/non-uniform circular motion, centripetal acceleration, banking, vertical circles",
       "grade_range": [
         "Olympiad"
       ],
@@ -526,15 +1057,75 @@
       "bookName": "Mechanics",
       "bookColor": "#3b82f6",
       "bookOrder": 1,
-      "external_id": "03c06eaa714a799b",
+      "external_id": "b146f9e30794d262",
       "comprehended": false,
       "strand": "mechanics"
     },
     {
-      "id": "ipho.thermo.heat_transfer",
-      "label": "Heat Transfer",
+      "id": "ipho.em.energy_em",
+      "label": "Energy in EM Fields",
       "type": "concept",
-      "description": "Conduction, convection, radiation, Stefan-Boltzmann law",
+      "description": "Energy stored in capacitors and inductors, energy density of E and B fields",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.em",
+      "bookName": "Electromagnetism",
+      "bookColor": "#f59e0b",
+      "bookOrder": 4,
+      "external_id": "05de34eec0a7be54",
+      "comprehended": false,
+      "strand": "em"
+    },
+    {
+      "id": "ipho.modern.blackbody",
+      "label": "Blackbody Radiation",
+      "type": "concept",
+      "description": "Planck's law, Wien's displacement law, Stefan-Boltzmann law, ultraviolet catastrophe",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.modern",
+      "bookName": "Modern Physics",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "f20781432ddf4e70",
+      "comprehended": false,
+      "strand": "modern"
+    },
+    {
+      "id": "ipho.waves.doppler",
+      "label": "Doppler Effect",
+      "type": "concept",
+      "description": "Classical and relativistic Doppler effect, applications in astronomy and radar",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ipho.waves",
+      "bookName": "Waves & Optics",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "140e172dc3245376",
+      "comprehended": false,
+      "strand": "waves"
+    },
+    {
+      "id": "ipho.thermo.thermal_expansion",
+      "label": "Thermal Expansion",
+      "type": "concept",
+      "description": "Linear and volumetric expansion, thermal stress, bimetallic strips",
       "grade_range": [
         "Olympiad"
       ],
@@ -546,15 +1137,15 @@
       "bookName": "Thermodynamics",
       "bookColor": "#ef4444",
       "bookOrder": 2,
-      "external_id": "e3c74ba74f0d4988",
+      "external_id": "488b79aeeb5aca17",
       "comprehended": false,
       "strand": "thermo"
     },
     {
-      "id": "ipho.em.dc_circuits",
-      "label": "DC Circuits",
+      "id": "ipho.em.semiconductors",
+      "label": "Semiconductors & Electronics",
       "type": "concept",
-      "description": "Ohm's law, Kirchhoff's laws, RC/RL circuits, Thevenin's theorem",
+      "description": "p-n junctions, diodes, transistors basics, LED, photodiode",
       "grade_range": [
         "Olympiad"
       ],
@@ -565,56 +1156,191 @@
       "book": "ipho.em",
       "bookName": "Electromagnetism",
       "bookColor": "#f59e0b",
-      "bookOrder": 3,
-      "external_id": "c5fbbf666158fb24",
+      "bookOrder": 4,
+      "external_id": "2a106629c880473c",
       "comprehended": false,
       "strand": "em"
     }
   ],
   "edges": [
     {
-      "source": "ipho.mech.classical",
-      "target": "ipho.mech.rigid_body",
+      "source": "ipho.mech.kinematics",
+      "target": "ipho.mech.newtons_laws",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ipho.mech.classical",
-      "target": "ipho.mech.fluid",
+      "source": "ipho.mech.newtons_laws",
+      "target": "ipho.mech.work_energy",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ipho.mech.classical",
-      "target": "ipho.mech.oscillations",
+      "source": "ipho.mech.newtons_laws",
+      "target": "ipho.mech.momentum",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ipho.mech.classical",
+      "source": "ipho.mech.newtons_laws",
+      "target": "ipho.mech.circular_motion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.mech.newtons_laws",
+      "target": "ipho.mech.statics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.mech.circular_motion",
+      "target": "ipho.mech.rotational",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.mech.momentum",
+      "target": "ipho.mech.rotational",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.mech.work_energy",
       "target": "ipho.mech.gravitation",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ipho.mech.classical",
-      "target": "ipho.mech.relativity",
+      "source": "ipho.mech.circular_motion",
+      "target": "ipho.mech.gravitation",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ipho.thermo.kinetic",
-      "target": "ipho.thermo.laws",
+      "source": "ipho.mech.work_energy",
+      "target": "ipho.mech.oscillations",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ipho.thermo.laws",
-      "target": "ipho.thermo.phase",
+      "source": "ipho.mech.newtons_laws",
+      "target": "ipho.mech.fluid",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ipho.thermo.laws",
+      "source": "ipho.mech.statics",
+      "target": "ipho.mech.fluid",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.mech.circular_motion",
+      "target": "ipho.mech.non_inertial",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.mech.rotational",
+      "target": "ipho.mech.non_inertial",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.mech.work_energy",
+      "target": "ipho.mech.lagrangian",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.mech.oscillations",
+      "target": "ipho.mech.lagrangian",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.mech.statics",
+      "target": "ipho.mech.elasticity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.thermo.kinetic_theory",
+      "target": "ipho.thermo.first_law",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.thermo.kinetic_theory",
+      "target": "ipho.thermo.thermal_expansion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.thermo.first_law",
+      "target": "ipho.thermo.heat_engines",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.thermo.first_law",
+      "target": "ipho.thermo.entropy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.thermo.entropy",
+      "target": "ipho.thermo.phase_transitions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.thermo.first_law",
+      "target": "ipho.thermo.heat_transfer",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.thermo.entropy",
       "target": "ipho.thermo.statistical",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ipho.thermo.laws",
-      "target": "ipho.thermo.heat_transfer",
+      "source": "ipho.thermo.kinetic_theory",
+      "target": "ipho.thermo.real_gases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.thermo.first_law",
+      "target": "ipho.thermo.real_gases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.mech.oscillations",
+      "target": "ipho.waves.wave_mechanics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.waves.wave_mechanics",
+      "target": "ipho.waves.sound",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.waves.wave_mechanics",
+      "target": "ipho.waves.interference",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.waves.interference",
+      "target": "ipho.waves.diffraction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.waves.wave_mechanics",
+      "target": "ipho.waves.geometrical_optics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.waves.wave_mechanics",
+      "target": "ipho.waves.polarization",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.waves.interference",
+      "target": "ipho.waves.physical_optics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.waves.diffraction",
+      "target": "ipho.waves.physical_optics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.waves.sound",
+      "target": "ipho.waves.doppler",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.em.electrostatics",
+      "target": "ipho.em.dielectrics",
       "relation": "prerequisite_for"
     },
     {
@@ -624,7 +1350,17 @@
     },
     {
       "source": "ipho.em.electrostatics",
+      "target": "ipho.em.energy_em",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.em.dc_circuits",
       "target": "ipho.em.magnetostatics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.em.magnetostatics",
+      "target": "ipho.em.magnetic_materials",
       "relation": "prerequisite_for"
     },
     {
@@ -648,37 +1384,62 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "ipho.mech.oscillations",
-      "target": "ipho.waves.wave_phenomena",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "ipho.waves.wave_phenomena",
-      "target": "ipho.waves.interference",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "ipho.waves.wave_phenomena",
-      "target": "ipho.waves.geometrical",
-      "relation": "prerequisite_for"
-    },
-    {
-      "source": "ipho.waves.interference",
-      "target": "ipho.waves.wave_optics",
+      "source": "ipho.em.dielectrics",
+      "target": "ipho.em.maxwell",
       "relation": "prerequisite_for"
     },
     {
       "source": "ipho.em.maxwell",
-      "target": "ipho.modern.quantum",
+      "target": "ipho.em.em_waves",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ipho.waves.wave_optics",
-      "target": "ipho.modern.quantum",
+      "source": "ipho.em.dc_circuits",
+      "target": "ipho.em.semiconductors",
       "relation": "prerequisite_for"
     },
     {
-      "source": "ipho.modern.quantum",
+      "source": "ipho.em.induction",
+      "target": "ipho.em.energy_em",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.mech.work_energy",
+      "target": "ipho.modern.special_relativity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.mech.momentum",
+      "target": "ipho.modern.special_relativity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.modern.special_relativity",
+      "target": "ipho.modern.relativistic_energy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.em.em_waves",
+      "target": "ipho.modern.quantum_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.waves.physical_optics",
+      "target": "ipho.modern.quantum_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.thermo.heat_transfer",
+      "target": "ipho.modern.blackbody",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.thermo.statistical",
+      "target": "ipho.modern.blackbody",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.modern.quantum_intro",
       "target": "ipho.modern.atomic",
       "relation": "prerequisite_for"
     },
@@ -688,8 +1449,43 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "ipho.modern.quantum",
+      "source": "ipho.modern.relativistic_energy",
+      "target": "ipho.modern.nuclear",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.modern.nuclear",
+      "target": "ipho.modern.particle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.modern.quantum_intro",
       "target": "ipho.modern.solid_state",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.modern.atomic",
+      "target": "ipho.modern.lasers",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.modern.solid_state",
+      "target": "ipho.em.semiconductors",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.exp.measurement",
+      "target": "ipho.exp.error_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.exp.error_analysis",
+      "target": "ipho.exp.data_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "ipho.exp.data_analysis",
+      "target": "ipho.exp.experimental_design",
       "relation": "prerequisite_for"
     }
   ]

@@ -3,12 +3,13 @@
     "domain": "computer_science",
     "curriculum": "USACO (USA Computing Olympiad)",
     "view": "k12-prerequisites",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "USACO topics with prerequisite ordering, colored by level",
     "sources": [
-      "USACO Syllabus"
+      "USACO Syllabus",
+      "USACO Guide (usaco.guide)"
     ],
-    "last_updated": "2026-03-27"
+    "last_updated": "2026-03-28"
   },
   "books": [
     {
@@ -38,32 +39,82 @@
   ],
   "strands": [
     {
-      "id": "bronze",
-      "name": "Bronze",
-      "color": "#CD7F32"
+      "id": "fundamentals",
+      "name": "Fundamentals & Ad Hoc",
+      "color": "#8B4513"
     },
     {
-      "id": "silver",
-      "name": "Silver",
-      "color": "#C0C0C0"
+      "id": "sorting_searching",
+      "name": "Sorting & Searching",
+      "color": "#2E86C1"
     },
     {
-      "id": "gold",
-      "name": "Gold",
-      "color": "#FFD700"
+      "id": "graph_theory",
+      "name": "Graph Theory",
+      "color": "#27AE60"
     },
     {
-      "id": "platinum",
-      "name": "Platinum",
-      "color": "#9B59B6"
+      "id": "trees",
+      "name": "Trees & Tree Techniques",
+      "color": "#16A085"
+    },
+    {
+      "id": "dp",
+      "name": "Dynamic Programming",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "data_structures",
+      "name": "Data Structures & Range Queries",
+      "color": "#8E44AD"
+    },
+    {
+      "id": "strings",
+      "name": "Strings",
+      "color": "#F39C12"
+    },
+    {
+      "id": "geometry",
+      "name": "Geometry",
+      "color": "#D35400"
+    },
+    {
+      "id": "math_greedy",
+      "name": "Math & Greedy",
+      "color": "#1ABC9C"
+    },
+    {
+      "id": "flows_matching",
+      "name": "Flows & Matching",
+      "color": "#C0392B"
     }
   ],
   "nodes": [
     {
+      "id": "usaco.bronze.io_basics",
+      "label": "I/O & Time Complexity",
+      "type": "concept",
+      "description": "Fast I/O, reading/writing files, understanding O(n) notation and time limits",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.bronze",
+      "bookName": "Bronze",
+      "bookColor": "#cd7f32",
+      "bookOrder": 1,
+      "external_id": "aa5f2f8d9266aa36",
+      "comprehended": false,
+      "strand": "fundamentals"
+    },
+    {
       "id": "usaco.bronze.simulation",
       "label": "Simulation",
       "type": "concept",
-      "description": "Simulating processes step by step",
+      "description": "Simulating processes step by step as described in the problem",
       "grade_range": [
         "Competition"
       ],
@@ -77,33 +128,13 @@
       "bookOrder": 1,
       "external_id": "8940d363c2f3a3ee",
       "comprehended": false,
-      "strand": "bronze"
-    },
-    {
-      "id": "usaco.bronze.sorting",
-      "label": "Sorting",
-      "type": "concept",
-      "description": "Sorting algorithms and custom comparators",
-      "grade_range": [
-        "Competition"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "usaco.bronze",
-      "bookName": "Bronze",
-      "bookColor": "#cd7f32",
-      "bookOrder": 1,
-      "external_id": "bfd7691b08e9c8c7",
-      "comprehended": false,
-      "strand": "bronze"
+      "strand": "fundamentals"
     },
     {
       "id": "usaco.bronze.complete_search",
       "label": "Complete Search",
       "type": "concept",
-      "description": "Brute force and exhaustive search techniques",
+      "description": "Brute force enumeration, exhaustive search, iterating over all subsets and permutations",
       "grade_range": [
         "Competition"
       ],
@@ -117,13 +148,33 @@
       "bookOrder": 1,
       "external_id": "066009c359c04a2b",
       "comprehended": false,
-      "strand": "bronze"
+      "strand": "fundamentals"
+    },
+    {
+      "id": "usaco.bronze.recursion",
+      "label": "Recursion",
+      "type": "concept",
+      "description": "Recursive thinking, recursive enumeration, generating subsets and permutations",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.bronze",
+      "bookName": "Bronze",
+      "bookColor": "#cd7f32",
+      "bookOrder": 1,
+      "external_id": "333ad86359c9b2af",
+      "comprehended": false,
+      "strand": "fundamentals"
     },
     {
       "id": "usaco.bronze.ad_hoc",
       "label": "Ad Hoc",
       "type": "concept",
-      "description": "Problems requiring creative problem-specific approaches",
+      "description": "Problems requiring creative, problem-specific approaches without standard algorithms",
       "grade_range": [
         "Competition"
       ],
@@ -137,13 +188,13 @@
       "bookOrder": 1,
       "external_id": "f127bded7007e1e9",
       "comprehended": false,
-      "strand": "bronze"
+      "strand": "fundamentals"
     },
     {
       "id": "usaco.bronze.rect_geometry",
       "label": "Rectangle Geometry",
       "type": "concept",
-      "description": "Axis-aligned rectangle intersection and area problems",
+      "description": "Axis-aligned rectangle intersection, union area, and containment problems",
       "grade_range": [
         "Competition"
       ],
@@ -157,13 +208,13 @@
       "bookOrder": 1,
       "external_id": "a1e4dbbff2c697a1",
       "comprehended": false,
-      "strand": "bronze"
+      "strand": "geometry"
     },
     {
-      "id": "usaco.silver.binary_search",
-      "label": "Binary Search",
+      "id": "usaco.bronze.sorting",
+      "label": "Sorting",
       "type": "concept",
-      "description": "Binary search on sorted data and binary search on the answer",
+      "description": "Built-in sort, custom comparators, sorting by multiple keys",
       "grade_range": [
         "Competition"
       ],
@@ -171,19 +222,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "usaco.silver",
-      "bookName": "Silver",
-      "bookColor": "#c0c0c0",
-      "bookOrder": 2,
-      "external_id": "e7f3031ed63edaca",
+      "book": "usaco.bronze",
+      "bookName": "Bronze",
+      "bookColor": "#cd7f32",
+      "bookOrder": 1,
+      "external_id": "bfd7691b08e9c8c7",
       "comprehended": false,
-      "strand": "silver"
+      "strand": "sorting_searching"
     },
     {
-      "id": "usaco.silver.prefix_sums",
-      "label": "Prefix Sums",
+      "id": "usaco.bronze.sets_maps",
+      "label": "Sets & Maps",
       "type": "concept",
-      "description": "1D and 2D prefix sums for efficient range queries",
+      "description": "Using sets for uniqueness, maps for key-value lookup, frequency counting",
       "grade_range": [
         "Competition"
       ],
@@ -191,19 +242,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "usaco.silver",
-      "bookName": "Silver",
-      "bookColor": "#c0c0c0",
-      "bookOrder": 2,
-      "external_id": "46a96858307d2036",
+      "book": "usaco.bronze",
+      "bookName": "Bronze",
+      "bookColor": "#cd7f32",
+      "bookOrder": 1,
+      "external_id": "2f7653e0bc3d6a7c",
       "comprehended": false,
-      "strand": "silver"
+      "strand": "data_structures"
     },
     {
-      "id": "usaco.silver.two_pointers",
-      "label": "Two Pointers",
+      "id": "usaco.bronze.intro_graphs",
+      "label": "Introduction to Graphs",
       "type": "concept",
-      "description": "Two-pointer and sliding window techniques",
+      "description": "Graph terminology, adjacency list/matrix representation, basic traversal concepts",
       "grade_range": [
         "Competition"
       ],
@@ -211,19 +262,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "usaco.silver",
-      "bookName": "Silver",
-      "bookColor": "#c0c0c0",
-      "bookOrder": 2,
-      "external_id": "ab056926a2ee3cb5",
+      "book": "usaco.bronze",
+      "bookName": "Bronze",
+      "bookColor": "#cd7f32",
+      "bookOrder": 1,
+      "external_id": "2577c3fe0a144a0e",
       "comprehended": false,
-      "strand": "silver"
+      "strand": "graph_theory"
     },
     {
-      "id": "usaco.silver.dfs_bfs",
-      "label": "DFS & BFS",
+      "id": "usaco.bronze.intro_greedy",
+      "label": "Introduction to Greedy",
       "type": "concept",
-      "description": "Depth-first and breadth-first search on graphs",
+      "description": "Greedy approach basics, coin change intuition, simple greedy proofs",
       "grade_range": [
         "Competition"
       ],
@@ -231,19 +282,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "usaco.silver",
-      "bookName": "Silver",
-      "bookColor": "#c0c0c0",
-      "bookOrder": 2,
-      "external_id": "33bd6a05f2e1252d",
+      "book": "usaco.bronze",
+      "bookName": "Bronze",
+      "bookColor": "#cd7f32",
+      "bookOrder": 1,
+      "external_id": "cdb5c49d479a3fb4",
       "comprehended": false,
-      "strand": "silver"
+      "strand": "math_greedy"
     },
     {
-      "id": "usaco.silver.flood_fill",
-      "label": "Flood Fill",
+      "id": "usaco.bronze.basic_math",
+      "label": "Basic Number Theory",
       "type": "concept",
-      "description": "Connected component labeling on grids",
+      "description": "Divisibility, primes, GCD/LCM, modular arithmetic basics",
       "grade_range": [
         "Competition"
       ],
@@ -251,19 +302,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "usaco.silver",
-      "bookName": "Silver",
-      "bookColor": "#c0c0c0",
-      "bookOrder": 2,
-      "external_id": "e20fe2dac91d7c08",
+      "book": "usaco.bronze",
+      "bookName": "Bronze",
+      "bookColor": "#cd7f32",
+      "bookOrder": 1,
+      "external_id": "574a205b7213882a",
       "comprehended": false,
-      "strand": "silver"
+      "strand": "math_greedy"
     },
     {
-      "id": "usaco.silver.trees",
-      "label": "Trees",
+      "id": "usaco.bronze.basic_string",
+      "label": "Basic String Processing",
       "type": "concept",
-      "description": "Tree traversal, rooting, diameter, LCA basics",
+      "description": "String manipulation, substring operations, character frequency counting",
       "grade_range": [
         "Competition"
       ],
@@ -271,259 +322,19 @@
         "subtopic"
       ],
       "pages": "",
-      "book": "usaco.silver",
-      "bookName": "Silver",
-      "bookColor": "#c0c0c0",
-      "bookOrder": 2,
-      "external_id": "140e4496a10637ed",
+      "book": "usaco.bronze",
+      "bookName": "Bronze",
+      "bookColor": "#cd7f32",
+      "bookOrder": 1,
+      "external_id": "a3c8d25171090881",
       "comprehended": false,
-      "strand": "silver"
-    },
-    {
-      "id": "usaco.gold.dp",
-      "label": "Dynamic Programming",
-      "type": "concept",
-      "description": "Classic DP: knapsack, LIS, interval DP, tree DP",
-      "grade_range": [
-        "Competition"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "usaco.gold",
-      "bookName": "Gold",
-      "bookColor": "#ffd700",
-      "bookOrder": 3,
-      "external_id": "13fcf023d675780c",
-      "comprehended": false,
-      "strand": "gold"
-    },
-    {
-      "id": "usaco.gold.shortest_paths",
-      "label": "Shortest Paths",
-      "type": "concept",
-      "description": "Dijkstra, Bellman-Ford, Floyd-Warshall algorithms",
-      "grade_range": [
-        "Competition"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "usaco.gold",
-      "bookName": "Gold",
-      "bookColor": "#ffd700",
-      "bookOrder": 3,
-      "external_id": "47511c708d437301",
-      "comprehended": false,
-      "strand": "gold"
-    },
-    {
-      "id": "usaco.gold.mst",
-      "label": "Minimum Spanning Tree",
-      "type": "concept",
-      "description": "Kruskal's and Prim's algorithms",
-      "grade_range": [
-        "Competition"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "usaco.gold",
-      "bookName": "Gold",
-      "bookColor": "#ffd700",
-      "bookOrder": 3,
-      "external_id": "ff9957f8487ad7e3",
-      "comprehended": false,
-      "strand": "gold"
-    },
-    {
-      "id": "usaco.gold.euler_tour",
-      "label": "Euler Tour",
-      "type": "concept",
-      "description": "Euler tour technique for tree flattening",
-      "grade_range": [
-        "Competition"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "usaco.gold",
-      "bookName": "Gold",
-      "bookColor": "#ffd700",
-      "bookOrder": 3,
-      "external_id": "672be359f1d7a29c",
-      "comprehended": false,
-      "strand": "gold"
-    },
-    {
-      "id": "usaco.gold.range_queries",
-      "label": "Range Queries",
-      "type": "concept",
-      "description": "Segment tree, BIT/Fenwick tree for range queries",
-      "grade_range": [
-        "Competition"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "usaco.gold",
-      "bookName": "Gold",
-      "bookColor": "#ffd700",
-      "bookOrder": 3,
-      "external_id": "29c189a112ce549f",
-      "comprehended": false,
-      "strand": "gold"
-    },
-    {
-      "id": "usaco.gold.hashing",
-      "label": "Hashing",
-      "type": "concept",
-      "description": "Hash maps, string hashing, rolling hash",
-      "grade_range": [
-        "Competition"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "usaco.gold",
-      "bookName": "Gold",
-      "bookColor": "#ffd700",
-      "bookOrder": 3,
-      "external_id": "e6f57d5f69df5b66",
-      "comprehended": false,
-      "strand": "gold"
-    },
-    {
-      "id": "usaco.plat.advanced_dp",
-      "label": "Advanced DP",
-      "type": "concept",
-      "description": "DP optimizations: Knuth, divide & conquer, convex hull trick on DP",
-      "grade_range": [
-        "Competition"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "usaco.plat",
-      "bookName": "Platinum",
-      "bookColor": "#e5e4e2",
-      "bookOrder": 4,
-      "external_id": "5cf015c0c36da492",
-      "comprehended": false,
-      "strand": "platinum"
-    },
-    {
-      "id": "usaco.plat.centroid_decomp",
-      "label": "Centroid Decomposition",
-      "type": "concept",
-      "description": "Centroid decomposition for tree path queries",
-      "grade_range": [
-        "Competition"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "usaco.plat",
-      "bookName": "Platinum",
-      "bookColor": "#e5e4e2",
-      "bookOrder": 4,
-      "external_id": "1023461570aa8919",
-      "comprehended": false,
-      "strand": "platinum"
-    },
-    {
-      "id": "usaco.plat.hld",
-      "label": "Heavy-Light Decomposition",
-      "type": "concept",
-      "description": "HLD for efficient tree path queries with segment trees",
-      "grade_range": [
-        "Competition"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "usaco.plat",
-      "bookName": "Platinum",
-      "bookColor": "#e5e4e2",
-      "bookOrder": 4,
-      "external_id": "1f212d7f4bcd34b0",
-      "comprehended": false,
-      "strand": "platinum"
-    },
-    {
-      "id": "usaco.plat.cht",
-      "label": "Convex Hull Trick",
-      "type": "concept",
-      "description": "Convex hull trick for DP optimization with linear functions",
-      "grade_range": [
-        "Competition"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "usaco.plat",
-      "bookName": "Platinum",
-      "bookColor": "#e5e4e2",
-      "bookOrder": 4,
-      "external_id": "79553a2acd17d03e",
-      "comprehended": false,
-      "strand": "platinum"
-    },
-    {
-      "id": "usaco.plat.seg_beats",
-      "label": "Segment Tree Beats",
-      "type": "concept",
-      "description": "Segment tree beats for range chmin/chmax operations",
-      "grade_range": [
-        "Competition"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "usaco.plat",
-      "bookName": "Platinum",
-      "bookColor": "#e5e4e2",
-      "bookOrder": 4,
-      "external_id": "04a72840e2541ef9",
-      "comprehended": false,
-      "strand": "platinum"
-    },
-    {
-      "id": "usaco.plat.persistent",
-      "label": "Persistent Structures",
-      "type": "concept",
-      "description": "Persistent segment trees and persistent arrays",
-      "grade_range": [
-        "Competition"
-      ],
-      "tags": [
-        "subtopic"
-      ],
-      "pages": "",
-      "book": "usaco.plat",
-      "bookName": "Platinum",
-      "bookColor": "#e5e4e2",
-      "bookOrder": 4,
-      "external_id": "d70a2f34226355b1",
-      "comprehended": false,
-      "strand": "platinum"
+      "strand": "strings"
     },
     {
       "id": "usaco.bronze.intro_ds",
-      "label": "Basic Data Structures",
+      "label": "Arrays & Stacks/Queues",
       "type": "concept",
-      "description": "Arrays, maps, sets, stacks, queues",
+      "description": "Arrays, stacks, queues, deques as fundamental data structures",
       "grade_range": [
         "Competition"
       ],
@@ -537,10 +348,1340 @@
       "bookOrder": 1,
       "external_id": "9876d0c561317008",
       "comprehended": false,
-      "strand": "bronze"
+      "strand": "data_structures"
+    },
+    {
+      "id": "usaco.bronze.grid_problems",
+      "label": "2D Array / Grid Problems",
+      "type": "concept",
+      "description": "Traversing and manipulating 2D grids, directional movement, boundary handling",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.bronze",
+      "bookName": "Bronze",
+      "bookColor": "#cd7f32",
+      "bookOrder": 1,
+      "external_id": "3437009f9bb958da",
+      "comprehended": false,
+      "strand": "fundamentals"
+    },
+    {
+      "id": "usaco.silver.binary_search",
+      "label": "Binary Search",
+      "type": "concept",
+      "description": "Binary search on sorted arrays and binary search on the answer",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.silver",
+      "bookName": "Silver",
+      "bookColor": "#c0c0c0",
+      "bookOrder": 2,
+      "external_id": "e7f3031ed63edaca",
+      "comprehended": false,
+      "strand": "sorting_searching"
+    },
+    {
+      "id": "usaco.silver.two_pointers",
+      "label": "Two Pointers",
+      "type": "concept",
+      "description": "Two-pointer technique and sliding window for subarray/subsequence problems",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.silver",
+      "bookName": "Silver",
+      "bookColor": "#c0c0c0",
+      "bookOrder": 2,
+      "external_id": "ab056926a2ee3cb5",
+      "comprehended": false,
+      "strand": "sorting_searching"
+    },
+    {
+      "id": "usaco.silver.prefix_sums",
+      "label": "Prefix Sums",
+      "type": "concept",
+      "description": "1D and 2D prefix sums for O(1) range sum queries",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.silver",
+      "bookName": "Silver",
+      "bookColor": "#c0c0c0",
+      "bookOrder": 2,
+      "external_id": "46a96858307d2036",
+      "comprehended": false,
+      "strand": "data_structures"
+    },
+    {
+      "id": "usaco.silver.custom_sorting",
+      "label": "Custom Sorting & Comparators",
+      "type": "concept",
+      "description": "Sorting with custom comparators, coordinate compression, event sorting",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.silver",
+      "bookName": "Silver",
+      "bookColor": "#c0c0c0",
+      "bookOrder": 2,
+      "external_id": "f2dde30c733618cb",
+      "comprehended": false,
+      "strand": "sorting_searching"
+    },
+    {
+      "id": "usaco.silver.dfs",
+      "label": "Depth-First Search",
+      "type": "concept",
+      "description": "DFS traversal, connected components, cycle detection in undirected graphs",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.silver",
+      "bookName": "Silver",
+      "bookColor": "#c0c0c0",
+      "bookOrder": 2,
+      "external_id": "374d0096384fb97e",
+      "comprehended": false,
+      "strand": "graph_theory"
+    },
+    {
+      "id": "usaco.silver.bfs",
+      "label": "Breadth-First Search",
+      "type": "concept",
+      "description": "BFS traversal, shortest path in unweighted graphs, multi-source BFS",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.silver",
+      "bookName": "Silver",
+      "bookColor": "#c0c0c0",
+      "bookOrder": 2,
+      "external_id": "50cfe544bd81043b",
+      "comprehended": false,
+      "strand": "graph_theory"
+    },
+    {
+      "id": "usaco.silver.flood_fill",
+      "label": "Flood Fill",
+      "type": "concept",
+      "description": "Connected component labeling on grids, region counting, boundary tracing",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.silver",
+      "bookName": "Silver",
+      "bookColor": "#c0c0c0",
+      "bookOrder": 2,
+      "external_id": "e20fe2dac91d7c08",
+      "comprehended": false,
+      "strand": "graph_theory"
+    },
+    {
+      "id": "usaco.silver.trees",
+      "label": "Introduction to Trees",
+      "type": "concept",
+      "description": "Tree properties, rooting, tree traversal, finding diameter and LCA basics",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.silver",
+      "bookName": "Silver",
+      "bookColor": "#c0c0c0",
+      "bookOrder": 2,
+      "external_id": "140e4496a10637ed",
+      "comprehended": false,
+      "strand": "trees"
+    },
+    {
+      "id": "usaco.silver.greedy_sorting",
+      "label": "Greedy with Sorting",
+      "type": "concept",
+      "description": "Activity selection, interval scheduling, greedy algorithms that rely on sorted order",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.silver",
+      "bookName": "Silver",
+      "bookColor": "#c0c0c0",
+      "bookOrder": 2,
+      "external_id": "dcbb3f7506270f19",
+      "comprehended": false,
+      "strand": "math_greedy"
+    },
+    {
+      "id": "usaco.silver.stacks_queues",
+      "label": "Stacks & Queues Applications",
+      "type": "concept",
+      "description": "Monotone stack, next greater element, parenthesis matching, queue-based simulation",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.silver",
+      "bookName": "Silver",
+      "bookColor": "#c0c0c0",
+      "bookOrder": 2,
+      "external_id": "8cf579da8e35aaf3",
+      "comprehended": false,
+      "strand": "data_structures"
+    },
+    {
+      "id": "usaco.silver.graph_representation",
+      "label": "Graph Representations",
+      "type": "concept",
+      "description": "Adjacency list, adjacency matrix, edge list, implicit graphs on grids",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.silver",
+      "bookName": "Silver",
+      "bookColor": "#c0c0c0",
+      "bookOrder": 2,
+      "external_id": "cacad13d80fd0299",
+      "comprehended": false,
+      "strand": "graph_theory"
+    },
+    {
+      "id": "usaco.silver.func_graphs",
+      "label": "Functional Graphs",
+      "type": "concept",
+      "description": "Successor graphs, cycle detection (Floyd/tortoise-hare), rho shape",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.silver",
+      "bookName": "Silver",
+      "bookColor": "#c0c0c0",
+      "bookOrder": 2,
+      "external_id": "69adb7b145bac184",
+      "comprehended": false,
+      "strand": "graph_theory"
+    },
+    {
+      "id": "usaco.silver.ordered_sets",
+      "label": "Ordered Sets & Maps",
+      "type": "concept",
+      "description": "Balanced BST sets/maps (std::set, TreeSet), lower/upper bound queries",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.silver",
+      "bookName": "Silver",
+      "bookColor": "#c0c0c0",
+      "bookOrder": 2,
+      "external_id": "870e25961b4af2de",
+      "comprehended": false,
+      "strand": "data_structures"
+    },
+    {
+      "id": "usaco.silver.intro_dp",
+      "label": "Introduction to DP",
+      "type": "concept",
+      "description": "Memoization, coin change, Fibonacci-style recurrence, basic 1D/2D DP",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.silver",
+      "bookName": "Silver",
+      "bookColor": "#c0c0c0",
+      "bookOrder": 2,
+      "external_id": "8e4e74ef1420624f",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "usaco.silver.pq",
+      "label": "Priority Queues",
+      "type": "concept",
+      "description": "Binary heap, priority queue operations, using PQ for greedy/simulation",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.silver",
+      "bookName": "Silver",
+      "bookColor": "#c0c0c0",
+      "bookOrder": 2,
+      "external_id": "c8d523fb33e212dd",
+      "comprehended": false,
+      "strand": "data_structures"
+    },
+    {
+      "id": "usaco.silver.bipartite",
+      "label": "Bipartite Check / Graph Coloring",
+      "type": "concept",
+      "description": "2-coloring, bipartiteness testing via BFS/DFS",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.silver",
+      "bookName": "Silver",
+      "bookColor": "#c0c0c0",
+      "bookOrder": 2,
+      "external_id": "092b5f0abe90353b",
+      "comprehended": false,
+      "strand": "graph_theory"
+    },
+    {
+      "id": "usaco.gold.dp_knapsack",
+      "label": "Knapsack DP",
+      "type": "concept",
+      "description": "0/1 knapsack, unbounded knapsack, subset sum variants",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "43a9d20f4734905d",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "usaco.gold.dp_lis",
+      "label": "Longest Increasing Subsequence",
+      "type": "concept",
+      "description": "LIS in O(n log n), patience sorting, applications to permutation problems",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "e26534b4616853d8",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "usaco.gold.dp_interval",
+      "label": "Interval DP",
+      "type": "concept",
+      "description": "DP on intervals/ranges, matrix chain multiplication, merging intervals",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "b03436a7b2eca4ce",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "usaco.gold.dp_tree",
+      "label": "Tree DP",
+      "type": "concept",
+      "description": "DP on trees, rerooting technique, subtree aggregation",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "42a48385bf496ce6",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "usaco.gold.dp_dag",
+      "label": "DP on DAGs",
+      "type": "concept",
+      "description": "Shortest/longest path on DAGs, counting paths, DP with topological order",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "7469a460b46a59bc",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "usaco.gold.dijkstra",
+      "label": "Dijkstra's Algorithm",
+      "type": "concept",
+      "description": "Single-source shortest path on non-negative weighted graphs, priority queue Dijkstra",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "f6eeb399a719f17d",
+      "comprehended": false,
+      "strand": "graph_theory"
+    },
+    {
+      "id": "usaco.gold.bfs01",
+      "label": "0-1 BFS",
+      "type": "concept",
+      "description": "Shortest path with 0/1 edge weights using deque-based BFS",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "a4e66abdf348318a",
+      "comprehended": false,
+      "strand": "graph_theory"
+    },
+    {
+      "id": "usaco.gold.bellman_ford",
+      "label": "Bellman-Ford / SPFA",
+      "type": "concept",
+      "description": "Shortest paths with negative edges, negative cycle detection",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "edafd6b0c780e31a",
+      "comprehended": false,
+      "strand": "graph_theory"
+    },
+    {
+      "id": "usaco.gold.dsu",
+      "label": "Disjoint Set Union (DSU)",
+      "type": "concept",
+      "description": "Union-Find with path compression and union by rank, connected components dynamically",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "6bfd92ce97df6819",
+      "comprehended": false,
+      "strand": "data_structures"
+    },
+    {
+      "id": "usaco.gold.mst",
+      "label": "Minimum Spanning Tree",
+      "type": "concept",
+      "description": "Kruskal's (DSU-based) and Prim's algorithms, MST properties",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "ff9957f8487ad7e3",
+      "comprehended": false,
+      "strand": "graph_theory"
+    },
+    {
+      "id": "usaco.gold.toposort",
+      "label": "Topological Sort",
+      "type": "concept",
+      "description": "Kahn's algorithm (BFS), DFS-based topological ordering, cycle detection in directed graphs",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "160703fa7abf6a08",
+      "comprehended": false,
+      "strand": "graph_theory"
+    },
+    {
+      "id": "usaco.gold.scc",
+      "label": "Strongly Connected Components",
+      "type": "concept",
+      "description": "Kosaraju's and Tarjan's algorithms, condensation graph",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "20b638769f5ddc16",
+      "comprehended": false,
+      "strand": "graph_theory"
+    },
+    {
+      "id": "usaco.gold.bit",
+      "label": "Binary Indexed Tree (Fenwick)",
+      "type": "concept",
+      "description": "Point update and prefix sum queries in O(log n), inversion counting",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "4685d2a1eac15187",
+      "comprehended": false,
+      "strand": "data_structures"
+    },
+    {
+      "id": "usaco.gold.seg_tree",
+      "label": "Segment Tree (Basic)",
+      "type": "concept",
+      "description": "Range queries and point updates, range min/max/sum, build in O(n)",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "c8a8619192785bc9",
+      "comprehended": false,
+      "strand": "data_structures"
+    },
+    {
+      "id": "usaco.gold.euler_tour",
+      "label": "Euler Tour Technique",
+      "type": "concept",
+      "description": "Flattening a tree into an array for subtree and path queries",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "672be359f1d7a29c",
+      "comprehended": false,
+      "strand": "trees"
+    },
+    {
+      "id": "usaco.gold.lca",
+      "label": "Lowest Common Ancestor",
+      "type": "concept",
+      "description": "Binary lifting for LCA, Euler tour + RMQ approach, O(log n) per query",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "c48ee678ea43d650",
+      "comprehended": false,
+      "strand": "trees"
+    },
+    {
+      "id": "usaco.gold.string_hashing",
+      "label": "String Hashing",
+      "type": "concept",
+      "description": "Polynomial rolling hash, Rabin-Karp substring matching, hash collisions",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "c1707e6a225dedd3",
+      "comprehended": false,
+      "strand": "strings"
+    },
+    {
+      "id": "usaco.gold.combinatorics",
+      "label": "Combinatorics",
+      "type": "concept",
+      "description": "nCr with modular inverse, inclusion-exclusion, PIE, Catalan numbers",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "517183eae8c9ff48",
+      "comprehended": false,
+      "strand": "math_greedy"
+    },
+    {
+      "id": "usaco.gold.number_theory",
+      "label": "Number Theory (Gold)",
+      "type": "concept",
+      "description": "Modular arithmetic, Fermat's little theorem, modular inverse, sieve of Eratosthenes",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "7b0605befb19d60d",
+      "comprehended": false,
+      "strand": "math_greedy"
+    },
+    {
+      "id": "usaco.gold.greedy_exchange",
+      "label": "Greedy (Exchange Arguments)",
+      "type": "concept",
+      "description": "Proving greedy via exchange argument, scheduling, task assignment",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "b8eb067ae27c3c06",
+      "comprehended": false,
+      "strand": "math_greedy"
+    },
+    {
+      "id": "usaco.gold.dp_bitmask",
+      "label": "Bitmask DP",
+      "type": "concept",
+      "description": "DP over subsets using bitmasks, Hamiltonian path, TSP-like problems",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "974e262bdd89a387",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "usaco.gold.sweep_line",
+      "label": "Sweep Line",
+      "type": "concept",
+      "description": "Event-based sweep line for interval/rectangle problems, coordinate compression",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.gold",
+      "bookName": "Gold",
+      "bookColor": "#ffd700",
+      "bookOrder": 3,
+      "external_id": "a4d1540b1b3989ee",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "usaco.plat.seg_lazy",
+      "label": "Segment Tree with Lazy Propagation",
+      "type": "concept",
+      "description": "Range updates and range queries with lazy propagation, range add/set operations",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "5badebd84d191c72",
+      "comprehended": false,
+      "strand": "data_structures"
+    },
+    {
+      "id": "usaco.plat.persistent_seg",
+      "label": "Persistent Segment Tree",
+      "type": "concept",
+      "description": "Persistent segment trees for version-based queries, kth element in range",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "ad0a746425fd0615",
+      "comprehended": false,
+      "strand": "data_structures"
+    },
+    {
+      "id": "usaco.plat.seg_beats",
+      "label": "Segment Tree Beats",
+      "type": "concept",
+      "description": "Range chmin/chmax operations with Ji driver segment tree",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "04a72840e2541ef9",
+      "comprehended": false,
+      "strand": "data_structures"
+    },
+    {
+      "id": "usaco.plat.merge_sort_tree",
+      "label": "Merge Sort Tree",
+      "type": "concept",
+      "description": "Merge sort tree for offline range order-statistic queries",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "8a15519ea94a6bdd",
+      "comprehended": false,
+      "strand": "data_structures"
+    },
+    {
+      "id": "usaco.plat.hld",
+      "label": "Heavy-Light Decomposition",
+      "type": "concept",
+      "description": "HLD for path queries/updates on trees using segment trees",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "1f212d7f4bcd34b0",
+      "comprehended": false,
+      "strand": "trees"
+    },
+    {
+      "id": "usaco.plat.centroid_decomp",
+      "label": "Centroid Decomposition",
+      "type": "concept",
+      "description": "Centroid decomposition for path distance queries, tree divide-and-conquer",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "1023461570aa8919",
+      "comprehended": false,
+      "strand": "trees"
+    },
+    {
+      "id": "usaco.plat.small_to_large",
+      "label": "Small-to-Large Merging",
+      "type": "concept",
+      "description": "DSU on tree (small-to-large merging), merging sets efficiently on trees",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "aea782319042323c",
+      "comprehended": false,
+      "strand": "trees"
+    },
+    {
+      "id": "usaco.plat.cht",
+      "label": "Convex Hull Trick",
+      "type": "concept",
+      "description": "Maintaining upper/lower envelope of lines for DP optimization",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "79553a2acd17d03e",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "usaco.plat.li_chao",
+      "label": "Li Chao Tree",
+      "type": "concept",
+      "description": "Li Chao segment tree for dynamic line insertion and minimum/maximum queries",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "e0e3b53eedc7d24a",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "usaco.plat.dp_dnc",
+      "label": "Divide & Conquer DP",
+      "type": "concept",
+      "description": "Divide and conquer optimization for DP with monotone minima property",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "4009363b28516ddc",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "usaco.plat.dp_sos",
+      "label": "Sum over Subsets (SOS) DP",
+      "type": "concept",
+      "description": "DP over all subsets of a bitmask, subset convolution, Mobius transform",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "6b8f736d0732f609",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "usaco.plat.advanced_dp",
+      "label": "Advanced DP Techniques",
+      "type": "concept",
+      "description": "Knuth optimization, aliens trick (lambda optimization), connection profile DP",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "5cf015c0c36da492",
+      "comprehended": false,
+      "strand": "dp"
+    },
+    {
+      "id": "usaco.plat.max_flow",
+      "label": "Maximum Flow",
+      "type": "concept",
+      "description": "Ford-Fulkerson, Dinic's algorithm, max-flow min-cut theorem",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "7a6737c0f7bb500f",
+      "comprehended": false,
+      "strand": "flows_matching"
+    },
+    {
+      "id": "usaco.plat.bipartite_matching",
+      "label": "Bipartite Matching",
+      "type": "concept",
+      "description": "Hungarian algorithm, Hopcroft-Karp, Konig's theorem, minimum vertex cover",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "3912cfa51ec51e2a",
+      "comprehended": false,
+      "strand": "flows_matching"
+    },
+    {
+      "id": "usaco.plat.min_cost_flow",
+      "label": "Min-Cost Max-Flow",
+      "type": "concept",
+      "description": "Minimum-cost maximum flow, successive shortest paths algorithm",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "628b16377fb8f6b8",
+      "comprehended": false,
+      "strand": "flows_matching"
+    },
+    {
+      "id": "usaco.plat.suffix_array",
+      "label": "Suffix Array",
+      "type": "concept",
+      "description": "O(n log n) suffix array construction, LCP array, substring queries",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "dc2698b55808f8d5",
+      "comprehended": false,
+      "strand": "strings"
+    },
+    {
+      "id": "usaco.plat.aho_corasick",
+      "label": "Aho-Corasick",
+      "type": "concept",
+      "description": "Multi-pattern string matching automaton, failure links",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "5567541571ee2547",
+      "comprehended": false,
+      "strand": "strings"
+    },
+    {
+      "id": "usaco.plat.kmp",
+      "label": "KMP / Z-Algorithm",
+      "type": "concept",
+      "description": "Knuth-Morris-Pratt prefix function, Z-function for pattern matching",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "28143bcc54046f50",
+      "comprehended": false,
+      "strand": "strings"
+    },
+    {
+      "id": "usaco.plat.convex_hull",
+      "label": "Convex Hull (Geometry)",
+      "type": "concept",
+      "description": "Andrew's monotone chain, Graham scan, rotating calipers for farthest pair",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "770b80f90205c15c",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "usaco.plat.comp_geometry",
+      "label": "Computational Geometry",
+      "type": "concept",
+      "description": "Line intersection, point-in-polygon, polygon area, half-plane intersection",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "34efd2d336dada7a",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "usaco.plat.sqrt_decomp",
+      "label": "Sqrt Decomposition",
+      "type": "concept",
+      "description": "Block decomposition for range queries, sqrt bucketing",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "4ad73b8fe8f95cc2",
+      "comprehended": false,
+      "strand": "data_structures"
+    },
+    {
+      "id": "usaco.plat.mos",
+      "label": "Mo's Algorithm",
+      "type": "concept",
+      "description": "Offline range queries in O(n sqrt(n)), Mo's with updates, Mo's on trees",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "b5781afcc32c02e7",
+      "comprehended": false,
+      "strand": "data_structures"
+    },
+    {
+      "id": "usaco.plat.offline_techniques",
+      "label": "Offline Query Techniques",
+      "type": "concept",
+      "description": "CDQ divide and conquer, offline deletion via link-cut or rollback DSU",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "7b80f230d7332870",
+      "comprehended": false,
+      "strand": "data_structures"
+    },
+    {
+      "id": "usaco.plat.two_sat",
+      "label": "2-SAT",
+      "type": "concept",
+      "description": "Implication graph, solving 2-SAT via SCC, constructing assignments",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "860ffcc3d979216f",
+      "comprehended": false,
+      "strand": "graph_theory"
+    },
+    {
+      "id": "usaco.plat.matrix_exp",
+      "label": "Matrix Exponentiation",
+      "type": "concept",
+      "description": "Matrix power for linear recurrences, Cayley-Hamilton speedup",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "8e0436f46e9e529e",
+      "comprehended": false,
+      "strand": "math_greedy"
+    },
+    {
+      "id": "usaco.plat.euler_path",
+      "label": "Eulerian Paths & Circuits",
+      "type": "concept",
+      "description": "Hierholzer's algorithm, conditions for Eulerian path/circuit existence",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "b3ae5c74ecd6896d",
+      "comprehended": false,
+      "strand": "graph_theory"
+    },
+    {
+      "id": "usaco.plat.dsu_rollback",
+      "label": "DSU with Rollback",
+      "type": "concept",
+      "description": "Offline dynamic connectivity using DSU with undo/rollback operations",
+      "grade_range": [
+        "Competition"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "usaco.plat",
+      "bookName": "Platinum",
+      "bookColor": "#e5e4e2",
+      "bookOrder": 4,
+      "external_id": "5ec225930bf34505",
+      "comprehended": false,
+      "strand": "data_structures"
     }
   ],
   "edges": [
+    {
+      "source": "usaco.bronze.io_basics",
+      "target": "usaco.bronze.simulation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.bronze.io_basics",
+      "target": "usaco.bronze.ad_hoc",
+      "relation": "prerequisite_for"
+    },
     {
       "source": "usaco.bronze.simulation",
       "target": "usaco.bronze.complete_search",
@@ -548,12 +1689,62 @@
     },
     {
       "source": "usaco.bronze.simulation",
-      "target": "usaco.bronze.ad_hoc",
+      "target": "usaco.bronze.grid_problems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.bronze.complete_search",
+      "target": "usaco.bronze.recursion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.bronze.io_basics",
+      "target": "usaco.bronze.intro_ds",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.bronze.intro_ds",
+      "target": "usaco.bronze.sets_maps",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.bronze.intro_ds",
+      "target": "usaco.bronze.sorting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.bronze.io_basics",
+      "target": "usaco.bronze.basic_math",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.bronze.io_basics",
+      "target": "usaco.bronze.basic_string",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.bronze.sorting",
+      "target": "usaco.bronze.intro_greedy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.bronze.complete_search",
+      "target": "usaco.bronze.intro_graphs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.bronze.grid_problems",
+      "target": "usaco.bronze.rect_geometry",
       "relation": "prerequisite_for"
     },
     {
       "source": "usaco.bronze.sorting",
       "target": "usaco.silver.binary_search",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.bronze.sorting",
+      "target": "usaco.silver.custom_sorting",
       "relation": "prerequisite_for"
     },
     {
@@ -562,8 +1753,18 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "usaco.bronze.complete_search",
-      "target": "usaco.silver.dfs_bfs",
+      "source": "usaco.bronze.sets_maps",
+      "target": "usaco.silver.ordered_sets",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.bronze.intro_ds",
+      "target": "usaco.silver.stacks_queues",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.bronze.intro_ds",
+      "target": "usaco.silver.prefix_sums",
       "relation": "prerequisite_for"
     },
     {
@@ -572,38 +1773,168 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "usaco.bronze.intro_ds",
-      "target": "usaco.silver.binary_search",
+      "source": "usaco.bronze.intro_graphs",
+      "target": "usaco.silver.graph_representation",
       "relation": "prerequisite_for"
     },
     {
-      "source": "usaco.silver.binary_search",
-      "target": "usaco.silver.prefix_sums",
+      "source": "usaco.silver.graph_representation",
+      "target": "usaco.silver.dfs",
       "relation": "prerequisite_for"
     },
     {
-      "source": "usaco.silver.dfs_bfs",
+      "source": "usaco.silver.graph_representation",
+      "target": "usaco.silver.bfs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.bronze.recursion",
+      "target": "usaco.silver.dfs",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.dfs",
       "target": "usaco.silver.flood_fill",
       "relation": "prerequisite_for"
     },
     {
-      "source": "usaco.silver.dfs_bfs",
+      "source": "usaco.silver.bfs",
+      "target": "usaco.silver.flood_fill",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.dfs",
       "target": "usaco.silver.trees",
       "relation": "prerequisite_for"
     },
     {
-      "source": "usaco.silver.prefix_sums",
-      "target": "usaco.gold.range_queries",
+      "source": "usaco.silver.dfs",
+      "target": "usaco.silver.func_graphs",
       "relation": "prerequisite_for"
     },
     {
-      "source": "usaco.silver.dfs_bfs",
-      "target": "usaco.gold.shortest_paths",
+      "source": "usaco.silver.dfs",
+      "target": "usaco.silver.bipartite",
       "relation": "prerequisite_for"
     },
     {
-      "source": "usaco.silver.dfs_bfs",
+      "source": "usaco.bronze.intro_greedy",
+      "target": "usaco.silver.greedy_sorting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.custom_sorting",
+      "target": "usaco.silver.greedy_sorting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.stacks_queues",
+      "target": "usaco.silver.pq",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.bronze.recursion",
+      "target": "usaco.silver.intro_dp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.binary_search",
+      "target": "usaco.silver.intro_dp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.intro_dp",
+      "target": "usaco.gold.dp_knapsack",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.intro_dp",
+      "target": "usaco.gold.dp_lis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.intro_dp",
+      "target": "usaco.gold.dp_interval",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.trees",
+      "target": "usaco.gold.dp_tree",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.intro_dp",
+      "target": "usaco.gold.dp_tree",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.dp_knapsack",
+      "target": "usaco.gold.dp_bitmask",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.bfs",
+      "target": "usaco.gold.dijkstra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.pq",
+      "target": "usaco.gold.dijkstra",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.bfs",
+      "target": "usaco.gold.bfs01",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.dijkstra",
+      "target": "usaco.gold.bellman_ford",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.dfs",
+      "target": "usaco.gold.dsu",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.dsu",
       "target": "usaco.gold.mst",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.dijkstra",
+      "target": "usaco.gold.mst",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.dfs",
+      "target": "usaco.gold.toposort",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.toposort",
+      "target": "usaco.gold.scc",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.toposort",
+      "target": "usaco.gold.dp_dag",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.intro_dp",
+      "target": "usaco.gold.dp_dag",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.prefix_sums",
+      "target": "usaco.gold.bit",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.prefix_sums",
+      "target": "usaco.gold.seg_tree",
       "relation": "prerequisite_for"
     },
     {
@@ -612,23 +1943,83 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "usaco.silver.two_pointers",
-      "target": "usaco.gold.dp",
+      "source": "usaco.silver.trees",
+      "target": "usaco.gold.lca",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.euler_tour",
+      "target": "usaco.gold.lca",
       "relation": "prerequisite_for"
     },
     {
       "source": "usaco.silver.binary_search",
-      "target": "usaco.gold.hashing",
+      "target": "usaco.gold.string_hashing",
       "relation": "prerequisite_for"
     },
     {
-      "source": "usaco.gold.dp",
-      "target": "usaco.plat.advanced_dp",
+      "source": "usaco.bronze.basic_string",
+      "target": "usaco.gold.string_hashing",
       "relation": "prerequisite_for"
     },
     {
-      "source": "usaco.gold.dp",
-      "target": "usaco.plat.cht",
+      "source": "usaco.bronze.basic_math",
+      "target": "usaco.gold.number_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.number_theory",
+      "target": "usaco.gold.combinatorics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.greedy_sorting",
+      "target": "usaco.gold.greedy_exchange",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.custom_sorting",
+      "target": "usaco.gold.sweep_line",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.prefix_sums",
+      "target": "usaco.gold.sweep_line",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.seg_tree",
+      "target": "usaco.plat.seg_lazy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.plat.seg_lazy",
+      "target": "usaco.plat.persistent_seg",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.plat.seg_lazy",
+      "target": "usaco.plat.seg_beats",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.seg_tree",
+      "target": "usaco.plat.merge_sort_tree",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.euler_tour",
+      "target": "usaco.plat.hld",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.plat.seg_lazy",
+      "target": "usaco.plat.hld",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.lca",
+      "target": "usaco.plat.hld",
       "relation": "prerequisite_for"
     },
     {
@@ -637,23 +2028,153 @@
       "relation": "prerequisite_for"
     },
     {
-      "source": "usaco.gold.euler_tour",
-      "target": "usaco.plat.hld",
+      "source": "usaco.gold.dp_tree",
+      "target": "usaco.plat.centroid_decomp",
       "relation": "prerequisite_for"
     },
     {
-      "source": "usaco.gold.range_queries",
-      "target": "usaco.plat.seg_beats",
+      "source": "usaco.gold.dp_tree",
+      "target": "usaco.plat.small_to_large",
       "relation": "prerequisite_for"
     },
     {
-      "source": "usaco.gold.range_queries",
-      "target": "usaco.plat.persistent",
+      "source": "usaco.gold.dsu",
+      "target": "usaco.plat.small_to_large",
       "relation": "prerequisite_for"
     },
     {
-      "source": "usaco.gold.range_queries",
-      "target": "usaco.plat.hld",
+      "source": "usaco.gold.dp_lis",
+      "target": "usaco.plat.cht",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.dp_interval",
+      "target": "usaco.plat.cht",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.plat.cht",
+      "target": "usaco.plat.li_chao",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.dp_interval",
+      "target": "usaco.plat.dp_dnc",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.dp_bitmask",
+      "target": "usaco.plat.dp_sos",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.plat.cht",
+      "target": "usaco.plat.advanced_dp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.plat.dp_dnc",
+      "target": "usaco.plat.advanced_dp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.bfs01",
+      "target": "usaco.plat.max_flow",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.dijkstra",
+      "target": "usaco.plat.max_flow",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.plat.max_flow",
+      "target": "usaco.plat.bipartite_matching",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.silver.bipartite",
+      "target": "usaco.plat.bipartite_matching",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.plat.max_flow",
+      "target": "usaco.plat.min_cost_flow",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.bellman_ford",
+      "target": "usaco.plat.min_cost_flow",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.string_hashing",
+      "target": "usaco.plat.suffix_array",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.string_hashing",
+      "target": "usaco.plat.kmp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.plat.kmp",
+      "target": "usaco.plat.aho_corasick",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.sweep_line",
+      "target": "usaco.plat.convex_hull",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.plat.convex_hull",
+      "target": "usaco.plat.comp_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.bit",
+      "target": "usaco.plat.sqrt_decomp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.plat.sqrt_decomp",
+      "target": "usaco.plat.mos",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.plat.seg_lazy",
+      "target": "usaco.plat.offline_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.plat.sqrt_decomp",
+      "target": "usaco.plat.offline_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.scc",
+      "target": "usaco.plat.two_sat",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.combinatorics",
+      "target": "usaco.plat.matrix_exp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.dp_dag",
+      "target": "usaco.plat.matrix_exp",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.toposort",
+      "target": "usaco.plat.euler_path",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "usaco.gold.dsu",
+      "target": "usaco.plat.dsu_rollback",
       "relation": "prerequisite_for"
     }
   ]
