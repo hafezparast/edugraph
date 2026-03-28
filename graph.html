@@ -108,14 +108,21 @@ svg { width: 100%; height: 100%; display: block; }
 .detail-title { font-family: 'Instrument Serif', serif; font-size: 20px; line-height: 1.2; margin-bottom: 14px; }
 .detail-desc { font-size: 11px; color: var(--text2); line-height: 1.5; margin-bottom: 10px; }
 .video-section { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
-.video-head { font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: #f59e0b; margin-bottom: 8px; display: flex; align-items: center; gap: 5px; }
-.video-card { display: block; border-radius: 6px; overflow: hidden; background: rgba(255,255,255,0.03); border: 1px solid var(--border); margin-bottom: 8px; text-decoration: none; transition: all 0.15s; cursor: pointer; }
+.video-nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+.video-nav-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: #f59e0b; }
+.video-nav-controls { display: flex; align-items: center; gap: 6px; }
+.video-nav-btn { background: rgba(255,255,255,0.04); border: 1px solid var(--border); color: var(--text2); width: 22px; height: 22px; border-radius: 4px; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 11px; transition: all 0.12s; }
+.video-nav-btn:hover { background: rgba(255,200,87,0.1); border-color: rgba(255,200,87,0.2); color: var(--gold); }
+.video-nav-counter { font-size: 10px; color: var(--text3); min-width: 30px; text-align: center; }
+.video-carousel { position: relative; }
+.video-card { display: none; border-radius: 6px; overflow: hidden; background: rgba(255,255,255,0.03); border: 1px solid var(--border); text-decoration: none; transition: all 0.15s; cursor: pointer; }
+.video-card.active { display: block; }
 .video-card:hover { border-color: rgba(255,200,87,0.2); background: rgba(255,200,87,0.04); }
 .video-thumb { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #111; }
 .video-info { padding: 8px 10px; }
 .video-title { font-size: 11px; color: var(--text); line-height: 1.3; margin-bottom: 4px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .video-meta { font-size: 9px; color: var(--text3); display: flex; gap: 8px; }
-.video-embed { width: 100%; aspect-ratio: 16/9; border: none; border-radius: 6px; margin-bottom: 8px; }
+.video-embed { width: 100%; aspect-ratio: 16/9; border: none; border-radius: 6px; }
 .conn-section { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
 .conn-head { font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text3); margin-bottom: 6px; }
 .conn-head.prereq { color: #e07a5f; }
@@ -443,20 +450,29 @@ function init(data, videoMapping, videoMeta) {
     var nodeVideos = videoMapping[d.external_id] || [];
     var videoHtml = '';
     if (nodeVideos.length > 0) {
-      videoHtml = '<div class="video-section"><div class="video-head">\u25B6 Videos (' + nodeVideos.length + ')</div>';
+      videoHtml = '<div class="video-section">' +
+        '<div class="video-nav">' +
+          '<span class="video-nav-label">\u25B6 Videos</span>' +
+          '<div class="video-nav-controls">' +
+            '<button class="video-nav-btn" id="vid-prev">\u2039</button>' +
+            '<span class="video-nav-counter" id="vid-counter">1/' + nodeVideos.length + '</span>' +
+            '<button class="video-nav-btn" id="vid-next">\u203A</button>' +
+          '</div>' +
+        '</div>' +
+        '<div class="video-carousel" id="vid-carousel">';
       nodeVideos.forEach(function(ytId, i) {
         var meta = videoMeta[ytId] || {};
         var title = meta.t || ytId;
         var dur = formatDuration(meta.d);
         var thumb = meta.th || 'https://i.ytimg.com/vi/' + ytId + '/hqdefault.jpg';
-        videoHtml += '<div class="video-card" data-yt="' + ytId + '">' +
+        videoHtml += '<div class="video-card' + (i === 0 ? ' active' : '') + '" data-yt="' + ytId + '" data-idx="' + i + '">' +
           '<img class="video-thumb" src="' + thumb + '" alt="" loading="lazy" onerror="this.src=\'https://i.ytimg.com/vi/' + ytId + '/hqdefault.jpg\'">' +
           '<div class="video-info">' +
             '<div class="video-title">' + title + '</div>' +
             '<div class="video-meta"><span>' + dur + '</span><span>Khan Academy</span></div>' +
           '</div></div>';
       });
-      videoHtml += '</div>';
+      videoHtml += '</div></div>';
     }
 
     const content = document.getElementById('detail-content');
@@ -482,21 +498,49 @@ function init(data, videoMapping, videoMeta) {
         leads.map(n => '<div class="conn-item" data-id="'+n.id+'"><span class="conn-dot" style="background:'+n.topicColor+';box-shadow:0 0 0 1.5px '+n.gradeColor+'"></span><span class="conn-label">'+n.label+'</span><span class="conn-book">'+n.bookName+'</span></div>').join('') +
         '</div>' : '');
 
-    // Video card click → embed YouTube player inline
-    content.querySelectorAll('.video-card').forEach(function(card) {
-      card.addEventListener('click', function() {
-        var yt = card.dataset.yt;
-        var existing = card.querySelector('.video-embed');
-        if (existing) { existing.remove(); card.querySelector('.video-thumb').style.display = ''; return; }
-        card.querySelector('.video-thumb').style.display = 'none';
-        var iframe = document.createElement('iframe');
-        iframe.className = 'video-embed';
-        iframe.src = 'https://www.youtube.com/embed/' + yt + '?autoplay=1';
-        iframe.allow = 'autoplay; encrypted-media';
-        iframe.allowFullscreen = true;
-        card.insertBefore(iframe, card.querySelector('.video-info'));
+    // Video carousel navigation
+    if (nodeVideos.length > 0) {
+      var vidIdx = 0;
+      var cards = content.querySelectorAll('.video-card');
+      var counter = content.querySelector('#vid-counter');
+
+      function showVid(i) {
+        // Remove any playing embeds
+        cards.forEach(function(c) {
+          var embed = c.querySelector('.video-embed');
+          if (embed) { embed.remove(); c.querySelector('.video-thumb').style.display = ''; }
+          c.classList.remove('active');
+        });
+        vidIdx = i;
+        cards[vidIdx].classList.add('active');
+        counter.textContent = (vidIdx + 1) + '/' + nodeVideos.length;
+      }
+
+      content.querySelector('#vid-prev').addEventListener('click', function(e) {
+        e.stopPropagation();
+        showVid((vidIdx - 1 + nodeVideos.length) % nodeVideos.length);
       });
-    });
+      content.querySelector('#vid-next').addEventListener('click', function(e) {
+        e.stopPropagation();
+        showVid((vidIdx + 1) % nodeVideos.length);
+      });
+
+      // Click video card → embed YouTube player
+      cards.forEach(function(card) {
+        card.addEventListener('click', function() {
+          var yt = card.dataset.yt;
+          var existing = card.querySelector('.video-embed');
+          if (existing) { existing.remove(); card.querySelector('.video-thumb').style.display = ''; return; }
+          card.querySelector('.video-thumb').style.display = 'none';
+          var iframe = document.createElement('iframe');
+          iframe.className = 'video-embed';
+          iframe.src = 'https://www.youtube.com/embed/' + yt + '?autoplay=1';
+          iframe.allow = 'autoplay; encrypted-media';
+          iframe.allowFullscreen = true;
+          card.insertBefore(iframe, card.querySelector('.video-info'));
+        });
+      });
+    }
 
     content.querySelectorAll('.conn-item').forEach(el => {
       el.addEventListener('click', () => { const n = nodeMap[el.dataset.id]; if (n) selectNode(n); });
