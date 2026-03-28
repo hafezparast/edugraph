@@ -207,11 +207,15 @@ const params = new URLSearchParams(window.location.search);
 const fileParam = params.get('f') || 'sg-math';
 const dataUrl = 'data/' + encodeURIComponent(fileParam) + '.json';
 
-// Load graph data + video mappings + video metadata in parallel
+// Files that have video mappings (avoid 404s for unmapped files)
+const mappedFiles = new Set(['al-biology','al-chemistry','al-economics','al-math','al-physics','ap-biology','ap-calc-ab','ap-calc-bc','ap-chemistry','ap-macro','ap-micro','ap-statistics','ap-us-history','ap-world-history','ib-biology','ib-chemistry','ib-economics','ib-math-aa','ib-physics','igcse-biology','igcse-chemistry','igcse-economics','igcse-math','igcse-physics','sg-biology','sg-chemistry','sg-economics','sg-math','sg-physics']);
+const hasMapping = mappedFiles.has(fileParam);
+
+// Load graph data + video mappings (only if available) + video metadata
 Promise.all([
   fetch(dataUrl).then(r => { if (!r.ok) throw new Error('Failed to load ' + dataUrl); return r.json(); }),
-  fetch('content/mappings/' + encodeURIComponent(fileParam) + '.json').then(r => r.ok ? r.json() : {}).catch(() => ({})),
-  fetch('content/videos.json').then(r => r.ok ? r.json() : {}).catch(() => ({}))
+  hasMapping ? fetch('content/mappings/' + encodeURIComponent(fileParam) + '.json').then(r => r.json()) : Promise.resolve({}),
+  hasMapping ? fetch('content/videos.json').then(r => r.json()) : Promise.resolve({})
 ])
   .then(([data, videoMapping, videoMeta]) => init(data, videoMapping, videoMeta))
   .catch(err => {
