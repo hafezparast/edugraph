@@ -1,0 +1,1170 @@
+{
+  "metadata": {
+    "domain": "mathematics",
+    "curriculum": "APMO (Asian Pacific Mathematics Olympiad)",
+    "view": "k12-prerequisites",
+    "version": "0.2.0",
+    "description": "APMO topics with prerequisite ordering, colored by branch (senior level, feeds into IMO)",
+    "sources": [
+      "Asian Pacific Mathematics Olympiad Syllabus"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "apmo.alg",
+      "name": "Algebra",
+      "color": "#ef4444",
+      "order": 1
+    },
+    {
+      "id": "apmo.nt",
+      "name": "Number Theory",
+      "color": "#3b82f6",
+      "order": 2
+    },
+    {
+      "id": "apmo.comb",
+      "name": "Combinatorics",
+      "color": "#f97316",
+      "order": 3
+    },
+    {
+      "id": "apmo.geo",
+      "name": "Geometry",
+      "color": "#22c55e",
+      "order": 4
+    }
+  ],
+  "strands": [
+    {
+      "id": "algebra",
+      "name": "Algebra",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "number-theory",
+      "name": "Number Theory",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "combinatorics",
+      "name": "Combinatorics",
+      "color": "#F39C12"
+    },
+    {
+      "id": "geometry",
+      "name": "Geometry",
+      "color": "#E74C3C"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "comp.apmo.amgm_inequality",
+      "label": "AM-GM Inequality",
+      "type": "concept",
+      "description": "Arithmetic Mean–Geometric Mean inequality and weighted AM-GM. Applications to optimisation and bounding expressions in APMO-style problems.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "d55150b7d27e7147",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.apmo.cauchy_schwarz",
+      "label": "Cauchy-Schwarz Inequality",
+      "type": "concept",
+      "description": "Cauchy-Schwarz in Engel (Titu) form and standard form. Typical APMO applications to sum-bounding problems.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "d6152d9bf43cb1c1",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.apmo.power_mean",
+      "label": "Power Mean & Jensen",
+      "type": "concept",
+      "description": "Generalised mean inequality and Jensen's inequality for convex/concave functions. Applications to APMO inequality problems.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "c34be2348ac5664c",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.apmo.schur_sos",
+      "label": "Schur & SOS Methods",
+      "type": "concept",
+      "description": "Schur's inequality and Sum of Squares decomposition. Systematic techniques for proving symmetric inequalities.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "a8cabcb30d396396",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.apmo.polynomials_vieta",
+      "label": "Polynomials & Vieta's Formulas",
+      "type": "concept",
+      "description": "Polynomial roots, Vieta's formulas, and Newton's identities. APMO problems involving polynomial construction and root analysis.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "36366ed73ffef798",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.apmo.functional_equations",
+      "label": "Functional Equations",
+      "type": "concept",
+      "description": "Cauchy-type equations, substitution strategies, injectivity/surjectivity, and constructing solutions. APMO frequently features multi-variable functional equations.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "69fad3e1b1a0a6df",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.apmo.sequences_recurrences",
+      "label": "Sequences & Recurrences",
+      "type": "concept",
+      "description": "Linear and nonlinear recurrences, characteristic equations, and bounding sequences. APMO problems on integer sequences with divisibility constraints.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "41f6633d146a9d65",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.apmo.algebraic_manipulations",
+      "label": "Algebraic Manipulations",
+      "type": "concept",
+      "description": "Factoring, substitution tricks, homogenisation, and normalisation. Foundational manipulation skills for all APMO algebra.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "b915b7d53a0101dc",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.apmo.telescoping_sums",
+      "label": "Telescoping & Summation",
+      "type": "concept",
+      "description": "Telescoping sums and products, Abel summation, and creative re-indexing for evaluating series in competition contexts.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "4064131aef422715",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.apmo.inequality_strategies",
+      "label": "Inequality Strategies",
+      "type": "concept",
+      "description": "Mixing variables, tangent line trick, smoothing/convexity, and the n-1 EV (equal variable) method. APMO-level inequality problem-solving frameworks.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.alg",
+      "bookName": "Algebra",
+      "bookColor": "#ef4444",
+      "bookOrder": 1,
+      "external_id": "abad563b8fc4f213",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.apmo.divisibility_primes",
+      "label": "Divisibility & Primes",
+      "type": "concept",
+      "description": "Fundamental theorem of arithmetic, prime factorisation, and divisor functions. Foundation for all APMO number theory.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "7255d8f464c58c07",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.apmo.modular_arithmetic",
+      "label": "Modular Arithmetic",
+      "type": "concept",
+      "description": "Congruences, modular inverses, and Chinese Remainder Theorem. Solving systems of congruences in APMO problems.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "dbeefadaccba34b5",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.apmo.fermat_euler",
+      "label": "Fermat & Euler Theorems",
+      "type": "concept",
+      "description": "Fermat's little theorem, Euler's theorem, and Euler's totient function. Applications to order and power residues.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "090171b5a544ef62",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.apmo.order_primitive_roots",
+      "label": "Order & Primitive Roots",
+      "type": "concept",
+      "description": "Multiplicative order, primitive roots, and index calculus. Applications to cyclotomic-style APMO problems.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "d760564e4462d222",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.apmo.quadratic_residues",
+      "label": "Quadratic Residues & Legendre Symbol",
+      "type": "concept",
+      "description": "Quadratic residues, Legendre symbol, and quadratic reciprocity. APMO problems involving solvability of quadratic congruences.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "aea8c9cb3bb78fb9",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.apmo.diophantine_linear",
+      "label": "Linear Diophantine Equations",
+      "type": "concept",
+      "description": "Solving ax + by = c, parametric families of solutions, and Bezout's identity. Foundation for harder Diophantine problems.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "990c6ea5c1bb183d",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.apmo.diophantine_nonlinear",
+      "label": "Nonlinear Diophantine Equations",
+      "type": "concept",
+      "description": "Pythagorean triples, Pell equations, and advanced factoring techniques (SFFT). APMO frequently tests creative Diophantine analysis.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "3fca737fec232c0b",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.apmo.p_adic_valuations",
+      "label": "p-adic Valuations & LTE",
+      "type": "concept",
+      "description": "p-adic valuation (v_p), Lifting the Exponent Lemma, and applications to divisibility of expressions like a^n - b^n.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "3f4fcf969b41af33",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.apmo.arithmetic_functions",
+      "label": "Arithmetic Functions",
+      "type": "concept",
+      "description": "Euler's totient, divisor sum, Mobius function, and multiplicativity. APMO problems on bounding or characterising these functions.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "45ea3677cd38a002",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.apmo.number_theoretic_constructions",
+      "label": "Number-Theoretic Constructions",
+      "type": "concept",
+      "description": "Constructing integers with prescribed divisibility properties. APMO-style existence problems requiring clever constructions.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.nt",
+      "bookName": "Number Theory",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "c44ef57fbc4b91f7",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.apmo.counting_principles",
+      "label": "Counting Principles",
+      "type": "concept",
+      "description": "Addition/multiplication principles, permutations, combinations, and bijections. Foundation for APMO combinatorics.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "a3c1144579446d49",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.apmo.binomial_identities",
+      "label": "Binomial & Combinatorial Identities",
+      "type": "concept",
+      "description": "Binomial theorem, Vandermonde's identity, hockey stick, and double-counting proofs of identities.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "56df9d2a09a7468f",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.apmo.pigeonhole",
+      "label": "Pigeonhole Principle",
+      "type": "concept",
+      "description": "Basic and generalised pigeonhole, with applications to Ramsey-type and existence problems common in APMO.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "0e340146919bf742",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.apmo.graph_theory",
+      "label": "Graph Theory",
+      "type": "concept",
+      "description": "Graphs, trees, Euler/Hamilton paths, colouring, and extremal graph theory. APMO often features graph-based combinatorics.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "dcd18a7cd2e8be59",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.apmo.invariants_monovariants",
+      "label": "Invariants & Monovariants",
+      "type": "concept",
+      "description": "Identifying conserved quantities and monotonically changing quantities to prove impossibility or termination.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "a223e9ec515c6217",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.apmo.extremal_principle",
+      "label": "Extremal Principle",
+      "type": "concept",
+      "description": "Choosing maximum/minimum elements to construct arguments. APMO problems requiring extremal combinatorial reasoning.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "4d2b3baee1f96c54",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.apmo.game_theory",
+      "label": "Combinatorial Games",
+      "type": "concept",
+      "description": "Two-player game analysis: strategy stealing, Sprague-Grundy values, and pairing strategies in APMO game problems.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "f38598cffcc6b9c4",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.apmo.double_counting",
+      "label": "Double Counting & Bijections",
+      "type": "concept",
+      "description": "Counting the same set in two ways to establish identities or bounds. Bijective proofs in competition combinatorics.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "5e6e649cfd28e8a4",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.apmo.algorithms_processes",
+      "label": "Algorithms & Processes",
+      "type": "concept",
+      "description": "Analysing iterative processes, greedy algorithms, and showing termination or convergence in APMO-style problems.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "49ed4239d595c85b",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.apmo.combinatorial_geometry",
+      "label": "Combinatorial Geometry",
+      "type": "concept",
+      "description": "Point configurations, convex hull arguments, and geometric pigeonhole problems combining geometry and combinatorics.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.comb",
+      "bookName": "Combinatorics",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "4f4b00aa041ec60b",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.apmo.angle_chasing",
+      "label": "Angle Chasing",
+      "type": "concept",
+      "description": "Systematic angle calculations using inscribed angles, central angles, and parallel line properties. Foundation for APMO geometry.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "ae303edab7c0c0d3",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.apmo.similarity_congruence",
+      "label": "Similarity & Congruence",
+      "type": "concept",
+      "description": "Triangle similarity/congruence criteria and ratio of areas. Foundational tool for APMO geometry proofs.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "7cca856b31220e7d",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.apmo.cyclic_quadrilaterals",
+      "label": "Cyclic Quadrilaterals",
+      "type": "concept",
+      "description": "Properties of cyclic quadrilaterals, Ptolemy's theorem, and recognising concyclic points in APMO configurations.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "240b24e9eed437ff",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.apmo.power_of_a_point",
+      "label": "Power of a Point",
+      "type": "concept",
+      "description": "Power of a point theorem, radical axes, and radical centres. Key technique in APMO circle geometry.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "ea132acd31b2921d",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.apmo.ceva_menelaus",
+      "label": "Ceva & Menelaus",
+      "type": "concept",
+      "description": "Ceva's theorem, Menelaus' theorem, and trigonometric Ceva. Concurrency and collinearity proofs in APMO problems.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "5a4bf598969b4a77",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.apmo.triangle_centres",
+      "label": "Triangle Centres",
+      "type": "concept",
+      "description": "Circumcentre, incentre, orthocentre, centroid, and their properties. Nine-point circle and Euler line in APMO geometry.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "9a90a430ce24b6c2",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.apmo.homothety_spiral",
+      "label": "Homothety & Spiral Similarity",
+      "type": "concept",
+      "description": "Homothety (dilation), spiral similarity, and their applications to proving tangency and concurrence in APMO.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "b5fdae918714efeb",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.apmo.inversion",
+      "label": "Inversion",
+      "type": "concept",
+      "description": "Circle inversion: mapping circles to lines and vice versa. Simplifying APMO configurations with many circles/tangencies.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "ce76149b4d05346c",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.apmo.projective_geometry",
+      "label": "Projective Geometry",
+      "type": "concept",
+      "description": "Cross-ratio, harmonic conjugates, poles and polars. Projective techniques for advanced APMO geometry.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "8e9f6fc8f8e9b293",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.apmo.trigonometric_methods",
+      "label": "Trigonometric Methods",
+      "type": "concept",
+      "description": "Sine/cosine rule, trigonometric identities, and trig substitutions in geometry. APMO problems mixing trig with synthetic geometry.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "71a4cfaa1e05d62e",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.apmo.area_methods",
+      "label": "Area Methods",
+      "type": "concept",
+      "description": "Using area ratios, signed areas, and the area = (1/2)ab sin C formula. APMO area-based proofs of collinearity and concurrence.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "0d68f86992cb77ca",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.apmo.coordinate_complex",
+      "label": "Coordinates & Complex Numbers",
+      "type": "concept",
+      "description": "Cartesian/barycentric coordinates and complex number geometry. Computational approaches to APMO geometry problems.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "dab1206db993e233",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.apmo.isogonal_conjugates",
+      "label": "Isogonal Conjugates",
+      "type": "concept",
+      "description": "Isogonal and isotomic conjugates, Symmedian point, and their properties in APMO geometry configurations.",
+      "grade_range": [
+        "Olympiad"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "apmo.geo",
+      "bookName": "Geometry",
+      "bookColor": "#22c55e",
+      "bookOrder": 4,
+      "external_id": "79055e8eb82b1f7d",
+      "comprehended": false,
+      "strand": "geometry"
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp.apmo.algebraic_manipulations",
+      "target": "comp.apmo.amgm_inequality",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.amgm_inequality",
+      "target": "comp.apmo.cauchy_schwarz",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.amgm_inequality",
+      "target": "comp.apmo.power_mean",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.cauchy_schwarz",
+      "target": "comp.apmo.schur_sos",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.power_mean",
+      "target": "comp.apmo.inequality_strategies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.schur_sos",
+      "target": "comp.apmo.inequality_strategies",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.algebraic_manipulations",
+      "target": "comp.apmo.polynomials_vieta",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.polynomials_vieta",
+      "target": "comp.apmo.functional_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.polynomials_vieta",
+      "target": "comp.apmo.sequences_recurrences",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.sequences_recurrences",
+      "target": "comp.apmo.telescoping_sums",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.divisibility_primes",
+      "target": "comp.apmo.modular_arithmetic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.modular_arithmetic",
+      "target": "comp.apmo.fermat_euler",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.fermat_euler",
+      "target": "comp.apmo.order_primitive_roots",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.order_primitive_roots",
+      "target": "comp.apmo.quadratic_residues",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.divisibility_primes",
+      "target": "comp.apmo.diophantine_linear",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.modular_arithmetic",
+      "target": "comp.apmo.diophantine_linear",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.diophantine_linear",
+      "target": "comp.apmo.diophantine_nonlinear",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.divisibility_primes",
+      "target": "comp.apmo.p_adic_valuations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.fermat_euler",
+      "target": "comp.apmo.arithmetic_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.p_adic_valuations",
+      "target": "comp.apmo.number_theoretic_constructions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.arithmetic_functions",
+      "target": "comp.apmo.number_theoretic_constructions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.modular_arithmetic",
+      "target": "comp.apmo.diophantine_nonlinear",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.counting_principles",
+      "target": "comp.apmo.binomial_identities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.counting_principles",
+      "target": "comp.apmo.pigeonhole",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.counting_principles",
+      "target": "comp.apmo.double_counting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.counting_principles",
+      "target": "comp.apmo.graph_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.pigeonhole",
+      "target": "comp.apmo.extremal_principle",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.counting_principles",
+      "target": "comp.apmo.invariants_monovariants",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.invariants_monovariants",
+      "target": "comp.apmo.game_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.invariants_monovariants",
+      "target": "comp.apmo.algorithms_processes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.graph_theory",
+      "target": "comp.apmo.algorithms_processes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.pigeonhole",
+      "target": "comp.apmo.combinatorial_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.extremal_principle",
+      "target": "comp.apmo.combinatorial_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.angle_chasing",
+      "target": "comp.apmo.similarity_congruence",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.angle_chasing",
+      "target": "comp.apmo.cyclic_quadrilaterals",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.cyclic_quadrilaterals",
+      "target": "comp.apmo.power_of_a_point",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.similarity_congruence",
+      "target": "comp.apmo.ceva_menelaus",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.similarity_congruence",
+      "target": "comp.apmo.triangle_centres",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.similarity_congruence",
+      "target": "comp.apmo.homothety_spiral",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.power_of_a_point",
+      "target": "comp.apmo.inversion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.homothety_spiral",
+      "target": "comp.apmo.inversion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.inversion",
+      "target": "comp.apmo.projective_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.angle_chasing",
+      "target": "comp.apmo.trigonometric_methods",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.similarity_congruence",
+      "target": "comp.apmo.area_methods",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.area_methods",
+      "target": "comp.apmo.coordinate_complex",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.triangle_centres",
+      "target": "comp.apmo.coordinate_complex",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.homothety_spiral",
+      "target": "comp.apmo.coordinate_complex",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.triangle_centres",
+      "target": "comp.apmo.isogonal_conjugates",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.apmo.ceva_menelaus",
+      "target": "comp.apmo.isogonal_conjugates",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

@@ -1,0 +1,1105 @@
+{
+  "metadata": {
+    "domain": "science",
+    "curriculum": "IJSO (International Junior Science Olympiad)",
+    "view": "k12-prerequisites",
+    "version": "0.2.0",
+    "description": "IJSO topics with prerequisite ordering, colored by discipline (under-16 mixed science)",
+    "sources": [
+      "International Junior Science Olympiad Syllabus"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "ijso.physics",
+      "name": "Physics",
+      "color": "#3b82f6",
+      "order": 1
+    },
+    {
+      "id": "ijso.chemistry",
+      "name": "Chemistry",
+      "color": "#ef4444",
+      "order": 2
+    },
+    {
+      "id": "ijso.biology",
+      "name": "Biology",
+      "color": "#22c55e",
+      "order": 3
+    },
+    {
+      "id": "ijso.experimental",
+      "name": "Experimental",
+      "color": "#f97316",
+      "order": 4
+    }
+  ],
+  "strands": [
+    {
+      "id": "physics",
+      "name": "Physics",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "chemistry",
+      "name": "Chemistry",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "biology",
+      "name": "Biology",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "experimental",
+      "name": "Experimental",
+      "color": "#F39C12"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "comp.ijso.measurement_units",
+      "label": "Measurement & SI Units",
+      "type": "concept",
+      "description": "SI base and derived units, unit conversions, significant figures, and scientific notation. Foundation for all IJSO quantitative work.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.experimental",
+      "bookName": "Experimental",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "b31263e0d47e1026",
+      "comprehended": false,
+      "strand": "experimental"
+    },
+    {
+      "id": "comp.ijso.lab_techniques",
+      "label": "Laboratory Techniques",
+      "type": "concept",
+      "description": "Using common lab equipment: balances, thermometers, pipettes, burettes, microscopes. Safety protocols and proper technique.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.experimental",
+      "bookName": "Experimental",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "7afff34305ca54ab",
+      "comprehended": false,
+      "strand": "experimental"
+    },
+    {
+      "id": "comp.ijso.data_analysis",
+      "label": "Data Analysis & Graphing",
+      "type": "concept",
+      "description": "Recording data in tables, plotting graphs, line of best fit, calculating gradients, interpolation and extrapolation.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.experimental",
+      "bookName": "Experimental",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "727b436a55ea6263",
+      "comprehended": false,
+      "strand": "experimental"
+    },
+    {
+      "id": "comp.ijso.error_analysis",
+      "label": "Error Analysis",
+      "type": "concept",
+      "description": "Systematic and random errors, precision vs accuracy, propagation of uncertainties, and percentage error.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.experimental",
+      "bookName": "Experimental",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "2319a688fc152782",
+      "comprehended": false,
+      "strand": "experimental"
+    },
+    {
+      "id": "comp.ijso.experimental_design",
+      "label": "Experimental Design",
+      "type": "concept",
+      "description": "Identifying variables (independent, dependent, controlled), formulating hypotheses, and designing fair tests for IJSO practicals.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.experimental",
+      "bookName": "Experimental",
+      "bookColor": "#f97316",
+      "bookOrder": 4,
+      "external_id": "f1241c4eafba47d1",
+      "comprehended": false,
+      "strand": "experimental"
+    },
+    {
+      "id": "comp.ijso.mechanics_kinematics",
+      "label": "Kinematics",
+      "type": "concept",
+      "description": "Displacement, velocity, acceleration, and the equations of motion for uniform acceleration. Distance-time and velocity-time graphs.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.physics",
+      "bookName": "Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "37d8cf5f917345ad",
+      "comprehended": false,
+      "strand": "physics"
+    },
+    {
+      "id": "comp.ijso.forces_newtons_laws",
+      "label": "Forces & Newton's Laws",
+      "type": "concept",
+      "description": "Newton's three laws of motion, free-body diagrams, friction, normal force, and tension. Net force and acceleration problems.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.physics",
+      "bookName": "Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "e967f51c4888283a",
+      "comprehended": false,
+      "strand": "physics"
+    },
+    {
+      "id": "comp.ijso.work_energy_power",
+      "label": "Work, Energy & Power",
+      "type": "concept",
+      "description": "Work done by forces, kinetic and potential energy, conservation of energy, power, and efficiency.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.physics",
+      "bookName": "Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "2d0fcecb6e7feb4c",
+      "comprehended": false,
+      "strand": "physics"
+    },
+    {
+      "id": "comp.ijso.momentum",
+      "label": "Momentum & Collisions",
+      "type": "concept",
+      "description": "Linear momentum, impulse, conservation of momentum. Elastic and inelastic collisions at IJSO competition level.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.physics",
+      "bookName": "Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "fbc06e8791c005af",
+      "comprehended": false,
+      "strand": "physics"
+    },
+    {
+      "id": "comp.ijso.pressure_fluids",
+      "label": "Pressure & Fluids",
+      "type": "concept",
+      "description": "Pressure in solids, liquids, and gases. Atmospheric pressure, Pascal's principle, Archimedes' principle, and buoyancy.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.physics",
+      "bookName": "Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "6e7c759f0952d08e",
+      "comprehended": false,
+      "strand": "physics"
+    },
+    {
+      "id": "comp.ijso.heat_thermodynamics",
+      "label": "Heat & Thermodynamics",
+      "type": "concept",
+      "description": "Temperature, heat transfer (conduction, convection, radiation), specific heat capacity, latent heat, and thermal expansion.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.physics",
+      "bookName": "Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "5fdb9a36d66d8312",
+      "comprehended": false,
+      "strand": "physics"
+    },
+    {
+      "id": "comp.ijso.waves_sound",
+      "label": "Waves & Sound",
+      "type": "concept",
+      "description": "Wave properties (frequency, wavelength, amplitude, speed), transverse vs longitudinal, sound waves, and resonance.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.physics",
+      "bookName": "Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "bac0fe85440c8ffd",
+      "comprehended": false,
+      "strand": "physics"
+    },
+    {
+      "id": "comp.ijso.optics",
+      "label": "Optics",
+      "type": "concept",
+      "description": "Reflection, refraction, Snell's law, total internal reflection, lenses, mirrors, and image formation.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.physics",
+      "bookName": "Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "1d5b4087dbcc60fe",
+      "comprehended": false,
+      "strand": "physics"
+    },
+    {
+      "id": "comp.ijso.electricity",
+      "label": "Electricity & Circuits",
+      "type": "concept",
+      "description": "Current, voltage, resistance, Ohm's law, series and parallel circuits, electrical power and energy.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.physics",
+      "bookName": "Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "6f8f9c7cce315a3f",
+      "comprehended": false,
+      "strand": "physics"
+    },
+    {
+      "id": "comp.ijso.magnetism",
+      "label": "Magnetism & Electromagnetism",
+      "type": "concept",
+      "description": "Magnetic fields, electromagnets, motors, generators, and electromagnetic induction at a junior level.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.physics",
+      "bookName": "Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "511d7584d3dea668",
+      "comprehended": false,
+      "strand": "physics"
+    },
+    {
+      "id": "comp.ijso.density_states_of_matter",
+      "label": "Density & States of Matter",
+      "type": "concept",
+      "description": "Density calculations, states of matter (solid, liquid, gas), and kinetic particle model. Changes of state and energy.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.physics",
+      "bookName": "Physics",
+      "bookColor": "#3b82f6",
+      "bookOrder": 1,
+      "external_id": "c08ef024edcdcc22",
+      "comprehended": false,
+      "strand": "physics"
+    },
+    {
+      "id": "comp.ijso.atomic_structure",
+      "label": "Atomic Structure",
+      "type": "concept",
+      "description": "Protons, neutrons, electrons, atomic number, mass number, isotopes, and electron configuration up to the fourth shell.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.chemistry",
+      "bookName": "Chemistry",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "c5def93ed52100f7",
+      "comprehended": false,
+      "strand": "chemistry"
+    },
+    {
+      "id": "comp.ijso.periodic_table",
+      "label": "Periodic Table & Trends",
+      "type": "concept",
+      "description": "Organisation of the periodic table, groups and periods, trends in atomic radius, electronegativity, and ionisation energy.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.chemistry",
+      "bookName": "Chemistry",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "2332b8c51dc830b7",
+      "comprehended": false,
+      "strand": "chemistry"
+    },
+    {
+      "id": "comp.ijso.chemical_bonding",
+      "label": "Chemical Bonding",
+      "type": "concept",
+      "description": "Ionic, covalent, and metallic bonding. Dot-cross diagrams, shapes of molecules (VSEPR at basic level), and intermolecular forces.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.chemistry",
+      "bookName": "Chemistry",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "170655abd91b59ea",
+      "comprehended": false,
+      "strand": "chemistry"
+    },
+    {
+      "id": "comp.ijso.chemical_reactions",
+      "label": "Chemical Reactions & Equations",
+      "type": "concept",
+      "description": "Writing and balancing chemical equations, types of reactions (synthesis, decomposition, displacement, combustion), and signs of a reaction.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.chemistry",
+      "bookName": "Chemistry",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "0931e6924e4e4e13",
+      "comprehended": false,
+      "strand": "chemistry"
+    },
+    {
+      "id": "comp.ijso.stoichiometry",
+      "label": "Stoichiometry & Moles",
+      "type": "concept",
+      "description": "Mole concept, molar mass, Avogadro's number, mole ratios, limiting reagents, and percentage yield calculations.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.chemistry",
+      "bookName": "Chemistry",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "352a9a9e31d8e6d0",
+      "comprehended": false,
+      "strand": "chemistry"
+    },
+    {
+      "id": "comp.ijso.acids_bases",
+      "label": "Acids, Bases & pH",
+      "type": "concept",
+      "description": "Acid-base theory (Arrhenius), pH scale, indicators, neutralisation reactions, and titration calculations.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.chemistry",
+      "bookName": "Chemistry",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "ef5a0d325bda586a",
+      "comprehended": false,
+      "strand": "chemistry"
+    },
+    {
+      "id": "comp.ijso.redox_reactions",
+      "label": "Redox Reactions",
+      "type": "concept",
+      "description": "Oxidation and reduction, oxidation states, electrochemical cells, reactivity series, and rusting/corrosion.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.chemistry",
+      "bookName": "Chemistry",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "72a78378fe06931e",
+      "comprehended": false,
+      "strand": "chemistry"
+    },
+    {
+      "id": "comp.ijso.solutions_concentration",
+      "label": "Solutions & Concentration",
+      "type": "concept",
+      "description": "Solubility, saturation, concentration (molarity, mass/volume), dilution calculations, and factors affecting solubility.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.chemistry",
+      "bookName": "Chemistry",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "287c01a70c7fcae8",
+      "comprehended": false,
+      "strand": "chemistry"
+    },
+    {
+      "id": "comp.ijso.rates_of_reaction",
+      "label": "Rates of Reaction",
+      "type": "concept",
+      "description": "Factors affecting reaction rates (temperature, concentration, surface area, catalysts), collision theory, and rate measurement.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.chemistry",
+      "bookName": "Chemistry",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "e1d90a237803d21a",
+      "comprehended": false,
+      "strand": "chemistry"
+    },
+    {
+      "id": "comp.ijso.organic_chemistry_basic",
+      "label": "Organic Chemistry (Basic)",
+      "type": "concept",
+      "description": "Hydrocarbons (alkanes, alkenes), functional groups, naming conventions, combustion, and addition/substitution reactions.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.chemistry",
+      "bookName": "Chemistry",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "6d6a41c199de02e8",
+      "comprehended": false,
+      "strand": "chemistry"
+    },
+    {
+      "id": "comp.ijso.separation_techniques",
+      "label": "Separation Techniques",
+      "type": "concept",
+      "description": "Filtration, distillation, chromatography, evaporation, and centrifugation. Choosing appropriate methods for mixtures.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.chemistry",
+      "bookName": "Chemistry",
+      "bookColor": "#ef4444",
+      "bookOrder": 2,
+      "external_id": "cd417a2588526b31",
+      "comprehended": false,
+      "strand": "chemistry"
+    },
+    {
+      "id": "comp.ijso.cell_biology",
+      "label": "Cell Biology",
+      "type": "concept",
+      "description": "Cell structure (plant and animal), organelle functions, cell membrane, prokaryotes vs eukaryotes, and microscopy.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.biology",
+      "bookName": "Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "13687daf5aa73bf8",
+      "comprehended": false,
+      "strand": "biology"
+    },
+    {
+      "id": "comp.ijso.cell_division",
+      "label": "Cell Division",
+      "type": "concept",
+      "description": "Mitosis and meiosis, stages, significance, and comparison. Chromosomes and ploidy in the context of growth and reproduction.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.biology",
+      "bookName": "Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "742e4aaa154fc506",
+      "comprehended": false,
+      "strand": "biology"
+    },
+    {
+      "id": "comp.ijso.genetics_heredity",
+      "label": "Genetics & Heredity",
+      "type": "concept",
+      "description": "Mendelian genetics, monohybrid and dihybrid crosses, Punnett squares, dominance, codominance, and sex-linked traits.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.biology",
+      "bookName": "Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "21c00d019f384348",
+      "comprehended": false,
+      "strand": "biology"
+    },
+    {
+      "id": "comp.ijso.dna_protein_synthesis",
+      "label": "DNA & Protein Synthesis",
+      "type": "concept",
+      "description": "DNA structure, replication, transcription, and translation at a junior level. Genetic code and mutations.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.biology",
+      "bookName": "Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "0125590f98636ebc",
+      "comprehended": false,
+      "strand": "biology"
+    },
+    {
+      "id": "comp.ijso.photosynthesis",
+      "label": "Photosynthesis",
+      "type": "concept",
+      "description": "Light-dependent and light-independent reactions, factors affecting photosynthesis rate, and leaf structure.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.biology",
+      "bookName": "Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "58436c854d0878a5",
+      "comprehended": false,
+      "strand": "biology"
+    },
+    {
+      "id": "comp.ijso.respiration",
+      "label": "Respiration",
+      "type": "concept",
+      "description": "Aerobic and anaerobic respiration, energy release, ATP, and the relationship between respiration and photosynthesis.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.biology",
+      "bookName": "Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "a051851a0bad9dec",
+      "comprehended": false,
+      "strand": "biology"
+    },
+    {
+      "id": "comp.ijso.human_body_systems",
+      "label": "Human Body Systems",
+      "type": "concept",
+      "description": "Digestive, circulatory, respiratory, and excretory systems. Organ functions and how systems work together.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.biology",
+      "bookName": "Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "1d588e6a195b62a7",
+      "comprehended": false,
+      "strand": "biology"
+    },
+    {
+      "id": "comp.ijso.nervous_endocrine",
+      "label": "Nervous & Endocrine Systems",
+      "type": "concept",
+      "description": "Neurons, reflex arcs, the brain, hormones, and feedback mechanisms. Comparison of nervous and hormonal control.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.biology",
+      "bookName": "Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "d35363aa855d30be",
+      "comprehended": false,
+      "strand": "biology"
+    },
+    {
+      "id": "comp.ijso.ecology",
+      "label": "Ecology & Ecosystems",
+      "type": "concept",
+      "description": "Food chains/webs, energy flow, nutrient cycles, populations, communities, and ecological relationships.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.biology",
+      "bookName": "Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "d1d3d8d32a0cbe67",
+      "comprehended": false,
+      "strand": "biology"
+    },
+    {
+      "id": "comp.ijso.evolution_classification",
+      "label": "Evolution & Classification",
+      "type": "concept",
+      "description": "Natural selection, adaptation, evidence for evolution, and biological classification (taxonomy, binomial nomenclature).",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.biology",
+      "bookName": "Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "5e9133bbddebcc8c",
+      "comprehended": false,
+      "strand": "biology"
+    },
+    {
+      "id": "comp.ijso.plant_biology",
+      "label": "Plant Biology",
+      "type": "concept",
+      "description": "Plant structure, transport (xylem/phloem), transpiration, plant hormones, and tropisms.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.biology",
+      "bookName": "Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "c5de8dc7da21e266",
+      "comprehended": false,
+      "strand": "biology"
+    },
+    {
+      "id": "comp.ijso.enzymes",
+      "label": "Enzymes",
+      "type": "concept",
+      "description": "Enzyme structure, lock-and-key model, factors affecting enzyme activity (temperature, pH, concentration), and denaturation.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.biology",
+      "bookName": "Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "e22643ad06998494",
+      "comprehended": false,
+      "strand": "biology"
+    },
+    {
+      "id": "comp.ijso.osmosis_diffusion",
+      "label": "Osmosis & Diffusion",
+      "type": "concept",
+      "description": "Diffusion, osmosis, and active transport across cell membranes. Concentration gradients and their biological significance.",
+      "grade_range": [
+        "Under-16"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "ijso.biology",
+      "bookName": "Biology",
+      "bookColor": "#22c55e",
+      "bookOrder": 3,
+      "external_id": "8594848f852738dc",
+      "comprehended": false,
+      "strand": "biology"
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp.ijso.measurement_units",
+      "target": "comp.ijso.data_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.lab_techniques",
+      "target": "comp.ijso.data_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.data_analysis",
+      "target": "comp.ijso.error_analysis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.lab_techniques",
+      "target": "comp.ijso.experimental_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.error_analysis",
+      "target": "comp.ijso.experimental_design",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.measurement_units",
+      "target": "comp.ijso.mechanics_kinematics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.mechanics_kinematics",
+      "target": "comp.ijso.forces_newtons_laws",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.forces_newtons_laws",
+      "target": "comp.ijso.work_energy_power",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.forces_newtons_laws",
+      "target": "comp.ijso.momentum",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.forces_newtons_laws",
+      "target": "comp.ijso.pressure_fluids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.work_energy_power",
+      "target": "comp.ijso.heat_thermodynamics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.density_states_of_matter",
+      "target": "comp.ijso.heat_thermodynamics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.density_states_of_matter",
+      "target": "comp.ijso.pressure_fluids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.mechanics_kinematics",
+      "target": "comp.ijso.waves_sound",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.waves_sound",
+      "target": "comp.ijso.optics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.work_energy_power",
+      "target": "comp.ijso.electricity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.electricity",
+      "target": "comp.ijso.magnetism",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.atomic_structure",
+      "target": "comp.ijso.periodic_table",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.atomic_structure",
+      "target": "comp.ijso.chemical_bonding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.periodic_table",
+      "target": "comp.ijso.chemical_bonding",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.chemical_bonding",
+      "target": "comp.ijso.chemical_reactions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.chemical_reactions",
+      "target": "comp.ijso.stoichiometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.chemical_reactions",
+      "target": "comp.ijso.acids_bases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.chemical_reactions",
+      "target": "comp.ijso.redox_reactions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.stoichiometry",
+      "target": "comp.ijso.solutions_concentration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.chemical_reactions",
+      "target": "comp.ijso.rates_of_reaction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.chemical_bonding",
+      "target": "comp.ijso.organic_chemistry_basic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.chemical_reactions",
+      "target": "comp.ijso.separation_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.solutions_concentration",
+      "target": "comp.ijso.acids_bases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.cell_biology",
+      "target": "comp.ijso.cell_division",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.cell_biology",
+      "target": "comp.ijso.osmosis_diffusion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.cell_division",
+      "target": "comp.ijso.genetics_heredity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.cell_division",
+      "target": "comp.ijso.dna_protein_synthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.dna_protein_synthesis",
+      "target": "comp.ijso.genetics_heredity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.cell_biology",
+      "target": "comp.ijso.photosynthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.cell_biology",
+      "target": "comp.ijso.respiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.cell_biology",
+      "target": "comp.ijso.enzymes",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.enzymes",
+      "target": "comp.ijso.photosynthesis",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.enzymes",
+      "target": "comp.ijso.respiration",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.osmosis_diffusion",
+      "target": "comp.ijso.human_body_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.respiration",
+      "target": "comp.ijso.human_body_systems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.human_body_systems",
+      "target": "comp.ijso.nervous_endocrine",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.photosynthesis",
+      "target": "comp.ijso.ecology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.respiration",
+      "target": "comp.ijso.ecology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.genetics_heredity",
+      "target": "comp.ijso.evolution_classification",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.ecology",
+      "target": "comp.ijso.evolution_classification",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.photosynthesis",
+      "target": "comp.ijso.plant_biology",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.ijso.osmosis_diffusion",
+      "target": "comp.ijso.plant_biology",
+      "relation": "prerequisite_for"
+    }
+  ]
+}

@@ -983,6 +983,186 @@
       "external_id": "40bd2e91aa5df9e4",
       "comprehended": false,
       "strand": "logic-problem-solving"
+    },
+    {
+      "id": "comp.seamo.digit_problems",
+      "label": "Digit Problems",
+      "type": "concept",
+      "description": "Cryptarithmetic, digit sums, digit products, and problems involving place value and digit manipulation.",
+      "grade_range": [
+        "Y5-Y7"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.b",
+      "bookName": "Paper B (Y5-7)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "41d52994d63c950d",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.seamo.symmetry_transformations",
+      "label": "Symmetry & Transformations",
+      "type": "concept",
+      "description": "Line and rotational symmetry, reflections, and rotations. Identifying and using symmetry in geometric problem solving.",
+      "grade_range": [
+        "Y5-Y7"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.b",
+      "bookName": "Paper B (Y5-7)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "429a905a3c14dc28",
+      "comprehended": false,
+      "strand": "geometry"
+    },
+    {
+      "id": "comp.seamo.bar_model_heuristics",
+      "label": "Bar Model & Heuristics",
+      "type": "concept",
+      "description": "Singapore bar-model method and problem-solving heuristics: guess-and-check, working backwards, and making a table.",
+      "grade_range": [
+        "Y2-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.a",
+      "bookName": "Paper A (Y2-4)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "1d8926860c3b922d",
+      "comprehended": false,
+      "strand": "logic-problem-solving"
+    },
+    {
+      "id": "comp.seamo.sets_venn_diagrams",
+      "label": "Sets & Venn Diagrams",
+      "type": "concept",
+      "description": "Set notation, union, intersection, complement. Using Venn diagrams to solve counting and logic problems.",
+      "grade_range": [
+        "Y8-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.c",
+      "bookName": "Paper C (Y8-10)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "d6898c5e2f6056af",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.seamo.indices_logarithms",
+      "label": "Indices & Logarithms",
+      "type": "concept",
+      "description": "Laws of indices, introduction to logarithms, and solving exponential equations at competition level.",
+      "grade_range": [
+        "Y8-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.c",
+      "bookName": "Paper C (Y8-10)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "ed5d942a6f1b6b39",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.seamo.number_bases",
+      "label": "Number Bases",
+      "type": "concept",
+      "description": "Representing numbers in different bases (binary, octal, hexadecimal). Converting between bases and base-related puzzles.",
+      "grade_range": [
+        "Y5-Y7"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.b",
+      "bookName": "Paper B (Y5-7)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "71107e1f30d219c9",
+      "comprehended": false,
+      "strand": "number-theory"
+    },
+    {
+      "id": "comp.seamo.tiling_colouring",
+      "label": "Tiling & Colouring",
+      "type": "concept",
+      "description": "Tiling regions with dominoes/tetrominoes, chessboard colouring arguments, and impossibility proofs via colouring.",
+      "grade_range": [
+        "Y10-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.d",
+      "bookName": "Paper D (Y10-12)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "652888170f85460e",
+      "comprehended": false,
+      "strand": "combinatorics"
+    },
+    {
+      "id": "comp.seamo.complex_numbers_intro",
+      "label": "Complex Numbers (Intro)",
+      "type": "concept",
+      "description": "Complex number arithmetic, modulus, argument, and geometric representation. Applications to polynomial roots.",
+      "grade_range": [
+        "Y10-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.d",
+      "bookName": "Paper D (Y10-12)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "ba29104ab602f45a",
+      "comprehended": false,
+      "strand": "algebra"
+    },
+    {
+      "id": "comp.seamo.telescoping",
+      "label": "Telescoping Sums & Products",
+      "type": "concept",
+      "description": "Evaluating sums and products via telescoping. Partial fractions and creative decomposition for series evaluation.",
+      "grade_range": [
+        "Y10-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "seamo.d",
+      "bookName": "Paper D (Y10-12)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "8ac0dade460d9ca9",
+      "comprehended": false,
+      "strand": "algebra"
     }
   ],
   "edges": [
@@ -1219,6 +1399,71 @@
     {
       "source": "comp.seamo.graph_theory",
       "target": "comp.seamo.game_theory_strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.factors_multiples_hcf_lcm",
+      "target": "comp.seamo.digit_problems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.odd_even_divisibility",
+      "target": "comp.seamo.digit_problems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.basic_geometry_shapes",
+      "target": "comp.seamo.symmetry_transformations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.simple_logic",
+      "target": "comp.seamo.bar_model_heuristics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.bar_model_heuristics",
+      "target": "comp.seamo.algebraic_expressions_equations",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.counting_permutations_combinations",
+      "target": "comp.seamo.sets_venn_diagrams",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.sets_venn_diagrams",
+      "target": "comp.seamo.inclusion_exclusion",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.quadratic_equations",
+      "target": "comp.seamo.indices_logarithms",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.factors_multiples_hcf_lcm",
+      "target": "comp.seamo.number_bases",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.invariants_parity",
+      "target": "comp.seamo.tiling_colouring",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.polynomials",
+      "target": "comp.seamo.complex_numbers_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.sequences_series",
+      "target": "comp.seamo.telescoping",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.seamo.symmetry_transformations",
+      "target": "comp.seamo.geometric_transformations",
       "relation": "prerequisite_for"
     }
   ]

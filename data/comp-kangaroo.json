@@ -1,0 +1,1447 @@
+{
+  "metadata": {
+    "domain": "mathematics",
+    "curriculum": "Mathematical Kangaroo",
+    "view": "k12-prerequisites",
+    "version": "0.2.0",
+    "description": "Mathematical Kangaroo topics with prerequisite ordering, colored by level (6 levels, Y1–Y12)",
+    "sources": [
+      "Mathematical Kangaroo International Syllabus"
+    ],
+    "last_updated": "2026-03-28"
+  },
+  "books": [
+    {
+      "id": "kangaroo.ecolier",
+      "name": "Écolier (Y1-2)",
+      "color": "#22c55e",
+      "order": 1
+    },
+    {
+      "id": "kangaroo.benjamin",
+      "name": "Benjamin (Y3-4)",
+      "color": "#3b82f6",
+      "order": 2
+    },
+    {
+      "id": "kangaroo.cadet",
+      "name": "Cadet (Y5-6)",
+      "color": "#f97316",
+      "order": 3
+    },
+    {
+      "id": "kangaroo.junior",
+      "name": "Junior (Y7-8)",
+      "color": "#ef4444",
+      "order": 4
+    },
+    {
+      "id": "kangaroo.student",
+      "name": "Student (Y9-10)",
+      "color": "#8b5cf6",
+      "order": 5
+    },
+    {
+      "id": "kangaroo.scholar",
+      "name": "Scholar (Y11-12)",
+      "color": "#ec4899",
+      "order": 6
+    }
+  ],
+  "strands": [
+    {
+      "id": "mathematical-thinking",
+      "name": "Mathematical Thinking",
+      "color": "#4A90D9"
+    },
+    {
+      "id": "logic-reasoning",
+      "name": "Logic & Reasoning",
+      "color": "#2ECC71"
+    },
+    {
+      "id": "spatial-reasoning",
+      "name": "Spatial Reasoning",
+      "color": "#E74C3C"
+    },
+    {
+      "id": "problem-solving",
+      "name": "Problem Solving",
+      "color": "#F39C12"
+    },
+    {
+      "id": "number-structures",
+      "name": "Number & Structures",
+      "color": "#9B59B6"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "comp.kangaroo.counting_objects",
+      "label": "Counting & Comparing Objects",
+      "type": "concept",
+      "description": "Counting objects in pictures, comparing quantities, and recognising 'more than' / 'fewer than' relationships.",
+      "grade_range": [
+        "Y1-Y2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.ecolier",
+      "bookName": "Écolier (Y1-2)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "941aead0d6d3e01a",
+      "comprehended": false,
+      "strand": "mathematical-thinking"
+    },
+    {
+      "id": "comp.kangaroo.simple_patterns",
+      "label": "Simple Patterns & Sequences",
+      "type": "concept",
+      "description": "Recognising repeating and growing patterns in colours, shapes, and numbers. Predicting the next element.",
+      "grade_range": [
+        "Y1-Y2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.ecolier",
+      "bookName": "Écolier (Y1-2)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "943fa6f36da5c42a",
+      "comprehended": false,
+      "strand": "mathematical-thinking"
+    },
+    {
+      "id": "comp.kangaroo.spatial_awareness",
+      "label": "Spatial Awareness",
+      "type": "concept",
+      "description": "Directions (left/right, above/below), paths on grids, and understanding spatial relationships between objects.",
+      "grade_range": [
+        "Y1-Y2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.ecolier",
+      "bookName": "Écolier (Y1-2)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "90a3b2d55dd2ac80",
+      "comprehended": false,
+      "strand": "spatial-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.basic_shapes_recognition",
+      "label": "Basic Shape Recognition",
+      "type": "concept",
+      "description": "Identifying circles, squares, triangles, and rectangles. Counting shapes within complex figures.",
+      "grade_range": [
+        "Y1-Y2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.ecolier",
+      "bookName": "Écolier (Y1-2)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "3f421450a7cc21e6",
+      "comprehended": false,
+      "strand": "spatial-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.simple_reasoning",
+      "label": "Simple Reasoning",
+      "type": "concept",
+      "description": "Drawing conclusions from given clues. 'If... then...' reasoning and simple elimination at a young learner level.",
+      "grade_range": [
+        "Y1-Y2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.ecolier",
+      "bookName": "Écolier (Y1-2)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "def20ecc5ff90f62",
+      "comprehended": false,
+      "strand": "logic-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.puzzle_completion",
+      "label": "Puzzle Completion",
+      "type": "concept",
+      "description": "Filling in missing pieces in jigsaws, tangram-like tasks, and completing visual patterns.",
+      "grade_range": [
+        "Y1-Y2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.ecolier",
+      "bookName": "Écolier (Y1-2)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "f637b1faa259fdf2",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.kangaroo.number_puzzles_basic",
+      "label": "Number Puzzles (Basic)",
+      "type": "concept",
+      "description": "Simple addition/subtraction puzzles, fill-in-the-blank equations, and digit-placement challenges.",
+      "grade_range": [
+        "Y3-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.benjamin",
+      "bookName": "Benjamin (Y3-4)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "486f69b46ffa8de4",
+      "comprehended": false,
+      "strand": "mathematical-thinking"
+    },
+    {
+      "id": "comp.kangaroo.pattern_generalisation",
+      "label": "Pattern Generalisation",
+      "type": "concept",
+      "description": "Extending number and visual patterns, describing rules, and predicting the nth element in a sequence.",
+      "grade_range": [
+        "Y3-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.benjamin",
+      "bookName": "Benjamin (Y3-4)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "ec23d22e5e3b0e4f",
+      "comprehended": false,
+      "strand": "mathematical-thinking"
+    },
+    {
+      "id": "comp.kangaroo.symmetry_reflection",
+      "label": "Symmetry & Reflection",
+      "type": "concept",
+      "description": "Lines of symmetry, mirror images, and identifying symmetric figures. Rotational symmetry introduction.",
+      "grade_range": [
+        "Y3-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.benjamin",
+      "bookName": "Benjamin (Y3-4)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "9258ab13de89e95c",
+      "comprehended": false,
+      "strand": "spatial-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.logical_deduction",
+      "label": "Logical Deduction",
+      "type": "concept",
+      "description": "Multi-step deductions, truth/lie puzzles with few characters, and ordering problems from clues.",
+      "grade_range": [
+        "Y3-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.benjamin",
+      "bookName": "Benjamin (Y3-4)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "07d75cd595e97259",
+      "comprehended": false,
+      "strand": "logic-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.folding_cutting",
+      "label": "Folding & Cutting",
+      "type": "concept",
+      "description": "Predicting results of paper folding and cutting. Net identification for cubes and simple polyhedra.",
+      "grade_range": [
+        "Y3-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.benjamin",
+      "bookName": "Benjamin (Y3-4)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "cf8f3ba404f44284",
+      "comprehended": false,
+      "strand": "spatial-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.path_route_problems",
+      "label": "Path & Route Problems",
+      "type": "concept",
+      "description": "Counting routes on grids, shortest path problems, and navigating mazes with constraints.",
+      "grade_range": [
+        "Y3-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.benjamin",
+      "bookName": "Benjamin (Y3-4)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "f5993db576c825eb",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.kangaroo.area_perimeter_puzzles",
+      "label": "Area & Perimeter Puzzles",
+      "type": "concept",
+      "description": "Non-routine problems requiring creative approaches to area and perimeter. Decomposition and rearrangement strategies.",
+      "grade_range": [
+        "Y5-Y6"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.cadet",
+      "bookName": "Cadet (Y5-6)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "54e2bb6202da01d1",
+      "comprehended": false,
+      "strand": "spatial-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.divisibility_parity",
+      "label": "Divisibility & Parity",
+      "type": "concept",
+      "description": "Using odd/even and divisibility reasoning to solve problems and eliminate impossible cases.",
+      "grade_range": [
+        "Y5-Y6"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.cadet",
+      "bookName": "Cadet (Y5-6)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "0ff358739be76fa3",
+      "comprehended": false,
+      "strand": "number-structures"
+    },
+    {
+      "id": "comp.kangaroo.systematic_counting",
+      "label": "Systematic Counting",
+      "type": "concept",
+      "description": "Organised counting: multiplication principle, addition principle, and avoiding overcounting in combinatorial settings.",
+      "grade_range": [
+        "Y5-Y6"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.cadet",
+      "bookName": "Cadet (Y5-6)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "14831100732f545d",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.kangaroo.logic_grids",
+      "label": "Logic Grids & Constraints",
+      "type": "concept",
+      "description": "Grid-based logic puzzles (e.g., Sudoku variants), scheduling problems, and constraint satisfaction.",
+      "grade_range": [
+        "Y5-Y6"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.cadet",
+      "bookName": "Cadet (Y5-6)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "1a41fe46620c9f18",
+      "comprehended": false,
+      "strand": "logic-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.spatial_visualisation_3d",
+      "label": "3D Spatial Visualisation",
+      "type": "concept",
+      "description": "Views from different angles, counting cubes in 3D structures, and understanding cross-sections of solids.",
+      "grade_range": [
+        "Y5-Y6"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.cadet",
+      "bookName": "Cadet (Y5-6)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "5775aae69c7447cd",
+      "comprehended": false,
+      "strand": "spatial-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.working_backwards",
+      "label": "Working Backwards",
+      "type": "concept",
+      "description": "Solving problems by starting from the answer and reversing operations. Inverse thinking in multi-step scenarios.",
+      "grade_range": [
+        "Y5-Y6"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.cadet",
+      "bookName": "Cadet (Y5-6)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "6c3c6e2b870dd2d6",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.kangaroo.fractions_ratio_thinking",
+      "label": "Fractions & Ratio Thinking",
+      "type": "concept",
+      "description": "Proportional reasoning, comparing fractions, and ratio-based problems requiring creative approaches.",
+      "grade_range": [
+        "Y5-Y6"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.cadet",
+      "bookName": "Cadet (Y5-6)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "5f91e795226a9fff",
+      "comprehended": false,
+      "strand": "number-structures"
+    },
+    {
+      "id": "comp.kangaroo.tiling_tessellation",
+      "label": "Tiling & Tessellation",
+      "type": "concept",
+      "description": "Covering regions with tiles, checking whether tessellations are possible, and colouring arguments for tiling.",
+      "grade_range": [
+        "Y5-Y6"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.cadet",
+      "bookName": "Cadet (Y5-6)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "d5d4a0caa96bb391",
+      "comprehended": false,
+      "strand": "spatial-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.algebraic_thinking",
+      "label": "Algebraic Thinking",
+      "type": "concept",
+      "description": "Using variables to represent unknowns, setting up equations from word problems, and solving simple equations logically.",
+      "grade_range": [
+        "Y7-Y8"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.junior",
+      "bookName": "Junior (Y7-8)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "ba1b727449ae6352",
+      "comprehended": false,
+      "strand": "mathematical-thinking"
+    },
+    {
+      "id": "comp.kangaroo.angle_reasoning",
+      "label": "Angle Reasoning",
+      "type": "concept",
+      "description": "Angle properties in triangles, polygons, and parallel-line configurations. Multi-step angle chasing.",
+      "grade_range": [
+        "Y7-Y8"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.junior",
+      "bookName": "Junior (Y7-8)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "1fc621effff098fd",
+      "comprehended": false,
+      "strand": "spatial-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.pigeonhole_reasoning",
+      "label": "Pigeonhole Reasoning",
+      "type": "concept",
+      "description": "Pigeonhole principle applied to guarantee outcomes. 'Worst-case' arguments and existence proofs for younger solvers.",
+      "grade_range": [
+        "Y7-Y8"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.junior",
+      "bookName": "Junior (Y7-8)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "e1aeafb39bbab50d",
+      "comprehended": false,
+      "strand": "logic-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.number_theory_intro",
+      "label": "Number Theory (Intro)",
+      "type": "concept",
+      "description": "Primes, divisibility tricks, digit sums, and last-digit analysis. Introduction to modular thinking.",
+      "grade_range": [
+        "Y7-Y8"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.junior",
+      "bookName": "Junior (Y7-8)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "333ae45a3816e57d",
+      "comprehended": false,
+      "strand": "number-structures"
+    },
+    {
+      "id": "comp.kangaroo.combinatorial_counting",
+      "label": "Combinatorial Counting",
+      "type": "concept",
+      "description": "Permutations, combinations, and the inclusion-exclusion principle at a junior competition level.",
+      "grade_range": [
+        "Y7-Y8"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.junior",
+      "bookName": "Junior (Y7-8)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "adbb8b2be186709a",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.kangaroo.geometric_constructions",
+      "label": "Geometric Constructions & Proofs",
+      "type": "concept",
+      "description": "Compass-and-straightedge reasoning, auxiliary lines, and constructing geometric arguments.",
+      "grade_range": [
+        "Y7-Y8"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.junior",
+      "bookName": "Junior (Y7-8)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "c484cdc6e1c35d7a",
+      "comprehended": false,
+      "strand": "spatial-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.invariant_thinking",
+      "label": "Invariant Thinking",
+      "type": "concept",
+      "description": "Identifying quantities that do not change under allowed operations. Colouring and parity-based invariants.",
+      "grade_range": [
+        "Y7-Y8"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.junior",
+      "bookName": "Junior (Y7-8)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "36387d8ef92a077f",
+      "comprehended": false,
+      "strand": "logic-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.graph_network_problems",
+      "label": "Graph & Network Problems",
+      "type": "concept",
+      "description": "Euler paths, vertex colouring, connectivity, and degree-based reasoning in competition graph problems.",
+      "grade_range": [
+        "Y7-Y8"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.junior",
+      "bookName": "Junior (Y7-8)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "eaf7cb47ec4edffb",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.kangaroo.equations_inequalities",
+      "label": "Equations & Inequalities",
+      "type": "concept",
+      "description": "Solving quadratics, systems of equations, and inequalities. Optimisation via algebraic bounding.",
+      "grade_range": [
+        "Y9-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.student",
+      "bookName": "Student (Y9-10)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "8ece945e8342c392",
+      "comprehended": false,
+      "strand": "mathematical-thinking"
+    },
+    {
+      "id": "comp.kangaroo.circle_geometry",
+      "label": "Circle Geometry",
+      "type": "concept",
+      "description": "Circle theorems, tangent properties, cyclic quadrilaterals, and power of a point in problem-solving contexts.",
+      "grade_range": [
+        "Y9-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.student",
+      "bookName": "Student (Y9-10)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "9ec0e5e0978c8cef",
+      "comprehended": false,
+      "strand": "spatial-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.modular_arithmetic",
+      "label": "Modular Arithmetic",
+      "type": "concept",
+      "description": "Congruences, remainder problems, and modular reasoning applied to competition number theory.",
+      "grade_range": [
+        "Y9-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.student",
+      "bookName": "Student (Y9-10)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "bb8db81fd9f18eac",
+      "comprehended": false,
+      "strand": "number-structures"
+    },
+    {
+      "id": "comp.kangaroo.probability_expected_value",
+      "label": "Probability & Expected Value",
+      "type": "concept",
+      "description": "Classical and geometric probability, conditional probability, and expected value in competition settings.",
+      "grade_range": [
+        "Y9-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.student",
+      "bookName": "Student (Y9-10)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "a576e09fe308be21",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.kangaroo.coordinate_methods",
+      "label": "Coordinate Methods",
+      "type": "concept",
+      "description": "Using coordinates to solve geometric problems. Shoelace formula, distance, midpoint, and analytic approaches.",
+      "grade_range": [
+        "Y9-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.student",
+      "bookName": "Student (Y9-10)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "7497b437e33d923e",
+      "comprehended": false,
+      "strand": "spatial-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.sequences_series",
+      "label": "Sequences & Series",
+      "type": "concept",
+      "description": "Arithmetic/geometric series, telescoping, and creative summation techniques in competition contexts.",
+      "grade_range": [
+        "Y9-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.student",
+      "bookName": "Student (Y9-10)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "ba14772157c05f75",
+      "comprehended": false,
+      "strand": "mathematical-thinking"
+    },
+    {
+      "id": "comp.kangaroo.game_strategy",
+      "label": "Game Strategy",
+      "type": "concept",
+      "description": "Analysing two-player games: symmetry strategy, pairing, and monovariant arguments to determine winners.",
+      "grade_range": [
+        "Y9-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.student",
+      "bookName": "Student (Y9-10)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "df06332f3e7e5f84",
+      "comprehended": false,
+      "strand": "logic-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.trigonometric_reasoning",
+      "label": "Trigonometric Reasoning",
+      "type": "concept",
+      "description": "Using trigonometric ratios and identities to solve geometric and algebraic competition problems.",
+      "grade_range": [
+        "Y9-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.student",
+      "bookName": "Student (Y9-10)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "46add98545245596",
+      "comprehended": false,
+      "strand": "spatial-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.polynomials_functions",
+      "label": "Polynomials & Functions",
+      "type": "concept",
+      "description": "Polynomial roots, Vieta's formulas, functional equations, and function composition in competition problems.",
+      "grade_range": [
+        "Y11-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.scholar",
+      "bookName": "Scholar (Y11-12)",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "1d32e4f7064d07ac",
+      "comprehended": false,
+      "strand": "mathematical-thinking"
+    },
+    {
+      "id": "comp.kangaroo.advanced_number_theory",
+      "label": "Advanced Number Theory",
+      "type": "concept",
+      "description": "Euler's theorem, Fermat's little theorem, Diophantine equations, and p-adic valuations at competition level.",
+      "grade_range": [
+        "Y11-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.scholar",
+      "bookName": "Scholar (Y11-12)",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "9e1bb34326b89c5e",
+      "comprehended": false,
+      "strand": "number-structures"
+    },
+    {
+      "id": "comp.kangaroo.advanced_geometry",
+      "label": "Advanced Geometry",
+      "type": "concept",
+      "description": "Inversion, projective concepts, barycentric coordinates, and advanced circle geometry in competition problems.",
+      "grade_range": [
+        "Y11-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.scholar",
+      "bookName": "Scholar (Y11-12)",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "2df8899de6b615b7",
+      "comprehended": false,
+      "strand": "spatial-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.advanced_combinatorics",
+      "label": "Advanced Combinatorics",
+      "type": "concept",
+      "description": "Double counting, bijective proofs, Ramsey theory intro, and extremal combinatorics at competition level.",
+      "grade_range": [
+        "Y11-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.scholar",
+      "bookName": "Scholar (Y11-12)",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "9ca27e34b6cdc279",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.kangaroo.inequalities_optimisation",
+      "label": "Inequalities & Optimisation",
+      "type": "concept",
+      "description": "AM-GM, Cauchy-Schwarz, and Jensen's inequality. Finding extrema using algebraic and geometric arguments.",
+      "grade_range": [
+        "Y11-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.scholar",
+      "bookName": "Scholar (Y11-12)",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "076c281cee548681",
+      "comprehended": false,
+      "strand": "mathematical-thinking"
+    },
+    {
+      "id": "comp.kangaroo.proof_techniques",
+      "label": "Proof Techniques",
+      "type": "concept",
+      "description": "Mathematical induction, contradiction, extremal principle, and constructive proofs in olympiad-style problems.",
+      "grade_range": [
+        "Y11-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.scholar",
+      "bookName": "Scholar (Y11-12)",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "73a1ce12e155ac7f",
+      "comprehended": false,
+      "strand": "logic-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.recurrence_generating",
+      "label": "Recurrences & Generating Functions",
+      "type": "concept",
+      "description": "Setting up and solving recurrences. Generating function intuition for counting problems.",
+      "grade_range": [
+        "Y11-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.scholar",
+      "bookName": "Scholar (Y11-12)",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "286a47e91f823d4b",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.kangaroo.measurement_estimation",
+      "label": "Measurement & Estimation",
+      "type": "concept",
+      "description": "Estimating lengths, areas, and quantities. Developing number sense for reasonableness of answers.",
+      "grade_range": [
+        "Y1-Y2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.ecolier",
+      "bookName": "Écolier (Y1-2)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "a5cfa612b1ffde14",
+      "comprehended": false,
+      "strand": "mathematical-thinking"
+    },
+    {
+      "id": "comp.kangaroo.calendar_time",
+      "label": "Calendar & Time Problems",
+      "type": "concept",
+      "description": "Days of the week, months, reading clocks, and elapsed time. Cyclic pattern reasoning with calendars.",
+      "grade_range": [
+        "Y1-Y2"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.ecolier",
+      "bookName": "Écolier (Y1-2)",
+      "bookColor": "#22c55e",
+      "bookOrder": 1,
+      "external_id": "57a769d64e03732a",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.kangaroo.weighing_balancing",
+      "label": "Weighing & Balancing",
+      "type": "concept",
+      "description": "Balance-scale problems, finding a fake coin, and deducing weights from comparison information.",
+      "grade_range": [
+        "Y3-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.benjamin",
+      "bookName": "Benjamin (Y3-4)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "868b2554e3923be8",
+      "comprehended": false,
+      "strand": "logic-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.magic_squares_grids",
+      "label": "Magic Squares & Number Grids",
+      "type": "concept",
+      "description": "Completing magic squares and number-placement puzzles with row/column/diagonal sum constraints.",
+      "grade_range": [
+        "Y3-Y4"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.benjamin",
+      "bookName": "Benjamin (Y3-4)",
+      "bookColor": "#3b82f6",
+      "bookOrder": 2,
+      "external_id": "865a235633e94a0d",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.kangaroo.speed_distance_time",
+      "label": "Speed, Distance & Time",
+      "type": "concept",
+      "description": "Relating speed, distance, and time. Meeting problems and journey puzzles requiring proportional reasoning.",
+      "grade_range": [
+        "Y5-Y6"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.cadet",
+      "bookName": "Cadet (Y5-6)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "b03ed7f06a4178f3",
+      "comprehended": false,
+      "strand": "problem-solving"
+    },
+    {
+      "id": "comp.kangaroo.cryptarithmetic",
+      "label": "Cryptarithmetic",
+      "type": "concept",
+      "description": "Replacing letters with digits in arithmetic problems. Systematic case analysis and digit-level reasoning.",
+      "grade_range": [
+        "Y5-Y6"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.cadet",
+      "bookName": "Cadet (Y5-6)",
+      "bookColor": "#f97316",
+      "bookOrder": 3,
+      "external_id": "dd98e917e85ba95c",
+      "comprehended": false,
+      "strand": "number-structures"
+    },
+    {
+      "id": "comp.kangaroo.similarity_ratio",
+      "label": "Similarity & Ratio in Geometry",
+      "type": "concept",
+      "description": "Using similarity ratios to find unknown lengths and areas. Scale factor reasoning in geometric contexts.",
+      "grade_range": [
+        "Y7-Y8"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.junior",
+      "bookName": "Junior (Y7-8)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "ff52e6cbec86afa1",
+      "comprehended": false,
+      "strand": "spatial-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.colouring_arguments",
+      "label": "Colouring Arguments",
+      "type": "concept",
+      "description": "Using chessboard and multi-colour arguments to prove impossibility of tilings, coverings, or configurations.",
+      "grade_range": [
+        "Y7-Y8"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.junior",
+      "bookName": "Junior (Y7-8)",
+      "bookColor": "#ef4444",
+      "bookOrder": 4,
+      "external_id": "b7af7bbc9cd1ffad",
+      "comprehended": false,
+      "strand": "logic-reasoning"
+    },
+    {
+      "id": "comp.kangaroo.diophantine_problems",
+      "label": "Diophantine Problems",
+      "type": "concept",
+      "description": "Finding integer solutions to equations using modular arithmetic, bounding, and systematic case analysis.",
+      "grade_range": [
+        "Y9-Y10"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.student",
+      "bookName": "Student (Y9-10)",
+      "bookColor": "#8b5cf6",
+      "bookOrder": 5,
+      "external_id": "9b4f7618a7dd3378",
+      "comprehended": false,
+      "strand": "number-structures"
+    },
+    {
+      "id": "comp.kangaroo.functional_equations",
+      "label": "Functional Equations",
+      "type": "concept",
+      "description": "Solving functional equations via substitution and logical deduction. Determining functions from given constraints.",
+      "grade_range": [
+        "Y11-Y12"
+      ],
+      "tags": [
+        "subtopic"
+      ],
+      "pages": "",
+      "book": "kangaroo.scholar",
+      "bookName": "Scholar (Y11-12)",
+      "bookColor": "#ec4899",
+      "bookOrder": 6,
+      "external_id": "eaf0c734b1ef1f3f",
+      "comprehended": false,
+      "strand": "mathematical-thinking"
+    }
+  ],
+  "edges": [
+    {
+      "source": "comp.kangaroo.counting_objects",
+      "target": "comp.kangaroo.number_puzzles_basic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.simple_patterns",
+      "target": "comp.kangaroo.pattern_generalisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.spatial_awareness",
+      "target": "comp.kangaroo.symmetry_reflection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.spatial_awareness",
+      "target": "comp.kangaroo.folding_cutting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.basic_shapes_recognition",
+      "target": "comp.kangaroo.symmetry_reflection",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.simple_reasoning",
+      "target": "comp.kangaroo.logical_deduction",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.puzzle_completion",
+      "target": "comp.kangaroo.path_route_problems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.basic_shapes_recognition",
+      "target": "comp.kangaroo.area_perimeter_puzzles",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.number_puzzles_basic",
+      "target": "comp.kangaroo.divisibility_parity",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.path_route_problems",
+      "target": "comp.kangaroo.systematic_counting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.logical_deduction",
+      "target": "comp.kangaroo.logic_grids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.folding_cutting",
+      "target": "comp.kangaroo.spatial_visualisation_3d",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.pattern_generalisation",
+      "target": "comp.kangaroo.working_backwards",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.number_puzzles_basic",
+      "target": "comp.kangaroo.fractions_ratio_thinking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.symmetry_reflection",
+      "target": "comp.kangaroo.tiling_tessellation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.pattern_generalisation",
+      "target": "comp.kangaroo.algebraic_thinking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.working_backwards",
+      "target": "comp.kangaroo.algebraic_thinking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.area_perimeter_puzzles",
+      "target": "comp.kangaroo.angle_reasoning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.logic_grids",
+      "target": "comp.kangaroo.pigeonhole_reasoning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.divisibility_parity",
+      "target": "comp.kangaroo.number_theory_intro",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.systematic_counting",
+      "target": "comp.kangaroo.combinatorial_counting",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.angle_reasoning",
+      "target": "comp.kangaroo.geometric_constructions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.logic_grids",
+      "target": "comp.kangaroo.invariant_thinking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.divisibility_parity",
+      "target": "comp.kangaroo.invariant_thinking",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.path_route_problems",
+      "target": "comp.kangaroo.graph_network_problems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.algebraic_thinking",
+      "target": "comp.kangaroo.equations_inequalities",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.angle_reasoning",
+      "target": "comp.kangaroo.circle_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.geometric_constructions",
+      "target": "comp.kangaroo.circle_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.number_theory_intro",
+      "target": "comp.kangaroo.modular_arithmetic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.combinatorial_counting",
+      "target": "comp.kangaroo.probability_expected_value",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.geometric_constructions",
+      "target": "comp.kangaroo.coordinate_methods",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.algebraic_thinking",
+      "target": "comp.kangaroo.sequences_series",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.fractions_ratio_thinking",
+      "target": "comp.kangaroo.sequences_series",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.invariant_thinking",
+      "target": "comp.kangaroo.game_strategy",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.angle_reasoning",
+      "target": "comp.kangaroo.trigonometric_reasoning",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.equations_inequalities",
+      "target": "comp.kangaroo.polynomials_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.sequences_series",
+      "target": "comp.kangaroo.polynomials_functions",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.modular_arithmetic",
+      "target": "comp.kangaroo.advanced_number_theory",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.circle_geometry",
+      "target": "comp.kangaroo.advanced_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.coordinate_methods",
+      "target": "comp.kangaroo.advanced_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.trigonometric_reasoning",
+      "target": "comp.kangaroo.advanced_geometry",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.probability_expected_value",
+      "target": "comp.kangaroo.advanced_combinatorics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.graph_network_problems",
+      "target": "comp.kangaroo.advanced_combinatorics",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.equations_inequalities",
+      "target": "comp.kangaroo.inequalities_optimisation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.invariant_thinking",
+      "target": "comp.kangaroo.proof_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.game_strategy",
+      "target": "comp.kangaroo.proof_techniques",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.sequences_series",
+      "target": "comp.kangaroo.recurrence_generating",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.combinatorial_counting",
+      "target": "comp.kangaroo.recurrence_generating",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.counting_objects",
+      "target": "comp.kangaroo.measurement_estimation",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.simple_patterns",
+      "target": "comp.kangaroo.calendar_time",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.logical_deduction",
+      "target": "comp.kangaroo.weighing_balancing",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.number_puzzles_basic",
+      "target": "comp.kangaroo.magic_squares_grids",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.fractions_ratio_thinking",
+      "target": "comp.kangaroo.speed_distance_time",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.divisibility_parity",
+      "target": "comp.kangaroo.cryptarithmetic",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.angle_reasoning",
+      "target": "comp.kangaroo.similarity_ratio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.fractions_ratio_thinking",
+      "target": "comp.kangaroo.similarity_ratio",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.invariant_thinking",
+      "target": "comp.kangaroo.colouring_arguments",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.tiling_tessellation",
+      "target": "comp.kangaroo.colouring_arguments",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.modular_arithmetic",
+      "target": "comp.kangaroo.diophantine_problems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.equations_inequalities",
+      "target": "comp.kangaroo.diophantine_problems",
+      "relation": "prerequisite_for"
+    },
+    {
+      "source": "comp.kangaroo.polynomials_functions",
+      "target": "comp.kangaroo.functional_equations",
+      "relation": "prerequisite_for"
+    }
+  ]
+}
