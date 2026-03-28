@@ -123,6 +123,30 @@ svg { width: 100%; height: 100%; display: block; }
 .video-title { font-size: 11px; color: var(--text); line-height: 1.3; margin-bottom: 4px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .video-meta { font-size: 9px; color: var(--text3); display: flex; gap: 8px; }
 .video-embed { width: 100%; aspect-ratio: 16/9; border: none; border-radius: 6px; }
+.dir-section { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
+.dir-head { font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: #06b6d4; margin-bottom: 8px; }
+.dir-search-wrap { position: relative; margin-bottom: 8px; }
+.dir-search { width: 100%; padding: 6px 10px; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 5px; color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 11px; outline: none; }
+.dir-search:focus { border-color: rgba(6,182,212,0.4); }
+.dir-search::placeholder { color: var(--text3); }
+.dir-results { max-height: 150px; overflow-y: auto; border: 1px solid var(--border); border-radius: 5px; background: var(--surface); display: none; }
+.dir-results.open { display: block; }
+.dir-result { padding: 5px 10px; cursor: pointer; font-size: 11px; color: var(--text2); transition: background 0.1s; display: flex; align-items: center; gap: 6px; }
+.dir-result:hover { background: rgba(6,182,212,0.08); }
+.dir-result .dr-dot { width: 5px; height: 5px; border-radius: 50%; flex-shrink: 0; }
+.dir-result .dr-book { font-size: 8px; color: var(--text3); margin-left: auto; }
+.dir-path { margin-top: 8px; }
+.dir-step { display: flex; align-items: center; gap: 6px; padding: 4px 6px; font-size: 10px; border-radius: 4px; cursor: pointer; transition: background 0.1s; }
+.dir-step:hover { background: rgba(255,255,255,0.04); }
+.dir-step-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+.dir-step-label { color: var(--text); flex: 1; }
+.dir-step-book { font-size: 8px; color: var(--text3); }
+.dir-arrow { color: var(--text3); font-size: 9px; padding-left: 14px; }
+.dir-arrow.uturn { color: #f59e0b; }
+.dir-step.start .dir-step-dot { box-shadow: 0 0 0 2px #06b6d4; }
+.dir-step.end .dir-step-dot { box-shadow: 0 0 0 2px #ffc857; }
+.dir-step.current { background: rgba(6,182,212,0.08); }
+.dir-info { font-size: 9px; color: var(--text3); margin-top: 6px; padding: 4px 6px; background: rgba(255,255,255,0.02); border-radius: 4px; }
 .conn-section { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
 .conn-head { font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text3); margin-bottom: 6px; }
 .conn-head.prereq { color: #e07a5f; }
@@ -394,6 +418,97 @@ function init(data, videoMapping, videoMeta) {
   function dragging(ev, d) { d.fx = ev.x; d.fy = ev.y; }
   function dragEnd(ev, d) { if (!ev.active) simulation.alphaTarget(0); d.fx = null; d.fy = null; }
 
+  // --- Pathfinding: BFS on mixed directed/undirected graph ---
+  // Build adjacency lists
+  const fwdAdj = {}; // forward edges (source→target)
+  const revAdj = {}; // reverse edges (target→source, for U-turns)
+  nodes.forEach(n => { fwdAdj[n.id] = []; revAdj[n.id] = []; });
+  edges.forEach(e => {
+    const s = typeof e.source === 'object' ? e.source.id : e.source;
+    const t = typeof e.target === 'object' ? e.target.id : e.target;
+    fwdAdj[s].push(t);
+    revAdj[t].push(s);
+  });
+
+  function findPath(startId, endId) {
+    if (startId === endId) return [{ id: startId, dir: 'start' }];
+    // BFS on bidirectional graph, tracking direction of each step
+    // Forward edges cost 1, reverse (U-turn) edges cost 2
+    // Use Dijkstra-like approach with priority
+    const dist = {};
+    const prev = {};
+    const dirMap = {};
+    dist[startId] = 0;
+    const queue = [[0, startId]];
+
+    while (queue.length > 0) {
+      queue.sort((a, b) => a[0] - b[0]);
+      const [cost, curr] = queue.shift();
+      if (cost > (dist[curr] || Infinity)) continue;
+      if (curr === endId) break;
+
+      // Forward neighbors (natural direction) — cost 1
+      (fwdAdj[curr] || []).forEach(next => {
+        const nc = cost + 1;
+        if (nc < (dist[next] || Infinity)) {
+          dist[next] = nc;
+          prev[next] = curr;
+          dirMap[next] = 'fwd';
+          queue.push([nc, next]);
+        }
+      });
+      // Reverse neighbors (U-turn) — cost 2
+      (revAdj[curr] || []).forEach(next => {
+        const nc = cost + 2;
+        if (nc < (dist[next] || Infinity)) {
+          dist[next] = nc;
+          prev[next] = curr;
+          dirMap[next] = 'rev';
+          queue.push([nc, next]);
+        }
+      });
+    }
+
+    if (!(endId in prev)) return null; // no path
+
+    // Reconstruct
+    const path = [];
+    let cur = endId;
+    while (cur !== startId) {
+      path.unshift({ id: cur, dir: dirMap[cur] || 'fwd' });
+      cur = prev[cur];
+    }
+    path.unshift({ id: startId, dir: 'start' });
+    return path;
+  }
+
+  function highlightPath(path) {
+    if (!path) return;
+    const pathIds = new Set(path.map(p => p.id));
+    const pathEdges = new Set();
+    for (let i = 0; i < path.length - 1; i++) {
+      pathEdges.add(path[i].id + '->' + path[i+1].id);
+      pathEdges.add(path[i+1].id + '->' + path[i].id); // catch reverse too
+    }
+
+    nodeEls.attr('fill-opacity', n => pathIds.has(n.id) ? 1 : 0.06)
+      .attr('stroke', n => pathIds.has(n.id) ? '#06b6d4' : n.gradeColor)
+      .attr('stroke-width', n => pathIds.has(n.id) ? 3 : 2)
+      .attr('stroke-opacity', n => pathIds.has(n.id) ? 1 : 0.06);
+    labelEls.attr('fill', n => pathIds.has(n.id) ? '#e8e4dc' : '#1a1830')
+      .attr('font-weight', n => pathIds.has(n.id) ? 600 : 400);
+    linkEls.each(function(e) {
+      const k1 = eid(e,'source')+'->'+eid(e,'target');
+      const k2 = eid(e,'target')+'->'+eid(e,'source');
+      const onPath = pathEdges.has(k1) || pathEdges.has(k2);
+      d3.select(this)
+        .attr('stroke', onPath ? '#06b6d4' : '#5a5480')
+        .attr('stroke-opacity', onPath ? 0.9 : 0.04)
+        .attr('stroke-width', onPath ? 2.5 : 0.7)
+        .attr('marker-end', onPath ? 'url(#arrow-hl)' : 'url(#arrow)');
+    });
+  }
+
   function selectNode(d) {
     selectedNode = d;
     const neighbors = new Set([d.id]);
@@ -496,7 +611,91 @@ function init(data, videoMapping, videoMeta) {
       (leads.length ?
         '<div class="conn-section"><div class="conn-head leads">\u25BC Leads to (' + leads.length + ')</div>' +
         leads.map(n => '<div class="conn-item" data-id="'+n.id+'"><span class="conn-dot" style="background:'+n.topicColor+';box-shadow:0 0 0 1.5px '+n.gradeColor+'"></span><span class="conn-label">'+n.label+'</span><span class="conn-book">'+n.bookName+'</span></div>').join('') +
-        '</div>' : '');
+        '</div>' : '') +
+      '<div class="dir-section">' +
+        '<div class="dir-head">\u2794 Get Directions</div>' +
+        '<div class="dir-search-wrap"><input class="dir-search" id="dir-search" placeholder="Navigate to..." autocomplete="off"></div>' +
+        '<div class="dir-results" id="dir-results"></div>' +
+        '<div class="dir-path" id="dir-path"></div>' +
+      '</div>';
+
+    // --- Directions feature ---
+    var dirSearch = content.querySelector('#dir-search');
+    var dirResults = content.querySelector('#dir-results');
+    var dirPathEl = content.querySelector('#dir-path');
+    var dirTimeout;
+
+    dirSearch.addEventListener('input', function() {
+      clearTimeout(dirTimeout);
+      dirTimeout = setTimeout(function() {
+        var q = dirSearch.value.trim().toLowerCase();
+        if (!q || q.length < 2) { dirResults.classList.remove('open'); return; }
+        var matches = nodes.filter(function(n) {
+          return n.id !== d.id && (n.label.toLowerCase().includes(q) || n.id.toLowerCase().includes(q));
+        }).slice(0, 8);
+        if (matches.length === 0) { dirResults.classList.remove('open'); return; }
+        dirResults.innerHTML = matches.map(function(n) {
+          return '<div class="dir-result" data-id="'+n.id+'">' +
+            '<span class="dr-dot" style="background:'+n.topicColor+'"></span>' +
+            '<span>'+n.label+'</span>' +
+            '<span class="dr-book">'+n.bookName+'</span></div>';
+        }).join('');
+        dirResults.classList.add('open');
+        dirResults.querySelectorAll('.dir-result').forEach(function(el) {
+          el.addEventListener('click', function() {
+            var targetNode = nodeMap[el.dataset.id];
+            if (!targetNode) return;
+            dirResults.classList.remove('open');
+            dirSearch.value = targetNode.label;
+            showDirections(d, targetNode);
+          });
+        });
+      }, 200);
+    });
+
+    function showDirections(from, to) {
+      var path = findPath(from.id, to.id);
+      if (!path) {
+        dirPathEl.innerHTML = '<div class="dir-info">No path found between these topics.</div>';
+        return;
+      }
+      var fwdCount = path.filter(function(p) { return p.dir === 'fwd'; }).length;
+      var revCount = path.filter(function(p) { return p.dir === 'rev'; }).length;
+      var html = '<div class="dir-info">' + (path.length - 1) + ' steps' +
+        (revCount > 0 ? ' \u00b7 ' + revCount + ' U-turn' + (revCount > 1 ? 's' : '') : '') + '</div>';
+
+      path.forEach(function(step, i) {
+        var n = nodeMap[step.id];
+        if (!n) return;
+        var cls = 'dir-step';
+        if (i === 0) cls += ' start';
+        if (i === path.length - 1) cls += ' end';
+
+        if (i > 0) {
+          var arrow = step.dir === 'rev' ? '\u21B0 back to' : '\u2193';
+          var arrowCls = step.dir === 'rev' ? 'dir-arrow uturn' : 'dir-arrow';
+          html += '<div class="'+arrowCls+'">' + arrow + '</div>';
+        }
+        html += '<div class="'+cls+'" data-id="'+n.id+'">' +
+          '<span class="dir-step-dot" style="background:'+n.topicColor+'"></span>' +
+          '<span class="dir-step-label">'+n.label+'</span>' +
+          '<span class="dir-step-book">'+n.bookName+'</span></div>';
+      });
+
+      dirPathEl.innerHTML = html;
+      highlightPath(path);
+
+      // Click steps to navigate
+      dirPathEl.querySelectorAll('.dir-step').forEach(function(el) {
+        el.addEventListener('click', function() {
+          var n = nodeMap[el.dataset.id];
+          if (n && n.x != null) {
+            var t = d3.zoomIdentity.translate(-n.x*2.5+container.clientWidth/2, -n.y*2.5+container.clientHeight/2).scale(2.5);
+            svg.transition().duration(500).call(zoom.transform, t);
+          }
+        });
+      });
+    }
 
     // Video carousel navigation
     if (nodeVideos.length > 0) {
