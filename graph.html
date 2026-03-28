@@ -107,6 +107,15 @@ svg { width: 100%; height: 100%; display: block; }
 .detail-badge { display: inline-flex; align-items: center; gap: 5px; padding: 2px 8px; border-radius: 12px; font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 6px; }
 .detail-title { font-family: 'Instrument Serif', serif; font-size: 20px; line-height: 1.2; margin-bottom: 14px; }
 .detail-desc { font-size: 11px; color: var(--text2); line-height: 1.5; margin-bottom: 10px; }
+.video-section { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
+.video-head { font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: #f59e0b; margin-bottom: 8px; display: flex; align-items: center; gap: 5px; }
+.video-card { display: block; border-radius: 6px; overflow: hidden; background: rgba(255,255,255,0.03); border: 1px solid var(--border); margin-bottom: 8px; text-decoration: none; transition: all 0.15s; cursor: pointer; }
+.video-card:hover { border-color: rgba(255,200,87,0.2); background: rgba(255,200,87,0.04); }
+.video-thumb { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: #111; }
+.video-info { padding: 8px 10px; }
+.video-title { font-size: 11px; color: var(--text); line-height: 1.3; margin-bottom: 4px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.video-meta { font-size: 9px; color: var(--text3); display: flex; gap: 8px; }
+.video-embed { width: 100%; aspect-ratio: 16/9; border: none; border-radius: 6px; margin-bottom: 8px; }
 .conn-section { margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--border); }
 .conn-head { font-size: 9px; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text3); margin-bottom: 6px; }
 .conn-head.prereq { color: #e07a5f; }
@@ -197,14 +206,18 @@ const params = new URLSearchParams(window.location.search);
 const fileParam = params.get('f') || 'sg-math';
 const dataUrl = 'data/' + encodeURIComponent(fileParam) + '.json';
 
-fetch(dataUrl)
-  .then(r => { if (!r.ok) throw new Error('Failed to load ' + dataUrl); return r.json(); })
-  .then(data => init(data))
+// Load graph data + video mappings + video metadata in parallel
+Promise.all([
+  fetch(dataUrl).then(r => { if (!r.ok) throw new Error('Failed to load ' + dataUrl); return r.json(); }),
+  fetch('content/mappings/' + encodeURIComponent(fileParam) + '.json').then(r => r.ok ? r.json() : {}).catch(() => ({})),
+  fetch('content/videos.json').then(r => r.ok ? r.json() : {}).catch(() => ({}))
+])
+  .then(([data, videoMapping, videoMeta]) => init(data, videoMapping, videoMeta))
   .catch(err => {
     document.getElementById('loading').innerHTML = '<span style="color:#e07a5f">' + err.message + '</span>';
   });
 
-function init(data) {
+function init(data, videoMapping, videoMeta) {
   document.getElementById('loading').style.display = 'none';
 
   const metadata = data.metadata || {};
@@ -406,6 +419,12 @@ function init(data) {
   }
   svg.on('click', () => clearSelection());
 
+  function formatDuration(secs) {
+    if (!secs) return '';
+    var m = Math.floor(secs / 60), s = secs % 60;
+    return m + ':' + (s < 10 ? '0' : '') + s;
+  }
+
   function showDetail(d) {
     document.getElementById('graph-container').classList.add('detail-open');
     const prereqs = [], leads = [];
@@ -414,6 +433,27 @@ function init(data) {
       if (t === d.id && nodeMap[s]) prereqs.push(nodeMap[s]);
       if (s === d.id && nodeMap[t]) leads.push(nodeMap[t]);
     });
+
+    // Look up videos for this node
+    var nodeVideos = videoMapping[d.external_id] || [];
+    var videoHtml = '';
+    if (nodeVideos.length > 0) {
+      videoHtml = '<div class="video-section"><div class="video-head">\u25B6 Videos (' + nodeVideos.length + ')</div>';
+      nodeVideos.forEach(function(ytId, i) {
+        var meta = videoMeta[ytId] || {};
+        var title = meta.t || ytId;
+        var dur = formatDuration(meta.d);
+        var thumb = meta.th || 'https://i.ytimg.com/vi/' + ytId + '/hqdefault.jpg';
+        videoHtml += '<div class="video-card" data-yt="' + ytId + '">' +
+          '<img class="video-thumb" src="' + thumb + '" alt="" loading="lazy" onerror="this.src=\'https://i.ytimg.com/vi/' + ytId + '/hqdefault.jpg\'">' +
+          '<div class="video-info">' +
+            '<div class="video-title">' + title + '</div>' +
+            '<div class="video-meta"><span>' + dur + '</span><span>Khan Academy</span></div>' +
+          '</div></div>';
+      });
+      videoHtml += '</div>';
+    }
+
     const content = document.getElementById('detail-content');
     content.innerHTML =
       '<div class="detail-badge" style="background:'+d.gradeColor+'18;color:'+d.gradeColor+';border:1px solid '+d.gradeColor+'30">' +
@@ -422,10 +462,11 @@ function init(data) {
       '</div>' +
       '<div class="detail-badge" style="background:'+d.topicColor+'18;color:'+d.topicColor+';border:1px solid '+d.topicColor+'30;margin-left:4px">' +
         '<span style="width:5px;height:5px;border-radius:50%;background:'+d.topicColor+';display:inline-block"></span> ' +
-        d.strand +
+        (strandsDataRaw.find(function(s) { return s.id === d.strand; }) || {}).name || d.strand +
       '</div>' +
       '<div class="detail-title">' + d.label + '</div>' +
       (d.description ? '<div class="detail-desc">' + d.description + '</div>' : '') +
+      videoHtml +
       (prereqs.length ?
         '<div class="conn-section"><div class="conn-head prereq">\u25B2 Prerequisites (' + prereqs.length + ')</div>' +
         prereqs.map(n => '<div class="conn-item" data-id="'+n.id+'"><span class="conn-dot" style="background:'+n.topicColor+';box-shadow:0 0 0 1.5px '+n.gradeColor+'"></span><span class="conn-label">'+n.label+'</span><span class="conn-book">'+n.bookName+'</span></div>').join('') +
@@ -435,6 +476,23 @@ function init(data) {
         '<div class="conn-section"><div class="conn-head leads">\u25BC Leads to (' + leads.length + ')</div>' +
         leads.map(n => '<div class="conn-item" data-id="'+n.id+'"><span class="conn-dot" style="background:'+n.topicColor+';box-shadow:0 0 0 1.5px '+n.gradeColor+'"></span><span class="conn-label">'+n.label+'</span><span class="conn-book">'+n.bookName+'</span></div>').join('') +
         '</div>' : '');
+
+    // Video card click → embed YouTube player inline
+    content.querySelectorAll('.video-card').forEach(function(card) {
+      card.addEventListener('click', function() {
+        var yt = card.dataset.yt;
+        var existing = card.querySelector('.video-embed');
+        if (existing) { existing.remove(); card.querySelector('.video-thumb').style.display = ''; return; }
+        card.querySelector('.video-thumb').style.display = 'none';
+        var iframe = document.createElement('iframe');
+        iframe.className = 'video-embed';
+        iframe.src = 'https://www.youtube.com/embed/' + yt + '?autoplay=1';
+        iframe.allow = 'autoplay; encrypted-media';
+        iframe.allowFullscreen = true;
+        card.insertBefore(iframe, card.querySelector('.video-info'));
+      });
+    });
+
     content.querySelectorAll('.conn-item').forEach(el => {
       el.addEventListener('click', () => { const n = nodeMap[el.dataset.id]; if (n) selectNode(n); });
     });
