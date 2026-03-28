@@ -467,7 +467,7 @@ function init(data, videoMapping, videoMeta) {
       '</div>' +
       '<div class="detail-badge" style="background:'+d.topicColor+'18;color:'+d.topicColor+';border:1px solid '+d.topicColor+'30;margin-left:4px">' +
         '<span style="width:5px;height:5px;border-radius:50%;background:'+d.topicColor+';display:inline-block"></span> ' +
-        (strandsDataRaw.find(function(s) { return s.id === d.strand; }) || {}).name || d.strand +
+        ((strandsDataRaw.find(function(s) { return s.id === d.strand; }) || {}).name || d.strand) +
       '</div>' +
       '<div class="detail-title">' + d.label + '</div>' +
       (d.description ? '<div class="detail-desc">' + d.description + '</div>' : '') +
