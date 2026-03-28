@@ -623,6 +623,23 @@ function init(data, videoMapping, videoMeta) {
   });
 
   renderGraph();
+
+  // Deep link: ?f=sg-math&node=NODE_ID or &eid=EXTERNAL_ID
+  var deepNode = params.get('node');
+  var deepEid = params.get('eid');
+  if (deepNode || deepEid) {
+    var target = deepNode ? nodeMap[deepNode] : nodes.find(function(n) { return n.external_id === deepEid; });
+    if (target) {
+      // Wait for simulation to settle, then select and zoom
+      setTimeout(function() {
+        selectNode(target);
+        if (target.x != null) {
+          var t = d3.zoomIdentity.translate(-target.x * 2.5 + container.clientWidth/2, -target.y * 2.5 + container.clientHeight/2).scale(2.5);
+          svg.transition().duration(800).call(zoom.transform, t);
+        }
+      }, 1500);
+    }
+  }
 }
 </script>
 </body>
