@@ -278,6 +278,59 @@ body::after {
   flex-shrink: 0;
 }
 
+.references {
+  margin-top: 50px;
+  max-width: 900px;
+  width: 100%;
+}
+.ref-title {
+  font-family: 'Instrument Serif', serif;
+  font-size: 20px;
+  color: #e8e4dc;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.ref-title::before {
+  content: '';
+  width: 3px;
+  height: 18px;
+  background: #ffc857;
+  border-radius: 2px;
+}
+.ref-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
+}
+.ref-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 18px;
+  background: rgba(12,14,24,0.94);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.ref-card:hover {
+  border-color: rgba(255,200,87,0.15);
+  background: rgba(255,200,87,0.03);
+}
+.ref-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.ref-info {}
+.ref-name { font-size: 13px; color: #e8e4dc; font-weight: 500; margin-bottom: 2px; }
+.ref-desc { font-size: 10px; color: #55516a; line-height: 1.4; }
+.ref-badge { font-size: 8px; color: #ffc857; background: rgba(255,200,87,0.1); padding: 1px 6px; border-radius: 3px; margin-top: 4px; display: inline-block; text-transform: uppercase; letter-spacing: 0.5px; }
+
 .footer {
   margin-top: 50px;
   text-align: center;
@@ -778,6 +831,20 @@ body::after {
       </div>
     </div>
 
+  </div>
+
+  <div class="references">
+    <div class="ref-title">References</div>
+    <div class="ref-grid">
+      <a href="https://www.khanacademy.org" target="_blank" rel="noopener" class="ref-card">
+        <img class="ref-logo" src="https://cdn.kastatic.org/images/khan-logo-dark-background-2.png" alt="Khan Academy" onerror="this.style.background='#14bf96';this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22><text x=%2250%%22 y=%2255%%22 text-anchor=%22middle%22 dy=%22.35em%22 font-size=%2220%22>K</text></svg>'">
+        <div class="ref-info">
+          <div class="ref-name">Khan Academy</div>
+          <div class="ref-desc">Free world-class education for anyone, anywhere</div>
+          <span class="ref-badge">9,260 videos mapped</span>
+        </div>
+      </a>
+    </div>
   </div>
 
   <div class="footer">
