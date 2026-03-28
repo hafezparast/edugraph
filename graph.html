@@ -239,7 +239,7 @@ const fileParam = params.get('f') || 'sg-math';
 const dataUrl = 'data/' + encodeURIComponent(fileParam) + '.json';
 
 // Files that have video mappings (avoid 404s for unmapped files)
-const mappedFiles = new Set(['al-biology','al-chemistry','al-economics','al-math','al-physics','ap-biology','ap-calc-ab','ap-calc-bc','ap-chemistry','ap-macro','ap-micro','ap-statistics','ap-us-history','ap-world-history','ib-biology','ib-chemistry','ib-economics','ib-math-aa','ib-physics','igcse-biology','igcse-chemistry','igcse-economics','igcse-math','igcse-physics','lang-en','sg-biology','sg-chemistry','sg-economics','sg-math','sg-physics']);
+const mappedFiles = new Set(['al-biology','al-chemistry','al-economics','al-math','al-physics','ap-biology','ap-calc-ab','ap-calc-bc','ap-chemistry','ap-macro','ap-micro','ap-statistics','ap-us-history','ap-world-history','ib-biology','ib-chemistry','ib-economics','ib-math-aa','ib-physics','igcse-biology','igcse-chemistry','igcse-economics','igcse-math','igcse-physics','lang-de','lang-en','sg-biology','sg-chemistry','sg-economics','sg-math','sg-physics']);
 const hasMapping = mappedFiles.has(fileParam);
 
 // Load graph data + video mappings (only if available) + video metadata
